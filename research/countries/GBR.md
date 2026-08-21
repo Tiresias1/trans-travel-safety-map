@@ -65,3 +65,23 @@ than executive demonization.
   foreign visitor; 7+ country advisories; ESTA "sex at birth") + axis-3 criminal
   exposure in 4 states (FL/ID/KS/TX) are higher-probability and criminal —
   differentiators the UK lacks. See research/uk-vs-us-comparison.md.
+
+## Correction (2026-08-21, regrounding via Chile comparison)
+Score corrected: **0.71 → 0.69**. The original 0.71 placed the UK above Israel (0.69) and
+Latvia (0.69) and tied with Chile (0.71→0.74), despite the UK having two UNIQUE negatives
+in the entire 62-country dataset: (1) a nationally-legislated daily bathroom restriction
+(the EHRC statutory Code directing single-sex spaces by biological sex — no other country
+above 0.65 has this; the only other countries with nationally-legislated bathroom restrictions
+are Peru 0.48 and USA 0.52), and (2) a nationwide biological-sex strip-search policy (BTP,
+Police Scotland, Surrey/Sussex — no other country in the dataset has this as a documented
+nationwide policy). These are HIGH-probability (daily) and HIGH-severity-when-triggered
+(strip-search) traveler-facing restrictions that no Western European peer has.
+
+The UK's positives (GRC functional + hate-crime law GI + marriage equality + EU + functional
+institutions) are real but largely resident-facing institutional protections; the negatives
+are traveler-facing active restrictions. The UK at 0.69 is: tied with Israel (airport friction
++ 432 violence vs bathroom code + strip-search + men's-prison — both HIGH-probability visitor
+friction + documented violence + deteriorating climate), tied with Latvia (UK has more active
+restrictions but better legal framework; Latvia has less daily risk but no recourse), 0.01
+above Hungary (better legal framework), 0.03 below Poland and Croatia, 0.05 below Chile
+(appropriate for Chile's 5-axis advantage), 0.12 below Uruguay.

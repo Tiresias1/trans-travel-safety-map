@@ -1,6 +1,6 @@
 # UK vs US — Traveler-Outing Axis Comparison & Recentering (2026-08-21)
 
-Prompted by a recentering check. **UK: 0.74 → 0.71. US: stays 0.52.** The ~0.19 gap is
+Prompted by a recentering check. **UK: 0.74 → 0.71 → 0.69. US: stays 0.52.** The ~0.19 gap is
 justified by traveler-specific (not general-policy) differentiators.
 
 ## Axis-by-axis
