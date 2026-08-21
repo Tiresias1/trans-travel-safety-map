@@ -76,3 +76,15 @@ family/diaspora pattern (relatives' country → honor violence, forced marriage,
 conversion "therapy" captivity). Scoring frame: probability-of-outing ×
 severity-if-outed. Researchers must scan the full list per country and note "no
 signals" axes — absence is data. Query rotation across axes is mandatory.
+
+## Methodological correction 3 (2026-08-21): Marriage equality is NOT a score driver
+Following the same principle as correction 2 (traveler-outing axes only), marriage equality
+(same-sex marriage) has been systematically over-cited as a "positive" in country rationales
+despite PLAN §5.2 explicitly listing it as a non-scoring general-LGB signal. Marriage
+equality is about whether a trans person can marry — largely irrelevant to a visitor's daily
+outing risk (bathrooms, police, prison, documents, violence, climate).
+Going forward: drop marriage equality entirely from rationales; cite only if specifically
+relevant (e.g., traveling with a partner in a country where unmarried cohabitation is
+criminalised — which IS a trans-relevant axis-E risk factor, not a marriage-equality signal).
+No retroactive re-scoring needed: audit confirms no score was actually driven by marriage
+equality (real drivers: self-ID, hate-crime law, bathroom access, police, prison, violence, climate).
