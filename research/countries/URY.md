@@ -62,3 +62,21 @@ Score: **0.77** · Band: Reduced Risk
 - Not in Low Risk (0.80+) because: Joana killed (Jul 2025 — a trans-specific killing with
   enforcement, but a killing nonetheless) + hospital/bank discrimination + "disparities in
   treatment" + no documented axis-H positive + thin evidence on some axes.
+
+## Correction (2026-08-21, regrounding check)
+Score corrected: **0.77 → 0.81** (Low Risk band). The original 0.77 placed Uruguay only 0.06
+above the UK (0.71) despite Uruguay being systematically better on 5 axes (C: protected bathrooms
+vs in-force daily bathroom code; F: no strip-search vs biological-sex strip-search policies; H:
+no documented prison issue vs men's-prison placement post-SC + suicide-risk; K: stable progressive
+vs deteriorating courts-led; B: self-ID vs court-based GRC). The original 0.06 gap was justified
+by offsetting Uruguay's Joana killing against Uruguay's five-axis advantage — but the UK also
+has documented trans killings (Brianna Ghey, 2023, and others), so the "UK has no documented
+trans killing" claim was wrong. With both having documented killings, Uruguay's five-axis
+systematic advantage should produce a wider gap. Uruguay at 0.81 (Low Risk, above Taiwan 0.80,
+below Japan 0.82) better reflects its comprehensive trans law + self-ID + protected bathrooms +
+reparation pension + state employment quota + "safest in LatAm" + stable progressive government,
+offset by Joana's killing + hospital/bank discrimination + "disparities in treatment."
+
+The UK (0.71) stays unchanged — its live rollback (bathroom code + strip-search + men's-prison
++ deteriorating climate) is correctly placed at the bottom of Reduced Risk, above Hungary (0.68)
+and Serbia (0.64) which have more extreme profiles, below Poland (0.72) marginally.
