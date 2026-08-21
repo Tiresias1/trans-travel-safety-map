@@ -1,5 +1,5 @@
 # Serbia (SRB) — Research Note (traveler-outing axes, 2026-08-21)
-Score: **0.64** · Band: High Risk
+Score: **0.64** · Band: Reduced Risk
 
 ## Axis findings (taxonomy A–K)
 - **A Border/transit/documents:** NOT Schengen (EU candidate) — border checks for foreign
@@ -47,7 +47,7 @@ Score: **0.64** · Band: High Risk
   (policy-completeness — NOT a score input, weak signal).
 
 ## Visitor-focused summary
-Serbia is high-risk for trans visitors despite no criminalisation. The most acute
+Serbia is reduced-risk (lower end) for trans visitors despite no criminalisation. The most acute
 documented traveler-axis risk is police: in February 2024 the Interior Ministry began
 investigating officers who beat, tortured and sexually harassed two LGBT people during a
 Belgrade apartment raid. About 105 SOGI-motivated incidents were recorded in 2024, a
@@ -59,7 +59,7 @@ mitigating factor: a Belgrade prison has a trans-sensitive search policy allowin
 women to choose the search arrangement, though watchdogs flag training gaps.
 
 ## Score rationale
-0.64 — High Risk, below HUN (0.68), above BRA (0.55).
+0.64 — Reduced Risk, below HUN (0.68), above BRA (0.55).
 - Below HUN (0.68): Serbia's documented police brutality against LGBT people (axis F,
   torture/sexual-harassment alleged, Feb 2024) is more severe than Hungary's axis-F
   (CPT ill-treatment allegations); Serbia is NOT Schengen (axis-A border friction Hungary
