@@ -1,0 +1,345 @@
+/* Trans Travel Safety Map — app.js
+ * - Leaflet map with two choropleth layers (countries, admin divisions)
+ * - Continuous colour gradient: dark red (0.0) → band centre colours → light blue (1.0)
+ * - Click popup: score (2 dp), international rank, risk text, sources
+ */
+
+(async function () {
+  "use strict";
+
+  /* ---------- data files ---------- */
+  const BOUNDARIES = {
+    countries: "boundaries/countries.geojson",
+    admin1: "boundaries/admin1.geojson",
+  };
+  const DATA_FILES = {
+    countries: "data/countries.json",
+    admin1: "data/admin1.json",
+  };
+  const META_FILE = "data/meta.json";
+
+  /* ---------- gradient ---------- */
+  // Anchor points from PLAN.md §5.1: piecewise-linear RGB interpolation.
+  let GRADIENT_ANCHORS = [
+    [0.0, [0x67, 0x00, 0x0d]],
+    [0.1, [0xd7, 0x30, 0x27]],
+    [0.3, [0xfc, 0x8d, 0x59]],
+    [0.5, [0xfe, 0xe0, 0x8b]],
+    [0.7, [0x91, 0xcf, 0x60]],
+    [0.9, [0x1a, 0x98, 0x50]],
+    [1.0, [0xa8, 0xdb, 0xe8]],
+  ];
+  const BANDS = [
+    { max: 0.2, label: "Do Not Travel" },
+    { max: 0.4, label: "High Risk" },
+    { max: 0.6, label: "Elevated Risk" },
+    { max: 0.8, label: "Reduced Risk" },
+    { max: 1.01, label: "Low Risk" },
+  ];
+
+  function hex(rgba) { return `#${rgba.map(c => c.toString(16).padStart(2, "0")).join("")}`; }
+
+  function gradientColour(score) {
+    const a = GRADIENT_ANCHORS;
+    if (score <= a[0][0]) return hex(a[0][1]);
+    for (let i = 1; i < a.length; i++) {
+      if (score <= a[i][0]) {
+        const t = (score - a[i - 1][0]) / (a[i][0] - a[i - 1][0]);
+        return hex(a[i - 1][1].map((c, k) => Math.round(c + t * (a[i][1][k] - c))));
+      }
+    }
+    return hex(a[a.length - 1][1]);
+  }
+
+  function bandLabel(score) {
+    for (const b of BANDS) if (score < b.max) return b.label;
+    return BANDS[BANDS.length - 1].label;
+  }
+
+  function darken(rgba, f) { return rgba.map(c => Math.round(c * f)); }
+
+  /* ---------- state ---------- */
+  let meta = {};
+  let countryData = {};
+  let admin1Data = {};
+  let mode = location.hash.replace(/^#?view=/, "") === "admin1" ? "admin1" : "countries";
+  let layers = {};        // mode -> L.GeoJSON
+  const loadedBoundaries = new Set();
+  const loadedData = new Set();
+
+  /* ---------- map ---------- */
+  const map = L.map("map", {
+    center: [20, 0],
+    zoom: 2,
+    minZoom: 2,
+    maxZoom: 10,
+    worldCopyJump: true,
+    scrollWheelZoom: true,
+    zoomControl: true,
+    attributionControl: true,
+    maxBounds: L.latLngBounds([-89, -720], [89, 720]),
+    maxBoundsViscosity: 0.6,
+  });
+
+  /* ---------- loading ---------- */
+  async function getJSON(url) {
+    const r = await fetch(url, { cache: "force-cache" });
+    if (!r.ok) throw new Error(`${url}: ${r.status}`);
+    return r.json();
+  }
+
+  const loadingStatus = document.getElementById("loadingStatus");
+  function setLoading(msg) {
+    if (msg) { loadingStatus.hidden = false; loadingStatus.textContent = msg; }
+    else loadingStatus.hidden = true;
+  }
+
+  async function ensureMeta() {
+    try { meta = await getJSON(META_FILE); } catch (e) { /* fallback defaults */ }
+    if (Array.isArray(meta.gradientAnchors) && meta.gradientAnchors.length >= 7) {
+      GRADIENT_ANCHORS = meta.gradientAnchors.map(([s, h]) => {
+        const rgba = typeof h === "string"
+          ? [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]
+          : h;
+        return [s, rgba];
+      });
+    }
+    drawLegendBar();
+  }
+
+  async function ensureData(modeKey) {
+    if (loadedData.has(modeKey)) return;
+    setLoading("Loading scores…");
+    const d = await getJSON(DATA_FILES[modeKey]);
+    if (modeKey === "countries") countryData = d; else admin1Data = d;
+    loadedData.add(modeKey);
+    setLoading(null);
+  }
+
+  /* ---------- layer construction ---------- */
+  function recordFor(modeKey, props) {
+    if (modeKey === "countries") {
+      return countryData[props.iso3] || null;
+    }
+    return admin1Data[props.shapeID] || null;
+  }
+
+  function styleFeature(feature) {
+    const rec = recordFor(mode, feature.properties) ||
+      (mode === "admin1" && countryData[feature.properties.iso3]);
+    let fill = [0x99, 0x99, 0x99]; // no data
+    if (rec && typeof rec.score === "number") {
+      // exact gradient colour (band centre colour comes from anchors)
+      fill = GRADIENT_ANCHORS[0][1]; // placeholder replaced below
+    }
+    // compute gradient colour directly
+    let color = "#999999";
+    if (rec && typeof rec.score === "number") color = gradientColour(rec.score);
+    return {
+      fillColor: color,
+      fillOpacity: 0.75,
+      weight: 1,
+      color: "rgba(0,0,0,0.5)",
+    };
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    }[c]));
+  }
+
+  function sanitizeSummary(html) {
+    // allow only <p>, <em>, <strong>, <a href>, <br>
+    const tpl = document.createElement("div");
+    tpl.innerHTML = html;
+    const ok = new Set(["P", "EM", "STRONG", "BR", "A"]);
+    (function walk(node) {
+      for (const child of [...node.childNodes]) {
+        if (child.nodeType === 1) {
+          if (!ok.has(child.tagName)) {
+            child.replaceWith(document.createTextNode(child.textContent));
+          } else {
+            if (child.tagName === "A") {
+              child.setAttribute("rel", "noopener");
+              child.setAttribute("target", "_blank");
+              const href = child.getAttribute("href") || "";
+              if (!/^https?:/i.test(href)) child.removeAttribute("href");
+            }
+            walk(child);
+          }
+        }
+      }
+    })(tpl);
+    return tpl.innerHTML;
+  }
+
+  function popupHTML(modeKey, feature, rec) {
+    const props = feature.properties;
+    const name = esc(props.name || "Unknown");
+    if (!rec || typeof rec.score !== "number") {
+      const parentRec = modeKey === "admin1" ? countryData[props.iso3] : null;
+      const parentLine = modeKey === "admin1"
+        ? (parentRec && typeof parentRec.score === "number"
+            ? `<p class="popup-sub">Part of ${esc(parentRec.name)} — no separate subnational assessment; national score shown.</p>`
+            : `<p class="popup-sub">${countryData[props.iso3] ? esc(countryData[props.iso3].name) : esc(props.iso3 || "")}</p>`)
+        : "";
+      const inherited = parentRec && typeof parentRec.score === "number"
+        ? popupHTML("countries", { properties: { iso3: props.iso3, name: props.name + " (" + parentRec.name + ")" } }, parentRec)
+        : `<div class="popup-name">${name}</div>${parentLine}
+        <p class="muted">Not yet assessed.</p>`;
+      return inherited;
+    }
+    const score = Math.round(rec.score * 100) / 100;
+    const colour = gradientColour(score);
+    const label = bandLabel(score);
+    let sub, rank;
+    if (modeKey === "countries") {
+      sub = "";
+      rank = typeof rec.rank === "number" && meta.totalCountries
+        ? `Rank ${rec.rank} of ${meta.totalCountries} countries`
+        : "";
+    } else {
+      const parentRec = countryData[props.iso3];
+      sub = `<p class="popup-sub">${parentRec ? esc(parentRec.name) : esc(props.iso3 || "")}</p>`;
+      let r = "";
+      if (typeof rec.worldRank === "number" && meta.totalAdmin1)
+        r += `Rank ${rec.worldRank} of ${meta.totalAdmin1} divisions`;
+      if (typeof rec.countryRank === "number" && rec.unitsInCountry)
+        r += ` · ${rec.countryRank} of ${rec.unitsInCountry} in ${parentRec ? esc(parentRec.name) : ""}`;
+      rank = r;
+    }
+    const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
+    const outscope = rec.outOfScopeNotes
+      ? `<div class="popup-outscope"><span class="label">Not factored into the score:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
+      : "";
+    const sources = (Array.isArray(rec.sources) && rec.sources.length)
+      ? `<div class="popup-sources"><details><summary>Sources (${rec.sources.length})${rec.researchedAt ? " · researched " + esc(rec.researchedAt) : ""}</summary>
+          <ul>${rec.sources.map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, "").slice(0, 70))}</a></li>`).join("")}</ul>
+        </details></div>`
+      : rec.inherited
+        ? `<div class="popup-sources">Inherits national score${rec.researchedAt ? " · researched " + esc(rec.researchedAt) : ""}.</div>`
+        : "";
+    return `
+      <div class="popup-name">${name}</div>${sub}
+      <p class="popup-score">${score.toFixed(2)}</p>
+      <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
+      <p class="popup-rank">${rank}</p>
+      ${summary}${outscope}${sources}`;
+  }
+
+  function buildLayer(modeKey, geojson) {
+    return L.geoJSON(geojson, {
+      style: styleFeature,
+      onEachFeature: (feature, layer) => {
+        const props = feature.properties;
+        layer.bindTooltip(() => {
+          const rec = recordFor(modeKey, props) ||
+            (modeKey === "admin1" && countryData[props.iso3]);
+          const s = rec && typeof rec.score === "number" ? ` — ${rec.score.toFixed(2)} ${bandLabel(rec.score)}` : "";
+          return `${props.name || "?"}${s}`;
+        }, { sticky: true, className: "score-tooltip" });
+        layer.on("click", () => {
+          const rec = recordFor(modeKey, props);
+          L.popup({ maxWidth: 420, maxHeight: 520 })
+            .setLatLng(layer.getBounds().getCenter())
+            .setContent(popupHTML(modeKey, feature, rec))
+            .openOn(map);
+        });
+      },
+    });
+  }
+
+  async function ensureBoundary(modeKey) {
+    if (loadedBoundaries.has(modeKey)) return;
+    setLoading(modeKey === "admin1" ? "Loading admin divisions (large file)…" : "Loading map…");
+    const geo = await getJSON(BOUNDARIES[modeKey]);
+    loadedBoundaries.add(modeKey);
+    await ensureData(modeKey);
+    if (modeKey === "countries") await ensureData("admin1"); // for parent names/inherit
+    layers[modeKey] = buildLayer(modeKey, geo);
+    setLoading(null);
+  }
+
+  async function setMode(nextMode) {
+    if (nextMode === "admin1" && !layers[nextMode]) {
+      // load in background but show countries meanwhile
+      try { await ensureBoundary(nextMode); } catch (e) {
+        setLoading(null);
+        alert("Could not load admin division boundaries: " + e.message);
+        return;
+      }
+    } else {
+      await ensureBoundary(nextMode);
+    }
+    mode = nextMode;
+    for (const k of Object.keys(layers)) {
+      if (map.hasLayer(layers[k])) map.removeLayer(layers[k]);
+    }
+    layers[mode].addTo(map);
+    layers[mode].setStyle(styleFeature);
+    document.getElementById("btnCountries").classList.toggle("active", mode === "countries");
+    document.getElementById("btnAdmin1").classList.toggle("active", mode === "admin1");
+    document.getElementById("btnCountries").setAttribute("aria-selected", mode === "countries");
+    document.getElementById("btnAdmin1").setAttribute("aria-selected", mode === "admin1");
+    history.replaceState(null, "", mode === "admin1" ? "#view=admin1" : "#view=countries");
+  }
+
+  document.getElementById("btnCountries").addEventListener("click", () => setMode("countries"));
+  document.getElementById("btnAdmin1").addEventListener("click", () => setMode("admin1"));
+
+  /* ---------- legend ---------- */
+  function drawLegendBar() {
+    const canvas = document.getElementById("legendBar");
+    const ctx = canvas.getContext("2d");
+    const w = canvas.width, h = canvas.height;
+    for (let x = 0; x < w; x++) {
+      ctx.fillStyle = gradientColour(x / (w - 1));
+      ctx.fillRect(x, 0, 1, h);
+    }
+  }
+
+  /* ---------- about dialog ---------- */
+  function aboutHTML() {
+    const gen = meta.generatedAt ? esc(meta.generatedAt) : "—";
+    return `
+    <p>This map scores the risk to a <strong>transgender visitor</strong> — someone who is,
+    or is discovered to be, trans — in each country and major first-level administrative
+    division. Scores run from 0.00 (dark red, highest risk) to 1.00 (light blue, lowest risk),
+    using a continuous colour gradient whose anchor colours sit at the centre of the five
+    named bands (Do Not Travel, High Risk, Elevated Risk, Reduced Risk, Low Risk).</p>
+    <p>What the score covers: everyday exposure of a trans visitor — presence in public,
+    use of public bathrooms, documents and border crossings, police interactions,
+    arrest risk including detention in a gender-mismatched facility, harassment and violence,
+    access to medication. It deliberately <em>excludes</em> general travel risks (crime,
+    disease, conflict) and risks specific to residents (e.g. adoption or employment law),
+    except where those signal official or public hostility. General risks, where serious,
+    are mentioned in a region's popup under “Not factored into the score.”</p>
+    <p>Scores are derived from web research (search results and primary sources fetched and
+    read per region), not model memory. Every region's popup lists its sources. Ranks are
+    competition-ranked (ties share a rank). Regions are compared against calibration anchor
+    countries so the scale is relative as well as absolute.</p>
+    <p><strong>Boundaries are de jure</strong> (internationally recognised legal claims, not
+    lines of current control — e.g. Crimea and occupied territories are shown within
+    Ukraine). Contested areas with two legal claims are rendered at the most widely
+    recognised position with a caveat in the relevant popups.
+    Country boundaries and first-level divisions: <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener">geoBoundaries</a> gbOpen (CC BY 4.0);
+    Western Sahara polygon: Natural Earth (public domain); de jure conflict patches are documented in the repository.</p>
+    <p>Data generated: ${gen}. Methodology version: ${esc(meta.methodologyVersion || "1.0")}.</p>
+    <p class="muted">This map is informational research, not personalised advice. Conditions change;
+    verify with current official travel advisories before travelling.</p>`;
+  }
+  const dlg = document.getElementById("aboutDialog");
+  document.getElementById("btnAbout").addEventListener("click", () => {
+    document.getElementById("aboutContent").innerHTML = aboutHTML();
+    dlg.showModal();
+  });
+  document.getElementById("aboutClose").addEventListener("click", () => dlg.close());
+
+  /* ---------- boot ---------- */
+  await ensureMeta();
+  try { await ensureData("countries"); } catch (e) { /* data may not exist yet */ }
+  await ensureBoundary("countries");
+  await setMode(mode);
+  if (mode === "admin1") await setMode("admin1");
+})();

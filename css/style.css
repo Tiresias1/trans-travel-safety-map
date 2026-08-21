@@ -1,0 +1,125 @@
+:root {
+  --bg: #14161a;
+  --panel: #1e2128;
+  --text: #e8e8ea;
+  --muted: #9aa0ab;
+  --accent: #6ec3c9;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 10px 16px 6px;
+  border-bottom: 1px solid #2c3038;
+  flex: none;
+}
+h1 { font-size: 1.25rem; margin: 0 0 2px; }
+.subtitle { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  flex: none;
+}
+#toggle { display: flex; border: 1px solid #3a3f4a; border-radius: 6px; overflow: hidden; }
+.toggleBtn {
+  background: transparent; color: var(--text);
+  border: 0; padding: 6px 14px; cursor: pointer; font-size: 0.9rem;
+}
+.toggleBtn.active { background: var(--accent); color: #10232a; font-weight: 600; }
+.toggleBtn:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+.linkBtn {
+  background: transparent; color: var(--muted); border: 0;
+  cursor: pointer; font-size: 0.85rem; text-decoration: underline; padding: 4px;
+}
+.linkBtn:hover { color: var(--text); }
+.muted { color: var(--muted); font-size: 0.85rem; }
+
+#map { flex: 1 1 auto; min-height: 300px; background: #0b0c0f; }
+
+#legend {
+  position: absolute; right: 12px; bottom: 12px; z-index: 1000;
+  background: rgba(20, 22, 26, 0.92);
+  border: 1px solid #3a3f4a; border-radius: 8px;
+  padding: 10px 12px; font-size: 0.78rem; line-height: 1.5;
+  max-width: 230px;
+}
+.legendTitle { font-weight: 600; margin-bottom: 4px; }
+#legendBar { display: block; width: 200px; height: 14px; border-radius: 3px; }
+.legendTicks {
+  display: flex; justify-content: space-between;
+  width: 200px; color: var(--muted); font-size: 0.7rem; margin-bottom: 6px;
+}
+.legendBands div { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.legendBands i {
+  width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none;
+}
+
+/* Leaflet popup theming */
+.leaflet-popup-content-wrapper {
+  background: var(--panel); color: var(--text);
+  border: 1px solid #3a3f4a; border-radius: 8px;
+}
+.leaflet-popup-tip { background: var(--panel); border: 1px solid #3a3f4a; }
+.leaflet-popup-content { margin: 12px 16px; font-size: 0.85rem; line-height: 1.5; }
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+
+.popup-name { font-size: 1.05rem; font-weight: 700; margin: 0; }
+.popup-sub { color: var(--muted); margin: 0 0 8px; font-size: 0.8rem; }
+.popup-score { font-size: 1.4rem; font-weight: 700; margin: 0; }
+.popup-band {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin: 2px 0 8px; font-weight: 600;
+}
+.popup-band i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+.popup-rank { color: var(--muted); margin: 0 0 8px; font-size: 0.8rem; }
+.popup-text p { margin: 0 0 8px; }
+.popup-text a { color: var(--accent); }
+.popup-outscope {
+  margin-top: 8px; padding-top: 6px; border-top: 1px solid #343945;
+  color: var(--muted); font-size: 0.78rem;
+}
+.popup-outscope .label { font-style: italic; }
+.popup-sources { margin-top: 8px; font-size: 0.72rem; color: var(--muted); }
+.popup-sources details summary { cursor: pointer; }
+.popup-sources ul { margin: 4px 0 0; padding-left: 16px; overflow-wrap: anywhere; }
+.popup-sources li { margin-bottom: 2px; }
+.popup-sources a { color: var(--muted); }
+.popup-text, .popup-outscope { max-height: 320px; overflow-y: auto; }
+
+dialog {
+  background: var(--panel); color: var(--text);
+  border: 1px solid #3a3f4a; border-radius: 10px;
+  max-width: 640px; width: calc(100% - 32px);
+  max-height: 80vh; padding: 18px 22px;
+}
+dialog::backdrop { background: rgba(0,0,0,0.6); }
+dialog h2 { margin-top: 0; }
+dialog a { color: var(--accent); }
+dialog p, dialog li { font-size: 0.9rem; line-height: 1.55; }
+
+.leaflet-tooltip.score-tooltip {
+  background: rgba(20,22,26,0.95); color: var(--text);
+  border: 1px solid #3a3f4a; font-size: 0.78rem;
+}
+.leaflet-tooltip.score-tooltip::before { display: none; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.05rem; }
+  #legend { max-width: 180px; font-size: 0.7rem; padding: 8px; }
+  #legendBar { width: 150px; }
+  .legendTicks { width: 150px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

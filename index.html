@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trans Travel Safety Map: August 2026</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Trans Travel Safety Map: August&nbsp;2026</h1>
+    <p class="subtitle">Risk to transgender <em>visitors</em> if known or discovered to be trans.
+      Research-based scores — click a region for details.</p>
+  </header>
+
+  <div id="controls">
+    <div id="toggle" role="tablist" aria-label="Map detail level">
+      <button id="btnCountries" class="toggleBtn active" role="tab" aria-selected="true">Countries</button>
+      <button id="btnAdmin1" class="toggleBtn" role="tab" aria-selected="false">Admin Divisions</button>
+    </div>
+    <button id="btnAbout" class="linkBtn" type="button">Methodology &amp; About</button>
+    <span id="loadingStatus" class="muted" hidden></span>
+  </div>
+
+  <div id="map" aria-label="World map of trans travel safety scores"></div>
+
+  <div id="legend">
+    <div class="legendTitle">Risk to trans visitors</div>
+    <canvas id="legendBar" width="200" height="14" title="Score gradient from 0.0 (dark red) to 1.0 (light blue)"></canvas>
+    <div class="legendTicks">
+      <span>0.0</span><span>0.2</span><span>0.4</span><span>0.6</span><span>0.8</span><span>1.0</span>
+    </div>
+    <div class="legendBands">
+      <div><i style="background:#8f1d1b"></i>0.00–0.20 Do Not Travel</div>
+      <div><i style="background:#ea5f3f"></i>0.20–0.40 High Risk</div>
+      <div><i style="background:#f9c96a"></i>0.40–0.60 Elevated Risk</div>
+      <div><i style="background:#a5c85f"></i>0.60–0.80 Reduced Risk</div>
+      <div><i style="background:#62b3a4"></i>0.80–1.00 Low Risk</div>
+      <div><i style="background:#999"></i>No data</div>
+    </div>
+  </div>
+
+  <dialog id="aboutDialog">
+    <h2>Methodology &amp; About</h2>
+    <div id="aboutContent"></div>
+    <button id="aboutClose" class="linkBtn" type="button">Close</button>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
