@@ -108,8 +108,46 @@ higher-probability/low-severity. The score reflects both.
 ## Explicitly out of scope (do not score; popup's out-of-scope section only)
 General LGB rights (marriage, adoption, LGB criminalization per se), general crime/
 terrorism/health risks, resident-only trans issues (domestic LGR regime, transition-
-healthcare infrastructure, employment law, adoption by trans people), ILGA %/Equaldex/
-Spartacus/FRA scores as direct inputs.
+healthcare infrastructure, employment law, adoption by trans people, GRC/national
+gender-recognition certificates), ILGA %/Equaldex/Spartacus/FRA scores as direct inputs.
+
+## Corrections from regrounding (2026-08-21)
+
+**LGR/self-ID is a climate signal (axis K), NOT a direct traveler protection.** A traveler
+won't apply for LGR in the destination country — their gender marker comes from their home
+passport. LGR presence/absence contributes to the axis-K institutional-culture assessment
+(countries with self-ID tend to have more trans-respecting institutions → lower police/social
+hostility), but it does NOT offset active traveler restrictions (bathroom codes, strip-search
+policies, prison-placement rulings). A country can have self-ID AND bathroom restrictions
+simultaneously (UK). Conversely, a country without LGR might have no daily restrictions
+(Latvia). **Never cite GRC or LGR as if it were a direct traveler protection.**
+
+**Marriage equality is not a score driver** — it's a general-LGB signal (PLAN §5.2 already
+listed it as non-scoring). Cite only if directly relevant (e.g., traveling with a partner
+in a country where unmarried cohabitation is criminalised).
+
+**What counts as a traveler-facing positive (can offset negatives):**
+- No trans-specific border friction (accepts foreign documents/X markers)
+- No bathroom/facility restriction (and/or positive protection)
+- No police profiling/brutality targeting trans people
+- No prison-placement risk (or positive protocol)
+- No criminalisation of trans identity/expression
+- No documented trans killings (or enforcement works)
+- Hate-crime law covering GI (recourse — theoretical but real)
+- Functional institutions (police/courts will act, even imperfectly)
+- Stable or improving climate
+
+**What does NOT count as a traveler-facing positive (resident-facing only):**
+- GRC / domestic LGR regime / self-ID law
+- Marriage equality / civil unions
+- Conversion-therapy bans
+- Intersex infant-surgery bans
+- Employment anti-discrimination law
+- State employment quotas, reparation pensions (Uruguay — institutional-culture signal only)
+- Military service openness
+
+These resident-facing items may be cited as **climate signals** (axis K) but NEVER as
+score drivers or as offsetting active traveler restrictions.
 
 ## Researcher guidance
 1. For each country, **scan all axes A–K**; record evidence per axis even if "no
