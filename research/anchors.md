@@ -64,3 +64,15 @@ move where real axis-1/4/5 evidence surfaces. In particular, the **France-vs-Ger
 is unconfirmed until Germany is checked on axis 5** (men's-prison placement of trans women
 — likely also present, which would compress the gap). New countries (Austria, Italy, …)
 are researched on the traveler axes from the start.
+
+## Taxonomy hardening (2026-08-21, second pass)
+Full outing-risk checklist now in `research/outing-risk-taxonomy.md` (axes A–K):
+beyond the original six axes it adds airport-scanner "anomaly" pat-downs, everyday
+bureaucracy outing (hotels/SIM/banking), gender-segregated transport & hospital wards,
+doxxing/filming, dating-app ambushes & police entrapment, blackmail/extortion of
+travelers, same-sex-law exposure when traveling *with a partner*, forced medical
+"verification," deportation-destination risk, insurance exclusions, and the
+family/diaspora pattern (relatives' country → honor violence, forced marriage,
+conversion "therapy" captivity). Scoring frame: probability-of-outing ×
+severity-if-outed. Researchers must scan the full list per country and note "no
+signals" axes — absence is data. Query rotation across axes is mandatory.

@@ -159,7 +159,13 @@ countries to establish calibration anchors early — see §5.3):
    queries return thin results — and treat those general hits as weak climate signals
    (§5.2), never as the score basis. **Do not rely on a single preexisting map or index**
    (ILGA Rainbow Map, Spartacus, Equaldex, FRA): search in every case, fetch the URLs,
-   and weigh primary sources over indices.
+   and weigh primary sources over indices. **Rotate queries across the taxonomy axes
+   A–K** (`research/outing-risk-taxonomy.md` §Researcher guidance) so batches cover the
+   full spread — e.g. one batch on border/documents/bureaucracy, one on
+   facilities/transport/hospital wards, one on violence/dating-app
+   predation/police/blackmail, one on law/detention/prison, one on
+   health/medication/family-diaspora exposure — rather than repeating generic
+   "safety/laws" queries. Additional axis-targeted examples:
 2. **Fetch all 20 URLs.** Read each fetched page. (Pages that 404/paywall: note and move
    on; if fewer than ~8 usable pages remain, run follow-up searches to backfill.)
 3. **Follow-ups** when: sources conflict; only LGBTQ-general info found (need trans-
@@ -267,27 +273,34 @@ colour is continuous.)
 
 ### 5.2 What the score measures
 Risk **to a visitor** arising **specifically from being (discovered to be) trans**, across
-everyday situations. The score must be driven by evidence on these **six traveler-outing
-axes** — every research note must address each axis where evidence exists:
+everyday situations. The full checklist of trans-specific, traveler-specific outing
+risks lives in **`research/outing-risk-taxonomy.md`** — scan ALL of its axes (A–K,
+including transit scanners, gender-segregated transport, hospital wards, dating-app
+predation, blackmail, family/diaspora exposure, and the probability×severity frame)
+for every country; the six axes below are the compact summary, not the boundary:
 
-1. **Border & documents** — entry/visa treatment of a passport carrying a *changed* or
-   `X` gender marker; device and social-media checks at the border; risk of questioning,
-   detention, or denial of entry for trans reasons.
-2. **Public presence & outing reaction** — the reaction if the traveler is visibly or
-   becomes known to be trans in public: harassment, misgendering, violence, and social
-   hostility *specifically toward trans people* (not general LGB).
-3. **Bathrooms & gendered facilities** — the legal right *and* social safety to use
-   gendered facilities (toilets, locker rooms, changing rooms, baths/onsen) matching
-   gender; any criminal or civil exposure from doing so.
-4. **Police interaction** — treatment if stopped or questioned: document checks that
-   force outing, extortion/bribery, police harassment or violence targeting trans
-   people, and whether police protect or worsen the situation.
-5. **Arrest & detention / prison placement** — if arrested (even for an unrelated minor
-   offence), whether the person is placed by birth sex or by gender, the risk of abuse in
-   a cross-gender or misgendered facility, and detention conditions for trans people.
-6. **Medication & healthcare continuity** — carrying HRT / gender-affirming medication
-   through customs (legality, prescription requirements, seizure risk); access to
-   emergency trans-relevant healthcare.
+1. **Border, transit & documents** — entry/visa treatment of changed/X markers;
+   airport body-scanner "anomaly" pat-downs; device searches; ticket mismatches;
+   border-police humiliation; everyday bureaucracy (hotels, SIM registration, card
+   mismatches) that forces outing.
+2. **Public presence & outing reaction** — harassment, misgendering, violence, being
+   filmed/doxxed, service refusals, and social hostility *specifically toward trans
+   people* (not general LGB); whether foreigner status protects or exacerbates.
+3. **Gendered spaces & facilities** — bathrooms AND locker rooms, saunas/baths/onsen,
+   women-only transport, hospital wards if injured, single-sex dorms; legal right,
+   social safety, and any criminal/civil exposure.
+4. **Police interaction** — stops forcing outing, extortion/bribery, app-based
+   entrapment, police harassment/violence toward trans people; protection or worsening.
+5. **Arrest & detention / prison placement** — placement by birth sex vs. gender;
+   forced genital/medical "verification"; immigration detention; abuse in misgendered
+   facilities; deportation destination risk.
+6. **Medication & healthcare continuity** — HRT import/customs/seizure, refills,
+   emergency-care discrimination, insurance exclusions.
+
+Also weigh (taxonomy §J): **family/diaspora exposure** for travelers visiting
+relatives (family-imposed violence, forced marriage, conversion-"therapy" captivity),
+and (§E) **predation patterns** targeting trans travelers (app ambushes, blackmail —
+travelers are soft targets). Score = probability-of-outing × severity-if-outed.
 
 **Non-scoring signals (cite only as weak *hostility/climate* context, clearly labelled
 as such — never as score drivers):**
