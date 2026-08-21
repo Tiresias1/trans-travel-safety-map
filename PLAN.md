@@ -146,12 +146,20 @@ For each country, in a sensible order (start with large/high-traffic and high-va
 countries to establish calibration anchors early — see §5.3):
 
 1. **Search.** One primary query such as
-   `"<country> transgender travelers safety laws risks"` — retrieve **20 results**.
-   Vary/extend with follow-up queries as needed, e.g.:
-   - `"<country> trans tourists arrested harassment"`
-   - `"<country> transgender legal gender recognition bathrooms"`
-   - `"<country> laws criminalizing cross-dressing transgender"`
-   - `"<country> travel advisory transgender LGBTQ" (e.g. US State Dept., UK FCDO, etc.)`
+   `"<country> transgender traveler safety if outed bathrooms prison passport"` —
+   retrieve **20 results**. The query set must surface the **six traveler-outing axes
+   of §5.2**, not general-LGB news. Mix axes across follow-up queries, e.g.:
+   - `"<country> trans tourist passport X gender marker entry denied border"`  (axis 1)
+   - `"<country> transgender harassment violence public transphobia incidents"`  (axis 2)
+   - `"<country> transgender bathroom law legal use facilities toilets"`  (axis 3)
+   - `"<country> transgender police stopped documents detained trans"`  (axis 4)
+   - `"<country> transgender prisoner placement women's prison detained"`  (axis 5)
+   - `"<country> import hormones HRT customs prescription transgender traveler"`  (axis 6)
+   Only fall back to general "LGBTQ rights" / ILGA-Rainbow-Map queries when the axis
+   queries return thin results — and treat those general hits as weak climate signals
+   (§5.2), never as the score basis. **Do not rely on a single preexisting map or index**
+   (ILGA Rainbow Map, Spartacus, Equaldex, FRA): search in every case, fetch the URLs,
+   and weigh primary sources over indices.
 2. **Fetch all 20 URLs.** Read each fetched page. (Pages that 404/paywall: note and move
    on; if fewer than ~8 usable pages remain, run follow-up searches to backfill.)
 3. **Follow-ups** when: sources conflict; only LGBTQ-general info found (need trans-
@@ -168,12 +176,24 @@ countries to establish calibration anchors early — see §5.3):
    later, not per-country.
 
 ### 4.2 Source-quality guidance
-Prefer: government travel advisories' LGBTQ/trans sections (US State Dept., UK FCDO,
-Canada, Australia Smartraveller), ILGA World / Transgender Europe / Equaldex (legal
-maps), Human Rights Watch / Amnesty country reporting, reputable news (court cases,
-arrests of trans travellers), and local trans-rights orgs. Weight recent (≤3 years)
-material higher; the map is dated "August 2026" so flag anything sourced older than
-~2022 as "verify recency".
+Prefer **trans-traveler-specific primary sources** over general LGBT indices:
+- Government travel advisories with a trans/gender-marker section (US State Dept., UK
+  FCDO, Canada, Australia Smartraveller, Germany AA, etc.) — these directly address
+  border/document/axis-1 risk to travelers.
+- Trans-specific country reporting: Transgender Europe (TGEU), ILGA World's *trans*
+  legal maps, Human Rights Watch / Amnesty country pages when they discuss trans
+  detention, prison placement, police abuse, or bathroom restrictions.
+- News of incidents involving trans *travelers/visitors* (border detentions, bathroom
+  arrests, prison-placement cases) — the most on-topic evidence.
+- Local trans-rights orgs for the violence/police/prison axes.
+
+Use **ILGA World / Equaldex / Human Dignity Trust legal maps only to locate the legal
+provisions**, then confirm each provision against its primary source (statute text,
+court ruling, news). **Do not use** the ILGA-Europe Rainbow Map %, the Spartacus Gay
+Travel Index, Equaldex overall %, or FRA general LGBTIQ survey as score inputs (§5.2):
+they are general/resident-LGB policy-completeness metrics, not trans-traveler-outing
+risk. Weight recent (≤3 years) material higher; the map is dated "August 2026" so flag
+anything sourced older than ~2022 as "verify recency".
 
 ### 4.3 ADM1 research loop
 gbOpen yields ~3,500+ ADM1 units globally — researching each individually is infeasible.
@@ -247,23 +267,50 @@ colour is continuous.)
 
 ### 5.2 What the score measures
 Risk **to a visitor** arising **specifically from being (discovered to be) trans**, across
-everyday situations, e.g.:
-- mere presence in public / going about daily life visibly or discoverably trans;
-- using public bathrooms and other gendered facilities;
-- interactions with police/border officials (documents not matching presentation;
-  entry bans; "cross-dressing"/"impersonation"/morality laws);
-- risk of arrest, and — critically — **risk of detention/prison in a facility mismatched
-  to their gender**, with attendant abuse risk;
-- violence/harassment by the public, and whether police would protect or worsen it;
-- access to routine healthcare incl. continuity of HRT (carrying medication legality);
-- negative public reaction that stays non-violent (mid-scale risk).
+everyday situations. The score must be driven by evidence on these **six traveler-outing
+axes** — every research note must address each axis where evidence exists:
 
-**Excluded from the score** (may be *mentioned* in text, explicitly flagged as
-out-of-scope): general crime/terrorism/health risks affecting everyone; LGB-specific
-risks not applicable to trans people; and **resident-only** issues (e.g. adoption rights,
-local employment discrimination, domestic transition healthcare systems) — except where
-they are evidence of *public/official hostility* that would bear on a visitor. Every
-research note must state when such evidence was used only as a hostility signal.
+1. **Border & documents** — entry/visa treatment of a passport carrying a *changed* or
+   `X` gender marker; device and social-media checks at the border; risk of questioning,
+   detention, or denial of entry for trans reasons.
+2. **Public presence & outing reaction** — the reaction if the traveler is visibly or
+   becomes known to be trans in public: harassment, misgendering, violence, and social
+   hostility *specifically toward trans people* (not general LGB).
+3. **Bathrooms & gendered facilities** — the legal right *and* social safety to use
+   gendered facilities (toilets, locker rooms, changing rooms, baths/onsen) matching
+   gender; any criminal or civil exposure from doing so.
+4. **Police interaction** — treatment if stopped or questioned: document checks that
+   force outing, extortion/bribery, police harassment or violence targeting trans
+   people, and whether police protect or worsen the situation.
+5. **Arrest & detention / prison placement** — if arrested (even for an unrelated minor
+   offence), whether the person is placed by birth sex or by gender, the risk of abuse in
+   a cross-gender or misgendered facility, and detention conditions for trans people.
+6. **Medication & healthcare continuity** — carrying HRT / gender-affirming medication
+   through customs (legality, prescription requirements, seizure risk); access to
+   emergency trans-relevant healthcare.
+
+**Non-scoring signals (cite only as weak *hostility/climate* context, clearly labelled
+as such — never as score drivers):**
+- General LGB rights — same-sex marriage, civil unions, adoption, blood donation, LGB
+  military service, and general "LGBTQ-friendliness" indices are NOT the topic.
+- General LGBT policy-completeness metrics — **ILGA Rainbow Map %, the Spartacus Gay
+  Travel Index, Equaldex overall scores, and the FRA general LGBTIQ survey** measure a
+  broad LGB+ policy basket and often weight resident/family/LGB items; do **not** map them
+  to the 0–1 score and do not let them create fine differentials. Use them at most as one
+  social-climate signal among many.
+- **Resident-facing trans law** — the destination's *domestic* legal-gender-recognition
+  regime for its own residents (self-ID vs judicial vs medical-gatekept), its transition-
+  healthcare system infrastructure, employment-discrimination law, conversion-therapy
+  bans, intersex infant-surgery bans, and adoption/name rules for residents — these affect
+  *residents*, not a short visitor's outing risk. (A domestic self-ID law is only a weak
+  proxy for social acceptance, which bears on axis 2.) Where the *destination's*
+  recognition of *foreign* documents is unclear, that is axis 1 and is score-relevant.
+
+**Excluded outright** (mention only in the popup's out-of-scope section): general
+crime/terrorism/health risks affecting everyone; LGB-specific risks not applicable to
+trans people. Every research note must state when a signal was used only as a hostility
+proxy, and must surface low-confidence axes where trans-traveler-specific evidence is
+thin.
 
 ### 5.3 Anchors (relative scale)
 Scores must make sense **relatively**, not just absolutely. The first countries researched

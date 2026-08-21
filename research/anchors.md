@@ -42,3 +42,25 @@ Rules:
   count only as hostility signals, per PLAN §5.2.
 - Countries not anchored here: cite ≥1 anchor by name in the note; place relative
   to two anchors where possible ("between THA and GBR").
+
+## Methodological correction (2026-08-21) — traveler-outing axes only
+Scores must be driven ONLY by the six traveler-outing axes in PLAN §5.2 (border/
+documents; public presence & outing reaction; bathrooms/facilities; police interaction;
+arrest & detention/prison placement; medication/HRT carry-in). General-LGB signals
+(same-sex marriage, adoption, conversion-therapy bans) and **general LGBT policy-
+completeness indices (ILGA Rainbow Map %, Spartacus, Equaldex, FRA survey)** are NOT
+score inputs; **resident-facing trans law** (domestic LGR regime, transition-healthcare
+infrastructure, employment law) is NOT a score driver either — only a weak hostility
+proxy for axis 2.
+
+**Western Europe cluster flag:** several of the easy-cluster scores (BEL, IRL, PRT, FRA,
+CHE, DEU, ESP, NLD, ISL, MLT) were initially differentiated partly by resident-facing
+LGR-completeness / ILGA-% signals. France was re-verified on the traveler axes (→ 0.82;
+the corrected lens surfaced real axis-1 border-police humiliation and axis-5 men's-prison
+placement risks that the general-LGBT framing had buried, plus an axis-3 trans-inclusive
+norm). The rest of the cluster **needs the same traveler-axis re-verification pass** —
+expect scores to compress somewhat where differentiators were resident-facing, and to
+move where real axis-1/4/5 evidence surfaces. In particular, the **France-vs-Germany gap
+is unconfirmed until Germany is checked on axis 5** (men's-prison placement of trans women
+— likely also present, which would compress the gap). New countries (Austria, Italy, …)
+are researched on the traveler axes from the start.

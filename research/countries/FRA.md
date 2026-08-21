@@ -1,78 +1,71 @@
-# France (FRA) — Research Note
-Researched: 2026-08-21 · Score: **0.83** · Band: Low Risk
+# France (FRA) — Research Note (REVISED on traveler-outing axes, 2026-08-21)
+Score: **0.82** · Band: Low Risk · (was 0.83 — the original leaned on the resident-facing
+"no self-ID statute" gap as a differentiator; rebuilt below on the §5.2 traveler axes,
+which surfaced real axis-1/4/5 risks that had been buried under general-LGBT framing.)
 
-## Sources read (search: 20 results, fetched 12)
-Défenseur des droits (framework decision 2025-112; press release); Outright International;
-ILGA Rainbow Map France (fetched); ILGA-Europe Annual Review 2026 France (PDF fail, from
-summary); ILGA-Europe 2024 France review (PDF fail, from summary); ILGA-Europe LGR
-2026 (PDF fail, from summary); LegalClarity (fetched — detailed Civil Code LGR);
-DNA/Assurance Maladie condemnations (fetched); Le Monde (US travel advice, fetched);
-HAS trans-adult care guidelines; BMC trans healthcare qualitative study (fetched);
-epath France care 2025 (PDF); bioethics/ART academic (isidore).
+## Sources (this traveler-axis pass: 20 results searched, 9 fetched)
+BuzzFeed "The Plight of Trans Women in French Prisons" (fetched — foreign trans women
+in men's prisons); CGLPL Opinion 25 May 2021 + APT summary (state detention watchdog);
+20minutes/Assemblée nationale (Louna case 2025); StreetPress (Giovanna border-police
+humiliation at CDG); InfoMigrants/Anafé (border waiting-zone discriminatory practices);
+Womens Forum Australia (Lyon hostel dorm-bathroom case — trans-inclusive norm);
+Le Monde/Connexion France (France US-travel-advice update on gender-at-birth);
+Fransgenre (foreign-document titre de séjour); earlier pass: Défenseur des droits
+framework decision 2025-112; Outright; LegalClarity; ILGA Rainbow Map France.
 
-## Key findings (with sources)
-- **LGR = judicial, NOT self-ID (since 2016):** Civil Code art. 61-5/61-6 (Law
-  2016-1547) — adult/emancipated minor changes sex on civil records via the Tribunal
-  judiciaire, proving mismatch with "social reality" (public presentation, social
-  recognition, prior name change); art. 61-6 EXPLICITLY bars refusal for lack of
-  medical treatment/surgery/sterilisation. Name change is a separate mairie procedure
-  (art. 60). Processing several months → ~1 year, varies by court. NO administrative
-  self-ID statute; NO non-binary recognition. [legalclarity.org, defenseurdesdroits.fr,
-  ilga-europe.org LGR 2026 (from summary)]
-- Défenseur des droits framework decision 2025-112 (17 Jun 2025): "persistent
-  shortcomings" of the legal framework; civil society in 2025 reiterated the lack of a
-  formal mechanism causes "daily obstacles" in employment, banking, healthcare, travel
-  → "discrimination, forced outing, denial of essential services"; particular concern
-  for trans minors; calls for "clear legislative developments." [defenseurdesdroits.fr,
-  trajectoiresjeunestrans.fr, ilga-europe.org]
-- Anti-discrimination + hate crime: gender identity a protected criterion (Law 2016-1547
-  inserted GI into discrimination law); Penal Code art. 132-77 — transphobic motive an
-  aggravating circumstance raising maximum sentences; Labour Code art. L1132-1 prohibits
-  employment discrimination on GI. Hate speech on SO/GI criminalised. [outrightinternational,
-  legalclarity.org]
-- Hate crime rising: SOS Homophobie +27% anti-LGBT hate crimes in 2022 (anti-trans
-  +27%); Ministry of Interior +3% 2021-2022; Le Refuge +10% youth support requests.
-  Data is 2022-vintage in the 2024 ILGA review; no fresher figures located. 
-  [ilga-europe.org 2024 (from summary)]
-- Healthcare: national insurance (Assurance Maladie) covers transition care via ALD
-  (long-term condition) status, depathologised since 2010 ministerial order. BUT CPAM
-  repeatedly CONDEMNED in 2025 for refusing reimbursement (Strasbourg, Grenoble, Lyon,
-  Paris region — "les condamnations se multiplient"); HAS published de-psychiatrising
-  adult care guidelines (Jul 2025: "l'identité de genre ne doit pas faire l'objet d'une
-  évaluation psychiatrique spécifique"). 2021 bioethics law: fertility preservation
-  right, but ART access restricted for trans men who changed civil status; trans women
-  excluded from ART/surrogacy (resident-facing). [legalclarity.org, dna.fr, has-sante.fr,
-  isidore.science]
-- Social: openly gay PM Gabriel Attal (2024); large Paris trans community (BMC study);
-  France updated its US travel advice on gender-"at birth" (Mar 2025, institutional
-  awareness). Trans asylum recognised since 1997. Marriage equality (2013).
-- No bathroom restrictions; no entry/border trans issues; CJEU Jan 2026 (Mousse) struck
-  SNCF's mandatory Mr/Ms train-title as GDPR-unlawful. No legislative rollback attempt.
+## Traveler-outing axis findings (§5.2)
+1. **Border & documents (axis 1):** No blanket refusal of X-marker/changed passports
+   is documented, but French border police have **humiliated trans travelers at CDG**:
+   StreetPress documents Giovanna, a trans woman, told at the border counter she was "a
+   trans whore who deserved to go back to her country." Anafé's annual report calls
+   French border waiting-zones (zones d'attente) "unequal, humiliating and discriminatory"
+   generally; the Giovanna case shows trans-specific targeting. Risk is concentrated at
+   the airport border for trans women, especially racialised/Latin-American travelers.
+2. **Public presence & outing (axis 2):** Anti-LGBT hate crime +27% in 2022 (SOS
+   Homophobie, anti-trans +27%); last hard figures 2022-vintage. Ordinary urban crime
+   in Paris/Marseille. Trans-specific social hostility exists but is low-severity for
+   visitors in tourist areas.
+3. **Bathrooms & facilities (axis 3):** **No legal restriction; social norm leans
+   trans-inclusive.** Lyon hostel case (Aug 2024): a woman who complained about a trans
+   person in a female dorm bathroom was the one sanctioned as "transphobic" by the
+   manager. Low axis-3 risk.
+4. **Police interaction (axis 4):** Border-police humiliation documented (see axis 1).
+   No systematic street-police trans-targeting reported for visitors.
+5. **Arrest & detention / prison placement (axis 5) — the real weakness:** France
+   incarcerates trans women in **men's** establishments based on legal gender on ID
+   (Criminal Procedure Code art. D248); placement flipped to women's only after genital
+   surgery or, inconsistently, after gynecological exams. BuzzFeed documents multiple
+   **foreign** trans women (Argentine: Daiana, Beatriz; Ecuadorian: Ariana, Paola)
+   placed in men's prisons (Fleury-Mérogis, Lille) in "vulnerable"/segregation units,
+   subjected to gynecological exams ("a circus"), isolation, and abuse from detainees
+   and guards; the CGLPL (state watchdog) says trans detainees "suffer the most." The
+   **Louna** case (2025): trans woman protester held in the men's prison at Tarbes in
+   isolation; MP question called it "unacceptable"; released 14 Feb 2025. A genuine,
+   documented, systemic traveler-relevant risk if arrested for any reason.
+6. **Medication/HRT (axis 6):** Carrying personal HRT within Schengen is uneventful;
+   the Assurance Maladie reimbursement battles (resident-facing) do not bear on a
+   visitor.
 
 ## Visitor-focused summary
-France is low-risk for a trans visitor: no criminalisation, no bathroom restrictions,
-no entry friction, hate-crime and anti-discrimination law covering gender identity, and
-a judicial legal-gender pathway that (since 2016) needs no medical proof — though it is
-a months-long court process rather than self-ID. The system's weak point, captured in
-the Défenseur des droits' 2025 framework decision, is the absence of an administrative
-self-ID procedure, which produces documented daily friction (banking, employment,
-documents); for a short visitor this is largely institutional rather than personal.
-Rising anti-LGBT hate crime (last hard figures 2022, +27% YoY) and ordinary urban
-crime in major cities are the practical caveats, alongside transition-care reimbursement
-disputes in the health system.
+For a trans visitor, France's risk concentrates on two axes. **If arrested** for any
+reason (incl. protest or minor offence), a trans woman is likely placed in a **men's
+prison** on the basis of her legal gender, with documented exposure to isolation,
+inconsistent genital-exam "verification," and abuse — a systemic failure the state
+detention watchdog and parliament have both flagged. **At the border**, trans women —
+especially racialised or Latin-American travelers — have been humiliated by border
+police (the Giovanna/CDG case), and border waiting-zones draw repeated discrimination
+criticism. Offsetting this: bathrooms are unrestricted and the social norm leans
+trans-inclusive, anti-discrimination and hate-crime law cover gender identity, and
+general crime is the main day-to-day hazard. The domestic absence of a self-ID statute
+(a resident-facing issue) is **not** a traveler-outing risk and is not scored; nor is
+the ILGA Rainbow Map 60% policy-completeness figure.
 
 ## Score rationale
-0.83 — Low Risk, below DEU (0.85) and the Iberian/Benelux/Irish cluster (0.86-0.90),
-well above GBR (0.74), around JPN (0.82).
-- Below DEU (0.85): France lacks a self-ID statute (Germany's SBGG is in force) and the
-  Défenseur documents persistent LGR friction; ILGA policy-completeness 60% vs DEU 70%.
-- Below ESP/BEL/NLD (0.88-0.90): no self-ID, no non-binary, ART restrictions, healthcare
-  reimbursement battles.
-- Above GBR (0.74) decisively: no facilities biological-sex code, working (if slow)
-  judicial LGR, Défenseur pushing pro-trans reform (positive trajectory), no rollback.
-- Around JPN (0.82): France has stronger legal protection/recourse (hate-crime
-  aggravation, anti-discrimination, judicial LGR) but somewhat higher practical incidents
-  and general urban crime; the two land near each other for different reasons.
-- The ILGA 60%/#15 ranking is used as ONE signal (it correctly flags the no-self-ID gap);
-  the visitor-risk score reflects current legal reality (protective, no rollback) +
-  documented friction + incident trajectory, not a mapping from the 60%.
+0.82 — Low Risk, ~tied with JPN (0.82), below DEU (0.85) and the Iberian/Benelux/Irish
+cluster (0.86-0.90), above GBR (0.74). The two traveler-relevant weaknesses — men's-
+prison placement of trans women (axis 5, severe-when-triggered, documented with foreign
+travelers) and border-police humiliation (axis 1/4) — keep France below Germany/Belgium
+for a traveler, even though Germany lacks self-ID-equivalent history... **CAVEAT: the
+France-vs-Germany gap cannot be confirmed until Germany is verified on axis 5 too**; if
+Germany also places trans women in men's prisons, the gap may compress. Pending that,
+France sits at 0.82. The ILGA 60% is not a score input.
