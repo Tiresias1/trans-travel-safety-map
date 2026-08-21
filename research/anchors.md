@@ -88,3 +88,21 @@ relevant (e.g., traveling with a partner in a country where unmarried cohabitati
 criminalised — which IS a trans-relevant axis-E risk factor, not a marriage-equality signal).
 No retroactive re-scoring needed: audit confirms no score was actually driven by marriage
 equality (real drivers: self-ID, hate-crime law, bathroom access, police, prison, violence, climate).
+
+## Methodological correction 4 (2026-08-21): LGR/GRC is a climate signal, NOT a direct protection
+A trans traveler won't apply for LGR in the destination country. Their gender marker comes
+from their home passport. LGR/self-ID in the destination country is a PROXY for institutional
+culture (axis K): countries with self-ID tend to have more trans-respecting institutions →
+lower police/social hostility. But it is NOT a direct traveler protection, and it does NOT
+offset active traveler restrictions.
+
+**Principle:** LGR presence/absence contributes to axis-K (climate/institutional signal) but
+never offsets active traveler restrictions (bathroom codes, strip-search policies, prison-
+placement rulings). A country can have self-ID AND bathroom restrictions simultaneously.
+
+**Impact:** UK was the outlier (GRC cited as a direct positive → UK 0.74→0.71→0.69→0.66).
+All other countries were already implicitly treating LGR as a climate signal. No other scores
+change. The UK at 0.66 reflects: 3 active traveler restrictions (daily bathroom code +
+nationwide strip-search + men's-prison) + Brianna Ghey + active rollback, offset by no
+border friction + hate-crime-GI (theoretical recourse) + no criminalisation + functional
+institutions.
