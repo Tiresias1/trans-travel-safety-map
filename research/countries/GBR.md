@@ -85,3 +85,41 @@ friction + documented violence + deteriorating climate), tied with Latvia (UK ha
 restrictions but better legal framework; Latvia has less daily risk but no recourse), 0.01
 above Hungary (better legal framework), 0.03 below Poland and Croatia, 0.05 below Chile
 (appropriate for Chile's 5-axis advantage), 0.12 below Uruguay.
+
+## Correction 2 (2026-08-21, LGR/GRC relevance to travelers)
+Score corrected: **0.69 → 0.66**. The GRC (Gender Recognition Certificate) requires 2 years'
+UK residence — a foreign visitor has no GRC and can't get one. The traveler's gender marker
+comes from their home country's passport; the UK's only relevant fact is accepting foreign
+documents (axis A). Marriage equality was already flagged as non-scoring (correction 1).
+After removing these non-traveler positives, the UK's traveler-facing profile is:
+
+Positives: no border friction + hate-crime-GI (theoretical recourse) + no criminalisation +
+functional institutions.
+
+Negatives: daily bathroom restriction (the UK is the ONLY country above 0.55 with a
+nationally-legislated bathroom restriction — Peru 0.48 and USA 0.52 are the only others, and
+theirs are criminal) + nationwide biological-sex strip-search policy (the UK is the ONLY
+country in the dataset with this as a documented nationwide policy) + men's-prison placement
+post-SC + Brianna Ghey + other documented killings + actively deteriorating climate.
+
+UK at 0.66 is: tied with Lithuania (0.66: no restrictions + conservative climate) and South
+Africa (0.66: strong law + law-vs-practice gap) — three different profiles, same risk level;
+0.02 above Serbia (0.64); 0.01 below Romania (0.67); 0.02 below Hungary (0.68: banned-LGR
+but no daily restrictions); 0.03 below Latvia (0.69: no active restrictions despite no legal
+recourse — Latvia's absence-of-protections is less severe for a visitor than the UK's three
+active restrictions).
+
+The key methodological insight: LGR/self-ID is a CLIMATE SIGNAL (axis K — institutional
+culture proxy), not a direct traveler protection. A traveler won't apply for LGR. This was
+already the implicit treatment in most countries' rationales (where self-ID functioned as a
+climate/institutional signal); the UK was the outlier where the GRC was incorrectly cited
+as a direct positive. No other country's score changes from this correction.
+
+## Note on LGR as climate signal (applies dataset-wide)
+LGR/self-ID correlates with institutional respect for trans identity → lower police/social
+hostility → lower axis-D/K risk. It is a PROXY, not a protection. A country can have self-ID
+and bathroom restrictions simultaneously (UK: GRC + bathroom code). Conversely, a country
+without LGR might have no daily restrictions (Latvia). Score weighting: LGR presence/absence
+contributes to axis-K assessment (institutional culture) but does NOT offset active traveler
+restrictions (bathroom codes, strip-search policies, prison-placement rulings). This principle
+was already implicitly applied to all other countries; the UK was the outlier.
