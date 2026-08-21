@@ -19,8 +19,8 @@ researchedAt) is in `data/countries.json`. Anchors are FROZEN — see anchors.md
 ☑ AFG 0.02
 
 ## Countries (Phase 3) — suggested batches (mark ☑ with score when done)
-Batch 1 — Western/Central Europe: ☐ PRT ☐ IRL ☐ BEL ☐ FRA ☐ CHE ☐ AUT ☐ ITA
-☐ LUX ☐ NLD-done-as-anchor etc.
+Batch 1 — Western/Central Europe: ☑ PRT 0.86 ☑ IRL 0.87 ☑ BEL 0.89 ☑ FRA 0.83 ☑ CHE 0.85 ☐ AUT ☐ ITA
+☐ LUX ☐ (NLD anchor 0.88) ☐ MCO ☐ SMR ☐ AND ☐ LIE ☐ VAT.
 Batch 2 — Nordics/Baltics/East EU: ☐ DNK ☐ NOR ☐ SWE ☐ FIN ☐ EST ☐ LVA ☐ LTU
 ☐ POL ☐ CZE ☐ SVK ☐ HUN ☐ ROU ☐ BGR ☐ GRC ☐ HRV ☐ SVN ☐ SRB ☐ XKX ☐ BIH ☐ MKD
 ☐ ALB ☐ MDA ☐ UKR ☐ BLR ☐ CYP
