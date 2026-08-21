@@ -61,3 +61,18 @@ Score: **0.71** · Band: Reduced Risk
   countries lack — an argument for placing Chile above some European peers despite the
   regression trajectory. But the Ever murder + hotel attack + "consensus breakdown" keep it in
   the Reduced Risk band, below the top.
+
+## Correction (2026-08-21, regrounding via UK baseline)
+Score corrected: **0.71 → 0.74**. The original 0.71 tied Chile with the UK (0.71) despite
+Chile being systematically better on 5 axes (B: self-ID 2019 vs UK court-GRC; C: no bathroom
+restriction vs UK in-force daily code; F: UN-HRC commended police vs UK biological-sex
+strip-search; H: positive Gendarmería gender-identity placement vs UK men's-prison post-SC;
+K: legislative stagnation vs UK active in-force restrictions). Both have documented trans
+killings (Chile: Ever; UK: Brianna Ghey 2023 + others), so D/E is comparable.
+
+Chile at 0.74 is: above UK (0.71) by 0.03 (5-axis advantage); above Argentina (0.73) by 0.01
+(lower violence + positive Gendarmería + no Milei offset Argentina's older self-ID 2012 +
+Buenos Aires tourist-welcoming); below Uruguay (0.81) by 0.07 (Uruguay: stable progressive +
+reparation pension + state quota + "safest in LatAm" + protected bathrooms + no regression).
+Argentina (0.73) stays unchanged — above UK by 0.02 (self-ID 2012 world-first + Buenos Aires
+offset Milei + 227 hate crimes + amendment), below Chile by 0.01, below Uruguay by 0.08.
