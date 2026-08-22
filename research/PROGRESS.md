@@ -84,3 +84,12 @@ Tier C: inherit with disclosure line (default for countries with no variance not
 - Next: Phase 4 (ADM1 research) — USA states, Canada, Australia, Mexico, Brazil, India,
   Russia, China, Germany, Spain, UK, UAE, Saudi, Indonesia, Nigeria, Argentina, Japan, Italy
   as Tier A; then Tier-B groups; then Tier-C inheritance.
+
+## 2026-08-21 (final country phase) — Countries list COMPLETE
+- 233/233 geojson features scored = 196 sovereign states (193 UN + VAT/PSE/XKX/TWN as
+  de jure units) + 37 dependencies/territories.
+- Systematic reanalysis pass applied (sodomy situational, burden-of-proof symmetry,
+  resident-facing demoted to climate): 70 adjusted, ~60 held. Table: research/reanalysis-2026-08-21.md.
+- Calibration rules #1–6 in research/anchors.md. Audits: research/audit-2026-08-21.md.
+- Next: Phase 4 ADM1 (Tier-A: USA, CAN, AUS, MEX, BRA, IND, RUS, CHN, DEU, ESP, GBR,
+  ARE, SAU, IDN, NGA, ARG, JPN, ITA; then Tier-B groups, Tier-C inheritance).
