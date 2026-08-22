@@ -136,3 +136,18 @@ Western clusters (USA/POL/HUN etc.) in drift checks.
 - **HUN 0.68 / POL 0.72 held**: 0.04 gap justified by German court's extradition-refusal finding
   on Hungary (none equivalent for Poland); Poland has UN-documented underreporting but no
   judicial-rights-violation finding of that severity.
+
+## Methodological correction #6 (2026-08-21): Anchored corrections are not corrections
+Failure case: WSM. A pairwise audit showed Samoa winning/tying nearly every traveler-facing
+axis against SVK (0.69), GRC (0.75), ROU (0.67), HUN (0.68) — yet the "fix" moved it only
+0.61→0.67, still below the countries the analysis said it beat. The score was anchored to
+the original regional stereotype (Pacific island = Elevated), not derived from the analysis.
+RULE: when a pairwise analysis refutes a score, the new score must be derived from the
+analysis's axis outcomes (which countries does it beat, tie, lose to, on which axes, and how
+are those countries scored?), never nudged from the old value. A correction that preserves
+the refuted conclusion is evidence of the bias it claims to fix. Related: correction #5
+(no regional flattening) — this is its single-country form.
+Also codified: same-sex/sodomy statutes are situational risks (they reach only the fraction
+of trans visitors whose relationships read as same-sex under birth-sex legal status, or whom
+police extort via them), weighted ~0.01–0.03 depending on documented trans-specific
+enforcement, never a primary score driver on their own.

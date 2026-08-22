@@ -16,3 +16,6 @@ Sources:
 
 ## Third revision: European grab-bag pairwise audit
 0.61 -> 0.67. Compared axis-by-axis vs SVK/GRC/ROU/HUN/EST/CZE. Error found: asymmetric treatment — European states credited for absence of documented negatives, WSM not credited for documented positive (fa'afafine institutionalization). WSM beats SVK/GRC/ROU/HUN on most traveler-facing axes (public presence, police predation, state hostility); EST/CZE edge justified but smaller than 0.13. New: level with ROU/XKX 0.67.
+
+## Fourth revision: anchored-correction failure called out
+0.67 -> 0.75. The 0.67 "fix" was itself biased: the pairwise analysis showed WSM winning or tying nearly every traveler axis vs SVK/GRC/ROU/HUN, yet the score stayed below all of them — anchoring to the original regional-stereotype number instead of deriving from the analysis. Corrected per the analysis: WSM = GRC 0.75 (WSM wins C/E/I, loses only K climate), 0.02 below EST (institutional recourse only).
