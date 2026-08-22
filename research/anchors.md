@@ -106,3 +106,33 @@ change. The UK at 0.66 reflects: 3 active traveler restrictions (daily bathroom 
 nationwide strip-search + men's-prison) + Brianna Ghey + active rollback, offset by no
 border friction + hate-crime-GI (theoretical recourse) + no criminalisation + functional
 institutions.
+
+## Methodological correction #5 (2026-08-21): No regional flattening — pairwise evidence justification required
+User challenged the Gulf cluster (0.10–0.15, suspiciously flat) as regional pattern-matching
+("Middle East = low, West = high"). Second research pass found real differentiation
+(KWT statute repealed + court compensation → 0.21; OMN enforced statute + documented
+traveler airport abuse → 0.09; QAT worst police practice → 0.12). RULE: every country's
+score must be justifiable by a pairwise comparison against at least one neighbor and one
+anchor ("why is X 0.02 above/below Y?"). A cluster of similar scores within a region is
+suspicious unless the pairwise justifications are written down. Same scrutiny applies to
+Western clusters (USA/POL/HUN etc.) in drift checks.
+
+## Re-weighing pass (2026-08-21): Western key nodes
+- **USA 0.52 → 0.50**: new evidence of traveler-specific harms — 8+ European governments issued
+  trans-traveler warnings for the US (Mar 2025); German traveler Jessica Brösche detained weeks
+  at US border & deported (Jan 2025); first bathroom-law arrest (Marcy Rheintgen, FL, Apr 2025,
+  jailed overnight); trans man detained by police in SC; CBP sexual-contact lawsuit (Logan).
+  US now ties MEX 0.50 (different risk profiles: US institutional hostility ≈ MX lethal-violence
+  probability), sits above PER 0.48. UK gap (0.66) holds at +0.16: UK has bathroom code +
+  strip-search + men's-prison policy but NO foreign travel warnings, NO foreign-visitor
+  detentions, NO bathroom arrests.
+- **GBR 0.66 held**: pairwise vs ROU 0.67 (Romania lacks UK's three active restrictions) and
+  HUN 0.68 (German Constitutional Court blocked extradition of non-binary person TO Hungary on
+  EU Charter grounds — a judicial finding about Hungary that doesn't exist for the UK, but UK's
+  active bathroom/strip-search/prison regime vs Hungary's passive hostile climate nets out ~0.02).
+- **DEU 0.84 → 0.83**: drift correction — ~35% rise in gender-diversity hate-crime assaults 2024
+  (1,152) + Frankfurt Airport trans harassment complaint (BASHKKA, resolved via legal complaint
+  mechanism). Still above GBR by 0.17: Germany issued traveler warnings, has no bathroom law.
+- **HUN 0.68 / POL 0.72 held**: 0.04 gap justified by German court's extradition-refusal finding
+  on Hungary (none equivalent for Poland); Poland has UN-documented underreporting but no
+  judicial-rights-violation finding of that severity.
