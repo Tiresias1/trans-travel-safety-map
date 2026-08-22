@@ -62,3 +62,16 @@ Länder lower), RUS (North Caucasus group, Tier B).
 Tier B groups: RUS-North-Caucasus; consider IND/NIR states, NGA sharia states,
 IDN Aceh.
 Tier C: inherit with disclosure line (default for countries with no variance notes).
+
+## 2026-08-21 — Batches 12-16 (Kimi/second-model session)
+- Re-scored Gulf cluster after user flattening challenge (calibration rule #5: pairwise
+  justification required, no regional pattern-matching): KWT 0.21, BHR 0.17, ARE 0.13,
+  QAT 0.12, OMN 0.09, SAU 0.05.
+- Re-weighed Western nodes: USA 0.52→0.50 (EU travel warnings, Brösche detention, first
+  bathroom-law arrest); DEU 0.84→0.83; GBR 0.66 held with written pairwise justification.
+- Eastern Europe: BGR 0.63, SVK 0.69, BLR 0.13, UKR 0.62, MDA 0.65.
+- Microstates + Cyprus: LUX 0.89, AND 0.83, MCO 0.78, SMR 0.77, LIE 0.76, VAT 0.75, CYP 0.74.
+- Asia: KHM 0.61, NPL 0.64, LKA 0.33, MNG 0.62, MMR 0.15.
+- LatAm/Caribbean: CUB 0.67, ECU 0.57, JAM 0.31, TTO 0.42.
+- Africa: GHA 0.24, MAR 0.25, DZA 0.22, TUN 0.19, CMR 0.21, TZA 0.18, ETH 0.24.
+- **Total: 94/195 countries.** Bands: Low 17+7=24?, Reduced ~30, Elevated ~12, High ~13, DNT ~15.
