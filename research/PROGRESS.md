@@ -75,3 +75,12 @@ Tier C: inherit with disclosure line (default for countries with no variance not
 - LatAm/Caribbean: CUB 0.67, ECU 0.57, JAM 0.31, TTO 0.42.
 - Africa: GHA 0.24, MAR 0.25, DZA 0.22, TUN 0.19, CMR 0.21, TZA 0.18, ETH 0.24.
 - **Total: 94/195 countries.** Bands: Low 17+7=24?, Reduced ~30, Elevated ~12, High ~13, DNT ~15.
+
+## 2026-08-21 (late) — Coverage complete
+- All 233 geojson features scored. Batches: Caribbean wave, Pacific, W/C/E/S Africa,
+  MENA conflict states, Korea/Palestine, and 37 dependencies via documented parent+delta.
+- Random pairwise audit (12 pairs, seed 20260821): 10 hold, 2 adjusted (MNE +0.01, VAT −0.05).
+- Band distribution recorded in meta.json.
+- Next: Phase 4 (ADM1 research) — USA states, Canada, Australia, Mexico, Brazil, India,
+  Russia, China, Germany, Spain, UK, UAE, Saudi, Indonesia, Nigeria, Argentina, Japan, Italy
+  as Tier A; then Tier-B groups; then Tier-C inheritance.
