@@ -1,10 +1,12 @@
-# Samoa (WSM) — 2026-08-21
-Score: **0.48** · Elevated Risk
+# Samoa (WSM) — 2026-08-21 (revised after user challenge)
+Score: **0.56** · Elevated Risk
 
-Summary in data/countries.json.
+Key correction: Samoa REPEALED its colonial "female impersonation" statute in the Crimes Act 2013 (the impersonation statute I cited belongs to TONGA, not Samoa). Fa'afafine institutionalization: customary land heirs, matai-title eligible, SFA as formal UPR stakeholder. Sodomy (5yr, male) remains, unenforced; gov rejected Law Reform Commission repeal recommendation. APTN documents discrimination/cyberbullying/GBV; isolated police-harassment reports (2 respondents, no convictions).
 
 Sources:
-- https://www.humandignitytrust.org/country-profile/samoa/
 - https://www.weareaptn.org/2024/05/09/reimagining-our-future-a-recap-of-the-asia-pacific-transgender-network-convening-in-the-pacific-islands/
-
-Pairwise anchors: TON, FJI, PNG
+- https://www.humandignitytrust.org/country-profile/samoa/
+- https://upr-info.org/sites/default/files/documents/2021-10/sfa_upr39_wsm_e_main.pdf
+- https://www.reuters.com/article/world/samoas-third-gender-delicately-balances-sex-and-religion-idUSKCN1UQ01Z/
+- https://www.weareaptn.org/wp-content/uploads/2022/10/APTN-SES-Samoa-Final.pdf
+- https://www.rnz.co.nz/news/pacific/211958/relief-among-samoan-fa-afafine-at-removal-of-impersonation-crime
