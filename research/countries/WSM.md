@@ -13,3 +13,6 @@ Sources:
 
 ## Second revision (user challenge: sodomy is tangential, list actual negatives)
 0.56 -> 0.61 Reduced Risk. Actual trans-visitor negatives: no anti-discrimination law / LGR (resident-facing), GBV/cyberbullying docs (mostly resident/domestic), isolated police harassment (2 reports, no convictions), village fono conservative-norm enforcement (plausible, undocumented vs visitors). Sodomy statute weighted as situational (~-0.01), not a primary driver.
+
+## Third revision: European grab-bag pairwise audit
+0.61 -> 0.67. Compared axis-by-axis vs SVK/GRC/ROU/HUN/EST/CZE. Error found: asymmetric treatment — European states credited for absence of documented negatives, WSM not credited for documented positive (fa'afafine institutionalization). WSM beats SVK/GRC/ROU/HUN on most traveler-facing axes (public presence, police predation, state hostility); EST/CZE edge justified but smaller than 0.13. New: level with ROU/XKX 0.67.
