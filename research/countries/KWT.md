@@ -1,56 +1,95 @@
-# Kuwait (KWT) — Research Note (traveler-outing axes, 2026-08-21)
+# Kuwait (KWT) — Research Note (revised with trans-specific evidence, 2026-08-21)
 Score: **0.15** · Band: Do Not Travel
 
-## Axis findings (taxonomy A–K)
-- **A Border/transit:** No directly-documented trans-visitor border case (unlike UAE's X-ray/
-  Qatar's Guerrero Aviña conviction). BUT: Article 198 "imitating the opposite sex" — while
-  ruled unconstitutional (Feb 2022, Constitutional Court), enforcement history + general anti-
-  LGBT climate create risk for visibly trans visitors.
-- **B Documents/bureaucracy:** No LGR for trans people (only intersex can access Sharia-governed
-  gender-change process — "no reports of transgender individuals utilizing this avenue").
-  **Gender-affirming healthcare ILLEGAL** (Cairo 52). [cairo52.com]
-- **C Gendered spaces:** Article 198 "imitating the opposite sex" — ruled unconstitutional
-  (Feb 2022, Constitutional Court, HRW/LOC: "positive step"). BUT: the ruling struck the
-  specific statute; general morality provisions + Sharia still apply. Enforcement history:
-  Article 198 was actively enforced before the ruling (arrests, fines, imprisonment for
-  "imitating"). The ruling is a positive trajectory but the general anti-trans climate persists.
-  [hrw.org, loc.gov, cairo52.com]
-- **D/E Violence:** US State Dept: "arbitrary arrest or detention" + "torture or cruel,
-  inhuman, or degrading treatment." Outright: "persistent discrimination" against LGBT people.
-  No documented trans-specific killing.
-- **F Police:** Article 198 enforcement history (arrests for "imitating the opposite sex").
-  US State Dept: "torture or cruel, inhuman, or degrading treatment by government agents."
-  Cairo 52 UPR report: "systemic barriers" for trans people.
-- **G Law (same-sex 7 years + gender-affirming healthcare ILLEGAL):** Penal Code Art 193:
-  same-sex between men — maximum **7 years' imprisonment**. Women not explicitly criminalised
-  but "effectively prohibited" (Outright). **Article 198 "imitating the opposite sex"** ruled
-  unconstitutional (Feb 2022) — but Article 198's repeal is a POSITIVE trajectory (the only
-  Gulf state where a cross-dressing statute has been struck down). Gender-affirming healthcare
-  ILLEGAL (Cairo 52). No LGR for trans; no anti-discrimination law. [humandignitytrust.org,
-  outrightinternational.org, cairo52.com, hrw.org, loc.gov]
-- **H Detention/prison:** US State Dept: "arbitrary arrest or detention" + "torture." No
-  documented trans-specific prison-placement case.
-- **I Health/medication:** **Gender-affirming healthcare ILLEGAL** (Cairo 52) — HRT carry-in
-  hazardous under the anti-LGBT climate + healthcare-prohibition.
-- **K State & media climate:** Conservative Gulf state; "highly restricted" rights for sexual
-  and gender minorities (Outright). BUT: Article 198 unconstitutional ruling (Feb 2022) is a
-  POSITIVE trajectory (unique among Gulf states). Cairo 52 + White Tent UPR submission
-  (2024): "urgent reforms needed." Civil society limited but active (Cairo 52 UPR engagement).
+## Axis findings (trans-specific, traveler-focused)
+
+### G. Law (cross-dressing statute — STRUCK DOWN but history of enforcement)
+- **Article 198 (2007 amendment): criminalised "imitating the opposite sex in any way"** —
+  up to 1 year in jail and/or 1,000 dinar fine. Passed unanimously by 40 MPs after an
+  Islamist MP's "Study of Negative Phenomena Alien to Kuwaiti Society" committee. The law
+  "criminalised all transgender Kuwaitis" — even post-surgery trans people were deemed
+  to be "imitating." No definition of "imitating" was given — left entirely to police
+  discretion. [Brian Whitaker / Medium]
+- **Constitutional Court (Feb 2022): ruled Article 198 unconstitutional** — violating
+  Article 30 (personal freedom). HRW: "a positive step." However, the ruling hasn't been
+  fully tested in practice; general morality provisions still exist. [hrw.org, loc.gov]
+
+### F. Police (documented, trans-specific — during Art 198 era)
+- **Within 2 weeks of Art 198's passage, at least 14 people arrested** — several at police
+  checkpoints, one in a coffee shop, two in a taxi. HRW reported **3 beaten (1 into
+  unconsciousness), all denied access to lawyers**, all had **heads shaved as punishment**
+  at Tahla prison. [Brian Whitaker / Medium, hrw.org]
+- HRW's 2012 report **"They Hunt Us Down for Fun"** documented police violence against
+  transgender women in Kuwait, including arrests based solely on gender expression.
+  [hrw.org (from Brian Whitaker citation)]
+- US State Dept 2023: "torture or cruel, inhuman, or degrading treatment by government
+  agents" (general, but the trans-specific Art 198 enforcement history is documented
+  above). [ecoi.net]
+
+### B. Documents
+- No LGR for trans people; only intersex can access a Sharia-governed gender-change
+  process ("no reports of transgender individuals utilizing this avenue").
+  [cairo52.com (from earlier search)]
 
 ## Score rationale
-0.15 — Do Not Travel, ~tied with QAT (0.14)/ARE (0.13), above SAU (0.05)/IRN (0.09)/BRN (0.07).
-- ~tied with QAT (0.14)/ARE (0.13): all Gulf states with same-sex criminalisation + no LGR +
-  conservative anti-LGBT climate. Kuwait has the **Article 198 unconstitutional ruling** (a
-  unique POSITIVE among Gulf states — struck down the cross-dressing/"imitating" statute in
-  Feb 2022) + lower same-sex penalty (7 years vs UAE 14 years vs Qatar unclear death-penalty
-  application). BUT Kuwait has **gender-affirming healthcare ILLEGAL** (a unique NEGATIVE —
-  worse than UAE/Qatar on axis-I). Net: close to UAE/Qatar, with the Art-198-ruling offset by
-  the healthcare-prohibition.
-- Above SAU (0.05)/IRN (0.09): no death penalty (Saudi has death framework; Iran has death
-  penalty applied); no documented state-custody rape/forced-transitions (Iran). BUT Kuwait
-  has healthcare ILLEGAL + same-sex 7 years (Saudi/UAE also criminalise).
-- Below MYS (0.28): Kuwait has same-sex criminalised nationally (7 years, applies to all;
-  Malaysia's s377A/B is 20 years but Sharia-for-Muslims only + Malaysia has no national penal-
-  code criminalisation). Kuwait's Article 198 ruling is a positive Malaysia lacks, but
-  Malaysia has a functional hijra/third-gender social context + lower documented state
-  violence.
+0.15 — Do Not Travel. ~tied with QAT (0.14)/ARE (0.13), above BHR (0.12)/OMN (0.10)/SAU (0.05).
+- Kuwait's Article 198 had the most documented **trans-specific mass-arrest and police-violence
+  history** among the Gulf states (14+ arrested in 2 weeks; 3 beaten; heads shaved; HRW report
+  "They Hunt Us Down for Fun"). BUT the Constitutional Court struck Art 198 in 2022 —
+  a positive trajectory unique among Gulf states (no other Gulf state has struck down a
+  cross-dressing statute).
+- The Art 198 ruling makes Kuwait marginally above Qatar (0.14: no cross-dressing statute
+  struck down; trans women arrested via morality laws with documented severe abuse) and UAE
+  (0.13: no cross-dressing statute struck; most documented trans-visitor border cases).
+- Gender-affirming healthcare "illegal" (Cairo 52) — this is a resident-facing signal of
+  institutional hostility, NOT a direct traveler risk (a visitor brings their own HRT).
+  Previously over-weighted in my earlier note.
+- Same-sex conduct criminalised (7 years) — general-LGB climate signal, NOT a direct
+  trans risk. Previously over-weighted.
+
+---
+
+# Bahrain (BHR) — Research Note (revised, 2026-08-21)
+Score: **0.12** · Band: Do Not Travel
+
+## Axis findings
+- Same-sex sexual activity **decriminalised in 1976** (unique among Gulf states). BUT
+  indecency laws used to target gender and sexual minorities — imprisonment, fines,
+  **deportation** (axis G). Trans people can be arrested under indecency provisions.
+  [Wikipedia]
+- A Bahraini court (2024) rejected a trans man's LGR application citing Islamic Sharia
+  (axis K climate signal — institutional rejection). [cairo52.com]
+- Human-rights researchers denied entry to Bahrain; documentation is scarce. Local media
+  report arrests of transgender individuals but details limited. [cairo52.com]
+
+## Score rationale
+0.12 — Do Not Travel. Below QAT/KWT/ARE (thinner trans-specific evidence; same-sex
+decriminalised unlike other Gulf states; no documented trans-visitor border case), above
+OMN (0.10: no explicit gender-expression criminalisation statute, unlike Oman's 2018
+Penal Code). Bahrain's evidence is the THINNEST of the Gulf states — the score reflects
+the general anti-trans climate (indecency-law targeting + Sharia-cited LGR rejection +
+deportation penalty) rather than specific documented trans-visitor cases.
+
+---
+
+# Oman (OMN) — Research Note (revised, 2026-08-21)
+Score: **0.10** · Band: Do Not Travel
+
+## Axis findings
+- **Penal Code (2018, Royal Decree 7/2018): explicitly criminalises transgender expression
+  and identity** — up to 3 years. A codified trans-specific statute (unlike Qatar's
+  morality-law approach or UAE's precedent-based system). [humandignitytrust.org]
+- Cairo 52/White Tent UPR (2025): "systemic legal and institutional discrimination";
+  "recent legislative developments have **deepened** criminalisation of gender expression."
+  [cairo52.com]
+- **"Extends to foreign nationals and digital activity"** — a trans visitor's online
+  presence could be grounds for prosecution. [legalclarity.org]
+
+## Score rationale
+0.10 — Do Not Travel. Below QAT/KWT/ARE/BHR: Oman's explicit, codified gender-expression
+criminalisation (2018 Penal Code) is MORE directly trans-targeting than Qatar's morality-law
+approach, UAE's precedent system, Kuwait's struck-down statute, or Bahrain's indecency laws.
+The "extends to foreign nationals and digital activity" provision makes it directly
+visitor-relevant. However, Oman's penalty is lower (3 years vs UAE 14 years same-sex) and
+no trans-visitor-specific case is documented. Above SAU (0.05: no death penalty, no
+documented custodial death, no morality police raids).
