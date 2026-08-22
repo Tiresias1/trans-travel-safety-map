@@ -10,3 +10,6 @@ Sources:
 - https://www.reuters.com/article/world/samoas-third-gender-delicately-balances-sex-and-religion-idUSKCN1UQ01Z/
 - https://www.weareaptn.org/wp-content/uploads/2022/10/APTN-SES-Samoa-Final.pdf
 - https://www.rnz.co.nz/news/pacific/211958/relief-among-samoan-fa-afafine-at-removal-of-impersonation-crime
+
+## Second revision (user challenge: sodomy is tangential, list actual negatives)
+0.56 -> 0.61 Reduced Risk. Actual trans-visitor negatives: no anti-discrimination law / LGR (resident-facing), GBV/cyberbullying docs (mostly resident/domestic), isolated police harassment (2 reports, no convictions), village fono conservative-norm enforcement (plausible, undocumented vs visitors). Sodomy statute weighted as situational (~-0.01), not a primary driver.
