@@ -191,8 +191,10 @@
       return inherited;
     }
     const score = Math.round(rec.score * 100) / 100;
-    const colour = gradientColour(score);
-    const label = bandLabel(score);
+    // Colour and band come from the raw score (or the stored band, which is
+    // authoritative) so a 0.5999 is not shown as "0.60 Reduced Risk".
+    const colour = gradientColour(rec.score);
+    const label = typeof rec.band === "string" && rec.band ? rec.band : bandLabel(rec.score);
     let sub, rank;
     if (modeKey === "countries") {
       sub = "";

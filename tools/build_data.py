@@ -6,7 +6,9 @@ Reads:  data/countries.json (hand/data-model maintained), data/admin1.json
 Writes: data/meta.json; augments records with rank fields.
 
 Validation rules (fail loudly):
-- score in [0,1], exactly 2 decimals
+- score in [0,1]; stored at full precision (normalised to 6 dp) so that
+  iterative refinement (tools/blind_pairwise.py) can drift scores in small
+  increments. The UI displays 2 dp only.
 - band consistent with score
 - summary non-empty, 1-4 <p> paragraphs, <= 2500 chars
 - sources non-empty unless inherited
@@ -48,8 +50,9 @@ def check_record(iso, r, errors, inherited_ok=False):
     sc = r["score"]
     if not (0 <= sc <= 1):
         errors.append(f"{iso}: score out of range: {sc}")
-    if round(sc, 2) != sc:
-        errors.append(f"{iso}: score not 2dp: {sc}")
+    # NB: scores are normalised to 6 dp in main() before this check runs, so
+    # extra precision is silently rounded rather than rejected — that is what
+    # lets tools/blind_pairwise.py drift scores in sub-cent increments.
     if "band" in r and r["band"] != band_label(sc):
         errors.append(f"{iso}: band mismatch: {r['band']} vs {band_label(sc)}")
     if not valid_summary(r.get("summary", "")):
@@ -59,13 +62,19 @@ def check_record(iso, r, errors, inherited_ok=False):
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(r.get("researchedAt", ""))):
         errors.append(f"{iso}: bad/missing researchedAt")
 
-def add_ranks(d, total, key="rank"):
-    """competition ranking: ties share best rank"""
+def add_ranks(d, total, key="rank", tie_dp=2):
+    """competition ranking: ties share best rank.
+
+    Ties are judged at display precision (2 dp) so that scores differing only
+    in the 4th-6th decimal — the residue of iterative refinement — do not
+    produce a rank order the UI cannot show.
+    """
     items = sorted(d.items(), key=lambda kv: -kv[1]["score"])
     prev = None; rank = 0
     for i, (k, r) in enumerate(items, 1):
-        if prev is None or r["score"] != prev:
-            rank = i; prev = r["score"]
+        key_val = round(r["score"], tie_dp)
+        if prev is None or key_val != prev:
+            rank = i; prev = key_val
         r[key] = rank
     return d
 
@@ -77,6 +86,9 @@ def main():
     geo_isos = {f["properties"]["iso3"] for f in geo["features"]}
 
     for iso, r in countries.items():
+        # normalise to 6 dp so tiny drift increments survive round-trips
+        if isinstance(r.get("score"), float):
+            r["score"] = round(r["score"], 6)
         check_record(iso, r, errors)
     missing = geo_isos - set(countries)
     if missing:
