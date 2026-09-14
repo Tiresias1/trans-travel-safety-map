@@ -1,19 +1,21 @@
 # Outing-Risk Taxonomy for Trans Travelers — Research Checklist
 
-Companion to PLAN §5.2. **Scan this whole list for every country** so the score doesn't
-tunnel-vision on a handful of parameters (the historical over-focus: border, bathrooms,
-prison). Not every item will have evidence in every country — note the axes where the
-country has no trans-specific signals at all, and flag low-confidence ones.
+Companion to PLAN §5.2. **Think about this list for every country** so the score doesn't tunnel-vision on a handful of parameters. Not every item will have good evidence in every country; you just need to do your best.
 
-Two dimensions always apply: **probability of being outed** (documents routinely
-checked? scanners? social cues? police spot-checks?) × **severity if outed**
-(discretion-tolerant society vs. catastrophic exposure). Example: Gulf states are
-low-probability/catastrophic-severity; some European countries are
-higher-probability/low-severity. The score reflects both.
+Two dimensions always apply: **probability of being outed** (documents routinely checked? scanners? social cues? police spot-checks?) and **severity if outed** (discretion-tolerant society vs. catastrophic consequences).  But do consider that every trans person always bears some probability of being outed, even if there's no "surveilance"; consequences are a more important aspect than percentage.  Also keep in mind the difference between laws on the books vs. how consistently they're enforced.
 
+Consider but do not overvalue individual stories about cases of anti-trans violence; there's a risk of falling for selection bias, e.g. a single case might be high-profile, while another country might have crimes so common that they barely make the press. That said, individual press cases are not irrelevant.
+
+Remember that this is not about general travel safety. Remember that this also is not about general LGBTQ issues (such as anti-sodomy laws), or even issues related to trans residents.  A rule banning trans people from adopting, for example, may be a huge deal to a resident, but doesn't touch a trans person at all. On the other hand, these can be taken into consideration as "tangential facts" that may give hints as to social acceptance where data is otherwise missing, or as factors that might affect trans people more than non-trans people - for example, anti-sodomy laws are a general LGB issue, not a trans issue, but a trans person has somewhat higher odds of being at risk for such laws than the general public.  Just keep in mind that these are secondary factors for consideration.
+
+The opposite ends of the spectrum are:
+
+0.0: Trans visitors have a high risk of being outed and outright executed for being trans. The absolute extreme end of "DO NOT VISIT"
+
+1.0: Both law and society broadly fully accept trans people as their gender identity with zero discrimination or judgement. Nobody wants to out trans people and nobody judges if they find out.
 ---
 
-## Severity ladder (for weighting findings)
+## Severity ladder
 | Level | Examples |
 |---|---|
 | 5 — Catastrophic | State or honor killing; death penalty applied; torture in custody; lethal violence with impunity |
@@ -105,11 +107,13 @@ higher-probability/low-severity. The score reflects both.
 
 ---
 
-## Explicitly out of scope (do not score; popup's out-of-scope section only)
+## Explicitly out of scope
 General LGB rights (marriage, adoption, LGB criminalization per se), general crime/
 terrorism/health risks, resident-only trans issues (domestic LGR regime, transition-
 healthcare infrastructure, employment law, adoption by trans people, GRC/national
-gender-recognition certificates), ILGA %/Equaldex/Spartacus/FRA scores as direct inputs.
+gender-recognition certificates), ILGA %/Equaldex/Spartacus/FRA scores as direct inputs, etc.  
+
+General LGB rights issues / LGB ratings, and resident-only trans issues,  are only secondary factors that may colour your weightings, not the primary things you're rating on.  General crime/terrorism/health risks should not be considered at all unless they're increasing independently-determined trans-specific risks, wherein they're merely secondary factors that amp up that local risk.
 
 ## Corrections from regrounding (2026-08-21)
 
