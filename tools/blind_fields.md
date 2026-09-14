@@ -1,133 +1,198 @@
-# Blind-anonymisation fields — spec + model prompt
+# Blind-anonymisation: field spec, model prompt, runbook
 
-`tools/blind_pairwise.py` asks a model to rate two countries **without knowing which
-they are**. To make that possible, every record in `data/countries.json` needs
-identity-stripped duplicates of its research content.
+`tools/blind_pairwise.py` asks a rating model to score two jurisdictions **without knowing
+which they are**. Every record in `data/countries.json` therefore needs identity-stripped
+duplicates of its research content.
 
-## Fields to add (per country record)
-
-| Field | Content | Source fields it replaces |
-|---|---|---|
-| `blindProfile` | Identity-free **structural** context that genuinely affects traveler risk: regime type, state capacity, armed-conflict status, legal tradition family, surveillance intensity, tourism exposure, urban/rural split, population scale (order of magnitude only). **Never** region, continent, neighbours, language, ethnicity, or named religions. | (new — distilled, not a rewrite) |
-| `blindSeverity` | Per-axis severity placement using the taxonomy's 1–5 ladder for axes A–K, each with a one-line evidence note. Axes with no evidence get `n/e` (no evidence) rather than being omitted — absence of evidence is itself data. | `summary` |
-| `blindNarrative` | The substantive risk narrative: what actually happens to a trans visitor, what is documented, how consistently law is enforced, what protections exist. All identifiers genericised. | `summary`, `localsOnly`, `tangentialFactors` |
-| `blindExcluded` | What was deliberately **not** counted and why (resident-facing, general-LGB, general crime). Keeps the rating model from double-counting. | `outOfScopeNotes`, `localsOnly`, `tangentialFactors` |
-
-## Fields that must NEVER be sent to the rating model
-
-`name`, `score`, `band`, `rank`, `comparisons` (names other countries *and* scores),
-`sources` (URLs and outlet names identify the country instantly), `anchorRefs`
-(ISO codes), `researchedAt`, `outOfScopeNotes` (often names the country).
-
-## Anonymisation rules
-
-1. **Country/territory name** → "the country" / "the territory" / "the jurisdiction".
-2. **Capital and city names** → "the capital", "the largest city", "a provincial town".
-3. **Named organisations, NGOs, agencies** → "a national trans advocacy organisation",
-   "the interior ministry", "a regional human-rights body", "the constitutional court".
-4. **Named individuals and named legal cases** → "a trans woman", "a documented case",
-   "a constitutional-court ruling". Keep the *substance* (what happened, the outcome).
-5. **Statute names and article numbers** → "a penal-code provision", "a morality statute",
-   "a colonial-era sodomy law", "an anti-propaganda law". Keep **penalties and whether
-   they are enforced** — those are the risk-relevant facts.
-6. **Currencies** → keep amounts only if they express severity (e.g. "a fine equivalent to
-   several months' wages"); otherwise drop.
-7. **Neighbouring/ comparator countries named in the text** → "a neighbouring state",
-   "a regional peer". Delete comparative score references entirely.
-8. **Region-identifying culture terms** → genericise ("a customary village-council system",
-   "an indigenous third-gender tradition recognised in customary law") **but keep the fact**
-   that such a tradition exists and how institutionalised it is — that is a genuine
-   risk-relevant positive.
-9. **Religions** → "religious-law-derived morality provisions", "a state religion influences
-   the penal code". Do not name the religion.
-10. **Dates** → keep years and relative recency ("since 2022", "in the last two years").
-    These matter for trajectory. Never keep a date that uniquely identifies an event
-    already tied to a named case.
-11. **Counts, frequencies, sentence lengths, enforcement patterns** → **always keep verbatim**.
-    These are the substance of the rating.
-12. **Do not add, infer, or embellish facts.** Do not soften or intensify severity. If the
-    source text is ambiguous, keep it ambiguous.
-13. **Do not leak via style**: avoid distinctive phrasing, quotations with unique wording,
-    and acronyms that expand to identifying names.
-14. Length targets: `blindProfile` ≤ 120 words, `blindSeverity` ≤ 250 words,
-    `blindNarrative` ≤ 350 words, `blindExcluded` ≤ 120 words.
-
-## Self-check before returning
-
-- Could a reader name the country from this text alone? If yes, genericise further.
-- Is every *risk-relevant* fact still present? If no, you over-scrubbed — restore it.
-- Are penalties, enforcement frequency, counts, and dates intact?
+Design principle: **1:1 mapping, minimal modification.** Each anonymised field is a rewrite
+of exactly one source field. The lightweight model is *not* asked to restructure, classify,
+summarise, or judge — only to remove identifying detail while preserving every risk-relevant
+fact. Re-bucketing the research into new semantic categories would invite it to drop or
+distort evidence, and would import its own biases into the blind rating.
 
 ---
 
-## Prompt to give the lightweight model
+## Field mapping
 
-> You are anonymising research records for a blind comparative rating exercise. Your job is
-> to strip every detail that could identify which country a record describes, while
+| Anonymised field | ← Source field | Records | Type |
+|---|---|---|---|
+| `blindSummary` | `summary` | 233 | string |
+| `blindOutOfScope` | `outOfScopeNotes` | 232 | string |
+| `blindSourceSummaries` | `sources[].summary` | 233 | **array of strings**, same order & length as `sources` |
+| `blindLocalsOnly` | `localsOnly` | 119 | string (omit the field entirely where the source is absent) |
+| `blindTangential` | `tangentialFactors` | 114 | string (omit the field entirely where the source is absent) |
+
+`blindSourceSummaries` is the richest input — ~2,900 chars per record on average vs ~750 for
+`summary`, 478k chars in total. It carries most of the concrete evidence (counts, penalties,
+enforcement patterns, named cases), so it must be anonymised, not discarded.
+
+## Fields that must NEVER reach the rating model
+
+| Field | Why |
+|---|---|
+| `name` | Identifies directly |
+| `score`, `band`, `rank` | Would anchor the rating — the whole point is an independent read |
+| `comparisons` | **Doubly disqualified**: names other jurisdictions *and* their scores, and it hands the model pre-made pairwise conclusions, which is exactly what the pairwise exercise is supposed to generate independently |
+| `sources[].url` | Domains and paths identify the country instantly (`.ws`, `/samoa/`, outlet names) |
+| `anchorRefs` | ISO codes |
+| `researchedAt` | Not risk-relevant |
+
+---
+
+## Anonymisation rules
+
+1. **Jurisdiction name** → "the country" / "the territory" / "the jurisdiction".
+2. **Capital and city names** → "the capital", "the largest city", "a provincial town".
+3. **Named organisations, NGOs, agencies, media outlets** → "a national trans advocacy
+   organisation", "the interior ministry", "a regional human-rights body", "the constitutional
+   court", "a national newspaper".
+4. **Named individuals and named legal cases** → "a trans woman", "a documented case",
+   "a constitutional-court ruling". **Keep the substance** — what happened, the outcome,
+   the penalty, the year.
+5. **Statute names and article numbers** → "a penal-code provision", "a morality statute",
+   "a colonial-era sodomy law", "an anti-propaganda law". **Keep penalties, keep whether
+   they are enforced, keep sentence lengths** — those are the risk-relevant facts.
+6. **Other countries named in the text** (including in `sources[].summary`, which often
+   mentions regional neighbours or comparator states) → "a neighbouring state",
+   "a regional peer". Delete any comparative score references entirely.
+7. **Currencies** → keep the amount only where it expresses severity ("a fine equivalent to
+   several months' wages"); otherwise drop the figure and keep the fact that a fine applies.
+8. **Region-identifying culture terms** → genericise the label but **keep the fact and its
+   degree of institutionalisation**: "an indigenous third-gender tradition recognised in
+   customary law, whose members are eligible for chiefly titles and land inheritance".
+   That is a genuine risk-relevant positive and must survive.
+9. **Religions** → "religious-law-derived morality provisions", "a state religion influences
+   the penal code". Do not name the religion.
+10. **Dates** → keep years and relative recency ("since 2022", "in the last two years").
+    Trajectory matters. Drop a date only if it uniquely pins an already-identifiable event.
+11. **Counts, frequencies, sentence lengths, enforcement patterns, numbers of arrests or
+    convictions** → **always keep verbatim.** This is the substance of the rating.
+12. **Do not add, infer, or embellish. Do not soften or intensify severity.** If the source is
+    ambiguous, keep it ambiguous. If the source is speculative, keep it speculative.
+13. **Do not leak through style**: avoid distinctive phrasing, verbatim quotations with unique
+    wording, and acronyms that expand to identifying names.
+14. **Preserve length roughly.** Do not compress aggressively — the rater needs the detail.
+    Aim for 80–110% of the original field length.
+15. Where a source field is absent for a record, **omit the corresponding blind field**;
+    do not invent content or write "none".
+16. **Never reproduce the record's own rating.** Band labels ("Low Risk", "Reduced Risk",
+    "Elevated Risk", "High Risk", "Do Not Travel"), the numeric score, and any rank
+    ("ranked 48th") must not appear in the blind text — they would anchor the rater,
+    which is the exact thing blinding exists to prevent. Describe the *facts*; let the
+    rater derive the number. If the source text opens with "X is Reduced Risk for trans
+    visitors", rewrite it as a factual claim about the jurisdiction without the label.
+    Decimals that are genuine facts ("a 2.5-year sentence", "1.5 thousand people") are fine.
+
+## Self-check before returning
+
+- Could a reader name the jurisdiction from this text alone? If yes, genericise further.
+- Does the text contain a band label, the record's own score, or a rank? If yes, remove it.
+- Is every risk-relevant fact still present? If no, you over-scrubbed — restore it.
+- Are penalties, enforcement frequency, counts, and years intact?
+- Did you keep the same number of entries in `blindSourceSummaries` as in `sources`?
+
+---
+
+## Prompt for the lightweight model
+
+> You are anonymising research records for a blind comparative rating exercise. Your only job
+> is to strip every detail that could identify which jurisdiction a record describes, while
 > preserving **every fact that bears on risk**.
 >
-> Context: these records assess the risk to a **transgender visitor** if they are discovered
-> or outed. The rating model that will read your output must judge risk from facts alone,
-> with no idea which country it is looking at. Regional stereotypes are exactly what we are
+> Context: these records assess the risk to a **transgender visitor** if they are discovered or
+> outed. A rating model will read your output and must judge risk from facts alone, with no
+> idea which jurisdiction it is looking at. Regional stereotypes are exactly what we are
 > trying to eliminate, so identity leakage defeats the purpose — but over-scrubbing destroys
 > the signal, which is equally bad.
 >
-> For the record I give you, produce four fields:
+> For the record I give you, return one JSON object with these keys, each an anonymised
+> rewrite of the correspondingly-named input field:
 >
-> 1. `blindProfile` — identity-free structural context that genuinely affects traveler risk:
->    regime type, state capacity, armed-conflict status, legal-tradition family, surveillance
->    intensity, tourism exposure, urban/rural split, population scale (order of magnitude).
->    Never region, continent, neighbours, language, ethnicity, or named religions. ≤ 120 words.
-> 2. `blindSeverity` — for each axis A–K of the taxonomy below, give a severity level 1–5
->    (or `n/e` if no evidence) plus a one-line evidence note. Absence of evidence must be
->    recorded as `n/e`, not omitted. ≤ 250 words.
-> 3. `blindNarrative` — what actually happens to a trans visitor there: documented incidents,
->    enforcement consistency, protections, predation patterns. ≤ 350 words.
-> 4. `blindExcluded` — what was deliberately not counted, and why (resident-facing,
->    general-LGB, general crime). ≤ 120 words.
+> - `blindSummary` ← `summary`
+> - `blindOutOfScope` ← `outOfScopeNotes`
+> - `blindSourceSummaries` ← `sourceSummaries` (an **array**; return the same number of
+>   entries, in the same order, each anonymised)
+> - `blindLocalsOnly` ← `localsOnly` (omit this key if the input has no such field)
+> - `blindTangential` ← `tangentialFactors` (omit this key if the input has no such field)
 >
-> **Anonymisation rules** [paste rules 1–14 above]
+> **Anonymisation rules**
+> [paste rules 1–16 above]
 >
-> **Taxonomy axes**: A border/transit/security screening · B documents & everyday bureaucracy ·
-> C gendered spaces & facilities (incl. hospital-ward placement) · D public presence & social
-> reaction · E violence & predation (incl. dating-app ambushes, blackmail) · F police
-> interaction · G law & criminal exposure if outed · H arrest/detention/prison placement ·
-> I health & medication (HRT import, emergency care, insurance) · J family & diaspora
-> exposure · K state/media climate (probability modifier).
->
-> **Severity ladder**: 5 catastrophic (state/honour killing, death penalty applied, torture in
-> custody, lethal violence with impunity) · 4 severe (imprisonment esp. misgendered facility,
-> sexual violence in detention, forced medical procedures, deportation to danger, denial of
-> life-saving care) · 3 major (arrest & prosecution, violent public assault, blackmail/
-> extortion, forced outing, denial of entry/stranding, medication confiscation) · 2 moderate
-> (police harassment/humiliation, service discrimination, invasive searches, intimidation) ·
-> 1 minor (staring, invasive curiosity, misgendering, occasional service friction).
->
-> Return **only** a JSON object with exactly those four keys, values as strings. No prose
-> outside the JSON.
+> Return **only** the JSON object. No prose, no markdown fences, no commentary.
 >
 > RECORD:
 > ```json
-> {paste the record's `summary`, `outOfScopeNotes`, `comparisons`, `localsOnly`,
->  `tangentialFactors` — but NOT `name`, `score`, `band`, `rank`, `sources`, `anchorRefs`}
+> {paste the payload produced by tools/make_blind_inputs.py}
 > ```
 
-**Important**: when you paste the record in, remove `name` and `sources` — the lightweight
-model must not see them either, or it may echo identifying text back. `comparisons` may be
-included (it carries calibration reasoning) but the model must be told to delete all
-comparator names and scores per rule 7.
+---
+
+# Pipeline
+
+## 1. Extract inputs
+
+```bash
+python3 tools/make_blind_inputs.py                 # writes data/blind_inputs/payloads.jsonl
+python3 tools/make_blind_inputs.py --only WSM TON  # specific records
+python3 tools/make_blind_inputs.py --emit-prompt    # print the instruction block to paste
+```
+
+Each JSONL line is `{"iso": "...", "n": <index>, "payload": {...}}`. **Pass only `payload`
+to the model** — `iso` and `n` are routing metadata for you, and must not be shown to the
+model. The payload contains only the five allowed source fields, with `sources[].url`
+already stripped.
+
+## 2. Collect outputs
+
+Save the model's replies as JSONL, one object per line:
+
+```json
+{"iso": "WSM", "blindSummary": "...", "blindOutOfScope": "...", "blindSourceSummaries": ["...", "..."], "blindLocalsOnly": "...", "blindTangential": "..."}
+```
+
+(or one `<ISO>.json` file per record in a directory — both are accepted).
+
+## 3. Validate and merge
+
+```bash
+python3 tools/apply_blind_fields.py --in data/blind_outputs.jsonl --dry-run   # inspect first
+python3 tools/apply_blind_fields.py --in data/blind_outputs.jsonl
+```
+
+Validation, all of which must pass before a record is written:
+
+- required fields present and non-empty; `blindSourceSummaries` length matches `sources`
+- **identity leak**: the record's own name, its ISO3, any source-URL domain, or **the name of
+  any of the 233 jurisdictions** anywhere in the blind text → hard fail (rule 6: other
+  countries' names leak by association)
+- **demonym leak**: a capitalised token extending a jurisdiction name ("Samoan", "Chinese")
+- **region leak**: continent / region / bloc / demonym terms ("European", "Pacific",
+  "Caribbean", "Gulf", "Balkan") — the primary stereotype vector
+- **rating leak**: the record's own band label, score, or a rank reference (rule 16)
+- **review check**: capitalised proper-noun tokens not on a generic allowlist are reported as
+  warnings for human eyeballing (does not block)
+- length sanity: blind text within 40–200% of the source field length (guards against both
+  over-scrubbing and padding)
+
+Failures are reported per record and skipped; the run continues. Use `--report` to see a
+summary of how many records are ready.
+
+## 4. Run the pairwise refinement
+
+```bash
+python3 tools/blind_pairwise.py --dry-run --num-pairs 3          # eyeball dossiers for leaks
+python3 tools/blind_pairwise.py --api-key "$KEY" --no-write --num-pairs 50   # calibration trial
+python3 tools/blind_pairwise.py --api-key "$KEY" --num-pairs 10000 --workers 4
+```
+
+By default the tool pairs only records with **all** expected blind fields present
+(`blindSummary`, `blindOutOfScope`, `blindSourceSummaries`); `blindLocalsOnly` and
+`blindTangential` are included when present, since they are optional in the source data.
+Use `--allow-partial-blind` to include records missing required fields.
 
 ---
 
 # Running the refinement tool
-
-`tools/blind_pairwise.py` — blind pairwise rating + score drift.
-
-## Prerequisite
-
-Every country record needs the four `blind*` fields populated (see prompt above).
-The tool refuses to start if none exist, and by default only pairs countries that have
-**all four**. Use `--allow-partial-blind` to include records with some fields present.
 
 ## Typical invocation
 
@@ -145,35 +210,39 @@ python3 tools/blind_pairwise.py \
   --workers 4
 ```
 
-## Useful flags
+## Flags
 
 | Flag | Default | Purpose |
 |---|---|---|
-| `--dry-run` | off | Build and print prompts, make **no** API calls. Use this first. |
-| `--no-write` | off | Call the API and write the audit log, but leave `countries.json` untouched. Good for a calibration trial. |
+| `--dry-run` | off | Build and print prompts, make **no** API calls. Use first. |
+| `--no-write` | off | Call the API and write the audit log, but leave `countries.json` untouched. |
 | `--seed N` | none | Reproducible pair selection. |
-| `--workers N` | 1 | Concurrency. State updates are lock-guarded; scores drift as the run proceeds, so later pairs see earlier results (intended). |
+| `--workers N` | 1 | Concurrency. Updates are lock-guarded; scores drift as the run proceeds, so later pairs see earlier results (intended). |
 | `--save-every N` | 25 | Checkpoint `countries.json` every N successful pairs. |
-| `--log PATH` | `data/blind-pairwise-<ts>.jsonl` | Per-pair audit record: both ISOs, presentation order, model ratings, every intermediate step, token usage, the model's `why`. |
+| `--log PATH` | `data/blind-pairwise-<ts>.jsonl` | Per-pair audit: both ISOs, presentation order, model ratings, every intermediate step, token usage, the model's `why`. |
 | `--no-cache` | off | Omit `cache_control` if the endpoint rejects it. |
-| `--retries` / `--backoff` / `--timeout` | 4 / 1.5s / 180s | Retry on 429/5xx/network errors with exponential backoff. |
+| `--retries` / `--backoff` / `--timeout` | 4 / 1.5s / 180s | Retry 429/5xx/network errors with exponential backoff. |
 | `--auth-style` | `both` | Send `x-api-key`, `Authorization: Bearer`, or both. |
 | `--endpoint-suffix` | `/v1/messages` | Adjust if the proxy path differs. |
 | `--max-output-tokens` | 1024 | Output budget on top of `--reasoning-tokens`. |
 
 ## Caching behaviour
 
-The fixed prompt (role, scale, band definitions, the complete `outing-risk-taxonomy.md`,
-the ten rating rules, the output format — ~17.4k chars / ~4.3k tokens) is sent as **one**
-`system` text block with `cache_control: {"type":"ephemeral"}`. It is built once per process
-and is byte-identical on every request, which is what the provider needs to serve cache hits.
-Only the two dossiers vary, in the `user` message. The log reports `cache_read_input_tokens`
-per call so you can confirm hits; a healthy run shows cache-read ≈ system-prompt size on
-every pair after the first.
+The fixed prompt (role, scale, band definitions, the complete `outing-risk-taxonomy.md`, the
+ten rating rules, the output format — ~17.4k chars / ~4.3k tokens) is sent as **one** `system`
+text block carrying `cache_control: {"type":"ephemeral"}`. It is built once per process and is
+byte-identical on every request, which is what the provider needs to serve cache hits. Only the
+two dossiers vary, in the `user` message. The log reports `cache_read_input_tokens` per call;
+a healthy run shows cache-read ≈ system-prompt size on every pair after the first.
 
-To maximise hit rate: run with a stable `--baseurl`/`--model`, keep the run inside the
-provider's cache TTL by not pausing for long, and avoid editing `research/outing-risk-taxonomy.md`
-mid-run (any change to that file changes the cached block and invalidates it).
+To maximise hit rate: keep `--baseurl`/`--model` stable, avoid long pauses (provider cache TTL),
+and do not edit `research/outing-risk-taxonomy.md` mid-run — any change alters the cached block
+and invalidates it.
+
+**Cost note**: dossiers average ~4k chars each (~1k tokens), so each pair sends ~2k uncached
+input tokens plus the cached system block. 10,000 pairs ≈ 20M uncached input tokens. Run the
+`--no-write --num-pairs 50` trial first to check the model is neither systematically harsh nor
+generous before committing to the full run.
 
 ## After a run
 
@@ -182,27 +251,26 @@ python3 tools/build_data.py     # refresh bands, ranks, meta.json
 git diff data/countries.json    # review drift
 ```
 
-Scores are stored at full precision (6 dp) and displayed at 2 dp. Ranks are computed at
-2 dp so sub-cent drift does not produce a ranking the UI cannot show.
+Scores are stored at 6 dp and displayed at 2 dp. Ranks are computed at 2 dp so sub-cent drift
+does not produce a ranking the UI cannot show.
 
 ## Score-update semantics
 
-See the module docstring for the full derivation. Two properties worth knowing:
+See the `tools/blind_pairwise.py` module docstring for the full derivation. Two properties:
 
-- **Corridor clamp**: a country's score can never leave the interval between its own
-  previous value and its own model rating. If the model says "lower", it moves down and
-  cannot overshoot the model's number; if "higher", likewise. Combined with the `[0,1]`
-  clamp, no single pair can push a score anywhere the model did not indicate.
-- **Differential step is sign-agnostic**: it moves the *gap* toward the rated gap, so it
-  narrows scores the model rated closer together and widens scores it rated further apart,
-  splitting the movement equally between the two.
+- **Corridor clamp** — a score can never leave the interval between its own previous value and
+  its own model rating. If the model says "lower", it moves down and cannot overshoot the
+  model's number; if "higher", likewise. Combined with the `[0,1]` clamp, no single pair can
+  push a score anywhere the model did not indicate.
+- **Differential step is sign-agnostic** — it moves the *gap* toward the rated gap, narrowing
+  scores the model rated closer together and widening scores it rated further apart, splitting
+  the movement equally.
 
 ### Note on the worked example in the brief
 
-The brief's example rates the pair 0.2 / 0.7 (a rated gap of **0.5**) but then computes
-step 3 with "a rated difference of 0.4" and "0.4 − 0.223 = 0.117" (which is 0.177).
-This implementation follows the stated *formula* — `P_diff × (rated_gap − current_gap)`,
-split equally — which gives 0.27715 / 0.52785 for that example rather than the brief's
-0.28515 / 0.51985. Steps 1 and 2 reproduce the brief exactly (0.295 → 0.291, 0.51 → 0.514).
-If the 0.4 figure was intentional rather than a slip, say so and I will add a
-`--differential-target` override.
+The brief's example rates the pair 0.2 / 0.7 (rated gap **0.5**) but then computes step 3 with
+"a rated difference of 0.4" and "0.4 − 0.223 = 0.117" (that subtraction is 0.177). This
+implementation follows the stated *formula* — `P_diff × (rated_gap − current_gap)`, split
+equally — giving 0.27715 / 0.52785 for that example rather than the brief's 0.28515 / 0.51985.
+Steps 1 and 2 reproduce the brief exactly (0.295 → 0.291; 0.51 → 0.514). If the 0.4 figure was
+intentional rather than a slip, say so and I will add a `--differential-target` override.

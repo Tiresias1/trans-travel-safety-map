@@ -10,6 +10,12 @@ Runs `--num-pairs` blind head-to-head ratings. For each pair the tool:
   4. nudges the stored scores toward the model's ratings using the
      absolute-percent → absolute-shift → differential-weighting scheme below.
 
+The dossier is built from the 1:1 anonymised mirrors of the research fields
+(`blindSummary`, `blindOutOfScope`, `blindSourceSummaries`, `blindLocalsOnly`,
+`blindTangential`). `comparisons` is never sent — it names other jurisdictions
+with their scores, and handing the model pre-made pairwise conclusions would
+defeat the purpose of generating independent ones. See tools/blind_fields.md.
+
 Update maths (per pair, with originals a0/b0 and model ratings ra/rb):
 
     step 1  absolute percent   a1 = a0 + P_abs * (ra - a0)          [P_abs = 0.05]
@@ -61,7 +67,12 @@ ROOT = Path(__file__).resolve().parent.parent
 COUNTRIES = ROOT / "data" / "countries.json"
 TAXONOMY = ROOT / "research" / "outing-risk-taxonomy.md"
 
-BLIND_FIELDS = ("blindProfile", "blindSeverity", "blindNarrative", "blindExcluded")
+# 1:1 anonymised mirrors of the source fields. See tools/blind_fields.md.
+# REQUIRED must all be present for a record to be pairable; OPTIONAL are included
+# when present (they are absent from many source records).
+REQUIRED_BLIND = ("blindSummary", "blindOutOfScope", "blindSourceSummaries")
+OPTIONAL_BLIND = ("blindLocalsOnly", "blindTangential")
+BLIND_FIELDS = REQUIRED_BLIND + OPTIONAL_BLIND
 
 # --------------------------------------------------------------------------- #
 # Fixed prompt (cached)
@@ -186,17 +197,36 @@ across every axis below.
 # --------------------------------------------------------------------------- #
 
 def dossier(rec: dict) -> str:
+    """Render the identity-stripped evidence for one jurisdiction.
+
+    Order matters for readability but not for caching (this text is in the
+    uncached user message). Source summaries carry most of the concrete
+    evidence, so they are rendered individually rather than concatenated.
+    """
     parts = []
-    labels = {
-        "blindProfile": "STRUCTURAL CONTEXT",
-        "blindSeverity": "SEVERITY BY AXIS (A–K)",
-        "blindNarrative": "RISK NARRATIVE",
-        "blindExcluded": "DELIBERATELY NOT COUNTED",
-    }
-    for f in BLIND_FIELDS:
-        val = rec.get(f)
-        if val:
-            parts.append(f"### {labels[f]}\n{str(val).strip()}")
+
+    def clean(s: str) -> str:
+        s = re.sub(r"<[^>]+>", " ", str(s))
+        return re.sub(r"\s+", " ", s).strip()
+
+    if rec.get("blindSummary"):
+        parts.append(f"### ASSESSMENT\n{clean(rec['blindSummary'])}")
+
+    ss = rec.get("blindSourceSummaries")
+    if isinstance(ss, list) and ss:
+        items = "\n".join(f"- {clean(x)}" for x in ss if str(x).strip())
+        parts.append(f"### SOURCE EVIDENCE\n{items}")
+
+    if rec.get("blindTangential"):
+        parts.append("### SECONDARY / SITUATIONAL FACTORS\n"
+                     f"{clean(rec['blindTangential'])}")
+    if rec.get("blindLocalsOnly"):
+        parts.append("### AFFECTS RESIDENTS MORE THAN VISITORS\n"
+                     f"{clean(rec['blindLocalsOnly'])}")
+    if rec.get("blindOutOfScope"):
+        parts.append("### DELIBERATELY NOT COUNTED\n"
+                     f"{clean(rec['blindOutOfScope'])}")
+
     return "\n\n".join(parts)
 
 
@@ -367,7 +397,7 @@ def main() -> int:
     ap.add_argument("--no-cache", action="store_true",
                     help="omit cache_control (for endpoints that reject it)")
     ap.add_argument("--allow-partial-blind", action="store_true",
-                    help="include countries missing some blind* fields")
+                    help="include countries missing some required blind* fields")
     ap.add_argument("--dry-run", action="store_true",
                     help="build prompts and print diagnostics; make no API calls")
     ap.add_argument("--no-write", action="store_true",
@@ -386,22 +416,41 @@ def main() -> int:
     taxonomy = TAXONOMY.read_text(encoding="utf-8")
     system_text = build_system_prompt(taxonomy)
 
+    def has_field(rec: dict, f: str) -> bool:
+        v = rec.get(f)
+        if isinstance(v, list):
+            return bool(v) and all(str(x).strip() for x in v)
+        return bool(str(v or "").strip())
+
     eligible = []
     partial = []
     for iso, rec in countries.items():
-        have = [f for f in BLIND_FIELDS if str(rec.get(f, "")).strip()]
-        if len(have) == len(BLIND_FIELDS):
+        if all(has_field(rec, f) for f in REQUIRED_BLIND):
             eligible.append(iso)
-        elif have:
+        elif any(has_field(rec, f) for f in BLIND_FIELDS):
             partial.append(iso)
     if not eligible:
-        print(f"error: no records have the blind fields {BLIND_FIELDS}.\n"
-              f"Populate them first — see tools/blind_fields.md for the field spec and "
-              f"the prompt to give a lightweight model.", file=sys.stderr)
+        print(f"error: no records have the required blind fields {REQUIRED_BLIND}.\n"
+              f"Populate them first:\n"
+              f"  python3 tools/make_blind_inputs.py            # extract payloads\n"
+              f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
+              f"  python3 tools/apply_blind_fields.py --in <outputs>\n",
+              file=sys.stderr)
         return 2
     if args.allow_partial_blind:
         eligible += partial
         eligible = sorted(set(eligible))
+
+    if len(eligible) < 2:
+        print(f"error: need at least 2 records with the required blind fields "
+              f"{REQUIRED_BLIND}, found {len(eligible)}.\n"
+              f"Populate more records first:\n"
+              f"  python3 tools/make_blind_inputs.py\n"
+              f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
+              f"  python3 tools/apply_blind_fields.py --in <outputs>\n"
+              f"  python3 tools/apply_blind_fields.py --in <outputs> --report\n",
+              file=sys.stderr)
+        return 2
 
     rng = random.Random(args.seed)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
