@@ -459,10 +459,12 @@ def main() -> int:
                          "'start-end' ramp (default: 0.004 constant)")
     ap.add_argument("--reasoning-tokens", type=int, default=3000)
     ap.add_argument("--rating-offset", type=float, default=0.0,
-                    help="added to every model rating before the update, to correct "
-                         "a measured systematic bias (calibration trial of 2026-09-15 "
-                         "measured -0.042 intercept, slope 0.983; --rating-offset 0.05 "
-                         "cancels it). Clamped so ratings stay in [0,1].")
+                    help="added to every model rating before the update. Default 0: "
+                         "the model's absolute scale is trusted as-is. The 2026-09-15 "
+                         "calibration trial measured a ~-0.05 uniform offset (slope "
+                         "0.983); if the map's mean drifts down more than desired over "
+                         "a long run, a positive offset normalises it back — a simple "
+                         "post-hoc adjustment. Clamped so ratings stay in [0,1].")
     ap.add_argument("--max-output-tokens", type=int, default=1024)
     ap.add_argument("--temperature", type=float, default=1.0,
                     help="only used when --reasoning-tokens 0")
