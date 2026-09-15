@@ -383,25 +383,41 @@ def call_api(args, system_text: str, user_text: str, attempt: int = 0) -> dict:
 
 
 JSON_RE = re.compile(r"\{[^{}]*\"score_a\"[^{}]*\}", re.S)
+SCORE_A_RE = re.compile(r"\"score_a\"\s*:\s*(-?\d+(?:\.\d+)?)")
+SCORE_B_RE = re.compile(r"\"score_b\"\s*:\s*(-?\d+(?:\.\d+)?)")
+WHY_RE = re.compile(r"\"why\"\s*:\s*\"((?:[^\"\\]|\\.)*)")
 
 
 def parse_scores(resp: dict) -> tuple[float, float, str, dict]:
     text = "".join(b.get("text", "") for b in resp.get("content", [])
                    if isinstance(b, dict) and b.get("type") == "text")
-    m = None
-    for cand in JSON_RE.finditer(text):
-        m = cand  # last well-formed candidate wins
-    if not m:
-        raise ValueError(f"no score JSON in response: {text[:300]!r}")
-    obj = json.loads(m.group(0))
-    sa, sb = float(obj["score_a"]), float(obj["score_b"])
-    for v in (sa, sb):
-        if not (0.0 <= v <= 1.0):
-            raise ValueError(f"score out of range: {v}")
     usage = {k: resp.get("usage", {}).get(k) for k in
              ("input_tokens", "output_tokens", "cache_creation_input_tokens",
               "cache_read_input_tokens")}
-    return sa, sb, str(obj.get("why", ""))[:400], usage
+    usage["stop_reason"] = resp.get("stop_reason")
+
+    m = None
+    for cand in JSON_RE.finditer(text):
+        m = cand  # last well-formed candidate wins
+    if m:
+        obj = json.loads(m.group(0))
+        sa, sb = float(obj["score_a"]), float(obj["score_b"])
+        why = str(obj.get("why", ""))[:400]
+    else:
+        # salvage truncated output (hit max_tokens mid-JSON): the scores appear
+        # before `why`, so they are usually intact even when the object isn't
+        ma, mb = SCORE_A_RE.search(text), SCORE_B_RE.search(text)
+        if not (ma and mb):
+            raise ValueError(f"no scores in response (stop_reason="
+                             f"{usage.get('stop_reason')}): {text[:200]!r}")
+        sa, sb = float(ma.group(1)), float(mb.group(1))
+        mw = WHY_RE.search(text)
+        why = ("[truncated] " + (mw.group(1) if mw else ""))[:400]
+        usage["salvaged"] = True
+    for v in (sa, sb):
+        if not (0.0 <= v <= 1.0):
+            raise ValueError(f"score out of range: {v}")
+    return sa, sb, why, usage
 
 
 # --------------------------------------------------------------------------- #
@@ -442,6 +458,11 @@ def main() -> int:
                     help="fixed nudge toward the rated score per pair; accepts a "
                          "'start-end' ramp (default: 0.004 constant)")
     ap.add_argument("--reasoning-tokens", type=int, default=3000)
+    ap.add_argument("--rating-offset", type=float, default=0.0,
+                    help="added to every model rating before the update, to correct "
+                         "a measured systematic bias (calibration trial of 2026-09-15 "
+                         "measured -0.042 intercept, slope 0.983; --rating-offset 0.05 "
+                         "cancels it). Clamped so ratings stay in [0,1].")
     ap.add_argument("--max-output-tokens", type=int, default=1024)
     ap.add_argument("--temperature", type=float, default=1.0,
                     help="only used when --reasoning-tokens 0")
@@ -595,6 +616,9 @@ def main() -> int:
 
         # map back from presentation order
         ra, rb = (s_second, s_first) if flip else (s_first, s_second)
+        if args.rating_offset:
+            ra = min(1.0, max(0.0, ra + args.rating_offset))
+            rb = min(1.0, max(0.0, rb + args.rating_offset))
         # ramp the weighting parameters across the run: coarse early, fine late
         p_abs = ramp(*args.absolute_weighting_percent, idx, args.num_pairs)
         s_abs = ramp(*args.absolute_weighting_shift, idx, args.num_pairs)
