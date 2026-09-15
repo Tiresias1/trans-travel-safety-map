@@ -484,7 +484,10 @@ def main() -> int:
     eligible = []
     partial = []
     for iso, rec in countries.items():
-        if all(has_field(rec, f) for f in REQUIRED_BLIND):
+        required_here = [f for f in REQUIRED_BLIND
+                         if not (f == "blindOutOfScope"
+                                 and not str(rec.get("outOfScopeNotes", "")).strip())]
+        if all(has_field(rec, f) for f in required_here):
             eligible.append(iso)
         elif any(has_field(rec, f) for f in BLIND_FIELDS):
             partial.append(iso)

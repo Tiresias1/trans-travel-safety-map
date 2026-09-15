@@ -285,11 +285,17 @@ def main() -> int:
     allow = {t.lower() for t in args.allow_token}
 
     if args.report:
-        ready = [i for i, r in countries.items()
-                 if all(str(r.get(f, "")).strip() or (f == "blindSourceSummaries"
-                                                      and isinstance(r.get(f), list)
-                                                      and r.get(f))
-                        for f in REQUIRED)]
+        def _has_required(r):
+            for f in REQUIRED:
+                if f == "blindOutOfScope" and not str(r.get("outOfScopeNotes", "")).strip():
+                    continue  # corpus exception: no source, no blind field (rule 15)
+                if f == "blindSourceSummaries":
+                    if not (isinstance(r.get(f), list) and r.get(f)):
+                        return False
+                elif not str(r.get(f, "")).strip():
+                    return False
+            return True
+        ready = [i for i, r in countries.items() if _has_required(r)]
         print(f"records with all required blind fields: {len(ready)}/{len(countries)}")
         opt = [i for i, r in countries.items() if r.get("blindLocalsOnly")]
         print(f"records with blindLocalsOnly: {len(opt)}")
@@ -317,6 +323,12 @@ def main() -> int:
         warns: list[str] = []
 
         for f in REQUIRED:
+            if f == "blindOutOfScope" and not str(rec.get("outOfScopeNotes", "")).strip():
+                # spec rule 15: no source -> no blind field; this record is the
+                # corpus exception (GMB has no outOfScopeNotes at all)
+                if blind.get("blindOutOfScope"):
+                    warns.append("blindOutOfScope present but source has no outOfScopeNotes")
+                continue
             v = blind.get(f)
             if f == "blindSourceSummaries":
                 if not isinstance(v, list) or not v:
