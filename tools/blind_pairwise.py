@@ -16,7 +16,11 @@ The dossier is built from the 1:1 anonymised mirrors of the research fields
 with their scores, and handing the model pre-made pairwise conclusions would
 defeat the purpose of generating independent ones. See tools/blind_fields.md.
 
-Update maths (per pair, with originals a0/b0 and model ratings ra/rb):
+Update maths (per pair, with originals a0/b0 and model ratings ra/rb).
+All three weighting parameters may be given either as a scalar or as a
+`START-END` ramp that interpolates linearly across the run (pair 1 gets START,
+the last pair gets END). Ramping high→low makes the run coarse-to-fine: large
+corrections early while the map is still rough, gentle settling as it converges.
 
     step 1  absolute percent   a1 = a0 + P_abs * (ra - a0)          [P_abs = 0.05]
                                b1 = b0 + P_abs * (rb - b0)
@@ -29,6 +33,12 @@ Update maths (per pair, with originals a0/b0 and model ratings ra/rb):
                                own original value and its own model rating, then
                                to [0.0, 1.0]. A score can therefore never overshoot
                                the direction the model indicated.
+
+Ramp example (defaults suggested for a long run):
+
+    --absolute-weighting-percent   0.15-0.015
+    --absolute-weighting-shift     0.012-0.0012
+    --differential-weighting-percent 0.25-0.03
 
 Note on the worked example in the brief: it states ratings 0.2/0.7 (a rated gap of
 0.5) but then computes with a gap of 0.4 and a difference of 0.117. This
@@ -263,6 +273,46 @@ def clamp_corridor(v: float, orig: float, rated: float) -> float:
     return min(1.0, max(0.0, min(hi, max(lo, v))))
 
 
+def parse_range(spec: str) -> tuple[float, float]:
+    """Accept either a scalar ('0.1') or a start-end ramp ('0.25-0.03').
+
+    A scalar becomes (v, v) so the ramp math degenerates to a constant.
+    Negative ends must be written with the explicit separator, e.g. '0.1--0.1'.
+    """
+    s = str(spec).strip()
+    # split on a hyphen that is NOT a leading minus sign
+    m = re.fullmatch(r"\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*", s)
+    if m:
+        lo, hi = float(m.group(1)), float(m.group(2))
+        if lo < 0 or hi < 0:
+            raise argparse.ArgumentTypeError(
+                f"weighting values must be >= 0, got {spec!r}")
+        return lo, hi
+    try:
+        v = float(s)
+    except ValueError:
+        raise argparse.ArgumentTypeError(
+            f"expected a number or a 'start-end' range, got {spec!r}")
+    if v < 0:
+        raise argparse.ArgumentTypeError(
+            f"weighting values must be >= 0, got {spec!r}")
+    return v, v
+
+
+def ramp(start: float, end: float, idx: int, total: int) -> float:
+    """Linearly interpolate from `start` to `end` over the run.
+
+    idx is 1-based. The first pair gets `start`, the last gets `end`. With
+    total <= 1 the start value is used. Higher early / lower late means the
+    run makes big corrections while the map is still coarse and settles into
+    fine adjustments as it converges.
+    """
+    if total <= 1:
+        return start
+    t = (idx - 1) / (total - 1)
+    return start + (end - start) * t
+
+
 def compute_update(a0: float, b0: float, ra: float, rb: float,
                    p_abs: float, s_abs: float, p_diff: float) -> dict:
     a1 = a0 + p_abs * (ra - a0)
@@ -379,9 +429,18 @@ def main() -> int:
     ap.add_argument("--anthropic-version", default="2023-06-01")
     ap.add_argument("--auth-style", choices=("api-key", "bearer", "both"), default="both")
     ap.add_argument("--num-pairs", type=int, default=10000)
-    ap.add_argument("--differential-weighting-percent", type=float, default=0.1)
-    ap.add_argument("--absolute-weighting-percent", type=float, default=0.05)
-    ap.add_argument("--absolute-weighting-shift", type=float, default=0.004)
+    ap.add_argument("--differential-weighting-percent", type=parse_range, default="0.1",
+                    metavar="V|START-END",
+                    help="how much of the rated gap to close per pair; a 'start-end' "
+                         "range ramps across the run (default: 0.1 constant)")
+    ap.add_argument("--absolute-weighting-percent", type=parse_range, default="0.05",
+                    metavar="V|START-END",
+                    help="fraction of the way toward the rated score per pair; "
+                         "accepts a 'start-end' ramp (default: 0.05 constant)")
+    ap.add_argument("--absolute-weighting-shift", type=parse_range, default="0.004",
+                    metavar="V|START-END",
+                    help="fixed nudge toward the rated score per pair; accepts a "
+                         "'start-end' ramp (default: 0.004 constant)")
     ap.add_argument("--reasoning-tokens", type=int, default=3000)
     ap.add_argument("--max-output-tokens", type=int, default=1024)
     ap.add_argument("--temperature", type=float, default=1.0,
@@ -463,6 +522,26 @@ def main() -> int:
           + (f" (+{len(partial)} partial)" if partial and not args.allow_partial_blind else ""))
     print(f"pairs: {args.num_pairs} · workers: {args.workers} · model: {args.model} · "
           f"reasoning: {args.reasoning_tokens}")
+
+    def fmt_rng(t: tuple[float, float]) -> str:
+        return f"{t[0]:g}" if t[0] == t[1] else f"{t[0]:g}→{t[1]:g}"
+
+    print("weighting (start→end over the run): "
+          f"abs% {fmt_rng(args.absolute_weighting_percent)} · "
+          f"abs-shift {fmt_rng(args.absolute_weighting_shift)} · "
+          f"diff% {fmt_rng(args.differential_weighting_percent)}")
+    if any(t[0] != t[1] for t in (args.absolute_weighting_percent,
+                                  args.absolute_weighting_shift,
+                                  args.differential_weighting_percent)):
+        mid = max(1, args.num_pairs // 2)
+        print(f"  at pair 1 / {mid} / {args.num_pairs}: "
+              + " · ".join(
+                  f"{ramp(*t, 1, args.num_pairs):.5f}/"
+                  f"{ramp(*t, mid, args.num_pairs):.5f}/"
+                  f"{ramp(*t, args.num_pairs, args.num_pairs):.5f}"
+                  for t in (args.absolute_weighting_percent,
+                            args.absolute_weighting_shift,
+                            args.differential_weighting_percent)))
     print(f"log: {log_path}")
 
     lock = threading.Lock()
@@ -513,10 +592,13 @@ def main() -> int:
 
         # map back from presentation order
         ra, rb = (s_second, s_first) if flip else (s_first, s_second)
-        upd = compute_update(a0, b0, ra, rb,
-                             args.absolute_weighting_percent,
-                             args.absolute_weighting_shift,
-                             args.differential_weighting_percent)
+        # ramp the weighting parameters across the run: coarse early, fine late
+        p_abs = ramp(*args.absolute_weighting_percent, idx, args.num_pairs)
+        s_abs = ramp(*args.absolute_weighting_shift, idx, args.num_pairs)
+        p_diff = ramp(*args.differential_weighting_percent, idx, args.num_pairs)
+        upd = compute_update(a0, b0, ra, rb, p_abs, s_abs, p_diff)
+        upd["params"] = {"p_abs": p_abs, "s_abs": s_abs, "p_diff": p_diff,
+                         "idx": idx, "total": args.num_pairs}
         with lock:
             countries[iso_a]["score"] = round(upd["a"]["final"], 6)
             countries[iso_b]["score"] = round(upd["b"]["final"], 6)

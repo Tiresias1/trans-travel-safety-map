@@ -203,12 +203,34 @@ python3 tools/blind_pairwise.py \
   --api anthropic-messages \
   --model qwen3.8-flash \
   --num-pairs 10000 \
-  --differential-weighting-percent 0.1 \
-  --absolute-weighting-percent 0.05 \
-  --absolute-weighting-shift 0.004 \
+  --differential-weighting-percent 0.25-0.03 \
+  --absolute-weighting-percent 0.15-0.015 \
+  --absolute-weighting-shift 0.012-0.0012 \
   --reasoning-tokens 3000 \
   --workers 4
 ```
+
+## Weighting parameters ramp high → low
+
+Each of the three weighting parameters accepts either a scalar (`0.05`) or a
+`START-END` range (`0.15-0.015`). A range interpolates linearly across the run:
+pair 1 gets START, the final pair gets END. This makes the run **coarse-to-fine** —
+big corrections early while the map is still rough, gentle settling as it converges,
+and no late-run oscillation from oversized single-pair moves.
+
+Suggested ramps for a 10k-pair run (each is 2.5–10× the old constant default at the
+start, decaying to ~¼–⅓ of it by the end):
+
+| Parameter | Old constant | Suggested ramp |
+|---|---|---|
+| `--absolute-weighting-percent` | 0.05 | `0.15-0.015` |
+| `--absolute-weighting-shift` | 0.004 | `0.012-0.0012` |
+| `--differential-weighting-percent` | 0.1 | `0.25-0.03` |
+
+The startup banner prints the resolved ramps and their values at pair 1 / mid / last;
+every audit-log entry records the exact `params` used for that pair, so the whole run
+is reproducible. Values must be ≥ 0; `START` may be lower than `END` if you ever want
+an increasing ramp.
 
 ## Flags
 
@@ -217,6 +239,9 @@ python3 tools/blind_pairwise.py \
 | `--dry-run` | off | Build and print prompts, make **no** API calls. Use first. |
 | `--no-write` | off | Call the API and write the audit log, but leave `countries.json` untouched. |
 | `--seed N` | none | Reproducible pair selection. |
+| `--absolute-weighting-percent` | `0.05` | Scalar or `START-END` ramp; fraction of the way toward the rated score per pair. |
+| `--absolute-weighting-shift` | `0.004` | Scalar or `START-END` ramp; fixed nudge toward the rated score per pair. |
+| `--differential-weighting-percent` | `0.1` | Scalar or `START-END` ramp; fraction of the rated-gap difference to close per pair. |
 | `--workers N` | 1 | Concurrency. Updates are lock-guarded; scores drift as the run proceeds, so later pairs see earlier results (intended). |
 | `--save-every N` | 25 | Checkpoint `countries.json` every N successful pairs. |
 | `--log PATH` | `data/blind-pairwise-<ts>.jsonl` | Per-pair audit: both ISOs, presentation order, model ratings, every intermediate step, token usage, the model's `why`. |
