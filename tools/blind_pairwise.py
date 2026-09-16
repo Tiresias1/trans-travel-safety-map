@@ -127,11 +127,23 @@ RATING_RULES = """\
    application is a small factor. A statute with documented arrests, convictions, or
    police practice is a large one. Note which you are looking at.
 
-7. **Individual cases: weigh, don't fetishise.** A single high-profile case is evidence,
-   but selection bias is real — a country where anti-trans violence is routine may
-   generate less press coverage per incident than one where it is rare and shocking.
-   Prefer patterns, counts, enforcement frequency and institutional behaviour over
-   single anecdotes, while still counting anecdotes.
+7. **Individual incidents: weigh what they prove, not how shocking they are.** Most crime
+   never makes international news; a single reported incident — even a severity-5 one — is
+   very weak evidence about the *rate* of violence in a medium or large country, and on its
+   own should barely move a rating. Selection bias is real: where anti-trans violence is
+   routine, each incident often attracts less coverage than a rare shocking case elsewhere.
+   What elevates an incident to score-relevant evidence:
+   - it is part of a documented pattern (repeats, counts, "systemic"/"widespread" findings);
+   - the state is implicated (police or prison custody, officials as perpetrators,
+     state-linked actors);
+   - the state's *response* is itself damning (refusal to investigate, prosecuting the
+     victim, documented impunity for perpetrators);
+   - the jurisdiction is very small, so one case carries real statistical weight.
+   Conversely, the response can be **positive** evidence: prosecution and conviction of
+   attackers, public outcry, sympathetic coverage, or institutional reform after an incident
+   signal that society and the state treat anti-trans violence as unacceptable. Prefer
+   patterns, counts, enforcement frequency and institutional behaviour over single
+   anecdotes, while still counting anecdotes.
 
 8. **General crime, terrorism, war and natural hazards are out of scope** unless they
    independently raise trans-specific risk (e.g. collapse of police protection for a
@@ -146,6 +158,17 @@ RATING_RULES = """\
     no discrimination or judgement. Most countries are somewhere between 0.2 and 0.9;
     do not compress everything into the middle, and do not pile countries up at the
     extremes without evidence.
+
+11. **Rule of law mediates between paper protections and street reality.** Where legal
+    protections coexist with public hostility, what decides the rating is whether the legal
+    system actually works for trans people: are attackers prosecuted, are protections
+    enforced, are complaints taken seriously? Strong rule of law discounts public hostility
+    substantially; weak rule of law makes paper protections near-worthless. Where law and
+    society are aligned in acceptance, residual risk approaches general travel risk and must
+    not be penalised as trans-specific. Where the dossier is silent about institutions —
+    common for small jurisdictions — assume neither dysfunction nor perfection: sparse data
+    warrants ratings near the range the few documented facts support, not confident
+    placement at the extremes.
 """
 
 OUTPUT_FORMAT = """\
@@ -179,9 +202,11 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
 
 - **0.00** — A trans visitor who is outed faces near-certain imprisonment or execution. The
   absolute extreme of "do not visit".
-- **1.00** — Law and society fully accept trans people as their gender identity with zero
-  discrimination or judgement; nobody seeks to out trans people and nobody judges them if
-  they find out.
+- **1.00** — the aspirational limit: law and society fully accept trans people as their
+  gender identity with zero discrimination or judgement. No jurisdiction reaches it
+  perfectly, but a strongly protective jurisdiction with functioning recourse and no
+  documented trans-specific negatives belongs in the 0.85–0.95 range; do not withhold
+  top-band scores merely because a flawless record cannot be proven.
 
 Bands (for orientation only — you output a number, not a band):
 [0.00, 0.20) Do Not Travel · [0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk ·
@@ -470,6 +495,11 @@ def main() -> int:
                     help="only used when --reasoning-tokens 0")
     ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument("--focus", nargs="*", default=None,
+                    help="restrict one side of every pair to these ISO3 codes (the "
+                         "partner is drawn from all eligible countries) — for "
+                         "re-rating specific records after a prompt change. Note the "
+                         "partner's score also updates, as usual.")
     ap.add_argument("--retries", type=int, default=4)
     ap.add_argument("--backoff", type=float, default=1.5)
     ap.add_argument("--timeout", type=float, default=180.0)
@@ -538,6 +568,14 @@ def main() -> int:
         return 2
 
     rng = random.Random(args.seed)
+    focus = None
+    if args.focus:
+        focus = [f.upper() for f in args.focus]
+        bad = [f for f in focus if f not in eligible]
+        if bad:
+            print(f"error: --focus codes not eligible (missing blind fields?): {bad}",
+                  file=sys.stderr)
+            return 2
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     log_path = Path(args.log) if args.log else ROOT / "data" / f"blind-pairwise-{ts}.jsonl"
     log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -586,7 +624,11 @@ def main() -> int:
 
     def one_pair(idx: int) -> None:
         with lock:
-            iso_a, iso_b = rng.sample(eligible, 2)
+            if focus:
+                iso_a = rng.choice(focus)
+                iso_b = rng.choice([c for c in eligible if c != iso_a])
+            else:
+                iso_a, iso_b = rng.sample(eligible, 2)
             a0 = float(countries[iso_a]["score"])
             b0 = float(countries[iso_b]["score"])
             flip = rng.random() < 0.5  # randomise presentation order (position bias)
