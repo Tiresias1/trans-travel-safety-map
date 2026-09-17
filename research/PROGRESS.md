@@ -94,22 +94,6 @@ Tier C: inherit with disclosure line (default for countries with no variance not
 - Next: Phase 4 ADM1 (Tier-A: USA, CAN, AUS, MEX, BRA, IND, RUS, CHN, DEU, ESP, GBR,
   ARE, SAU, IDN, NGA, ARG, JPN, ITA; then Tier-B groups, Tier-C inheritance).
 
-## 2026-09-17 — Blind pairwise refinement, run 2 (post-prompt-hardening)
-- 6000 pairs, 0.17% errors, 99.9% cache hits, all 233 countries ≥31 encounters.
-- Rater bias eliminated: mean +0.005 (run 1: −0.050). Mean drift +0.028 (176 up / 26 down).
-- Rule-7 repairs landed: ITA 0.404→0.497, DEU 0.630→0.709, IND/BRA/MYT/NLD/GBR/ARM +0.03–0.05.
-- Low Risk band refilled: 19→29 countries (top: ISL 0.91, MLT 0.90, LUX 0.90, GRL 0.88, ESP 0.88).
-- Small jurisdictions stable & consistent (GRL rated sd 0.025 over 45 encounters).
-- Persistent divergences from hand calibration, both dossier-traceable and rule-consistent:
-  ITA 0.497 (pattern: tourist rape w/ upheld convictions, entrapment gangs, police-beating
-  conviction, men's-prison placement) and TUR 0.147 (state-as-perpetrator: police torture
-  history, victim-criminalisation, checkpoint passport rule, men's-prison placement).
-  If these are wrong, the lever is dossier content, not the score.
-- Prompt tweaks this run (user): LGB-as-weak-proxy clause, enforcement asymmetry sharpened
-  (rule 6), state-outing efforts count (rule 9), scale endpoints de-absolutised (rule 10),
-  rule-of-law as partial mediator + liability-when-law-is-hostile (rule 11), absence-of-
-  evidence handling (rule 12).
-
 ## 2026-09-16/17 — Blind pairwise refinement
 - Run 1 (4000 pairs, original prompt): mean drift -0.058, Pearson(pre,post)=0.94, 110 band changes.
   Mechanically clean (0.2% errors, 99.9% cache hits, slope 1.017 vs mean-rated). Surfaced that the
