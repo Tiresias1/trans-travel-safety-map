@@ -104,7 +104,9 @@ RATING_RULES = """\
    under birth-sex legal status, or whom police extort using it. Weight it at roughly
    0.01–0.03 of the scale unless there is documented trans-specific enforcement (arrests
    for gender expression, "impersonation"/"posing" charges, extortion of visibly trans
-   people). It is never a primary score driver on its own.
+   people). It is never a primary score driver on its own. That said, if there is no
+   trans-related climate signals to go on, you may have no choice but to use data about
+   LGB criminalisation as a weak proxy for trans.
 
 3. **Burden-of-proof symmetry.** A documented positive (an institutionalised third-gender
    tradition, a court ruling protecting gender expression, functioning hate-crime
@@ -123,9 +125,9 @@ RATING_RULES = """\
    number. Do not start from a vague impression of "this sounds like a safe/unsafe place"
    and then decorate it.
 
-6. **Laws on the books vs. enforcement.** An unenforced statute with no documented
-   application is a small factor. A statute with documented arrests, convictions, or
-   police practice is a large one. Note which you are looking at.
+6. **Laws on the books vs. enforcement.** An unenforced statute a comparably small factor.
+   A statute with documented arrests, convictions, or police practice is a quite large one.
+   Note which you are looking at.
 
 7. **Individual incidents: weigh what they prove, not how shocking they are.** Most crime
    never makes international news; a single reported incident — even a severity-5 one — is
@@ -150,25 +152,27 @@ RATING_RULES = """\
    group that is already targeted, or militia targeting of gender-nonconforming people).
 
 9. **Severity dominates probability.** Every trans person carries some baseline
-   probability of being outed. What separates 0.9 from 0.2 is mostly what happens *after*
-   the outing, and whether the state is the perpetrator, a bystander, or a protector.
+   probability of being outed. What separates say 0.9 from 0.2 is mostly what happens *after*
+   the outing, and whether the state is the perpetrator, a bystander, or a protector. That said,
+   deliberate efforts by the state to out trans people ramp up the risk of outing, and thus
+   the odds of adverse consequences to a trans traveler.
 
-10. **Use the whole scale.** 0.00 means a trans visitor who is discovered faces near-certain
-    imprisonment or execution. 1.00 means law and society fully accept trans people with
-    no discrimination or judgement. Most countries are somewhere between 0.2 and 0.9;
-    do not compress everything into the middle, and do not pile countries up at the
-    extremes without evidence.
+10. 0.00 means a trans visitor who is discovered faces near-certain imprisonment or execution.
+    1.00 means law and society fully accept trans people with no discrimination or judgement
+    (within the bounds of reason in that no society is 100 percent homogenous).
 
-11. **Rule of law mediates between paper protections and street reality.** Where legal
-    protections coexist with public hostility, what decides the rating is whether the legal
-    system actually works for trans people: are attackers prosecuted, are protections
-    enforced, are complaints taken seriously? Strong rule of law discounts public hostility
-    substantially; weak rule of law makes paper protections near-worthless. Where law and
-    society are aligned in acceptance, residual risk approaches general travel risk and must
-    not be penalised as trans-specific. Where the dossier is silent about institutions —
-    common for small jurisdictions — assume neither dysfunction nor perfection: sparse data
-    warrants ratings near the range the few documented facts support, not confident
-    placement at the extremes.
+11. **Rule of law partially mediates between paper protections and street reality.** Where legal
+    protections coexist with public hostility, a partial factor to consider for the rating
+    is whether the legal system actually works for trans people: are attackers prosecuted,
+    are protections enforced, are complaints taken seriously? Strong rule of law discounts
+    public hostility somewhat; a complete lack of rule of law makes paper protections
+    near-worthless. Where law and society are aligned in acceptance, rule of law is for the most
+    part just a general-travelers issue, not a trans issue. Where law is well against trans people,
+    rule of law actually turns into a liability, particularly if the public is hostile as well.
+    
+12. Where the dossier is silent about institutions — some jurisdictions simply lack much data —
+    assume neither dysfunction nor perfection (an absense of evidence is not evidence of absense);
+    just work with the data that you have available to you.
 """
 
 OUTPUT_FORMAT = """\
