@@ -16,6 +16,7 @@ Validation rules (fail loudly):
   progress) and every data record matches a polygon (error)
 """
 import json, os, re, sys
+from datetime import date
 
 BANDS = [
     (0.2, "Do Not Travel"),
@@ -78,6 +79,20 @@ def add_ranks(d, total, key="rank", tie_dp=2):
         r[key] = rank
     return d
 
+def detect_repo_url():
+    """HTTPS web URL of the git remote, for methodology links (empty if none)."""
+    try:
+        import subprocess
+        url = subprocess.run(["git", "remote", "get-url", "origin"],
+                             capture_output=True, text=True, timeout=5).stdout.strip()
+    except Exception:
+        return ""
+    if url.startswith("git@"):
+        host, _, path = url[4:].partition(":")
+        url = f"https://{host}/{path}"
+    return url.removesuffix(".git")
+
+
 def main():
     errors, warnings = [], []
 
@@ -127,8 +142,11 @@ def main():
         json.dump(admin1, open("data/admin1.json", "w"), indent=1, ensure_ascii=False)
 
     meta = {
-        "generatedAt": "2026-08-21",
-        "methodologyVersion": "1.0",
+        "generatedAt": date.today().isoformat(),
+        "edition": "2026",
+        "updateCadence": "annual",
+        "methodologyVersion": "2.0",
+        "repoUrl": detect_repo_url(),
         "bandEdges": [0.2, 0.4, 0.6, 0.8, 1.0],
         "bandLabels": [b[1] for b in BANDS],
         "gradientAnchors": GRADIENT_ANCHORS,

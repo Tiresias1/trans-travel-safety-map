@@ -304,6 +304,11 @@
   /* ---------- about dialog ---------- */
   function aboutHTML() {
     const gen = meta.generatedAt ? esc(meta.generatedAt) : "—";
+    const repo = (meta.repoUrl || "").replace(/\/+$/, "");
+    const methUrl = repo ? `${repo}/blob/HEAD/METHODOLOGY.md` : "METHODOLOGY.md";
+    const repoLinks = repo
+      ? `(see also the <a href="${repo}/blob/HEAD/research/outing-risk-taxonomy.md" target="_blank" rel="noopener">risk taxonomy</a> and <a href="${repo}/blob/HEAD/research/anchors.md" target="_blank" rel="noopener">calibration anchors</a>) `
+      : "";
     return `
     <p>This map scores the risk to a <strong>transgender visitor</strong> — someone who is,
     or is discovered to be, trans — in each country and major first-level administrative
@@ -320,7 +325,15 @@
     <p>Scores are derived from web research (search results and primary sources fetched and
     read per region), not model memory. Every region's popup lists its sources. Ranks are
     competition-ranked (ties share a rank). Regions are compared against calibration anchor
-    countries so the scale is relative as well as absolute.</p>
+    countries so the scale is relative as well as absolute, and the whole map was then
+    refined through thousands of blind pairwise comparisons (each region's evidence
+    presented anonymously, without names or prior scores, and rated against a randomly
+    drawn partner).</p>
+    <p>The full methodology — the risk taxonomy, the severity ladder, the calibration
+    rules, and the blind-refinement process — is documented in
+    <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>
+    ${repoLinks}in the project repository. This edition covers research through
+    ${esc(meta.edition || "2026")}; the map is updated annually.</p>
     <p><strong>Boundaries are de jure</strong> (internationally recognised legal claims, not
     lines of current control — e.g. Crimea and occupied territories are shown within
     Ukraine). Contested areas with two legal claims are rendered at the most widely
