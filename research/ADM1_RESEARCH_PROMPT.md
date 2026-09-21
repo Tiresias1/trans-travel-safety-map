@@ -69,7 +69,7 @@ press. Go deep only on regions that show a signal.
 ## The single-incident rule (the main failure mode — obey it strictly)
 
 Most crime never makes the news; one report is very weak evidence about how common
-something is. **Never record a lone incident as a finding about a region.** An incident
+something is. **Never treat a lone incident as a finding about a region.** An incident
 counts only if:
 
 - it is part of a **pattern** (≥2 independent reports, or published counts/rates); or
@@ -141,9 +141,10 @@ Use exact region names and shapeIDs from `adm1_list.py`. Include a region under
 "Regions with findings" only with at least one sourced bullet. "No sub-national signal
 found" is a complete and useful result — do not manufacture findings.
 
-**Large unit counts** (RUS 83, TUR 81, NGA 37, IND 36, IDN 34, MEX/COL 32–33): do not
-attempt every unit. Where real variation is nation-level or a handful of regions (RUS:
-Chechnya plus a few cities; TUR: Istanbul vs the southeast; GBR: its 4 constituent
+**Large unit counts** (examples: RUS 83, TUR 81, NGA 37, IND 36, IDN 34, MEX/COL 32–33):
+do not attempt every unit, as no data will exist for most. Where real
+variation is nation-level or a handful of regions (RUS: Chechnya plus a few cities for
+example; TUR: Istanbul vs the southeast; GBR: its 4 constituent
 nations), report at that level and list everything else under "no sub-national signal".
 Five regions with real evidence beats eighty thin guesses.
 
@@ -153,7 +154,8 @@ After each country, classify honestly. If **three consecutive countries** come b
 **POOR** with no different-legal-system regions worth reporting, stop: write
 `research/admin1/_STOP.md` naming where you stopped and which ranked countries remain.
 Continuing past the point of data exhaustion invents regional distinctions from noise —
-worse than leaving regions at their national score.
+worse than leaving regions at their national score. Just do not forget the Mandatory
+Exceptions Clause.
 
 ## Ranked country order (work top-down; unit counts are post-exclusion)
 
