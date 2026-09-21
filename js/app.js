@@ -217,7 +217,11 @@
       : "";
     const sources = (Array.isArray(rec.sources) && rec.sources.length)
       ? `<div class="popup-sources"><details><summary>Sources (${rec.sources.length})${rec.researchedAt ? " · researched " + esc(rec.researchedAt) : ""}</summary>
-          <ul>${rec.sources.map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, "").slice(0, 70))}</a></li>`).join("")}</ul>
+          <ul>${rec.sources.map(u => {
+            const url = typeof u === "string" ? u : String((u && u.url) || "");
+            const note = (typeof u === "object" && u && u.summary) ? String(u.summary) : "";
+            return `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(url.replace(/^https?:\/\//, "").slice(0, 70))}</a>${note ? `<div class="src-note">${esc(note)}</div>` : ""}</li>`;
+          }).join("")}</ul>
         </details></div>`
       : rec.inherited
         ? `<div class="popup-sources">Inherits national score${rec.researchedAt ? " · researched " + esc(rec.researchedAt) : ""}.</div>`
