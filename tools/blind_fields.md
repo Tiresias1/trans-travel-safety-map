@@ -299,3 +299,41 @@ implementation follows the stated *formula* — `P_diff × (rated_gap − curren
 equally — giving 0.27715 / 0.52785 for that example rather than the brief's 0.28515 / 0.51985.
 Steps 1 and 2 reproduce the brief exactly (0.295 → 0.291; 0.51 → 0.514). If the 0.4 figure was
 intentional rather than a slip, say so and I will add a `--differential-target` override.
+
+---
+
+# Sub-national (admin1) pairwise mode
+
+For divisions of one country, in-country pairs:
+
+```bash
+python3 tools/blind_pairwise.py --api-key "$KEY" \
+  --admin1 --country USA --num-pairs 255 \
+  --absolute-weighting-percent 0.10-0.015 \
+  --absolute-weighting-shift 0.008-0.0012 \
+  --differential-weighting-percent 0.15-0.03 \
+  --workers 4 --seed 11
+```
+
+Differences from country mode:
+- **The parent country is NOT blinded** — the cached system prompt carries the country's
+  name, national score and band, full national assessment, secondary factors, and current
+  spectrum anchors (ISL/NLD/GBR/USA/TUR/EGY/AFG), so the rater judges deviations with
+  full national context.
+- **Division names are shown; division scores are hidden.** Identity-blinding is neither
+  possible nor desirable in-country (autonomy and legal-hierarchy judgements need to know
+  the region); the protection is score-blindness plus randomised presentation order.
+- Sub-national rules are added to the rubric: don't re-rate national factors; strong
+  rule of law + no explicit autonomy ⇒ regions cannot override national law (regional
+  statutes are climate, not operative risk); weak rule of law ⇒ regional practice can
+  bend national law in either direction; enforcement beats statute; equal scores are
+  correct when dossiers warrant.
+- Unit dossiers come from `data/admin1.json` records (summary text only; source URLs
+  omitted to keep the uncached part small). `estimated` records carry a data-status note.
+- Checkpoints write `data/admin1.json` (runtime helper keys stripped); run
+  `tools/build_data.py` afterwards for ranks/meta.
+- `--num-pairs 5×units` ≈ 10 encounters per unit (USA 51 units → 255 pairs).
+
+Coordination note: pairwise runs and `apply_admin1_scores.py` merges both rewrite
+`data/admin1.json` wholesale — don't run a pairwise checkpoint and a merge at the same
+instant; sequence per-country merges between pairwise runs, or pause one.

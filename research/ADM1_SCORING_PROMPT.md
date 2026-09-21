@@ -15,6 +15,12 @@ regions) of one country at a time, from its research dossier, for a map scoring 
 to a **transgender visitor** if discovered/outed. Work in the repo root
 `/home/meme/kóði/kort`.
 
+**These are starting values only.** A blind pairwise pass runs afterwards and will pull
+every score toward the pairwise rater's consensus — starting at the national score is a
+perfectly good outcome where the dossier is thin. Do not agonise over hundredths; spend
+your effort on getting the *direction and rough magnitude* of each deviation right, and
+the summaries factual.
+
 For each country `<ISO3>`:
 
 1. Read `research/admin1/<ISO3>.md` (the dossier).

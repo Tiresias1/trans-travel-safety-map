@@ -175,6 +175,124 @@ RATING_RULES = """\
     just work with the data that you have available to you.
 """
 
+ADMIN1_RULES = """\
+## Sub-national rating rules (these apply in addition to everything above)
+
+Both dossiers are first-level administrative divisions (states, provinces, regions) of
+the **same country**, whose national profile is given above. Rate each division as the
+national score plus or minus the sub-national deviation its own dossier supports.
+
+1. **Do not re-rate national factors.** Federal/national law, border and passport
+   friction, and the national enforcement climate are already priced into the national
+   score and are identical for both divisions. Only what genuinely differs between the
+   two divisions should move your scores, and only by as much as the dossier supports.
+
+2. **Legal hierarchy — who can actually override whom.** Where the rule of law is strong
+   and a region has *not* been explicitly granted autonomy over the relevant subject,
+   regions cannot override national law: a regional statute, decree or resolution
+   conflicting with national law is signalling and political climate, not operative risk.
+   Where the rule of law is weak, regional and local authorities can bend national law in
+   practice — in **either** direction (harsher enforcement than the national standard, or
+   de-facto tolerance despite hostile national law). Weigh regional practice accordingly,
+   and say in your reasoning which case you judged applies.
+
+3. **Autonomy that is real counts.** A region with genuine devolved power over the
+   subject (its own criminal law, its own courts, its own policing) can legitimately
+   diverge widely from the national score. A region whose only lever is symbolic
+   declarations cannot.
+
+4. **Expected spread.** Divisions of large, diverse federations with documented
+   sub-national legislation can reasonably span ±0.15 or more around the national score.
+   Divisions of small or unitary countries where the dossier shows only city-level
+   cultural variation should stay within a few points of it. Do not manufacture spread
+   the dossier does not support, and do not compress spread it does.
+
+5. **Enforcement beats statute.** A court-blocked ban is a small factor; a ban with
+   documented arrests, trespass warnings, or filed bounty suits is a large one. Documented
+   institutional responses (conviction of attackers, charges dismissed, civil-rights
+   findings) are positive evidence.
+
+6. **Equal scores are correct when the dossiers warrant them.** Two divisions sharing the
+   same tier evidence and no division-specific facts should receive the same score. Do not
+   invent a difference to look decisive.
+"""
+
+ANCHOR_ISOS = ("ISL", "NLD", "GBR", "USA", "TUR", "EGY", "AFG")
+
+
+def build_admin1_system_prompt(taxonomy_text: str, parent: dict, parent_iso: str,
+                               countries: dict) -> str:
+    """System prompt for in-country sub-national pairs.
+
+    The parent country is deliberately NOT blinded: the rater needs full national
+    context to judge deviations from it. Everything here is constant for the whole
+    run (one run = one country), so it stays cacheable.
+    """
+    anchors = " · ".join(
+        f"{countries[i]['name']} {countries[i]['score']:.2f}"
+        for i in ANCHOR_ISOS if i in countries)
+
+    def clean(s):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(s or ""))).strip()
+
+    ctx = [f"### NATIONAL ASSESSMENT\n{clean(parent.get('summary'))}"]
+    if parent.get("tangentialFactors"):
+        ctx.append("### NATIONAL SECONDARY / SITUATIONAL FACTORS\n"
+                   + clean(parent["tangentialFactors"]))
+    if parent.get("localsOnly"):
+        ctx.append("### AFFECTS RESIDENTS MORE THAN VISITORS\n"
+                   + clean(parent["localsOnly"]))
+    if parent.get("outOfScopeNotes"):
+        ctx.append("### NOT FACTORED INTO THE NATIONAL SCORE\n"
+                   + clean(parent["outOfScopeNotes"]))
+    national_context = "\n\n".join(ctx)
+
+    return f"""\
+You are an expert assessor of travel risk for transgender people. You will be given two
+anonymised dossiers, labelled A and B. Each describes one first-level administrative
+division of a single country, identified below. Rate each division on the same 0.00–1.00
+scale, for a **transgender visitor** discovered or outed there.
+
+You are not told either division's existing score. Derive both from the dossiers.
+
+## The country
+
+**{parent['name']}** ({parent_iso}) — national score **{parent['score']:.2f}**,
+band: {parent.get('band', '')}. {len(parent.get('sources', []))} sources behind the
+national assessment.
+
+For scale orientation, current scores elsewhere on the map: {anchors}.
+
+{national_context}
+
+## The scale
+
+0.00–1.00, continuous, **higher is safer**.
+
+- **0.00** — A trans visitor who is outed faces near-certain imprisonment or execution.
+- **1.00** — the aspirational limit: law and society fully accept trans people as their
+  gender identity with zero discrimination or judgement. No jurisdiction reaches it
+  perfectly, but a strongly protective jurisdiction with functioning recourse and no
+  documented trans-specific negatives belongs in the 0.85–0.95 range; do not withhold
+  top-band scores merely because a flawless record cannot be proven.
+
+Bands (orientation only — you output numbers): [0.00, 0.20) Do Not Travel ·
+[0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk · [0.60, 0.80) Reduced Risk ·
+[0.80, 1.00] Low Risk
+
+{RATING_RULES}
+{ADMIN1_RULES}
+---
+
+# Reference documentation: the outing-risk taxonomy
+
+{taxonomy_text.strip()}
+
+---
+
+{OUTPUT_FORMAT}"""
+
+
 OUTPUT_FORMAT = """\
 ## Output format
 
@@ -269,6 +387,29 @@ def dossier(rec: dict) -> str:
     return "\n\n".join(parts)
 
 
+def admin1_dossier(rec: dict) -> str:
+    """Sub-national dossier. Division names are NOT hidden — only scores are.
+
+    The rater needs to know which region it is reading to weigh autonomy and legal
+    hierarchy; hiding names would prevent that judgement. Source URLs are omitted
+    (the summary carries their substance) to keep the uncached part small.
+    """
+    def clean(s):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(s or ""))).strip()
+
+    parts = [f"### DIVISION\n{rec.get('name', '?')}"]
+    if rec.get("summary"):
+        parts.append(f"### ASSESSMENT\n{clean(rec['summary'])}")
+    if rec.get("outOfScopeNotes"):
+        parts.append("### NOT FACTORED\n" + clean(rec["outOfScopeNotes"]))
+    if rec.get("estimated"):
+        parts.append("### DATA STATUS\nThis division's assessment is a flagged estimate "
+                     "from national-level knowledge of its distinct legal system, not a "
+                     "dedicated research dossier. Rate what it supports; do not treat "
+                     "thin data as either safety or danger.")
+    return "\n\n".join(parts)
+
+
 def build_user_prompt(rec_a: dict, rec_b: dict) -> str:
     return f"""\
 Rate the two dossiers below.
@@ -280,6 +421,21 @@ Rate the two dossiers below.
 ## DOSSIER B
 
 {dossier(rec_b)}
+
+Reply with only the JSON object described in the output format."""
+
+
+def build_admin1_user_prompt(rec_a: dict, rec_b: dict) -> str:
+    return f"""\
+Rate the two divisions of {rec_a.get('_parent_name', 'the country')} below.
+
+## DIVISION A
+
+{admin1_dossier(rec_a)}
+
+## DIVISION B
+
+{admin1_dossier(rec_b)}
 
 Reply with only the JSON object described in the output format."""
 
@@ -508,6 +664,12 @@ def main() -> int:
     ap.add_argument("--backoff", type=float, default=1.5)
     ap.add_argument("--timeout", type=float, default=180.0)
     ap.add_argument("--countries-file", default=str(COUNTRIES))
+    ap.add_argument("--admin1", action="store_true",
+                    help="sub-national mode: pair first-level divisions of one country "
+                         "instead of countries")
+    ap.add_argument("--country", default=None,
+                    help="with --admin1: the ISO3 whose divisions to pair")
+    ap.add_argument("--admin1-file", default=str(ROOT / "data" / "admin1.json"))
     ap.add_argument("--log", default=None, help="JSONL audit log path")
     ap.add_argument("--save-every", type=int, default=25)
     ap.add_argument("--no-cache", action="store_true",
@@ -530,7 +692,27 @@ def main() -> int:
 
     countries = json.loads(Path(args.countries_file).read_text(encoding="utf-8"))
     taxonomy = TAXONOMY.read_text(encoding="utf-8")
-    system_text = build_system_prompt(taxonomy)
+
+    # ---- admin1 (sub-national) mode: one country's divisions, in-country pairs ----
+    admin1 = None
+    parent_iso = None
+    store_file = Path(args.countries_file)
+    store = countries
+    if args.admin1:
+        if not args.country:
+            print("error: --admin1 requires --country ISO3", file=sys.stderr)
+            return 2
+        parent_iso = args.country.upper()
+        parent = countries.get(parent_iso)
+        if parent is None:
+            print(f"error: no country record for {parent_iso}", file=sys.stderr)
+            return 2
+        admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
+        store = admin1
+        store_file = Path(args.admin1_file)
+        system_text = build_admin1_system_prompt(taxonomy, parent, parent_iso, countries)
+    else:
+        system_text = build_system_prompt(taxonomy)
 
     def has_field(rec: dict, f: str) -> bool:
         v = rec.get(f)
@@ -540,36 +722,49 @@ def main() -> int:
 
     eligible = []
     partial = []
-    for iso, rec in countries.items():
-        required_here = [f for f in REQUIRED_BLIND
-                         if not (f == "blindOutOfScope"
-                                 and not str(rec.get("outOfScopeNotes", "")).strip())]
-        if all(has_field(rec, f) for f in required_here):
-            eligible.append(iso)
-        elif any(has_field(rec, f) for f in BLIND_FIELDS):
-            partial.append(iso)
-    if not eligible:
-        print(f"error: no records have the required blind fields {REQUIRED_BLIND}.\n"
-              f"Populate them first:\n"
-              f"  python3 tools/make_blind_inputs.py            # extract payloads\n"
-              f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
-              f"  python3 tools/apply_blind_fields.py --in <outputs>\n",
-              file=sys.stderr)
-        return 2
-    if args.allow_partial_blind:
-        eligible += partial
-        eligible = sorted(set(eligible))
+    if admin1 is not None:
+        for sid, rec in admin1.items():
+            if (rec.get("iso3") == parent_iso and isinstance(rec.get("score"), (int, float))
+                    and str(rec.get("summary", "")).strip()):
+                rec["_parent_name"] = parent["name"]
+                eligible.append(sid)
+        if len(eligible) < 2:
+            print(f"error: only {len(eligible)} scored divisions for {parent_iso}.\n"
+                  f"Score them first — see research/ADM1_SCORING_PROMPT.md, then\n"
+                  f"  python3 tools/apply_admin1_scores.py --in data/admin1_scores/{parent_iso}.jsonl",
+                  file=sys.stderr)
+            return 2
+    else:
+        for iso, rec in countries.items():
+            required_here = [f for f in REQUIRED_BLIND
+                             if not (f == "blindOutOfScope"
+                                     and not str(rec.get("outOfScopeNotes", "")).strip())]
+            if all(has_field(rec, f) for f in required_here):
+                eligible.append(iso)
+            elif any(has_field(rec, f) for f in BLIND_FIELDS):
+                partial.append(iso)
+        if not eligible:
+            print(f"error: no records have the required blind fields {REQUIRED_BLIND}.\n"
+                  f"Populate them first:\n"
+                  f"  python3 tools/make_blind_inputs.py            # extract payloads\n"
+                  f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
+                  f"  python3 tools/apply_blind_fields.py --in <outputs>\n",
+                  file=sys.stderr)
+            return 2
+        if args.allow_partial_blind:
+            eligible += partial
+            eligible = sorted(set(eligible))
 
-    if len(eligible) < 2:
-        print(f"error: need at least 2 records with the required blind fields "
-              f"{REQUIRED_BLIND}, found {len(eligible)}.\n"
-              f"Populate more records first:\n"
-              f"  python3 tools/make_blind_inputs.py\n"
-              f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
-              f"  python3 tools/apply_blind_fields.py --in <outputs>\n"
-              f"  python3 tools/apply_blind_fields.py --in <outputs> --report\n",
-              file=sys.stderr)
-        return 2
+        if len(eligible) < 2:
+            print(f"error: need at least 2 records with the required blind fields "
+                  f"{REQUIRED_BLIND}, found {len(eligible)}.\n"
+                  f"Populate more records first:\n"
+                  f"  python3 tools/make_blind_inputs.py\n"
+                  f"  <run the anonymising model — prompt in tools/blind_fields.md>\n"
+                  f"  python3 tools/apply_blind_fields.py --in <outputs>\n"
+                  f"  python3 tools/apply_blind_fields.py --in <outputs> --report\n",
+                  file=sys.stderr)
+            return 2
 
     rng = random.Random(args.seed)
     focus = None
@@ -581,13 +776,22 @@ def main() -> int:
                   file=sys.stderr)
             return 2
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    log_path = Path(args.log) if args.log else ROOT / "data" / f"blind-pairwise-{ts}.jsonl"
+    tag = f"admin1-{parent_iso}-" if args.admin1 else ""
+    log_path = Path(args.log) if args.log else \
+        ROOT / "data" / f"blind-pairwise-{tag}{ts}.jsonl"
     log_path.parent.mkdir(parents=True, exist_ok=True)
 
     print(f"system prompt: {len(system_text):,} chars "
           f"(~{len(system_text)//4:,} tokens) — {'NOT cached' if args.no_cache else 'cached'}")
-    print(f"eligible countries: {len(eligible)}"
-          + (f" (+{len(partial)} partial)" if partial and not args.allow_partial_blind else ""))
+    if admin1 is not None:
+        print(f"admin1 mode: {parent['name']} ({parent_iso}) national "
+              f"{parent['score']:.2f} · {len(eligible)} scored divisions · "
+              f"this run gives ~{args.num_pairs*2/len(eligible):.1f} encounters each "
+              f"(recommend --num-pairs {5*len(eligible)} for ~10)")
+    else:
+        print(f"eligible countries: {len(eligible)}"
+              + (f" (+{len(partial)} partial)"
+                 if partial and not args.allow_partial_blind else ""))
     print(f"pairs: {args.num_pairs} · workers: {args.workers} · model: {args.model} · "
           f"reasoning: {args.reasoning_tokens}")
 
@@ -618,13 +822,16 @@ def main() -> int:
     t_start = time.time()
 
     def save():
-        for iso, rec in countries.items():
+        for rec in store.values():
             if isinstance(rec.get("score"), float):
                 rec["band"] = band_label(rec["score"])
-        tmp = Path(str(args.countries_file) + ".tmp")
-        tmp.write_text(json.dumps(countries, indent=1, ensure_ascii=False),
+        # strip runtime helper keys (e.g. _parent_name) before writing
+        dump = {k: {kk: vv for kk, vv in r.items() if not kk.startswith("_")}
+                for k, r in store.items()}
+        tmp = store_file.with_suffix(str(store_file.suffix) + ".tmp")
+        tmp.write_text(json.dumps(dump, indent=1, ensure_ascii=False),
                        encoding="utf-8")
-        tmp.replace(args.countries_file)
+        tmp.replace(store_file)
 
     def one_pair(idx: int) -> None:
         with lock:
@@ -633,16 +840,21 @@ def main() -> int:
                 iso_b = rng.choice([c for c in eligible if c != iso_a])
             else:
                 iso_a, iso_b = rng.sample(eligible, 2)
-            a0 = float(countries[iso_a]["score"])
-            b0 = float(countries[iso_b]["score"])
+            a0 = float(store[iso_a]["score"])
+            b0 = float(store[iso_b]["score"])
             flip = rng.random() < 0.5  # randomise presentation order (position bias)
         first, second = (iso_b, iso_a) if flip else (iso_a, iso_b)
-        user_text = build_user_prompt(countries[first], countries[second])
+        user_text = (build_admin1_user_prompt(store[first], store[second])
+                     if admin1 is not None
+                     else build_user_prompt(store[first], store[second]))
+        label_a = store[iso_a].get("name", iso_a)
+        label_b = store[iso_b].get("name", iso_b)
 
         if args.dry_run:
-            print(f"\n{'='*78}\nPAIR {idx}: {first} vs {second} "
-                  f"(stored {countries[first]['score']:.4f} / "
-                  f"{countries[second]['score']:.4f} — hidden from model)\n{'='*78}")
+            print(f"\n{'='*78}\nPAIR {idx}: A={store[first].get('name', first)} vs "
+                  f"B={store[second].get('name', second)} "
+                  f"(stored {store[first]['score']:.4f} / "
+                  f"{store[second]['score']:.4f} — hidden from model)\n{'='*78}")
             print(user_text)
             with lock:
                 stats["done"] += 1
@@ -656,6 +868,8 @@ def main() -> int:
                 stats["errors"] += 1
                 stats["done"] += 1
             entry = {"i": idx, "error": str(e), "a": iso_a, "b": iso_b,
+                     "a_name": store[iso_a].get("name", iso_a),
+                     "b_name": store[iso_b].get("name", iso_b),
                      "ts": datetime.now(timezone.utc).isoformat()}
             with open(log_path, "a", encoding="utf-8") as fh:
                 fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -675,8 +889,8 @@ def main() -> int:
         upd["params"] = {"p_abs": p_abs, "s_abs": s_abs, "p_diff": p_diff,
                          "idx": idx, "total": args.num_pairs}
         with lock:
-            countries[iso_a]["score"] = round(upd["a"]["final"], 6)
-            countries[iso_b]["score"] = round(upd["b"]["final"], 6)
+            store[iso_a]["score"] = round(upd["a"]["final"], 6)
+            store[iso_b]["score"] = round(upd["b"]["final"], 6)
             stats["done"] += 1
             stats["moves"] += abs(upd["a"]["final"] - a0) + abs(upd["b"]["final"] - b0)
             for k, src in (("cache_read", "cache_read_input_tokens"),
@@ -691,6 +905,8 @@ def main() -> int:
         entry = {
             "i": idx, "ts": datetime.now(timezone.utc).isoformat(),
             "a": iso_a, "b": iso_b, "flip": flip,
+            "a_name": label_a, "b_name": label_b,
+            **({"parent": parent_iso} if admin1 is not None else {}),
             "rated_a": ra, "rated_b": rb, "why": why,
             "a0": a0, "b0": b0,
             "a_new": upd["a"]["final"], "b_new": upd["b"]["final"],
@@ -699,8 +915,8 @@ def main() -> int:
         with open(log_path, "a", encoding="utf-8") as fh:
             fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
         el = time.time() - t_start
-        print(f"[{done}/{args.num_pairs}] {iso_a} {a0:.4f}→{upd['a']['final']:.4f} "
-              f"(rated {ra:.2f}) | {iso_b} {b0:.4f}→{upd['b']['final']:.4f} "
+        print(f"[{done}/{args.num_pairs}] {label_a} {a0:.4f}→{upd['a']['final']:.4f} "
+              f"(rated {ra:.2f}) | {label_b} {b0:.4f}→{upd['b']['final']:.4f} "
               f"(rated {rb:.2f}) · {el/done:.1f}s/pair"
               + (f" · cache-hit {usage.get('cache_read_input_tokens')}"
                  if usage.get("cache_read_input_tokens") else ""))
