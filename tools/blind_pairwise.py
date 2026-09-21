@@ -201,18 +201,13 @@ national score plus or minus the sub-national deviation its own dossier supports
    diverge widely from the national score. A region whose only lever is symbolic
    declarations cannot.
 
-4. **Expected spread.** Divisions of large, diverse federations with documented
-   sub-national legislation can reasonably span ±0.15 or more around the national score.
-   Divisions of small or unitary countries where the dossier shows only city-level
-   cultural variation should stay within a few points of it. Do not manufacture spread
-   the dossier does not support, and do not compress spread it does.
-
-5. **Enforcement beats statute.** A court-blocked ban is a small factor; a ban with
+4. **Enforcement beats statute.** A court-blocked ban is a small factor; a ban with
    documented arrests, trespass warnings, or filed bounty suits is a large one. Documented
    institutional responses (conviction of attackers, charges dismissed, civil-rights
-   findings) are positive evidence.
+   findings) are positive evidence.  At the same time, remember: absense of evidence is
+   not evidence of absense.
 
-6. **Equal scores are correct when the dossiers warrant them.** Two divisions sharing the
+5. **Equal scores are correct when the dossiers warrant them.** Two divisions sharing the
    same tier evidence and no division-specific facts should receive the same score. Do not
    invent a difference to look decisive.
 """
