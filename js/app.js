@@ -212,6 +212,9 @@
       rank = r;
     }
     const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
+    const estNote = rec.estimated
+      ? `<p class="popup-estimated">Model estimate — flagged exception (distinct legal system); no dedicated subnational dossier.</p>`
+      : "";
     const outscope = rec.outOfScopeNotes
       ? `<div class="popup-outscope"><span class="label">Not factored into the score:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
       : "";
@@ -231,7 +234,7 @@
       <p class="popup-score">${score.toFixed(2)}</p>
       <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
       <p class="popup-rank">${rank}</p>
-      ${summary}${outscope}${sources}`;
+      ${estNote}${summary}${outscope}${sources}`;
   }
 
   function buildLayer(modeKey, geojson) {

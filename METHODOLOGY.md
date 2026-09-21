@@ -114,6 +114,29 @@ Control; etc.). Patches are documented in `tools/patch_dejure.md`. Base data:
 [geoBoundaries](https://www.geoboundaries.org/) gbOpen (CC BY 4.0), with the Western
 Sahara polygon from Natural Earth (public domain).
 
+### Sub-national (first-level divisions)
+
+Divisions are handled on three routes, in descending order of evidence:
+
+1. **Data-rich** (24 researched countries, `research/admin1/*.md`): a research pass
+   collects per-division evidence under the same single-incident and burden-of-proof
+   rules; initial scores are assigned from the dossiers; then an **in-country blind
+   pairwise pass** (`blind_pairwise.py --admin1 --country ISO3`) refines them — division
+   *scores* hidden, division names shown, the **parent country deliberately unblinded**
+   (name, national score, full national assessment and spectrum anchors in the cached
+   system prompt) so deviations are judged with national context. Sub-national rules:
+   don't re-rate national factors; where rule of law is strong and no explicit autonomy
+   exists, regional statutes cannot override national law (signalling, not operative
+   risk); where rule of law is weak, regional practice can bend national law in either
+   direction; enforcement beats statute.
+2. **Different legal systems** in otherwise data-poor countries (Chechnya, Xinjiang,
+   Tibet, Zanzibar, Iraqi Kurdistan): flagged model estimates (`"estimated": true`,
+   marked in the popup), scored relative to the national score with a written
+   justification.
+3. **Everything else**: no record — the division inherits the national score, and the
+   popup says so. Inheritance is the honest answer where no sub-national evidence
+   exists; forced estimates from thin data cause more harm than good.
+
 ## Update cycle
 
 **Annual.** Conditions rarely change fast enough to justify more frequent full
@@ -139,9 +162,13 @@ its year; per-jurisdiction research dates appear in the data
 | `research/outing-risk-taxonomy.md` | The full A–K checklist and severity ladder |
 | `research/anchors.md` | Frozen anchor table + calibration rules 1–6 |
 | `research/countries/<ISO>.md` | Per-jurisdiction research notes |
+| `research/admin1/<ISO>.md` | Per-country sub-national research dossiers |
+| `research/ADM1_RESEARCH_PROMPT.md` | Hand-off prompt: sub-national research pass |
+| `research/ADM1_SCORING_PROMPT.md` | Hand-off prompt: initial division scoring |
 | `research/reanalysis-2026-08-21.md` | Systematic re-weighting pass (sodomy-as-situational etc.) |
 | `research/audit-2026-08-21.md` | Random-sample pairwise audit |
 | `data/countries.json` | Scores, summaries, sources, anonymised dossiers |
-| `tools/blind_pairwise.py` | Blind pairwise refinement driver |
+| `data/admin1.json` | Per-division scores (keyed by geoBoundaries shapeID) |
+| `tools/blind_pairwise.py` | Blind pairwise refinement driver (country + `--admin1` modes) |
 | `tools/blind_fields.md` | Anonymisation spec + prompts |
 | `tools/build_data.py` | Validation, ranks, `data/meta.json` |

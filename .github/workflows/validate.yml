@@ -1,0 +1,26 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate data + rebuild ranks/meta
+        run: python3 tools/build_data.py
+      - name: Check committed data is in sync with build output
+        run: |
+          git diff --quiet data/countries.json data/admin1.json || {
+            echo "::error::ranks/bands out of sync — run tools/build_data.py and commit"
+            git diff --stat data/countries.json data/admin1.json
+            exit 1
+          }
+      - name: JavaScript syntax check
+        run: node --check js/app.js
