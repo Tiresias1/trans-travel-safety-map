@@ -935,3 +935,102 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 260 pairs in 1232s · errors: 0 · total score movement: 0.179
 tokens — cache read: 1,363,968 · cache write: 21,312 · uncached in: 112,465 · out: 175,428
 OK: 233 countries, 2856 admin1 units; ranks written; meta written
+CAN done 2026-09-22 02:28:44
+=================== GBR 2026-09-22 02:28:44 ===================
+new: 1 · refreshed: 0 · skipped (untouchable): 3 · with deltas: 0 · countries touched: 1
+  mean drift GBR: -0.000 (1 units)
+wrote 2857 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2857 admin1 units; ranks written; meta written
+GBR: 4 units -> 80 pairs
+system prompt: 23,691 chars (~5,922 tokens) — cached
+admin1 mode: United Kingdom (GBR) national 0.48 · 4 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 20 for ~10)
+pairs: 80 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 40 / 80: 0.07000/0.04038/0.01000 · 0.00500/0.00298/0.00090 · 0.10000/0.06051/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-GBR-20260922-022845.jsonl
+[1/80] Scotland 0.5200→0.5258 (rated 0.53) | Wales 0.5100→0.5100 (rated 0.51) · 19.4s/pair
+[2/80] Wales 0.5100→0.5100 (rated 0.51) | Scotland 0.5200→0.5257 (rated 0.53) · 15.6s/pair
+[3/80] Scotland 0.5200→0.5270 (rated 0.54) | England 0.4821→0.4800 (rated 0.48) · 10.8s/pair
+[4/80] England 0.4821→0.4800 (rated 0.48) | Scotland 0.5258→0.5206 (rated 0.52) · 8.9s/pair · cache-hit 5323
+[5/80] Scotland 0.5270→0.5300 (rated 0.53) | England 0.4800→0.4800 (rated 0.48) · 9.8s/pair · cache-hit 5323
+[6/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5200→0.5200 (rated 0.52) · 8.4s/pair
+[7/80] England 0.4821→0.4805 (rated 0.48) | Scotland 0.5257→0.5195 (rated 0.51) · 8.5s/pair · cache-hit 5323
+[8/80] Scotland 0.5206→0.5200 (rated 0.52) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.7s/pair · cache-hit 5323
+[9/80] Wales 0.5100→0.5100 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 7.3s/pair · cache-hit 5323
+[10/80] Scotland 0.5300→0.5235 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.9s/pair · cache-hit 5323
+[11/80] Scotland 0.5195→0.5249 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.2s/pair · cache-hit 5323
+[12/80] Wales 0.5100→0.5100 (rated 0.51) | Scotland 0.5200→0.5200 (rated 0.52) · 6.8s/pair · cache-hit 5323
+[13/80] Wales 0.5100→0.5100 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.9s/pair · cache-hit 5323
+[14/80] Wales 0.5100→0.5100 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.9s/pair · cache-hit 5323
+[15/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5100→0.5100 (rated 0.51) · 7.3s/pair · cache-hit 5323
+[16/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5100→0.5050 (rated 0.50) · 7.6s/pair · cache-hit 5323
+[17/80] Wales 0.5100→0.5100 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.5s/pair · cache-hit 5323
+[18/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5050→0.5093 (rated 0.51) · 7.5s/pair · cache-hit 5323
+[19/80] Scotland 0.5200→0.5200 (rated 0.52) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.4s/pair · cache-hit 5323
+[20/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 7.2s/pair · cache-hit 5323
+[21/80] Scotland 0.5235→0.5283 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.1s/pair · cache-hit 5323
+[22/80] Scotland 0.5200→0.5153 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 7.1s/pair · cache-hit 5323
+[23/80] England 0.4800→0.4800 (rated 0.48) | Scotland 0.5200→0.5155 (rated 0.51) · 7.2s/pair · cache-hit 5323
+[24/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5200→0.5200 (rated 0.52) · 7.0s/pair · cache-hit 5323
+[25/80] Scotland 0.5283→0.5300 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.9s/pair · cache-hit 5323
+[26/80] England 0.4800→0.4800 (rated 0.48) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.8s/pair · cache-hit 5323
+[27/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Wales 0.5093→0.5100 (rated 0.51) · 6.7s/pair · cache-hit 5323
+[28/80] Scotland 0.5200→0.5200 (rated 0.52) | England 0.4800→0.4800 (rated 0.48) · 6.6s/pair · cache-hit 5323
+[29/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5100→0.5100 (rated 0.51) · 6.5s/pair · cache-hit 5323
+[30/80] England 0.4800→0.4800 (rated 0.48) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.4s/pair · cache-hit 5323
+[31/80] Scotland 0.5300→0.5264 (rated 0.52) | Northern Ireland 0.4200→0.4152 (rated 0.40) · 6.3s/pair · cache-hit 5323
+[32/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5200→0.5249 (rated 0.54) · 6.7s/pair · cache-hit 5323
+[33/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5200→0.5248 (rated 0.54) · 6.5s/pair · cache-hit 5323
+[34/80] England 0.4800→0.4800 (rated 0.48) | Scotland 0.5200→0.5161 (rated 0.51) · 6.5s/pair · cache-hit 5323
+[35/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5100→0.5100 (rated 0.51) · 6.6s/pair · cache-hit 5323
+[36/80] England 0.4800→0.4800 (rated 0.48) | Scotland 0.5248→0.5214 (rated 0.52) · 6.4s/pair · cache-hit 5323
+[37/80] England 0.4800→0.4800 (rated 0.48) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.5s/pair · cache-hit 5323
+[38/80] Northern Ireland 0.4152→0.4188 (rated 0.42) | Scotland 0.5264→0.5227 (rated 0.52) · 6.4s/pair · cache-hit 5323
+[39/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.6s/pair · cache-hit 5323
+[40/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[41/80] Wales 0.5100→0.5100 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.6s/pair · cache-hit 5323
+[42/80] Wales 0.5100→0.5065 (rated 0.50) | Scotland 0.5227→0.5202 (rated 0.52) · 6.6s/pair · cache-hit 5323
+[43/80] Wales 0.5065→0.5093 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[44/80] Wales 0.5100→0.5100 (rated 0.51) | Scotland 0.5227→0.5259 (rated 0.53) · 6.6s/pair · cache-hit 5323
+[45/80] Wales 0.5100→0.5100 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.5s/pair · cache-hit 5323
+[46/80] Scotland 0.5227→0.5265 (rated 0.54) | Wales 0.5100→0.5100 (rated 0.51) · 6.6s/pair · cache-hit 5323
+[47/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5100→0.5064 (rated 0.49) · 6.8s/pair · cache-hit 5323
+[48/80] Scotland 0.5259→0.5235 (rated 0.52) | Wales 0.5100→0.5064 (rated 0.49) · 6.7s/pair · cache-hit 5323
+[49/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5202→0.5200 (rated 0.52) · 6.7s/pair · cache-hit 5323
+[50/80] Scotland 0.5265→0.5239 (rated 0.52) | Wales 0.5100→0.5071 (rated 0.50) · 6.7s/pair · cache-hit 5323
+[51/80] Wales 0.5064→0.5089 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.8s/pair · cache-hit 5323
+[52/80] Scotland 0.5265→0.5232 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[53/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[54/80] Scotland 0.5239→0.5264 (rated 0.53) | Wales 0.5089→0.5099 (rated 0.51) · 6.7s/pair · cache-hit 5323
+[55/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.9s/pair · cache-hit 5323
+[56/80] Scotland 0.5239→0.5264 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.8s/pair · cache-hit 5323
+[57/80] Scotland 0.5232→0.5210 (rated 0.52) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[58/80] Wales 0.5089→0.5100 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.6s/pair · cache-hit 5323
+[59/80] England 0.4800→0.4800 (rated 0.48) | Wales 0.5099→0.5100 (rated 0.51) · 6.8s/pair · cache-hit 5323
+[60/80] Scotland 0.5210→0.5187 (rated 0.51) | England 0.4800→0.4800 (rated 0.48) · 6.8s/pair · cache-hit 5323
+[61/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.8s/pair · cache-hit 5323
+[62/80] Scotland 0.5264→0.5241 (rated 0.52) | England 0.4800→0.4800 (rated 0.48) · 6.7s/pair · cache-hit 5323
+[63/80] Wales 0.5100→0.5100 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.8s/pair · cache-hit 5323
+[64/80] Scotland 0.5187→0.5207 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.7s/pair · cache-hit 5323
+[65/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5187→0.5166 (rated 0.51) · 6.8s/pair · cache-hit 5323
+[66/80] Scotland 0.5241→0.5260 (rated 0.53) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.7s/pair · cache-hit 5323
+[67/80] Wales 0.5100→0.5100 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.8s/pair · cache-hit 5323
+[68/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5241→0.5224 (rated 0.52) · 6.8s/pair · cache-hit 5323
+[69/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.8s/pair · cache-hit 5323
+[70/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.8s/pair · cache-hit 5323
+[71/80] Wales 0.5100→0.5100 (rated 0.51) | Scotland 0.5260→0.5244 (rated 0.52) · 6.9s/pair · cache-hit 5323
+[72/80] Scotland 0.5224→0.5239 (rated 0.53) | Wales 0.5100→0.5100 (rated 0.51) · 6.8s/pair · cache-hit 5323
+[73/80] Wales 0.5100→0.5100 (rated 0.51) | Northern Ireland 0.4200→0.4200 (rated 0.42) · 6.9s/pair · cache-hit 5323
+[74/80] Wales 0.5100→0.5100 (rated 0.51) | Scotland 0.5260→0.5275 (rated 0.53) · 6.8s/pair · cache-hit 5323
+[75/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Wales 0.5100→0.5100 (rated 0.51) · 6.8s/pair · cache-hit 5323
+[76/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Wales 0.5100→0.5100 (rated 0.51) · 6.8s/pair · cache-hit 5323
+[77/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | Scotland 0.5275→0.5263 (rated 0.52) · 6.9s/pair · cache-hit 5323
+[78/80] Scotland 0.5239→0.5228 (rated 0.52) | England 0.4800→0.4800 (rated 0.48) · 7.0s/pair · cache-hit 5323
+[79/80] Northern Ireland 0.4200→0.4200 (rated 0.42) | England 0.4800→0.4800 (rated 0.48) · 6.9s/pair · cache-hit 5323
+[80/80] Scotland 0.5275→0.5265 (rated 0.52) | Wales 0.5100→0.5089 (rated 0.50) · 6.9s/pair · cache-hit 5323
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 80 pairs in 554s · errors: 0 · total score movement: 0.177
+tokens — cache read: 404,548 · cache write: 21,292 · uncached in: 48,450 · out: 92,802
+OK: 233 countries, 2857 admin1 units; ranks written; meta written
