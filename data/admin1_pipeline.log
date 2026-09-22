@@ -10477,3 +10477,362 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 260 pairs in 730s · errors: 0 · total score movement: 0.033
 tokens — cache read: 1,356,800 · cache write: 21,200 · uncached in: 122,076 · out: 152,538
 OK: 233 countries, 3192 admin1 units; ranks written; meta written
+FRA done 2026-09-22 12:02:32
+=================== PHL 2026-09-22 12:02:32 ===================
+new: 7 · refreshed: 0 · skipped (untouchable): 10 · with deltas: 0 · countries touched: 1
+  mean drift PHL: +0.000 (7 units)
+wrote 3199 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3199 admin1 units; ranks written; meta written
+PHL: 17 units -> 340 pairs
+system prompt: 23,565 chars (~5,891 tokens) — cached
+admin1 mode: Philippines (PHL) national 0.56 · 17 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 85 for ~10)
+pairs: 340 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 170 / 340: 0.07000/0.04009/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06012/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-PHL-20260922-120233.jsonl
+[1/340] Caraga 0.5561→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 10.0s/pair
+[2/340] Mimaropa 0.5561→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 5.4s/pair
+[3/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 5.1s/pair
+[4/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Zamboanga Peninsula 0.5561→0.5600 (rated 0.56) · 3.9s/pair
+[5/340] Eastern Visayas 0.5561→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[6/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Eastern Visayas 0.5561→0.5600 (rated 0.56) · 4.4s/pair · cache-hit 5323
+[7/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Bicol Region 0.5561→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5323
+[8/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 4.0s/pair · cache-hit 5323
+[9/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.8s/pair · cache-hit 5323
+[10/340] Calabarzon 0.5100→0.5100 (rated 0.51) | CAR 0.5400→0.5400 (rated 0.54) · 4.1s/pair · cache-hit 5323
+[11/340] Central Luzon 0.4900→0.4900 (rated 0.49) | CAR 0.5400→0.5400 (rated 0.54) · 4.1s/pair · cache-hit 5323
+[12/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5323
+[13/340] Davao Region 0.5561→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5323
+[14/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[15/340] Northern Mindanao 0.5561→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.5s/pair · cache-hit 5323
+[16/340] Caraga 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[17/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.7s/pair · cache-hit 5323
+[18/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[19/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[20/340] Davao Region 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[21/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.8s/pair · cache-hit 5323
+[22/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[23/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[24/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[25/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[26/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4400→0.4467 (rated 0.46) · 3.9s/pair · cache-hit 5323
+[27/340] CAR 0.5400→0.5400 (rated 0.54) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[28/340] ARMM 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[29/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[30/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[31/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[32/340] Soccsksargen 0.4400→0.4523 (rated 0.51) | Central Visayas 0.6300→0.6216 (rated 0.62) · 3.6s/pair · cache-hit 5323
+[33/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[34/340] CAR 0.5400→0.5400 (rated 0.54) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[35/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[36/340] Davao Region 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4467→0.4416 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[37/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[38/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Soccsksargen 0.4523→0.4467 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[39/340] Bicol Region 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[40/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Caraga 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[41/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | ARMM 0.4900→0.4900 (rated 0.49) · 3.8s/pair · cache-hit 5323
+[42/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.8s/pair · cache-hit 5323
+[43/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[44/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[45/340] Caraga 0.5600→0.5600 (rated 0.56) | Central Visayas 0.6216→0.6268 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[46/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[47/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Central Visayas 0.6268→0.6300 (rated 0.63) · 3.8s/pair · cache-hit 5323
+[48/340] Central Visayas 0.6216→0.6267 (rated 0.63) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[49/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[50/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[51/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[52/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[53/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.7s/pair · cache-hit 5323
+[54/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[55/340] NCR 0.6500→0.6500 (rated 0.65) | Soccsksargen 0.4467→0.4418 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[56/340] Caraga 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[57/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | NCR 0.6500→0.6500 (rated 0.65) · 3.8s/pair · cache-hit 5323
+[58/340] Soccsksargen 0.4467→0.4416 (rated 0.44) | Calabarzon 0.5100→0.5152 (rated 0.52) · 3.8s/pair · cache-hit 5323
+[59/340] Mimaropa 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.8s/pair · cache-hit 5323
+[60/340] NCR 0.6500→0.6500 (rated 0.65) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[61/340] Caraga 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[62/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[63/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.8s/pair · cache-hit 5323
+[64/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.8s/pair · cache-hit 5323
+[65/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[66/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | NCR 0.6500→0.6500 (rated 0.65) · 3.8s/pair · cache-hit 5323
+[67/340] Soccsksargen 0.4418→0.4475 (rated 0.46) | ARMM 0.4900→0.4945 (rated 0.50) · 3.8s/pair · cache-hit 5323
+[68/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[69/340] ARMM 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[70/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.8s/pair · cache-hit 5323
+[71/340] NCR 0.6500→0.6500 (rated 0.65) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[72/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.7s/pair · cache-hit 5323
+[73/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+[74/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4475→0.4428 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[75/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[76/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[77/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[78/340] Davao Region 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[79/340] Soccsksargen 0.4428→0.4400 (rated 0.44) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[80/340] Calabarzon 0.5152→0.5109 (rated 0.51) | NCR 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[81/340] Calabarzon 0.5152→0.5109 (rated 0.51) | NCR 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[82/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5152→0.5109 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[83/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[84/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Calabarzon 0.5152→0.5109 (rated 0.51) · 3.7s/pair · cache-hit 5323
+[85/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[86/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[87/340] Caraga 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[88/340] Mimaropa 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[89/340] Calabarzon 0.5109→0.5100 (rated 0.51) | Central Visayas 0.6267→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[90/340] Caraga 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5109→0.5100 (rated 0.51) · 3.7s/pair · cache-hit 5323
+[91/340] Caraga 0.5600→0.5600 (rated 0.56) | NCR 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[92/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[93/340] Caraga 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[94/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[95/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[96/340] Caraga 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[97/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[98/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[99/340] ARMM 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[100/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[101/340] Caraga 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[102/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[103/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[104/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[105/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.7s/pair · cache-hit 5323
+[106/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[107/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[108/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[109/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[110/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[111/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[112/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[113/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[114/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[115/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[116/340] CAR 0.5400→0.5400 (rated 0.54) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[117/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[118/340] ARMM 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[119/340] Caraga 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[120/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[121/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[122/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[123/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[124/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[125/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[126/340] ARMM 0.4900→0.4900 (rated 0.49) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[127/340] ARMM 0.4900→0.4900 (rated 0.49) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[128/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[129/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[130/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[131/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[132/340] Caraga 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[133/340] Caraga 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[134/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[135/340] NCR 0.6500→0.6500 (rated 0.65) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[136/340] NCR 0.6500→0.6500 (rated 0.65) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[137/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[138/340] Bicol Region 0.5600→0.5600 (rated 0.56) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[139/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[140/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[141/340] ARMM 0.4900→0.4900 (rated 0.49) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[142/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[143/340] CAR 0.5400→0.5400 (rated 0.54) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[144/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[145/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[146/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[147/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[148/340] CAR 0.5400→0.5400 (rated 0.54) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[149/340] NCR 0.6500→0.6500 (rated 0.65) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[150/340] ARMM 0.4900→0.4900 (rated 0.49) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[151/340] Davao Region 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[152/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[153/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[154/340] Caraga 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[155/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[156/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[157/340] CAR 0.5400→0.5400 (rated 0.54) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[158/340] Caraga 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[159/340] Davao Region 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[160/340] NCR 0.6500→0.6460 (rated 0.64) | Soccsksargen 0.4400→0.4440 (rated 0.45) · 3.6s/pair · cache-hit 5323
+[161/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[162/340] Caraga 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[163/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[164/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[165/340] Caraga 0.5600→0.5600 (rated 0.56) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[166/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Soccsksargen 0.4440→0.4408 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[167/340] NCR 0.6460→0.6492 (rated 0.65) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[168/340] NCR 0.6460→0.6492 (rated 0.65) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[169/340] Caraga 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4440→0.4408 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[170/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[171/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[172/340] Soccsksargen 0.4408→0.4400 (rated 0.44) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[173/340] Soccsksargen 0.4408→0.4400 (rated 0.44) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[174/340] Soccsksargen 0.4408→0.4450 (rated 0.46) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[175/340] CAR 0.5400→0.5400 (rated 0.54) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[176/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[177/340] Mimaropa 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[178/340] CAR 0.5400→0.5400 (rated 0.54) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.7s/pair · cache-hit 5323
+[179/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[180/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[181/340] CAR 0.5400→0.5400 (rated 0.54) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[182/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[183/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[184/340] Davao Region 0.5600→0.5600 (rated 0.56) | NCR 0.6492→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[185/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[186/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[187/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[188/340] Davao Region 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[189/340] Calabarzon 0.5100→0.5100 (rated 0.51) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[190/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.7s/pair · cache-hit 5323
+[191/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[192/340] Bicol Region 0.5600→0.5600 (rated 0.56) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[193/340] NCR 0.6500→0.6500 (rated 0.65) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[194/340] Calabarzon 0.5100→0.5100 (rated 0.51) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[195/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[196/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[197/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[198/340] Western Visayas 0.5300→0.5300 (rated 0.53) | NCR 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[199/340] CAR 0.5400→0.5400 (rated 0.54) | ARMM 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[200/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[201/340] ARMM 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[202/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[203/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[204/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[205/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[206/340] Central Visayas 0.6300→0.6300 (rated 0.63) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[207/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[208/340] Calabarzon 0.5100→0.5100 (rated 0.51) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[209/340] Mimaropa 0.5600→0.5600 (rated 0.56) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[210/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.7s/pair · cache-hit 5323
+[211/340] CAR 0.5400→0.5400 (rated 0.54) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[212/340] ARMM 0.4900→0.4900 (rated 0.49) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[213/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[214/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[215/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[216/340] Davao Region 0.5600→0.5600 (rated 0.56) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[217/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.7s/pair · cache-hit 5323
+[218/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[219/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[220/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[221/340] Western Visayas 0.5300→0.5300 (rated 0.53) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[222/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[223/340] Caraga 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[224/340] Caraga 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[225/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[226/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[227/340] Davao Region 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[228/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[229/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[230/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[231/340] NCR 0.6500→0.6500 (rated 0.65) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[232/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[233/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[234/340] Caraga 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[235/340] Central Visayas 0.6300→0.6300 (rated 0.63) | NCR 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5323
+[236/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[237/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[238/340] Caraga 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5323
+[239/340] CAR 0.5400→0.5400 (rated 0.54) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.7s/pair · cache-hit 5323
+[240/340] CAR 0.5400→0.5400 (rated 0.54) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[241/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[242/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[243/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[244/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[245/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[246/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[247/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[248/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[249/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[250/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[251/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[252/340] CAR 0.5400→0.5400 (rated 0.54) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[253/340] Davao Region 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[254/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[255/340] ARMM 0.4900→0.4900 (rated 0.49) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[256/340] Davao Region 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[257/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[258/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[259/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[260/340] Caraga 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[261/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[262/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[263/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[264/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[265/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[266/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[267/340] CAR 0.5400→0.5400 (rated 0.54) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[268/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[269/340] Davao Region 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[270/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[271/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[272/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[273/340] Davao Region 0.5600→0.5600 (rated 0.56) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[274/340] Mimaropa 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[275/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[276/340] Central Visayas 0.6300→0.6300 (rated 0.63) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[277/340] Northern Mindanao 0.5600→0.5600 (rated 0.56) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[278/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[279/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[280/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Mimaropa 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[281/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[282/340] Davao Region 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[283/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[284/340] CAR 0.5400→0.5400 (rated 0.54) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[285/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[286/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[287/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[288/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[289/340] Davao Region 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[290/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[291/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[292/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[293/340] CAR 0.5400→0.5400 (rated 0.54) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[294/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[295/340] ARMM 0.4900→0.4900 (rated 0.49) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[296/340] CAR 0.5400→0.5400 (rated 0.54) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[297/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[298/340] Caraga 0.5600→0.5600 (rated 0.56) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5323
+[299/340] ARMM 0.4900→0.4900 (rated 0.49) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[300/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[301/340] Bicol Region 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[302/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[303/340] Central Visayas 0.6300→0.6300 (rated 0.63) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[304/340] Central Luzon 0.4900→0.4900 (rated 0.49) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[305/340] Ilocos Region 0.5900→0.5900 (rated 0.59) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[306/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[307/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[308/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[309/340] Mimaropa 0.5600→0.5600 (rated 0.56) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.6s/pair · cache-hit 5323
+[310/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[311/340] NCR 0.6500→0.6500 (rated 0.65) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[312/340] Western Visayas 0.5300→0.5300 (rated 0.53) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[313/340] ARMM 0.4900→0.4900 (rated 0.49) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5323
+[314/340] Davao Region 0.5600→0.5600 (rated 0.56) | Caraga 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[315/340] CAR 0.5400→0.5400 (rated 0.54) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[316/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[317/340] CAR 0.5400→0.5400 (rated 0.54) | Caraga 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[318/340] Central Visayas 0.6300→0.6300 (rated 0.63) | CAR 0.5400→0.5400 (rated 0.54) · 3.6s/pair · cache-hit 5323
+[319/340] Bicol Region 0.5600→0.5600 (rated 0.56) | ARMM 0.4900→0.4900 (rated 0.49) · 3.6s/pair · cache-hit 5323
+[320/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Eastern Visayas 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[321/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.6s/pair · cache-hit 5323
+[322/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[323/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Western Visayas 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5323
+[324/340] Eastern Visayas 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[325/340] Soccsksargen 0.4400→0.4400 (rated 0.44) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[326/340] Calabarzon 0.5100→0.5100 (rated 0.51) | NCR 0.6500→0.6500 (rated 0.65) · 3.6s/pair · cache-hit 5323
+[327/340] Calabarzon 0.5100→0.5100 (rated 0.51) | Bicol Region 0.5600→0.5600 (rated 0.56) · 3.6s/pair · cache-hit 5323
+[328/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.6s/pair · cache-hit 5323
+[329/340] CAR 0.5400→0.5400 (rated 0.54) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.7s/pair · cache-hit 5323
+[330/340] Western Visayas 0.5300→0.5300 (rated 0.53) | CAR 0.5400→0.5400 (rated 0.54) · 3.7s/pair · cache-hit 5323
+[331/340] Central Visayas 0.6300→0.6300 (rated 0.63) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[332/340] Soccsksargen 0.4400→0.4414 (rated 0.46) | Central Luzon 0.4900→0.4900 (rated 0.49) · 3.7s/pair · cache-hit 5323
+[333/340] Bicol Region 0.5600→0.5600 (rated 0.56) | Soccsksargen 0.4400→0.4400 (rated 0.44) · 3.7s/pair · cache-hit 5323
+[334/340] Cagayan Valley 0.5200→0.5200 (rated 0.52) | Ilocos Region 0.5900→0.5900 (rated 0.59) · 3.7s/pair · cache-hit 5323
+[335/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Davao Region 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5323
+[336/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[337/340] Caraga 0.5600→0.5600 (rated 0.56) | Cagayan Valley 0.5200→0.5200 (rated 0.52) · 3.7s/pair · cache-hit 5323
+[338/340] Western Visayas 0.5300→0.5300 (rated 0.53) | Central Visayas 0.6300→0.6300 (rated 0.63) · 3.7s/pair · cache-hit 5323
+[339/340] Central Luzon 0.4900→0.4900 (rated 0.49) | Calabarzon 0.5100→0.5100 (rated 0.51) · 3.8s/pair · cache-hit 5323
+[340/340] Zamboanga Peninsula 0.5600→0.5600 (rated 0.56) | Northern Mindanao 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5323
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 340 pairs in 1280s · errors: 0 · total score movement: 0.167
+tokens — cache read: 1,788,528 · cache write: 21,292 · uncached in: 154,453 · out: 248,871
+OK: 233 countries, 3199 admin1 units; ranks written; meta written
