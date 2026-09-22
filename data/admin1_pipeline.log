@@ -3269,3 +3269,682 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 380 pairs in 1122s · errors: 0 · total score movement: 0.334
 tokens — cache read: 2,005,960 · cache write: 21,340 · uncached in: 132,376 · out: 226,310
 OK: 233 countries, 2923 admin1 units; ranks written; meta written
+ESP done 2026-09-22 04:55:44
+=================== COL 2026-09-22 04:55:44 ===================
+new: 29 · refreshed: 0 · skipped (untouchable): 4 · with deltas: 1 · countries touched: 1
+  mean drift COL: +0.000 (29 units)
+wrote 2952 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2952 admin1 units; ranks written; meta written
+COL: 33 units -> 660 pairs
+system prompt: 23,862 chars (~5,965 tokens) — cached
+admin1 mode: Colombia (COL) national 0.52 · 33 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 165 for ~10)
+pairs: 660 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 330 / 660: 0.07000/0.04005/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06006/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-COL-20260922-045546.jsonl
+[1/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5155→0.5200 (rated 0.52) | La Guajira 0.5155→0.5200 (rated 0.52) · 5.3s/pair
+[2/660] Santander 0.5155→0.5200 (rated 0.52) | Cesar 0.5155→0.5200 (rated 0.52) · 3.0s/pair
+[3/660] Meta 0.5155→0.5200 (rated 0.52) | Nariño 0.5155→0.5200 (rated 0.52) · 2.3s/pair
+[4/660] Boyacá 0.5155→0.5200 (rated 0.52) | Arauca 0.5155→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[5/660] Amazonas 0.5155→0.5200 (rated 0.52) | Boyacá 0.5155→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[6/660] Cundinamarca 0.5155→0.5200 (rated 0.52) | Chocó 0.5155→0.5200 (rated 0.52) · 1.8s/pair · cache-hit 5387
+[7/660] Tolima 0.5155→0.5200 (rated 0.52) | Vichada 0.5155→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[8/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Vaupés 0.5155→0.5200 (rated 0.52) · 2.5s/pair · cache-hit 5387
+[9/660] Bolívar 0.4400→0.4400 (rated 0.44) | Caldas 0.5155→0.5200 (rated 0.52) · 2.3s/pair
+[10/660] Córdoba 0.5155→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.6s/pair · cache-hit 5387
+[11/660] Sucre 0.5155→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.5s/pair · cache-hit 5387
+[12/660] Chocó 0.5155→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.4s/pair · cache-hit 5387
+[13/660] Bolívar 0.4400→0.4482 (rated 0.47) | Guainía 0.5155→0.5189 (rated 0.52) · 2.5s/pair · cache-hit 5387
+[14/660] Cauca 0.5155→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.4s/pair · cache-hit 5387
+[15/660] Huila 0.5155→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.4s/pair · cache-hit 5387
+[16/660] Vaupés 0.5200→0.5200 (rated 0.52) | Huila 0.5155→0.5200 (rated 0.52) · 2.4s/pair · cache-hit 5387
+[17/660] Casanare 0.5155→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.4s/pair · cache-hit 5387
+[18/660] Caldas 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[19/660] Caldas 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.3s/pair · cache-hit 5387
+[20/660] Huila 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[21/660] Magdalena 0.5155→0.5200 (rated 0.52) | Risaralda 0.5155→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[22/660] Caldas 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[23/660] Cauca 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[24/660] Putumayo 0.5155→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[25/660] Sucre 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5255→0.5300 (rated 0.53) · 2.1s/pair · cache-hit 5387
+[26/660] Quindío 0.5155→0.5200 (rated 0.52) | Caquetá 0.5155→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[27/660] Vaupés 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[28/660] Guaviare 0.5155→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[29/660] Cauca 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[30/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[31/660] Vichada 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[32/660] Guainía 0.5189→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[33/660] Casanare 0.5200→0.5200 (rated 0.52) | Guainía 0.5189→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[34/660] Tolima 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[35/660] Caldas 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 1.9s/pair · cache-hit 5387
+[36/660] Quindío 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[37/660] Sucre 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[38/660] Guaviare 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[39/660] Sucre 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5155→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[40/660] Santander 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 1.8s/pair · cache-hit 5387
+[41/660] Cesar 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 1.8s/pair · cache-hit 5387
+[42/660] Guainía 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[43/660] La Guajira 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[44/660] Chocó 0.5200→0.5200 (rated 0.52) | Antioquia 0.3300→0.3300 (rated 0.33) · 2.0s/pair · cache-hit 5387
+[45/660] Cesar 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[46/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.0s/pair · cache-hit 5387
+[47/660] Guainía 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4478 (rated 0.47) · 2.0s/pair · cache-hit 5387
+[48/660] Guaviare 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[49/660] Putumayo 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[50/660] Risaralda 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4489 (rated 0.48) · 2.0s/pair · cache-hit 5387
+[51/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[52/660] Risaralda 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[53/660] Amazonas 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[54/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[55/660] Cauca 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[56/660] Nariño 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[57/660] Amazonas 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[58/660] Magdalena 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[59/660] Magdalena 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[60/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[61/660] Chocó 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[62/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[63/660] Córdoba 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5300→0.5245 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[64/660] Quindío 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[65/660] Putumayo 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[66/660] Putumayo 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[67/660] Putumayo 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[68/660] Meta 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[69/660] Risaralda 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[70/660] Putumayo 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[71/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[72/660] Córdoba 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[73/660] Antioquia 0.3300→0.3300 (rated 0.33) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[74/660] Boyacá 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[75/660] Amazonas 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[76/660] Guainía 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[77/660] Cauca 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[78/660] Caquetá 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[79/660] Meta 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[80/660] Tolima 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[81/660] Córdoba 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[82/660] La Guajira 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[83/660] Santander 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[84/660] Tolima 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[85/660] Putumayo 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[86/660] Cesar 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[87/660] Arauca 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[88/660] Casanare 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[89/660] Cesar 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[90/660] Caquetá 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[91/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Bolívar 0.4489→0.4437 (rated 0.44) · 2.0s/pair · cache-hit 5387
+[92/660] Tolima 0.5200→0.5200 (rated 0.52) | Bolívar 0.4489→0.4437 (rated 0.44) · 2.0s/pair · cache-hit 5387
+[93/660] Atlántico 0.4300→0.4300 (rated 0.43) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[94/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[95/660] Casanare 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[96/660] Caquetá 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[97/660] Bolívar 0.4489→0.4437 (rated 0.44) | Valle del Cauca 0.5245→0.5202 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[98/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[99/660] Tolima 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[100/660] Casanare 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[101/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[102/660] Cesar 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[103/660] Vaupés 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[104/660] Tolima 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[105/660] Magdalena 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[106/660] Meta 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[107/660] Boyacá 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[108/660] Arauca 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[109/660] Valle del Cauca 0.5202→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[110/660] Amazonas 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[111/660] Guaviare 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[112/660] Cauca 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[113/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[114/660] Vichada 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[115/660] Meta 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[116/660] Tolima 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[117/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[118/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[119/660] Amazonas 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[120/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[121/660] Sucre 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[122/660] Atlántico 0.4300→0.4300 (rated 0.43) | Sucre 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[123/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[124/660] Chocó 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[125/660] Arauca 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[126/660] Córdoba 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[127/660] Magdalena 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[128/660] Quindío 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 1.9s/pair · cache-hit 5387
+[129/660] La Guajira 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[130/660] Sucre 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[131/660] Atlántico 0.4300→0.4300 (rated 0.43) | Valle del Cauca 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[132/660] Córdoba 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[133/660] Casanare 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[134/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[135/660] Guainía 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[136/660] Boyacá 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[137/660] La Guajira 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[138/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[139/660] Tolima 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[140/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[141/660] Amazonas 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[142/660] Quindío 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[143/660] Nariño 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[144/660] Vichada 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5259 (rated 0.54) · 2.0s/pair · cache-hit 5387
+[145/660] Bolívar 0.4437→0.4483 (rated 0.45) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[146/660] Vaupés 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[147/660] Atlántico 0.4300→0.4300 (rated 0.43) | Cauca 0.5200→0.5200 (rated 0.52) · 1.9s/pair · cache-hit 5387
+[148/660] Caquetá 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[149/660] Santander 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5258 (rated 0.54) · 2.0s/pair · cache-hit 5387
+[150/660] Amazonas 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[151/660] Antioquia 0.3300→0.3387 (rated 0.38) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[152/660] Córdoba 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5259→0.5300 (rated 0.53) · 2.0s/pair · cache-hit 5387
+[153/660] Vaupés 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[154/660] Cesar 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[155/660] Antioquia 0.3300→0.3300 (rated 0.33) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[156/660] Huila 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[157/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[158/660] Atlántico 0.4300→0.4300 (rated 0.43) | Guainía 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[159/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[160/660] Chocó 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[161/660] Cesar 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.0s/pair · cache-hit 5387
+[162/660] Tolima 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[163/660] Guaviare 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[164/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[165/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[166/660] Caldas 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[167/660] Caldas 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[168/660] La Guajira 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[169/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Valle del Cauca 0.5300→0.5253 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[170/660] Cauca 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[171/660] Córdoba 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[172/660] Caldas 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[173/660] Risaralda 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[174/660] Antioquia 0.3300→0.3403 (rated 0.40) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[175/660] Vaupés 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[176/660] Vichada 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.0s/pair · cache-hit 5387
+[177/660] Meta 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[178/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[179/660] Vichada 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[180/660] Casanare 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[181/660] Cauca 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[182/660] Bolívar 0.4483→0.4438 (rated 0.44) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[183/660] Amazonas 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[184/660] La Guajira 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[185/660] Cesar 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[186/660] Tolima 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[187/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[188/660] Huila 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[189/660] Guainía 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[190/660] Arauca 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[191/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[192/660] Risaralda 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[193/660] Vichada 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[194/660] Guainía 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[195/660] Caldas 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[196/660] Antioquia 0.3403→0.3357 (rated 0.33) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[197/660] Córdoba 0.5200→0.5200 (rated 0.52) | Antioquia 0.3403→0.3357 (rated 0.33) · 2.0s/pair · cache-hit 5387
+[198/660] Boyacá 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[199/660] Nariño 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[200/660] Quindío 0.5200→0.5200 (rated 0.52) | Bolívar 0.4438→0.4400 (rated 0.44) · 2.0s/pair · cache-hit 5387
+[201/660] Cesar 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5253→0.5212 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[202/660] Guainía 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[203/660] Bolívar 0.4438→0.4400 (rated 0.44) | Vichada 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[204/660] Tolima 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[205/660] Risaralda 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[206/660] Tolima 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[207/660] Vaupés 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[208/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[209/660] Guainía 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[210/660] Bolívar 0.4400→0.4400 (rated 0.44) | Arauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[211/660] Magdalena 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[212/660] Huila 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[213/660] Risaralda 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[214/660] Córdoba 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5212→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[215/660] Risaralda 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[216/660] Nariño 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[217/660] Arauca 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[218/660] La Guajira 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[219/660] Nariño 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[220/660] La Guajira 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[221/660] Casanare 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[222/660] Bolívar 0.4400→0.4400 (rated 0.44) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[223/660] Valle del Cauca 0.5200→0.5243 (rated 0.53) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[224/660] Caquetá 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[225/660] Córdoba 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.0s/pair · cache-hit 5387
+[226/660] Guainía 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[227/660] Cesar 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[228/660] Cauca 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[229/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[230/660] Vaupés 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[231/660] Valle del Cauca 0.5243→0.5205 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[232/660] Boyacá 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[233/660] Vaupés 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[234/660] Chocó 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.0s/pair · cache-hit 5387
+[235/660] Vaupés 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[236/660] Atlántico 0.4300→0.4300 (rated 0.43) | Antioquia 0.3357→0.3318 (rated 0.33) · 2.0s/pair · cache-hit 5387
+[237/660] Chocó 0.5200→0.5200 (rated 0.52) | Antioquia 0.3357→0.3319 (rated 0.33) · 2.1s/pair · cache-hit 5387
+[238/660] Huila 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[239/660] Santander 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5205→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[240/660] Chocó 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[241/660] Chocó 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[242/660] Risaralda 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[243/660] Guainía 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[244/660] Valle del Cauca 0.5205→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.1s/pair · cache-hit 5387
+[245/660] Vichada 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[246/660] Huila 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[247/660] Córdoba 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[248/660] Vaupés 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.0s/pair · cache-hit 5387
+[249/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[250/660] Huila 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[251/660] Huila 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[252/660] Cesar 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[253/660] Santander 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[254/660] Bolívar 0.4400→0.4400 (rated 0.44) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[255/660] Magdalena 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[256/660] Bolívar 0.4400→0.4400 (rated 0.44) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[257/660] Guaviare 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[258/660] Bolívar 0.4400→0.4465 (rated 0.48) | Sucre 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[259/660] Casanare 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[260/660] La Guajira 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[261/660] Arauca 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[262/660] Amazonas 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[263/660] Cauca 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[264/660] Vaupés 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[265/660] Casanare 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.0s/pair · cache-hit 5387
+[266/660] Caquetá 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[267/660] Valle del Cauca 0.5200→0.5240 (rated 0.53) | Guainía 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[268/660] Atlántico 0.4300→0.4300 (rated 0.43) | Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[269/660] Caquetá 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.1s/pair · cache-hit 5387
+[270/660] Caldas 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[271/660] Bolívar 0.4465→0.4515 (rated 0.47) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[272/660] Santander 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[273/660] Cauca 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[274/660] Risaralda 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[275/660] Caldas 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.1s/pair · cache-hit 5387
+[276/660] Meta 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[277/660] Huila 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[278/660] Vaupés 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[279/660] Santander 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[280/660] Boyacá 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[281/660] Santander 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[282/660] Amazonas 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[283/660] Meta 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[284/660] Amazonas 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[285/660] Huila 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[286/660] Tolima 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[287/660] Magdalena 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5240→0.5206 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[288/660] Vichada 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[289/660] Nariño 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[290/660] Córdoba 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[291/660] Valle del Cauca 0.5240→0.5206 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[292/660] Córdoba 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[293/660] Chocó 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[294/660] Valle del Cauca 0.5206→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[295/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5206→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[296/660] Atlántico 0.4300→0.4339 (rated 0.44) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[297/660] Chocó 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[298/660] Atlántico 0.4300→0.4300 (rated 0.43) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[299/660] Córdoba 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[300/660] Sucre 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[301/660] Putumayo 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[302/660] Atlántico 0.4300→0.4300 (rated 0.43) | Vichada 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[303/660] Risaralda 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[304/660] Antioquia 0.3319→0.3300 (rated 0.33) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[305/660] Bolívar 0.4515→0.4477 (rated 0.44) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[306/660] Arauca 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[307/660] Vaupés 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[308/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[309/660] Huila 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[310/660] Meta 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[311/660] Cesar 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[312/660] Guainía 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[313/660] Vichada 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[314/660] La Guajira 0.5200→0.5200 (rated 0.52) | Antioquia 0.3319→0.3398 (rated 0.40) · 2.1s/pair · cache-hit 5387
+[315/660] Putumayo 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[316/660] Nariño 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[317/660] Guainía 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[318/660] Boyacá 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[319/660] Amazonas 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[320/660] Nariño 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[321/660] Cesar 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[322/660] Nariño 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[323/660] Bolívar 0.4476→0.4442 (rated 0.44) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[324/660] Putumayo 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[325/660] Huila 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[326/660] Magdalena 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[327/660] Magdalena 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[328/660] Guaviare 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[329/660] Tolima 0.5200→0.5200 (rated 0.52) | Antioquia 0.3398→0.3362 (rated 0.33) · 2.1s/pair · cache-hit 5387
+[330/660] Córdoba 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[331/660] Magdalena 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[332/660] Atlántico 0.4300→0.4300 (rated 0.43) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[333/660] Cesar 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[334/660] La Guajira 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[335/660] Cauca 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[336/660] Nariño 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[337/660] Córdoba 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[338/660] Atlántico 0.4300→0.4300 (rated 0.43) | Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[339/660] Huila 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[340/660] Cauca 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[341/660] Guainía 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[342/660] Putumayo 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[343/660] Casanare 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[344/660] Sucre 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.1s/pair · cache-hit 5387
+[345/660] Santander 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[346/660] Vaupés 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[347/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[348/660] Atlántico 0.4300→0.4300 (rated 0.43) | Tolima 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[349/660] Huila 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[350/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[351/660] Magdalena 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[352/660] Putumayo 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[353/660] Quindío 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[354/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[355/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[356/660] Tolima 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.1s/pair · cache-hit 5387
+[357/660] Quindío 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[358/660] Guainía 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[359/660] Magdalena 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[360/660] Guainía 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[361/660] Nariño 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.1s/pair · cache-hit 5387
+[362/660] Casanare 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[363/660] Nariño 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[364/660] Amazonas 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[365/660] Bolívar 0.4442→0.4412 (rated 0.44) | Nariño 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[366/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[367/660] Chocó 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[368/660] Boyacá 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[369/660] Bolívar 0.4442→0.4412 (rated 0.44) | Vichada 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[370/660] Putumayo 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.1s/pair · cache-hit 5387
+[371/660] Putumayo 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[372/660] Vaupés 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[373/660] Bolívar 0.4412→0.4400 (rated 0.44) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[374/660] Santander 0.5200→0.5200 (rated 0.52) | Antioquia 0.3362→0.3429 (rated 0.40) · 2.2s/pair · cache-hit 5387
+[375/660] Caquetá 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[376/660] Caldas 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[377/660] Atlántico 0.4300→0.4300 (rated 0.43) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.2s/pair · cache-hit 5387
+[378/660] Quindío 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[379/660] Putumayo 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[380/660] Valle del Cauca 0.5200→0.5232 (rated 0.53) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[381/660] Huila 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[382/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[383/660] Antioquia 0.3429→0.3395 (rated 0.33) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[384/660] Córdoba 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[385/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[386/660] Magdalena 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[387/660] Antioquia 0.3429→0.3395 (rated 0.33) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[388/660] Sucre 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[389/660] Boyacá 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[390/660] Casanare 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[391/660] Meta 0.5200→0.5200 (rated 0.52) | Antioquia 0.3429→0.3402 (rated 0.34) · 2.2s/pair · cache-hit 5387
+[392/660] Meta 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[393/660] Vaupés 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[394/660] Boyacá 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[395/660] Atlántico 0.4300→0.4300 (rated 0.43) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[396/660] Caquetá 0.5200→0.5129 (rated 0.44) | Antioquia 0.3395→0.3384 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[397/660] La Guajira 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[398/660] Santander 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[399/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[400/660] Valle del Cauca 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[401/660] Boyacá 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[402/660] Risaralda 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5230 (rated 0.53) · 2.2s/pair · cache-hit 5387
+[403/660] Antioquia 0.3402→0.3371 (rated 0.33) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[404/660] Vaupés 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[405/660] Caldas 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[406/660] Magdalena 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[407/660] Caquetá 0.5129→0.5153 (rated 0.52) | Antioquia 0.3384→0.3420 (rated 0.36) · 2.3s/pair · cache-hit 5387
+[408/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[409/660] Atlántico 0.4300→0.4300 (rated 0.43) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[410/660] Caldas 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[411/660] Caldas 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[412/660] La Guajira 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[413/660] Amazonas 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[414/660] La Guajira 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[415/660] Tolima 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[416/660] Boyacá 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[417/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[418/660] Nariño 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[419/660] Meta 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[420/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[421/660] Amazonas 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[422/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Caquetá 0.5153→0.5179 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[423/660] Bolívar 0.4400→0.4400 (rated 0.44) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[424/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Arauca 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[425/660] Antioquia 0.3420→0.3390 (rated 0.33) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[426/660] Meta 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[427/660] Sucre 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[428/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[429/660] Chocó 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[430/660] Amazonas 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[431/660] Magdalena 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[432/660] Bolívar 0.4400→0.4400 (rated 0.44) | Antioquia 0.3420→0.3390 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[433/660] Meta 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[434/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[435/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[436/660] Guainía 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[437/660] Chocó 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[438/660] Cesar 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[439/660] Santander 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[440/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[441/660] Quindío 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[442/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Nariño 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[443/660] Atlántico 0.4300→0.4300 (rated 0.43) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[444/660] Putumayo 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[445/660] Córdoba 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[446/660] Meta 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[447/660] Meta 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[448/660] Cauca 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5230→0.5207 (rated 0.52) · 2.3s/pair · cache-hit 5387
+[449/660] Cesar 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5230→0.5207 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[450/660] Cesar 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[451/660] Meta 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[452/660] Boyacá 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[453/660] Guaviare 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[454/660] Guainía 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[455/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[456/660] Cesar 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[457/660] Boyacá 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[458/660] Chocó 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[459/660] Meta 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[460/660] Cauca 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[461/660] Arauca 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[462/660] Boyacá 0.5200→0.5200 (rated 0.52) | Caquetá 0.5179→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[463/660] Guainía 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[464/660] Guainía 0.5200→0.5200 (rated 0.52) | Antioquia 0.3390→0.3365 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[465/660] La Guajira 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[466/660] Huila 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[467/660] Córdoba 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[468/660] Cauca 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[469/660] Nariño 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[470/660] Cauca 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[471/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4600→0.4600 (rated 0.46) · 2.2s/pair · cache-hit 5387
+[472/660] Santander 0.5200→0.5200 (rated 0.52) | Antioquia 0.3390→0.3365 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[473/660] Sucre 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[474/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[475/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[476/660] Meta 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[477/660] Arauca 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[478/660] Guainía 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[479/660] Guainía 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[480/660] Tolima 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[481/660] Chocó 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[482/660] Arauca 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[483/660] Córdoba 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[484/660] Chocó 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[485/660] Tolima 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[486/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[487/660] Bolívar 0.4400→0.4400 (rated 0.44) | Antioquia 0.3365→0.3342 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[488/660] Quindío 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[489/660] Vaupés 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[490/660] Boyacá 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[491/660] Nariño 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[492/660] Santander 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[493/660] La Guajira 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[494/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[495/660] Guaviare 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[496/660] Chocó 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[497/660] Putumayo 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[498/660] Guainía 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[499/660] Putumayo 0.5200→0.5200 (rated 0.52) | Antioquia 0.3342→0.3381 (rated 0.38) · 2.2s/pair · cache-hit 5387
+[500/660] Caquetá 0.5200→0.5200 (rated 0.52) | Antioquia 0.3365→0.3343 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[501/660] Amazonas 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[502/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[503/660] La Guajira 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[504/660] Tolima 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[505/660] Casanare 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[506/660] Cesar 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[507/660] Huila 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[508/660] Nariño 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[509/660] Santander 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[510/660] Magdalena 0.5200→0.5200 (rated 0.52) | Antioquia 0.3343→0.3323 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[511/660] Caldas 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[512/660] Risaralda 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[513/660] Huila 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[514/660] Arauca 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[515/660] Bolívar 0.4400→0.4400 (rated 0.44) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[516/660] Nariño 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[517/660] La Guajira 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[518/660] Vichada 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[519/660] Boyacá 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[520/660] Guainía 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[521/660] Quindío 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[522/660] La Guajira 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[523/660] Risaralda 0.5200→0.5200 (rated 0.52) | Córdoba 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[524/660] Vaupés 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[525/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[526/660] Guainía 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[527/660] Meta 0.5200→0.5200 (rated 0.52) | Antioquia 0.3323→0.3305 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[528/660] Guaviare 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[529/660] Amazonas 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[530/660] Amazonas 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[531/660] Cauca 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[532/660] Tolima 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[533/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[534/660] Caquetá 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4421 (rated 0.45) · 2.2s/pair · cache-hit 5387
+[535/660] Sucre 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[536/660] Meta 0.5200→0.5200 (rated 0.52) | Antioquia 0.3305→0.3285 (rated 0.32) · 2.2s/pair · cache-hit 5387
+[537/660] Atlántico 0.4300→0.4300 (rated 0.43) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[538/660] Arauca 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[539/660] Bolívar 0.4421→0.4404 (rated 0.44) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[540/660] Cesar 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[541/660] Atlántico 0.4300→0.4300 (rated 0.43) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[542/660] Meta 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[543/660] La Guajira 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[544/660] Antioquia 0.3285→0.3300 (rated 0.33) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[545/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[546/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[547/660] Quindío 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5207→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[548/660] Cesar 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[549/660] Boyacá 0.5200→0.5200 (rated 0.52) | Antioquia 0.3285→0.3300 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[550/660] Huila 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[551/660] Sucre 0.5200→0.5200 (rated 0.52) | Bolívar 0.4404→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[552/660] Amazonas 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[553/660] Magdalena 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[554/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Bolívar 0.4404→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[555/660] Santander 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[556/660] Magdalena 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[557/660] Cesar 0.5200→0.5200 (rated 0.52) | Cundinamarca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[558/660] Casanare 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[559/660] Antioquia 0.3300→0.3300 (rated 0.33) | Bolívar 0.4404→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[560/660] Risaralda 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[561/660] Casanare 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[562/660] Vaupés 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[563/660] Guaviare 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[564/660] Quindío 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[565/660] Valle del Cauca 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[566/660] Risaralda 0.5200→0.5200 (rated 0.52) | Antioquia 0.3300→0.3329 (rated 0.37) · 2.2s/pair · cache-hit 5387
+[567/660] Cesar 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[568/660] Huila 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[569/660] Vichada 0.5200→0.5200 (rated 0.52) | Antioquia 0.3300→0.3300 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[570/660] Atlántico 0.4300→0.4300 (rated 0.43) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[571/660] Huila 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[572/660] Guainía 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[573/660] Chocó 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[574/660] Cauca 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[575/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[576/660] Putumayo 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[577/660] Córdoba 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[578/660] Sucre 0.5200→0.5200 (rated 0.52) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[579/660] Putumayo 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[580/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Antioquia 0.3300→0.3300 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[581/660] Huila 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[582/660] Nariño 0.5200→0.5200 (rated 0.52) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[583/660] Cesar 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[584/660] Putumayo 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[585/660] Cesar 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5200→0.5217 (rated 0.53) · 2.2s/pair · cache-hit 5387
+[586/660] Huila 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[587/660] Quindío 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[588/660] Casanare 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[589/660] Sucre 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[590/660] Cauca 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[591/660] Caldas 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[592/660] Amazonas 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[593/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[594/660] Atlántico 0.4300→0.4300 (rated 0.43) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[595/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Guainía 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[596/660] Chocó 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[597/660] Chocó 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[598/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[599/660] Magdalena 0.5200→0.5200 (rated 0.52) | Nariño 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[600/660] Bolívar 0.4400→0.4400 (rated 0.44) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[601/660] Córdoba 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[602/660] Cesar 0.5200→0.5200 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[603/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[604/660] Nariño 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[605/660] Casanare 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[606/660] Nariño 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[607/660] Casanare 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5217→0.5204 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[608/660] Chocó 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[609/660] Nariño 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[610/660] Meta 0.5200→0.5200 (rated 0.52) | Guaviare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[611/660] Bogota Capital District 0.4600→0.4585 (rated 0.45) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[612/660] Antioquia 0.3300→0.3300 (rated 0.33) | Cauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[613/660] Córdoba 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[614/660] Caldas 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[615/660] Santander 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[616/660] Nariño 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[617/660] Cesar 0.5200→0.5200 (rated 0.52) | Casanare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[618/660] Vichada 0.5200→0.5200 (rated 0.52) | Risaralda 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[619/660] Quindío 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[620/660] Bolívar 0.4400→0.4400 (rated 0.44) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[621/660] Norte de Santander 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[622/660] Cauca 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[623/660] La Guajira 0.5200→0.5200 (rated 0.52) | Caquetá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[624/660] Cundinamarca 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[625/660] Nariño 0.5200→0.5200 (rated 0.52) | Boyacá 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[626/660] Cesar 0.5200→0.5200 (rated 0.52) | Bogota Capital District 0.4585→0.4596 (rated 0.46) · 2.2s/pair · cache-hit 5387
+[627/660] Arauca 0.5200→0.5200 (rated 0.52) | Magdalena 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[628/660] Vichada 0.5200→0.5200 (rated 0.52) | Cesar 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[629/660] Valle del Cauca 0.5204→0.5218 (rated 0.53) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[630/660] Risaralda 0.5200→0.5200 (rated 0.52) | Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[631/660] Archipiélago de San Andrés, Providencia y Santa Catalina 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[632/660] Bogota Capital District 0.4596→0.4600 (rated 0.46) | Casanare 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[633/660] Antioquia 0.3300→0.3300 (rated 0.33) | Vichada 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[634/660] La Guajira 0.5200→0.5200 (rated 0.52) | Quindío 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[635/660] Chocó 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[636/660] Boyacá 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[637/660] Tolima 0.5200→0.5200 (rated 0.52) | Sucre 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[638/660] Amazonas 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[639/660] Sucre 0.5200→0.5200 (rated 0.52) | La Guajira 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[640/660] Córdoba 0.5200→0.5200 (rated 0.52) | Vaupés 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[641/660] Caldas 0.5200→0.5200 (rated 0.52) | Arauca 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[642/660] Huila 0.5200→0.5200 (rated 0.52) | Amazonas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[643/660] Caquetá 0.5200→0.5200 (rated 0.52) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[644/660] Bolívar 0.4400→0.4400 (rated 0.44) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[645/660] Casanare 0.5200→0.5200 (rated 0.52) | Caldas 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[646/660] Nariño 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+[647/660] Valle del Cauca 0.5218→0.5208 (rated 0.52) | Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[648/660] Nariño 0.5200→0.5200 (rated 0.52) | Antioquia 0.3300→0.3300 (rated 0.33) · 2.2s/pair · cache-hit 5387
+[649/660] Quindío 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5218→0.5203 (rated 0.50) · 2.2s/pair · cache-hit 5387
+[650/660] Meta 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[651/660] Amazonas 0.5200→0.5200 (rated 0.52) | Chocó 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[652/660] Magdalena 0.5200→0.5200 (rated 0.52) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[653/660] Córdoba 0.5200→0.5200 (rated 0.52) | Norte de Santander 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[654/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Meta 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[655/660] Bogota Capital District 0.4600→0.4600 (rated 0.46) | Tolima 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[656/660] Meta 0.5200→0.5200 (rated 0.52) | Putumayo 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[657/660] Guaviare 0.5200→0.5200 (rated 0.52) | Bolívar 0.4400→0.4400 (rated 0.44) · 2.2s/pair · cache-hit 5387
+[658/660] Cauca 0.5200→0.5200 (rated 0.52) | Valle del Cauca 0.5203→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[659/660] Cauca 0.5200→0.5200 (rated 0.52) | Huila 0.5200→0.5200 (rated 0.52) · 2.2s/pair · cache-hit 5387
+[660/660] Sucre 0.5200→0.5200 (rated 0.52) | Atlántico 0.4300→0.4300 (rated 0.43) · 2.2s/pair · cache-hit 5387
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 660 pairs in 1484s · errors: 0 · total score movement: 0.434
+tokens — cache read: 3,533,872 · cache write: 21,548 · uncached in: 191,118 · out: 268,567
+OK: 233 countries, 2952 admin1 units; ranks written; meta written
