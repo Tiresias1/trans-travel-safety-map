@@ -11714,3 +11714,362 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 320 pairs in 1279s · errors: 0 · total score movement: 0.313
 tokens — cache read: 1,697,868 · cache write: 21,492 · uncached in: 176,611 · out: 280,318
 OK: 233 countries, 3229 admin1 units; ranks written; meta written
+CHL done 2026-09-22 13:00:43
+=================== KOR 2026-09-22 13:00:43 ===================
+new: 11 · refreshed: 0 · skipped (untouchable): 6 · with deltas: 5 · countries touched: 1
+  mean drift KOR: -0.001 (11 units)
+wrote 3240 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
+KOR: 17 units -> 340 pairs
+system prompt: 23,609 chars (~5,902 tokens) — cached
+admin1 mode: South Korea (KOR) national 0.71 · 17 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 85 for ~10)
+pairs: 340 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 170 / 340: 0.07000/0.04009/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06012/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-KOR-20260922-130044.jsonl
+[1/340] Gwangju 0.7140→0.7100 (rated 0.71) | Gangwon 0.7040→0.7094 (rated 0.71) · 13.1s/pair
+[2/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Busan 0.7240→0.7176 (rated 0.71) · 6.9s/pair
+[3/340] Daegu 0.6400→0.6400 (rated 0.64) | Daejeon 0.6900→0.6900 (rated 0.69) · 6.6s/pair
+[4/340] South Gyeongsang 0.7040→0.7094 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 5.1s/pair
+[5/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Gyeongsang 0.7040→0.7094 (rated 0.71) · 5.7s/pair · cache-hit 5314
+[6/340] North Gyeongsang 0.7040→0.7094 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5314
+[7/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Incheon 0.7140→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5314
+[8/340] Daegu 0.6400→0.6400 (rated 0.64) | Ulsan 0.7140→0.7100 (rated 0.71) · 4.6s/pair · cache-hit 5314
+[9/340] Incheon 0.7140→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 5.1s/pair · cache-hit 5314
+[10/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | South Jeolla 0.7140→0.7100 (rated 0.71) · 4.9s/pair · cache-hit 5314
+[11/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | South Jeolla 0.7140→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5314
+[12/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 5.0s/pair · cache-hit 5314
+[13/340] Daejeon 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 5.1s/pair · cache-hit 5314
+[14/340] Gangwon 0.7094→0.6991 (rated 0.65) | Busan 0.7176→0.7124 (rated 0.69) · 4.9s/pair · cache-hit 5314
+[15/340] Sejong 0.7140→0.7100 (rated 0.71) | North Gyeongsang 0.7094→0.7100 (rated 0.71) · 4.6s/pair · cache-hit 5314
+[16/340] Gwangju 0.7100→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.5s/pair · cache-hit 5314
+[17/340] Jeju 0.7240→0.7200 (rated 0.72) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.3s/pair · cache-hit 5314
+[18/340] Incheon 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.5s/pair · cache-hit 5314
+[19/340] Incheon 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.3s/pair · cache-hit 5314
+[20/340] Jeju 0.7240→0.7179 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.3s/pair · cache-hit 5314
+[21/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[22/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | South Gyeongsang 0.7094→0.7100 (rated 0.71) · 4.3s/pair · cache-hit 5314
+[23/340] Busan 0.7124→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.2s/pair · cache-hit 5314
+[24/340] Sejong 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.7100→0.7022 (rated 0.68) · 4.1s/pair · cache-hit 5314
+[25/340] North Jeolla 0.7140→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[26/340] Daejeon 0.6900→0.6900 (rated 0.69) | South Gyeongsang 0.7094→0.7028 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[27/340] Jeju 0.7179→0.7237 (rated 0.73) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.2s/pair · cache-hit 5314
+[28/340] Ulsan 0.7100→0.7100 (rated 0.71) | Busan 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[29/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Jeju 0.7179→0.7126 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[30/340] Daejeon 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 4.2s/pair · cache-hit 5314
+[31/340] Jeju 0.7237→0.7305 (rated 0.74) | Busan 0.7100→0.7029 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[32/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[33/340] South Jeolla 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[34/340] Ulsan 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[35/340] Sejong 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[36/340] Busan 0.7029→0.7080 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[37/340] North Chungcheong 0.6900→0.6955 (rated 0.70) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[38/340] Incheon 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[39/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[40/340] North Gyeongsang 0.7022→0.6955 (rated 0.68) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[41/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[42/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[43/340] South Gyeongsang 0.7028→0.7079 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[44/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Gyeongsang 0.7022→0.7000 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[45/340] Gwangju 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 3.9s/pair · cache-hit 5314
+[46/340] North Chungcheong 0.6955→0.6907 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[47/340] Daegu 0.6400→0.6400 (rated 0.64) | Gangwon 0.6991→0.6929 (rated 0.68) · 4.1s/pair · cache-hit 5314
+[48/340] South Gyeongsang 0.7079→0.7008 (rated 0.68) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[49/340] Gangwon 0.6991→0.6929 (rated 0.68) | Jeju 0.7305→0.7305 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[50/340] Busan 0.7080→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[51/340] Ulsan 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[52/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Chungcheong 0.6907→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[53/340] Seoul 0.6600→0.6600 (rated 0.66) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[54/340] Daejeon 0.6900→0.6900 (rated 0.69) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[55/340] Jeju 0.7305→0.7243 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[56/340] North Chungcheong 0.6907→0.6900 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[57/340] Gwangju 0.7100→0.7100 (rated 0.71) | Busan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[58/340] South Gyeongsang 0.7008→0.7058 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[59/340] Seoul 0.6600→0.6600 (rated 0.66) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[60/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[61/340] Gyeonggi 0.7300→0.7249 (rated 0.72) | Seoul 0.6600→0.6600 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[62/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Busan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[63/340] Gwangju 0.7100→0.7100 (rated 0.71) | South Gyeongsang 0.7058→0.7002 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[64/340] Gangwon 0.6929→0.6875 (rated 0.68) | Incheon 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[65/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[66/340] Busan 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[67/340] Busan 0.7100→0.7100 (rated 0.71) | Jeju 0.7243→0.7189 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[68/340] Busan 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5314
+[69/340] Incheon 0.7100→0.7100 (rated 0.71) | Gangwon 0.6929→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[70/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[71/340] Busan 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[72/340] South Gyeongsang 0.7002→0.6938 (rated 0.67) | Gangwon 0.6875→0.6829 (rated 0.67) · 3.9s/pair · cache-hit 5314
+[73/340] Seoul 0.6600→0.6600 (rated 0.66) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[74/340] Gangwon 0.6900→0.6832 (rated 0.66) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[75/340] North Gyeongsang 0.7000→0.6934 (rated 0.66) | South Gyeongsang 0.6938→0.6880 (rated 0.66) · 3.9s/pair · cache-hit 5314
+[76/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[77/340] Ulsan 0.7100→0.7100 (rated 0.71) | Jeju 0.7189→0.7141 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[78/340] Sejong 0.7100→0.7100 (rated 0.71) | Busan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[79/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[80/340] Jeju 0.7189→0.7238 (rated 0.73) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[81/340] Daejeon 0.6900→0.6900 (rated 0.69) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[82/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5314
+[83/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[84/340] Gangwon 0.6832→0.6895 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[85/340] Gangwon 0.6832→0.6800 (rated 0.68) | Gwangju 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[86/340] South Gyeongsang 0.6880→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[87/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 3.9s/pair · cache-hit 5314
+[88/340] Busan 0.7100→0.7100 (rated 0.71) | Jeju 0.7238→0.7188 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[89/340] Gwangju 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[90/340] Gwangju 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6934→0.6987 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[91/340] Gwangju 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[92/340] Gwangju 0.7100→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[93/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[94/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[95/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[96/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[97/340] Gwangju 0.7100→0.7100 (rated 0.71) | Jeju 0.7188→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5314
+[98/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[99/340] Incheon 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[100/340] Daejeon 0.6900→0.6900 (rated 0.69) | Jeju 0.7188→0.7143 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[101/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gangwon 0.6800→0.6845 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[102/340] Jeju 0.7200→0.7200 (rated 0.72) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[103/340] Gangwon 0.6800→0.6847 (rated 0.69) | Jeju 0.7200→0.7153 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[104/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[105/340] Gangwon 0.6845→0.6904 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[106/340] Daejeon 0.6900→0.6900 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[107/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Busan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[108/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Jeju 0.7153→0.7113 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[109/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[110/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[111/340] North Gyeongsang 0.6987→0.7032 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[112/340] Busan 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[113/340] Jeju 0.7113→0.7155 (rated 0.72) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[114/340] Gangwon 0.6904→0.6826 (rated 0.63) | Busan 0.7100→0.7059 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[115/340] Ulsan 0.7100→0.7100 (rated 0.71) | South Gyeongsang 0.6900→0.6952 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[116/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[117/340] Incheon 0.7100→0.7100 (rated 0.71) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[118/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[119/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[120/340] Gwangju 0.7100→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[121/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[122/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5314
+[123/340] North Gyeongsang 0.7032→0.6987 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[124/340] Incheon 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[125/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[126/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | North Gyeongsang 0.7032→0.7000 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[127/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Jeju 0.7155→0.7117 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[128/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[129/340] Daegu 0.6400→0.6400 (rated 0.64) | Incheon 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[130/340] North Gyeongsang 0.6987→0.6946 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[131/340] Gangwon 0.6826→0.6800 (rated 0.68) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[132/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[133/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gangwon 0.6826→0.6800 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[134/340] Seoul 0.6600→0.6600 (rated 0.66) | North Jeolla 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[135/340] Ulsan 0.7100→0.7100 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[136/340] Incheon 0.7100→0.7100 (rated 0.71) | Jeju 0.7117→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[137/340] North Gyeongsang 0.6946→0.6910 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[138/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[139/340] Incheon 0.7100→0.7100 (rated 0.71) | South Gyeongsang 0.6952→0.6988 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[140/340] Seoul 0.6600→0.6600 (rated 0.66) | Gangwon 0.6800→0.6841 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[141/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[142/340] North Jeolla 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6910→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[143/340] Daegu 0.6400→0.6400 (rated 0.64) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[144/340] Daejeon 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[145/340] Daegu 0.6400→0.6400 (rated 0.64) | Jeju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[146/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Jeju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[147/340] Busan 0.7059→0.7124 (rated 0.74) | South Gyeongsang 0.6988→0.6925 (rated 0.67) · 4.0s/pair · cache-hit 5314
+[148/340] South Gyeongsang 0.6988→0.6950 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[149/340] Sejong 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[150/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gangwon 0.6841→0.6876 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[151/340] Seoul 0.6600→0.6600 (rated 0.66) | South Gyeongsang 0.6988→0.7000 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[152/340] Gangwon 0.6841→0.6883 (rated 0.70) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[153/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[154/340] Seoul 0.6600→0.6600 (rated 0.66) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[155/340] Daejeon 0.6900→0.6900 (rated 0.69) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[156/340] Daegu 0.6400→0.6400 (rated 0.64) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[157/340] Sejong 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[158/340] Ulsan 0.7100→0.7100 (rated 0.71) | South Gyeongsang 0.7000→0.7037 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[159/340] Gwangju 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6937 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[160/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[161/340] Gwangju 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[162/340] Gwangju 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6900→0.6944 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[163/340] Incheon 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[164/340] Gwangju 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[165/340] Ulsan 0.7100→0.7100 (rated 0.71) | Jeju 0.7100→0.7136 (rated 0.72) · 4.0s/pair · cache-hit 5314
+[166/340] Seoul 0.6600→0.6600 (rated 0.66) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[167/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Busan 0.7124→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[168/340] Seoul 0.6600→0.6600 (rated 0.66) | Jeju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[169/340] Daejeon 0.6900→0.6900 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[170/340] Gwangju 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[171/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[172/340] Jeju 0.7100→0.7135 (rated 0.72) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[173/340] Gangwon 0.6883→0.6919 (rated 0.70) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[174/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.1s/pair · cache-hit 5314
+[175/340] Daejeon 0.6900→0.6900 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[176/340] South Gyeongsang 0.7037→0.7069 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[177/340] Gangwon 0.6883→0.6900 (rated 0.69) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[178/340] South Jeolla 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[179/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[180/340] Daegu 0.6400→0.6400 (rated 0.64) | Sejong 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[181/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Gangwon 0.6919→0.6959 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[182/340] Sejong 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[183/340] Gangwon 0.6900→0.6866 (rated 0.68) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[184/340] Jeju 0.7135→0.7104 (rated 0.71) | North Chungcheong 0.6900→0.6934 (rated 0.70) · 4.1s/pair · cache-hit 5314
+[185/340] Daejeon 0.6900→0.6900 (rated 0.69) | Jeju 0.7135→0.7106 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[186/340] Gangwon 0.6866→0.6908 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[187/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[188/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gangwon 0.6959→0.6988 (rated 0.70) · 4.1s/pair · cache-hit 5314
+[189/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[190/340] Busan 0.7100→0.7100 (rated 0.71) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[191/340] Sejong 0.7100→0.7100 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[192/340] Ulsan 0.7100→0.7100 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[193/340] Seoul 0.6600→0.6600 (rated 0.66) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[194/340] North Gyeongsang 0.6944→0.6913 (rated 0.69) | Busan 0.7100→0.7133 (rated 0.72) · 4.0s/pair · cache-hit 5314
+[195/340] South Gyeongsang 0.7069→0.7097 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[196/340] South Jeolla 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[197/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[198/340] North Chungcheong 0.6934→0.6906 (rated 0.69) | South Gyeongsang 0.7069→0.7097 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[199/340] Daejeon 0.6900→0.6900 (rated 0.69) | Busan 0.7133→0.7105 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[200/340] Daegu 0.6400→0.6400 (rated 0.64) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[201/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[202/340] Gangwon 0.6988→0.6945 (rated 0.67) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[203/340] North Gyeongsang 0.6913→0.6889 (rated 0.68) | South Gyeongsang 0.7097→0.7057 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[204/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[205/340] Busan 0.7105→0.7144 (rated 0.73) | North Gyeongsang 0.6913→0.6878 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[206/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[207/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gangwon 0.6945→0.6973 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[208/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[209/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[210/340] Daegu 0.6400→0.6400 (rated 0.64) | North Gyeongsang 0.6889→0.6853 (rated 0.67) · 4.0s/pair · cache-hit 5314
+[211/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[212/340] South Gyeongsang 0.7057→0.7084 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[213/340] Sejong 0.7100→0.7100 (rated 0.71) | Incheon 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[214/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[215/340] Ulsan 0.7100→0.7100 (rated 0.71) | North Chungcheong 0.6906→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[216/340] South Gyeongsang 0.7084→0.7046 (rated 0.69) | Jeju 0.7106→0.7144 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[217/340] Busan 0.7144→0.7118 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[218/340] Gangwon 0.6973→0.6946 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[219/340] South Gyeongsang 0.7084→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[220/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gangwon 0.6946→0.6915 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[221/340] South Gyeongsang 0.7100→0.7061 (rated 0.68) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[222/340] North Gyeongsang 0.6853→0.6890 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[223/340] Incheon 0.7100→0.7100 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[224/340] Gangwon 0.6973→0.6946 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5314
+[225/340] Busan 0.7118→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[226/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gangwon 0.6915→0.6887 (rated 0.68) · 3.9s/pair · cache-hit 5314
+[227/340] Sejong 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 3.9s/pair · cache-hit 5314
+[228/340] Jeju 0.7144→0.7181 (rated 0.74) | North Gyeongsang 0.6890→0.6857 (rated 0.68) · 3.9s/pair · cache-hit 5314
+[229/340] Seoul 0.6600→0.6600 (rated 0.66) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[230/340] Ulsan 0.7100→0.7100 (rated 0.71) | Jeju 0.7144→0.7174 (rated 0.73) · 3.9s/pair · cache-hit 5314
+[231/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[232/340] Incheon 0.7100→0.7100 (rated 0.71) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[233/340] Jeju 0.7181→0.7155 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[234/340] Incheon 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[235/340] South Jeolla 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[236/340] Gwangju 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6857→0.6881 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[237/340] Daegu 0.6400→0.6400 (rated 0.64) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[238/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[239/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gangwon 0.6887→0.6862 (rated 0.68) · 4.0s/pair · cache-hit 5314
+[240/340] Incheon 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[241/340] South Gyeongsang 0.7061→0.7038 (rated 0.70) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[242/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Jeju 0.7155→0.7178 (rated 0.72) · 4.0s/pair · cache-hit 5314
+[243/340] Incheon 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[244/340] North Gyeongsang 0.6881→0.6911 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[245/340] Gangwon 0.6862→0.6839 (rated 0.68) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[246/340] North Gyeongsang 0.6881→0.6911 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[247/340] Busan 0.7100→0.7100 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[248/340] North Gyeongsang 0.6881→0.6847 (rated 0.65) | Busan 0.7100→0.7078 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[249/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[250/340] North Jeolla 0.7100→0.7100 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[251/340] Daegu 0.6400→0.6400 (rated 0.64) | South Gyeongsang 0.7038→0.7016 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[252/340] Gangwon 0.6839→0.6817 (rated 0.68) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[253/340] Sejong 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[254/340] Gangwon 0.6839→0.6861 (rated 0.69) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[255/340] Sejong 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6847→0.6872 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[256/340] Daegu 0.6400→0.6400 (rated 0.64) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5314
+[257/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Gyeongsang 0.6847→0.6876 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[258/340] Daegu 0.6400→0.6400 (rated 0.64) | Gangwon 0.6817→0.6840 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[259/340] Daegu 0.6400→0.6400 (rated 0.64) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[260/340] Gwangju 0.7100→0.7100 (rated 0.71) | Jeju 0.7178→0.7157 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[261/340] South Gyeongsang 0.7016→0.7038 (rated 0.71) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[262/340] Ulsan 0.7100→0.7100 (rated 0.71) | Busan 0.7078→0.7097 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[263/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[264/340] Gyeonggi 0.7300→0.7278 (rated 0.72) | South Gyeongsang 0.7016→0.7002 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[265/340] Jeju 0.7157→0.7137 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[266/340] North Gyeongsang 0.6876→0.6903 (rated 0.71) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[267/340] Gangwon 0.6840→0.6860 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[268/340] South Jeolla 0.7100→0.7100 (rated 0.71) | North Gyeongsang 0.6876→0.6894 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[269/340] Sejong 0.7100→0.7100 (rated 0.71) | Gangwon 0.6840→0.6859 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[270/340] Incheon 0.7100→0.7100 (rated 0.71) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[271/340] Jeju 0.7137→0.7154 (rated 0.72) | Gangwon 0.6840→0.6863 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[272/340] Daegu 0.6400→0.6400 (rated 0.64) | Jeju 0.7137→0.7118 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[273/340] Sejong 0.7100→0.7100 (rated 0.71) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[274/340] Daegu 0.6400→0.6400 (rated 0.64) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[275/340] Daejeon 0.6900→0.6900 (rated 0.69) | South Gyeongsang 0.7002→0.7022 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[276/340] South Gyeongsang 0.7002→0.7022 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.0s/pair · cache-hit 5314
+[277/340] South Gyeongsang 0.7002→0.7000 (rated 0.70) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[278/340] Daejeon 0.6900→0.6900 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5314
+[279/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[280/340] Jeju 0.7118→0.7137 (rated 0.72) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[281/340] South Jeolla 0.7100→0.7100 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[282/340] Sejong 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[283/340] North Gyeongsang 0.6894→0.6918 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[284/340] South Gyeongsang 0.7000→0.6981 (rated 0.69) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[285/340] Daejeon 0.6900→0.6900 (rated 0.69) | Gangwon 0.6863→0.6886 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[286/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[287/340] Daegu 0.6400→0.6400 (rated 0.64) | Sejong 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[288/340] Sejong 0.7100→0.7100 (rated 0.71) | Jeju 0.7137→0.7121 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[289/340] South Gyeongsang 0.6981→0.6997 (rated 0.70) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[290/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[291/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | North Gyeongsang 0.6918→0.6939 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[292/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[293/340] Daejeon 0.6900→0.6900 (rated 0.69) | Gangwon 0.6886→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[294/340] Incheon 0.7100→0.7100 (rated 0.71) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[295/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Gangwon 0.6886→0.6908 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[296/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Busan 0.7097→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[297/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[298/340] Ulsan 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[299/340] Gwangju 0.7100→0.7100 (rated 0.71) | Incheon 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[300/340] Incheon 0.7100→0.7100 (rated 0.71) | Jeju 0.7121→0.7140 (rated 0.73) · 4.0s/pair · cache-hit 5314
+[301/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gangwon 0.6900→0.6917 (rated 0.70) · 4.0s/pair · cache-hit 5314
+[302/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Jeju 0.7121→0.7107 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[303/340] Daegu 0.6400→0.6400 (rated 0.64) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[304/340] Daegu 0.6400→0.6400 (rated 0.64) | Gangwon 0.6917→0.6936 (rated 0.71) · 4.0s/pair · cache-hit 5314
+[305/340] Gangwon 0.6917→0.6935 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5314
+[306/340] Gyeonggi 0.7300→0.7284 (rated 0.72) | Jeju 0.7107→0.7101 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[307/340] Busan 0.7100→0.7117 (rated 0.72) | Gangwon 0.6935→0.6918 (rated 0.68) · 4.1s/pair · cache-hit 5314
+[308/340] North Jeolla 0.7100→0.7100 (rated 0.71) | Daegu 0.6400→0.6400 (rated 0.64) · 4.1s/pair · cache-hit 5314
+[309/340] South Gyeongsang 0.6997→0.7012 (rated 0.71) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[310/340] Seoul 0.6600→0.6616 (rated 0.67) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[311/340] Gangwon 0.6918→0.6905 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[312/340] Sejong 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[313/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[314/340] North Gyeongsang 0.6939→0.6922 (rated 0.68) | Busan 0.7117→0.7133 (rated 0.72) · 4.1s/pair · cache-hit 5314
+[315/340] Ulsan 0.7100→0.7100 (rated 0.71) | North Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[316/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[317/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gwangju 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[318/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[319/340] Daegu 0.6400→0.6400 (rated 0.64) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[320/340] Busan 0.7133→0.7147 (rated 0.72) | North Gyeongsang 0.6922→0.6907 (rated 0.68) · 4.1s/pair · cache-hit 5314
+[321/340] Busan 0.7133→0.7120 (rated 0.69) | Gangwon 0.6905→0.6889 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[322/340] Daejeon 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[323/340] Ulsan 0.7100→0.7100 (rated 0.71) | Gangwon 0.6905→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[324/340] North Gyeongsang 0.6907→0.6920 (rated 0.70) | Gyeonggi 0.7284→0.7294 (rated 0.73) · 4.1s/pair · cache-hit 5314
+[325/340] Busan 0.7120→0.7109 (rated 0.71) | Jeju 0.7101→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[326/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Ulsan 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[327/340] South Chungcheong 0.6900→0.6900 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[328/340] Busan 0.7109→0.7100 (rated 0.71) | Gyeonggi 0.7294→0.7300 (rated 0.73) · 4.1s/pair · cache-hit 5314
+[329/340] South Jeolla 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7294→0.7300 (rated 0.73) · 4.1s/pair · cache-hit 5314
+[330/340] Gangwon 0.6900→0.6914 (rated 0.71) | South Jeolla 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[331/340] Daegu 0.6400→0.6400 (rated 0.64) | Sejong 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[332/340] Daejeon 0.6900→0.6900 (rated 0.69) | North Chungcheong 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[333/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | Seoul 0.6600→0.6600 (rated 0.66) · 4.1s/pair · cache-hit 5314
+[334/340] Ulsan 0.7100→0.7100 (rated 0.71) | Daejeon 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[335/340] Gyeonggi 0.7300→0.7300 (rated 0.73) | Incheon 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[336/340] Gangwon 0.6914→0.6928 (rated 0.71) | Sejong 0.7100→0.7100 (rated 0.71) · 4.1s/pair · cache-hit 5314
+[337/340] Gangwon 0.6914→0.6925 (rated 0.70) | Daegu 0.6400→0.6400 (rated 0.64) · 4.1s/pair · cache-hit 5314
+[338/340] Gwangju 0.7100→0.7100 (rated 0.71) | Gyeonggi 0.7300→0.7300 (rated 0.73) · 4.1s/pair · cache-hit 5314
+[339/340] North Chungcheong 0.6900→0.6900 (rated 0.69) | South Chungcheong 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5314
+[340/340] Gangwon 0.6928→0.6916 (rated 0.68) | Daegu 0.6400→0.6400 (rated 0.64) · 4.1s/pair · cache-hit 5314
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 340 pairs in 1394s · errors: 0 · total score movement: 0.662
+tokens — cache read: 1,785,504 · cache write: 21,256 · uncached in: 133,899 · out: 276,268
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
