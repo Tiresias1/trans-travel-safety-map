@@ -4545,3 +4545,342 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 100 pairs in 571s · errors: 0 · total score movement: 0.014
 tokens — cache read: 513,792 · cache write: 21,408 · uncached in: 76,467 · out: 120,178
 OK: 233 countries, 2973 admin1 units; ranks written; meta written
+ITA done 2026-09-22 05:43:27
+=================== POL 2026-09-22 05:43:27 ===================
+new: 9 · refreshed: 0 · skipped (untouchable): 7 · with deltas: 0 · countries touched: 1
+  mean drift POL: -0.000 (9 units)
+wrote 2982 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2982 admin1 units; ranks written; meta written
+POL: 16 units -> 320 pairs
+system prompt: 23,485 chars (~5,871 tokens) — cached
+admin1 mode: Poland (POL) national 0.52 · 16 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 80 for ~10)
+pairs: 320 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 160 / 320: 0.07000/0.04009/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06013/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-POL-20260922-054329.jsonl
+[1/320] Lubusz Voivodeship 0.5184→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 20.0s/pair
+[2/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 11.5s/pair
+[3/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Silesian Voivodeship 0.5184→0.5200 (rated 0.52) · 8.7s/pair
+[4/320] Lesser Poland Voivodeship 0.4800→0.4861 (rated 0.49) | Świętokrzyskie Voivodeship 0.4800→0.4739 (rated 0.47) · 8.2s/pair
+[5/320] West Pomeranian Voivodeship 0.5184→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 7.2s/pair · cache-hit 5310
+[6/320] West Pomeranian Voivodeship 0.5184→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 7.7s/pair · cache-hit 5310
+[7/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 6.8s/pair · cache-hit 5310
+[8/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lesser Poland Voivodeship 0.4861→0.4807 (rated 0.48) · 7.1s/pair · cache-hit 5310
+[9/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Greater Poland Voivodeship 0.5184→0.5200 (rated 0.52) · 6.8s/pair · cache-hit 5310
+[10/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 6.2s/pair · cache-hit 5310
+[11/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Greater Poland Voivodeship 0.5184→0.5200 (rated 0.52) · 5.9s/pair · cache-hit 5310
+[12/320] Świętokrzyskie Voivodeship 0.4739→0.4792 (rated 0.48) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 6.7s/pair · cache-hit 5310
+[13/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lower Silesian Voivodeship 0.5184→0.5200 (rated 0.52) · 6.4s/pair · cache-hit 5310
+[14/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 6.0s/pair · cache-hit 5310
+[15/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5184→0.5200 (rated 0.52) · 5.9s/pair · cache-hit 5310
+[16/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Świętokrzyskie Voivodeship 0.4739→0.4792 (rated 0.48) · 5.6s/pair · cache-hit 5310
+[17/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5184→0.5200 (rated 0.52) · 5.6s/pair · cache-hit 5310
+[18/320] Warmian-Masurian Voivodeship 0.5184→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4792→0.4800 (rated 0.48) · 5.3s/pair · cache-hit 5310
+[19/320] Świętokrzyskie Voivodeship 0.4792→0.4800 (rated 0.48) | Kuyavian-Pomeranian Voivodeship 0.5184→0.5200 (rated 0.52) · 5.2s/pair · cache-hit 5310
+[20/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 5.2s/pair · cache-hit 5310
+[21/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 5.1s/pair · cache-hit 5310
+[22/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 5.1s/pair · cache-hit 5310
+[23/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 5.4s/pair · cache-hit 5310
+[24/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 5.3s/pair · cache-hit 5310
+[25/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 5.2s/pair · cache-hit 5310
+[26/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5544 (rated 0.55) · 5.1s/pair · cache-hit 5310
+[27/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 5.0s/pair · cache-hit 5310
+[28/320] Opole Voivodeship 0.5184→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.9s/pair · cache-hit 5310
+[29/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.9s/pair · cache-hit 5310
+[30/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.9s/pair · cache-hit 5310
+[31/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.8s/pair · cache-hit 5310
+[32/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.8s/pair · cache-hit 5310
+[33/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4265 (rated 0.44) · 5.0s/pair · cache-hit 5310
+[34/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.9s/pair · cache-hit 5310
+[35/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.9s/pair · cache-hit 5310
+[36/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.8s/pair · cache-hit 5310
+[37/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[38/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[39/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.7s/pair · cache-hit 5310
+[40/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5544→0.5593 (rated 0.56) · 4.6s/pair · cache-hit 5310
+[41/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[42/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[43/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.7s/pair · cache-hit 5310
+[44/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[45/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.6s/pair · cache-hit 5310
+[46/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.7s/pair · cache-hit 5310
+[47/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5593→0.5600 (rated 0.56) · 4.7s/pair · cache-hit 5310
+[48/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[49/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.7s/pair · cache-hit 5310
+[50/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5593→0.5646 (rated 0.57) · 4.8s/pair · cache-hit 5310
+[51/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[52/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[53/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[54/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[55/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.7s/pair · cache-hit 5310
+[56/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[57/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.8s/pair · cache-hit 5310
+[58/320] Lesser Poland Voivodeship 0.4800→0.4853 (rated 0.49) | Świętokrzyskie Voivodeship 0.4800→0.4747 (rated 0.47) · 4.7s/pair · cache-hit 5310
+[59/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[60/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.7s/pair · cache-hit 5310
+[61/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.6s/pair · cache-hit 5310
+[62/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.7s/pair · cache-hit 5310
+[63/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[64/320] Świętokrzyskie Voivodeship 0.4747→0.4792 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[65/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.7s/pair · cache-hit 5310
+[66/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.6s/pair · cache-hit 5310
+[67/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.6s/pair · cache-hit 5310
+[68/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.6s/pair · cache-hit 5310
+[69/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[70/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[71/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[72/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[73/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[74/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[75/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.5s/pair · cache-hit 5310
+[76/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4848 (rated 0.49) · 4.5s/pair · cache-hit 5310
+[77/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4792→0.4800 (rated 0.48) · 4.5s/pair · cache-hit 5310
+[78/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[79/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[80/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.4s/pair · cache-hit 5310
+[81/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[82/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[83/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[84/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[85/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[86/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[87/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.4s/pair · cache-hit 5310
+[88/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[89/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[90/320] Łódź Voivodeship 0.4848→0.4807 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.3s/pair · cache-hit 5310
+[91/320] Łódź Voivodeship 0.4848→0.4807 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[92/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[93/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[94/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[95/320] Łódź Voivodeship 0.4807→0.4800 (rated 0.48) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.3s/pair · cache-hit 5310
+[96/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[97/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[98/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[99/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Łódź Voivodeship 0.4807→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[100/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[101/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.3s/pair · cache-hit 5310
+[102/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[103/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[104/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[105/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[106/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[107/320] Łódź Voivodeship 0.4800→0.4838 (rated 0.49) | Lublin Voivodeship 0.4500→0.4550 (rated 0.47) · 4.2s/pair · cache-hit 5310
+[108/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[109/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[110/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[111/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[112/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[113/320] Lublin Voivodeship 0.4550→0.4511 (rated 0.45) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[114/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[115/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[116/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[117/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[118/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[119/320] Masovian Voivodeship 0.5600→0.5558 (rated 0.55) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[120/320] Łódź Voivodeship 0.4838→0.4802 (rated 0.48) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[121/320] Łódź Voivodeship 0.4838→0.4802 (rated 0.48) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[122/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4511→0.4500 (rated 0.45) · 4.2s/pair · cache-hit 5310
+[123/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5558→0.5594 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[124/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[125/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[126/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[127/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[128/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[129/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[130/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[131/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[132/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[133/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[134/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[135/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[136/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[137/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5594→0.5556 (rated 0.55) · 4.2s/pair · cache-hit 5310
+[138/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[139/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5594→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[140/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[141/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[142/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[143/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[144/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.3s/pair · cache-hit 5310
+[145/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[146/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[147/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[148/320] Łódź Voivodeship 0.4802→0.4800 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[149/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[150/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Łódź Voivodeship 0.4802→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[151/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Łódź Voivodeship 0.4802→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[152/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[153/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[154/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[155/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[156/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[157/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[158/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[159/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[160/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[161/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[162/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[163/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[164/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[165/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[166/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[167/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[168/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[169/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[170/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[171/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[172/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[173/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[174/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[175/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[176/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[177/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[178/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[179/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[180/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.2s/pair · cache-hit 5310
+[181/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[182/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[183/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.2s/pair · cache-hit 5310
+[184/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[185/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[186/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.2s/pair · cache-hit 5310
+[187/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[188/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[189/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[190/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[191/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[192/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[193/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[194/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[195/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[196/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[197/320] Lublin Voivodeship 0.4500→0.4530 (rated 0.46) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[198/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[199/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[200/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[201/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[202/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[203/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[204/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[205/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[206/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[207/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[208/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[209/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[210/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[211/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4530→0.4506 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[212/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[213/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[214/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[215/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[216/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[217/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[218/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[219/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[220/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[221/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[222/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[223/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[224/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[225/320] Lublin Voivodeship 0.4506→0.4500 (rated 0.45) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[226/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[227/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[228/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[229/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[230/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[231/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[232/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[233/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[234/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[235/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[236/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[237/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[238/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[239/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[240/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[241/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[242/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[243/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[244/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[245/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[246/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[247/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[248/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[249/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[250/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[251/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[252/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[253/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[254/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[255/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[256/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[257/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[258/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[259/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[260/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[261/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[262/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[263/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[264/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[265/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[266/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[267/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[268/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[269/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[270/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[271/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[272/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[273/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[274/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[275/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[276/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[277/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[278/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[279/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+[280/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[281/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[282/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[283/320] West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[284/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[285/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[286/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[287/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[288/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[289/320] Łódź Voivodeship 0.4800→0.4800 (rated 0.48) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[290/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[291/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[292/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[293/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[294/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[295/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[296/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Opole Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[297/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Masovian Voivodeship 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5310
+[298/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[299/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[300/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[301/320] Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[302/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[303/320] Masovian Voivodeship 0.5600→0.5600 (rated 0.56) | Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[304/320] Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[305/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[306/320] Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5310
+[307/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[308/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) · 4.1s/pair · cache-hit 5310
+[309/320] Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.1s/pair · cache-hit 5310
+[310/320] Lubusz Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[311/320] Lublin Voivodeship 0.4500→0.4500 (rated 0.45) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[312/320] Podlaskie Voivodeship 0.4400→0.4400 (rated 0.44) | Łódź Voivodeship 0.4800→0.4800 (rated 0.48) · 4.2s/pair · cache-hit 5310
+[313/320] Lesser Poland Voivodeship 0.4800→0.4800 (rated 0.48) | Lower Silesian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[314/320] Opole Voivodeship 0.5200→0.5200 (rated 0.52) | Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[315/320] Warmian-Masurian Voivodeship 0.5200→0.5200 (rated 0.52) | Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.2s/pair · cache-hit 5310
+[316/320] Lublin Voivodeship 0.4500→0.4490 (rated 0.44) | Subcarpathian Voivodeship 0.4200→0.4187 (rated 0.40) · 4.1s/pair · cache-hit 5310
+[317/320] Subcarpathian Voivodeship 0.4200→0.4214 (rated 0.44) | Kuyavian-Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[318/320] Greater Poland Voivodeship 0.5200→0.5200 (rated 0.52) | West Pomeranian Voivodeship 0.5200→0.5200 (rated 0.52) · 4.1s/pair · cache-hit 5310
+[319/320] Silesian Voivodeship 0.5200→0.5200 (rated 0.52) | Lublin Voivodeship 0.4500→0.4500 (rated 0.45) · 4.1s/pair · cache-hit 5310
+[320/320] Świętokrzyskie Voivodeship 0.4800→0.4800 (rated 0.48) | Subcarpathian Voivodeship 0.4200→0.4200 (rated 0.42) · 4.2s/pair · cache-hit 5310
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 320 pairs in 1330s · errors: 0 · total score movement: 0.146
+tokens — cache read: 1,677,960 · cache write: 21,240 · uncached in: 147,935 · out: 259,709
+OK: 233 countries, 2982 admin1 units; ranks written; meta written
