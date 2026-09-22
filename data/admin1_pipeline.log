@@ -1233,3 +1233,562 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 180 pairs in 965s · errors: 0 · total score movement: 0.061
 tokens — cache read: 926,464 · cache write: 21,056 · uncached in: 100,786 · out: 147,877
 OK: 233 countries, 2861 admin1 units; ranks written; meta written
+AUS done 2026-09-22 02:54:12
+=================== BRA 2026-09-22 02:54:12 ===================
+new: 13 · refreshed: 0 · skipped (untouchable): 14 · with deltas: 0 · countries touched: 1
+  mean drift BRA: -0.000 (13 units)
+wrote 2874 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2874 admin1 units; ranks written; meta written
+BRA: 27 units -> 540 pairs
+system prompt: 23,800 chars (~5,950 tokens) — cached
+admin1 mode: Brazil (BRA) national 0.71 · 27 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 135 for ~10)
+pairs: 540 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 270 / 540: 0.07000/0.04006/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06007/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-BRA-20260922-025413.jsonl
+[1/540] Amazonas 0.7066→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 16.3s/pair
+[2/540] Paraiba 0.6200→0.6271 (rated 0.64) | Alagoas 0.6800→0.6800 (rated 0.68) · 11.6s/pair
+[3/540] Ceara 0.6100→0.6100 (rated 0.61) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 7.9s/pair
+[4/540] Para 0.6700→0.6700 (rated 0.67) | Minas Gerais 0.6400→0.6494 (rated 0.68) · 9.3s/pair
+[5/540] Piaui 0.7066→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 7.6s/pair · cache-hit 5342
+[6/540] Acre 0.7066→0.7078 (rated 0.71) | Paraiba 0.6271→0.6379 (rated 0.68) · 6.5s/pair · cache-hit 5342
+[7/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 6.2s/pair · cache-hit 5342
+[8/540] Sergipe 0.7066→0.7100 (rated 0.71) | Acre 0.7066→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[9/540] Acre 0.7066→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 6.1s/pair · cache-hit 5342
+[10/540] Piaui 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7066→0.7100 (rated 0.71) · 6.3s/pair · cache-hit 5342
+[11/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Ceara 0.6100→0.6100 (rated 0.61) · 6.2s/pair · cache-hit 5342
+[12/540] Piaui 0.7100→0.7100 (rated 0.71) | Paraiba 0.6379→0.6474 (rated 0.68) · 6.4s/pair · cache-hit 5342
+[13/540] Paraiba 0.6379→0.6312 (rated 0.62) | Acre 0.7100→0.7100 (rated 0.71) · 7.4s/pair · cache-hit 5342
+[14/540] Minas Gerais 0.6494→0.6576 (rated 0.68) | Maranhao 0.6700→0.6700 (rated 0.67) · 6.8s/pair · cache-hit 5342
+[15/540] Espirito Santo 0.7066→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 6.8s/pair · cache-hit 5342
+[16/540] Bahia 0.6500→0.6558 (rated 0.66) | Alagoas 0.6800→0.6800 (rated 0.68) · 6.5s/pair · cache-hit 5342
+[17/540] Roraima 0.7066→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 6.3s/pair · cache-hit 5342
+[18/540] Piaui 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 6.1s/pair · cache-hit 5342
+[19/540] Rondonia 0.7066→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 6.3s/pair · cache-hit 5342
+[20/540] Alagoas 0.6800→0.6800 (rated 0.68) | Maranhao 0.6700→0.6700 (rated 0.67) · 6.3s/pair · cache-hit 5342
+[21/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Acre 0.7100→0.7100 (rated 0.71) · 6.1s/pair · cache-hit 5342
+[22/540] Pernambuco 0.6400→0.6457 (rated 0.65) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 6.2s/pair · cache-hit 5342
+[23/540] Maranhao 0.6700→0.6700 (rated 0.67) | Rondonia 0.7100→0.7100 (rated 0.71) · 6.1s/pair · cache-hit 5342
+[24/540] Amapa 0.7066→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 5.9s/pair · cache-hit 5342
+[25/540] Sao Paulo 0.7066→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 6.2s/pair · cache-hit 5342
+[26/540] Tocantins 0.7066→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 6.4s/pair · cache-hit 5342
+[27/540] Acre 0.7100→0.7100 (rated 0.71) | Parana 0.7066→0.7100 (rated 0.71) · 6.3s/pair · cache-hit 5342
+[28/540] Amapa 0.7066→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 6.1s/pair · cache-hit 5342
+[29/540] Paraiba 0.6312→0.6253 (rated 0.62) | Amazonas 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[30/540] Amapa 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[31/540] Para 0.6700→0.6700 (rated 0.67) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[32/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[33/540] Tocantins 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[34/540] Goias 0.6700→0.6700 (rated 0.67) | Amapa 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[35/540] Maranhao 0.6700→0.6700 (rated 0.67) | Sergipe 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[36/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.9s/pair · cache-hit 5342
+[37/540] Rio Granda do Norte 0.6000→0.6067 (rated 0.62) | Ceara 0.6100→0.6100 (rated 0.61) · 6.1s/pair · cache-hit 5342
+[38/540] Alagoas 0.6800→0.6800 (rated 0.68) | Santa Catarina 0.5600→0.5544 (rated 0.55) · 6.0s/pair · cache-hit 5342
+[39/540] Alagoas 0.6800→0.6800 (rated 0.68) | Pernambuco 0.6457→0.6406 (rated 0.64) · 5.9s/pair · cache-hit 5342
+[40/540] Amapa 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.8s/pair · cache-hit 5342
+[41/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Amapa 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[42/540] Roraima 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.8s/pair · cache-hit 5342
+[43/540] Minas Gerais 0.6576→0.6512 (rated 0.64) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[44/540] Maranhao 0.6700→0.6700 (rated 0.67) | Minas Gerais 0.6576→0.6523 (rated 0.65) · 5.8s/pair · cache-hit 5342
+[45/540] Piaui 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.8s/pair · cache-hit 5342
+[46/540] Alagoas 0.6800→0.6800 (rated 0.68) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.6s/pair · cache-hit 5342
+[47/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Minas Gerais 0.6512→0.6456 (rated 0.64) · 6.0s/pair · cache-hit 5342
+[48/540] Minas Gerais 0.6523→0.6500 (rated 0.65) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 6.0s/pair · cache-hit 5342
+[49/540] Santa Catarina 0.5544→0.5659 (rated 0.62) | Amapa 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[50/540] Rondonia 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[51/540] Pernambuco 0.6406→0.6400 (rated 0.64) | Goias 0.6700→0.6700 (rated 0.67) · 5.9s/pair · cache-hit 5342
+[52/540] Rondonia 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[53/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.7s/pair · cache-hit 5342
+[54/540] Ceara 0.6100→0.6100 (rated 0.61) | Roraima 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[55/540] Minas Gerais 0.6500→0.6445 (rated 0.64) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[56/540] Minas Gerais 0.6456→0.6526 (rated 0.67) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.9s/pair · cache-hit 5342
+[57/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Paraiba 0.6253→0.6366 (rated 0.69) · 5.9s/pair · cache-hit 5342
+[58/540] Para 0.6700→0.6700 (rated 0.67) | Rondonia 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[59/540] Santa Catarina 0.5659→0.5739 (rated 0.60) | Acre 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[60/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Ceara 0.6100→0.6100 (rated 0.61) · 5.9s/pair · cache-hit 5342
+[61/540] Bahia 0.6500→0.6575 (rated 0.68) | Roraima 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[62/540] Alagoas 0.6800→0.6800 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 6.0s/pair · cache-hit 5342
+[63/540] Paraiba 0.6366→0.6442 (rated 0.67) | Alagoas 0.6800→0.6842 (rated 0.69) · 5.9s/pair · cache-hit 5342
+[64/540] Minas Gerais 0.6526→0.6470 (rated 0.64) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[65/540] Roraima 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[66/540] Paraiba 0.6366→0.6306 (rated 0.62) | Amapa 0.7100→0.7100 (rated 0.71) · 5.9s/pair · cache-hit 5342
+[67/540] Rio Granda do Norte 0.6067→0.6017 (rated 0.60) | Bahia 0.6500→0.6500 (rated 0.65) · 5.8s/pair · cache-hit 5342
+[68/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.8s/pair · cache-hit 5342
+[69/540] Para 0.6700→0.6700 (rated 0.67) | Mato Grosso do Sul 0.7066→0.7100 (rated 0.71) · 5.7s/pair · cache-hit 5342
+[70/540] Rio Granda do Norte 0.6067→0.6112 (rated 0.62) | Minas Gerais 0.6470→0.6544 (rated 0.68) · 5.8s/pair · cache-hit 5342
+[71/540] Amazonas 0.7100→0.7100 (rated 0.71) | Alagoas 0.6842→0.6800 (rated 0.68) · 5.7s/pair · cache-hit 5342
+[72/540] Piaui 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5739→0.5788 (rated 0.58) · 5.8s/pair · cache-hit 5342
+[73/540] Santa Catarina 0.5739→0.5682 (rated 0.56) | Bahia 0.6500→0.6500 (rated 0.65) · 5.7s/pair · cache-hit 5342
+[74/540] Maranhao 0.6700→0.6700 (rated 0.67) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.7s/pair · cache-hit 5342
+[75/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.7s/pair · cache-hit 5342
+[76/540] Piaui 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.6s/pair · cache-hit 5342
+[77/540] Parana 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.6s/pair · cache-hit 5342
+[78/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.6s/pair · cache-hit 5342
+[79/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.6s/pair · cache-hit 5342
+[80/540] Amazonas 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[81/540] Sergipe 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[82/540] Parana 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[83/540] Alagoas 0.6800→0.6800 (rated 0.68) | Roraima 0.7100→0.7100 (rated 0.71) · 5.6s/pair · cache-hit 5342
+[84/540] Goias 0.6700→0.6700 (rated 0.67) | Bahia 0.6500→0.6500 (rated 0.65) · 5.5s/pair · cache-hit 5342
+[85/540] Santa Catarina 0.5682→0.5787 (rated 0.63) | Parana 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[86/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[87/540] Rondonia 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[88/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Amapa 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[89/540] Alagoas 0.6800→0.6800 (rated 0.68) | Rio Granda do Norte 0.6112→0.6059 (rated 0.60) · 5.5s/pair · cache-hit 5342
+[90/540] Sergipe 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[91/540] Bahia 0.6500→0.6562 (rated 0.67) | Amapa 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[92/540] Rio Granda do Norte 0.6112→0.6060 (rated 0.60) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[93/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Parana 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[94/540] Bahia 0.6500→0.6500 (rated 0.65) | Amapa 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[95/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Parana 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[96/540] Rio Granda do Norte 0.6060→0.6013 (rated 0.60) | Parana 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[97/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6060→0.6013 (rated 0.60) · 5.5s/pair · cache-hit 5342
+[98/540] Acre 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[99/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.4s/pair · cache-hit 5342
+[100/540] Amapa 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[101/540] Minas Gerais 0.6544→0.6610 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[102/540] Pernambuco 0.6400→0.6345 (rated 0.63) | Minas Gerais 0.6544→0.6602 (rated 0.67) · 5.4s/pair · cache-hit 5342
+[103/540] Minas Gerais 0.6544→0.6489 (rated 0.64) | Piaui 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[104/540] Santa Catarina 0.5787→0.5848 (rated 0.60) | Parana 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[105/540] Bahia 0.6500→0.6500 (rated 0.65) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[106/540] Sergipe 0.7100→0.7100 (rated 0.71) | Paraiba 0.6306→0.6365 (rated 0.65) · 5.4s/pair · cache-hit 5342
+[107/540] Minas Gerais 0.6602→0.6600 (rated 0.66) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.4s/pair · cache-hit 5342
+[108/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6600→0.6541 (rated 0.64) · 5.5s/pair · cache-hit 5342
+[109/540] Para 0.6700→0.6700 (rated 0.67) | Goias 0.6700→0.6650 (rated 0.66) · 5.5s/pair · cache-hit 5342
+[110/540] Santa Catarina 0.5848→0.5926 (rated 0.63) | Goias 0.6700→0.6743 (rated 0.69) · 5.5s/pair · cache-hit 5342
+[111/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[112/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.5s/pair · cache-hit 5342
+[113/540] Tocantins 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[114/540] Amazonas 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.5s/pair · cache-hit 5342
+[115/540] Amazonas 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6541→0.6487 (rated 0.64) · 5.5s/pair · cache-hit 5342
+[116/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.5s/pair · cache-hit 5342
+[117/540] Amazonas 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5926→0.6021 (rated 0.65) · 5.4s/pair · cache-hit 5342
+[118/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6345→0.6390 (rated 0.64) · 5.4s/pair · cache-hit 5342
+[119/540] Amapa 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[120/540] Tocantins 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[121/540] Minas Gerais 0.6487→0.6440 (rated 0.64) | Amapa 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[122/540] Paraiba 0.6365→0.6417 (rated 0.65) | Piaui 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[123/540] Amazonas 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[124/540] Piaui 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[125/540] Goias 0.6743→0.6700 (rated 0.67) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[126/540] Rondonia 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[127/540] Amazonas 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[128/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6013→0.6000 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[129/540] Bahia 0.6500→0.6500 (rated 0.65) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[130/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.4s/pair · cache-hit 5342
+[131/540] Bahia 0.6500→0.6500 (rated 0.65) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[132/540] Goias 0.6700→0.6700 (rated 0.67) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[133/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Paraiba 0.6417→0.6359 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[134/540] Para 0.6700→0.6723 (rated 0.68) | Rio Granda do Norte 0.6000→0.6101 (rated 0.67) · 5.4s/pair · cache-hit 5342
+[135/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[136/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6440→0.6511 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[137/540] Maranhao 0.6700→0.6700 (rated 0.67) | Parana 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[138/540] Sergipe 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[139/540] Tocantins 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[140/540] Rio de Jeneiro 0.6800→0.6847 (rated 0.69) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[141/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Amapa 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[142/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[143/540] Goias 0.6700→0.6700 (rated 0.67) | Minas Gerais 0.6440→0.6483 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[144/540] Roraima 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[145/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Para 0.6723→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[146/540] Alagoas 0.6800→0.6800 (rated 0.68) | Para 0.6723→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[147/540] Alagoas 0.6800→0.6800 (rated 0.68) | Santa Catarina 0.6021→0.6065 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[148/540] Para 0.6723→0.6700 (rated 0.67) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[149/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[150/540] Parana 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6847→0.6806 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[151/540] Tocantins 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.4s/pair · cache-hit 5342
+[152/540] Paraiba 0.6359→0.6301 (rated 0.62) | Rio Granda do Norte 0.6000→0.6059 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[153/540] Ceara 0.6100→0.6182 (rated 0.66) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[154/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6483→0.6439 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[155/540] Amazonas 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[156/540] Parana 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[157/540] Sergipe 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6059→0.6018 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[158/540] Rio Granda do Norte 0.6059→0.6018 (rated 0.60) | Goias 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[159/540] Para 0.6700→0.6700 (rated 0.67) | Rio Granda do Norte 0.6059→0.6017 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[160/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Minas Gerais 0.6483→0.6439 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[161/540] Rio Granda do Norte 0.6018→0.6000 (rated 0.60) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[162/540] Piaui 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.4s/pair · cache-hit 5342
+[163/540] Goias 0.6700→0.6700 (rated 0.67) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[164/540] Roraima 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.6065→0.5988 (rated 0.56) · 5.3s/pair · cache-hit 5342
+[165/540] Amazonas 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[166/540] Rio Granda do Norte 0.6018→0.6000 (rated 0.60) | Goias 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[167/540] Sergipe 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[168/540] Bahia 0.6500→0.6500 (rated 0.65) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.4s/pair · cache-hit 5342
+[169/540] Tocantins 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6390→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[170/540] Paraiba 0.6301→0.6256 (rated 0.62) | Pernambuco 0.6390→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[171/540] Amazonas 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[172/540] Pernambuco 0.6390→0.6438 (rated 0.66) | Bahia 0.6500→0.6547 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[173/540] Amazonas 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[174/540] Parana 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5988→0.6042 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[175/540] Piaui 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[176/540] Sergipe 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[177/540] Roraima 0.7100→0.7100 (rated 0.71) | Paraiba 0.6256→0.6216 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[178/540] Amazonas 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[179/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[180/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6439→0.6401 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[181/540] Rio de Jeneiro 0.6806→0.6800 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[182/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Alagoas 0.6800→0.6852 (rated 0.70) · 5.3s/pair · cache-hit 5342
+[183/540] Sergipe 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[184/540] Ceara 0.6182→0.6256 (rated 0.64) | Santa Catarina 0.5988→0.5896 (rated 0.54) · 5.2s/pair · cache-hit 5342
+[185/540] Tocantins 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[186/540] Amazonas 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[187/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Pernambuco 0.6438→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[188/540] Rondonia 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[189/540] Ceara 0.6256→0.6208 (rated 0.61) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[190/540] Goias 0.6700→0.6700 (rated 0.67) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[191/540] Piaui 0.7100→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[192/540] Alagoas 0.6852→0.6813 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[193/540] Maranhao 0.6700→0.6700 (rated 0.67) | Bahia 0.6547→0.6509 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[194/540] Amapa 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[195/540] Santa Catarina 0.5896→0.5947 (rated 0.61) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[196/540] Bahia 0.6547→0.6509 (rated 0.65) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[197/540] Ceara 0.6208→0.6166 (rated 0.61) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[198/540] Acre 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[199/540] Maranhao 0.6700→0.6700 (rated 0.67) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[200/540] Santa Catarina 0.5896→0.5838 (rated 0.56) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[201/540] Rio Granda do Norte 0.6000→0.6053 (rated 0.63) | Minas Gerais 0.6401→0.6442 (rated 0.66) · 5.2s/pair · cache-hit 5342
+[202/540] Parana 0.7100→0.7100 (rated 0.71) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[203/540] Minas Gerais 0.6401→0.6400 (rated 0.64) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[204/540] Para 0.6700→0.6700 (rated 0.67) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[205/540] Sergipe 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6442→0.6405 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[206/540] Parana 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[207/540] Minas Gerais 0.6442→0.6496 (rated 0.67) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[208/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[209/540] Amazonas 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[210/540] Tocantins 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[211/540] Sergipe 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7259 (rated 0.72) · 5.2s/pair · cache-hit 5342
+[212/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[213/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[214/540] Sergipe 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[215/540] Piaui 0.7100→0.7100 (rated 0.71) | Ceara 0.6166→0.6128 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[216/540] Sergipe 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[217/540] Ceara 0.6166→0.6208 (rated 0.64) | Minas Gerais 0.6496→0.6546 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[218/540] Paraiba 0.6216→0.6200 (rated 0.62) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[219/540] Amazonas 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[220/540] Amapa 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[221/540] Parana 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6053→0.6017 (rated 0.60) · 5.1s/pair · cache-hit 5342
+[222/540] Amapa 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[223/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6053→0.6017 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[224/540] Roraima 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[225/540] Bahia 0.6509→0.6500 (rated 0.65) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[226/540] Goias 0.6700→0.6700 (rated 0.67) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[227/540] Rio Granda do Norte 0.6017→0.6000 (rated 0.60) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[228/540] Maranhao 0.6700→0.6700 (rated 0.67) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[229/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[230/540] Sergipe 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.1s/pair · cache-hit 5342
+[231/540] Acre 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6546→0.6504 (rated 0.64) · 5.1s/pair · cache-hit 5342
+[232/540] Minas Gerais 0.6546→0.6504 (rated 0.64) | Para 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[233/540] Tocantins 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[234/540] Ceara 0.6208→0.6169 (rated 0.61) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[235/540] Tocantins 0.7100→0.7100 (rated 0.71) | Paraiba 0.6200→0.6269 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[236/540] Roraima 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[237/540] Amazonas 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[238/540] Piaui 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6538 (rated 0.66) · 5.1s/pair · cache-hit 5342
+[239/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[240/540] Roraima 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[241/540] Roraima 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6060 (rated 0.64) · 5.1s/pair · cache-hit 5342
+[242/540] Bahia 0.6538→0.6505 (rated 0.65) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.1s/pair · cache-hit 5342
+[243/540] Sergipe 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[244/540] Minas Gerais 0.6504→0.6465 (rated 0.64) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[245/540] Amapa 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.1s/pair · cache-hit 5342
+[246/540] Paraiba 0.6269→0.6233 (rated 0.62) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[247/540] Alagoas 0.6813→0.6802 (rated 0.68) | Minas Gerais 0.6504→0.6465 (rated 0.64) · 5.1s/pair · cache-hit 5342
+[248/540] Santa Catarina 0.5838→0.5805 (rated 0.58) | Amapa 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[249/540] Paraiba 0.6233→0.6201 (rated 0.62) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[250/540] Distrito Federal 0.7259→0.7292 (rated 0.73) | Alagoas 0.6813→0.6800 (rated 0.68) · 5.1s/pair · cache-hit 5342
+[251/540] Para 0.6700→0.6700 (rated 0.67) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[252/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Maranhao 0.6700→0.6745 (rated 0.69) · 5.1s/pair · cache-hit 5342
+[253/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[254/540] Bahia 0.6505→0.6500 (rated 0.65) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[255/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Paraiba 0.6201→0.6267 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[256/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[257/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[258/540] Ceara 0.6169→0.6134 (rated 0.61) | Goias 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[259/540] Acre 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.1s/pair · cache-hit 5342
+[260/540] Distrito Federal 0.7292→0.7300 (rated 0.73) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[261/540] Distrito Federal 0.7292→0.7300 (rated 0.73) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[262/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.1s/pair · cache-hit 5342
+[263/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Santa Catarina 0.5805→0.5800 (rated 0.58) · 5.2s/pair · cache-hit 5342
+[264/540] Piaui 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[265/540] Sergipe 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[266/540] Rondonia 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[267/540] Minas Gerais 0.6465→0.6516 (rated 0.68) | Rio de Jeneiro 0.6800→0.6827 (rated 0.69) · 5.1s/pair · cache-hit 5342
+[268/540] Piaui 0.7100→0.7100 (rated 0.71) | Minas Gerais 0.6465→0.6432 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[269/540] Ceara 0.6134→0.6103 (rated 0.61) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[270/540] Maranhao 0.6700→0.6700 (rated 0.67) | Amapa 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[271/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Para 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[272/540] Goias 0.6700→0.6700 (rated 0.67) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[273/540] Tocantins 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[274/540] Amazonas 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[275/540] Sergipe 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[276/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[277/540] Sergipe 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6400→0.6442 (rated 0.66) · 5.1s/pair · cache-hit 5342
+[278/540] Rio de Jeneiro 0.6827→0.6800 (rated 0.68) | Roraima 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[279/540] Piaui 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.1s/pair · cache-hit 5342
+[280/540] Rio de Jeneiro 0.6827→0.6800 (rated 0.68) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[281/540] Parana 0.7100→0.7100 (rated 0.71) | Acre 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[282/540] Pernambuco 0.6442→0.6411 (rated 0.64) | Para 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[283/540] Santa Catarina 0.5800→0.5800 (rated 0.58) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[284/540] Para 0.6700→0.6700 (rated 0.67) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[285/540] Bahia 0.6500→0.6500 (rated 0.65) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.1s/pair · cache-hit 5342
+[286/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.1s/pair · cache-hit 5342
+[287/540] Amazonas 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[288/540] Acre 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.1s/pair · cache-hit 5342
+[289/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Ceara 0.6103→0.6100 (rated 0.61) · 5.1s/pair · cache-hit 5342
+[290/540] Bahia 0.6500→0.6500 (rated 0.65) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[291/540] Roraima 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[292/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5800→0.5840 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[293/540] Rio de Jeneiro 0.6800→0.6845 (rated 0.71) | Mato Grosso 0.6900→0.6926 (rated 0.70) · 5.2s/pair · cache-hit 5342
+[294/540] Parana 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[295/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[296/540] Distrito Federal 0.7300→0.7267 (rated 0.72) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[297/540] Roraima 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6845→0.6815 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[298/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[299/540] Amapa 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5840→0.5883 (rated 0.61) · 5.1s/pair · cache-hit 5342
+[300/540] Tocantins 0.7100→0.7100 (rated 0.71) | Paraiba 0.6267→0.6236 (rated 0.62) · 5.1s/pair · cache-hit 5342
+[301/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[302/540] Rio de Jeneiro 0.6845→0.6814 (rated 0.68) | Minas Gerais 0.6432→0.6464 (rated 0.65) · 5.1s/pair · cache-hit 5342
+[303/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[304/540] Ceara 0.6100→0.6132 (rated 0.62) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[305/540] Minas Gerais 0.6432→0.6404 (rated 0.64) | Rio de Jeneiro 0.6815→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[306/540] Minas Gerais 0.6464→0.6434 (rated 0.64) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[307/540] Sergipe 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7267→0.7295 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[308/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[309/540] Acre 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[310/540] Paraiba 0.6236→0.6277 (rated 0.68) | Rio Granda do Norte 0.6000→0.6062 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[311/540] Sergipe 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[312/540] Amapa 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[313/540] Roraima 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.1s/pair · cache-hit 5342
+[314/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[315/540] Tocantins 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[316/540] Santa Catarina 0.5883→0.5929 (rated 0.62) | Piaui 0.7100→0.7100 (rated 0.71) · 5.1s/pair · cache-hit 5342
+[317/540] Rio de Jeneiro 0.6800→0.6829 (rated 0.69) | Santa Catarina 0.5883→0.5914 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[318/540] Santa Catarina 0.5883→0.5847 (rated 0.57) | Bahia 0.6500→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[319/540] Goias 0.6700→0.6700 (rated 0.67) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[320/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[321/540] Alagoas 0.6800→0.6833 (rated 0.70) | Rio de Jeneiro 0.6800→0.6833 (rated 0.70) · 5.2s/pair · cache-hit 5342
+[322/540] Alagoas 0.6800→0.6800 (rated 0.68) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[323/540] Santa Catarina 0.5847→0.5899 (rated 0.63) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[324/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6061→0.6033 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[325/540] Bahia 0.6500→0.6500 (rated 0.65) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[326/540] Goias 0.6700→0.6700 (rated 0.67) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[327/540] Bahia 0.6500→0.6531 (rated 0.66) | Rio de Jeneiro 0.6833→0.6804 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[328/540] Tocantins 0.7100→0.7100 (rated 0.71) | Ceara 0.6132→0.6106 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[329/540] Paraiba 0.6277→0.6332 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[330/540] Pernambuco 0.6411→0.6400 (rated 0.64) | Rio de Jeneiro 0.6833→0.6806 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[331/540] Ceara 0.6106→0.6100 (rated 0.61) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[332/540] Santa Catarina 0.5899→0.5869 (rated 0.58) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[333/540] Mato Grosso 0.6926→0.6901 (rated 0.69) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[334/540] Minas Gerais 0.6434→0.6462 (rated 0.65) | Mato Grosso 0.6926→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[335/540] Para 0.6700→0.6700 (rated 0.67) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[336/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[337/540] Tocantins 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[338/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[339/540] Rio Granda do Norte 0.6033→0.6072 (rated 0.63) | Pernambuco 0.6400→0.6400 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[340/540] Alagoas 0.6800→0.6800 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[341/540] Paraiba 0.6332→0.6315 (rated 0.63) | Santa Catarina 0.5869→0.5825 (rated 0.55) · 5.3s/pair · cache-hit 5342
+[342/540] Rio Granda do Norte 0.6033→0.6066 (rated 0.62) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[343/540] Paraiba 0.6332→0.6301 (rated 0.62) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[344/540] Bahia 0.6531→0.6506 (rated 0.65) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[345/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[346/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Amapa 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[347/540] Distrito Federal 0.7295→0.7300 (rated 0.73) | Rio Granda do Norte 0.6066→0.6039 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[348/540] Roraima 0.7100→0.7100 (rated 0.71) | Bahia 0.6506→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[349/540] Amapa 0.7100→0.7100 (rated 0.71) | Bahia 0.6531→0.6506 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[350/540] Ceara 0.6100→0.6100 (rated 0.61) | Goias 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[351/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[352/540] Distrito Federal 0.7295→0.7300 (rated 0.73) | Rio de Jeneiro 0.6806→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[353/540] Ceara 0.6100→0.6100 (rated 0.61) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[354/540] Goias 0.6700→0.6700 (rated 0.67) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[355/540] Rio Granda do Norte 0.6039→0.6014 (rated 0.60) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[356/540] Rondonia 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[357/540] Rondonia 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[358/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[359/540] Roraima 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[360/540] Maranhao 0.6700→0.6700 (rated 0.67) | Santa Catarina 0.5825→0.5872 (rated 0.63) · 5.2s/pair · cache-hit 5342
+[361/540] Paraiba 0.6301→0.6274 (rated 0.62) | Amapa 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[362/540] Parana 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[363/540] Goias 0.6700→0.6700 (rated 0.67) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[364/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[365/540] Minas Gerais 0.6462→0.6491 (rated 0.66) | Amapa 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[366/540] Rio Granda do Norte 0.6014→0.6079 (rated 0.67) | Santa Catarina 0.5825→0.5771 (rated 0.55) · 5.2s/pair · cache-hit 5342
+[367/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[368/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[369/540] Roraima 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[370/540] Rondonia 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6014→0.6000 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[371/540] Amapa 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[372/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Rio Granda do Norte 0.6079→0.6054 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[373/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[374/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[375/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Goias 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[376/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[377/540] Bahia 0.6506→0.6541 (rated 0.70) | Paraiba 0.6274→0.6311 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[378/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[379/540] Minas Gerais 0.6491→0.6500 (rated 0.65) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[380/540] Goias 0.6700→0.6700 (rated 0.67) | Acre 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[381/540] Tocantins 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6831 (rated 0.70) · 5.2s/pair · cache-hit 5342
+[382/540] Roraima 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[383/540] Goias 0.6700→0.6700 (rated 0.67) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[384/540] Acre 0.7100→0.7100 (rated 0.71) | Bahia 0.6541→0.6518 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[385/540] Mato Grosso 0.6900→0.6921 (rated 0.70) | Goias 0.6700→0.6728 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[386/540] Amazonas 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[387/540] Rio de Jeneiro 0.6800→0.6832 (rated 0.72) | Minas Gerais 0.6500→0.6532 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[388/540] Paraiba 0.6311→0.6285 (rated 0.62) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[389/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[390/540] Rondonia 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[391/540] Alagoas 0.6800→0.6800 (rated 0.68) | Ceara 0.6100→0.6100 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[392/540] Rio de Jeneiro 0.6832→0.6812 (rated 0.68) | Paraiba 0.6285→0.6262 (rated 0.62) · 5.2s/pair · cache-hit 5342
+[393/540] Ceara 0.6100→0.6139 (rated 0.67) | Paraiba 0.6311→0.6342 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[394/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[395/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[396/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[397/540] Rondonia 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[398/540] Paraiba 0.6342→0.6316 (rated 0.62) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[399/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[400/540] Alagoas 0.6800→0.6800 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[401/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[402/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5771→0.5805 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[403/540] Rondonia 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[404/540] Ceara 0.6139→0.6118 (rated 0.61) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[405/540] Amapa 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[406/540] Bahia 0.6518→0.6500 (rated 0.65) | Goias 0.6728→0.6751 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[407/540] Parana 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6921→0.6902 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[408/540] Minas Gerais 0.6532→0.6562 (rated 0.68) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[409/540] Sergipe 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6400→0.6400 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[410/540] Goias 0.6751→0.6730 (rated 0.67) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[411/540] Tocantins 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[412/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[413/540] Alagoas 0.6800→0.6800 (rated 0.68) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[414/540] Ceara 0.6118→0.6100 (rated 0.61) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[415/540] Bahia 0.6500→0.6500 (rated 0.65) | Mato Grosso 0.6902→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[416/540] Pernambuco 0.6400→0.6426 (rated 0.66) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[417/540] Bahia 0.6500→0.6500 (rated 0.65) | Santa Catarina 0.5805→0.5800 (rated 0.58) · 5.2s/pair · cache-hit 5342
+[418/540] Alagoas 0.6800→0.6800 (rated 0.68) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[419/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Mato Grosso 0.6902→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[420/540] Minas Gerais 0.6562→0.6538 (rated 0.64) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[421/540] Alagoas 0.6800→0.6800 (rated 0.68) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[422/540] Minas Gerais 0.6562→0.6558 (rated 0.64) | Santa Catarina 0.5805→0.5743 (rated 0.47) · 5.2s/pair · cache-hit 5342
+[423/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.2s/pair · cache-hit 5342
+[424/540] Amazonas 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6426→0.6408 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[425/540] Minas Gerais 0.6538→0.6515 (rated 0.64) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[426/540] Parana 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[427/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[428/540] Paraiba 0.6316→0.6294 (rated 0.62) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[429/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[430/540] Sergipe 0.7100→0.7100 (rated 0.71) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[431/540] Amapa 0.7100→0.7100 (rated 0.71) | Para 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[432/540] Pernambuco 0.6408→0.6400 (rated 0.64) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[433/540] Rio de Jeneiro 0.6812→0.6800 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[434/540] Bahia 0.6500→0.6500 (rated 0.65) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[435/540] Acre 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.2s/pair · cache-hit 5342
+[436/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[437/540] Amazonas 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6400→0.6424 (rated 0.66) · 5.2s/pair · cache-hit 5342
+[438/540] Ceara 0.6100→0.6100 (rated 0.61) | Piaui 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[439/540] Tocantins 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.2s/pair · cache-hit 5342
+[440/540] Paraiba 0.6294→0.6314 (rated 0.65) | Minas Gerais 0.6515→0.6539 (rated 0.68) · 5.2s/pair · cache-hit 5342
+[441/540] Roraima 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[442/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.2s/pair · cache-hit 5342
+[443/540] Para 0.6700→0.6700 (rated 0.67) | Paraiba 0.6294→0.6314 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[444/540] Amazonas 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[445/540] Maranhao 0.6700→0.6700 (rated 0.67) | Acre 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[446/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[447/540] Rondonia 0.7100→0.7100 (rated 0.71) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[448/540] Roraima 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6800→0.6819 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[449/540] Santa Catarina 0.5743→0.5765 (rated 0.59) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[450/540] Parana 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[451/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6424→0.6408 (rated 0.64) · 5.2s/pair · cache-hit 5342
+[452/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Paraiba 0.6314→0.6351 (rated 0.69) · 5.2s/pair · cache-hit 5342
+[453/540] Tocantins 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6122 (rated 0.63) · 5.2s/pair · cache-hit 5342
+[454/540] Alagoas 0.6800→0.6800 (rated 0.68) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.2s/pair · cache-hit 5342
+[455/540] Minas Gerais 0.6539→0.6552 (rated 0.66) | Rio Granda do Norte 0.6000→0.6025 (rated 0.63) · 5.2s/pair · cache-hit 5342
+[456/540] Para 0.6700→0.6700 (rated 0.67) | Sao Paulo 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[457/540] Rondonia 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[458/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.2s/pair · cache-hit 5342
+[459/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Ceara 0.6122→0.6107 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[460/540] Minas Gerais 0.6552→0.6527 (rated 0.64) | Santa Catarina 0.5765→0.5793 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[461/540] Amapa 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[462/540] Parana 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6408→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[463/540] Alagoas 0.6800→0.6800 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[464/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6819→0.6804 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[465/540] Paraiba 0.6351→0.6331 (rated 0.62) | Bahia 0.6500→0.6500 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[466/540] Goias 0.6730→0.6715 (rated 0.67) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[467/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Para 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[468/540] Rondonia 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[469/540] Amapa 0.7100→0.7100 (rated 0.71) | Bahia 0.6500→0.6500 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[470/540] Goias 0.6730→0.6715 (rated 0.67) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[471/540] Goias 0.6715→0.6700 (rated 0.67) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[472/540] Alagoas 0.6800→0.6800 (rated 0.68) | Ceara 0.6107→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[473/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Pernambuco 0.6400→0.6417 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[474/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Pernambuco 0.6400→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[475/540] Roraima 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[476/540] Piaui 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[477/540] Ceara 0.6100→0.6100 (rated 0.61) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[478/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[479/540] Goias 0.6700→0.6700 (rated 0.67) | Paraiba 0.6331→0.6313 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[480/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Paraiba 0.6331→0.6353 (rated 0.66) · 5.3s/pair · cache-hit 5342
+[481/540] Alagoas 0.6800→0.6800 (rated 0.68) | Para 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[482/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[483/540] Acre 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[484/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[485/540] Roraima 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6804→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[486/540] Amazonas 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[487/540] Sergipe 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[488/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5793→0.5824 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[489/540] Alagoas 0.6800→0.6800 (rated 0.68) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[490/540] Rio de Jeneiro 0.6800→0.6800 (rated 0.68) | Rondonia 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[491/540] Rio de Jeneiro 0.6804→0.6818 (rated 0.70) | Minas Gerais 0.6527→0.6548 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[492/540] Alagoas 0.6800→0.6800 (rated 0.68) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[493/540] Santa Catarina 0.5824→0.5800 (rated 0.54) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[494/540] Acre 0.7100→0.7100 (rated 0.71) | Maranhao 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[495/540] Alagoas 0.6800→0.6800 (rated 0.68) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[496/540] Bahia 0.6500→0.6500 (rated 0.65) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[497/540] Amapa 0.7100→0.7100 (rated 0.71) | Pernambuco 0.6400→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[498/540] Roraima 0.7100→0.7100 (rated 0.71) | Paraiba 0.6353→0.6337 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[499/540] Parana 0.7100→0.7100 (rated 0.71) | Rio de Jeneiro 0.6818→0.6805 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[500/540] Minas Gerais 0.6548→0.6532 (rated 0.64) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[501/540] Mato Grosso 0.6900→0.6900 (rated 0.69) | Parana 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[502/540] Acre 0.7100→0.7100 (rated 0.71) | Roraima 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[503/540] Piaui 0.7100→0.7100 (rated 0.71) | Alagoas 0.6800→0.6800 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[504/540] Amazonas 0.7100→0.7100 (rated 0.71) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[505/540] Santa Catarina 0.5800→0.5814 (rated 0.59) | Ceara 0.6100→0.6100 (rated 0.61) · 5.3s/pair · cache-hit 5342
+[506/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Santa Catarina 0.5800→0.5786 (rated 0.57) · 5.3s/pair · cache-hit 5342
+[507/540] Piaui 0.7100→0.7100 (rated 0.71) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[508/540] Piaui 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5800→0.5800 (rated 0.58) · 5.3s/pair · cache-hit 5342
+[509/540] Rondonia 0.7100→0.7100 (rated 0.71) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[510/540] Sao Paulo 0.7100→0.7100 (rated 0.71) | Paraiba 0.6337→0.6322 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[511/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[512/540] Sergipe 0.7100→0.7100 (rated 0.71) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[513/540] Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) | Parana 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[514/540] Minas Gerais 0.6532→0.6547 (rated 0.67) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[515/540] Maranhao 0.6700→0.6700 (rated 0.67) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[516/540] Rio de Jeneiro 0.6805→0.6822 (rated 0.70) | Pernambuco 0.6400→0.6400 (rated 0.64) · 5.3s/pair · cache-hit 5342
+[517/540] Piaui 0.7100→0.7100 (rated 0.71) | Santa Catarina 0.5800→0.5820 (rated 0.62) · 5.3s/pair · cache-hit 5342
+[518/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[519/540] Rio Granda do Norte 0.6000→0.6000 (rated 0.60) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[520/540] Goias 0.6700→0.6700 (rated 0.67) | Rio de Jeneiro 0.6822→0.6834 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[521/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Rio de Jeneiro 0.6822→0.6834 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[522/540] Espirito Santo 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[523/540] Paraiba 0.6322→0.6340 (rated 0.67) | Para 0.6700→0.6708 (rated 0.68) · 5.3s/pair · cache-hit 5342
+[524/540] Goias 0.6700→0.6700 (rated 0.67) | Sergipe 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[525/540] Distrito Federal 0.7300→0.7300 (rated 0.73) | Tocantins 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[526/540] Amazonas 0.7100→0.7100 (rated 0.71) | Goias 0.6700→0.6700 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[527/540] Rio de Jeneiro 0.6834→0.6823 (rated 0.68) | Rio Grande do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[528/540] Bahia 0.6500→0.6500 (rated 0.65) | Rio Granda do Norte 0.6000→0.6000 (rated 0.60) · 5.3s/pair · cache-hit 5342
+[529/540] Pernambuco 0.6400→0.6400 (rated 0.64) | Mato Grosso do Sul 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[530/540] Sergipe 0.7100→0.7100 (rated 0.71) | Espirito Santo 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[531/540] Santa Catarina 0.5820→0.5800 (rated 0.55) | Pernambuco 0.6400→0.6420 (rated 0.67) · 5.3s/pair · cache-hit 5342
+[532/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Amazonas 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[533/540] Rio Grande do Sul 0.7100→0.7100 (rated 0.71) | Piaui 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[534/540] Bahia 0.6500→0.6512 (rated 0.66) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[535/540] Rio de Jeneiro 0.6823→0.6813 (rated 0.68) | Mato Grosso 0.6900→0.6900 (rated 0.69) · 5.3s/pair · cache-hit 5342
+[536/540] Rio de Jeneiro 0.6823→0.6814 (rated 0.68) | Acre 0.7100→0.7100 (rated 0.71) · 5.3s/pair · cache-hit 5342
+[537/540] Parana 0.7100→0.7100 (rated 0.71) | Bahia 0.6512→0.6502 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[538/540] Santa Catarina 0.5800→0.5800 (rated 0.58) | Distrito Federal 0.7300→0.7300 (rated 0.73) · 5.3s/pair · cache-hit 5342
+[539/540] Acre 0.7100→0.7100 (rated 0.71) | Rio Granda do Norte 0.6000→0.6019 (rated 0.65) · 5.3s/pair · cache-hit 5342
+[540/540] Pernambuco 0.6420→0.6430 (rated 0.67) | Minas Gerais 0.6547→0.6563 (rated 0.70) · 5.3s/pair · cache-hit 5342
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 540 pairs in 2852s · errors: 0 · total score movement: 1.069
+tokens — cache read: 2,863,312 · cache write: 21,368 · uncached in: 224,813 · out: 527,368
+OK: 233 countries, 2874 admin1 units; ranks written; meta written
