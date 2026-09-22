@@ -2870,3 +2870,402 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 320 pairs in 1257s · errors: 0 · total score movement: 0.169
 tokens — cache read: 1,720,620 · cache write: 21,780 · uncached in: 132,272 · out: 255,953
 OK: 233 countries, 2909 admin1 units; ranks written; meta written
+DEU done 2026-09-22 04:36:58
+=================== ESP 2026-09-22 04:36:58 ===================
+new: 14 · refreshed: 0 · skipped (untouchable): 5 · with deltas: 0 · countries touched: 1
+  mean drift ESP: -0.000 (14 units)
+wrote 2923 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2923 admin1 units; ranks written; meta written
+ESP: 19 units -> 380 pairs
+system prompt: 23,720 chars (~5,930 tokens) — cached
+admin1 mode: Spain (ESP) national 0.88 · 19 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 95 for ~10)
+pairs: 380 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 190 / 380: 0.07000/0.04008/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06011/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-ESP-20260922-043659.jsonl
+[1/380] Principado de Asturias 0.8785→0.8800 (rated 0.88) | La Rioja 0.8785→0.8800 (rated 0.88) · 4.8s/pair
+[2/380] Castilla-La Mancha 0.8785→0.8800 (rated 0.88) | Andalucía 0.8785→0.8800 (rated 0.88) · 5.0s/pair · cache-hit 5335
+[3/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Extremadura 0.8785→0.8800 (rated 0.88) · 4.7s/pair
+[4/380] Galicia 0.8785→0.8798 (rated 0.88) | Comunidad de Madrid 0.8200→0.8259 (rated 0.83) · 3.5s/pair
+[5/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 4.1s/pair
+[6/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Aragón 0.8785→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5335
+[7/380] Andalucía 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 4.8s/pair · cache-hit 5335
+[8/380] Región de Murcia 0.8785→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 4.8s/pair · cache-hit 5335
+[9/380] Andalucía 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8558 (rated 0.86) · 4.4s/pair · cache-hit 5335
+[10/380] Cataluña/Catalunya 0.8785→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 4.4s/pair · cache-hit 5335
+[11/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Aragón 0.8800→0.8800 (rated 0.88) · 4.4s/pair · cache-hit 5335
+[12/380] La Rioja 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 4.1s/pair · cache-hit 5335
+[13/380] Illes Balears 0.8785→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 4.2s/pair · cache-hit 5335
+[14/380] Galicia 0.8798→0.8800 (rated 0.88) | Cantabria 0.8785→0.8800 (rated 0.88) · 4.2s/pair · cache-hit 5335
+[15/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.9s/pair · cache-hit 5335
+[16/380] Canarias 0.8785→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8558→0.8600 (rated 0.86) · 4.0s/pair · cache-hit 5335
+[17/380] Cantabria 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.8s/pair · cache-hit 5335
+[18/380] Canarias 0.8785→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8785→0.8800 (rated 0.88) · 3.7s/pair · cache-hit 5335
+[19/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.6s/pair · cache-hit 5335
+[20/380] Galicia 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.5s/pair · cache-hit 5335
+[21/380] Canarias 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.4s/pair · cache-hit 5335
+[22/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.4s/pair · cache-hit 5335
+[23/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Castilla y León 0.8100→0.8100 (rated 0.81) · 3.3s/pair · cache-hit 5335
+[24/380] Galicia 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.3s/pair · cache-hit 5335
+[25/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[26/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Aragón 0.8800→0.8800 (rated 0.88) · 3.4s/pair · cache-hit 5335
+[27/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Ciudad Autónoma de Melilla 0.8600→0.8543 (rated 0.85) · 3.3s/pair · cache-hit 5335
+[28/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.3s/pair · cache-hit 5335
+[29/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[30/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Comunidad Foral de Navarra 0.8785→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[31/380] Cantabria 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[32/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[33/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8259→0.8208 (rated 0.82) · 3.2s/pair · cache-hit 5335
+[34/380] Ciudad Autónoma de Melilla 0.8543→0.8500 (rated 0.85) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[35/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[36/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Castilla y León 0.8100→0.8167 (rated 0.83) · 3.2s/pair · cache-hit 5335
+[37/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[38/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[39/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[40/380] Andalucía 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[41/380] Comunidad de Madrid 0.8208→0.8200 (rated 0.82) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[42/380] Extremadura 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[43/380] Canarias 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8208→0.8200 (rated 0.82) · 3.3s/pair · cache-hit 5335
+[44/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9100→0.9046 (rated 0.90) · 3.3s/pair · cache-hit 5335
+[45/380] Aragón 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[46/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8167→0.8117 (rated 0.81) · 3.2s/pair · cache-hit 5335
+[47/380] La Rioja 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[48/380] Comunitat Valenciana 0.9100→0.9036 (rated 0.90) | Comunidad de Madrid 0.8208→0.8285 (rated 0.85) · 3.2s/pair · cache-hit 5335
+[49/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.3s/pair · cache-hit 5335
+[50/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8167→0.8117 (rated 0.81) · 3.3s/pair · cache-hit 5335
+[51/380] La Rioja 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.3s/pair · cache-hit 5335
+[52/380] Galicia 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8117→0.8100 (rated 0.81) · 3.3s/pair · cache-hit 5335
+[53/380] Extremadura 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9036→0.9085 (rated 0.91) · 3.3s/pair · cache-hit 5335
+[54/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[55/380] Andalucía 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8285→0.8233 (rated 0.82) · 3.2s/pair · cache-hit 5335
+[56/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[57/380] Galicia 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[58/380] Canarias 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[59/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[60/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8552 (rated 0.86) · 3.2s/pair · cache-hit 5335
+[61/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.3s/pair · cache-hit 5335
+[62/380] Aragón 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9085→0.9100 (rated 0.91) · 3.2s/pair · cache-hit 5335
+[63/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.2s/pair · cache-hit 5335
+[64/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[65/380] Canarias 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[66/380] Aragón 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[67/380] La Rioja 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[68/380] Galicia 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[69/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[70/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[71/380] Extremadura 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[72/380] Extremadura 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[73/380] Galicia 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[74/380] Ciudad Autónoma de Melilla 0.8552→0.8507 (rated 0.85) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[75/380] Extremadura 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9100→0.9049 (rated 0.90) · 3.0s/pair · cache-hit 5335
+[76/380] La Rioja 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[77/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[78/380] Comunitat Valenciana 0.9100→0.9100 (rated 0.91) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[79/380] Extremadura 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[80/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[81/380] Ciudad Autónoma de Melilla 0.8507→0.8500 (rated 0.85) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[82/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[83/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[84/380] Cantabria 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8233→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[85/380] Comunidad de Madrid 0.8233→0.8200 (rated 0.82) | Comunitat Valenciana 0.9100→0.9100 (rated 0.91) · 3.2s/pair · cache-hit 5335
+[86/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[87/380] La Rioja 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.2s/pair · cache-hit 5335
+[88/380] Aragón 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8233→0.8288 (rated 0.84) · 3.1s/pair · cache-hit 5335
+[89/380] La Rioja 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[90/380] Comunidad de Madrid 0.8200→0.8200 (rated 0.82) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[91/380] Andalucía 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[92/380] Extremadura 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[93/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[94/380] Cantabria 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[95/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[96/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[97/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8288→0.8300 (rated 0.83) · 3.1s/pair · cache-hit 5335
+[98/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[99/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Aragón 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[100/380] Comunidad de Madrid 0.8200→0.8247 (rated 0.83) | Canarias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[101/380] La Rioja 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[102/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[103/380] Ciudad Autónoma de Melilla 0.8500→0.8565 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[104/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[105/380] Comunitat Valenciana 0.9100→0.9100 (rated 0.91) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[106/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[107/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[108/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[109/380] La Rioja 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[110/380] La Rioja 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[111/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[112/380] Ciudad Autónoma de Melilla 0.8565→0.8523 (rated 0.85) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[113/380] Comunidad de Madrid 0.8247→0.8207 (rated 0.82) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[114/380] Canarias 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[115/380] Comunidad de Madrid 0.8247→0.8297 (rated 0.84) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[116/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[117/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[118/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[119/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[120/380] Aragón 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[121/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[122/380] Comunitat Valenciana 0.9100→0.9056 (rated 0.90) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[123/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[124/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[125/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[126/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[127/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[128/380] Canarias 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[129/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[130/380] Comunidad de Madrid 0.8297→0.8254 (rated 0.82) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[131/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[132/380] Aragón 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[133/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9056→0.9016 (rated 0.90) · 3.1s/pair · cache-hit 5335
+[134/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[135/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8254→0.8215 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[136/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[137/380] Ciudad Autónoma de Melilla 0.8500→0.8559 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[138/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[139/380] La Rioja 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[140/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 3.1s/pair · cache-hit 5335
+[141/380] Canarias 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[142/380] La Rioja 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[143/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[144/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[145/380] Cantabria 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[146/380] Comunitat Valenciana 0.9016→0.9057 (rated 0.91) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[147/380] La Rioja 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[148/380] Comunitat Valenciana 0.9016→0.9000 (rated 0.90) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[149/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[150/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[151/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[152/380] Comunidad de Madrid 0.8215→0.8200 (rated 0.82) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[153/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[154/380] Extremadura 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[155/380] Aragón 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[156/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Comunidad de Madrid 0.8215→0.8200 (rated 0.82) · 3.0s/pair · cache-hit 5335
+[157/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[158/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[159/380] Castilla y León 0.8100→0.8140 (rated 0.82) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[160/380] La Rioja 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[161/380] Comunitat Valenciana 0.9000→0.9039 (rated 0.91) | Galicia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[162/380] Comunitat Valenciana 0.9000→0.9039 (rated 0.91) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[163/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[164/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[165/380] Castilla y León 0.8140→0.8106 (rated 0.81) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[166/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[167/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[168/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[169/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9039→0.9074 (rated 0.91) · 3.1s/pair · cache-hit 5335
+[170/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[171/380] Andalucía 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[172/380] Comunidad de Madrid 0.8200→0.8200 (rated 0.82) | Castilla y León 0.8106→0.8100 (rated 0.81) · 3.1s/pair · cache-hit 5335
+[173/380] Ciudad Autónoma de Ceuta 0.8500→0.8459 (rated 0.84) | Comunidad de Madrid 0.8200→0.8241 (rated 0.83) · 3.1s/pair · cache-hit 5335
+[174/380] Aragón 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[175/380] Aragón 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 3.1s/pair · cache-hit 5335
+[176/380] Castilla y León 0.8106→0.8068 (rated 0.80) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[177/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[178/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[179/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[180/380] Comunitat Valenciana 0.9074→0.9039 (rated 0.90) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[181/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[182/380] La Rioja 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[183/380] Cantabria 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[184/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8459→0.8492 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[185/380] Ciudad Autónoma de Ceuta 0.8459→0.8491 (rated 0.85) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[186/380] Galicia 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[187/380] La Rioja 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8459→0.8491 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[188/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8068→0.8106 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[189/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[190/380] Castilla y León 0.8068→0.8099 (rated 0.81) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[191/380] Cantabria 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[192/380] Aragón 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[193/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8250 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[194/380] Cantabria 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[195/380] Ciudad Autónoma de Melilla 0.8500→0.8535 (rated 0.86) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[196/380] Ciudad Autónoma de Ceuta 0.8491→0.8500 (rated 0.85) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[197/380] La Rioja 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8491→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[198/380] Comunidad de Madrid 0.8250→0.8218 (rated 0.82) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[199/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[200/380] Cantabria 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8491→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[201/380] Extremadura 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[202/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[203/380] Extremadura 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8250→0.8219 (rated 0.82) · 3.1s/pair · cache-hit 5335
+[204/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[205/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[206/380] Galicia 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[207/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[208/380] Comunitat Valenciana 0.9039→0.9070 (rated 0.91) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[209/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[210/380] Ciudad Autónoma de Melilla 0.8535→0.8506 (rated 0.85) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[211/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[212/380] La Rioja 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9039→0.9010 (rated 0.90) · 3.0s/pair · cache-hit 5335
+[213/380] Andalucía 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.1s/pair · cache-hit 5335
+[214/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[215/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8219→0.8200 (rated 0.82) · 3.0s/pair · cache-hit 5335
+[216/380] La Rioja 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[217/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[218/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8506→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[219/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[220/380] Comunidad de Madrid 0.8200→0.8200 (rated 0.82) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.1s/pair · cache-hit 5335
+[221/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9010→0.9000 (rated 0.90) · 3.1s/pair · cache-hit 5335
+[222/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Castilla y León 0.8099→0.8100 (rated 0.81) · 3.1s/pair · cache-hit 5335
+[223/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[224/380] Aragón 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8200 (rated 0.82) · 3.0s/pair · cache-hit 5335
+[225/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[226/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[227/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[228/380] Galicia 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[229/380] Aragón 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[230/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[231/380] Canarias 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[232/380] Canarias 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[233/380] Galicia 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[234/380] Andalucía 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[235/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[236/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[237/380] Andalucía 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[238/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[239/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[240/380] Cantabria 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[241/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[242/380] Galicia 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 2.9s/pair · cache-hit 5335
+[243/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[244/380] Cantabria 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[245/380] La Rioja 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 2.9s/pair · cache-hit 5335
+[246/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[247/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8200→0.8234 (rated 0.84) · 3.0s/pair · cache-hit 5335
+[248/380] Comunitat Valenciana 0.9000→0.9000 (rated 0.90) | Comunidad de Madrid 0.8200→0.8229 (rated 0.83) · 3.0s/pair · cache-hit 5335
+[249/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Comunitat Valenciana 0.9000→0.9028 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[250/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[251/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[252/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 3.0s/pair · cache-hit 5335
+[253/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[254/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[255/380] Galicia 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[256/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[257/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[258/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9028→0.9054 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[259/380] La Rioja 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[260/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8234→0.8270 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[261/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[262/380] Extremadura 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[263/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[264/380] Illes Balears 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[265/380] La Rioja 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[266/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[267/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[268/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[269/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[270/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[271/380] Castilla y León 0.8100→0.8100 (rated 0.81) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[272/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Comunidad de Madrid 0.8270→0.8247 (rated 0.82) · 3.0s/pair · cache-hit 5335
+[273/380] Comunidad de Madrid 0.8270→0.8247 (rated 0.82) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[274/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[275/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[276/380] Canarias 0.8800→0.8800 (rated 0.88) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[277/380] Galicia 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[278/380] Cantabria 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[279/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[280/380] La Rioja 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[281/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[282/380] Illes Balears 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[283/380] Cantabria 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[284/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 2.9s/pair · cache-hit 5335
+[285/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[286/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[287/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9054→0.9075 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[288/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[289/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[290/380] Galicia 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[291/380] Galicia 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8100→0.8100 (rated 0.81) · 3.0s/pair · cache-hit 5335
+[292/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[293/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[294/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[295/380] Cantabria 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[296/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[297/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Comunitat Valenciana 0.9075→0.9094 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[298/380] Galicia 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[299/380] Canarias 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[300/380] Galicia 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[301/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8247→0.8279 (rated 0.86) · 3.0s/pair · cache-hit 5335
+[302/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[303/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[304/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[305/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[306/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[307/380] Andalucía 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[308/380] Comunidad de Madrid 0.8279→0.8259 (rated 0.82) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[309/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[310/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[311/380] Canarias 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[312/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[313/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[314/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[315/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[316/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[317/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[318/380] Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) | Comunitat Valenciana 0.9094→0.9075 (rated 0.90) · 3.0s/pair · cache-hit 5335
+[319/380] Andalucía 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[320/380] Castilla y León 0.8100→0.8100 (rated 0.81) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[321/380] Extremadura 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[322/380] Castilla y León 0.8100→0.8130 (rated 0.85) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[323/380] Cantabria 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[324/380] Extremadura 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[325/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8130→0.8114 (rated 0.81) · 3.0s/pair · cache-hit 5335
+[326/380] Comunitat Valenciana 0.9075→0.9090 (rated 0.91) | Ciudad Autónoma de Melilla 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[327/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[328/380] La Rioja 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9075→0.9090 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[329/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[330/380] Galicia 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8259→0.8275 (rated 0.83) · 3.0s/pair · cache-hit 5335
+[331/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[332/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[333/380] Aragón 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8259→0.8278 (rated 0.84) · 3.0s/pair · cache-hit 5335
+[334/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[335/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[336/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8500→0.8517 (rated 0.86) · 3.0s/pair · cache-hit 5335
+[337/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[338/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[339/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[340/380] Comunitat Valenciana 0.9090→0.9100 (rated 0.91) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[341/380] Comunitat Valenciana 0.9090→0.9074 (rated 0.90) | Extremadura 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[342/380] Castilla-La Mancha 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8517→0.8533 (rated 0.86) · 3.0s/pair · cache-hit 5335
+[343/380] Canarias 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8278→0.8297 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[344/380] Extremadura 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[345/380] Extremadura 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[346/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[347/380] Illes Balears 0.8800→0.8800 (rated 0.88) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[348/380] Aragón 0.8800→0.8800 (rated 0.88) | Comunidad de Madrid 0.8278→0.8294 (rated 0.84) · 3.0s/pair · cache-hit 5335
+[349/380] Canarias 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[350/380] Canarias 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[351/380] La Rioja 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[352/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[353/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[354/380] Castilla y León 0.8114→0.8102 (rated 0.81) | Illes Balears 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[355/380] La Rioja 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8114→0.8102 (rated 0.81) · 3.0s/pair · cache-hit 5335
+[356/380] Cantabria 0.8800→0.8800 (rated 0.88) | Aragón 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[357/380] Región de Murcia 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[358/380] La Rioja 0.8800→0.8800 (rated 0.88) | Castilla y León 0.8114→0.8128 (rated 0.82) · 3.0s/pair · cache-hit 5335
+[359/380] País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[360/380] Extremadura 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[361/380] Castilla y León 0.8102→0.8100 (rated 0.81) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[362/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[363/380] Ciudad Autónoma de Melilla 0.8533→0.8520 (rated 0.85) | Comunidad de Madrid 0.8294→0.8300 (rated 0.83) · 3.0s/pair · cache-hit 5335
+[364/380] Cantabria 0.8800→0.8800 (rated 0.88) | Canarias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[365/380] Extremadura 0.8800→0.8800 (rated 0.88) | Castilla-La Mancha 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[366/380] Cantabria 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[367/380] Canarias 0.8800→0.8800 (rated 0.88) | Comunitat Valenciana 0.9074→0.9085 (rated 0.91) · 3.0s/pair · cache-hit 5335
+[368/380] Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Melilla 0.8533→0.8522 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[369/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Cataluña/Catalunya 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[370/380] Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) | Galicia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[371/380] Castilla y León 0.8100→0.8100 (rated 0.81) | Andalucía 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[372/380] Illes Balears 0.8800→0.8800 (rated 0.88) | Región de Murcia 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[373/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Ciudad Autónoma de Ceuta 0.8500→0.8500 (rated 0.85) · 3.0s/pair · cache-hit 5335
+[374/380] Canarias 0.8800→0.8800 (rated 0.88) | País Vasco/Euskadi 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[375/380] Extremadura 0.8800→0.8800 (rated 0.88) | Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[376/380] Ciudad Autónoma de Melilla 0.8522→0.8512 (rated 0.85) | La Rioja 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[377/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Cantabria 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[378/380] Principado de Asturias 0.8800→0.8800 (rated 0.88) | Illes Balears 0.8800→0.8800 (rated 0.88) · 2.9s/pair · cache-hit 5335
+[379/380] Comunidad Foral de Navarra 0.8800→0.8800 (rated 0.88) | Principado de Asturias 0.8800→0.8800 (rated 0.88) · 3.0s/pair · cache-hit 5335
+[380/380] Comunidad de Madrid 0.8300→0.8288 (rated 0.82) | Comunitat Valenciana 0.9085→0.9096 (rated 0.91) · 3.0s/pair · cache-hit 5335
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 380 pairs in 1122s · errors: 0 · total score movement: 0.334
+tokens — cache read: 2,005,960 · cache write: 21,340 · uncached in: 132,376 · out: 226,310
+OK: 233 countries, 2923 admin1 units; ranks written; meta written
