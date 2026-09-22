@@ -1,0 +1,658 @@
+=================== MEX 2026-09-22 01:28:39 ===================
+new: 25 · refreshed: 0 · skipped (untouchable): 7 · with deltas: 0 · countries touched: 1
+  mean drift MEX: +0.000 (25 units)
+wrote 2847 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2847 admin1 units; ranks written; meta written
+MEX: 32 units -> 640 pairs
+system prompt: 23,820 chars (~5,955 tokens) — cached
+admin1 mode: Mexico (MEX) national 0.55 · 32 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 160 for ~10)
+pairs: 640 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 320 / 640: 0.07000/0.04005/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06006/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-MEX-20260922-012840.jsonl
+[1/640] Mexico 0.5472→0.5500 (rated 0.55) | Baja California Sur 0.5472→0.5500 (rated 0.55) · 6.3s/pair
+[2/640] Sonora 0.5472→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 8.7s/pair · cache-hit 5345
+[3/640] Coahuila de Zaragoza 0.5472→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 6.1s/pair · cache-hit 5345
+[4/640] Puebla 0.4500→0.4500 (rated 0.45) | Queretaro de Arteaga 0.5472→0.5500 (rated 0.55) · 4.6s/pair
+[5/640] Aguascalientes 0.5472→0.5500 (rated 0.55) | Colima 0.5472→0.5500 (rated 0.55) · 4.9s/pair · cache-hit 5345
+[6/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Sinaloa 0.5472→0.5500 (rated 0.55) · 6.0s/pair · cache-hit 5345
+[7/640] Tabasco 0.5472→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 5.4s/pair · cache-hit 5345
+[8/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Jalisco 0.5472→0.5500 (rated 0.55) · 5.2s/pair · cache-hit 5345
+[9/640] Baja California 0.5472→0.5500 (rated 0.55) | Hidalgo 0.5472→0.5500 (rated 0.55) · 4.7s/pair · cache-hit 5345
+[10/640] Chihuahua 0.5472→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 4.8s/pair · cache-hit 5345
+[11/640] Colima 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 4.8s/pair · cache-hit 5345
+[12/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 4.8s/pair
+[13/640] Zacatecas 0.5472→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 4.5s/pair · cache-hit 5345
+[14/640] Chiapas 0.5472→0.5500 (rated 0.55) | Durango 0.5472→0.5500 (rated 0.55) · 4.5s/pair · cache-hit 5345
+[15/640] Tlaxcala 0.5472→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 4.3s/pair · cache-hit 5345
+[16/640] Chiapas 0.5472→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 4.3s/pair · cache-hit 5345
+[17/640] Tamaulipas 0.5472→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 4.1s/pair · cache-hit 5345
+[18/640] Jalisco 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[19/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[20/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 4.1s/pair · cache-hit 5345
+[21/640] Campeche 0.5472→0.5500 (rated 0.55) | Morelos 0.5472→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[22/640] Nayarit 0.5472→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.9s/pair · cache-hit 5345
+[23/640] Guerrero 0.5472→0.5500 (rated 0.55) | Yucatan 0.5472→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[24/640] Veracruz de Ignacio de la Llave 0.4200→0.4265 (rated 0.43) | Quintana Roo 0.4200→0.4128 (rated 0.40) · 4.1s/pair · cache-hit 5345
+[25/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 4.1s/pair · cache-hit 5345
+[26/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Mexico 0.5500→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[27/640] Jalisco 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 4.0s/pair · cache-hit 5345
+[28/640] San Luis Potosi 0.5472→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.9s/pair · cache-hit 5345
+[29/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.8s/pair · cache-hit 5345
+[30/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.8s/pair · cache-hit 5345
+[31/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[32/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[33/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[34/640] Baja California 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[35/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[36/640] Guerrero 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[37/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[38/640] Chiapas 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[39/640] Chiapas 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5472→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[40/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.2s/pair · cache-hit 5345
+[41/640] Mexico 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.2s/pair · cache-hit 5345
+[42/640] Colima 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.5700→0.5801 (rated 0.62) · 3.3s/pair · cache-hit 5345
+[43/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[44/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[45/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[46/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4600 (rated 0.50) · 3.6s/pair · cache-hit 5345
+[47/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[48/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[49/640] Morelos 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[50/640] Nayarit 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[51/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[52/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[53/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Veracruz de Ignacio de la Llave 0.4200→0.4144 (rated 0.41) · 3.6s/pair · cache-hit 5345
+[54/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[55/640] Morelos 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[56/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[57/640] Campeche 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.7s/pair · cache-hit 5345
+[58/640] Campeche 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[59/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[60/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[61/640] Morelos 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[62/640] Colima 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[63/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[64/640] Nayarit 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[65/640] Guerrero 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[66/640] Nayarit 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[67/640] Morelos 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[68/640] Puebla 0.4500→0.4500 (rated 0.45) | Colima 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[69/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[70/640] Nayarit 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.7s/pair · cache-hit 5345
+[71/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[72/640] Tabasco 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[73/640] Distrito Federal 0.5801→0.5887 (rated 0.62) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[74/640] Nayarit 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.5s/pair · cache-hit 5345
+[75/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[76/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[77/640] Yucatan 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[78/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[79/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[80/640] Baja California 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[81/640] Baja California 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[82/640] Puebla 0.4500→0.4500 (rated 0.45) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[83/640] Mexico 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[84/640] Nayarit 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[85/640] Sonora 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[86/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[87/640] Yucatan 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[88/640] Baja California 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[89/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[90/640] Mexico 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[91/640] Distrito Federal 0.5887→0.5961 (rated 0.62) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[92/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[93/640] Veracruz de Ignacio de la Llave 0.4144→0.4192 (rated 0.42) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[94/640] Guerrero 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[95/640] Puebla 0.4500→0.4500 (rated 0.45) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[96/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[97/640] Yucatan 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[98/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[99/640] Baja California 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[100/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[101/640] Durango 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[102/640] Jalisco 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[103/640] Baja California 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[104/640] Campeche 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[105/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[106/640] Tabasco 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[107/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[108/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[109/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[110/640] Puebla 0.4500→0.4500 (rated 0.45) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[111/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[112/640] Chiapas 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[113/640] Colima 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[114/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4192→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[115/640] Guerrero 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[116/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[117/640] Tabasco 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[118/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[119/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[120/640] Colima 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[121/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[122/640] Campeche 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[123/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[124/640] Sonora 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[125/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[126/640] Chiapas 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[127/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[128/640] Durango 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[129/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Durango 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[130/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[131/640] Tabasco 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[132/640] Colima 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[133/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[134/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[135/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Baja California 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[136/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[137/640] Oaxaca 0.4800→0.4800 (rated 0.48) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[138/640] Guerrero 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[139/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[140/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[141/640] Jalisco 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[142/640] Baja California 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[143/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[144/640] Yucatan 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[145/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[146/640] Mexico 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[147/640] Distrito Federal 0.5961→0.5898 (rated 0.57) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.4s/pair · cache-hit 5345
+[148/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[149/640] Jalisco 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[150/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[151/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[152/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[153/640] Tabasco 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[154/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[155/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[156/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Baja California 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[157/640] Puebla 0.4500→0.4500 (rated 0.45) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[158/640] Durango 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[159/640] Distrito Federal 0.5961→0.6000 (rated 0.60) | Morelos 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[160/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[161/640] Yucatan 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[162/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[163/640] Oaxaca 0.4800→0.4766 (rated 0.47) | Veracruz de Ignacio de la Llave 0.4200→0.4127 (rated 0.38) · 3.5s/pair · cache-hit 5345
+[164/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[165/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[166/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4127→0.4171 (rated 0.42) · 3.5s/pair · cache-hit 5345
+[167/640] Veracruz de Ignacio de la Llave 0.4127→0.4172 (rated 0.42) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[168/640] Morelos 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[169/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.5s/pair · cache-hit 5345
+[170/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Nuevo Leon 0.4000→0.4048 (rated 0.41) · 3.5s/pair · cache-hit 5345
+[171/640] Jalisco 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[172/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[173/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[174/640] Puebla 0.4500→0.4453 (rated 0.44) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[175/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[176/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[177/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[178/640] Oaxaca 0.4766→0.4800 (rated 0.48) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[179/640] Baja California 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[180/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4172→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[181/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[182/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[183/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[184/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4172→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[185/640] Sonora 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[186/640] Morelos 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[187/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[188/640] Distrito Federal 0.6000→0.6055 (rated 0.62) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[189/640] Sinaloa 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[190/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6000→0.6054 (rated 0.62) · 3.4s/pair · cache-hit 5345
+[191/640] Veracruz de Ignacio de la Llave 0.4200→0.4146 (rated 0.40) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[192/640] Guerrero 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[193/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[194/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[195/640] Tabasco 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[196/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[197/640] Baja California 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[198/640] Baja California 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[199/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[200/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[201/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[202/640] Morelos 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[203/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[204/640] Jalisco 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[205/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[206/640] Morelos 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[207/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[208/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[209/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[210/640] Campeche 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4146→0.4186 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[211/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[212/640] Sonora 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[213/640] Morelos 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.4s/pair · cache-hit 5345
+[214/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[215/640] Durango 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[216/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[217/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4048→0.4008 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[218/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[219/640] Yucatan 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[220/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[221/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.3s/pair · cache-hit 5345
+[222/640] Durango 0.5500→0.5500 (rated 0.55) | Puebla 0.4453→0.4492 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[223/640] Nuevo Leon 0.4048→0.4009 (rated 0.40) | Baja California 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[224/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Puebla 0.4453→0.4492 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[225/640] Jalisco 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[226/640] Tabasco 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[227/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Distrito Federal 0.6054→0.5999 (rated 0.58) · 3.4s/pair · cache-hit 5345
+[228/640] Colima 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[229/640] Jalisco 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[230/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.4s/pair · cache-hit 5345
+[231/640] Jalisco 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[232/640] Colima 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.5999→0.6049 (rated 0.62) · 3.4s/pair · cache-hit 5345
+[233/640] Mexico 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[234/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[235/640] Colima 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[236/640] Colima 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[237/640] Morelos 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[238/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[239/640] Durango 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4009→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[240/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[241/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[242/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4186→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[243/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[244/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[245/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[246/640] Jalisco 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[247/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[248/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[249/640] Mexico 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[250/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[251/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[252/640] Campeche 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[253/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[254/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[255/640] Sonora 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[256/640] Jalisco 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[257/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[258/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.3952 (rated 0.38) · 3.3s/pair · cache-hit 5345
+[259/640] Yucatan 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[260/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[261/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[262/640] Durango 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[263/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[264/640] Michoacan de Ocampo 0.3952→0.3987 (rated 0.40) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[265/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Morelos 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[266/640] Yucatan 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4000→0.4000 (rated 0.40) · 3.3s/pair · cache-hit 5345
+[267/640] Mexico 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[268/640] Veracruz de Ignacio de la Llave 0.4200→0.4158 (rated 0.40) | Nuevo Leon 0.4000→0.3958 (rated 0.38) · 3.4s/pair · cache-hit 5345
+[269/640] Morelos 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.3952→0.3995 (rated 0.41) · 3.4s/pair · cache-hit 5345
+[270/640] Puebla 0.4492→0.4500 (rated 0.45) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[271/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[272/640] Jalisco 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[273/640] Mexico 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[274/640] Campeche 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[275/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[276/640] Tabasco 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[277/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[278/640] Michoacan de Ocampo 0.3995→0.4000 (rated 0.40) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[279/640] Mexico 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[280/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[281/640] Baja California 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[282/640] Durango 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[283/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[284/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[285/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[286/640] Puebla 0.4500→0.4500 (rated 0.45) | Veracruz de Ignacio de la Llave 0.4158→0.4192 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[287/640] Durango 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[288/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[289/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[290/640] Colima 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.3s/pair · cache-hit 5345
+[291/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[292/640] Colima 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[293/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Puebla 0.4500→0.4462 (rated 0.44) · 3.4s/pair · cache-hit 5345
+[294/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[295/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[296/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4192→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[297/640] Nayarit 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[298/640] Morelos 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[299/640] Distrito Federal 0.6049→0.5994 (rated 0.57) | Puebla 0.4462→0.4500 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[300/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[301/640] Sonora 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[302/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6049→0.6016 (rated 0.60) · 3.4s/pair · cache-hit 5345
+[303/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[304/640] Chiapas 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[305/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[306/640] Jalisco 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.4s/pair · cache-hit 5345
+[307/640] Puebla 0.4500→0.4500 (rated 0.45) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[308/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.4s/pair · cache-hit 5345
+[309/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[310/640] Nayarit 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[311/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[312/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[313/640] Tabasco 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[314/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[315/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[316/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[317/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[318/640] Baja California 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6016→0.6058 (rated 0.62) · 3.4s/pair · cache-hit 5345
+[319/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[320/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[321/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[322/640] Campeche 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[323/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Puebla 0.4500→0.4500 (rated 0.45) · 3.4s/pair · cache-hit 5345
+[324/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[325/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.4s/pair · cache-hit 5345
+[326/640] Campeche 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[327/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.4s/pair · cache-hit 5345
+[328/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.4s/pair · cache-hit 5345
+[329/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.5s/pair · cache-hit 5345
+[330/640] Jalisco 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[331/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[332/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Mexico 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[333/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[334/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[335/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[336/640] Nayarit 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[337/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[338/640] Chiapas 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.3958→0.4022 (rated 0.45) · 3.5s/pair · cache-hit 5345
+[339/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4047 (rated 0.43) · 3.5s/pair · cache-hit 5345
+[340/640] Mexico 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.5s/pair · cache-hit 5345
+[341/640] Baja California 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.5s/pair · cache-hit 5345
+[342/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[343/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[344/640] Campeche 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[345/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.5s/pair · cache-hit 5345
+[346/640] Yucatan 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[347/640] Guerrero 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[348/640] Nayarit 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[349/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[350/640] Durango 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[351/640] Guerrero 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[352/640] Campeche 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[353/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[354/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[355/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[356/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[357/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[358/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[359/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.5s/pair · cache-hit 5345
+[360/640] Colima 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[361/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[362/640] Tabasco 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[363/640] Mexico 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6058→0.6028 (rated 0.60) · 3.5s/pair · cache-hit 5345
+[364/640] Nayarit 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[365/640] Nayarit 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[366/640] Yucatan 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[367/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Baja California 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[368/640] Jalisco 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[369/640] Durango 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[370/640] Guerrero 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[371/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[372/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[373/640] Distrito Federal 0.6028→0.5983 (rated 0.57) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.5s/pair · cache-hit 5345
+[374/640] Michoacan de Ocampo 0.4047→0.4006 (rated 0.38) | Nuevo Leon 0.4022→0.4006 (rated 0.40) · 3.5s/pair · cache-hit 5345
+[375/640] Nayarit 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[376/640] Campeche 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.5s/pair · cache-hit 5345
+[377/640] Nuevo Leon 0.4022→0.4000 (rated 0.40) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[378/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[379/640] Distrito Federal 0.6028→0.5983 (rated 0.57) | Michoacan de Ocampo 0.4047→0.4027 (rated 0.40) · 3.5s/pair · cache-hit 5345
+[380/640] Sonora 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[381/640] Puebla 0.4500→0.4500 (rated 0.45) | Distrito Federal 0.5983→0.5941 (rated 0.57) · 3.5s/pair · cache-hit 5345
+[382/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[383/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[384/640] Yucatan 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.5983→0.6015 (rated 0.61) · 3.6s/pair · cache-hit 5345
+[385/640] Puebla 0.4500→0.4500 (rated 0.45) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[386/640] Tabasco 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[387/640] Tabasco 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.5s/pair · cache-hit 5345
+[388/640] Michoacan de Ocampo 0.4027→0.4001 (rated 0.40) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[389/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4164 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[390/640] Durango 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[391/640] Mexico 0.5500→0.5500 (rated 0.55) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[392/640] Morelos 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[393/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[394/640] Jalisco 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[395/640] Yucatan 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6015→0.6050 (rated 0.62) · 3.6s/pair · cache-hit 5345
+[396/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[397/640] Distrito Federal 0.6015→0.6050 (rated 0.62) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[398/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[399/640] Campeche 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[400/640] Tabasco 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[401/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[402/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[403/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[404/640] Nuevo Leon 0.4000→0.3969 (rated 0.38) | Michoacan de Ocampo 0.4001→0.3970 (rated 0.38) · 3.6s/pair · cache-hit 5345
+[405/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[406/640] Baja California 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[407/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[408/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[409/640] Michoacan de Ocampo 0.4001→0.3966 (rated 0.38) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[410/640] Tabasco 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[411/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[412/640] Yucatan 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[413/640] Quintana Roo 0.4164→0.4189 (rated 0.42) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[414/640] Puebla 0.4500→0.4500 (rated 0.45) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[415/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[416/640] Nuevo Leon 0.3969→0.3994 (rated 0.40) | Sonora 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[417/640] Chiapas 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[418/640] Distrito Federal 0.6050→0.6025 (rated 0.60) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[419/640] Puebla 0.4500→0.4500 (rated 0.45) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[420/640] Quintana Roo 0.4189→0.4155 (rated 0.40) | Distrito Federal 0.6050→0.6079 (rated 0.61) · 3.6s/pair · cache-hit 5345
+[421/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[422/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[423/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[424/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[425/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[426/640] Puebla 0.4500→0.4500 (rated 0.45) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[427/640] Colima 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[428/640] Nuevo Leon 0.3994→0.4000 (rated 0.40) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[429/640] Campeche 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[430/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[431/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[432/640] Mexico 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[433/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[434/640] Guerrero 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[435/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[436/640] Nayarit 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[437/640] Michoacan de Ocampo 0.3966→0.3989 (rated 0.40) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[438/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[439/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[440/640] Tabasco 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[441/640] Puebla 0.4500→0.4500 (rated 0.45) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[442/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[443/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[444/640] Puebla 0.4500→0.4500 (rated 0.45) | Chihuahua 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[445/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[446/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[447/640] Durango 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[448/640] Colima 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[449/640] Sonora 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[450/640] Puebla 0.4500→0.4500 (rated 0.45) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[451/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[452/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[453/640] Tabasco 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[454/640] Sonora 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[455/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[456/640] Puebla 0.4500→0.4500 (rated 0.45) | Sonora 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[457/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[458/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[459/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[460/640] Sonora 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[461/640] Chiapas 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[462/640] Mexico 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6079→0.6106 (rated 0.62) · 3.6s/pair · cache-hit 5345
+[463/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[464/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[465/640] Sonora 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[466/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[467/640] Quintana Roo 0.4155→0.4185 (rated 0.42) | Distrito Federal 0.6106→0.6066 (rated 0.57) · 3.6s/pair · cache-hit 5345
+[468/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[469/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[470/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[471/640] Colima 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[472/640] Puebla 0.4500→0.4500 (rated 0.45) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[473/640] Sonora 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[474/640] Baja California 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[475/640] Colima 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[476/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[477/640] Guerrero 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[478/640] Jalisco 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[479/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[480/640] Baja California 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[481/640] Yucatan 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6066→0.6096 (rated 0.63) · 3.6s/pair · cache-hit 5345
+[482/640] Mexico 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[483/640] Tabasco 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[484/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4185→0.4158 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[485/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[486/640] Colima 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[487/640] Nayarit 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6096→0.6119 (rated 0.62) · 3.6s/pair · cache-hit 5345
+[488/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[489/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Campeche 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[490/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[491/640] Nayarit 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[492/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[493/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[494/640] Baja California 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[495/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[496/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[497/640] Mexico 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[498/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[499/640] Campeche 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6119→0.6100 (rated 0.61) · 3.6s/pair · cache-hit 5345
+[500/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[501/640] Quintana Roo 0.4158→0.4178 (rated 0.42) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[502/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[503/640] Sonora 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[504/640] Morelos 0.5500→0.5500 (rated 0.55) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[505/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[506/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[507/640] Tabasco 0.5500→0.5500 (rated 0.55) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[508/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Michoacan de Ocampo 0.3989→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[509/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[510/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[511/640] Guerrero 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[512/640] Mexico 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[513/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[514/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[515/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[516/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[517/640] Yucatan 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4178→0.4195 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[518/640] Puebla 0.4500→0.4500 (rated 0.45) | Distrito Federal 0.6100→0.6072 (rated 0.58) · 3.6s/pair · cache-hit 5345
+[519/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[520/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[521/640] Chiapas 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[522/640] Baja California 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[523/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[524/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4178→0.4195 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[525/640] Puebla 0.4500→0.4500 (rated 0.45) | Distrito Federal 0.6072→0.6046 (rated 0.58) · 3.6s/pair · cache-hit 5345
+[526/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[527/640] Sonora 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[528/640] Quintana Roo 0.4195→0.4200 (rated 0.42) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[529/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[530/640] Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[531/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[532/640] Distrito Federal 0.6046→0.6028 (rated 0.60) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[533/640] Tabasco 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6046→0.6028 (rated 0.60) · 3.6s/pair · cache-hit 5345
+[534/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[535/640] Puebla 0.4500→0.4500 (rated 0.45) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[536/640] Guerrero 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[537/640] Aguascalientes 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[538/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[539/640] Chiapas 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[540/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[541/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[542/640] Campeche 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[543/640] Mexico 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[544/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[545/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[546/640] Campeche 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[547/640] Distrito Federal 0.6028→0.6002 (rated 0.57) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[548/640] Oaxaca 0.4800→0.4800 (rated 0.48) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[549/640] Morelos 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[550/640] Jalisco 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[551/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[552/640] Durango 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[553/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[554/640] Guerrero 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[555/640] Morelos 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6002→0.6023 (rated 0.62) · 3.6s/pair · cache-hit 5345
+[556/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[557/640] Zacatecas 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[558/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6002→0.5981 (rated 0.58) · 3.6s/pair · cache-hit 5345
+[559/640] Colima 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[560/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[561/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[562/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[563/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.5981→0.6005 (rated 0.63) · 3.6s/pair · cache-hit 5345
+[564/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[565/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[566/640] Chiapas 0.5500→0.5500 (rated 0.55) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[567/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Hidalgo 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[568/640] Nayarit 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[569/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[570/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[571/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[572/640] Nayarit 0.5500→0.5500 (rated 0.55) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[573/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[574/640] Nayarit 0.5500→0.5500 (rated 0.55) | Guerrero 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[575/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[576/640] Guerrero 0.5500→0.5500 (rated 0.55) | Tabasco 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[577/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[578/640] Chiapas 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[579/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Morelos 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[580/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[581/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Puebla 0.4500→0.4500 (rated 0.45) · 3.6s/pair · cache-hit 5345
+[582/640] Colima 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.6s/pair · cache-hit 5345
+[583/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Guanajuato 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[584/640] Sinaloa 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[585/640] Campeche 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[586/640] Colima 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[587/640] Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) | Sinaloa 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[588/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[589/640] Mexico 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6005→0.6022 (rated 0.62) · 3.6s/pair · cache-hit 5345
+[590/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.6s/pair · cache-hit 5345
+[591/640] Yucatan 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[592/640] Jalisco 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[593/640] Nuevo Leon 0.4000→0.4020 (rated 0.43) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[594/640] Guanajuato 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[595/640] Yucatan 0.5500→0.5500 (rated 0.55) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[596/640] Puebla 0.4500→0.4500 (rated 0.45) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[597/640] Durango 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[598/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.7s/pair · cache-hit 5345
+[599/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[600/640] Colima 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4200→0.4200 (rated 0.42) · 3.6s/pair · cache-hit 5345
+[601/640] Distrito Federal 0.6022→0.6007 (rated 0.59) | Tlaxcala 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[602/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[603/640] Mexico 0.5500→0.5500 (rated 0.55) | Colima 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[604/640] Veracruz de Ignacio de la Llave 0.4200→0.4184 (rated 0.40) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[605/640] Guerrero 0.5500→0.5500 (rated 0.55) | Sonora 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[606/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[607/640] Puebla 0.4500→0.4500 (rated 0.45) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[608/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[609/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Morelos 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[610/640] Tlaxcala 0.5500→0.5500 (rated 0.55) | Yucatan 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[611/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[612/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[613/640] Baja California Sur 0.5500→0.5500 (rated 0.55) | Nuevo Leon 0.4020→0.4009 (rated 0.40) · 3.7s/pair · cache-hit 5345
+[614/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Aguascalientes 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[615/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[616/640] Guanajuato 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[617/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Baja California Sur 0.5500→0.5500 (rated 0.55) · 3.6s/pair · cache-hit 5345
+[618/640] Nuevo Leon 0.4009→0.4000 (rated 0.40) | Tamaulipas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[619/640] Puebla 0.4500→0.4500 (rated 0.45) | San Luis Potosi 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[620/640] Hidalgo 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[621/640] Campeche 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.7s/pair · cache-hit 5345
+[622/640] Chiapas 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[623/640] Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) | Sonora 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[624/640] Colima 0.5500→0.5500 (rated 0.55) | Chiapas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[625/640] Chiapas 0.5500→0.5500 (rated 0.55) | Coahuila de Zaragoza 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[626/640] Chihuahua 0.5500→0.5500 (rated 0.55) | Jalisco 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[627/640] Oaxaca 0.4800→0.4800 (rated 0.48) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[628/640] Morelos 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[629/640] Veracruz de Ignacio de la Llave 0.4184→0.4194 (rated 0.42) | Sonora 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[630/640] Zacatecas 0.5500→0.5500 (rated 0.55) | Oaxaca 0.4800→0.4800 (rated 0.48) · 3.7s/pair · cache-hit 5345
+[631/640] Yucatan 0.5500→0.5500 (rated 0.55) | Baja California 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[632/640] Guerrero 0.5500→0.5500 (rated 0.55) | Durango 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[633/640] Quintana Roo 0.4200→0.4200 (rated 0.42) | Nayarit 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[634/640] Durango 0.5500→0.5500 (rated 0.55) | Mexico 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[635/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Michoacan de Ocampo 0.4000→0.4000 (rated 0.40) · 3.7s/pair · cache-hit 5345
+[636/640] Tamaulipas 0.5500→0.5500 (rated 0.55) | Veracruz de Ignacio de la Llave 0.4194→0.4200 (rated 0.42) · 3.7s/pair · cache-hit 5345
+[637/640] Queretaro de Arteaga 0.5500→0.5500 (rated 0.55) | Distrito Federal 0.6007→0.6027 (rated 0.65) · 3.7s/pair · cache-hit 5345
+[638/640] San Luis Potosi 0.5500→0.5500 (rated 0.55) | Quintana Roo 0.4200→0.4200 (rated 0.42) · 3.7s/pair · cache-hit 5345
+[639/640] Puebla 0.4500→0.4519 (rated 0.50) | Zacatecas 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+[640/640] Nuevo Leon 0.4000→0.4000 (rated 0.40) | Baja California 0.5500→0.5500 (rated 0.55) · 3.7s/pair · cache-hit 5345
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 640 pairs in 2363s · errors: 0 · total score movement: 0.417
+tokens — cache read: 3,404,765 · cache write: 16,035 · uncached in: 219,411 · out: 361,209
+OK: 233 countries, 2847 admin1 units; ranks written; meta written
