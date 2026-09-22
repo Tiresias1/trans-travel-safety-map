@@ -1034,3 +1034,202 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 80 pairs in 554s · errors: 0 · total score movement: 0.177
 tokens — cache read: 404,548 · cache write: 21,292 · uncached in: 48,450 · out: 92,802
 OK: 233 countries, 2857 admin1 units; ranks written; meta written
+GBR done 2026-09-22 02:38:02
+=================== AUS 2026-09-22 02:38:02 ===================
+new: 4 · refreshed: 0 · skipped (untouchable): 5 · with deltas: 0 · countries touched: 1
+  mean drift AUS: -0.000 (4 units)
+wrote 2861 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2861 admin1 units; ranks written; meta written
+AUS: 9 units -> 180 pairs
+system prompt: 23,332 chars (~5,833 tokens) — cached
+admin1 mode: Australia (AUS) national 0.86 · 9 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 45 for ~10)
+pairs: 180 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 90 / 180: 0.07000/0.04017/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06022/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-AUS-20260922-023804.jsonl
+[1/180] Victoria 0.8800→0.8800 (rated 0.88) | Queensland 0.8604→0.8600 (rated 0.86) · 14.2s/pair
+[2/180] Queensland 0.8604→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 9.5s/pair
+[3/180] Other Territories 0.8604→0.8600 (rated 0.86) | Western Australia 0.8400→0.8400 (rated 0.84) · 8.8s/pair
+[4/180] South Australia 0.8604→0.8600 (rated 0.86) | Other Territories 0.8604→0.8600 (rated 0.86) · 6.9s/pair · cache-hit 5264
+[5/180] Northern Territory 0.7700→0.7700 (rated 0.77) | Victoria 0.8800→0.8800 (rated 0.88) · 8.0s/pair
+[6/180] Victoria 0.8800→0.8800 (rated 0.88) | South Australia 0.8604→0.8600 (rated 0.86) · 7.0s/pair · cache-hit 5264
+[7/180] Victoria 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 6.9s/pair · cache-hit 5264
+[8/180] Northern Territory 0.7700→0.7700 (rated 0.77) | South Australia 0.8600→0.8600 (rated 0.86) · 6.8s/pair · cache-hit 5264
+[9/180] Other Territories 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 7.4s/pair · cache-hit 5264
+[10/180] Western Australia 0.8400→0.8400 (rated 0.84) | Northern Territory 0.7700→0.7700 (rated 0.77) · 6.7s/pair · cache-hit 5264
+[11/180] Other Territories 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 6.2s/pair · cache-hit 5264
+[12/180] Tasmania 0.8604→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 6.2s/pair · cache-hit 5264
+[13/180] Tasmania 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 6.2s/pair · cache-hit 5264
+[14/180] New South Wales 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 6.2s/pair · cache-hit 5264
+[15/180] Western Australia 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 5.8s/pair · cache-hit 5264
+[16/180] Other Territories 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.9s/pair · cache-hit 5264
+[17/180] Victoria 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 6.4s/pair · cache-hit 5264
+[18/180] Western Australia 0.8400→0.8400 (rated 0.84) | New South Wales 0.8400→0.8400 (rated 0.84) · 6.3s/pair · cache-hit 5264
+[19/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 6.2s/pair · cache-hit 5264
+[20/180] Tasmania 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.9s/pair · cache-hit 5264
+[21/180] Tasmania 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.9s/pair · cache-hit 5264
+[22/180] New South Wales 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 6.0s/pair · cache-hit 5264
+[23/180] Victoria 0.8800→0.8800 (rated 0.88) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.8s/pair · cache-hit 5264
+[24/180] Queensland 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.7s/pair · cache-hit 5264
+[25/180] Victoria 0.8800→0.8800 (rated 0.88) | Queensland 0.8600→0.8600 (rated 0.86) · 5.6s/pair · cache-hit 5264
+[26/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.7s/pair · cache-hit 5264
+[27/180] South Australia 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.7s/pair · cache-hit 5264
+[28/180] Victoria 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.6s/pair · cache-hit 5264
+[29/180] Tasmania 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.5s/pair · cache-hit 5264
+[30/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[31/180] Tasmania 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[32/180] South Australia 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[33/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[34/180] Tasmania 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[35/180] South Australia 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[36/180] Queensland 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[37/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.1s/pair · cache-hit 5264
+[38/180] South Australia 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.0s/pair · cache-hit 5264
+[39/180] New South Wales 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[40/180] New South Wales 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[41/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[42/180] New South Wales 0.8400→0.8400 (rated 0.84) | South Australia 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[43/180] Other Territories 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[44/180] South Australia 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[45/180] Other Territories 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.1s/pair · cache-hit 5264
+[46/180] South Australia 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7700→0.7747 (rated 0.78) · 5.3s/pair · cache-hit 5264
+[47/180] Queensland 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[48/180] Western Australia 0.8400→0.8400 (rated 0.84) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[49/180] Queensland 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[50/180] Queensland 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[51/180] New South Wales 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[52/180] South Australia 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[53/180] Northern Territory 0.7747→0.7789 (rated 0.78) | Victoria 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[54/180] Tasmania 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[55/180] Queensland 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[56/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[57/180] Other Territories 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[58/180] Victoria 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.1s/pair · cache-hit 5264
+[59/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Queensland 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[60/180] New South Wales 0.8400→0.8400 (rated 0.84) | Northern Territory 0.7789→0.7746 (rated 0.77) · 5.2s/pair · cache-hit 5264
+[61/180] Other Territories 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[62/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Victoria 0.8800→0.8800 (rated 0.88) · 5.1s/pair · cache-hit 5264
+[63/180] Other Territories 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7789→0.7746 (rated 0.77) · 5.1s/pair · cache-hit 5264
+[64/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[65/180] Queensland 0.8600→0.8600 (rated 0.86) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[66/180] Queensland 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[67/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[68/180] Queensland 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[69/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[70/180] Queensland 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7746→0.7792 (rated 0.79) · 5.1s/pair · cache-hit 5264
+[71/180] Northern Territory 0.7746→0.7710 (rated 0.77) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[72/180] Queensland 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[73/180] Queensland 0.8600→0.8600 (rated 0.86) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[74/180] Victoria 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[75/180] Victoria 0.8800→0.8800 (rated 0.88) | South Australia 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[76/180] South Australia 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[77/180] South Australia 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[78/180] Western Australia 0.8400→0.8400 (rated 0.84) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[79/180] Tasmania 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.1s/pair · cache-hit 5264
+[80/180] Victoria 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[81/180] Tasmania 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[82/180] Other Territories 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[83/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[84/180] New South Wales 0.8400→0.8400 (rated 0.84) | Northern Territory 0.7710→0.7700 (rated 0.77) · 5.2s/pair · cache-hit 5264
+[85/180] Victoria 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[86/180] Western Australia 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[87/180] Queensland 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[88/180] Queensland 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[89/180] Other Territories 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[90/180] New South Wales 0.8400→0.8400 (rated 0.84) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[91/180] Other Territories 0.8600→0.8600 (rated 0.86) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[92/180] New South Wales 0.8400→0.8400 (rated 0.84) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.4s/pair · cache-hit 5264
+[93/180] New South Wales 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[94/180] Other Territories 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[95/180] Other Territories 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[96/180] Other Territories 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[97/180] Victoria 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[98/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[99/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[100/180] Tasmania 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[101/180] Victoria 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.2s/pair · cache-hit 5264
+[102/180] Western Australia 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[103/180] Victoria 0.8800→0.8800 (rated 0.88) | South Australia 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[104/180] Western Australia 0.8400→0.8400 (rated 0.84) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[105/180] Other Territories 0.8600→0.8600 (rated 0.86) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[106/180] Victoria 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[107/180] Western Australia 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.2s/pair · cache-hit 5264
+[108/180] New South Wales 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[109/180] New South Wales 0.8400→0.8400 (rated 0.84) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[110/180] South Australia 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[111/180] Victoria 0.8800→0.8800 (rated 0.88) | South Australia 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[112/180] Western Australia 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[113/180] Tasmania 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[114/180] New South Wales 0.8400→0.8400 (rated 0.84) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.2s/pair · cache-hit 5264
+[115/180] South Australia 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[116/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[117/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[118/180] Queensland 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7700→0.7735 (rated 0.79) · 5.2s/pair · cache-hit 5264
+[119/180] Other Territories 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.2s/pair · cache-hit 5264
+[120/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[121/180] South Australia 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[122/180] New South Wales 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[123/180] New South Wales 0.8400→0.8400 (rated 0.84) | South Australia 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[124/180] Victoria 0.8800→0.8800 (rated 0.88) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[125/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Victoria 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[126/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7700 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[127/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[128/180] Other Territories 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[129/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[130/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[131/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[132/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[133/180] Western Australia 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[134/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7700→0.7724 (rated 0.78) · 5.4s/pair · cache-hit 5264
+[135/180] New South Wales 0.8400→0.8400 (rated 0.84) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[136/180] Northern Territory 0.7700→0.7700 (rated 0.77) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[137/180] Northern Territory 0.7700→0.7700 (rated 0.77) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.4s/pair · cache-hit 5264
+[138/180] Western Australia 0.8400→0.8400 (rated 0.84) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[139/180] South Australia 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[140/180] South Australia 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[141/180] Western Australia 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[142/180] New South Wales 0.8400→0.8400 (rated 0.84) | South Australia 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[143/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | South Australia 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[144/180] Northern Territory 0.7700→0.7723 (rated 0.78) | New South Wales 0.8400→0.8377 (rated 0.83) · 5.4s/pair · cache-hit 5264
+[145/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.4s/pair · cache-hit 5264
+[146/180] Victoria 0.8800→0.8800 (rated 0.88) | South Australia 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[147/180] Queensland 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[148/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[149/180] Other Territories 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[150/180] Northern Territory 0.7700→0.7728 (rated 0.80) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[151/180] Tasmania 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[152/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[153/180] Northern Territory 0.7723→0.7748 (rated 0.80) | Queensland 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[154/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[155/180] Northern Territory 0.7728→0.7712 (rated 0.77) | Victoria 0.8800→0.8800 (rated 0.88) · 5.4s/pair · cache-hit 5264
+[156/180] Victoria 0.8800→0.8800 (rated 0.88) | New South Wales 0.8377→0.8392 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[157/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[158/180] Northern Territory 0.7748→0.7770 (rated 0.80) | South Australia 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[159/180] South Australia 0.8600→0.8600 (rated 0.86) | Queensland 0.8600→0.8600 (rated 0.86) · 5.4s/pair · cache-hit 5264
+[160/180] Other Territories 0.8600→0.8600 (rated 0.86) | New South Wales 0.8377→0.8392 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[161/180] Tasmania 0.8600→0.8600 (rated 0.86) | New South Wales 0.8392→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[162/180] Other Territories 0.8600→0.8600 (rated 0.86) | South Australia 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[163/180] New South Wales 0.8392→0.8400 (rated 0.84) | Northern Territory 0.7770→0.7755 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[164/180] Other Territories 0.8600→0.8600 (rated 0.86) | New South Wales 0.8392→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[165/180] Other Territories 0.8600→0.8600 (rated 0.86) | Northern Territory 0.7770→0.7783 (rated 0.78) · 5.3s/pair · cache-hit 5264
+[166/180] South Australia 0.8600→0.8600 (rated 0.86) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[167/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[168/180] New South Wales 0.8400→0.8400 (rated 0.84) | Queensland 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[169/180] Other Territories 0.8600→0.8600 (rated 0.86) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[170/180] Northern Territory 0.7783→0.7769 (rated 0.77) | Western Australia 0.8400→0.8400 (rated 0.84) · 5.3s/pair · cache-hit 5264
+[171/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[172/180] Northern Territory 0.7783→0.7795 (rated 0.78) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[173/180] Western Australia 0.8400→0.8400 (rated 0.84) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[174/180] Tasmania 0.8600→0.8600 (rated 0.86) | Other Territories 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[175/180] Victoria 0.8800→0.8800 (rated 0.88) | Tasmania 0.8600→0.8600 (rated 0.86) · 5.3s/pair · cache-hit 5264
+[176/180] Victoria 0.8800→0.8800 (rated 0.88) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[177/180] Queensland 0.8600→0.8600 (rated 0.86) | Australian Capital Territory 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[178/180] Western Australia 0.8400→0.8400 (rated 0.84) | Victoria 0.8800→0.8800 (rated 0.88) · 5.3s/pair · cache-hit 5264
+[179/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | Northern Territory 0.7795→0.7783 (rated 0.77) · 5.3s/pair · cache-hit 5264
+[180/180] Australian Capital Territory 0.8800→0.8800 (rated 0.88) | New South Wales 0.8400→0.8400 (rated 0.84) · 5.4s/pair · cache-hit 5264
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 180 pairs in 965s · errors: 0 · total score movement: 0.061
+tokens — cache read: 926,464 · cache write: 21,056 · uncached in: 100,786 · out: 147,877
+OK: 233 countries, 2861 admin1 units; ranks written; meta written
