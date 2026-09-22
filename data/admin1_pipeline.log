@@ -11375,3 +11375,342 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 520 pairs in 917s · errors: 0 · total score movement: 0.137
 tokens — cache read: 2,751,828 · cache write: 21,332 · uncached in: 163,997 · out: 181,488
 OK: 233 countries, 3221 admin1 units; ranks written; meta written
+PER done 2026-09-22 12:39:18
+=================== CHL 2026-09-22 12:39:18 ===================
+new: 8 · refreshed: 0 · skipped (untouchable): 8 · with deltas: 0 · countries touched: 1
+  mean drift CHL: +0.000 (8 units)
+wrote 3229 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3229 admin1 units; ranks written; meta written
+CHL: 16 units -> 320 pairs
+system prompt: 23,809 chars (~5,952 tokens) — cached
+admin1 mode: Chile (CHL) national 0.72 · 16 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 80 for ~10)
+pairs: 320 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 160 / 320: 0.07000/0.04009/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06013/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-CHL-20260922-123920.jsonl
+[1/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n del Maule 0.7230→0.7200 (rated 0.72) · 11.5s/pair
+[2/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7230→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) · 8.0s/pair
+[3/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 5.6s/pair
+[4/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 4.2s/pair
+[5/320] RegiÃ³n de Los RÃ­os 0.7230→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.0s/pair · cache-hit 5373
+[6/320] RegiÃ³n de Los RÃ­os 0.7230→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 5.1s/pair · cache-hit 5373
+[7/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.7s/pair · cache-hit 5373
+[8/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Atacama 0.7230→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[9/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.3s/pair · cache-hit 5373
+[10/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Atacama 0.7230→0.7200 (rated 0.72) · 4.8s/pair · cache-hit 5373
+[11/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[12/320] RegiÃ³n de Ãuble 0.6700→0.6780 (rated 0.70) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.3s/pair · cache-hit 5373
+[13/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7230→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[14/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6955 (rated 0.70) | RegiÃ³n de Ãuble 0.6700→0.6755 (rated 0.68) · 4.8s/pair · cache-hit 5373
+[15/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.6s/pair · cache-hit 5373
+[16/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7230→0.7201 (rated 0.72) | RegiÃ³n de Ãuble 0.6780→0.6726 (rated 0.67) · 4.3s/pair · cache-hit 5373
+[17/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7201→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[18/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6957 (rated 0.70) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.3s/pair · cache-hit 5373
+[19/320] RegiÃ³n de Ãuble 0.6755→0.6704 (rated 0.67) | RegiÃ³n de Coquimbo 0.7230→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[20/320] RegiÃ³n de Ãuble 0.6704→0.6700 (rated 0.67) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[21/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.3s/pair · cache-hit 5373
+[22/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[23/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 4.4s/pair · cache-hit 5373
+[24/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[25/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[26/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6957→0.7018 (rated 0.71) · 4.2s/pair · cache-hit 5373
+[27/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.3s/pair · cache-hit 5373
+[28/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[29/320] RegiÃ³n de Antofagasta 0.7230→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.2s/pair · cache-hit 5373
+[30/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.4s/pair · cache-hit 5373
+[31/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.4s/pair · cache-hit 5373
+[32/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.2s/pair · cache-hit 5373
+[33/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[34/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) · 4.6s/pair · cache-hit 5373
+[35/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.5s/pair · cache-hit 5373
+[36/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.7018→0.7080 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[37/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[38/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[39/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.3s/pair · cache-hit 5373
+[40/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[41/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6400→0.6496 (rated 0.69) · 4.2s/pair · cache-hit 5373
+[42/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[43/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.4s/pair · cache-hit 5373
+[44/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.3s/pair · cache-hit 5373
+[45/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de TarapacÃ¡ 0.6400→0.6400 (rated 0.64) · 4.3s/pair · cache-hit 5373
+[46/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.3s/pair · cache-hit 5373
+[47/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.5s/pair · cache-hit 5373
+[48/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Arica y Parinacota 0.7080→0.7020 (rated 0.69) · 4.4s/pair · cache-hit 5373
+[49/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6496→0.6445 (rated 0.64) · 4.5s/pair · cache-hit 5373
+[50/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.7080→0.7030 (rated 0.70) · 4.5s/pair · cache-hit 5373
+[51/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.5s/pair · cache-hit 5373
+[52/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[53/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.4s/pair · cache-hit 5373
+[54/320] RegiÃ³n de Arica y Parinacota 0.7020→0.6966 (rated 0.69) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.4s/pair · cache-hit 5373
+[55/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[56/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[57/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 4.4s/pair · cache-hit 5373
+[58/320] RegiÃ³n de TarapacÃ¡ 0.6445→0.6400 (rated 0.64) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[59/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6445→0.6491 (rated 0.65) · 4.4s/pair · cache-hit 5373
+[60/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[61/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.4s/pair · cache-hit 5373
+[62/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.3s/pair · cache-hit 5373
+[63/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[64/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[65/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.4s/pair · cache-hit 5373
+[66/320] RegiÃ³n de TarapacÃ¡ 0.6400→0.6499 (rated 0.70) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[67/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[68/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6491→0.6442 (rated 0.64) · 4.3s/pair · cache-hit 5373
+[69/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[70/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[71/320] RegiÃ³n de TarapacÃ¡ 0.6491→0.6500 (rated 0.65) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[72/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[73/320] RegiÃ³n de Arica y Parinacota 0.6966→0.6920 (rated 0.69) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[74/320] RegiÃ³n de Arica y Parinacota 0.6966→0.6921 (rated 0.69) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.3s/pair · cache-hit 5373
+[75/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.3s/pair · cache-hit 5373
+[76/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 4.3s/pair · cache-hit 5373
+[77/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.2s/pair · cache-hit 5373
+[78/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[79/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[80/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.2s/pair · cache-hit 5373
+[81/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.2s/pair · cache-hit 5373
+[82/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[83/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[84/320] RegiÃ³n de Arica y Parinacota 0.6921→0.6900 (rated 0.69) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.1s/pair · cache-hit 5373
+[85/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.2s/pair · cache-hit 5373
+[86/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[87/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 4.2s/pair · cache-hit 5373
+[88/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.1s/pair · cache-hit 5373
+[89/320] RegiÃ³n de TarapacÃ¡ 0.6500→0.6565 (rated 0.68) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[90/320] RegiÃ³n de TarapacÃ¡ 0.6500→0.6574 (rated 0.69) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[91/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[92/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[93/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 4.1s/pair · cache-hit 5373
+[94/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[95/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[96/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[97/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[98/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[99/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[100/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5373
+[101/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.1s/pair · cache-hit 5373
+[102/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[103/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[104/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[105/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[106/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[107/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[108/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.0s/pair · cache-hit 5373
+[109/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[110/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[111/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de TarapacÃ¡ 0.6574→0.6524 (rated 0.64) · 3.9s/pair · cache-hit 5373
+[112/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[113/320] RegiÃ³n de TarapacÃ¡ 0.6574→0.6525 (rated 0.64) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[114/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[115/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.0s/pair · cache-hit 5373
+[116/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[117/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6250 (rated 0.64) · 4.0s/pair · cache-hit 5373
+[118/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.0s/pair · cache-hit 5373
+[119/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6951 (rated 0.71) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[120/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[121/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[122/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6525→0.6481 (rated 0.64) · 3.9s/pair · cache-hit 5373
+[123/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Arica y Parinacota 0.6951→0.6914 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[124/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[125/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[126/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[127/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[128/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[129/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[130/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[131/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5648 (rated 0.58) · 3.9s/pair · cache-hit 5373
+[132/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[133/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[134/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[135/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[136/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[137/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[138/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6914→0.6900 (rated 0.69) · 3.8s/pair · cache-hit 5373
+[139/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5648→0.5613 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[140/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Arica y Parinacota 0.6914→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[141/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[142/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5648→0.5614 (rated 0.56) · 3.8s/pair · cache-hit 5373
+[143/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[144/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.8s/pair · cache-hit 5373
+[145/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[146/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[147/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[148/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de ValparaÃ­so 0.5614→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5373
+[149/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5614→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5373
+[150/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.8s/pair · cache-hit 5373
+[151/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.8s/pair · cache-hit 5373
+[152/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[153/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[154/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[155/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.8s/pair · cache-hit 5373
+[156/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[157/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[158/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.8s/pair · cache-hit 5373
+[159/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[160/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 3.8s/pair · cache-hit 5373
+[161/320] RegiÃ³n de TarapacÃ¡ 0.6481→0.6447 (rated 0.64) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[162/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[163/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[164/320] RegiÃ³n de TarapacÃ¡ 0.6481→0.6447 (rated 0.64) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[165/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6900→0.6942 (rated 0.71) · 3.9s/pair · cache-hit 5373
+[166/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[167/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[168/320] RegiÃ³n de Ãuble 0.6700→0.6741 (rated 0.69) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.8s/pair · cache-hit 5373
+[169/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[170/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[171/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[172/320] RegiÃ³n de Arica y Parinacota 0.6942→0.6912 (rated 0.69) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[173/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[174/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[175/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[176/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Arica y Parinacota 0.6942→0.6913 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[177/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[178/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[179/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6447→0.6418 (rated 0.64) · 3.9s/pair · cache-hit 5373
+[180/320] RegiÃ³n de TarapacÃ¡ 0.6447→0.6510 (rated 0.70) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[181/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.8s/pair · cache-hit 5373
+[182/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[183/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[184/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[185/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[186/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[187/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Arica y Parinacota 0.6913→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[188/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[189/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[190/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[191/320] RegiÃ³n de TarapacÃ¡ 0.6510→0.6553 (rated 0.68) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[192/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[193/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.8s/pair · cache-hit 5373
+[194/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[195/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.8s/pair · cache-hit 5373
+[196/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[197/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.8s/pair · cache-hit 5373
+[198/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.8s/pair · cache-hit 5373
+[199/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[200/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.8s/pair · cache-hit 5373
+[201/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[202/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[203/320] RegiÃ³n de TarapacÃ¡ 0.6553→0.6580 (rated 0.66) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.8s/pair · cache-hit 5373
+[204/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[205/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[206/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[207/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[208/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[209/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[210/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[211/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[212/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6580→0.6547 (rated 0.64) · 3.9s/pair · cache-hit 5373
+[213/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[214/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[215/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[216/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[217/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6900→0.6928 (rated 0.70) · 3.9s/pair · cache-hit 5373
+[218/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[219/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[220/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[221/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[222/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6931 (rated 0.71) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[223/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6927→0.6905 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[224/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[225/320] RegiÃ³n de TarapacÃ¡ 0.6547→0.6570 (rated 0.67) | RegiÃ³n de Ãuble 0.6700→0.6733 (rated 0.70) · 3.9s/pair · cache-hit 5373
+[226/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[227/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[228/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[229/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[230/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[231/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[232/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[233/320] RegiÃ³n de Arica y Parinacota 0.6905→0.6900 (rated 0.69) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[234/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[235/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[236/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[237/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de TarapacÃ¡ 0.6570→0.6543 (rated 0.64) · 3.9s/pair · cache-hit 5373
+[238/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[239/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[240/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[241/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[242/320] RegiÃ³n de Ãuble 0.6733→0.6713 (rated 0.67) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[243/320] RegiÃ³n de TarapacÃ¡ 0.6543→0.6518 (rated 0.64) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[244/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[245/320] RegiÃ³n de TarapacÃ¡ 0.6543→0.6519 (rated 0.64) | RegiÃ³n de Ãuble 0.6733→0.6716 (rated 0.67) · 3.8s/pair · cache-hit 5373
+[246/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 3.8s/pair · cache-hit 5373
+[247/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[248/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[249/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[250/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.8s/pair · cache-hit 5373
+[251/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[252/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6900→0.6929 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[253/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[254/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6519→0.6544 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[255/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[256/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 3.9s/pair · cache-hit 5373
+[257/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[258/320] RegiÃ³n de TarapacÃ¡ 0.6519→0.6497 (rated 0.64) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 3.9s/pair · cache-hit 5373
+[259/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[260/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[261/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n de TarapacÃ¡ 0.6519→0.6543 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[262/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[263/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[264/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[265/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[266/320] RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[267/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6497→0.6535 (rated 0.71) · 3.9s/pair · cache-hit 5373
+[268/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[269/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 3.9s/pair · cache-hit 5373
+[270/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[271/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[272/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[273/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 3.9s/pair · cache-hit 5373
+[274/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[275/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[276/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 3.9s/pair · cache-hit 5373
+[277/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Ãuble 0.6716→0.6701 (rated 0.67) · 3.9s/pair · cache-hit 5373
+[278/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[279/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[280/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5373
+[281/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[282/320] RegiÃ³n de TarapacÃ¡ 0.6535→0.6517 (rated 0.64) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 3.9s/pair · cache-hit 5373
+[283/320] RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[284/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[285/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[286/320] RegiÃ³n de Ãuble 0.6701→0.6700 (rated 0.67) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[287/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 3.9s/pair · cache-hit 5373
+[288/320] RegiÃ³n de Arica y Parinacota 0.6900→0.6916 (rated 0.71) | RegiÃ³n de ValparaÃ­so 0.5600→0.5616 (rated 0.58) · 4.0s/pair · cache-hit 5373
+[289/320] RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) | RegiÃ³n de Arica y Parinacota 0.6900→0.6900 (rated 0.69) · 4.0s/pair · cache-hit 5373
+[290/320] RegiÃ³n de TarapacÃ¡ 0.6517→0.6501 (rated 0.64) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[291/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[292/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5616→0.5604 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[293/320] RegiÃ³n de Arica y Parinacota 0.6916→0.6905 (rated 0.69) | RegiÃ³n de TarapacÃ¡ 0.6517→0.6501 (rated 0.64) · 4.0s/pair · cache-hit 5373
+[294/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de TarapacÃ¡ 0.6517→0.6504 (rated 0.65) · 4.0s/pair · cache-hit 5373
+[295/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.0s/pair · cache-hit 5373
+[296/320] RegiÃ³n de ValparaÃ­so 0.5604→0.5600 (rated 0.56) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.0s/pair · cache-hit 5373
+[297/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[298/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[299/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Arica y Parinacota 0.6905→0.6919 (rated 0.70) · 4.0s/pair · cache-hit 5373
+[300/320] RegiÃ³n de Arica y Parinacota 0.6905→0.6900 (rated 0.69) | RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[301/320] RegiÃ³n de Arica y Parinacota 0.6905→0.6900 (rated 0.69) | RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) · 4.0s/pair · cache-hit 5373
+[302/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) · 4.0s/pair · cache-hit 5373
+[303/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[304/320] RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[305/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) · 4.0s/pair · cache-hit 5373
+[306/320] RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) | RegiÃ³n de ValparaÃ­so 0.5600→0.5600 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[307/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5373
+[308/320] RegiÃ³n de TarapacÃ¡ 0.6504→0.6485 (rated 0.64) | RegiÃ³n de ValparaÃ­so 0.5600→0.5623 (rated 0.60) · 4.0s/pair · cache-hit 5373
+[309/320] RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[310/320] RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5373
+[311/320] RegiÃ³n de TarapacÃ¡ 0.6504→0.6519 (rated 0.67) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[312/320] RegiÃ³n del BÃ­o-BÃ­o 0.6200→0.6200 (rated 0.62) | RegiÃ³n de Magallanes y AntÃ¡rtica Chilena 0.6600→0.6600 (rated 0.66) · 4.0s/pair · cache-hit 5373
+[313/320] RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los Lagos 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[314/320] RegiÃ³n de Antofagasta 0.7200→0.7200 (rated 0.72) | RegiÃ³n del Libertador Bernardo O'Higgins 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[315/320] RegiÃ³n de ValparaÃ­so 0.5623→0.5612 (rated 0.56) | RegiÃ³n de Coquimbo 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[316/320] RegiÃ³n de La AraucanÃ­a 0.6500→0.6500 (rated 0.65) | RegiÃ³n Metropolitana de Santiago 0.7400→0.7400 (rated 0.74) · 4.0s/pair · cache-hit 5373
+[317/320] RegiÃ³n de TarapacÃ¡ 0.6485→0.6474 (rated 0.64) | RegiÃ³n de ValparaÃ­so 0.5623→0.5613 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[318/320] RegiÃ³n de Atacama 0.7200→0.7200 (rated 0.72) | RegiÃ³n de Los RÃ­os 0.7200→0.7200 (rated 0.72) · 4.0s/pair · cache-hit 5373
+[319/320] RegiÃ³n de Ãuble 0.6700→0.6700 (rated 0.67) | RegiÃ³n de ValparaÃ­so 0.5612→0.5603 (rated 0.56) · 4.0s/pair · cache-hit 5373
+[320/320] RegiÃ³n del Maule 0.7200→0.7200 (rated 0.72) | RegiÃ³n de TarapacÃ¡ 0.6519→0.6507 (rated 0.64) · 4.0s/pair · cache-hit 5373
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 320 pairs in 1279s · errors: 0 · total score movement: 0.313
+tokens — cache read: 1,697,868 · cache write: 21,492 · uncached in: 176,611 · out: 280,318
+OK: 233 countries, 3229 admin1 units; ranks written; meta written
