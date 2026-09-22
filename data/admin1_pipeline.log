@@ -10198,3 +10198,282 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 180 pairs in 957s · errors: 1 · total score movement: 0.054
 tokens — cache read: 948,850 · cache write: 21,688 · uncached in: 158,422 · out: 196,364
 OK: 233 countries, 3184 admin1 units; ranks written; meta written
+ZAF done 2026-09-22 11:50:17
+=================== FRA 2026-09-22 11:50:17 ===================
+new: 8 · refreshed: 0 · skipped (untouchable): 5 · with deltas: 0 · countries touched: 1
+  mean drift FRA: +0.000 (8 units)
+wrote 3192 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3192 admin1 units; ranks written; meta written
+FRA: 13 units -> 260 pairs
+system prompt: 23,428 chars (~5,857 tokens) — cached
+admin1 mode: France (FRA) national 0.67 · 13 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 65 for ~10)
+pairs: 260 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 130 / 260: 0.07000/0.04012/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06015/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-FRA-20260922-115018.jsonl
+[1/260] Occitanie 0.6300→0.6300 (rated 0.63) | Centre-Val de Loire 0.6720→0.6700 (rated 0.67) · 12.6s/pair
+[2/260] Pays de la Loire 0.6720→0.6700 (rated 0.67) | Île-de-France 0.6500→0.6500 (rated 0.65) · 6.7s/pair
+[3/260] Centre-Val de Loire 0.6720→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 4.7s/pair
+[4/260] Normandie 0.6720→0.6700 (rated 0.67) | Corse 0.6720→0.6700 (rated 0.67) · 4.3s/pair · cache-hit 5300
+[5/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Occitanie 0.6300→0.6300 (rated 0.63) · 4.3s/pair
+[6/260] Nouvelle-Aquitaine 0.6720→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 3.7s/pair · cache-hit 5300
+[7/260] Bretagne 0.6720→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 4.1s/pair · cache-hit 5300
+[8/260] Occitanie 0.6300→0.6300 (rated 0.63) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 3.9s/pair · cache-hit 5300
+[9/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Bretagne 0.6720→0.6700 (rated 0.67) · 4.0s/pair · cache-hit 5300
+[10/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Île-de-France 0.6500→0.6500 (rated 0.65) · 3.7s/pair · cache-hit 5300
+[11/260] Bretagne 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 3.6s/pair · cache-hit 5300
+[12/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 3.4s/pair · cache-hit 5300
+[13/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 3.6s/pair · cache-hit 5300
+[14/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 3.5s/pair · cache-hit 5300
+[15/260] Normandie 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 3.5s/pair · cache-hit 5300
+[16/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 3.3s/pair · cache-hit 5300
+[17/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Grand Est 0.6720→0.6700 (rated 0.67) · 3.3s/pair · cache-hit 5300
+[18/260] Grand Est 0.6720→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 3.1s/pair · cache-hit 5300
+[19/260] Occitanie 0.6300→0.6300 (rated 0.63) | Bretagne 0.6700→0.6700 (rated 0.67) · 3.0s/pair · cache-hit 5300
+[20/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 3.0s/pair · cache-hit 5300
+[21/260] Auvergne-Rhône-Alpes 0.6720→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.9s/pair · cache-hit 5300
+[22/260] Corse 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.9s/pair · cache-hit 5300
+[23/260] Grand Est 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.9s/pair · cache-hit 5300
+[24/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.9s/pair · cache-hit 5300
+[25/260] Occitanie 0.6300→0.6300 (rated 0.63) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[26/260] Bretagne 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[27/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[28/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[29/260] Corse 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[30/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[31/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[32/260] Normandie 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[33/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[34/260] Grand Est 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[35/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[36/260] Occitanie 0.6300→0.6300 (rated 0.63) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[37/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Normandie 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[38/260] Corse 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[39/260] Normandie 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[40/260] Occitanie 0.6300→0.6300 (rated 0.63) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[41/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[42/260] Grand Est 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[43/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[44/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[45/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[46/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[47/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[48/260] Bretagne 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[49/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[50/260] Bretagne 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[51/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[52/260] Corse 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[53/260] Normandie 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[54/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[55/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[56/260] Occitanie 0.6300→0.6300 (rated 0.63) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[57/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[58/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[59/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[60/260] Occitanie 0.6300→0.6300 (rated 0.63) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[61/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[62/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[63/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[64/260] Occitanie 0.6300→0.6300 (rated 0.63) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[65/260] Grand Est 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[66/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[67/260] Occitanie 0.6300→0.6300 (rated 0.63) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[68/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[69/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[70/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[71/260] Occitanie 0.6300→0.6300 (rated 0.63) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[72/260] Corse 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[73/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[74/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[75/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[76/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[77/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[78/260] Normandie 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[79/260] Corse 0.6700→0.6700 (rated 0.67) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.6s/pair · cache-hit 5300
+[80/260] Corse 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[81/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[82/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[83/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[84/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.6s/pair · cache-hit 5300
+[85/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[86/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[87/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[88/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[89/260] Bretagne 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.6s/pair · cache-hit 5300
+[90/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[91/260] Normandie 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[92/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[93/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[94/260] Grand Est 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.6s/pair · cache-hit 5300
+[95/260] Occitanie 0.6300→0.6300 (rated 0.63) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[96/260] Bretagne 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[97/260] Grand Est 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[98/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Corse 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[99/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[100/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[101/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[102/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[103/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Corse 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[104/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.6s/pair · cache-hit 5300
+[105/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Corse 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[106/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.6s/pair · cache-hit 5300
+[107/260] Corse 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[108/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[109/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[110/260] Grand Est 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[111/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[112/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[113/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.5s/pair · cache-hit 5300
+[114/260] Grand Est 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[115/260] Corse 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.5s/pair · cache-hit 5300
+[116/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.5s/pair · cache-hit 5300
+[117/260] Grand Est 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.5s/pair · cache-hit 5300
+[118/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.6s/pair · cache-hit 5300
+[119/260] Corse 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[120/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Île-de-France 0.6500→0.6537 (rated 0.66) · 2.6s/pair · cache-hit 5300
+[121/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[122/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[123/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[124/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.6s/pair · cache-hit 5300
+[125/260] Occitanie 0.6300→0.6300 (rated 0.63) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[126/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.6s/pair · cache-hit 5300
+[127/260] Île-de-France 0.6537→0.6506 (rated 0.65) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[128/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[129/260] Île-de-France 0.6537→0.6506 (rated 0.65) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[130/260] Occitanie 0.6300→0.6300 (rated 0.63) | Normandie 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[131/260] Occitanie 0.6300→0.6300 (rated 0.63) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[132/260] Occitanie 0.6300→0.6300 (rated 0.63) | Île-de-France 0.6506→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[133/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[134/260] Corse 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.6s/pair · cache-hit 5300
+[135/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[136/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[137/260] Occitanie 0.6300→0.6300 (rated 0.63) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[138/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[139/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[140/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[141/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[142/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[143/260] Bretagne 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[144/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.6s/pair · cache-hit 5300
+[145/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[146/260] Corse 0.6700→0.6700 (rated 0.67) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[147/260] Occitanie 0.6300→0.6300 (rated 0.63) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[148/260] Occitanie 0.6300→0.6300 (rated 0.63) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[149/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[150/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[151/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[152/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[153/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.6s/pair · cache-hit 5300
+[154/260] Occitanie 0.6300→0.6300 (rated 0.63) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[155/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[156/260] Occitanie 0.6300→0.6300 (rated 0.63) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[157/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[158/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[159/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[160/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[161/260] Occitanie 0.6300→0.6300 (rated 0.63) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[162/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[163/260] Grand Est 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.7s/pair · cache-hit 5300
+[164/260] Occitanie 0.6300→0.6300 (rated 0.63) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[165/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[166/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.7s/pair · cache-hit 5300
+[167/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[168/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[169/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[170/260] Corse 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.7s/pair · cache-hit 5300
+[171/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[172/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[173/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[174/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[175/260] Grand Est 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[176/260] Normandie 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[177/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[178/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[179/260] Normandie 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[180/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[181/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[182/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.7s/pair · cache-hit 5300
+[183/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[184/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[185/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[186/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.7s/pair · cache-hit 5300
+[187/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[188/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[189/260] Grand Est 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[190/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[191/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[192/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[193/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[194/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Normandie 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[195/260] Bretagne 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[196/260] Corse 0.6700→0.6700 (rated 0.67) | Bretagne 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[197/260] Occitanie 0.6300→0.6300 (rated 0.63) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.8s/pair · cache-hit 5300
+[198/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[199/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[200/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[201/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[202/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.8s/pair · cache-hit 5300
+[203/260] Bretagne 0.6700→0.6700 (rated 0.67) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[204/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[205/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[206/260] Bretagne 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.7s/pair · cache-hit 5300
+[207/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[208/260] Grand Est 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[209/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[210/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[211/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[212/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[213/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[214/260] Grand Est 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[215/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[216/260] Grand Est 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.7s/pair · cache-hit 5300
+[217/260] Grand Est 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[218/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[219/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[220/260] Occitanie 0.6300→0.6300 (rated 0.63) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[221/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[222/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[223/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.8s/pair · cache-hit 5300
+[224/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[225/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.7s/pair · cache-hit 5300
+[226/260] Bretagne 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.8s/pair · cache-hit 5300
+[227/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[228/260] Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[229/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.7s/pair · cache-hit 5300
+[230/260] Grand Est 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[231/260] Occitanie 0.6300→0.6300 (rated 0.63) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[232/260] Grand Est 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[233/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[234/260] Grand Est 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[235/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[236/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.8s/pair · cache-hit 5300
+[237/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[238/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[239/260] Grand Est 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[240/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Grand Est 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[241/260] Normandie 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[242/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Hauts-de-France 0.6400→0.6400 (rated 0.64) · 2.8s/pair · cache-hit 5300
+[243/260] Occitanie 0.6300→0.6300 (rated 0.63) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[244/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.8s/pair · cache-hit 5300
+[245/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[246/260] Centre-Val de Loire 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.8s/pair · cache-hit 5300
+[247/260] Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[248/260] Île-de-France 0.6500→0.6500 (rated 0.65) | Auvergne-Rhône-Alpes 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[249/260] Bretagne 0.6700→0.6700 (rated 0.67) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[250/260] Occitanie 0.6300→0.6300 (rated 0.63) | Normandie 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[251/260] Normandie 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[252/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[253/260] Normandie 0.6700→0.6700 (rated 0.67) | Pays de la Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[254/260] Provence-Alpes-Côte d'Azur 0.6500→0.6500 (rated 0.65) | Occitanie 0.6300→0.6300 (rated 0.63) · 2.8s/pair · cache-hit 5300
+[255/260] Corse 0.6700→0.6700 (rated 0.67) | Centre-Val de Loire 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[256/260] Nouvelle-Aquitaine 0.6700→0.6700 (rated 0.67) | Normandie 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[257/260] Hauts-de-France 0.6400→0.6400 (rated 0.64) | Île-de-France 0.6500→0.6500 (rated 0.65) · 2.8s/pair · cache-hit 5300
+[258/260] Pays de la Loire 0.6700→0.6700 (rated 0.67) | Corse 0.6700→0.6700 (rated 0.67) · 2.8s/pair · cache-hit 5300
+[259/260] Normandie 0.6700→0.6700 (rated 0.67) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.8s/pair · cache-hit 5300
+[260/260] Occitanie 0.6300→0.6300 (rated 0.63) | Bourgogne-Franche-Comté 0.6200→0.6200 (rated 0.62) · 2.8s/pair · cache-hit 5300
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 260 pairs in 730s · errors: 0 · total score movement: 0.033
+tokens — cache read: 1,356,800 · cache write: 21,200 · uncached in: 122,076 · out: 152,538
+OK: 233 countries, 3192 admin1 units; ranks written; meta written
