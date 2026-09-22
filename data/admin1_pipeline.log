@@ -656,3 +656,282 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 640 pairs in 2363s · errors: 0 · total score movement: 0.417
 tokens — cache read: 3,404,765 · cache write: 16,035 · uncached in: 219,411 · out: 361,209
 OK: 233 countries, 2847 admin1 units; ranks written; meta written
+MEX done 2026-09-22 02:08:07
+=================== CAN 2026-09-22 02:08:07 ===================
+new: 9 · refreshed: 0 · skipped (untouchable): 4 · with deltas: 0 · countries touched: 1
+  mean drift CAN: +0.000 (9 units)
+wrote 2856 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2856 admin1 units; ranks written; meta written
+CAN: 13 units -> 260 pairs
+system prompt: 23,601 chars (~5,900 tokens) — cached
+admin1 mode: Canada (CAN) national 0.86 · 13 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 65 for ~10)
+pairs: 260 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 130 / 260: 0.07000/0.04012/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06015/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-CAN-20260922-020808.jsonl
+[1/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Prince Edward Island 0.8560→0.8600 (rated 0.86) · 14.5s/pair
+[2/260] Prince Edward Island 0.8560→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 7.9s/pair
+[3/260] Nova Scotia 0.8560→0.8600 (rated 0.86) | Nunavut 0.8560→0.8600 (rated 0.86) · 6.1s/pair · cache-hit 5328
+[4/260] Alberta 0.7600→0.7600 (rated 0.76) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.9s/pair
+[5/260] Ontario 0.8560→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair
+[6/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Ontario 0.8560→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[7/260] Manitoba 0.8560→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.4s/pair · cache-hit 5328
+[8/260] Alberta 0.7600→0.7600 (rated 0.76) | Manitoba 0.8560→0.8600 (rated 0.86) · 4.9s/pair · cache-hit 5328
+[9/260] Yukon 0.8560→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[10/260] Alberta 0.7600→0.7600 (rated 0.76) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.2s/pair · cache-hit 5328
+[11/260] British Columbia 0.8200→0.8200 (rated 0.82) | Newfoundland and Labrador 0.8560→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[12/260] Ontario 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[13/260] Manitoba 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.1s/pair · cache-hit 5328
+[14/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.0s/pair · cache-hit 5328
+[15/260] Ontario 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 3.8s/pair · cache-hit 5328
+[16/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 3.9s/pair · cache-hit 5328
+[17/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8560→0.8600 (rated 0.86) · 3.8s/pair · cache-hit 5328
+[18/260] Quebec 0.8560→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 3.8s/pair · cache-hit 5328
+[19/260] Nunavut 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.2s/pair · cache-hit 5328
+[20/260] Ontario 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.0s/pair · cache-hit 5328
+[21/260] Northwest Territories 0.8560→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.0s/pair · cache-hit 5328
+[22/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.1s/pair · cache-hit 5328
+[23/260] Quebec 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.1s/pair · cache-hit 5328
+[24/260] British Columbia 0.8200→0.8255 (rated 0.83) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[25/260] Yukon 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.3s/pair · cache-hit 5328
+[26/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.2s/pair · cache-hit 5328
+[27/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.2s/pair · cache-hit 5328
+[28/260] Nunavut 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.1s/pair · cache-hit 5328
+[29/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.5s/pair · cache-hit 5328
+[30/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[31/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[32/260] Yukon 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[33/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.3s/pair · cache-hit 5328
+[34/260] Quebec 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.3s/pair · cache-hit 5328
+[35/260] Nunavut 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[36/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[37/260] Manitoba 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[38/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[39/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[40/260] Yukon 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.4s/pair · cache-hit 5328
+[41/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[42/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.3s/pair · cache-hit 5328
+[43/260] Quebec 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[44/260] British Columbia 0.8255→0.8208 (rated 0.82) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[45/260] New Brunswick 0.8400→0.8452 (rated 0.85) | British Columbia 0.8255→0.8206 (rated 0.82) · 4.6s/pair · cache-hit 5328
+[46/260] British Columbia 0.8255→0.8208 (rated 0.82) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair · cache-hit 5328
+[47/260] Manitoba 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[48/260] Alberta 0.7600→0.7600 (rated 0.76) | Quebec 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[49/260] British Columbia 0.8208→0.8200 (rated 0.82) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[50/260] British Columbia 0.8206→0.8200 (rated 0.82) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[51/260] Manitoba 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[52/260] British Columbia 0.8208→0.8200 (rated 0.82) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[53/260] Nunavut 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[54/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[55/260] Alberta 0.7600→0.7600 (rated 0.76) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[56/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[57/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[58/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Quebec 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[59/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[60/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair · cache-hit 5328
+[61/260] Alberta 0.7600→0.7600 (rated 0.76) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[62/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[63/260] British Columbia 0.8200→0.8257 (rated 0.84) | Yukon 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[64/260] Quebec 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[65/260] Alberta 0.7600→0.7600 (rated 0.76) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair · cache-hit 5328
+[66/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[67/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[68/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[69/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | British Columbia 0.8257→0.8214 (rated 0.82) · 4.7s/pair · cache-hit 5328
+[70/260] Nunavut 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[71/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[72/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | British Columbia 0.8257→0.8214 (rated 0.82) · 4.6s/pair · cache-hit 5328
+[73/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[74/260] Yukon 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7946 (rated 0.80) · 4.6s/pair · cache-hit 5328
+[75/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[76/260] British Columbia 0.8214→0.8200 (rated 0.82) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[77/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[78/260] New Brunswick 0.8400→0.8447 (rated 0.85) | Ontario 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[79/260] Nunavut 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair · cache-hit 5328
+[80/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Ontario 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[81/260] Nunavut 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[82/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[83/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[84/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[85/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.5s/pair · cache-hit 5328
+[86/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7946→0.7907 (rated 0.79) · 4.5s/pair · cache-hit 5328
+[87/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[88/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[89/260] Yukon 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[90/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[91/260] Saskatchewan 0.7907→0.7900 (rated 0.79) | Yukon 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[92/260] Manitoba 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.5s/pair · cache-hit 5328
+[93/260] Yukon 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[94/260] Quebec 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8242 (rated 0.83) · 4.4s/pair · cache-hit 5328
+[95/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[96/260] Manitoba 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[97/260] Quebec 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[98/260] British Columbia 0.8242→0.8206 (rated 0.82) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[99/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.4s/pair · cache-hit 5328
+[100/260] British Columbia 0.8242→0.8206 (rated 0.82) | Ontario 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[101/260] British Columbia 0.8200→0.8200 (rated 0.82) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[102/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[103/260] Alberta 0.7600→0.7600 (rated 0.76) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[104/260] Nunavut 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[105/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | British Columbia 0.8206→0.8200 (rated 0.82) · 4.5s/pair · cache-hit 5328
+[106/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[107/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[108/260] Quebec 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[109/260] Ontario 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[110/260] Alberta 0.7600→0.7600 (rated 0.76) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[111/260] Ontario 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[112/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[113/260] Quebec 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[114/260] Ontario 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.4s/pair · cache-hit 5328
+[115/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[116/260] Nunavut 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.4s/pair · cache-hit 5328
+[117/260] Quebec 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.4s/pair · cache-hit 5328
+[118/260] Ontario 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.4s/pair · cache-hit 5328
+[119/260] Nunavut 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.4s/pair · cache-hit 5328
+[120/260] Alberta 0.7600→0.7600 (rated 0.76) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.5s/pair · cache-hit 5328
+[121/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[122/260] Ontario 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[123/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[124/260] Ontario 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[125/260] Alberta 0.7600→0.7600 (rated 0.76) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.4s/pair · cache-hit 5328
+[126/260] Ontario 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7644 (rated 0.78) · 4.4s/pair · cache-hit 5328
+[127/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[128/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[129/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[130/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Yukon 0.8600→0.8600 (rated 0.86) · 4.4s/pair · cache-hit 5328
+[131/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.5s/pair · cache-hit 5328
+[132/260] British Columbia 0.8200→0.8200 (rated 0.82) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[133/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[134/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.6s/pair · cache-hit 5328
+[135/260] Nunavut 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.6s/pair · cache-hit 5328
+[136/260] British Columbia 0.8200→0.8200 (rated 0.82) | Quebec 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[137/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[138/260] Ontario 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[139/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[140/260] British Columbia 0.8200→0.8200 (rated 0.82) | Yukon 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[141/260] Ontario 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[142/260] British Columbia 0.8200→0.8240 (rated 0.84) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[143/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[144/260] Manitoba 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[145/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[146/260] Nunavut 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.6s/pair · cache-hit 5328
+[147/260] Alberta 0.7644→0.7615 (rated 0.76) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[148/260] Yukon 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[149/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[150/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[151/260] British Columbia 0.8240→0.8212 (rated 0.82) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[152/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[153/260] Alberta 0.7644→0.7616 (rated 0.76) | British Columbia 0.8240→0.8213 (rated 0.82) · 4.5s/pair · cache-hit 5328
+[154/260] Yukon 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.6s/pair · cache-hit 5328
+[155/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.5s/pair · cache-hit 5328
+[156/260] Alberta 0.7615→0.7600 (rated 0.76) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[157/260] Ontario 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[158/260] Saskatchewan 0.7900→0.7931 (rated 0.80) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.6s/pair · cache-hit 5328
+[159/260] Ontario 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[160/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[161/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[162/260] Yukon 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[163/260] Quebec 0.8600→0.8600 (rated 0.86) | Alberta 0.7616→0.7600 (rated 0.76) · 4.8s/pair · cache-hit 5328
+[164/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[165/260] British Columbia 0.8213→0.8200 (rated 0.82) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.7s/pair · cache-hit 5328
+[166/260] Yukon 0.8600→0.8600 (rated 0.86) | British Columbia 0.8213→0.8200 (rated 0.82) · 4.8s/pair · cache-hit 5328
+[167/260] Saskatchewan 0.7931→0.7905 (rated 0.79) | British Columbia 0.8213→0.8200 (rated 0.82) · 4.7s/pair · cache-hit 5328
+[168/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[169/260] Ontario 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[170/260] Yukon 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[171/260] Quebec 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7905→0.7933 (rated 0.80) · 4.8s/pair · cache-hit 5328
+[172/260] Nunavut 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.8s/pair · cache-hit 5328
+[173/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[174/260] Ontario 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[175/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[176/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[177/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[178/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[179/260] Alberta 0.7600→0.7600 (rated 0.76) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[180/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[181/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[182/260] British Columbia 0.8200→0.8227 (rated 0.83) | Alberta 0.7600→0.7600 (rated 0.76) · 4.7s/pair · cache-hit 5328
+[183/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[184/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.7s/pair · cache-hit 5328
+[185/260] Ontario 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[186/260] Alberta 0.7600→0.7600 (rated 0.76) | Saskatchewan 0.7933→0.7910 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[187/260] British Columbia 0.8200→0.8200 (rated 0.82) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[188/260] Quebec 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[189/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.7s/pair · cache-hit 5328
+[190/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[191/260] Alberta 0.7600→0.7600 (rated 0.76) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[192/260] Alberta 0.7600→0.7600 (rated 0.76) | Saskatchewan 0.7910→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[193/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[194/260] Manitoba 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[195/260] Saskatchewan 0.7910→0.7900 (rated 0.79) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.7s/pair · cache-hit 5328
+[196/260] Nunavut 0.8600→0.8600 (rated 0.86) | Manitoba 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[197/260] Alberta 0.7600→0.7600 (rated 0.76) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[198/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[199/260] British Columbia 0.8200→0.8232 (rated 0.85) | Yukon 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[200/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[201/260] Yukon 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.7s/pair · cache-hit 5328
+[202/260] British Columbia 0.8200→0.8200 (rated 0.82) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[203/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[204/260] British Columbia 0.8232→0.8213 (rated 0.82) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[205/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Yukon 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[206/260] Manitoba 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.7s/pair · cache-hit 5328
+[207/260] Quebec 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[208/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[209/260] Manitoba 0.8600→0.8600 (rated 0.86) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[210/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Quebec 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[211/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[212/260] Alberta 0.7600→0.7600 (rated 0.76) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[213/260] Quebec 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[214/260] Quebec 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[215/260] Alberta 0.7600→0.7632 (rated 0.80) | Yukon 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[216/260] Ontario 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[217/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.7s/pair · cache-hit 5328
+[218/260] Quebec 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[219/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Quebec 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[220/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[221/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Alberta 0.7632→0.7616 (rated 0.76) · 4.7s/pair · cache-hit 5328
+[222/260] British Columbia 0.8213→0.8200 (rated 0.82) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[223/260] Manitoba 0.8600→0.8600 (rated 0.86) | British Columbia 0.8213→0.8200 (rated 0.82) · 4.8s/pair · cache-hit 5328
+[224/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[225/260] Yukon 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.8s/pair · cache-hit 5328
+[226/260] Yukon 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[227/260] Alberta 0.7616→0.7601 (rated 0.76) | Quebec 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[228/260] Yukon 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.8s/pair · cache-hit 5328
+[229/260] Ontario 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[230/260] Quebec 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.8s/pair · cache-hit 5328
+[231/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Quebec 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[232/260] Quebec 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[233/260] Ontario 0.8600→0.8600 (rated 0.86) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.8s/pair · cache-hit 5328
+[234/260] Quebec 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[235/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.8s/pair · cache-hit 5328
+[236/260] Yukon 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[237/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[238/260] British Columbia 0.8200→0.8200 (rated 0.82) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[239/260] Yukon 0.8600→0.8600 (rated 0.86) | Quebec 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[240/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[241/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[242/260] Quebec 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.8s/pair · cache-hit 5328
+[243/260] British Columbia 0.8200→0.8200 (rated 0.82) | Alberta 0.7601→0.7618 (rated 0.78) · 4.8s/pair · cache-hit 5328
+[244/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[245/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | British Columbia 0.8200→0.8200 (rated 0.82) · 4.7s/pair · cache-hit 5328
+[246/260] Northwest Territories 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[247/260] Prince Edward Island 0.8600→0.8600 (rated 0.86) | Alberta 0.7601→0.7600 (rated 0.76) · 4.7s/pair · cache-hit 5328
+[248/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[249/260] Manitoba 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[250/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[251/260] New Brunswick 0.8400→0.8400 (rated 0.84) | Northwest Territories 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[252/260] Yukon 0.8600→0.8600 (rated 0.86) | Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[253/260] Nunavut 0.8600→0.8600 (rated 0.86) | Prince Edward Island 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[254/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Ontario 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[255/260] Newfoundland and Labrador 0.8600→0.8600 (rated 0.86) | Saskatchewan 0.7900→0.7900 (rated 0.79) · 4.7s/pair · cache-hit 5328
+[256/260] Ontario 0.8600→0.8600 (rated 0.86) | Nunavut 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[257/260] Yukon 0.8600→0.8600 (rated 0.86) | Nova Scotia 0.8600→0.8600 (rated 0.86) · 4.7s/pair · cache-hit 5328
+[258/260] Nova Scotia 0.8600→0.8600 (rated 0.86) | Alberta 0.7600→0.7600 (rated 0.76) · 4.8s/pair · cache-hit 5328
+[259/260] British Columbia 0.8200→0.8200 (rated 0.82) | New Brunswick 0.8400→0.8400 (rated 0.84) · 4.7s/pair · cache-hit 5328
+[260/260] Saskatchewan 0.7900→0.7900 (rated 0.79) | Alberta 0.7600→0.7600 (rated 0.76) · 4.7s/pair · cache-hit 5328
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 260 pairs in 1232s · errors: 0 · total score movement: 0.179
+tokens — cache read: 1,363,968 · cache write: 21,312 · uncached in: 112,465 · out: 175,428
+OK: 233 countries, 2856 admin1 units; ranks written; meta written
