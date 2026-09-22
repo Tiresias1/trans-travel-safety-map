@@ -1792,3 +1792,742 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 540 pairs in 2852s · errors: 0 · total score movement: 1.069
 tokens — cache read: 2,863,312 · cache write: 21,368 · uncached in: 224,813 · out: 527,368
 OK: 233 countries, 2874 admin1 units; ranks written; meta written
+BRA done 2026-09-22 03:41:48
+=================== IND 2026-09-22 03:41:48 ===================
+new: 26 · refreshed: 0 · skipped (untouchable): 10 · with deltas: 2 · countries touched: 1
+  mean drift IND: +0.000 (26 units)
+wrote 2900 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 2900 admin1 units; ranks written; meta written
+IND: 36 units -> 720 pairs
+[82] ERROR 1811400B6111924962807/1811400B16134215155042: HTTP 400: {"request_id":"afd750e4-5812-4d2d-a8be-399c77a0093c","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[390] ERROR 1811400B16134215155042/1811400B42025667129192: HTTP 400: {"request_id":"bf58d14d-f492-421a-8312-b7b73c4e24a2","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[445] ERROR 1811400B57209440839078/1811400B21086746745937: Expecting ',' delimiter: line 1 column 231 (char 230)
+[454] ERROR 1811400B16134215155042/1811400B78322693766699: HTTP 400: {"request_id":"5093a730-34c3-4f5e-91e1-c64729fae8c6","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[460] ERROR 1811400B23625213884851/1811400B16134215155042: HTTP 400: {"request_id":"78084608-0360-40ce-b12b-8dd0ef8851c6","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[519] ERROR 1811400B16134215155042/1811400B57209440839078: HTTP 400: {"request_id":"80bdf7b8-4b51-42fe-bbc7-2f8f00d55d08","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[523] ERROR 1811400B16134215155042/1811400B70654311394581: HTTP 400: {"request_id":"d267abbc-f287-4150-8df7-144b5bc14b9f","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[604] ERROR 1811400B16134215155042/1811400B21167269026319: HTTP 400: {"request_id":"6417747b-6b5c-4eb1-b02e-845d72d261e2","code":"InvalidParameter","message":"Output data may contain inappropriate content."}
+[708] ERROR 1811400B57209440839078/1811400B28404458933503: Expecting ',' delimiter: line 1 column 141 (char 140)
+system prompt: 23,793 chars (~5,948 tokens) — cached
+admin1 mode: India (IND) national 0.43 · 36 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 180 for ~10)
+pairs: 720 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 360 / 720: 0.07000/0.04004/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06006/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-IND-20260922-034150.jsonl
+[1/720] Andaman and Nicobar Islands 0.4293→0.4300 (rated 0.43) | Gujarāt 0.4293→0.4300 (rated 0.43) · 6.3s/pair
+[2/720] Uttarākhand 0.4293→0.4300 (rated 0.43) | Karnātaka 0.4293→0.4300 (rated 0.43) · 5.1s/pair · cache-hit 5358
+[3/720] Assam 0.4500→0.4500 (rated 0.45) | Meghālaya 0.4293→0.4300 (rated 0.43) · 3.8s/pair
+[4/720] Andhra Pradesh 0.4293→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 4.1s/pair
+[5/720] Punjab 0.3500→0.3500 (rated 0.35) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 3.9s/pair
+[6/720] Kerala 0.5000→0.5000 (rated 0.50) | Haryāna 0.4293→0.4300 (rated 0.43) · 4.0s/pair · cache-hit 5358
+[7/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Sikkim 0.4293→0.4300 (rated 0.43) · 4.5s/pair · cache-hit 5358
+[8/720] Sikkim 0.4293→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 4.6s/pair · cache-hit 5358
+[9/720] Haryāna 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4293→0.4300 (rated 0.43) · 4.5s/pair · cache-hit 5358
+[10/720] Punjab 0.3500→0.3500 (rated 0.35) | Manipur 0.4293→0.4300 (rated 0.43) · 4.1s/pair · cache-hit 5358
+[11/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Rājasthān 0.4293→0.4300 (rated 0.43) · 4.1s/pair · cache-hit 5358
+[12/720] Lakshadweep 0.4293→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 3.7s/pair · cache-hit 5358
+[13/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4293→0.4300 (rated 0.43) · 3.8s/pair · cache-hit 5358
+[14/720] Jammu and Kashmīr 0.4093→0.4012 (rated 0.38) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 3.8s/pair · cache-hit 5358
+[15/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Punjab 0.3500→0.3500 (rated 0.35) · 3.7s/pair · cache-hit 5358
+[16/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 3.6s/pair · cache-hit 5358
+[17/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Odisha 0.4293→0.4300 (rated 0.43) · 3.5s/pair · cache-hit 5358
+[18/720] Mizoram 0.4293→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4293→0.4300 (rated 0.43) · 3.4s/pair · cache-hit 5358
+[19/720] Telangāna 0.4293→0.4300 (rated 0.43) | Himāchal Pradesh 0.4293→0.4300 (rated 0.43) · 3.3s/pair · cache-hit 5358
+[20/720] Chandīgarh 0.4293→0.4300 (rated 0.43) | Jammu and Kashmīr 0.4093→0.3990 (rated 0.36) · 3.2s/pair · cache-hit 5358
+[21/720] Puducherry 0.4293→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[22/720] Chandīgarh 0.4293→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[23/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[24/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[25/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Haryāna 0.4300→0.4300 (rated 0.43) · 3.2s/pair · cache-hit 5358
+[26/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 3.2s/pair · cache-hit 5358
+[27/720] Kerala 0.5000→0.5000 (rated 0.50) | Ladākh 0.4293→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[28/720] Telangāna 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[29/720] Jhārkhand 0.4293→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4293→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[30/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4293→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[31/720] Manipur 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[32/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[33/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5358
+[34/720] Ladākh 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[35/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[36/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[37/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[38/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Bihār 0.4293→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[39/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 3.0s/pair · cache-hit 5358
+[40/720] Sikkim 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 3.0s/pair · cache-hit 5358
+[41/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Punjab 0.3500→0.3500 (rated 0.35) · 3.0s/pair · cache-hit 5358
+[42/720] Haryāna 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[43/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 3.1s/pair · cache-hit 5358
+[44/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 3.2s/pair · cache-hit 5358
+[45/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Karnātaka 0.4300→0.4379 (rated 0.46) · 3.2s/pair · cache-hit 5358
+[46/720] Manipur 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 3.1s/pair · cache-hit 5358
+[47/720] Manipur 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 3.1s/pair · cache-hit 5358
+[48/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[49/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[50/720] Mizoram 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 3.2s/pair · cache-hit 5358
+[51/720] Bihār 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[52/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 3.2s/pair · cache-hit 5358
+[53/720] Meghālaya 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 3.2s/pair · cache-hit 5358
+[54/720] Goa 0.4593→0.4516 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 3.2s/pair · cache-hit 5358
+[55/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Jammu and Kashmīr 0.3990→0.4047 (rated 0.41) · 3.2s/pair · cache-hit 5358
+[56/720] Mizoram 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[57/720] Puducherry 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[58/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[59/720] Telangāna 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 3.0s/pair · cache-hit 5358
+[60/720] Puducherry 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[61/720] Bihār 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[62/720] Sikkim 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[63/720] Telangāna 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 3.0s/pair · cache-hit 5358
+[64/720] Manipur 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[65/720] Jammu and Kashmīr 0.4047→0.4108 (rated 0.42) | West Bengal 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5358
+[66/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[67/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[68/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[69/720] Jammu and Kashmīr 0.4047→0.4000 (rated 0.40) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[70/720] Mizoram 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[71/720] West Bengal 0.3400→0.3400 (rated 0.34) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[72/720] Assam 0.4500→0.4500 (rated 0.45) | Sikkim 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[73/720] Tripura 0.3100→0.3100 (rated 0.31) | Goa 0.4516→0.4449 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[74/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[75/720] Manipur 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[76/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Goa 0.4516→0.4460 (rated 0.44) · 3.0s/pair · cache-hit 5358
+[77/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 3.0s/pair · cache-hit 5358
+[78/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[79/720] Kerala 0.5000→0.5000 (rated 0.50) | Puducherry 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[80/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 3.0s/pair · cache-hit 5358
+[82/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | West Bengal 0.3400→0.3400 (rated 0.34) · 3.1s/pair · cache-hit 5358
+[83/720] Assam 0.4500→0.4500 (rated 0.45) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.1s/pair · cache-hit 5358
+[84/720] Haryāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5358
+[85/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[86/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[87/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[88/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[89/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[90/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4379→0.4328 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[91/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[92/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[93/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5358
+[94/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[95/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Nāgāland 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[96/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Haryāna 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[97/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[98/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Punjab 0.3500→0.3500 (rated 0.35) · 2.9s/pair · cache-hit 5358
+[99/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[100/720] Assam 0.4500→0.4500 (rated 0.45) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[101/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[102/720] Assam 0.4500→0.4500 (rated 0.45) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[103/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[104/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[105/720] West Bengal 0.3400→0.3400 (rated 0.34) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.9s/pair · cache-hit 5358
+[106/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[107/720] Goa 0.4460→0.4517 (rated 0.46) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[108/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[109/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[110/720] Puducherry 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[111/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[112/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[113/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[114/720] Karnātaka 0.4328→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[115/720] Assam 0.4500→0.4500 (rated 0.45) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[116/720] Haryāna 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[117/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[118/720] Kerala 0.5000→0.5000 (rated 0.50) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[119/720] West Bengal 0.3400→0.3400 (rated 0.34) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[120/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[121/720] Assam 0.4500→0.4500 (rated 0.45) | Kerala 0.5000→0.5000 (rated 0.50) · 2.9s/pair · cache-hit 5358
+[122/720] Bihār 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[123/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[124/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[125/720] Delhi 0.3800→0.3800 (rated 0.38) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[126/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[127/720] Ladākh 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5358
+[128/720] Kerala 0.5000→0.5000 (rated 0.50) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[129/720] Sikkim 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.9s/pair · cache-hit 5358
+[130/720] Haryāna 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[131/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[132/720] Bihār 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.9s/pair · cache-hit 5358
+[133/720] Odisha 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.9s/pair · cache-hit 5358
+[134/720] Telangāna 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[135/720] Ladākh 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[136/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[137/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[138/720] Bihār 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.9s/pair · cache-hit 5358
+[139/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[140/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[141/720] Manipur 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[142/720] West Bengal 0.3400→0.3400 (rated 0.34) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[143/720] West Bengal 0.3400→0.3400 (rated 0.34) | Bihār 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[144/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[145/720] Bihār 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[146/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.9s/pair · cache-hit 5358
+[147/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[148/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[149/720] Ladākh 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[150/720] Kerala 0.5000→0.5000 (rated 0.50) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[151/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[152/720] Haryāna 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[153/720] Telangāna 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[154/720] Punjab 0.3500→0.3500 (rated 0.35) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[155/720] Delhi 0.3800→0.3800 (rated 0.38) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[156/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[157/720] Tripura 0.3100→0.3100 (rated 0.31) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[158/720] Tripura 0.3100→0.3100 (rated 0.31) | Kerala 0.5000→0.5000 (rated 0.50) · 2.9s/pair · cache-hit 5358
+[159/720] Goa 0.4517→0.4564 (rated 0.46) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[160/720] Telangāna 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[161/720] Kerala 0.5000→0.5000 (rated 0.50) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[162/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[163/720] Delhi 0.3800→0.3800 (rated 0.38) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[164/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[165/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[166/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[167/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[168/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5358
+[169/720] Sikkim 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.9s/pair · cache-hit 5358
+[170/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[171/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[172/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[173/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Delhi 0.3800→0.3752 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[174/720] Kerala 0.5000→0.5000 (rated 0.50) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[175/720] West Bengal 0.3400→0.3400 (rated 0.34) | Jammu and Kashmīr 0.4000→0.4057 (rated 0.42) · 2.9s/pair · cache-hit 5358
+[176/720] Bihār 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[177/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[178/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[179/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[180/720] Goa 0.4564→0.4627 (rated 0.48) | Bihār 0.4300→0.4245 (rated 0.42) · 2.9s/pair · cache-hit 5358
+[181/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Delhi 0.3752→0.3794 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[182/720] Mizoram 0.4300→0.4300 (rated 0.43) | Bihār 0.4245→0.4288 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[183/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Goa 0.4564→0.4520 (rated 0.45) · 2.9s/pair · cache-hit 5358
+[184/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.9s/pair · cache-hit 5358
+[185/720] Telangāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[186/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[187/720] Haryāna 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[188/720] Assam 0.4500→0.4500 (rated 0.45) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[189/720] Punjab 0.3500→0.3500 (rated 0.35) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[190/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.9s/pair · cache-hit 5358
+[191/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[192/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 3.0s/pair · cache-hit 5358
+[193/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[194/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 3.0s/pair · cache-hit 5358
+[195/720] Kerala 0.5000→0.5000 (rated 0.50) | Goa 0.4520→0.4471 (rated 0.44) · 3.0s/pair · cache-hit 5358
+[196/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 3.0s/pair · cache-hit 5358
+[197/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[198/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[199/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[200/720] Manipur 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[201/720] Tripura 0.3100→0.3100 (rated 0.31) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[202/720] Mizoram 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[203/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[204/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Bihār 0.4288→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[205/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[206/720] Manipur 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[207/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.9s/pair · cache-hit 5358
+[208/720] Punjab 0.3500→0.3500 (rated 0.35) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[209/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[210/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[211/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[212/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[213/720] Manipur 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[214/720] Ladākh 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3572 (rated 0.39) · 2.9s/pair · cache-hit 5358
+[215/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[216/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[217/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[218/720] Haryāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[219/720] Bihār 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[220/720] Kerala 0.5000→0.5000 (rated 0.50) | Punjab 0.3500→0.3500 (rated 0.35) · 2.9s/pair · cache-hit 5358
+[221/720] Puducherry 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.9s/pair · cache-hit 5358
+[222/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[223/720] Telangāna 0.4300→0.4300 (rated 0.43) | Goa 0.4471→0.4519 (rated 0.46) · 2.9s/pair · cache-hit 5358
+[224/720] Manipur 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.9s/pair · cache-hit 5358
+[225/720] Mizoram 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[226/720] Haryāna 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[227/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[228/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[229/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[230/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[231/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[232/720] Odisha 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[233/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[234/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5358
+[235/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[236/720] Manipur 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[237/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[238/720] Mizoram 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.9s/pair · cache-hit 5358
+[239/720] Goa 0.4519→0.4500 (rated 0.45) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[240/720] West Bengal 0.3400→0.3400 (rated 0.34) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[241/720] Assam 0.4500→0.4500 (rated 0.45) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[242/720] Sikkim 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[243/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[244/720] Delhi 0.3794→0.3800 (rated 0.38) | Tripura 0.3100→0.3100 (rated 0.31) · 2.9s/pair · cache-hit 5358
+[245/720] Telangāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[246/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[247/720] Sikkim 0.4300→0.4300 (rated 0.43) | Delhi 0.3794→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5358
+[248/720] Telangāna 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[249/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[250/720] Odisha 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[251/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[253/720] Sikkim 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[252/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[254/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Assam 0.4500→0.4457 (rated 0.44) · 2.9s/pair · cache-hit 5358
+[255/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[256/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[257/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[258/720] Delhi 0.3800→0.3800 (rated 0.38) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[259/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[260/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[261/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[262/720] Bihār 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[263/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[264/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[265/720] Punjab 0.3500→0.3500 (rated 0.35) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.9s/pair · cache-hit 5358
+[266/720] Punjab 0.3500→0.3500 (rated 0.35) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.9s/pair · cache-hit 5358
+[267/720] Punjab 0.3500→0.3500 (rated 0.35) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[268/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[269/720] Puducherry 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[270/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[271/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[272/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[273/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[274/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[275/720] Telangāna 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[276/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[277/720] Kerala 0.5000→0.5000 (rated 0.50) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[278/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[279/720] Goa 0.4500→0.4557 (rated 0.48) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[280/720] Odisha 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[281/720] Goa 0.4500→0.4541 (rated 0.46) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[282/720] Punjab 0.3500→0.3500 (rated 0.35) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[283/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[284/720] Delhi 0.3800→0.3800 (rated 0.38) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[285/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[286/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[287/720] Mizoram 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[288/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[289/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[290/720] Assam 0.4457→0.4427 (rated 0.44) | Goa 0.4541→0.4490 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[291/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[292/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[293/720] Puducherry 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[294/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[295/720] Kerala 0.5000→0.5000 (rated 0.50) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[296/720] Telangāna 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[297/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[298/720] Kerala 0.5000→0.5000 (rated 0.50) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[299/720] Delhi 0.3800→0.3800 (rated 0.38) | Goa 0.4490→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[300/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[301/720] Ladākh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[302/720] Assam 0.4427→0.4400 (rated 0.44) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[303/720] Bihār 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[304/720] Odisha 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.4057→0.4021 (rated 0.40) · 2.8s/pair · cache-hit 5358
+[305/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[306/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[307/720] Manipur 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[308/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[309/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[310/720] Sikkim 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[311/720] Delhi 0.3800→0.3800 (rated 0.38) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[312/720] Assam 0.4400→0.4439 (rated 0.45) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[313/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[314/720] Assam 0.4400→0.4439 (rated 0.45) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[315/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[316/720] Punjab 0.3500→0.3500 (rated 0.35) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[317/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[318/720] Tripura 0.3100→0.3100 (rated 0.31) | Assam 0.4439→0.4474 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[319/720] Mizoram 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[320/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[321/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[322/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[323/720] Bihār 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[324/720] Telangāna 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[325/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Assam 0.4474→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[326/720] Haryāna 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[327/720] Telangāna 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[328/720] Ladākh 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[329/720] Telangāna 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[330/720] Kerala 0.5000→0.5000 (rated 0.50) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[331/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[332/720] Manipur 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[333/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[334/720] Kerala 0.5000→0.5000 (rated 0.50) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[335/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[336/720] West Bengal 0.3400→0.3400 (rated 0.34) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[337/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[338/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[339/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[340/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[341/720] Puducherry 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[342/720] Puducherry 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[343/720] Delhi 0.3800→0.3800 (rated 0.38) | Goa 0.4500→0.4456 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[344/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[345/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[346/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Goa 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[347/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[348/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[349/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[350/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[351/720] Odisha 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[352/720] Telangāna 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[353/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[354/720] Delhi 0.3800→0.3800 (rated 0.38) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[355/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[356/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[357/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[358/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[359/720] Nāgāland 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[360/720] Manipur 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[361/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[362/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[363/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[364/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[365/720] Puducherry 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[366/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[367/720] Ladākh 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[368/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[369/720] Delhi 0.3800→0.3800 (rated 0.38) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[370/720] Bihār 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[371/720] Manipur 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[372/720] Ladākh 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[373/720] Puducherry 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[374/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[375/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[376/720] Manipur 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[377/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Goa 0.4500→0.4548 (rated 0.48) · 2.8s/pair · cache-hit 5358
+[378/720] Assam 0.4500→0.4500 (rated 0.45) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[379/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[380/720] Kerala 0.5000→0.5000 (rated 0.50) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[381/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[382/720] Bihār 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[383/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[384/720] Punjab 0.3500→0.3500 (rated 0.35) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[385/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[386/720] Sikkim 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3740 (rated 0.39) · 2.8s/pair · cache-hit 5358
+[387/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[388/720] Delhi 0.3800→0.3800 (rated 0.38) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[389/720] Punjab 0.3500→0.3500 (rated 0.35) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[390/720] Telangāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[391/720] Goa 0.4548→0.4604 (rated 0.50) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[393/720] Odisha 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3740→0.3711 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[394/720] Ladākh 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[395/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Chhattīsgarh 0.3740→0.3711 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[396/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[397/720] Haryāna 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[398/720] Odisha 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[399/720] Manipur 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[400/720] Haryāna 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[401/720] Tripura 0.3100→0.3100 (rated 0.31) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[402/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[403/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[404/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[405/720] Delhi 0.3800→0.3800 (rated 0.38) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[406/720] Punjab 0.3500→0.3500 (rated 0.35) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[407/720] Telangāna 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[408/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[409/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[410/720] Goa 0.4604→0.4644 (rated 0.47) | Jammu and Kashmīr 0.4021→0.3973 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[411/720] Assam 0.4500→0.4500 (rated 0.45) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[412/720] Haryāna 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[413/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[414/720] Delhi 0.3800→0.3800 (rated 0.38) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[415/720] Odisha 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[416/720] Bihār 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[417/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[418/720] Tripura 0.3100→0.3100 (rated 0.31) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[419/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[420/720] Mizoram 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[421/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[422/720] Telangāna 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[423/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[424/720] Puducherry 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[425/720] Jammu and Kashmīr 0.3973→0.3916 (rated 0.35) | Goa 0.4644→0.4690 (rated 0.48) · 2.8s/pair · cache-hit 5358
+[426/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[427/720] West Bengal 0.3400→0.3400 (rated 0.34) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[428/720] Delhi 0.3800→0.3800 (rated 0.38) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[429/720] West Bengal 0.3400→0.3400 (rated 0.34) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[430/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[431/720] Jammu and Kashmīr 0.3916→0.3946 (rated 0.40) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[432/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[433/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[434/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[435/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[436/720] Kerala 0.5000→0.5000 (rated 0.50) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[437/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[438/720] Bihār 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[439/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[440/720] West Bengal 0.3400→0.3400 (rated 0.34) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[441/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[442/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Goa 0.4690→0.4649 (rated 0.44) · 2.8s/pair · cache-hit 5358
+[444/720] Kerala 0.5000→0.5000 (rated 0.50) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[445/720] Punjab 0.3500→0.3500 (rated 0.35) | Jammu and Kashmīr 0.3946→0.3990 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[446/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[447/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[448/720] Puducherry 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[449/720] Punjab 0.3500→0.3500 (rated 0.35) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[450/720] Sikkim 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[451/720] Assam 0.4500→0.4500 (rated 0.45) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[453/720] Haryāna 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[454/720] Kerala 0.5000→0.5000 (rated 0.50) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[455/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[456/720] Bihār 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[457/720] Manipur 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[458/720] Sikkim 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[459/720] West Bengal 0.3400→0.3400 (rated 0.34) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[460/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[462/720] Puducherry 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[463/720] Bihār 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[464/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[465/720] Ladākh 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[466/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3711→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[467/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[468/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[469/720] Chhattīsgarh 0.3711→0.3700 (rated 0.37) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[470/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[471/720] Assam 0.4500→0.4500 (rated 0.45) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[472/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[473/720] Assam 0.4500→0.4500 (rated 0.45) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[474/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[475/720] Manipur 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[476/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[477/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[478/720] Assam 0.4500→0.4500 (rated 0.45) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[479/720] Sikkim 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[480/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[481/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[482/720] Manipur 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[483/720] Manipur 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[484/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[485/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[486/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[487/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Goa 0.4649→0.4625 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[488/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[489/720] Assam 0.4500→0.4500 (rated 0.45) | Karnātaka 0.4300→0.4338 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[490/720] Assam 0.4500→0.4500 (rated 0.45) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[491/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[492/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[493/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[494/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[495/720] Bihār 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[496/720] Goa 0.4625→0.4597 (rated 0.45) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[497/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.3990→0.4000 (rated 0.40) · 2.8s/pair · cache-hit 5358
+[498/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[499/720] Karnātaka 0.4338→0.4315 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[500/720] Manipur 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[501/720] Manipur 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[502/720] Assam 0.4500→0.4500 (rated 0.45) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[503/720] Punjab 0.3500→0.3500 (rated 0.35) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[504/720] Karnātaka 0.4315→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[505/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Goa 0.4597→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[506/720] Sikkim 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[507/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[508/720] Sikkim 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[509/720] Bihār 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[510/720] Haryāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[511/720] Goa 0.4600→0.4575 (rated 0.45) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[512/720] Ladākh 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[513/720] Telangāna 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[514/720] Goa 0.4600→0.4565 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[515/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[516/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[517/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[518/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[519/720] Sikkim 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[521/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[522/720] Bihār 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[524/720] Telangāna 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[525/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[526/720] Manipur 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.4000→0.3971 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[527/720] Bihār 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[528/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[529/720] Kerala 0.5000→0.5000 (rated 0.50) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[530/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Goa 0.4565→0.4595 (rated 0.48) · 2.8s/pair · cache-hit 5358
+[531/720] Punjab 0.3500→0.3500 (rated 0.35) | Goa 0.4565→0.4534 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[532/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[533/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[534/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[535/720] Puducherry 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.3971→0.3944 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[536/720] Tripura 0.3100→0.3100 (rated 0.31) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[537/720] Mizoram 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[538/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[539/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[540/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[541/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[542/720] West Bengal 0.3400→0.3400 (rated 0.34) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[543/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[544/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[545/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[546/720] Uttarākhand 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[547/720] Manipur 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[548/720] Ladākh 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[549/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[550/720] Mizoram 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[551/720] Haryāna 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[552/720] Telangāna 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[553/720] Punjab 0.3500→0.3500 (rated 0.35) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[554/720] Kerala 0.5000→0.5000 (rated 0.50) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[555/720] Tripura 0.3100→0.3100 (rated 0.31) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[556/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[557/720] Kerala 0.5000→0.5000 (rated 0.50) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[558/720] Jammu and Kashmīr 0.3944→0.3924 (rated 0.39) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[559/720] Assam 0.4500→0.4500 (rated 0.45) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[560/720] Goa 0.4534→0.4506 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[561/720] Bihār 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[562/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[563/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[564/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[565/720] Delhi 0.3800→0.3800 (rated 0.38) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[566/720] Punjab 0.3500→0.3500 (rated 0.35) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[567/720] Tripura 0.3100→0.3100 (rated 0.31) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[568/720] Delhi 0.3800→0.3800 (rated 0.38) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[569/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Goa 0.4506→0.4484 (rated 0.44) · 2.8s/pair · cache-hit 5358
+[570/720] Goa 0.4506→0.4500 (rated 0.45) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[571/720] Haryāna 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[572/720] Tripura 0.3100→0.3100 (rated 0.31) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[573/720] Ladākh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[574/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[575/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[576/720] Haryāna 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[577/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[578/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[579/720] Puducherry 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[580/720] Bihār 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[581/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[582/720] Tripura 0.3100→0.3100 (rated 0.31) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[583/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Goa 0.4500→0.4476 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[584/720] Kerala 0.5000→0.5000 (rated 0.50) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[585/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[586/720] Puducherry 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[587/720] Mizoram 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[588/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[589/720] Odisha 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[590/720] Telangāna 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[591/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[592/720] Mizoram 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[593/720] Ladākh 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[594/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[595/720] Haryāna 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[596/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[597/720] Delhi 0.3800→0.3800 (rated 0.38) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[598/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[599/720] Sikkim 0.4300→0.4300 (rated 0.43) | Telangāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[600/720] Manipur 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[601/720] Bihār 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[603/720] Kerala 0.5000→0.5000 (rated 0.50) | Jammu and Kashmīr 0.3924→0.3943 (rated 0.40) · 2.8s/pair · cache-hit 5358
+[604/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[605/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.3924→0.3946 (rated 0.41) · 2.8s/pair · cache-hit 5358
+[606/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[607/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[608/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[609/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[610/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[611/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[612/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[613/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[614/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[615/720] Ladākh 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[616/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[617/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[618/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[619/720] West Bengal 0.3400→0.3419 (rated 0.35) | Assam 0.4500→0.4481 (rated 0.44) · 2.8s/pair · cache-hit 5358
+[620/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[621/720] Delhi 0.3800→0.3800 (rated 0.38) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[622/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[623/720] Sikkim 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[624/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[625/720] Kerala 0.5000→0.5000 (rated 0.50) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[626/720] Sikkim 0.4300→0.4300 (rated 0.43) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[627/720] Bihār 0.4300→0.4300 (rated 0.43) | Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[628/720] Puducherry 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[629/720] Haryāna 0.4300→0.4300 (rated 0.43) | West Bengal 0.3419→0.3405 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[630/720] Punjab 0.3500→0.3500 (rated 0.35) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[631/720] Punjab 0.3500→0.3500 (rated 0.35) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[632/720] Telangāna 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[633/720] Bihār 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[634/720] Goa 0.4476→0.4456 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[635/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[636/720] Assam 0.4481→0.4497 (rated 0.45) | Goa 0.4476→0.4457 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[637/720] Goa 0.4476→0.4506 (rated 0.50) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[638/720] Odisha 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[639/720] Tripura 0.3100→0.3100 (rated 0.31) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[640/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[641/720] Sikkim 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[642/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[643/720] Assam 0.4497→0.4500 (rated 0.45) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[644/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[645/720] Tamil Nādu 0.5300→0.5300 (rated 0.53) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[646/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[647/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[648/720] Punjab 0.3500→0.3500 (rated 0.35) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[649/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[650/720] Bihār 0.4300→0.4300 (rated 0.43) | Chandīgarh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[651/720] Haryāna 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[652/720] Odisha 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[653/720] Gujarāt 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[654/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Goa 0.4506→0.4521 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[655/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[656/720] Bihār 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[657/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Uttar Pradesh 0.4600→0.4600 (rated 0.46) · 2.8s/pair · cache-hit 5358
+[658/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3518 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[659/720] Puducherry 0.4300→0.4300 (rated 0.43) | Punjab 0.3500→0.3500 (rated 0.35) · 2.8s/pair · cache-hit 5358
+[660/720] Assam 0.4500→0.4500 (rated 0.45) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[661/720] Mizoram 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[662/720] Rājasthān 0.4300→0.4300 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+[663/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Uttarākhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[664/720] West Bengal 0.3405→0.3400 (rated 0.34) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[665/720] Karnātaka 0.4300→0.4300 (rated 0.43) | Gujarāt 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[666/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[667/720] Tripura 0.3100→0.3100 (rated 0.31) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[668/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[669/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[670/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[671/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[672/720] Mahārāshtra 0.3800→0.3800 (rated 0.38) | Lakshadweep 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[673/720] Mizoram 0.4300→0.4300 (rated 0.43) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[674/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[675/720] Punjab 0.3500→0.3500 (rated 0.35) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[676/720] Ladākh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[677/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[678/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[679/720] Goa 0.4521→0.4509 (rated 0.45) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[680/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[681/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[682/720] Meghālaya 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[683/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Jhārkhand 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[684/720] Chandīgarh 0.4300→0.4300 (rated 0.43) | Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[685/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[686/720] Punjab 0.3500→0.3500 (rated 0.35) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[687/720] Bihār 0.4300→0.4300 (rated 0.43) | Haryāna 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[688/720] Odisha 0.4300→0.4300 (rated 0.43) | Kerala 0.5000→0.5000 (rated 0.50) · 2.8s/pair · cache-hit 5358
+[689/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Bihār 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[690/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.3946→0.3960 (rated 0.41) · 2.8s/pair · cache-hit 5358
+[691/720] Madhya Pradesh 0.4300→0.4300 (rated 0.43) | Himāchal Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[692/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[693/720] West Bengal 0.3400→0.3400 (rated 0.34) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[694/720] Dādra and Nagar Haveli and Damān and Diu 0.4300→0.4300 (rated 0.43) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[695/720] Assam 0.4500→0.4500 (rated 0.45) | Nāgāland 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[696/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[697/720] Uttar Pradesh 0.4600→0.4600 (rated 0.46) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[698/720] Chhattīsgarh 0.3700→0.3700 (rated 0.37) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[699/720] Jhārkhand 0.4300→0.4300 (rated 0.43) | Karnātaka 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[700/720] Puducherry 0.4300→0.4300 (rated 0.43) | West Bengal 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5358
+[701/720] Jammu and Kashmīr 0.3960→0.3949 (rated 0.39) | Sikkim 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[702/720] Odisha 0.4300→0.4300 (rated 0.43) | Mizoram 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[703/720] Andhra Pradesh 0.4300→0.4300 (rated 0.43) | Manipur 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[704/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Delhi 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[705/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Odisha 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[706/720] Punjab 0.3500→0.3500 (rated 0.35) | Meghālaya 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[708/720] Punjab 0.3500→0.3500 (rated 0.35) | Andhra Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[709/720] Nāgāland 0.4300→0.4300 (rated 0.43) | Tamil Nādu 0.5300→0.5300 (rated 0.53) · 2.8s/pair · cache-hit 5358
+[710/720] Lakshadweep 0.4300→0.4300 (rated 0.43) | Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[711/720] Manipur 0.4300→0.4300 (rated 0.43) | Madhya Pradesh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[712/720] Ladākh 0.4300→0.4300 (rated 0.43) | Jammu and Kashmīr 0.3949→0.3939 (rated 0.39) · 2.8s/pair · cache-hit 5358
+[713/720] Sikkim 0.4300→0.4300 (rated 0.43) | Mahārāshtra 0.3800→0.3800 (rated 0.38) · 2.8s/pair · cache-hit 5358
+[714/720] Delhi 0.3800→0.3800 (rated 0.38) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[715/720] Arunāchal Pradesh 0.4300→0.4300 (rated 0.43) | Puducherry 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[716/720] Himāchal Pradesh 0.4300→0.4300 (rated 0.43) | Tripura 0.3100→0.3100 (rated 0.31) · 2.8s/pair · cache-hit 5358
+[717/720] Delhi 0.3800→0.3800 (rated 0.38) | Assam 0.4500→0.4500 (rated 0.45) · 2.8s/pair · cache-hit 5358
+[718/720] Andaman and Nicobar Islands 0.4300→0.4300 (rated 0.43) | Ladākh 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[719/720] Delhi 0.3800→0.3800 (rated 0.38) | Rājasthān 0.4300→0.4300 (rated 0.43) · 2.8s/pair · cache-hit 5358
+[720/720] Jammu and Kashmīr 0.3939→0.3955 (rated 0.43) | Chhattīsgarh 0.3700→0.3700 (rated 0.37) · 2.8s/pair · cache-hit 5358
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 720 pairs in 2043s · errors: 9 · total score movement: 0.328
+tokens — cache read: 3,788,106 · cache write: 21,432 · uncached in: 245,038 · out: 443,830
+OK: 233 countries, 2900 admin1 units; ranks written; meta written
