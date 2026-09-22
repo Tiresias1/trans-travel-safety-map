@@ -6342,3 +6342,342 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 680 pairs in 2627s · errors: 0 · total score movement: 0.847
 tokens — cache read: 3,613,220 · cache write: 21,380 · uncached in: 257,851 · out: 498,083
 OK: 233 countries, 3023 admin1 units; ranks written; meta written
+IDN done 2026-09-22 07:53:48
+=================== MYS 2026-09-22 07:53:48 ===================
+new: 10 · refreshed: 0 · skipped (untouchable): 6 · with deltas: 6 · countries touched: 1
+  mean drift MYS: +0.006 (10 units)
+wrote 3033 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3033 admin1 units; ranks written; meta written
+MYS: 16 units -> 320 pairs
+system prompt: 23,563 chars (~5,890 tokens) — cached
+admin1 mode: Malaysia (MYS) national 0.16 · 16 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 80 for ~10)
+pairs: 320 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 160 / 320: 0.07000/0.04009/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06013/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-MYS-20260922-075349.jsonl
+[1/320] Putrajaya 0.1558→0.1598 (rated 0.16) | Kedah 0.1100→0.1159 (rated 0.12) · 11.5s/pair
+[2/320] Terengganu 0.1100→0.1029 (rated 0.09) | Labuan 0.1558→0.1600 (rated 0.16) · 7.4s/pair
+[3/320] Johor 0.1200→0.1270 (rated 0.14) | Malacca 0.1200→0.1200 (rated 0.12) · 7.9s/pair
+[4/320] Kuala Lumpur 0.1858→0.1772 (rated 0.15) | Kelantan 0.0800→0.0755 (rated 0.07) · 6.8s/pair
+[5/320] Perak 0.1458→0.1524 (rated 0.16) | Terengganu 0.1100→0.1037 (rated 0.10) · 5.5s/pair · cache-hit 5330
+[6/320] Johor 0.1270→0.1332 (rated 0.14) | Labuan 0.1600→0.1600 (rated 0.16) · 6.0s/pair · cache-hit 5330
+[7/320] Perak 0.1458→0.1514 (rated 0.16) | Kelantan 0.0800→0.0866 (rated 0.10) · 6.7s/pair · cache-hit 5330
+[8/320] Selangor 0.1200→0.1269 (rated 0.14) | Labuan 0.1600→0.1600 (rated 0.16) · 6.8s/pair · cache-hit 5330
+[9/320] Terengganu 0.1029→0.1000 (rated 0.10) | Sarawak 0.1758→0.1800 (rated 0.18) · 6.4s/pair · cache-hit 5330
+[10/320] Johor 0.1332→0.1378 (rated 0.14) | Sarawak 0.1758→0.1831 (rated 0.20) · 6.7s/pair · cache-hit 5330
+[11/320] Kedah 0.1159→0.1195 (rated 0.12) | Sarawak 0.1831→0.1896 (rated 0.20) · 7.6s/pair · cache-hit 5330
+[12/320] Malacca 0.1200→0.1257 (rated 0.13) | Terengganu 0.1037→0.1088 (rated 0.11) · 7.7s/pair · cache-hit 5330
+[13/320] Kuala Lumpur 0.1772→0.1706 (rated 0.16) | Negeri Sembilan 0.1558→0.1600 (rated 0.16) · 7.4s/pair · cache-hit 5330
+[14/320] Perak 0.1515→0.1570 (rated 0.16) | Perlis 0.1558→0.1598 (rated 0.16) · 6.9s/pair · cache-hit 5330
+[15/320] Terengganu 0.1037→0.1091 (rated 0.11) | Johor 0.1270→0.1300 (rated 0.13) · 7.1s/pair · cache-hit 5330
+[16/320] Malacca 0.1257→0.1310 (rated 0.14) | Pahang 0.1358→0.1426 (rated 0.16) · 7.2s/pair · cache-hit 5330
+[17/320] Kuala Lumpur 0.1772→0.1699 (rated 0.16) | Malacca 0.1200→0.1274 (rated 0.14) · 7.3s/pair · cache-hit 5330
+[18/320] Kedah 0.1195→0.1145 (rated 0.11) | Sarawak 0.1896→0.1831 (rated 0.17) · 6.9s/pair · cache-hit 5330
+[19/320] Labuan 0.1600→0.1600 (rated 0.16) | Penang 0.1758→0.1695 (rated 0.16) · 6.8s/pair · cache-hit 5330
+[20/320] Penang 0.1758→0.1696 (rated 0.16) | Selangor 0.1269→0.1221 (rated 0.12) · 7.0s/pair · cache-hit 5330
+[21/320] Malacca 0.1274→0.1333 (rated 0.14) | Perlis 0.1598→0.1598 (rated 0.16) · 6.6s/pair · cache-hit 5330
+[22/320] Penang 0.1758→0.1695 (rated 0.16) | Malacca 0.1257→0.1300 (rated 0.13) · 6.4s/pair · cache-hit 5330
+[23/320] Kedah 0.1145→0.1100 (rated 0.11) | Perlis 0.1598→0.1600 (rated 0.16) · 6.4s/pair · cache-hit 5330
+[24/320] Labuan 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1699→0.1700 (rated 0.17) · 6.6s/pair · cache-hit 5330
+[25/320] Putrajaya 0.1598→0.1600 (rated 0.16) | Malacca 0.1300→0.1244 (rated 0.12) · 6.5s/pair · cache-hit 5330
+[26/320] Labuan 0.1600→0.1600 (rated 0.16) | Sarawak 0.1831→0.1800 (rated 0.18) · 6.2s/pair · cache-hit 5330
+[27/320] Kedah 0.1145→0.1100 (rated 0.11) | Terengganu 0.1091→0.1159 (rated 0.13) · 6.1s/pair · cache-hit 5330
+[28/320] Kedah 0.1100→0.1155 (rated 0.12) | Perak 0.1570→0.1598 (rated 0.16) · 6.1s/pair · cache-hit 5330
+[29/320] Sarawak 0.1800→0.1866 (rated 0.20) | Putrajaya 0.1600→0.1600 (rated 0.16) · 6.1s/pair · cache-hit 5330
+[30/320] Kedah 0.1100→0.1100 (rated 0.11) | Kelantan 0.0866→0.0815 (rated 0.08) · 6.0s/pair · cache-hit 5330
+[31/320] Penang 0.1695→0.1641 (rated 0.16) | Selangor 0.1221→0.1202 (rated 0.12) · 6.0s/pair · cache-hit 5330
+[32/320] Sabah 0.1758→0.1800 (rated 0.18) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 6.1s/pair · cache-hit 5330
+[33/320] Pahang 0.1426→0.1489 (rated 0.16) | Kelantan 0.0866→0.0810 (rated 0.08) · 6.4s/pair · cache-hit 5330
+[34/320] Pahang 0.1426→0.1482 (rated 0.16) | Kedah 0.1100→0.1160 (rated 0.13) · 6.4s/pair · cache-hit 5330
+[35/320] Sarawak 0.1866→0.1955 (rated 0.23) | Kedah 0.1100→0.1100 (rated 0.11) · 6.3s/pair · cache-hit 5330
+[36/320] Perlis 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1700→0.1700 (rated 0.17) · 6.3s/pair · cache-hit 5330
+[37/320] Labuan 0.1600→0.1600 (rated 0.16) | Terengganu 0.1159→0.1099 (rated 0.10) · 6.3s/pair · cache-hit 5330
+[38/320] Perlis 0.1600→0.1600 (rated 0.16) | Sabah 0.1800→0.1864 (rated 0.20) · 6.2s/pair · cache-hit 5330
+[39/320] Selangor 0.1202→0.1148 (rated 0.11) | Perak 0.1598→0.1600 (rated 0.16) · 6.2s/pair · cache-hit 5330
+[40/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Kedah 0.1100→0.1100 (rated 0.11) · 6.3s/pair · cache-hit 5330
+[41/320] Sabah 0.1800→0.1800 (rated 0.18) | Pahang 0.1482→0.1500 (rated 0.15) · 6.1s/pair · cache-hit 5330
+[42/320] Pahang 0.1482→0.1537 (rated 0.16) | Putrajaya 0.1600→0.1600 (rated 0.16) · 6.1s/pair · cache-hit 5330
+[43/320] Labuan 0.1600→0.1600 (rated 0.16) | Kelantan 0.0815→0.0800 (rated 0.08) · 6.1s/pair · cache-hit 5330
+[44/320] Selangor 0.1148→0.1100 (rated 0.11) | Johor 0.1300→0.1352 (rated 0.14) · 6.2s/pair · cache-hit 5330
+[45/320] Kelantan 0.0810→0.0756 (rated 0.07) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 6.1s/pair · cache-hit 5330
+[46/320] Selangor 0.1148→0.1212 (rated 0.13) | Kuala Lumpur 0.1700→0.1633 (rated 0.15) · 6.1s/pair · cache-hit 5330
+[47/320] Malacca 0.1245→0.1288 (rated 0.13) | Selangor 0.1148→0.1206 (rated 0.13) · 6.0s/pair · cache-hit 5330
+[48/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Kedah 0.1100→0.1100 (rated 0.11) · 6.0s/pair · cache-hit 5330
+[49/320] Johor 0.1352→0.1305 (rated 0.13) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 6.0s/pair · cache-hit 5330
+[50/320] Perlis 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1633→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[51/320] Terengganu 0.1099→0.1100 (rated 0.11) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[52/320] Kuala Lumpur 0.1633→0.1600 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[53/320] Terengganu 0.1099→0.1100 (rated 0.11) | Johor 0.1352→0.1399 (rated 0.14) · 5.9s/pair · cache-hit 5330
+[54/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Sarawak 0.1955→0.1888 (rated 0.17) · 6.0s/pair · cache-hit 5330
+[55/320] Kelantan 0.0756→0.0800 (rated 0.08) | Sarawak 0.1955→0.1898 (rated 0.18) · 5.9s/pair · cache-hit 5330
+[56/320] Kedah 0.1100→0.1100 (rated 0.11) | Perak 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[57/320] Johor 0.1305→0.1366 (rated 0.15) | Malacca 0.1288→0.1294 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[58/320] Perlis 0.1600→0.1600 (rated 0.16) | Kedah 0.1100→0.1151 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[59/320] Kedah 0.1151→0.1105 (rated 0.11) | Labuan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[60/320] Penang 0.1641→0.1600 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[61/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Pahang 0.1537→0.1584 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[62/320] Johor 0.1399→0.1399 (rated 0.14) | Terengganu 0.1100→0.1150 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[63/320] Pahang 0.1537→0.1472 (rated 0.14) | Sarawak 0.1898→0.1973 (rated 0.22) · 5.8s/pair · cache-hit 5330
+[64/320] Pahang 0.1584→0.1600 (rated 0.16) | Kedah 0.1105→0.1100 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[65/320] Malacca 0.1294→0.1338 (rated 0.14) | Sabah 0.1800→0.1857 (rated 0.20) · 5.6s/pair · cache-hit 5330
+[66/320] Pahang 0.1600→0.1600 (rated 0.16) | Penang 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[67/320] Kelantan 0.0800→0.0741 (rated 0.06) | Perlis 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[68/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Sabah 0.1857→0.1803 (rated 0.17) · 5.6s/pair · cache-hit 5330
+[69/320] Kedah 0.1105→0.1100 (rated 0.11) | Pahang 0.1472→0.1525 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[70/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[71/320] Perlis 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[72/320] Kuala Lumpur 0.1600→0.1649 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[73/320] Kelantan 0.0741→0.0688 (rated 0.06) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[74/320] Labuan 0.1600→0.1600 (rated 0.16) | Selangor 0.1206→0.1254 (rated 0.13) · 5.5s/pair · cache-hit 5330
+[75/320] Pahang 0.1600→0.1552 (rated 0.15) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[76/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Sabah 0.1803→0.1754 (rated 0.17) · 5.6s/pair · cache-hit 5330
+[77/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Johor 0.1399→0.1400 (rated 0.14) · 5.5s/pair · cache-hit 5330
+[78/320] Johor 0.1399→0.1400 (rated 0.14) | Labuan 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[79/320] Pahang 0.1600→0.1600 (rated 0.16) | Malacca 0.1338→0.1300 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[80/320] Kelantan 0.0688→0.0756 (rated 0.10) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[81/320] Pahang 0.1552→0.1594 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[82/320] Perak 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[83/320] Perlis 0.1600→0.1600 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[84/320] Kedah 0.1100→0.1156 (rated 0.13) | Perlis 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[85/320] Kuala Lumpur 0.1600→0.1647 (rated 0.17) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.4s/pair · cache-hit 5330
+[86/320] Johor 0.1400→0.1353 (rated 0.13) | Penang 0.1600→0.1600 (rated 0.16) · 5.4s/pair · cache-hit 5330
+[87/320] Penang 0.1600→0.1646 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.5s/pair · cache-hit 5330
+[88/320] Labuan 0.1600→0.1600 (rated 0.16) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.4s/pair · cache-hit 5330
+[89/320] Kelantan 0.0756→0.0796 (rated 0.08) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[90/320] Selangor 0.1254→0.1212 (rated 0.12) | Sabah 0.1754→0.1712 (rated 0.17) · 5.7s/pair · cache-hit 5330
+[91/320] Johor 0.1353→0.1390 (rated 0.14) | Sabah 0.1754→0.1803 (rated 0.19) · 5.7s/pair · cache-hit 5330
+[92/320] Kedah 0.1100→0.1100 (rated 0.11) | Pahang 0.1594→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[93/320] Selangor 0.1212→0.1266 (rated 0.14) | Kuala Lumpur 0.1647→0.1601 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[94/320] Selangor 0.1254→0.1295 (rated 0.13) | Kelantan 0.0756→0.0797 (rated 0.08) · 5.7s/pair · cache-hit 5330
+[95/320] Kuala Lumpur 0.1647→0.1703 (rated 0.18) | Perak 0.1600→0.1542 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[96/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[97/320] Kelantan 0.0796→0.0840 (rated 0.09) | Selangor 0.1212→0.1254 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[98/320] Sabah 0.1803→0.1800 (rated 0.18) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[99/320] Selangor 0.1295→0.1300 (rated 0.13) | Kelantan 0.0797→0.0800 (rated 0.08) · 5.6s/pair · cache-hit 5330
+[100/320] Perak 0.1542→0.1502 (rated 0.15) | Labuan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[101/320] Kelantan 0.0800→0.0756 (rated 0.07) | Perak 0.1542→0.1505 (rated 0.15) · 5.7s/pair · cache-hit 5330
+[102/320] Selangor 0.1254→0.1214 (rated 0.12) | Sabah 0.1800→0.1800 (rated 0.18) · 5.6s/pair · cache-hit 5330
+[103/320] Pahang 0.1600→0.1600 (rated 0.16) | Penang 0.1646→0.1606 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[104/320] Johor 0.1390→0.1400 (rated 0.14) | Sabah 0.1800→0.1800 (rated 0.18) · 5.7s/pair · cache-hit 5330
+[105/320] Selangor 0.1300→0.1256 (rated 0.12) | Kedah 0.1100→0.1100 (rated 0.11) · 5.6s/pair · cache-hit 5330
+[106/320] Malacca 0.1300→0.1300 (rated 0.13) | Sarawak 0.1973→0.1905 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[107/320] Terengganu 0.1150→0.1190 (rated 0.12) | Johor 0.1400→0.1400 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[108/320] Labuan 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[109/320] Penang 0.1606→0.1655 (rated 0.18) | Sabah 0.1800→0.1838 (rated 0.19) · 5.6s/pair · cache-hit 5330
+[110/320] Kedah 0.1100→0.1143 (rated 0.12) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[111/320] Terengganu 0.1150→0.1189 (rated 0.12) | Perlis 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[112/320] Labuan 0.1600→0.1600 (rated 0.16) | Sabah 0.1838→0.1902 (rated 0.22) · 5.7s/pair · cache-hit 5330
+[113/320] Sabah 0.1838→0.1870 (rated 0.19) | Penang 0.1655→0.1709 (rated 0.19) · 5.7s/pair · cache-hit 5330
+[114/320] Kuala Lumpur 0.1703→0.1702 (rated 0.17) | Perak 0.1505→0.1462 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[115/320] Kuala Lumpur 0.1703→0.1703 (rated 0.17) | Pahang 0.1600→0.1549 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[116/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Terengganu 0.1189→0.1200 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[117/320] Sarawak 0.1905→0.1855 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[118/320] Perak 0.1462→0.1509 (rated 0.16) | Terengganu 0.1189→0.1145 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[119/320] Selangor 0.1256→0.1293 (rated 0.13) | Pahang 0.1549→0.1586 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[120/320] Selangor 0.1256→0.1293 (rated 0.13) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[121/320] Pahang 0.1549→0.1587 (rated 0.16) | Kedah 0.1143→0.1106 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[122/320] Malacca 0.1300→0.1341 (rated 0.14) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[123/320] Johor 0.1400→0.1400 (rated 0.14) | Kuala Lumpur 0.1703→0.1662 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[124/320] Malacca 0.1300→0.1300 (rated 0.13) | Pahang 0.1587→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[125/320] Perak 0.1505→0.1547 (rated 0.16) | Terengganu 0.1189→0.1198 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[126/320] Pahang 0.1587→0.1599 (rated 0.16) | Malacca 0.1341→0.1378 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[127/320] Perlis 0.1600→0.1600 (rated 0.16) | Malacca 0.1341→0.1305 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[128/320] Pahang 0.1600→0.1600 (rated 0.16) | Kelantan 0.0756→0.0711 (rated 0.06) · 5.7s/pair · cache-hit 5330
+[129/320] Penang 0.1709→0.1700 (rated 0.17) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[130/320] Sarawak 0.1855→0.1815 (rated 0.17) | Sabah 0.1870→0.1828 (rated 0.17) · 5.7s/pair · cache-hit 5330
+[131/320] Perlis 0.1600→0.1600 (rated 0.16) | Malacca 0.1378→0.1332 (rated 0.12) · 5.6s/pair · cache-hit 5330
+[132/320] Johor 0.1400→0.1400 (rated 0.14) | Penang 0.1709→0.1668 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[133/320] Sabah 0.1828→0.1800 (rated 0.18) | Perlis 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[134/320] Perak 0.1547→0.1504 (rated 0.14) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[135/320] Johor 0.1400→0.1362 (rated 0.13) | Terengganu 0.1198→0.1161 (rated 0.11) · 5.6s/pair · cache-hit 5330
+[136/320] Labuan 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[137/320] Terengganu 0.1198→0.1200 (rated 0.12) | Penang 0.1700→0.1700 (rated 0.17) · 5.5s/pair · cache-hit 5330
+[138/320] Sabah 0.1800→0.1765 (rated 0.17) | Kuala Lumpur 0.1662→0.1620 (rated 0.15) · 5.6s/pair · cache-hit 5330
+[139/320] Sabah 0.1800→0.1800 (rated 0.18) | Kelantan 0.0711→0.0672 (rated 0.06) · 5.7s/pair · cache-hit 5330
+[140/320] Sabah 0.1800→0.1800 (rated 0.18) | Kelantan 0.0711→0.0757 (rated 0.09) · 5.7s/pair · cache-hit 5330
+[141/320] Sabah 0.1765→0.1731 (rated 0.17) | Terengganu 0.1200→0.1163 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[142/320] Malacca 0.1332→0.1301 (rated 0.13) | Kuala Lumpur 0.1662→0.1626 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[143/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Terengganu 0.1200→0.1200 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[144/320] Perak 0.1504→0.1543 (rated 0.16) | Penang 0.1700→0.1660 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[145/320] Johor 0.1362→0.1396 (rated 0.14) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[146/320] Selangor 0.1293→0.1300 (rated 0.13) | Kelantan 0.0757→0.0790 (rated 0.08) · 5.6s/pair · cache-hit 5330
+[147/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Terengganu 0.1200→0.1162 (rated 0.11) · 5.6s/pair · cache-hit 5330
+[148/320] Kuala Lumpur 0.1626→0.1602 (rated 0.16) | Selangor 0.1300→0.1263 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[149/320] Malacca 0.1301→0.1345 (rated 0.15) | Selangor 0.1300→0.1300 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[150/320] Sabah 0.1731→0.1767 (rated 0.18) | Kelantan 0.0757→0.0721 (rated 0.07) · 5.6s/pair · cache-hit 5330
+[151/320] Sarawak 0.1815→0.1777 (rated 0.17) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[152/320] Kelantan 0.0790→0.0836 (rated 0.10) | Selangor 0.1263→0.1223 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[153/320] Kuala Lumpur 0.1602→0.1600 (rated 0.16) | Sabah 0.1767→0.1806 (rated 0.19) · 5.7s/pair · cache-hit 5330
+[154/320] Kelantan 0.0790→0.0800 (rated 0.08) | Pahang 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[155/320] Perak 0.1543→0.1577 (rated 0.16) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[156/320] Perlis 0.1600→0.1600 (rated 0.16) | Sabah 0.1806→0.1842 (rated 0.19) · 5.6s/pair · cache-hit 5330
+[157/320] Penang 0.1660→0.1692 (rated 0.17) | Terengganu 0.1162→0.1194 (rated 0.12) · 5.6s/pair · cache-hit 5330
+[158/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Johor 0.1396→0.1400 (rated 0.14) · 5.6s/pair · cache-hit 5330
+[159/320] Kedah 0.1106→0.1100 (rated 0.11) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[160/320] Selangor 0.1223→0.1257 (rated 0.13) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[161/320] Kedah 0.1100→0.1135 (rated 0.12) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[162/320] Terengganu 0.1162→0.1195 (rated 0.12) | Perak 0.1577→0.1542 (rated 0.15) · 5.6s/pair · cache-hit 5330
+[163/320] Sarawak 0.1777→0.1800 (rated 0.18) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[164/320] Sarawak 0.1777→0.1800 (rated 0.18) | Kelantan 0.0800→0.0758 (rated 0.06) · 5.6s/pair · cache-hit 5330
+[165/320] Sabah 0.1842→0.1873 (rated 0.19) | Malacca 0.1345→0.1376 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[166/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Johor 0.1400→0.1400 (rated 0.14) · 5.6s/pair · cache-hit 5330
+[167/320] Malacca 0.1345→0.1308 (rated 0.12) | Selangor 0.1257→0.1229 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[168/320] Sabah 0.1842→0.1879 (rated 0.20) | Kuala Lumpur 0.1600→0.1632 (rated 0.17) · 5.8s/pair · cache-hit 5330
+[169/320] Sarawak 0.1800→0.1759 (rated 0.16) | Johor 0.1400→0.1400 (rated 0.14) · 5.7s/pair · cache-hit 5330
+[170/320] Kelantan 0.0758→0.0790 (rated 0.08) | Malacca 0.1376→0.1343 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[171/320] Labuan 0.1600→0.1600 (rated 0.16) | Selangor 0.1229→0.1261 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[172/320] Kuala Lumpur 0.1632→0.1604 (rated 0.16) | Johor 0.1400→0.1366 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[173/320] Kelantan 0.0758→0.0790 (rated 0.08) | Terengganu 0.1195→0.1161 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[174/320] Kedah 0.1135→0.1166 (rated 0.12) | Labuan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[175/320] Perlis 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[176/320] Selangor 0.1261→0.1290 (rated 0.13) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[177/320] Terengganu 0.1195→0.1200 (rated 0.12) | Kuala Lumpur 0.1632→0.1603 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[178/320] Selangor 0.1290→0.1298 (rated 0.13) | Kelantan 0.0790→0.0823 (rated 0.09) · 5.7s/pair · cache-hit 5330
+[179/320] Sarawak 0.1759→0.1729 (rated 0.17) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[180/320] Perak 0.1542→0.1572 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[181/320] Labuan 0.1600→0.1600 (rated 0.16) | Kedah 0.1166→0.1201 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[182/320] Selangor 0.1298→0.1270 (rated 0.12) | Penang 0.1692→0.1656 (rated 0.15) · 5.6s/pair · cache-hit 5330
+[183/320] Kelantan 0.0823→0.0800 (rated 0.08) | Perak 0.1542→0.1572 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[184/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Terengganu 0.1200→0.1232 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[185/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[186/320] Selangor 0.1298→0.1266 (rated 0.12) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[187/320] Terengganu 0.1200→0.1200 (rated 0.12) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[188/320] Johor 0.1366→0.1337 (rated 0.13) | Kuala Lumpur 0.1603→0.1601 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[189/320] Penang 0.1656→0.1684 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[190/320] Kedah 0.1201→0.1170 (rated 0.11) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[191/320] Kuala Lumpur 0.1601→0.1600 (rated 0.16) | Johor 0.1337→0.1365 (rated 0.14) · 5.6s/pair · cache-hit 5330
+[192/320] Sabah 0.1879→0.1899 (rated 0.19) | Johor 0.1337→0.1365 (rated 0.14) · 5.6s/pair · cache-hit 5330
+[193/320] Penang 0.1684→0.1654 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[194/320] Labuan 0.1600→0.1600 (rated 0.16) | Selangor 0.1266→0.1293 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[195/320] Kedah 0.1170→0.1202 (rated 0.13) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[196/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Selangor 0.1293→0.1300 (rated 0.13) · 5.6s/pair · cache-hit 5330
+[197/320] Kelantan 0.0800→0.0800 (rated 0.08) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[198/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Terengganu 0.1200→0.1164 (rated 0.10) · 5.6s/pair · cache-hit 5330
+[199/320] Sarawak 0.1729→0.1697 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[200/320] Sarawak 0.1729→0.1763 (rated 0.19) | Perlis 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[201/320] Kuala Lumpur 0.1600→0.1629 (rated 0.17) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.6s/pair · cache-hit 5330
+[202/320] Sarawak 0.1763→0.1795 (rated 0.19) | Terengganu 0.1164→0.1135 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[203/320] Sarawak 0.1697→0.1727 (rated 0.18) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[204/320] Johor 0.1365→0.1341 (rated 0.13) | Penang 0.1654→0.1623 (rated 0.15) · 5.7s/pair · cache-hit 5330
+[205/320] Sabah 0.1899→0.1864 (rated 0.17) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[206/320] Kelantan 0.0800→0.0800 (rated 0.08) | Selangor 0.1300→0.1300 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[207/320] Penang 0.1654→0.1628 (rated 0.16) | Selangor 0.1300→0.1300 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[208/320] Kuala Lumpur 0.1629→0.1604 (rated 0.16) | Terengganu 0.1135→0.1161 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[209/320] Selangor 0.1300→0.1300 (rated 0.13) | Pahang 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[210/320] Sabah 0.1864→0.1837 (rated 0.18) | Penang 0.1628→0.1656 (rated 0.17) · 5.7s/pair · cache-hit 5330
+[211/320] Labuan 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1604→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[212/320] Pahang 0.1600→0.1600 (rated 0.16) | Kedah 0.1202→0.1230 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[213/320] Kelantan 0.0800→0.0767 (rated 0.06) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.7s/pair · cache-hit 5330
+[214/320] Perlis 0.1600→0.1600 (rated 0.16) | Selangor 0.1300→0.1262 (rated 0.10) · 5.7s/pair · cache-hit 5330
+[215/320] Perak 0.1572→0.1549 (rated 0.15) | Malacca 0.1343→0.1315 (rated 0.12) · 5.7s/pair · cache-hit 5330
+[216/320] Pahang 0.1600→0.1600 (rated 0.16) | Johor 0.1341→0.1367 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[217/320] Perlis 0.1600→0.1600 (rated 0.16) | Terengganu 0.1161→0.1137 (rated 0.11) · 5.7s/pair · cache-hit 5330
+[218/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[219/320] Sarawak 0.1727→0.1751 (rated 0.18) | Selangor 0.1262→0.1284 (rated 0.13) · 5.7s/pair · cache-hit 5330
+[220/320] Perlis 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[221/320] Kedah 0.1230→0.1201 (rated 0.11) | Malacca 0.1315→0.1342 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[222/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[223/320] Johor 0.1341→0.1366 (rated 0.14) | Perak 0.1572→0.1594 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[224/320] Sarawak 0.1751→0.1774 (rated 0.18) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[225/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Johor 0.1366→0.1342 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[226/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Selangor 0.1284→0.1300 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[227/320] Perlis 0.1600→0.1600 (rated 0.16) | Penang 0.1656→0.1633 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[228/320] Perak 0.1594→0.1569 (rated 0.15) | Penang 0.1656→0.1680 (rated 0.17) · 5.8s/pair · cache-hit 5330
+[229/320] Johor 0.1367→0.1389 (rated 0.14) | Kelantan 0.0767→0.0790 (rated 0.08) · 5.8s/pair · cache-hit 5330
+[230/320] Sabah 0.1837→0.1815 (rated 0.18) | Perak 0.1549→0.1526 (rated 0.15) · 5.8s/pair · cache-hit 5330
+[231/320] Perak 0.1569→0.1590 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[232/320] Labuan 0.1600→0.1600 (rated 0.16) | Kelantan 0.0790→0.0766 (rated 0.07) · 5.8s/pair · cache-hit 5330
+[233/320] Selangor 0.1300→0.1300 (rated 0.13) | Putrajaya 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[234/320] Selangor 0.1300→0.1277 (rated 0.12) | Kedah 0.1201→0.1178 (rated 0.11) · 5.8s/pair · cache-hit 5330
+[235/320] Sarawak 0.1774→0.1752 (rated 0.17) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[236/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Selangor 0.1300→0.1300 (rated 0.13) · 5.9s/pair · cache-hit 5330
+[237/320] Sabah 0.1815→0.1840 (rated 0.19) | Kuala Lumpur 0.1600→0.1575 (rated 0.15) · 5.8s/pair · cache-hit 5330
+[238/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1575 (rated 0.15) · 5.9s/pair · cache-hit 5330
+[239/320] Labuan 0.1600→0.1600 (rated 0.16) | Sabah 0.1840→0.1819 (rated 0.18) · 5.8s/pair · cache-hit 5330
+[240/320] Malacca 0.1342→0.1367 (rated 0.15) | Terengganu 0.1137→0.1156 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[241/320] Perlis 0.1600→0.1600 (rated 0.16) | Terengganu 0.1137→0.1159 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[242/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[243/320] Kedah 0.1178→0.1198 (rated 0.12) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[244/320] Kedah 0.1178→0.1157 (rated 0.11) | Malacca 0.1367→0.1388 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[245/320] Sabah 0.1819→0.1796 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[246/320] Kelantan 0.0766→0.0789 (rated 0.09) | Pahang 0.1575→0.1592 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[247/320] Perlis 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1600→0.1622 (rated 0.17) · 5.8s/pair · cache-hit 5330
+[248/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[249/320] Selangor 0.1300→0.1274 (rated 0.12) | Sabah 0.1819→0.1847 (rated 0.20) · 5.8s/pair · cache-hit 5330
+[250/320] Pahang 0.1592→0.1600 (rated 0.16) | Kedah 0.1157→0.1137 (rated 0.11) · 5.8s/pair · cache-hit 5330
+[251/320] Terengganu 0.1159→0.1182 (rated 0.13) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[252/320] Penang 0.1680→0.1659 (rated 0.16) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[253/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[254/320] Kuala Lumpur 0.1600→0.1624 (rated 0.17) | Terengganu 0.1159→0.1133 (rated 0.10) · 5.8s/pair · cache-hit 5330
+[255/320] Labuan 0.1600→0.1600 (rated 0.16) | Sarawak 0.1752→0.1771 (rated 0.18) · 5.8s/pair · cache-hit 5330
+[256/320] Kelantan 0.0789→0.0797 (rated 0.08) | Kedah 0.1137→0.1160 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[257/320] Kedah 0.1137→0.1156 (rated 0.12) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[258/320] Johor 0.1389→0.1400 (rated 0.14) | Perak 0.1590→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[259/320] Johor 0.1389→0.1400 (rated 0.14) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[260/320] Penang 0.1659→0.1636 (rated 0.16) | Terengganu 0.1133→0.1160 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[261/320] Terengganu 0.1133→0.1117 (rated 0.11) | Kelantan 0.0797→0.0778 (rated 0.07) · 5.8s/pair · cache-hit 5330
+[262/320] Perak 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[263/320] Sarawak 0.1771→0.1788 (rated 0.18) | Kedah 0.1156→0.1138 (rated 0.11) · 5.8s/pair · cache-hit 5330
+[264/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[265/320] Penang 0.1659→0.1640 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[266/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Sarawak 0.1771→0.1788 (rated 0.18) · 5.8s/pair · cache-hit 5330
+[267/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[268/320] Penang 0.1640→0.1623 (rated 0.16) | Selangor 0.1274→0.1291 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[269/320] Kelantan 0.0778→0.0756 (rated 0.06) | Labuan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[270/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Kelantan 0.0778→0.0757 (rated 0.06) · 5.8s/pair · cache-hit 5330
+[271/320] Labuan 0.1600→0.1600 (rated 0.16) | Penang 0.1623→0.1608 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[272/320] Johor 0.1400→0.1377 (rated 0.12) | Terengganu 0.1117→0.1104 (rated 0.11) · 5.8s/pair · cache-hit 5330
+[273/320] Sarawak 0.1788→0.1800 (rated 0.18) | Kelantan 0.0778→0.0794 (rated 0.08) · 5.8s/pair · cache-hit 5330
+[274/320] Perak 0.1600→0.1600 (rated 0.16) | Penang 0.1608→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[275/320] Perak 0.1600→0.1600 (rated 0.16) | Terengganu 0.1117→0.1098 (rated 0.10) · 5.8s/pair · cache-hit 5330
+[276/320] Perak 0.1600→0.1600 (rated 0.16) | Malacca 0.1388→0.1400 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[277/320] Kedah 0.1138→0.1122 (rated 0.11) | Johor 0.1377→0.1392 (rated 0.14) · 5.8s/pair · cache-hit 5330
+[278/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Selangor 0.1291→0.1274 (rated 0.12) · 5.8s/pair · cache-hit 5330
+[279/320] Labuan 0.1600→0.1600 (rated 0.16) | Kelantan 0.0757→0.0772 (rated 0.08) · 5.8s/pair · cache-hit 5330
+[280/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Kelantan 0.0794→0.0815 (rated 0.10) · 5.8s/pair · cache-hit 5330
+[281/320] Sabah 0.1847→0.1829 (rated 0.17) | Perlis 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[282/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Johor 0.1392→0.1375 (rated 0.13) · 5.8s/pair · cache-hit 5330
+[283/320] Malacca 0.1400→0.1400 (rated 0.14) | Penang 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[284/320] Selangor 0.1274→0.1287 (rated 0.13) | Penang 0.1600→0.1616 (rated 0.17) · 5.8s/pair · cache-hit 5330
+[285/320] Perak 0.1600→0.1582 (rated 0.15) | Penang 0.1600→0.1618 (rated 0.17) · 5.8s/pair · cache-hit 5330
+[286/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Kelantan 0.0815→0.0801 (rated 0.08) · 5.8s/pair · cache-hit 5330
+[287/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Pahang 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[288/320] Selangor 0.1287→0.1271 (rated 0.12) | Kuala Lumpur 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[289/320] Johor 0.1392→0.1399 (rated 0.14) | Sarawak 0.1800→0.1817 (rated 0.19) · 5.9s/pair · cache-hit 5330
+[290/320] Kuala Lumpur 0.1600→0.1600 (rated 0.16) | Kedah 0.1122→0.1140 (rated 0.13) · 5.9s/pair · cache-hit 5330
+[291/320] Terengganu 0.1098→0.1078 (rated 0.08) | Kedah 0.1122→0.1110 (rated 0.10) · 5.8s/pair · cache-hit 5330
+[292/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[293/320] Perlis 0.1600→0.1600 (rated 0.16) | Perak 0.1582→0.1595 (rated 0.16) · 5.8s/pair · cache-hit 5330
+[294/320] Pahang 0.1600→0.1616 (rated 0.17) | Kuala Lumpur 0.1600→0.1584 (rated 0.15) · 5.9s/pair · cache-hit 5330
+[295/320] Penang 0.1618→0.1635 (rated 0.18) | Kelantan 0.0801→0.0800 (rated 0.08) · 5.9s/pair · cache-hit 5330
+[296/320] Kedah 0.1122→0.1108 (rated 0.11) | Penang 0.1618→0.1633 (rated 0.17) · 5.9s/pair · cache-hit 5330
+[297/320] Kelantan 0.0801→0.0800 (rated 0.08) | Terengganu 0.1078→0.1091 (rated 0.11) · 5.9s/pair · cache-hit 5330
+[298/320] Kuala Lumpur 0.1584→0.1596 (rated 0.16) | Labuan 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[299/320] Johor 0.1399→0.1400 (rated 0.14) | Sabah 0.1829→0.1814 (rated 0.17) · 5.9s/pair · cache-hit 5330
+[300/320] Sarawak 0.1817→0.1838 (rated 0.22) | Perak 0.1595→0.1595 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[301/320] Kuala Lumpur 0.1596→0.1600 (rated 0.16) | Malacca 0.1400→0.1400 (rated 0.14) · 5.9s/pair · cache-hit 5330
+[302/320] Negeri Sembilan 0.1600→0.1600 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[303/320] Labuan 0.1600→0.1600 (rated 0.16) | Kelantan 0.0800→0.0800 (rated 0.08) · 5.9s/pair · cache-hit 5330
+[304/320] Penang 0.1633→0.1621 (rated 0.16) | Johor 0.1400→0.1400 (rated 0.14) · 5.9s/pair · cache-hit 5330
+[305/320] Penang 0.1633→0.1622 (rated 0.16) | Terengganu 0.1091→0.1078 (rated 0.10) · 5.9s/pair · cache-hit 5330
+[306/320] Terengganu 0.1091→0.1104 (rated 0.12) | Selangor 0.1271→0.1281 (rated 0.13) · 5.9s/pair · cache-hit 5330
+[307/320] Kedah 0.1108→0.1124 (rated 0.13) | Kelantan 0.0800→0.0800 (rated 0.08) · 5.9s/pair · cache-hit 5330
+[308/320] Kedah 0.1108→0.1120 (rated 0.12) | Penang 0.1622→0.1633 (rated 0.17) · 6.0s/pair · cache-hit 5330
+[309/320] Terengganu 0.1104→0.1118 (rated 0.13) | Selangor 0.1281→0.1289 (rated 0.13) · 6.0s/pair · cache-hit 5330
+[310/320] Pahang 0.1616→0.1601 (rated 0.14) | Selangor 0.1281→0.1271 (rated 0.12) · 6.0s/pair · cache-hit 5330
+[311/320] Putrajaya 0.1600→0.1600 (rated 0.16) | Penang 0.1633→0.1645 (rated 0.17) · 6.0s/pair · cache-hit 5330
+[312/320] Perlis 0.1600→0.1600 (rated 0.16) | Kelantan 0.0800→0.0784 (rated 0.06) · 6.0s/pair · cache-hit 5330
+[313/320] Penang 0.1645→0.1634 (rated 0.16) | Perlis 0.1600→0.1600 (rated 0.16) · 6.0s/pair · cache-hit 5330
+[314/320] Kedah 0.1120→0.1131 (rated 0.12) | Kelantan 0.0800→0.0800 (rated 0.08) · 6.0s/pair · cache-hit 5330
+[315/320] Kelantan 0.0800→0.0800 (rated 0.08) | Pahang 0.1616→0.1605 (rated 0.16) · 5.9s/pair · cache-hit 5330
+[316/320] Sabah 0.1814→0.1826 (rated 0.20) | Penang 0.1634→0.1643 (rated 0.17) · 6.0s/pair · cache-hit 5330
+[317/320] Labuan 0.1600→0.1600 (rated 0.16) | Kedah 0.1131→0.1142 (rated 0.12) · 6.0s/pair · cache-hit 5330
+[318/320] Malacca 0.1400→0.1400 (rated 0.14) | Kelantan 0.0800→0.0789 (rated 0.07) · 6.0s/pair · cache-hit 5330
+[319/320] Johor 0.1400→0.1388 (rated 0.13) | Negeri Sembilan 0.1600→0.1600 (rated 0.16) · 6.0s/pair · cache-hit 5330
+[320/320] Sarawak 0.1838→0.1850 (rated 0.20) | Perak 0.1595→0.1598 (rated 0.16) · 6.0s/pair · cache-hit 5330
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 320 pairs in 1926s · errors: 0 · total score movement: 1.285
+tokens — cache read: 1,684,280 · cache write: 21,320 · uncached in: 127,876 · out: 350,488
+OK: 233 countries, 3033 admin1 units; ranks written; meta written
