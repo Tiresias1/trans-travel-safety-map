@@ -4884,3 +4884,762 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 320 pairs in 1330s · errors: 0 · total score movement: 0.146
 tokens — cache read: 1,677,960 · cache write: 21,240 · uncached in: 147,935 · out: 259,709
 OK: 233 countries, 2982 admin1 units; ranks written; meta written
+POL done 2026-09-22 06:05:43
+=================== NGA 2026-09-22 06:05:43 ===================
+new: 22 · refreshed: 0 · skipped (untouchable): 15 · with deltas: 3 · countries touched: 1
+  mean drift NGA: -0.002 (22 units)
+wrote 3004 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3004 admin1 units; ranks written; meta written
+NGA: 37 units -> 740 pairs
+[244] ERROR 27671186B63712480376187/27671186B99661334382691: no scores in response (stop_reason=max_tokens): 'The two dossiers describe **Katsina** (Division A) and **Edo** (Division B), both in Nigeria.\n\n### Analysis\n\n**National Context:** Nigeria\'s score is 0.08 ("Do Not Travel"). This accounts for the SSMP'
+system prompt: 23,679 chars (~5,919 tokens) — cached
+admin1 mode: Nigeria (NGA) national 0.08 · 37 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 185 for ~10)
+pairs: 740 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 370 / 740: 0.07000/0.04004/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06005/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-NGA-20260922-060544.jsonl
+[1/740] Bayelsa 0.0844→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 14.2s/pair
+[2/740] Ekiti 0.0844→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 8.2s/pair
+[3/740] Gombe 0.0600→0.0600 (rated 0.06) | Rivers 0.0844→0.0800 (rated 0.08) · 5.6s/pair
+[4/740] Plateau 0.0844→0.0800 (rated 0.08) | Benue 0.0844→0.0800 (rated 0.08) · 4.8s/pair · cache-hit 5359
+[5/740] Yobe 0.0400→0.0400 (rated 0.04) | Zamfara 0.0500→0.0441 (rated 0.04) · 5.0s/pair
+[6/740] Borno 0.0600→0.0600 (rated 0.06) | Taraba 0.0544→0.0598 (rated 0.06) · 5.9s/pair · cache-hit 5359
+[7/740] Ebonyi 0.0844→0.0800 (rated 0.08) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[8/740] Yobe 0.0400→0.0400 (rated 0.04) | Ebonyi 0.0844→0.0800 (rated 0.08) · 6.7s/pair · cache-hit 5359
+[9/740] Yobe 0.0400→0.0400 (rated 0.04) | Edo 0.0600→0.0600 (rated 0.06) · 5.9s/pair · cache-hit 5359
+[10/740] Enugu 0.0844→0.0800 (rated 0.08) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.8s/pair · cache-hit 5359
+[11/740] Kaduna 0.0600→0.0600 (rated 0.06) | Lagos 0.1044→0.0969 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[12/740] Taraba 0.0598→0.0600 (rated 0.06) | Niger 0.0600→0.0600 (rated 0.06) · 6.2s/pair · cache-hit 5359
+[13/740] Plateau 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 6.2s/pair · cache-hit 5359
+[14/740] Imo 0.0600→0.0560 (rated 0.06) | Abia 0.0844→0.0800 (rated 0.08) · 5.9s/pair · cache-hit 5359
+[15/740] Nasarawa 0.0844→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 6.0s/pair · cache-hit 5359
+[16/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.8s/pair · cache-hit 5359
+[17/740] Akwa Ibom 0.0844→0.0800 (rated 0.08) | Osun 0.0844→0.0800 (rated 0.08) · 5.8s/pair · cache-hit 5359
+[18/740] Ondo 0.0844→0.0800 (rated 0.08) | Anambra 0.0844→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[19/740] Niger 0.0600→0.0560 (rated 0.06) | Cross River 0.0844→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[20/740] Taraba 0.0598→0.0539 (rated 0.05) | Zamfara 0.0441→0.0497 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[21/740] Abia 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[22/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[23/740] Abia 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[24/740] Kebbi 0.0600→0.0600 (rated 0.06) | Ondo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[25/740] Zamfara 0.0441→0.0494 (rated 0.05) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[26/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[27/740] Borno 0.0600→0.0560 (rated 0.06) | Oyo 0.0844→0.0800 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[28/740] Zamfara 0.0497→0.0450 (rated 0.04) | Taraba 0.0539→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[29/740] Anambra 0.0800→0.0800 (rated 0.08) | Lagos 0.0969→0.0915 (rated 0.09) · 5.6s/pair · cache-hit 5359
+[30/740] Delta 0.0844→0.0800 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.5s/pair · cache-hit 5359
+[31/740] Zamfara 0.0497→0.0500 (rated 0.05) | Yobe 0.0400→0.0400 (rated 0.04) · 5.3s/pair · cache-hit 5359
+[32/740] Kogi 0.0844→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[33/740] Anambra 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[34/740] Delta 0.0844→0.0800 (rated 0.08) | Kano 0.0300→0.0300 (rated 0.03) · 5.3s/pair · cache-hit 5359
+[35/740] Abia 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.3s/pair · cache-hit 5359
+[36/740] Oyo 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[37/740] Niger 0.0560→0.0600 (rated 0.06) | Katsina 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[38/740] Lagos 0.0915→0.0970 (rated 0.10) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[39/740] Kaduna 0.0600→0.0600 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[40/740] Kwara 0.0844→0.0800 (rated 0.08) | Edo 0.0600→0.0560 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[41/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[42/740] Niger 0.0600→0.0600 (rated 0.06) | Ogun 0.0844→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[43/740] Katsina 0.0600→0.0600 (rated 0.06) | Benue 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[44/740] Ekiti 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0456 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[45/740] Kogi 0.0800→0.0800 (rated 0.08) | Gombe 0.0600→0.0600 (rated 0.06) · 5.5s/pair · cache-hit 5359
+[46/740] Taraba 0.0500→0.0500 (rated 0.05) | Kogi 0.0800→0.0800 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[47/740] Kogi 0.0800→0.0800 (rated 0.08) | Yobe 0.0456→0.0405 (rated 0.04) · 5.5s/pair · cache-hit 5359
+[48/740] Edo 0.0600→0.0550 (rated 0.06) | Bauchi 0.0200→0.0200 (rated 0.02) · 5.5s/pair · cache-hit 5359
+[49/740] Ondo 0.0800→0.0800 (rated 0.08) | Yobe 0.0456→0.0405 (rated 0.04) · 5.4s/pair · cache-hit 5359
+[50/740] Imo 0.0560→0.0600 (rated 0.06) | Anambra 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[51/740] Ogun 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[52/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[53/740] Imo 0.0560→0.0600 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[54/740] Abia 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[55/740] Adamawa 0.0544→0.0560 (rated 0.06) | Jigawa 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[56/740] Ondo 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[57/740] Rivers 0.0800→0.0800 (rated 0.08) | Kano 0.0300→0.0300 (rated 0.03) · 5.4s/pair · cache-hit 5359
+[58/740] Kebbi 0.0600→0.0600 (rated 0.06) | Osun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[59/740] Osun 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[60/740] Ogun 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[61/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Borno 0.0560→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[62/740] Enugu 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[63/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Borno 0.0560→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[64/740] Kebbi 0.0600→0.0560 (rated 0.06) | Delta 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[65/740] Enugu 0.0800→0.0800 (rated 0.08) | Kano 0.0300→0.0300 (rated 0.03) · 5.3s/pair · cache-hit 5359
+[66/740] Abia 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[67/740] Kogi 0.0800→0.0800 (rated 0.08) | Edo 0.0550→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[68/740] Delta 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[69/740] Abuja Federal Capital Territory 0.0500→0.0555 (rated 0.06) | Delta 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[70/740] Kano 0.0300→0.0300 (rated 0.03) | Oyo 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[71/740] Edo 0.0550→0.0600 (rated 0.06) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[72/740] Gombe 0.0600→0.0600 (rated 0.06) | Edo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[73/740] Ondo 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0551 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[74/740] Delta 0.0800→0.0800 (rated 0.08) | Borno 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[75/740] Plateau 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[76/740] Kogi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[77/740] Jigawa 0.0560→0.0600 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[78/740] Bauchi 0.0200→0.0200 (rated 0.02) | Adamawa 0.0560→0.0510 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[79/740] Borno 0.0560→0.0600 (rated 0.06) | Kebbi 0.0560→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[80/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Adamawa 0.0560→0.0510 (rated 0.05) · 5.4s/pair · cache-hit 5359
+[81/740] Adamawa 0.0510→0.0455 (rated 0.04) | Delta 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[82/740] Kaduna 0.0600→0.0600 (rated 0.06) | Kano 0.0300→0.0365 (rated 0.05) · 5.4s/pair · cache-hit 5359
+[83/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[84/740] Gombe 0.0600→0.0600 (rated 0.06) | Osun 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[85/740] Taraba 0.0500→0.0554 (rated 0.06) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[86/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[87/740] Kaduna 0.0600→0.0600 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[88/740] Delta 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[89/740] Osun 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[90/740] Imo 0.0551→0.0600 (rated 0.06) | Lagos 0.0970→0.0909 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[91/740] Kaduna 0.0600→0.0560 (rated 0.06) | Yobe 0.0405→0.0360 (rated 0.04) · 5.3s/pair · cache-hit 5359
+[92/740] Osun 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[93/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Imo 0.0551→0.0599 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[94/740] Katsina 0.0600→0.0600 (rated 0.06) | Niger 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[95/740] Anambra 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[96/740] Gombe 0.0600→0.0600 (rated 0.06) | Taraba 0.0554→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[97/740] Osun 0.0800→0.0800 (rated 0.08) | Taraba 0.0554→0.0506 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[98/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[99/740] Jigawa 0.0600→0.0600 (rated 0.06) | Taraba 0.0554→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[100/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Oyo 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[101/740] Kano 0.0365→0.0316 (rated 0.03) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.4s/pair · cache-hit 5359
+[102/740] Anambra 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[103/740] Ekiti 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[104/740] Osun 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[105/740] Gombe 0.0600→0.0600 (rated 0.06) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[106/740] Jigawa 0.0600→0.0600 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[107/740] Zamfara 0.0500→0.0500 (rated 0.05) | Cross River 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[108/740] Adamawa 0.0455→0.0407 (rated 0.04) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[109/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Anambra 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[110/740] Imo 0.0599→0.0600 (rated 0.06) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[111/740] Katsina 0.0600→0.0560 (rated 0.06) | Rivers 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[112/740] Kaduna 0.0600→0.0600 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[113/740] Plateau 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[114/740] Benue 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[115/740] Borno 0.0600→0.0600 (rated 0.06) | Rivers 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[116/740] Kebbi 0.0600→0.0560 (rated 0.06) | Edo 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[117/740] Gombe 0.0600→0.0600 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[118/740] Kano 0.0316→0.0300 (rated 0.03) | Kwara 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[119/740] Taraba 0.0600→0.0600 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[120/740] Lagos 0.0909→0.0900 (rated 0.09) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[121/740] Gombe 0.0600→0.0560 (rated 0.06) | Borno 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[122/740] Ogun 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[123/740] Ekiti 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[124/740] Kaduna 0.0600→0.0600 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[125/740] Jigawa 0.0600→0.0600 (rated 0.06) | Edo 0.0560→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[126/740] Niger 0.0560→0.0600 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[127/740] Oyo 0.0800→0.0800 (rated 0.08) | Kano 0.0300→0.0300 (rated 0.03) · 5.4s/pair · cache-hit 5359
+[128/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Borno 0.0560→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[129/740] Sokoto 0.0300→0.0260 (rated 0.03) | Niger 0.0560→0.0560 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[130/740] Ogun 0.0800→0.0800 (rated 0.08) | Borno 0.0560→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[131/740] Jigawa 0.0600→0.0600 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[132/740] Edo 0.0600→0.0600 (rated 0.06) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.5s/pair · cache-hit 5359
+[133/740] Taraba 0.0600→0.0651 (rated 0.07) | Benue 0.0800→0.0800 (rated 0.08) · 5.5s/pair · cache-hit 5359
+[134/740] Cross River 0.0800→0.0800 (rated 0.08) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[135/740] Oyo 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[136/740] Ogun 0.0800→0.0800 (rated 0.08) | Yobe 0.0360→0.0400 (rated 0.04) · 5.4s/pair · cache-hit 5359
+[137/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[138/740] Lagos 0.0900→0.0900 (rated 0.09) | Anambra 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[139/740] Kano 0.0300→0.0260 (rated 0.03) | Ogun 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[140/740] Niger 0.0560→0.0600 (rated 0.06) | Oyo 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[141/740] Plateau 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[142/740] Kano 0.0300→0.0300 (rated 0.03) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.4s/pair · cache-hit 5359
+[143/740] Kogi 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[144/740] Anambra 0.0800→0.0800 (rated 0.08) | Gombe 0.0560→0.0560 (rated 0.06) · 5.4s/pair · cache-hit 5359
+[145/740] Abuja Federal Capital Territory 0.0500→0.0550 (rated 0.06) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[146/740] Imo 0.0600→0.0600 (rated 0.06) | Edo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[147/740] Ogun 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[148/740] Kaduna 0.0600→0.0560 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[149/740] Borno 0.0600→0.0600 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[150/740] Oyo 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[151/740] Lagos 0.0900→0.0850 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[152/740] Yobe 0.0400→0.0400 (rated 0.04) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[153/740] Rivers 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[154/740] Sokoto 0.0260→0.0300 (rated 0.03) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[155/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[156/740] Taraba 0.0651→0.0596 (rated 0.05) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[157/740] Bauchi 0.0200→0.0160 (rated 0.02) | Ondo 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[158/740] Abuja Federal Capital Territory 0.0550→0.0506 (rated 0.05) | Cross River 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[159/740] Borno 0.0600→0.0600 (rated 0.06) | Katsina 0.0560→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[160/740] Bauchi 0.0200→0.0160 (rated 0.02) | Borno 0.0600→0.0560 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[161/740] Adamawa 0.0407→0.0472 (rated 0.07) | Oyo 0.0800→0.0839 (rated 0.09) · 5.3s/pair · cache-hit 5359
+[162/740] Sokoto 0.0300→0.0300 (rated 0.03) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[163/740] Kwara 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[164/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Edo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[165/740] Osun 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[166/740] Ekiti 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[167/740] Abia 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[168/740] Ekiti 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[169/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[170/740] Katsina 0.0600→0.0600 (rated 0.06) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[171/740] Taraba 0.0596→0.0600 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.3s/pair · cache-hit 5359
+[172/740] Sokoto 0.0300→0.0300 (rated 0.03) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[173/740] Enugu 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[174/740] Ekiti 0.0800→0.0800 (rated 0.08) | Enugu 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[175/740] Kano 0.0300→0.0300 (rated 0.03) | Edo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[176/740] Bauchi 0.0160→0.0245 (rated 0.07) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[177/740] Ogun 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[178/740] Gombe 0.0560→0.0612 (rated 0.07) | Kwara 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[179/740] Adamawa 0.0472→0.0523 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[180/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[181/740] Osun 0.0800→0.0800 (rated 0.08) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[182/740] Lagos 0.0850→0.0903 (rated 0.10) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.3s/pair · cache-hit 5359
+[183/740] Ondo 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[184/740] Imo 0.0600→0.0600 (rated 0.06) | Edo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[185/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[186/740] Abuja Federal Capital Territory 0.0506→0.0500 (rated 0.05) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[187/740] Zamfara 0.0500→0.0500 (rated 0.05) | Adamawa 0.0523→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[188/740] Gombe 0.0612→0.0600 (rated 0.06) | Imo 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[189/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[190/740] Lagos 0.0903→0.0855 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[191/740] Adamawa 0.0523→0.0587 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.3s/pair · cache-hit 5359
+[192/740] Anambra 0.0800→0.0800 (rated 0.08) | Oyo 0.0839→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[193/740] Borno 0.0560→0.0598 (rated 0.06) | Adamawa 0.0500→0.0547 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[194/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[195/740] Imo 0.0600→0.0560 (rated 0.06) | Zamfara 0.0500→0.0460 (rated 0.05) · 5.3s/pair · cache-hit 5359
+[196/740] Katsina 0.0600→0.0600 (rated 0.06) | Osun 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[197/740] Ekiti 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[198/740] Abia 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[199/740] Rivers 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.3s/pair · cache-hit 5359
+[200/740] Taraba 0.0600→0.0600 (rated 0.06) | Abuja Federal Capital Territory 0.0500→0.0444 (rated 0.03) · 5.3s/pair · cache-hit 5359
+[201/740] Benue 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[202/740] Kogi 0.0800→0.0800 (rated 0.08) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.3s/pair · cache-hit 5359
+[203/740] Rivers 0.0800→0.0800 (rated 0.08) | Edo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[204/740] Ondo 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[205/740] Bauchi 0.0245→0.0314 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[206/740] Kogi 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[207/740] Jigawa 0.0600→0.0600 (rated 0.06) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[208/740] Lagos 0.0855→0.0896 (rated 0.09) | Ogun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[209/740] Oyo 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[210/740] Zamfara 0.0460→0.0500 (rated 0.05) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[211/740] Abuja Federal Capital Territory 0.0444→0.0460 (rated 0.05) | Bauchi 0.0245→0.0200 (rated 0.02) · 5.2s/pair · cache-hit 5359
+[212/740] Plateau 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[213/740] Yobe 0.0400→0.0400 (rated 0.04) | Lagos 0.0896→0.0851 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[214/740] Rivers 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[215/740] Benue 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[216/740] Katsina 0.0600→0.0600 (rated 0.06) | Cross River 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[217/740] Kaduna 0.0600→0.0600 (rated 0.06) | Lagos 0.0851→0.0810 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[218/740] Kogi 0.0800→0.0800 (rated 0.08) | Taraba 0.0600→0.0554 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[219/740] Benue 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[220/740] Ogun 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[221/740] Borno 0.0598→0.0600 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[222/740] Kogi 0.0800→0.0800 (rated 0.08) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[223/740] Taraba 0.0600→0.0600 (rated 0.06) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[224/740] Ondo 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[225/740] Kebbi 0.0560→0.0600 (rated 0.06) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[226/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Adamawa 0.0547→0.0507 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[227/740] Abia 0.0800→0.0800 (rated 0.08) | Taraba 0.0554→0.0595 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[228/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[229/740] Benue 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[230/740] Niger 0.0600→0.0600 (rated 0.06) | Ondo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[231/740] Taraba 0.0600→0.0556 (rated 0.05) | Abuja Federal Capital Territory 0.0460→0.0421 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[232/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0460→0.0499 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[233/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[234/740] Ekiti 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[235/740] Osun 0.0800→0.0800 (rated 0.08) | Imo 0.0560→0.0599 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[236/740] Cross River 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[237/740] Anambra 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[238/740] Ondo 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[239/740] Kogi 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[240/740] Anambra 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[241/740] Kano 0.0300→0.0300 (rated 0.03) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[242/740] Adamawa 0.0507→0.0550 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[243/740] Imo 0.0560→0.0560 (rated 0.06) | Borno 0.0600→0.0561 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[244/740] Gombe 0.0600→0.0561 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[245/740] Edo 0.0600→0.0562 (rated 0.06) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[246/740] Osun 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[247/740] Jigawa 0.0600→0.0562 (rated 0.06) | Gombe 0.0561→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[248/740] Sokoto 0.0300→0.0300 (rated 0.03) | Bauchi 0.0200→0.0200 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[249/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0562 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[250/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[251/740] Osun 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0499→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[253/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[254/740] Benue 0.0800→0.0800 (rated 0.08) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[255/740] Cross River 0.0800→0.0800 (rated 0.08) | Taraba 0.0556→0.0517 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[256/740] Edo 0.0562→0.0560 (rated 0.06) | Bauchi 0.0200→0.0162 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[257/740] Plateau 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[258/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[259/740] Benue 0.0800→0.0800 (rated 0.08) | Borno 0.0561→0.0599 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[260/740] Rivers 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[261/740] Lagos 0.0810→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[262/740] Ogun 0.0800→0.0800 (rated 0.08) | Lagos 0.0800→0.0842 (rated 0.09) · 5.1s/pair · cache-hit 5359
+[263/740] Abuja Federal Capital Territory 0.0500→0.0457 (rated 0.04) | Edo 0.0560→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[264/740] Sokoto 0.0300→0.0300 (rated 0.03) | Ondo 0.0800→0.0843 (rated 0.09) · 5.1s/pair · cache-hit 5359
+[265/740] Abia 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0542 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[266/740] Abia 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[267/740] Abia 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[268/740] Yobe 0.0400→0.0363 (rated 0.04) | Katsina 0.0600→0.0563 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[269/740] Katsina 0.0600→0.0600 (rated 0.06) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[270/740] Kebbi 0.0600→0.0563 (rated 0.06) | Ondo 0.0843→0.0806 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[271/740] Yobe 0.0400→0.0400 (rated 0.04) | Imo 0.0560→0.0597 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[272/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Jigawa 0.0562→0.0599 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[273/740] Osun 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[274/740] Kwara 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[275/740] Yobe 0.0400→0.0363 (rated 0.04) | Niger 0.0600→0.0563 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[276/740] Anambra 0.0800→0.0800 (rated 0.08) | Kebbi 0.0563→0.0599 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[277/740] Benue 0.0800→0.0800 (rated 0.08) | Jigawa 0.0599→0.0562 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[278/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[279/740] Borno 0.0599→0.0600 (rated 0.06) | Oyo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[280/740] Imo 0.0597→0.0600 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[281/740] Anambra 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0542→0.0506 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[282/740] Cross River 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[283/740] Adamawa 0.0550→0.0587 (rated 0.06) | Kano 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[284/740] Sokoto 0.0300→0.0300 (rated 0.03) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[285/740] Yobe 0.0363→0.0399 (rated 0.04) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[286/740] Zamfara 0.0500→0.0500 (rated 0.05) | Ondo 0.0806→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[287/740] Adamawa 0.0550→0.0497 (rated 0.03) | Abuja Federal Capital Territory 0.0542→0.0513 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[288/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[289/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[290/740] Plateau 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[291/740] Ondo 0.0806→0.0800 (rated 0.08) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[292/740] Gombe 0.0560→0.0560 (rated 0.06) | Adamawa 0.0497→0.0535 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[293/740] Abia 0.0800→0.0800 (rated 0.08) | Niger 0.0563→0.0560 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[294/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[295/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[296/740] Borno 0.0600→0.0600 (rated 0.06) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[297/740] Zamfara 0.0500→0.0500 (rated 0.05) | Kano 0.0300→0.0300 (rated 0.03) · 5.0s/pair · cache-hit 5359
+[298/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Kebbi 0.0599→0.0564 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[299/740] Kebbi 0.0599→0.0600 (rated 0.06) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[300/740] Gombe 0.0560→0.0595 (rated 0.06) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[301/740] Abia 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[302/740] Sokoto 0.0300→0.0300 (rated 0.03) | Adamawa 0.0534→0.0500 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[303/740] Cross River 0.0800→0.0800 (rated 0.08) | Enugu 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[304/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[305/740] Kaduna 0.0562→0.0597 (rated 0.06) | Benue 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[306/740] Niger 0.0560→0.0595 (rated 0.06) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[307/740] Ogun 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0513→0.0500 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[308/740] Borno 0.0600→0.0600 (rated 0.06) | Imo 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[309/740] Jigawa 0.0562→0.0593 (rated 0.06) | Lagos 0.0842→0.0886 (rated 0.10) · 5.0s/pair · cache-hit 5359
+[310/740] Kogi 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[311/740] Ekiti 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[312/740] Lagos 0.0842→0.0807 (rated 0.08) | Abuja Federal Capital Territory 0.0513→0.0500 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[313/740] Gombe 0.0595→0.0600 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[314/740] Edo 0.0600→0.0600 (rated 0.06) | Anambra 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[315/740] Sokoto 0.0300→0.0300 (rated 0.03) | Lagos 0.0807→0.0853 (rated 0.10) · 5.0s/pair · cache-hit 5359
+[316/740] Gombe 0.0595→0.0556 (rated 0.05) | Bauchi 0.0162→0.0198 (rated 0.02) · 5.0s/pair · cache-hit 5359
+[317/740] Niger 0.0595→0.0600 (rated 0.06) | Anambra 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[318/740] Yobe 0.0399→0.0400 (rated 0.04) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[319/740] Bauchi 0.0198→0.0252 (rated 0.05) | Gombe 0.0556→0.0583 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[320/740] Abuja Federal Capital Territory 0.0500→0.0466 (rated 0.05) | Zamfara 0.0500→0.0466 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[321/740] Ondo 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0566 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[322/740] Delta 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[323/740] Benue 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[324/740] Ogun 0.0800→0.0800 (rated 0.08) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[325/740] Imo 0.0600→0.0600 (rated 0.06) | Bauchi 0.0252→0.0217 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[326/740] Benue 0.0800→0.0800 (rated 0.08) | Gombe 0.0583→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[327/740] Abia 0.0800→0.0800 (rated 0.08) | Taraba 0.0517→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[328/740] Borno 0.0600→0.0600 (rated 0.06) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[329/740] Oyo 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[330/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Zamfara 0.0466→0.0450 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[331/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[332/740] Taraba 0.0517→0.0501 (rated 0.05) | Katsina 0.0566→0.0530 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[333/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[334/740] Kogi 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[335/740] Rivers 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0466→0.0499 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[336/740] Rivers 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[337/740] Plateau 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[338/740] Benue 0.0800→0.0800 (rated 0.08) | Kano 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[339/740] Rivers 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[340/740] Katsina 0.0530→0.0560 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[341/740] Borno 0.0600→0.0567 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[342/740] Delta 0.0800→0.0800 (rated 0.08) | Lagos 0.0853→0.0819 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[343/740] Kaduna 0.0597→0.0600 (rated 0.06) | Bauchi 0.0217→0.0200 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[344/740] Kebbi 0.0600→0.0600 (rated 0.06) | Zamfara 0.0450→0.0484 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[345/740] Abia 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0499→0.0466 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[346/740] Sokoto 0.0300→0.0300 (rated 0.03) | Adamawa 0.0500→0.0537 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[347/740] Kwara 0.0800→0.0800 (rated 0.08) | Borno 0.0567→0.0599 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[348/740] Osun 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[349/740] Kebbi 0.0600→0.0600 (rated 0.06) | Edo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[350/740] Jigawa 0.0593→0.0600 (rated 0.06) | Katsina 0.0560→0.0592 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[351/740] Abuja Federal Capital Territory 0.0466→0.0460 (rated 0.05) | Adamawa 0.0500→0.0537 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[352/740] Imo 0.0600→0.0563 (rated 0.05) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[353/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[354/740] Cross River 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[355/740] Rivers 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[356/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Taraba 0.0501→0.0552 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[357/740] Abuja Federal Capital Territory 0.0466→0.0460 (rated 0.05) | Sokoto 0.0300→0.0268 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[358/740] Abia 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[359/740] Sokoto 0.0300→0.0300 (rated 0.03) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[360/740] Delta 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[361/740] Niger 0.0600→0.0600 (rated 0.06) | Kano 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[362/740] Anambra 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[363/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[364/740] Kogi 0.0800→0.0800 (rated 0.08) | Gombe 0.0560→0.0592 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[365/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[366/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[367/740] Sokoto 0.0300→0.0269 (rated 0.03) | Kaduna 0.0600→0.0569 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[368/740] Kaduna 0.0600→0.0600 (rated 0.06) | Kano 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[369/740] Delta 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[370/740] Abia 0.0800→0.0800 (rated 0.08) | Lagos 0.0819→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[371/740] Oyo 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[372/740] Ogun 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[373/740] Ekiti 0.0800→0.0800 (rated 0.08) | Adamawa 0.0537→0.0499 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[374/740] Kebbi 0.0600→0.0600 (rated 0.06) | Edo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[375/740] Rivers 0.0800→0.0800 (rated 0.08) | Sokoto 0.0269→0.0306 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[376/740] Jigawa 0.0600→0.0600 (rated 0.06) | Abuja Federal Capital Territory 0.0460→0.0492 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[377/740] Osun 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[378/740] Oyo 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair
+[379/740] Kogi 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[380/740] Rivers 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[381/740] Kebbi 0.0600→0.0600 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[382/740] Kogi 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[383/740] Rivers 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[384/740] Osun 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[385/740] Ondo 0.0800→0.0800 (rated 0.08) | Borno 0.0599→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[386/740] Gombe 0.0592→0.0600 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[387/740] Plateau 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[388/740] Niger 0.0600→0.0600 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[389/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Bauchi 0.0200→0.0200 (rated 0.02) · 5.0s/pair · cache-hit 5359
+[390/740] Edo 0.0600→0.0570 (rated 0.06) | Katsina 0.0592→0.0563 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[391/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[392/740] Benue 0.0800→0.0800 (rated 0.08) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[393/740] Osun 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[394/740] Yobe 0.0400→0.0400 (rated 0.04) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[395/740] Sokoto 0.0306→0.0300 (rated 0.03) | Kano 0.0300→0.0300 (rated 0.03) · 5.0s/pair · cache-hit 5359
+[396/740] Imo 0.0563→0.0593 (rated 0.06) | Rivers 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[397/740] Oyo 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[398/740] Adamawa 0.0499→0.0533 (rated 0.06) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[399/740] Zamfara 0.0484→0.0454 (rated 0.04) | Katsina 0.0563→0.0550 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[400/740] Cross River 0.0800→0.0800 (rated 0.08) | Katsina 0.0563→0.0532 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[401/740] Anambra 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[402/740] Taraba 0.0552→0.0521 (rated 0.05) | Delta 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[403/740] Cross River 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0571 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[404/740] Bauchi 0.0200→0.0200 (rated 0.02) | Yobe 0.0400→0.0400 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[405/740] Kogi 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[406/740] Sokoto 0.0300→0.0300 (rated 0.03) | Yobe 0.0400→0.0400 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[407/740] Ekiti 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[408/740] Abuja Federal Capital Territory 0.0492→0.0500 (rated 0.05) | Osun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[409/740] Niger 0.0600→0.0600 (rated 0.06) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[410/740] Yobe 0.0400→0.0400 (rated 0.04) | Gombe 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[411/740] Plateau 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[412/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[413/740] Adamawa 0.0533→0.0504 (rated 0.05) | Enugu 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[414/740] Taraba 0.0521→0.0476 (rated 0.02) | Abuja Federal Capital Territory 0.0492→0.0467 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[415/740] Gombe 0.0600→0.0600 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[416/740] Anambra 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0600 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[417/740] Osun 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[418/740] Ogun 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.0s/pair · cache-hit 5359
+[419/740] Sokoto 0.0300→0.0272 (rated 0.03) | Jigawa 0.0600→0.0571 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[420/740] Taraba 0.0476→0.0510 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[421/740] Cross River 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0467→0.0495 (rated 0.05) · 5.0s/pair · cache-hit 5359
+[422/740] Bauchi 0.0200→0.0172 (rated 0.02) | Kebbi 0.0571→0.0560 (rated 0.06) · 5.0s/pair · cache-hit 5359
+[423/740] Ondo 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.0s/pair · cache-hit 5359
+[424/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0467→0.0460 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[425/740] Enugu 0.0800→0.0800 (rated 0.08) | Adamawa 0.0504→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[426/740] Plateau 0.0800→0.0800 (rated 0.08) | Edo 0.0570→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[427/740] Imo 0.0593→0.0565 (rated 0.06) | Borno 0.0600→0.0572 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[428/740] Osun 0.0800→0.0800 (rated 0.08) | Bauchi 0.0172→0.0217 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[429/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Imo 0.0593→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[430/740] Gombe 0.0600→0.0600 (rated 0.06) | Kebbi 0.0560→0.0588 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[431/740] Katsina 0.0532→0.0561 (rated 0.06) | Sokoto 0.0272→0.0298 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[432/740] Zamfara 0.0454→0.0483 (rated 0.05) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[433/740] Kaduna 0.0600→0.0572 (rated 0.06) | Sokoto 0.0272→0.0260 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[434/740] Katsina 0.0532→0.0559 (rated 0.06) | Kano 0.0300→0.0272 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[435/740] Rivers 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0460→0.0488 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[436/740] Sokoto 0.0298→0.0300 (rated 0.03) | Zamfara 0.0454→0.0482 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[437/740] Kwara 0.0800→0.0800 (rated 0.08) | Gombe 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[438/740] Enugu 0.0800→0.0800 (rated 0.08) | Zamfara 0.0483→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[439/740] Kaduna 0.0572→0.0599 (rated 0.06) | Gombe 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[440/740] Borno 0.0572→0.0594 (rated 0.06) | Lagos 0.0800→0.0837 (rated 0.10) · 5.1s/pair · cache-hit 5359
+[441/740] Plateau 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[442/740] Rivers 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[443/740] Imo 0.0600→0.0600 (rated 0.06) | Lagos 0.0800→0.0831 (rated 0.09) · 5.1s/pair · cache-hit 5359
+[444/740] Ogun 0.0800→0.0800 (rated 0.08) | Lagos 0.0837→0.0871 (rated 0.10) · 5.1s/pair · cache-hit 5359
+[445/740] Imo 0.0600→0.0600 (rated 0.06) | Jigawa 0.0571→0.0598 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[446/740] Ekiti 0.0800→0.0800 (rated 0.08) | Adamawa 0.0500→0.0531 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[447/740] Kano 0.0272→0.0298 (rated 0.03) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[448/740] Borno 0.0594→0.0600 (rated 0.06) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[449/740] Yobe 0.0400→0.0400 (rated 0.04) | Enugu 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[450/740] Osun 0.0800→0.0800 (rated 0.08) | Gombe 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[451/740] Abuja Federal Capital Territory 0.0488→0.0500 (rated 0.05) | Lagos 0.0871→0.0837 (rated 0.07) · 5.1s/pair · cache-hit 5359
+[452/740] Kebbi 0.0588→0.0600 (rated 0.06) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[453/740] Gombe 0.0600→0.0573 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[454/740] Ekiti 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[455/740] Niger 0.0600→0.0600 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[456/740] Yobe 0.0400→0.0400 (rated 0.04) | Bauchi 0.0217→0.0264 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[457/740] Edo 0.0560→0.0586 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[458/740] Borno 0.0600→0.0600 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[459/740] Kebbi 0.0600→0.0600 (rated 0.06) | Lagos 0.0837→0.0865 (rated 0.09) · 5.1s/pair · cache-hit 5359
+[460/740] Taraba 0.0510→0.0539 (rated 0.06) | Gombe 0.0573→0.0597 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[461/740] Ogun 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[462/740] Kogi 0.0800→0.0800 (rated 0.08) | Borno 0.0600→0.0571 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[463/740] Delta 0.0800→0.0800 (rated 0.08) | Gombe 0.0573→0.0599 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[464/740] Kano 0.0298→0.0300 (rated 0.03) | Rivers 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[465/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0574 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[466/740] Edo 0.0586→0.0600 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[467/740] Sokoto 0.0300→0.0300 (rated 0.03) | Delta 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[468/740] Anambra 0.0800→0.0800 (rated 0.08) | Taraba 0.0539→0.0566 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[469/740] Osun 0.0800→0.0800 (rated 0.08) | Katsina 0.0559→0.0585 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[470/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[471/740] Oyo 0.0800→0.0800 (rated 0.08) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[472/740] Osun 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[473/740] Ogun 0.0800→0.0800 (rated 0.08) | Edo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[474/740] Kebbi 0.0574→0.0599 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[475/740] Gombe 0.0599→0.0574 (rated 0.06) | Kebbi 0.0574→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[476/740] Katsina 0.0585→0.0600 (rated 0.06) | Cross River 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[477/740] Plateau 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[478/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[479/740] Kwara 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[480/740] Gombe 0.0599→0.0600 (rated 0.06) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[481/740] Kogi 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[482/740] Katsina 0.0585→0.0600 (rated 0.06) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[483/740] Gombe 0.0574→0.0598 (rated 0.06) | Oyo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[484/740] Ekiti 0.0800→0.0800 (rated 0.08) | Lagos 0.0865→0.0895 (rated 0.10) · 5.1s/pair · cache-hit 5359
+[485/740] Plateau 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[486/740] Benue 0.0800→0.0800 (rated 0.08) | Edo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[487/740] Katsina 0.0600→0.0572 (rated 0.05) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[488/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[489/740] Kogi 0.0800→0.0800 (rated 0.08) | Bauchi 0.0264→0.0238 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[490/740] Edo 0.0600→0.0600 (rated 0.06) | Niger 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[491/740] Benue 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[492/740] Gombe 0.0598→0.0600 (rated 0.06) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[493/740] Kwara 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[494/740] Kogi 0.0800→0.0800 (rated 0.08) | Kebbi 0.0560→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[495/740] Plateau 0.0800→0.0800 (rated 0.08) | Adamawa 0.0531→0.0556 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[496/740] Niger 0.0600→0.0600 (rated 0.06) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[497/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[498/740] Imo 0.0600→0.0600 (rated 0.06) | Kebbi 0.0560→0.0584 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[499/740] Gombe 0.0600→0.0600 (rated 0.06) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[500/740] Rivers 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[501/740] Adamawa 0.0556→0.0532 (rated 0.05) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[502/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[503/740] Ogun 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[504/740] Niger 0.0600→0.0600 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[505/740] Benue 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[506/740] Jigawa 0.0598→0.0600 (rated 0.06) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[507/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[508/740] Kogi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[509/740] Kogi 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[510/740] Gombe 0.0600→0.0577 (rated 0.06) | Edo 0.0600→0.0577 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[511/740] Kaduna 0.0599→0.0576 (rated 0.06) | Zamfara 0.0500→0.0477 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[512/740] Yobe 0.0400→0.0430 (rated 0.07) | Bauchi 0.0238→0.0265 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[513/740] Benue 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[514/740] Edo 0.0577→0.0560 (rated 0.06) | Katsina 0.0572→0.0560 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[515/740] Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) | Adamawa 0.0532→0.0504 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[516/740] Taraba 0.0566→0.0588 (rated 0.06) | Kaduna 0.0576→0.0598 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[517/740] Adamawa 0.0532→0.0556 (rated 0.06) | Delta 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[518/740] Ogun 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[519/740] Edo 0.0560→0.0583 (rated 0.06) | Oyo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[520/740] Oyo 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[521/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[522/740] Plateau 0.0800→0.0800 (rated 0.08) | Borno 0.0571→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[523/740] Rivers 0.0800→0.0800 (rated 0.08) | Katsina 0.0560→0.0560 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[524/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[525/740] Kwara 0.0800→0.0800 (rated 0.08) | Yobe 0.0430→0.0408 (rated 0.04) · 5.1s/pair · cache-hit 5359
+[526/740] Adamawa 0.0504→0.0535 (rated 0.08) | Bauchi 0.0265→0.0292 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[527/740] Lagos 0.0895→0.0870 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[528/740] Kaduna 0.0598→0.0576 (rated 0.06) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[529/740] Anambra 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[530/740] Bauchi 0.0265→0.0242 (rated 0.02) | Imo 0.0600→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[531/740] Kebbi 0.0584→0.0600 (rated 0.06) | Borno 0.0560→0.0582 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[532/740] Imo 0.0600→0.0600 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[533/740] Katsina 0.0560→0.0582 (rated 0.06) | Edo 0.0583→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[534/740] Ogun 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[535/740] Taraba 0.0588→0.0600 (rated 0.06) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[536/740] Imo 0.0600→0.0600 (rated 0.06) | Osun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[537/740] Kaduna 0.0576→0.0596 (rated 0.06) | Adamawa 0.0535→0.0558 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[538/740] Yobe 0.0408→0.0400 (rated 0.04) | Adamawa 0.0535→0.0558 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[539/740] Anambra 0.0800→0.0800 (rated 0.08) | Jigawa 0.0600→0.0578 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[540/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[541/740] Katsina 0.0582→0.0600 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[542/740] Lagos 0.0870→0.0847 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[543/740] Kebbi 0.0600→0.0600 (rated 0.06) | Enugu 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[544/740] Sokoto 0.0300→0.0300 (rated 0.03) | Ondo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[545/740] Benue 0.0800→0.0800 (rated 0.08) | Zamfara 0.0477→0.0498 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[546/740] Bauchi 0.0242→0.0220 (rated 0.02) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[547/740] Gombe 0.0577→0.0597 (rated 0.06) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[548/740] Rivers 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[549/740] Rivers 0.0800→0.0800 (rated 0.08) | Kano 0.0300→0.0276 (rated 0.02) · 5.1s/pair · cache-hit 5359
+[550/740] Benue 0.0800→0.0800 (rated 0.08) | Kaduna 0.0596→0.0600 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[551/740] Plateau 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[552/740] Katsina 0.0600→0.0600 (rated 0.06) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[553/740] Osun 0.0800→0.0800 (rated 0.08) | Taraba 0.0600→0.0576 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[554/740] Kogi 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[555/740] Lagos 0.0847→0.0826 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[556/740] Oyo 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[557/740] Imo 0.0600→0.0600 (rated 0.06) | Lagos 0.0847→0.0869 (rated 0.09) · 5.1s/pair · cache-hit 5359
+[558/740] Imo 0.0600→0.0600 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[559/740] Ondo 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0500 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[560/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[561/740] Yobe 0.0400→0.0400 (rated 0.04) | Kogi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[562/740] Taraba 0.0576→0.0555 (rated 0.05) | Kogi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[563/740] Enugu 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[564/740] Borno 0.0582→0.0600 (rated 0.06) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[565/740] Adamawa 0.0558→0.0578 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[566/740] Borno 0.0582→0.0600 (rated 0.06) | Imo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[567/740] Bauchi 0.0220→0.0201 (rated 0.02) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[568/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Niger 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[569/740] Ogun 0.0800→0.0800 (rated 0.08) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[570/740] Kaduna 0.0600→0.0600 (rated 0.06) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[571/740] Niger 0.0600→0.0578 (rated 0.05) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[572/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[573/740] Benue 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[574/740] Sokoto 0.0300→0.0280 (rated 0.03) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[575/740] Osun 0.0800→0.0800 (rated 0.08) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[576/740] Gombe 0.0597→0.0577 (rated 0.06) | Bauchi 0.0220→0.0202 (rated 0.02) · 5.2s/pair · cache-hit 5359
+[577/740] Kogi 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[578/740] Kwara 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0581 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[579/740] Jigawa 0.0578→0.0597 (rated 0.06) | Borno 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[580/740] Bauchi 0.0202→0.0200 (rated 0.02) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[581/740] Jigawa 0.0597→0.0600 (rated 0.06) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[582/740] Benue 0.0800→0.0800 (rated 0.08) | Taraba 0.0555→0.0574 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[583/740] Oyo 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[584/740] Adamawa 0.0578→0.0557 (rated 0.05) | Imo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[585/740] Katsina 0.0581→0.0599 (rated 0.06) | Borno 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[586/740] Niger 0.0578→0.0596 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[587/740] Ogun 0.0800→0.0800 (rated 0.08) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[588/740] Taraba 0.0574→0.0596 (rated 0.07) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[589/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[590/740] Bauchi 0.0200→0.0179 (rated 0.01) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[591/740] Borno 0.0600→0.0581 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[592/740] Kebbi 0.0600→0.0581 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[593/740] Anambra 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[594/740] Katsina 0.0599→0.0600 (rated 0.06) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[595/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[596/740] Kebbi 0.0600→0.0600 (rated 0.06) | Benue 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[597/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[598/740] Yobe 0.0400→0.0400 (rated 0.04) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[599/740] Cross River 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[600/740] Anambra 0.0800→0.0800 (rated 0.08) | Adamawa 0.0557→0.0538 (rated 0.05) · 5.1s/pair · cache-hit 5359
+[601/740] Oyo 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[602/740] Bauchi 0.0179→0.0196 (rated 0.02) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[603/740] Kwara 0.0800→0.0800 (rated 0.08) | Edo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[604/740] Sokoto 0.0300→0.0325 (rated 0.05) | Lagos 0.0868→0.0847 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[605/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[606/740] Lagos 0.0868→0.0890 (rated 0.10) | Bauchi 0.0179→0.0194 (rated 0.02) · 5.2s/pair · cache-hit 5359
+[607/740] Borno 0.0581→0.0598 (rated 0.06) | Enugu 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[608/740] Taraba 0.0596→0.0600 (rated 0.06) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[609/740] Kogi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[610/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Enugu 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[611/740] Kwara 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0500→0.0523 (rated 0.07) · 5.2s/pair · cache-hit 5359
+[612/740] Osun 0.0800→0.0800 (rated 0.08) | Ogun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[613/740] Edo 0.0600→0.0580 (rated 0.05) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[614/740] Osun 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[615/740] Delta 0.0800→0.0800 (rated 0.08) | Zamfara 0.0498→0.0500 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[616/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[617/740] Niger 0.0596→0.0578 (rated 0.05) | Lagos 0.0890→0.0872 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[618/740] Ogun 0.0800→0.0800 (rated 0.08) | Bauchi 0.0194→0.0177 (rated 0.01) · 5.2s/pair · cache-hit 5359
+[619/740] Abia 0.0800→0.0800 (rated 0.08) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[620/740] Rivers 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[621/740] Osun 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[622/740] Delta 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[623/740] Abuja Federal Capital Territory 0.0523→0.0506 (rated 0.05) | Imo 0.0600→0.0584 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[624/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[625/740] Oyo 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[626/740] Katsina 0.0600→0.0600 (rated 0.06) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[627/740] Kano 0.0276→0.0260 (rated 0.03) | Gombe 0.0577→0.0562 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[628/740] Imo 0.0584→0.0599 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[629/740] Sokoto 0.0325→0.0309 (rated 0.03) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[630/740] Anambra 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[631/740] Yobe 0.0400→0.0400 (rated 0.04) | Sokoto 0.0325→0.0309 (rated 0.03) · 5.1s/pair · cache-hit 5359
+[632/740] Nasarawa 0.0800→0.0800 (rated 0.08) | Abia 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[633/740] Niger 0.0578→0.0563 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[634/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[635/740] Borno 0.0598→0.0582 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[636/740] Edo 0.0580→0.0565 (rated 0.06) | Borno 0.0598→0.0582 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[637/740] Ogun 0.0800→0.0800 (rated 0.08) | Delta 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[638/740] Zamfara 0.0500→0.0500 (rated 0.05) | Kogi 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[639/740] Kebbi 0.0600→0.0600 (rated 0.06) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[640/740] Yobe 0.0400→0.0400 (rated 0.04) | Ogun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[641/740] Taraba 0.0600→0.0600 (rated 0.06) | Kano 0.0260→0.0276 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[642/740] Edo 0.0580→0.0565 (rated 0.06) | Niger 0.0563→0.0560 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[643/740] Akwa Ibom 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[644/740] Adamawa 0.0538→0.0554 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[645/740] Ogun 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[646/740] Gombe 0.0562→0.0576 (rated 0.06) | Adamawa 0.0538→0.0554 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[647/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Bauchi 0.0177→0.0205 (rated 0.06) · 5.1s/pair · cache-hit 5359
+[648/740] Cross River 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[649/740] Adamawa 0.0554→0.0538 (rated 0.05) | Kwara 0.0800→0.0800 (rated 0.08) · 5.1s/pair · cache-hit 5359
+[650/740] Bauchi 0.0177→0.0162 (rated 0.02) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[651/740] Rivers 0.0800→0.0800 (rated 0.08) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[652/740] Abuja Federal Capital Territory 0.0506→0.0500 (rated 0.05) | Sokoto 0.0309→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[653/740] Edo 0.0565→0.0580 (rated 0.06) | Zamfara 0.0500→0.0500 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[654/740] Gombe 0.0576→0.0590 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[655/740] Zamfara 0.0500→0.0500 (rated 0.05) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[656/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Edo 0.0565→0.0580 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[657/740] Rivers 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[658/740] Yobe 0.0400→0.0400 (rated 0.04) | Niger 0.0560→0.0575 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[659/740] Cross River 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[660/740] Katsina 0.0600→0.0600 (rated 0.06) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[661/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[662/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Lagos 0.0872→0.0889 (rated 0.10) · 5.2s/pair · cache-hit 5359
+[663/740] Jigawa 0.0600→0.0600 (rated 0.06) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[664/740] Taraba 0.0600→0.0585 (rated 0.05) | Katsina 0.0600→0.0585 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[665/740] Kebbi 0.0600→0.0600 (rated 0.06) | Ogun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[666/740] Ogun 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[667/740] Abuja Federal Capital Territory 0.0500→0.0486 (rated 0.05) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[668/740] Yobe 0.0400→0.0384 (rated 0.03) | Imo 0.0599→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[669/740] Lagos 0.0889→0.0900 (rated 0.09) | Jigawa 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[670/740] Gombe 0.0590→0.0600 (rated 0.06) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[671/740] Ondo 0.0800→0.0800 (rated 0.08) | Ekiti 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[672/740] Kebbi 0.0600→0.0600 (rated 0.06) | Yobe 0.0400→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[673/740] Rivers 0.0800→0.0800 (rated 0.08) | Plateau 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[674/740] Bauchi 0.0162→0.0176 (rated 0.02) | Osun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[675/740] Kano 0.0276→0.0289 (rated 0.03) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[676/740] Lagos 0.0889→0.0908 (rated 0.11) | Katsina 0.0585→0.0595 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[677/740] Niger 0.0575→0.0588 (rated 0.06) | Kaduna 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[678/740] Abia 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[679/740] Osun 0.0800→0.0800 (rated 0.08) | Edo 0.0580→0.0567 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[680/740] Benue 0.0800→0.0800 (rated 0.08) | Imo 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[681/740] Osun 0.0800→0.0800 (rated 0.08) | Benue 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[682/740] Kaduna 0.0600→0.0587 (rated 0.06) | Abuja Federal Capital Territory 0.0486→0.0474 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[683/740] Ondo 0.0800→0.0800 (rated 0.08) | Lagos 0.0908→0.0893 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[684/740] Yobe 0.0400→0.0415 (rated 0.05) | Osun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[685/740] Abuja Federal Capital Territory 0.0486→0.0499 (rated 0.07) | Bauchi 0.0176→0.0197 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[686/740] Abuja Federal Capital Territory 0.0486→0.0473 (rated 0.05) | Borno 0.0582→0.0569 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[687/740] Oyo 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[688/740] Abia 0.0800→0.0800 (rated 0.08) | Borno 0.0582→0.0594 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[689/740] Rivers 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[690/740] Adamawa 0.0538→0.0552 (rated 0.06) | Kaduna 0.0587→0.0598 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[691/740] Anambra 0.0800→0.0800 (rated 0.08) | Osun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[692/740] Delta 0.0800→0.0800 (rated 0.08) | Cross River 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[693/740] Rivers 0.0800→0.0800 (rated 0.08) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[694/740] Abia 0.0800→0.0800 (rated 0.08) | Anambra 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[695/740] Bayelsa 0.0800→0.0800 (rated 0.08) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[696/740] Osun 0.0800→0.0800 (rated 0.08) | Enugu 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[697/740] Bauchi 0.0197→0.0219 (rated 0.06) | Delta 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[698/740] Niger 0.0588→0.0599 (rated 0.06) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[699/740] Yobe 0.0415→0.0403 (rated 0.04) | Lagos 0.0893→0.0900 (rated 0.09) · 5.2s/pair · cache-hit 5359
+[700/740] Ogun 0.0800→0.0800 (rated 0.08) | Taraba 0.0585→0.0596 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[701/740] Cross River 0.0800→0.0800 (rated 0.08) | Borno 0.0594→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[702/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[703/740] Gombe 0.0600→0.0589 (rated 0.06) | Niger 0.0599→0.0588 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[704/740] Abuja Federal Capital Territory 0.0473→0.0485 (rated 0.05) | Ogun 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[705/740] Ekiti 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[706/740] Anambra 0.0800→0.0800 (rated 0.08) | Gombe 0.0600→0.0588 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[707/740] Jigawa 0.0600→0.0588 (rated 0.06) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[708/740] Kano 0.0289→0.0300 (rated 0.03) | Gombe 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[709/740] Jigawa 0.0600→0.0600 (rated 0.06) | Kogi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[710/740] Kogi 0.0800→0.0800 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[711/740] Enugu 0.0800→0.0800 (rated 0.08) | Edo 0.0567→0.0578 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[712/740] Katsina 0.0595→0.0600 (rated 0.06) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[713/740] Osun 0.0800→0.0800 (rated 0.08) | Sokoto 0.0300→0.0300 (rated 0.03) · 5.2s/pair · cache-hit 5359
+[714/740] Cross River 0.0800→0.0800 (rated 0.08) | Ondo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[715/740] Yobe 0.0403→0.0400 (rated 0.04) | Rivers 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[716/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Bayelsa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[717/740] Kano 0.0300→0.0300 (rated 0.03) | Kwara 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[718/740] Osun 0.0800→0.0800 (rated 0.08) | Niger 0.0588→0.0598 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[719/740] Taraba 0.0596→0.0600 (rated 0.06) | Yobe 0.0403→0.0400 (rated 0.04) · 5.2s/pair · cache-hit 5359
+[720/740] Katsina 0.0600→0.0600 (rated 0.06) | Delta 0.0800→0.0812 (rated 0.09) · 5.2s/pair · cache-hit 5359
+[721/740] Kogi 0.0800→0.0800 (rated 0.08) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[722/740] Plateau 0.0800→0.0800 (rated 0.08) | Bauchi 0.0219→0.0238 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[723/740] Plateau 0.0800→0.0800 (rated 0.08) | Abuja Federal Capital Territory 0.0485→0.0495 (rated 0.05) · 5.2s/pair · cache-hit 5359
+[724/740] Oyo 0.0800→0.0800 (rated 0.08) | Enugu 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[725/740] Kano 0.0300→0.0300 (rated 0.03) | Edo 0.0578→0.0589 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[726/740] Sokoto 0.0300→0.0300 (rated 0.03) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[727/740] Sokoto 0.0300→0.0290 (rated 0.03) | Gombe 0.0600→0.0590 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[728/740] Sokoto 0.0300→0.0300 (rated 0.03) | Lagos 0.0900→0.0900 (rated 0.09) · 5.2s/pair · cache-hit 5359
+[729/740] Ekiti 0.0800→0.0800 (rated 0.08) | Oyo 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[730/740] Osun 0.0800→0.0800 (rated 0.08) | Bauchi 0.0238→0.0255 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[731/740] Benue 0.0800→0.0800 (rated 0.08) | Ebonyi 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[732/740] Delta 0.0812→0.0803 (rated 0.08) | Kebbi 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[733/740] Ekiti 0.0800→0.0800 (rated 0.08) | Kaduna 0.0598→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[734/740] Cross River 0.0800→0.0800 (rated 0.08) | Borno 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[735/740] Enugu 0.0800→0.0800 (rated 0.08) | Katsina 0.0600→0.0600 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[736/740] Ebonyi 0.0800→0.0800 (rated 0.08) | Edo 0.0589→0.0598 (rated 0.06) · 5.2s/pair · cache-hit 5359
+[737/740] Lagos 0.0900→0.0913 (rated 0.11) | Nasarawa 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[738/740] Abuja Federal Capital Territory 0.0495→0.0488 (rated 0.04) | Taraba 0.0600→0.0584 (rated 0.02) · 5.2s/pair · cache-hit 5359
+[739/740] Adamawa 0.0552→0.0562 (rated 0.06) | Akwa Ibom 0.0800→0.0800 (rated 0.08) · 5.2s/pair · cache-hit 5359
+[740/740] Nasarawa 0.0800→0.0786 (rated 0.05) | Taraba 0.0600→0.0592 (rated 0.05) · 5.2s/pair · cache-hit 5359
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 740 pairs in 3849s · errors: 1 · total score movement: 1.278
+tokens — cache read: 3,933,506 · cache write: 26,795 · uncached in: 255,623 · out: 798,780
+OK: 233 countries, 3004 admin1 units; ranks written; meta written
