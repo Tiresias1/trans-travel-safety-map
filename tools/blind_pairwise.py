@@ -151,7 +151,7 @@ RATING_RULES = """\
    independently raise trans-specific risk (e.g. collapse of police protection for a
    group that is already targeted, or militia targeting of gender-nonconforming people).
 
-9. **Severity dominates probability.** Every trans person carries some baseline
+9. **Severity dominates probability of outing.** Every trans person carries some baseline
    probability of being outed. What separates say 0.9 from 0.2 is mostly what happens *after*
    the outing, and whether the state is the perpetrator, a bystander, or a protector. That said,
    deliberate efforts by the state to out trans people ramp up the risk of outing, and thus
@@ -210,6 +210,18 @@ national score plus or minus the sub-national deviation its own dossier supports
 5. **Equal scores are correct when the dossiers warrant them.** Two divisions sharing the
    same tier evidence and no division-specific facts should receive the same score. Do not
    invent a difference to look decisive.
+
+6. **Documentation density is not danger; under-documentation is not safety.** Documented
+   incidents, arrests and recorded attacks concentrate where visible trans people and
+   reporting infrastructure exist — overwhelmingly, major cities. A no-signal division is
+   not safer: it inherits the national climate, including its social conservatism and its
+   unreported informal violence, exactly. Rate a documented city *below* an undocumented
+   division only when its record shows structural hostility beyond the national climate
+   (local ordinances or enforcement campaigns, vigilante patterns met with impunity,
+   religious-authority governance). A pile of documented city incidents is usually also
+   evidence of the city where out LGBT people actually live — weigh the visibility, the
+   anonymity of scale, the community resources and the tourism economy on the other side
+   of the ledger.
 """
 
 ANCHOR_ISOS = ("ISL", "NLD", "GBR", "USA", "TUR", "EGY", "AFG")
@@ -395,6 +407,10 @@ def admin1_dossier(rec: dict) -> str:
     parts = [f"### DIVISION\n{rec.get('name', '?')}"]
     if rec.get("summary"):
         parts.append(f"### ASSESSMENT\n{clean(rec['summary'])}")
+    if rec.get("modelContext"):
+        parts.append("### MODEL CONTEXT (general knowledge of this division — culture, "
+                     "religiosity, rule of law, urbanism; NOT dossier-researched, weigh "
+                     "as context)\n" + clean(rec["modelContext"]))
     if rec.get("outOfScopeNotes"):
         parts.append("### NOT FACTORED\n" + clean(rec["outOfScopeNotes"]))
     if rec.get("estimated"):
