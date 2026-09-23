@@ -3,24 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trans Travel Safety Map: 2026 Edition</title>
+  <title>Do Not Travel: Trans Travel Safety Map (2026)</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Trans Travel Safety Map: 2026&nbsp;Edition</h1>
-    <p class="subtitle">Risk to transgender <em>visitors</em> if known or discovered to be trans.
-      Research-based scores, updated annually — click a region for details.</p>
+    <h1>Do Not Travel: Trans Travel Safety Map (2026)</h1>
+    <p class="subtitle">LGBT rights maps are common. Trans safety maps are rare. Global maps
+      concerning safety to trans travelers in specific seem nonexistent. This map fills that
+      gap, both for countries and states/provinces around the world. Click on countries to
+      see its particular risk profile and the sources it's built on. See the methodology for
+      details.</p>
   </header>
 
   <div id="controls">
     <div id="toggle" role="tablist" aria-label="Map detail level">
       <button id="btnCountries" class="toggleBtn active" role="tab" aria-selected="true">Countries</button>
-      <button id="btnAdmin1" class="toggleBtn" role="tab" aria-selected="false">Admin Divisions</button>
+      <button id="btnAdmin1" class="toggleBtn" role="tab" aria-selected="false">States/Provinces</button>
     </div>
     <button id="btnAbout" class="linkBtn" type="button">Methodology &amp; About</button>
+    <button id="btnScreenshot" class="linkBtn" type="button">Screenshot</button>
     <span id="loadingStatus" class="muted" hidden></span>
   </div>
 

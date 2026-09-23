@@ -172,3 +172,10 @@ its year; per-jurisdiction research dates appear in the data
 | `tools/blind_pairwise.py` | Blind pairwise refinement driver (country + `--admin1` modes) |
 | `tools/blind_fields.md` | Anonymisation spec + prompts |
 | `tools/build_data.py` | Validation, ranks, `data/meta.json` |
+
+## License
+
+The map, its scores, and all project data files (`data/*.json`) are dedicated to the
+**public domain (CC0 1.0)** — free of copyright restrictions, no attribution required.
+Boundary geometry retains its upstream licences: geoBoundaries gbOpen (CC BY 4.0) and
+Natural Earth (public domain), as noted in the README.

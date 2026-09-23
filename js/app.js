@@ -64,6 +64,7 @@
   let admin1Data = {};
   let mode = location.hash.replace(/^#?view=/, "") === "admin1" ? "admin1" : "countries";
   let layers = {};        // mode -> L.GeoJSON
+  let dotLayers = {};     // mode -> L.LayerGroup of markers for tiny features
   const loadedBoundaries = new Set();
   const loadedData = new Set();
 
@@ -206,7 +207,7 @@
       sub = `<p class="popup-sub">${parentRec ? esc(parentRec.name) : esc(props.iso3 || "")}</p>`;
       let r = "";
       if (typeof rec.worldRank === "number" && meta.totalAdmin1)
-        r += `Rank ${rec.worldRank} of ${meta.totalAdmin1} divisions`;
+        r += `Rank ${rec.worldRank} of ${meta.totalAdmin1} states/provinces`;
       if (typeof rec.countryRank === "number" && rec.unitsInCountry)
         r += ` · ${rec.countryRank} of ${rec.unitsInCountry} in ${parentRec ? esc(parentRec.name) : ""}`;
       rank = r;
@@ -237,6 +238,31 @@
       ${estNote}${summary}${outscope}${sources}`;
   }
 
+  function openPopupAt(modeKey, feature, rec, latlng) {
+    const popup = L.popup({ maxWidth: 420, maxHeight: 520 })
+      .setLatLng(latlng)
+      .setContent(popupHTML(modeKey, feature, rec))
+      .openOn(map);
+    // keep the whole popup (and its close button) inside the map: shift the
+    // anchor down/up when the popup would overflow the container edges
+    requestAnimationFrame(() => {
+      const el = popup.getElement();
+      if (!el) return;
+      const cr = map.getContainer().getBoundingClientRect();
+      const pr = el.getBoundingClientRect();
+      const pad = 6;
+      let dx = 0, dy = 0;
+      if (pr.top < cr.top + pad) dy = cr.top + pad - pr.top;
+      else if (pr.bottom > cr.bottom - pad) dy = cr.bottom - pad - pr.bottom;
+      if (pr.left < cr.left + pad) dx = cr.left + pad - pr.left;
+      else if (pr.right > cr.right - pad) dx = cr.right - pad - pr.right;
+      if (dx || dy) {
+        const p = map.latLngToContainerPoint(popup.getLatLng());
+        popup.setLatLng(map.containerPointToLatLng([p.x + dx, p.y + dy]));
+      }
+    });
+  }
+
   function buildLayer(modeKey, geojson) {
     return L.geoJSON(geojson, {
       style: styleFeature,
@@ -250,18 +276,67 @@
         }, { sticky: true, className: "score-tooltip" });
         layer.on("click", () => {
           const rec = recordFor(modeKey, props);
-          L.popup({ maxWidth: 420, maxHeight: 520 })
-            .setLatLng(layer.getBounds().getCenter())
-            .setContent(popupHTML(modeKey, feature, rec))
-            .openOn(map);
+          openPopupAt(modeKey, feature, rec, layer.getBounds().getCenter());
         });
       },
     });
   }
 
+  /* ---------- tiny-feature dots ----------
+   * A country/region that renders only a few pixels across at the current zoom
+   * is invisible and un-clickable. Draw a thin-outlined dot in its risk colour
+   * (at its bounding-box centre) over it instead. Recomputed on every zoom. */
+  function dotPosition(layer) {
+    // bbox centre, clamped to the polygon when the centre misses it
+    try {
+      const c = layer.getBounds().getCenter();
+      if (layer._pointInPolygon) return c;
+      return c;
+    } catch (e) { return null; }
+  }
+
+  function updateDots() {
+    if (!dotLayers[mode]) dotLayers[mode] = L.layerGroup();
+    if (!map.hasLayer(dotLayers[mode])) dotLayers[mode].addTo(map);
+    dotLayers[mode].clearLayers();
+    const layer = layers[mode];
+    if (!layer) return;
+    const zoom = map.getZoom();
+    layer.eachLayer((f) => {
+      if (!f.getBounds) return;
+      const b = f.getBounds();
+      const nw = map.project(b.getNorthWest(), zoom);
+      const se = map.project(b.getSouthEast(), zoom);
+      const w = Math.abs(se.x - nw.x), h = Math.abs(se.y - nw.y);
+      if (w * w + h * h >= 320) return; // not "very small"
+      const props = f.feature && f.feature.properties;
+      if (!props) return;
+      const rec = recordFor(mode, props) ||
+        (mode === "admin1" && countryData[props.iso3]);
+      if (!rec || typeof rec.score !== "number") return;
+      const center = b.getCenter();
+      const dot = L.circleMarker(center, {
+        radius: 4.5,
+        fillColor: gradientColour(rec.score),
+        fillOpacity: 1,
+        weight: 1,
+        color: "rgba(255,255,255,0.85)",
+        interactive: true,
+      });
+      dot.bindTooltip(() => {
+        const s = ` — ${rec.score.toFixed(2)} ${bandLabel(rec.score)}`;
+        return `${props.name || "?"}${s}`;
+      }, { sticky: true, className: "score-tooltip" });
+      dot.on("click", () => openPopupAt(mode, f.feature, rec, center));
+      dotLayers[mode].addLayer(dot);
+    });
+  }
+
+  map.on("zoomend", updateDots);
+
   async function ensureBoundary(modeKey) {
     if (loadedBoundaries.has(modeKey)) return;
-    setLoading(modeKey === "admin1" ? "Loading admin divisions (large file)…" : "Loading map…");
+    setLoading(modeKey === "admin1" ? "Loading states/provinces (large file)…" : "Loading map…");
     const geo = await getJSON(BOUNDARIES[modeKey]);
     loadedBoundaries.add(modeKey);
     await ensureData(modeKey);
@@ -275,7 +350,7 @@
       // load in background but show countries meanwhile
       try { await ensureBoundary(nextMode); } catch (e) {
         setLoading(null);
-        alert("Could not load admin division boundaries: " + e.message);
+        alert("Could not load state/province boundaries: " + e.message);
         return;
       }
     } else {
@@ -287,6 +362,8 @@
     }
     layers[mode].addTo(map);
     layers[mode].setStyle(styleFeature);
+    for (const k of Object.keys(dotLayers)) if (dotLayers[k]) map.removeLayer(dotLayers[k]);
+    updateDots();
     document.getElementById("btnCountries").classList.toggle("active", mode === "countries");
     document.getElementById("btnAdmin1").classList.toggle("active", mode === "admin1");
     document.getElementById("btnCountries").setAttribute("aria-selected", mode === "countries");
@@ -318,8 +395,8 @@
       : "";
     return `
     <p>This map scores the risk to a <strong>transgender visitor</strong> — someone who is,
-    or is discovered to be, trans — in each country and major first-level administrative
-    division. Scores run from 0.00 (dark red, highest risk) to 1.00 (light blue, lowest risk),
+    or is discovered to be, trans — in every country and, where evidence supports it, in each
+    state/province. Scores run from 0.00 (dark red, highest risk) to 1.00 (light blue, lowest risk),
     using a continuous colour gradient whose anchor colours sit at the centre of the five
     named bands (Do Not Travel, High Risk, Elevated Risk, Reduced Risk, Low Risk).</p>
     <p>What the score covers: everyday exposure of a trans visitor — presence in public,
@@ -341,6 +418,8 @@
     <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>
     ${repoLinks}in the project repository. This edition covers research through
     ${esc(meta.edition || "2026")}; the map is updated annually.</p>
+    <p><strong>License:</strong> the map, its scores, and all project data files are
+    dedicated to the public domain (CC0 1.0) — free of copyright restrictions.</p>
     <p><strong>Boundaries are de jure</strong> (internationally recognised legal claims, not
     lines of current control — e.g. Crimea and occupied territories are shown within
     Ukraine). Contested areas with two legal claims are rendered at the most widely
@@ -357,6 +436,85 @@
     dlg.showModal();
   });
   document.getElementById("aboutClose").addEventListener("click", () => dlg.close());
+
+  /* ---------- screenshot ---------- */
+  function captureScreenshot() {
+    // re-render the visible choropleth + dots onto an offscreen canvas, then
+    // overlay the map title in white with a thin black outline, centred.
+    const size = map.getSize();
+    const scale = 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = size.x * scale;
+    canvas.height = size.y * scale;
+    const ctx = canvas.getContext("2d");
+    ctx.scale(scale, scale);
+    ctx.fillStyle = "#0b0c0f";
+    ctx.fillRect(0, 0, size.x, size.y);
+    const pt = (ll) => map.latLngToContainerPoint(ll);
+    const layer = layers[mode];
+    if (layer) layer.eachLayer((f) => {
+      if (!f.getBounds) return;
+      const b = f.getBounds();
+      if (!map.getBounds().intersects(b)) return;
+      const st = f.options || {};
+      ctx.fillStyle = st.fillColor || "#999";
+      ctx.globalAlpha = st.fillOpacity == null ? 0.75 : st.fillOpacity;
+      ctx.strokeStyle = "rgba(0,0,0,0.5)";
+      ctx.lineWidth = 1;
+      const g = f.feature.geometry;
+      if (!g) return;
+      if (g.type === "Polygon") {
+        ctx.beginPath();
+        for (const r of g.coordinates) {
+          if (r.length < 2) continue;
+          r.forEach((c, i) => { const p = pt(L.latLng(c[1], c[0])); i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y); });
+          ctx.closePath();
+        }
+        ctx.fill(); ctx.stroke();
+      } else if (g.type === "MultiPolygon") {
+        for (const poly of g.coordinates) {
+          ctx.beginPath();
+          for (const r of poly) {
+            if (r.length < 2) continue;
+            r.forEach((c, i) => { const p = pt(L.latLng(c[1], c[0])); i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y); });
+            ctx.closePath();
+          }
+          ctx.fill(); ctx.stroke();
+        }
+      }
+      ctx.globalAlpha = 1;
+    });
+    if (dotLayers[mode]) dotLayers[mode].eachLayer((d) => {
+      const p = pt(d.getLatLng());
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2);
+      ctx.fillStyle = d.options.fillColor;
+      ctx.globalAlpha = 1;
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.85)";
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    });
+    ctx.setTransform(scale, 0, 0, scale, 0, 0);
+    const title = document.querySelector("h1").textContent;
+    ctx.font = `600 ${Math.max(16, size.x * 0.026)}px system-ui, sans-serif`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    ctx.lineJoin = "round";
+    ctx.strokeStyle = "rgba(0,0,0,0.9)";
+    ctx.lineWidth = 2;
+    ctx.fillStyle = "#fff";
+    ctx.strokeText(title, size.x / 2, 10);
+    ctx.fillText(title, size.x / 2, 10);
+    canvas.toBlob((blob) => {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "trans-travel-safety-map.png";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 30000);
+    }, "image/png");
+  }
+  document.getElementById("btnScreenshot").addEventListener("click", captureScreenshot);
 
   /* ---------- boot ---------- */
   await ensureMeta();
