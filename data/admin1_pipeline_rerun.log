@@ -1635,3 +1635,541 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 1620 pairs in 9128s · errors: 0 · total score movement: 9.254
 tokens — cache read: 8,813,664 · cache write: 21,816 · uncached in: 547,444 · out: 1,818,399
 OK: 233 countries, 3240 admin1 units; ranks written; meta written
+TUR done 2026-09-23 10:57:19
+=================== PER 2026-09-23 10:57:19 ===================
+new: 0 · refreshed: 0 · skipped (untouchable): 26 · with deltas: 0 · countries touched: 0
+wrote 3240 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
+PER: 26 units -> 520 pairs
+system prompt: 24,472 chars (~6,118 tokens) — cached
+admin1 mode: Peru (PER) national 0.36 · 26 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 130 for ~10)
+pairs: 520 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 260 / 520: 0.07000/0.04006/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06008/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-PER-20260923-105721.jsonl
+[1/520] Huánuco 0.3643→0.3600 (rated 0.36) | Piura 0.3643→0.3600 (rated 0.36) · 4.5s/pair
+[2/520] Tumbes 0.3643→0.3600 (rated 0.36) | Pasco 0.3643→0.3600 (rated 0.36) · 3.2s/pair
+[3/520] Huancavelica 0.3643→0.3600 (rated 0.36) | Cajamarca 0.3643→0.3600 (rated 0.36) · 2.6s/pair
+[4/520] Ucayali 0.3643→0.3600 (rated 0.36) | Puno 0.3643→0.3600 (rated 0.36) · 2.4s/pair · cache-hit 5507
+[5/520] Cusco 0.3643→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.2s/pair · cache-hit 5507
+[6/520] Madre de Dios 0.3643→0.3600 (rated 0.36) | Ucayali 0.3643→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[7/520] Tacna 0.3400→0.3400 (rated 0.34) | Puno 0.3643→0.3600 (rated 0.36) · 2.4s/pair
+[8/520] Ayacucho 0.3643→0.3600 (rated 0.36) | Cusco 0.3643→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[9/520] Piura 0.3600→0.3600 (rated 0.36) | San Martín 0.3643→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[10/520] Cusco 0.3600→0.3600 (rated 0.36) | El Callao 0.3643→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[11/520] Amazonas 0.3643→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5507
+[12/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[13/520] Tumbes 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.5s/pair · cache-hit 5507
+[14/520] Cusco 0.3600→0.3665 (rated 0.37) | Ayacucho 0.3600→0.3528 (rated 0.34) · 3.3s/pair · cache-hit 5507
+[15/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Arequipa 0.3643→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[16/520] Ica 0.3643→0.3600 (rated 0.36) | Arequipa 0.3643→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[17/520] Junín 0.3643→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[18/520] Cusco 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[19/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[20/520] Amazonas 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[21/520] Loreto 0.3643→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[22/520] Puno 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[23/520] Municipalidad Metropolitana de Lima 0.4043→0.3981 (rated 0.39) | Lambayeque 0.3643→0.3604 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[24/520] Ica 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[25/520] Arequipa 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[26/520] Lima 0.4043→0.3969 (rated 0.38) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[27/520] Huánuco 0.3600→0.3600 (rated 0.36) | Moquegua 0.3643→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[28/520] Lambayeque 0.3643→0.3604 (rated 0.36) | Lima 0.4043→0.3981 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[29/520] Ica 0.3600→0.3600 (rated 0.36) | Cusco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[30/520] Arequipa 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[31/520] Arequipa 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[32/520] Puno 0.3600→0.3543 (rated 0.35) | Ancash 0.3643→0.3697 (rated 0.37) · 3.1s/pair · cache-hit 5507
+[33/520] El Callao 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.2s/pair · cache-hit 5507
+[34/520] Cusco 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3981→0.3904 (rated 0.37) · 3.1s/pair · cache-hit 5507
+[35/520] Junín 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[36/520] Moquegua 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[37/520] Tumbes 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[38/520] Amazonas 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[39/520] Ica 0.3600→0.3600 (rated 0.36) | Puno 0.3543→0.3594 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[40/520] Piura 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[41/520] Ancash 0.3697→0.3642 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[42/520] El Callao 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[43/520] Pasco 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.1s/pair · cache-hit 5507
+[44/520] Amazonas 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[45/520] Piura 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[46/520] Lima 0.3981→0.3916 (rated 0.38) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[47/520] Lambayeque 0.3604→0.3600 (rated 0.36) | Ancash 0.3642→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[48/520] Piura 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[49/520] Apurímac 0.3643→0.3600 (rated 0.36) | Cusco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[50/520] Piura 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[51/520] La Libertad 0.3400→0.3400 (rated 0.34) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[52/520] Apurímac 0.3643→0.3600 (rated 0.36) | Ayacucho 0.3528→0.3580 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[53/520] El Callao 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[54/520] Lima 0.3916→0.3900 (rated 0.39) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[55/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[56/520] Huánuco 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[57/520] Tacna 0.3400→0.3400 (rated 0.34) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[58/520] Tumbes 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[59/520] El Callao 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.8s/pair · cache-hit 5507
+[60/520] Puno 0.3594→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[61/520] Pasco 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[62/520] Piura 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3580→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[63/520] La Libertad 0.3400→0.3400 (rated 0.34) | Cusco 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[64/520] Tumbes 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[65/520] Junín 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[66/520] Huánuco 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[67/520] Moquegua 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[68/520] Puno 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[69/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[70/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[71/520] Ancash 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[72/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.7s/pair · cache-hit 5507
+[73/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[74/520] Lima 0.3900→0.3847 (rated 0.38) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[75/520] Moquegua 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[76/520] Municipalidad Metropolitana de Lima 0.3904→0.3853 (rated 0.38) | Lima 0.3900→0.3850 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[77/520] Madre de Dios 0.3600→0.3537 (rated 0.34) | Lima 0.3900→0.3900 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[78/520] Municipalidad Metropolitana de Lima 0.3904→0.3900 (rated 0.39) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[79/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[80/520] Loreto 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3904→0.3851 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[81/520] Ancash 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[82/520] Pasco 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[83/520] Loreto 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[84/520] Pasco 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[85/520] Amazonas 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[86/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[87/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[88/520] La Libertad 0.3400→0.3400 (rated 0.34) | Municipalidad Metropolitana de Lima 0.3853→0.3786 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[89/520] Apurímac 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[90/520] Puno 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[91/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[92/520] El Callao 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3851→0.3805 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[93/520] Loreto 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[94/520] Ucayali 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3786→0.3838 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[95/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[96/520] Loreto 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[97/520] Cusco 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[98/520] Piura 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[99/520] Puno 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3786→0.3800 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[100/520] Ica 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[101/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.8s/pair · cache-hit 5507
+[102/520] Piura 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[103/520] San Martín 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[104/520] Cajamarca 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[105/520] Ucayali 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[106/520] Piura 0.3600→0.3558 (rated 0.35) | Madre de Dios 0.3537→0.3476 (rated 0.33) · 2.9s/pair · cache-hit 5507
+[107/520] Cusco 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[108/520] Loreto 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[109/520] Arequipa 0.3600→0.3600 (rated 0.36) | Cusco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[110/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[111/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Piura 0.3558→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[112/520] La Libertad 0.3400→0.3400 (rated 0.34) | Municipalidad Metropolitana de Lima 0.3838→0.3755 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[113/520] Piura 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[114/520] Lima 0.3900→0.3851 (rated 0.38) | Municipalidad Metropolitana de Lima 0.3800→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[115/520] Tumbes 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3476→0.3527 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[116/520] Arequipa 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[117/520] Lima 0.3900→0.3841 (rated 0.37) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[118/520] Huancavelica 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[119/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[120/520] Madre de Dios 0.3527→0.3573 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[121/520] Ancash 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[122/520] Ica 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3800→0.3849 (rated 0.39) · 3.0s/pair · cache-hit 5507
+[123/520] Apurímac 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[124/520] Lima 0.3841→0.3892 (rated 0.39) | Puno 0.3600→0.3542 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[125/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[126/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[127/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[128/520] Tumbes 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[129/520] Ancash 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3573→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[130/520] Puno 0.3542→0.3585 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[131/520] Puno 0.3542→0.3585 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[132/520] Piura 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[133/520] Pasco 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[134/520] Huancavelica 0.3600→0.3557 (rated 0.35) | Madre de Dios 0.3573→0.3520 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[135/520] Piura 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[136/520] Municipalidad Metropolitana de Lima 0.3849→0.3806 (rated 0.38) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[137/520] Tumbes 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[138/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[139/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[140/520] Huancavelica 0.3557→0.3598 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[141/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[142/520] Loreto 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[143/520] Puno 0.3585→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[144/520] La Libertad 0.3400→0.3400 (rated 0.34) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[145/520] Apurímac 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3646 (rated 0.37) · 3.0s/pair · cache-hit 5507
+[146/520] Madre de Dios 0.3520→0.3567 (rated 0.36) | Junín 0.3600→0.3552 (rated 0.35) · 3.0s/pair · cache-hit 5507
+[147/520] Tumbes 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[148/520] Arequipa 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[149/520] Municipalidad Metropolitana de Lima 0.3806→0.3800 (rated 0.38) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[150/520] Moquegua 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[151/520] Madre de Dios 0.3567→0.3600 (rated 0.36) | Huancavelica 0.3598→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[152/520] Tacna 0.3400→0.3400 (rated 0.34) | Lima 0.3892→0.3838 (rated 0.37) · 3.0s/pair · cache-hit 5507
+[153/520] Ucayali 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[154/520] Lima 0.3892→0.3900 (rated 0.39) | Piura 0.3600→0.3545 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[155/520] Amazonas 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[156/520] Ancash 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[157/520] La Libertad 0.3400→0.3400 (rated 0.34) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[158/520] Tumbes 0.3600→0.3600 (rated 0.36) | Junín 0.3552→0.3593 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[159/520] Tacna 0.3400→0.3400 (rated 0.34) | Municipalidad Metropolitana de Lima 0.3800→0.3737 (rated 0.35) · 3.0s/pair · cache-hit 5507
+[160/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[161/520] Ancash 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[162/520] Tumbes 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[163/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[164/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[165/520] Ayacucho 0.3600→0.3600 (rated 0.36) | San Martín 0.3646→0.3606 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[166/520] Arequipa 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[167/520] Cajamarca 0.3600→0.3600 (rated 0.36) | San Martín 0.3646→0.3607 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[168/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[169/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[170/520] Tacna 0.3400→0.3400 (rated 0.34) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[171/520] Junín 0.3593→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[172/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[173/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[174/520] Municipalidad Metropolitana de Lima 0.3737→0.3700 (rated 0.37) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[175/520] Amazonas 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[176/520] San Martín 0.3607→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[177/520] El Callao 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[178/520] Moquegua 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[179/520] Loreto 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[180/520] El Callao 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[181/520] Tacna 0.3400→0.3400 (rated 0.34) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[182/520] Piura 0.3545→0.3585 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[183/520] San Martín 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[184/520] Ancash 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[185/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[186/520] San Martín 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[187/520] Ica 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[188/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[189/520] La Libertad 0.3400→0.3400 (rated 0.34) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[190/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[191/520] San Martín 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[192/520] Puno 0.3600→0.3600 (rated 0.36) | Piura 0.3585→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[193/520] La Libertad 0.3400→0.3400 (rated 0.34) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[194/520] Cusco 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[195/520] Tacna 0.3400→0.3400 (rated 0.34) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[196/520] Piura 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[197/520] Huánuco 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[198/520] San Martín 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[199/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[200/520] Piura 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[201/520] Moquegua 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[202/520] Municipalidad Metropolitana de Lima 0.3700→0.3749 (rated 0.39) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[203/520] Loreto 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[204/520] Piura 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[205/520] Arequipa 0.3600→0.3600 (rated 0.36) | Cusco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[206/520] Moquegua 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[207/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[208/520] Tumbes 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[209/520] Cusco 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3700→0.3741 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[210/520] Tacna 0.3400→0.3400 (rated 0.34) | Piura 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[211/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[212/520] Ica 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[213/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[214/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[215/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[216/520] Ica 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[217/520] Ancash 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[218/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[219/520] Puno 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[220/520] Junín 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[221/520] Municipalidad Metropolitana de Lima 0.3741→0.3795 (rated 0.40) | Puno 0.3600→0.3553 (rated 0.35) · 2.9s/pair · cache-hit 5507
+[222/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[223/520] Piura 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[224/520] Loreto 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[225/520] Arequipa 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[226/520] Cusco 0.3600→0.3641 (rated 0.37) | Piura 0.3600→0.3559 (rated 0.35) · 2.9s/pair · cache-hit 5507
+[227/520] San Martín 0.3600→0.3600 (rated 0.36) | Lima 0.3900→0.3900 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[228/520] Tacna 0.3400→0.3400 (rated 0.34) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[229/520] Arequipa 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[230/520] Huancavelica 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[231/520] Puno 0.3553→0.3587 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[232/520] Junín 0.3600→0.3600 (rated 0.36) | Puno 0.3553→0.3587 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[233/520] Junín 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[234/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[235/520] Piura 0.3559→0.3593 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[236/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Puno 0.3587→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[237/520] Pasco 0.3600→0.3600 (rated 0.36) | Piura 0.3559→0.3592 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[238/520] Junín 0.3600→0.3600 (rated 0.36) | Lima 0.3900→0.3946 (rated 0.41) · 2.9s/pair · cache-hit 5507
+[239/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[240/520] Tumbes 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[241/520] Ica 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[242/520] Ucayali 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[243/520] Tumbes 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[244/520] Tumbes 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[245/520] La Libertad 0.3400→0.3400 (rated 0.34) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[246/520] El Callao 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[247/520] Lima 0.3946→0.3898 (rated 0.37) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[248/520] Loreto 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[249/520] Puno 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[250/520] Cusco 0.3641→0.3608 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[251/520] Arequipa 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[252/520] Piura 0.3593→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[253/520] Tacna 0.3400→0.3400 (rated 0.34) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[254/520] Ucayali 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[255/520] Ucayali 0.3600→0.3600 (rated 0.36) | Lima 0.3898→0.3900 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[256/520] Ucayali 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[257/520] Ayacucho 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[258/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[259/520] Lima 0.3898→0.3863 (rated 0.38) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[260/520] Tacna 0.3400→0.3400 (rated 0.34) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[261/520] Ucayali 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[262/520] Apurímac 0.3600→0.3600 (rated 0.36) | Lima 0.3900→0.3935 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[263/520] Ancash 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[264/520] San Martín 0.3600→0.3644 (rated 0.38) | Ica 0.3600→0.3560 (rated 0.35) · 3.0s/pair · cache-hit 5507
+[265/520] Amazonas 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[266/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[267/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[268/520] Arequipa 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[269/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[270/520] Amazonas 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[271/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[272/520] Huánuco 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[273/520] Lima 0.3935→0.3974 (rated 0.41) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[274/520] Huancavelica 0.3600→0.3560 (rated 0.35) | Municipalidad Metropolitana de Lima 0.3795→0.3838 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[275/520] Madre de Dios 0.3600→0.3537 (rated 0.30) | Cajamarca 0.3600→0.3575 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[276/520] El Callao 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[277/520] La Libertad 0.3400→0.3400 (rated 0.34) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[278/520] Municipalidad Metropolitana de Lima 0.3795→0.3755 (rated 0.36) | Cusco 0.3608→0.3605 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[279/520] Cajamarca 0.3575→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[280/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[281/520] Huancavelica 0.3560→0.3590 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[282/520] Junín 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[283/520] Amazonas 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[284/520] Cusco 0.3608→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[285/520] Ica 0.3560→0.3589 (rated 0.36) | Cusco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[286/520] Puno 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[287/520] La Libertad 0.3400→0.3400 (rated 0.34) | Piura 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[288/520] Huancavelica 0.3590→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[289/520] Moquegua 0.3600→0.3600 (rated 0.36) | Lima 0.3974→0.4000 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[290/520] Lima 0.3974→0.3923 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[291/520] Piura 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[292/520] Tumbes 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[293/520] Amazonas 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3755→0.3784 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[294/520] Piura 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[295/520] Lima 0.3923→0.3889 (rated 0.38) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[296/520] Piura 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[297/520] Tacna 0.3400→0.3400 (rated 0.34) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[298/520] Lima 0.3923→0.3870 (rated 0.35) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[299/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[300/520] Tumbes 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[301/520] Junín 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[302/520] La Libertad 0.3400→0.3400 (rated 0.34) | Madre de Dios 0.3537→0.3566 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[303/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[304/520] Cusco 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[305/520] Amazonas 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3566→0.3594 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[306/520] Ucayali 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[307/520] Amazonas 0.3600→0.3555 (rated 0.34) | Municipalidad Metropolitana de Lima 0.3784→0.3833 (rated 0.41) · 3.0s/pair · cache-hit 5507
+[308/520] Arequipa 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[309/520] Ancash 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[310/520] Pasco 0.3600→0.3600 (rated 0.36) | Amazonas 0.3555→0.3582 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[311/520] Moquegua 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[312/520] Tacna 0.3400→0.3400 (rated 0.34) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[313/520] Pasco 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[314/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[315/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Amazonas 0.3582→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[316/520] Tumbes 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[317/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[318/520] Cajamarca 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[319/520] Piura 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[320/520] Ancash 0.3600→0.3600 (rated 0.36) | Lima 0.3870→0.3842 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[321/520] Arequipa 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[322/520] La Libertad 0.3400→0.3375 (rated 0.33) | Municipalidad Metropolitana de Lima 0.3833→0.3797 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[323/520] El Callao 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[324/520] La Libertad 0.3400→0.3400 (rated 0.34) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[325/520] Tacna 0.3400→0.3400 (rated 0.34) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[326/520] Puno 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[327/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[328/520] Huánuco 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[329/520] Loreto 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[330/520] Pasco 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[331/520] Arequipa 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[332/520] Cajamarca 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[333/520] Puno 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[334/520] Tumbes 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[335/520] Tumbes 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3594→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[336/520] Pasco 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3594→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[337/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[338/520] Tacna 0.3400→0.3400 (rated 0.34) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[339/520] Ica 0.3589→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[340/520] San Martín 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3797→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[341/520] Junín 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[342/520] El Callao 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[343/520] Amazonas 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3797→0.3830 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[344/520] Ancash 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[345/520] Puno 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[346/520] Moquegua 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[347/520] Tacna 0.3400→0.3400 (rated 0.34) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[348/520] Apurímac 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[349/520] Tumbes 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[350/520] Junín 0.3600→0.3600 (rated 0.36) | Lima 0.3842→0.3872 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[351/520] Puno 0.3600→0.3573 (rated 0.35) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[352/520] San Martín 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[353/520] Apurímac 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3830→0.3861 (rated 0.40) · 3.0s/pair · cache-hit 5507
+[354/520] Ancash 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[355/520] Piura 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[356/520] Amazonas 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[357/520] Junín 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[358/520] Municipalidad Metropolitana de Lima 0.3830→0.3802 (rated 0.37) | Loreto 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[359/520] Apurímac 0.3600→0.3600 (rated 0.36) | Puno 0.3573→0.3595 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[360/520] Ica 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[361/520] El Callao 0.3600→0.3600 (rated 0.36) | Lima 0.3872→0.3847 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[362/520] Ucayali 0.3600→0.3600 (rated 0.36) | Puno 0.3573→0.3595 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[363/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[364/520] Moquegua 0.3600→0.3600 (rated 0.36) | Lima 0.3872→0.3842 (rated 0.37) · 3.0s/pair · cache-hit 5507
+[365/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[366/520] Moquegua 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[367/520] Piura 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[368/520] Puno 0.3595→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[369/520] Arequipa 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[370/520] Loreto 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[371/520] Cusco 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[372/520] Amazonas 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[373/520] Lima 0.3842→0.3819 (rated 0.38) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[374/520] Lima 0.3842→0.3819 (rated 0.38) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[375/520] Piura 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[376/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[377/520] El Callao 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[378/520] Cusco 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[379/520] Tumbes 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[380/520] Amazonas 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[381/520] Tacna 0.3400→0.3400 (rated 0.34) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[382/520] Pasco 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[383/520] Tacna 0.3400→0.3400 (rated 0.34) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[384/520] Cusco 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[385/520] Tacna 0.3400→0.3400 (rated 0.34) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[386/520] Tumbes 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[387/520] Junín 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[388/520] Apurímac 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[389/520] Pasco 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[390/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[391/520] Pasco 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[392/520] Loreto 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[393/520] Lima 0.3819→0.3800 (rated 0.38) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[394/520] La Libertad 0.3400→0.3400 (rated 0.34) | Huánuco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[395/520] Ucayali 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[396/520] Puno 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[397/520] Ica 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[398/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[399/520] El Callao 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[400/520] Arequipa 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[401/520] Pasco 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[402/520] San Martín 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[403/520] Tacna 0.3400→0.3400 (rated 0.34) | San Martín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[404/520] Cajamarca 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[405/520] Lima 0.3800→0.3800 (rated 0.38) | Municipalidad Metropolitana de Lima 0.3802→0.3800 (rated 0.38) · 3.0s/pair · cache-hit 5507
+[406/520] Pasco 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[407/520] Puno 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[408/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[409/520] Piura 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[410/520] Cajamarca 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[411/520] Piura 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 3.0s/pair · cache-hit 5507
+[412/520] Piura 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[413/520] El Callao 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[414/520] Tumbes 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[415/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[416/520] Pasco 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[417/520] Apurímac 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 3.0s/pair · cache-hit 5507
+[418/520] Moquegua 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[419/520] Tacna 0.3400→0.3400 (rated 0.34) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[420/520] Municipalidad Metropolitana de Lima 0.3800→0.3821 (rated 0.39) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[421/520] Amazonas 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[422/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[423/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[424/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[425/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[426/520] Tumbes 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[427/520] Loreto 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[428/520] Apurímac 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[429/520] Arequipa 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[430/520] Ucayali 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[431/520] Junín 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[432/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Lima 0.3800→0.3820 (rated 0.39) · 2.9s/pair · cache-hit 5507
+[433/520] Ucayali 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[434/520] Junín 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[435/520] Ayacucho 0.3600→0.3574 (rated 0.34) | Lima 0.3800→0.3826 (rated 0.40) · 2.9s/pair · cache-hit 5507
+[436/520] La Libertad 0.3400→0.3400 (rated 0.34) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[437/520] Tumbes 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[438/520] Ucayali 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[439/520] Junín 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[440/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3821→0.3839 (rated 0.39) · 3.0s/pair · cache-hit 5507
+[441/520] Loreto 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[442/520] Tacna 0.3400→0.3400 (rated 0.34) | Ayacucho 0.3574→0.3590 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[443/520] Apurímac 0.3600→0.3600 (rated 0.36) | Lima 0.3820→0.3804 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[444/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[445/520] Tumbes 0.3600→0.3600 (rated 0.36) | Cajamarca 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[446/520] Huancavelica 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[447/520] Puno 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[448/520] Loreto 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[449/520] Ica 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[450/520] Pasco 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[451/520] Municipalidad Metropolitana de Lima 0.3839→0.3856 (rated 0.39) | Piura 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[452/520] Municipalidad Metropolitana de Lima 0.3839→0.3855 (rated 0.39) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[453/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[454/520] Ancash 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[455/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[456/520] Huánuco 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[457/520] Ancash 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[458/520] Lambayeque 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[459/520] Ancash 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[460/520] El Callao 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[461/520] Ancash 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[462/520] Moquegua 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[463/520] Junín 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[464/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3590→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[465/520] Tacna 0.3400→0.3400 (rated 0.34) | Ayacucho 0.3590→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[466/520] El Callao 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[467/520] Pasco 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[468/520] Junín 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[469/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[470/520] Cusco 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[471/520] Loreto 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3855→0.3837 (rated 0.37) · 2.9s/pair · cache-hit 5507
+[472/520] Amazonas 0.3600→0.3600 (rated 0.36) | Piura 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[473/520] Loreto 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[474/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[475/520] Amazonas 0.3600→0.3600 (rated 0.36) | Apurímac 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[476/520] Loreto 0.3600→0.3600 (rated 0.36) | La Libertad 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[477/520] Pasco 0.3600→0.3600 (rated 0.36) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[478/520] Pasco 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[479/520] Pasco 0.3600→0.3600 (rated 0.36) | Madre de Dios 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[480/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[481/520] Cusco 0.3600→0.3600 (rated 0.36) | San Martín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[482/520] Ica 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[483/520] Junín 0.3600→0.3600 (rated 0.36) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[484/520] La Libertad 0.3400→0.3382 (rated 0.32) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[485/520] Piura 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[486/520] Municipalidad Metropolitana de Lima 0.3837→0.3825 (rated 0.38) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[487/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Pasco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[488/520] Cusco 0.3600→0.3600 (rated 0.36) | Junín 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[489/520] La Libertad 0.3382→0.3394 (rated 0.34) | Tacna 0.3400→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[490/520] El Callao 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3837→0.3825 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[491/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[492/520] Amazonas 0.3600→0.3600 (rated 0.36) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[493/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | La Libertad 0.3394→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[494/520] Lambayeque 0.3600→0.3600 (rated 0.36) | La Libertad 0.3382→0.3394 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[495/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[496/520] Piura 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[497/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Ucayali 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[498/520] Apurímac 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[499/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Huancavelica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[500/520] Lima 0.3804→0.3800 (rated 0.38) | Tumbes 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[501/520] Ucayali 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[502/520] Puno 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[503/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | La Libertad 0.3394→0.3400 (rated 0.34) · 2.9s/pair · cache-hit 5507
+[504/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[505/520] Ancash 0.3600→0.3600 (rated 0.36) | Amazonas 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[506/520] Loreto 0.3600→0.3600 (rated 0.36) | Municipalidad Metropolitana de Lima 0.3825→0.3814 (rated 0.38) · 2.9s/pair · cache-hit 5507
+[507/520] San Martín 0.3600→0.3616 (rated 0.38) | Ayacucho 0.3600→0.3585 (rated 0.35) · 2.9s/pair · cache-hit 5507
+[508/520] Tumbes 0.3600→0.3600 (rated 0.36) | Huánuco 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[509/520] Ucayali 0.3600→0.3600 (rated 0.36) | Arequipa 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[510/520] Ancash 0.3600→0.3600 (rated 0.36) | Ayacucho 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[511/520] Cajamarca 0.3600→0.3600 (rated 0.36) | Puno 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[512/520] Huancavelica 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[513/520] Moquegua 0.3600→0.3600 (rated 0.36) | Ancash 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[514/520] Cajamarca 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[515/520] Amazonas 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[516/520] Amazonas 0.3600→0.3600 (rated 0.36) | El Callao 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[517/520] Ayacucho 0.3600→0.3600 (rated 0.36) | Moquegua 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[518/520] La Libertad 0.3400→0.3400 (rated 0.34) | Lambayeque 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[519/520] Lambayeque 0.3600→0.3600 (rated 0.36) | Loreto 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+[520/520] Madre de Dios 0.3600→0.3600 (rated 0.36) | Ica 0.3600→0.3600 (rated 0.36) · 2.9s/pair · cache-hit 5507
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 520 pairs in 1526s · errors: 0 · total score movement: 0.615
+tokens — cache read: 2,841,612 · cache write: 22,028 · uncached in: 201,865 · out: 304,948
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
