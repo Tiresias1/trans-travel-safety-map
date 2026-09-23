@@ -286,15 +286,6 @@
    * A country/region that renders only a few pixels across at the current zoom
    * is invisible and un-clickable. Draw a thin-outlined dot in its risk colour
    * (at its bounding-box centre) over it instead. Recomputed on every zoom. */
-  function dotPosition(layer) {
-    // bbox centre, clamped to the polygon when the centre misses it
-    try {
-      const c = layer.getBounds().getCenter();
-      if (layer._pointInPolygon) return c;
-      return c;
-    } catch (e) { return null; }
-  }
-
   function updateDots() {
     if (!dotLayers[mode]) dotLayers[mode] = L.layerGroup();
     if (!map.hasLayer(dotLayers[mode])) dotLayers[mode].addTo(map);
