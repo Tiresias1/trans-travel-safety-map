@@ -3607,3 +3607,481 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 340 pairs in 1757s · errors: 0 · total score movement: 1.043
 tokens — cache read: 1,843,968 · cache write: 21,952 · uncached in: 170,703 · out: 355,877
 OK: 233 countries, 3240 admin1 units; ranks written; meta written
+KOR done 2026-09-23 13:02:16
+=================== ARG 2026-09-23 13:02:16 ===================
+new: 0 · refreshed: 0 · skipped (untouchable): 23 · with deltas: 0 · countries touched: 0
+wrote 3240 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
+ARG: 23 units -> 460 pairs
+system prompt: 24,548 chars (~6,137 tokens) — cached
+admin1 mode: Argentina (ARG) national 0.58 · 23 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 115 for ~10)
+pairs: 460 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 230 / 460: 0.07000/0.04007/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06009/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-ARG-20260923-130217.jsonl
+[1/460] Mendoza 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 6.8s/pair
+[2/460] Catamarca 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 4.1s/pair
+[3/460] San Luis 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.1s/pair
+[4/460] Chubut 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 2.6s/pair
+[5/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.8s/pair · cache-hit 5517
+[6/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[7/460] Río Negro 0.5800→0.5877 (rated 0.60) | Chaco 0.5800→0.5723 (rated 0.56) · 3.4s/pair · cache-hit 5517
+[8/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[9/460] Jujuy 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.0s/pair · cache-hit 5517
+[10/460] Tierra del Fuego 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 2.8s/pair · cache-hit 5517
+[11/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 2.9s/pair · cache-hit 5517
+[12/460] Córdoba 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.0s/pair · cache-hit 5517
+[13/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 2.8s/pair · cache-hit 5517
+[14/460] Chubut 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 2.7s/pair · cache-hit 5517
+[15/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[16/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Tucumán 0.5800→0.5719 (rated 0.55) · 3.0s/pair · cache-hit 5517
+[17/460] Salta 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[18/460] San Juan 0.5800→0.5754 (rated 0.57) | Tucumán 0.5800→0.5722 (rated 0.55) · 3.2s/pair · cache-hit 5517
+[19/460] San Juan 0.5754→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.4s/pair · cache-hit 5517
+[20/460] Mendoza 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[21/460] Chaco 0.5723→0.5777 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.1s/pair · cache-hit 5517
+[22/460] Corrientes 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6249→0.6334 (rated 0.66) · 3.0s/pair · cache-hit 5517
+[23/460] Chubut 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.0s/pair · cache-hit 5517
+[24/460] La Roja 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5800→0.5800 (rated 0.58) · 3.1s/pair · cache-hit 5517
+[25/460] Mendoza 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.0s/pair · cache-hit 5517
+[26/460] Río Negro 0.5877→0.5823 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 2.9s/pair · cache-hit 5517
+[27/460] Chaco 0.5777→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 2.9s/pair · cache-hit 5517
+[28/460] Chaco 0.5777→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.1s/pair · cache-hit 5517
+[29/460] Tucumán 0.5722→0.5776 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[30/460] San Juan 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[31/460] Mendoza 0.5800→0.5752 (rated 0.57) | Ciudad Autónoma de Buenos Aires 0.6334→0.6265 (rated 0.61) · 3.2s/pair · cache-hit 5517
+[32/460] Salta 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[33/460] Ciudad Autónoma de Buenos Aires 0.6334→0.6409 (rated 0.66) | La Roja 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[34/460] Chubut 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[35/460] Tucumán 0.5776→0.5711 (rated 0.56) | Salta 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[36/460] Neuquén 0.5800→0.5800 (rated 0.58) | Tucumán 0.5776→0.5701 (rated 0.55) · 3.3s/pair · cache-hit 5517
+[37/460] Córdoba 0.5800→0.5800 (rated 0.58) | Río Negro 0.5823→0.5800 (rated 0.58) · 3.4s/pair · cache-hit 5517
+[38/460] Salta 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.3s/pair · cache-hit 5517
+[39/460] Neuquén 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[40/460] La Roja 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.2s/pair · cache-hit 5517
+[41/460] Jujuy 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.4s/pair · cache-hit 5517
+[42/460] Córdoba 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.4s/pair · cache-hit 5517
+[43/460] Misiones 0.5800→0.5800 (rated 0.58) | Tucumán 0.5701→0.5646 (rated 0.56) · 3.4s/pair · cache-hit 5517
+[44/460] La Pampa 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6409→0.6342 (rated 0.62) · 3.5s/pair · cache-hit 5517
+[45/460] Corrientes 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.4s/pair · cache-hit 5517
+[46/460] Córdoba 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[47/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[48/460] Santiago del Estero 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[49/460] Catamarca 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[50/460] Santiago del Estero 0.5800→0.5724 (rated 0.55) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[51/460] Córdoba 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6342→0.6402 (rated 0.65) · 3.6s/pair · cache-hit 5517
+[52/460] Neuquén 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[53/460] Neuquén 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[54/460] Formosa 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[55/460] Tucumán 0.5646→0.5600 (rated 0.56) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[56/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[57/460] Mendoza 0.5752→0.5799 (rated 0.58) | Santiago del Estero 0.5724→0.5775 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[58/460] Chubut 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[59/460] Chubut 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[60/460] Chaco 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[61/460] Córdoba 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[62/460] Salta 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[63/460] Misiones 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5775→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[64/460] Mendoza 0.5799→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[65/460] Chaco 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[66/460] Formosa 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[67/460] San Luis 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[68/460] San Luis 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[69/460] Misiones 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[70/460] Ciudad Autónoma de Buenos Aires 0.6402→0.6475 (rated 0.67) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[71/460] Ciudad Autónoma de Buenos Aires 0.6402→0.6339 (rated 0.62) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[72/460] Santiago del Estero 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[73/460] San Luis 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[74/460] Neuquén 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[75/460] Chaco 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6402→0.6464 (rated 0.66) · 3.6s/pair · cache-hit 5517
+[76/460] San Juan 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[77/460] Misiones 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[78/460] Misiones 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[79/460] Formosa 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[80/460] Jujuy 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[81/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[82/460] Formosa 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6339→0.6407 (rated 0.66) · 3.5s/pair · cache-hit 5517
+[83/460] Tierra del Fuego 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[84/460] San Juan 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[85/460] Chaco 0.5800→0.5800 (rated 0.58) | Tucumán 0.5600→0.5600 (rated 0.56) · 3.7s/pair · cache-hit 5517
+[86/460] Tierra del Fuego 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[87/460] Neuquén 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6407→0.6467 (rated 0.66) · 3.7s/pair · cache-hit 5517
+[88/460] Chaco 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[89/460] Neuquén 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[90/460] Santiago del Estero 0.5800→0.5739 (rated 0.56) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[91/460] Santiago del Estero 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[92/460] Misiones 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[93/460] Córdoba 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[94/460] Tierra del Fuego 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[95/460] Salta 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[96/460] La Roja 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[97/460] Córdoba 0.5800→0.5741 (rated 0.56) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[98/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[99/460] Córdoba 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[100/460] Misiones 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[101/460] Río Negro 0.5800→0.5800 (rated 0.58) | Córdoba 0.5741→0.5786 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[102/460] Formosa 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[103/460] San Luis 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[104/460] Corrientes 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[105/460] San Luis 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[106/460] San Luis 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[107/460] Córdoba 0.5786→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[108/460] Chubut 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[109/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[110/460] Mendoza 0.5800→0.5800 (rated 0.58) | Tucumán 0.5600→0.5658 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[111/460] Santiago del Estero 0.5800→0.5740 (rated 0.56) | Chubut 0.5800→0.5854 (rated 0.59) · 3.6s/pair · cache-hit 5517
+[112/460] Santiago del Estero 0.5740→0.5784 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[113/460] Chubut 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[114/460] Formosa 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[115/460] San Luis 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[116/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[117/460] La Pampa 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[118/460] Chubut 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[119/460] Formosa 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[120/460] San Luis 0.5800→0.5761 (rated 0.56) | Jujuy 0.5800→0.5722 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[121/460] Formosa 0.5800→0.5729 (rated 0.54) | Ciudad Autónoma de Buenos Aires 0.6467→0.6427 (rated 0.63) · 3.6s/pair · cache-hit 5517
+[122/460] Chubut 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[123/460] Chaco 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[124/460] Chaco 0.5800→0.5800 (rated 0.58) | Tucumán 0.5658→0.5708 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[125/460] La Pampa 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[126/460] San Juan 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[127/460] Jujuy 0.5722→0.5766 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[128/460] Jujuy 0.5722→0.5766 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[129/460] San Luis 0.5761→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[130/460] Tierra del Fuego 0.5800→0.5860 (rated 0.60) | Tucumán 0.5658→0.5600 (rated 0.55) · 3.6s/pair · cache-hit 5517
+[131/460] Formosa 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[132/460] Misiones 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[133/460] Mendoza 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[134/460] San Luis 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[135/460] Salta 0.5800→0.5735 (rated 0.55) | Ciudad Autónoma de Buenos Aires 0.6427→0.6479 (rated 0.65) · 3.6s/pair · cache-hit 5517
+[136/460] Jujuy 0.5766→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[137/460] Corrientes 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[138/460] La Pampa 0.5800→0.5768 (rated 0.57) | Catamarca 0.5800→0.5730 (rated 0.54) · 3.6s/pair · cache-hit 5517
+[139/460] La Pampa 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[140/460] San Luis 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[141/460] Mendoza 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[142/460] Río Negro 0.5800→0.5800 (rated 0.58) | Tucumán 0.5600→0.5654 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[143/460] Chaco 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[144/460] Chaco 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[145/460] Tierra del Fuego 0.5860→0.5819 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[146/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[147/460] Ciudad Autónoma de Buenos Aires 0.6479→0.6556 (rated 0.68) | Corrientes 0.5800→0.5719 (rated 0.54) · 3.6s/pair · cache-hit 5517
+[148/460] Chaco 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5784→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[149/460] Chubut 0.5800→0.5800 (rated 0.58) | Corrientes 0.5719→0.5761 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[150/460] Salta 0.5735→0.5776 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[151/460] La Pampa 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5784→0.5733 (rated 0.56) · 3.6s/pair · cache-hit 5517
+[152/460] Corrientes 0.5761→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[153/460] Tierra del Fuego 0.5819→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[154/460] San Luis 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6556→0.6499 (rated 0.63) · 3.6s/pair · cache-hit 5517
+[155/460] Formosa 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[156/460] Tucumán 0.5654→0.5701 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[157/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[158/460] Formosa 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[159/460] Salta 0.5776→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[160/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[161/460] Tierra del Fuego 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[162/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[163/460] Jujuy 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[164/460] Misiones 0.5800→0.5800 (rated 0.58) | Catamarca 0.5730→0.5770 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[165/460] La Pampa 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[166/460] La Roja 0.5800→0.5722 (rated 0.53) | Ciudad Autónoma de Buenos Aires 0.6499→0.6557 (rated 0.66) · 3.7s/pair · cache-hit 5517
+[167/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Chaco 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[168/460] Ciudad Autónoma de Buenos Aires 0.6499→0.6499 (rated 0.65) | Tierra del Fuego 0.5800→0.5842 (rated 0.59) · 3.7s/pair · cache-hit 5517
+[169/460] Catamarca 0.5770→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[170/460] Santiago del Estero 0.5733→0.5772 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[171/460] San Luis 0.5800→0.5762 (rated 0.56) | Tucumán 0.5701→0.5640 (rated 0.53) · 3.7s/pair · cache-hit 5517
+[172/460] La Pampa 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[173/460] Chaco 0.5800→0.5759 (rated 0.56) | Tucumán 0.5701→0.5648 (rated 0.54) · 3.7s/pair · cache-hit 5517
+[174/460] Misiones 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[175/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[176/460] La Roja 0.5722→0.5762 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[177/460] San Juan 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[178/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[179/460] Catamarca 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[180/460] Formosa 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[181/460] Chaco 0.5759→0.5795 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[182/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Chaco 0.5759→0.5795 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[183/460] Santa Fe 0.5800→0.5800 (rated 0.58) | San Luis 0.5762→0.5798 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[184/460] Córdoba 0.5800→0.5800 (rated 0.58) | Tucumán 0.5648→0.5692 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[185/460] Santiago del Estero 0.5772→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[186/460] La Roja 0.5762→0.5712 (rated 0.56) | Tierra del Fuego 0.5842→0.5891 (rated 0.60) · 3.7s/pair · cache-hit 5517
+[187/460] San Juan 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[188/460] San Luis 0.5798→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[189/460] Santiago del Estero 0.5772→0.5695 (rated 0.52) | Tierra del Fuego 0.5842→0.5896 (rated 0.59) · 3.7s/pair · cache-hit 5517
+[190/460] Ciudad Autónoma de Buenos Aires 0.6499→0.6554 (rated 0.68) | San Luis 0.5798→0.5798 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[191/460] Ciudad Autónoma de Buenos Aires 0.6499→0.6539 (rated 0.66) | San Luis 0.5798→0.5798 (rated 0.58) · 3.8s/pair · cache-hit 5517
+[192/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Tucumán 0.5692→0.5733 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[193/460] Tierra del Fuego 0.5896→0.5857 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[194/460] Chubut 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[195/460] Catamarca 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[196/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[197/460] San Juan 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[198/460] Tierra del Fuego 0.5857→0.5822 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[199/460] Ciudad Autónoma de Buenos Aires 0.6499→0.6468 (rated 0.64) | Tucumán 0.5692→0.5640 (rated 0.54) · 3.7s/pair · cache-hit 5517
+[200/460] San Juan 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[201/460] Chaco 0.5795→0.5749 (rated 0.56) | San Luis 0.5798→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[202/460] La Pampa 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[203/460] Formosa 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[204/460] Salta 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[205/460] Chaco 0.5795→0.5766 (rated 0.57) | Tucumán 0.5733→0.5678 (rated 0.54) · 3.7s/pair · cache-hit 5517
+[206/460] La Roja 0.5712→0.5749 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[207/460] Chaco 0.5749→0.5784 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[208/460] Córdoba 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[209/460] San Juan 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[210/460] Tierra del Fuego 0.5822→0.5808 (rated 0.58) | Formosa 0.5800→0.5747 (rated 0.55) · 3.7s/pair · cache-hit 5517
+[211/460] Ciudad Autónoma de Buenos Aires 0.6468→0.6432 (rated 0.63) | La Roja 0.5749→0.5705 (rated 0.55) · 3.7s/pair · cache-hit 5517
+[212/460] Córdoba 0.5800→0.5762 (rated 0.57) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.7s/pair · cache-hit 5517
+[213/460] San Juan 0.5800→0.5800 (rated 0.58) | La Roja 0.5749→0.5783 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[214/460] Chubut 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6468→0.6507 (rated 0.66) · 3.7s/pair · cache-hit 5517
+[215/460] Chaco 0.5784→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[216/460] La Roja 0.5705→0.5742 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[217/460] Chubut 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[218/460] Salta 0.5800→0.5800 (rated 0.58) | Chaco 0.5784→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[219/460] Salta 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[220/460] Formosa 0.5747→0.5781 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[221/460] Misiones 0.5800→0.5800 (rated 0.58) | Córdoba 0.5762→0.5794 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[222/460] San Juan 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[223/460] Córdoba 0.5762→0.5795 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[224/460] Tierra del Fuego 0.5808→0.5856 (rated 0.60) | San Luis 0.5800→0.5752 (rated 0.56) · 3.7s/pair · cache-hit 5517
+[225/460] Neuquén 0.5800→0.5800 (rated 0.58) | La Roja 0.5742→0.5775 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[226/460] Río Negro 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[227/460] Mendoza 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[228/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | San Juan 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[229/460] Chubut 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[230/460] Chubut 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6507→0.6457 (rated 0.62) · 3.7s/pair · cache-hit 5517
+[231/460] Neuquén 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.7s/pair · cache-hit 5517
+[232/460] La Roja 0.5775→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[233/460] Río Negro 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[234/460] La Pampa 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[235/460] Tucumán 0.5678→0.5715 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[236/460] Córdoba 0.5795→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[237/460] Misiones 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[238/460] Formosa 0.5781→0.5741 (rated 0.55) | Ciudad Autónoma de Buenos Aires 0.6507→0.6465 (rated 0.62) · 3.6s/pair · cache-hit 5517
+[239/460] Tierra del Fuego 0.5856→0.5824 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[240/460] Río Negro 0.5800→0.5800 (rated 0.58) | San Luis 0.5752→0.5783 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[241/460] San Juan 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[242/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Formosa 0.5781→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[243/460] Catamarca 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[244/460] Río Negro 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[245/460] La Pampa 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5824→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[246/460] Córdoba 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5824→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[247/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[248/460] Tierra del Fuego 0.5824→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[249/460] Formosa 0.5800→0.5800 (rated 0.58) | San Luis 0.5783→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[250/460] Mendoza 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[251/460] Corrientes 0.5800→0.5760 (rated 0.56) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[252/460] Santa Cruz 0.5800→0.5772 (rated 0.57) | Tucumán 0.5715→0.5676 (rated 0.55) · 3.6s/pair · cache-hit 5517
+[253/460] San Juan 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[254/460] Corrientes 0.5760→0.5789 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[255/460] Mendoza 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[256/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[257/460] San Luis 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[258/460] Mendoza 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[259/460] Río Negro 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[260/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[261/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[262/460] Formosa 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[263/460] San Luis 0.5800→0.5748 (rated 0.55) | Tierra del Fuego 0.5800→0.5852 (rated 0.61) · 3.6s/pair · cache-hit 5517
+[264/460] Jujuy 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[265/460] Salta 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[266/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[267/460] San Luis 0.5748→0.5777 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[268/460] San Juan 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[269/460] Córdoba 0.5800→0.5800 (rated 0.58) | San Luis 0.5777→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[270/460] Ciudad Autónoma de Buenos Aires 0.6465→0.6429 (rated 0.63) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[271/460] Salta 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[272/460] Jujuy 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[273/460] Catamarca 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[274/460] Chubut 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6465→0.6492 (rated 0.65) · 3.6s/pair · cache-hit 5517
+[275/460] Jujuy 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[276/460] Tierra del Fuego 0.5852→0.5824 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[277/460] Chubut 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[278/460] Tierra del Fuego 0.5852→0.5823 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6429→0.6459 (rated 0.65) · 3.6s/pair · cache-hit 5517
+[279/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Formosa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[280/460] Córdoba 0.5800→0.5769 (rated 0.57) | Tierra del Fuego 0.5852→0.5881 (rated 0.59) · 3.6s/pair · cache-hit 5517
+[281/460] Jujuy 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5695→0.5725 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[282/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[283/460] La Pampa 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[284/460] Jujuy 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[285/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[286/460] La Pampa 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[287/460] Río Negro 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6459→0.6514 (rated 0.70) · 3.6s/pair · cache-hit 5517
+[288/460] Tucumán 0.5676→0.5648 (rated 0.56) | Tierra del Fuego 0.5881→0.5900 (rated 0.59) · 3.6s/pair · cache-hit 5517
+[289/460] Misiones 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[290/460] Catamarca 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[291/460] San Luis 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[292/460] Misiones 0.5800→0.5800 (rated 0.58) | Tucumán 0.5648→0.5680 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[293/460] Formosa 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[294/460] Ciudad Autónoma de Buenos Aires 0.6514→0.6484 (rated 0.64) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[295/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[296/460] Formosa 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[297/460] La Pampa 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[298/460] Santiago del Estero 0.5725→0.5752 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[299/460] Córdoba 0.5769→0.5793 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[300/460] Jujuy 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[301/460] Neuquén 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[302/460] Tucumán 0.5680→0.5653 (rated 0.56) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[303/460] Mendoza 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[304/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Santiago del Estero 0.5752→0.5777 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[305/460] Catamarca 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6484→0.6457 (rated 0.64) · 3.6s/pair · cache-hit 5517
+[306/460] Catamarca 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[307/460] Tierra del Fuego 0.5900→0.5873 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[308/460] Corrientes 0.5789→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[309/460] Río Negro 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[310/460] Salta 0.5800→0.5800 (rated 0.58) | Corrientes 0.5789→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[311/460] Neuquén 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[312/460] Chaco 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[313/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[314/460] La Roja 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[315/460] Misiones 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[316/460] Formosa 0.5800→0.5749 (rated 0.53) | Neuquén 0.5800→0.5842 (rated 0.60) · 3.6s/pair · cache-hit 5517
+[317/460] Neuquén 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[318/460] Ciudad Autónoma de Buenos Aires 0.6457→0.6422 (rated 0.62) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[319/460] Salta 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[320/460] Catamarca 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[321/460] Chaco 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5777→0.5799 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[322/460] La Pampa 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[323/460] Río Negro 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5769 (rated 0.56) · 3.6s/pair · cache-hit 5517
+[324/460] La Roja 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[325/460] Santiago del Estero 0.5777→0.5799 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[326/460] Ciudad Autónoma de Buenos Aires 0.6422→0.6447 (rated 0.65) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[327/460] Chubut 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[328/460] Santiago del Estero 0.5799→0.5767 (rated 0.56) | Tierra del Fuego 0.5873→0.5903 (rated 0.60) · 3.6s/pair · cache-hit 5517
+[329/460] Chaco 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[330/460] Salta 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[331/460] San Juan 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[332/460] Río Negro 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[333/460] Mendoza 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[334/460] Santiago del Estero 0.5767→0.5788 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[335/460] Santiago del Estero 0.5767→0.5788 (rated 0.58) | Jujuy 0.5769→0.5790 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[336/460] Neuquén 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[337/460] Chaco 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5903→0.5879 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[338/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Mendoza 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[339/460] Río Negro 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[340/460] La Roja 0.5800→0.5800 (rated 0.58) | Ciudad Autónoma de Buenos Aires 0.6447→0.6420 (rated 0.63) · 3.6s/pair · cache-hit 5517
+[341/460] Chubut 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[342/460] La Pampa 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5788→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[343/460] Córdoba 0.5793→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[344/460] Tucumán 0.5653→0.5678 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[345/460] Tucumán 0.5653→0.5675 (rated 0.57) | Jujuy 0.5790→0.5766 (rated 0.57) · 3.6s/pair · cache-hit 5517
+[346/460] La Roja 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[347/460] Ciudad Autónoma de Buenos Aires 0.6447→0.6468 (rated 0.65) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[348/460] Jujuy 0.5766→0.5786 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[349/460] Misiones 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[350/460] Formosa 0.5749→0.5770 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[351/460] Neuquén 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[352/460] Chubut 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5879→0.5857 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[353/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Formosa 0.5749→0.5769 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[354/460] Catamarca 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[355/460] San Luis 0.5800→0.5800 (rated 0.58) | Jujuy 0.5786→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[356/460] Jujuy 0.5786→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[357/460] Catamarca 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[358/460] Misiones 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[359/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Formosa 0.5769→0.5740 (rated 0.55) · 3.6s/pair · cache-hit 5517
+[360/460] Catamarca 0.5800→0.5800 (rated 0.58) | Formosa 0.5769→0.5745 (rated 0.56) · 3.6s/pair · cache-hit 5517
+[361/460] Salta 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[362/460] Córdoba 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[363/460] Tucumán 0.5675→0.5697 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.6s/pair · cache-hit 5517
+[364/460] Formosa 0.5745→0.5764 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[365/460] Mendoza 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[366/460] Santiago del Estero 0.5800→0.5758 (rated 0.53) | Ciudad Autónoma de Buenos Aires 0.6468→0.6504 (rated 0.67) · 3.6s/pair · cache-hit 5517
+[367/460] Formosa 0.5764→0.5782 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[368/460] La Pampa 0.5800→0.5800 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[369/460] Chubut 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[370/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[371/460] Corrientes 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[372/460] Tierra del Fuego 0.5857→0.5840 (rated 0.58) | Formosa 0.5745→0.5722 (rated 0.56) · 3.6s/pair · cache-hit 5517
+[373/460] La Pampa 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[374/460] Tierra del Fuego 0.5857→0.5839 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[375/460] Córdoba 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5857→0.5839 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[376/460] Tucumán 0.5697→0.5718 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[377/460] Catamarca 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[378/460] Misiones 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5839→0.5821 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[379/460] Misiones 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[380/460] Río Negro 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[381/460] Chaco 0.5800→0.5800 (rated 0.58) | Neuquén 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[382/460] Misiones 0.5800→0.5800 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[383/460] Neuquén 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.6s/pair · cache-hit 5517
+[384/460] Neuquén 0.5800→0.5825 (rated 0.59) | Formosa 0.5722→0.5693 (rated 0.54) · 3.5s/pair · cache-hit 5517
+[385/460] Córdoba 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5821→0.5805 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[386/460] Corrientes 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[387/460] Córdoba 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.5s/pair · cache-hit 5517
+[388/460] Misiones 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[389/460] Misiones 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[390/460] San Juan 0.5800→0.5800 (rated 0.58) | Formosa 0.5693→0.5712 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[391/460] Catamarca 0.5800→0.5800 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[392/460] Jujuy 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[393/460] Corrientes 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5805→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[394/460] Formosa 0.5712→0.5729 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[395/460] Santiago del Estero 0.5800→0.5769 (rated 0.54) | Tierra del Fuego 0.5805→0.5833 (rated 0.60) · 3.5s/pair · cache-hit 5517
+[396/460] San Luis 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[397/460] Formosa 0.5712→0.5729 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[398/460] Chubut 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[399/460] Mendoza 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[400/460] Formosa 0.5729→0.5746 (rated 0.58) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[401/460] Ciudad Autónoma de Buenos Aires 0.6504→0.6504 (rated 0.65) | Santiago del Estero 0.5800→0.5775 (rated 0.55) · 3.5s/pair · cache-hit 5517
+[402/460] Salta 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[403/460] La Roja 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5833→0.5818 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[404/460] Santa Fe 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[405/460] Tucumán 0.5718→0.5701 (rated 0.56) | Catamarca 0.5800→0.5784 (rated 0.57) · 3.5s/pair · cache-hit 5517
+[406/460] Salta 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[407/460] Santiago del Estero 0.5775→0.5789 (rated 0.58) | San Juan 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[408/460] Salta 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5775→0.5789 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[409/460] Tucumán 0.5718→0.5734 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[410/460] Salta 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[411/460] Neuquén 0.5825→0.5811 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[412/460] Misiones 0.5800→0.5800 (rated 0.58) | Río Negro 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[413/460] Salta 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[414/460] Mendoza 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[415/460] San Luis 0.5800→0.5800 (rated 0.58) | Neuquén 0.5811→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[416/460] Catamarca 0.5784→0.5798 (rated 0.58) | Tierra del Fuego 0.5818→0.5804 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[417/460] Córdoba 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.5s/pair · cache-hit 5517
+[418/460] San Juan 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[419/460] Formosa 0.5746→0.5760 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[420/460] Jujuy 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[421/460] Santiago del Estero 0.5789→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[422/460] Santiago del Estero 0.5789→0.5760 (rated 0.53) | Ciudad Autónoma de Buenos Aires 0.6504→0.6528 (rated 0.67) · 3.5s/pair · cache-hit 5517
+[423/460] Corrientes 0.5800→0.5800 (rated 0.58) | Tucumán 0.5734→0.5718 (rated 0.56) · 3.5s/pair · cache-hit 5517
+[424/460] Salta 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[425/460] Santiago del Estero 0.5789→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[426/460] San Juan 0.5800→0.5800 (rated 0.58) | Formosa 0.5760→0.5773 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[427/460] Neuquén 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[428/460] Misiones 0.5800→0.5800 (rated 0.58) | Catamarca 0.5798→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[429/460] La Pampa 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[430/460] Catamarca 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5804→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[431/460] Santiago del Estero 0.5760→0.5736 (rated 0.53) | San Luis 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[432/460] Neuquén 0.5800→0.5800 (rated 0.58) | Corrientes 0.5800→0.5783 (rated 0.56) · 3.5s/pair · cache-hit 5517
+[433/460] Salta 0.5800→0.5800 (rated 0.58) | Santa Cruz 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[434/460] La Pampa 0.5800→0.5800 (rated 0.58) | Tucumán 0.5718→0.5731 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[435/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[436/460] Misiones 0.5800→0.5800 (rated 0.58) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[437/460] Misiones 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[438/460] Mendoza 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[439/460] Catamarca 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[440/460] Ciudad Autónoma de Buenos Aires 0.6528→0.6517 (rated 0.65) | Chubut 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[441/460] La Pampa 0.5800→0.5800 (rated 0.58) | La Roja 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[442/460] Corrientes 0.5783→0.5794 (rated 0.58) | Santiago del Estero 0.5736→0.5748 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[443/460] Río Negro 0.5800→0.5800 (rated 0.58) | San Luis 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[444/460] Buenos Aires 0.5300→0.5300 (rated 0.53) | Catamarca 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[445/460] La Roja 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5736→0.5747 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[446/460] Santa Fe 0.5800→0.5820 (rated 0.60) | Tucumán 0.5731→0.5709 (rated 0.53) · 3.5s/pair · cache-hit 5517
+[447/460] Catamarca 0.5800→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[448/460] La Roja 0.5800→0.5800 (rated 0.58) | Chubut 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[449/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Jujuy 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[450/460] Catamarca 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.5s/pair · cache-hit 5517
+[451/460] Corrientes 0.5794→0.5800 (rated 0.58) | Córdoba 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[452/460] Santiago del Estero 0.5748→0.5732 (rated 0.55) | Tierra del Fuego 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[453/460] Misiones 0.5800→0.5800 (rated 0.58) | Santiago del Estero 0.5747→0.5758 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[454/460] La Roja 0.5800→0.5800 (rated 0.58) | Santa Fe 0.5820→0.5810 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[455/460] Chubut 0.5800→0.5800 (rated 0.58) | Chaco 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[456/460] Santa Cruz 0.5800→0.5800 (rated 0.58) | Misiones 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[457/460] La Pampa 0.5800→0.5800 (rated 0.58) | Buenos Aires 0.5300→0.5300 (rated 0.53) · 3.5s/pair · cache-hit 5517
+[458/460] Tucumán 0.5709→0.5689 (rated 0.52) | La Pampa 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[459/460] Santa Fe 0.5810→0.5801 (rated 0.58) | Salta 0.5800→0.5800 (rated 0.58) · 3.5s/pair · cache-hit 5517
+[460/460] Jujuy 0.5800→0.5785 (rated 0.55) | Ciudad Autónoma de Buenos Aires 0.6517→0.6508 (rated 0.64) · 3.5s/pair · cache-hit 5517
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 460 pairs in 1626s · errors: 0 · total score movement: 0.846
+tokens — cache read: 2,515,752 · cache write: 22,068 · uncached in: 167,944 · out: 314,285
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
