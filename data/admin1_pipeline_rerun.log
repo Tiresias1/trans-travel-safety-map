@@ -5481,3 +5481,701 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 720 pairs in 3488s · errors: 8 · total score movement: 2.117
 tokens — cache read: 3,916,656 · cache write: 22,128 · uncached in: 313,174 · out: 721,226
 OK: 233 countries, 3240 admin1 units; ranks written; meta written
+IND done 2026-09-23 15:14:46
+=================== IDN 2026-09-23 15:14:46 ===================
+new: 0 · refreshed: 0 · skipped (untouchable): 34 · with deltas: 0 · countries touched: 0
+wrote 3240 records to /home/meme/kóði/kort/data/admin1.json
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
+IDN: 34 units -> 680 pairs
+system prompt: 24,590 chars (~6,147 tokens) — cached
+admin1 mode: Indonesia (IDN) national 0.15 · 34 scored divisions · this run gives ~40.0 encounters each (recommend --num-pairs 170 for ~10)
+pairs: 680 · workers: 4 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 340 / 680: 0.07000/0.04004/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06006/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-admin1-IDN-20260923-151448.jsonl
+[1/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 9.7s/pair
+[2/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 6.5s/pair
+[3/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1311→0.1300 (rated 0.13) · 4.8s/pair
+[4/680] North Maluku 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 3.9s/pair · cache-hit 5519
+[5/680] Gorontalo 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1200→0.1200 (rated 0.12) · 5.1s/pair
+[6/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[7/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.3s/pair · cache-hit 5519
+[8/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.2s/pair · cache-hit 5519
+[9/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 5.3s/pair · cache-hit 5519
+[10/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 5.2s/pair · cache-hit 5519
+[11/680] West Java 0.0790→0.0850 (rated 0.09) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 5.2s/pair · cache-hit 5519
+[12/680] Papua 0.1100→0.1042 (rated 0.10) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[13/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[14/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[15/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.4s/pair · cache-hit 5519
+[16/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[17/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[18/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | East Java 0.1488→0.1420 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[19/680] Papua 0.1042→0.1095 (rated 0.11) | Banten 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[20/680] Central Sulawesi 0.1500→0.1431 (rated 0.13) | Jakarta Special Capital Region 0.1747→0.1707 (rated 0.17) · 4.7s/pair · cache-hit 5519
+[21/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[22/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[23/680] Bali 0.1957→0.2000 (rated 0.20) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.4s/pair · cache-hit 5519
+[24/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[25/680] Bengkulu 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.4s/pair · cache-hit 5519
+[26/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.3s/pair · cache-hit 5519
+[27/680] Riau 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.3s/pair · cache-hit 5519
+[28/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.2s/pair · cache-hit 5519
+[29/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.1s/pair · cache-hit 5519
+[30/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[31/680] Central Sulawesi 0.1431→0.1488 (rated 0.15) | East Java 0.1420→0.1360 (rated 0.13) · 4.4s/pair · cache-hit 5519
+[32/680] Special Region of Yogyakarta 0.1300→0.1357 (rated 0.14) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[33/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | West Java 0.0850→0.0787 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[34/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[35/680] East Java 0.1420→0.1361 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[36/680] Riau 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[37/680] West Java 0.0850→0.0787 (rated 0.07) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.4s/pair · cache-hit 5519
+[38/680] West Sumatra 0.1200→0.1144 (rated 0.11) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[39/680] Papua 0.1095→0.1100 (rated 0.11) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[40/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.6s/pair · cache-hit 5519
+[41/680] Papua 0.1095→0.1100 (rated 0.11) | West Sumatra 0.1200→0.1143 (rated 0.11) · 4.5s/pair · cache-hit 5519
+[42/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[43/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[44/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[45/680] Gorontalo 0.1500→0.1500 (rated 0.15) | West Java 0.0788→0.0733 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[46/680] South Sumatra 0.1300→0.1300 (rated 0.13) | East Java 0.1361→0.1400 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[47/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[48/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[49/680] West Sumatra 0.1143→0.1195 (rated 0.12) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[50/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[51/680] Lampung 0.1279→0.1300 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[52/680] Riau 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1143→0.1205 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[53/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[54/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1195→0.1129 (rated 0.10) · 4.7s/pair · cache-hit 5519
+[55/680] Special Region of Yogyakarta 0.1357→0.1306 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[56/680] Lampung 0.1300→0.1300 (rated 0.13) | Jakarta Special Capital Region 0.1707→0.1651 (rated 0.16) · 4.9s/pair · cache-hit 5519
+[57/680] Bali 0.2000→0.1954 (rated 0.18) | Jakarta Special Capital Region 0.1707→0.1614 (rated 0.12) · 4.8s/pair · cache-hit 5519
+[58/680] Jakarta Special Capital Region 0.1707→0.1761 (rated 0.18) | Jambi 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[59/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[60/680] Bali 0.2000→0.2055 (rated 0.21) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[61/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[62/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[63/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[64/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[65/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[66/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[67/680] Bengkulu 0.1500→0.1500 (rated 0.15) | East Java 0.1400→0.1400 (rated 0.14) · 4.6s/pair · cache-hit 5519
+[68/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[69/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[70/680] Aceh 0.0300→0.0300 (rated 0.03) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[71/680] South Sulawesi 0.1300→0.1354 (rated 0.14) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[72/680] Bengkulu 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[73/680] Special Region of Yogyakarta 0.1306→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[74/680] North Maluku 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.5s/pair · cache-hit 5519
+[75/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[76/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Bali 0.2055→0.2006 (rated 0.20) · 4.6s/pair · cache-hit 5519
+[77/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[78/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1129→0.1072 (rated 0.10) · 4.6s/pair · cache-hit 5519
+[79/680] West Java 0.0733→0.0700 (rated 0.07) | Lampung 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[80/680] West Java 0.0733→0.0783 (rated 0.08) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[81/680] West Java 0.0733→0.0793 (rated 0.09) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[82/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Jakarta Special Capital Region 0.1761→0.1701 (rated 0.16) · 4.7s/pair · cache-hit 5519
+[83/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[84/680] South Sulawesi 0.1354→0.1305 (rated 0.13) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[85/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[86/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[87/680] West Java 0.0793→0.0800 (rated 0.08) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[88/680] Jakarta Special Capital Region 0.1701→0.1627 (rated 0.14) | Maluku 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[89/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | West Java 0.0793→0.0730 (rated 0.06) · 4.8s/pair · cache-hit 5519
+[90/680] Jakarta Special Capital Region 0.1701→0.1648 (rated 0.16) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[91/680] East Java 0.1400→0.1400 (rated 0.14) | Papua 0.1100→0.1100 (rated 0.11) · 4.8s/pair · cache-hit 5519
+[92/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[93/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[94/680] Jakarta Special Capital Region 0.1648→0.1601 (rated 0.16) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[95/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.9s/pair · cache-hit 5519
+[96/680] West Sumatra 0.1072→0.1100 (rated 0.11) | Papua 0.1100→0.1100 (rated 0.11) · 4.9s/pair · cache-hit 5519
+[97/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | East Java 0.1400→0.1347 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[98/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1305→0.1300 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[99/680] North Sumatra 0.1300→0.1300 (rated 0.13) | East Java 0.1400→0.1348 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[100/680] East Java 0.1400→0.1348 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[101/680] Riau Islands 0.1500→0.1446 (rated 0.14) | North Kalimantan 0.1500→0.1554 (rated 0.16) · 4.9s/pair · cache-hit 5519
+[102/680] Jakarta Special Capital Region 0.1601→0.1653 (rated 0.17) | Central Java 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[103/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Banten 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[104/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | East Java 0.1348→0.1301 (rated 0.13) · 4.9s/pair · cache-hit 5519
+[105/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[106/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Central Sulawesi 0.1488→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[107/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[108/680] West Java 0.0730→0.0789 (rated 0.09) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[109/680] West Sumatra 0.1100→0.1038 (rated 0.09) | Jambi 0.1500→0.1500 (rated 0.15) · 4.9s/pair · cache-hit 5519
+[110/680] North Maluku 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1554→0.1507 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[111/680] Maluku 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1300→0.1352 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[112/680] Bali 0.2006→0.1956 (rated 0.19) | West Nusa Tenggara 0.1500→0.1451 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[113/680] Riau 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[114/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1507→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[115/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | East Java 0.1301→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[116/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[117/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[118/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1451→0.1497 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[119/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[120/680] Central Java 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[121/680] West Papua 0.1100→0.1100 (rated 0.11) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[122/680] West Java 0.0789→0.0800 (rated 0.08) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[123/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[124/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[125/680] Papua 0.1100→0.1100 (rated 0.11) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[126/680] Central Java 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[127/680] West Nusa Tenggara 0.1497→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[128/680] Maluku 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[129/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[130/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Bali 0.1956→0.2000 (rated 0.20) · 4.8s/pair · cache-hit 5519
+[131/680] West Papua 0.1100→0.1100 (rated 0.11) | Jakarta Special Capital Region 0.1653→0.1568 (rated 0.12) · 4.8s/pair · cache-hit 5519
+[132/680] Papua 0.1100→0.1100 (rated 0.11) | South Sulawesi 0.1352→0.1306 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[133/680] West Kalimantan 0.1500→0.1548 (rated 0.16) | East Java 0.1300→0.1348 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[134/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1653→0.1698 (rated 0.17) · 4.8s/pair · cache-hit 5519
+[135/680] Papua 0.1100→0.1100 (rated 0.11) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[136/680] Lampung 0.1300→0.1300 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[137/680] Lampung 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[138/680] South Sulawesi 0.1306→0.1300 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[139/680] North Maluku 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[140/680] East Java 0.1348→0.1303 (rated 0.13) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[141/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[142/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[143/680] Central Java 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[144/680] West Java 0.0800→0.0741 (rated 0.06) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[145/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[146/680] West Kalimantan 0.1548→0.1504 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[147/680] Central Kalimantan 0.1300→0.1355 (rated 0.14) | West Java 0.0800→0.0739 (rated 0.06) · 4.8s/pair · cache-hit 5519
+[148/680] West Papua 0.1100→0.1100 (rated 0.11) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[149/680] Jambi 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[150/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | East Java 0.1303→0.1254 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[151/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[152/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[153/680] Riau Islands 0.1446→0.1490 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[154/680] Aceh 0.0300→0.0300 (rated 0.03) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[155/680] Aceh 0.0300→0.0300 (rated 0.03) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[156/680] South Sulawesi 0.1300→0.1349 (rated 0.14) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[157/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[158/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1038→0.1092 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[159/680] West Papua 0.1100→0.1100 (rated 0.11) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[160/680] Riau 0.1500→0.1500 (rated 0.15) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[161/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1092→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[162/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[163/680] Jakarta Special Capital Region 0.1698→0.1634 (rated 0.14) | West Sumatra 0.1038→0.0996 (rated 0.09) · 4.7s/pair · cache-hit 5519
+[164/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | West Java 0.0739→0.0783 (rated 0.08) · 4.8s/pair · cache-hit 5519
+[165/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[166/680] West Sumatra 0.1092→0.1045 (rated 0.10) | West Papua 0.1100→0.1100 (rated 0.11) · 4.8s/pair · cache-hit 5519
+[167/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[168/680] Lampung 0.1300→0.1300 (rated 0.13) | Banten 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[169/680] Riau 0.1500→0.1500 (rated 0.15) | East Java 0.1254→0.1315 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[170/680] West Java 0.0783→0.0800 (rated 0.08) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[171/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[172/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1490→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[173/680] Aceh 0.0300→0.0300 (rated 0.03) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[174/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[175/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[176/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[177/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[178/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[179/680] West Kalimantan 0.1504→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[180/680] South Sulawesi 0.1349→0.1297 (rated 0.12) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[181/680] Central Kalimantan 0.1355→0.1313 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[182/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Java 0.0800→0.0753 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[183/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1253 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[184/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[185/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Special Region of Yogyakarta 0.1300→0.1346 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[186/680] South Sulawesi 0.1297→0.1344 (rated 0.14) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[187/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1635→0.1576 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[188/680] North Sumatra 0.1300→0.1300 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[189/680] South Sumatra 0.1253→0.1295 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[190/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[191/680] East Java 0.1315→0.1360 (rated 0.14) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[192/680] Jambi 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[193/680] West Sumatra 0.1045→0.1087 (rated 0.11) | Jakarta Special Capital Region 0.1576→0.1599 (rated 0.16) · 4.7s/pair · cache-hit 5519
+[194/680] Jambi 0.1500→0.1500 (rated 0.15) | West Java 0.0753→0.0703 (rated 0.06) · 4.7s/pair · cache-hit 5519
+[195/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[196/680] Maluku 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[197/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[198/680] Aceh 0.0300→0.0300 (rated 0.03) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[199/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[200/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[201/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[202/680] Special Region of Yogyakarta 0.1346→0.1406 (rated 0.16) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[203/680] South Sulawesi 0.1344→0.1304 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[204/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[205/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1313→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[206/680] Central Kalimantan 0.1313→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[207/680] North Maluku 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[208/680] West Sumatra 0.1087→0.1043 (rated 0.10) | Banten 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[209/680] Jambi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[210/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1295→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[211/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[212/680] Central Java 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[213/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[214/680] West Java 0.0703→0.0658 (rated 0.06) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[215/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[216/680] West Java 0.0703→0.0700 (rated 0.07) | Bali 0.2000→0.2062 (rated 0.23) · 4.6s/pair · cache-hit 5519
+[217/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[218/680] Bali 0.2000→0.2000 (rated 0.20) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[219/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Special Region of Yogyakarta 0.1406→0.1361 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[220/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | East Java 0.1360→0.1311 (rated 0.12) · 4.6s/pair · cache-hit 5519
+[221/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[222/680] South Sulawesi 0.1303→0.1300 (rated 0.13) | Banten 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[223/680] Maluku 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[224/680] Jambi 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[225/680] South Sulawesi 0.1303→0.1347 (rated 0.14) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[226/680] Jakarta Special Capital Region 0.1599→0.1556 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[227/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[228/680] Jambi 0.1500→0.1500 (rated 0.15) | West Java 0.0700→0.0700 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[229/680] Jakarta Special Capital Region 0.1599→0.1556 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[230/680] Banten 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[231/680] Riau Islands 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[232/680] East Java 0.1311→0.1267 (rated 0.12) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[233/680] Lampung 0.1300→0.1300 (rated 0.13) | West Java 0.0700→0.0657 (rated 0.06) · 4.7s/pair · cache-hit 5519
+[234/680] East Java 0.1311→0.1353 (rated 0.14) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[235/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[236/680] East Nusa Tenggara 0.1500→0.1448 (rated 0.13) | Jakarta Special Capital Region 0.1556→0.1600 (rated 0.16) · 4.7s/pair · cache-hit 5519
+[237/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1043→0.1091 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[238/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[239/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Java 0.0657→0.0695 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[240/680] West Papua 0.1100→0.1149 (rated 0.13) | Aceh 0.0300→0.0337 (rated 0.04) · 4.7s/pair · cache-hit 5519
+[241/680] Jakarta Special Capital Region 0.1600→0.1600 (rated 0.16) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[242/680] Special Region of Yogyakarta 0.1361→0.1322 (rated 0.13) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[243/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[244/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[245/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Aceh 0.0337→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[246/680] Banten 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[247/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[248/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[249/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[250/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[251/680] Jakarta Special Capital Region 0.1600→0.1553 (rated 0.14) | South Sulawesi 0.1347→0.1306 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[252/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[253/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[254/680] East Nusa Tenggara 0.1448→0.1486 (rated 0.15) | South Sulawesi 0.1347→0.1384 (rated 0.14) · 4.6s/pair · cache-hit 5519
+[255/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1306→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[256/680] South Sulawesi 0.1306→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[257/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[258/680] Central Java 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[259/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1149 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[260/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1091→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[261/680] West Sumatra 0.1091→0.1051 (rated 0.10) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[262/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[263/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Papua 0.1149→0.1112 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[264/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Special Region of Yogyakarta 0.1322→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[265/680] Riau 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[266/680] Bali 0.2000→0.1959 (rated 0.19) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[267/680] Jakarta Special Capital Region 0.1553→0.1608 (rated 0.18) | Bangka-Belitung Islands 0.1500→0.1452 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[268/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[269/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[270/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[271/680] East Java 0.1353→0.1316 (rated 0.13) | Bali 0.2000→0.2000 (rated 0.20) · 4.7s/pair · cache-hit 5519
+[272/680] Maluku 0.1500→0.1500 (rated 0.15) | Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[273/680] Riau Islands 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1300→0.1340 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[274/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[275/680] East Java 0.1353→0.1389 (rated 0.14) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[276/680] Banten 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1486→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[277/680] West Papua 0.1149→0.1113 (rated 0.11) | Bangka-Belitung Islands 0.1452→0.1489 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[278/680] North Sumatra 0.1300→0.1300 (rated 0.13) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[279/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[280/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | West Papua 0.1149→0.1113 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[281/680] Gorontalo 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[282/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[283/680] Bangka-Belitung Islands 0.1489→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[284/680] North Maluku 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[285/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Lampung 0.1300→0.1260 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[286/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Papua 0.1112→0.1100 (rated 0.11) · 4.6s/pair · cache-hit 5519
+[287/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1051→0.1094 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[288/680] Gorontalo 0.1500→0.1453 (rated 0.13) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[289/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[290/680] Bali 0.2000→0.2047 (rated 0.22) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[291/680] West Papua 0.1113→0.1100 (rated 0.11) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[292/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[293/680] East Kalimantan 0.1500→0.1544 (rated 0.16) | East Java 0.1389→0.1341 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[294/680] Gorontalo 0.1453→0.1410 (rated 0.13) | Bali 0.2000→0.2000 (rated 0.20) · 4.7s/pair · cache-hit 5519
+[295/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[296/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[297/680] West Java 0.0695→0.0734 (rated 0.08) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[298/680] Banten 0.1500→0.1500 (rated 0.15) | Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[299/680] Jambi 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[300/680] Banten 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1094→0.1132 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[301/680] Central Java 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[302/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | East Java 0.1341→0.1307 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[303/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[304/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | East Java 0.1307→0.1352 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[305/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Gorontalo 0.1410→0.1448 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[306/680] West Papua 0.1100→0.1100 (rated 0.11) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[307/680] West Papua 0.1100→0.1100 (rated 0.11) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[308/680] Aceh 0.0300→0.0300 (rated 0.03) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[309/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[310/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[311/680] Papua 0.1100→0.1100 (rated 0.11) | East Java 0.1352→0.1393 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[312/680] Bengkulu 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[313/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1132→0.1085 (rated 0.09) · 4.7s/pair · cache-hit 5519
+[314/680] Central Java 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[315/680] Maluku 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[316/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[317/680] East Kalimantan 0.1544→0.1511 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[318/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[319/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[320/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[321/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[322/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[323/680] West Sumatra 0.1085→0.1123 (rated 0.12) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[324/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[325/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[326/680] Jambi 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[327/680] Jambi 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[328/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[329/680] Jambi 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[330/680] North Maluku 0.1500→0.1500 (rated 0.15) | Bali 0.2000→0.2058 (rated 0.24) · 4.6s/pair · cache-hit 5519
+[331/680] West Sumatra 0.1123→0.1158 (rated 0.12) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[332/680] Bengkulu 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[333/680] West Java 0.0734→0.0768 (rated 0.08) | Aceh 0.0300→0.0300 (rated 0.03) · 4.6s/pair · cache-hit 5519
+[334/680] West Papua 0.1100→0.1100 (rated 0.11) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[335/680] East Kalimantan 0.1511→0.1500 (rated 0.15) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[336/680] Riau 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[337/680] Bali 0.2058→0.2011 (rated 0.18) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[338/680] Bali 0.2058→0.2089 (rated 0.21) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[339/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[340/680] Jakarta Special Capital Region 0.1608→0.1544 (rated 0.12) | Bali 0.2011→0.2070 (rated 0.23) · 4.7s/pair · cache-hit 5519
+[341/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[342/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1158→0.1189 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[343/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[344/680] South Sulawesi 0.1300→0.1265 (rated 0.12) | West Papua 0.1100→0.1100 (rated 0.11) · 4.6s/pair · cache-hit 5519
+[345/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[346/680] West Papua 0.1100→0.1100 (rated 0.11) | Gorontalo 0.1448→0.1480 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[347/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[348/680] Jambi 0.1500→0.1500 (rated 0.15) | East Java 0.1393→0.1400 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[349/680] Papua 0.1100→0.1100 (rated 0.11) | Lampung 0.1260→0.1291 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[350/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[351/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1100 (rated 0.11) · 4.6s/pair · cache-hit 5519
+[352/680] Bengkulu 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[353/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[354/680] East Java 0.1400→0.1365 (rated 0.13) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[355/680] West Java 0.0768→0.0729 (rated 0.06) | Lampung 0.1291→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[356/680] Gorontalo 0.1480→0.1438 (rated 0.13) | North Kalimantan 0.1500→0.1539 (rated 0.16) · 4.7s/pair · cache-hit 5519
+[357/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[358/680] West Papua 0.1100→0.1100 (rated 0.11) | West Java 0.0768→0.0735 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[359/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | South Sulawesi 0.1265→0.1295 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[360/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[361/680] Bali 0.2070→0.2106 (rated 0.22) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[362/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[363/680] North Kalimantan 0.1539→0.1509 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[364/680] Central Java 0.1500→0.1466 (rated 0.14) | North Kalimantan 0.1539→0.1511 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[365/680] Jambi 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[366/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Gorontalo 0.1438→0.1469 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[367/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bali 0.2106→0.2072 (rated 0.20) · 4.7s/pair · cache-hit 5519
+[368/680] Bali 0.2106→0.2072 (rated 0.20) | Central Java 0.1466→0.1498 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[369/680] Jambi 0.1500→0.1500 (rated 0.15) | East Java 0.1365→0.1401 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[370/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1466→0.1495 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[371/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[372/680] Jakarta Special Capital Region 0.1544→0.1587 (rated 0.18) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[373/680] Central Java 0.1495→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[374/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[375/680] Jambi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1189→0.1157 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[376/680] North Maluku 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[377/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | East Java 0.1401→0.1400 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[378/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1189→0.1223 (rated 0.13) · 4.6s/pair · cache-hit 5519
+[379/680] Gorontalo 0.1469→0.1498 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[380/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[381/680] Bengkulu 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.6s/pair · cache-hit 5519
+[382/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Java 0.0735→0.0766 (rated 0.08) · 4.6s/pair · cache-hit 5519
+[383/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Bali 0.2072→0.2106 (rated 0.22) · 4.7s/pair · cache-hit 5519
+[384/680] West Papua 0.1100→0.1100 (rated 0.11) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[385/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[386/680] Banten 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1223→0.1183 (rated 0.10) · 4.7s/pair · cache-hit 5519
+[387/680] North Sumatra 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1223→0.1200 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[388/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Java 0.0735→0.0778 (rated 0.10) · 4.7s/pair · cache-hit 5519
+[389/680] Bengkulu 0.1500→0.1500 (rated 0.15) | East Java 0.1400→0.1400 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[390/680] Aceh 0.0300→0.0300 (rated 0.03) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[391/680] Jakarta Special Capital Region 0.1587→0.1600 (rated 0.16) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[392/680] Lampung 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[393/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[394/680] Aceh 0.0300→0.0300 (rated 0.03) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[395/680] Bali 0.2106→0.2074 (rated 0.20) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[396/680] Maluku 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[397/680] Jakarta Special Capital Region 0.1600→0.1600 (rated 0.16) | North Kalimantan 0.1511→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[398/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[399/680] South Sulawesi 0.1295→0.1327 (rated 0.14) | West Sumatra 0.1200→0.1200 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[400/680] North Maluku 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[401/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[402/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[403/680] East Java 0.1400→0.1369 (rated 0.13) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[404/680] Central Java 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[405/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[406/680] West Papua 0.1100→0.1100 (rated 0.11) | Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[407/680] North Maluku 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1600→0.1631 (rated 0.17) · 4.7s/pair · cache-hit 5519
+[408/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[409/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[410/680] Gorontalo 0.1498→0.1500 (rated 0.15) | South Sulawesi 0.1326→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[411/680] Banten 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1326→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[412/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1631→0.1659 (rated 0.17) · 4.7s/pair · cache-hit 5519
+[413/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[414/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[415/680] Lampung 0.1300→0.1300 (rated 0.13) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[416/680] Bali 0.2074→0.2100 (rated 0.21) | West Sumatra 0.1200→0.1170 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[417/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[418/680] Lampung 0.1300→0.1300 (rated 0.13) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[419/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[420/680] Bali 0.2074→0.2134 (rated 0.27) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[421/680] West Papua 0.1100→0.1100 (rated 0.11) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[422/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[423/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[424/680] North Maluku 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[425/680] Central Java 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[426/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[427/680] West Java 0.0778→0.0750 (rated 0.07) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[428/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[429/680] Jambi 0.1500→0.1500 (rated 0.15) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[430/680] Lampung 0.1300→0.1300 (rated 0.13) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[431/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[432/680] Jakarta Special Capital Region 0.1659→0.1610 (rated 0.12) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[433/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1271 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[434/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[435/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[436/680] Papua 0.1100→0.1100 (rated 0.11) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[437/680] Aceh 0.0300→0.0300 (rated 0.03) | Jakarta Special Capital Region 0.1659→0.1696 (rated 0.19) · 4.7s/pair · cache-hit 5519
+[438/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[439/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[440/680] North Kalimantan 0.1500→0.1530 (rated 0.16) | Central Java 0.1500→0.1470 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[441/680] Bali 0.2134→0.2166 (rated 0.23) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[442/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[443/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[444/680] Central Java 0.1470→0.1494 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[445/680] Lampung 0.1300→0.1300 (rated 0.13) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[446/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[447/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[448/680] North Kalimantan 0.1530→0.1506 (rated 0.15) | Bali 0.2166→0.2191 (rated 0.22) · 4.7s/pair · cache-hit 5519
+[449/680] East Java 0.1369→0.1397 (rated 0.14) | Gorontalo 0.1500→0.1467 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[450/680] West Papua 0.1100→0.1100 (rated 0.11) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[451/680] East Java 0.1369→0.1345 (rated 0.13) | Central Java 0.1494→0.1468 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[452/680] Jakarta Special Capital Region 0.1696→0.1668 (rated 0.16) | West Sumatra 0.1170→0.1195 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[453/680] Banten 0.1500→0.1500 (rated 0.15) | Gorontalo 0.1467→0.1491 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[454/680] West Java 0.0750→0.0725 (rated 0.07) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[455/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1170→0.1144 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[456/680] Banten 0.1500→0.1467 (rated 0.13) | North Kalimantan 0.1506→0.1504 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[457/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Bali 0.2191→0.2154 (rated 0.19) · 4.7s/pair · cache-hit 5519
+[458/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1468→0.1491 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[459/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Bali 0.2191→0.2154 (rated 0.19) · 4.7s/pair · cache-hit 5519
+[460/680] North Maluku 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[461/680] West Sumatra 0.1144→0.1169 (rated 0.12) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[462/680] Riau 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[463/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[464/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[465/680] North Kalimantan 0.1504→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[466/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[467/680] North Maluku 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[468/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[469/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[470/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[471/680] West Sumatra 0.1169→0.1144 (rated 0.11) | Central Java 0.1491→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[472/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[473/680] North Maluku 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[474/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bali 0.2154→0.2182 (rated 0.23) · 4.7s/pair · cache-hit 5519
+[475/680] Riau 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[476/680] Maluku 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1668→0.1639 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[477/680] Papua 0.1100→0.1100 (rated 0.11) | Gorontalo 0.1491→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[478/680] South Sumatra 0.1271→0.1293 (rated 0.13) | Bali 0.2182→0.2200 (rated 0.22) · 4.7s/pair · cache-hit 5519
+[479/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[480/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Lampung 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[481/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1271→0.1293 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[482/680] South Sulawesi 0.1300→0.1332 (rated 0.14) | Jakarta Special Capital Region 0.1639→0.1600 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[483/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1293→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[484/680] Jambi 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1639→0.1617 (rated 0.16) · 4.7s/pair · cache-hit 5519
+[485/680] Central Java 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[486/680] Papua 0.1100→0.1125 (rated 0.12) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[487/680] Maluku 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[488/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[489/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[490/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[491/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[492/680] West Java 0.0725→0.0748 (rated 0.08) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[493/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1144→0.1113 (rated 0.09) · 4.7s/pair · cache-hit 5519
+[494/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Jakarta Special Capital Region 0.1617→0.1641 (rated 0.17) · 4.7s/pair · cache-hit 5519
+[495/680] Maluku 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[496/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[497/680] South Sulawesi 0.1332→0.1311 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[498/680] Central Java 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[499/680] West Java 0.0748→0.0722 (rated 0.06) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[500/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[501/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[502/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[503/680] North Maluku 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[504/680] Jambi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1113→0.1088 (rated 0.10) · 4.7s/pair · cache-hit 5519
+[505/680] Riau 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[506/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[507/680] Gorontalo 0.1500→0.1500 (rated 0.15) | West Java 0.0722→0.0744 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[508/680] Central Java 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[509/680] South Sumatra 0.1300→0.1300 (rated 0.13) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[510/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Papua 0.1125→0.1105 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[511/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bali 0.2200→0.2223 (rated 0.23) · 4.7s/pair · cache-hit 5519
+[512/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[513/680] Bengkulu 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1088→0.1112 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[514/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Jakarta Special Capital Region 0.1641→0.1616 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[515/680] Central Java 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[516/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[517/680] East Java 0.1345→0.1368 (rated 0.15) | Special Region of Yogyakarta 0.1300→0.1320 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[518/680] West Java 0.0744→0.0724 (rated 0.07) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[519/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[520/680] West Sumatra 0.1112→0.1100 (rated 0.11) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[521/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[522/680] Jambi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[523/680] North Sumatra 0.1300→0.1300 (rated 0.13) | Papua 0.1105→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[524/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[525/680] Bali 0.2223→0.2189 (rated 0.19) | Aceh 0.0300→0.0328 (rated 0.04) · 4.7s/pair · cache-hit 5519
+[526/680] Jambi 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[527/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1100→0.1122 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[528/680] Maluku 0.1500→0.1500 (rated 0.15) | West Java 0.0724→0.0745 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[529/680] Jakarta Special Capital Region 0.1616→0.1593 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[530/680] Lampung 0.1300→0.1300 (rated 0.13) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[531/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[532/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[533/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[534/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[535/680] South Sumatra 0.1300→0.1300 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[536/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | South Sulawesi 0.1311→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[537/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | West Java 0.0745→0.0765 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[538/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[539/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[540/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Aceh 0.0328→0.0310 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[541/680] Riau Islands 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1325 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[542/680] Riau 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1122→0.1146 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[543/680] Papua 0.1100→0.1100 (rated 0.11) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[544/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[545/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[546/680] Central Java 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[547/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Aceh 0.0310→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[548/680] West Java 0.0765→0.0783 (rated 0.08) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[549/680] Central Kalimantan 0.1325→0.1308 (rated 0.13) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[550/680] Maluku 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[551/680] West Papua 0.1100→0.1100 (rated 0.11) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[552/680] West Papua 0.1100→0.1100 (rated 0.11) | Special Region of Yogyakarta 0.1320→0.1340 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[553/680] Aceh 0.0300→0.0300 (rated 0.03) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[554/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[555/680] West Sumatra 0.1146→0.1124 (rated 0.10) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[556/680] North Maluku 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[557/680] Special Region of Yogyakarta 0.1340→0.1322 (rated 0.13) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[558/680] South Sumatra 0.1300→0.1300 (rated 0.13) | West Sumatra 0.1146→0.1128 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[559/680] Special Region of Yogyakarta 0.1340→0.1322 (rated 0.13) | West Java 0.0783→0.0800 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[560/680] Papua 0.1100→0.1100 (rated 0.11) | Central Kalimantan 0.1308→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[561/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Banten 0.1467→0.1485 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[562/680] West Sumatra 0.1128→0.1111 (rated 0.11) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[563/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[564/680] Central Java 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[565/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[566/680] Bali 0.2189→0.2200 (rated 0.22) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[567/680] Aceh 0.0300→0.0300 (rated 0.03) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[568/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[569/680] East Java 0.1368→0.1385 (rated 0.14) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[570/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[571/680] West Sumatra 0.1111→0.1100 (rated 0.11) | Special Region of Yogyakarta 0.1322→0.1306 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[572/680] Bali 0.2200→0.2200 (rated 0.22) | Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[573/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[574/680] East Java 0.1368→0.1348 (rated 0.13) | South Kalimantan 0.1500→0.1523 (rated 0.17) · 4.7s/pair · cache-hit 5519
+[575/680] Central Sulawesi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[576/680] Riau 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[577/680] Banten 0.1485→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[578/680] South Kalimantan 0.1523→0.1508 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[579/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[580/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[581/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[582/680] West Sumatra 0.1100→0.1082 (rated 0.10) | South Kalimantan 0.1523→0.1509 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[583/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[584/680] East Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[585/680] West Papua 0.1100→0.1118 (rated 0.12) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[586/680] Bengkulu 0.1500→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[587/680] Central Java 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[588/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[589/680] Jakarta Special Capital Region 0.1593→0.1612 (rated 0.17) | Central Java 0.1500→0.1481 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[590/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[591/680] Bengkulu 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[592/680] Jakarta Special Capital Region 0.1593→0.1611 (rated 0.17) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[593/680] Papua 0.1100→0.1100 (rated 0.11) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[594/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[595/680] Jambi 0.1500→0.1500 (rated 0.15) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[596/680] West Sumatra 0.1082→0.1065 (rated 0.10) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[597/680] Bengkulu 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1509→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[598/680] West Sumatra 0.1082→0.1096 (rated 0.11) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[599/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[600/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[601/680] Lampung 0.1300→0.1283 (rated 0.12) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[602/680] East Java 0.1348→0.1366 (rated 0.14) | West Java 0.0800→0.0779 (rated 0.06) · 4.7s/pair · cache-hit 5519
+[603/680] West Papua 0.1118→0.1104 (rated 0.11) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[604/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[605/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Papua 0.1118→0.1104 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[606/680] North Sumatra 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[607/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1481→0.1495 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[608/680] Papua 0.1100→0.1100 (rated 0.11) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[609/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[610/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[611/680] Central Java 0.1495→0.1500 (rated 0.15) | Bengkulu 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[612/680] Bali 0.2200→0.2200 (rated 0.22) | Jambi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[613/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[614/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[615/680] Lampung 0.1283→0.1268 (rated 0.12) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[616/680] West Sumatra 0.1096→0.1100 (rated 0.11) | Gorontalo 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[617/680] Jambi 0.1500→0.1500 (rated 0.15) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[618/680] Jambi 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[619/680] East Java 0.1366→0.1351 (rated 0.13) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[620/680] South Sulawesi 0.1300→0.1316 (rated 0.14) | Central Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[621/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | North Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[622/680] East Java 0.1366→0.1382 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[623/680] Aceh 0.0300→0.0300 (rated 0.03) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[624/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | West Papua 0.1104→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[625/680] North Sumatra 0.1300→0.1287 (rated 0.12) | East Java 0.1382→0.1366 (rated 0.12) · 4.7s/pair · cache-hit 5519
+[626/680] Jambi 0.1500→0.1500 (rated 0.15) | West Java 0.0780→0.0792 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[627/680] Gorontalo 0.1500→0.1500 (rated 0.15) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[628/680] Jambi 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[629/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Maluku 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[630/680] West Sumatra 0.1100→0.1100 (rated 0.11) | East Java 0.1366→0.1379 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[631/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Riau 0.1500→0.1500 (rated 0.15) · 4.8s/pair
+[632/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[633/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | West Sulawesi 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[634/680] Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[635/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | Central Kalimantan 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[636/680] Central Java 0.1500→0.1500 (rated 0.15) | East Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[637/680] South Sumatra 0.1300→0.1300 (rated 0.13) | Riau Islands 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[638/680] West Sumatra 0.1100→0.1100 (rated 0.11) | Lampung 0.1268→0.1280 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[639/680] Jambi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[640/680] Banten 0.1500→0.1500 (rated 0.15) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[641/680] Special Region of Yogyakarta 0.1306→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[642/680] Maluku 0.1500→0.1500 (rated 0.15) | Bali 0.2200→0.2216 (rated 0.24) · 4.7s/pair · cache-hit 5519
+[643/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | North Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[644/680] West Kalimantan 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1100→0.1086 (rated 0.10) · 4.7s/pair · cache-hit 5519
+[645/680] Jambi 0.1500→0.1500 (rated 0.15) | North Maluku 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[646/680] Maluku 0.1500→0.1500 (rated 0.15) | South Sumatra 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[647/680] Lampung 0.1280→0.1292 (rated 0.13) | East Java 0.1379→0.1390 (rated 0.14) · 4.7s/pair · cache-hit 5519
+[648/680] Aceh 0.0300→0.0300 (rated 0.03) | Jakarta Special Capital Region 0.1611→0.1627 (rated 0.18) · 4.7s/pair · cache-hit 5519
+[649/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[650/680] Jakarta Special Capital Region 0.1611→0.1626 (rated 0.18) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[651/680] Papua 0.1100→0.1100 (rated 0.11) | West Java 0.0792→0.0779 (rated 0.07) · 4.7s/pair · cache-hit 5519
+[652/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[653/680] West Java 0.0792→0.0777 (rated 0.06) | South Sulawesi 0.1300→0.1300 (rated 0.13) · 4.7s/pair · cache-hit 5519
+[654/680] West Sulawesi 0.1500→0.1500 (rated 0.15) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[655/680] Jakarta Special Capital Region 0.1626→0.1638 (rated 0.17) | Maluku 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[656/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Aceh 0.0300→0.0300 (rated 0.03) · 4.7s/pair · cache-hit 5519
+[657/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | Jakarta Special Capital Region 0.1626→0.1615 (rated 0.16) · 4.8s/pair · cache-hit 5519
+[658/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | North Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[659/680] South Kalimantan 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[660/680] Riau Islands 0.1500→0.1500 (rated 0.15) | West Java 0.0777→0.0788 (rated 0.08) · 4.7s/pair · cache-hit 5519
+[661/680] Jambi 0.1500→0.1500 (rated 0.15) | West Papua 0.1100→0.1100 (rated 0.11) · 4.7s/pair · cache-hit 5519
+[662/680] Jambi 0.1500→0.1500 (rated 0.15) | Aceh 0.0300→0.0300 (rated 0.03) · 4.8s/pair · cache-hit 5519
+[663/680] Bengkulu 0.1500→0.1500 (rated 0.15) | Banten 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[664/680] East Java 0.1390→0.1375 (rated 0.12) | Jakarta Special Capital Region 0.1615→0.1629 (rated 0.17) · 4.8s/pair · cache-hit 5519
+[665/680] Gorontalo 0.1500→0.1500 (rated 0.15) | Riau 0.1500→0.1500 (rated 0.15) · 4.7s/pair · cache-hit 5519
+[666/680] Central Kalimantan 0.1300→0.1300 (rated 0.13) | West Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[667/680] East Kalimantan 0.1500→0.1500 (rated 0.15) | East Java 0.1390→0.1400 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[668/680] North Sulawesi 0.1300→0.1300 (rated 0.13) | West Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[669/680] Jakarta Special Capital Region 0.1629→0.1615 (rated 0.13) | West Java 0.0788→0.0775 (rated 0.05) · 4.8s/pair · cache-hit 5519
+[670/680] Bali 0.2216→0.2200 (rated 0.19) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[671/680] South Sulawesi 0.1300→0.1300 (rated 0.13) | Central Java 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[672/680] Lampung 0.1292→0.1299 (rated 0.13) | Southeast Sulawesi 0.1300→0.1312 (rated 0.14) · 4.8s/pair · cache-hit 5519
+[673/680] Southeast Sulawesi 0.1300→0.1300 (rated 0.13) | Papua 0.1100→0.1100 (rated 0.11) · 4.8s/pair · cache-hit 5519
+[674/680] North Kalimantan 0.1500→0.1500 (rated 0.15) | South Kalimantan 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[675/680] East Java 0.1400→0.1389 (rated 0.13) | Southeast Sulawesi 0.1300→0.1300 (rated 0.13) · 4.8s/pair · cache-hit 5519
+[676/680] Bangka-Belitung Islands 0.1500→0.1488 (rated 0.14) | Jakarta Special Capital Region 0.1615→0.1627 (rated 0.17) · 4.8s/pair · cache-hit 5519
+[677/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[678/680] Bangka-Belitung Islands 0.1488→0.1497 (rated 0.15) | East Nusa Tenggara 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[679/680] Special Region of Yogyakarta 0.1300→0.1300 (rated 0.13) | Bangka-Belitung Islands 0.1500→0.1500 (rated 0.15) · 4.8s/pair · cache-hit 5519
+[680/680] West Nusa Tenggara 0.1500→0.1500 (rated 0.15) | West Sumatra 0.1086→0.1098 (rated 0.12) · 4.8s/pair · cache-hit 5519
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 680 pairs in 3249s · errors: 0 · total score movement: 1.129
+tokens — cache read: 3,725,325 · cache write: 27,595 · uncached in: 343,170 · out: 696,183
+OK: 233 countries, 3240 admin1 units; ranks written; meta written
