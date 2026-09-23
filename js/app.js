@@ -74,6 +74,8 @@
     zoom: 2,
     minZoom: 2,
     maxZoom: 10,
+    zoomSnap: 0.5,
+    zoomDelta: 0.5,
     worldCopyJump: true,
     scrollWheelZoom: true,
     zoomControl: true,
@@ -285,7 +287,23 @@
   /* ---------- tiny-feature dots ----------
    * A country/region that renders only a few pixels across at the current zoom
    * is invisible and un-clickable. Draw a thin-outlined dot in its risk colour
-   * (at its bounding-box centre) over it instead. Recomputed on every zoom. */
+   * (at its bounding-box centre) over it instead. Recomputed on every zoom.
+   * In states/provinces mode dots stay sparse: a unit gets one only if (A) its
+   * country itself also renders as a dot at this zoom, or (B) it sits far from
+   * the country's other regions (islands, detached territories). Otherwise
+   * dense small-unit countries overwhelm the map. */
+  function pxBox(f, zoom) {
+    if (!f.getBounds) return null;
+    const key = "_px" + zoom;
+    if (f[key]) return f[key];
+    const b = f.getBounds();
+    const nw = map.project(b.getNorthWest(), zoom);
+    const se = map.project(b.getSouthEast(), zoom);
+    return (f[key] = {
+      w: Math.abs(se.x - nw.x), h: Math.abs(se.y - nw.y), c: b.getCenter(),
+    });
+  }
+
   function updateDots() {
     if (!dotLayers[mode]) dotLayers[mode] = L.layerGroup();
     if (!map.hasLayer(dotLayers[mode])) dotLayers[mode].addTo(map);
@@ -293,21 +311,60 @@
     const layer = layers[mode];
     if (!layer) return;
     const zoom = map.getZoom();
+    const SMALL2 = 320;      // px²-squared-diagonal threshold for "very small"
+    const ISOLATED_PX = 24;  // px to nearest same-country region centroid
+
+    // (A) countries that themselves render as dots at this zoom
+    const tinyCountries = new Set();
+    if (mode === "admin1" && layers.countries) {
+      layers.countries.eachLayer((cf) => {
+        const s = pxBox(cf, zoom);
+        if (s && s.w * s.w + s.h * s.h < SMALL2 && cf.feature)
+          tinyCountries.add(cf.feature.properties.iso3);
+      });
+    }
+
+    // group same-country projected centroids for the isolation test
+    const boxes = new Map();
+    const pxCenters = {};
     layer.eachLayer((f) => {
-      if (!f.getBounds) return;
-      const b = f.getBounds();
-      const nw = map.project(b.getNorthWest(), zoom);
-      const se = map.project(b.getSouthEast(), zoom);
-      const w = Math.abs(se.x - nw.x), h = Math.abs(se.y - nw.y);
-      if (w * w + h * h >= 320) return; // not "very small"
+      if (!f.feature) return;
+      const s = pxBox(f, zoom);
+      if (!s) return;
+      boxes.set(f, s);
+      const iso = f.feature.properties.iso3;
+      const p = map.project(s.c, zoom);
+      (pxCenters[iso] || (pxCenters[iso] = [])).push({ x: p.x, y: p.y });
+    });
+
+    const radius = mode === "countries" ? 3 : 2.5;
+    layer.eachLayer((f) => {
+      const s = boxes.get(f);
+      if (!s || s.w * s.w + s.h * s.h >= SMALL2) return; // not "very small"
       const props = f.feature && f.feature.properties;
       if (!props) return;
+      if (mode === "admin1" && !tinyCountries.has(props.iso3)) {
+        // (B) only if far from every other region of the same country
+        const me = map.project(s.c, zoom);
+        let isolated = false;
+        const peers = pxCenters[props.iso3] || [];
+        if (peers.length < 2) isolated = true;
+        else {
+          let min = Infinity;
+          for (const p of peers) {
+            const d = Math.hypot(p.x - me.x, p.y - me.y);
+            if (d > 0.5 && d < min) min = d;
+          }
+          isolated = min > ISOLATED_PX;
+        }
+        if (!isolated) return;
+      }
       const rec = recordFor(mode, props) ||
         (mode === "admin1" && countryData[props.iso3]);
       if (!rec || typeof rec.score !== "number") return;
-      const center = b.getCenter();
+      const center = s.c;
       const dot = L.circleMarker(center, {
-        radius: 4.5,
+        radius,
         fillColor: gradientColour(rec.score),
         fillOpacity: 1,
         weight: 1,
@@ -315,8 +372,8 @@
         interactive: true,
       });
       dot.bindTooltip(() => {
-        const s = ` — ${rec.score.toFixed(2)} ${bandLabel(rec.score)}`;
-        return `${props.name || "?"}${s}`;
+        const t = ` — ${rec.score.toFixed(2)} ${bandLabel(rec.score)}`;
+        return `${props.name || "?"}${t}`;
       }, { sticky: true, className: "score-tooltip" });
       dot.on("click", () => openPopupAt(mode, f.feature, rec, center));
       dotLayers[mode].addLayer(dot);
@@ -488,7 +545,7 @@
     });
     ctx.setTransform(scale, 0, 0, scale, 0, 0);
     const title = document.querySelector("h1").textContent;
-    ctx.font = `600 ${Math.max(16, size.x * 0.026)}px system-ui, sans-serif`;
+    ctx.font = `800 ${Math.max(11, size.x * 0.015)}px system-ui, sans-serif`;
     ctx.textAlign = "center";
     ctx.textBaseline = "top";
     ctx.lineJoin = "round";
