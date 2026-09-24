@@ -569,14 +569,16 @@ def render_parent_bundle(parent: dict) -> str:
 
 
 def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
-                            flip: bool) -> str:
+                            flip: bool, blind_name: bool = False) -> str:
     rb_text = (region.get("_blindRegion") or "").strip()
     if not rb_text:  # fallback: use the record's own summary + model context
         def clean(t):
             return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(t or ""))).strip()
         rb_text = clean(region.get("summary")) + "\n\n" + clean(region.get("modelContext"))
+    rname = ("(identity withheld)" if blind_name
+             else f"('{region.get('name', '?')}')")
     region_block = (
-        f"An administrative region ('{region.get('name', '?')}') within the state "
+        f"An administrative region {rname} within the state "
         f"described below, which imposes that framework on it directly.\n\n"
         f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n"
         f"{render_parent_bundle(parent_rec)}\n\n"
@@ -779,6 +781,9 @@ def main() -> int:
     ap.add_argument("--regions-parent", nargs="+", default=None,
                     help="with --regions-vs-countries: ISO3s whose units form the "
                          "region pool")
+    ap.add_argument("--regions-unit", nargs="*", default=None,
+                    help="with --regions-vs-countries: restrict region pool to units "
+                         "whose name contains one of these substrings")
     ap.add_argument("--bundles", default=None,
                     help="with --regions-vs-countries: JSON file {shapeID: "
                          "blindRegion text} authored for the region dossiers")
@@ -789,6 +794,9 @@ def main() -> int:
                     help="omit cache_control (for endpoints that reject it)")
     ap.add_argument("--allow-partial-blind", action="store_true",
                     help="include countries missing some required blind* fields")
+    ap.add_argument("--blind-region-names", action="store_true",
+                    help="with --regions-vs-countries: replace the region's own name "
+                         "with 'An administrative region' in the presented header")
     ap.add_argument("--dry-run", action="store_true",
                     help="build prompts and print diagnostics; make no API calls")
     ap.add_argument("--no-write", action="store_true",
@@ -830,6 +838,10 @@ def main() -> int:
                        if r.get("iso3") in parents
                        and isinstance(r.get("score"), (int, float))
                        and str(r.get("summary", "")).strip()]
+        if args.regions_unit:
+            subs = [u.lower() for u in args.regions_unit]
+            region_pool = [sid for sid in region_pool
+                           if any(u in admin1[sid].get("name", "").lower() for u in subs)]
         if not region_pool:
             print(f"error: no admin1 units for parents {sorted(parents)}", file=sys.stderr)
             return 2
@@ -997,7 +1009,8 @@ def main() -> int:
                 r0 = float(ur["score"])
                 c0 = float(countries[iso_c]["score"])
                 flip = rng.random() < 0.5
-            user_text = build_mixed_user_prompt(ur, countries[par], countries[iso_c], flip)
+            user_text = build_mixed_user_prompt(ur, countries[par], countries[iso_c], flip,
+                                            blind_name=args.blind_region_names)
             if args.dry_run:
                 print(f"\n{'='*78}\nPAIR {idx}: R={ur.get('name')} vs C={countries[iso_c]['name']}\n{'='*78}")
                 print(user_text)
