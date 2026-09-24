@@ -76,6 +76,7 @@
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
+    wheelPxPerZoomLevel: 250,
     worldCopyJump: true,
     scrollWheelZoom: true,
     zoomControl: true,
@@ -311,7 +312,7 @@
     const layer = layers[mode];
     if (!layer) return;
     const zoom = map.getZoom();
-    const SMALL2 = 320;      // px²-squared-diagonal threshold for "very small"
+    const SMALL2 = 120;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Tetoko yes, Sierra Leone&Liberia no)
     const ISOLATED_PX = 24;  // px to nearest same-country region centroid
 
     // (A) countries that themselves render as dots at this zoom
