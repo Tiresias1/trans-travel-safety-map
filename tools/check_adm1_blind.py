@@ -62,6 +62,10 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
     if not plain.strip():
         fails.append("blindSummary missing/empty"); return fails, warns
     src = strip_tags(str(rec.get("summary", "")))
+    if len(plain.strip()) < 40:
+        fails.append(f"blindSummary implausibly short ({len(plain)} chars)")
+        return fails, warns
+    src = strip_tags(str(rec.get("summary", "")))
     if len(src) and not (0.4 * len(src) <= len(plain) <= 2.0 * len(src)):
         fails.append(f"length {len(plain)} vs source {len(src)} outside 40-200%")
     low = plain.lower()
