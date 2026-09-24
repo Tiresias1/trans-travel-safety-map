@@ -537,7 +537,9 @@ def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
     cur_gap = country_score - a2          # how much better country looks on the map
     rated_gap = rb - ra                   # how much better rater says country is
     delta = p_diff * (rated_gap - cur_gap)
-    a3 = a2 + delta                       # region absorbs the whole correction
+    a3 = a2 - delta                       # region absorbs the whole correction
+    # (sign matches the two-sided scheme where a3 = a2 - delta/2 and the partner
+    #  takes +delta/2; here the country is frozen, so the region takes it all)
     a4 = min(1.0, max(0.0, a3))
     return {
         "a": {"orig": a0, "rated": ra, "pct": a1, "shift": a2,
