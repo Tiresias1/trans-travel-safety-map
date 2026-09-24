@@ -169,8 +169,11 @@ RATING_RULES = """\
     near-worthless. Where law and society are aligned in acceptance, rule of law is for the most
     part just a general-travelers issue, not a trans issue. Where law is well against trans people,
     rule of law actually turns into a liability, particularly if the public is hostile as well.
+
+12. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
+    *usually* more impactful to trans travelers than social conservatism.
     
-12. Where the dossier is silent about institutions — some jurisdictions simply lack much data —
+13. Where the dossier is silent about institutions — some jurisdictions simply lack much data —
     assume neither dysfunction nor perfection (an absense of evidence is not evidence of absense);
     just work with the data that you have available to you.
 """
