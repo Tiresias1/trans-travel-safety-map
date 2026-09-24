@@ -2644,6 +2644,10 @@ DELTAS.pop("CUB2", None)
 FALLBACK_NOTE = ("No sub-national signal was identified; scored at the national level. "
                  "Model estimate (route 3): deviation from the national score is zero "
                  "where no reliable sub-national knowledge exists.")
+DOSSIER_TAIL_NOTE = ("This division was covered by the dedicated country dossier, which "
+                     "identified no deviation from the national position material enough to "
+                     "score separately (\u00b10.02); it is therefore assessed at the national "
+                     "score.")
 
 
 def reason_note(reason: str, parent_name: str, national: float) -> str:
@@ -2651,18 +2655,30 @@ def reason_note(reason: str, parent_name: str, national: float) -> str:
             f"Scored relative to the national score ({national:.2f}) for {parent_name}.")
 
 
-def build_record(iso, name, parent, nat, delta, reason, band_label):
+def build_record(iso, name, parent, nat, delta, reason, band_label,
+                 dossier_tail=False):
     score = round(min(1.0, max(0.0, nat + delta)), 4)
-    summary = ("<p>" + reason_note(reason, parent["name"], nat) + "</p>"
-               if reason else "<p>" + FALLBACK_NOTE + "</p>")
+    if reason:
+        summary = "<p>" + reason_note(reason, parent["name"], nat) + "</p>"
+        est = True
+    elif dossier_tail:
+        # a researched unit the dossier found no material deviation for
+        summary = "<p>" + DOSSIER_TAIL_NOTE + "</p>"
+        est = False
+    else:
+        summary = "<p>" + FALLBACK_NOTE + "</p>"
+        est = True
     srcs = parent.get("sources", [])
     src_urls = [s["url"] if isinstance(s, dict) else s for s in srcs][:3]
-    return {
+    rec = {
         "iso3": iso, "name": name, "score": score,
         "band": band_label(score), "summary": summary,
         "sources": src_urls or ["https://outrightinternational.org/"],
-        "researchedAt": "2026-09-22", "estimated": True,
+        "researchedAt": "2026-09-22",
     }
+    if est:
+        rec["estimated"] = True
+    return rec
 
 
 def main() -> int:
@@ -2725,7 +2741,8 @@ def main() -> int:
             if pat in lname:
                 delta, reason = d, r
                 break
-        rec = build_record(iso, name, parent, nat, delta, reason, band_label)
+        rec = build_record(iso, name, parent, nat, delta, reason, band_label,
+                             dossier_tail=(iso in DOSSIER_ISOS and args.dossier_tail))
         (staged if args.out else admin1)[sid] = rec
         if existing:
             n_ref += 1

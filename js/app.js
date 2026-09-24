@@ -216,7 +216,7 @@
     }
     const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
     const estNote = rec.estimated
-      ? `<p class="popup-estimated">Model estimate — flagged exception (distinct legal system); no dedicated subnational dossier.</p>`
+      ? `<p class="popup-estimated">Model estimate — derived from the national-level assessment rather than a dedicated division dossier.</p>`
       : "";
     const outscope = rec.outOfScopeNotes
       ? `<div class="popup-outscope"><span class="label">Not factored into the score:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
