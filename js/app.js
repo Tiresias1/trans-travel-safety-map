@@ -312,7 +312,7 @@
     const layer = layers[mode];
     if (!layer) return;
     const zoom = map.getZoom();
-    const SMALL2 = 120;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Tetoko yes, Sierra Leone&Liberia no)
+    const SMALL2 = 120;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
     const ISOLATED_PX = 24;  // px to nearest same-country region centroid
 
     // (A) countries that themselves render as dots at this zoom
