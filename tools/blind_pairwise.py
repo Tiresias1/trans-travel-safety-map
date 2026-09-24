@@ -570,7 +570,7 @@ def render_parent_bundle(parent: dict) -> str:
 
 def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
                             flip: bool, blind_name: bool = False) -> str:
-    rb_text = (region.get("_blindRegion") or "").strip()
+    rb_text = (region.get("blindSummary") or "").strip()
     if not rb_text:  # fallback: use the record's own summary + model context
         def clean(t):
             return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(t or ""))).strip()
@@ -784,9 +784,6 @@ def main() -> int:
     ap.add_argument("--regions-unit", nargs="*", default=None,
                     help="with --regions-vs-countries: restrict region pool to units "
                          "whose name contains one of these substrings")
-    ap.add_argument("--bundles", nargs="*", default=None,
-                    help="with --regions-vs-countries: one or more JSON files "
-                         "{shapeID: blindRegion text} authored for the region dossiers")
     ap.add_argument("--admin1-file", default=str(ROOT / "data" / "admin1.json"))
     ap.add_argument("--log", default=None, help="JSONL audit log path")
     ap.add_argument("--save-every", type=int, default=25)
@@ -800,8 +797,8 @@ def main() -> int:
     ap.add_argument("--blind-region-names", action="store_true",
                     help="deprecated alias (blinding is now the default)")
     ap.add_argument("--allow-fallback", action="store_true",
-                    help="with --regions-vs-countries: allow units without an authored "
-                         "blind bundle to run using summary+modelContext (NOT "
+                    help="with --regions-vs-countries: allow units lacking a "
+                         "blindSummary field to run using summary+modelContext (NOT "
                          "recommended: fallback text carries region names and "
                          "deviation-space wording)")
     ap.add_argument("--dry-run", action="store_true",
@@ -837,32 +834,9 @@ def main() -> int:
         admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
         store = admin1
         store_file = Path(args.admin1_file)
-        bundles, unknown = {}, []
-        for bf in (args.bundles or []):
-            for sid, txt in json.loads(Path(bf).read_text(encoding="utf-8")).items():
-                if sid in admin1:
-                    bundles[sid] = txt
-                else:
-                    unknown.append(sid)
-        for sid, txt in bundles.items():
-            admin1[sid]["_blindRegion"] = txt
-        if unknown:
-            print(f"note: {len(unknown)} bundle keys not in admin1.json (ignored): "
-                  f"{unknown[:5]}", file=sys.stderr)
-        region_pool = [sid for sid, r in admin1.items()
-                       if r.get("iso3") in parents
-                       and isinstance(r.get("score"), (int, float))
-                       and str(r.get("summary", "")).strip()]
-        if args.regions_unit:
-            subs = [u.lower() for u in args.regions_unit]
-            region_pool = [sid for sid in region_pool
-                           if any(u in admin1[sid].get("name", "").lower() for u in subs)]
-        if not args.allow_fallback:
-            region_pool = [sid for sid in region_pool
-                           if admin1[sid].get("_blindRegion")]
         if not region_pool:
             print(f"error: no admin1 units for parents {sorted(parents)} "
-                  f"(authored bundles required unless --allow-fallback)", file=sys.stderr)
+                  f"(blindSummary fields required unless --allow-fallback)", file=sys.stderr)
             return 2
         system_text = build_system_prompt(taxonomy) + MIXED_SYSTEM_EXTRA
     elif args.admin1:
@@ -963,9 +937,9 @@ def main() -> int:
     print(f"system prompt: {len(system_text):,} chars "
           f"(~{len(system_text)//4:,} tokens) — {'NOT cached' if args.no_cache else 'cached'}")
     if mixed:
-        nb = sum(1 for sid in region_pool if admin1[sid].get("_blindRegion"))
+        nb = sum(1 for sid in region_pool if admin1[sid].get("blindSummary"))
         print(f"mixed mode (regions vs countries): {len(region_pool)} regions "
-              f"({nb} authored bundles) · comparators {len(eligible)} countries "
+              f"({nb} with blindSummary fields) · comparators {len(eligible)} countries "
               f"(score-hidden) · region names {'WITHHELD' if not args.show_region_names else 'SHOWN'} "
               f"· recommend --num-pairs {len(region_pool) * 25}")
     elif admin1 is not None:
