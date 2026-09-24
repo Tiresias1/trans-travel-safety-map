@@ -170,7 +170,9 @@ def check_leaks(text: str, iso: str, rec: dict, all_names: dict[str, str],
     own = rec.get("name", "")
     if own and re.search(rf"\b{re.escape(own)}\b", plain, re.I):
         fails.append(f"own name leaks: {own!r}")
-    if re.search(rf"\b{re.escape(iso)}\b", plain, re.I):
+    if re.search(rf"\b{re.escape(iso)}\b", plain):
+        # case-SENSITIVE: only the uppercase code itself is a leak; "AND" in prose
+        # would be spelled "and" and must not fail records whose ISO3 is a word
         fails.append(f"own ISO3 leaks: {iso!r}")
     for dom in domains_of(rec):
         if dom and dom in low:
