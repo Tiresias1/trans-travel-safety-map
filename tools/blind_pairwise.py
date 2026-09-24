@@ -279,9 +279,8 @@ For scale orientation, current scores elsewhere on the map: {anchors}.
 - **0.00** — A trans visitor who is outed faces near-certain imprisonment or execution.
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
-  perfectly, but a strongly protective jurisdiction with functioning recourse and no
-  documented trans-specific negatives belongs in the 0.85–0.95 range; do not withhold
-  top-band scores merely because a flawless record cannot be proven.
+  perfectly, of course; do not withhold high scores merely because a flawless record
+  cannot be proven.
 
 Bands (orientation only — you output numbers): [0.00, 0.20) Do Not Travel ·
 [0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk · [0.60, 0.80) Reduced Risk ·
@@ -333,9 +332,8 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
   absolute extreme of "do not visit".
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
-  perfectly, but a strongly protective jurisdiction with functioning recourse and no
-  documented trans-specific negatives belongs in the 0.85–0.95 range; do not withhold
-  top-band scores merely because a flawless record cannot be proven.
+  perfectly, of course; do not withhold high scores merely because a flawless record
+  cannot be proven.
 
 Bands (for orientation only — you output a number, not a band):
 [0.00, 0.20) Do Not Travel · [0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk ·
@@ -509,6 +507,95 @@ def ramp(start: float, end: float, idx: int, total: int) -> float:
     return start + (end - start) * t
 
 
+MIXED_SYSTEM_EXTRA = """
+
+## This run: one region, one country
+
+One dossier describes an **administrative region**, presented as a bundle: the legal
+and social framework the encompassing state imposes on it (the state is anonymised,
+as in every dossier here), plus what the region itself adds or subtracts — its own
+statutes, institutions, enforcement record and culture. Where the region's dossier
+mentions the encompassing state's current whole-country score, treat it as context
+for the framework's severity — **not a floor, not a ceiling**: a region may clearly
+outrank or outrank-out its state. Blocked attempts at better law are evidence about
+the region's intent and climate; the laws actually in force remain what the visitor
+stands under. Weight what is enforced.
+
+The other dossier describes a **country** in the usual way. Rate both on the same
+absolute scale, from documented facts only: a region should score like the country
+whose total bundle (framework + deviations + culture + rule of law) it most
+resembles."""
+
+
+def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
+                         p_abs: float, s_abs: float, p_diff: float) -> dict:
+    """Region-only update: absolute terms toward the region's own rating, then the
+    full differential correction against the comparator's TRUE stored score
+    (the country never moves)."""
+    a1 = a0 + p_abs * (ra - a0)
+    a2 = shift_toward(a1, ra, s_abs)
+    cur_gap = country_score - a2          # how much better country looks on the map
+    rated_gap = rb - ra                   # how much better rater says country is
+    delta = p_diff * (rated_gap - cur_gap)
+    a3 = a2 + delta                       # region absorbs the whole correction
+    a4 = min(1.0, max(0.0, a3))
+    return {
+        "a": {"orig": a0, "rated": ra, "pct": a1, "shift": a2,
+              "diff": a3, "final": a4},
+        "b": {"orig": country_score, "rated": rb, "frozen": True},
+        "delta_diff": delta,
+    }
+
+
+def render_parent_bundle(parent: dict) -> str:
+    """The encompassing state's blind profile, relabelled as the framework the
+    region stands under."""
+    def clean(s):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(s or ""))).strip()
+    parts = []
+    if parent.get("blindSummary"):
+        parts.append(clean(parent["blindSummary"]))
+    if parent.get("blindTangential"):
+        parts.append("[Secondary factors] " + clean(parent["blindTangential"]))
+    if parent.get("blindLocalsOnly"):
+        parts.append("[Resident-facing] " + clean(parent["blindLocalsOnly"]))
+    ss = parent.get("blindSourceSummaries")
+    if isinstance(ss, list) and ss:
+        items = "\n".join(f"- {clean(x)}" for x in ss[:8] if str(x).strip())
+        parts.append("Evidence on the framework:\n" + items)
+    return "\n\n".join(parts)
+
+
+def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
+                            flip: bool) -> str:
+    rb_text = (region.get("_blindRegion") or "").strip()
+    if not rb_text:  # fallback: use the record's own summary + model context
+        def clean(t):
+            return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(t or ""))).strip()
+        rb_text = clean(region.get("summary")) + "\n\n" + clean(region.get("modelContext"))
+    region_block = (
+        f"An administrative region ('{region.get('name', '?')}') within the state "
+        f"described below, which imposes that framework on it directly.\n\n"
+        f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n"
+        f"{render_parent_bundle(parent_rec)}\n\n"
+        f"[The encompassing state's current whole-country score on this map: "
+        f"{parent_rec.get('score', 0):.2f} — context for the framework's severity, "
+        f"not a floor or ceiling for the region.]\n\n"
+        f"### THE REGION'S OWN ADDITIONS AND SUBTRACTIONS\n{rb_text}")
+    country_block = dossier(country)
+    if flip:
+        a_head, b_head = ("DOSSIER A — COUNTRY\n\n" + country_block,
+                          "DOSSIER B — REGION (imposed framework + local bundle)\n\n" + region_block)
+        mapping = ("score_a rates the COUNTRY, score_b rates the REGION")
+    else:
+        a_head = "DOSSIER A — REGION (imposed framework + local bundle)\n\n" + region_block
+        b_head = "DOSSIER B — COUNTRY\n\n" + country_block
+        mapping = "score_a rates the REGION, score_b rates the COUNTRY"
+    return (f"Rate the two dossiers below.\n\n## {a_head}\n\n## {b_head}\n\n"
+            f"Reply with only the JSON object described in the output format, where "
+            f"{mapping}.")
+
+
 def compute_update(a0: float, b0: float, ra: float, rb: float,
                    p_abs: float, s_abs: float, p_diff: float) -> dict:
     a1 = a0 + p_abs * (ra - a0)
@@ -675,11 +762,24 @@ def main() -> int:
     ap.add_argument("--backoff", type=float, default=1.5)
     ap.add_argument("--timeout", type=float, default=180.0)
     ap.add_argument("--countries-file", default=str(COUNTRIES))
+    ap.add_argument("--only-countries", nargs="*", default=None,
+                    help="country mode: restrict the eligible pool to these ISO3s "
+                         "(targeted reruns, e.g. dependent territories + their parents)")
     ap.add_argument("--admin1", action="store_true",
                     help="sub-national mode: pair first-level divisions of one country "
                          "instead of countries")
     ap.add_argument("--country", default=None,
                     help="with --admin1: the ISO3 whose divisions to pair")
+    ap.add_argument("--regions-vs-countries", action="store_true",
+                    help="mixed calibration mode: each pair = one admin1 region "
+                         "(absolute blind bundle incl. its imposed framework) vs one "
+                         "blind country; only the region moves")
+    ap.add_argument("--regions-parent", nargs="+", default=None,
+                    help="with --regions-vs-countries: ISO3s whose units form the "
+                         "region pool")
+    ap.add_argument("--bundles", default=None,
+                    help="with --regions-vs-countries: JSON file {shapeID: "
+                         "blindRegion text} authored for the region dossiers")
     ap.add_argument("--admin1-file", default=str(ROOT / "data" / "admin1.json"))
     ap.add_argument("--log", default=None, help="JSONL audit log path")
     ap.add_argument("--save-every", type=int, default=25)
@@ -709,7 +809,30 @@ def main() -> int:
     parent_iso = None
     store_file = Path(args.countries_file)
     store = countries
-    if args.admin1:
+    mixed = args.regions_vs_countries
+    region_pool: list[str] = []
+    if mixed:
+        parents = {x.upper() for x in (args.regions_parent or [])}
+        if not parents:
+            print("error: --regions-vs-countries requires --regions-parent ISO3 [...]",
+                  file=sys.stderr)
+            return 2
+        admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
+        store = admin1
+        store_file = Path(args.admin1_file)
+        if args.bundles:
+            for sid, txt in json.loads(Path(args.bundles).read_text(encoding="utf-8")).items():
+                if sid in admin1:
+                    admin1[sid]["_blindRegion"] = txt
+        region_pool = [sid for sid, r in admin1.items()
+                       if r.get("iso3") in parents
+                       and isinstance(r.get("score"), (int, float))
+                       and str(r.get("summary", "")).strip()]
+        if not region_pool:
+            print(f"error: no admin1 units for parents {sorted(parents)}", file=sys.stderr)
+            return 2
+        system_text = build_system_prompt(taxonomy) + MIXED_SYSTEM_EXTRA
+    elif args.admin1:
         if not args.country:
             print("error: --admin1 requires --country ISO3", file=sys.stderr)
             return 2
@@ -733,7 +856,16 @@ def main() -> int:
 
     eligible = []
     partial = []
-    if admin1 is not None:
+    if mixed:
+        # comparator pool = blind-complete countries (the unit's own parent is
+        # excluded per-pair, not here)
+        for iso, rec in countries.items():
+            if all(has_field(rec, f) for f in REQUIRED_BLIND):
+                eligible.append(iso)
+        if len(eligible) < 2:
+            print("error: comparator country pool is empty", file=sys.stderr)
+            return 2
+    elif admin1 is not None:
         for sid, rec in admin1.items():
             if (rec.get("iso3") == parent_iso and isinstance(rec.get("score"), (int, float))
                     and str(rec.get("summary", "")).strip()):
@@ -746,7 +878,10 @@ def main() -> int:
                   file=sys.stderr)
             return 2
     else:
+        only = {o.upper() for o in args.only_countries} if args.only_countries else None
         for iso, rec in countries.items():
+            if only and iso not in only:
+                continue
             required_here = [f for f in REQUIRED_BLIND
                              if not (f == "blindOutOfScope"
                                      and not str(rec.get("outOfScopeNotes", "")).strip())]
@@ -794,7 +929,13 @@ def main() -> int:
 
     print(f"system prompt: {len(system_text):,} chars "
           f"(~{len(system_text)//4:,} tokens) — {'NOT cached' if args.no_cache else 'cached'}")
-    if admin1 is not None:
+    if mixed:
+        nb = sum(1 for sid in region_pool if admin1[sid].get("_blindRegion"))
+        print(f"mixed mode (regions vs countries): {len(region_pool)} regions "
+              f"({nb} with authored blindRegion bundles) · comparators {len(eligible)} "
+              f"countries · recommend --num-pairs {len(region_pool) * 25} for ~50 "
+              f"encounters per region")
+    elif admin1 is not None:
         print(f"admin1 mode: {parent['name']} ({parent_iso}) national "
               f"{parent['score']:.2f} · {len(eligible)} scored divisions · "
               f"this run gives ~{args.num_pairs*2/len(eligible):.1f} encounters each "
@@ -845,6 +986,72 @@ def main() -> int:
         tmp.replace(store_file)
 
     def one_pair(idx: int) -> None:
+        if mixed:
+            with lock:
+                sid_r = rng.choice(region_pool)
+                ur = admin1[sid_r]
+                par = ur["iso3"]
+                iso_c = rng.choice([c for c in eligible if c != par])
+                r0 = float(ur["score"])
+                c0 = float(countries[iso_c]["score"])
+                flip = rng.random() < 0.5
+            user_text = build_mixed_user_prompt(ur, countries[par], countries[iso_c], flip)
+            if args.dry_run:
+                print(f"\n{'='*78}\nPAIR {idx}: R={ur.get('name')} vs C={countries[iso_c]['name']}\n{'='*78}")
+                print(user_text)
+                with lock:
+                    stats["done"] += 1
+                return
+            try:
+                resp = call_api(args, system_text, user_text)
+                s_first, s_second, why, usage = parse_scores(resp)
+                ra, rb = (s_second, s_first) if flip else (s_first, s_second)
+            except Exception as e:  # noqa: BLE001
+                with lock:
+                    stats["errors"] += 1
+                    stats["done"] += 1
+                entry = {"i": idx, "mode": "mixed", "error": str(e), "r": sid_r,
+                         "r_name": ur.get("name"), "parent": par, "c": iso_c,
+                         "ts": datetime.now(timezone.utc).isoformat()}
+                with open(log_path, "a", encoding="utf-8") as fh:
+                    fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
+                print(f"[{idx}] ERROR {sid_r}/{iso_c}: {e}", file=sys.stderr)
+                return
+            if args.rating_offset:
+                ra = min(1.0, max(0.0, ra + args.rating_offset))
+                rb = min(1.0, max(0.0, rb + args.rating_offset))
+            p_abs = ramp(*args.absolute_weighting_percent, idx, args.num_pairs)
+            s_abs = ramp(*args.absolute_weighting_shift, idx, args.num_pairs)
+            p_diff = ramp(*args.differential_weighting_percent, idx, args.num_pairs)
+            upd = compute_update_mixed(r0, c0, ra, rb, p_abs, s_abs, p_diff)
+            upd["params"] = {"p_abs": p_abs, "s_abs": s_abs, "p_diff": p_diff,
+                             "idx": idx, "total": args.num_pairs}
+            with lock:
+                store[sid_r]["score"] = round(upd["a"]["final"], 6)
+                stats["done"] += 1
+                stats["moves"] += abs(upd["a"]["final"] - r0)
+                for k, src in (("cache_read", "cache_read_input_tokens"),
+                               ("cache_write", "cache_creation_input_tokens"),
+                               ("in_tok", "input_tokens"), ("out_tok", "output_tokens")):
+                    if usage.get(src):
+                        stats[k] += usage[src]
+                done = stats["done"]
+                if not args.no_write and done % args.save_every == 0:
+                    save()
+            entry = {"i": idx, "mode": "mixed",
+                     "ts": datetime.now(timezone.utc).isoformat(),
+                     "r": sid_r, "r_name": ur.get("name"), "parent": par,
+                     "c": iso_c, "c_name": countries[iso_c]["name"], "flip": flip,
+                     "rated_r": round(ra, 4), "rated_c": round(rb, 4), "why": why,
+                     "r0": r0, "c0": c0, "r_new": upd["a"]["final"],
+                     "steps": upd, "usage": usage}
+            with open(log_path, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
+            print(f"[{done}/{args.num_pairs}] {ur.get('name')} {r0:.3f}→"
+                  f"{upd['a']['final']:.3f} (rated {ra:.2f} vs {countries[iso_c]['name'][:22]}"
+                  f" stored {c0:.2f} rated {rb:.2f}) · {round(stats['moves']/max(1,done),4)}/move",
+                  flush=True)
+            return
         with lock:
             if focus:
                 iso_a = rng.choice(focus)
