@@ -1,31 +1,22 @@
 #!/usr/bin/env python3
-"""Validate anonymised blindSummary fields for ADM1 regions (data/admin1.json).
+"""Validate anonymised blinded ADM1 region records (v2, countries-schema).
 
-Region dossiers in tools/blind_pairwise.py consist of the parent country's blind
-bundle (validated separately) + the region's single blindSummary. This checker
-enforces, per region:
+Operates on files in data/blind_outputs/adm1/<id>.json with schema:
+  {id, blindSummary, blindSourceSummaries:[...], blindOutOfScope?,
+   blindLocalsOnly?, blindTangential?}
 
-hard fail:
-  * blindSummary missing / empty / outside 40-200% of the source summary
-  * the region's own name (e.g. "Idaho") - it is withheld in the prompt header
-  * ANY other admin1 unit name in the same parent country (state-to-state
-    references must read "a neighbouring state/province")
-  * parent-country aliases: United States / US / U.S. / USA / American(s) /
-    "the States" / D.C. / Washington D.C. (case-insensitive where unambiguous)
-  * band labels, the region's or parent's score digits, "#N" rank tokens
-  * bill/initiative/statute numbers (HB 706, SB 426, Prop 1, I-732, Issue 1,
-    P.L. 117, No. 123, Section 1234) - the user's rule: no reason for them
-  * region terms from the country rulebook's list (e.g. midwest-style blocs
-    caught by shared REGION_TERMS where applicable) + extra US shorthand:
-    red/blue/purple state(s), bible belt, deep south, new england, the
-    heartland, maga, tds, "the States"
-  * all-caps agency/NGO acronyms not on a tiny allowlist (ICE, CBP, BOP,
-    EEOC, Title IX -> must be rewritten as mechanisms). Title IX and the
-    T-word pattern are hard-failed directly.
-warning:
-  * capitalised tokens not in an allowlist (month names etc.) - city, county,
-    university, team, org, person names end up here; worker must resolve them
-"""
+A region is eligible for blinding once apply_adm1_research.py has marked it
+researched2. Merging writes the blind fields onto the admin1 record and marks
+blindV2. --queue prints eligible-but-unblinded ids; --report prints progress.
+
+Hard fails (over the concatenation of ALL blind fields): own/sibling unit names,
+parent-country aliases incl. per-country demonym/capital table, ~90 neighbour
+demonyms, US-shorthand, subnational unit-type words outside 'state/province',
+band labels, own-score digits, rank tokens, bill/statute numbers, and the
+DIRECTIVE list (phrases that tell the rater how to vote: national baselines,
+deviation/tier language, "most protective", "most dangerous", etc).
+blindSourceSummaries must be 1:1 with sources; trio fields mirror the record's
+scope fields (present iff present)."""
 from __future__ import annotations
 import argparse, json, re, sys, unicodedata
 from pathlib import Path
@@ -37,22 +28,17 @@ RANK_RE = re.compile(r"\brank(?:ed|ing)?\s*#?\d|\bin#\d|#[1-9]\d*\b", re.I)
 BILL_RES = [
     re.compile(r"\b(?:h\.?b\.?|s\.?b\.?|a\.?b\.?|h\.?j\.?r\.?|s\.?j\.?r\.?|h\.?c\.?|s\.?c\.?|c\.?s\.?sb\.?)\s*\.?\s*[-/]?\s*\d{1,4}\b", re.I),
     re.compile(r"\b(?:prop(?:osition)?|question|measure|issue|initiative|amendment|act|law|law no\.?|no\.|p\.?l\.?)\s+(?:no\.?\s+)?\d{1,4}\b", re.I),
-    re.compile(r"\bi[-\s]\d{1,3}\b"),          # I-732 style ballot measures
-    re.compile(r"\bsection\s+\d{2,}\b", re.I), # bare statute sections
+    re.compile(r"\bi[-\s]\d{1,3}\b"),
+    re.compile(r"\bsection\s+\d{2,}\b", re.I),
 ]
-# case-insensitive parent aliases (unambiguous strings only)
 PARENT_CI = [r"united states", r"u\.s\.a?", r"usa\b", r"american", r"\bus\b(?!\.)",
              r"\bu\.s\.\b", r"the states\b", r"washington,? d\.?c\.?", r"\bd\.c\."]
-
-# Country-specific demonym/capital aliases the word-boundary parent-name check
-# cannot catch (e.g. "Canadian" vs parent "Canada"). Applied when rec.iso3 matches.
-# Each entry: iso3 -> list of lowercased substring patterns.
 ISO3_ALIASES = {
  "ITA": ["italian", "italy", "rome", "roma", "milan", "naples", "turin"],
  "CAN": ["canadian", "ottawa", "toronto", "vancouver", "calgary", "edmonton", "notwithstanding"],
  "MEX": ["mexican", "mexico", "mexico city", "cdmx", "guadalajara", "monterrey"],
  "IND": ["indian", "new delhi", "delhi", "mumbai"],
- "BRA": ["brazilian", "brasilia", "s\u00e3o paulo", "rio de janeiro"],
+ "BRA": ["brazilian", "brasilia", "são paulo", "rio de janeiro"],
  "DEU": ["german", "germany", "berlin", "munich", "frankfurt"],
  "ESP": ["spanish", "spain", "madrid", "barcelona"],
  "ARG": ["argentine", "argentina", "buenos aires"],
@@ -68,68 +54,99 @@ ISO3_ALIASES = {
  "AUS": ["australian", "australia", "canberra", "sydney", "melbourne"],
  "MYS": ["malaysian", "malaysia", "kuala lumpur"],
  "PER": ["peruvian", "peru", "lima"],
- "COL": ["colombian", "colombia", "bogota", "bogot\u00e1"],
+ "COL": ["colombian", "colombia", "bogota", "bogotá"],
  "TUR": ["turkish", "turkey", "ankara", "istanbul"],
+ "USA": ["united states", "u.s.", "usa", "american", "washington"],
+ "GBR": ["united kingdom", "britain", "british", "england", "scotland", "wales", "london"],
 }
-# Subnational unit-type words that must be unified to "state/province" (user rule:
-# naming the unit type is a blinding risk). Fail if any appear outside the token
-# "state/province". Kept conservative: only clearly unit-typing words.
-UNIT_TYPE = [r"oblast", r"krai", r"guberniya", r"voivodeship", r"prefectur",
-             r"governorat", r"regency", r"departament", r"oblastnu",
-             r"federal subject", r"\bprovinces?\b", r"\brepublics?\b"]
-# explicit shorthand that singles out the US political landscape
+NEIGHBOR_WORDS = ["bangladeshi","bengali","assamese","myanmar","burmese","pakistani",
+ "chinese","venezuelan","haitian","guatemalan","salvadoran","nicaraguan","honduran",
+ "moroccan","algerian","egyptian","libyan","tunisian","mauritanian","senegalese",
+ "malian","nigerien","chadian","sudanese","eritrean","ethiopian","somali","kenyan",
+ "ugandan","rwandan","burundian","congolese","gabonese","cameroonian","central african",
+ "south african","angolan","zambian","mozambican","botswanan","swazi","lesothan",
+ "syrian","iraqi","iranian","georgian","armenian","azerbaijani","ukrainian","belarusian",
+ "moldovan","german","austrian","swiss","dutch","belgian","italian","french","spanish",
+ "portuguese","polish","czech","slovak","hungarian","romanian","bulgarian","croatian",
+ "serbian","bosnian","slovenian","albanian","macedonian","montenegrin","greek","turkish",
+ "kurdish","indonesian","malaysian","thai","papua new guinean","east timorese","timorese",
+ "american","canadian","mexican","korean","japanese","filipino","chilean","peruvian",
+ "bolivian","brazilian","argentine","argentinian","colombian","ecuadorian","uruguayan",
+ "paraguayan","guyanese","surinamese","panamanian","costa rican","cuban","jamaican",
+ "dominican","haitian","nigerian","ghanaian","ivorian","guinean","sierra leonean","liberian"]
 SHORTHAND = [r"red[- ]states?", r"blue[- ]states?", r"purple[- ]states?",
              r"bible belt", r"deep south", r"new england", r"\bheartland\b",
-             r"\bmaga\b", r"teaparty|tea party", r"title ix", r"\bcdrr?\b",
+             r"\bmaga\b", r"tea party", r"title ix",
              r"pacific northwest|mountain west|mason[- ]dixon|\bdixie\b"]
-# demonyms of states bordering the 22 dossier parents (neighbour references
-# must read "a neighbouring country", per rule 6) - hard fail
-NEIGHBOR_WORDS = ["bangladeshi","bengali","assamese","myanmar","burmese","pakistani",
-  "chinese","venezuelan","haitian","guatemalan","salvadoran","nicaraguan","honduran",
-  "moroccan","algerian","egyptian","libyan","tunisian","mauritanian","senegalese",
-  "malian","nigerien","chadian","sudanese","eritrean","ethiopian","somali","somalian",
-  "kenyan","ugandan","rwandan","burundian","congolese","congolese","gabonese",
-  "cameroonian","central african","south african","angolan","zambian","mozambican",
-  "botswanan","swazi","eswatini","lesothan","syrian","iraqi","iranian","georgian",
-  "armenian","azerbaijani","ukrainian","belarusian","moldovan","german","austrian",
-  "swiss","dutch","belgian","italian","french","spanish","portuguese","polish",
-  "czech","slovak","hungarian","romanian","bulgarian","croatian","serbian","bosnian",
-  "slovenian","albanian","macedonian","montenegrin","greek","turkish","kurdish",
-  "indoensian","indonesian","malaysian","thai","papua new guinean","png","east timorese",
-  "timorese","american","canadian","mexican","korean","japanese","filipino","chilean",
-  "peruvian","bolivian","brazilian","argentine","argentinian","colombian","ecuadorian",
-  "uruguayan","paraguayan","guyanese","surinamese","panamanian","costa rican","cuban",
-  "jamaican","dominican","haitian","nigerian","ghanaian","ivorian","guinean","malagasy"]
+UNIT_TYPE = [r"oblast", r"krai", r"guberniya", r"voivodeship", r"prefectur",
+             r"governorat", r"regency", r"departament", r"federal subject",
+             r"\bprovinces?\b", r"\brepublics?\b"]
+# Phrases that tell the comparator how to vote instead of letting it decide:
+DIRECTIVE = [r"national (score|baseline|average|level)", r"country[- ]wide (average|level)",
+             r"\bdeviation[s]?\b", r"\btier\b", r"(most|least) protective",
+             r"worst[- ]law", r"\bharshest\b", r"\bsafest\b", r"material enough",
+             r"score(?:d)? separately", r"well (below|above)", r"(above|below) the countr",
+             r"than the (national|country)", r"red zone", r"on this map",
+             r"reference point", r"most dangerous", r"relative to the national",
+             r"compared with (a |the )?neighbouring state"]
 ACRONYM_OK = {"UN", "WHO", "AIDS", "HIV", "LGBT", "LGBTQ", "LGBTQIA", "SOGI",
               "SOGIESC", "NGO", "NGOS", "UNDP", "ILO", "OSCE", "UPR", "ID",
-              "II", "III", "IV", "V", "X"}
+              "II", "III", "IV", "V", "X", "CEDAW", "UPRs"}
 SENT_RE = re.compile(r"(?:^|[.!?]\s+|</p>\s*|\A)\s*([A-Z][a-z]{2,})")
+MONTH_OK = {"jan","feb","mar","apr","may","jun","jul","aug","sept","sep","oct","nov","dec",
+            "january","february","march","april","june","july","august","september",
+            "october","november","december","pride","page","for","safe","caution",
+            "being","loading","very","unnatural","immodest","same","day","women","human",
+            "rights","international","council","joint","statement","recognition"}
 
 def strip_tags(s): return re.sub(r"<[^>]+>", " ", s)
 
-def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str]):
+def region_checks_v2(rec, blind_obj, siblings, parent_names):
     fails, warns = [], []
-    blind = str(rec.get("blindSummary", ""))
-    plain = strip_tags(blind)
-    if not plain.strip():
-        fails.append("blindSummary missing/empty"); return fails, warns
-    src = strip_tags(str(rec.get("summary", "")))
-    if len(plain.strip()) < 40:
-        fails.append(f"blindSummary implausibly short ({len(plain)} chars)")
-        return fails, warns
-    src = strip_tags(str(rec.get("summary", "")))
-    if len(src) and not (0.4 * len(src) <= len(plain) <= 2.0 * len(src)):
-        fails.append(f"length {len(plain)} vs source {len(src)} outside 40-200%")
+    parts = {}
+    bs = str(blind_obj.get("blindSummary", "")).strip()
+    if not bs:
+        return ["blindSummary missing/empty"], []
+    parts["blindSummary"] = bs
+    srcs = rec.get("sources", [])
+    bss = blind_obj.get("blindSourceSummaries")
+    if not isinstance(bss, list) or len(bss) != len(srcs):
+        fails.append(f"blindSourceSummaries must be array of len {len(srcs)}")
+        bss = []
+    for i, x in enumerate(bss):
+        parts[f"src{i}"] = str(x)
+    trio = [("outOfScopeNotes", "blindOutOfScope"),
+            ("tangentialFactors", "blindTangential"),
+            ("localsOnly", "blindLocalsOnly")]
+    for src_f, bl_f in trio:
+        has_src = bool(str(rec.get(src_f, "")).strip())
+        has_bl = bool(str(blind_obj.get(bl_f, "")).strip())
+        if has_src and not has_bl:
+            fails.append(f"{bl_f} missing (source has {src_f})")
+        if has_bl and not has_src:
+            fails.append(f"{bl_f} present but source lacks {src_f}")
+        if has_bl:
+            parts[bl_f] = str(blind_obj[bl_f])
+    # lengths
+    src_len = len(strip_tags(str(rec.get("summary", ""))))
+    if src_len and not (0.4 * src_len <= len(strip_tags(bs)) <= 2.2 * src_len):
+        fails.append(f"blindSummary length {len(strip_tags(bs))} vs source {src_len}")
+    for i, x in enumerate(bss):
+        sl = len(str(srcs[i].get("summary", ""))) if isinstance(srcs[i], dict) else 0
+        if sl and not (0.3 * sl <= len(str(x)) <= 2.5 * sl):
+            fails.append(f"blindSourceSummaries[{i}] length {len(str(x))} vs source {sl}")
+    blob = " ".join(parts.values())
+    plain = strip_tags(blob)
     low = plain.lower()
     own = str(rec.get("name", ""))
     if own and re.search(rf"\b{re.escape(own)}\b", plain, re.I):
         fails.append(f"own unit name leaks: {own!r}")
-    for nm in all_unit_names:
+    for nm in siblings:
         if nm == own or len(nm) < 4: continue
         if re.search(rf"\b{re.escape(nm)}\b", plain, re.I):
             fails.append(f"sibling unit name leaks: {nm!r}")
     for p in parent_names:
-        if re.search(rf"\b{re.escape(p)}\b", plain, re.I):
+        if p and re.search(rf"\b{re.escape(p)}\b", plain, re.I):
             fails.append(f"parent-country name leaks: {p!r}")
     for pat in PARENT_CI:
         if re.search(pat, low):
@@ -138,30 +155,28 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
     for alias in ISO3_ALIASES.get(iso3, []):
         if re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", low):
             fails.append(f"parent demonym/capital leaks: {alias!r}")
-    # unit-type words must be unified to "state/province"
     stripped = re.sub(r"states?['\u2019]?/provinces?['\u2019]?", "", low)
     for ut in UNIT_TYPE:
         m = re.search(ut, stripped)
         if m:
-            fails.append(f"subnational unit-type word leaks (use 'state/province'): {m.group(0)!r}")
+            fails.append(f"subnational unit-type word leaks: {m.group(0)!r}")
+    for nw in NEIGHBOR_WORDS:
+        if re.search(r"(?<!\w)" + re.escape(nw) + r"(?!\w)", low):
+            fails.append(f"neighbour-country word leaks: {nw!r}")
+    for r in SHORTHAND:
+        m = re.search(r, low)
+        if m: fails.append(f"shorthand leaks: {m.group(0)!r}")
+    for r in DIRECTIVE:
+        m = re.search(r, low)
+        if m: fails.append(f"directive-language leaks (let the rater decide): {m.group(0)!r}")
     for b in BANDS:
         if b in low: fails.append(f"band label leaks: {b!r}")
     if RANK_RE.search(plain): fails.append("rank-style token leaks")
     if re.search(r"[±]\s*0?\.\d", plain) or re.search(r"\([+\-]\s*0?\.\d+\)", plain):
-        fails.append("deviation-space number leaks (strip: '±0.02'-class tokens)")
-    for r in BILL_RES:
-        m = r.search(plain)
+        fails.append("deviation-space number leaks")
+    for rr in BILL_RES:
+        m = rr.search(plain)
         if m: fails.append(f"bill/statute number leaks: {m.group(0)!r}")
-    for r in SHORTHAND:
-        m = re.search(r, low)
-        if m: fails.append(f"US-shorthand leaks: {m.group(0)!r}")
-    # neighbour demonyms only flagged when not self-referential: the parent's own
-    # demonym is already caught via ISO3_ALIASES; parent is excluded here
-    parent_l = str(rec.get("iso3", "")).lower()
-    for nw in NEIGHBOR_WORDS:
-        if re.search(r"(?<!\w)" + re.escape(nw) + r"(?!\w)", low):
-            fails.append(f"neighbour-country word leaks (use 'a neighbouring country'): {nw!r}")
-    # own score digits
     s = rec.get("score")
     if isinstance(s, (int, float)):
         for form in (f"{s:.2f}", f"{s:.1f}", str(s)):
@@ -169,16 +184,8 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
                 fails.append(f"own score leaks: {form!r}"); break
     sent_initial = {m.group(1) for m in SENT_RE.finditer(plain)}
     for tok in set(re.findall(r"\b[A-Z][a-z]{2,}\b", plain)):
-        if tok in ("NOTE",): continue
-        tl = tok.lower()
-        if tl in {"jan","feb","mar","apr","may","jun","jul","aug","sept","sep",
-                  "oct","nov","dec","january","february","march","april","june",
-                  "july","august","september","october","november","december",
-                  "pride","page","for","safe","caution","being","loading"}:
-            continue
-        if tok in sent_initial: continue
-        if unicodedata.normalize("NFKD", tok).encode("ascii", "ignore").decode() in ():
-            pass
+        if tok.upper() == "NOTE": continue
+        if tok.lower() in MONTH_OK or tok in sent_initial: continue
         warns.append(f"capitalised token to review: {tok!r}")
     for tok in set(re.findall(r"\b[A-Z]{2,}\b", plain)):
         if tok not in ACRONYM_OK:
@@ -187,39 +194,25 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--in", dest="inp", default=str(ROOT / "data/blind_outputs/adm1"),
-                    help="dir of <id>.json files ({id, blindSummary}) to validate+apply")
-    ap.add_argument("--admin1-file", default=str(ROOT / "data/admin1.json"))
-    ap.add_argument("--countries-file", default=str(ROOT / "data/countries.json"))
+    ap.add_argument("--in", dest="inp", default=str(ROOT / "data/blind_outputs/adm1"))
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--report", action="store_true")
-    ap.add_argument("--queue", action="store_true",
-                    help="print ids of dossier:true regions lacking blindSummary")
+    ap.add_argument("--queue", action="store_true")
     ap.add_argument("--queue-limit", type=int, default=None)
     args = ap.parse_args()
-
-    admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
-    countries = json.loads(Path(args.countries_file).read_text(encoding="utf-8"))
-
-    if args.queue:
-        need = [k for k, v in admin1.items()
-                if v.get("dossier") and not str(v.get("blindSummary", "")).strip()]
-        if args.queue_limit:
-            need = need[:args.queue_limit]
-        for k in need:
-            print(k)
-        return 0
+    admin1 = json.loads((ROOT / "data" / "admin1.json").read_text(encoding="utf-8"))
+    countries = json.loads((ROOT / "data" / "countries.json").read_text(encoding="utf-8"))
+    dossier = {k: v for k, v in admin1.items() if v.get("dossier")}
 
     if args.report:
-        need = [k for k, v in admin1.items() if v.get("dossier")]
-        have = [k for k in need if str(admin1[k].get("blindSummary", "")).strip()]
-        print(f"dossier:true regions: {len(need)} | with blindSummary: {len(have)}")
-        miss = [k for k in need if k not in have]
-        from collections import Counter
-        if miss:
-            print(f"missing ({len(miss)}) by country: "
-                  + " ".join(f"{c}:{n}" for c, n in
-                              Counter(admin1[k]['iso3'] for k in miss).most_common()))
+        res = sum(1 for v in dossier.values() if v.get("researched2"))
+        bl = sum(1 for v in dossier.values() if v.get("blindV2"))
+        print(f"dossier: {len(dossier)} | researched2: {res} | blindV2: {bl}")
+        return 0
+    if args.queue:
+        need = [k for k, v in dossier.items() if v.get("researched2") and not v.get("blindV2")]
+        for k in (need[:args.queue_limit] if args.queue_limit else need):
+            print(k)
         return 0
 
     inp = Path(args.inp)
@@ -228,34 +221,41 @@ def main():
     for f in files:
         obj = json.loads(f.read_text(encoding="utf-8"))
         rid = obj.get("id") or f.stem
-        rec = admin1.get(rid)
+        rec = dossier.get(rid)
         if rec is None:
-            print(f"[SKIP] {f.name}: id not in admin1.json"); continue
+            print(f"[SKIP] {f.name}: not a dossier id"); continue
+        if not rec.get("researched2"):
+            print(f"[SKIP] {rec.get('name')}: not researched yet"); continue
         iso3 = rec.get("iso3")
-        siblings = [v.get("name", "") for k, v in admin1.items()
-                    if v.get("iso3") == iso3]
+        siblings = [v.get("name", "") for _, v in admin1.items() if v.get("iso3") == iso3]
         parent = countries.get(iso3) or {}
         parent_names = [parent.get("name", "")] if parent.get("name") else []
-        fails, warns = region_checks({**rec, "blindSummary": obj.get("blindSummary", "")},
-                                     siblings, parent_names)
+        fails, warns = region_checks_v2(rec, obj, siblings, parent_names)
         if fails:
-            print(f"\n[FAIL] {rec['name']} ({rid})")
+            print(f"\n[FAIL] {rec.get('name')} ({rid})")
             for x in dict.fromkeys(fails): print("   -", x)
             fails_total += 1
             continue
         if warns:
             uniq = list(dict.fromkeys(warns))
-            print(f"\n[WARN] {rec['name']} ({rid}): {len(uniq)} item(s)")
-            for w in uniq[:14]: print("   ·", w)
+            print(f"\n[WARN] {rec.get('name')} ({rid}): {len(uniq)}")
+            for w in uniq[:12]: print("   ·", w)
         if not args.dry_run:
             rec["blindSummary"] = obj["blindSummary"]
+            rec["blindSourceSummaries"] = obj["blindSourceSummaries"]
+            for src_f, bl_f in [("outOfScopeNotes","blindOutOfScope"),
+                                ("tangentialFactors","blindTangential"),
+                                ("localsOnly","blindLocalsOnly")]:
+                if obj.get(bl_f): rec[bl_f] = obj[bl_f]
+                else: rec.pop(bl_f, None)
+            rec["blindV2"] = True
         ok += 1
     if not args.dry_run and ok:
-        tmp = Path(args.admin1_file + ".tmp")
+        tmp = Path(str(ROOT / "data" / "admin1.json") + ".tmp")
         tmp.write_text(json.dumps(admin1, indent=1, ensure_ascii=False), encoding="utf-8")
-        tmp.replace(args.admin1_file)
+        tmp.replace(ROOT / "data" / "admin1.json")
     print(f"\nvalidated OK: {ok} · failed: {fails_total}"
-          + (" · dry run, nothing written" if args.dry_run else f" · wrote {ok} blindSummary fields"))
+          + (" · dry run, nothing written" if args.dry_run else f" · wrote {ok} blinded records (v2)"))
     return 0 if fails_total == 0 else 1
 
 if __name__ == "__main__":

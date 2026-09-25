@@ -571,10 +571,33 @@ def render_parent_bundle(parent: dict) -> str:
     return "\n\n".join(parts)
 
 
+def render_region_bundle(region: dict) -> str:
+    """The region's own blinded fields, mirroring the parent bundle layout."""
+    def clean(s):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(s or ""))).strip()
+    parts = []
+    bs = str(region.get("blindSummary", "")).strip()
+    if bs:
+        parts.append(clean(bs))
+    if region.get("blindTangential"):
+        parts.append("[Secondary factors] " + clean(region["blindTangential"]))
+    if region.get("blindLocalsOnly"):
+        parts.append("[Resident-facing] " + clean(region["blindLocalsOnly"]))
+    if region.get("blindOutOfScope"):
+        parts.append("[Out of scope] " + clean(region["blindOutOfScope"]))
+    ss = region.get("blindSourceSummaries")
+    if isinstance(ss, list) and ss:
+        items = "\n".join(f"- {clean(x)}" for x in ss[:8] if str(x).strip())
+        parts.append("Evidence on this region:\n" + items)
+    return "\n\n".join(parts)
+
+
 def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
                             flip: bool, blind_name: bool = False) -> str:
     rb_text = (region.get("blindSummary") or "").strip()
-    if not rb_text:  # fallback: use the record's own summary + model context
+    if rb_text:
+        rb_text = render_region_bundle(region)
+    else:  # fallback: use the record's own summary + model context
         def clean(t):
             return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(t or ""))).strip()
         rb_text = clean(region.get("summary")) + "\n\n" + clean(region.get("modelContext"))
@@ -837,9 +860,19 @@ def main() -> int:
         admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
         store = admin1
         store_file = Path(args.admin1_file)
+        unit_sub = [s.lower() for s in (args.regions_unit or [])]
+        for sid, r in admin1.items():
+            if not r.get("dossier"):
+                continue
+            if parents and r.get("iso3") not in parents:
+                continue
+            if unit_sub and not any(s in str(r.get("name", "")).lower() for s in unit_sub):
+                continue
+            if r.get("blindV2") or (args.allow_fallback and r.get("blindSummary")):
+                region_pool.append(sid)
         if not region_pool:
             print(f"error: no admin1 units for parents {sorted(parents)} "
-                  f"(blindSummary fields required unless --allow-fallback)", file=sys.stderr)
+                  f"(blindV2 records required unless --allow-fallback)", file=sys.stderr)
             return 2
         system_text = build_system_prompt(taxonomy) + MIXED_SYSTEM_EXTRA
     elif args.admin1:
