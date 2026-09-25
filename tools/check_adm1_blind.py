@@ -31,8 +31,16 @@ BILL_RES = [
     re.compile(r"\bi[-\s]\d{1,3}\b"),
     re.compile(r"\bsection\s+\d{2,}\b", re.I),
 ]
-PARENT_CI = [r"united states", r"u\.s\.a?", r"usa\b", r"american", r"\bus\b(?!\.)",
-             r"\bu\.s\.\b", r"the states\b", r"washington,? d\.?c\.?", r"\bd\.c\."]
+PARENT_CI = [r"united states", r"\bu\.?s\.?a?\b(?!\.)", r"\busa\b", r"\bamericans?\b", r"\bus\b(?!\.)",
+             r"\bu\.s\.\b", r"\bthe states\b", r"washington,? d\.?c\.?", r"\bd\.c\.",
+             r"\bmexico", r"\bphilippines", r"\bchilean\b", r"\bchile\b", r"\bargentina", r"\bcolombia",
+             r"\bnigeria", r"\bindonesia", r"\bgerman", r"\bpolish", r"\bfrance", r"\bfrench",
+             r"\bitaly", r"\bitalian", r"\bspain", r"\bsp(?:anish|ains)\b", r"\bcanada", r"\bcanadian",
+             r"\bunited kingdom", r"\bbritain", r"\bbritish", r"\bgreat britain",
+             r"\baussie\b", r"\bdown under\b", r"\bnew zealand", r"\bzimbabwe", r"\bmozambiq",
+             r"\bangola", r"\btasmania", r"\bnorthern territory", r"\bqueensland", r"\bvictoria\b",
+             r"\bnew south wales", r"\bwestern australia", r"\btasmanian", r"\bvalpara[ií]so",
+             r"\bantofagasta\b", r"\barica\b", r"\batacama\b", r"\bmaule\b", r"\bbiob[ií]o\b", r"\bnuble\b", r"\bcopiap[oó]\b", r"\bpuerto montt\b"]
 ISO3_ALIASES = {
  "ITA": ["italian", "italy", "rome", "roma", "milan", "naples", "turin"],
  "CAN": ["canadian", "ottawa", "toronto", "vancouver", "calgary", "edmonton", "notwithstanding"],
