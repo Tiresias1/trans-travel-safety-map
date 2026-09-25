@@ -147,6 +147,8 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
     for b in BANDS:
         if b in low: fails.append(f"band label leaks: {b!r}")
     if RANK_RE.search(plain): fails.append("rank-style token leaks")
+    if re.search(r"[±]\s*0?\.\d", plain) or re.search(r"\([+\-]\s*0?\.\d+\)", plain):
+        fails.append("deviation-space number leaks (strip: '±0.02'-class tokens)")
     for r in BILL_RES:
         m = r.search(plain)
         if m: fails.append(f"bill/statute number leaks: {m.group(0)!r}")
