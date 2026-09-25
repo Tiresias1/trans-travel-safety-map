@@ -43,6 +43,40 @@ BILL_RES = [
 # case-insensitive parent aliases (unambiguous strings only)
 PARENT_CI = [r"united states", r"u\.s\.a?", r"usa\b", r"american", r"\bus\b(?!\.)",
              r"\bu\.s\.\b", r"the states\b", r"washington,? d\.?c\.?", r"\bd\.c\."]
+
+# Country-specific demonym/capital aliases the word-boundary parent-name check
+# cannot catch (e.g. "Canadian" vs parent "Canada"). Applied when rec.iso3 matches.
+# Each entry: iso3 -> list of lowercased substring patterns.
+ISO3_ALIASES = {
+ "ITA": ["italian", "italy", "rome", "roma", "milan", "naples", "turin"],
+ "CAN": ["canadian", "ottawa", "toronto", "vancouver", "calgary", "edmonton", "notwithstanding"],
+ "MEX": ["mexican", "mexico", "mexico city", "cdmx", "guadalajara", "monterrey"],
+ "IND": ["indian", "new delhi", "delhi", "mumbai"],
+ "BRA": ["brazilian", "brasilia", "s\u00e3o paulo", "rio de janeiro"],
+ "DEU": ["german", "germany", "berlin", "munich", "frankfurt"],
+ "ESP": ["spanish", "spain", "madrid", "barcelona"],
+ "ARG": ["argentine", "argentina", "buenos aires"],
+ "POL": ["polish", "poland", "warsaw", "krakow"],
+ "NGA": ["nigerian", "nigeria", "abuja", "lagos"],
+ "IDN": ["indonesian", "indonesia", "jakarta"],
+ "ZAF": ["south african", "south africa", "pretoria", "johannesburg", "cape town"],
+ "FRA": ["french", "france", "paris"],
+ "RUS": ["russian", "russia", "moscow", "kremlin", "siberia"],
+ "PHL": ["filipino", "philippines", "manila"],
+ "KOR": ["korean", "korea", "seoul"],
+ "CHL": ["chilean", "chile", "santiago"],
+ "AUS": ["australian", "australia", "canberra", "sydney", "melbourne"],
+ "MYS": ["malaysian", "malaysia", "kuala lumpur"],
+ "PER": ["peruvian", "peru", "lima"],
+ "COL": ["colombian", "colombia", "bogota", "bogot\u00e1"],
+ "TUR": ["turkish", "turkey", "ankara", "istanbul"],
+}
+# Subnational unit-type words that must be unified to "state/province" (user rule:
+# naming the unit type is a blinding risk). Fail if any appear outside the token
+# "state/province". Kept conservative: only clearly unit-typing words.
+UNIT_TYPE = [r"oblast", r"krai", r"guberniya", r"voivodeship", r"prefectur",
+             r"governorat", r"regency", r"departament", r"oblastnu",
+             r"federal subject", r"\bprovinces?\b", r"\brepublics?\b"]
 # explicit shorthand that singles out the US political landscape
 SHORTHAND = [r"red[- ]states?", r"blue[- ]states?", r"purple[- ]states?",
              r"bible belt", r"deep south", r"new england", r"\bheartland\b",
@@ -82,6 +116,16 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
     for pat in PARENT_CI:
         if re.search(pat, low):
             fails.append(f"parent alias leaks: {pat}")
+    iso3 = str(rec.get("iso3", ""))
+    for alias in ISO3_ALIASES.get(iso3, []):
+        if re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", low):
+            fails.append(f"parent demonym/capital leaks: {alias!r}")
+    # unit-type words must be unified to "state/province"
+    stripped = re.sub(r"states?['\u2019]?/provinces?['\u2019]?", "", low)
+    for ut in UNIT_TYPE:
+        m = re.search(ut, stripped)
+        if m:
+            fails.append(f"subnational unit-type word leaks (use 'state/province'): {m.group(0)!r}")
     for b in BANDS:
         if b in low: fails.append(f"band label leaks: {b!r}")
     if RANK_RE.search(plain): fails.append("rank-style token leaks")
@@ -123,19 +167,33 @@ def main():
     ap.add_argument("--countries-file", default=str(ROOT / "data/countries.json"))
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--queue", action="store_true",
+                    help="print ids of dossier:true regions lacking blindSummary")
+    ap.add_argument("--queue-limit", type=int, default=None)
     args = ap.parse_args()
 
     admin1 = json.loads(Path(args.admin1_file).read_text(encoding="utf-8"))
     countries = json.loads(Path(args.countries_file).read_text(encoding="utf-8"))
 
+    if args.queue:
+        need = [k for k, v in admin1.items()
+                if v.get("dossier") and not str(v.get("blindSummary", "")).strip()]
+        if args.queue_limit:
+            need = need[:args.queue_limit]
+        for k in need:
+            print(k)
+        return 0
+
     if args.report:
-        need = [k for k, v in admin1.items() if v.get("estimated") is False]
+        need = [k for k, v in admin1.items() if v.get("dossier")]
         have = [k for k in need if str(admin1[k].get("blindSummary", "")).strip()]
-        print(f"estimated:false regions: {len(need)} | with blindSummary: {len(have)}")
+        print(f"dossier:true regions: {len(need)} | with blindSummary: {len(have)}")
         miss = [k for k in need if k not in have]
+        from collections import Counter
         if miss:
-            names = " ".join(admin1[k]["name"] for k in miss[:40])
-            print(f"missing ({len(miss)}): {names}")
+            print(f"missing ({len(miss)}) by country: "
+                  + " ".join(f"{c}:{n}" for c, n in
+                              Counter(admin1[k]['iso3'] for k in miss).most_common()))
         return 0
 
     inp = Path(args.inp)
