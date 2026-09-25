@@ -32,7 +32,8 @@ def main():
     if args.report or args.queue:
         done = [k for k, v in dossier.items() if v.get("researched2")]
         todo = [k for k in dossier if k not in set(done)]
-        print(f"dossier regions: {len(dossier)} | researched: {len(done)} | todo: {len(todo)}")
+        if args.report:
+            print(f"dossier regions: {len(dossier)} | researched: {len(done)} | todo: {len(todo)}")
         if args.queue:
             for k in (todo[:args.queue_limit] if args.queue_limit else todo):
                 print(k)
