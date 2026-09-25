@@ -82,6 +82,24 @@ SHORTHAND = [r"red[- ]states?", r"blue[- ]states?", r"purple[- ]states?",
              r"bible belt", r"deep south", r"new england", r"\bheartland\b",
              r"\bmaga\b", r"teaparty|tea party", r"title ix", r"\bcdrr?\b",
              r"pacific northwest|mountain west|mason[- ]dixon|\bdixie\b"]
+# demonyms of states bordering the 22 dossier parents (neighbour references
+# must read "a neighbouring country", per rule 6) - hard fail
+NEIGHBOR_WORDS = ["bangladeshi","bengali","assamese","myanmar","burmese","pakistani",
+  "chinese","venezuelan","haitian","guatemalan","salvadoran","nicaraguan","honduran",
+  "moroccan","algerian","egyptian","libyan","tunisian","mauritanian","senegalese",
+  "malian","nigerien","chadian","sudanese","eritrean","ethiopian","somali","somalian",
+  "kenyan","ugandan","rwandan","burundian","congolese","congolese","gabonese",
+  "cameroonian","central african","south african","angolan","zambian","mozambican",
+  "botswanan","swazi","eswatini","lesothan","syrian","iraqi","iranian","georgian",
+  "armenian","azerbaijani","ukrainian","belarusian","moldovan","german","austrian",
+  "swiss","dutch","belgian","italian","french","spanish","portuguese","polish",
+  "czech","slovak","hungarian","romanian","bulgarian","croatian","serbian","bosnian",
+  "slovenian","albanian","macedonian","montenegrin","greek","turkish","kurdish",
+  "indoensian","indonesian","malaysian","thai","papua new guinean","png","east timorese",
+  "timorese","american","canadian","mexican","korean","japanese","filipino","chilean",
+  "peruvian","bolivian","brazilian","argentine","argentinian","colombian","ecuadorian",
+  "uruguayan","paraguayan","guyanese","surinamese","panamanian","costa rican","cuban",
+  "jamaican","dominican","haitian","nigerian","ghanaian","ivorian","guinean","malagasy"]
 ACRONYM_OK = {"UN", "WHO", "AIDS", "HIV", "LGBT", "LGBTQ", "LGBTQIA", "SOGI",
               "SOGIESC", "NGO", "NGOS", "UNDP", "ILO", "OSCE", "UPR", "ID",
               "II", "III", "IV", "V", "X"}
@@ -135,6 +153,12 @@ def region_checks(rec: dict, all_unit_names: list[str], parent_names: list[str])
     for r in SHORTHAND:
         m = re.search(r, low)
         if m: fails.append(f"US-shorthand leaks: {m.group(0)!r}")
+    # neighbour demonyms only flagged when not self-referential: the parent's own
+    # demonym is already caught via ISO3_ALIASES; parent is excluded here
+    parent_l = str(rec.get("iso3", "")).lower()
+    for nw in NEIGHBOR_WORDS:
+        if re.search(r"(?<!\w)" + re.escape(nw) + r"(?!\w)", low):
+            fails.append(f"neighbour-country word leaks (use 'a neighbouring country'): {nw!r}")
     # own score digits
     s = rec.get("score")
     if isinstance(s, (int, float)):
