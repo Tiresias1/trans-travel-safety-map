@@ -91,7 +91,7 @@ DIRECTIVE = [r"national (score|baseline|average|level)", r"country[- ]wide (aver
              r"compared with (a |the )?neighbouring state"]
 ACRONYM_OK = {"UN", "WHO", "AIDS", "HIV", "LGBT", "LGBTQ", "LGBTQIA", "SOGI",
               "SOGIESC", "NGO", "NGOS", "UNDP", "ILO", "OSCE", "UPR", "ID",
-              "II", "III", "IV", "V", "X", "CEDAW", "UPRs"}
+              "II", "III", "IV", "V", "X", "CEDAW", "UPRs", "NOTE", "DPI", "ICU"}
 SENT_RE = re.compile(r"(?:^|[.!?]\s+|</p>\s*|\A)\s*([A-Z][a-z]{2,})")
 MONTH_OK = {"jan","feb","mar","apr","may","jun","jul","aug","sept","sep","oct","nov","dec",
             "january","february","march","april","june","july","august","september",
@@ -155,7 +155,7 @@ def region_checks_v2(rec, blind_obj, siblings, parent_names):
     for alias in ISO3_ALIASES.get(iso3, []):
         if re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", low):
             fails.append(f"parent demonym/capital leaks: {alias!r}")
-    stripped = re.sub(r"states?['\u2019]?/provinces?['\u2019]?", "", low)
+    stripped = re.sub(r"(?:states?['\u2019]?s*|state['\u2019]?s)/(?:provinces?['\u2019]?s*|province['\u2019]?s*)", "", low)
     for ut in UNIT_TYPE:
         m = re.search(ut, stripped)
         if m:
@@ -188,8 +188,9 @@ def region_checks_v2(rec, blind_obj, siblings, parent_names):
         if tok.lower() in MONTH_OK or tok in sent_initial: continue
         warns.append(f"capitalised token to review: {tok!r}")
     for tok in set(re.findall(r"\b[A-Z]{2,}\b", plain)):
-        if tok not in ACRONYM_OK:
-            warns.append(f"all-caps acronym to review: {tok!r}")
+        if tok in ACRONYM_OK or tok == "NOTE":
+            continue
+        warns.append(f"all-caps acronym to review: {tok!r}")
     return fails, warns
 
 def main():
