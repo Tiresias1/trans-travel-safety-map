@@ -238,9 +238,6 @@ def build_admin1_system_prompt(taxonomy_text: str, parent: dict, parent_iso: str
     context to judge deviations from it. Everything here is constant for the whole
     run (one run = one country), so it stays cacheable.
     """
-    anchors = " · ".join(
-        f"{countries[i]['name']} {countries[i]['score']:.2f}"
-        for i in ANCHOR_ISOS if i in countries)
 
     def clean(s):
         return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(s or ""))).strip()
@@ -271,7 +268,8 @@ You are not told either division's existing score. Derive both from the dossiers
 band: {parent.get('band', '')}. {len(parent.get('sources', []))} sources behind the
 national assessment.
 
-For scale orientation, current scores elsewhere on the map: {anchors}.
+No existing scores are given in this run: derive every number from the documented
+facts and the scale description alone.
 
 {national_context}
 
@@ -517,17 +515,17 @@ MIXED_SYSTEM_EXTRA = """
 One dossier describes an **administrative region**, presented as a bundle: the legal
 and social framework the encompassing state imposes on it (the state is anonymised,
 as in every dossier here), plus what the region itself adds or subtracts — its own
-statutes, institutions, enforcement record and culture. Where the region's dossier
-mentions the encompassing state's current whole-country score, treat it as context
-for the framework's severity — **not a floor, not a ceiling**: a region may clearly
-outrank or outrank-out its state. Blocked attempts at better law are evidence about
-the region's intent and climate; the laws actually in force remain what the visitor
-stands under. Weight what is enforced.
+statutes, institutions, enforcement record and culture. Blocked attempts at better
+law are evidence about the region's intent and climate; the laws actually in force
+remain what the visitor stands under — weight what is enforced.
 
-The other dossier describes a **country** in the usual way. Rate both on the same
-absolute scale, from documented facts only: a region should score like the country
-whose total bundle (framework + deviations + culture + rule of law) it most
-resembles."""
+**No existing scores are given anywhere in this run** — not the region's, not the
+encompassing state's, not the comparator's. Derive the region's absolute level from
+its bundle alone: if the region changes nothing visitor-facing beyond the framework,
+your rating will land near what the framework alone deserves; if it protects or
+endangers visitors beyond the framework, the facts will say so. Rate both dossiers
+on the same absolute scale, from documented facts only: a region should score like
+the country whose total bundle it most resembles."""
 
 
 def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
@@ -593,7 +591,7 @@ def render_region_bundle(region: dict) -> str:
 
 
 def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
-                            flip: bool, blind_name: bool = False) -> str:
+                            flip: bool, blind_name: bool = True) -> str:
     rb_text = (region.get("blindSummary") or "").strip()
     if rb_text:
         rb_text = render_region_bundle(region)
@@ -608,9 +606,6 @@ def build_mixed_user_prompt(region: dict, parent_rec: dict, country: dict,
         f"described below, which imposes that framework on it directly.\n\n"
         f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n"
         f"{render_parent_bundle(parent_rec)}\n\n"
-        f"[The encompassing state's current whole-country score on this map: "
-        f"{parent_rec.get('score', 0):.2f} — context for the framework's severity, "
-        f"not a floor or ceiling for the region.]\n\n"
         f"### THE REGION'S OWN ADDITIONS AND SUBTRACTIONS\n{rb_text}")
     country_block = dossier(country)
     if flip:
@@ -975,7 +970,7 @@ def main() -> int:
     if mixed:
         nb = sum(1 for sid in region_pool if admin1[sid].get("blindSummary"))
         print(f"mixed mode (regions vs countries): {len(region_pool)} regions "
-              f"({nb} with blindSummary fields) · comparators {len(eligible)} countries "
+              f"({nb} blindV2-ready) · comparators {len(eligible)} countries "
               f"(score-hidden) · region names {'WITHHELD' if not args.show_region_names else 'SHOWN'} "
               f"· recommend --num-pairs {len(region_pool) * 25}")
     elif admin1 is not None:
