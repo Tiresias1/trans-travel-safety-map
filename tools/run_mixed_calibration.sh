@@ -5,6 +5,9 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 KEY="$(cat /tmp/.qwen_key)"
+# blinder is finished by now — safe to sync with origin once (carries CNAME + any
+# fleet pushes) before the first country commit lands
+git pull --rebase -q || echo "WARN: pull --rebase failed; continuing on local history"
 # small/care-first countries early; the two giants last
 ORDER=(GBR USA ITA AUS ZAF CAN FRA CHL POL DEU KOR PHL ESP ARG PER MEX MYS IDN COL IND NGA TUR RUS)
 for ISO in "${ORDER[@]}"; do
