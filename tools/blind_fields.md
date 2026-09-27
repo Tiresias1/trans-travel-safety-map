@@ -337,3 +337,54 @@ Differences from country mode:
 Coordination note: pairwise runs and `apply_admin1_scores.py` merges both rewrite
 `data/admin1.json` wholesale — don't run a pairwise checkpoint and a merge at the same
 instant; sequence per-country merges between pairwise runs, or pause one.
+
+---
+
+# ADM1 region pipeline (dossier units)
+
+Regions that carry a `dossier: true` flag (633 units across ~46 parents) get
+the same treatment as countries: real research, dict-shaped sources, the three
+scope fields, and five blinded fields.
+
+## Cycle
+
+```bash
+python3 tools/merge_adm1.py          # prune invalid drafts -> merge research -> merge blind
+python3 tools/apply_adm1_research.py --report    # 633 researched?
+python3 tools/check_adm1_blind.py --report       # 633 blindV2?
+python3 tools/apply_adm1_research.py --queue     # next research ids (one per line)
+python3 tools/check_adm1_blind.py --queue        # next blind ids (researched2 && !blindV2)
+```
+
+Worker waves: one async runs.all() with lanes of 4-6 ids each; each lane reads
+its id range from `--queue` (self-assigning, so failed lanes simply re-queue),
+runs /tmp/adm1_research_prompt.md (research revision: sources -> {url,summary},
+scope fields, summary fact-check) or /tmp/adm1_prompt.md (blind: five fields,
+same rules as countries + region-specific bans), and saves each file before
+starting the next id. At most one wave in flight; ~11 lanes max.
+
+## Region-specific hard fails (checker: check_adm1_blind.py)
+
+- own/sibling unit names, parent name + demym/capital (ISO3_ALIASES),
+  ~90 neighbour-country demonyms, unit-type words outside the compound
+  "state/province" (oblast, krai, prefecture, voivodeship, regency,
+  governorate, province, republic...), bill/statute numbers, deviation-space
+  numbers (±0.02), band labels, score digits, US shorthand.
+- DIRECTIVE list: the phrase must never tell the rater how to vote -
+  national baseline/average/score, deviation, tier, most/least protective,
+  harshest, safest, most dangerous, material enough, scored separately,
+  red zone, on this map, compared-with-a-neighbouring-state verdicts.
+  Keep the underlying facts (laws, counts, rates); delete the verdict.
+
+## Region dossier content in blind_pairwise (mixed mode)
+
+render_region_bundle() sends: blindSummary + [Secondary factors]
+(blindTangential) + [Resident-facing] (blindLocalsOnly) + [Out of scope]
+(blindOutOfScope) + up to 8 blindSourceSummaries evidence lines. Region pool
+requires blindV2 (or --allow-fallback).
+
+## Fetch cache
+
+research/fetched/<sha1(url)>.txt holds extracted article text for all 382
+unique region source URLs (tools/fetch_adm1_articles.py); thin/failed pages
+become "NOTE: not retrievable..." source summaries, same as countries.
