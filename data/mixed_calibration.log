@@ -1764,3 +1764,210 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 192 pairs in 1081s · errors: 4 · total score movement: 1.694
 tokens — cache read: 887,924 · cache write: 0 · uncached in: 404,172 · out: 462,982
 ERROR: 25984515B9026957888422: bad summary
+POL done 2026-09-27 09:39:57
+=================== mixed DEU 2026-09-27 09:39:57 ===================
+DEU: 16 regions -> 192 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 16 regions (16 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 400
+pairs: 192 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 96 / 192: 0.07000/0.04016/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06021/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-093958.jsonl
+[1/192] Brandenburg 0.660→0.651 (rated 0.63 vs Uganda stored 0.06 rated 0.06) · 0.0091/move
+[2/192] Bayern 0.670→0.681 (rated 0.71 vs Somalia stored 0.03 rated 0.03) · 0.0099/move
+[3/192] Rheinland-Pfalz 0.710→0.707 (rated 0.70 vs Ireland stored 0.87 rated 0.84) · 0.0077/move
+[4/192] Bayern 0.670→0.656 (rated 0.52 vs Switzerland stored 0.85 rated 0.70) · 0.0093/move
+[5/192] Mecklenburg-Vorpommern 0.709→0.723 (rated 0.78 vs India stored 0.43 rated 0.45) · 0.0102/move
+[6/192] Brandenburg 0.660→0.668 (rated 0.70 vs Lebanon stored 0.17 rated 0.20) · 0.0098/move
+[7/192] Rheinland-Pfalz 0.710→0.714 (rated 0.71 vs France stored 0.67 rated 0.63) · 0.009/move
+[8/192] Thüringen 0.650→0.646 (rated 0.60 vs United Kingdom stored 0.48 rated 0.40) · 0.0084/move
+[9/192] Sachsen-Anhalt 0.680→0.688 (rated 0.72 vs Serbia stored 0.40 rated 0.43) · 0.0084/move
+[10/192] Berlin 0.730→0.743 (rated 0.76 vs Malawi stored 0.16 rated 0.12) · 0.0088/move
+[11/192] Brandenburg 0.651→0.672 (rated 0.74 vs South Sudan stored 0.10 rated 0.07) · 0.01/move
+[12/192] Bayern 0.670→0.684 (rated 0.68 vs Vietnam stored 0.57 rated 0.48) · 0.0103/move
+[13/192] Hessen 0.690→0.664 (rated 0.62 vs Liechtenstein stored 0.80 rated 0.91) · 0.0115/move
+[14/192] Thüringen 0.650→0.663 (rated 0.72 vs Laos stored 0.64 rated 0.66) · 0.0116/move
+[15/192] Thüringen 0.650→0.647 (rated 0.65 vs Iraq stored 0.04 rated 0.08) · 0.0111/move
+[16/192] Saarland 0.710→0.722 (rated 0.73 vs Ethiopia stored 0.25 rated 0.20) · 0.0111/move
+[17/192] Berlin 0.743→0.756 (rated 0.80 vs Somalia stored 0.03 rated 0.03) · 0.0112/move
+[18/192] Rheinland-Pfalz 0.714→0.688 (rated 0.70 vs British Virgin Islands stored 0.42 rated 0.63) · 0.012/move
+[19/192] Sachsen-Anhalt 0.688→0.701 (rated 0.75 vs Guinea stored 0.17 rated 0.18) · 0.0121/move
+[20/192] Saarland 0.710→0.716 (rated 0.72 vs San Marino stored 0.84 rated 0.84) · 0.0118/move
+[21/192] Schleswig-Holstein 0.710→0.699 (rated 0.72 vs American Samoa stored 0.18 rated 0.36) · 0.0117/move
+[22/192] Schleswig-Holstein 0.710→0.693 (rated 0.62 vs New Zealand stored 0.75 rated 0.74) · 0.012/move
+[23/192] Mecklenburg-Vorpommern 0.723→0.726 (rated 0.75 vs Morocco stored 0.18 rated 0.24) · 0.0116/move
+[23] ERROR 10402087B23625801106445/SLE: no scores in response (stop_reason=end_turn): 'I will now analyse Dossier A first, on its own merits, without thinking about the comparison.\n\nDossier A shows an 1861 sodomy law carrying up to life imprisonment for men. However, Rule 2 says sodomy '
+[25/192] Berlin 0.743→0.743 (rated 0.65 vs Latvia stored 0.60 rated 0.40) · 0.0107/move
+[26/192] Berlin 0.756→0.740 (rated 0.74 vs Gibraltar stored 0.58 rated 0.69) · 0.0109/move
+[27/192] Schleswig-Holstein 0.710→0.722 (rated 0.75 vs Eritrea stored 0.12 rated 0.10) · 0.0109/move
+[28/192] Berlin 0.756→0.748 (rated 0.81 vs Saint Barthélemy stored 0.65 rated 0.87) · 0.0108/move
+[29/192] Bremen 0.710→0.700 (rated 0.70 vs Tajikistan stored 0.17 rated 0.22) · 0.0107/move
+[30/192] Hamburg 0.710→0.709 (rated 0.70 vs Vanuatu stored 0.58 rated 0.53) · 0.0104/move
+[31/192] Berlin 0.756→0.763 (rated 0.76 vs Ireland stored 0.87 rated 0.83) · 0.0103/move
+[32/192] Schleswig-Holstein 0.722→0.723 (rated 0.72 vs Ireland stored 0.87 rated 0.83) · 0.0101/move
+[33/192] Niedersachsen 0.710→0.719 (rated 0.73 vs Brazil stored 0.71 rated 0.68) · 0.01/move
+[34/192] Niedersachsen 0.710→0.712 (rated 0.75 vs Israel stored 0.49 rated 0.58) · 0.0098/move
+[35/192] Saarland 0.716→0.708 (rated 0.68 vs Monaco stored 0.76 rated 0.75) · 0.0097/move
+[36/192] Nordrhein-Westfalen 0.710→0.711 (rated 0.72 vs Honduras stored 0.15 rated 0.20) · 0.0095/move
+[37/192] Hamburg 0.710→0.693 (rated 0.55 vs Norway stored 0.78 rated 0.67) · 0.0097/move
+[38/192] Schleswig-Holstein 0.722→0.718 (rated 0.72 vs Italy stored 0.50 rated 0.52) · 0.0095/move
+[39/192] Bremen 0.700→0.709 (rated 0.70 vs Madagascar stored 0.38 rated 0.27) · 0.0095/move
+[40/192] Nordrhein-Westfalen 0.710→0.734 (rated 0.81 vs Angola stored 0.62 rated 0.54) · 0.0099/move
+[41/192] Baden-Württemberg 0.710→0.710 (rated 0.68 vs India stored 0.43 rated 0.33) · 0.0097/move
+[42/192] Sachsen-Anhalt 0.701→0.721 (rated 0.81 vs Belarus stored 0.08 rated 0.06) · 0.0099/move
+[43/192] Hessen 0.664→0.673 (rated 0.72 vs Martinique stored 0.62 rated 0.65) · 0.0099/move
+[44/192] Niedersachsen 0.712→0.720 (rated 0.74 vs Gabon stored 0.54 rated 0.53) · 0.0098/move
+[45/192] Hessen 0.664→0.674 (rated 0.68 vs Peru stored 0.36 rated 0.32) · 0.0098/move
+[46/192] Sachsen 0.552→0.559 (rated 0.60 vs Libya stored 0.04 rated 0.07) · 0.0098/move
+[47/192] Hessen 0.664→0.660 (rated 0.62 vs New Zealand stored 0.75 rated 0.68) · 0.0097/move
+[48/192] Mecklenburg-Vorpommern 0.726→0.721 (rated 0.70 vs Denmark stored 0.85 rated 0.82) · 0.0096/move
+[49/192] Bayern 0.684→0.676 (rated 0.62 vs Pakistan stored 0.20 rated 0.15) · 0.0095/move
+[50/192] Bayern 0.684→0.673 (rated 0.65 vs Uzbekistan stored 0.15 rated 0.20) · 0.0096/move
+[51/192] Brandenburg 0.672→0.676 (rated 0.68 vs Lebanon stored 0.17 rated 0.18) · 0.0095/move
+[52/192] Nordrhein-Westfalen 0.734→0.742 (rated 0.74 vs El Salvador stored 0.35 rated 0.31) · 0.0094/move
+[53/192] Brandenburg 0.672→0.674 (rated 0.68 vs Syria stored 0.04 rated 0.08) · 0.0093/move
+[54/192] Mecklenburg-Vorpommern 0.726→0.736 (rated 0.73 vs Saint Lucia stored 0.60 rated 0.52) · 0.0093/move
+[55/192] Sachsen 0.559→0.583 (rated 0.73 vs Sudan stored 0.05 rated 0.07) · 0.0096/move
+[56/192] Thüringen 0.647→0.655 (rated 0.68 vs Georgia stored 0.18 rated 0.17) · 0.0095/move
+[57/192] Berlin 0.763→0.731 (rated 0.76 vs U.S. Virgin Islands stored 0.34 rated 0.72) · 0.0099/move
+[58/192] Saarland 0.708→0.726 (rated 0.82 vs Turkmenistan stored 0.08 rated 0.07) · 0.0101/move
+[59/192] Brandenburg 0.676→0.669 (rated 0.65 vs Lithuania stored 0.58 rated 0.58) · 0.01/move
+[60/192] Niedersachsen 0.720→0.715 (rated 0.70 vs Saint Vincent and the  stored 0.34 rated 0.33) · 0.0099/move
+[61/192] Mecklenburg-Vorpommern 0.736→0.745 (rated 0.75 vs São Tomé and Príncipe stored 0.65 rated 0.60) · 0.0099/move
+[62/192] Nordrhein-Westfalen 0.734→0.725 (rated 0.70 vs India stored 0.43 rated 0.45) · 0.0099/move
+[63/192] Sachsen-Anhalt 0.721→0.709 (rated 0.65 vs Mauritius stored 0.75 rated 0.74) · 0.0099/move
+[64/192] Berlin 0.763→0.754 (rated 0.68 vs Taiwan stored 0.78 rated 0.72) · 0.0099/move
+[65/192] Niedersachsen 0.720→0.730 (rated 0.74 vs South Korea stored 0.71 rated 0.66) · 0.0099/move
+[66/192] Berlin 0.731→0.738 (rated 0.75 vs Guinea stored 0.17 rated 0.15) · 0.0099/move
+[67/192] Baden-Württemberg 0.710→0.694 (rated 0.65 vs Mali stored 0.12 rated 0.20) · 0.01/move
+[68/192] Sachsen 0.583→0.595 (rated 0.62 vs Kosovo stored 0.64 rated 0.58) · 0.01/move
+[69/192] Thüringen 0.655→0.625 (rated 0.52 vs Isle of Man stored 0.62 rated 0.78) · 0.0103/move
+[70/192] Niedersachsen 0.715→0.732 (rated 0.82 vs Iran stored 0.07 rated 0.05) · 0.0104/move
+[71/192] Mecklenburg-Vorpommern 0.745→0.759 (rated 0.80 vs Kiribati stored 0.44 rated 0.38) · 0.0104/move
+[72/192] Sachsen 0.583→0.576 (rated 0.58 vs Saudi Arabia stored 0.04 rated 0.10) · 0.0104/move
+[73/192] Niedersachsen 0.730→0.735 (rated 0.74 vs Azerbaijan stored 0.14 rated 0.12) · 0.0103/move
+[74/192] Thüringen 0.655→0.648 (rated 0.60 vs Mauritius stored 0.75 rated 0.72) · 0.0103/move
+[75/192] Nordrhein-Westfalen 0.725→0.712 (rated 0.58 vs São Tomé and Príncipe stored 0.65 rated 0.55) · 0.0103/move
+[76/192] Brandenburg 0.669→0.688 (rated 0.80 vs Egypt stored 0.13 rated 0.12) · 0.0104/move
+[77/192] Niedersachsen 0.730→0.722 (rated 0.72 vs Lebanon stored 0.17 rated 0.22) · 0.0104/move
+[78/192] Schleswig-Holstein 0.718→0.717 (rated 0.65 vs Slovakia stored 0.65 rated 0.50) · 0.0103/move
+[79/192] Sachsen 0.576→0.585 (rated 0.68 vs Turkmenistan stored 0.08 rated 0.15) · 0.0103/move
+[80/192] Mecklenburg-Vorpommern 0.759→0.765 (rated 0.80 vs Nigeria stored 0.08 rated 0.10) · 0.0102/move
+[81/192] Berlin 0.738→0.722 (rated 0.73 vs Guernsey stored 0.60 rated 0.80) · 0.0103/move
+[82/192] Niedersachsen 0.735→0.705 (rated 0.70 vs Pitcairn Islands stored 0.38 rated 0.73) · 0.0105/move
+[83/192] Rheinland-Pfalz 0.688→0.676 (rated 0.70 vs Falkland Islands stored 0.58 rated 0.84) · 0.0106/move
+[84/192] Brandenburg 0.669→0.679 (rated 0.73 vs Guatemala stored 0.31 rated 0.30) · 0.0105/move
+[85/192] Nordrhein-Westfalen 0.712→0.706 (rated 0.65 vs Guyana stored 0.27 rated 0.22) · 0.0105/move
+[86/192] Thüringen 0.648→0.652 (rated 0.68 vs Turkmenistan stored 0.08 rated 0.12) · 0.0104/move
+[87/192] Hessen 0.660→0.675 (rated 0.78 vs Saudi Arabia stored 0.04 rated 0.05) · 0.0105/move
+[88/192] Berlin 0.738→0.747 (rated 0.80 vs Equatorial Guinea stored 0.13 rated 0.15) · 0.0104/move
+[89/192] Hessen 0.660→0.677 (rated 0.72 vs Angola stored 0.62 rated 0.50) · 0.0105/move
+[90/192] Hessen 0.660→0.669 (rated 0.70 vs Bosnia and Herzegovina stored 0.50 rated 0.48) · 0.0105/move
+[91/192] Schleswig-Holstein 0.717→0.727 (rated 0.72 vs Micronesia (FSM) stored 0.61 rated 0.50) · 0.0105/move
+[92/192] Brandenburg 0.679→0.675 (rated 0.68 vs Senegal stored 0.15 rated 0.22) · 0.0104/move
+[93/192] Saarland 0.726→0.711 (rated 0.68 vs Isle of Man stored 0.62 rated 0.73) · 0.0104/move
+[94/192] Thüringen 0.652→0.667 (rated 0.70 vs Mayotte stored 0.53 rated 0.40) · 0.0105/move
+[95/192] Sachsen 0.585→0.601 (rated 0.72 vs Netherlands stored 0.79 rated 0.80) · 0.0106/move
+[96/192] Baden-Württemberg 0.694→0.675 (rated 0.68 vs Gibraltar stored 0.58 rated 0.83) · 0.0106/move
+[97/192] Sachsen 0.585→0.599 (rated 0.67 vs Oman stored 0.10 rated 0.06) · 0.0107/move
+[98/192] Hessen 0.669→0.663 (rated 0.64 vs Ireland stored 0.87 rated 0.86) · 0.0106/move
+[99/192] Bremen 0.709→0.715 (rated 0.75 vs Rwanda stored 0.34 rated 0.35) · 0.0106/move
+[100/192] Niedersachsen 0.705→0.702 (rated 0.70 vs Macau stored 0.50 rated 0.50) · 0.0105/move
+[101/192] Hessen 0.669→0.678 (rated 0.73 vs Mali stored 0.12 rated 0.10) · 0.0105/move
+[102/192] Sachsen-Anhalt 0.709→0.712 (rated 0.74 vs Grenada stored 0.47 rated 0.52) · 0.0104/move
+[103/192] Sachsen 0.601→0.586 (rated 0.64 vs U.S. Virgin Islands stored 0.34 rated 0.71) · 0.0104/move
+[104/192] Hessen 0.669→0.678 (rated 0.70 vs Argentina stored 0.58 rated 0.52) · 0.0104/move
+[105/192] Rheinland-Pfalz 0.676→0.684 (rated 0.75 vs Mayotte stored 0.53 rated 0.55) · 0.0104/move
+[106/192] Brandenburg 0.675→0.685 (rated 0.74 vs Zambia stored 0.09 rated 0.08) · 0.0104/move
+[107/192] Schleswig-Holstein 0.727→0.722 (rated 0.75 vs Montserrat stored 0.44 rated 0.62) · 0.0104/move
+[108/192] Berlin 0.747→0.743 (rated 0.74 vs Armenia stored 0.33 rated 0.33) · 0.0103/move
+[109/192] Bayern 0.673→0.668 (rated 0.65 vs Bahrain stored 0.26 rated 0.25) · 0.0102/move
+[110/192] Bremen 0.715→0.707 (rated 0.66 vs Zimbabwe stored 0.33 rated 0.35) · 0.0102/move
+[111/192] Thüringen 0.667→0.675 (rated 0.73 vs Central African Republ stored 0.20 rated 0.20) · 0.0102/move
+[112/192] Saarland 0.711→0.716 (rated 0.72 vs Zimbabwe stored 0.33 rated 0.30) · 0.0102/move
+[113/192] Schleswig-Holstein 0.727→0.729 (rated 0.74 vs Papua New Guinea stored 0.20 rated 0.23) · 0.0101/move
+[114/192] Thüringen 0.667→0.651 (rated 0.58 vs Saint Barthélemy stored 0.65 rated 0.78) · 0.0101/move
+[109] ERROR 10402087B60477050509260/CYM: no scores in response (stop_reason=max_tokens): 'Let me carefully work through both dossiers, evaluating them on the traveler-specific axes.\n\n**DOSSIER A (Self-governing overseas territory of a distant metropolitan state):**\n\nKey facts:\n- Self-gover'
+[116/192] Rheinland-Pfalz 0.684→0.684 (rated 0.68 vs Turkey stored 0.15 rated 0.10) · 0.01/move
+[117/192] Mecklenburg-Vorpommern 0.765→0.762 (rated 0.69 vs Switzerland stored 0.85 rated 0.74) · 0.0099/move
+[118/192] Niedersachsen 0.702→0.692 (rated 0.60 vs Taiwan stored 0.78 rated 0.78) · 0.0099/move
+[119/192] Hessen 0.678→0.685 (rated 0.73 vs Mauritania stored 0.08 rated 0.06) · 0.0099/move
+[120/192] Rheinland-Pfalz 0.684→0.692 (rated 0.73 vs Switzerland stored 0.85 rated 0.82) · 0.0099/move
+[121/192] Hamburg 0.693→0.690 (rated 0.73 vs Montserrat stored 0.44 rated 0.62) · 0.0098/move
+[122/192] Sachsen-Anhalt 0.712→0.705 (rated 0.70 vs Benin stored 0.14 rated 0.22) · 0.0098/move
+[123/192] Hessen 0.678→0.668 (rated 0.64 vs Suriname stored 0.62 rated 0.70) · 0.0098/move
+[124/192] Brandenburg 0.685→0.686 (rated 0.68 vs El Salvador stored 0.35 rated 0.28) · 0.0097/move
+[125/192] Sachsen-Anhalt 0.712→0.720 (rated 0.74 vs Madagascar stored 0.38 rated 0.32) · 0.0097/move
+[126/192] Niedersachsen 0.692→0.700 (rated 0.78 vs Myanmar stored 0.06 rated 0.07) · 0.0097/move
+[127/192] Nordrhein-Westfalen 0.706→0.719 (rated 0.83 vs Ghana stored 0.18 rated 0.15) · 0.0097/move
+[128/192] Niedersachsen 0.692→0.695 (rated 0.81 vs United States stored 0.36 rated 0.52) · 0.0097/move
+[129/192] Brandenburg 0.686→0.684 (rated 0.68 vs Poland stored 0.52 rated 0.50) · 0.0096/move
+[130/192] Nordrhein-Westfalen 0.706→0.703 (rated 0.72 vs Jamaica stored 0.18 rated 0.30) · 0.0096/move
+[131/192] Saarland 0.716→0.712 (rated 0.69 vs Georgia stored 0.18 rated 0.18) · 0.0095/move
+[132/192] Brandenburg 0.686→0.677 (rated 0.70 vs Turks and Caicos Islan stored 0.44 rated 0.70) · 0.0095/move
+[133/192] Hamburg 0.690→0.692 (rated 0.74 vs Namibia stored 0.55 rated 0.63) · 0.0095/move
+[134/192] Bayern 0.668→0.670 (rated 0.82 vs Anguilla stored 0.44 rated 0.70) · 0.0094/move
+[135/192] Bremen 0.707→0.711 (rated 0.73 vs Panama stored 0.56 rated 0.55) · 0.0094/move
+[136/192] Bremen 0.707→0.710 (rated 0.74 vs Portugal stored 0.81 rated 0.85) · 0.0093/move
+[137/192] Hessen 0.668→0.671 (rated 0.72 vs Martinique stored 0.62 rated 0.68) · 0.0093/move
+[138/192] Schleswig-Holstein 0.729→0.734 (rated 0.74 vs Liberia stored 0.32 rated 0.28) · 0.0092/move
+[139/192] Sachsen-Anhalt 0.720→0.711 (rated 0.57 vs Albania stored 0.70 rated 0.62) · 0.0092/move
+[140/192] Bremen 0.707→0.715 (rated 0.71 vs United States stored 0.36 rated 0.23) · 0.0092/move
+[141/192] Bremen 0.707→0.701 (rated 0.70 vs Poland stored 0.52 rated 0.60) · 0.0092/move
+[142/192] Brandenburg 0.677→0.679 (rated 0.70 vs Uzbekistan stored 0.15 rated 0.18) · 0.0091/move
+[143/192] Baden-Württemberg 0.675→0.682 (rated 0.68 vs France stored 0.67 rated 0.55) · 0.0091/move
+[144/192] Rheinland-Pfalz 0.692→0.690 (rated 0.65 vs Ukraine stored 0.59 rated 0.52) · 0.0091/move
+[145/192] Bayern 0.670→0.674 (rated 0.70 vs Senegal stored 0.15 rated 0.13) · 0.009/move
+[146/192] Hamburg 0.692→0.697 (rated 0.73 vs Côte d'Ivoire stored 0.33 rated 0.30) · 0.009/move
+[147/192] Brandenburg 0.677→0.686 (rated 0.72 vs Singapore stored 0.73 rated 0.62) · 0.009/move
+[148/192] Sachsen 0.586→0.591 (rated 0.63 vs Oman stored 0.10 rated 0.08) · 0.009/move
+[149/192] Hamburg 0.692→0.685 (rated 0.62 vs Azerbaijan stored 0.14 rated 0.18) · 0.009/move
+[150/192] Sachsen-Anhalt 0.711→0.707 (rated 0.62 vs Colombia stored 0.52 rated 0.42) · 0.0089/move
+[151/192] Sachsen-Anhalt 0.711→0.718 (rated 0.74 vs Moldova stored 0.54 rated 0.45) · 0.0089/move
+[152/192] Saarland 0.712→0.709 (rated 0.67 vs Croatia stored 0.77 rated 0.74) · 0.0089/move
+[153/192] Sachsen 0.586→0.594 (rated 0.76 vs Lesotho stored 0.40 rated 0.50) · 0.0089/move
+[154/192] Rheinland-Pfalz 0.690→0.694 (rated 0.70 vs Micronesia (FSM) stored 0.61 rated 0.58) · 0.0088/move
+[155/192] Thüringen 0.651→0.648 (rated 0.65 vs Namibia stored 0.55 rated 0.60) · 0.0088/move
+[156/192] Nordrhein-Westfalen 0.703→0.702 (rated 0.70 vs Papua New Guinea stored 0.20 rated 0.20) · 0.0088/move
+[157/192] Hessen 0.671→0.674 (rated 0.72 vs Panama stored 0.56 rated 0.60) · 0.0087/move
+[158/192] Bayern 0.674→0.680 (rated 0.70 vs Wallis and Futuna stored 0.59 rated 0.52) · 0.0087/move
+[159/192] Thüringen 0.651→0.654 (rated 0.70 vs Egypt stored 0.13 rated 0.15) · 0.0087/move
+[160/192] Hamburg 0.685→0.688 (rated 0.72 vs Saint Lucia stored 0.60 rated 0.58) · 0.0086/move
+[161/192] Bremen 0.701→0.705 (rated 0.75 vs Montenegro stored 0.65 rated 0.67) · 0.0086/move
+[162/192] Berlin 0.743→0.741 (rated 0.74 vs Samoa stored 0.72 rated 0.72) · 0.0086/move
+[163/192] Berlin 0.743→0.739 (rated 0.72 vs Benin stored 0.14 rated 0.18) · 0.0085/move
+[164/192] Hamburg 0.688→0.689 (rated 0.72 vs Bangladesh stored 0.12 rated 0.20) · 0.0085/move
+[165/192] Mecklenburg-Vorpommern 0.762→0.759 (rated 0.72 vs Kuwait stored 0.37 rated 0.35) · 0.0085/move
+[166/192] Hamburg 0.685→0.694 (rated 0.76 vs Thailand stored 0.86 rated 0.72) · 0.0085/move
+[167/192] Sachsen-Anhalt 0.718→0.719 (rated 0.70 vs Ukraine stored 0.59 rated 0.48) · 0.0084/move
+[168/192] Sachsen 0.594→0.597 (rated 0.65 vs Trinidad and Tobago stored 0.34 rated 0.40) · 0.0084/move
+[169/192] Bremen 0.701→0.697 (rated 0.62 vs Lebanon stored 0.17 rated 0.15) · 0.0084/move
+[170/192] Schleswig-Holstein 0.734→0.731 (rated 0.70 vs Andorra stored 0.88 rated 0.87) · 0.0083/move
+[171/192] Bayern 0.679→0.683 (rated 0.70 vs Honduras stored 0.15 rated 0.10) · 0.0083/move
+[172/192] Thüringen 0.654→0.659 (rated 0.73 vs Bahrain stored 0.26 rated 0.25) · 0.0083/move
+[173/192] Sachsen 0.594→0.600 (rated 0.62 vs Greece stored 0.66 rated 0.56) · 0.0083/move
+[174/192] Hamburg 0.694→0.698 (rated 0.75 vs Tonga stored 0.51 rated 0.50) · 0.0082/move
+[175/192] Berlin 0.739→0.740 (rated 0.76 vs Taiwan stored 0.78 rated 0.82) · 0.0082/move
+[176/192] Nordrhein-Westfalen 0.702→0.692 (rated 0.62 vs Gibraltar stored 0.58 rated 0.77) · 0.0082/move
+[177/192] Hessen 0.674→0.680 (rated 0.73 vs Micronesia (FSM) stored 0.61 rated 0.52) · 0.0082/move
+[178/192] Schleswig-Holstein 0.731→0.735 (rated 0.75 vs India stored 0.43 rated 0.37) · 0.0082/move
+[179/192] Hessen 0.674→0.678 (rated 0.68 vs Thailand stored 0.86 rated 0.76) · 0.0081/move
+[180/192] Hessen 0.674→0.675 (rated 0.74 vs Senegal stored 0.15 rated 0.25) · 0.0081/move
+[181/192] Brandenburg 0.686→0.688 (rated 0.73 vs Venezuela stored 0.41 rated 0.45) · 0.0081/move
+[182/192] Hessen 0.674→0.673 (rated 0.67 vs Tuvalu stored 0.48 rated 0.50) · 0.008/move
+[183/192] Baden-Württemberg 0.682→0.687 (rated 0.78 vs Yemen stored 0.03 rated 0.03) · 0.008/move
+[184/192] Baden-Württemberg 0.682→0.681 (rated 0.72 vs Poland stored 0.52 rated 0.68) · 0.008/move
+[185/192] Bayern 0.683→0.681 (rated 0.65 vs Samoa stored 0.72 rated 0.73) · 0.0079/move
+[186/192] Rheinland-Pfalz 0.694→0.697 (rated 0.82 vs Lesotho stored 0.40 rated 0.50) · 0.0079/move
+[187/192] Sachsen 0.600→0.607 (rated 0.69 vs Mayotte stored 0.53 rated 0.42) · 0.0079/move
+[188/192] Berlin 0.740→0.744 (rated 0.75 vs Micronesia (FSM) stored 0.61 rated 0.50) · 0.0079/move
+[189/192] Schleswig-Holstein 0.735→0.732 (rated 0.72 vs Oman stored 0.10 rated 0.14) · 0.0079/move
+[190/192] Bremen 0.697→0.695 (rated 0.64 vs Uruguay stored 0.85 rated 0.82) · 0.0078/move
+[191/192] Saarland 0.709→0.703 (rated 0.72 vs Pitcairn Islands stored 0.38 rated 0.75) · 0.0078/move
+[192/192] Thüringen 0.659→0.660 (rated 0.68 vs Peru stored 0.36 rated 0.38) · 0.0078/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 192 pairs in 1076s · errors: 2 · total score movement: 1.495
+tokens — cache read: 897,370 · cache write: 0 · uncached in: 428,243 · out: 465,624
+ERROR: 25984515B9026957888422: bad summary
