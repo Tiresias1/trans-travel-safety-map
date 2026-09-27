@@ -60,3 +60,630 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 48 pairs in 305s · errors: 1 · total score movement: 0.402
 tokens — cache read: 221,981 · cache write: 0 · uncached in: 108,928 · out: 111,813
 ERROR: 25984515B9026957888422: bad summary
+GBR done 2026-09-27 07:05:54
+=================== mixed USA 2026-09-27 07:05:54 ===================
+USA: 51 regions -> 612 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 51 regions (51 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 1275
+pairs: 612 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 306 / 612: 0.07000/0.04005/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06007/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-070555.jsonl
+[1/612] Tennessee 0.210→0.198 (rated 0.15 vs Switzerland stored 0.85 rated 0.83) · 0.0121/move
+[2/612] Arizona 0.370→0.375 (rated 0.37 vs New Zealand stored 0.75 rated 0.70) · 0.0086/move
+[3/612] Maryland 0.433→0.462 (rated 0.58 vs Turkey stored 0.15 rated 0.14) · 0.0154/move
+[4/612] Kentucky 0.315→0.347 (rated 0.48 vs India stored 0.43 rated 0.42) · 0.0197/move
+[5/612] New Jersey 0.551→0.541 (rated 0.52 vs Samoa stored 0.72 rated 0.72) · 0.0177/move
+[6/612] Pennsylvania 0.397→0.415 (rated 0.50 vs Romania stored 0.67 rated 0.70) · 0.0177/move
+[7/612] Mississippi 0.239→0.261 (rated 0.30 vs DR Congo stored 0.21 rated 0.13) · 0.0184/move
+[8/612] Oklahoma 0.278→0.303 (rated 0.42 vs Lebanon stored 0.17 rated 0.19) · 0.0193/move
+[9/612] Indiana 0.230→0.241 (rated 0.27 vs Liechtenstein stored 0.80 rated 0.80) · 0.0184/move
+[10/612] Tennessee 0.198→0.218 (rated 0.27 vs Vietnam stored 0.57 rated 0.52) · 0.0186/move
+[11/612] Tennessee 0.198→0.215 (rated 0.30 vs Somalia stored 0.03 rated 0.07) · 0.0185/move
+[12/612] Wyoming 0.235→0.260 (rated 0.35 vs Iraq stored 0.04 rated 0.03) · 0.019/move
+[13/612] Nevada 0.490→0.500 (rated 0.57 vs Guadeloupe stored 0.62 rated 0.70) · 0.0182/move
+[14/612] Michigan 0.441→0.427 (rated 0.32 vs Latvia stored 0.60 rated 0.50) · 0.0179/move
+[15/612] District of Columbia 0.345→0.328 (rated 0.22 vs Antigua and Barbuda stored 0.60 rated 0.52) · 0.0178/move
+[16/612] New Mexico 0.527→0.518 (rated 0.48 vs Belgium stored 0.83 rated 0.80) · 0.0173/move
+[17/612] Oklahoma 0.278→0.280 (rated 0.34 vs Eritrea stored 0.12 rated 0.24) · 0.0164/move
+[18/612] Minnesota 0.595→0.597 (rated 0.62 vs Nigeria stored 0.08 rated 0.15) · 0.0156/move
+[19/612] Missouri 0.324→0.320 (rated 0.30 vs Cyprus stored 0.79 rated 0.74) · 0.015/move
+[20/612] Mississippi 0.261→0.255 (rated 0.25 vs Somalia stored 0.03 rated 0.03) · 0.0145/move
+[21/612] Michigan 0.441→0.464 (rated 0.62 vs North Macedonia stored 0.50 rated 0.60) · 0.015/move
+[22/612] South Dakota 0.247→0.267 (rated 0.50 vs Guinea stored 0.17 rated 0.43) · 0.0152/move
+[23/612] Virginia 0.370→0.365 (rated 0.35 vs San Marino stored 0.84 rated 0.82) · 0.0147/move
+[24/612] Kansas 0.184→0.199 (rated 0.22 vs Latvia stored 0.60 rated 0.55) · 0.0147/move
+[25/612] Delaware 0.399→0.448 (rated 0.65 vs New Zealand stored 0.75 rated 0.70) · 0.0161/move
+[23] ERROR 66186276B31549545599635/ASM: no scores in response (stop_reason=end_turn): "Looking at Dossier A: This is a small territory under a metropolitan state's jurisdiction. It has a documented indigenous third-gender tradition (positive climate signal per axis K), which is a cultur"
+[27/612] North Dakota 0.266→0.320 (rated 0.52 vs Sierra Leone stored 0.28 rated 0.18) · 0.0169/move
+[28/612] Hawaii 0.522→0.524 (rated 0.52 vs Austria stored 0.74 rated 0.70) · 0.0164/move
+[29/612] Maryland 0.462→0.412 (rated 0.30 vs Falkland Islands stored 0.58 rated 0.79) · 0.0176/move
+[30/612] Kentucky 0.347→0.375 (rated 0.48 vs Morocco stored 0.18 rated 0.15) · 0.0179/move
+[31/612] District of Columbia 0.328→0.318 (rated 0.28 vs France stored 0.67 rated 0.65) · 0.0176/move
+[32/612] Kansas 0.199→0.189 (rated 0.14 vs Ireland stored 0.87 rated 0.83) · 0.0174/move
+[33/612] Nebraska 0.309→0.291 (rated 0.20 vs Vanuatu stored 0.58 rated 0.55) · 0.0174/move
+[34/612] South Carolina 0.249→0.240 (rated 0.22 vs Tajikistan stored 0.17 rated 0.16) · 0.0172/move
+[35/612] Colorado 0.531→0.521 (rated 0.43 vs Laos stored 0.64 rated 0.53) · 0.017/move
+[36/612] Illinois 0.538→0.558 (rated 0.71 vs Réunion stored 0.63 rated 0.74) · 0.0171/move
+[37/612] Florida 0.247→0.264 (rated 0.30 vs Norway stored 0.78 rated 0.73) · 0.0171/move
+[38/612] Delaware 0.448→0.435 (rated 0.38 vs Ireland stored 0.87 rated 0.85) · 0.017/move
+[39/612] Montana 0.316→0.349 (rated 0.50 vs Russia stored 0.12 rated 0.12) · 0.0174/move
+[40/612] Montana 0.316→0.328 (rated 0.42 vs Israel stored 0.49 rated 0.58) · 0.0173/move
+[41/612] New Mexico 0.518→0.546 (rated 0.63 vs Paraguay stored 0.42 rated 0.35) · 0.0175/move
+[42/612] Georgia 0.304→0.312 (rated 0.42 vs Honduras stored 0.15 rated 0.30) · 0.0173/move
+[43/612] Georgia 0.304→0.297 (rated 0.30 vs Angola stored 0.62 rated 0.65) · 0.0171/move
+[44/612] Indiana 0.241→0.223 (rated 0.20 vs Martinique stored 0.62 rated 0.70) · 0.0171/move
+[45/612] Delaware 0.448→0.442 (rated 0.46 vs Italy stored 0.50 rated 0.63) · 0.0168/move
+[46/612] Nevada 0.500→0.513 (rated 0.52 vs Andorra stored 0.88 rated 0.82) · 0.0167/move
+[47/612] Montana 0.349→0.352 (rated 0.38 vs Gabon stored 0.54 rated 0.60) · 0.0165/move
+[48/612] South Dakota 0.267→0.283 (rated 0.35 vs Belarus stored 0.08 rated 0.08) · 0.0165/move
+[49/612] Utah 0.274→0.265 (rated 0.18 vs New Zealand stored 0.75 rated 0.65) · 0.0163/move
+[50/612] Utah 0.274→0.259 (rated 0.15 vs Peru stored 0.36 rated 0.28) · 0.0163/move
+[51/612] Arkansas 0.302→0.285 (rated 0.25 vs India stored 0.43 rated 0.48) · 0.0163/move
+[52/612] Idaho 0.182→0.188 (rated 0.20 vs Libya stored 0.04 rated 0.05) · 0.0161/move
+[53/612] Indiana 0.223→0.230 (rated 0.30 vs Burundi stored 0.06 rated 0.15) · 0.0159/move
+[54/612] Minnesota 0.597→0.584 (rated 0.52 vs Palau stored 0.68 rated 0.65) · 0.0159/move
+[55/612] Minnesota 0.597→0.561 (rated 0.40 vs Malawi stored 0.16 rated 0.18) · 0.0163/move
+[56/612] Georgia 0.297→0.298 (rated 0.27 vs Ireland stored 0.87 rated 0.77) · 0.016/move
+[57/612] Georgia 0.297→0.288 (rated 0.25 vs Serbia stored 0.40 rated 0.38) · 0.0159/move
+[58/612] Nevada 0.513→0.495 (rated 0.45 vs Honduras stored 0.15 rated 0.20) · 0.0159/move
+[59/612] Tennessee 0.215→0.233 (rated 0.35 vs Uzbekistan stored 0.15 rated 0.22) · 0.0159/move
+[60/612] Vermont 0.526→0.519 (rated 0.55 vs U.S. Virgin Islands stored 0.34 rated 0.50) · 0.0158/move
+[61/612] Idaho 0.188→0.197 (rated 0.22 vs Sudan stored 0.05 rated 0.05) · 0.0157/move
+[62/612] North Carolina 0.282→0.305 (rated 0.42 vs Saint Lucia stored 0.60 rated 0.62) · 0.0158/move
+[63/612] Kansas 0.189→0.146 (rated 0.18 vs U.S. Virgin Islands stored 0.34 rated 0.75) · 0.0162/move
+[64/612] Alabama 0.229→0.241 (rated 0.28 vs Lithuania stored 0.58 rated 0.58) · 0.0162/move
+[65/612] Oklahoma 0.280→0.305 (rated 0.48 vs Lebanon stored 0.17 rated 0.27) · 0.0163/move
+[66/612] Alaska 0.334→0.388 (rated 0.65 vs India stored 0.43 rated 0.40) · 0.0169/move
+[67/612] District of Columbia 0.318→0.336 (rated 0.40 vs Turkmenistan stored 0.08 rated 0.06) · 0.0169/move
+[68/612] Montana 0.352→0.341 (rated 0.33 vs Saint Vincent and the  stored 0.34 rated 0.38) · 0.0168/move
+[69/612] Mississippi 0.255→0.246 (rated 0.20 vs Taiwan stored 0.78 rated 0.74) · 0.0167/move
+[70/612] North Carolina 0.305→0.297 (rated 0.25 vs São Tomé and Príncipe stored 0.65 rated 0.60) · 0.0165/move
+[71/612] West Virginia 0.239→0.253 (rated 0.33 vs Georgia stored 0.18 rated 0.22) · 0.0165/move
+[72/612] Massachusetts 0.563→0.552 (rated 0.48 vs Singapore stored 0.73 rated 0.67) · 0.0164/move
+[73/612] Massachusetts 0.563→0.550 (rated 0.50 vs Rwanda stored 0.34 rated 0.33) · 0.0164/move
+[74/612] West Virginia 0.239→0.265 (rated 0.28 vs Côte d'Ivoire stored 0.33 rated 0.15) · 0.0165/move
+[75/612] Rhode Island 0.544→0.549 (rated 0.58 vs Côte d'Ivoire stored 0.33 rated 0.37) · 0.0164/move
+[76/612] Iowa 0.269→0.281 (rated 0.32 vs Mauritius stored 0.75 rated 0.75) · 0.0163/move
+[77/612] Connecticut 0.571→0.528 (rated 0.55 vs Puerto Rico stored 0.33 rated 0.72) · 0.0166/move
+[78/612] North Dakota 0.320→0.305 (rated 0.25 vs Tanzania stored 0.10 rated 0.10) · 0.0166/move
+[79/612] Michigan 0.464→0.468 (rated 0.42 vs Mozambique stored 0.62 rated 0.46) · 0.0165/move
+[80/612] Ohio 0.261→0.259 (rated 0.30 vs Martinique stored 0.62 rated 0.75) · 0.0163/move
+[81/612] Washington 0.558→0.551 (rated 0.48 vs Kosovo stored 0.64 rated 0.55) · 0.0162/move
+[82/612] North Carolina 0.297→0.322 (rated 0.40 vs Kiribati stored 0.44 rated 0.38) · 0.0163/move
+[83/612] Louisiana 0.137→0.105 (rated 0.13 vs Falkland Islands stored 0.58 rated 0.88) · 0.0164/move
+[84/612] Iowa 0.281→0.283 (rated 0.30 vs Philippines stored 0.56 rated 0.60) · 0.0163/move
+[85/612] Arkansas 0.285→0.309 (rated 0.40 vs Colombia stored 0.52 rated 0.48) · 0.0164/move
+[86/612] New York 0.512→0.499 (rated 0.50 vs Tunisia stored 0.12 rated 0.20) · 0.0163/move
+[87/612] Montana 0.341→0.335 (rated 0.35 vs Lesotho stored 0.40 rated 0.52) · 0.0162/move
+[88/612] Montana 0.341→0.348 (rated 0.40 vs Azerbaijan stored 0.14 rated 0.20) · 0.0161/move
+[89/612] West Virginia 0.265→0.273 (rated 0.30 vs Syria stored 0.04 rated 0.05) · 0.016/move
+[90/612] Minnesota 0.561→0.528 (rated 0.45 vs Saint Barthélemy stored 0.65 rated 0.80) · 0.0162/move
+[91/612] Missouri 0.320→0.309 (rated 0.27 vs Italy stored 0.50 rated 0.50) · 0.0162/move
+[92/612] Mississippi 0.246→0.225 (rated 0.13 vs French Polynesia stored 0.67 rated 0.68) · 0.0162/move
+[93/612] Arkansas 0.285→0.315 (rated 0.43 vs Kyrgyzstan stored 0.32 rated 0.27) · 0.0164/move
+[94/612] Wyoming 0.260→0.266 (rated 0.28 vs Turkmenistan stored 0.08 rated 0.08) · 0.0162/move
+[95/612] Alaska 0.388→0.370 (rated 0.30 vs Montserrat stored 0.44 rated 0.45) · 0.0163/move
+[96/612] Connecticut 0.528→0.523 (rated 0.50 vs Algeria stored 0.21 rated 0.18) · 0.0161/move
+[97/612] Mississippi 0.246→0.219 (rated 0.17 vs Guernsey stored 0.60 rated 0.75) · 0.0163/move
+[98/612] Arizona 0.375→0.363 (rated 0.40 vs Falkland Islands stored 0.58 rated 0.80) · 0.0162/move
+[99/612] Utah 0.259→0.242 (rated 0.22 vs Bahamas stored 0.60 rated 0.68) · 0.0162/move
+[100/612] North Dakota 0.305→0.287 (rated 0.19 vs Denmark stored 0.85 rated 0.83) · 0.0162/move
+[101/612] New York 0.499→0.466 (rated 0.35 vs El Salvador stored 0.35 rated 0.45) · 0.0164/move
+[102/612] Oregon 0.545→0.551 (rated 0.58 vs Poland stored 0.52 rated 0.55) · 0.0163/move
+[103/612] Maine 0.415→0.439 (rated 0.58 vs Micronesia (FSM) stored 0.61 rated 0.65) · 0.0164/move
+[104/612] California 0.520→0.484 (rated 0.30 vs Suriname stored 0.62 rated 0.62) · 0.0166/move
+[105/612] Utah 0.259→0.242 (rated 0.17 vs Angola stored 0.62 rated 0.62) · 0.0166/move
+[106/612] Louisiana 0.105→0.099 (rated 0.10 vs Netherlands stored 0.79 rated 0.80) · 0.0165/move
+[107/612] Kentucky 0.375→0.367 (rated 0.25 vs Slovakia stored 0.65 rated 0.50) · 0.0164/move
+[108/612] New York 0.499→0.503 (rated 0.45 vs Nauru stored 0.62 rated 0.45) · 0.0163/move
+[109/612] Pennsylvania 0.415→0.429 (rated 0.50 vs Qatar stored 0.05 rated 0.07) · 0.0163/move
+[110/612] Oregon 0.545→0.561 (rated 0.65 vs Finland stored 0.87 rated 0.90) · 0.0163/move
+[111/612] Indiana 0.230→0.222 (rated 0.18 vs Ireland stored 0.87 rated 0.84) · 0.0162/move
+[112/612] Wyoming 0.266→0.265 (rated 0.30 vs Mayotte stored 0.53 rated 0.65) · 0.0161/move
+[113/612] Montana 0.348→0.351 (rated 0.37 vs Macau stored 0.50 rated 0.55) · 0.0159/move
+[114/612] Idaho 0.197→0.176 (rated 0.18 vs British Virgin Islands stored 0.42 rated 0.60) · 0.016/move
+[115/612] Virginia 0.365→0.364 (rated 0.50 vs British Virgin Islands stored 0.42 rated 0.70) · 0.0159/move
+[116/612] Pennsylvania 0.429→0.441 (rated 0.47 vs Norway stored 0.78 rated 0.75) · 0.0158/move
+[117/612] California 0.484→0.493 (rated 0.52 vs Guadeloupe stored 0.62 rated 0.63) · 0.0158/move
+[110] ERROR 66186276B41335105066757/OMN: no scores in response (stop_reason=max_tokens): 'To rate these two dossiers, I must assess the risk to a transgender visitor if they are "outed" or "discovered" based on the specific facts provided, following the rules regarding traveler-focused ris'
+[119/612] New Hampshire 0.333→0.327 (rated 0.30 vs Mayotte stored 0.53 rated 0.50) · 0.0155/move
+[120/612] Wisconsin 0.392→0.396 (rated 0.45 vs Botswana stored 0.64 rated 0.73) · 0.0155/move
+[121/612] South Dakota 0.283→0.291 (rated 0.32 vs Taiwan stored 0.78 rated 0.80) · 0.0154/move
+[122/612] Nevada 0.495→0.485 (rated 0.48 vs Syria stored 0.04 rated 0.08) · 0.0153/move
+[123/612] Oklahoma 0.305→0.285 (rated 0.20 vs Cook Islands stored 0.45 rated 0.47) · 0.0154/move
+[124/612] Vermont 0.519→0.530 (rated 0.60 vs Slovenia stored 0.75 rated 0.79) · 0.0153/move
+[125/612] New York 0.503→0.499 (rated 0.45 vs Latvia stored 0.60 rated 0.52) · 0.0153/move
+[126/612] Nevada 0.495→0.519 (rated 0.65 vs Afghanistan stored 0.02 rated 0.03) · 0.0153/move
+[127/612] Ohio 0.259→0.283 (rated 0.42 vs Pakistan stored 0.20 rated 0.22) · 0.0154/move
+[128/612] Kansas 0.146→0.140 (rated 0.10 vs Armenia stored 0.33 rated 0.28) · 0.0153/move
+[123] ERROR 66186276B22971435435932/GAB: no scores in response (stop_reason=max_tokens): 'I need to think through both dossiers carefully against the rating rules.\n\n**DOSSIER A — REGION (imposed framework + local bundle):**\n\nThis is clearly a US state with bathroom laws. The framework impo'
+[130/612] Massachusetts 0.550→0.560 (rated 0.60 vs Luxembourg stored 0.90 rated 0.91) · 0.0152/move
+[131/612] Michigan 0.468→0.444 (rated 0.40 vs Isle of Man stored 0.62 rated 0.75) · 0.0152/move
+[132/612] Ohio 0.259→0.233 (rated 0.17 vs Guinea stored 0.17 rated 0.30) · 0.0153/move
+[133/612] Pennsylvania 0.441→0.489 (rated 0.68 vs Grenada stored 0.47 rated 0.33) · 0.0156/move
+[134/612] Wyoming 0.265→0.245 (rated 0.25 vs Saint Barthélemy stored 0.65 rated 0.82) · 0.0156/move
+[135/612] New Hampshire 0.327→0.340 (rated 0.38 vs Turkey stored 0.15 rated 0.13) · 0.0156/move
+[136/612] Kentucky 0.367→0.340 (rated 0.15 vs Switzerland stored 0.85 rated 0.78) · 0.0156/move
+[137/612] Iowa 0.283→0.288 (rated 0.38 vs Zimbabwe stored 0.33 rated 0.48) · 0.0156/move
+[138/612] Arizona 0.363→0.359 (rated 0.35 vs Switzerland stored 0.85 rated 0.84) · 0.0155/move
+[139/612] Iowa 0.283→0.268 (rated 0.28 vs Cook Islands stored 0.45 rated 0.60) · 0.0155/move
+[140/612] Nebraska 0.291→0.286 (rated 0.40 vs Montserrat stored 0.44 rated 0.72) · 0.0154/move
+[141/612] Vermont 0.530→0.535 (rated 0.60 vs China stored 0.40 rated 0.50) · 0.0153/move
+[142/612] District of Columbia 0.336→0.322 (rated 0.25 vs Vietnam stored 0.57 rated 0.55) · 0.0153/move
+[143/612] Connecticut 0.523→0.516 (rated 0.45 vs Marshall Islands stored 0.71 rated 0.63) · 0.0153/move
+[144/612] North Dakota 0.287→0.291 (rated 0.44 vs Benin stored 0.14 rated 0.38) · 0.0152/move
+[145/612] North Dakota 0.287→0.287 (rated 0.32 vs Madagascar stored 0.38 rated 0.48) · 0.0151/move
+[146/612] Pennsylvania 0.489→0.491 (rated 0.52 vs Panama stored 0.56 rated 0.64) · 0.015/move
+[147/612] Wyoming 0.245→0.258 (rated 0.32 vs Tanzania stored 0.10 rated 0.10) · 0.015/move
+[144] ERROR 66186276B83300161667341/SLV: no scores in response (stop_reason=max_tokens): 'Let me carefully assess both dossiers using the rating rules and scale provided.\n\n**DOSSIER A — REGION analysis:**\n\nThe encompassing state framework is clearly identifiable as the US (allied travel wa'
+[149/612] Nevada 0.519→0.521 (rated 0.53 vs Nicaragua stored 0.24 rated 0.28) · 0.0148/move
+[150/612] New York 0.499→0.508 (rated 0.55 vs Lebanon stored 0.17 rated 0.18) · 0.0148/move
+[151/612] Oklahoma 0.285→0.274 (rated 0.22 vs Poland stored 0.52 rated 0.50) · 0.0147/move
+[152/612] Louisiana 0.099→0.112 (rated 0.17 vs Paraguay stored 0.42 rated 0.42) · 0.0147/move
+[153/612] Texas 0.158→0.125 (rated 0.12 vs Anguilla stored 0.44 rated 0.75) · 0.0148/move
+[154/612] Washington 0.551→0.542 (rated 0.52 vs Egypt stored 0.13 rated 0.15) · 0.0148/move
+[155/612] Kansas 0.140→0.152 (rated 0.14 vs Estonia stored 0.75 rated 0.60) · 0.0148/move
+[156/612] Minnesota 0.528→0.504 (rated 0.38 vs Vatican City stored 0.80 rated 0.82) · 0.0149/move
+[157/612] Illinois 0.558→0.559 (rated 0.60 vs Martinique stored 0.62 rated 0.73) · 0.0148/move
+[158/612] Rhode Island 0.549→0.581 (rated 0.76 vs Norway stored 0.78 rated 0.77) · 0.0149/move
+[159/612] Georgia 0.288→0.292 (rated 0.30 vs India stored 0.43 rated 0.45) · 0.0148/move
+[160/612] Massachusetts 0.560→0.556 (rated 0.52 vs South Africa stored 0.69 rated 0.62) · 0.0147/move
+[161/612] Kentucky 0.340→0.328 (rated 0.25 vs Hungary stored 0.58 rated 0.53) · 0.0147/move
+[162/612] Pennsylvania 0.491→0.479 (rated 0.45 vs South Sudan stored 0.10 rated 0.14) · 0.0147/move
+[163/612] Kansas 0.152→0.146 (rated 0.14 vs Ukraine stored 0.59 rated 0.60) · 0.0146/move
+[164/612] New Jersey 0.541→0.565 (rated 0.62 vs Hungary stored 0.58 rated 0.45) · 0.0147/move
+[165/612] District of Columbia 0.322→0.317 (rated 0.30 vs Spain stored 0.88 rated 0.87) · 0.0146/move
+[166/612] Alabama 0.241→0.227 (rated 0.17 vs Singapore stored 0.73 rated 0.75) · 0.0146/move
+[167/612] Nevada 0.521→0.514 (rated 0.47 vs Australia stored 0.86 rated 0.82) · 0.0146/move
+[168/612] Mississippi 0.219→0.204 (rated 0.15 vs Grenada stored 0.47 rated 0.50) · 0.0146/move
+[169/612] South Carolina 0.240→0.236 (rated 0.23 vs Fiji stored 0.59 rated 0.58) · 0.0145/move
+[170/612] Kansas 0.152→0.166 (rated 0.25 vs Belarus stored 0.08 rated 0.10) · 0.0145/move
+[171/612] Wisconsin 0.396→0.419 (rated 0.55 vs Comoros stored 0.31 rated 0.32) · 0.0146/move
+[172/612] West Virginia 0.273→0.276 (rated 0.27 vs Liechtenstein stored 0.80 rated 0.72) · 0.0145/move
+[173/612] South Dakota 0.291→0.273 (rated 0.23 vs Colombia stored 0.52 rated 0.60) · 0.0145/move
+[174/612] New Jersey 0.565→0.551 (rated 0.50 vs Nepal stored 0.67 rated 0.70) · 0.0145/move
+[175/612] Illinois 0.559→0.543 (rated 0.48 vs United Arab Emirates stored 0.11 rated 0.15) · 0.0145/move
+[176/612] Wyoming 0.258→0.249 (rated 0.18 vs Namibia stored 0.55 rated 0.50) · 0.0145/move
+[177/612] Louisiana 0.112→0.130 (rated 0.32 vs Oman stored 0.10 rated 0.25) · 0.0145/move
+[178/612] Louisiana 0.112→0.129 (rated 0.27 vs Lesotho stored 0.40 rated 0.48) · 0.0145/move
+[179/612] Arkansas 0.315→0.323 (rated 0.35 vs Morocco stored 0.18 rated 0.17) · 0.0145/move
+[180/612] Michigan 0.444→0.421 (rated 0.30 vs French Polynesia stored 0.67 rated 0.70) · 0.0146/move
+[181/612] Connecticut 0.516→0.542 (rated 0.64 vs Montenegro stored 0.65 rated 0.55) · 0.0146/move
+[182/612] Pennsylvania 0.479→0.469 (rated 0.38 vs Nepal stored 0.67 rated 0.60) · 0.0146/move
+[183/612] Virginia 0.364→0.381 (rated 0.44 vs Croatia stored 0.77 rated 0.71) · 0.0146/move
+[184/612] North Dakota 0.287→0.272 (rated 0.15 vs Portugal stored 0.81 rated 0.74) · 0.0146/move
+[185/612] Georgia 0.292→0.286 (rated 0.27 vs Algeria stored 0.21 rated 0.20) · 0.0146/move
+[186/612] Indiana 0.222→0.217 (rated 0.22 vs Netherlands stored 0.79 rated 0.83) · 0.0145/move
+[187/612] New Mexico 0.546→0.539 (rated 0.42 vs Eswatini stored 0.38 rated 0.22) · 0.0145/move
+[188/612] Alaska 0.370→0.345 (rated 0.35 vs Guam stored 0.29 rated 0.55) · 0.0145/move
+[189/612] Oregon 0.561→0.517 (rated 0.48 vs Northern Mariana Islan stored 0.30 rated 0.70) · 0.0147/move
+[190/612] Florida 0.264→0.257 (rated 0.20 vs Saint Lucia stored 0.60 rated 0.55) · 0.0146/move
+[191/612] Florida 0.264→0.271 (rated 0.27 vs Thailand stored 0.86 rated 0.82) · 0.0146/move
+[192/612] North Dakota 0.272→0.273 (rated 0.25 vs Ukraine stored 0.59 rated 0.50) · 0.0145/move
+[193/612] Nebraska 0.286→0.292 (rated 0.30 vs Bangladesh stored 0.12 rated 0.12) · 0.0145/move
+[194/612] Nevada 0.514→0.530 (rated 0.55 vs Cuba stored 0.71 rated 0.60) · 0.0145/move
+[195/612] Iowa 0.268→0.300 (rated 0.52 vs Lebanon stored 0.17 rated 0.20) · 0.0146/move
+[196/612] Idaho 0.176→0.165 (rated 0.10 vs Trinidad and Tobago stored 0.34 rated 0.32) · 0.0146/move
+[197/612] Maine 0.439→0.434 (rated 0.40 vs Andorra stored 0.88 rated 0.83) · 0.0145/move
+[198/612] Idaho 0.176→0.193 (rated 0.25 vs Greece stored 0.66 rated 0.60) · 0.0145/move
+[199/612] Mississippi 0.204→0.193 (rated 0.15 vs Taiwan stored 0.78 rated 0.80) · 0.0145/move
+[200/612] Wyoming 0.249→0.247 (rated 0.25 vs Bahrain stored 0.26 rated 0.30) · 0.0144/move
+[201/612] Nebraska 0.292→0.280 (rated 0.22 vs Tonga stored 0.51 rated 0.50) · 0.0144/move
+[202/612] Texas 0.125→0.147 (rated 0.28 vs Honduras stored 0.15 rated 0.15) · 0.0145/move
+[203/612] Utah 0.242→0.234 (rated 0.19 vs Micronesia (FSM) stored 0.61 rated 0.60) · 0.0144/move
+[204/612] California 0.493→0.454 (rated 0.27 vs Côte d'Ivoire stored 0.33 rated 0.44) · 0.0146/move
+[205/612] Washington 0.542→0.536 (rated 0.65 vs Northern Mariana Islan stored 0.30 rated 0.60) · 0.0145/move
+[206/612] Delaware 0.442→0.464 (rated 0.56 vs India stored 0.43 rated 0.36) · 0.0146/move
+[207/612] Rhode Island 0.581→0.584 (rated 0.62 vs Ecuador stored 0.33 rated 0.40) · 0.0145/move
+[208/612] Pennsylvania 0.469→0.460 (rated 0.38 vs Finland stored 0.87 rated 0.80) · 0.0145/move
+[209/612] New Mexico 0.539→0.534 (rated 0.55 vs Hong Kong stored 0.58 rated 0.72) · 0.0144/move
+[210/612] Minnesota 0.504→0.513 (rated 0.52 vs Solomon Islands stored 0.38 rated 0.33) · 0.0144/move
+[211/612] Arizona 0.359→0.383 (rated 0.72 vs Lesotho stored 0.40 rated 0.70) · 0.0145/move
+[212/612] Connecticut 0.542→0.566 (rated 0.72 vs Egypt stored 0.13 rated 0.13) · 0.0145/move
+[213/612] Rhode Island 0.581→0.593 (rated 0.62 vs Papua New Guinea stored 0.20 rated 0.15) · 0.0145/move
+[214/612] Louisiana 0.129→0.134 (rated 0.10 vs Mayotte stored 0.53 rated 0.37) · 0.0144/move
+[215/612] Texas 0.147→0.157 (rated 0.20 vs Sweden stored 0.85 rated 0.85) · 0.0144/move
+[216/612] New Mexico 0.539→0.513 (rated 0.43 vs Gabon stored 0.54 rated 0.67) · 0.0145/move
+[217/612] Oklahoma 0.274→0.276 (rated 0.30 vs Venezuela stored 0.41 rated 0.47) · 0.0144/move
+[218/612] Nevada 0.530→0.511 (rated 0.44 vs Mexico stored 0.55 rated 0.62) · 0.0144/move
+[219/612] Delaware 0.464→0.459 (rated 0.45 vs Belarus stored 0.08 rated 0.08) · 0.0144/move
+[220/612] Kansas 0.166→0.174 (rated 0.20 vs North Korea stored 0.04 rated 0.03) · 0.0144/move
+[221/612] New Jersey 0.551→0.550 (rated 0.55 vs Mali stored 0.12 rated 0.12) · 0.0143/move
+[222/612] Iowa 0.300→0.282 (rated 0.18 vs French Guiana stored 0.61 rated 0.62) · 0.0143/move
+[223/612] Michigan 0.421→0.434 (rated 0.52 vs Greece stored 0.66 rated 0.68) · 0.0143/move
+[224/612] Iowa 0.300→0.316 (rated 0.40 vs Uruguay stored 0.85 rated 0.82) · 0.0143/move
+[225/612] Kansas 0.166→0.172 (rated 0.27 vs Maldives stored 0.24 rated 0.38) · 0.0143/move
+[226/612] West Virginia 0.276→0.269 (rated 0.25 vs Peru stored 0.36 rated 0.38) · 0.0143/move
+[227/612] District of Columbia 0.317→0.310 (rated 0.30 vs Bhutan stored 0.67 rated 0.70) · 0.0142/move
+[228/612] Florida 0.271→0.248 (rated 0.22 vs Bermuda stored 0.52 rated 0.73) · 0.0143/move
+[229/612] Kansas 0.174→0.193 (rated 0.48 vs Turkmenistan stored 0.08 rated 0.35) · 0.0143/move
+[230/612] New Jersey 0.550→0.550 (rated 0.58 vs Solomon Islands stored 0.38 rated 0.48) · 0.0142/move
+[231/612] Maine 0.434→0.418 (rated 0.30 vs Ireland stored 0.87 rated 0.83) · 0.0142/move
+[232/612] Minnesota 0.513→0.524 (rated 0.60 vs Sudan stored 0.05 rated 0.08) · 0.0142/move
+[233/612] Connecticut 0.566→0.572 (rated 0.63 vs Maldives stored 0.24 rated 0.32) · 0.0142/move
+[234/612] Illinois 0.543→0.537 (rated 0.50 vs Slovenia stored 0.75 rated 0.71) · 0.0141/move
+[231] ERROR 66186276B35012827062242/KOR: no scores in response (stop_reason=max_tokens): 'To rate these dossiers, I must apply the specific rules for transgender travel risk, focusing on the severity of consequences if outed and the probability of being outed, while distinguishing between '
+[236/612] Wisconsin 0.419→0.425 (rated 0.45 vs San Marino stored 0.84 rated 0.85) · 0.014/move
+[237/612] Illinois 0.543→0.535 (rated 0.50 vs Yemen stored 0.03 rated 0.03) · 0.014/move
+[238/612] Mississippi 0.193→0.220 (rated 0.42 vs Tajikistan stored 0.17 rated 0.18) · 0.0141/move
+[239/612] District of Columbia 0.310→0.290 (rated 0.27 vs Bermuda stored 0.52 rated 0.70) · 0.0141/move
+[240/612] District of Columbia 0.310→0.316 (rated 0.32 vs Austria stored 0.74 rated 0.72) · 0.0141/move
+[241/612] West Virginia 0.269→0.251 (rated 0.12 vs Austria stored 0.74 rated 0.72) · 0.0141/move
+[242/612] Utah 0.234→0.242 (rated 0.30 vs North Korea stored 0.04 rated 0.07) · 0.0141/move
+[243/612] Virginia 0.381→0.389 (rated 0.42 vs Ukraine stored 0.59 rated 0.58) · 0.014/move
+[244/612] Nevada 0.511→0.500 (rated 0.40 vs Colombia stored 0.52 rated 0.45) · 0.014/move
+[245/612] Missouri 0.309→0.308 (rated 0.28 vs Norway stored 0.78 rated 0.70) · 0.014/move
+[246/612] New Jersey 0.550→0.536 (rated 0.50 vs Botswana stored 0.64 rated 0.72) · 0.014/move
+[247/612] Alabama 0.227→0.226 (rated 0.22 vs Madagascar stored 0.38 rated 0.33) · 0.0139/move
+[248/612] Georgia 0.286→0.310 (rated 0.47 vs Saudi Arabia stored 0.04 rated 0.03) · 0.014/move
+[249/612] North Carolina 0.322→0.330 (rated 0.33 vs Wallis and Futuna stored 0.59 rated 0.52) · 0.0139/move
+[250/612] North Carolina 0.322→0.316 (rated 0.30 vs Malta stored 0.90 rated 0.90) · 0.0139/move
+[251/612] Montana 0.351→0.345 (rated 0.42 vs Venezuela stored 0.41 rated 0.65) · 0.0139/move
+[248] ERROR 66186276B31549545599635/MAC: no scores in response (stop_reason=max_tokens): 'Based on the provided dossiers and rating rules:\n\n**Dossier A (Region):**\nThe dossier describes a region within a state that has recently enacted severe federal restrictions on trans travel documents '
+[253/612] Delaware 0.459→0.454 (rated 0.52 vs Gabon stored 0.54 rated 0.75) · 0.0138/move
+[254/612] Nebraska 0.280→0.316 (rated 0.48 vs Eswatini stored 0.38 rated 0.22) · 0.0139/move
+[255/612] Oregon 0.517→0.498 (rated 0.40 vs Liechtenstein stored 0.80 rated 0.85) · 0.0139/move
+[256/612] Wyoming 0.247→0.287 (rated 0.50 vs Djibouti stored 0.29 rated 0.15) · 0.014/move
+[257/612] California 0.454→0.445 (rated 0.40 vs Austria stored 0.74 rated 0.75) · 0.014/move
+[258/612] Kansas 0.193→0.205 (rated 0.35 vs Honduras stored 0.15 rated 0.28) · 0.014/move
+[259/612] Tennessee 0.233→0.232 (rated 0.22 vs Andorra stored 0.88 rated 0.83) · 0.0139/move
+[260/612] Utah 0.242→0.234 (rated 0.22 vs Bahrain stored 0.26 rated 0.30) · 0.0139/move
+[261/612] Hawaii 0.524→0.559 (rated 0.72 vs San Marino stored 0.84 rated 0.68) · 0.014/move
+[262/612] Vermont 0.535→0.536 (rated 0.55 vs Iraq stored 0.04 rated 0.10) · 0.0139/move
+[263/612] Arizona 0.383→0.401 (rated 0.52 vs Sierra Leone stored 0.28 rated 0.28) · 0.0139/move
+[264/612] Mississippi 0.220→0.208 (rated 0.18 vs Mexico stored 0.55 rated 0.63) · 0.0139/move
+[265/612] Arizona 0.383→0.415 (rated 0.60 vs Botswana stored 0.64 rated 0.55) · 0.014/move
+[266/612] Arizona 0.383→0.382 (rated 0.43 vs Cook Islands stored 0.45 rated 0.58) · 0.0139/move
+[267/612] Rhode Island 0.593→0.605 (rated 0.78 vs Tonga stored 0.51 rated 0.68) · 0.0139/move
+[268/612] Nevada 0.500→0.531 (rated 0.70 vs Angola stored 0.62 rated 0.52) · 0.014/move
+[269/612] New Hampshire 0.340→0.345 (rated 0.35 vs Kazakhstan stored 0.52 rated 0.50) · 0.014/move
+[270/612] Indiana 0.217→0.229 (rated 0.25 vs Solomon Islands stored 0.38 rated 0.30) · 0.014/move
+[271/612] New Hampshire 0.340→0.345 (rated 0.36 vs Morocco stored 0.18 rated 0.17) · 0.0139/move
+[272/612] Delaware 0.454→0.471 (rated 0.62 vs Mexico stored 0.55 rated 0.60) · 0.0139/move
+[273/612] Nevada 0.500→0.512 (rated 0.57 vs Denmark stored 0.85 rated 0.83) · 0.0139/move
+[274/612] Iowa 0.316→0.308 (rated 0.25 vs São Tomé and Príncipe stored 0.65 rated 0.62) · 0.0139/move
+[275/612] Ohio 0.233→0.232 (rated 0.25 vs Cambodia stored 0.57 rated 0.65) · 0.0139/move
+[276/612] Hawaii 0.559→0.565 (rated 0.57 vs Honduras stored 0.15 rated 0.13) · 0.0138/move
+[277/612] Connecticut 0.572→0.592 (rated 0.72 vs Slovakia stored 0.65 rated 0.62) · 0.0139/move
+[278/612] Connecticut 0.572→0.577 (rated 0.60 vs Singapore stored 0.73 rated 0.74) · 0.0138/move
+[279/612] Pennsylvania 0.460→0.439 (rated 0.33 vs French Guiana stored 0.61 rated 0.68) · 0.0139/move
+[280/612] Arkansas 0.323→0.309 (rated 0.28 vs Kazakhstan stored 0.52 rated 0.62) · 0.0139/move
+[281/612] Rhode Island 0.605→0.582 (rated 0.42 vs Kazakhstan stored 0.52 rated 0.52) · 0.0139/move
+[282/612] Nevada 0.512→0.516 (rated 0.54 vs Philippines stored 0.56 rated 0.57) · 0.0138/move
+[283/612] Kentucky 0.328→0.338 (rated 0.40 vs Qatar stored 0.05 rated 0.05) · 0.0138/move
+[284/612] South Dakota 0.273→0.291 (rated 0.48 vs Morocco stored 0.18 rated 0.28) · 0.0139/move
+[285/612] Maryland 0.412→0.411 (rated 0.35 vs Colombia stored 0.52 rated 0.38) · 0.0138/move
+[286/612] Oregon 0.498→0.487 (rated 0.52 vs Guam stored 0.29 rated 0.55) · 0.0138/move
+[287/612] New Hampshire 0.345→0.360 (rated 0.54 vs Maldives stored 0.24 rated 0.38) · 0.0138/move
+[288/612] Alaska 0.345→0.348 (rated 0.35 vs Moldova stored 0.54 rated 0.55) · 0.0138/move
+[289/612] Missouri 0.308→0.304 (rated 0.30 vs Denmark stored 0.85 rated 0.85) · 0.0137/move
+[290/612] Tennessee 0.232→0.234 (rated 0.23 vs Laos stored 0.64 rated 0.58) · 0.0137/move
+[291/612] Wisconsin 0.425→0.423 (rated 0.45 vs Tonga stored 0.51 rated 0.63) · 0.0136/move
+[292/612] West Virginia 0.251→0.258 (rated 0.25 vs Greece stored 0.66 rated 0.53) · 0.0136/move
+[293/612] Ohio 0.232→0.233 (rated 0.20 vs Paraguay stored 0.42 rated 0.30) · 0.0136/move
+[294/612] Virginia 0.389→0.403 (rated 0.45 vs Montenegro stored 0.65 rated 0.58) · 0.0136/move
+[295/612] Louisiana 0.134→0.130 (rated 0.12 vs Denmark stored 0.85 rated 0.84) · 0.0135/move
+[296/612] New Mexico 0.513→0.506 (rated 0.53 vs Gibraltar stored 0.58 rated 0.78) · 0.0135/move
+[297/612] Maine 0.418→0.408 (rated 0.35 vs Barbados stored 0.54 rated 0.55) · 0.0135/move
+[298/612] Wisconsin 0.423→0.420 (rated 0.40 vs Caribbean Netherlands  stored 0.69 rated 0.64) · 0.0135/move
+[299/612] Kansas 0.205→0.189 (rated 0.18 vs Honduras stored 0.15 rated 0.32) · 0.0135/move
+[300/612] Virginia 0.389→0.406 (rated 0.54 vs Bahrain stored 0.26 rated 0.28) · 0.0135/move
+[301/612] Arkansas 0.309→0.310 (rated 0.32 vs China stored 0.40 rated 0.45) · 0.0134/move
+[302/612] New York 0.508→0.503 (rated 0.50 vs Liberia stored 0.32 rated 0.35) · 0.0134/move
+[303/612] Illinois 0.535→0.532 (rated 0.53 vs Croatia stored 0.77 rated 0.75) · 0.0134/move
+[304/612] Nevada 0.516→0.491 (rated 0.38 vs British Virgin Islands stored 0.42 rated 0.58) · 0.0134/move
+[305/612] Washington 0.536→0.542 (rated 0.55 vs Denmark stored 0.85 rated 0.82) · 0.0134/move
+[306/612] Texas 0.157→0.150 (rated 0.12 vs Vanuatu stored 0.58 rated 0.58) · 0.0134/move
+[307/612] Indiana 0.229→0.225 (rated 0.22 vs Samoa stored 0.72 rated 0.72) · 0.0133/move
+[308/612] Alabama 0.226→0.218 (rated 0.16 vs Slovenia stored 0.75 rated 0.74) · 0.0133/move
+[304] ERROR 66186276B98073251815399/MAC: no scores in response (stop_reason=max_tokens): 'Let me work through both dossiers carefully.\n\n**Dossier A:**\n- A nominally autonomous sub-state (small territory with own legal/currency systems)\n- Civil-law framework from a distant former administer'
+[310/612] New Jersey 0.536→0.564 (rated 0.78 vs Bosnia and Herzegovina stored 0.50 rated 0.48) · 0.0133/move
+[311/612] Iowa 0.308→0.309 (rated 0.32 vs Uganda stored 0.06 rated 0.12) · 0.0133/move
+[312/612] Wisconsin 0.420→0.412 (rated 0.38 vs Antigua and Barbuda stored 0.60 rated 0.63) · 0.0133/move
+[313/612] Idaho 0.193→0.187 (rated 0.16 vs Spain stored 0.88 rated 0.87) · 0.0133/move
+[314/612] District of Columbia 0.316→0.312 (rated 0.27 vs Andorra stored 0.88 rated 0.82) · 0.0132/move
+[315/612] Maine 0.408→0.406 (rated 0.40 vs Senegal stored 0.15 rated 0.12) · 0.0132/move
+[316/612] Ohio 0.233→0.252 (rated 0.40 vs Afghanistan stored 0.02 rated 0.03) · 0.0132/move
+[317/612] New Mexico 0.506→0.502 (rated 0.50 vs Nauru stored 0.62 rated 0.62) · 0.0132/move
+[318/612] Connecticut 0.577→0.590 (rated 0.62 vs Wallis and Futuna stored 0.59 rated 0.48) · 0.0132/move
+[319/612] Missouri 0.304→0.313 (rated 0.35 vs Egypt stored 0.13 rated 0.10) · 0.0132/move
+[320/612] Iowa 0.309→0.324 (rated 0.45 vs Egypt stored 0.13 rated 0.15) · 0.0132/move
+[321/612] Louisiana 0.130→0.122 (rated 0.10 vs Philippines stored 0.56 rated 0.60) · 0.0132/move
+[322/612] Massachusetts 0.556→0.544 (rated 0.50 vs Ghana stored 0.18 rated 0.25) · 0.0131/move
+[323/612] Illinois 0.532→0.557 (rated 0.72 vs Vanuatu stored 0.58 rated 0.50) · 0.0132/move
+[324/612] Missouri 0.304→0.311 (rated 0.33 vs Gabon stored 0.54 rated 0.50) · 0.0132/move
+[325/612] Idaho 0.187→0.176 (rated 0.27 vs Pitcairn Islands stored 0.38 rated 0.76) · 0.0132/move
+[326/612] Pennsylvania 0.439→0.440 (rated 0.45 vs France stored 0.67 rated 0.72) · 0.0131/move
+[327/612] Oklahoma 0.276→0.273 (rated 0.23 vs Fiji stored 0.59 rated 0.52) · 0.0131/move
+[328/612] South Dakota 0.291→0.290 (rated 0.32 vs Macau stored 0.50 rated 0.60) · 0.0131/move
+[329/612] Wyoming 0.287→0.277 (rated 0.28 vs Sri Lanka stored 0.25 rated 0.36) · 0.013/move
+[330/612] Iowa 0.324→0.321 (rated 0.30 vs Kosovo stored 0.64 rated 0.60) · 0.013/move
+[331/612] Wyoming 0.287→0.280 (rated 0.30 vs Peru stored 0.36 rated 0.55) · 0.013/move
+[332/612] Colorado 0.521→0.518 (rated 0.45 vs South Korea stored 0.71 rated 0.62) · 0.013/move
+[333/612] New Hampshire 0.360→0.347 (rated 0.28 vs Benin stored 0.14 rated 0.18) · 0.013/move
+[334/612] New Mexico 0.502→0.498 (rated 0.45 vs Ireland stored 0.87 rated 0.82) · 0.0129/move
+[335/612] Kentucky 0.338→0.327 (rated 0.27 vs Lesotho stored 0.40 rated 0.45) · 0.0129/move
+[334] ERROR 66186276B52324970173776/ROU: no scores in response (stop_reason=max_tokens): 'Let me work through both dossiers carefully against the rating rules.\n\n**DOSSIER A Analysis:**\n\n- **Criminal exposure (Axis G):** No trans-specific criminalisation. No cross-dressing laws. No imperson'
+[337/612] Virginia 0.406→0.396 (rated 0.40 vs Macau stored 0.50 rated 0.62) · 0.0129/move
+[338/612] Mississippi 0.208→0.237 (rated 0.47 vs Iran stored 0.07 rated 0.02) · 0.0129/move
+[339/612] Colorado 0.521→0.549 (rated 0.80 vs Taiwan stored 0.78 rated 0.78) · 0.013/move
+[340/612] Oregon 0.487→0.479 (rated 0.48 vs Suriname stored 0.62 rated 0.70) · 0.013/move
+[341/612] Hawaii 0.565→0.564 (rated 0.58 vs Equatorial Guinea stored 0.13 rated 0.22) · 0.0129/move
+[342/612] West Virginia 0.258→0.251 (rated 0.20 vs Bolivia stored 0.72 rated 0.72) · 0.0129/move
+[343/612] South Dakota 0.290→0.290 (rated 0.25 vs Palau stored 0.68 rated 0.58) · 0.0129/move
+[344/612] Alabama 0.218→0.212 (rated 0.19 vs Zimbabwe stored 0.33 rated 0.35) · 0.0129/move
+[345/612] Mississippi 0.208→0.218 (rated 0.30 vs Tunisia stored 0.12 rated 0.12) · 0.0128/move
+[346/612] Missouri 0.311→0.317 (rated 0.32 vs Jamaica stored 0.18 rated 0.13) · 0.0128/move
+[347/612] Oklahoma 0.273→0.264 (rated 0.20 vs Malta stored 0.90 rated 0.91) · 0.0128/move
+[348/612] Nebraska 0.316→0.306 (rated 0.25 vs Réunion stored 0.63 rated 0.65) · 0.0128/move
+[349/612] New Jersey 0.564→0.555 (rated 0.60 vs Bermuda stored 0.52 rated 0.78) · 0.0128/move
+[350/612] Mississippi 0.237→0.245 (rated 0.28 vs Mexico stored 0.55 rated 0.52) · 0.0128/move
+[351/612] Wyoming 0.280→0.280 (rated 0.30 vs Iraq stored 0.04 rated 0.12) · 0.0127/move
+[352/612] New Jersey 0.564→0.586 (rated 0.78 vs Canada stored 0.86 rated 0.84) · 0.0128/move
+[353/612] Alaska 0.348→0.353 (rated 0.41 vs United Kingdom stored 0.48 rated 0.52) · 0.0128/move
+[354/612] Tennessee 0.234→0.240 (rated 0.25 vs Bulgaria stored 0.53 rated 0.48) · 0.0127/move
+[355/612] Oregon 0.479→0.491 (rated 0.80 vs Macau stored 0.50 rated 0.85) · 0.0127/move
+[356/612] Virginia 0.396→0.394 (rated 0.38 vs Philippines stored 0.56 rated 0.52) · 0.0127/move
+[357/612] Missouri 0.317→0.315 (rated 0.31 vs Moldova stored 0.54 rated 0.52) · 0.0127/move
+[358/612] Kansas 0.189→0.184 (rated 0.18 vs Western Sahara stored 0.11 rated 0.15) · 0.0127/move
+[359/612] South Carolina 0.236→0.248 (rated 0.30 vs Cyprus stored 0.79 rated 0.72) · 0.0126/move
+[360/612] Minnesota 0.524→0.516 (rated 0.45 vs Thailand stored 0.86 rated 0.83) · 0.0126/move
+[361/612] New Mexico 0.498→0.505 (rated 0.55 vs Burundi stored 0.06 rated 0.05) · 0.0126/move
+[362/612] Rhode Island 0.582→0.569 (rated 0.50 vs Dominica stored 0.59 rated 0.65) · 0.0126/move
+[363/612] New Jersey 0.586→0.588 (rated 0.60 vs Belgium stored 0.83 rated 0.85) · 0.0126/move
+[364/612] Arkansas 0.310→0.321 (rated 0.35 vs Croatia stored 0.77 rated 0.68) · 0.0126/move
+[365/612] Indiana 0.225→0.222 (rated 0.22 vs Laos stored 0.64 rated 0.65) · 0.0126/move
+[366/612] District of Columbia 0.312→0.301 (rated 0.35 vs British Virgin Islands stored 0.42 rated 0.74) · 0.0126/move
+[367/612] Iowa 0.321→0.306 (rated 0.22 vs Montenegro stored 0.65 rated 0.72) · 0.0126/move
+[368/612] Kentucky 0.327→0.313 (rated 0.22 vs Greenland stored 0.83 rated 0.88) · 0.0126/move
+[369/612] Vermont 0.536→0.527 (rated 0.45 vs India stored 0.43 rated 0.43) · 0.0126/move
+[370/612] Oregon 0.491→0.489 (rated 0.40 vs Cambodia stored 0.57 rated 0.42) · 0.0125/move
+[371/612] Missouri 0.315→0.299 (rated 0.25 vs Montserrat stored 0.44 rated 0.60) · 0.0125/move
+[372/612] Kansas 0.184→0.182 (rated 0.15 vs Nauru stored 0.62 rated 0.55) · 0.0125/move
+[373/612] Rhode Island 0.569→0.563 (rated 0.52 vs Malaysia stored 0.16 rated 0.15) · 0.0125/move
+[374/612] Mississippi 0.245→0.254 (rated 0.45 vs Namibia stored 0.55 rated 0.75) · 0.0125/move
+[375/612] Nevada 0.491→0.510 (rated 0.72 vs Rwanda stored 0.34 rated 0.38) · 0.0125/move
+[376/612] Indiana 0.222→0.215 (rated 0.15 vs Australia stored 0.86 rated 0.83) · 0.0125/move
+[377/612] Arizona 0.382→0.378 (rated 0.40 vs Cook Islands stored 0.45 rated 0.60) · 0.0125/move
+[378/612] Kansas 0.184→0.199 (rated 0.35 vs Belarus stored 0.08 rated 0.10) · 0.0125/move
+[379/612] New Mexico 0.505→0.517 (rated 0.60 vs Azerbaijan stored 0.14 rated 0.10) · 0.0125/move
+[380/612] West Virginia 0.251→0.258 (rated 0.32 vs Czechia stored 0.67 rated 0.68) · 0.0125/move
+[381/612] Illinois 0.557→0.556 (rated 0.50 vs Uruguay stored 0.85 rated 0.74) · 0.0124/move
+[382/612] Vermont 0.527→0.531 (rated 0.60 vs Benin stored 0.14 rated 0.22) · 0.0124/move
+[383/612] Vermont 0.527→0.515 (rated 0.52 vs Saint Barthélemy stored 0.65 rated 0.82) · 0.0124/move
+[384/612] Iowa 0.306→0.302 (rated 0.23 vs Cabo Verde stored 0.73 rated 0.65) · 0.0124/move
+[385/612] Virginia 0.394→0.406 (rated 0.48 vs Bahrain stored 0.26 rated 0.20) · 0.0124/move
+[386/612] South Carolina 0.248→0.254 (rated 0.30 vs Sudan stored 0.05 rated 0.05) · 0.0124/move
+[387/612] Ohio 0.252→0.255 (rated 0.30 vs China stored 0.40 rated 0.45) · 0.0123/move
+[388/612] Georgia 0.310→0.316 (rated 0.42 vs Oman stored 0.10 rated 0.20) · 0.0123/move
+[389/612] Texas 0.150→0.153 (rated 0.18 vs Serbia stored 0.40 rated 0.45) · 0.0123/move
+[390/612] Oklahoma 0.264→0.273 (rated 0.38 vs Palau stored 0.68 rated 0.73) · 0.0123/move
+[391/612] California 0.445→0.449 (rated 0.48 vs Pakistan stored 0.20 rated 0.22) · 0.0123/move
+[392/612] Pennsylvania 0.440→0.454 (rated 0.65 vs Senegal stored 0.15 rated 0.25) · 0.0123/move
+[393/612] Missouri 0.299→0.295 (rated 0.28 vs Japan stored 0.82 rated 0.83) · 0.0123/move
+[394/612] Arkansas 0.321→0.308 (rated 0.30 vs Saint Barthélemy stored 0.65 rated 0.84) · 0.0123/move
+[395/612] Idaho 0.176→0.182 (rated 0.18 vs Croatia stored 0.77 rated 0.70) · 0.0122/move
+[396/612] Kansas 0.199→0.193 (rated 0.18 vs Iraq stored 0.04 rated 0.08) · 0.0122/move
+[397/612] Arkansas 0.321→0.331 (rated 0.35 vs Latvia stored 0.60 rated 0.48) · 0.0122/move
+[398/612] Vermont 0.515→0.520 (rated 0.68 vs Anguilla stored 0.44 rated 0.65) · 0.0122/move
+[399/612] Colorado 0.549→0.551 (rated 0.60 vs Mayotte stored 0.53 rated 0.63) · 0.0122/move
+[400/612] South Dakota 0.290→0.292 (rated 0.36 vs Azerbaijan stored 0.14 rated 0.25) · 0.0122/move
+[401/612] Texas 0.153→0.153 (rated 0.20 vs Jordan stored 0.30 rated 0.40) · 0.0121/move
+[402/612] Texas 0.153→0.147 (rated 0.12 vs Saint Lucia stored 0.60 rated 0.62) · 0.0121/move
+[403/612] New Mexico 0.517→0.516 (rated 0.50 vs Haiti stored 0.14 rated 0.10) · 0.0121/move
+[404/612] Texas 0.153→0.164 (rated 0.25 vs Nigeria stored 0.08 rated 0.05) · 0.0121/move
+[405/612] West Virginia 0.258→0.265 (rated 0.32 vs Guadeloupe stored 0.62 rated 0.62) · 0.0121/move
+[406/612] South Dakota 0.290→0.286 (rated 0.25 vs Haiti stored 0.14 rated 0.12) · 0.012/move
+[407/612] West Virginia 0.258→0.250 (rated 0.22 vs United Kingdom stored 0.48 rated 0.55) · 0.012/move
+[408/612] Nevada 0.510→0.525 (rated 0.70 vs Syria stored 0.04 rated 0.07) · 0.012/move
+[409/612] Oklahoma 0.273→0.247 (rated 0.13 vs Saint Helena, Ascensio stored 0.54 rated 0.83) · 0.0121/move
+[410/612] Kentucky 0.313→0.328 (rated 0.44 vs Dominican Republic stored 0.46 rated 0.38) · 0.0121/move
+[411/612] Mississippi 0.254→0.256 (rated 0.30 vs Palau stored 0.68 rated 0.75) · 0.0121/move
+[412/612] Nevada 0.510→0.495 (rated 0.43 vs China stored 0.40 rated 0.55) · 0.0121/move
+[413/612] Tennessee 0.240→0.245 (rated 0.38 vs Sri Lanka stored 0.25 rated 0.42) · 0.0121/move
+[414/612] Massachusetts 0.544→0.558 (rated 0.62 vs Moldova stored 0.54 rated 0.40) · 0.0121/move
+[415/612] Montana 0.345→0.345 (rated 0.33 vs Australia stored 0.86 rated 0.80) · 0.012/move
+[416/612] Florida 0.248→0.254 (rated 0.33 vs Benin stored 0.14 rated 0.18) · 0.012/move
+[417/612] Vermont 0.520→0.507 (rated 0.48 vs Guernsey stored 0.60 rated 0.78) · 0.012/move
+[418/612] Wyoming 0.280→0.285 (rated 0.32 vs Honduras stored 0.15 rated 0.15) · 0.012/move
+[419/612] North Dakota 0.273→0.267 (rated 0.18 vs Albania stored 0.70 rated 0.63) · 0.012/move
+[420/612] West Virginia 0.250→0.260 (rated 0.35 vs Iceland stored 0.91 rated 0.90) · 0.012/move
+[421/612] Mississippi 0.256→0.248 (rated 0.20 vs Panama stored 0.56 rated 0.62) · 0.012/move
+[422/612] Indiana 0.215→0.205 (rated 0.12 vs Netherlands stored 0.79 rated 0.82) · 0.012/move
+[423/612] Utah 0.234→0.237 (rated 0.32 vs Solomon Islands stored 0.38 rated 0.50) · 0.012/move
+[424/612] Missouri 0.295→0.294 (rated 0.22 vs Nicaragua stored 0.24 rated 0.10) · 0.0119/move
+[425/612] Utah 0.234→0.241 (rated 0.30 vs Tunisia stored 0.12 rated 0.10) · 0.0119/move
+[426/612] Missouri 0.295→0.307 (rated 0.32 vs Cabo Verde stored 0.73 rated 0.55) · 0.0119/move
+[427/612] Wisconsin 0.412→0.406 (rated 0.48 vs Israel stored 0.49 rated 0.78) · 0.0119/move
+[428/612] Washington 0.542→0.528 (rated 0.44 vs Isle of Man stored 0.62 rated 0.72) · 0.0119/move
+[429/612] Georgia 0.316→0.303 (rated 0.19 vs Hungary stored 0.58 rated 0.62) · 0.0119/move
+[430/612] Oklahoma 0.247→0.250 (rated 0.28 vs Paraguay stored 0.42 rated 0.45) · 0.0119/move
+[431/612] Indiana 0.205→0.214 (rated 0.22 vs Wallis and Futuna stored 0.59 rated 0.45) · 0.0119/move
+[432/612] New Jersey 0.588→0.587 (rated 0.60 vs Guatemala stored 0.31 rated 0.40) · 0.0119/move
+[433/612] Maine 0.406→0.412 (rated 0.45 vs Mongolia stored 0.69 rated 0.68) · 0.0118/move
+[434/612] New Mexico 0.516→0.512 (rated 0.50 vs Haiti stored 0.14 rated 0.15) · 0.0118/move
+[435/612] Wyoming 0.285→0.274 (rated 0.18 vs New Caledonia stored 0.65 rated 0.70) · 0.0118/move
+[436/612] North Dakota 0.267→0.261 (rated 0.22 vs Tuvalu stored 0.48 rated 0.50) · 0.0118/move
+[437/612] Arkansas 0.331→0.339 (rated 0.45 vs Haiti stored 0.14 rated 0.20) · 0.0118/move
+[438/612] Wisconsin 0.406→0.403 (rated 0.40 vs Malaysia stored 0.16 rated 0.18) · 0.0118/move
+[439/612] Maryland 0.411→0.430 (rated 0.70 vs Bangladesh stored 0.12 rated 0.20) · 0.0118/move
+[440/612] Texas 0.164→0.157 (rated 0.15 vs Cook Islands stored 0.45 rated 0.55) · 0.0118/move
+[441/612] Alabama 0.212→0.215 (rated 0.25 vs India stored 0.43 rated 0.45) · 0.0118/move
+[442/612] Kentucky 0.328→0.323 (rated 0.25 vs Latvia stored 0.60 rated 0.55) · 0.0117/move
+[443/612] New York 0.503→0.513 (rated 0.55 vs Guadeloupe stored 0.62 rated 0.50) · 0.0117/move
+[444/612] Rhode Island 0.563→0.558 (rated 0.52 vs Niger stored 0.10 rated 0.10) · 0.0117/move
+[445/612] Vermont 0.507→0.527 (rated 0.62 vs Nepal stored 0.67 rated 0.42) · 0.0117/move
+[446/612] District of Columbia 0.301→0.305 (rated 0.32 vs Angola stored 0.62 rated 0.60) · 0.0117/move
+[447/612] Nebraska 0.306→0.301 (rated 0.30 vs Antigua and Barbuda stored 0.60 rated 0.68) · 0.0117/move
+[448/612] Alaska 0.353→0.360 (rated 0.42 vs Micronesia (FSM) stored 0.61 rated 0.60) · 0.0117/move
+[449/612] Pennsylvania 0.454→0.469 (rated 0.65 vs Georgia stored 0.18 rated 0.18) · 0.0117/move
+[450/612] Idaho 0.182→0.184 (rated 0.20 vs Haiti stored 0.14 rated 0.15) · 0.0117/move
+[451/612] District of Columbia 0.301→0.310 (rated 0.40 vs Uruguay stored 0.85 rated 0.83) · 0.0117/move
+[452/612] South Dakota 0.286→0.275 (rated 0.22 vs French Guiana stored 0.61 rated 0.72) · 0.0117/move
+[453/612] Oklahoma 0.250→0.254 (rated 0.30 vs France stored 0.67 rated 0.70) · 0.0117/move
+[454/612] Arizona 0.378→0.396 (rated 0.65 vs Lebanon stored 0.17 rated 0.22) · 0.0117/move
+[455/612] Texas 0.157→0.159 (rated 0.17 vs Japan stored 0.82 rated 0.83) · 0.0117/move
+[452] ERROR 66186276B10610315112087/AIA: no scores in response (stop_reason=max_tokens): 'To rate these dossiers, I must apply the specific rules regarding traveler risk, probability of outing, and severity of consequences, while filtering out resident-only issues and general LGB factors ('
+[457/612] Virginia 0.406→0.402 (rated 0.38 vs Papua New Guinea stored 0.20 rated 0.20) · 0.0116/move
+[458/612] Mississippi 0.248→0.247 (rated 0.28 vs Lesotho stored 0.40 rated 0.52) · 0.0116/move
+[459/612] New York 0.513→0.526 (rated 0.55 vs Botswana stored 0.64 rated 0.42) · 0.0116/move
+[460/612] Kansas 0.193→0.192 (rated 0.13 vs Belize stored 0.71 rated 0.60) · 0.0116/move
+[461/612] Alabama 0.215→0.207 (rated 0.14 vs Philippines stored 0.56 rated 0.60) · 0.0116/move
+[462/612] Washington 0.528→0.520 (rated 0.45 vs Iran stored 0.07 rated 0.12) · 0.0116/move
+[463/612] Rhode Island 0.558→0.566 (rated 0.62 vs Papua New Guinea stored 0.20 rated 0.15) · 0.0116/move
+[464/612] Connecticut 0.590→0.594 (rated 0.65 vs Montserrat stored 0.44 rated 0.50) · 0.0115/move
+[465/612] New York 0.513→0.530 (rated 0.70 vs Vietnam stored 0.57 rated 0.50) · 0.0115/move
+[466/612] Delaware 0.471→0.475 (rated 0.50 vs San Marino stored 0.84 rated 0.84) · 0.0115/move
+[467/612] Montana 0.345→0.352 (rated 0.48 vs Bahamas stored 0.60 rated 0.68) · 0.0115/move
+[468/612] North Dakota 0.261→0.252 (rated 0.13 vs Cuba stored 0.71 rated 0.68) · 0.0115/move
+[469/612] Iowa 0.302→0.299 (rated 0.22 vs Timor-Leste stored 0.75 rated 0.66) · 0.0115/move
+[470/612] South Carolina 0.254→0.247 (rated 0.20 vs Guadeloupe stored 0.62 rated 0.68) · 0.0115/move
+[471/612] Maine 0.412→0.406 (rated 0.38 vs Kenya stored 0.31 rated 0.35) · 0.0115/move
+[472/612] Georgia 0.303→0.294 (rated 0.18 vs Singapore stored 0.73 rated 0.73) · 0.0115/move
+[473/612] Alaska 0.360→0.362 (rated 0.40 vs Israel stored 0.49 rated 0.55) · 0.0115/move
+[474/612] Missouri 0.307→0.313 (rated 0.38 vs Germany stored 0.71 rated 0.72) · 0.0114/move
+[475/612] South Carolina 0.254→0.268 (rated 0.50 vs Chad stored 0.33 rated 0.40) · 0.0114/move
+[472] ERROR 66186276B10610315112087/PNG: no scores in response (stop_reason=max_tokens): 'Based on the provided dossiers and the rating rules:\n\n**Dossier A (Country):** The assessment describes a jurisdiction with severe risks. Male same-sex conduct is criminalized (up to 14 years), which '
+[477/612] Virginia 0.402→0.407 (rated 0.50 vs Zambia stored 0.09 rated 0.18) · 0.0114/move
+[478/612] Iowa 0.299→0.296 (rated 0.28 vs Lithuania stored 0.58 rated 0.58) · 0.0114/move
+[479/612] Tennessee 0.245→0.243 (rated 0.30 vs Kiribati stored 0.44 rated 0.64) · 0.0114/move
+[480/612] Iowa 0.299→0.300 (rated 0.32 vs Burkina Faso stored 0.20 rated 0.23) · 0.0113/move
+[481/612] Massachusetts 0.558→0.557 (rated 0.75 vs Northern Mariana Islan stored 0.30 rated 0.70) · 0.0113/move
+[482/612] Iowa 0.299→0.288 (rated 0.22 vs Venezuela stored 0.41 rated 0.52) · 0.0113/move
+[483/612] Georgia 0.294→0.293 (rated 0.27 vs Cabo Verde stored 0.73 rated 0.68) · 0.0113/move
+[484/612] South Dakota 0.275→0.265 (rated 0.12 vs Belize stored 0.71 rated 0.70) · 0.0113/move
+[485/612] Tennessee 0.243→0.247 (rated 0.25 vs Vatican City stored 0.80 rated 0.73) · 0.0113/move
+[486/612] Rhode Island 0.566→0.579 (rated 0.72 vs Italy stored 0.50 rated 0.42) · 0.0113/move
+[487/612] Maryland 0.430→0.433 (rated 0.43 vs South Korea stored 0.71 rated 0.62) · 0.0113/move
+[488/612] Iowa 0.300→0.305 (rated 0.35 vs Sri Lanka stored 0.25 rated 0.25) · 0.0113/move
+[489/612] New York 0.530→0.530 (rated 0.53 vs Malta stored 0.90 rated 0.90) · 0.0112/move
+[490/612] California 0.449→0.441 (rated 0.30 vs Marshall Islands stored 0.71 rated 0.65) · 0.0112/move
+[491/612] Arkansas 0.339→0.351 (rated 0.52 vs India stored 0.43 rated 0.42) · 0.0112/move
+[492/612] New Jersey 0.587→0.582 (rated 0.48 vs Montenegro stored 0.65 rated 0.58) · 0.0112/move
+[493/612] Maryland 0.433→0.441 (rated 0.55 vs Cameroon stored 0.10 rated 0.12) · 0.0112/move
+[494/612] Wisconsin 0.403→0.399 (rated 0.40 vs Tanzania stored 0.10 rated 0.15) · 0.0112/move
+[495/612] Missouri 0.313→0.303 (rated 0.27 vs Macau stored 0.50 rated 0.65) · 0.0112/move
+[496/612] Delaware 0.475→0.470 (rated 0.42 vs Egypt stored 0.13 rated 0.15) · 0.0112/move
+[497/612] Texas 0.159→0.176 (rated 0.58 vs Russia stored 0.12 rated 0.35) · 0.0112/move
+[498/612] Indiana 0.214→0.221 (rated 0.33 vs Nigeria stored 0.08 rated 0.12) · 0.0112/move
+[499/612] Maine 0.406→0.415 (rated 0.55 vs Malaysia stored 0.16 rated 0.18) · 0.0112/move
+[500/612] New Hampshire 0.347→0.346 (rated 0.30 vs Antigua and Barbuda stored 0.60 rated 0.53) · 0.0112/move
+[501/612] Oklahoma 0.254→0.247 (rated 0.18 vs Belgium stored 0.83 rated 0.85) · 0.0112/move
+[502/612] Iowa 0.305→0.297 (rated 0.17 vs Spain stored 0.88 rated 0.84) · 0.0112/move
+[503/612] Nevada 0.495→0.492 (rated 0.55 vs Hong Kong stored 0.58 rated 0.80) · 0.0111/move
+[504/612] North Dakota 0.252→0.245 (rated 0.15 vs Malta stored 0.90 rated 0.91) · 0.0111/move
+[505/612] Ohio 0.256→0.269 (rated 0.45 vs Comoros stored 0.31 rated 0.28) · 0.0111/move
+[506/612] Hawaii 0.564→0.552 (rated 0.53 vs Montserrat stored 0.44 rated 0.70) · 0.0111/move
+[507/612] Connecticut 0.594→0.597 (rated 0.68 vs Eritrea stored 0.12 rated 0.20) · 0.0111/move
+[508/612] Wisconsin 0.399→0.407 (rated 0.55 vs Lesotho stored 0.40 rated 0.45) · 0.0111/move
+[509/612] Michigan 0.434→0.442 (rated 0.55 vs Saudi Arabia stored 0.04 rated 0.05) · 0.0111/move
+[510/612] Utah 0.241→0.236 (rated 0.15 vs Canada stored 0.86 rated 0.83) · 0.0111/move
+[511/612] Nevada 0.492→0.496 (rated 0.55 vs Micronesia (FSM) stored 0.61 rated 0.62) · 0.0111/move
+[512/612] Ohio 0.256→0.263 (rated 0.38 vs Malaysia stored 0.16 rated 0.18) · 0.0111/move
+[513/612] Vermont 0.527→0.530 (rated 0.58 vs Serbia stored 0.40 rated 0.45) · 0.0111/move
+[514/612] Connecticut 0.597→0.601 (rated 0.62 vs Australia stored 0.86 rated 0.82) · 0.011/move
+[515/612] Nebraska 0.301→0.304 (rated 0.28 vs Samoa stored 0.72 rated 0.55) · 0.011/move
+[516/612] South Dakota 0.265→0.279 (rated 0.45 vs Botswana stored 0.64 rated 0.55) · 0.011/move
+[517/612] Colorado 0.551→0.547 (rated 0.55 vs Solomon Islands stored 0.38 rated 0.48) · 0.011/move
+[518/612] Michigan 0.442→0.434 (rated 0.30 vs Iceland stored 0.91 rated 0.88) · 0.011/move
+[519/612] Mississippi 0.247→0.247 (rated 0.20 vs São Tomé and Príncipe stored 0.65 rated 0.52) · 0.011/move
+[520/612] South Dakota 0.265→0.258 (rated 0.18 vs Uganda stored 0.06 rated 0.10) · 0.011/move
+[521/612] Arizona 0.396→0.401 (rated 0.52 vs Maldives stored 0.24 rated 0.32) · 0.011/move
+[522/612] New York 0.530→0.517 (rated 0.35 vs Montserrat stored 0.44 rated 0.52) · 0.011/move
+[523/612] Massachusetts 0.557→0.550 (rated 0.50 vs Aruba stored 0.71 rated 0.78) · 0.011/move
+[524/612] Iowa 0.297→0.297 (rated 0.30 vs Peru stored 0.36 rated 0.42) · 0.0109/move
+[525/612] Alabama 0.207→0.212 (rated 0.28 vs Trinidad and Tobago stored 0.34 rated 0.34) · 0.0109/move
+[526/612] Tennessee 0.247→0.244 (rated 0.22 vs Ukraine stored 0.59 rated 0.60) · 0.0109/move
+[527/612] Wisconsin 0.407→0.405 (rated 0.40 vs Belarus stored 0.08 rated 0.08) · 0.0109/move
+[528/612] West Virginia 0.260→0.257 (rated 0.22 vs Poland stored 0.52 rated 0.52) · 0.0109/move
+[529/612] North Dakota 0.245→0.247 (rated 0.27 vs North Korea stored 0.04 rated 0.05) · 0.0109/move
+[530/612] Idaho 0.184→0.182 (rated 0.16 vs Israel stored 0.49 rated 0.48) · 0.0109/move
+[531/612] Wyoming 0.274→0.260 (rated 0.27 vs Northern Mariana Islan stored 0.30 rated 0.72) · 0.0109/move
+[532/612] Ohio 0.263→0.257 (rated 0.20 vs Saint Barthélemy stored 0.65 rated 0.70) · 0.0109/move
+[533/612] Illinois 0.556→0.562 (rated 0.65 vs Bosnia and Herzegovina stored 0.50 rated 0.50) · 0.0108/move
+[534/612] Colorado 0.547→0.553 (rated 0.65 vs Qatar stored 0.05 rated 0.05) · 0.0108/move
+[535/612] Louisiana 0.122→0.128 (rated 0.14 vs Bosnia and Herzegovina stored 0.50 rated 0.40) · 0.0108/move
+[536/612] New Jersey 0.582→0.590 (rated 0.68 vs Central African Republ stored 0.20 rated 0.12) · 0.0108/move
+[537/612] Michigan 0.434→0.439 (rated 0.52 vs Kyrgyzstan stored 0.32 rated 0.32) · 0.0108/move
+[538/612] Wisconsin 0.405→0.404 (rated 0.40 vs Guinea stored 0.17 rated 0.15) · 0.0108/move
+[539/612] Arkansas 0.351→0.347 (rated 0.30 vs South Sudan stored 0.10 rated 0.10) · 0.0108/move
+[540/612] North Dakota 0.247→0.243 (rated 0.19 vs South Korea stored 0.71 rated 0.71) · 0.0108/move
+[541/612] Washington 0.520→0.519 (rated 0.45 vs Romania stored 0.67 rated 0.54) · 0.0108/move
+[542/612] California 0.441→0.442 (rated 0.50 vs Austria stored 0.74 rated 0.83) · 0.0107/move
+[543/612] Alabama 0.212→0.207 (rated 0.13 vs Croatia stored 0.77 rated 0.76) · 0.0107/move
+[544/612] North Dakota 0.247→0.253 (rated 0.35 vs Algeria stored 0.21 rated 0.20) · 0.0107/move
+[545/612] Indiana 0.221→0.225 (rated 0.27 vs Central African Republ stored 0.20 rated 0.18) · 0.0107/move
+[546/612] Massachusetts 0.550→0.547 (rated 0.50 vs Afghanistan stored 0.02 rated 0.02) · 0.0107/move
+[547/612] Rhode Island 0.579→0.580 (rated 0.60 vs Lebanon stored 0.17 rated 0.22) · 0.0107/move
+[548/612] Texas 0.176→0.173 (rated 0.13 vs Belgium stored 0.83 rated 0.83) · 0.0107/move
+[549/612] Texas 0.176→0.185 (rated 0.35 vs Guinea stored 0.17 rated 0.18) · 0.0107/move
+[550/612] Rhode Island 0.579→0.587 (rated 0.72 vs Djibouti stored 0.29 rated 0.28) · 0.0106/move
+[551/612] Michigan 0.439→0.436 (rated 0.42 vs Hong Kong stored 0.58 rated 0.62) · 0.0106/move
+[552/612] Washington 0.519→0.516 (rated 0.50 vs Sierra Leone stored 0.28 rated 0.30) · 0.0106/move
+[553/612] Rhode Island 0.579→0.584 (rated 0.55 vs Kiribati stored 0.44 rated 0.20) · 0.0106/move
+[554/612] Alabama 0.207→0.199 (rated 0.10 vs United Kingdom stored 0.48 rated 0.55) · 0.0106/move
+[555/612] Maine 0.415→0.412 (rated 0.35 vs Slovenia stored 0.75 rated 0.70) · 0.0106/move
+[556/612] Oklahoma 0.247→0.257 (rated 0.43 vs Bahrain stored 0.26 rated 0.25) · 0.0106/move
+[555] ERROR 66186276B98073251815399/TON: no scores in response (stop_reason=max_tokens): 'To determine the ratings, I must evaluate the probability of a trans visitor being outed and the severity of consequences they face in each dossier.\n\n**DOSSIER A (Region):**\nThe region sits within a f'
+[558/612] Florida 0.254→0.262 (rated 0.42 vs Myanmar stored 0.06 rated 0.08) · 0.0106/move
+[559/612] Florida 0.254→0.259 (rated 0.36 vs Haiti stored 0.14 rated 0.17) · 0.0106/move
+[560/612] Colorado 0.553→0.546 (rated 0.42 vs Timor-Leste stored 0.75 rated 0.75) · 0.0105/move
+[561/612] Washington 0.516→0.514 (rated 0.45 vs Canada stored 0.86 rated 0.80) · 0.0105/move
+[562/612] Florida 0.254→0.261 (rated 0.30 vs Mexico stored 0.55 rated 0.42) · 0.0105/move
+[563/612] Missouri 0.303→0.307 (rated 0.37 vs Cuba stored 0.71 rated 0.72) · 0.0105/move
+[564/612] Iowa 0.297→0.304 (rated 0.45 vs Russia stored 0.12 rated 0.15) · 0.0105/move
+[565/612] North Dakota 0.253→0.251 (rated 0.22 vs Bosnia and Herzegovina stored 0.50 rated 0.50) · 0.0105/move
+[566/612] Oklahoma 0.257→0.254 (rated 0.22 vs Yemen stored 0.03 rated 0.05) · 0.0105/move
+[567/612] Wisconsin 0.404→0.401 (rated 0.52 vs Cayman Islands stored 0.36 rated 0.70) · 0.0105/move
+[568/612] Wyoming 0.260→0.257 (rated 0.15 vs San Marino stored 0.84 rated 0.75) · 0.0105/move
+[569/612] Maryland 0.441→0.442 (rated 0.48 vs Bangladesh stored 0.12 rated 0.18) · 0.0104/move
+[570/612] Mississippi 0.247→0.250 (rated 0.30 vs Somalia stored 0.03 rated 0.05) · 0.0104/move
+[571/612] Maine 0.412→0.421 (rated 0.52 vs Madagascar stored 0.38 rated 0.25) · 0.0104/move
+[572/612] Tennessee 0.244→0.242 (rated 0.22 vs Iceland stored 0.91 rated 0.93) · 0.0104/move
+[573/612] South Dakota 0.258→0.256 (rated 0.25 vs Bhutan stored 0.67 rated 0.68) · 0.0104/move
+[574/612] North Dakota 0.251→0.247 (rated 0.21 vs Monaco stored 0.76 rated 0.80) · 0.0104/move
+[575/612] Massachusetts 0.547→0.547 (rated 0.55 vs Peru stored 0.36 rated 0.40) · 0.0104/move
+[576/612] Pennsylvania 0.469→0.474 (rated 0.52 vs Slovakia stored 0.65 rated 0.58) · 0.0104/move
+[577/612] Kentucky 0.323→0.327 (rated 0.38 vs Tanzania stored 0.10 rated 0.08) · 0.0103/move
+[578/612] Nevada 0.496→0.487 (rated 0.40 vs Turks and Caicos Islan stored 0.44 rated 0.62) · 0.0103/move
+[579/612] Delaware 0.470→0.474 (rated 0.68 vs Turks and Caicos Islan stored 0.44 rated 0.62) · 0.0103/move
+[580/612] Mississippi 0.250→0.250 (rated 0.25 vs Albania stored 0.70 rated 0.70) · 0.0103/move
+[581/612] Georgia 0.293→0.292 (rated 0.33 vs Hong Kong stored 0.58 rated 0.70) · 0.0103/move
+[577] ERROR 66186276B98021244841737/KIR: no scores in response (stop_reason=max_tokens): '## Dossier A Analysis\n\n**Axis A (Border/Transit):** Severe and ongoing friction. January 2025 executive order requires federal documents (passports) to match sex assigned at birth. A trans visitor was'
+[583/612] Iowa 0.304→0.303 (rated 0.28 vs North Macedonia stored 0.50 rated 0.48) · 0.0103/move
+[584/612] Louisiana 0.128→0.136 (rated 0.32 vs Iraq stored 0.04 rated 0.03) · 0.0103/move
+[585/612] New Jersey 0.590→0.587 (rated 0.55 vs Peru stored 0.36 rated 0.40) · 0.0102/move
+[586/612] Pennsylvania 0.474→0.471 (rated 0.45 vs Israel stored 0.49 rated 0.52) · 0.0102/move
+[587/612] Indiana 0.225→0.225 (rated 0.27 vs Mali stored 0.12 rated 0.22) · 0.0102/move
+[588/612] Massachusetts 0.547→0.546 (rated 0.55 vs Palestinian Territorie stored 0.13 rated 0.22) · 0.0102/move
+[589/612] Texas 0.185→0.183 (rated 0.18 vs Tunisia stored 0.12 rated 0.15) · 0.0102/move
+[590/612] Wisconsin 0.401→0.406 (rated 0.55 vs China stored 0.40 rated 0.48) · 0.0102/move
+[591/612] Kentucky 0.327→0.325 (rated 0.30 vs Israel stored 0.49 rated 0.50) · 0.0102/move
+[592/612] Virginia 0.407→0.409 (rated 0.42 vs Marshall Islands stored 0.71 rated 0.68) · 0.0101/move
+[593/612] Arkansas 0.347→0.345 (rated 0.30 vs Denmark stored 0.85 rated 0.85) · 0.0101/move
+[594/612] Massachusetts 0.547→0.546 (rated 0.58 vs Cayman Islands stored 0.36 rated 0.52) · 0.0101/move
+[595/612] Connecticut 0.601→0.600 (rated 0.50 vs Cook Islands stored 0.45 rated 0.30) · 0.0101/move
+[596/612] Pennsylvania 0.471→0.480 (rated 0.75 vs Philippines stored 0.56 rated 0.63) · 0.0101/move
+[597/612] Ohio 0.257→0.260 (rated 0.30 vs Equatorial Guinea stored 0.13 rated 0.10) · 0.0101/move
+[598/612] Wisconsin 0.406→0.406 (rated 0.42 vs Tunisia stored 0.12 rated 0.15) · 0.0101/move
+[599/612] Rhode Island 0.584→0.582 (rated 0.55 vs Madagascar stored 0.38 rated 0.35) · 0.0101/move
+[600/612] Minnesota 0.516→0.518 (rated 0.62 vs China stored 0.40 rated 0.55) · 0.01/move
+[601/612] New York 0.517→0.513 (rated 0.40 vs Cyprus stored 0.79 rated 0.75) · 0.01/move
+[602/612] Kentucky 0.325→0.328 (rated 0.38 vs Pakistan stored 0.20 rated 0.15) · 0.01/move
+[603/612] New York 0.517→0.520 (rated 0.62 vs Serbia stored 0.40 rated 0.45) · 0.01/move
+[604/612] Utah 0.236→0.233 (rated 0.18 vs South Korea stored 0.71 rated 0.70) · 0.01/move
+[605/612] Hawaii 0.552→0.551 (rated 0.50 vs Serbia stored 0.40 rated 0.30) · 0.01/move
+[606/612] Oklahoma 0.254→0.257 (rated 0.30 vs Andorra stored 0.88 rated 0.85) · 0.01/move
+[607/612] Wyoming 0.257→0.258 (rated 0.35 vs Croatia stored 0.77 rated 0.88) · 0.01/move
+[608/612] Georgia 0.292→0.294 (rated 0.30 vs Caribbean Netherlands  stored 0.69 rated 0.65) · 0.0099/move
+[609/612] Alaska 0.362→0.364 (rated 0.38 vs Guyana stored 0.27 rated 0.27) · 0.0099/move
+[610/612] New Jersey 0.587→0.588 (rated 0.55 vs Vatican City stored 0.80 rated 0.63) · 0.0099/move
+[611/612] Massachusetts 0.546→0.551 (rated 0.61 vs Vietnam stored 0.57 rated 0.44) · 0.0099/move
+[612/612] Utah 0.233→0.231 (rated 0.18 vs Bulgaria stored 0.53 rated 0.55) · 0.0099/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 612 pairs in 3876s · errors: 12 · total score movement: 6.059
+tokens — cache read: 2,833,800 · cache write: 0 · uncached in: 1,140,128 · out: 1,582,996
+ERROR: 25984515B9026957888422: bad summary
