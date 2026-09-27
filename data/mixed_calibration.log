@@ -5157,3 +5157,462 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 432 pairs in 2007s · errors: 14 · total score movement: 3.594
 tokens — cache read: 1,974,214 · cache write: 0 · uncached in: 860,787 · out: 971,541
 ERROR: 25984515B9026957888422: bad summary
+IND done 2026-09-27 14:13:14
+=================== mixed NGA 2026-09-27 14:13:14 ===================
+NGA: 37 regions -> 444 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 37 regions (37 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 925
+pairs: 444 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 222 / 444: 0.07000/0.04007/0.01000 · 0.00500/0.00295/0.00090 · 0.10000/0.06009/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-141314.jsonl
+[1/444] Borno 0.058→0.051 (rated 0.05 vs DR Congo stored 0.21 rated 0.22) · 0.0065/move
+[2/444] Ondo 0.080→0.102 (rated 0.18 vs South Korea stored 0.71 rated 0.70) · 0.0143/move
+[3/444] Abuja Federal Capital Territory 0.080→0.082 (rated 0.07 vs Latvia stored 0.60 rated 0.52) · 0.0102/move
+[4/444] Yobe 0.039→0.070 (rated 0.22 vs Somalia stored 0.03 rated 0.05) · 0.0156/move
+[5/444] Yobe 0.039→0.041 (rated 0.08 vs France stored 0.67 rated 0.76) · 0.013/move
+[6/444] Anambra 0.073→0.090 (rated 0.12 vs New Zealand stored 0.75 rated 0.70) · 0.0136/move
+[7/444] Osun 0.080→0.100 (rated 0.15 vs Romania stored 0.67 rated 0.62) · 0.0146/move
+[8/444] Yobe 0.039→0.068 (rated 0.15 vs Vietnam stored 0.57 rated 0.50) · 0.0164/move
+[9/444] Gombe 0.059→0.062 (rated 0.07 vs Lebanon stored 0.17 rated 0.21) · 0.0148/move
+[10/444] Kaduna 0.059→0.078 (rated 0.12 vs Liechtenstein stored 0.80 rated 0.75) · 0.0153/move
+[11/444] Taraba 0.057→0.098 (rated 0.25 vs Lithuania stored 0.58 rated 0.52) · 0.0176/move
+[12/444] Ebonyi 0.080→0.098 (rated 0.13 vs Guadeloupe stored 0.62 rated 0.57) · 0.0176/move
+[13/444] Gombe 0.059→0.064 (rated 0.12 vs Eritrea stored 0.12 rated 0.22) · 0.0166/move
+[14/444] Edo 0.060→0.076 (rated 0.12 vs Laos stored 0.64 rated 0.62) · 0.0165/move
+[15/444] Anambra 0.090→0.055 (rated 0.07 vs British Virgin Islands stored 0.42 rated 0.70) · 0.0177/move
+[16/444] Imo 0.057→0.068 (rated 0.13 vs Iraq stored 0.04 rated 0.10) · 0.0173/move
+[17/444] Adamawa 0.058→0.074 (rated 0.16 vs Ethiopia stored 0.25 rated 0.30) · 0.0172/move
+[18/444] Zamfara 0.047→0.034 (rated 0.03 vs Malawi stored 0.16 rated 0.22) · 0.0169/move
+[19/444] Ekiti 0.080→0.045 (rated 0.15 vs American Samoa stored 0.18 rated 0.70) · 0.0179/move
+[20/444] Niger 0.059→0.053 (rated 0.06 vs Guinea stored 0.17 rated 0.25) · 0.0173/move
+[21/444] Zamfara 0.047→0.059 (rated 0.06 vs Lithuania stored 0.58 rated 0.52) · 0.017/move
+[22/444] Nasarawa 0.080→0.092 (rated 0.13 vs San Marino stored 0.84 rated 0.85) · 0.0168/move
+[23/444] Borno 0.051→0.071 (rated 0.15 vs Somalia stored 0.03 rated 0.03) · 0.0169/move
+[24/444] Kebbi 0.059→0.063 (rated 0.08 vs Sierra Leone stored 0.28 rated 0.32) · 0.0164/move
+[25/444] Ekiti 0.080→0.090 (rated 0.12 vs New Zealand stored 0.75 rated 0.75) · 0.0161/move
+[26/444] Zamfara 0.059→0.057 (rated 0.10 vs Saint Barthélemy stored 0.65 rated 0.79) · 0.0156/move
+[27/444] Zamfara 0.034→0.023 (rated 0.08 vs Gibraltar stored 0.58 rated 0.82) · 0.0154/move
+[28/444] Lagos 0.085→0.082 (rated 0.12 vs Tajikistan stored 0.17 rated 0.30) · 0.015/move
+[29/444] Ondo 0.102→0.083 (rated 0.05 vs Morocco stored 0.18 rated 0.25) · 0.0151/move
+[30/444] Zamfara 0.059→0.053 (rated 0.05 vs Portugal stored 0.81 rated 0.81) · 0.0148/move
+[31/444] Bayelsa 0.080→0.080 (rated 0.08 vs Vanuatu stored 0.58 rated 0.58) · 0.0143/move
+[32/444] Rivers 0.080→0.090 (rated 0.10 vs Brazil stored 0.71 rated 0.68) · 0.0142/move
+[33/444] Nasarawa 0.092→0.084 (rated 0.08 vs Monaco stored 0.76 rated 0.78) · 0.014/move
+[28] ERROR 27671186B91150779192485/ERI: no scores in response (stop_reason=max_tokens): 'To rate these two dossiers, I must apply the rules for **transgender visitors** specifically, integrating **probability of being outed** and **severity if outed**, while strictly adhering to the instr'
+[35/444] Akwa Ibom 0.080→0.087 (rated 0.10 vs Denmark stored 0.85 rated 0.85) · 0.0134/move
+[36/444] Benue 0.081→0.074 (rated 0.08 vs Honduras stored 0.15 rated 0.22) · 0.0132/move
+[37/444] Ekiti 0.090→0.103 (rated 0.10 vs Portugal stored 0.81 rated 0.74) · 0.0132/move
+[38/444] Benue 0.081→0.095 (rated 0.15 vs Angola stored 0.62 rated 0.63) · 0.0132/move
+[39/444] Ekiti 0.090→0.099 (rated 0.12 vs Austria stored 0.74 rated 0.75) · 0.0131/move
+[40/444] Rivers 0.080→0.088 (rated 0.12 vs Iran stored 0.07 rated 0.10) · 0.013/move
+[41/444] Rivers 0.090→0.090 (rated 0.10 vs Gabon stored 0.54 rated 0.60) · 0.0127/move
+[42/444] Kaduna 0.078→0.075 (rated 0.10 vs Martinique stored 0.62 rated 0.74) · 0.0124/move
+[43/444] Ebonyi 0.098→0.101 (rated 0.10 vs Andorra stored 0.88 rated 0.87) · 0.0122/move
+[44/444] Abuja Federal Capital Territory 0.082→0.090 (rated 0.10 vs Myanmar stored 0.06 rated 0.05) · 0.0121/move
+[45/444] Cross River 0.080→0.099 (rated 0.20 vs South Korea stored 0.71 rated 0.75) · 0.0123/move
+[46/444] Katsina 0.059→0.077 (rated 0.19 vs Peru stored 0.36 rated 0.42) · 0.0124/move
+[47/444] Yobe 0.068→0.056 (rated 0.06 vs Uzbekistan stored 0.15 rated 0.22) · 0.0124/move
+[48/444] Niger 0.053→0.084 (rated 0.22 vs Belarus stored 0.08 rated 0.05) · 0.0128/move
+[49/444] Bauchi 0.028→0.035 (rated 0.05 vs Libya stored 0.04 rated 0.04) · 0.0127/move
+[50/444] Katsina 0.059→0.050 (rated 0.05 vs New Zealand stored 0.75 rated 0.78) · 0.0126/move
+[51/444] Benue 0.095→0.099 (rated 0.10 vs Portugal stored 0.81 rated 0.82) · 0.0124/move
+[52/444] Osun 0.100→0.097 (rated 0.12 vs Haiti stored 0.14 rated 0.25) · 0.0123/move
+[53/444] Delta 0.080→0.082 (rated 0.14 vs Saint Lucia stored 0.60 rated 0.72) · 0.0121/move
+[54/444] Benue 0.095→0.099 (rated 0.10 vs Slovenia stored 0.75 rated 0.75) · 0.0119/move
+[55/444] Ebonyi 0.101→0.103 (rated 0.15 vs Honduras stored 0.15 rated 0.25) · 0.0118/move
+[56/444] Kogi 0.080→0.077 (rated 0.08 vs South Korea stored 0.71 rated 0.75) · 0.0116/move
+[57/444] Bauchi 0.035→0.048 (rated 0.08 vs Sudan stored 0.05 rated 0.03) · 0.0116/move
+[58/444] Zamfara 0.053→0.031 (rated 0.12 vs U.S. Virgin Islands stored 0.34 rated 0.75) · 0.0118/move
+[59/444] Edo 0.076→0.083 (rated 0.08 vs Georgia stored 0.18 rated 0.15) · 0.0117/move
+[60/444] Rivers 0.090→0.081 (rated 0.10 vs Saint Vincent and the  stored 0.34 rated 0.50) · 0.0117/move
+[61/444] Jigawa 0.061→0.071 (rated 0.08 vs Estonia stored 0.75 rated 0.72) · 0.0116/move
+[62/444] Gombe 0.064→0.073 (rated 0.07 vs Lebanon stored 0.17 rated 0.12) · 0.0116/move
+[63/444] Adamawa 0.074→0.091 (rated 0.15 vs Turkmenistan stored 0.08 rated 0.05) · 0.0117/move
+[64/444] Delta 0.082→0.070 (rated 0.06 vs São Tomé and Príncipe stored 0.65 rated 0.70) · 0.0117/move
+[65/444] Oyo 0.080→0.087 (rated 0.10 vs Mauritius stored 0.75 rated 0.75) · 0.0116/move
+[66/444] Kebbi 0.063→0.084 (rated 0.15 vs Mauritius stored 0.75 rated 0.70) · 0.0118/move
+[67/444] Borno 0.071→0.081 (rated 0.08 vs Finland stored 0.87 rated 0.82) · 0.0117/move
+[68/444] Bayelsa 0.080→0.086 (rated 0.12 vs Solomon Islands stored 0.38 rated 0.42) · 0.0117/move
+[69/444] Enugu 0.080→0.088 (rated 0.13 vs Ethiopia stored 0.25 rated 0.28) · 0.0116/move
+[70/444] Taraba 0.098→0.101 (rated 0.13 vs Mozambique stored 0.62 rated 0.68) · 0.0115/move
+[71/444] Imo 0.068→0.059 (rated 0.10 vs Isle of Man stored 0.62 rated 0.82) · 0.0115/move
+[72/444] Benue 0.099→0.088 (rated 0.07 vs São Tomé and Príncipe stored 0.65 rated 0.68) · 0.0114/move
+[73/444] Taraba 0.098→0.097 (rated 0.10 vs Russia stored 0.12 rated 0.15) · 0.0113/move
+[74/444] Imo 0.068→0.080 (rated 0.12 vs Mauritius stored 0.75 rated 0.74) · 0.0113/move
+[75/444] Delta 0.070→0.087 (rated 0.15 vs Kiribati stored 0.44 rated 0.42) · 0.0114/move
+[76/444] Kebbi 0.063→0.077 (rated 0.12 vs Tanzania stored 0.10 rated 0.07) · 0.0114/move
+[77/444] Kano 0.030→0.045 (rated 0.12 vs Saudi Arabia stored 0.04 rated 0.06) · 0.0115/move
+[78/444] Delta 0.070→0.074 (rated 0.13 vs Colombia stored 0.52 rated 0.62) · 0.0114/move
+[79/444] Rivers 0.081→0.079 (rated 0.08 vs Lebanon stored 0.17 rated 0.18) · 0.0112/move
+[80/444] Rivers 0.081→0.044 (rated 0.08 vs Pitcairn Islands stored 0.38 rated 0.80) · 0.0116/move
+[81/444] Rivers 0.081→0.086 (rated 0.13 vs Azerbaijan stored 0.14 rated 0.21) · 0.0115/move
+[82/444] Gombe 0.073→0.080 (rated 0.11 vs Egypt stored 0.13 rated 0.16) · 0.0114/move
+[83/444] Abia 0.080→0.076 (rated 0.05 vs Slovakia stored 0.65 rated 0.60) · 0.0113/move
+[84/444] Bauchi 0.048→0.041 (rated 0.05 vs Turkmenistan stored 0.08 rated 0.18) · 0.0113/move
+[85/444] Anambra 0.055→0.039 (rated 0.09 vs Falkland Islands stored 0.58 rated 0.87) · 0.0113/move
+[86/444] Jigawa 0.071→0.053 (rated 0.04 vs Guatemala stored 0.31 rated 0.42) · 0.0114/move
+[87/444] Borno 0.081→0.067 (rated 0.10 vs Guernsey stored 0.60 rated 0.85) · 0.0114/move
+[88/444] Benue 0.088→0.094 (rated 0.12 vs Guyana stored 0.27 rated 0.30) · 0.0114/move
+[89/444] Imo 0.080→0.071 (rated 0.06 vs Turkmenistan stored 0.08 rated 0.11) · 0.0113/move
+[90/444] Adamawa 0.091→0.088 (rated 0.17 vs Isle of Man stored 0.62 rated 0.83) · 0.0112/move
+[91/444] Katsina 0.050→0.060 (rated 0.07 vs Angola stored 0.62 rated 0.58) · 0.0112/move
+[92/444] Borno 0.081→0.068 (rated 0.07 vs Equatorial Guinea stored 0.13 rated 0.23) · 0.0113/move
+[93/444] Kano 0.045→0.044 (rated 0.04 vs Netherlands stored 0.79 rated 0.75) · 0.0111/move
+[94/444] Abia 0.076→0.062 (rated 0.07 vs Micronesia (FSM) stored 0.61 rated 0.73) · 0.0112/move
+[95/444] Kaduna 0.075→0.091 (rated 0.17 vs Saudi Arabia stored 0.04 rated 0.05) · 0.0112/move
+[96/444] Gombe 0.080→0.078 (rated 0.10 vs Senegal stored 0.15 rated 0.25) · 0.0111/move
+[97/444] Kano 0.045→0.047 (rated 0.05 vs Oman stored 0.10 rated 0.12) · 0.0111/move
+[98/444] Osun 0.097→0.108 (rated 0.15 vs Qatar stored 0.05 rated 0.06) · 0.011/move
+[99/444] Kaduna 0.075→0.083 (rated 0.10 vs Portugal stored 0.81 rated 0.80) · 0.011/move
+[100/444] Imo 0.071→0.068 (rated 0.06 vs Mayotte stored 0.53 rated 0.50) · 0.0109/move
+[101/444] Ondo 0.083→0.089 (rated 0.10 vs Slovakia stored 0.65 rated 0.65) · 0.0109/move
+[102/444] Kaduna 0.075→0.080 (rated 0.10 vs Bosnia and Herzegovina stored 0.50 rated 0.52) · 0.0108/move
+[103/444] Enugu 0.088→0.076 (rated 0.08 vs New Zealand stored 0.75 rated 0.84) · 0.0108/move
+[104/444] Bauchi 0.041→0.024 (rated 0.05 vs British Virgin Islands stored 0.42 rated 0.70) · 0.0109/move
+[105/444] Enugu 0.088→0.107 (rated 0.18 vs Botswana stored 0.64 rated 0.60) · 0.011/move
+[106/444] Osun 0.097→0.089 (rated 0.07 vs Denmark stored 0.85 rated 0.86) · 0.011/move
+[107/444] Rivers 0.086→0.083 (rated 0.17 vs Macau stored 0.50 rated 0.72) · 0.0109/move
+[108/444] Gombe 0.078→0.064 (rated 0.08 vs Cook Islands stored 0.45 rated 0.65) · 0.0109/move
+[109/444] Niger 0.084→0.082 (rated 0.07 vs Finland stored 0.87 rated 0.83) · 0.0108/move
+[110/444] Nasarawa 0.084→0.070 (rated 0.10 vs British Virgin Islands stored 0.42 rated 0.67) · 0.0109/move
+[111/444] Enugu 0.076→0.081 (rated 0.12 vs Côte d'Ivoire stored 0.33 rated 0.38) · 0.0108/move
+[112/444] Jigawa 0.053→0.046 (rated 0.05 vs Zambia stored 0.09 rated 0.15) · 0.0108/move
+[113/444] Gombe 0.078→0.092 (rated 0.15 vs Papua New Guinea stored 0.20 rated 0.18) · 0.0108/move
+[114/444] Zamfara 0.031→0.038 (rated 0.12 vs Armenia stored 0.33 rated 0.42) · 0.0108/move
+[115/444] Kano 0.047→0.053 (rated 0.07 vs Kosovo stored 0.64 rated 0.65) · 0.0107/move
+[116/444] Abia 0.062→0.074 (rated 0.10 vs Papua New Guinea stored 0.20 rated 0.15) · 0.0108/move
+[117/444] Lagos 0.082→0.102 (rated 0.20 vs Kazakhstan stored 0.52 rated 0.50) · 0.0108/move
+[118/444] Osun 0.089→0.090 (rated 0.10 vs Grenada stored 0.47 rated 0.53) · 0.0108/move
+[119/444] Ogun 0.080→0.096 (rated 0.19 vs Indonesia stored 0.15 rated 0.18) · 0.0108/move
+[120/444] Oyo 0.087→0.079 (rated 0.08 vs Zimbabwe stored 0.33 rated 0.38) · 0.0108/move
+[121/444] Imo 0.068→0.066 (rated 0.10 vs Saint Barthélemy stored 0.65 rated 0.78) · 0.0107/move
+[122/444] Anambra 0.039→0.050 (rated 0.12 vs France stored 0.67 rated 0.71) · 0.0107/move
+[123/444] Enugu 0.081→0.053 (rated 0.10 vs American Samoa stored 0.18 rated 0.62) · 0.0108/move
+[124/444] Ondo 0.089→0.093 (rated 0.12 vs France stored 0.67 rated 0.72) · 0.0108/move
+[125/444] Plateau 0.081→0.094 (rated 0.15 vs Latvia stored 0.60 rated 0.60) · 0.0108/move
+[126/444] Kwara 0.080→0.090 (rated 0.15 vs Finland stored 0.87 rated 0.90) · 0.0108/move
+[127/444] Bayelsa 0.086→0.083 (rated 0.12 vs Montserrat stored 0.44 rated 0.58) · 0.0107/move
+[128/444] Kaduna 0.080→0.087 (rated 0.11 vs Suriname stored 0.62 rated 0.62) · 0.0107/move
+[129/444] Katsina 0.060→0.073 (rated 0.16 vs Mauritania stored 0.08 rated 0.12) · 0.0107/move
+[130/444] Kebbi 0.077→0.090 (rated 0.12 vs Madagascar stored 0.38 rated 0.33) · 0.0107/move
+[131/444] Kebbi 0.077→0.067 (rated 0.05 vs Benin stored 0.14 rated 0.18) · 0.0107/move
+[132/444] Osun 0.090→0.101 (rated 0.13 vs Panama stored 0.56 rated 0.52) · 0.0107/move
+[133/444] Gombe 0.092→0.082 (rated 0.08 vs El Salvador stored 0.35 rated 0.42) · 0.0107/move
+[134/444] Kogi 0.077→0.080 (rated 0.10 vs Jamaica stored 0.18 rated 0.22) · 0.0107/move
+[135/444] Adamawa 0.088→0.089 (rated 0.14 vs Georgia stored 0.18 rated 0.30) · 0.0106/move
+[136/444] Kwara 0.090→0.096 (rated 0.12 vs United States stored 0.36 rated 0.38) · 0.0106/move
+[137/444] Imo 0.066→0.075 (rated 0.11 vs Tanzania stored 0.10 rated 0.09) · 0.0106/move
+[138/444] Akwa Ibom 0.087→0.095 (rated 0.15 vs Namibia stored 0.55 rated 0.60) · 0.0105/move
+[139/444] Oyo 0.079→0.090 (rated 0.13 vs Panama stored 0.56 rated 0.54) · 0.0105/move
+[140/444] Kaduna 0.087→0.080 (rated 0.09 vs Martinique stored 0.62 rated 0.75) · 0.0105/move
+[141/444] Sokoto 0.030→0.013 (rated 0.05 vs Anguilla stored 0.44 rated 0.75) · 0.0106/move
+[142/444] Jigawa 0.046→0.032 (rated 0.08 vs Turks and Caicos Islan stored 0.44 rated 0.72) · 0.0106/move
+[143/444] Osun 0.101→0.111 (rated 0.13 vs South Sudan stored 0.10 rated 0.07) · 0.0106/move
+[144/444] Ondo 0.093→0.102 (rated 0.10 vs Poland stored 0.52 rated 0.45) · 0.0106/move
+[145/444] Gombe 0.092→0.085 (rated 0.08 vs Italy stored 0.50 rated 0.53) · 0.0105/move
+[146/444] Niger 0.082→0.092 (rated 0.12 vs Albania stored 0.70 rated 0.68) · 0.0105/move
+[147/444] Oyo 0.090→0.104 (rated 0.12 vs Italy stored 0.50 rated 0.40) · 0.0106/move
+[148/444] Cross River 0.099→0.102 (rated 0.10 vs Belgium stored 0.83 rated 0.80) · 0.0105/move
+[149/444] Ebonyi 0.103→0.098 (rated 0.08 vs Australia stored 0.86 rated 0.85) · 0.0105/move
+[150/444] Lagos 0.102→0.108 (rated 0.20 vs United States stored 0.36 rated 0.48) · 0.0105/move
+[151/444] Jigawa 0.032→0.040 (rated 0.05 vs Uzbekistan stored 0.15 rated 0.13) · 0.0104/move
+[152/444] Bayelsa 0.083→0.078 (rated 0.07 vs Côte d'Ivoire stored 0.33 rated 0.33) · 0.0104/move
+[153/444] Lagos 0.102→0.099 (rated 0.14 vs Fiji stored 0.59 rated 0.73) · 0.0103/move
+[154/444] Enugu 0.053→0.060 (rated 0.10 vs Comoros stored 0.31 rated 0.33) · 0.0103/move
+[155/444] Jigawa 0.032→0.045 (rated 0.10 vs Malaysia stored 0.16 rated 0.14) · 0.0103/move
+[156/444] Niger 0.092→0.084 (rated 0.07 vs Chile stored 0.72 rated 0.75) · 0.0103/move
+[157/444] Niger 0.092→0.099 (rated 0.10 vs Moldova stored 0.54 rated 0.50) · 0.0103/move
+[157] ERROR 27671186B25346211366833/AZE: no scores in response (stop_reason=end_turn): 'I should reason through this carefully.'
+[159/444] Kano 0.053→0.048 (rated 0.05 vs Lesotho stored 0.40 rated 0.42) · 0.0102/move
+[160/444] Anambra 0.050→0.062 (rated 0.10 vs Micronesia (FSM) stored 0.61 rated 0.58) · 0.0102/move
+[161/444] Nasarawa 0.070→0.072 (rated 0.12 vs Serbia stored 0.40 rated 0.50) · 0.0102/move
+[162/444] Kano 0.053→0.055 (rated 0.10 vs Oman stored 0.10 rated 0.20) · 0.0101/move
+[163/444] Imo 0.075→0.086 (rated 0.13 vs Namibia stored 0.55 rated 0.53) · 0.0101/move
+[164/444] Benue 0.094→0.082 (rated 0.03 vs Papua New Guinea stored 0.20 rated 0.22) · 0.0101/move
+[165/444] Kaduna 0.080→0.077 (rated 0.05 vs Panama stored 0.56 rated 0.52) · 0.0101/move
+[166/444] Edo 0.083→0.083 (rated 0.10 vs Egypt stored 0.13 rated 0.20) · 0.01/move
+[167/444] Oyo 0.104→0.115 (rated 0.20 vs Montenegro stored 0.65 rated 0.70) · 0.01/move
+[168/444] Yobe 0.056→0.064 (rated 0.09 vs Wallis and Futuna stored 0.59 rated 0.58) · 0.01/move
+[169/444] Borno 0.068→0.071 (rated 0.12 vs Benin stored 0.14 rated 0.22) · 0.01/move
+[170/444] Osun 0.111→0.099 (rated 0.10 vs Togo stored 0.31 rated 0.42) · 0.01/move
+[171/444] Zamfara 0.038→0.046 (rated 0.10 vs Samoa stored 0.72 rated 0.75) · 0.01/move
+[172/444] Adamawa 0.089→0.105 (rated 0.17 vs South Africa stored 0.69 rated 0.63) · 0.01/move
+[173/444] Nasarawa 0.072→0.078 (rated 0.10 vs Malta stored 0.90 rated 0.90) · 0.01/move
+[174/444] Ogun 0.096→0.107 (rated 0.24 vs Central African Republ stored 0.20 rated 0.32) · 0.01/move
+[175/444] Delta 0.074→0.091 (rated 0.14 vs Angola stored 0.62 rated 0.52) · 0.01/move
+[176/444] Sokoto 0.013→0.000 (rated 0.07 vs Northern Mariana Islan stored 0.30 rated 0.72) · 0.0101/move
+[177/444] Oyo 0.115→0.105 (rated 0.10 vs Martinique stored 0.62 rated 0.70) · 0.0101/move
+[178/444] Kogi 0.080→0.094 (rated 0.18 vs Italy stored 0.50 rated 0.50) · 0.0101/move
+[179/444] Rivers 0.083→0.089 (rated 0.11 vs United Arab Emirates stored 0.11 rated 0.12) · 0.0101/move
+[180/444] Osun 0.099→0.099 (rated 0.10 vs Palau stored 0.68 rated 0.70) · 0.01/move
+[181/444] Benue 0.082→0.084 (rated 0.12 vs Barbados stored 0.54 rated 0.62) · 0.01/move
+[182/444] Osun 0.099→0.092 (rated 0.15 vs British Virgin Islands stored 0.42 rated 0.65) · 0.0099/move
+[183/444] Cross River 0.102→0.104 (rated 0.15 vs Italy stored 0.50 rated 0.60) · 0.0099/move
+[184/444] Kano 0.055→0.066 (rated 0.10 vs Cyprus stored 0.79 rated 0.75) · 0.0099/move
+[185/444] Enugu 0.060→0.062 (rated 0.08 vs Caribbean Netherlands  stored 0.69 rated 0.74) · 0.0099/move
+[186/444] Kogi 0.094→0.080 (rated 0.10 vs Gibraltar stored 0.58 rated 0.84) · 0.0099/move
+[187/444] Osun 0.092→0.085 (rated 0.08 vs Sweden stored 0.85 rated 0.89) · 0.0099/move
+[188/444] Osun 0.092→0.100 (rated 0.14 vs Sudan stored 0.05 rated 0.05) · 0.0099/move
+[189/444] Katsina 0.073→0.069 (rated 0.05 vs Japan stored 0.82 rated 0.80) · 0.0098/move
+[190/444] Osun 0.099→0.104 (rated 0.12 vs Samoa stored 0.72 rated 0.72) · 0.0098/move
+[191/444] Ekiti 0.099→0.098 (rated 0.10 vs South Korea stored 0.71 rated 0.74) · 0.0097/move
+[192/444] Ebonyi 0.098→0.095 (rated 0.08 vs Thailand stored 0.86 rated 0.83) · 0.0097/move
+[193/444] Cross River 0.104→0.107 (rated 0.12 vs Italy stored 0.50 rated 0.52) · 0.0097/move
+[194/444] Kaduna 0.077→0.083 (rated 0.15 vs Tuvalu stored 0.48 rated 0.55) · 0.0097/move
+[195/444] Kano 0.066→0.067 (rated 0.06 vs Mayotte stored 0.53 rated 0.45) · 0.0096/move
+[196/444] Taraba 0.097→0.105 (rated 0.13 vs Gabon stored 0.54 rated 0.52) · 0.0096/move
+[197/444] Oyo 0.105→0.099 (rated 0.10 vs Malta stored 0.90 rated 0.93) · 0.0096/move
+[198/444] Gombe 0.085→0.084 (rated 0.10 vs Venezuela stored 0.41 rated 0.50) · 0.0095/move
+[199/444] Zamfara 0.046→0.043 (rated 0.03 vs North Korea stored 0.04 rated 0.02) · 0.0095/move
+[200/444] Taraba 0.097→0.101 (rated 0.13 vs Hungary stored 0.58 rated 0.62) · 0.0095/move
+[201/444] Zamfara 0.046→0.046 (rated 0.05 vs Maldives stored 0.24 rated 0.30) · 0.0094/move
+[202/444] Oyo 0.105→0.109 (rated 0.12 vs Uruguay stored 0.85 rated 0.85) · 0.0094/move
+[203/444] Adamawa 0.105→0.111 (rated 0.13 vs Bhutan stored 0.67 rated 0.67) · 0.0094/move
+[204/444] Oyo 0.105→0.107 (rated 0.17 vs French Guiana stored 0.61 rated 0.73) · 0.0094/move
+[205/444] Edo 0.083→0.077 (rated 0.08 vs Peru stored 0.36 rated 0.42) · 0.0093/move
+[206/444] Akwa Ibom 0.095→0.089 (rated 0.18 vs Bermuda stored 0.52 rated 0.80) · 0.0093/move
+[207/444] Delta 0.091→0.092 (rated 0.15 vs Bulgaria stored 0.53 rated 0.65) · 0.0093/move
+[208/444] Zamfara 0.046→0.054 (rated 0.09 vs Turkmenistan stored 0.08 rated 0.07) · 0.0093/move
+[209/444] Imo 0.086→0.093 (rated 0.10 vs Switzerland stored 0.85 rated 0.82) · 0.0093/move
+[210/444] Bayelsa 0.078→0.069 (rated 0.07 vs Fiji stored 0.59 rated 0.68) · 0.0093/move
+[211/444] Bauchi 0.024→0.032 (rated 0.07 vs Syria stored 0.04 rated 0.02) · 0.0093/move
+[212/444] Lagos 0.099→0.109 (rated 0.17 vs Niger stored 0.10 rated 0.10) · 0.0093/move
+[213/444] Edo 0.077→0.085 (rated 0.10 vs Niger stored 0.10 rated 0.05) · 0.0093/move
+[214/444] Adamawa 0.111→0.116 (rated 0.12 vs Switzerland stored 0.85 rated 0.83) · 0.0092/move
+[215/444] Enugu 0.062→0.071 (rated 0.13 vs San Marino stored 0.84 rated 0.85) · 0.0092/move
+[216/444] Adamawa 0.111→0.103 (rated 0.13 vs Bermuda stored 0.52 rated 0.73) · 0.0092/move
+[217/444] Ebonyi 0.095→0.100 (rated 0.12 vs Chile stored 0.72 rated 0.72) · 0.0092/move
+[218/444] Nasarawa 0.078→0.099 (rated 0.20 vs Ukraine stored 0.59 rated 0.50) · 0.0093/move
+[219/444] Edo 0.077→0.072 (rated 0.07 vs Switzerland stored 0.85 rated 0.87) · 0.0093/move
+[220/444] Borno 0.071→0.071 (rated 0.12 vs Tajikistan stored 0.17 rated 0.30) · 0.0092/move
+[221/444] Kwara 0.096→0.089 (rated 0.08 vs Denmark stored 0.85 rated 0.90) · 0.0092/move
+[222/444] Benue 0.084→0.079 (rated 0.05 vs Cambodia stored 0.57 rated 0.55) · 0.0092/move
+[223/444] Osun 0.104→0.112 (rated 0.17 vs Andorra stored 0.88 rated 0.90) · 0.0092/move
+[224/444] Katsina 0.069→0.075 (rated 0.12 vs North Korea stored 0.04 rated 0.06) · 0.0092/move
+[225/444] Plateau 0.094→0.092 (rated 0.06 vs Algeria stored 0.21 rated 0.13) · 0.0091/move
+[226/444] Kwara 0.096→0.101 (rated 0.13 vs Peru stored 0.36 rated 0.38) · 0.0091/move
+[225] ERROR 27671186B91150779192485/HND: no scores in response (stop_reason=end_turn): 'To evaluate the travel risk for transgender individuals in both scenarios, we must synthesize the probability of being "outed" with the severity of the consequences if they are. The prompt\'s guideline'
+[228/444] Bauchi 0.032→0.039 (rated 0.07 vs Yemen stored 0.03 rated 0.03) · 0.0091/move
+[229/444] Jigawa 0.045→0.039 (rated 0.10 vs Saint Barthélemy stored 0.65 rated 0.89) · 0.0091/move
+[230/444] Zamfara 0.054→0.060 (rated 0.07 vs Ethiopia stored 0.25 rated 0.22) · 0.009/move
+[231/444] Benue 0.079→0.084 (rated 0.08 vs Guatemala stored 0.31 rated 0.24) · 0.009/move
+[232/444] Benue 0.079→0.079 (rated 0.08 vs Lithuania stored 0.58 rated 0.60) · 0.009/move
+[233/444] Imo 0.093→0.087 (rated 0.08 vs Djibouti stored 0.29 rated 0.32) · 0.009/move
+[234/444] Ondo 0.102→0.093 (rated 0.08 vs Palestinian Territorie stored 0.13 rated 0.20) · 0.009/move
+[235/444] Gombe 0.084→0.078 (rated 0.08 vs Mexico stored 0.55 rated 0.60) · 0.009/move
+[236/444] Lagos 0.109→0.113 (rated 0.17 vs Caribbean Netherlands  stored 0.69 rated 0.76) · 0.0089/move
+[237/444] Ogun 0.107→0.099 (rated 0.10 vs Ukraine stored 0.59 rated 0.67) · 0.0089/move
+[238/444] Akwa Ibom 0.089→0.098 (rated 0.10 vs Kiribati stored 0.44 rated 0.35) · 0.0089/move
+[233] ERROR 27671186B25346211366833/OMN: no scores in response (stop_reason=max_tokens): 'To determine the scores for Dossier A (Country) and Dossier B (Region), we must apply the rating rules, focusing specifically on the risk to a **transgender visitor** who is outed or discovered, integ'
+[240/444] Anambra 0.062→0.064 (rated 0.15 vs Cook Islands stored 0.45 rated 0.60) · 0.0089/move
+[241/444] Benue 0.079→0.054 (rated 0.10 vs American Samoa stored 0.18 rated 0.70) · 0.0089/move
+[242/444] Ondo 0.102→0.103 (rated 0.12 vs Indonesia stored 0.15 rated 0.22) · 0.0089/move
+[243/444] Ekiti 0.098→0.092 (rated 0.05 vs Thailand stored 0.86 rated 0.84) · 0.0089/move
+[244/444] Ebonyi 0.100→0.095 (rated 0.08 vs Colombia stored 0.52 rated 0.52) · 0.0089/move
+[245/444] Kaduna 0.083→0.076 (rated 0.05 vs Solomon Islands stored 0.38 rated 0.42) · 0.0089/move
+[246/444] Ebonyi 0.100→0.090 (rated 0.04 vs Turkey stored 0.15 rated 0.18) · 0.0089/move
+[247/444] Oyo 0.107→0.111 (rated 0.15 vs São Tomé and Príncipe stored 0.65 rated 0.68) · 0.0088/move
+[248/444] Yobe 0.064→0.069 (rated 0.18 vs Lesotho stored 0.40 rated 0.55) · 0.0088/move
+[249/444] Plateau 0.092→0.093 (rated 0.12 vs Morocco stored 0.18 rated 0.25) · 0.0088/move
+[250/444] Bayelsa 0.069→0.072 (rated 0.08 vs Syria stored 0.04 rated 0.05) · 0.0088/move
+[251/444] Oyo 0.107→0.106 (rated 0.12 vs Panama stored 0.56 rated 0.64) · 0.0087/move
+[252/444] Kebbi 0.067→0.069 (rated 0.07 vs Switzerland stored 0.85 rated 0.87) · 0.0087/move
+[253/444] Oyo 0.106→0.096 (rated 0.08 vs French Guiana stored 0.61 rated 0.72) · 0.0087/move
+[254/444] Delta 0.092→0.093 (rated 0.12 vs Kosovo stored 0.64 rated 0.73) · 0.0087/move
+[255/444] Benue 0.054→0.059 (rated 0.08 vs Lithuania stored 0.58 rated 0.57) · 0.0087/move
+[256/444] Ekiti 0.092→0.106 (rated 0.13 vs Angola stored 0.62 rated 0.48) · 0.0087/move
+[257/444] Borno 0.071→0.073 (rated 0.12 vs Israel stored 0.49 rated 0.58) · 0.0087/move
+[258/444] Kaduna 0.076→0.082 (rated 0.08 vs Angola stored 0.62 rated 0.55) · 0.0087/move
+[259/444] Borno 0.071→0.077 (rated 0.10 vs Myanmar stored 0.06 rated 0.04) · 0.0087/move
+[260/444] Yobe 0.069→0.073 (rated 0.11 vs Laos stored 0.64 rated 0.68) · 0.0086/move
+[261/444] Enugu 0.071→0.070 (rated 0.07 vs Tonga stored 0.51 rated 0.50) · 0.0086/move
+[262/444] Kwara 0.101→0.089 (rated 0.05 vs Turkey stored 0.15 rated 0.25) · 0.0086/move
+[263/444] Kogi 0.080→0.076 (rated 0.06 vs Canada stored 0.86 rated 0.85) · 0.0086/move
+[264/444] Ogun 0.099→0.102 (rated 0.13 vs Paraguay stored 0.42 rated 0.45) · 0.0086/move
+[265/444] Kano 0.067→0.064 (rated 0.05 vs North Korea stored 0.04 rated 0.03) · 0.0086/move
+[266/444] Edo 0.072→0.089 (rated 0.13 vs Venezuela stored 0.41 rated 0.23) · 0.0086/move
+[267/444] Abia 0.074→0.078 (rated 0.11 vs Barbados stored 0.54 rated 0.57) · 0.0086/move
+[268/444] Kano 0.067→0.066 (rated 0.06 vs Turkey stored 0.15 rated 0.11) · 0.0085/move
+[269/444] Nasarawa 0.099→0.091 (rated 0.08 vs Montenegro stored 0.65 rated 0.72) · 0.0085/move
+[270/444] Edo 0.072→0.084 (rated 0.15 vs Hungary stored 0.58 rated 0.52) · 0.0086/move
+[271/444] Nasarawa 0.099→0.092 (rated 0.07 vs Bahrain stored 0.26 rated 0.30) · 0.0086/move
+[272/444] Enugu 0.070→0.077 (rated 0.15 vs Caribbean Netherlands  stored 0.69 rated 0.74) · 0.0085/move
+[273/444] Zamfara 0.060→0.060 (rated 0.13 vs Honduras stored 0.15 rated 0.30) · 0.0085/move
+[274/444] Cross River 0.107→0.117 (rated 0.18 vs India stored 0.43 rated 0.40) · 0.0085/move
+[275/444] Sokoto 0.000→0.006 (rated 0.05 vs Malta stored 0.90 rated 0.91) · 0.0085/move
+[276/444] Adamawa 0.103→0.116 (rated 0.20 vs Italy stored 0.50 rated 0.45) · 0.0085/move
+[277/444] Enugu 0.077→0.086 (rated 0.20 vs Kiribati stored 0.44 rated 0.50) · 0.0085/move
+[278/444] Cross River 0.107→0.114 (rated 0.20 vs Sudan stored 0.05 rated 0.10) · 0.0085/move
+[279/444] Adamawa 0.116→0.119 (rated 0.15 vs Andorra stored 0.88 rated 0.90) · 0.0085/move
+[280/444] Jigawa 0.039→0.043 (rated 0.08 vs Czechia stored 0.67 rated 0.70) · 0.0085/move
+[281/444] Enugu 0.077→0.086 (rated 0.12 vs Antigua and Barbuda stored 0.60 rated 0.52) · 0.0085/move
+[282/444] Bayelsa 0.072→0.076 (rated 0.08 vs Turkey stored 0.15 rated 0.13) · 0.0085/move
+[283/444] Bauchi 0.039→0.036 (rated 0.03 vs Spain stored 0.88 rated 0.88) · 0.0085/move
+[275] ERROR 27671186B90305463766462/MYT: no scores in response (stop_reason=max_tokens): 'Let me work through each dossier carefully against the scale and rating rules.\n\n## DOSSIER A ANALYSIS\n\nThe framework is extremely severe. Let me check the key axes:\n\n**A (Border/Security):** Same-sex '
+[285/444] Ogun 0.102→0.101 (rated 0.10 vs Tajikistan stored 0.17 rated 0.15) · 0.0084/move
+[286/444] Ebonyi 0.090→0.094 (rated 0.15 vs Bahrain stored 0.26 rated 0.33) · 0.0084/move
+[287/444] Oyo 0.096→0.100 (rated 0.12 vs Uganda stored 0.06 rated 0.06) · 0.0084/move
+[288/444] Plateau 0.093→0.084 (rated 0.08 vs Madagascar stored 0.38 rated 0.50) · 0.0084/move
+[289/444] Imo 0.087→0.090 (rated 0.10 vs Iceland stored 0.91 rated 0.92) · 0.0084/move
+[290/444] Plateau 0.093→0.100 (rated 0.15 vs Austria stored 0.74 rated 0.75) · 0.0083/move
+[291/444] Plateau 0.093→0.087 (rated 0.08 vs Ethiopia stored 0.25 rated 0.32) · 0.0083/move
+[292/444] Osun 0.112→0.114 (rated 0.12 vs Belgium stored 0.83 rated 0.83) · 0.0083/move
+[293/444] Anambra 0.064→0.069 (rated 0.10 vs Jordan stored 0.30 rated 0.30) · 0.0083/move
+[294/444] Yobe 0.073→0.076 (rated 0.05 vs Brazil stored 0.71 rated 0.55) · 0.0083/move
+[295/444] Sokoto 0.006→0.011 (rated 0.08 vs Guinea stored 0.17 rated 0.23) · 0.0083/move
+[296/444] Imo 0.087→0.088 (rated 0.10 vs Sri Lanka stored 0.25 rated 0.30) · 0.0083/move
+[297/444] Oyo 0.100→0.095 (rated 0.08 vs Kosovo stored 0.64 rated 0.68) · 0.0082/move
+[298/444] Gombe 0.078→0.082 (rated 0.08 vs Fiji stored 0.59 rated 0.55) · 0.0082/move
+[299/444] Imo 0.090→0.092 (rated 0.10 vs Peru stored 0.36 rated 0.38) · 0.0082/move
+[300/444] Plateau 0.087→0.087 (rated 0.11 vs Benin stored 0.14 rated 0.22) · 0.0082/move
+[301/444] Niger 0.099→0.094 (rated 0.13 vs Macau stored 0.50 rated 0.70) · 0.0082/move
+[302/444] Katsina 0.075→0.090 (rated 0.26 vs Honduras stored 0.15 rated 0.18) · 0.0082/move
+[303/444] Kano 0.066→0.063 (rated 0.06 vs Dominica stored 0.59 rated 0.60) · 0.0082/move
+[304/444] Yobe 0.076→0.081 (rated 0.12 vs Comoros stored 0.31 rated 0.33) · 0.0082/move
+[305/444] Ondo 0.103→0.096 (rated 0.10 vs Lesotho stored 0.40 rated 0.50) · 0.0082/move
+[306/444] Niger 0.099→0.097 (rated 0.10 vs Palau stored 0.68 rated 0.75) · 0.0081/move
+[307/444] Benue 0.059→0.061 (rated 0.07 vs Kazakhstan stored 0.52 rated 0.55) · 0.0081/move
+[308/444] Adamawa 0.119→0.120 (rated 0.12 vs Afghanistan stored 0.02 rated 0.03) · 0.0081/move
+[309/444] Borno 0.077→0.083 (rated 0.12 vs Singapore stored 0.73 rated 0.72) · 0.0081/move
+[310/444] Kogi 0.076→0.082 (rated 0.15 vs Wallis and Futuna stored 0.59 rated 0.62) · 0.0081/move
+[311/444] Bayelsa 0.076→0.077 (rated 0.10 vs Réunion stored 0.63 rated 0.68) · 0.0081/move
+[312/444] Rivers 0.089→0.083 (rated 0.08 vs New Zealand stored 0.75 rated 0.82) · 0.0081/move
+[313/444] Delta 0.093→0.098 (rated 0.12 vs Armenia stored 0.33 rated 0.30) · 0.008/move
+[314/444] Edo 0.084→0.083 (rated 0.09 vs Bolivia stored 0.72 rated 0.80) · 0.008/move
+[315/444] Jigawa 0.043→0.045 (rated 0.09 vs Zimbabwe stored 0.33 rated 0.40) · 0.008/move
+[316/444] Borno 0.083→0.081 (rated 0.05 vs Thailand stored 0.86 rated 0.80) · 0.008/move
+[317/444] Bauchi 0.036→0.037 (rated 0.05 vs Austria stored 0.74 rated 0.78) · 0.008/move
+[318/444] Ogun 0.101→0.101 (rated 0.12 vs French Guiana stored 0.61 rated 0.68) · 0.0079/move
+[319/444] Abia 0.078→0.082 (rated 0.12 vs Saudi Arabia stored 0.04 rated 0.05) · 0.0079/move
+[320/444] Imo 0.092→0.094 (rated 0.12 vs Iraq stored 0.04 rated 0.08) · 0.0079/move
+[321/444] Nasarawa 0.092→0.087 (rated 0.06 vs Pakistan stored 0.20 rated 0.22) · 0.0079/move
+[322/444] Adamawa 0.120→0.122 (rated 0.12 vs Ireland stored 0.87 rated 0.83) · 0.0079/move
+[323/444] Yobe 0.081→0.085 (rated 0.08 vs Bulgaria stored 0.53 rated 0.42) · 0.0079/move
+[324/444] Zamfara 0.060→0.058 (rated 0.12 vs Western Sahara stored 0.11 rated 0.30) · 0.0079/move
+[325/444] Benue 0.061→0.066 (rated 0.13 vs Germany stored 0.71 rated 0.73) · 0.0078/move
+[326/444] Ondo 0.096→0.099 (rated 0.12 vs Luxembourg stored 0.90 rated 0.90) · 0.0078/move
+[327/444] Kwara 0.089→0.095 (rated 0.10 vs Moldova stored 0.54 rated 0.45) · 0.0078/move
+[328/444] Oyo 0.095→0.093 (rated 0.10 vs Montenegro stored 0.65 rated 0.75) · 0.0078/move
+[329/444] Sokoto 0.011→0.014 (rated 0.05 vs Belarus stored 0.08 rated 0.11) · 0.0078/move
+[330/444] Adamawa 0.122→0.119 (rated 0.20 vs British Virgin Islands stored 0.42 rated 0.65) · 0.0078/move
+[331/444] Katsina 0.090→0.092 (rated 0.12 vs Grenada stored 0.47 rated 0.50) · 0.0078/move
+[332/444] Bayelsa 0.077→0.078 (rated 0.10 vs Réunion stored 0.63 rated 0.70) · 0.0077/move
+[333/444] Zamfara 0.060→0.066 (rated 0.13 vs Russia stored 0.12 rated 0.14) · 0.0077/move
+[334/444] Kaduna 0.082→0.090 (rated 0.15 vs Laos stored 0.64 rated 0.60) · 0.0077/move
+[330] ERROR 27671186B90305463766462/TJK: no scores in response (stop_reason=max_tokens): 'I\'ll start by carefully parsing both dossiers and applying the rating rules.\n\n## Dossier A — the "bundle" (region)\n\n**What\'s the total framework a trans visitor stands under?**\n- Federal same-sex-cond'
+[336/444] Kebbi 0.069→0.070 (rated 0.07 vs Bahrain stored 0.26 rated 0.25) · 0.0077/move
+[337/444] Ondo 0.099→0.101 (rated 0.14 vs Nicaragua stored 0.24 rated 0.30) · 0.0077/move
+[338/444] Gombe 0.082→0.087 (rated 0.13 vs France stored 0.67 rated 0.67) · 0.0077/move
+[339/444] Sokoto 0.014→0.020 (rated 0.08 vs Syria stored 0.04 rated 0.05) · 0.0077/move
+[340/444] Ondo 0.099→0.102 (rated 0.18 vs Malaysia stored 0.16 rated 0.25) · 0.0076/move
+[341/444] Borno 0.081→0.085 (rated 0.12 vs Namibia stored 0.55 rated 0.56) · 0.0076/move
+[342/444] Jigawa 0.045→0.036 (rated 0.05 vs Anguilla stored 0.44 rated 0.75) · 0.0076/move
+[343/444] Ekiti 0.106→0.101 (rated 0.08 vs Comoros stored 0.31 rated 0.35) · 0.0076/move
+[344/444] Ogun 0.101→0.100 (rated 0.10 vs North Korea stored 0.04 rated 0.03) · 0.0076/move
+[345/444] Akwa Ibom 0.098→0.102 (rated 0.10 vs Andorra stored 0.88 rated 0.82) · 0.0076/move
+[346/444] Kwara 0.095→0.098 (rated 0.10 vs Bulgaria stored 0.53 rated 0.50) · 0.0076/move
+[347/444] Borno 0.081→0.085 (rated 0.20 vs Kenya stored 0.31 rated 0.44) · 0.0076/move
+[348/444] Niger 0.097→0.107 (rated 0.18 vs Peru stored 0.36 rated 0.29) · 0.0076/move
+[349/444] Adamawa 0.119→0.111 (rated 0.08 vs Haiti stored 0.14 rated 0.25) · 0.0076/move
+[350/444] Ogun 0.101→0.105 (rated 0.12 vs Uruguay stored 0.85 rated 0.83) · 0.0076/move
+[351/444] Oyo 0.093→0.097 (rated 0.10 vs Kuwait stored 0.37 rated 0.30) · 0.0076/move
+[352/444] Cross River 0.114→0.110 (rated 0.09 vs Nauru stored 0.62 rated 0.65) · 0.0076/move
+[353/444] Adamawa 0.119→0.129 (rated 0.22 vs United Kingdom stored 0.48 rated 0.42) · 0.0076/move
+[354/444] Nasarawa 0.087→0.093 (rated 0.18 vs Iraq stored 0.04 rated 0.05) · 0.0076/move
+[355/444] Imo 0.094→0.100 (rated 0.15 vs Ecuador stored 0.33 rated 0.32) · 0.0076/move
+[356/444] Imo 0.094→0.086 (rated 0.07 vs Georgia stored 0.18 rated 0.32) · 0.0076/move
+[357/444] Abia 0.082→0.077 (rated 0.08 vs Cook Islands stored 0.45 rated 0.55) · 0.0076/move
+[358/444] Imo 0.094→0.091 (rated 0.08 vs Saint Lucia stored 0.60 rated 0.62) · 0.0075/move
+[359/444] Akwa Ibom 0.102→0.106 (rated 0.20 vs Peru stored 0.36 rated 0.45) · 0.0075/move
+[360/444] Imo 0.094→0.098 (rated 0.12 vs Switzerland stored 0.85 rated 0.82) · 0.0075/move
+[361/444] Delta 0.098→0.097 (rated 0.08 vs Finland stored 0.87 rated 0.82) · 0.0075/move
+[362/444] Ondo 0.102→0.100 (rated 0.10 vs Dominican Republic stored 0.46 rated 0.48) · 0.0075/move
+[363/444] Rivers 0.083→0.085 (rated 0.15 vs Bangladesh stored 0.12 rated 0.22) · 0.0075/move
+[364/444] Oyo 0.097→0.099 (rated 0.12 vs United Kingdom stored 0.48 rated 0.52) · 0.0075/move
+[365/444] Niger 0.107→0.109 (rated 0.14 vs Azerbaijan stored 0.14 rated 0.16) · 0.0074/move
+[366/444] Edo 0.083→0.084 (rated 0.15 vs Guadeloupe stored 0.62 rated 0.75) · 0.0074/move
+[367/444] Bauchi 0.037→0.036 (rated 0.07 vs Serbia stored 0.40 rated 0.52) · 0.0074/move
+[368/444] Niger 0.107→0.112 (rated 0.18 vs Haiti stored 0.14 rated 0.15) · 0.0074/move
+[369/444] Edo 0.083→0.085 (rated 0.10 vs Afghanistan stored 0.02 rated 0.04) · 0.0074/move
+[370/444] Ebonyi 0.094→0.097 (rated 0.12 vs Syria stored 0.04 rated 0.03) · 0.0074/move
+[371/444] Borno 0.085→0.086 (rated 0.12 vs Palau stored 0.68 rated 0.75) · 0.0074/move
+[372/444] Gombe 0.087→0.074 (rated 0.05 vs Saint Helena, Ascensio stored 0.54 rated 0.82) · 0.0074/move
+[373/444] Lagos 0.113→0.115 (rated 0.15 vs Dominican Republic stored 0.46 rated 0.52) · 0.0074/move
+[374/444] Rivers 0.085→0.088 (rated 0.10 vs Australia stored 0.86 rated 0.83) · 0.0073/move
+[375/444] Ebonyi 0.094→0.090 (rated 0.07 vs India stored 0.43 rated 0.47) · 0.0073/move
+[376/444] Bayelsa 0.078→0.076 (rated 0.07 vs Maldives stored 0.24 rated 0.23) · 0.0073/move
+[377/444] Bayelsa 0.078→0.086 (rated 0.19 vs Australia stored 0.86 rated 0.82) · 0.0073/move
+[378/444] Jigawa 0.036→0.039 (rated 0.10 vs Réunion stored 0.63 rated 0.68) · 0.0073/move
+[379/444] Anambra 0.069→0.066 (rated 0.06 vs Western Sahara stored 0.11 rated 0.12) · 0.0073/move
+[380/444] Kwara 0.098→0.105 (rated 0.25 vs Solomon Islands stored 0.38 rated 0.45) · 0.0073/move
+[381/444] Ebonyi 0.090→0.086 (rated 0.06 vs Finland stored 0.87 rated 0.89) · 0.0073/move
+[382/444] Kebbi 0.070→0.074 (rated 0.10 vs Denmark stored 0.85 rated 0.81) · 0.0073/move
+[383/444] Abuja Federal Capital Territory 0.090→0.094 (rated 0.18 vs Cook Islands stored 0.45 rated 0.48) · 0.0073/move
+[384/444] Benue 0.066→0.072 (rated 0.07 vs Colombia stored 0.52 rated 0.38) · 0.0073/move
+[385/444] Benue 0.066→0.067 (rated 0.10 vs Poland stored 0.52 rated 0.60) · 0.0073/move
+[386/444] Kwara 0.098→0.100 (rated 0.10 vs Cabo Verde stored 0.73 rated 0.74) · 0.0072/move
+[387/444] Gombe 0.074→0.079 (rated 0.15 vs Paraguay stored 0.42 rated 0.42) · 0.0072/move
+[388/444] Imo 0.098→0.099 (rated 0.10 vs Cambodia stored 0.57 rated 0.58) · 0.0072/move
+[389/444] Katsina 0.092→0.098 (rated 0.22 vs Tunisia stored 0.12 rated 0.18) · 0.0072/move
+[390/444] Sokoto 0.020→0.025 (rated 0.09 vs Syria stored 0.04 rated 0.03) · 0.0072/move
+[391/444] Kebbi 0.074→0.069 (rated 0.08 vs Tuvalu stored 0.48 rated 0.73) · 0.0072/move
+[392/444] Enugu 0.086→0.091 (rated 0.17 vs Iran stored 0.07 rated 0.08) · 0.0072/move
+[393/444] Kogi 0.082→0.082 (rated 0.10 vs Poland stored 0.52 rated 0.62) · 0.0072/move
+[394/444] Enugu 0.086→0.087 (rated 0.12 vs China stored 0.40 rated 0.48) · 0.0072/move
+[395/444] Imo 0.098→0.100 (rated 0.14 vs New Caledonia stored 0.65 rated 0.70) · 0.0071/move
+[396/444] Jigawa 0.039→0.045 (rated 0.12 vs South Korea stored 0.71 rated 0.68) · 0.0071/move
+[397/444] Cross River 0.110→0.112 (rated 0.14 vs Haiti stored 0.14 rated 0.17) · 0.0071/move
+[398/444] Ebonyi 0.086→0.083 (rated 0.08 vs Curaçao stored 0.73 rated 0.80) · 0.0071/move
+[399/444] Sokoto 0.025→0.026 (rated 0.04 vs Benin stored 0.14 rated 0.15) · 0.0071/move
+[400/444] Imo 0.099→0.098 (rated 0.08 vs Germany stored 0.71 rated 0.68) · 0.0071/move
+[401/444] Abuja Federal Capital Territory 0.094→0.096 (rated 0.11 vs Bangladesh stored 0.12 rated 0.14) · 0.0071/move
+[402/444] Jigawa 0.039→0.041 (rated 0.05 vs Guatemala stored 0.31 rated 0.30) · 0.0071/move
+[403/444] Bayelsa 0.086→0.085 (rated 0.10 vs Nauru stored 0.62 rated 0.73) · 0.0071/move
+[404/444] Ogun 0.105→0.111 (rated 0.15 vs Albania stored 0.70 rated 0.60) · 0.0071/move
+[405/444] Niger 0.112→0.113 (rated 0.14 vs Brazil stored 0.71 rated 0.74) · 0.007/move
+[406/444] Abia 0.077→0.080 (rated 0.12 vs Costa Rica stored 0.86 rated 0.84) · 0.007/move
+[407/444] Adamawa 0.129→0.131 (rated 0.20 vs Wallis and Futuna stored 0.59 rated 0.68) · 0.007/move
+[408/444] Ekiti 0.101→0.103 (rated 0.17 vs Suriname stored 0.62 rated 0.68) · 0.007/move
+[409/444] Kwara 0.100→0.097 (rated 0.08 vs Azerbaijan stored 0.14 rated 0.15) · 0.007/move
+[410/444] Osun 0.114→0.117 (rated 0.12 vs Micronesia (FSM) stored 0.61 rated 0.55) · 0.007/move
+[411/444] Kaduna 0.090→0.092 (rated 0.10 vs Tanzania stored 0.10 rated 0.08) · 0.007/move
+[412/444] Kaduna 0.090→0.092 (rated 0.10 vs Italy stored 0.50 rated 0.48) · 0.007/move
+[413/444] Borno 0.086→0.083 (rated 0.14 vs Guernsey stored 0.60 rated 0.84) · 0.0069/move
+[414/444] Kogi 0.082→0.079 (rated 0.07 vs Palau stored 0.68 rated 0.72) · 0.0069/move
+[415/444] Ekiti 0.103→0.101 (rated 0.07 vs San Marino stored 0.84 rated 0.85) · 0.0069/move
+[416/444] Ondo 0.100→0.092 (rated 0.10 vs Anguilla stored 0.44 rated 0.75) · 0.0069/move
+[417/444] Borno 0.086→0.089 (rated 0.10 vs Mexico stored 0.55 rated 0.50) · 0.0069/move
+[418/444] Jigawa 0.041→0.044 (rated 0.07 vs Pakistan stored 0.20 rated 0.18) · 0.0069/move
+[419/444] Cross River 0.112→0.115 (rated 0.18 vs Ireland stored 0.87 rated 0.90) · 0.0069/move
+[420/444] Kebbi 0.069→0.065 (rated 0.06 vs Republic of the Congo stored 0.30 rated 0.40) · 0.0069/move
+[421/444] Abia 0.080→0.078 (rated 0.08 vs Kenya stored 0.31 rated 0.38) · 0.0069/move
+[422/444] Oyo 0.099→0.098 (rated 0.10 vs Timor-Leste stored 0.75 rated 0.82) · 0.0069/move
+[423/444] Kaduna 0.090→0.090 (rated 0.12 vs Russia stored 0.12 rated 0.22) · 0.0068/move
+[424/444] Lagos 0.115→0.116 (rated 0.12 vs Guadeloupe stored 0.62 rated 0.62) · 0.0068/move
+[425/444] Oyo 0.099→0.103 (rated 0.20 vs China stored 0.40 rated 0.42) · 0.0068/move
+[426/444] Osun 0.117→0.116 (rated 0.10 vs Uruguay stored 0.85 rated 0.82) · 0.0068/move
+[427/444] Ondo 0.092→0.090 (rated 0.12 vs Macau stored 0.50 rated 0.70) · 0.0068/move
+[428/444] Sokoto 0.026→0.028 (rated 0.10 vs Philippines stored 0.56 rated 0.62) · 0.0068/move
+[429/444] Kebbi 0.065→0.069 (rated 0.07 vs Kiribati stored 0.44 rated 0.33) · 0.0068/move
+[430/444] Oyo 0.098→0.100 (rated 0.10 vs Estonia stored 0.75 rated 0.71) · 0.0068/move
+[431/444] Abuja Federal Capital Territory 0.096→0.096 (rated 0.08 vs Taiwan stored 0.78 rated 0.72) · 0.0068/move
+[432/444] Nasarawa 0.093→0.095 (rated 0.14 vs Zambia stored 0.09 rated 0.13) · 0.0068/move
+[433/444] Yobe 0.085→0.088 (rated 0.14 vs Kiribati stored 0.44 rated 0.40) · 0.0067/move
+[434/444] Benue 0.067→0.069 (rated 0.08 vs Cabo Verde stored 0.73 rated 0.70) · 0.0067/move
+[435/444] Oyo 0.103→0.104 (rated 0.15 vs Venezuela stored 0.41 rated 0.50) · 0.0067/move
+[436/444] Yobe 0.085→0.084 (rated 0.12 vs Vatican City stored 0.80 rated 0.92) · 0.0067/move
+[437/444] Borno 0.089→0.089 (rated 0.10 vs Armenia stored 0.33 rated 0.35) · 0.0067/move
+[438/444] Anambra 0.066→0.070 (rated 0.12 vs Australia stored 0.86 rated 0.82) · 0.0067/move
+[439/444] Gombe 0.079→0.080 (rated 0.10 vs Oman stored 0.10 rated 0.12) · 0.0067/move
+[440/444] Sokoto 0.028→0.030 (rated 0.12 vs Vietnam stored 0.57 rated 0.65) · 0.0067/move
+[441/444] Oyo 0.100→0.100 (rated 0.08 vs Sri Lanka stored 0.25 rated 0.20) · 0.0066/move
+[442/444] Ondo 0.090→0.090 (rated 0.15 vs Lesotho stored 0.40 rated 0.52) · 0.0066/move
+[443/444] Yobe 0.088→0.090 (rated 0.10 vs Denmark stored 0.85 rated 0.83) · 0.0066/move
+[444/444] Sokoto 0.028→0.034 (rated 0.12 vs Brazil stored 0.71 rated 0.62) · 0.0066/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 444 pairs in 2114s · errors: 6 · total score movement: 2.938
+tokens — cache read: 2,068,674 · cache write: 0 · uncached in: 903,174 · out: 1,003,035
+ERROR: 25984515B9026957888422: bad summary
