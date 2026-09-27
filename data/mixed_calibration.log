@@ -2943,3 +2943,330 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 276 pairs in 1406s · errors: 3 · total score movement: 2.669
 tokens — cache read: 1,289,379 · cache write: 0 · uncached in: 576,657 · out: 692,485
 ERROR: 25984515B9026957888422: bad summary
+ARG done 2026-09-27 11:11:37
+=================== mixed PER 2026-09-27 11:11:37 ===================
+PER: 26 regions -> 312 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 26 regions (26 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 650
+pairs: 312 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 156 / 312: 0.07000/0.04010/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06013/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-111138.jsonl
+[1/312] Ayacucho 0.360→0.372 (rated 0.38 vs Samoa stored 0.72 rated 0.67) · 0.0121/move
+[2/312] Huánuco 0.360→0.350 (rated 0.33 vs South Korea stored 0.71 rated 0.72) · 0.011/move
+[3/312] Cusco 0.360→0.348 (rated 0.33 vs Latvia stored 0.60 rated 0.63) · 0.0114/move
+[4/312] Tumbes 0.360→0.371 (rated 0.45 vs Lebanon stored 0.17 rated 0.25) · 0.0113/move
+[5/312] Huancavelica 0.360→0.372 (rated 0.45 vs Kenya stored 0.31 rated 0.38) · 0.0115/move
+[6/312] Puno 0.360→0.372 (rated 0.38 vs DR Congo stored 0.21 rated 0.17) · 0.0115/move
+[7/312] Ucayali 0.360→0.353 (rated 0.33 vs New Zealand stored 0.75 rated 0.73) · 0.0109/move
+[8/312] Tacna 0.340→0.359 (rated 0.43 vs Bangladesh stored 0.12 rated 0.12) · 0.012/move
+[9/312] Tacna 0.340→0.322 (rated 0.27 vs Somalia stored 0.03 rated 0.05) · 0.0126/move
+[10/312] Piura 0.360→0.377 (rated 0.45 vs Liechtenstein stored 0.80 rated 0.82) · 0.013/move
+[11/312] Tacna 0.340→0.343 (rated 0.35 vs France stored 0.67 rated 0.70) · 0.0121/move
+[12/312] Madre de Dios 0.360→0.354 (rated 0.35 vs Lithuania stored 0.58 rated 0.58) · 0.0116/move
+[13/312] Moquegua 0.360→0.344 (rated 0.28 vs Ireland stored 0.87 rated 0.86) · 0.012/move
+[14/312] Madre de Dios 0.360→0.340 (rated 0.28 vs Guadeloupe stored 0.62 rated 0.65) · 0.0125/move
+[15/312] Cajamarca 0.360→0.367 (rated 0.40 vs Iraq stored 0.04 rated 0.08) · 0.0122/move
+[16/312] Madre de Dios 0.360→0.342 (rated 0.30 vs North Macedonia stored 0.50 rated 0.55) · 0.0125/move
+[17/312] Pasco 0.360→0.375 (rated 0.42 vs Cyprus stored 0.79 rated 0.78) · 0.0127/move
+[18/312] Junín 0.360→0.358 (rated 0.38 vs Antigua and Barbuda stored 0.60 rated 0.70) · 0.0121/move
+[19/312] Puno 0.372→0.377 (rated 0.38 vs Somalia stored 0.03 rated 0.03) · 0.0117/move
+[20/312] Tumbes 0.371→0.385 (rated 0.48 vs Eritrea stored 0.12 rated 0.20) · 0.0118/move
+[21/312] Junín 0.360→0.351 (rated 0.32 vs San Marino stored 0.84 rated 0.83) · 0.0117/move
+[22/312] Apurímac 0.360→0.382 (rated 0.43 vs Colombia stored 0.52 rated 0.45) · 0.0122/move
+[23/312] Arequipa 0.360→0.337 (rated 0.23 vs Switzerland stored 0.85 rated 0.84) · 0.0126/move
+[24/312] Puno 0.372→0.357 (rated 0.28 vs Lithuania stored 0.58 rated 0.54) · 0.0127/move
+[25/312] Ica 0.360→0.307 (rated 0.25 vs American Samoa stored 0.18 rated 0.52) · 0.0143/move
+[26/312] Lambayeque 0.360→0.357 (rated 0.35 vs Sierra Leone stored 0.28 rated 0.25) · 0.0139/move
+[27/312] Ica 0.360→0.354 (rated 0.32 vs New Zealand stored 0.75 rated 0.70) · 0.0136/move
+[28/312] Lambayeque 0.360→0.344 (rated 0.25 vs Guinea stored 0.17 rated 0.12) · 0.0137/move
+[29/312] Cusco 0.348→0.316 (rated 0.33 vs Falkland Islands stored 0.58 rated 0.85) · 0.0143/move
+[30/312] Junín 0.351→0.334 (rated 0.28 vs Belgium stored 0.83 rated 0.85) · 0.0144/move
+[31/312] Huánuco 0.350→0.360 (rated 0.40 vs Morocco stored 0.18 rated 0.20) · 0.0142/move
+[32/312] Apurímac 0.382→0.398 (rated 0.50 vs Laos stored 0.64 rated 0.70) · 0.0143/move
+[33/312] Arequipa 0.337→0.335 (rated 0.35 vs Réunion stored 0.63 rated 0.72) · 0.0139/move
+[34/312] San Martín 0.362→0.352 (rated 0.28 vs Vanuatu stored 0.58 rated 0.50) · 0.0138/move
+[35/312] Moquegua 0.344→0.330 (rated 0.28 vs Paraguay stored 0.42 rated 0.42) · 0.0138/move
+[36/312] Ancash 0.360→0.352 (rated 0.32 vs Tajikistan stored 0.17 rated 0.14) · 0.0136/move
+[37/312] Puno 0.357→0.348 (rated 0.32 vs Portugal stored 0.81 rated 0.80) · 0.0135/move
+[38/312] Pasco 0.375→0.367 (rated 0.30 vs Brazil stored 0.71 rated 0.62) · 0.0133/move
+[39/312] Ica 0.354→0.347 (rated 0.32 vs Austria stored 0.74 rated 0.73) · 0.0132/move
+[40/312] El Callao 0.360→0.347 (rated 0.30 vs Honduras stored 0.15 rated 0.15) · 0.0132/move
+[41/312] Ica 0.354→0.353 (rated 0.35 vs Portugal stored 0.81 rated 0.78) · 0.0129/move
+[42/312] San Martín 0.362→0.353 (rated 0.32 vs Denmark stored 0.85 rated 0.83) · 0.0128/move
+[43/312] Piura 0.377→0.355 (rated 0.33 vs Martinique stored 0.62 rated 0.75) · 0.013/move
+[44/312] Pasco 0.375→0.382 (rated 0.40 vs Iran stored 0.07 rated 0.08) · 0.0129/move
+[45/312] El Callao 0.360→0.354 (rated 0.32 vs Angola stored 0.62 rated 0.58) · 0.0127/move
+[46/312] Pasco 0.367→0.355 (rated 0.30 vs Gabon stored 0.54 rated 0.52) · 0.0127/move
+[47/312] Madre de Dios 0.342→0.352 (rated 0.37 vs Andorra stored 0.88 rated 0.85) · 0.0127/move
+[48/312] Amazonas 0.360→0.355 (rated 0.30 vs South Korea stored 0.71 rated 0.63) · 0.0125/move
+[49/312] Piura 0.377→0.381 (rated 0.43 vs Egypt stored 0.13 rated 0.22) · 0.0123/move
+[50/312] Piura 0.355→0.359 (rated 0.35 vs New Zealand stored 0.75 rated 0.65) · 0.0122/move
+[51/312] Apurímac 0.398→0.398 (rated 0.40 vs Palau stored 0.68 rated 0.70) · 0.0119/move
+[52/312] La Libertad 0.340→0.335 (rated 0.33 vs Libya stored 0.04 rated 0.04) · 0.0118/move
+[53/312] Lambayeque 0.344→0.348 (rated 0.35 vs Belarus stored 0.08 rated 0.08) · 0.0117/move
+[54/312] Apurímac 0.398→0.415 (rated 0.50 vs Malawi stored 0.16 rated 0.18) · 0.0118/move
+[55/312] Lima 0.380→0.330 (rated 0.28 vs U.S. Virgin Islands stored 0.34 rated 0.72) · 0.0125/move
+[56/312] Piura 0.355→0.338 (rated 0.30 vs Burundi stored 0.06 rated 0.12) · 0.0126/move
+[57/312] Tacna 0.343→0.348 (rated 0.38 vs Uzbekistan stored 0.15 rated 0.20) · 0.0124/move
+[58/312] Cajamarca 0.367→0.361 (rated 0.35 vs Georgia stored 0.18 rated 0.18) · 0.0123/move
+[59/312] Madre de Dios 0.352→0.347 (rated 0.32 vs Honduras stored 0.15 rated 0.12) · 0.0122/move
+[60/312] El Callao 0.354→0.375 (rated 0.44 vs Portugal stored 0.81 rated 0.75) · 0.0123/move
+[61/312] Huánuco 0.360→0.358 (rated 0.37 vs Saint Lucia stored 0.60 rated 0.68) · 0.0122/move
+[62/312] El Callao 0.354→0.368 (rated 0.38 vs Slovenia stored 0.75 rated 0.67) · 0.0122/move
+[63/312] El Callao 0.354→0.349 (rated 0.35 vs South Korea stored 0.71 rated 0.72) · 0.0121/move
+[64/312] Tumbes 0.385→0.375 (rated 0.35 vs Lebanon stored 0.17 rated 0.18) · 0.012/move
+[65/312] La Libertad 0.335→0.347 (rated 0.40 vs Sudan stored 0.05 rated 0.06) · 0.012/move
+[66/312] Puno 0.348→0.348 (rated 0.35 vs Finland stored 0.87 rated 0.90) · 0.0119/move
+[67/312] Puno 0.348→0.318 (rated 0.35 vs U.S. Virgin Islands stored 0.34 rated 0.72) · 0.0121/move
+[68/312] Tumbes 0.385→0.378 (rated 0.33 vs Estonia stored 0.75 rated 0.70) · 0.0121/move
+[69/312] Junín 0.334→0.346 (rated 0.38 vs Turkmenistan stored 0.08 rated 0.05) · 0.0121/move
+[70/312] Cajamarca 0.361→0.374 (rated 0.55 vs Côte d'Ivoire stored 0.33 rated 0.52) · 0.0121/move
+[71/312] Moquegua 0.330→0.337 (rated 0.38 vs Malaysia stored 0.16 rated 0.20) · 0.012/move
+[72/312] Pasco 0.355→0.341 (rated 0.35 vs Saint Vincent and the  stored 0.34 rated 0.45) · 0.012/move
+[73/312] Huánuco 0.358→0.348 (rated 0.25 vs São Tomé and Príncipe stored 0.65 rated 0.55) · 0.012/move
+[74/312] Lima 0.330→0.316 (rated 0.22 vs Côte d'Ivoire stored 0.33 rated 0.27) · 0.012/move
+[75/312] Moquegua 0.330→0.318 (rated 0.27 vs Rwanda stored 0.34 rated 0.34) · 0.012/move
+[76/312] Ancash 0.352→0.348 (rated 0.34 vs Mauritius stored 0.75 rated 0.74) · 0.0119/move
+[77/312] Madre de Dios 0.347→0.355 (rated 0.37 vs Mozambique stored 0.62 rated 0.60) · 0.0119/move
+[78/312] Ayacucho 0.372→0.342 (rated 0.38 vs Puerto Rico stored 0.33 rated 0.76) · 0.0121/move
+[79/312] Municipalidad Metropolitana de Lima 0.381→0.379 (rated 0.48 vs Turks and Caicos Islan stored 0.44 rated 0.68) · 0.012/move
+[80/312] Lambayeque 0.348→0.338 (rated 0.30 vs Tanzania stored 0.10 rated 0.10) · 0.0119/move
+[81/312] El Callao 0.349→0.360 (rated 0.35 vs São Tomé and Príncipe stored 0.65 rated 0.52) · 0.0119/move
+[82/312] Cajamarca 0.374→0.352 (rated 0.30 vs Isle of Man stored 0.62 rated 0.73) · 0.0121/move
+[83/312] Loreto 0.360→0.364 (rated 0.40 vs Tunisia stored 0.12 rated 0.18) · 0.012/move
+[84/312] Huánuco 0.358→0.365 (rated 0.32 vs Kiribati stored 0.44 rated 0.25) · 0.0119/move
+[85/312] Cajamarca 0.374→0.360 (rated 0.30 vs Mauritius stored 0.75 rated 0.76) · 0.0119/move
+[86/312] Pasco 0.341→0.351 (rated 0.35 vs Austria stored 0.74 rated 0.68) · 0.0119/move
+[87/312] Loreto 0.360→0.366 (rated 0.40 vs Saudi Arabia stored 0.04 rated 0.08) · 0.0118/move
+[88/312] Pasco 0.341→0.328 (rated 0.30 vs Azerbaijan stored 0.14 rated 0.20) · 0.0118/move
+[89/312] Cajamarca 0.374→0.364 (rated 0.34 vs Central African Republ stored 0.20 rated 0.23) · 0.0118/move
+[90/312] Municipalidad Metropolitana de Lima 0.381→0.371 (rated 0.33 vs Andorra stored 0.88 rated 0.88) · 0.0118/move
+[91/312] Ayacucho 0.342→0.346 (rated 0.38 vs Algeria stored 0.21 rated 0.27) · 0.0117/move
+[92/312] El Callao 0.360→0.336 (rated 0.32 vs Montserrat stored 0.44 rated 0.65) · 0.0118/move
+[93/312] Cajamarca 0.352→0.339 (rated 0.30 vs Syria stored 0.04 rated 0.08) · 0.0119/move
+[94/312] Amazonas 0.355→0.368 (rated 0.45 vs Kyrgyzstan stored 0.32 rated 0.35) · 0.0119/move
+[95/312] Ucayali 0.353→0.327 (rated 0.32 vs Falkland Islands stored 0.58 rated 0.82) · 0.012/move
+[96/312] Puno 0.318→0.322 (rated 0.37 vs French Polynesia stored 0.67 rated 0.75) · 0.0119/move
+[97/312] Apurímac 0.415→0.398 (rated 0.40 vs Saint Barthélemy stored 0.65 rated 0.80) · 0.012/move
+[98/312] Cajamarca 0.364→0.352 (rated 0.28 vs Turkmenistan stored 0.08 rated 0.05) · 0.012/move
+[99/312] Loreto 0.366→0.356 (rated 0.32 vs Italy stored 0.50 rated 0.50) · 0.0119/move
+[100/312] Puno 0.318→0.309 (rated 0.40 vs Guernsey stored 0.60 rated 0.90) · 0.0119/move
+[101/312] Cusco 0.316→0.314 (rated 0.30 vs Suriname stored 0.62 rated 0.58) · 0.0118/move
+[102/312] Loreto 0.366→0.382 (rated 0.53 vs El Salvador stored 0.35 rated 0.45) · 0.0119/move
+[103/312] Ica 0.353→0.350 (rated 0.32 vs Micronesia (FSM) stored 0.61 rated 0.55) · 0.0118/move
+[104/312] Piura 0.338→0.344 (rated 0.38 vs Angola stored 0.62 rated 0.65) · 0.0117/move
+[105/312] Piura 0.338→0.342 (rated 0.35 vs Bahamas stored 0.60 rated 0.60) · 0.0117/move
+[106/312] La Libertad 0.347→0.344 (rated 0.32 vs Netherlands stored 0.79 rated 0.74) · 0.0116/move
+[107/312] Loreto 0.356→0.353 (rated 0.35 vs Sweden stored 0.85 rated 0.84) · 0.0115/move
+[108/312] Lambayeque 0.338→0.346 (rated 0.42 vs Turkey stored 0.15 rated 0.22) · 0.0115/move
+[109/312] Loreto 0.356→0.343 (rated 0.30 vs Nauru stored 0.62 rated 0.67) · 0.0115/move
+[110/312] Huancavelica 0.372→0.363 (rated 0.33 vs Qatar stored 0.05 rated 0.07) · 0.0115/move
+[111/312] La Libertad 0.347→0.355 (rated 0.42 vs Oman stored 0.10 rated 0.15) · 0.0114/move
+[112/312] Huánuco 0.365→0.359 (rated 0.30 vs Slovakia stored 0.65 rated 0.58) · 0.0114/move
+[113/312] Cajamarca 0.352→0.351 (rated 0.30 vs Mayotte stored 0.53 rated 0.42) · 0.0113/move
+[114/312] Pasco 0.328→0.336 (rated 0.38 vs Macau stored 0.50 rated 0.52) · 0.0113/move
+[115/312] Cusco 0.314→0.325 (rated 0.38 vs Guadeloupe stored 0.62 rated 0.62) · 0.0113/move
+[116/312] Huancavelica 0.363→0.358 (rated 0.30 vs Denmark stored 0.85 rated 0.76) · 0.0112/move
+[117/312] Piura 0.342→0.353 (rated 0.37 vs Portugal stored 0.81 rated 0.75) · 0.0112/move
+[118/312] Ucayali 0.327→0.339 (rated 0.33 vs Mayotte stored 0.53 rated 0.40) · 0.0112/move
+[119/312] Huancavelica 0.363→0.355 (rated 0.33 vs Botswana stored 0.64 rated 0.65) · 0.0112/move
+[120/312] Lambayeque 0.346→0.339 (rated 0.28 vs Finland stored 0.87 rated 0.82) · 0.0111/move
+[121/312] La Libertad 0.355→0.351 (rated 0.37 vs British Virgin Islands stored 0.42 rated 0.55) · 0.0111/move
+[122/312] Loreto 0.343→0.354 (rated 0.35 vs Lithuania stored 0.58 rated 0.48) · 0.0111/move
+[123/312] Junín 0.346→0.338 (rated 0.37 vs British Virgin Islands stored 0.42 rated 0.62) · 0.011/move
+[124/312] Madre de Dios 0.355→0.347 (rated 0.32 vs Syria stored 0.04 rated 0.05) · 0.011/move
+[125/312] Huancavelica 0.355→0.344 (rated 0.30 vs Grenada stored 0.47 rated 0.50) · 0.011/move
+[126/312] Madre de Dios 0.355→0.343 (rated 0.28 vs Saudi Arabia stored 0.04 rated 0.04) · 0.011/move
+[127/312] Lima 0.316→0.312 (rated 0.25 vs Czechia stored 0.67 rated 0.58) · 0.011/move
+[128/312] Tumbes 0.378→0.356 (rated 0.30 vs Cook Islands stored 0.45 rated 0.60) · 0.0111/move
+[129/312] Huánuco 0.359→0.350 (rated 0.30 vs Gabon stored 0.54 rated 0.52) · 0.011/move
+[130/312] Amazonas 0.368→0.371 (rated 0.38 vs Indonesia stored 0.15 rated 0.18) · 0.011/move
+[131/312] Madre de Dios 0.347→0.324 (rated 0.28 vs Isle of Man stored 0.62 rated 0.81) · 0.0111/move
+[132/312] Moquegua 0.318→0.323 (rated 0.32 vs Luxembourg stored 0.90 rated 0.85) · 0.011/move
+[133/312] Ucayali 0.339→0.335 (rated 0.33 vs Latvia stored 0.60 rated 0.60) · 0.011/move
+[134/312] Cajamarca 0.351→0.339 (rated 0.35 vs Saint Barthélemy stored 0.65 rated 0.82) · 0.011/move
+[135/312] Ancash 0.348→0.346 (rated 0.35 vs Zimbabwe stored 0.33 rated 0.40) · 0.0109/move
+[136/312] Amazonas 0.368→0.358 (rated 0.35 vs Guinea stored 0.17 rated 0.25) · 0.0109/move
+[137/312] Huánuco 0.350→0.343 (rated 0.33 vs France stored 0.67 rated 0.70) · 0.0109/move
+[130] ERROR 1875124B3772980127380/ARM: no scores in response (stop_reason=max_tokens): 'I need to analyze both dossiers carefully against the rating rules.\n\n**DOSSIER A - Country:**\n- No criminalisation of trans identity\n- Has LGR (medicalised, resident-facing - not a traveler protection'
+[139/312] Ucayali 0.339→0.354 (rated 0.47 vs France stored 0.67 rated 0.70) · 0.0108/move
+[140/312] San Martín 0.353→0.327 (rated 0.28 vs Montserrat stored 0.44 rated 0.68) · 0.0109/move
+[141/312] Ayacucho 0.346→0.341 (rated 0.33 vs Marshall Islands stored 0.71 rated 0.71) · 0.0109/move
+[142/312] Ancash 0.346→0.335 (rated 0.38 vs Cook Islands stored 0.45 rated 0.72) · 0.0109/move
+[143/312] Junín 0.338→0.344 (rated 0.38 vs Bangladesh stored 0.12 rated 0.15) · 0.0108/move
+[144/312] Lima 0.312→0.301 (rated 0.22 vs India stored 0.43 rated 0.40) · 0.0108/move
+[145/312] Lambayeque 0.339→0.329 (rated 0.38 vs Benin stored 0.14 rated 0.42) · 0.0108/move
+[146/312] Huancavelica 0.344→0.345 (rated 0.35 vs Panama stored 0.56 rated 0.60) · 0.0108/move
+[147/312] Lambayeque 0.339→0.343 (rated 0.35 vs Madagascar stored 0.38 rated 0.38) · 0.0107/move
+[148/312] Cajamarca 0.339→0.346 (rated 0.38 vs Tanzania stored 0.10 rated 0.10) · 0.0107/move
+[145] ERROR 1875124B82769317880582/SLV: no scores in response (stop_reason=max_tokens): 'Let me work through each dossier systematically.\n\n**DOSSIER A (Region within encompassing state):**\n\nFramework:\n- Bathroom ban: Congress approved (plenary, April 2025) a law barring trans people from '
+[150/312] Loreto 0.354→0.368 (rated 0.47 vs Lebanon stored 0.17 rated 0.17) · 0.0107/move
+[151/312] Municipalidad Metropolitana de Lima 0.371→0.374 (rated 0.40 vs Uganda stored 0.06 rated 0.10) · 0.0106/move
+[152/312] Puno 0.309→0.309 (rated 0.30 vs Croatia stored 0.77 rated 0.72) · 0.0105/move
+[153/312] Apurímac 0.398→0.391 (rated 0.33 vs Vatican City stored 0.80 rated 0.77) · 0.0105/move
+[154/312] Lima 0.301→0.312 (rated 0.33 vs Denmark stored 0.85 rated 0.76) · 0.0105/move
+[155/312] Tacna 0.348→0.332 (rated 0.35 vs Anguilla stored 0.44 rated 0.75) · 0.0106/move
+[156/312] Arequipa 0.335→0.342 (rated 0.38 vs Martinique stored 0.62 rated 0.63) · 0.0105/move
+[157/312] Tumbes 0.356→0.358 (rated 0.36 vs Italy stored 0.50 rated 0.52) · 0.0105/move
+[158/312] Madre de Dios 0.324→0.321 (rated 0.28 vs Nicaragua stored 0.24 rated 0.18) · 0.0104/move
+[152] ERROR 1875124B91024374055933/PRY: no scores in response (stop_reason=max_tokens): 'To rate these two dossiers, I must evaluate the risk faced by a transgender visitor based on the documented facts, applying the specific rules provided (especially regarding what constitutes a travele'
+[160/312] Huancavelica 0.345→0.353 (rated 0.40 vs South Sudan stored 0.10 rated 0.10) · 0.0104/move
+[161/312] El Callao 0.336→0.332 (rated 0.30 vs South Korea stored 0.71 rated 0.67) · 0.0103/move
+[162/312] Huánuco 0.343→0.348 (rated 0.35 vs Poland stored 0.52 rated 0.50) · 0.0103/move
+[163/312] Ayacucho 0.341→0.327 (rated 0.30 vs Poland stored 0.52 rated 0.65) · 0.0103/move
+[164/312] Puno 0.309→0.306 (rated 0.32 vs Grenada stored 0.47 rated 0.58) · 0.0103/move
+[165/312] Puno 0.309→0.315 (rated 0.35 vs Belarus stored 0.08 rated 0.08) · 0.0102/move
+[166/312] Madre de Dios 0.321→0.318 (rated 0.30 vs Australia stored 0.86 rated 0.84) · 0.0102/move
+[167/312] Municipalidad Metropolitana de Lima 0.374→0.387 (rated 0.48 vs Burundi stored 0.06 rated 0.05) · 0.0102/move
+[168/312] Puno 0.309→0.299 (rated 0.30 vs Ukraine stored 0.59 rated 0.70) · 0.0102/move
+[169/312] Ancash 0.335→0.332 (rated 0.30 vs Fiji stored 0.59 rated 0.54) · 0.0102/move
+[170/312] Junín 0.344→0.344 (rated 0.32 vs Spain stored 0.88 rated 0.80) · 0.0101/move
+[171/312] Huancavelica 0.353→0.368 (rated 0.45 vs Comoros stored 0.31 rated 0.25) · 0.0101/move
+[172/312] Lambayeque 0.343→0.345 (rated 0.33 vs Chile stored 0.72 rated 0.62) · 0.0101/move
+[173/312] Cajamarca 0.346→0.340 (rated 0.32 vs Liechtenstein stored 0.80 rated 0.82) · 0.0101/move
+[174/312] Tumbes 0.358→0.366 (rated 0.45 vs Malaysia stored 0.16 rated 0.20) · 0.0101/move
+[175/312] Ayacucho 0.327→0.334 (rated 0.37 vs Nepal stored 0.67 rated 0.65) · 0.01/move
+[176/312] Huancavelica 0.368→0.373 (rated 0.40 vs Tajikistan stored 0.17 rated 0.18) · 0.01/move
+[177/312] Tacna 0.332→0.338 (rated 0.38 vs Netherlands stored 0.79 rated 0.80) · 0.01/move
+[178/312] Municipalidad Metropolitana de Lima 0.387→0.399 (rated 0.40 vs United States stored 0.36 rated 0.22) · 0.01/move
+[179/312] Ayacucho 0.327→0.319 (rated 0.28 vs Montenegro stored 0.65 rated 0.68) · 0.01/move
+[180/312] Arequipa 0.342→0.357 (rated 0.43 vs Argentina stored 0.58 rated 0.50) · 0.01/move
+[181/312] Huancavelica 0.368→0.366 (rated 0.35 vs DR Congo stored 0.21 rated 0.18) · 0.01/move
+[182/312] Junín 0.344→0.344 (rated 0.35 vs Serbia stored 0.40 rated 0.45) · 0.0099/move
+[183/312] Piura 0.353→0.350 (rated 0.35 vs Netherlands stored 0.79 rated 0.80) · 0.0099/move
+[184/312] El Callao 0.332→0.338 (rated 0.35 vs Algeria stored 0.21 rated 0.18) · 0.0099/move
+[185/312] Madre de Dios 0.318→0.322 (rated 0.38 vs French Polynesia stored 0.67 rated 0.74) · 0.0098/move
+[186/312] Huancavelica 0.373→0.369 (rated 0.30 vs Nepal stored 0.67 rated 0.58) · 0.0098/move
+[187/312] Moquegua 0.323→0.324 (rated 0.33 vs Eswatini stored 0.38 rated 0.42) · 0.0097/move
+[188/312] Lambayeque 0.345→0.357 (rated 0.48 vs Brunei stored 0.10 rated 0.12) · 0.0098/move
+[189/312] Amazonas 0.358→0.369 (rated 0.45 vs Morocco stored 0.18 rated 0.17) · 0.0098/move
+[190/312] Loreto 0.368→0.354 (rated 0.37 vs Northern Mariana Islan stored 0.30 rated 0.62) · 0.0098/move
+[191/312] Lambayeque 0.345→0.341 (rated 0.33 vs Ukraine stored 0.59 rated 0.60) · 0.0098/move
+[192/312] San Martín 0.327→0.334 (rated 0.40 vs Japan stored 0.82 rated 0.85) · 0.0097/move
+[193/312] El Callao 0.332→0.305 (rated 0.28 vs Guam stored 0.29 rated 0.70) · 0.0098/move
+[194/312] San Martín 0.327→0.333 (rated 0.34 vs Saint Lucia stored 0.60 rated 0.55) · 0.0098/move
+[195/312] Madre de Dios 0.322→0.333 (rated 0.42 vs Cuba stored 0.71 rated 0.68) · 0.0098/move
+[196/312] Puno 0.299→0.307 (rated 0.33 vs Finland stored 0.87 rated 0.80) · 0.0098/move
+[197/312] Ancash 0.332→0.330 (rated 0.35 vs Lebanon stored 0.17 rated 0.28) · 0.0098/move
+[198/312] San Martín 0.327→0.333 (rated 0.40 vs Romania stored 0.67 rated 0.72) · 0.0098/move
+[199/312] Ica 0.350→0.347 (rated 0.30 vs Andorra stored 0.88 rated 0.82) · 0.0097/move
+[200/312] La Libertad 0.351→0.346 (rated 0.32 vs Trinidad and Tobago stored 0.34 rated 0.35) · 0.0097/move
+[201/312] Cajamarca 0.340→0.346 (rated 0.40 vs Bahrain stored 0.26 rated 0.28) · 0.0097/move
+[202/312] La Libertad 0.351→0.345 (rated 0.28 vs Hungary stored 0.58 rated 0.53) · 0.0097/move
+[203/312] Tacna 0.338→0.342 (rated 0.36 vs Honduras stored 0.15 rated 0.14) · 0.0096/move
+[204/312] Piura 0.350→0.353 (rated 0.35 vs Micronesia (FSM) stored 0.61 rated 0.55) · 0.0096/move
+[205/312] San Martín 0.333→0.330 (rated 0.32 vs Tonga stored 0.51 rated 0.50) · 0.0096/move
+[206/312] Ica 0.347→0.343 (rated 0.30 vs South Korea stored 0.71 rated 0.68) · 0.0095/move
+[207/312] Cusco 0.325→0.335 (rated 0.52 vs Côte d'Ivoire stored 0.33 rated 0.47) · 0.0096/move
+[208/312] Lima 0.312→0.307 (rated 0.25 vs Ecuador stored 0.33 rated 0.30) · 0.0095/move
+[209/312] Moquegua 0.324→0.323 (rated 0.37 vs Hong Kong stored 0.58 rated 0.72) · 0.0095/move
+[210/312] Municipalidad Metropolitana de Lima 0.399→0.375 (rated 0.32 vs Northern Mariana Islan stored 0.30 rated 0.63) · 0.0096/move
+[211/312] Apurímac 0.391→0.377 (rated 0.24 vs Solomon Islands stored 0.38 rated 0.38) · 0.0096/move
+[212/312] Municipalidad Metropolitana de Lima 0.399→0.404 (rated 0.45 vs United States stored 0.36 rated 0.37) · 0.0096/move
+[213/312] Lima 0.312→0.318 (rated 0.35 vs Papua New Guinea stored 0.20 rated 0.17) · 0.0095/move
+[214/312] Huancavelica 0.369→0.365 (rated 0.33 vs Sweden stored 0.85 rated 0.83) · 0.0095/move
+[215/312] Ucayali 0.354→0.353 (rated 0.30 vs Lesotho stored 0.40 rated 0.30) · 0.0095/move
+[216/312] Cusco 0.335→0.319 (rated 0.35 vs Pitcairn Islands stored 0.38 rated 0.80) · 0.0095/move
+[217/312] Arequipa 0.357→0.359 (rated 0.44 vs Central African Republ stored 0.20 rated 0.33) · 0.0095/move
+[218/312] Puno 0.307→0.319 (rated 0.45 vs Saudi Arabia stored 0.04 rated 0.04) · 0.0095/move
+[219/312] Ayacucho 0.319→0.331 (rated 0.48 vs Ethiopia stored 0.25 rated 0.28) · 0.0095/move
+[220/312] El Callao 0.305→0.296 (rated 0.28 vs French Polynesia stored 0.67 rated 0.78) · 0.0095/move
+[221/312] Ancash 0.330→0.329 (rated 0.33 vs Malta stored 0.90 rated 0.92) · 0.0095/move
+[222/312] Madre de Dios 0.333→0.329 (rated 0.28 vs Gabon stored 0.54 rated 0.50) · 0.0094/move
+[223/312] Tacna 0.342→0.342 (rated 0.33 vs Samoa stored 0.72 rated 0.65) · 0.0094/move
+[224/312] Ancash 0.330→0.327 (rated 0.33 vs French Guiana stored 0.61 rated 0.69) · 0.0094/move
+[225/312] Puno 0.307→0.311 (rated 0.35 vs North Korea stored 0.04 rated 0.05) · 0.0093/move
+[226/312] Ancash 0.330→0.334 (rated 0.33 vs Uruguay stored 0.85 rated 0.76) · 0.0093/move
+[227/312] Cajamarca 0.346→0.347 (rated 0.35 vs Egypt stored 0.13 rated 0.15) · 0.0093/move
+[228/312] Puno 0.319→0.331 (rated 0.48 vs Maldives stored 0.24 rated 0.27) · 0.0093/move
+[229/312] Junín 0.344→0.341 (rated 0.28 vs Bhutan stored 0.67 rated 0.60) · 0.0093/move
+[230/312] Madre de Dios 0.333→0.335 (rated 0.35 vs Hungary stored 0.58 rated 0.62) · 0.0092/move
+[231/312] San Martín 0.330→0.318 (rated 0.30 vs Bermuda stored 0.52 rated 0.73) · 0.0092/move
+[232/312] Puno 0.319→0.326 (rated 0.43 vs Turkmenistan stored 0.08 rated 0.13) · 0.0092/move
+[233/312] Arequipa 0.359→0.365 (rated 0.40 vs Czechia stored 0.67 rated 0.63) · 0.0092/move
+[234/312] Apurímac 0.377→0.373 (rated 0.35 vs Taiwan stored 0.78 rated 0.80) · 0.0092/move
+[235/312] Ica 0.343→0.349 (rated 0.36 vs Portugal stored 0.81 rated 0.73) · 0.0092/move
+[236/312] Huancavelica 0.365→0.368 (rated 0.40 vs San Marino stored 0.84 rated 0.88) · 0.0092/move
+[237/312] Apurímac 0.377→0.381 (rated 0.40 vs Sudan stored 0.05 rated 0.05) · 0.0091/move
+[238/312] Ayacucho 0.331→0.325 (rated 0.24 vs Solomon Islands stored 0.38 rated 0.34) · 0.0091/move
+[239/312] Ayacucho 0.331→0.334 (rated 0.34 vs Maldives stored 0.24 rated 0.21) · 0.0091/move
+[240/312] Arequipa 0.359→0.360 (rated 0.36 vs Yemen stored 0.03 rated 0.02) · 0.0091/move
+[241/312] Madre de Dios 0.335→0.339 (rated 0.35 vs Chile stored 0.72 rated 0.67) · 0.009/move
+[242/312] Junín 0.341→0.349 (rated 0.45 vs Switzerland stored 0.85 rated 0.85) · 0.009/move
+[243/312] Junín 0.341→0.337 (rated 0.40 vs Bermuda stored 0.52 rated 0.77) · 0.009/move
+[244/312] Puno 0.326→0.323 (rated 0.32 vs Tajikistan stored 0.17 rated 0.18) · 0.009/move
+[245/312] Cajamarca 0.347→0.352 (rated 0.40 vs Switzerland stored 0.85 rated 0.85) · 0.009/move
+[246/312] Piura 0.353→0.357 (rated 0.40 vs North Korea stored 0.04 rated 0.04) · 0.009/move
+[247/312] Ica 0.349→0.347 (rated 0.42 vs Macau stored 0.50 rated 0.70) · 0.0089/move
+[248/312] Ayacucho 0.334→0.339 (rated 0.43 vs Botswana stored 0.64 rated 0.72) · 0.0089/move
+[249/312] Pasco 0.336→0.333 (rated 0.30 vs Denmark stored 0.85 rated 0.82) · 0.0089/move
+[250/312] Junín 0.341→0.339 (rated 0.25 vs Ukraine stored 0.59 rated 0.45) · 0.0089/move
+[251/312] El Callao 0.296→0.308 (rated 0.50 vs Russia stored 0.12 rated 0.15) · 0.0089/move
+[252/312] Huánuco 0.348→0.344 (rated 0.27 vs Malta stored 0.90 rated 0.85) · 0.0088/move
+[253/312] San Martín 0.318→0.320 (rated 0.32 vs Eswatini stored 0.38 rated 0.38) · 0.0088/move
+[254/312] Tumbes 0.366→0.371 (rated 0.48 vs Madagascar stored 0.38 rated 0.48) · 0.0088/move
+[255/312] Ica 0.349→0.339 (rated 0.32 vs Gabon stored 0.54 rated 0.72) · 0.0088/move
+[256/312] Pasco 0.336→0.335 (rated 0.33 vs Venezuela stored 0.41 rated 0.38) · 0.0088/move
+[257/312] Huánuco 0.348→0.346 (rated 0.30 vs Wallis and Futuna stored 0.59 rated 0.52) · 0.0087/move
+[258/312] Cusco 0.319→0.323 (rated 0.35 vs Switzerland stored 0.85 rated 0.85) · 0.0087/move
+[259/312] Cajamarca 0.352→0.351 (rated 0.30 vs Djibouti stored 0.29 rated 0.18) · 0.0087/move
+[260/312] Arequipa 0.360→0.357 (rated 0.30 vs San Marino stored 0.84 rated 0.80) · 0.0087/move
+[261/312] Loreto 0.354→0.357 (rated 0.38 vs Liechtenstein stored 0.80 rated 0.80) · 0.0087/move
+[262/312] Ucayali 0.353→0.356 (rated 0.40 vs Sierra Leone stored 0.28 rated 0.30) · 0.0086/move
+[263/312] Tacna 0.342→0.339 (rated 0.30 vs Andorra stored 0.88 rated 0.85) · 0.0086/move
+[264/312] Ucayali 0.353→0.350 (rated 0.33 vs Botswana stored 0.64 rated 0.65) · 0.0086/move
+[265/312] Lima 0.318→0.321 (rated 0.37 vs Iraq stored 0.04 rated 0.10) · 0.0086/move
+[266/312] Puno 0.323→0.322 (rated 0.36 vs Honduras stored 0.15 rated 0.30) · 0.0085/move
+[267/312] Ucayali 0.353→0.346 (rated 0.30 vs Cook Islands stored 0.45 rated 0.53) · 0.0085/move
+[268/312] Madre de Dios 0.339→0.339 (rated 0.33 vs Angola stored 0.62 rated 0.57) · 0.0085/move
+[269/312] Lima 0.318→0.314 (rated 0.30 vs Tonga stored 0.51 rated 0.57) · 0.0085/move
+[265] ERROR 1875124B64829338827261/BHR: no scores in response (stop_reason=end_turn): '## Analysis of Dossier A (Region within a state with bathroom ban)\n\n**Framework analysis:**\n- **Bathroom ban (passed plenary April 2025):** This is a direct traveler-facing restriction (Axis C) creati'
+[271/312] Ica 0.339→0.345 (rated 0.44 vs Thailand stored 0.86 rated 0.84) · 0.0084/move
+[272/312] Ucayali 0.350→0.346 (rated 0.30 vs Kazakhstan stored 0.52 rated 0.50) · 0.0084/move
+[273/312] Puno 0.323→0.323 (rated 0.30 vs Thailand stored 0.86 rated 0.78) · 0.0084/move
+[274/312] Piura 0.357→0.357 (rated 0.36 vs Solomon Islands stored 0.38 rated 0.43) · 0.0084/move
+[275/312] Madre de Dios 0.339→0.344 (rated 0.38 vs Turkey stored 0.15 rated 0.08) · 0.0084/move
+[276/312] Ancash 0.334→0.333 (rated 0.32 vs São Tomé and Príncipe stored 0.65 rated 0.60) · 0.0083/move
+[277/312] Ayacucho 0.339→0.342 (rated 0.44 vs Slovakia stored 0.65 rated 0.72) · 0.0083/move
+[278/312] Ucayali 0.346→0.347 (rated 0.35 vs Morocco stored 0.18 rated 0.18) · 0.0083/move
+[279/312] Arequipa 0.357→0.358 (rated 0.38 vs Honduras stored 0.15 rated 0.22) · 0.0083/move
+[280/312] Amazonas 0.369→0.365 (rated 0.32 vs Kazakhstan stored 0.52 rated 0.54) · 0.0082/move
+[281/312] Ayacucho 0.339→0.343 (rated 0.40 vs Malaysia stored 0.16 rated 0.14) · 0.0082/move
+[282/312] Amazonas 0.369→0.371 (rated 0.38 vs Cambodia stored 0.57 rated 0.55) · 0.0082/move
+[283/312] Lima 0.314→0.315 (rated 0.34 vs Kazakhstan stored 0.52 rated 0.58) · 0.0082/move
+[284/312] Huancavelica 0.368→0.368 (rated 0.38 vs French Guiana stored 0.61 rated 0.67) · 0.0082/move
+[285/312] Lambayeque 0.341→0.344 (rated 0.38 vs Morocco stored 0.18 rated 0.18) · 0.0081/move
+[286/312] Huánuco 0.346→0.349 (rated 0.38 vs Qatar stored 0.05 rated 0.04) · 0.0081/move
+[287/312] El Callao 0.308→0.312 (rated 0.32 vs Canada stored 0.86 rated 0.76) · 0.0081/move
+[288/312] Madre de Dios 0.344→0.347 (rated 0.38 vs Pakistan stored 0.20 rated 0.20) · 0.0081/move
+[289/312] Municipalidad Metropolitana de Lima 0.404→0.407 (rated 0.45 vs Sudan stored 0.05 rated 0.04) · 0.0081/move
+[290/312] La Libertad 0.345→0.348 (rated 0.40 vs North Korea stored 0.04 rated 0.05) · 0.008/move
+[291/312] Cajamarca 0.351→0.351 (rated 0.35 vs Venezuela stored 0.41 rated 0.38) · 0.008/move
+[292/312] Amazonas 0.371→0.366 (rated 0.27 vs Paraguay stored 0.42 rated 0.42) · 0.008/move
+[293/312] Lima 0.315→0.320 (rated 0.42 vs Portugal stored 0.81 rated 0.82) · 0.008/move
+[294/312] Cajamarca 0.351→0.351 (rated 0.32 vs Hungary stored 0.58 rated 0.50) · 0.008/move
+[295/312] Cusco 0.323→0.330 (rated 0.48 vs Ethiopia stored 0.25 rated 0.25) · 0.008/move
+[296/312] Moquegua 0.323→0.318 (rated 0.30 vs Gibraltar stored 0.58 rated 0.75) · 0.008/move
+[297/312] Huancavelica 0.368→0.367 (rated 0.37 vs Côte d'Ivoire stored 0.33 rated 0.41) · 0.0079/move
+[298/312] Junín 0.339→0.337 (rated 0.32 vs Montenegro stored 0.65 rated 0.68) · 0.0079/move
+[299/312] Puno 0.323→0.324 (rated 0.35 vs Honduras stored 0.15 rated 0.22) · 0.0079/move
+[300/312] La Libertad 0.348→0.353 (rated 0.44 vs Turkey stored 0.15 rated 0.15) · 0.0079/move
+[301/312] Ica 0.345→0.343 (rated 0.30 vs Barbados stored 0.54 rated 0.55) · 0.0079/move
+[302/312] Junín 0.339→0.342 (rated 0.42 vs Bahrain stored 0.26 rated 0.28) · 0.0079/move
+[303/312] Huancavelica 0.368→0.368 (rated 0.38 vs Caribbean Netherlands  stored 0.69 rated 0.75) · 0.0078/move
+[304/312] Amazonas 0.366→0.362 (rated 0.28 vs India stored 0.43 rated 0.43) · 0.0078/move
+[305/312] Loreto 0.357→0.359 (rated 0.45 vs Liberia stored 0.32 rated 0.38) · 0.0078/move
+[306/312] Arequipa 0.358→0.355 (rated 0.30 vs Serbia stored 0.40 rated 0.38) · 0.0078/move
+[307/312] Lima 0.320→0.314 (rated 0.28 vs Macau stored 0.50 rated 0.65) · 0.0078/move
+[308/312] Ayacucho 0.343→0.344 (rated 0.35 vs Bosnia and Herzegovina stored 0.50 rated 0.50) · 0.0078/move
+[309/312] Municipalidad Metropolitana de Lima 0.407→0.410 (rated 0.43 vs Turkey stored 0.15 rated 0.11) · 0.0077/move
+[310/312] Tacna 0.339→0.342 (rated 0.45 vs Vanuatu stored 0.58 rated 0.65) · 0.0077/move
+[311/312] Madre de Dios 0.347→0.346 (rated 0.41 vs British Virgin Islands stored 0.42 rated 0.63) · 0.0077/move
+[312/312] Piura 0.357→0.359 (rated 0.38 vs Samoa stored 0.72 rated 0.72) · 0.0077/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 312 pairs in 1570s · errors: 4 · total score movement: 2.395
+tokens — cache read: 1,454,684 · cache write: 0 · uncached in: 671,364 · out: 732,499
+ERROR: 25984515B9026957888422: bad summary
