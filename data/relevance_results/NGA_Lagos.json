@@ -1,0 +1,45 @@
+{
+ "who": "NGA/Lagos",
+ "verdicts": [
+  {
+   "url": "https://www.bbc.com/news/articles/c0rwg5krq98o",
+   "keep": true,
+   "on_topic": true,
+   "supports": "partial",
+   "note": "supports the SSMPA-arrest national framing ('SSMPA-arrest jurisdiction') via its context sentence; says nothing about Lagos's scene or the 2025 manhunt"
+  },
+  {
+   "url": "https://www.thedial.world/articles/news/issue-25/lgbtq-rights-nigeria-abuja-area-mama",
+   "keep": false,
+   "on_topic": false,
+   "supports": "no",
+   "note": "cache is NOT nav-only as claimed - 13.9KB full feature centred on the FEDERAL CAPITAL queer scene (8 Area Mama mentions, 'no suspects'/'culpable'/'misgendered' confirmed); subject is a sibling jurisdiction, not Lagos (anti-pattern a)"
+  },
+  {
+   "url": "https://saharareporters.com/2026-08-19/uk-warns-lgbt-travellers-nigeria-attacks-14-year-jail-term-death-penalty-risks-under",
+   "keep": false,
+   "on_topic": true,
+   "supports": "unverifiable",
+   "note": "cited URL HTTP 404 - dead link cannot support; the FCDO warning it describes is independently live on gov.uk (see search_updates)"
+  }
+ ],
+ "false_claims": [
+  "State Police Command ran an intensified manhunt for two men (aged 43 and 54) accused of a same-sex relationship, caught on 30 June 2025",
+  "Nigeria's largest LGBTQ+ scene and the most anonymity",
+  "Model estimate (best-knowledge delta)"
+ ],
+ "search_updates": [
+  {
+   "claim": "UK FCDO updated travel advice warns LGBT+ travellers to Nigeria of arrest, violence, blackmail; 14 years federally, Sharia states death penalty",
+   "found": "FCDO Nigeria travel advice live at gov.uk carries a dedicated 'LGBT+ travellers' guidance section - substance corroborated; the cited SaharaReporters mirror URL is 404",
+   "url": "https://www.gov.uk/foreign-travel-advice/nigeria",
+   "date": "fetched 2026-09-28"
+  },
+  {
+   "claim": "Lagos State Police Command manhunt for two men, 30 June 2025",
+   "found": "NOT VERIFIED from sandbox (search endpoint blocked); no audited source mentions the incident - rework wave must source or drop it",
+   "url": "",
+   "date": "2026-09-28"
+  }
+ ]
+}
