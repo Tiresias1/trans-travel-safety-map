@@ -2652,3 +2652,294 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 228 pairs in 891s · errors: 0 · total score movement: 1.556
 tokens — cache read: 1,076,844 · cache write: 0 · uncached in: 430,295 · out: 450,684
 ERROR: 25984515B9026957888422: bad summary
+ESP done 2026-09-27 10:48:05
+=================== mixed ARG 2026-09-27 10:48:05 ===================
+ARG: 23 regions -> 276 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 23 regions (23 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 575
+pairs: 276 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 138 / 276: 0.07000/0.04011/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06015/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-104806.jsonl
+[1/276] Río Negro 0.580→0.552 (rated 0.43 vs New Zealand stored 0.75 rated 0.74) · 0.0278/move
+[2/276] Mendoza 0.580→0.561 (rated 0.48 vs South Korea stored 0.71 rated 0.70) · 0.0236/move
+[3/276] Chaco 0.580→0.577 (rated 0.55 vs DR Congo stored 0.21 rated 0.15) · 0.0168/move
+[4/276] Santa Fe 0.580→0.563 (rated 0.38 vs Latvia stored 0.60 rated 0.40) · 0.0168/move
+[5/276] Tierra del Fuego 0.580→0.564 (rated 0.48 vs Samoa stored 0.72 rated 0.67) · 0.0166/move
+[6/276] Chubut 0.580→0.558 (rated 0.50 vs Lebanon stored 0.17 rated 0.22) · 0.0176/move
+[7/276] Catamarca 0.580→0.578 (rated 0.58 vs Somalia stored 0.03 rated 0.05) · 0.0153/move
+[2] ERROR 19177384B98145761763330/FRA: no scores in response (stop_reason=max_tokens): 'Thinking Process:\n1.  **Analyze the Request:**\n    *   Role: Expert assessor of travel risk for transgender people.\n    *   Task: Rate two anonymized research dossiers (A and B) on a scale of 0.00 (do'
+[9/276] San Luis 0.580→0.569 (rated 0.49 vs Romania stored 0.67 rated 0.58) · 0.0131/move
+[10/276] Santa Cruz 0.580→0.561 (rated 0.45 vs Lithuania stored 0.58 rated 0.52) · 0.0137/move
+[11/276] Formosa 0.577→0.589 (rated 0.65 vs Iraq stored 0.04 rated 0.08) · 0.0136/move
+[12/276] Santa Cruz 0.580→0.564 (rated 0.48 vs Guadeloupe stored 0.62 rated 0.58) · 0.0138/move
+[13/276] Córdoba 0.580→0.571 (rated 0.55 vs Liechtenstein stored 0.80 rated 0.80) · 0.0134/move
+[14/276] Chubut 0.558→0.566 (rated 0.60 vs Eritrea stored 0.12 rated 0.15) · 0.013/move
+[15/276] Ciudad Autónoma de Buenos Aires 0.651→0.625 (rated 0.50 vs Ireland stored 0.87 rated 0.85) · 0.0139/move
+[16/276] Catamarca 0.580→0.562 (rated 0.44 vs Vietnam stored 0.57 rated 0.48) · 0.0142/move
+[17/276] Santiago del Estero 0.576→0.592 (rated 0.65 vs Nigeria stored 0.08 rated 0.08) · 0.0143/move
+[18/276] Misiones 0.580→0.555 (rated 0.40 vs Cyprus stored 0.79 rated 0.72) · 0.0149/move
+[19/276] Santa Cruz 0.561→0.568 (rated 0.58 vs North Macedonia stored 0.50 rated 0.50) · 0.0145/move
+[20/276] Chaco 0.577→0.568 (rated 0.55 vs Somalia stored 0.03 rated 0.03) · 0.0142/move
+[21/276] Salta 0.580→0.565 (rated 0.44 vs Antigua and Barbuda stored 0.60 rated 0.48) · 0.0142/move
+[21] ERROR 19177384B61983540054875/GIN: no scores in response (stop_reason=max_tokens): 'Let me work through each dossier systematically against the axis checklist and severity ladder.\n\n**DOSSIER A — REGION within a deteriorating progressive framework**\n\nKey axes:\n- **G (Law & criminal ex'
+[23/276] San Juan 0.580→0.506 (rated 0.45 vs American Samoa stored 0.18 rated 0.72) · 0.0162/move
+[24/276] Salta 0.580→0.574 (rated 0.48 vs San Marino stored 0.84 rated 0.70) · 0.0158/move
+[25/276] San Juan 0.580→0.586 (rated 0.60 vs New Zealand stored 0.75 rated 0.76) · 0.0154/move
+[26/276] Tucumán 0.569→0.552 (rated 0.45 vs Switzerland stored 0.85 rated 0.80) · 0.0155/move
+[27/276] Chaco 0.577→0.568 (rated 0.55 vs Lithuania stored 0.58 rated 0.58) · 0.0152/move
+[28/276] Corrientes 0.580→0.561 (rated 0.42 vs Sierra Leone stored 0.28 rated 0.18) · 0.0154/move
+[29/276] Santa Fe 0.563→0.526 (rated 0.50 vs Falkland Islands stored 0.58 rated 0.84) · 0.0161/move
+[30/276] Mendoza 0.561→0.532 (rated 0.44 vs Morocco stored 0.18 rated 0.25) · 0.0165/move
+[31/276] Santiago del Estero 0.592→0.595 (rated 0.62 vs Laos stored 0.64 rated 0.70) · 0.0161/move
+[32/276] Chaco 0.568→0.562 (rated 0.50 vs Portugal stored 0.81 rated 0.73) · 0.0158/move
+[33/276] Salta 0.574→0.562 (rated 0.50 vs Belgium stored 0.83 rated 0.80) · 0.0157/move
+[34/276] La Pampa 0.580→0.582 (rated 0.60 vs Tajikistan stored 0.17 rated 0.22) · 0.0153/move
+[35/276] La Roja 0.580→0.575 (rated 0.63 vs Vanuatu stored 0.58 rated 0.76) · 0.015/move
+[36/276] Ciudad Autónoma de Buenos Aires 0.625→0.620 (rated 0.60 vs Paraguay stored 0.42 rated 0.38) · 0.0147/move
+[37/276] Misiones 0.555→0.543 (rated 0.42 vs Brazil stored 0.71 rated 0.57) · 0.0146/move
+[38/276] Tucumán 0.552→0.525 (rated 0.45 vs Réunion stored 0.63 rated 0.72) · 0.015/move
+[39/276] San Juan 0.586→0.595 (rated 0.64 vs Portugal stored 0.81 rated 0.84) · 0.0148/move
+[40/276] Misiones 0.555→0.558 (rated 0.58 vs Iran stored 0.07 rated 0.12) · 0.0145/move
+[41/276] Neuquén 0.580→0.583 (rated 0.60 vs Honduras stored 0.15 rated 0.20) · 0.0142/move
+[42/276] Santa Cruz 0.568→0.576 (rated 0.58 vs Andorra stored 0.88 rated 0.85) · 0.0141/move
+[43/276] La Roja 0.580→0.556 (rated 0.38 vs Denmark stored 0.85 rated 0.75) · 0.0143/move
+[44/276] Neuquén 0.580→0.560 (rated 0.38 vs Angola stored 0.62 rated 0.48) · 0.0145/move
+[45/276] Córdoba 0.571→0.555 (rated 0.50 vs Martinique stored 0.62 rated 0.65) · 0.0145/move
+[46/276] Jujuy 0.579→0.569 (rated 0.50 vs South Korea stored 0.71 rated 0.65) · 0.0144/move
+[47/276] Córdoba 0.571→0.566 (rated 0.52 vs Peru stored 0.36 rated 0.30) · 0.0142/move
+[48/276] San Juan 0.586→0.567 (rated 0.48 vs Austria stored 0.74 rated 0.74) · 0.0143/move
+[49/276] Buenos Aires 0.530→0.514 (rated 0.45 vs Libya stored 0.04 rated 0.05) · 0.0143/move
+[50/276] Corrientes 0.561→0.573 (rated 0.62 vs Belarus stored 0.08 rated 0.08) · 0.0143/move
+[51/276] Santiago del Estero 0.595→0.574 (rated 0.45 vs Malawi stored 0.16 rated 0.13) · 0.0144/move
+[52/276] Córdoba 0.555→0.540 (rated 0.55 vs Burundi stored 0.06 rated 0.18) · 0.0144/move
+[53/276] Misiones 0.543→0.510 (rated 0.30 vs Gabon stored 0.54 rated 0.48) · 0.0148/move
+[54/276] Santiago del Estero 0.595→0.585 (rated 0.50 vs Palau stored 0.68 rated 0.60) · 0.0147/move
+[55/276] Córdoba 0.571→0.557 (rated 0.50 vs New Zealand stored 0.75 rated 0.75) · 0.0147/move
+[56/276] Formosa 0.589→0.561 (rated 0.40 vs Belgium stored 0.83 rated 0.82) · 0.0149/move
+[57/276] Tucumán 0.525→0.528 (rated 0.67 vs Pitcairn Islands stored 0.38 rated 0.63) · 0.0147/move
+[58/276] Neuquén 0.560→0.557 (rated 0.55 vs Costa Rica stored 0.86 rated 0.83) · 0.0145/move
+[59/276] Salta 0.562→0.578 (rated 0.65 vs Malaysia stored 0.16 rated 0.15) · 0.0146/move
+[60/276] Catamarca 0.562→0.550 (rated 0.52 vs Uzbekistan stored 0.15 rated 0.18) · 0.0145/move
+[61/276] Santa Fe 0.526→0.520 (rated 0.50 vs South Korea stored 0.71 rated 0.70) · 0.0144/move
+[62/276] San Juan 0.567→0.586 (rated 0.62 vs Kiribati stored 0.44 rated 0.35) · 0.0144/move
+[63/276] Tierra del Fuego 0.564→0.552 (rated 0.50 vs Oman stored 0.10 rated 0.10) · 0.0144/move
+[64/276] Santiago del Estero 0.585→0.590 (rated 0.59 vs Mexico stored 0.55 rated 0.54) · 0.0143/move
+[65/276] Misiones 0.510→0.523 (rated 0.58 vs Belize stored 0.71 rated 0.70) · 0.0142/move
+[66/276] Chubut 0.566→0.559 (rated 0.56 vs Curaçao stored 0.73 rated 0.76) · 0.0141/move
+[67/276] Formosa 0.561→0.574 (rated 0.58 vs Belize stored 0.71 rated 0.62) · 0.0141/move
+[68/276] Chaco 0.562→0.557 (rated 0.52 vs Finland stored 0.87 rated 0.82) · 0.014/move
+[69/276] Santiago del Estero 0.585→0.553 (rated 0.40 vs Lebanon stored 0.17 rated 0.22) · 0.0142/move
+[70/276] Salta 0.578→0.569 (rated 0.52 vs Turkmenistan stored 0.08 rated 0.04) · 0.0142/move
+[71/276] Mendoza 0.532→0.516 (rated 0.38 vs São Tomé and Príncipe stored 0.65 rated 0.55) · 0.0142/move
+[72/276] Ciudad Autónoma de Buenos Aires 0.620→0.605 (rated 0.53 vs Malaysia stored 0.16 rated 0.15) · 0.0142/move
+[73/276] Formosa 0.561→0.548 (rated 0.52 vs Côte d'Ivoire stored 0.33 rated 0.38) · 0.0142/move
+[74/276] San Luis 0.569→0.569 (rated 0.52 vs Cyprus stored 0.79 rated 0.67) · 0.014/move
+[75/276] Ciudad Autónoma de Buenos Aires 0.620→0.599 (rated 0.55 vs Rwanda stored 0.34 rated 0.45) · 0.0141/move
+[76/276] Santa Cruz 0.576→0.559 (rated 0.60 vs Anguilla stored 0.44 rated 0.75) · 0.0141/move
+[77/276] San Luis 0.569→0.554 (rated 0.48 vs Lebanon stored 0.17 rated 0.18) · 0.0142/move
+[78/276] Misiones 0.523→0.472 (rated 0.37 vs Cayman Islands stored 0.36 rated 0.73) · 0.0146/move
+[79/276] Chaco 0.557→0.552 (rated 0.55 vs Guinea stored 0.17 rated 0.18) · 0.0145/move
+[80/276] Formosa 0.548→0.532 (rated 0.50 vs Isle of Man stored 0.62 rated 0.70) · 0.0145/move
+[81/276] Tierra del Fuego 0.552→0.543 (rated 0.52 vs Uganda stored 0.06 rated 0.08) · 0.0145/move
+[82/276] Buenos Aires 0.514→0.489 (rated 0.38 vs Saudi Arabia stored 0.04 rated 0.10) · 0.0146/move
+[83/276] Neuquén 0.557→0.553 (rated 0.45 vs São Tomé and Príncipe stored 0.65 rated 0.48) · 0.0145/move
+[84/276] Formosa 0.548→0.546 (rated 0.54 vs Mauritius stored 0.75 rated 0.71) · 0.0143/move
+[85/276] Santiago del Estero 0.553→0.570 (rated 0.65 vs Algeria stored 0.21 rated 0.18) · 0.0143/move
+[86/276] Chubut 0.559→0.572 (rated 0.65 vs Egypt stored 0.13 rated 0.15) · 0.0143/move
+[87/276] Mendoza 0.516→0.519 (rated 0.52 vs Nigeria stored 0.08 rated 0.10) · 0.0142/move
+[88/276] San Juan 0.586→0.579 (rated 0.58 vs Slovakia stored 0.65 rated 0.68) · 0.0141/move
+[89/276] Santiago del Estero 0.553→0.551 (rated 0.62 vs Saint Barthélemy stored 0.65 rated 0.83) · 0.014/move
+[90/276] Misiones 0.472→0.465 (rated 0.45 vs Lebanon stored 0.17 rated 0.18) · 0.0139/move
+[91/276] Formosa 0.546→0.558 (rated 0.62 vs Turkmenistan stored 0.08 rated 0.08) · 0.0139/move
+[92/276] Chaco 0.552→0.535 (rated 0.48 vs French Polynesia stored 0.67 rated 0.74) · 0.0139/move
+[93/276] Neuquén 0.553→0.530 (rated 0.50 vs Montserrat stored 0.44 rated 0.62) · 0.014/move
+[94/276] Chaco 0.552→0.534 (rated 0.52 vs Guernsey stored 0.60 rated 0.75) · 0.014/move
+[95/276] Neuquén 0.553→0.547 (rated 0.52 vs Guyana stored 0.27 rated 0.25) · 0.0139/move
+[96/276] Tierra del Fuego 0.543→0.551 (rated 0.63 vs Algeria stored 0.21 rated 0.28) · 0.0139/move
+[97/276] Río Negro 0.552→0.512 (rated 0.35 vs Falkland Islands stored 0.58 rated 0.76) · 0.0141/move
+[98/276] Chaco 0.552→0.561 (rated 0.58 vs Equatorial Guinea stored 0.13 rated 0.10) · 0.0141/move
+[99/276] Santiago del Estero 0.551→0.553 (rated 0.50 vs Mayotte stored 0.53 rated 0.37) · 0.014/move
+[100/276] Córdoba 0.557→0.566 (rated 0.62 vs Saudi Arabia stored 0.04 rated 0.06) · 0.0139/move
+[101/276] Salta 0.569→0.549 (rated 0.48 vs Isle of Man stored 0.62 rated 0.72) · 0.014/move
+[102/276] San Juan 0.579→0.578 (rated 0.50 vs Micronesia (FSM) stored 0.61 rated 0.45) · 0.0139/move
+[103/276] Tierra del Fuego 0.551→0.541 (rated 0.52 vs Slovenia stored 0.75 rated 0.79) · 0.0138/move
+[104/276] Buenos Aires 0.489→0.499 (rated 0.50 vs Netherlands stored 0.79 rated 0.72) · 0.0138/move
+[105/276] Córdoba 0.557→0.569 (rated 0.61 vs Bosnia and Herzegovina stored 0.50 rated 0.47) · 0.0138/move
+[106/276] Córdoba 0.557→0.562 (rated 0.55 vs Angola stored 0.62 rated 0.50) · 0.0137/move
+[107/276] Buenos Aires 0.489→0.496 (rated 0.52 vs Oman stored 0.10 rated 0.10) · 0.0136/move
+[108/276] San Luis 0.554→0.541 (rated 0.50 vs Qatar stored 0.05 rated 0.10) · 0.0136/move
+[109/276] Santa Fe 0.520→0.515 (rated 0.50 vs Guadeloupe stored 0.62 rated 0.62) · 0.0135/move
+[110/276] Formosa 0.558→0.538 (rated 0.45 vs Mayotte stored 0.53 rated 0.60) · 0.0136/move
+[111/276] Mendoza 0.519→0.500 (rated 0.35 vs Slovakia stored 0.65 rated 0.60) · 0.0136/move
+[112/276] Córdoba 0.566→0.549 (rated 0.42 vs Portugal stored 0.81 rated 0.78) · 0.0137/move
+[113/276] Misiones 0.465→0.456 (rated 0.42 vs Macau stored 0.50 rated 0.52) · 0.0136/move
+[114/276] Río Negro 0.512→0.523 (rated 0.58 vs Mayotte stored 0.53 rated 0.53) · 0.0136/move
+[115/276] San Luis 0.554→0.545 (rated 0.48 vs Denmark stored 0.85 rated 0.82) · 0.0136/move
+[116/276] Corrientes 0.573→0.570 (rated 0.55 vs Finland stored 0.87 rated 0.83) · 0.0135/move
+[117/276] Chubut 0.572→0.576 (rated 0.60 vs Zambia stored 0.09 rated 0.12) · 0.0134/move
+[118/276] Buenos Aires 0.496→0.478 (rated 0.50 vs British Virgin Islands stored 0.42 rated 0.74) · 0.0134/move
+[119/276] Salta 0.549→0.517 (rated 0.40 vs British Virgin Islands stored 0.42 rated 0.62) · 0.0136/move
+[120/276] Santa Cruz 0.559→0.553 (rated 0.53 vs Brunei stored 0.10 rated 0.09) · 0.0135/move
+[121/276] Tucumán 0.528→0.516 (rated 0.40 vs Mauritius stored 0.75 rated 0.67) · 0.0135/move
+[122/276] Chaco 0.561→0.553 (rated 0.50 vs Armenia stored 0.33 rated 0.30) · 0.0134/move
+[123/276] San Luis 0.541→0.566 (rated 0.62 vs Botswana stored 0.64 rated 0.45) · 0.0135/move
+[124/276] La Pampa 0.582→0.574 (rated 0.53 vs Germany stored 0.71 rated 0.71) · 0.0135/move
+[125/276] San Juan 0.578→0.548 (rated 0.45 vs Montserrat stored 0.44 rated 0.65) · 0.0136/move
+[126/276] San Luis 0.545→0.526 (rated 0.40 vs Kazakhstan stored 0.52 rated 0.52) · 0.0137/move
+[127/276] Ciudad Autónoma de Buenos Aires 0.599→0.604 (rated 0.63 vs Luxembourg stored 0.90 rated 0.91) · 0.0136/move
+[128/276] Santa Cruz 0.553→0.541 (rated 0.55 vs Isle of Man stored 0.62 rated 0.76) · 0.0136/move
+[129/276] La Pampa 0.582→0.571 (rated 0.57 vs Zimbabwe stored 0.33 rated 0.44) · 0.0136/move
+[130/276] San Luis 0.545→0.551 (rated 0.55 vs Grenada stored 0.47 rated 0.42) · 0.0135/move
+[131/276] Formosa 0.538→0.522 (rated 0.50 vs Saint Barthélemy stored 0.65 rated 0.80) · 0.0135/move
+[132/276] Mendoza 0.500→0.503 (rated 0.52 vs France stored 0.67 rated 0.70) · 0.0134/move
+[133/276] La Roja 0.556→0.535 (rated 0.42 vs Montserrat stored 0.44 rated 0.52) · 0.0135/move
+[134/276] Río Negro 0.523→0.531 (rated 0.57 vs France stored 0.67 rated 0.66) · 0.0135/move
+[135/276] Río Negro 0.523→0.543 (rated 0.62 vs Latvia stored 0.60 rated 0.48) · 0.0135/move
+[136/276] Jujuy 0.569→0.577 (rated 0.60 vs Guinea stored 0.17 rated 0.15) · 0.0135/move
+[137/276] Córdoba 0.549→0.539 (rated 0.50 vs Mauritania stored 0.08 rated 0.12) · 0.0134/move
+[138/276] Misiones 0.456→0.467 (rated 0.53 vs Finland stored 0.87 rated 0.85) · 0.0134/move
+[139/276] Chubut 0.576→0.570 (rated 0.52 vs El Salvador stored 0.35 rated 0.32) · 0.0134/move
+[140/276] Córdoba 0.549→0.554 (rated 0.60 vs Suriname stored 0.62 rated 0.67) · 0.0133/move
+[141/276] Corrientes 0.570→0.571 (rated 0.55 vs Madagascar stored 0.38 rated 0.28) · 0.0132/move
+[142/276] Formosa 0.522→0.521 (rated 0.50 vs Tanzania stored 0.10 rated 0.04) · 0.0131/move
+[143/276] Corrientes 0.570→0.556 (rated 0.50 vs Benin stored 0.14 rated 0.22) · 0.0132/move
+[144/276] San Luis 0.551→0.542 (rated 0.52 vs Panama stored 0.56 rated 0.62) · 0.0131/move
+[145/276] Salta 0.517→0.517 (rated 0.55 vs Georgia stored 0.18 rated 0.28) · 0.013/move
+[146/276] Misiones 0.456→0.462 (rated 0.50 vs United States stored 0.36 rated 0.37) · 0.013/move
+[147/276] La Roja 0.535→0.534 (rated 0.50 vs Namibia stored 0.55 rated 0.47) · 0.0129/move
+[148/276] Chubut 0.570→0.583 (rated 0.58 vs Italy stored 0.50 rated 0.33) · 0.0129/move
+[149/276] Neuquén 0.547→0.543 (rated 0.58 vs Jamaica stored 0.18 rated 0.35) · 0.0129/move
+[150/276] Córdoba 0.554→0.543 (rated 0.55 vs Martinique stored 0.62 rated 0.76) · 0.0128/move
+[151/276] Tucumán 0.516→0.502 (rated 0.42 vs Martinique stored 0.62 rated 0.67) · 0.0128/move
+[152/276] Neuquén 0.547→0.536 (rated 0.42 vs South Korea stored 0.71 rated 0.67) · 0.0128/move
+[153/276] Catamarca 0.550→0.542 (rated 0.60 vs Anguilla stored 0.44 rated 0.72) · 0.0128/move
+[154/276] Chubut 0.570→0.548 (rated 0.52 vs Turks and Caicos Islan stored 0.44 rated 0.70) · 0.0129/move
+[155/276] San Luis 0.542→0.540 (rated 0.52 vs South Sudan stored 0.10 rated 0.07) · 0.0128/move
+[156/276] Ciudad Autónoma de Buenos Aires 0.604→0.589 (rated 0.50 vs South Africa stored 0.69 rated 0.75) · 0.0128/move
+[157/276] Chaco 0.553→0.545 (rated 0.52 vs Belarus stored 0.08 rated 0.13) · 0.0128/move
+[158/276] Salta 0.517→0.521 (rated 0.52 vs Spain stored 0.88 rated 0.85) · 0.0127/move
+[159/276] Chaco 0.553→0.536 (rated 0.40 vs Ukraine stored 0.59 rated 0.62) · 0.0128/move
+[160/276] Tierra del Fuego 0.541→0.544 (rated 0.55 vs Poland stored 0.52 rated 0.52) · 0.0127/move
+[161/276] Mendoza 0.503→0.518 (rated 0.58 vs Poland stored 0.52 rated 0.42) · 0.0127/move
+[162/276] San Luis 0.540→0.549 (rated 0.55 vs Comoros stored 0.31 rated 0.20) · 0.0127/move
+[163/276] Chaco 0.553→0.543 (rated 0.50 vs Grenada stored 0.47 rated 0.53) · 0.0127/move
+[164/276] Santa Cruz 0.541→0.530 (rated 0.42 vs Australia stored 0.86 rated 0.84) · 0.0127/move
+[165/276] Chubut 0.548→0.550 (rated 0.55 vs Malaysia stored 0.16 rated 0.15) · 0.0126/move
+[166/276] Formosa 0.521→0.534 (rated 0.65 vs Liechtenstein stored 0.80 rated 0.80) · 0.0126/move
+[167/276] Tierra del Fuego 0.544→0.537 (rated 0.33 vs Nepal stored 0.67 rated 0.43) · 0.0126/move
+[168/276] La Pampa 0.571→0.560 (rated 0.38 vs Fiji stored 0.59 rated 0.45) · 0.0126/move
+[169/276] Corrientes 0.556→0.549 (rated 0.52 vs Colombia stored 0.52 rated 0.54) · 0.0125/move
+[170/276] Buenos Aires 0.478→0.491 (rated 0.72 vs Lesotho stored 0.40 rated 0.58) · 0.0125/move
+[171/276] Buenos Aires 0.478→0.484 (rated 0.55 vs Oman stored 0.10 rated 0.15) · 0.0125/move
+[172/276] Tierra del Fuego 0.537→0.540 (rated 0.57 vs Montenegro stored 0.65 rated 0.67) · 0.0125/move
+[173/276] Santa Cruz 0.530→0.534 (rated 0.58 vs French Polynesia stored 0.67 rated 0.72) · 0.0124/move
+[174/276] Formosa 0.521→0.516 (rated 0.50 vs Namibia stored 0.55 rated 0.57) · 0.0124/move
+[175/276] Tucumán 0.502→0.520 (rated 0.68 vs United Arab Emirates stored 0.11 rated 0.10) · 0.0124/move
+[176/276] Salta 0.521→0.513 (rated 0.48 vs Serbia stored 0.40 rated 0.45) · 0.0124/move
+[177/276] Córdoba 0.543→0.540 (rated 0.52 vs Netherlands stored 0.79 rated 0.78) · 0.0123/move
+[178/276] Ciudad Autónoma de Buenos Aires 0.589→0.575 (rated 0.42 vs Eswatini stored 0.38 rated 0.35) · 0.0123/move
+[179/276] Neuquén 0.536→0.528 (rated 0.50 vs Algeria stored 0.21 rated 0.27) · 0.0123/move
+[180/276] San Luis 0.549→0.546 (rated 0.48 vs Nepal stored 0.67 rated 0.58) · 0.0123/move
+[181/276] Jujuy 0.577→0.586 (rated 0.65 vs Morocco stored 0.18 rated 0.15) · 0.0122/move
+[182/276] La Pampa 0.560→0.566 (rated 0.57 vs Montenegro stored 0.65 rated 0.58) · 0.0122/move
+[183/276] San Luis 0.549→0.557 (rated 0.64 vs Togo stored 0.31 rated 0.32) · 0.0122/move
+[184/276] Chaco 0.543→0.540 (rated 0.52 vs Benin stored 0.14 rated 0.12) · 0.0121/move
+[185/276] Santiago del Estero 0.553→0.555 (rated 0.58 vs Kuwait stored 0.37 rated 0.42) · 0.0121/move
+[186/276] La Pampa 0.560→0.564 (rated 0.58 vs Azerbaijan stored 0.14 rated 0.12) · 0.012/move
+[187/276] La Roja 0.534→0.540 (rated 0.58 vs Bangladesh stored 0.12 rated 0.10) · 0.012/move
+[188/276] Misiones 0.462→0.472 (rated 0.62 vs Jamaica stored 0.18 rated 0.25) · 0.012/move
+[189/276] San Juan 0.548→0.542 (rated 0.47 vs Andorra stored 0.88 rated 0.85) · 0.012/move
+[190/276] Catamarca 0.542→0.538 (rated 0.52 vs Nicaragua stored 0.24 rated 0.25) · 0.0119/move
+[191/276] Buenos Aires 0.484→0.490 (rated 0.52 vs Trinidad and Tobago stored 0.34 rated 0.32) · 0.0119/move
+[192/276] Formosa 0.516→0.527 (rated 0.65 vs Bahrain stored 0.26 rated 0.26) · 0.0119/move
+[193/276] Chaco 0.540→0.539 (rated 0.50 vs Finland stored 0.87 rated 0.78) · 0.0118/move
+[194/276] Santa Fe 0.515→0.517 (rated 0.52 vs Côte d'Ivoire stored 0.33 rated 0.32) · 0.0118/move
+[195/276] Catamarca 0.542→0.546 (rated 0.55 vs Honduras stored 0.15 rated 0.12) · 0.0117/move
+[189] ERROR 19177384B63276911592202/CUB: no scores in response (stop_reason=max_tokens): '**DOSSIER A analysis:**\n\nThe country has a 2019 constitution banning SOGI discrimination, a 2022 family code, and legal gender recognition. No documented pattern of police targeting trans people as tr'
+[197/276] La Roja 0.540→0.529 (rated 0.38 vs Tonga stored 0.51 rated 0.48) · 0.0117/move
+[198/276] Buenos Aires 0.484→0.494 (rated 0.54 vs Hungary stored 0.58 rated 0.48) · 0.0117/move
+[199/276] Córdoba 0.540→0.543 (rated 0.55 vs Micronesia (FSM) stored 0.61 rated 0.60) · 0.0116/move
+[200/276] Santiago del Estero 0.555→0.552 (rated 0.50 vs Guatemala stored 0.31 rated 0.25) · 0.0116/move
+[201/276] San Juan 0.542→0.532 (rated 0.40 vs South Korea stored 0.71 rated 0.68) · 0.0116/move
+[202/276] Ciudad Autónoma de Buenos Aires 0.575→0.573 (rated 0.58 vs Hong Kong stored 0.58 rated 0.68) · 0.0115/move
+[203/276] San Luis 0.557→0.547 (rated 0.42 vs Sweden stored 0.85 rated 0.85) · 0.0115/move
+[204/276] Río Negro 0.543→0.550 (rated 0.58 vs Lesotho stored 0.40 rated 0.33) · 0.0115/move
+[205/276] Tierra del Fuego 0.540→0.546 (rated 0.58 vs Egypt stored 0.13 rated 0.10) · 0.0115/move
+[206/276] Catamarca 0.546→0.553 (rated 0.64 vs Norway stored 0.78 rated 0.78) · 0.0115/move
+[207/276] San Luis 0.557→0.554 (rated 0.53 vs Sudan stored 0.05 rated 0.05) · 0.0114/move
+[208/276] Buenos Aires 0.494→0.502 (rated 0.55 vs Mayotte stored 0.53 rated 0.48) · 0.0114/move
+[209/276] Ciudad Autónoma de Buenos Aires 0.575→0.571 (rated 0.48 vs Gabon stored 0.54 rated 0.45) · 0.0114/move
+[210/276] Santiago del Estero 0.555→0.557 (rated 0.55 vs Solomon Islands stored 0.38 rated 0.28) · 0.0113/move
+[211/276] Santa Cruz 0.534→0.531 (rated 0.45 vs Thailand stored 0.86 rated 0.75) · 0.0113/move
+[212/276] Chaco 0.539→0.536 (rated 0.52 vs North Korea stored 0.04 rated 0.04) · 0.0113/move
+[213/276] San Juan 0.532→0.529 (rated 0.52 vs Belarus stored 0.08 rated 0.08) · 0.0112/move
+[214/276] Tierra del Fuego 0.546→0.538 (rated 0.43 vs Mali stored 0.12 rated 0.10) · 0.0112/move
+[215/276] Chubut 0.550→0.544 (rated 0.40 vs Venezuela stored 0.41 rated 0.28) · 0.0112/move
+[216/276] Santa Cruz 0.534→0.551 (rated 0.78 vs Hungary stored 0.58 rated 0.55) · 0.0112/move
+[217/276] Chaco 0.539→0.542 (rated 0.55 vs Maldives stored 0.24 rated 0.22) · 0.0112/move
+[218/276] Formosa 0.527→0.523 (rated 0.52 vs Peru stored 0.36 rated 0.42) · 0.0111/move
+[219/276] La Pampa 0.564→0.558 (rated 0.50 vs French Guiana stored 0.61 rated 0.65) · 0.0111/move
+[220/276] Chaco 0.536→0.540 (rated 0.58 vs Turkmenistan stored 0.08 rated 0.10) · 0.0111/move
+[221/276] La Pampa 0.564→0.559 (rated 0.45 vs Uruguay stored 0.85 rated 0.76) · 0.0111/move
+[222/276] Santiago del Estero 0.557→0.552 (rated 0.50 vs Sudan stored 0.05 rated 0.06) · 0.011/move
+[223/276] La Roja 0.529→0.517 (rated 0.48 vs Bermuda stored 0.52 rated 0.72) · 0.011/move
+[224/276] Salta 0.513→0.510 (rated 0.45 vs Bhutan stored 0.67 rated 0.62) · 0.011/move
+[225/276] Santiago del Estero 0.557→0.566 (rated 0.65 vs Taiwan stored 0.78 rated 0.73) · 0.011/move
+[226/276] Tierra del Fuego 0.538→0.539 (rated 0.58 vs Solomon Islands stored 0.38 rated 0.45) · 0.0109/move
+[227/276] Tucumán 0.520→0.524 (rated 0.53 vs Czechia stored 0.67 rated 0.62) · 0.0109/move
+[228/276] Tierra del Fuego 0.538→0.539 (rated 0.60 vs Maldives stored 0.24 rated 0.35) · 0.0109/move
+[229/276] Tucumán 0.520→0.530 (rated 0.68 vs Yemen stored 0.03 rated 0.03) · 0.0109/move
+[230/276] San Luis 0.554→0.552 (rated 0.53 vs San Marino stored 0.84 rated 0.81) · 0.0108/move
+[231/276] Salta 0.510→0.496 (rated 0.40 vs Bermuda stored 0.52 rated 0.72) · 0.0108/move
+[232/276] Chaco 0.540→0.543 (rated 0.58 vs Tajikistan stored 0.17 rated 0.16) · 0.0108/move
+[233/276] San Juan 0.529→0.535 (rated 0.62 vs Portugal stored 0.81 rated 0.84) · 0.0108/move
+[234/276] Salta 0.510→0.509 (rated 0.50 vs Switzerland stored 0.85 rated 0.83) · 0.0107/move
+[235/276] Salta 0.510→0.505 (rated 0.40 vs Ukraine stored 0.59 rated 0.52) · 0.0107/move
+[236/276] Formosa 0.523→0.519 (rated 0.40 vs Switzerland stored 0.85 rated 0.76) · 0.0107/move
+[237/276] Córdoba 0.543→0.541 (rated 0.53 vs North Korea stored 0.04 rated 0.04) · 0.0107/move
+[238/276] Santa Cruz 0.551→0.545 (rated 0.49 vs Colombia stored 0.52 rated 0.57) · 0.0106/move
+[239/276] San Juan 0.535→0.526 (rated 0.50 vs Macau stored 0.50 rated 0.70) · 0.0106/move
+[240/276] Misiones 0.472→0.471 (rated 0.38 vs Denmark stored 0.85 rated 0.70) · 0.0106/move
+[241/276] Misiones 0.472→0.473 (rated 0.45 vs Venezuela stored 0.41 rated 0.30) · 0.0105/move
+[242/276] Chubut 0.544→0.549 (rated 0.64 vs Madagascar stored 0.38 rated 0.42) · 0.0105/move
+[243/276] San Juan 0.535→0.532 (rated 0.50 vs Gabon stored 0.54 rated 0.52) · 0.0105/move
+[244/276] Neuquén 0.528→0.528 (rated 0.55 vs Russia stored 0.12 rated 0.18) · 0.0105/move
+[245/276] Tierra del Fuego 0.539→0.546 (rated 0.55 vs Botswana stored 0.64 rated 0.48) · 0.0104/move
+[246/276] La Roja 0.517→0.512 (rated 0.48 vs Eswatini stored 0.38 rated 0.45) · 0.0104/move
+[247/276] Mendoza 0.518→0.514 (rated 0.45 vs Wallis and Futuna stored 0.59 rated 0.60) · 0.0104/move
+[248/276] Neuquén 0.528→0.530 (rated 0.58 vs Guatemala stored 0.31 rated 0.35) · 0.0104/move
+[249/276] Formosa 0.519→0.526 (rated 0.58 vs Djibouti stored 0.29 rated 0.18) · 0.0103/move
+[250/276] Catamarca 0.553→0.558 (rated 0.60 vs Andorra stored 0.88 rated 0.83) · 0.0103/move
+[251/276] Mendoza 0.518→0.509 (rated 0.35 vs Malta stored 0.90 rated 0.90) · 0.0103/move
+[252/276] Tucumán 0.530→0.528 (rated 0.45 vs San Marino stored 0.84 rated 0.75) · 0.0103/move
+[253/276] La Roja 0.517→0.519 (rated 0.53 vs Oman stored 0.10 rated 0.10) · 0.0102/move
+[254/276] Córdoba 0.541→0.543 (rated 0.60 vs Bahrain stored 0.26 rated 0.30) · 0.0102/move
+[255/276] Santa Fe 0.517→0.520 (rated 0.52 vs Switzerland stored 0.85 rated 0.80) · 0.0102/move
+[256/276] Río Negro 0.550→0.550 (rated 0.59 vs Sierra Leone stored 0.28 rated 0.38) · 0.0101/move
+[257/276] Buenos Aires 0.502→0.501 (rated 0.52 vs French Guiana stored 0.61 rated 0.70) · 0.0101/move
+[258/276] Neuquén 0.530→0.520 (rated 0.58 vs American Samoa stored 0.18 rated 0.72) · 0.0101/move
+[259/276] Misiones 0.473→0.472 (rated 0.50 vs Montserrat stored 0.44 rated 0.57) · 0.0101/move
+[260/276] Río Negro 0.550→0.555 (rated 0.58 vs Botswana stored 0.64 rated 0.52) · 0.0101/move
+[261/276] Santa Cruz 0.545→0.546 (rated 0.60 vs Nigeria stored 0.08 rated 0.15) · 0.01/move
+[262/276] Santa Cruz 0.545→0.546 (rated 0.55 vs Turkey stored 0.15 rated 0.12) · 0.01/move
+[263/276] La Roja 0.519→0.523 (rated 0.60 vs Libya stored 0.04 rated 0.03) · 0.01/move
+[264/276] Santiago del Estero 0.566→0.559 (rated 0.48 vs Palestinian Territorie stored 0.13 rated 0.23) · 0.01/move
+[265/276] Catamarca 0.558→0.560 (rated 0.58 vs Lesotho stored 0.40 rated 0.38) · 0.0099/move
+[266/276] La Pampa 0.559→0.557 (rated 0.50 vs São Tomé and Príncipe stored 0.65 rated 0.62) · 0.0099/move
+[267/276] Río Negro 0.550→0.548 (rated 0.52 vs Morocco stored 0.18 rated 0.18) · 0.0099/move
+[268/276] Tierra del Fuego 0.546→0.552 (rated 0.68 vs Malaysia stored 0.16 rated 0.12) · 0.0099/move
+[269/276] Jujuy 0.586→0.583 (rated 0.54 vs Cambodia stored 0.57 rated 0.60) · 0.0098/move
+[270/276] San Luis 0.552→0.548 (rated 0.52 vs French Guiana stored 0.61 rated 0.70) · 0.0098/move
+[271/276] Tucumán 0.528→0.529 (rated 0.55 vs Honduras stored 0.15 rated 0.18) · 0.0098/move
+[272/276] Tierra del Fuego 0.546→0.545 (rated 0.42 vs Slovakia stored 0.65 rated 0.47) · 0.0097/move
+[273/276] Mendoza 0.509→0.513 (rated 0.60 vs Zambia stored 0.09 rated 0.08) · 0.0097/move
+[274/276] Formosa 0.526→0.532 (rated 0.65 vs Kuwait stored 0.37 rated 0.30) · 0.0097/move
+[275/276] Jujuy 0.586→0.583 (rated 0.52 vs Kazakhstan stored 0.52 rated 0.50) · 0.0097/move
+[276/276] Salta 0.505→0.510 (rated 0.55 vs North Macedonia stored 0.50 rated 0.38) · 0.0097/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 276 pairs in 1406s · errors: 3 · total score movement: 2.669
+tokens — cache read: 1,289,379 · cache write: 0 · uncached in: 576,657 · out: 692,485
+ERROR: 25984515B9026957888422: bad summary
