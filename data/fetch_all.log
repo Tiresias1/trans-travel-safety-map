@@ -1,0 +1,26 @@
+1885 unique URLs
+[100/1885] {'ok': 81, 'error': 19, 'cached': 0}
+[200/1885] {'ok': 158, 'error': 42, 'cached': 0}
+[300/1885] {'ok': 245, 'error': 55, 'cached': 0}
+[400/1885] {'ok': 329, 'error': 71, 'cached': 0}
+[500/1885] {'ok': 411, 'error': 89, 'cached': 0}
+[600/1885] {'ok': 497, 'error': 103, 'cached': 0}
+[700/1885] {'ok': 578, 'error': 122, 'cached': 0}
+[800/1885] {'ok': 655, 'error': 145, 'cached': 0}
+[900/1885] {'ok': 741, 'error': 159, 'cached': 0}
+[1000/1885] {'ok': 827, 'error': 173, 'cached': 0}
+[1100/1885] {'ok': 920, 'error': 180, 'cached': 0}
+[1200/1885] {'ok': 997, 'error': 203, 'cached': 0}
+[1300/1885] {'ok': 1080, 'error': 220, 'cached': 0}
+[1400/1885] {'ok': 1164, 'error': 236, 'cached': 0}
+[1500/1885] {'ok': 1245, 'error': 255, 'cached': 0}
+[1600/1885] {'ok': 1322, 'error': 278, 'cached': 0}
+[1700/1885] {'ok': 1404, 'error': 296, 'cached': 0}
+[1800/1885] {'ok': 1480, 'error': 320, 'cached': 0}
+done: {'ok': 1558, 'error': 327, 'cached': 0}
+1884 URLs | with date: 1023 | ok-but-undated: 535 | stale(<2024): 440 | unreachable: 326
+Traceback (most recent call last):
+  File "/home/meme/kóði/kort/tools/make_relevance_packets.py", line 44, in <module>
+    (PDIR / re.sub(r"[^A-Za-z0-9_.-]", "_", who) + ".json").write_text(
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
