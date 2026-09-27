@@ -1008,3 +1008,174 @@ re-run tools/build_data.py to refresh ranks and meta.json
 done: 108 pairs in 676s · errors: 4 · total score movement: 1.041
 tokens — cache read: 491,192 · cache write: 0 · uncached in: 254,117 · out: 261,296
 ERROR: 25984515B9026957888422: bad summary
+ZAF done 2026-09-27 08:37:03
+=================== mixed CAN 2026-09-27 08:37:03 ===================
+CAN: 13 regions -> 156 pairs
+system prompt: 20,851 chars (~5,212 tokens) — cached
+mixed mode (regions vs countries): 13 regions (13 blindV2-ready) · comparators 232 countries (score-hidden) · region names WITHHELD · recommend --num-pairs 325
+pairs: 156 · workers: 8 · model: qwen3.8-flash · reasoning: 3000
+weighting (start→end over the run): abs% 0.07→0.01 · abs-shift 0.005→0.0009 · diff% 0.1→0.02
+  at pair 1 / 78 / 156: 0.07000/0.04019/0.01000 · 0.00500/0.00296/0.00090 · 0.10000/0.06026/0.02000
+log: /home/meme/kóði/kort/data/blind-pairwise-20260927-083703.jsonl
+[1/156] Quebec 0.860→0.856 (rated 0.84 vs New Zealand stored 0.75 rated 0.71) · 0.0038/move
+[2/156] Alberta 0.760→0.766 (rated 0.80 vs France stored 0.67 rated 0.72) · 0.005/move
+[3/156] Saskatchewan 0.790→0.804 (rated 0.84 vs Ethiopia stored 0.25 rated 0.23) · 0.0081/move
+[4/156] Northwest Territories 0.860→0.850 (rated 0.83 vs Samoa stored 0.72 rated 0.72) · 0.0084/move
+[5/156] Saskatchewan 0.790→0.779 (rated 0.74 vs DR Congo stored 0.21 rated 0.20) · 0.009/move
+[6/156] Nova Scotia 0.860→0.864 (rated 0.80 vs South Korea stored 0.71 rated 0.53) · 0.0082/move
+[7/156] Yukon 0.860→0.856 (rated 0.83 vs Latvia stored 0.60 rated 0.55) · 0.0076/move
+[8/156] Manitoba 0.860→0.872 (rated 0.90 vs Kenya stored 0.31 rated 0.30) · 0.0081/move
+[9/156] Manitoba 0.860→0.860 (rated 0.83 vs Guadeloupe stored 0.62 rated 0.53) · 0.0072/move
+[10/156] Alberta 0.760→0.767 (rated 0.78 vs Somalia stored 0.03 rated 0.03) · 0.0073/move
+[11/156] Alberta 0.766→0.744 (rated 0.65 vs Bangladesh stored 0.12 rated 0.12) · 0.0086/move
+[12/156] Saskatchewan 0.779→0.785 (rated 0.80 vs Eritrea stored 0.12 rated 0.13) · 0.0084/move
+[13/156] Manitoba 0.860→0.875 (rated 0.88 vs Lithuania stored 0.58 rated 0.50) · 0.0089/move
+[14/156] Newfoundland and Labrador 0.860→0.856 (rated 0.83 vs Jordan stored 0.30 rated 0.25) · 0.0086/move
+[15/156] New Brunswick 0.840→0.839 (rated 0.84 vs San Marino stored 0.84 rated 0.85) · 0.0081/move
+[16/156] Manitoba 0.860→0.872 (rated 0.91 vs North Macedonia stored 0.50 rated 0.50) · 0.0083/move
+[17/156] Nunavut 0.860→0.854 (rated 0.84 vs Ireland stored 0.87 rated 0.85) · 0.0081/move
+[18/156] Yukon 0.856→0.847 (rated 0.80 vs Colombia stored 0.52 rated 0.48) · 0.0082/move
+[19/156] Ontario 0.861→0.864 (rated 0.85 vs Antigua and Barbuda stored 0.60 rated 0.50) · 0.0079/move
+[20/156] New Brunswick 0.840→0.824 (rated 0.82 vs Guinea stored 0.17 rated 0.28) · 0.0084/move
+[21/156] Nova Scotia 0.864→0.858 (rated 0.82 vs Vatican City stored 0.80 rated 0.75) · 0.0083/move
+[22/156] Saskatchewan 0.785→0.792 (rated 0.80 vs Somalia stored 0.03 rated 0.02) · 0.0082/move
+[23/156] Ontario 0.861→0.805 (rated 0.82 vs American Samoa stored 0.18 rated 0.70) · 0.0103/move
+[24/156] Ontario 0.861→0.848 (rated 0.76 vs Monaco stored 0.76 rated 0.70) · 0.0104/move
+[25/156] Saskatchewan 0.785→0.792 (rated 0.82 vs Lithuania stored 0.58 rated 0.60) · 0.0103/move
+[26/156] New Brunswick 0.839→0.834 (rated 0.83 vs Sierra Leone stored 0.28 rated 0.28) · 0.0101/move
+[27/156] Nova Scotia 0.858→0.864 (rated 0.87 vs Ghana stored 0.18 rated 0.18) · 0.0099/move
+[28/156] Yukon 0.847→0.838 (rated 0.82 vs Laos stored 0.64 rated 0.65) · 0.0098/move
+[29/156] Ontario 0.864→0.861 (rated 0.84 vs New Zealand stored 0.75 rated 0.70) · 0.0096/move
+[30/156] Northwest Territories 0.850→0.846 (rated 0.76 vs Switzerland stored 0.85 rated 0.71) · 0.0094/move
+[31/156] Yukon 0.847→0.818 (rated 0.80 vs Falkland Islands stored 0.58 rated 0.79) · 0.01/move
+[32/156] Prince Edward Island 0.860→0.861 (rated 0.83 vs Vanuatu stored 0.58 rated 0.47) · 0.0098/move
+[33/156] Ontario 0.848→0.856 (rated 0.90 vs Belgium stored 0.83 rated 0.87) · 0.0097/move
+[34/156] Nunavut 0.854→0.866 (rated 0.87 vs Bolivia stored 0.72 rated 0.65) · 0.0097/move
+[35/156] Prince Edward Island 0.860→0.854 (rated 0.85 vs Tajikistan stored 0.17 rated 0.18) · 0.0096/move
+[36/156] Northwest Territories 0.850→0.840 (rated 0.78 vs Réunion stored 0.63 rated 0.60) · 0.0097/move
+[37/156] Nova Scotia 0.864→0.866 (rated 0.87 vs Iran stored 0.07 rated 0.10) · 0.0095/move
+[38/156] Saskatchewan 0.792→0.806 (rated 0.86 vs Portugal stored 0.81 rated 0.80) · 0.0096/move
+[39/156] Ontario 0.861→0.859 (rated 0.86 vs Portugal stored 0.81 rated 0.82) · 0.0094/move
+[40/156] Ontario 0.856→0.852 (rated 0.85 vs Austria stored 0.74 rated 0.74) · 0.0093/move
+[41/156] Nova Scotia 0.864→0.854 (rated 0.84 vs Brazil stored 0.71 rated 0.74) · 0.0093/move
+[42/156] Quebec 0.856→0.855 (rated 0.81 vs Angola stored 0.62 rated 0.52) · 0.0091/move
+[43/156] New Brunswick 0.834→0.824 (rated 0.83 vs Martinique stored 0.62 rated 0.70) · 0.0091/move
+[44/156] Manitoba 0.872→0.868 (rated 0.84 vs Luxembourg stored 0.90 rated 0.85) · 0.009/move
+[45/156] Quebec 0.856→0.864 (rated 0.87 vs Guatemala stored 0.31 rated 0.28) · 0.0089/move
+[46/156] Prince Edward Island 0.861→0.871 (rated 0.92 vs Denmark stored 0.85 rated 0.87) · 0.009/move
+[47/156] New Brunswick 0.834→0.830 (rated 0.82 vs Egypt stored 0.13 rated 0.12) · 0.0089/move
+[48/156] Nova Scotia 0.866→0.877 (rated 0.89 vs Gabon stored 0.54 rated 0.48) · 0.0089/move
+[49/156] Newfoundland and Labrador 0.856→0.872 (rated 0.90 vs South Korea stored 0.71 rated 0.62) · 0.009/move
+[50/156] Alberta 0.744→0.727 (rated 0.66 vs Libya stored 0.04 rated 0.08) · 0.0092/move
+[51/156] New Brunswick 0.824→0.815 (rated 0.78 vs Slovakia stored 0.65 rated 0.65) · 0.0092/move
+[52/156] Yukon 0.818→0.825 (rated 0.82 vs Malawi stored 0.16 rated 0.10) · 0.0091/move
+[53/156] New Brunswick 0.824→0.825 (rated 0.84 vs New Zealand stored 0.75 rated 0.81) · 0.009/move
+[54/156] New Brunswick 0.824→0.831 (rated 0.85 vs Burundi stored 0.06 rated 0.05) · 0.0089/move
+[55/156] Manitoba 0.868→0.867 (rated 0.82 vs Guatemala stored 0.31 rated 0.20) · 0.0088/move
+[56/156] Yukon 0.818→0.825 (rated 0.84 vs Palau stored 0.68 rated 0.67) · 0.0088/move
+[57/156] Alberta 0.744→0.733 (rated 0.72 vs Uzbekistan stored 0.15 rated 0.22) · 0.0088/move
+[58/156] Quebec 0.864→0.854 (rated 0.80 vs Slovenia stored 0.75 rated 0.73) · 0.0088/move
+[59/156] Quebec 0.864→0.869 (rated 0.89 vs Portugal stored 0.81 rated 0.82) · 0.0087/move
+[60/156] Nova Scotia 0.877→0.880 (rated 0.82 vs Saint Lucia stored 0.60 rated 0.42) · 0.0087/move
+[61/156] Newfoundland and Labrador 0.872→0.871 (rated 0.84 vs Georgia stored 0.18 rated 0.10) · 0.0085/move
+[62/156] British Columbia 0.880→0.842 (rated 0.85 vs U.S. Virgin Islands stored 0.34 rated 0.78) · 0.009/move
+[63/156] Saskatchewan 0.806→0.811 (rated 0.82 vs Ethiopia stored 0.25 rated 0.25) · 0.0089/move
+[64/156] Alberta 0.727→0.738 (rated 0.79 vs Sudan stored 0.05 rated 0.04) · 0.009/move
+[65/156] Quebec 0.854→0.853 (rated 0.83 vs South Korea stored 0.71 rated 0.65) · 0.0088/move
+[66/156] Ontario 0.852→0.845 (rated 0.80 vs Turkmenistan stored 0.08 rated 0.05) · 0.0088/move
+[67/156] Saskatchewan 0.806→0.811 (rated 0.82 vs Estonia stored 0.75 rated 0.74) · 0.0088/move
+[68/156] Nova Scotia 0.877→0.865 (rated 0.78 vs Saint Vincent and the  stored 0.34 rated 0.32) · 0.0088/move
+[69/156] Saskatchewan 0.806→0.768 (rated 0.78 vs U.S. Virgin Islands stored 0.34 rated 0.82) · 0.0092/move
+[70/156] Nova Scotia 0.880→0.876 (rated 0.84 vs São Tomé and Príncipe stored 0.65 rated 0.60) · 0.0092/move
+[71/156] Saskatchewan 0.806→0.811 (rated 0.83 vs Finland stored 0.87 rated 0.88) · 0.0091/move
+[72/156] British Columbia 0.842→0.837 (rated 0.82 vs Côte d'Ivoire stored 0.33 rated 0.33) · 0.009/move
+[73/156] Newfoundland and Labrador 0.871→0.866 (rated 0.83 vs Côte d'Ivoire stored 0.33 rated 0.28) · 0.009/move
+[74/156] Nunavut 0.866→0.852 (rated 0.80 vs Malaysia stored 0.16 rated 0.22) · 0.009/move
+[75/156] Northwest Territories 0.840→0.809 (rated 0.74 vs Puerto Rico stored 0.33 rated 0.62) · 0.0093/move
+[76/156] Nunavut 0.866→0.855 (rated 0.78 vs Rwanda stored 0.34 rated 0.32) · 0.0093/move
+[77/156] New Brunswick 0.831→0.830 (rated 0.83 vs Cameroon stored 0.10 rated 0.10) · 0.0092/move
+[78/156] Prince Edward Island 0.871→0.865 (rated 0.77 vs Mauritius stored 0.75 rated 0.64) · 0.0092/move
+[79/156] Manitoba 0.867→0.858 (rated 0.83 vs Mozambique stored 0.62 rated 0.65) · 0.0092/move
+[80/156] Nova Scotia 0.876→0.871 (rated 0.83 vs Kiribati stored 0.44 rated 0.40) · 0.0091/move
+[81/156] Newfoundland and Labrador 0.866→0.853 (rated 0.86 vs Isle of Man stored 0.62 rated 0.80) · 0.0092/move
+[82/156] Nunavut 0.855→0.847 (rated 0.83 vs Saudi Arabia stored 0.04 rated 0.10) · 0.0092/move
+[83/156] Quebec 0.853→0.851 (rated 0.82 vs São Tomé and Príncipe stored 0.65 rated 0.58) · 0.0091/move
+[84/156] Nova Scotia 0.871→0.867 (rated 0.83 vs Azerbaijan stored 0.14 rated 0.10) · 0.009/move
+[85/156] Newfoundland and Labrador 0.866→0.866 (rated 0.86 vs Mauritius stored 0.75 rated 0.70) · 0.0089/move
+[86/156] Newfoundland and Labrador 0.866→0.855 (rated 0.80 vs Central African Republ stored 0.20 rated 0.25) · 0.0089/move
+[87/156] British Columbia 0.837→0.832 (rated 0.93 vs Turks and Caicos Islan stored 0.44 rated 0.72) · 0.0089/move
+[88/156] British Columbia 0.837→0.841 (rated 0.84 vs Luxembourg stored 0.90 rated 0.88) · 0.0088/move
+[89/156] Nova Scotia 0.871→0.865 (rated 0.83 vs Austria stored 0.74 rated 0.74) · 0.0088/move
+[90/156] Newfoundland and Labrador 0.853→0.851 (rated 0.85 vs Syria stored 0.04 rated 0.03) · 0.0087/move
+[91/156] Northwest Territories 0.809→0.816 (rated 0.84 vs Morocco stored 0.18 rated 0.15) · 0.0087/move
+[92/156] Newfoundland and Labrador 0.853→0.863 (rated 0.90 vs Kyrgyzstan stored 0.32 rated 0.25) · 0.0087/move
+[93/156] Nunavut 0.855→0.847 (rated 0.82 vs Algeria stored 0.21 rated 0.25) · 0.0087/move
+[94/156] Yukon 0.825→0.812 (rated 0.82 vs Saint Barthélemy stored 0.65 rated 0.85) · 0.0088/move
+[95/156] Saskatchewan 0.811→0.796 (rated 0.76 vs French Polynesia stored 0.67 rated 0.83) · 0.0088/move
+[96/156] Newfoundland and Labrador 0.855→0.862 (rated 0.90 vs Turkmenistan stored 0.08 rated 0.06) · 0.0088/move
+[97/156] Quebec 0.851→0.841 (rated 0.85 vs Montserrat stored 0.44 rated 0.62) · 0.0088/move
+[98/156] Nunavut 0.847→0.846 (rated 0.84 vs Honduras stored 0.15 rated 0.12) · 0.0087/move
+[99/156] Quebec 0.851→0.836 (rated 0.82 vs Falkland Islands stored 0.58 rated 0.79) · 0.0088/move
+[100/156] Nunavut 0.847→0.842 (rated 0.80 vs Italy stored 0.50 rated 0.48) · 0.0088/move
+[101/156] Saskatchewan 0.811→0.796 (rated 0.80 vs Guernsey stored 0.60 rated 0.85) · 0.0088/move
+[102/156] New Brunswick 0.830→0.829 (rated 0.83 vs Turkey stored 0.15 rated 0.17) · 0.0088/move
+[103/156] Yukon 0.812→0.818 (rated 0.84 vs Suriname stored 0.62 rated 0.58) · 0.0087/move
+[104/156] Ontario 0.845→0.842 (rated 0.80 vs Micronesia (FSM) stored 0.61 rated 0.55) · 0.0087/move
+[105/156] New Brunswick 0.830→0.830 (rated 0.83 vs Bahamas stored 0.60 rated 0.60) · 0.0086/move
+[106/156] New Brunswick 0.830→0.835 (rated 0.83 vs Angola stored 0.62 rated 0.50) · 0.0086/move
+[107/156] Newfoundland and Labrador 0.862→0.868 (rated 0.90 vs Mayotte stored 0.53 rated 0.50) · 0.0085/move
+[108/156] Nunavut 0.842→0.843 (rated 0.82 vs Nauru stored 0.62 rated 0.52) · 0.0085/move
+[109/156] Manitoba 0.858→0.863 (rated 0.92 vs Uruguay stored 0.85 rated 0.88) · 0.0084/move
+[110/156] Nunavut 0.842→0.842 (rated 0.84 vs Sweden stored 0.85 rated 0.81) · 0.0084/move
+[111/156] Nova Scotia 0.865→0.862 (rated 0.86 vs Bulgaria stored 0.53 rated 0.54) · 0.0083/move
+[112/156] Alberta 0.738→0.731 (rated 0.66 vs Netherlands stored 0.79 rated 0.77) · 0.0083/move
+[113/156] Yukon 0.818→0.818 (rated 0.84 vs Guadeloupe stored 0.62 rated 0.70) · 0.0082/move
+[114/156] Nova Scotia 0.865→0.857 (rated 0.80 vs Macau stored 0.50 rated 0.55) · 0.0082/move
+[115/156] Alberta 0.738→0.742 (rated 0.74 vs Bahrain stored 0.26 rated 0.21) · 0.0082/move
+[116/156] Quebec 0.836→0.844 (rated 0.92 vs Mayotte stored 0.53 rated 0.50) · 0.0082/move
+[117/156] New Brunswick 0.835→0.839 (rated 0.84 vs Portugal stored 0.81 rated 0.79) · 0.0082/move
+[118/156] Manitoba 0.863→0.866 (rated 0.89 vs Denmark stored 0.85 rated 0.86) · 0.0081/move
+[119/156] Manitoba 0.863→0.864 (rated 0.83 vs Botswana stored 0.64 rated 0.51) · 0.0081/move
+[120/156] Nunavut 0.842→0.842 (rated 0.84 vs Lithuania stored 0.58 rated 0.52) · 0.008/move
+[121/156] Ontario 0.842→0.839 (rated 0.88 vs British Virgin Islands stored 0.42 rated 0.62) · 0.008/move
+[122/156] New Brunswick 0.835→0.835 (rated 0.83 vs Finland stored 0.87 rated 0.82) · 0.0079/move
+[123/156] Manitoba 0.863→0.867 (rated 0.90 vs Syria stored 0.04 rated 0.03) · 0.0079/move
+[124/156] Alberta 0.731→0.725 (rated 0.73 vs British Virgin Islands stored 0.42 rated 0.55) · 0.0078/move
+[125/156] Manitoba 0.864→0.862 (rated 0.85 vs Saudi Arabia stored 0.04 rated 0.05) · 0.0078/move
+[126/156] Newfoundland and Labrador 0.868→0.864 (rated 0.85 vs Indonesia stored 0.15 rated 0.18) · 0.0078/move
+[127/156] British Columbia 0.841→0.845 (rated 0.87 vs Czechia stored 0.67 rated 0.65) · 0.0077/move
+[128/156] Saskatchewan 0.796→0.793 (rated 0.82 vs Cook Islands stored 0.45 rated 0.60) · 0.0077/move
+[129/156] Nova Scotia 0.857→0.852 (rated 0.82 vs Gabon stored 0.54 rated 0.55) · 0.0077/move
+[130/156] Manitoba 0.867→0.870 (rated 0.90 vs Grenada stored 0.47 rated 0.50) · 0.0076/move
+[131/156] Saskatchewan 0.796→0.794 (rated 0.75 vs Armenia stored 0.33 rated 0.25) · 0.0076/move
+[132/156] Nunavut 0.842→0.843 (rated 0.83 vs Moldova stored 0.54 rated 0.45) · 0.0075/move
+[133/156] Manitoba 0.862→0.856 (rated 0.85 vs Isle of Man stored 0.62 rated 0.75) · 0.0075/move
+[134/156] Newfoundland and Labrador 0.864→0.866 (rated 0.90 vs Guinea stored 0.17 rated 0.22) · 0.0075/move
+[135/156] Newfoundland and Labrador 0.864→0.862 (rated 0.87 vs Saint Barthélemy stored 0.65 rated 0.78) · 0.0074/move
+[136/156] Prince Edward Island 0.865→0.866 (rated 0.87 vs Zimbabwe stored 0.33 rated 0.33) · 0.0074/move
+[137/156] Quebec 0.844→0.848 (rated 0.90 vs France stored 0.67 rated 0.67) · 0.0074/move
+[138/156] Quebec 0.844→0.845 (rated 0.82 vs Latvia stored 0.60 rated 0.50) · 0.0073/move
+[139/156] Northwest Territories 0.816→0.823 (rated 0.83 vs Marshall Islands stored 0.71 rated 0.52) · 0.0073/move
+[140/156] Nova Scotia 0.852→0.854 (rated 0.88 vs France stored 0.67 rated 0.71) · 0.0073/move
+[141/156] Prince Edward Island 0.865→0.860 (rated 0.82 vs Cook Islands stored 0.45 rated 0.52) · 0.0073/move
+[142/156] British Columbia 0.845→0.843 (rated 0.80 vs India stored 0.43 rated 0.38) · 0.0072/move
+[143/156] Ontario 0.839→0.836 (rated 0.83 vs Bangladesh stored 0.12 rated 0.18) · 0.0072/move
+[144/156] Saskatchewan 0.794→0.798 (rated 0.85 vs Honduras stored 0.15 rated 0.15) · 0.0072/move
+[145/156] Prince Edward Island 0.865→0.858 (rated 0.84 vs Montserrat stored 0.44 rated 0.60) · 0.0072/move
+[146/156] Newfoundland and Labrador 0.862→0.860 (rated 0.82 vs Cameroon stored 0.10 rated 0.10) · 0.0071/move
+[147/156] New Brunswick 0.835→0.838 (rated 0.84 vs Benin stored 0.14 rated 0.10) · 0.0071/move
+[148/156] Nunavut 0.843→0.841 (rated 0.84 vs Ethiopia stored 0.25 rated 0.30) · 0.0071/move
+[149/156] Manitoba 0.856→0.854 (rated 0.85 vs Nicaragua stored 0.24 rated 0.25) · 0.007/move
+[150/156] New Brunswick 0.835→0.838 (rated 0.84 vs Madagascar stored 0.38 rated 0.33) · 0.007/move
+[151/156] Manitoba 0.856→0.858 (rated 0.88 vs Costa Rica stored 0.86 rated 0.83) · 0.007/move
+[152/156] Saskatchewan 0.798→0.800 (rated 0.81 vs Croatia stored 0.77 rated 0.74) · 0.0069/move
+[153/156] Yukon 0.818→0.817 (rated 0.80 vs Liechtenstein stored 0.80 rated 0.77) · 0.0069/move
+[154/156] Alberta 0.725→0.720 (rated 0.60 vs Bolivia stored 0.72 rated 0.72) · 0.0069/move
+[155/156] Saskatchewan 0.798→0.800 (rated 0.82 vs Italy stored 0.50 rated 0.47) · 0.0069/move
+[156/156] British Columbia 0.843→0.844 (rated 0.87 vs Uganda stored 0.06 rated 0.06) · 0.0068/move
+
+re-run tools/build_data.py to refresh ranks and meta.json
+
+done: 156 pairs in 772s · errors: 0 · total score movement: 1.064
+tokens — cache read: 736,788 · cache write: 0 · uncached in: 323,960 · out: 334,382
+ERROR: 25984515B9026957888422: bad summary
