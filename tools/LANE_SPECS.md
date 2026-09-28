@@ -15,3 +15,6 @@
    must still copy verbatim).
 4. No lane may remove a record's last sources: floor=2 usable links; below that, needsIntake
    and the intake step supplies replacements.
+5. Tie-break for territory/region records vs rule 1: a generic parent-framework document stays
+   on a child record ONLY if the child's own text makes a claim that document supports AND no
+   child-specific source covers it; otherwise drop it (the fact belongs sourced on the parent).
