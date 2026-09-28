@@ -22,8 +22,10 @@ def main():
     C = json.load(open(ROOT / "data/countries.json"))
     A = json.load(open(ROOT / "data/admin1.json"))
     applied = skip = 0
+    applied_set = set()
     log = []
-    for f in sorted(OUT.glob("*.json")):
+    # newest-mtime first so a per-record targeted rework (later) always wins
+    for f in sorted(OUT.glob("*.json"), key=lambda x: x.stat().st_mtime, reverse=True):
         try:
             data = json.load(open(f))
         except Exception as e:
@@ -46,7 +48,10 @@ def main():
             bss = r.get("blindSourceSummaries")
             if not isinstance(bss, list) or not bss:
                 print(f"[skip] {who}: blindSourceSummaries empty"); skip += 1; continue
+            if who in applied_set:
+                continue  # later-applied file already owns this who
             if not dry:
+                applied_set.add(who)
                 tgt["summary"] = r["summary"]
                 tgt["blindSummary"] = r["blindSummary"]
                 tgt["blindSourceSummaries"] = [str(x) for x in bss][:12]
