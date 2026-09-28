@@ -52,6 +52,11 @@ def main():
                 continue  # later-applied file already owns this who
             if not dry:
                 applied_set.add(who)
+                for vf, bf in (("tangentialFactors","blindTangential"),
+                               ("localsOnly","blindLocalsOnly"),
+                               ("outOfScopeNotes","blindOutOfScope")):
+                    if r.get(vf) is not None: tgt[vf] = r[vf]
+                    if r.get(bf) is not None: tgt[bf] = r[bf]
                 tgt["summary"] = r["summary"]
                 tgt["blindSummary"] = r["blindSummary"]
                 tgt["blindSourceSummaries"] = [str(x) for x in bss][:12]
