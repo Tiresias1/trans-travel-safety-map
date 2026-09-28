@@ -20,7 +20,7 @@ def url_meta(u):
     except Exception: return {}
 def build(who):
     if who.startswith('country:'):
-        iso = who[7:]; r = C.get(iso)
+        iso = who[8:]; r = C.get(iso)
         if not r: return None
         name, summ, srcs = r['name'], r.get('summary',''), r.get('sources') or []
     elif '/' in who:
