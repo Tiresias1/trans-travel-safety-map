@@ -1,42 +1,38 @@
 {
  "who": "PHL/Central Luzon",
- "mechanical": true,
  "verdicts": [
   {
    "url": "https://nbi.gov.ph/press_releases/2025/06172025/8118/",
-   "keep": false,
-   "on_topic": null,
+   "keep": true,
+   "on_topic": "true",
    "supports": "unverifiable",
-   "note": "mechanical: unreachable/nav-only or uncached"
+   "note": "never fetched (status None); official NBI press-release URL for the region-core claim — re-fetch priority"
   },
   {
    "url": "https://mb.com.ph/2025-06-17/nbi-arrests-4-sex-traffickers-rescues-45-victims-in-angeles-city",
    "keep": false,
-   "on_topic": null,
+   "on_topic": "true",
    "supports": "unverifiable",
-   "note": "mechanical: unreachable/nav-only or uncached"
+   "note": "cache missing (403); duplicates the NBI release"
   },
   {
    "url": "https://doi.org/10.52214/cja.v4i1.14226",
-   "keep": true,
-   "on_topic": null,
-   "supports": "unverifiable",
-   "note": "mechanical: no region/sibling token; framework source"
+   "keep": false,
+   "on_topic": "true",
+   "supports": "no",
+   "note": "bot-wall shell (1.5KB, Clark/Subic/transgender 0 hits) — cannot carry basing-economy claim"
   },
   {
    "url": "https://2021-2025.state.gov/reports/2024-trafficking-in-persons-report/philippines/",
    "keep": true,
-   "on_topic": true,
-   "supports": "unverifiable",
-   "note": "mechanical"
+   "on_topic": "framework",
+   "supports": "partial",
+   "note": "TIP 2024: trafficking 107x, Philippines 21x — exploitation-in-tourist-destinations pattern supported"
   }
  ],
  "false_claims": [
-  "Angeles City and the Clark-Subic corridor in Pampanga constitute the region's principal traveler-facing risk.",
-  "In June 2025 the National Bureau of Investigation's Bataan District Office dismantled a trafficking operation at Field S",
-  "in March 2025 the same office arrested a foreign national and accomplices in Angeles City under the Expanded Anti-Traffi",
-  "Peer-reviewed research describes the US military-basing economy around Clark as sustaining sexual markets that dispropor"
+  "June 2025 Field Sensation's Bar raid (4 arrested, 45 rescued, 13 minors) — pending NBI re-fetch",
+  "March 2025 arrest (12 rescued incl 5 minors) — no verifiable source in packet"
  ],
- "search_updates": [],
- "needs_search": []
+ "search_updates": []
 }

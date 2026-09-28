@@ -1,25 +1,31 @@
 {
  "who": "BRA/Mato Grosso",
- "mechanical": true,
  "verdicts": [
   {
    "url": "https://sbtnews.sbt.com.br/noticia/brasil/brasil-lidera-ranking-mundial-de-assassinatos-de-pessoas-trans",
    "keep": true,
    "on_topic": true,
-   "supports": "unverifiable",
-   "note": "mechanical"
+   "supports": "yes",
+   "note": "2025: 'Mato Grosso e Rio de Janeiro com 3 casos cada' present"
   },
   {
    "url": "https://sergipeemdebate.com.br/numero-de-pessoas-trans-e-travestis-assassinadas-no-brasil-cai-em-2024/",
-   "keep": false,
+   "keep": true,
    "on_topic": false,
-   "supports": "unverifiable",
-   "note": "mechanical: region absent from text; sibling 'Rio Granda do Norte' present"
+   "supports": "no",
+   "note": "2024 state-by-state table in this cached article does NOT contain 'Mato Grosso' at all (SP/MG/CE tiers only); the MT-8-in-2024 figure it is credited with actually appears in the CNN article, not this one — misattributed source"
   }
  ],
  "false_claims": [
-  "Mato Grosso recorded 3 killings of trans and travesti people in 2025 on a population of ~3.6 million - about 0.83 per mi"
+  "the 2024 dossier counted 8 killings in the state, its highest year",
+  "The state sits on the Cerrado/agribusiness frontier"
  ],
- "search_updates": [],
- "needs_search": []
+ "search_updates": [
+  {
+   "claim": "2024 Mato Grosso count attributed to Sergipe article",
+   "found": "MT 8-cada-BA-PE line is in CNN cache 7c7e373b, not Sergipe cache dab0890; 'highest year' unsourced",
+   "url": "https://www.cnnbrasil.com.br/nacional/brasil-e-o-pais-que-mais-mata-pessoas-trans-e-travestis-aponta-dossie/",
+   "date": "2025-01-27"
+  }
+ ]
 }

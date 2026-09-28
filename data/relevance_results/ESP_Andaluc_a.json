@@ -1,36 +1,35 @@
 {
  "who": "ESP/Andalucía",
- "mechanical": true,
  "verdicts": [
   {
-   "url": "https://www.boe.es/eli/es/l/2023/02/28/4",
-   "keep": false,
-   "on_topic": false,
-   "supports": "unverifiable",
-   "note": "mechanical: region absent from text; sibling 'Ciudad Autónoma de Ceuta' present"
+   "url": "https://www.boe.es/eli/es/l/2023-02-28/4",
+   "keep": true,
+   "on_topic": true,
+   "supports": "yes",
+   "note": "national framework source: genuine 222KB BOE text of Ley 4/2023 (4/2023/LGTBI/personas trans tokens hit). NOTE: the 'page not retrievable' prefix in this packet's claim-summary is FALSE - cache holds full law text."
   },
   {
-   "url": "https://www.hrw.org/news/2023/02/16/victory-fight-gender-recognition-spain-0",
+   "url": "https://www.hrw.org/news/2023-02-16/victory-fight-gender-recognition-spain-0",
    "keep": true,
-   "on_topic": null,
-   "supports": "unverifiable",
-   "note": "mechanical: no region/sibling token; framework source"
+   "on_topic": true,
+   "supports": "partial",
+   "note": "national framework source: Spain/gender-recognition/trans tokens hit; 'self-declaration' phrasing absent -> partial"
   },
   {
    "url": "https://alonsosala.com/en/blog/organic-law-4-2023-trans-equality-hate-crimes-spain",
-   "keep": false,
-   "on_topic": false,
-   "supports": "unverifiable",
-   "note": "mechanical: region absent from text; sibling 'Comunidad de Madrid' present"
+   "keep": true,
+   "on_topic": true,
+   "supports": "yes",
+   "note": "national framework source: 22.4/510/aggravat/'not amend' tokens hit (penal-code analysis)"
   }
  ],
  "false_claims": [
-  "Ley 8/2017 of 28 December (in force 4 February 2018) guarantees LGTBI rights and equal treatment for LGTBI people and th",
-  "and the regional government approved an equality strategy for 2024-2028 on 26 December 2024.",
-  "Visitor-relevant geography: Andalucía carries much of Spain's LGBTQ mass tourism (Mijas, Torremolinos, Seville), which c"
+  "Ley 2/2014, an integral law for non-discrimination on grounds of gender identity, was among the first trans-specific regional laws in Europe",
+  "Ley 8/2017 of 28 December (in force 4 February 2018) guarantees LGTBI rights and equal treatment",
+  "the regional government approved an equality strategy for 2024-2028 on 26 December 2024",
+  "Andalucía carries much of Spain's LGBTQ mass tourism (Mijas, Torremolinos, Seville)",
+  "school-content opt-out ('pin parental') conflicts that historically concentrated in Andalusian municipalities"
  ],
  "search_updates": [],
- "needs_search": [
-  "Ley 8/2017 of 28 December (in force 4 February 2018) guarantees LGTBI rights and equal treatment for LGTBI people and th"
- ]
+ "lane_note": "ALL regional claims unsourced in packet (Andaluc/2/2014/8/2014... =0 in its 3 caches); fix: planlgtbi.es cache (carried in Ceuta/Melilla packets) contains 2/2014+8/2017 tokens - rework can cite it or FELGTBI text version"
 }
