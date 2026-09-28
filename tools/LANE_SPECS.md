@@ -18,3 +18,13 @@
 5. Tie-break for territory/region records vs rule 1: a generic parent-framework document stays
    on a child record ONLY if the child's own text makes a claim that document supports AND no
    child-specific source covers it; otherwise drop it (the fact belongs sourced on the parent).
+6. Four-field split for ALL rework outputs (visible AND blind mirrors of each):
+   - summary: THE VISITOR RISK ASSESSMENT — what a trans traveler faces on the ground: legal
+     protections/enforcement, practical safety, documents/screening at borders, marriage/travel-with-
+     partner relevance. Context may inform the assessment but must not dominate it.
+   - tangentialFactors: adjacent circumstances coloring a visit but not core local risk (federal
+     policy turbulence of the parent state, litigation flux, comparisons with neighbours).
+   - localsOnly: facts governing residents, not visitors (cultural-gender roles like fa'afafine
+     social embedding, birth-register practice, resident discrimination data, local surveys).
+   - outOfScopeNotes: unresolved or unverifiable status ('passport marker regime unknown'), scope
+     caveats. Each field: 1-3 <p> (outOfScopeNotes may be plain sentences), absolute terms, sourced.
