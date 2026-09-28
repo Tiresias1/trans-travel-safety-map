@@ -34,3 +34,8 @@ scores are provisional until sources/summaries are reworked.
 - research-needed floor=2 sources; jurisdictions below get priority in rework (must
   gain NEW dated sources in freshness wave or be honestly flagged in summary).
 - Scores only move via blind_pairwise.py; audits never touch score fields.
+
+## State @ handoff point
+- Freshness: sf01-08 done, g-tranche landing; 147 judged/24 superseded. Merge point: data/freshness/*.json consumed by make_rework_batches.py.
+- Rework: data/rework_batches/r0NN.json (34 batches/300 flagged records: derived-ancestors + research-floor + audit-flagged regions). Lane rules must be filter-safe: lanes get the batch file (claims are short quoted clauses — if 400s recur, strip flags[] to token lists).
+- After rework applies: territory pairwise via blind_pairwise --only-countries <37+parents>, then region re-calibration --regions-vs-countries, dated-evidence prompt tweak, deploy.
