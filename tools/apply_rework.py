@@ -50,6 +50,15 @@ def main():
                 print(f"[skip] {who}: blindSourceSummaries empty"); skip += 1; continue
             if who in applied_set:
                 continue  # later-applied file already owns this who
+            if r.get("blindOnly"):
+                if not dry:
+                    for bf in ("blindSummary","blindTangential","blindLocalsOnly",
+                               "blindOutOfScope","blindSourceSummaries"):
+                        if r.get(bf) is not None: tgt[bf] = r[bf]
+                    tgt["researchedAt"] = __import__("datetime").date.today().isoformat()
+                applied_set.add(who); applied += 1
+                log.append(f"{who}: blind mirrors re-derived ({r.get('notes','')[:40]})")
+                continue
             if not dry:
                 applied_set.add(who)
                 for vf, bf in (("tangentialFactors","blindTangential"),
