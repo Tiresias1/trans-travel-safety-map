@@ -41,6 +41,17 @@ def main():
                             if x.get("iso3") == iso and x.get("name") == nm), None)
             if tgt is None:
                 print(f"[skip] {who}: no target record"); skip += 1; continue
+            if r.get("blindOnly"):
+                if (who, "blind") in applied_set:
+                    continue
+                if not dry:
+                    for bf in ("blindSummary","blindTangential","blindLocalsOnly",
+                               "blindOutOfScope","blindSourceSummaries"):
+                        if r.get(bf) is not None: tgt[bf] = r[bf]
+                    tgt["researchedAt"] = __import__("datetime").date.today().isoformat()
+                applied_set.add((who, "blind")); applied += 1
+                log.append(f"{who}: blind mirrors re-derived ({r.get('notes','')[:40]})")
+                continue
             if not valid_summary(r.get("summary", "")):
                 print(f"[skip] {who}: bad summary ({len(r.get('summary',''))} chars)"); skip += 1; continue
             if not str(r.get("blindSummary", "")).strip():
@@ -48,29 +59,21 @@ def main():
             bss = r.get("blindSourceSummaries")
             if not isinstance(bss, list) or not bss:
                 print(f"[skip] {who}: blindSourceSummaries empty"); skip += 1; continue
-            if who in applied_set:
-                continue  # later-applied file already owns this who
-            if r.get("blindOnly"):
-                if not dry:
-                    for bf in ("blindSummary","blindTangential","blindLocalsOnly",
-                               "blindOutOfScope","blindSourceSummaries"):
-                        if r.get(bf) is not None: tgt[bf] = r[bf]
-                    tgt["researchedAt"] = __import__("datetime").date.today().isoformat()
-                applied_set.add(who); applied += 1
-                log.append(f"{who}: blind mirrors re-derived ({r.get('notes','')[:40]})")
-                continue
+            owns_b = (who, "blind") in applied_set
+            owns_v = (who, "vis") in applied_set
+            if owns_b and owns_v:
+                continue  # later-applied file already owns both classes
             if not dry:
-                applied_set.add(who)
+                applied_set.add((who, "vis")); applied_set.add((who, "blind"))
                 for vf, bf in (("tangentialFactors","blindTangential"),
                                ("localsOnly","blindLocalsOnly"),
                                ("outOfScopeNotes","blindOutOfScope")):
-                    if r.get(vf) is not None: tgt[vf] = r[vf]
-                    if r.get(bf) is not None: tgt[bf] = r[bf]
-                tgt["summary"] = r["summary"]
-                tgt["blindSummary"] = r["blindSummary"]
-                tgt["blindSourceSummaries"] = [str(x) for x in bss][:12]
-                for k in ("blindTangential", "blindLocalsOnly", "blindOutOfScope"):
-                    if r.get(k): tgt[k] = r[k]
+                    if not owns_v and r.get(vf) is not None: tgt[vf] = r[vf]
+                    if not owns_b and r.get(bf) is not None: tgt[bf] = r[bf]
+                if not owns_v: tgt["summary"] = r["summary"]
+                if not owns_b:
+                    tgt["blindSummary"] = r["blindSummary"]
+                    tgt["blindSourceSummaries"] = [str(x) for x in bss][:12]
                 tgt["researchedAt"] = date.today().isoformat()
                 tgt.pop("reworkPending", None)
             applied += 1

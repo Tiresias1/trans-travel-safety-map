@@ -46,6 +46,16 @@ def check(rec, name):
     return not fails
 def main():
     C=json.load(open(ROOT/'data/countries.json')); A=json.load(open(ROOT/'data/admin1.json'))
+    if '--file' in sys.argv:
+        fp = sys.argv[sys.argv.index('--file')+1]
+        vis = json.load(open(ROOT/'data/countries.json'))['ASM']
+        d = json.load(open(fp)); ok = True
+        for r in d.get('rewrites', []):
+            mapped = dict(vis)
+            for k in ('blindSummary','blindTangential','blindLocalsOnly','blindOutOfScope','blindSourceSummaries'):
+                if r.get(k) is not None: mapped[k] = r[k]
+            if not check(mapped, r.get('who', fp)): ok = False
+        sys.exit(0 if ok else 1)
     if '--all-countries' in sys.argv:
         bad=[k for k,r in C.items() if not check(r,k)]
         print(f"{len(C)-len(bad)}/{len(C)} pass | fails: {bad[:20]}")
