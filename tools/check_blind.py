@@ -12,7 +12,8 @@ BANNED = re.compile(r"\b(federal\w*|territor\w*|dependenc\w*|colon\w*|island\w*|
     r"pacific|atlantic|indian|caribbe\w*|mediterrane\w*|asia\w*|africa\w*|oceani\w*|europe\w*|"
     r"latin\s+americ\w*|caribbe\w*|central\s+america\w*|south\s+america\w*|north\s+america\w*|"
     r"overseas|crown|empire|kingdom|republic|attorney\s+general|commonwealth|"
-    r"(north|south|east|west)ern?\s+(pacific|atlantic|asia|india|caribbean|hemisphere))\b", re.I)
+    r"(north|south|east|west)ern?\s+(pacific|atlantic|asia|india|caribbean|hemisphere)|"
+    r"\bstate\b(?!\s*/\s*province)|\bmotto\b|\b\d{2,3},\d{3}\s+(?:residents|people)\b)", re.I)
 ALLOW = set("""nation national state province historic parent lawyer official government legal
 top local elected legislature courts judiciary custom customs culture customary society societies
 marriage wedlock conduct consent criminal decriminalised decriminalized recognition rights

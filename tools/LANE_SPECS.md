@@ -45,3 +45,12 @@
       visible field by (a)+(b). blindSourceSummaries: same mapping, no name leakage.
    d. Mechanical gate: python3 tools/check_blind.py --who <who> must pass before any blind field
       is merged. Banned words + enrichment-diff are errors, not warnings.
+7e. EXTENDED BLIND VOCABULARY (ruling 2026-09-29):
+   - bare "state" as unit placeholder is BANNED -> always the literal "state/province"
+   - blind mirrors (including blindSourceSummaries) must carry no SEARCHABLE FINGERPRINTS even
+     where visible text does: exact populations ("~57,000 residents"), mottos, founding stories of
+     named-by-function organisations ("formed 2010 by merging two associations"), personal
+     testimonies at hearings, unique slogans. Generalise: "tens of thousands of residents",
+     "a long-standing local third-gender society", "local witnesses opposed the bill on cultural
+     grounds". Dates of LAWS/rulings stay (they are the facts raters must weigh); identity-
+     granular colour goes.
