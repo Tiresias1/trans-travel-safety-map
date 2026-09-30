@@ -29,7 +29,11 @@ def merge_one(u, rec, stats):
     have = [s['url'] for s in srcs]
     by_url = {}
     for v in u.get('verdicts') or []:
-        m = find(v.get('url'), have)
+        vu = v.get('url')
+        if isinstance(vu, dict): vu = vu.get('url')
+        if not isinstance(vu, str): continue
+        v['url'] = vu
+        m = find(vu, have)
         if m is not None: by_url[m] = v
     if not by_url: return False
     kept = []
