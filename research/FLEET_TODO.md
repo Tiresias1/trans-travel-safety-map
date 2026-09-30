@@ -21,3 +21,9 @@ WAVES: W1 links (link_batches/link_out/apply_links) -> W2 region 4-field rework
 (reuse make_rework_batches+apply_rework, regions scope) -> W3 blind regen
 (make_blind_batches/apply_blind, gate) -> W4a countries pairwise -> W4b admin1 pairwise ->
 deploy+verify. After each wave: apply -> build_data -> per-record verify -> commit+push.
+INFRA NOTE (2026-09-30 22:30 UTC): all subagent lanes failed at bootstrap after a pi-subagents
+npm auto-update (package root mtime 20:30). Host (session started earlier) loads src-runtime as
+`.ts`; new package ships `.js` only -> "Extension path does not exist". Repair: created shim
+`~/.pi/agent/npm/node_modules/pi-subagents/src/runs/shared/subagent-prompt-runtime.ts` re-exporting
+the compiled `subagent-prompt-runtime.js` (named + default). Verified by infra-check lane. Safe to
+delete after Pi host restart (which will load package layout natively). Repo untouched.
