@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""W1 batcher: relevance+claim-upgrade packets, countries first.
+"""W1 batcher: relevance+claim-upgrade packets, countries or admin1.
+Claim summaries are deliberately EXCLUDED from packets (content-filter bait);
+merges fall back to the record's own claim when a lane returns null.
 Usage: make_link_batches.py [--per 8] [--count N] [--admin1]"""
 import json, sys, hashlib, os
 from pathlib import Path
@@ -12,20 +14,25 @@ for f in (ROOT/'data/freshness').glob('*.json'):
     try:
         for x in json.load(open(f)).get('results', []):
             fresh.setdefault(x.get('who'), []).append(x)
-    except Exception: pass
+    except Exception:
+        pass
 def pkt(who, rec):
     srcs = []
     for s in rec.get('sources') or []:
         u = s['url'] if isinstance(s, dict) else s
         k = hashlib.sha256(u.encode()).hexdigest()[:16]
         cp = f'research/fetched/{k}.txt'
-        srcs.append({"url": u, "title": s.get('title') if isinstance(s, dict) else None,
-                     "published": s.get('published') if isinstance(s, dict) else None,
-                     "cached": cp if os.path.exists(ROOT/cp) else None,
-                     "claim": s.get('summary') if isinstance(s, dict) else None})
-    return {"who": who, "name": rec.get('name'), "summary": str(rec.get('summary',''))[:1600],
+        entry = {"url": u}
+        if isinstance(s, dict):
+            if s.get('title'): entry["title"] = s['title']
+            if s.get('published'): entry["published"] = s['published']
+        entry["cached"] = cp if os.path.exists(ROOT/cp) else None
+        srcs.append(entry)
+    return {"who": who, "name": rec.get('name'),
+            "summary": str(rec.get('summary',''))[:1600],
             "sources": srcs, "freshness": fresh.get(who, [])[:5]}
-C = json.load(open(ROOT/'data/countries.json')); A = json.load(open(ROOT/'data/admin1.json'))
+C = json.load(open(ROOT/'data/countries.json'))
+A = json.load(open(ROOT/'data/admin1.json'))
 if adm:
     ents = [(f"{r['iso3']}/{r['name']}", r) for r in A.values() if r.get('dossier')]
 else:
