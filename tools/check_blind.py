@@ -68,4 +68,5 @@ def main():
         who=sys.argv[sys.argv.index('--who')+1]
         rec = C.get(who[8:]) if who.startswith('country:') else next((x for x in A.values() if x.get('iso3')==who.split('/')[0] and x.get('name')==who.split('/',1)[1]), None)
         sys.exit(0 if rec is not None and check(rec, who) else 1)
-main()
+if __name__ == '__main__':
+    main()
