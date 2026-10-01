@@ -25,7 +25,7 @@ for f in sorted((ROOT/'data/intake_out').glob('*.json')):
         if rec is None: skip += 1; continue
         srcs = [dict(s) if isinstance(s, dict) else {'url': s} for s in (rec.get('sources') or [])]
         have = [s['url'] for s in srcs]; hset = set(have)
-        n_old = len(have); n_add = 0
+        n_old = len(have); n_add = 0; n_rewrote = 0
         for a in u.get('adds') or []:
             if not a.get('url'): continue
             if find(a['url'], have): continue  # exists already
