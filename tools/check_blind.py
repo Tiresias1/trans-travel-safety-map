@@ -49,12 +49,10 @@ def main():
     C=json.load(open(ROOT/'data/countries.json')); A=json.load(open(ROOT/'data/admin1.json'))
     if '--file' in sys.argv:
         fp = sys.argv[sys.argv.index('--file')+1]
-        C = json.load(open(ROOT/'data/countries.json')); A = json.load(open(ROOT/'data/admin1.json'))
         d = json.load(open(fp)); ok = True
         for r in d.get('rewrites', []):
-            w = r.get('who','')
-            vis = C.get(w[8:]) if w.startswith('country:') else \
-                  next((x for x in A.values() if x.get('iso3')==w.split('/')[0] and x.get('name')==w.split('/',1)[1]), {})
+            mapped = {k: (r.get(k) or '') for k in
+                      ('summary','tangentialFactors','localsOnly','outOfScopeNotes')}
             for k in ('blindSummary','blindTangential','blindLocalsOnly','blindOutOfScope','blindSourceSummaries'):
                 if r.get(k) is not None: mapped[k] = r[k]
             if not check(mapped, r.get('who', fp)): ok = False

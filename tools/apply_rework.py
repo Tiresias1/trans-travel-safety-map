@@ -24,6 +24,11 @@ def main():
     applied = skip = 0
     applied_set = set()
     log = []
+    import argparse
+    _ap = argparse.ArgumentParser()
+    _ap.add_argument('--dir', default=None)
+    _args = _ap.parse_known_args()[0]
+    OUT = Path(_args.dir) if _args.dir else OUT
     # newest-mtime first so a per-record targeted rework (later) always wins
     for f in sorted(OUT.glob("*.json"), key=lambda x: x.stat().st_mtime, reverse=True):
         try:
