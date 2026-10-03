@@ -648,6 +648,8 @@ def compute_update(a0: float, b0: float, ra: float, rb: float,
 # --------------------------------------------------------------------------- #
 
 def call_api(args, system_text: str, user_text: str, attempt: int = 0) -> dict:
+    if args.api == "openai":
+        return call_api_openai(args, system_text, user_text, attempt)
     url = args.baseurl.rstrip("/") + args.endpoint_suffix
     body = {
         "model": args.model,
@@ -690,19 +692,75 @@ def call_api(args, system_text: str, user_text: str, attempt: int = 0) -> dict:
         raise RuntimeError(f"request failed: {e}") from None
 
 
+def call_api_openai(args, system_text: str, user_text: str, attempt: int = 0) -> dict:
+    """OpenAI chat-completions dialect (OpenRouter etc.); mirrors call_api."""
+    url = args.baseurl.rstrip("/") + args.endpoint_suffix
+    body = {
+        "model": args.model,
+        "max_tokens": args.reasoning_tokens + args.max_output_tokens,
+        "messages": [
+            {"role": "system", "content": system_text},
+            {"role": "user", "content": user_text},
+        ],
+    }
+    if args.reasoning_tokens > 0:
+        # OpenRouter reasoning models take reasoning via provider_options/
+        # `reasoning`; pass an explicit budget is not standard-OpenAI. Keep
+        # temperature off for reasoning models.
+        body["reasoning"] = {"effort": "high"}
+    else:
+        body["temperature"] = args.temperature
+    headers = {"content-type": "application/json"}
+    if args.auth_style in ("bearer", "both"):
+        headers["Authorization"] = f"Bearer {args.api_key}"
+    if args.auth_style == "api-key":
+        headers["x-api-key"] = args.api_key
+
+    req = urllib.request.Request(url, data=json.dumps(body).encode("utf-8"),
+                                 headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=args.timeout) as r:
+            raw = r.read().decode("utf-8", "replace")
+        return json.loads(raw)
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:600]
+        if e.code in (429, 500, 502, 503, 504) and attempt < args.retries:
+            time.sleep(args.backoff * (2 ** attempt) + random.random())
+            return call_api_openai(args, system_text, user_text, attempt + 1)
+        raise RuntimeError(f"HTTP {e.code}: {detail}") from None
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+        if attempt < args.retries:
+            time.sleep(args.backoff * (2 ** attempt) + random.random())
+            return call_api_openai(args, system_text, user_text, attempt + 1)
+        raise RuntimeError(f"request failed: {e}") from None
+
+
 JSON_RE = re.compile(r"\{[^{}]*\"score_a\"[^{}]*\}", re.S)
 SCORE_A_RE = re.compile(r"\"score_a\"\s*:\s*(-?\d+(?:\.\d+)?)")
 SCORE_B_RE = re.compile(r"\"score_b\"\s*:\s*(-?\d+(?:\.\d+)?)")
 WHY_RE = re.compile(r"\"why\"\s*:\s*\"((?:[^\"\\]|\\.)*)")
 
 
-def parse_scores(resp: dict) -> tuple[float, float, str, dict]:
-    text = "".join(b.get("text", "") for b in resp.get("content", [])
-                   if isinstance(b, dict) and b.get("type") == "text")
-    usage = {k: resp.get("usage", {}).get(k) for k in
-             ("input_tokens", "output_tokens", "cache_creation_input_tokens",
-              "cache_read_input_tokens")}
-    usage["stop_reason"] = resp.get("stop_reason")
+def parse_scores(resp: dict, api: str = "anthropic-messages") -> tuple[float, float, str, dict]:
+    if api == "openai":
+        ch = (resp.get("choices") or [{}])[0]
+        msg = ch.get("message") or {}
+        text = str(msg.get("content") or "")
+        if isinstance(text, list):  # some providers return content blocks
+            text = "".join(b.get("text", "") for b in text if isinstance(b, dict))
+        u0 = resp.get("usage") or {}
+        usage = {"input_tokens": u0.get("prompt_tokens"),
+                 "output_tokens": u0.get("completion_tokens"),
+                 "cache_creation_input_tokens": None,
+                 "cache_read_input_tokens": None,
+                 "stop_reason": ch.get("finish_reason") or ch.get("stop_reason")}
+    else:
+        text = "".join(b.get("text", "") for b in resp.get("content", [])
+                       if isinstance(b, dict) and b.get("type") == "text")
+        usage = {k: resp.get("usage", {}).get(k) for k in
+                 ("input_tokens", "output_tokens", "cache_creation_input_tokens",
+                  "cache_read_input_tokens")}
+        usage["stop_reason"] = resp.get("stop_reason")
 
     m = None
     for cand in JSON_RE.finditer(text):
@@ -748,7 +806,7 @@ def main() -> int:
                     default="https://token-plan.ap-southeast-1.maas.aliyuncs.com/apps/anthropic")
     ap.add_argument("--endpoint-suffix", default="/v1/messages")
     ap.add_argument("--api", default="anthropic-messages",
-                    help="message API dialect (only anthropic-messages is implemented)")
+                    help="message API dialect: anthropic-messages | openai")
     ap.add_argument("--model", default="qwen3.8-flash")
     ap.add_argument("--anthropic-version", default="2023-06-01")
     ap.add_argument("--auth-style", choices=("api-key", "bearer", "both"), default="both")
@@ -828,9 +886,9 @@ def main() -> int:
                     help="call the API and log, but do not modify countries.json")
     args = ap.parse_args()
 
-    if args.api != "anthropic-messages":
-        print(f"error: --api {args.api!r} is not implemented (only anthropic-messages)",
-              file=sys.stderr)
+    if args.api not in ("anthropic-messages", "openai"):
+        print(f"error: --api {args.api!r} is not implemented "
+              f"(choose anthropic-messages or openai)", file=sys.stderr)
         return 2
     if not args.dry_run and not args.api_key:
         print("error: --api-key is required (or set ANTHROPIC_API_KEY)", file=sys.stderr)
@@ -1043,7 +1101,7 @@ def main() -> int:
                 return
             try:
                 resp = call_api(args, system_text, user_text)
-                s_first, s_second, why, usage = parse_scores(resp)
+                s_first, s_second, why, usage = parse_scores(resp, args.api)
                 ra, rb = (s_second, s_first) if flip else (s_first, s_second)
             except Exception as e:  # noqa: BLE001
                 with lock:
@@ -1119,7 +1177,7 @@ def main() -> int:
 
         try:
             resp = call_api(args, system_text, user_text)
-            s_first, s_second, why, usage = parse_scores(resp)
+            s_first, s_second, why, usage = parse_scores(resp, args.api)
         except Exception as e:  # noqa: BLE001 — keep the run alive
             with lock:
                 stats["errors"] += 1
