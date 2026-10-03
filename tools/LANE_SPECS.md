@@ -54,3 +54,20 @@
      "a long-standing local third-gender society", "local witnesses opposed the bill on cultural
      grounds". Dates of LAWS/rulings stay (they are the facts raters must weigh); identity-
      granular colour goes.
+
+8. PROPORTION AND THIN-DATA (2026-10-03 — mandatory in ALL summaries and four-field text):
+   a. Frequency × severity: universal-exposure measures (bathroom/facility bills,
+      document-marker mismatches at checkpoints, mandatory disclosure, registration of
+      visibly trans people) reach EVERY trans visitor and must be stated as the
+      continuous exposure they are — never diluted by "few arrests". Murder/torture are
+      the severest outcomes but their weight tracks frequency: figures at or near the
+      region's general murder rate (single/low-double-digit per 100k/yr) are an
+      "elevated version of a normal non-trans-specific risk", not a campaign — say so.
+      Organised targeting (moral/religious police, militia or gang sweeps, state
+      campaigns making visibly trans people primary targets) is a different tier and
+      dominates. Always calibrate against the region's general-violence baseline.
+   b. Thin data: never write summaries that imply unknown = safe or unknown = midpoint.
+      State what is unknown AND extrapolate from the structural signals that exist
+      (criminalisation, LGR absence, governance character, analogues). A thin dossier in
+      a criminalising, no-LGR, no-recourse state must read as dangerous unless evidence
+      says otherwise.

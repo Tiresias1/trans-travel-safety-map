@@ -165,3 +165,31 @@ score drivers or as offsetting active traveler restrictions.
 4. Traveler-specific incidents (detained tourists, airport scanner cases, app
    ambushes of visitors, family-visiting cases) are the highest-value evidence —
    prioritize them over resident-rights coverage.
+
+## Frequency × severity — keep risks in proportion (2026-10-03 addition)
+Neither how common nor how severe a risk is decides alone; both matter.
+- **Universal-exposure measures** reach EVERY trans visitor every time: facility-access
+  restrictions (bathroom bills), document/ID-marker mismatches at any checkpoint,
+  mandatory marker disclosure, registration of visibly trans people. Continuous,
+  inescapable exposure for all travellers — weight by the possibility everyone carries,
+  not the prosecutions that actually happened.
+- **Murder/torture are the most severe outcomes, but the score weight follows frequency.**
+  Fatality figures at or near the region's general murder rate (single to low-double-digit
+  per 100k/yr) are an *elevated version of a normal, otherwise non-trans-specific risk*,
+  not a campaign. Count them, but proportionally. Near-baseline murder ≠ organised
+  targeting.
+- **Organised targeting is a different tier**: moral/religious police, militia or gang
+  sweeps, state campaigns in which visibly gender-nonconforming people are primary
+  targets. High severity + high frequency + state's own hand. It dominates the dossier.
+- Always calibrate against the *general* violence baseline of the region: a number that
+  exceeds a safe country's murder rate may still be unremarkable where general homicide
+  is high, and vice-versa.
+
+## Thin-data extrapolation (2026-10-03 addition)
+Weak signals DO NOT resolve to the midpoint. Where a dossier is thin, extrapolate from
+whatever structural evidence exists: criminalisation regime, legal-recognition absence,
+governance character (rule of law vs religious-authority enforcement), closest documented
+analogues, presence/absence of protective or community infrastructure. A thin dossier set
+in a state that criminalises, denies recognition, and shows no relief resolves toward the
+risk those structural facts imply. Say in the reasoning which signals you extrapolated
+from. Absence of evidence is not safety, and "unknown" is not 0.5.

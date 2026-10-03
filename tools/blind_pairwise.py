@@ -99,22 +99,29 @@ RATING_RULES = """\
    hint at how trans-respecting institutions are, but they never offset an active
    traveler-facing restriction. Never treat them as protections.
 
-2. **General-LGB criminalisation is a secondary, situational factor.** A sodomy statute
-   reaches only the fraction of trans visitors whose relationships are read as same-sex
-   under birth-sex legal status, or whom police extort using it. Weight it at roughly
-   0.01–0.03 of the scale unless there is documented trans-specific enforcement (arrests
+2. **Criminalisation of same-sex conduct is a real factor; weigh it as the dossier
+   shows, never by a fixed formula.** A sodomy statute directly exposes the fraction of
+   trans visitors whose relationships are read as same-sex under birth-sex status, and it
+   hands police a standing lever — of extortion, of exposure, of detention — against
+   visibly trans people that costs nothing to use. How large a factor it is depends on
+   the documented record in front of you: documented trans-specific enforcement (arrests
    for gender expression, "impersonation"/"posing" charges, extortion of visibly trans
-   people). It is never a primary score driver on its own. That said, if there is no
-   trans-related climate signals to go on, you may have no choice but to use data about
-   LGB criminalisation as a weak proxy for trans.
+   people, raids on queer venues) makes it large; an actively dead letter inside a real
+   rule-of-law state with recorded protections makes it small. Do not assign it a fixed
+   share of the scale. In a thin-data jurisdiction this statute plus what surrounds it
+   (no legal gender recognition, no recourse, no record of relief) is itself the primary
+   signal — weaken it only if the dossier shows reason to.
 
 3. **Burden-of-proof symmetry.** A documented positive (an institutionalised third-gender
    tradition, a court ruling protecting gender expression, functioning hate-crime
    recourse) counts for at least as much as a documented negative. Do not treat one
    jurisdiction's *absence* of documented incidents as stronger evidence than another's
-   *presence* of documented acceptance or documented abuse. Absence of evidence in a
-   closed or under-researched state is not safety, and it is not danger either — rate what
-   the record actually supports and say so.
+   *presence* of documented acceptance or documented abuse. Absence of evidence is
+   not safety. In a well-documented state a silent dossier is a moderately positive signal
+   (functioning institutions tend to leave records); in a thin-data state it is not —
+   decide which case you are in from the surrounding record and say so. When one dossier
+   is silent and the other is documented, the documented one carries the evidentiary weight;
+   do not let silence out-vote evidence.
 
 4. **No regional or cultural pattern-matching.** Do not adjust a rating because of which
    part of the world the facts sound like. Two dossiers with identical facts must receive
@@ -172,10 +179,47 @@ RATING_RULES = """\
 
 12. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
     *usually* more impactful to trans travelers than social conservatism.
+
+14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
+    against how *severe* its worst case is; neither alone decides the score.
+    - **Universal-exposure measures** — policies or practices that reach every trans
+      visitor, every crossing, every time: facility-access restrictions (bathroom bills),
+      document/ID-examination mismatches, mandatory marker disclosure, surveillance or
+      registration of visibly trans people. These are a continuous, inescapable exposure
+      for all travellers to the jurisdiction. Their weight is not diluted by the fact that
+      most exposures resolve without arrest — the possibility is carried by everyone.
+    - **Extreme consequences (torture, murder) are the most severe outcomes, but their
+      score weight follows their *frequency***: fatality figures at or near the region's
+      general (non-trans-specific) murder rate — say single to low-double-digit per 100k
+      per year — are an *elevated version of a normal, otherwise non-trans-specific risk*,
+      not a campaign. They matter and must be counted, but proportionally.
+    - **Organised targeting** is a different tier: moral or religious police, militia or
+      gang sweeps, or state campaigns in which gender-nonconforming people are primary
+      targets — documented arrests for mere presence, identity-based custody, pogrom
+      patterns. This combines high severity with high frequency and the state's own hand,
+      and it dominates nearly everything else in the dossier.
+    Universal-exposure measures and organised targeting both outrank scattered incidents,
+    baseline-elevated violence, or unenforced statutes. Two dossiers with the same number
+    of documented murders but different surrounding signals (near-baseline violence vs.
+    organised sweeps) must receive different ratings, and the reasoning should say why.
+
+15. **Universal-exposure measures are traveller-facing by definition.** When a rule or
+    practice applies to everyone presenting as a gender different from their documents —
+    bathrooms, changing rooms, custody placement, checkpoints, hospital wards — the
+    exposure is unavoidable for the outed or outable traveller regardless of how often it
+    is enforced against locals. Rate the possibility everyone carries, not the
+    prosecutions that actually happened.
     
-13. Where the dossier is silent about institutions — some jurisdictions simply lack much data —
-    assume neither dysfunction nor perfection (an absense of evidence is not evidence of absense);
-    just work with the data that you have available to you.
+13. **Weak signals extrapolate; "unknown" is not the midpoint.** When a dossier is thin,
+    do not resolve unknown toward 0.5 or toward neutrality. Extrapolate from whatever
+    evidence does exist — the criminalisation regime, the legal-recognition situation,
+    the governance character (rule of law, religious-authority involvement, demonstrated
+    enforcement practice), the treatment of the closest documented analogues, the
+    presence or absence of any protective or community infrastructure. A thin dossier set
+    in a state that criminalises, denies legal recognition, and shows no record of relief
+    resolves toward the risk those structural facts imply, and your reasoning must say
+    which structural signals you extrapolated from. Assume neither merit nor blame from
+    silence alone — but always work the extrapolation, never default to the middle.
 """
 
 ADMIN1_RULES = """\
