@@ -1,0 +1,21 @@
+BLIND REGEN lane. BINDING: tools/LANE_SPECS.md rules 7 + 7e.
+HARD-BANNED vocab: bare state, federal, territory/territories, island/islands,
+colonial, republic/kingdom/empire, overseas, crown, attorney general, sovereignty,
+demonyms, proper names (jurisdictions, cases, prisons, people, orgs) -> generic.
+Fixed substitutions: territory -> state/province; federal -> national;
+colonial -> historic; republic/kingdom -> nation; island/ocean/directions DELETED.
+Always write literal "state/province", NEVER bare "state".
+SOURCE of truth: the NEW visible fields in data/prison_out/vis/vis-rw001.json
+(five records: USA/Nebraska, USA/South Carolina, USA/Tennessee, USA/Texas,
+country:AFG). Derive blindSummary/blindTangential/blindLocalsOnly/blindOutOfScope/
+blindSourceSummaries substitution-only from THOSE visible fields. No jurisdiction
+identifiers: no state names, no "Nebraska"/"Tennessee"/"Texas"/"South Carolina",
+no Afghanistan, no case names, no prison names, no proper nouns. Keep dates,
+numbers, durations. Every blind word must stem from the visible counterpart or a
+neutral synonym.
+OUTPUT: data/prison_out/blind/blind-rw001.json = {"rewrites":[{who:"USA/Nebraska"
+(etc. exact), blindOnly:true, blindSummary, blindTangential, blindLocalsOnly,
+blindOutOfScope, blindSourceSummaries, notes}]}
+SELF-GATE: python3 tools/check_blind.py --file data/prison_out/blind/blind-rw001.json
+until exit code 0 (advisory WARN lines are acceptable).
+MERGE-FIRST writes (keep other who entries). No git, no other file edits.
