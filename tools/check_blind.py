@@ -31,6 +31,7 @@ _STATE_OK_AFTER = frozenset((
     "television", "companies", "enterprise", "bank", "university", "school",
     "hospital", "care", "service", "programme", "system", "body", "organ",
     "structure", "intervention", "sponsor", "institutions", "official",
+    "risk", "risk assessment", "statistics",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
@@ -53,7 +54,7 @@ def _state_leak(bl: str) -> bool:
         seg = bl[max(0, s - 35):e + 35].lower()
         if "state/province" in seg or "state / province" in seg:
             continue
-        after = re.match(r"\s+([A-Za-z]+)", bl[e:])
+        after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z]+)", bl[e:])
         if after and after.group(1).lower() in _STATE_OK_AFTER:
             continue
         after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
@@ -62,7 +63,8 @@ def _state_leak(bl: str) -> bool:
         # parent-referent / generic definite reference
         head = bl[max(0, s - 30):e]
         if re.search(r"(?:encompassing|administering|metropolitan|unitary|partner|"
-                     r"neighbouring|federal|sovereign|central|national|parent)\s+state$", head, re.I) \
+                     r"neighbouring|federal|sovereign|central|national|parent)\s+"
+                     r"state(?:'|\u2019)?s?$", head, re.I) \
                 or re.search(r"\bthe\s+state(?:'|\u2019)?s?$", head, re.I):
             continue
         return True
