@@ -54,6 +54,17 @@
      "a long-standing local third-gender society", "local witnesses opposed the bill on cultural
      grounds". Dates of LAWS/rulings stay (they are the facts raters must weigh); identity-
      granular colour goes.
+7f. STATE-WORD RULING (2026-10-04): the literal "state/province" is the division idiom and is
+    always allowed. "State" in governmental-adjective compounds — "state policy", "state-backed",
+    "state-run", "state security", "state religious (authorities)", "the state keeps no
+    statistics" — describes the national government generically, cannot fingerprint the division,
+    and is ALLOWED in blind text. Parent-referent descriptors ("encompassing state", "administering
+    state", "metropolitan state", "unitary state", "partner state", "neighbouring state", "federal
+    state", "sovereign state") refer to the deliberately-unblinded parent or a generic descriptor
+    and are ALLOWED. Bare "state"/"state's" that begs "which state?" — "this state", "a
+    state", "that state" as unit placeholder — is still BANNED and must use "state/province".
+    check_blind.py implements this via a token-level _state_leak() on each field including
+    blindSourceSummaries.
 
 8. PROPORTION AND THIN-DATA (2026-10-03 — mandatory in ALL summaries and four-field text):
    a. Frequency × severity: universal-exposure measures (bathroom/facility bills,

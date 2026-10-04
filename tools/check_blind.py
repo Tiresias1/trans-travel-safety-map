@@ -13,7 +13,60 @@ BANNED = re.compile(r"\b(federal\w*|territor\w*|dependenc\w*|colon\w*|island\w*|
     r"latin\s+americ\w*|caribbe\w*|central\s+america\w*|south\s+america\w*|north\s+america\w*|"
     r"overseas|crown|empire|kingdom|republic|attorney\s+general|commonwealth|"
     r"(north|south|east|west)ern?\s+(pacific|atlantic|asia|india|caribbean|hemisphere)|"
-    r"\bstate\b(?!\s*/\s*province)|\bmotto\b|\b\d{2,3},\d{3}\s+(?:residents|people)\b)", re.I)
+    r"\bmotto\b|\b\d{2,3},\d{3}\s+(?:residents|people)\b)", re.I)
+
+# The "state" rule (2026-10-04 ruling): "state policy" is fine — "state" in
+# governmental-adjective compounds refers to the national government generically
+# and cannot fingerprint the division. It is also fine in "state/province" (the
+# literal division idiom) and in parent-referent / generic-descriptor compounds
+# ("encompassing state", "administering state", "metropolitan state", "unitary
+# state", "partner state", "neighbouring state", "federal state"). Bare
+# "state"/"state's" that begs "which state?" is a leak.
+_STATE_OK_AFTER = frozenset((
+    "policy", "backed", "run", "owned", "level", "wide", "endorsed",
+    "persecution", "hostility", "religious", "apparatus", "mechanism",
+    "friction", "capital", "pension", "security", "agency", "institution",
+    "authority", "funded", "sanctioned", "sponsored", "government", "house",
+    "officials", "legislature", "law", "court", "police", "prison", "media",
+    "television", "companies", "enterprise", "bank", "university", "school",
+    "hospital", "care", "service", "programme", "system", "body", "organ",
+    "structure", "intervention", "sponsor", "institutions", "official",
+))
+_STATE_OK_PREFIXES = (
+    "encompassing state", "administering state", "metropolitan state",
+    "unitary state", "partner state", "neighbouring state", "federal state",
+    "sovereign state", "central state", "national state", "parent state",
+)
+_STATE_RE = re.compile(r"\bstate(?:(?:'|\u2019)s)?\b", re.I)
+
+def _state_leak(bl: str) -> bool:
+    """True if bl contains a bare 'state'/'state's' that leaks identity.
+    Allowed (per 2026-10-04 ruling): the state/province idiom; governmental
+    adjective compounds ("state policy", "state-backed"...); parent-referent
+    descriptors ("encompassing state", "administering state", "metropolitan
+    state", "unitary state", "partner state", "neighbouring state", "federal
+    state", "sovereign state"...); and the generic definite reference "the
+    state"/"the state's" referring to the parent government. Anything else
+    ("this state", "a state", bare "state" begging "which state?") is a leak."""
+    for m in _STATE_RE.finditer(bl):
+        s, e = m.start(), m.end()
+        seg = bl[max(0, s - 35):e + 35].lower()
+        if "state/province" in seg or "state / province" in seg:
+            continue
+        after = re.match(r"\s+([A-Za-z]+)", bl[e:])
+        if after and after.group(1).lower() in _STATE_OK_AFTER:
+            continue
+        after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
+        if after2 and after2.group(1).lower() in _STATE_OK_AFTER:
+            continue
+        # parent-referent / generic definite reference
+        head = bl[max(0, s - 30):e]
+        if re.search(r"(?:encompassing|administering|metropolitan|unitary|partner|"
+                     r"neighbouring|federal|sovereign|central|national|parent)\s+state$", head, re.I) \
+                or re.search(r"\bthe\s+state(?:'|\u2019)?s?$", head, re.I):
+            continue
+        return True
+    return False
 ALLOW = set("""nation national state province historic parent lawyer official government legal
 top local elected legislature legislature courts judiciary custom customs culture customary society societies
 marriage wedlock conduct consent criminal decriminalised decriminalised decriminalized recognition rights
@@ -54,11 +107,13 @@ def check(rec, name):
         bl = str(rec.get(b) or "")
         if not bl: continue
         m = BANNED.findall(bl)
+        if _state_leak(bl): m.append(("state",))
         if m: banned.append(f"{b}: BANNED {sorted(set(x[0].lower() for x in m))}")
         enrich = words(bl) - words(rec.get(v)) - {stem(a) for a in ALLOW}
         if enrich: warnings.append(f"{b}: (adv) {sorted(enrich)[:12]}")
     bs = " ".join(str(x) for x in (rec.get("blindSourceSummaries") or []))
     if bs and BANNED.search(bs): banned.append("blindSourceSummaries: BANNED " + str(set(x[0] for x in BANNED.findall(bs))))
+    if bs and _state_leak(bs): banned.append("blindSourceSummaries: BANNED state")
     if banned or warnings:
         print(("FAIL " if banned else "WARN ") + name)
         for f in banned: print("   ", f)
