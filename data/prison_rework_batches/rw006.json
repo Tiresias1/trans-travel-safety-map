@@ -86,5 +86,9 @@
     }
    ]
   }
- ]
+ ],
+ "lane_instructions": {
+  "vis": "REWORK VISIBLE FIELDS for each record. BINDING: tools/LANE_SPECS.md rules 6 + 8. Fold the prison_adds[].summary facts (prison-placement: birth-sex vs identity, special units, solitary, cases, rulings) into the four fields as consequence-axis evidence. Extend, never drop existing claims; no new external research; no invented facts. Read current text from data/countries.json or data/admin1.json. OUTPUT file: rewritten visible fields [who summary tangentialFactors localsOnly outOfScopeNotes notes]. MERGE-FIRST write after EACH record. No git.",
+  "blind": "BLIND REGEN for each record. BINDING: tools/LANE_SPECS.md rules 7 + 7e. HARD-BANNED: bare state, federal, territory/territories, island/islands, colonial, republic/kingdom/empire, overseas, crown, attorney general, sovereignty, demonyms and proper names -> generic. Substitutions: territory to state/province, federal to national, colonial to historic, republic/kingdom to nation, island/ocean/directions DELETED. Always literal state/province, never bare state. Regenerate blind mirrors substitution-only from the NEW visible fields; unblindable (no jurisdiction/case/prison names). OUTPUT: blind fields [who blindOnly true blindSummary blindTangential blindLocalsOnly blindOutOfScope blindSourceSummaries notes]. SELF-GATE with python3 tools/check_blind.py --file OUTPUT until exit 0 (advisory WARNs ok). MERGE-FIRST after EACH record. No git."
+ }
 }
