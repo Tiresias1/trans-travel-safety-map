@@ -312,8 +312,12 @@
     const layer = layers[mode];
     if (!layer) return;
     const zoom = map.getZoom();
-    const SMALL2 = 120;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
-    const SMALL2_ISLAND = SMALL2 * 4;  // islands get dots up to ~2x the diagonal (~22px) — no land neighbour means no label collision risk
+    // zoomed out -> dots more likely (world view shows the microsites); zooming in
+    // gives the features real pixels so their dots retire. zFactor is 3 at zoom 2,
+    // 2 at zoom 4, ~1.25 at zoom 5.5, 1 at >= 6.
+    const zFactor = Math.min(3, Math.max(1, 1 + (6 - zoom) * 0.5));
+    const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
+    const SMALL2_ISLAND = SMALL2 * 4;  // islands get dots up to ~2x the diagonal — no land neighbour means no label collision risk
     const ISOLATED_PX = 24;  // px to nearest same-country region centroid
 
     const small2For = (props) => (props && props.island) ? SMALL2_ISLAND : SMALL2;
@@ -341,7 +345,7 @@
       (pxCenters[iso] || (pxCenters[iso] = [])).push({ x: p.x, y: p.y });
     });
 
-    const radius = mode === "countries" ? 3 : 2.5;
+    const radius = (mode === "countries" ? 3 : 2.5) + (zFactor > 1 ? 0.6 : 0);
     layer.eachLayer((f) => {
       const s = boxes.get(f);
       const props = f.feature && f.feature.properties;
