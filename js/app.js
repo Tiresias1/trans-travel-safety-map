@@ -9,14 +9,14 @@
 
   /* ---------- data files ---------- */
   const BOUNDARIES = {
-    countries: "boundaries/countries.geojson",
-    admin1: "boundaries/admin1.geojson",
+    countries: "boundaries/countries.geojson?v=20261005b",
+    admin1: "boundaries/admin1.geojson?v=20261005b",
   };
   const DATA_FILES = {
-    countries: "data/countries.json",
-    admin1: "data/admin1.json",
+    countries: "data/countries.json?v=20261005b",
+    admin1: "data/admin1.json?v=20261005b",
   };
-  const META_FILE = "data/meta.json";
+  const META_FILE = "data/meta.json?v=20261005b";
 
   /* ---------- gradient ---------- */
   // Anchor points from PLAN.md §5.1: piecewise-linear RGB interpolation.
@@ -87,7 +87,11 @@
 
   /* ---------- loading ---------- */
   async function getJSON(url) {
-    const r = await fetch(url, { cache: "force-cache" });
+    // default cache (not "force-cache"): force-cache serves the stale entry for
+    // a URL regardless of a fresh ?v= query, which is why boundary/data updates
+    // used to linger in some browsers. default honours the query string as a
+    // different request while still using HTTP caching within a session.
+    const r = await fetch(url);
     if (!r.ok) throw new Error(`${url}: ${r.status}`);
     return r.json();
   }
