@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
 
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   data:
     runs-on: ubuntu-latest
@@ -13,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install deps
+        run: pip install --quiet shapely
       - name: Validate data + rebuild ranks/meta
         run: python3 tools/build_data.py
       - name: Check committed data is in sync with build output
@@ -22,5 +28,19 @@ jobs:
             git diff --stat data/countries.json data/admin1.json
             exit 1
           }
+      - name: Validate boundary geometry
+        run: python3 - <<'EOF'
+import json
+from pathlib import Path
+ROOT = Path.cwd()
+for name in ("countries", "admin1"):
+    gj = json.loads((ROOT / "boundaries" / f"{name}.geojson").read_text())
+    assert gj["type"] == "FeatureCollection", name
+    assert len(gj["features"]) > 200 if name == "countries" else len(gj["features"]) > 3000
+    for f in gj["features"]:
+        assert isinstance(f.get("properties"), dict), f
+        assert f.get("geometry"), f
+print("boundaries OK")
+EOF
       - name: JavaScript syntax check
         run: node --check js/app.js
