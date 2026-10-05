@@ -103,30 +103,86 @@ def work(iso: str, name: str) -> dict:
             "url": f"https://en.wikipedia.org/wiki/{urllib.parse.quote(chosen.replace(' ', '_'))}" if chosen else None,
             "title": chosen, "extract": extract}
 
+
+REGION_TMPLS = ("LGBTQ rights in {}", "LGBT rights in {}", "Transgender rights in {}",
+                "Transgender people in {}", "LGBT culture in {}", "LGBT history in {}")
+
+
+def work_region(iso: str, name: str) -> dict:
+    """Find a region-level Wikipedia page: 'LGBT rights in Texas' etc. The region
+    name often includes a suffix ('Province', 'Region', 'Voivodeship', 'State').
+    Tries several inflections; returns the first that resolves with an extract.
+    """
+    cands = []
+    base = name.replace(" (Malvinas)", "").strip()
+    # try the full region name and increasingly trimmed forms (drop parentheticals)
+    forms = [base]
+    for suf in (" Region", " Oblast", " Kraj", " Voivodeship", " State", " Province",
+                " Department", " Governorate", " Prefecture", " Municipality"):
+        if base.endswith(suf):
+            forms.append(base[: -len(suf)])
+            break
+    for f in dict.fromkeys(forms):
+        for tmpl in REGION_TMPLS:
+            cands.append(tmpl.format(f))
+    chosen, extract = None, None
+    for c in cands:
+        extract = fetch_extract(c)
+        if extract:
+            chosen = c
+            break
+    return {"iso3": iso, "name": name,
+            "url": f"https://en.wikipedia.org/wiki/{urllib.parse.quote(chosen.replace(' ', '_'))}" if chosen else None,
+            "title": chosen, "extract": extract}
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default="")
     ap.add_argument("--out", default=str(ROOT / "research" / "wikipedia_sweep"))
+    ap.add_argument("--regions", action="store_true",
+                    help="sweep is over dossier ADM1 regions instead of countries")
+    ap.add_argument("--parents", default="",
+                    help="with --regions: limit to these parent countries (comma ISO3)")
     args = ap.parse_args()
     C = json.loads((ROOT / "data" / "countries.json").read_text())
     only = [x.strip().upper() for x in args.only.split(",") if x.strip()]
-    picks = only or list(C)
-    outdir = Path(args.out); outdir.mkdir(parents=True, exist_ok=True)
+    if args.regions:
+        A = json.loads((ROOT / "data" / "admin1.json").read_text())
+        parents = {p.strip().upper() for p in args.parents.split(",") if p.strip()}
+        items = [(r.get("iso3"), r.get("name", "")) for r in A.values()
+                 if r.get("dossier") and (not parents or r.get("iso3") in parents)]
+        if only:
+            items = [(iso, nm) for iso, nm in items if nm.strip().upper() in only]
+        # still sweep the region-specific candidates plus "state of X"
+        outdir = Path(args.out) / "regions"; outdir.mkdir(parents=True, exist_ok=True)
+        picks = items
+    else:
+        picks = only or list(C)
+        outdir = Path(args.out); outdir.mkdir(parents=True, exist_ok=True)
     got = miss = 0
+    country_name = {}
     with cf.ThreadPoolExecutor(max_workers=3) as ex:
         futs = []
-        for iso in picks:
-            time.sleep(0.05)
-            futs.append(ex.submit(work, iso, C[iso].get("name", iso)))
+        if args.regions:
+            # region candidates: <name>, <name>, <parent>, plus US-state / province forms
+            for iso, nm in picks:
+                country_name[f"{iso}/{nm}"] = nm
+                time.sleep(0.05)
+                futs.append(ex.submit(work_region, iso, nm))
+        else:
+            for iso in picks:
+                time.sleep(0.05)
+                futs.append(ex.submit(work, iso, C[iso].get("name", iso)))
         for fu in futs:
             rec = fu.result()
-            p = outdir / f"{rec['iso3']}.json"
+            fn = f"{rec['iso3']}__{re.sub(r'[^a-zA-Z0-9_-]', '_', rec['name'])[:60]}.json"
+            p = outdir / fn
             p.write_text(json.dumps(rec, ensure_ascii=False, indent=1), encoding="utf-8")
             if rec["extract"]:
                 got += 1
             else:
                 miss += 1
-            print(f"{rec['iso3']}: {rec['title'] or 'NO TOPIC PAGE'} "
+            print(f"{rec['iso3']}/{rec['name'][:30]}: {rec['title'] or 'NO TOPIC PAGE'} "
                   f"({len(rec['extract'] or '')} chars)", flush=True)
     print(f"\nwrote {len(picks)} files to {outdir}: {got} with extract, {miss} no topic page")
 

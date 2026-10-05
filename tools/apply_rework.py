@@ -2,8 +2,8 @@
 """Apply rework outputs to data/countries.json / data/admin1.json.
 
 Lanes write data/rework_out/rNNN.json {rewrites:[{who,summary,blindSummary,
-blindSourceSummaries,notes}]}. This tool validates (1-4 <p> paragraphs,
-<=2800 chars, blind mirror non-empty, scores untouched) and applies by `who`
+blindSourceSummaries,notes}]}. This tool validates (1-12 <p> paragraphs,
+<=8000 chars, blind mirror non-empty, scores untouched) and applies by `who`
 (country:ISO -> countries; ISO/Region -> admin1 record with that iso3+name).
 Idempotent. Usage: python3 tools/apply_rework.py [--dry]
 """
@@ -14,8 +14,10 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/rework_out"
 
 def valid_summary(s):
-    if not s or len(s) > 2800: return False
-    n = len(re.findall(r"<p[\s>]", s)); return 1 <= n <= 4
+    # 2026-10-05: caps raised from 2800/4 — dossiers must carry ALL sourced
+    # claims (UI scrolls, no display cap). Match tools/build_data.py.
+    if not s or len(s) > 8000: return False
+    n = len(re.findall(r"<p[\s>]", s)); return 1 <= n <= 12
 
 def main():
     dry = "--dry" in sys.argv

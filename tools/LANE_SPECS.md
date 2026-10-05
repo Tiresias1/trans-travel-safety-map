@@ -47,7 +47,15 @@
    - localsOnly: facts governing residents, not visitors (cultural-gender roles like fa'afafine
      social embedding, birth-register practice, resident discrimination data, local surveys).
    - outOfScopeNotes: unresolved or unverifiable status ('passport marker regime unknown'), scope
-     caveats. Each field: 1-3 <p> (outOfScopeNotes may be plain sentences), absolute terms, sourced.
+     caveats. Each field: as many <p> as the sourced substance requires — NO paragraph cap.
+     If the source set carries 8 distinct substantive visitor-relevant claims, the summary
+     should carry all 8 (each claim one <p>, or grouped where tightly linked), NOT the top
+     2-3. The summary is the dossier's digest of the evidence, not a press-release opener;
+     covering every sourced claim is what makes the map's popup authoritative. Quality rules:
+     absolute terms, sourced, report-voice (see STYLE_RULES) — verbosity is not a bug when
+     each paragraph is a distinct sourced finding. Caps: keep outOfScopeNotes to plain
+     sentences; do not pad with rephrasing — one paragraph = one claim or one tightly-linked
+     claim cluster.
 7. BLIND MIRRORS ARE DERIVATIONS, NOT REWRITES. Rules:
    a. Substitution-only: every substantive claim in a blind field must exist in its visible
       counterpart. NO new descriptors (geography, direction, ocean, climate, governance flavor)

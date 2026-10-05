@@ -10,7 +10,7 @@ Validation rules (fail loudly):
   iterative refinement (tools/blind_pairwise.py) can drift scores in small
   increments. The UI displays 2 dp only.
 - band consistent with score
-- summary non-empty, 1-4 <p> paragraphs, <= 2800 chars
+- summary non-empty, 1-12 <p> paragraphs, <= 8000 chars
 - sources non-empty unless inherited
 - every boundary polygon key has a data record (warning only — research in
   progress) and every data record matches a polygon (error)
@@ -39,10 +39,12 @@ def band_label(score):
 def valid_summary(s):
     if not s:
         return False
-    if len(s) > 2800:  # 2500->2800: v2 research-pass summaries run richer
+    if len(s) > 8000:  # raised 2026-10-05: dossiers must carry ALL sourced claims;
+        # the old 2800 cap forced 3-4-para truncation that dropped evidence
+        # (USA federal layer, NER penal code). UI scrolls; no display cap.
         return False
     n_p = s.count("<p") + s.count("<P")
-    return 1 <= n_p <= 4
+    return 1 <= n_p <= 12
 
 def check_record(iso, r, errors, inherited_ok=False):
     if not isinstance(r.get("score"), (int, float)):
