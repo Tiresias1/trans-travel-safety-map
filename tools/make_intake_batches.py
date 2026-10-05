@@ -40,12 +40,14 @@ def main() -> int:
     iso3map = fi.iso3_to_iso2()
 
     outdir = Path(args.out); outdir.mkdir(parents=True, exist_ok=True)
-    batches, cur = [], []
+    batches, cur = [], None
     n = 0
 
     def push(who, rec, url, title, claim):
-        nonlocal n
+        nonlocal n, cur
         iso3 = rec.get("iso3") or who.split(":")[-1]  # country records key by ISO3
+        if cur is None:
+            cur = []
         cur.append({"who": who, "iso3": iso3, "name": rec.get("name", ""),
                     "score": rec.get("score", 0),
                     "summary_text": str(rec.get("summary", ""))[:600],
@@ -53,7 +55,8 @@ def main() -> int:
                                  "status": "ok", "cached": None, "claim_summary": claim}]})
         n += 1
         if len(cur) >= args.per:
-            batches.append(cur); cur.clear()
+            batches.append(cur)
+            cur = None  # reassign, never mutate the list stored in batches
 
     for iso3, r in C.items():
         iso2 = iso3map.get(iso3)
