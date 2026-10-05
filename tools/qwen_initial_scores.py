@@ -102,7 +102,11 @@ def build_prompt(iso: str, units, nat: float, cname: str, unit_md: str,
     system = ("You are the initial-scoring model for a travel-safety map scoring risk to "
               "a transgender visitor if discovered/outed. Follow the mission, scale and "
               "rules below exactly. Output ONLY JSONL record lines (one JSON object per "
-              "line) — no prose, no markdown fences, no preamble.\n\n" + scoring)
+              "line) — no prose, no markdown fences, no preamble.\n\n"
+              "STYLE GATE — read tools/STYLE_RULES.md before writing any text fields. "
+              "Never describe previous states of the record or the map (\"the earlier "
+              "profile…\", \"has been deleted\"): state the current fact in a professional, "
+              "report-like voice.\n\n" + scoring)
     already = ("\nUnits that ALREADY have records (do NOT emit them): "
                + ", ".join(scored_already) + "\n") if scored_already else ""
     user = (f"Score country {iso} ({cname}), national score {nat:.2f}.\n\n"
