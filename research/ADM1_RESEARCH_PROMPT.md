@@ -1,5 +1,9 @@
 # ADM1 Research Hand-Off Prompt (lightweight model — autonomous batch)
 
+> **STYLE GATE — read `tools/STYLE_RULES.md` before generating.** All summary text must be
+> report-voice; never describe previous states of the record or the map ("the earlier
+> profile…", "has been deleted"). State the current fact.
+
 **How this is used:** the operator pastes everything below the line into the research
 model ONCE. The model works down the ranked country list autonomously — one output file
 per country — until the stop rule fires. No per-country manual setup.

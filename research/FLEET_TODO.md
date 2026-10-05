@@ -27,3 +27,10 @@ npm auto-update (package root mtime 20:30). Host (session started earlier) loads
 `~/.pi/agent/npm/node_modules/pi-subagents/src/runs/shared/subagent-prompt-runtime.ts` re-exporting
 the compiled `subagent-prompt-runtime.js` (named + default). Verified by infra-check lane. Safe to
 delete after Pi host restart (which will load package layout natively). Repo untouched.
+
+STYLE RULES (MANDATORY since 2026-10-05, user directive): read tools/STYLE_RULES.md before
+any text-generation wave. The map is NOT a changelog — no "earlier profile"/"has been
+deleted" phrasing in any visible or blind field, ever. check_blind.py --changelog scans
+for it. Target voice: Amnesty/HRW/UN report. No LLM-isms (bullets, em-dashes, rule-of-three,
+giveaway words, fence-sitting, assistant debris). Island dot-sensitivity: boundaries
+geojsons carry island flags; app.js doubles the dot threshold for islands.

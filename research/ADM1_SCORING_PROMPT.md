@@ -1,5 +1,9 @@
 # ADM1 Initial-Scoring Prompt (for the lightweight model)
 
+> **STYLE GATE — read `tools/STYLE_RULES.md` before generating.** All summary text must be
+> report-voice; never describe previous states of the record or the map ("the earlier
+> profile…", "has been deleted"). State the current fact.
+
 **How this is used:** paste everything below the line into the model, once per country
 (or as one autonomous batch — the model must do one country at a time and validate each
 before moving on). Dossiers from the research phase live in `research/admin1/<ISO3>.md`.

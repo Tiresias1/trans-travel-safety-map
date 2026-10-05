@@ -1,4 +1,12 @@
 # Lane spec corrections (2026-09-29) — apply to ALL audit/rework/freshness launches
+
+> **STYLE GATE — read `tools/STYLE_RULES.md` before generating any text field.**
+> Every prose field (summary, tangential, localsOnly, outOfScope, source summaries, blind
+> mirrors) must be written in the STYLE_RULES voice: professional/report-like, no LLM-isms,
+> and — above all — **never a changelog**. Text that describes "an earlier profile", "has
+> been deleted", or any previous state of the map is a hard failure, the same way a banned
+> word in a blind field is. When in doubt, state the current fact, not the editing history.
+
 1. on_topic: "the article concerns THIS jurisdiction" means the jurisdiction is a SUBJECT of the
    article, not that the article is merely compatible with it. Example rule: an article about
    Hertz car rental is NOT on-topic for a region just because people there drive cars.

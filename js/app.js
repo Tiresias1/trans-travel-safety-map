@@ -313,14 +313,17 @@
     if (!layer) return;
     const zoom = map.getZoom();
     const SMALL2 = 120;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
+    const SMALL2_ISLAND = SMALL2 * 4;  // islands get dots up to ~2x the diagonal (~22px) — no land neighbour means no label collision risk
     const ISOLATED_PX = 24;  // px to nearest same-country region centroid
+
+    const small2For = (props) => (props && props.island) ? SMALL2_ISLAND : SMALL2;
 
     // (A) countries that themselves render as dots at this zoom
     const tinyCountries = new Set();
     if (mode === "admin1" && layers.countries) {
       layers.countries.eachLayer((cf) => {
         const s = pxBox(cf, zoom);
-        if (s && s.w * s.w + s.h * s.h < SMALL2 && cf.feature)
+        if (s && s.w * s.w + s.h * s.h < small2For(cf.feature && cf.feature.properties) && cf.feature)
           tinyCountries.add(cf.feature.properties.iso3);
       });
     }
@@ -341,8 +344,8 @@
     const radius = mode === "countries" ? 3 : 2.5;
     layer.eachLayer((f) => {
       const s = boxes.get(f);
-      if (!s || s.w * s.w + s.h * s.h >= SMALL2) return; // not "very small"
       const props = f.feature && f.feature.properties;
+      if (!s || s.w * s.w + s.h * s.h >= small2For(props)) return; // not "very small" for its kind
       if (!props) return;
       if (mode === "admin1" && !tinyCountries.has(props.iso3)) {
         // (B) only if far from every other region of the same country

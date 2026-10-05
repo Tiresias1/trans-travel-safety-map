@@ -3,7 +3,11 @@
 For each visible/blind field pair on a record: every content word (>=5 letters) in the blind
 text that is absent from the visible counterpart AND absent from the allowed substitution
 vocabulary is an ENRICHMENT violation (invented clue). Banned words are always errors.
+Also provides a `--changelog` advisory mode that flags map-edit-narrative phrasing on
+VISIBLE fields (STYLE_RULES/STYLE GATE): text describing an earlier profile or that
+something "has been deleted". The map is not a changelog.
 Usage: python3 tools/check_blind.py --who country:ASM | --all-countries | --admin1 <ISO>
+       python3 tools/check_blind.py --changelog [--who country:X | --all-countries | --admin1 ISO]
 """
 import json, re, sys
 from pathlib import Path
@@ -121,8 +125,54 @@ def check(rec, name):
         for f in banned: print("   ", f)
         for f in warnings[:3]: print("   ", f)
     return not banned
+
+
+CHANGELOG_ISH = re.compile(
+    r"\b(?:earlier|previous|old|original|former|prior)\s+"
+    r"(?:profile|version|dossier|record|summary|research|assessment|"
+    r"characterisation|characterization|write-upper|revision)\b"
+    r"|\b(?:claim|assertion|clause|gloss|sentence|characterisation|characterization|"
+    r"arithmetic|stories?)\b[^.]{0,140}\b(?:was|were|has|have)\s+been\s+"
+    r"(?:deleted|removed|dropped|replaced|superseded)\b"
+    r"|\b(?:was|were|has|have)\s+been\s+(?:deleted|dropped|superseded)\b"
+    r"|\bmodel prior\b|\bsurviving evidence\b|\bundersold\b|"
+    r"hibbled arithmetic\b|\bappeared in no source\b", re.I)
+
+
+def changelog_scan(rec, name):
+    """Advisory (STYLE GATE): flag map-edit narrative in VISIBLE text fields."""
+    hits = []
+    for f in ("summary", "tangentialFactors", "tangential", "localsOnly",
+              "localsOnlyNotes", "outOfScope"):
+        t = str(rec.get(f) or "")
+        for m in CHANGELOG_ISH.finditer(t):
+            hits.append((f, t[max(0, m.start() - 40):m.end() + 40]))
+    if hits:
+        print(f"CHANGELOG {name}")
+        for f, ctx in hits[:6]:
+            print(f"   [{f}] ...{ctx.strip()[:120]}...")
+    return hits
+
 def main():
     C=json.load(open(ROOT/'data/countries.json')); A=json.load(open(ROOT/'data/admin1.json'))
+    if '--changelog' in sys.argv:
+        total = 0
+        if '--who' in sys.argv:
+            who = sys.argv[sys.argv.index('--who')+1]
+            rec = C.get(who[8:]) if who.startswith('country:') else next((x for x in A.values() if x.get('iso3')==who.split('/')[0] and x.get('name')==who.split('/',1)[1]), None)
+            total += len(changelog_scan(rec, who)) if rec else 0
+        elif '--all-countries' in sys.argv:
+            for k, r in C.items(): total += len(changelog_scan(r, 'country:'+k))
+        elif '--admin1' in sys.argv:
+            iso = sys.argv[sys.argv.index('--admin1')+1]
+            for r in A.values():
+                if r.get('iso3') == iso: total += len(changelog_scan(r, f"{iso}/{r['name']}"))
+        else:
+            for k, r in C.items(): total += len(changelog_scan(r, 'country:'+k))
+            for r in A.values():
+                if r.get('dossier'): total += len(changelog_scan(r, f"{r['iso3']}/{r['name']}"))
+        print("changelog-style hits:", total)
+        return
     if '--file' in sys.argv:
         fp = sys.argv[sys.argv.index('--file')+1]
         d = json.load(open(fp)); ok = True

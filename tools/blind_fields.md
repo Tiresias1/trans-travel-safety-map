@@ -1,5 +1,9 @@
 # Blind-anonymisation: field spec, model prompt, runbook
 
+> **STYLE GATE — read `tools/STYLE_RULES.md` before generating.** Never describe previous
+> states of the record or of the map ("the earlier profile…", "has been deleted") in any
+> output field, visible or blind. State the current fact.
+
 `tools/blind_pairwise.py` asks a rating model to score two jurisdictions **without knowing
 which they are**. Every record in `data/countries.json` therefore needs identity-stripped
 duplicates of its research content.
