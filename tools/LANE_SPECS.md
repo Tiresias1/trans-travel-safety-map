@@ -18,6 +18,18 @@
    USEFUL TO THIS RECORD that the article contains" — substance, with numbers/dates/outcomes,
    2-5 sentences. If the page has no usable finding for this record, say exactly
    'thin: no usable finding' (that verdict then feeds intake, never a silent pass).
+   SUBSTANCE OVER CREATOR: a claim names the ACT (what happened, whom it hits, the quoted
+   provision, the penalty, the date); it does not spend sentences describing the outlet
+   ("state news agency", "official state-press"), the article's existence, or the fetch
+   experience. The outlet/creator is identified once, lightly, only where it changes the
+   evidentiary weight (e.g. "government announcement as reported by X"). Never narrate the
+   fetch ("page body was largely navigation content", "headline finding only") — that is
+   meta-commentary; if the page could not be read, write the usable finding you did extract
+   or 'thin: no usable finding'. BAD: "Agence Nigérienne de Presse (state news agency,
+   French): headline 'Le Niger criminalise' — official state-press announcement of the
+   criminalisation. Page body was largely navigation content at fetch time." GOOD: "Niger's
+   new penal code (Feb 2026) criminalises 'indecent, unnatural and LGBTQIA+ acts' (art. 390;
+   5-10 years) — reported by the state press agency after adoption."
 3. Verdicts must echo the record's source URL EXACTLY (copy, never truncate — lanes truncated
    URLs at 56 chars and prunes silently missed; verify_prunes now prefix-matches, but lanes
    must still copy verbatim).
