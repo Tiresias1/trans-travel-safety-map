@@ -907,6 +907,10 @@ def main() -> int:
     ap.add_argument("--regions-unit", nargs="*", default=None,
                     help="with --regions-vs-countries: restrict region pool to units "
                          "whose name contains one of these substrings")
+    ap.add_argument("--regions-unit-exact", action="store_true",
+                    help="with --regions-unit: require exact name equality instead of "
+                         "substring matching (avoids over-match e.g. 'Lima' hitting "
+                         "Kalimantan provinces)")
     ap.add_argument("--admin1-file", default=str(ROOT / "data" / "admin1.json"))
     ap.add_argument("--log", default=None, help="JSONL audit log path")
     ap.add_argument("--save-every", type=int, default=25)
@@ -963,8 +967,12 @@ def main() -> int:
                 continue
             if parents and r.get("iso3") not in parents:
                 continue
-            if unit_sub and not any(s in str(r.get("name", "")).lower() for s in unit_sub):
-                continue
+            if unit_sub:
+                if args.regions_unit_exact:
+                    if str(r.get("name", "")).lower() not in unit_sub:
+                        continue
+                elif not any(s in str(r.get("name", "")).lower() for s in unit_sub):
+                    continue
             if r.get("blindV2") or (args.allow_fallback and r.get("blindSummary")):
                 region_pool.append(sid)
         if not region_pool:
