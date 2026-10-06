@@ -74,7 +74,7 @@ def run(who, rec, parent_summ=""):
         "messages": [{"role": "system", "content": SYSTEM},
                      {"role": "user", "content": build_user(rec, parent_summ)}],
         "temperature": 0.3,
-        "max_tokens": 4000,
+        "max_tokens": 6000,
     }
     req = urllib.request.Request(
         API, data=json.dumps(body).encode(),
@@ -82,7 +82,10 @@ def run(who, rec, parent_summ=""):
                  "content-type": "application/json"})
     with urllib.request.urlopen(req, timeout=300) as r:
         d = json.loads(r.read().decode())
-    text = d["choices"][0]["message"]["content"]
+    content = d["choices"][0]["message"].get("content")
+    if content is None:
+        raise ValueError("empty model content (None)")
+    text = content
     m = re.search(r"\{.*\}", text, re.S)
     if not m:
         raise ValueError(f"no JSON in model output: {text[:200]}")
@@ -117,7 +120,7 @@ def main():
         parent = C.get(iso)
     if not rec:
         sys.exit(f"not found: {who}")
-    for attempt in range(3):
+    for attempt in range(5):
         try:
             out = run(who, rec, parent.get("summary", "") if parent else "")
             break
