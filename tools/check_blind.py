@@ -131,20 +131,34 @@ CHANGELOG_ISH = re.compile(
     r"\b(?:earlier|previous|old|original|former|prior)\s+"
     r"(?:profile|version|dossier|record|summary|research|assessment|"
     r"characterisation|characterization|write-upper|revision)\b"
-    r"|\b(?:claim|assertion|clause|gloss|sentence|characterisation|characterization|"
-    r"arithmetic|stories?)\b[^.]{0,140}\b(?:was|were|has|have)\s+been\s+"
-    r"(?:deleted|removed|dropped|replaced|superseded)\b"
-    r"|\b(?:was|were|has|have)\s+been\s+(?:deleted|dropped|superseded)\b"
-    r"|\bmodel prior\b|\bsurviving evidence\b|\bundersold\b|"
-    r"hibbled arithmetic\b|\bappeared in no source\b", re.I)
+    r"|\binherited arithmetic\b|\bborrowed (?:custody )?stor(?:y|ies)\b"
+    r"|\bcarried in the (?:earlier|previous|prior)\b|\bwas carried in the\b"
+    r"|\bthe audited record\b|\bper freshness\b|\bat fetch time\b"
+    r"|\bSUPERSEDED\b|\(rev [\d-]+\)"
+    r"|\b(?:was|were|has|have)\s+been?\s+(?:deleted|dropped)\b"
+    r"|\bdeleted because\b|\bdeleted for lack\b"
+    r"|\bmodel prior\b|\bsurviving evidence\b|\bundersold\b"
+    r"|\bunsupported by the record\'?s sources\b"
+    r"|\bfreshness check against\b|\bconfirmed by the record\'?s freshness check\b"
+    r"|\bno longer appears in the current overview\b"
+    r"|\bthe record summary records\b|\bcarried on the record\b"
+    r"|\bresearch pass\b|\bprune[ds]?\b", re.I)
 
 
 def changelog_scan(rec, name):
-    """Advisory (STYLE GATE): flag map-edit narrative in VISIBLE text fields."""
+    """Advisory (STYLE GATE): flag map-edit narrative in ANY text field —
+    visible AND blind, including outOfScopeNotes and sources claims (the
+    2026-10-05 miss: the scanner only covered summary/tangential/localsOnly/
+    outOfScope, so 'outOfScopeNotes' sentences survived)."""
+    fields = ["summary", "tangentialFactors", "tangential", "localsOnly",
+              "localsOnlyNotes", "outOfScopeNotes", "outOfScope",
+              "blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"]
+    texts = [(f, str(rec.get(f) or "")) for f in fields]
+    for s in (rec.get("sources") or []):
+        if isinstance(s, dict) and s.get("summary"):
+            texts.append(("sources.claim", str(s["summary"])))
     hits = []
-    for f in ("summary", "tangentialFactors", "tangential", "localsOnly",
-              "localsOnlyNotes", "outOfScope"):
-        t = str(rec.get(f) or "")
+    for f, t in texts:
         for m in CHANGELOG_ISH.finditer(t):
             hits.append((f, t[max(0, m.start() - 40):m.end() + 40]))
     if hits:

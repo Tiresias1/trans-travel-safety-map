@@ -140,3 +140,12 @@ dialog p, dialog li { font-size: 0.9rem; line-height: 1.55; }
   padding: 4px 7px;
   margin: 6px 0;
 }
+
+/* Leaflet gives the map container tabindex for keyboard navigation; the
+   browser default :focus outline then paints a bright blue rectangle over the
+   whole map when it is clicked. Suppress the visual ring only — keyboard
+   navigation still works. */
+.leaflet-container:focus,
+.leaflet-container:focus-visible { outline: none; }
+#map svg path:focus,
+#map svg path:focus-visible { outline: none; }

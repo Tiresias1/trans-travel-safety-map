@@ -224,7 +224,7 @@
       ? `<p class="popup-estimated">Model estimate — derived from the national-level assessment rather than a dedicated division dossier.</p>`
       : "";
     const outscope = rec.outOfScopeNotes
-      ? `<div class="popup-outscope"><span class="label">Not factored into the score:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
+      ? `<div class="popup-outscope"><span class="label">Caveats and unresolved questions:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
       : "";
     const sources = (Array.isArray(rec.sources) && rec.sources.length)
       ? `<div class="popup-sources"><details><summary>Sources (${rec.sources.length})${rec.researchedAt ? " · researched " + esc(rec.researchedAt) : ""}</summary>
@@ -465,7 +465,7 @@
     access to medication. It deliberately <em>excludes</em> general travel risks (crime,
     disease, conflict) and risks specific to residents (e.g. adoption or employment law),
     except where those signal official or public hostility. General risks, where serious,
-    are mentioned in a region's popup under “Not factored into the score.”</p>
+    are listed in a region's popup under “Caveats and unresolved questions.”</p>
     <p>Scores are derived from web research (search results and primary sources fetched and
     read per region), not model memory. Every region's popup lists its sources. Ranks are
     competition-ranked (ties share a rank). Regions are compared against calibration anchor

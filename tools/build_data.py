@@ -122,6 +122,27 @@ def main():
         admin1 = json.load(open("data/admin1.json"))
         geo1 = json.load(open("boundaries/admin1.geojson"))
         geo1_ids = {f["properties"]["shapeID"] for f in geo1["features"]}
+        # ---- single-unit stand-ins TRACK their country record ----
+        # A one-division country's admin1 row IS the whole country: its score
+        # must equal the country's, or the map shows different values in
+        # countries vs states/provinces mode for the same place (ASM bug
+        # 2026-10-05). Enforced at build time so it can never drift again.
+        from collections import defaultdict
+        _per = defaultdict(list)
+        for sid, r in admin1.items():
+            _per[r["iso3"]].append((sid, r))
+        _n_sync = 0
+        for iso, lst in _per.items():
+            if len(lst) == 1 and not lst[0][1].get("dossier") and iso in countries:
+                sid, r = lst[0]
+                c_score = round(float(countries[iso]["score"]), 6)
+                if abs(float(r.get("score", 0)) - c_score) > 1e-9:
+                    r["score"] = c_score
+                    r["band"] = band_label(c_score)
+                    _n_sync += 1
+                r["inherited"] = True
+        if _n_sync:
+            warnings.append(f"synced {_n_sync} single-unit admin1 stand-ins to country scores")
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
         if set(admin1) - geo1_ids:
