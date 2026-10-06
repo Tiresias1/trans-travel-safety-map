@@ -17,7 +17,7 @@ Usage:
                                        [--since 2025-01-01] [--max-per-country 8]
 """
 from __future__ import annotations
-import argparse, json, sys
+import argparse, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -87,6 +87,29 @@ def main() -> int:
             if w.get("url") and w["url"] not in cited and w.get("extract"):
                 push(f"country:{iso3}", r, w["url"], w.get("title") or w["url"],
                      (w.get("extract") or "")[:280])
+
+    # ---- region pass: dossier ADM1 records get their region topic pages ----
+    rdir = ROOT / "research" / "wikipedia_sweep" / "regions"
+    if rdir.exists():
+        for r in A.values():
+            if not r.get("dossier"):
+                continue
+            iso3, nm = r.get("iso3"), r.get("name")
+            key = re.sub(r"[^a-zA-Z0-9_-]", "_", nm)[:60]
+            rf = rdir / f"{iso3}__{key}.json"
+            if not rf.exists():
+                continue
+            w = json.loads(rf.read_text())
+            if not (w.get("url") and w.get("extract")):
+                continue
+            cited = set()
+            for s in (r.get("sources") or []):
+                u = s.get("url") if isinstance(s, dict) else str(s)
+                cited.add(u)
+            if w["url"] in cited:
+                continue
+            push(f"{iso3}/{nm}", r, w["url"], w.get("title") or w["url"],
+                 (w.get("extract") or "")[:280])
 
     if cur:
         batches.append(cur)
