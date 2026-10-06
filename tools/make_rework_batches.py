@@ -38,9 +38,26 @@ def build(who):
                 for x in json.load(open(f)).get('results', []):
                     if x.get('who') == who: fresh = x
             except Exception: pass
+    # LANE_SPECS rule 9: freshness facts reaching rework lanes must be free of
+    # pipeline jargon — status/rev metadata never appears in prose (the fault
+    # that shipped "SUPERSEDED by freshness (rev ...)" into claims).
+    fact = str(fresh.get('fact') or '')
+    fact = re.sub(r"SUPERSEDED by freshness\s*\(rev\s*[\d-]+\)\s*:?\s*", "", fact, flags=re.I)
+    fact = re.sub(r"per freshness\b", "", fact, flags=re.I)
+    fact = re.sub(r"\(rev\s*[\d-]+\)", "", fact)
+    fact = re.sub(r"\s{2,}", " ", fact).strip()
+    fresh['fact'] = fact
+    # same for the claim text going into the batch (rule 9 + rule 2 history)
+    def clean_claim(s):
+        if not isinstance(s, str): return s
+        s = re.sub(r"SUPERSEDED by freshness\s*\(rev\s*[\d-]+\)\s*:?\s*", "", s, flags=re.I)
+        s = re.sub(r"SUPERSEDED per resolved review\s*:?\s*", "", s, flags=re.I)
+        s = re.sub(r"\(rev\s*[\d-]+\)", "", s)
+        s = re.sub(r"\s{2,}", " ", s)
+        return s.strip() or None
     return {"who": who, "name": name, "current_summary": re.sub(r"<[^>]+>"," ",summ).strip(),
             "sources": [{"url": (s.get('url') if isinstance(s,dict) else s),
-                         "claim": (s.get('summary') if isinstance(s,dict) or isinstance(s,str) else None)}
+                         "claim": clean_claim(s.get('summary')) if isinstance(s,dict) or isinstance(s,str) else None}
                         for s in srcs],
             "flags": (d.get('false_claims') or [])[:8] + (d.get('needs_search') or [])[:4],
             "freshness": {k: fresh.get(k) for k in ('status','fact','evidence')}}

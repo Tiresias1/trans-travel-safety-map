@@ -13,6 +13,37 @@ from datetime import date
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/rework_out"
 
+# ---- last-mile gate (2026-10-05): no lane output with these defects applies ----
+# The 2026-10-05 fleet purge fixed shipped records; these rules fix the SYSTEM:
+# any lane output carrying edit-narrative, pipeline jargon, blind vocabulary in
+# visible text, or generic travel logistics is REJECTED at apply time.
+META_NARRATIVE = re.compile(
+    r"earlier profile|previous profile|inherited arithmetic|borrowed custody|"
+    r"SUPERSEDED|per freshness|\(rev\s*[\d-]+\)|at fetch time|the audited record|"
+    r"were deleted|was deleted|deleted because|deleted for lack|model prior|"
+    r"no longer appears in the current overview", re.I)
+VIS_ANON = re.compile(
+    r"administering state|parent nation|parent state|parent government|"
+    r"\bstate/provinces?\b", re.I)
+GENERIC_TRAVEL_OUT = re.compile(r"carry-on|prohibited items and carry|liquid limits", re.I)
+
+def gate_rewrite(r, who) -> list:
+    """Return list of defect strings; empty list = passes."""
+    problems = []
+    for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes", "tangential"):
+        t = str(r.get(k) or "")
+        if not t: continue
+        if META_NARRATIVE.search(t): problems.append(f"{k}: edit-narrative/pipeline jargon")
+        if VIS_ANON.search(t): problems.append(f"{k}: blind vocabulary in visible text")
+        if k in ("summary", "tangentialFactors") and GENERIC_TRAVEL_OUT.search(t):
+            problems.append(f"{k}: generic travel logistics")
+    for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope", "blindSourceSummaries"):
+        v = r.get(k)
+        texts = [str(x) for x in v] if isinstance(v, list) else [str(v)] if v else []
+        for t in texts:
+            if META_NARRATIVE.search(t): problems.append(f"{k}: edit-narrative/pipeline jargon")
+    return problems
+
 def valid_summary(s):
     # 2026-10-05: caps raised from 2800/4 — dossiers must carry ALL sourced
     # claims (UI scrolls, no display cap). Match tools/build_data.py.
@@ -39,6 +70,11 @@ def main():
             print(f"[skip] {f.name}: unreadable {e}"); continue
         for r in data.get("rewrites", []):
             who = r.get("who", "")
+            gate_problems = gate_rewrite(r, who)
+            if gate_problems:
+                print(f"[REJECT] {who}: " + "; ".join(gate_problems))
+                skip += 1
+                continue
             tgt = None
             if who.startswith("country:"):
                 tgt = C.get(who[8:])

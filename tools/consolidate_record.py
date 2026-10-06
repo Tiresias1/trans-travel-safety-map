@@ -35,16 +35,51 @@ RULES FOR THIS PASS (consolidation, not compression):
    One <p> per claim or tightly-linked claim cluster. There is NO paragraph
    cap and NO length target beyond completeness: if the inventory has 10
    distinct visitor-relevant findings, the summary carries 10.
-2. Four-field split for the visible record: summary (visitor risk assessment),
+
+2. RELEVANCE GATE — the test is: would this fact change what a trans visitor
+   expects to face (law, enforcement, documents, entry, screening, care access,
+   facilities, violence risk, partner recognition, protection machinery)?
+   IN: criminalisation and its penalties; document/marker rules; entry and visa
+   rules; screening that risks outing; bathroom/facilities law; care bans;
+   hate-crime protection and its enforcement; marriage/partner recognition;
+   trans-specific violence with dates and outcomes; official hostility or
+   protection.
+   OUT: generic travel logistics that apply in every country (carry-on liquid
+   limits, prohibited items, airline procedure, general crime/city safety);
+   general LGB history with no trans bearing unless it evidences the legal
+   regime; a publication's own editorial framing.
+   If a source's only usable content is OUT-material, drop it silently.
+
+3. REPRESENTATIVENESS — for a national dossier, any single sub-national unit
+   (state, province, city) is ONE data point illustrating a wider pattern,
+   never the headline. Summarise the pattern first (how many states, which
+   direction, what enforcement), then cite at most one or two named units as
+   examples. A national summary must never read like the profile of one state.
+
+4. Four-field split for the visible record: summary (visitor risk assessment),
    tangentialFactors (adjacent/turbulence, comparisons), localsOnly (resident-
-   facing facts), outOfScopeNotes (unresolved/verifiable caveats). Number of
-   <p> per field is unbounded but each paragraph must be a real finding.
-3. Absolute terms, sourced-backed. Do not fabricate beyond the inventory.
-4. Blind mirrors: same claims, same structure, fixed vocabulary only
+   facing facts), outOfScopeNotes (unresolved/verifiable caveats, honestly
+   worded as 'unresolved'/'not sourced' — never as pipeline outcomes). Number
+   of <p> per field is unbounded but each paragraph must a real finding.
+
+5. VISIBLE fields use REAL NAMES — the actual country, territory, ministry,
+   court. The anonymisation vocabulary (state/province, parent nation,
+   administering state, national instead of federal) belongs ONLY to the blind
+   mirrors. Never write 'the administering state' or 'state/province' in a
+   visible field.
+
+6. Absolute terms, sourced-backed. Do not fabricate beyond the inventory. For
+   a dependency, state plainly which parent laws extend and which do not —
+   that is a research fact, not an unknown: if the sources say the parent's
+   statute does not extend here, say that.
+
+7. Blind mirrors: same claims, same structure, fixed vocabulary only
    (territory->state/province, federal->national, no geographic names/oceans/
    cardinal directions/region names), substitution-only derivation.
-5. For a region: state the parent-framework layer explicitly unless the region
-   text already does ("stands under the national framework: ...").
+
+8. For a region or dependency: state the parent-framework layer explicitly
+   ("stands under the national framework: ...", naming in visible text the
+   actual parent country) unless the region text already does.
 
 Output ONLY a JSON object:
 {{\"summary\": \"...\", \"tangentialFactors\": \"...\", \"localsOnly\": \"...\",
@@ -53,13 +88,38 @@ Output ONLY a JSON object:
   \"blindOutOfScope\": \"...\"}}"""
 
 
+# Mechanical pre-filter: claims that are pure generic travel logistics never
+# reach the model (belt-and-braces behind rule 2; the carry-on text was the
+# failure that motivated this).
+GENERIC_TRAVEL = re.compile(
+    r"carry-on|carry on|prohibited items|liquid limits|checked bag|security queue|"
+    r"boarding|check-in|layover|jet lag|currency exchange|tipping|"
+    r"traffic safety|road safety|pickpocket|scams targeting tourists", re.I)
+TRANS_KEEP = re.compile(r"outing|scann|pat-down|secondary screen|marker|gender|x marker", re.I)
+
+
+def relevant_claims(rec):
+    out, dropped = [], []
+    for s in (rec.get("sources") or []):
+        if isinstance(s, dict):
+            claim = s.get("summary") or s.get("title") or ""
+            if GENERIC_TRAVEL.search(claim) and not TRANS_KEEP.search(claim):
+                dropped.append((s.get("url", ""), claim[:60]))
+                continue
+            out.append(s)
+        else:
+            out.append(s)
+    return out, dropped
+
+
 def build_user(rec, parent_summ=""):
     lines = [f"JURISDICTION: {rec.get('name')} ({rec.get('iso3')})"]
     if parent_summ:
         lines.append(f"PARENT FRAMEWORK (restate if a region): {parent_summ}")
     lines.append(f"CURRENT SUMMARY (for continuity): {rec.get('summary','')[:900]}")
-    lines.append("SOURCE CLAIM INVENTORY (include every substantive claim):")
-    for i, s in enumerate(rec.get("sources") or [], 1):
+    lines.append("SOURCE CLAIM INVENTORY (include every substantive claim that passes the relevance gate):")
+    kept, dropped = relevant_claims(rec)
+    for i, s in enumerate(kept, 1):
         if isinstance(s, dict):
             claim = s.get("summary") or s.get("title") or ""
             lines.append(f"  [{i}] ({s.get('url','')}) {claim}")
@@ -100,6 +160,38 @@ def valid_summary(s):
     return 1 <= n <= 12
 
 
+# Mechanical post-validation: no lane output ships unless it passes these.
+# (The 2026-10-05 hand-edits fixed records; these rules fix the SYSTEM that
+# writes them: the same defects can never pass validation again.)
+META_NARRATIVE = re.compile(
+    r"earlier profile|previous profile|inherited arithmetic|borrowed custody|"
+    r"SUPERSEDED|per freshness|\(rev [\d-]+\)|at fetch time|the audited record|"
+    r"were deleted|was deleted|deleted because|deleted for lack|model prior", re.I)
+VIS_ANON = re.compile(
+    r"administering state|parent nation|parent state|parent government|"
+    r"\bstate/province\b|\bstate/provinces\b", re.I)
+GENERIC_TRAVEL_OUT = re.compile(
+    r"carry-on|prohibited items and carry|liquid limits", re.I)
+
+
+def validate_output(out, problems):
+    for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
+        t = str(out.get(k) or "")
+        if META_NARRATIVE.search(t):
+            problems.append(f"{k}: edit-narrative/pipeline jargon (rejected)")
+        if VIS_ANON.search(t):
+            problems.append(f"{k}: blind vocabulary in visible text (rejected)")
+    for k in ("summary", "tangentialFactors"):
+        t = str(out.get(k) or "")
+        if GENERIC_TRAVEL_OUT.search(t):
+            problems.append(f"{k}: generic travel logistics (rejected)")
+    for k, v in out.items():
+        if isinstance(v, str) and META_NARRATIVE.search(v):
+            if not any(f"{kk}: edit" in p for kk, vv in out.items() if kk != k):
+                problems.append(f"{k}: edit-narrative (blind field)")
+    return not problems
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--who", required=True, help="country:ISO or ISO/Region")
@@ -134,9 +226,17 @@ def main():
     for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
         if k in out and not valid_summary(out[k]):
             problems.append(f"{k} invalid")
+    if not validate_output(out, problems):
+        pass  # problems already collected
     if problems:
         print("validation problems:", problems)
         sys.exit(1)
+    # report what the relevance gate dropped (transparency, not ship-blocking)
+    kept, dropped = relevant_claims(rec)
+    if dropped:
+        print(f"relevance gate dropped {len(dropped)} generic-travel claims:")
+        for u, c in dropped:
+            print(f"   - {u[:70]} | {c}")
     fn = who.replace(":", "_").replace("/", "_")
     out["who"] = who
     path = outdir / f"{fn}.json"

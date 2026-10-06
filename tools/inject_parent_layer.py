@@ -146,8 +146,17 @@ ALREADY = {
 }
 
 
+PARENT_NAMES = {"USA": "the United States", "MYS": "Malaysia", "ESP": "Spain",
+               "DEU": "Germany", "GBR": "the United Kingdom", "RUS": "Russia",
+               "NGA": "Nigeria", "CAN": "Canada", "AUS": "Australia",
+               "FRA": "France", "ITA": "Italy"}
+
+
 def inject(summary: str, blind: str, parent: str) -> tuple[bool, str, str]:
     vis = PARENT_LAYER.get(parent)
+    if vis and parent in PARENT_NAMES:
+        # rule 7.0: visible layer NAMES the parent; blind layer never does
+        vis = vis.replace("the national framework", f"the {PARENT_NAMES[parent]} national framework", 1)
     bl = BLIND_LAYER.get(parent)
     if not vis:
         return False, summary, blind

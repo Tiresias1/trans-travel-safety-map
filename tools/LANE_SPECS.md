@@ -18,6 +18,13 @@
    USEFUL TO THIS RECORD that the article contains" — substance, with numbers/dates/outcomes,
    2-5 sentences. If the page has no usable finding for this record, say exactly
    'thin: no usable finding' (that verdict then feeds intake, never a silent pass).
+   TRANS-VISITOR RELEVANCE TEST before writing a claim: would this fact change what a
+   trans visitor faces (law, enforcement, documents, entry, screening, care, facilities,
+   violence, partner recognition, protection)? If not, it is OUT and must not appear,
+   even as background. Generic travel logistics that apply in every country (carry-on
+   limits, prohibited items, airline procedure, general crime/city safety) are ALWAYS
+   OUT unless they are trans-specific (scanner/pat-down outing risk IS in; liquid limits
+   are NOT). Substance over creator (see below).
    SUBSTANCE OVER CREATOR: a claim names the ACT (what happened, whom it hits, the quoted
    provision, the penalty, the date); it does not spend sentences describing the outlet
    ("state news agency", "official state-press"), the article's existence, or the fetch
@@ -57,6 +64,11 @@
      sentences; do not pad with rephrasing — one paragraph = one claim or one tightly-linked
      claim cluster.
 7. BLIND MIRRORS ARE DERIVATIONS, NOT REWRITES. Rules:
+   0. VISIBLE FIELDS USE REAL NAMES — the actual country, territory, ministry, court,
+      statute. The fixed vocabulary below is BLIND-FIELD ONLY. Writing "the administering
+      state", "the parent nation" or "state/province" in a VISIBLE field is the same class
+      of error as a blind leak, and ships rejected. (Fault fixed 2026-10-05: territory
+      outOfScope text carried blind vocabulary into the visitor-facing map.)
    a. Substitution-only: every substantive claim in a blind field must exist in its visible
       counterpart. NO new descriptors (geography, direction, ocean, climate, governance flavor)
       may appear in blind text that the visible text lacks. Adding "South Pacific chiefly
@@ -110,3 +122,23 @@
       (criminalisation, LGR absence, governance character, analogues). A thin dossier in
       a criminalising, no-LGR, no-recourse state must read as dangerous unless evidence
       says otherwise.
+
+9. FRESHNESS-LANE OUTPUT IS METADATA, NOT PROSE (2026-10-05 ruling; the fault
+   that shipped "SUPERSEDED by freshness (rev 2026-09-27)" into visitor-facing
+   claims). The `fact` field of a freshness result is a SUBSTANTIVE LEGAL
+   FINDING (what changed, when, with what penalty/status) — never a statement
+   about the audit itself. Status values (confirmed/superseded/changed) go in
+   the `status` field only; run dates and revision stamps NEVER appear in
+   prose. Nothing about the pipeline (freshness, revision numbers, fetch
+   conditions, pruning, the audit) may be written into any field that reaches
+   the map. If the rework input carries such strings, rewrite the finding and
+   drop the jargon.
+
+10. NATIONAL REPRESENTATIVENESS (countries-tier summaries). A single
+    sub-national unit (state, province, city) in a country summary is ONE
+    data point illustrating a pattern — never the headline. Lead with the
+    pattern (how many states, which direction, what enforcement), then at most
+    one or two named examples. A country summary that reads like the profile
+    of one state is a structural failure even if every sentence is sourced.
+    (Fault fixed 2026-10-05: the US summary opened its state-law paragraph
+    with Kansas, which was merely 2 of 17 sources.)
