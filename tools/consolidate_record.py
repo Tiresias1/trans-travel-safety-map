@@ -212,15 +212,54 @@ def main():
         parent = C.get(iso)
     if not rec:
         sys.exit(f"not found: {who}")
+    gate_passed = False
     for attempt in range(5):
         try:
             out = run(who, rec, parent.get("summary", "") if parent else "")
-            break
         except Exception as e:
             print(f"[retry {attempt+1}] {e}")
             time.sleep(5)
-    else:
-        sys.exit("failed after retries")
+            continue
+        # REAL BLIND GATE on every generation attempt (systematic 2026-10-06):
+        # reject edit-narrative/jargon/vis-anon/generic-travel, then the blind
+        # gate with auto-remediation; a failed attempt saves the output for
+        # inspection and RETRIES the generation (nondeterministic output).
+        problems = []
+        for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
+            if k in out and not valid_summary(out[k]):
+                problems.append(f"{k} invalid")
+        validate_output(out, problems)
+        if problems:
+            print(f"[attempt {attempt+1}] content gate: {problems}; retrying")
+            continue
+        import importlib.util as _ilu
+        _s1 = _ilu.spec_from_file_location("cb", ROOT / "tools" / "check_blind.py")
+        _cb = _ilu.module_from_spec(_s1); _s1.loader.exec_module(_cb)
+        _s2 = _ilu.spec_from_file_location("fbg", ROOT / "tools" / "fix_blind_gate.py")
+        _fbg = _ilu.module_from_spec(_s2); _s2.loader.exec_module(_fbg)
+        _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+                 "outOfScopeNotes", "blindSummary", "blindTangential",
+                 "blindLocalsOnly", "blindOutOfScope")}
+        if _cb.check(_rec, who):
+            gate_passed = True
+            break
+        print(f"[attempt {attempt+1}] blind gate failed; running fixed-vocabulary remediation")
+        for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
+            if out.get(k):
+                out[k] = _fbg._fix_text(out[k])
+        _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+                 "outOfScopeNotes", "blindSummary", "blindTangential",
+                 "blindLocalsOnly", "blindOutOfScope")}
+        if _cb.check(_rec, who):
+            print("[gate] remediation passed")
+            gate_passed = True
+            break
+        rej = ROOT / "data" / "consolidate_out" / (who.replace(":", "_").replace("/", "_") + ".rejected.json")
+        rej.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"[attempt {attempt+1}] blind gate FAILS even after remediation; saved {rej.name}; retrying generation")
+    if not gate_passed:
+        print("validation problems: no generation passed the gates after retries")
+        sys.exit(1)
     # validate + gate-relevant sanity
     problems = []
     for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
@@ -231,6 +270,32 @@ def main():
     if problems:
         print("validation problems:", problems)
         sys.exit(1)
+    # REAL BLIND GATE: the consolidation's blind mirrors must pass
+    # check_blind (banned vocabulary + state-leak). If they fail, run the
+    # deterministic fixed-vocabulary remediation and re-check; only if it
+    # STILL fails does the run reject. (Systematic fix 2026-10-06: the
+    # automated ASM output leaked banned words and would have shipped.)
+    import importlib.util as _ilu
+    _s1 = _ilu.spec_from_file_location("cb", ROOT / "tools" / "check_blind.py")
+    _cb = _ilu.module_from_spec(_s1); _s1.loader.exec_module(_cb)
+    _s2 = _ilu.spec_from_file_location("fbg", ROOT / "tools" / "fix_blind_gate.py")
+    _fbg = _ilu.module_from_spec(_s2); _s2.loader.exec_module(_fbg)
+    _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+             "outOfScopeNotes", "blindSummary", "blindTangential",
+             "blindLocalsOnly", "blindOutOfScope")}
+    _ok = _cb.check(_rec, who)
+    if not _ok:
+        print("[gate] blind mirrors failed blind gate; running fixed-vocabulary remediation")
+        for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
+            if out.get(k):
+                out[k] = _fbg._fix_text(out[k])
+        _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+                 "outOfScopeNotes", "blindSummary", "blindTangential",
+                 "blindLocalsOnly", "blindOutOfScope")}
+        if not _cb.check(_rec, who):
+            print("validation problems: blind gate FAILS even after remediation — output rejected")
+            sys.exit(1)
+        print("[gate] remediation passed")
     # report what the relevance gate dropped (transparency, not ship-blocking)
     kept, dropped = relevant_claims(rec)
     if dropped:
