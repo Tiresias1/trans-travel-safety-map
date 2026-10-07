@@ -96,7 +96,10 @@ h1 { font-size: 1.6rem; margin: 0 0 2px; }
 .popup-sources ul { margin: 4px 0 0; padding-left: 16px; overflow-wrap: anywhere; }
 .popup-sources li { margin-bottom: 2px; }
 .popup-sources a { color: var(--muted); }
-.popup-text, .popup-outscope { max-height: 320px; overflow-y: auto; }
+/* Single scrollbar: the popup content area scrolls (Leaflet maxHeight 520);
+   sub-sections must not carry their own max-height/overflow or you get nested
+   scrollbars (2026-10-06 longstanding bug). */
+.popup-text, .popup-outscope { max-height: none; overflow-y: visible; }
 
 dialog {
   background: var(--panel); color: var(--text);
