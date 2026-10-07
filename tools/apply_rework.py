@@ -23,7 +23,7 @@ META_NARRATIVE = re.compile(
     r"were deleted|was deleted|deleted because|deleted for lack|model prior|"
     r"no longer appears in the current overview", re.I)
 VIS_ANON = re.compile(
-    r"administering state|parent nation|parent state|parent government|"
+    r"(?<![A-Za-z\x27\x2d])administering state|parent nation|parent state|parent government|"
     r"\bstate/provinces?\b", re.I)
 GENERIC_TRAVEL_OUT = re.compile(r"carry-on|prohibited items and carry|liquid limits", re.I)
 

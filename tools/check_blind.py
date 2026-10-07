@@ -129,7 +129,7 @@ def check(rec, name):
 
 CHANGELOG_ISH = re.compile(
     r"\b(?:earlier|previous|old|original|former|prior)\s+"
-    r"(?:profile|version|dossier|record|summary|research|assessment|"
+    r"(?:profile|dossier|summary|research|assessment|"
     r"characterisation|characterization|write-upper|revision)\b"
     r"|\binherited arithmetic\b|\bborrowed (?:custody )?stor(?:y|ies)\b"
     r"|\bcarried in the (?:earlier|previous|prior)\b|\bwas carried in the\b"

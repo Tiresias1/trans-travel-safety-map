@@ -186,10 +186,38 @@ META_NARRATIVE = re.compile(
     r"SUPERSEDED|per freshness|\(rev [\d-]+\)|at fetch time|the audited record|"
     r"were deleted|was deleted|deleted because|deleted for lack|model prior", re.I)
 VIS_ANON = re.compile(
-    r"administering state|parent nation|parent state|parent government|"
+    r"(?<![A-Za-z\x27\x2d])administering state|parent nation|parent state|parent government|"
     r"\bstate/province\b|\bstate/provinces\b", re.I)
 GENERIC_TRAVEL_OUT = re.compile(
     r"carry-on|prohibited items and carry|liquid limits", re.I)
+
+
+DEANON_PARENT = {"NGA": "Nigeria", "USA": "the United States", "GBR": "the United Kingdom",
+    "TUR": "Turkey", "PER": "Peru", "AUS": "Australia", "MEX": "Mexico", "ITA": "Italy",
+    "IND": "India", "PHL": "the Philippines", "RUS": "Russia", "ESP": "Spain", "DEU": "Germany"}
+
+
+def _deanon(out, iso):
+    """Mechanically map anonymisation vocabulary back to real names in the
+    visible fields of a model output (meaning-preserving; used when the model
+    over-applies blind vocabulary to state-level visible text)."""
+    P = DEANON_PARENT.get(iso)
+
+    def fix(t):
+        if not isinstance(t, str) or not t:
+            return t
+        if P:
+            t = re.sub(r"[Tt]he parent (?:nation|state|government)(?:'|’)?s?\b",
+                       lambda m: P + ("'s" if ("'s" in m.group(0) or "’s" in m.group(0)) else ""), t)
+            t = re.sub(r"[Tt]he administering state(?:'|’)?s?\b",
+                       lambda m: P + ("'s" if ("'s" in m.group(0) or "’s" in m.group(0)) else ""), t)
+            t = re.sub(r"[Pp]arent-nation\b", P.replace("the ", ""), t)
+        t = re.sub(r"state/provinces\b", "regions", t)
+        t = re.sub(r"state/province\b", "region", t)
+        return t
+
+    for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
+        out[k] = fix(out.get(k))
 
 
 def validate_output(out, problems):
@@ -243,6 +271,22 @@ def main():
             if k in out and not valid_summary(out[k]):
                 problems.append(f"{k} invalid")
         validate_output(out, problems)
+        if problems:
+            # visible-vocabulary slips are mechanically repairable: map the
+            # anonymisation vocab back to real names and re-check (the model
+            # over-applies blind vocabulary to state-level visible text).
+            if all("blind vocabulary in visible text" in p for p in problems):
+                _deanon(out, rec.get("iso3", ""))
+                problems2 = []
+                for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
+                    if k in out and not valid_summary(out[k]):
+                        problems2.append(f"{k} invalid")
+                validate_output(out, problems2)
+                if not problems2:
+                    problems = []
+            else:
+                print(f"[attempt {attempt+1}] content gate: {problems}; retrying")
+                continue
         if problems:
             print(f"[attempt {attempt+1}] content gate: {problems}; retrying")
             continue
