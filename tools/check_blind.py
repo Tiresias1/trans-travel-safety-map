@@ -132,7 +132,7 @@ CHANGELOG_ISH = re.compile(
     r"(?:profile|dossier|summary|research|assessment|"
     r"characterisation|characterization|write-upper|revision)\b"
     r"|\binherited arithmetic\b|\bborrowed (?:custody )?stor(?:y|ies)\b"
-    r"|\bcarried in the (?:earlier|previous|prior)\b|\bwas carried in the\b"
+    r"|\bcarried in the (?:earlier|previous|prior)\b"
     r"|\bthe audited record\b|\bper freshness\b|\bat fetch time\b"
     r"|\bSUPERSEDED\b|\(rev [\d-]+\)"
     r"|\b(?:was|were|has|have)\s+been?\s+(?:deleted|dropped)\b"

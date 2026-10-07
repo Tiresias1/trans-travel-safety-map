@@ -9,14 +9,14 @@
 
   /* ---------- data files ---------- */
   const BOUNDARIES = {
-    countries: "boundaries/countries.geojson?v=20261007a",
-    admin1: "boundaries/admin1.geojson?v=20261007a",
+    countries: "boundaries/countries.geojson?v=20261007b",
+    admin1: "boundaries/admin1.geojson?v=20261007b",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261007a",
-    admin1: "data/admin1.json?v=20261007a",
+    countries: "data/countries.json?v=20261007b",
+    admin1: "data/admin1.json?v=20261007b",
   };
-  const META_FILE = "data/meta.json?v=20261007a";
+  const META_FILE = "data/meta.json?v=20261007b";
 
   /* ---------- gradient ---------- */
   // Anchor points from PLAN.md §5.1: piecewise-linear RGB interpolation.
