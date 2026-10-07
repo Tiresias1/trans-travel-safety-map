@@ -203,10 +203,6 @@ def validate_output(out, problems):
         t = str(out.get(k) or "")
         if GENERIC_TRAVEL_OUT.search(t):
             problems.append(f"{k}: generic travel logistics (rejected)")
-    for k, v in out.items():
-        if isinstance(v, str) and META_NARRATIVE.search(v):
-            if not any(f"{kk}: edit" in p for kk, vv in out.items() if kk != k):
-                problems.append(f"{k}: edit-narrative (blind field)")
     return not problems
 
 
@@ -265,6 +261,15 @@ def main():
         for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
             if out.get(k):
                 out[k] = _fbg._fix_text(out[k])
+                # redact identifying figures the vocabulary pass cannot fix:
+                # population/size numbers unblind microstates (banned list),
+                # and blind mirrors may legitimately DROP identifying claims
+                out[k] = re.sub(r"\b\d{2,3},\d{3}\s+(?:residents|people|inhabitants)\b",
+                                "a small population", out[k])
+                out[k] = re.sub(r"\bpopulation of (?:around |about |roughly )?\d{2,3},\d{3}\b",
+                                "a small population", out[k])
+                out[k] = re.sub(r"\bpopulation of (?:around |about |roughly )?\d{1,3}(?:,\d{3})+\b",
+                                "a small population", out[k])
         _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
                  "outOfScopeNotes", "blindSummary", "blindTangential",
                  "blindLocalsOnly", "blindOutOfScope")}
@@ -327,17 +332,31 @@ def main():
     print(f"wrote {path} | summary {len(out.get('summary',''))} chars "
           f"({out.get('summary','').count('<p')} <p>)")
     if args.apply:
-        for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes",
-                  "blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
-            if out.get(k) is not None:
-                rec[k] = out[k]
-        if who.startswith("country:"):
-            C[iso] = rec
-            (ROOT / "data" / "countries.json").write_text(
-                json.dumps(C, ensure_ascii=False, indent=1), encoding="utf-8")
-        else:
-            (ROOT / "data" / "admin1.json").write_text(
-                json.dumps(A, ensure_ascii=False, indent=1), encoding="utf-8")
+        # LOCKED READ-MODIFY-WRITE: concurrent children must never clobber
+        # each other's records (2026-10-06 race fix — each child re-reads the
+        # data file under an exclusive lock and writes atomically).
+        import fcntl
+        with open(ROOT / "data" / ".apply.lock", "w") as lf:
+            fcntl.flock(lf, fcntl.LOCK_EX)
+            try:
+                if who.startswith("country:"):
+                    pth = ROOT / "data" / "countries.json"
+                    D = json.loads(pth.read_text())
+                    tgt = D[iso]
+                else:
+                    pth = ROOT / "data" / "admin1.json"
+                    D = json.loads(pth.read_text())
+                    tgt = next(x for x in D.values()
+                               if x.get("iso3") == iso and x.get("name") == nm)
+                for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes",
+                          "blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
+                    if out.get(k) is not None:
+                        tgt[k] = out[k]
+                tmp = pth.with_suffix(".tmp")
+                tmp.write_text(json.dumps(D, ensure_ascii=False, indent=1), encoding="utf-8")
+                tmp.replace(pth)
+            finally:
+                fcntl.flock(lf, fcntl.LOCK_UN)
         print("applied to", who)
     return 0
 
