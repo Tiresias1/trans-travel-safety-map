@@ -76,6 +76,11 @@ RULES FOR THIS PASS (consolidation, not compression):
 7. Blind mirrors: same claims, same structure, fixed vocabulary only
    (territory->state/province, federal->national, no geographic names/oceans/
    cardinal directions/region names), substitution-only derivation.
+   An INDEPENDENT COUNTRY's blind text says "the country" — never
+   "state/province" (2026-10-07 fleet bug: 160 country blind mirrors described
+   their own country as a sub-unit, which made raters misread jurisdictions
+   and smear parent regimes across dossiers). "state/province" is ONLY for
+   sub-national units and dependent territories.
 
 8. For a region or dependency: state the parent-framework layer explicitly
    ("stands under the national framework: ...", naming in visible text the

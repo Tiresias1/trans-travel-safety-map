@@ -414,7 +414,52 @@ across every axis below.
 # Dossier construction (variable, uncached part)
 # --------------------------------------------------------------------------- #
 
-def dossier(rec: dict) -> str:
+# Dependent territories: the parent's regime applies unless the territory's own
+# dossier states a deviation (RATING_RULES 12). The rater MUST see the parent's
+# full visitor-facing bundle — compressed prose in the territory's own summary
+# is not enough (the 2026-10-07 ASM/Samoa finding: without the parent section
+# the rater priced a US-regime territory like an independent Pacific state).
+_REC_STORE: dict = {}
+
+DEP_PARENT = {
+    "ASM": "USA", "GUM": "USA", "VIR": "USA", "MNP": "USA", "PRI": "USA",
+    "FLK": "GBR", "GIB": "GBR", "BMU": "GBR", "CYM": "GBR", "VGB": "GBR",
+    "AIA": "GBR", "MSR": "GBR", "TCA": "GBR", "SHN": "GBR", "PCN": "GBR",
+    "GGY": "GBR", "IMN": "GBR", "JEY": "GBR",
+    "GLP": "FRA", "MTQ": "FRA", "GUF": "FRA", "REU": "FRA", "MYT": "FRA",
+    "BLM": "FRA", "PYF": "FRA", "NCL": "FRA",
+    "CUW": "NLD", "ABW": "NLD", "BES": "NLD",
+    "FRO": "DNK", "GRL": "DNK",
+    "COK": "NZL", "NIU": "NZL",
+}
+# HKG/MAC excluded deliberately: their own legal systems govern; the parent's
+# rules do not apply there.
+
+
+def parent_section(parent: dict) -> str:
+    """Parent nation's visitor-facing regime, rendered for a dependency's
+    dossier. Visitor-relevant sections only (assessment + situational); the
+    territory's own sections follow and state any deviations."""
+    parts = []
+
+    def clean(s: str) -> str:
+        s = re.sub(r"<[^>]+>", " ", str(s))
+        return re.sub(r"\s+", " ", s).strip()
+
+    if parent.get("blindSummary"):
+        parts.append(clean(parent["blindSummary"]))
+    if parent.get("blindTangential"):
+        parts.append(clean(parent["blindTangential"]))
+    body = "\n".join(parts)
+    return ("### PARENT REGIME — THESE RULES BELONG TO THIS DOSSIER'S JURISDICTION "
+            "ONLY, not to the other dossier. The parent nation's rules below ALL "
+            "apply in this territory; weigh them exactly as if this territory "
+            "imposed them, unless THIS TERRITORY's sections state a deviation. "
+            "The parent nation's rules are enforced here at the border, through "
+            "the document regime, and in nationally funded facilities.\n\n" + body)
+
+
+def dossier(rec: dict, rec_iso: str = "") -> str:
     """Render the identity-stripped evidence for one jurisdiction.
 
     Order matters for readability but not for caching (this text is in the
@@ -427,8 +472,13 @@ def dossier(rec: dict) -> str:
         s = re.sub(r"<[^>]+>", " ", str(s))
         return re.sub(r"\s+", " ", s).strip()
 
+    import os as _os
+    parent_iso = "" if _os.environ.get("NO_PARENT_SECTION") else DEP_PARENT.get(rec_iso or "")
+
     if rec.get("blindSummary"):
         parts.append(f"### ASSESSMENT\n{clean(rec['blindSummary'])}")
+    if parent_iso and parent_iso in _REC_STORE:
+        parts.append(parent_section(_REC_STORE[parent_iso]))
 
     ss = rec.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
@@ -475,17 +525,17 @@ def admin1_dossier(rec: dict) -> str:
     return "\n\n".join(parts)
 
 
-def build_user_prompt(rec_a: dict, rec_b: dict) -> str:
+def build_user_prompt(rec_a: dict, rec_b: dict, iso_a: str = "", iso_b: str = "") -> str:
     return f"""\
 Rate the two dossiers below.
 
 ## DOSSIER A
 
-{dossier(rec_a)}
+{dossier(rec_a, iso_a)}
 
 ## DOSSIER B
 
-{dossier(rec_b)}
+{dossier(rec_b, iso_b)}
 
 Reply with only the JSON object described in the output format."""
 
@@ -960,6 +1010,7 @@ def main() -> int:
     admin1 = None
     parent_iso = None
     store_file = Path(args.countries_file)
+    _REC_STORE.update(countries)
     store = countries
     mixed = args.regions_vs_countries
     region_pool: list[str] = []
@@ -1224,7 +1275,7 @@ def main() -> int:
         first, second = (iso_b, iso_a) if flip else (iso_a, iso_b)
         user_text = (build_admin1_user_prompt(store[first], store[second])
                      if admin1 is not None
-                     else build_user_prompt(store[first], store[second]))
+                     else build_user_prompt(store[first], store[second], iso_a, iso_b))
         label_a = store[iso_a].get("name", iso_a)
         label_b = store[iso_b].get("name", iso_b)
 
