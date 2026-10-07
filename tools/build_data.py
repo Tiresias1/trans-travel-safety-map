@@ -132,14 +132,24 @@ def main():
         for sid, r in admin1.items():
             _per[r["iso3"]].append((sid, r))
         _n_sync = 0
+        _TEXT_FIELDS = ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes",
+                        "blindSummary", "blindTangential", "blindLocalsOnly",
+                        "blindOutOfScope", "sources")
         for iso, lst in _per.items():
             if len(lst) == 1 and not lst[0][1].get("dossier") and iso in countries:
                 sid, r = lst[0]
-                c_score = round(float(countries[iso]["score"]), 6)
+                c = countries[iso]
+                c_score = round(float(c["score"]), 6)
                 if abs(float(r.get("score", 0)) - c_score) > 1e-9:
                     r["score"] = c_score
                     r["band"] = band_label(c_score)
                     _n_sync += 1
+                # text mirrors the country too: a one-division country IS the
+                # country — its region popup must read identically (2026-10-06)
+                for f in _TEXT_FIELDS:
+                    if c.get(f) and r.get(f) != c[f]:
+                        r[f] = c[f]
+                        _n_sync += 1
                 r["inherited"] = True
         if _n_sync:
             warnings.append(f"synced {_n_sync} single-unit admin1 stand-ins to country scores")
