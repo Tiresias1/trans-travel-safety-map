@@ -79,10 +79,22 @@ def build_prompt(kind: str, rec: dict) -> str:
         "Likewise where the intended word was the POLITY 'the state' ('state "
         "institutions', 'state media', 'state practice', 'state officials') — restore "
         "'state'. When unsure between 'state' and 'national', prefer 'national'.",
-        "3. Replace identifying agency/programme proper nouns with anonymised "
-        "equivalents: 'Department of Justice'/'DOJ' -> 'the national justice "
-        "department'; 'SWS25' -> 'an internal marking'. Keep every other fact.",
-        "4. If a sentence is ungrammatical or appears to have lost a word, repair it "
+        "3. FULL FIXED VOCABULARY (blind-speak) — apply throughout: "
+        "'territory'/'territories'/'dependency'/'island(s)'/'atoll'/'archipelago' -> "
+        "'state/province(s)'; bare 'state'/'states' meaning a sub-division of the "
+        "parent nation -> 'state/province(s)' (e.g. '9 states plus 1 territory' -> "
+        "'9 state/provinces plus 1 state/province'); 'federal'/'federally' -> 'national'/'nationally'; "
+        "'overseas'/'crown'/'commonwealth'/'kingdom'/'republic'/'empire' -> anonymised "
+        "equivalents ('the parent nation's overseas territory' -> 'a state/province of "
+        "the parent nation'); oceans/seas/continents/regions ('Pacific', 'Caribbean', "
+        "'Europe', 'Latin America', 'West') -> 'the region' / 'a neighbouring "
+        "jurisdiction' / similar; attorney general -> the national justice department; "
+        "'Department of Justice'/'DOJ' -> 'the national justice department'; 'SWS25' -> "
+        "'an internal marking'; 'Executive Order <number>' -> 'an executive order'. "
+        "Keep every other fact.",
+        "4. Replace identifying agency/programme proper nouns with anonymised "
+        "equivalents (covered by rule 3). Keep every other fact.",
+        "5. If a sentence is ungrammatical or appears to have lost a word, repair it "
         "minimally. Do NOT add facts, drop facts, or change meaning. Preserve every "
         "number, date, and penalty. Keep <p> paragraph structure exactly.",
     ])

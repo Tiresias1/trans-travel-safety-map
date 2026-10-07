@@ -313,11 +313,18 @@ def main():
         print(f"[attempt {attempt+1}] blind gate failed; running LLM-lane vocabulary remediation")
         from fix_blind_vocab_llm import fix_record as _llm_fix
         _kind = "region" if "/" in who else "country"
-        _changes, _probs = _llm_fix(_kind, out)
-        if _probs:
-            print(f"[attempt {attempt+1}] remediation rejected: {_probs}")
-        for _k, _v in _changes.items():
-            out[_k] = _v
+        for _pass in range(2):  # bounded remediation loop until the gate is clean
+            _changes, _probs = _llm_fix(_kind, out)
+            if _probs:
+                print(f"[attempt {attempt+1}] remediation pass {_pass+1} rejected: {_probs}")
+            for _k, _v in _changes.items():
+                out[_k] = _v
+            _rec2 = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+                     "outOfScopeNotes", "blindSummary", "blindTangential",
+                     "blindLocalsOnly", "blindOutOfScope")}
+            if _cb.check(_rec2, who):
+                print(f"[attempt {attempt+1}] remediation pass {_pass+1} passed the blind gate")
+                break
         # deterministic REDACTIONS (not rewrites): identifying figures/mottos are
         # dropped, never rephrased — the LLM lane handles all rephrasing
         for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
