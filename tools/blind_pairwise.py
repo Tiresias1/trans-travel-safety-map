@@ -177,7 +177,18 @@ RATING_RULES = """\
     part just a general-travelers issue, not a trans issue. Where law is well against trans people,
     rule of law actually turns into a liability, particularly if the public is hostile as well.
 
-12. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
+12. **A dependent territory stands under its parent's enforced regime.** Where the
+   dossier states that the parent's entry, document, screening, facility or care rules
+   apply in the territory, weigh those rules exactly as you would weigh the same rules
+   imposed locally. Local tolerance, cultural familiarity with a third-gender tradition,
+   or the absence of local criminalisation does NOT neutralise rules that are enforced at
+   the border, in nationally funded facilities, or through the document regime every
+   visitor passes through. A territory under a restrictive parent regime must sit
+   materially below comparable independent jurisdictions that lack that regime; "no
+   local law" does not offset an enforced external one. Conversely, do not invent parent
+   rules the dossier does not state.
+
+13. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
     *usually* more impactful to trans travelers than social conservatism.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
