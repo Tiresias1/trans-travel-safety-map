@@ -128,29 +128,47 @@ def build_user(rec, parent_summ=""):
     return "\n".join(lines)
 
 
+def call_llm(system: str, user: str, temperature: float = 0.3,
+             max_tokens: int = 6000) -> dict:
+    """One MiMo call with the known failure-mode retries (content None with
+    stop_reason=length needs max_tokens raised; content_filter retries)."""
+    last = None
+    for attempt in range(5):
+        body = {"model": MODEL,
+                "messages": [{"role": "system", "content": system},
+                             {"role": "user", "content": user}],
+                "temperature": temperature, "max_tokens": max_tokens}
+        try:
+            req = urllib.request.Request(
+                API, data=json.dumps(body).encode(),
+                headers={"authorization": f"Bearer {KEY}",
+                         "content-type": "application/json"})
+            with urllib.request.urlopen(req, timeout=300) as r:
+                d = json.loads(r.read().decode())
+            msg = d["choices"][0]["message"]
+            content = msg.get("content")
+            if content is None:
+                sr = d["choices"][0].get("finish_reason") or msg.get("stop_reason")
+                if attempt < 4:
+                    time.sleep(3)
+                    max_tokens = min(max_tokens + 1500, 9000)
+                    continue
+                raise ValueError(f"empty model content (stop={sr})")
+            m = re.search(r"\{.*\}", content, re.S)
+            if not m:
+                if attempt < 4:
+                    time.sleep(3)
+                    continue
+                raise ValueError(f"no JSON in model output: {content[:200]}")
+            return json.loads(m.group(0))
+        except Exception as e:
+            last = e
+            time.sleep(3 + attempt * 3)
+    raise last
+
+
 def run(who, rec, parent_summ=""):
-    body = {
-        "model": MODEL,
-        "messages": [{"role": "system", "content": SYSTEM},
-                     {"role": "user", "content": build_user(rec, parent_summ)}],
-        "temperature": 0.3,
-        "max_tokens": 6000,
-    }
-    req = urllib.request.Request(
-        API, data=json.dumps(body).encode(),
-        headers={"authorization": f"Bearer {KEY}",
-                 "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        d = json.loads(r.read().decode())
-    content = d["choices"][0]["message"].get("content")
-    if content is None:
-        raise ValueError("empty model content (None)")
-    text = content
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m:
-        raise ValueError(f"no JSON in model output: {text[:200]}")
-    out = json.loads(m.group(0))
-    return out
+    return call_llm(SYSTEM, build_user(rec, parent_summ))
 
 
 def valid_summary(s):
