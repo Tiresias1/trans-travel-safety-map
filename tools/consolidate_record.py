@@ -270,6 +270,8 @@ def main():
                                 "a small population", out[k])
                 out[k] = re.sub(r"\bpopulation of (?:around |about |roughly )?\d{1,3}(?:,\d{3})+\b",
                                 "a small population", out[k])
+                # mottos identify jurisdictions: drop the clause
+                out[k] = re.sub(r"[^.]*\bmotto\b[^.]*\.?", "", out[k])
         _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
                  "outOfScopeNotes", "blindSummary", "blindTangential",
                  "blindLocalsOnly", "blindOutOfScope")}
