@@ -17,7 +17,11 @@ BANNED = re.compile(r"\b(federal\w*|territor\w*|dependenc\w*|colon\w*|island\w*|
     r"latin\s+americ\w*|caribbe\w*|central\s+america\w*|south\s+america\w*|north\s+america\w*|"
     r"overseas|crown|empire|kingdom|republic|attorney\s+general|commonwealth|"
     r"(north|south|east|west)ern?\s+(pacific|atlantic|asia|india|caribbean|hemisphere)|"
-    r"\bmotto\b|\b\d{2,3},\d{3}\s+(?:residents|people)\b)", re.I)
+    r"\bmotto\b|\b\d{2,3},\d{3}\s+(?:residents|people)\b"
+    # agency/programme proper nouns fingerprint the parent state (2026-10-07
+    # ruling after 'Department of Justice' + 'SWS25' shipped in blind fields)
+    r"|department of justice|\bDOJ\b|\bSWS25\b|\bFBI\b|"
+    r"federal bureau of|\bTSA\b|\bCBP\b|\bICE\b|executive order \d+)", re.I)
 
 # The "state" rule (2026-10-04 ruling): "state policy" is fine — "state" in
 # governmental-adjective compounds refers to the national government generically

@@ -81,6 +81,10 @@ RULES FOR THIS PASS (consolidation, not compression):
    their own country as a sub-unit, which made raters misread jurisdictions
    and smear parent regimes across dossiers). "state/province" is ONLY for
    sub-national units and dependent territories.
+   Agency/programme proper nouns are identity leaks in blind text: never write
+   "Department of Justice", "SWS25", "FBI", "Executive Order <number>" — use
+   "the national justice department", "an internal marking", "an executive
+   order".
 
 8. For a region or dependency: state the parent-framework layer explicitly
    ("stands under the national framework: ...", naming in visible text the
@@ -306,20 +310,22 @@ def main():
         if _cb.check(_rec, who):
             gate_passed = True
             break
-        print(f"[attempt {attempt+1}] blind gate failed; running fixed-vocabulary remediation")
+        print(f"[attempt {attempt+1}] blind gate failed; running LLM-lane vocabulary remediation")
+        from fix_blind_vocab_llm import fix_record as _llm_fix
+        _kind = "region" if "/" in who else "country"
+        _changes, _probs = _llm_fix(_kind, out)
+        if _probs:
+            print(f"[attempt {attempt+1}] remediation rejected: {_probs}")
+        for _k, _v in _changes.items():
+            out[_k] = _v
+        # deterministic REDACTIONS (not rewrites): identifying figures/mottos are
+        # dropped, never rephrased — the LLM lane handles all rephrasing
         for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
             if out.get(k):
-                out[k] = _fbg._fix_text(out[k])
-                # redact identifying figures the vocabulary pass cannot fix:
-                # population/size numbers unblind microstates (banned list),
-                # and blind mirrors may legitimately DROP identifying claims
                 out[k] = re.sub(r"\b\d{2,3},\d{3}\s+(?:residents|people|inhabitants)\b",
-                                "a small population", out[k])
-                out[k] = re.sub(r"\bpopulation of (?:around |about |roughly )?\d{2,3},\d{3}\b",
                                 "a small population", out[k])
                 out[k] = re.sub(r"\bpopulation of (?:around |about |roughly )?\d{1,3}(?:,\d{3})+\b",
                                 "a small population", out[k])
-                # mottos identify jurisdictions: drop the clause
                 out[k] = re.sub(r"[^.]*\bmotto\b[^.]*\.?", "", out[k])
         _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
                  "outOfScopeNotes", "blindSummary", "blindTangential",

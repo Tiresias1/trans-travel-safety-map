@@ -142,3 +142,22 @@
     of one state is a structural failure even if every sentence is sourced.
     (Fault fixed 2026-10-05: the US summary opened its state-law paragraph
     with Kansas, which was merely 2 of 17 sources.)
+
+11. PROSE TRANSFORMS ARE LLM-LANE WORK (2026-10-07 ruling, after a greedy
+    regex substitution corrupted "state" the verb, "state" the polity and
+    country self-references across 160+ records). Deterministic string ops on
+    natural-language dossier text are FORBIDDEN except:
+    a. DETECTION — finding candidate records or violations (patterns may flag,
+       never edit); and
+    b. ENFORCED REDACTION — dropping banned content (population figures,
+       mottos, agency names) with a FIXED replacement token, never rephrasing.
+    Every meaning-bearing rewrite (vocabulary substitution, de-anonymisation,
+    grammar repair, de-jargoning) goes through the model with the rules as
+    instructions, and passes the mechanical gates (digits preserved, length
+    bounded, blind gate) before it can apply.
+
+12. BLIND VOCABULARY BY RECORD KIND. An independent country's blind text
+    self-refers as "the country"; "state/province" is ONLY for sub-national
+    units and dependent territories. (The 2026-10-07 bug had 160 countries
+    self-describe as sub-units, which made the rater read two dossiers as
+    sharing a parent and smear parent regimes across pairs.)
