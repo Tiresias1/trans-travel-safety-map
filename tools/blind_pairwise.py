@@ -186,7 +186,11 @@ RATING_RULES = """\
    visitor passes through. A territory under a restrictive parent regime must sit
    materially below comparable independent jurisdictions that lack that regime; "no
    local law" does not offset an enforced external one. Conversely, do not invent parent
-   rules the dossier does not state.
+   rules the dossier does not state. SCOPING: when one dossier carries a parent-regime
+   section, that regime belongs to THAT dossier's jurisdiction alone — the other
+   dossier's jurisdiction stands on its own stated facts and must NOT inherit the
+   parent regime, no matter how similar the two dossiers' cultural content looks
+   (shared traditions do not imply a shared parent).
 
 13. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
     *usually* more impactful to trans travelers than social conservatism.
@@ -436,7 +440,7 @@ DEP_PARENT = {
 # rules do not apply there.
 
 
-def parent_section(parent: dict) -> str:
+def parent_section(parent: dict, side: str = "") -> str:
     """Parent nation's visitor-facing regime, rendered for a dependency's
     dossier. Visitor-relevant sections only (assessment + situational); the
     territory's own sections follow and state any deviations."""
@@ -451,15 +455,17 @@ def parent_section(parent: dict) -> str:
     if parent.get("blindTangential"):
         parts.append(clean(parent["blindTangential"]))
     body = "\n".join(parts)
-    return ("### PARENT REGIME — THESE RULES BELONG TO THIS DOSSIER'S JURISDICTION "
-            "ONLY, not to the other dossier. The parent nation's rules below ALL "
-            "apply in this territory; weigh them exactly as if this territory "
-            "imposed them, unless THIS TERRITORY's sections state a deviation. "
-            "The parent nation's rules are enforced here at the border, through "
-            "the document regime, and in nationally funded facilities.\n\n" + body)
+    tag = f"DOSSIER {side}'s" if side else "THIS DOSSIER'S"
+    return (f"### PARENT REGIME — THESE RULES BELONG TO {tag} JURISDICTION ONLY "
+            "and DO NOT apply to the other dossier. The parent nation's rules "
+            "below ALL apply in this territory; weigh them exactly as if this "
+            "territory imposed them, unless THIS TERRITORY's sections state a "
+            "deviation. The parent nation's rules are enforced here at the "
+            "border, through the document regime, and in nationally funded "
+            "facilities.\n\n" + body)
 
 
-def dossier(rec: dict, rec_iso: str = "") -> str:
+def dossier(rec: dict, rec_iso: str = "", side: str = "") -> str:
     """Render the identity-stripped evidence for one jurisdiction.
 
     Order matters for readability but not for caching (this text is in the
@@ -478,7 +484,7 @@ def dossier(rec: dict, rec_iso: str = "") -> str:
     if rec.get("blindSummary"):
         parts.append(f"### ASSESSMENT\n{clean(rec['blindSummary'])}")
     if parent_iso and parent_iso in _REC_STORE:
-        parts.append(parent_section(_REC_STORE[parent_iso]))
+        parts.append(parent_section(_REC_STORE[parent_iso], side))
 
     ss = rec.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
@@ -531,11 +537,11 @@ Rate the two dossiers below.
 
 ## DOSSIER A
 
-{dossier(rec_a, iso_a)}
+{dossier(rec_a, iso_a, "A")}
 
 ## DOSSIER B
 
-{dossier(rec_b, iso_b)}
+{dossier(rec_b, iso_b, "B")}
 
 Reply with only the JSON object described in the output format."""
 
