@@ -424,6 +424,14 @@ across every axis below.
 # is not enough (the 2026-10-07 ASM/Samoa finding: without the parent section
 # the rater priced a US-regime territory like an independent Pacific state).
 _REC_STORE: dict = {}
+# Territories score in mixed mode only (2026-10-07 migration): excluded from
+# countries-mode pairing; their admin1 records carry parentIso3.
+TERRITORY_ISOS = {
+    "ASM", "GUM", "VIR", "MNP", "PRI", "FLK", "GIB", "BMU", "CYM", "VGB",
+    "AIA", "MSR", "TCA", "SHN", "PCN", "GGY", "IMN", "JEY", "GLP", "MTQ",
+    "GUF", "REU", "MYT", "BLM", "PYF", "NCL", "CUW", "ABW", "BES", "FRO",
+    "GRL", "COK", "NIU", "ESH",
+}
 
 DEP_PARENT = {
     "ASM": "USA", "GUM": "USA", "VIR": "USA", "MNP": "USA", "PRI": "USA",
@@ -1033,7 +1041,8 @@ def main() -> int:
         for sid, r in admin1.items():
             if not r.get("dossier"):
                 continue
-            if parents and r.get("iso3") not in parents:
+            eff_parent = r.get("parentIso3") or r.get("iso3")
+            if parents and eff_parent not in parents:
                 continue
             if unit_sub:
                 if args.regions_unit_exact:
@@ -1097,6 +1106,10 @@ def main() -> int:
         only = {o.upper() for o in args.only_countries} if args.only_countries else None
         for iso, rec in countries.items():
             if only and iso not in only:
+                continue
+            # territories score in mixed mode only (2026-10-07 migration);
+            # excluded from countries-mode pairing unless explicitly focused
+            if iso in TERRITORY_ISOS and not (focus and iso in focus):
                 continue
             required_here = [f for f in REQUIRED_BLIND
                              if not (f == "blindOutOfScope"

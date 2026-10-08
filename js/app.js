@@ -205,7 +205,9 @@
     const label = typeof rec.band === "string" && rec.band ? rec.band : bandLabel(rec.score);
     let sub, rank;
     if (modeKey === "countries") {
-      sub = "";
+      // dependent territories: labelled as what they are, not peer countries
+      const terrOf = TERRITORY_PARENT_NAMES && TERRITORY_PARENT_NAMES[props.iso3];
+      sub = terrOf ? `<p class="popup-sub">Territory of ${esc(terrOf)}</p>` : "";
       rank = typeof rec.rank === "number" && meta.totalCountries
         ? `Rank ${rec.rank} of ${meta.totalCountries} countries`
         : "";
@@ -320,7 +322,8 @@
     // gives the features real pixels so their dots retire. zFactor is 3 at zoom 2,
     // 2 at zoom 4, ~1.25 at zoom 5.5, 1 at >= 6.
     const zFactor = Math.min(3, Math.max(1, 1 + (6 - zoom) * 0.5));
-    const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
+    const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United States","VIR":"the United States","MNP":"the United States","PRI":"the United States","FLK":"the United Kingdom","GIB":"the United Kingdom","BMU":"the United Kingdom","CYM":"the United Kingdom","VGB":"the United Kingdom","AIA":"the United Kingdom","MSR":"the United Kingdom","TCA":"the United Kingdom","SHN":"the United Kingdom","PCN":"the United Kingdom","GGY":"the United Kingdom","IMN":"the United Kingdom","JEY":"the United Kingdom","GLP":"France","MTQ":"France","GUF":"France","REU":"France","MYT":"France","BLM":"France","PYF":"France","NCL":"France","CUW":"the Netherlands","ABW":"the Netherlands","BES":"the Netherlands","FRO":"Denmark","GRL":"Denmark","COK":"New Zealand","NIU":"New Zealand","ESH":"administered by Morocco"};
+const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px diagonal: Lesotho&Timor-Leste yes, Sierra Leone&Liberia no)
     const SMALL2_ISLAND = SMALL2 * 4;  // islands get dots up to ~2x the diagonal — no land neighbour means no label collision risk
     const ISOLATED_PX = 24;  // px to nearest same-country region centroid
 
