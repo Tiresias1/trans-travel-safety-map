@@ -40,6 +40,17 @@ _STATE_OK_AFTER = frozenset((
     "hospital", "care", "service", "programme", "system", "body", "organ",
     "structure", "intervention", "sponsor", "institutions", "official",
     "risk", "risk assessment", "statistics",
+    # participial/verbal and governance compounds: "state" as the actor or
+    # adjective of governance cannot fingerprint a division (2026-10-07:
+    # "state-affiliated television", "state-controlled media",
+    # "state-approved ignorance", "routine state practice" were flagged
+    # wrongly and wedged whole regeneration runs)
+    "affiliated", "controlled", "approved", "practice", "practices",
+    "employed", " employed", "apparatus", "actor", "actors", "action",
+    "actions", "campaign", "campaigns", "agents", "bodies", "organs",
+    "machinery", "power", "powers", "repression", "censorship",
+    "propaganda", "broadcaster", "broadcasters", "outlet", "outlets",
+    "channel", "channels", "press", "employer", "employers",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
