@@ -216,11 +216,11 @@ Return ONLY JSON: {{"D7": "claim text or 'no source text...'", ...}}""")
         # explicit absence for dimensions still uncovered
         still = [g for g in gaps if g not in added]
         if still:
-            note = "<p>Unsourced dimensions after this research pass: " + ", ".join(still) + ".</p>"
+            note = "<p>Unverified dimensions (no source found in the 2026-10 review): " + ", ".join(still) + ".</p>"
             on = str(rec.get("outOfScopeNotes", "") or "")
             if not all(("Unsourced dimensions" not in on) or True for _ in [0]):
                 pass
-            if "Unsourced dimensions after this research pass" not in on:
+            if "Unverified dimensions (no source found in the 2026-10 review)" not in on:
                 rec["outOfScopeNotes"] = on + note
         # ---- 4. apply (locked RMW) ----
         with open(ROOT / "data" / ".apply.lock", "a+") as lf:
