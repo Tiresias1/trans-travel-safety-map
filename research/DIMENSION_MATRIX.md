@@ -41,3 +41,7 @@ D13 youth & education — school/sports/education rules touching trans youth
 For ADM1 dossier regions: D3/D4/D5 (and any parent-managed dimension) inherit
 the parent's finding automatically (the parent framework layer); the region
 researches only LOCAL deltas and the dimensions it locally governs.
+D14 social climate & community visibility — church/religious influence, customary
+    or chiefly structures, public-attitude signals, Pride occurrence and permits,
+    organised community institutions; the "is this society welcoming or merely
+    not-hostile" dimension that pure law misses
