@@ -63,6 +63,9 @@ _STATE_OK_AFTER = frozenset((
     "schools", "hospitals", "institutions", "authorities", "bodies",
     "executive", "employee", "employees", "actor", "actors",
     "institutions'", "power'", "powers'",
+    "banquet", "dinner", "funeral", "ceremony", "protocol", "occasion",
+    "visit", "visit ", "official", "officials", "function", "functions",
+    "event", "events", "honour", "occasion'",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
