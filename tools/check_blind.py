@@ -102,11 +102,9 @@ def _state_leak(bl: str) -> bool:
         after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
         if after2 and after2.group(1).lower() in _STATE_OK_AFTER:
             continue
-        # parent-referent / generic definite reference
-        head = bl[max(0, s - 30):e]
-        if re.search(r"(?:encompassing|administering|metropolitan|unitary|partner|"
-                     r"neighbouring|federal|sovereign|central|national|parent)\s+"
-                     r"state(?:'|\u2019)?s?$", head, re.I) \
+        # parent-referent / generic definite reference / office compounds
+        head = bl[max(0, s - 30):e].rstrip()
+        if any(head.lower().endswith(p) for p in _STATE_OK_PREFIXES) \
                 or re.search(r"\bthe\s+state(?:'|\u2019)?s?$", head, re.I):
             continue
         return True
