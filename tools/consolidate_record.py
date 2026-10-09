@@ -396,6 +396,55 @@ def main():
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"wrote {path} | summary {len(out.get('summary',''))} chars "
           f"({out.get('summary','').count('<p')} <p>)")
+    # BLIND SOURCE SUMMARIES: derived, not inherited. The generation prompt
+    # cannot emit them (they mirror claims one per source), so derive them here
+    # through the same substitution rules — gated like every other blind field.
+    if args.apply and rec.get("sources"):
+        claim_list = []
+        for i, s in enumerate(rec["sources"]):
+            if isinstance(s, dict) and (s.get("summary") or s.get("title")):
+                claim_list.append(f"[{i}] {str(s.get('summary') or s.get('title'))[:400]}")
+        if claim_list:
+            bss = call_llm(
+                "You derive anonymised blind mirrors of source-claim summaries.",
+                f"""Apply this fixed vocabulary to each claim summary below.
+SUBSTITUTION TABLE for blind text:
+- "territory"/"territories"/"dependency"/"island(s)"/"atoll"/"archipelago" -> "state/province(s)"
+  (an INDEPENDENT COUNTRY self-refers as "the country");
+- bare "states" meaning sub-divisions of the parent nation -> "state/provinces";
+- "federal"/"federally" -> "national"/"nationally";
+- "overseas"/"crown" (adjective)/"colonial" -> "historic-era" or anonymised;
+- "kingdom"/"republic"/"commonwealth"/"empire" -> "the state" phrasing or "the country";
+- oceans/seas/continents/regions ("Pacific","Atlantic","Caribbean","Europe","European",
+  "Asia","African","Mediterranean","Balkans","Scandinavia","Latin America","the West",
+  "northern/southern/eastern/western <region>") -> "the region"/"a neighbouring
+  jurisdiction"/"the subregion";
+- agency proper nouns: "Department of Justice"/"DOJ"/"attorney general" -> "the national
+  justice department"; "SWS25" -> "an internal marking"; "Executive Order <n>" -> "an
+  executive order"; FBI/TSA/CBP/ICE/BOP -> "a national law-enforcement agency" etc.;
+- named comparison countries -> "a neighbouring jurisdiction";
+- population figures ("11,000 people") -> "a small population"; mottos -> drop the clause.
+Keep every fact, date, number, penalty. Same order, same count.
+
+CLAIMS:
+{chr(10).join(claim_list)}
+
+Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length as the input list.""")
+            new_list = bss.get("claims")
+            if isinstance(new_list, list) and len(new_list) == len(claim_list):
+                out["blindSourceSummaries"] = [str(x) for x in new_list]
+            _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
+                     "outOfScopeNotes", "blindSummary", "blindTangential",
+                     "blindLocalsOnly", "blindOutOfScope", "blindSourceSummaries")}
+            if not _cb.check(_rec, who):
+                print("[gate] blindSourceSummaries failed; LLM remediation")
+                changes, _ = _llm_fix(_kind, out) if False else (None, None)
+                # targeted remediation on the failing field only
+                from fix_blind_vocab_llm import fix_record as _vf
+                changes, _p = _vf(_kind, out)
+                for k2, v in changes.items():
+                    out[k2] = v
+
     if args.apply:
         # LOCKED READ-MODIFY-WRITE: concurrent children must never clobber
         # each other's records (2026-10-06 race fix — each child re-reads the
