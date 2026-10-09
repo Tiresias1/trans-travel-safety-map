@@ -230,26 +230,19 @@ DEANON_PARENT = {"NGA": "Nigeria", "USA": "the United States", "GBR": "the Unite
 
 
 def _deanon(out, iso):
-    """Mechanically map anonymisation vocabulary back to real names in the
-    visible fields of a model output (meaning-preserving; used when the model
-    over-applies blind vocabulary to state-level visible text)."""
-    P = DEANON_PARENT.get(iso)
+    """De-anonymise visible fields of a model output (meaning-bearing rewrite
+    -> LLM lane per the 2026-10-07 ruling; regex only flags)."""
+    from fix_blind_vocab_llm import fix_record as _fix
+    _kind = "region" if "/" in iso else "country"
+    # de-anon = inverse vocabulary: run the LLM fixer with a deanon flag
+    changes, _ = _llm_deanon(out, iso)
+    for k, v in changes.items():
+        out[k] = v
 
-    def fix(t):
-        if not isinstance(t, str) or not t:
-            return t
-        if P:
-            t = re.sub(r"[Tt]he parent (?:nation|state|government)(?:'|’)?s?\b",
-                       lambda m: P + ("'s" if ("'s" in m.group(0) or "’s" in m.group(0)) else ""), t)
-            t = re.sub(r"[Tt]he administering state(?:'|’)?s?\b",
-                       lambda m: P + ("'s" if ("'s" in m.group(0) or "’s" in m.group(0)) else ""), t)
-            t = re.sub(r"[Pp]arent-nation\b", P.replace("the ", ""), t)
-        t = re.sub(r"state/provinces\b", "regions", t)
-        t = re.sub(r"state/province\b", "region", t)
-        return t
 
-    for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
-        out[k] = fix(out.get(k))
+def _llm_deanon(out, iso):
+    from fix_blind_vocab_llm import fix_record_deanon
+    return fix_record_deanon(out, iso)
 
 
 def validate_output(out, problems):
@@ -395,23 +388,8 @@ def main():
              "blindLocalsOnly", "blindOutOfScope")}
     _ok = _cb.check(_rec, who)
     if not _ok:
-        print("[gate] blind mirrors failed blind gate; running fixed-vocabulary remediation")
-        for k in ("blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
-            if out.get(k):
-                out[k] = _fbg._fix_text(out[k])
-        _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
-                 "outOfScopeNotes", "blindSummary", "blindTangential",
-                 "blindLocalsOnly", "blindOutOfScope")}
-        if not _cb.check(_rec, who):
-            print("validation problems: blind gate FAILS even after remediation — output rejected")
-            sys.exit(1)
-        print("[gate] remediation passed")
-    # report what the relevance gate dropped (transparency, not ship-blocking)
-    kept, dropped = relevant_claims(rec)
-    if dropped:
-        print(f"relevance gate dropped {len(dropped)} generic-travel claims:")
-        for u, c in dropped:
-            print(f"   - {u[:70]} | {c}")
+        print("[gate] output failed the blind gate pre-apply (should not happen after the retry loop)")
+        sys.exit(1)
     fn = who.replace(":", "_").replace("/", "_")
     out["who"] = who
     path = outdir / f"{fn}.json"

@@ -231,3 +231,58 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def fix_record_deanon(rec: dict, iso: str) -> tuple[dict, list]:
+    """Inverse vocabulary: map anonymisation vocabulary back to REAL names in
+    the visible fields of a model output (LLM lane, 2026-10-07 ruling)."""
+    from consolidate_record import call_llm
+    P = DEANON_PARENT.get(iso, "the parent state")
+    vis = {k: rec[k] for k in ("summary", "tangentialFactors", "localsOnly",
+                               "outOfScopeNotes") if rec.get(k)}
+    out = call_llm(
+        "You repair jurisdiction dossiers. Visible fields must use REAL names.",
+        f"""These VISIBLE dossier fields wrongly use anonymisation vocabulary.
+Replace it with the jurisdiction's REAL names — the parent is {P!r}.
+  'the parent nation' -> {P!r} (possessives handled naturally)
+  'the administering state' -> {P!r}
+  'state/province(s)' meaning this jurisdiction -> 'territory'/'this territory'
+    (or the natural word for a {('country' if iso and '/' not in iso else 'region')});
+    references to OTHER jurisdictions' sub-units stay 'state/province'.
+Do not change any facts, numbers, dates, or structure.
+
+Return ONLY a JSON object with the same keys, corrected.\n\nINPUT:\n""" +
+        json.dumps(vis, ensure_ascii=False))
+    changes, problems = {}, []
+    DIG = re.compile(r"\d")
+    for k, new in out.items():
+        if k not in vis:
+            continue
+        new, old = str(new), str(vis[k])
+        if set(DIG.findall(new)) - set(DIG.findall(old)):
+            problems.append(f"{k}: digits invented")
+        elif len(new) > max(len(old) * 2, 8000):
+            problems.append(f"{k}: length blowup")
+        elif new != old:
+            changes[k] = new
+    return changes, problems
+
+
+DEANON_PARENT = {
+    "NGA": "Nigeria", "USA": "the United States", "GBR": "the United Kingdom",
+    "TUR": "Turkey", "PER": "Peru", "AUS": "Australia", "MEX": "Mexico",
+    "ITA": "Italy", "IND": "India", "PHL": "the Philippines", "RUS": "Russia",
+    "ESP": "Spain", "DEU": "Germany",
+    # territories: the parent IS named in their visible text
+    "ASM": "the United States", "GUM": "the United States", "VIR": "the United States",
+    "MNP": "the United States", "PRI": "the United States",
+    "FLK": "the United Kingdom", "GIB": "the United Kingdom", "BMU": "the United Kingdom",
+    "CYM": "the United Kingdom", "VGB": "the United Kingdom", "AIA": "the United Kingdom",
+    "MSR": "the United Kingdom", "TCA": "the United Kingdom", "SHN": "the United Kingdom",
+    "PCN": "the United Kingdom", "GGY": "the United Kingdom", "IMN": "the United Kingdom",
+    "JEY": "the United Kingdom",
+    "GLP": "France", "MTQ": "France", "GUF": "France", "REU": "France",
+    "MYT": "France", "BLM": "France", "PYF": "France", "NCL": "France",
+    "CUW": "the Netherlands", "ABW": "the Netherlands", "BES": "the Netherlands",
+    "FRO": "Denmark", "GRL": "Denmark", "COK": "New Zealand", "NIU": "New Zealand",
+    "ESH": "Morocco",
+}
