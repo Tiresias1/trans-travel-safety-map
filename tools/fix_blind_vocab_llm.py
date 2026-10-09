@@ -59,6 +59,27 @@ def detect(kind: str, rec: dict) -> bool:
     return True  # territories/regions still need artifact/leak checks
 
 
+def find_violations(rec: dict) -> list:
+    """Detection-only: exact banned strings with context, shown to the model
+    as fixing targets (regex flags, the model fixes)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("cb", ROOT / "tools" / "check_blind.py")
+    cb = importlib.util.module_from_spec(spec); spec.loader.exec_module(cb)
+    hits = []
+    for f in FIELDS + ("blindSourceSummaries",):
+        v = rec.get(f)
+        items = v if isinstance(v, list) else [v]
+        for item in items:
+            t = str(item or "")
+            for m in cb.BANNED.finditer(t):
+                hits.append(f"{f}: '{m.group(0)}' in: ...{t[max(0,m.start()-50):m.end()+50]}...")
+            for m in re.finditer(r"\bstate(?:'s)?\b", t, re.I):
+                ctx = t[max(0, m.start()-50):m.end()+50]
+                if cb._state_leak(ctx):
+                    hits.append(f"{f}: bare 'state' leak in: ...{ctx}...")
+    return hits
+
+
 def build_prompt(kind: str, rec: dict) -> str:
     rules = []
     if kind == "country":
@@ -105,7 +126,17 @@ def build_prompt(kind: str, rec: dict) -> str:
     ss = rec.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
         payload["blindSourceSummaries"] = ss
-    return ("KIND: " + kind + "\n\nRULES:\n" + "\n".join(rules) +
+    viols = find_violations(rec)
+    viol_block = ""
+    if viols:
+        viol_block = ("\n\nVIOLATIONS THAT MUST BE FIXED (these exact words are "
+                      "forbidden in blind text; rewrite each offending sentence "
+                      "to remove them without losing the fact):\n" +
+                      "\n".join(viols[:12])) + \
+            "\nIf a field has no violations listed, return it UNCHANGED."
+    else:
+        viol_block = "\n\nNo known violations — return the fields unchanged."
+    return ("KIND: " + kind + "\n\nRULES:\n" + "\n".join(rules) + viol_block +
             "\n\nReturn ONLY a JSON object mapping each input field name to its "
             "corrected text (same keys, same paragraph structure).\n\nINPUT:\n" +
             json.dumps(payload, ensure_ascii=False))
