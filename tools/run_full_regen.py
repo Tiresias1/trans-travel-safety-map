@@ -39,7 +39,7 @@ def main():
                 p = subprocess.run(
                     [sys.executable, "-u", str(ROOT / "tools" / "consolidate_record.py"),
                      "--who", w, "--apply"],
-                    capture_output=True, text=True, timeout=900)
+                    capture_output=True, text=True, timeout=2400)
                 return p
             except subprocess.TimeoutExpired:
                 return None
