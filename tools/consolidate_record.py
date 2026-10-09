@@ -73,9 +73,32 @@ RULES FOR THIS PASS (consolidation, not compression):
    that is a research fact, not an unknown: if the sources say the parent's
    statute does not extend here, say that.
 
-7. Blind mirrors: same claims, same structure, fixed vocabulary only
-   (territory->state/province, federal->national, no geographic names/oceans/
-   cardinal directions/region names), substitution-only derivation.
+7. Blind mirrors: same claims, same structure, fixed vocabulary only.
+   SUBSTITUTION TABLE for blind fields (apply to EVERY instance):
+   - "territory"/"territories"/"dependency"/"island(s)"/"atoll"/"archipelago" ->
+     "state/province(s)" (an INDEPENDENT COUNTRY self-refers as "the country");
+   - bare "states" meaning sub-divisions of the parent nation -> "state/provinces";
+   - "federal"/"federally" -> "national"/"nationally";
+   - "overseas"/"crown" (adjective)/"colonial"/"colonised" -> "historic-era" or
+     anonymised equivalents; "kingdom"/"republic"/"commonwealth"/"empire" ->
+     "the state" phrasing or "the country";
+   - OCEANS/SEAS/CONTINENTS/REGIONS/regions of named countries ("Pacific",
+     "Atlantic", "Caribbean", "Europe", "European", "Asia", "Asian", "Africa",
+     "African", "Mediterranean", "Balkans", "Scandinavia", "Latin America",
+     "the West", "northern/southern/eastern/western <region name>") ->
+     "the region", "a neighbouring jurisdiction", "the subregion", or rephrase
+     ("European governments" -> "several governments in one region");
+   - agency/programme proper nouns: "Department of Justice"/"DOJ" -> "the
+     national justice department"; "attorney general" (as a foreign office) ->
+     "the national justice department"; "SWS25" -> "an internal marking";
+     "Executive Order <n>" -> "an executive order"; FBI/TSA/CBP/ICE/BOP ->
+     "a national law-enforcement agency" etc.;
+   - named comparison countries in blind text -> "a neighbouring jurisdiction"
+     (the visible counterpart may name it);
+   - population figures like "11,000 people"/"56,000 residents" -> "a small
+     population"; mottos -> drop the clause.
+   Substitution-only: every substantive claim must survive verbatim in
+   meaning; penalties, dates, numbers, provisions must be kept.
    An INDEPENDENT COUNTRY's blind text says "the country" — never
    "state/province" (2026-10-07 fleet bug: 160 country blind mirrors described
    their own country as a sub-unit, which made raters misread jurisdictions

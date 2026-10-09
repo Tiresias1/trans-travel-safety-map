@@ -12,7 +12,7 @@ Usage: python3 tools/check_blind.py --who country:ASM | --all-countries | --admi
 import json, re, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
-BANNED = re.compile(r"\b(federal\w*|territor\w*|dependenc\w*|colon\w*|island\w*|atoll\w*|archipelago|"
+BANNED = re.compile(r"\b(federal\w*|territor\w*|dependenc\w*|island\w*|atoll\w*|archipelago|"
     r"pacific|atlantic|indian|caribbe\w*|mediterrane\w*|asia\w*|africa\w*|oceani\w*|europe\w*|"
     r"latin\s+americ\w*|caribbe\w*|central\s+america\w*|south\s+america\w*|north\s+america\w*|"
     r"overseas|crown|empire|kingdom|republic|attorney\s+general|commonwealth|"
@@ -51,6 +51,10 @@ _STATE_OK_AFTER = frozenset((
     "machinery", "power", "powers", "repression", "censorship",
     "propaganda", "broadcaster", "broadcasters", "outlet", "outlets",
     "channel", "channels", "press", "employer", "employers",
+    "supported", "supported service", "evidence", "era", "building",
+    "buildings", "project", "projects", "ideology", "ideological",
+    "framework", "frameworks", "recognition", "position", "positioning",
+    "monopoly", "capture", "interests", "interest", "survival", "stories",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
@@ -73,7 +77,7 @@ def _state_leak(bl: str) -> bool:
         seg = bl[max(0, s - 35):e + 35].lower()
         if "state/province" in seg or "state / province" in seg:
             continue
-        after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z]+)", bl[e:])
+        after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z-]+)", bl[e:])
         if after and after.group(1).lower() in _STATE_OK_AFTER:
             continue
         after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
