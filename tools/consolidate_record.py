@@ -186,7 +186,8 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
                     max_tokens = min(max_tokens + 1500, 9000)
                     continue
                 raise ValueError(f"empty model content (stop={sr})")
-            m = re.search(r"\{.*\}", content, re.S)
+            content2 = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip())
+            m = re.search(r"\{.*\}", content2, re.S)
             if not m:
                 if attempt < 4:
                     time.sleep(3)
@@ -438,8 +439,6 @@ Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length 
                      "blindLocalsOnly", "blindOutOfScope", "blindSourceSummaries")}
             if not _cb.check(_rec, who):
                 print("[gate] blindSourceSummaries failed; LLM remediation")
-                changes, _ = _llm_fix(_kind, out) if False else (None, None)
-                # targeted remediation on the failing field only
                 from fix_blind_vocab_llm import fix_record as _vf
                 changes, _p = _vf(_kind, out)
                 for k2, v in changes.items():
