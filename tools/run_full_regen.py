@@ -34,24 +34,31 @@ def main():
 
     done = fails = 0
     with ThreadPoolExecutor(args.workers) as ex:
-        futs = {ex.submit(subprocess.run,
-                          [sys.executable, "-u", str(ROOT / "tools" / "consolidate_record.py"),
-                           "--who", w, "--apply"],
-                          capture_output=True, text=True, timeout=900): w
-                for w in targets}
+        def run_child(w):
+            try:
+                p = subprocess.run(
+                    [sys.executable, "-u", str(ROOT / "tools" / "consolidate_record.py"),
+                     "--who", w, "--apply"],
+                    capture_output=True, text=True, timeout=900)
+                return p
+            except subprocess.TimeoutExpired:
+                return None
+            except Exception:
+                return None
+        futs = {ex.submit(run_child, w): w for w in targets}
         for f in as_completed(futs):
             w = futs[f]
-            global_done = None
             try:
                 p = f.result()
-                ok = p.returncode == 0
+                ok = p is not None and p.returncode == 0
             except Exception:
+                p = None
                 ok = False
             with LOCK:
                 done += 1
                 if not ok:
                     fails += 1
-                    tail = (p.stderr or p.stdout or "")[-220:].replace("\n", " ") if p else "timeout"
+                    tail = (p.stderr or p.stdout or "")[-220:].replace("\n", " ") if p else "timeout/crash"
                     print(f"[FAIL] {w}: {tail}", flush=True)
                 if done % 25 == 0:
                     print(f"... {done}/{len(targets)} ({fails} failed)", flush=True)
