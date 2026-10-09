@@ -57,11 +57,18 @@ _STATE_OK_AFTER = frozenset((
     "monopoly", "capture", "interests", "interest", "survival", "stories",
     "designated", "registered", "certified", "licensed", "listed",
     "administration", "administrative", "bureaucracy", "treatment",
+    # plurals and remaining governance/office compounds (2026-10-08)
+    "facilities", "facility", "colleges", "college", "universities",
+    "agencies", "departments", "ministries", "courts", "prisons",
+    "schools", "hospitals", "institutions", "authorities", "bodies",
+    "executive", "employee", "employees", "actor", "actors",
+    "institutions'", "power'", "powers'",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
     "unitary state", "partner state", "neighbouring state", "federal state",
     "sovereign state", "central state", "national state", "parent state",
+    "head of state", "heads of state", "head-of-state",
 )
 _STATE_RE = re.compile(r"\bstate(?:(?:'|\u2019)s)?\b", re.I)
 
@@ -82,10 +89,15 @@ def _state_leak(bl: str) -> bool:
         after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z-]+)", bl[e:])
         if after and after.group(1).lower() in _STATE_OK_AFTER:
             continue
-        # "state" as the VERB (does not state whether / refused to state that):
-        # a verb cannot identify a jurisdiction
+        # "state" as the VERB (does not state whether / refused to state that /
+        # warnings state this): a verb cannot identify a jurisdiction
         if after and after.group(1).lower() in ("whether", "that", "how", "if",
-                                                "what", "why", "which", "when"):
+                                                "what", "why", "which", "when",
+                                                "this", "it", "them"):
+            continue
+        # "state or private violence" / "state and non-state actors": the
+        # actor-class phrase, not a jurisdiction
+        if re.match(r"\s+(?:or|and|versus|vs)\s+(?:private|non-?state|public)\b", bl[e:], re.I):
             continue
         after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
         if after2 and after2.group(1).lower() in _STATE_OK_AFTER:
