@@ -55,6 +55,8 @@ _STATE_OK_AFTER = frozenset((
     "buildings", "project", "projects", "ideology", "ideological",
     "framework", "frameworks", "recognition", "position", "positioning",
     "monopoly", "capture", "interests", "interest", "survival", "stories",
+    "designated", "registered", "certified", "licensed", "listed",
+    "administration", "administrative", "bureaucracy", "treatment",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
@@ -75,10 +77,15 @@ def _state_leak(bl: str) -> bool:
     for m in _STATE_RE.finditer(bl):
         s, e = m.start(), m.end()
         seg = bl[max(0, s - 35):e + 35].lower()
-        if "state/province" in seg or "state / province" in seg:
-            continue
+        if ("state/provinc" in seg or "state / provinc" in seg):
+            continue  # the state/province idiom in any inflection (provincial, provinces)
         after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z-]+)", bl[e:])
         if after and after.group(1).lower() in _STATE_OK_AFTER:
+            continue
+        # "state" as the VERB (does not state whether / refused to state that):
+        # a verb cannot identify a jurisdiction
+        if after and after.group(1).lower() in ("whether", "that", "how", "if",
+                                                "what", "why", "which", "when"):
             continue
         after2 = re.match(r"\s*(?:'|\u2019)?s\s+([A-Za-z]+)", bl[e:])
         if after2 and after2.group(1).lower() in _STATE_OK_AFTER:
