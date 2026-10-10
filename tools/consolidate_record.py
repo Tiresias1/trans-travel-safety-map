@@ -406,7 +406,9 @@ def main():
             if isinstance(s, dict) and (s.get("summary") or s.get("title")):
                 claim_list.append(f"[{i}] {str(s.get('summary') or s.get('title'))[:400]}")
         if claim_list:
-            bss = call_llm(
+            # batched: long claim lists overflow the model output limit
+            def derive_batch(batch):
+                return call_llm(
                 "You derive anonymised blind mirrors of source-claim summaries.",
                 f"""Apply this fixed vocabulary to each claim summary below.
 SUBSTITUTION TABLE for blind text:
@@ -428,12 +430,21 @@ SUBSTITUTION TABLE for blind text:
 Keep every fact, date, number, penalty. Same order, same count.
 
 CLAIMS:
-{chr(10).join(claim_list)}
+{chr(10).join(batch)}
 
 Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length as the input list.""")
-            new_list = bss.get("claims")
-            if isinstance(new_list, list) and len(new_list) == len(claim_list):
-                out["blindSourceSummaries"] = [str(x) for x in new_list]
+            merged = []
+            for i in range(0, len(claim_list), 8):
+                batch = claim_list[i:i + 8]
+                b = derive_batch(batch)
+                nl = b.get("claims")
+                if isinstance(nl, list) and len(nl) == len(batch):
+                    merged += [str(x) for x in nl]
+                else:
+                    merged = []
+                    break
+            if merged and len(merged) == len(claim_list):
+                out["blindSourceSummaries"] = merged
             _rec = {k: out.get(k) for k in ("summary", "tangentialFactors", "localsOnly",
                      "outOfScopeNotes", "blindSummary", "blindTangential",
                      "blindLocalsOnly", "blindOutOfScope", "blindSourceSummaries")}
