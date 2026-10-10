@@ -107,7 +107,8 @@ def _state_leak(bl: str) -> bool:
             continue
         # parent-referent / generic definite reference / office compounds
         head = bl[max(0, s - 30):e].rstrip()
-        if any(head.lower().endswith(p) for p in _STATE_OK_PREFIXES) \
+        head_bare = re.sub(r"(?:'|’)s$", "", head).rstrip()
+        if any(head_bare.lower().endswith(p) for p in _STATE_OK_PREFIXES) \
                 or re.search(r"\bthe\s+state(?:'|\u2019)?s?$", head, re.I):
             continue
         return True
@@ -156,9 +157,14 @@ def check(rec, name):
         if m: banned.append(f"{b}: BANNED {sorted(set(x[0].lower() for x in m))}")
         enrich = words(bl) - words(rec.get(v)) - {stem(a) for a in ALLOW}
         if enrich: warnings.append(f"{b}: (adv) {sorted(enrich)[:12]}")
-    bs = " ".join(str(x) for x in (rec.get("blindSourceSummaries") or []))
-    if bs and BANNED.search(bs): banned.append("blindSourceSummaries: BANNED " + str(set(x[0] for x in BANNED.findall(bs))))
-    if bs and _state_leak(bs): banned.append("blindSourceSummaries: BANNED state")
+    bs_items = [str(x) for x in (rec.get("blindSourceSummaries") or []) if str(x).strip()]
+    # per-item checks: joining items fabricates cross-boundary contexts
+    bs_banned = set()
+    for item in bs_items:
+        m = BANNED.search(item)
+        if m: bs_banned.add(m.group(0))
+        if _state_leak(item): bs_banned.add("state")
+    if bs_banned: banned.append("blindSourceSummaries: BANNED " + str(bs_banned))
     if banned or warnings:
         print(("FAIL " if banned else "WARN ") + name)
         for f in banned: print("   ", f)
