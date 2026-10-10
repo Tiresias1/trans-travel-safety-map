@@ -39,7 +39,7 @@ for P in "${PARENTS[@]}"; do
     --baseurl "https://openrouter.ai/api/v1" \
     --endpoint-suffix "/chat/completions" \
     --auth-style bearer --api-key "$KEY" \
-    --model "xiaomi/mimo-v2.6-flash" \
+     --model "${LANE_MODEL:-meta/muse-spark-1.3-contributor}" \
     --num-pairs "$PAIRS" \
     --differential-weighting-percent 0.1-0.02 \
     --absolute-weighting-percent 0.07-0.01 \

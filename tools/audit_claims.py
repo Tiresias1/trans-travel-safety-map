@@ -34,7 +34,7 @@ from consolidate_record import (call_llm, META_NARRATIVE, VIS_ANON,
                                 GENERIC_TRAVEL, TRANS_KEEP, valid_summary)  # noqa
 
 API_KEY = os.environ.get("OPENROUTER_KEY", "")
-MODEL = "xiaomi/mimo-v2.6-flash"
+# Lane model: shared with consolidate_record.call_llm (bulk work = contributor tier).
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
 
 SYSTEM = f"""You audit source-claim summaries for a trans-visitor travel-safety

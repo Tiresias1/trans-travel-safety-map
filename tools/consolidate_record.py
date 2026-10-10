@@ -14,14 +14,16 @@ Writes data/consolidate_out/<sanitized>.json for review; apply with
 tools/apply_rework.py-style merge (see --apply).
 """
 from __future__ import annotations
-import argparse, json, re, sys, time, urllib.request
+import argparse, json, os, re, sys, time, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 KEY = (__import__("os").environ.get("OPENROUTER_KEY")
        or Path("/tmp/.openrouter_key").read_text().strip())
 API = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "xiaomi/mimo-v2.6-flash"
+# Bulk-work lane model (orchestrator: meta/muse-spark-1.3; lanes: contributor).
+# Override with LANE_MODEL env for testing/fallback.
+MODEL = os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor")
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
 

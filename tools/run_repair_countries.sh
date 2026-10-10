@@ -14,7 +14,7 @@ python3 tools/blind_pairwise.py --api openai \
   --baseurl "https://openrouter.ai/api/v1" \
   --endpoint-suffix "/chat/completions" \
   --auth-style bearer --api-key "$KEY" \
-  --model "xiaomi/mimo-v2.6-flash" \
+   --model "${LANE_MODEL:-meta/muse-spark-1.3-contributor}" \
   --focus $FOCUS \
   --num-pairs "$N" \
   --differential-weighting-percent 0.1-0.02 \

@@ -926,7 +926,8 @@ def main() -> int:
     ap.add_argument("--endpoint-suffix", default="/v1/messages")
     ap.add_argument("--api", default="anthropic-messages",
                     help="message API dialect: anthropic-messages | openai")
-    ap.add_argument("--model", default="qwen3.8-flash")
+    ap.add_argument("--model", default=os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor"),
+                    help="lane model id (bulk work = contributor tier)")
     ap.add_argument("--anthropic-version", default="2023-06-01")
     ap.add_argument("--auth-style", choices=("api-key", "bearer", "both"), default="both")
     ap.add_argument("--num-pairs", type=int, default=10000)
