@@ -1104,6 +1104,7 @@ def main() -> int:
             return 2
     else:
         only = {o.upper() for o in args.only_countries} if args.only_countries else None
+        focus = [f.upper() for f in args.focus] if args.focus else None
         for iso, rec in countries.items():
             if only and iso not in only:
                 continue
@@ -1142,8 +1143,7 @@ def main() -> int:
             return 2
 
     rng = random.Random(args.seed)
-    focus = None
-    if args.focus:
+    if args.focus and focus is None:
         focus = [f.upper() for f in args.focus]
         bad = [f for f in focus if f not in eligible]
         if bad:
