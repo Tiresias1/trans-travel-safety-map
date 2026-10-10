@@ -90,7 +90,7 @@ def _state_leak(bl: str) -> bool:
         if ("state/provinc" in seg or "state / provinc" in seg):
             continue  # the state/province idiom in any inflection (provincial, provinces)
         after = re.match(r"(?:\s+|\s*[-:]\s*)([A-Za-z-]+)", bl[e:])
-        if after and after.group(1).lower() in _STATE_OK_AFTER:
+        if after and after.group(1).lower().split("-")[0] in _STATE_OK_AFTER:
             continue
         # "state" as the VERB (does not state whether / refused to state that /
         # warnings state this): a verb cannot identify a jurisdiction
