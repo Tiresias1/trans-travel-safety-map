@@ -453,8 +453,12 @@ Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length 
             if not _cb.check(_rec, who):
                 print("[gate] blindSourceSummaries failed; LLM remediation")
                 from fix_blind_vocab_llm import fix_record as _vf
-                changes, _p = _vf(_kind, out)
-                for k2, v in changes.items():
+                try:
+                    changes, _p = _vf(_kind, out)
+                except Exception as _e:
+                    print(f"[gate] remediation error: {str(_e)[:120]}")
+                    changes = {}
+                for k2, v in (changes or {}).items():
                     out[k2] = v
 
     if args.apply:
