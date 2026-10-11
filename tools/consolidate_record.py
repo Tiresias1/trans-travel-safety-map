@@ -195,7 +195,31 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
                     time.sleep(3)
                     continue
                 raise ValueError(f"no JSON in model output: {content[:200]}")
-            return json.loads(m.group(0))
+            try:
+                return json.loads(m.group(0))
+            except json.JSONDecodeError:
+                # prose braces / trailing commas: try the LAST well-formed
+                # balanced object instead of the greedy outermost span
+                cand = None
+                depth = start = 0
+                for i, ch in enumerate(content2):
+                    if ch == '{':
+                        if depth == 0:
+                            start = i
+                        depth += 1
+                    elif ch == '}':
+                        depth -= 1
+                        if depth == 0 and start is not None:
+                            cand = content2[start:i + 1]
+                if cand:
+                    try:
+                        return json.loads(cand)
+                    except json.JSONDecodeError:
+                        pass
+                if attempt < 4:
+                    time.sleep(3)
+                    continue
+                raise ValueError(f"unparseable JSON in model output: {content[:200]}")
         except Exception as e:
             last = e
             time.sleep(3 + attempt * 3)
