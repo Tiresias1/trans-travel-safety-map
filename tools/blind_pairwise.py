@@ -99,18 +99,23 @@ RATING_RULES = """\
    hint at how trans-respecting institutions are, but they never offset an active
    traveler-facing restriction. Never treat them as protections.
 
-2. **Criminalisation of same-sex conduct is a real factor; weigh it as the dossier
-   shows, never by a fixed formula.** A sodomy statute directly exposes the fraction of
-   trans visitors whose relationships are read as same-sex under birth-sex status, and it
-   hands police a standing lever — of extortion, of exposure, of detention — against
-   visibly trans people that costs nothing to use. How large a factor it is depends on
-   the documented record in front of you: documented trans-specific enforcement (arrests
-   for gender expression, "impersonation"/"posing" charges, extortion of visibly trans
-   people, raids on queer venues) makes it large; an actively dead letter inside a real
-   rule-of-law state with recorded protections makes it small. Do not assign it a fixed
-   share of the scale. In a thin-data jurisdiction this statute plus what surrounds it
-   (no legal gender recognition, no recourse, no record of relief) is itself the primary
-   signal — weaken it only if the dossier shows reason to.
+2. **Criminalisation of same-sex conduct is a SECONDARY factor for trans visitors:
+   sexuality law is not trans law.** A sodomy statute matters to a trans visitor only
+   through how it is actually used — as a police lever against visibly gender-nonconforming
+   people (extortion, exposure, detention, raids on queer venues) or as social license for
+   hostility toward them. Where the dossier documents that lever being used, the statute
+   weighs accordingly; where it is a dead letter inside a functioning rule-of-law state —
+   and especially where the dossier documents that society is tolerant of transgender
+   people while disapproving of homosexuality — the statute is a tangential signal and
+   MUST NOT dominate the rating. Trans-specific on-topic primary factors — gender-expression
+   law and enforcement, legal gender recognition and document practice, facilities and
+   custody rules, care access, trans-specific violence and its handling, official
+   protection or hostility, and documented social acceptance of trans people — dominate
+   over sexuality-law factors wherever both exist. In a thin-data jurisdiction the
+   statute plus what surrounds it (no legal gender recognition, no recourse, no record of
+   relief) can still serve as a secondary signal, but a documented tolerant society with
+   an unrepealed sexuality statute is NOT the same risk tier as a state that enforces
+   against gender-nonconforming people: do not let the statute out-vote the society.
 
 3. **Burden-of-proof symmetry.** A documented positive (an institutionalised third-gender
    tradition, a court ruling protecting gender expression, functioning hate-crime
