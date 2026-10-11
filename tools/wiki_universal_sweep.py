@@ -73,6 +73,10 @@ def find_article(name: str, iso3: str = "") -> tuple[str, str]:
         cands.append(pat.format(x=name))
     if iso3:  # disambiguation helper, e.g. "Georgia (country)"
         cands.append(f"LGBTQ rights in {name} ({iso3})")
+    # country-disambiguated variants before generic last-resort patterns
+    disambig = [f"LGBTQ rights in {name} (country)", f"LGBT rights in {name} (country)"]
+    cands = [c for c in cands if "Human rights in" not in c] + disambig + \
+            [c for c in cands if "Human rights in" in c]
     for t in cands:
         txt, url = fetch_extract(t)
         if txt:
