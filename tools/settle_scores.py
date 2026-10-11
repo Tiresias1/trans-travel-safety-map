@@ -23,9 +23,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TOL = 0.02
+TOL = float(__import__("os").environ.get("SETTLE_TOL", "0.02"))
 MIN_ENC = 3
-SETTLE_PAIRS = 16
+SETTLE_PAIRS = int(__import__("os").environ.get("SETTLE_PAIRS", "16"))
 
 # territories whose ratings change under RATING_RULES 12 (parent-regime rule)
 TERRITORIES = {"ASM", "GUM", "VIR", "MNP", "PRI"}
