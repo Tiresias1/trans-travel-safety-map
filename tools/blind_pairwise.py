@@ -1039,6 +1039,10 @@ def main() -> int:
         store = admin1
         store_file = Path(args.admin1_file)
         unit_sub = [s.lower() for s in (args.regions_unit or [])]
+        if args.regions_unit_file:
+            unit_sub += [l.strip().lower() for l in
+                         Path(args.regions_unit_file).read_text(encoding="utf-8").splitlines()
+                         if l.strip()]
         for sid, r in admin1.items():
             if not r.get("dossier"):
                 continue
