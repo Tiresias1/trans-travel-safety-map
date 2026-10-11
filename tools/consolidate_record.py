@@ -163,7 +163,7 @@ def build_user(rec, parent_summ=""):
 
 
 def call_llm(system: str, user: str, temperature: float = 0.3,
-             max_tokens: int = 6000) -> dict:
+             max_tokens: int = 9000) -> dict:
     """One MiMo call with the known failure-mode retries (content None with
     stop_reason=length needs max_tokens raised; content_filter retries)."""
     last = None
