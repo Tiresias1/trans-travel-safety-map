@@ -71,6 +71,11 @@ def main():
         r["dossier"] = True
         r["parentIso3"] = parent
         r.pop("inherited", None)
+        # readiness flag: complete blind fields are synced below; without it
+        # the mixed-mode pool silently excludes the record (2026-10-08 bug:
+        # territories got zero encounters in the admin1 wave and kept
+        # pre-migration carryover scores)
+        r["blindV2"] = True
         # blind fields synced from the country record (single source of truth
         # until the regen rewrites them through the gate)
         for f in ("blindSummary", "blindTangential", "blindLocalsOnly",
