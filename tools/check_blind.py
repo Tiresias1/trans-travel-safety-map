@@ -66,6 +66,9 @@ _STATE_OK_AFTER = frozenset((
     "banquet", "dinner", "funeral", "ceremony", "protocol", "occasion",
     "visit", "visit ", "official", "officials", "function", "functions",
     "event", "events", "honour", "occasion'",
+    # "27-member-state figure" — member-state idiom, EU/UN membership counts
+    "figure", "figures", "member", "members", "count", "counts",
+    "statistics'", "average", "survey",
 ))
 _STATE_OK_PREFIXES = (
     "encompassing state", "administering state", "metropolitan state",
