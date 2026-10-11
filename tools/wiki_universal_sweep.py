@@ -36,6 +36,8 @@ UA = "TransTravelResearch/1.0 (coverage sweep; contact: research@transtravelsafe
 
 TITLE_PATTERNS = [
     "LGBTQ rights in {x}", "LGBT rights in {x}", "LGBT history in {x}",
+    "LGBTQ rights in the {x}", "LGBT rights in the {x}",
+    "LGBT history in the {x}",
     "Transgender rights in {x}", "Transgender people in {x}",
     "LGBTQ people in {x}", "Human rights in {x}",  # last resort only
 ]
@@ -74,7 +76,17 @@ def find_article(name: str, iso3: str = "") -> tuple[str, str]:
     for t in cands:
         txt, url = fetch_extract(t)
         if txt:
+            # hatnote detection: a short extract listing "(country)" /
+            # "(U.S. state)" variants is not the article itself
+            if txt.startswith("may refer to") or "may refer to:" in txt[:200]:
+                continue
             return txt, url
+    # disambiguation fallback for country records
+    if iso3 and iso3 not in ("USA",):
+        for t in [f"LGBTQ rights in {name} (country)", f"LGBT rights in {name} (country)"]:
+            txt, url = fetch_extract(t)
+            if txt and "may refer to" not in txt[:200]:
+                return txt, url
     return "", ""
 
 
