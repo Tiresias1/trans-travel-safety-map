@@ -980,6 +980,9 @@ def main() -> int:
     ap.add_argument("--regions-parent", nargs="+", default=None,
                     help="with --regions-vs-countries: ISO3s whose units form the "
                          "region pool")
+    ap.add_argument("--regions-unit-file", default=None,
+                    help="with --regions-vs-countries: file with one region name per "
+                         "line, added to the unit filter (multi-word safe)")
     ap.add_argument("--regions-unit", nargs="*", default=None,
                     help="with --regions-vs-countries: restrict region pool to units "
                          "whose name contains one of these substrings")
