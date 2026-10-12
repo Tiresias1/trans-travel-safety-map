@@ -31,6 +31,15 @@ Rights Watch, or a UN report. Write assertion and finding, not commentary about 
 - Treating a jurisdiction as a changelog by over-emphasising "recent changes" vs stating the
   current state of the law (dates are fine as evidence; "in a major development, X has
   recently…" as an opener is not).
+- Never describe a transgender person's own relationship, marriage or partnership as
+  "same-sex". The reader is trans; calling their relationship "same-sex" mislabels it and
+  is offensive to the site's audience. When the legal exposure hinges on how a relationship
+  would be classified under the jurisdiction's law, phrase it from the reader's side:
+  "a trans visitor in what would be locally classed as a same-sex relationship", "a
+  relationship read as same-sex under birth-sex status", or equivalent. Quoting a
+  statute's own wording ("criminalises same-sex conduct") or describing gay/lesbian
+  people's relationships as such remains fine — the ban is on attributing the label to
+  the trans reader or trans residents.
 
 ## Discouraged giveaway words (avoid where natural)
 delve, paramount, navigate, nuanced, foster, harnessing, landscape, ever-evolving, underscore,

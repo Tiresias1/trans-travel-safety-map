@@ -198,7 +198,13 @@ RATING_RULES = """\
    (shared traditions do not imply a shared parent).
 
 13. Cultural attitudes matter independent of the law, but legal restrictions and penalties are
-    *usually* more impactful to trans travelers than social conservatism.
+    *usually* more impactful to trans travelers than social conservatism. Note the
+    asymmetry the traveller actually faces: where law and society are BOTH accepting, the
+    traveller's everyday exposure is lowest; where a jurisdiction's cultural majority is
+    accepting of gender diversity but its law retains a latent (unenforced) restriction
+    aimed at same-sex conduct, the traveller's everyday exposure is low but not zero — and
+    where the cultural majority is hostile or the record shows pervasive discrimination,
+    the absence of a criminal statute does little for the traveller who is outed.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
@@ -229,7 +235,24 @@ RATING_RULES = """\
     exposure is unavoidable for the outed or outable traveller regardless of how often it
     is enforced against locals. Rate the possibility everyone carries, not the
     prosecutions that actually happened.
-    
+
+16. **Institutional failure is exposure evidence, not an offset.** Where a
+    dossier documents recurring violations BY state institutions — custody
+    placement practices, border officers' conduct, service denial — the
+    documented practice is the operative exposure. Oversight machinery that
+    has issued repeated findings without remedying the practice (successive
+    opinions or decisions over years recording the same violations) is
+    CORROBORATION of an unremedied exposure, not mitigation of it: "the
+    traveller has recourse" does not soften a violation the record shows
+    recurring anyway, and the state running the oversight does not offset the
+    state running the prison or the border desk. Survey-measured discrimination
+    prevalence (a national survey where a majority or large plurality of trans
+    respondents report identity-related discrimination) is a primary
+    everyday-exposure signal for the settings the survey covers — the same tier
+    as universal-exposure measures, not a background attitude note. Finally,
+    credit a protection ONLY when the dossier documents it as in force: an
+    advocacy submission's stated aims are not law, and a protection the dossier
+    does not document may not be rated.
 13. **Weak signals extrapolate; "unknown" is not the midpoint.** When a dossier is thin,
     do not resolve unknown toward 0.5 or toward neutrality. Extrapolate from whatever
     evidence does exist — the criminalisation regime, the legal-recognition situation,
