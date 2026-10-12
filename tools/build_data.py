@@ -137,7 +137,7 @@ def main():
                         "blindOutOfScope", "sources")
         _TERRITORIES = {r.get("iso3") for r in admin1.values() if r.get("parentIso3")}
         for iso, lst in _per.items():
-            if len(lst) == 1 and not lst[0][1].get("dossier") and iso in countries:
+            if len(lst) == 1 and iso in countries:
                 if iso in _TERRITORIES:
                     # territory: admin1 record is PRIMARY (scored independently
                     # in mixed mode); the country record mirrors it for display
@@ -145,6 +145,8 @@ def main():
                     c = countries[iso]
                     c["score"] = round(float(r["score"]), 6)
                     c["band"] = band_label(c["score"])
+                    continue
+                if lst[0][1].get("dossier"):
                     continue
                 sid, r = lst[0]
                 c = countries[iso]
