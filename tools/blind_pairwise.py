@@ -98,6 +98,15 @@ RATING_RULES = """\
    transition-healthcare infrastructure are therefore **climate signals at most** — they
    hint at how trans-respecting institutions are, but they never offset an active
    traveler-facing restriction. Never treat them as protections.
+   **The boundary cuts both ways.** The ABSENCE of that resident-facing machinery — no
+   legal gender recognition, no marker-change procedure, no national anti-discrimination
+   or hate-crime statute — is likewise a resident gap, not a visitor exposure: the
+   visitor's documents are issued and carried from their home country and never touch
+   the jurisdiction's gender-marker process. Do not deduct for a country's missing
+   domestic-recognition machinery unless the dossier documents that gap reaching
+   visitors (officials rejecting or doubting foreign-issued documents, service denial
+   aimed at trans visitors, or similar). This is the same rule as the restrictions side:
+   resident-facing law — present or absent — is not the traveller's exposure.
 
 2. **Criminalisation of same-sex conduct is a SECONDARY factor for trans visitors:
    sexuality law is not trans law.** A sodomy statute matters to a trans visitor only
@@ -205,6 +214,14 @@ RATING_RULES = """\
     aimed at same-sex conduct, the traveller's everyday exposure is low but not zero — and
     where the cultural majority is hostile or the record shows pervasive discrimination,
     the absence of a criminal statute does little for the traveller who is outed.
+    Deriving the top band from this: a jurisdiction whose dossier shows (i) no
+    trans-specific criminal offence, (ii) no documented targeting of trans people by
+    police, border officers or violence, and (iii) documented social acceptance of
+    gender diversity (an embedded third-gender tradition or equivalent) sits in the top
+    band of the scale, with a latent non-trans statute and weak formal recourse the
+    reasons it is not at the very top — unless a documented visitor-reaching gap (rule 1)
+    or an institutional-failure record (rule 16) says otherwise. Do not hold such a
+    jurisdiction at mid-band for lacking resident-facing machinery.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
