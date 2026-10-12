@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """W1b intake merge: append verified adds to records, require >=2 honest-sourced, clear flags.
 Output schema (per lane): {"records":[{who, adds:[{url,title,published,summary}], quality_summaries:[{url,rewritten_summary}]}]}"""
-import json, os
+import json, os, pathlib as _pl
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 C = json.load(open(ROOT/'data/countries.json'))
 A = json.load(open(ROOT/'data/admin1.json'))
 def resolve(who):
+    if not who: return None
     if who.startswith('country:'): return C.get(who[8:])
     iso, nm = who.split('/', 1)
     return next((x for x in A.values() if x.get('iso3')==iso and x.get('name')==nm), None)
@@ -17,7 +18,9 @@ def find(url, have):
         if url and (h.startswith(url) or url.startswith(h)): return h
     return None
 ap = skip = 0
-for f in sorted((ROOT/'data/intake_out').glob('*.json')):
+import argparse as _ap
+_a = _ap.ArgumentParser(); _a.add_argument('--dir', default=str(ROOT/'data/intake_out')); _d = _a.parse_args()
+for f in sorted(_pl.Path(_d.dir).glob('*.json')):
     try: d = json.load(open(f))
     except Exception: continue
     for u in (d.get('records') or [d]):
