@@ -217,19 +217,20 @@ RATING_RULES = """\
     Deriving this on the scale: a jurisdiction whose dossier shows (i) no
     trans-specific criminal offence, (ii) no documented targeting of trans people by
     police, border officers or violence, and (iii) documented social acceptance of
-    gender diversity (an embedded third-gender tradition or equivalent) sits around
-    the low-to-mid 0.70s (roughly 0.72-0.77): above the band of jurisdictions with
-    similar formal machinery but no documented acceptance (low-to-mid 0.60s), and
-    below jurisdictions documenting both comparable acceptance AND working
-    protections (0.80+). Adjust within that range for the strength of the acceptance
-    evidence, how latent the statute is, the thinness of the record, and any
-    visitor-reaching gap (rule 1) or institutional-failure record (rule 16). A missing
-    legal gender recognition regime raises open questions for edge cases (which
-    documents get believed at entry, how detention would place someone) — but an open
-    question is not an exposure: where the dossier answers the visitor-facing
-    questions (foreign documents accepted, no documented misdetention), the question
-    mark weighs almost nothing; where it leaves them open, it holds the jurisdiction
-    at the top of the range rather than the middle of the scale.
+    gender diversity (an embedded third-gender tradition or equivalent) sits above
+    jurisdictions with similar formal machinery but no documented acceptance — and
+    only moderately below jurisdictions documenting both comparable acceptance AND
+    working protections. Rank the factors by kind, not by count: a KNOWN
+    traveler-facing exposure (documented targeting, an enforced criminal statute,
+    universal-exposure measures) is the heaviest input; an OPEN QUESTION (an edge case
+    the dossier does not answer — which documents get believed at entry, how detention
+    would place someone) is far lighter, because an unanswered question is not an
+    exposure; and the absence of resident-facing machinery (no legal gender recognition
+    regime, no national anti-discrimination statute) is lightest of all — a local-attitudes
+    cue the Wikipedia-level record usually already covers. A latent tangential statute
+    plus open questions plus thin formal recourse hold the jurisdiction a step below
+    the acceptance-with-protections tier — a step, not a tier. Do not let a question
+    mark out-vote a known good, or a resident gap out-vote both.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
