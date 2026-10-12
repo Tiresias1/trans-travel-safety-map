@@ -164,6 +164,11 @@ def main():
                 r["inherited"] = True
         if _n_sync:
             warnings.append(f"synced {_n_sync} single-unit admin1 stand-ins to country scores")
+        # territory mirrors changed the countries dict AFTER it was dumped —
+        # persist the mirror now (ASM 2026-10-08: country showed a stale score)
+        _terr_mirror = any(iso in _TERRITORIES for iso in _per)
+        if _terr_mirror:
+            json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
         if set(admin1) - geo1_ids:
