@@ -214,14 +214,18 @@ RATING_RULES = """\
     aimed at same-sex conduct, the traveller's everyday exposure is low but not zero — and
     where the cultural majority is hostile or the record shows pervasive discrimination,
     the absence of a criminal statute does little for the traveller who is outed.
-    Deriving the top band from this: a jurisdiction whose dossier shows (i) no
+    Deriving this on the scale: a jurisdiction whose dossier shows (i) no
     trans-specific criminal offence, (ii) no documented targeting of trans people by
     police, border officers or violence, and (iii) documented social acceptance of
-    gender diversity (an embedded third-gender tradition or equivalent) sits in the top
-    band of the scale, with a latent non-trans statute and weak formal recourse the
-    reasons it is not at the very top — unless a documented visitor-reaching gap (rule 1)
-    or an institutional-failure record (rule 16) says otherwise. Do not hold such a
-    jurisdiction at mid-band for lacking resident-facing machinery.
+    gender diversity (an embedded third-gender tradition or equivalent) must score
+    materially above otherwise-similar jurisdictions that lack that documented
+    acceptance — do not hold it at mid-band merely for lacking resident-facing
+    machinery. But it does not automatically sit with the highest-scoring
+    jurisdictions: a latent criminal statute still on the books, thin formal recourse,
+    and a thin evidentiary record each hold it below jurisdictions whose dossiers
+    document both acceptance AND working protections — unless a documented
+    visitor-reaching gap (rule 1) or an institutional-failure record (rule 16) says
+    otherwise.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
