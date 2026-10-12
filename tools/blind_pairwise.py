@@ -217,15 +217,19 @@ RATING_RULES = """\
     Deriving this on the scale: a jurisdiction whose dossier shows (i) no
     trans-specific criminal offence, (ii) no documented targeting of trans people by
     police, border officers or violence, and (iii) documented social acceptance of
-    gender diversity (an embedded third-gender tradition or equivalent) must score
-    materially above otherwise-similar jurisdictions that lack that documented
-    acceptance — do not hold it at mid-band merely for lacking resident-facing
-    machinery. But it does not automatically sit with the highest-scoring
-    jurisdictions: a latent criminal statute still on the books, thin formal recourse,
-    and a thin evidentiary record each hold it below jurisdictions whose dossiers
-    document both acceptance AND working protections — unless a documented
-    visitor-reaching gap (rule 1) or an institutional-failure record (rule 16) says
-    otherwise.
+    gender diversity (an embedded third-gender tradition or equivalent) sits around
+    the low-to-mid 0.70s (roughly 0.72-0.77): above the band of jurisdictions with
+    similar formal machinery but no documented acceptance (low-to-mid 0.60s), and
+    below jurisdictions documenting both comparable acceptance AND working
+    protections (0.80+). Adjust within that range for the strength of the acceptance
+    evidence, how latent the statute is, the thinness of the record, and any
+    visitor-reaching gap (rule 1) or institutional-failure record (rule 16). A missing
+    legal gender recognition regime raises open questions for edge cases (which
+    documents get believed at entry, how detention would place someone) — but an open
+    question is not an exposure: where the dossier answers the visitor-facing
+    questions (foreign documents accepted, no documented misdetention), the question
+    mark weighs almost nothing; where it leaves them open, it holds the jurisdiction
+    at the top of the range rather than the middle of the scale.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
