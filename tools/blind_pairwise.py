@@ -1281,7 +1281,9 @@ def main() -> int:
             with lock:
                 sid_r = rng.choice(region_pool)
                 ur = admin1[sid_r]
-                par = ur["iso3"]
+                # parent = the encompassing state: parentIso3 for migrated
+                # territories (iso3 is the territory's own code), iso3 otherwise
+                par = ur.get("parentIso3") or ur["iso3"]
                 iso_c = rng.choice([c for c in eligible if c != par])
                 r0 = float(ur["score"])
                 c0 = float(countries[iso_c]["score"])
