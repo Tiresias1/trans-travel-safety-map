@@ -282,6 +282,16 @@ RATING_RULES = """\
     credit a protection ONLY when the dossier documents it as in force: an
     advocacy submission's stated aims are not law, and a protection the dossier
     does not document may not be rated.
+    BAND IMPLICATION — "no criminalisation" is not a floor: a jurisdiction whose
+    dossier documents universal-exposure practices (facility exclusion by birth
+    sex, birth-sex custody placement with reported harm, border document friction
+    for outed travellers) or discrimination prevalence at scale, WITHOUT a
+    documented remedy that actually works (enforcement changing outcomes, not
+    oversight findings recurring), sits in the Elevated Risk band even with no
+    criminal statute on the books. "No criminalisation plus functioning
+    institutions" does not anchor a jurisdiction at Reduced Risk; the documented
+    exposures subtract through the band. Recourse reduces the deduction only
+    where the record shows it working.
 13. **Weak signals extrapolate; "unknown" is not the midpoint.** When a dossier is thin,
     do not resolve unknown toward 0.5 or toward neutrality. Extrapolate from whatever
     evidence does exist — the criminalisation regime, the legal-recognition situation,
