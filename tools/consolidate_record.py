@@ -23,7 +23,7 @@ KEY = (__import__("os").environ.get("OPENROUTER_KEY")
 API = "https://openrouter.ai/api/v1/chat/completions"
 # Bulk-work lane model (orchestrator: meta/muse-spark-1.3; lanes: contributor).
 # Override with LANE_MODEL env for testing/fallback.
-MODEL = os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor")
+MODEL = os.environ.get("LANE_MODEL", "xiaomi/mimo-v2.6-flash")
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
 
@@ -50,6 +50,16 @@ RULES FOR THIS PASS (consolidation, not compression):
    limits, prohibited items, airline procedure, general crime/city safety);
    general LGB history with no trans bearing unless it evidences the legal
    regime; a publication's own editorial framing.
+   THE DRESSING TEST (applies to every IN class): a claim is OUT if the treatment it
+   describes is identical for every traveller and merely NAMES a trans-associated item
+   to sound relevant — "prosthetics including breast forms are allowed after screening"
+   is a rule for everyone who wears prosthetics, at every airport, and describes no
+   differential treatment of trans people. A screening/procedure claim is IN only when
+   the source documents treatment DIFFERENTIAL to trans or gender-nonconforming
+   travellers specifically: pat-downs or secondary screening triggered by binders,
+   packers, breast forms or gender presentation; document-marker flagging; targeted
+   anatomy inspection; outing risk in the process. "A guide for trans travellers
+   advises packing strategies" is advice-column content — OUT.
    If a source's only usable content is OUT-material, drop it silently.
 
 3. REPRESENTATIVENESS — for a national dossier, any single sub-national unit
@@ -129,7 +139,9 @@ GENERIC_TRAVEL = re.compile(
     r"carry-on|carry on|prohibited items|liquid limits|checked bag|security queue|"
     r"boarding|check-in|layover|jet lag|currency exchange|tipping|"
     r"traffic safety|road safety|pickpocket|scams targeting tourists", re.I)
-TRANS_KEEP = re.compile(r"outing|scann|pat-down|secondary screen|marker|gender|x marker", re.I)
+# keyword keeps are a SECOND-CHANCE filter only: they cannot rescue a claim whose
+# substance the dressing test would kill (the LLM gate re-tests IN/OUT regardless).
+TRANS_KEEP = re.compile(r"outing|pat-down|secondary screen|marker mismatch|x marker", re.I)
 
 
 def relevant_claims(rec):
