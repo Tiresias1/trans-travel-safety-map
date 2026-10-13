@@ -199,7 +199,10 @@ RATING_RULES = """\
    the border, in nationally funded facilities, or through the document regime every
    visitor passes through. A territory under a restrictive parent regime must sit
    materially below comparable independent jurisdictions that lack that regime; "no
-   local law" does not offset an enforced external one. Conversely, do not invent parent
+   local law" does not offset an enforced external one. And a territory that layers
+   its OWN documented hostility on top of the parent's regime (local bans, its own
+   emergency record over anti-trans violence) cannot outscore the parent's own
+   average — the same regime plus more exposure is not a better deal. Conversely, do not invent parent
    rules the dossier does not state. SCOPING: when one dossier carries a parent-regime
    section, that regime belongs to THAT dossier's jurisdiction alone — the other
    dossier's jurisdiction stands on its own stated facts and must NOT inherit the
