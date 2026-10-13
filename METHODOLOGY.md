@@ -47,12 +47,35 @@ traveler-facing axes below. 1.00 is an aspirational limit no jurisdiction fully 
 - General crime, terrorism, disease, conflict — except where they independently amplify
   trans-specific risk (e.g. collapse of protection for an already-targeted group).
 
+**The visitor/resident boundary cuts both ways.** The *absence* of resident-facing
+machinery — no legal gender recognition regime, no national anti-discrimination or
+hate-crime statute — is likewise a resident gap, not a visitor exposure: the visitor's
+documents are issued and carried from their home country and never touch the
+destination's gender-marker process. A missing LGR regime raises open questions for
+edge cases (which documents get believed at entry, how detention would place someone),
+but an open question is not an exposure: it weighs almost nothing where the dossier
+answers the visitor-facing questions, and merely holds the score back where it leaves
+them open. Factor kinds rank as: documented traveler-facing exposures (targeting,
+enforced criminal statutes, universal-exposure measures) heaviest; open questions far
+lighter; resident-machinery absence lightest — a local-attitudes cue the sources
+usually already cover. Relatedly, institutional failure is exposure *evidence*, not an
+offset: oversight bodies that issue repeated findings without remedying a practice
+corroborate an unremedied exposure ("the traveller has recourse" does not soften a
+violation the record shows recurring), and survey-measured discrimination prevalence
+at scale is a primary everyday-exposure signal for the settings surveyed. A protection
+is credited only when the dossier documents it as in force — an advocacy submission's
+stated aims are not law.
+
 Two standing corrections encode hard-won lessons:
 
-- **Same-sex-conduct statutes are situational** — they reach only the fraction of trans
-  visitors whose relationships read as same-sex under birth-sex legal status, or whom
-  police extort with them. Weight ≈ 0.01–0.03 unless trans-specific enforcement is
-  documented. Never a primary driver alone.
+- **Sexuality law is not trans law.** A same-sex-conduct statute is a *secondary*
+  factor for trans visitors: it matters only through how it is actually used — as a
+  police lever against visibly gender-nonconforming people, or as license for
+  hostility toward them. Trans-specific primary factors (gender-expression law and
+  enforcement, document and screening practice, facilities and custody, care access,
+  trans-specific violence and its handling, documented social acceptance) dominate.
+  A documented tolerant society with an unrepealed, dead-letter sexuality statute is
+  not the same risk tier as a state that enforces against gender-nonconforming people.
 - **Severity dominates probability.** Every trans person carries some outing probability;
   what separates 0.9 from 0.2 is mostly what happens *after* the outing, and whether the
   state is perpetrator, bystander, or protector.
@@ -60,18 +83,26 @@ Two standing corrections encode hard-won lessons:
 ## Evidence standards
 
 1. **Research-driven, never memory-driven.** Every jurisdiction was assessed from web
-   research: searches rotated across the A–K axes, primary sources fetched and read.
-   Each popup lists its sources with per-source summaries.
-2. **Laws on the books vs. enforcement.** An unenforced statute is a small factor;
+   research: a 14-dimension coverage matrix (criminalisation, expression, documents,
+   entry/visa, screening, facilities, custody, care access incl. youth care, violence,
+   discrimination, state/media hostility, partner recognition, youth & education, social
+   climate) drove source collection; extracted claims must share verbatim text with
+   their source (anti-fabrication gate). Each popup lists its sources with per-source
+   summaries.
+2. **Wikipedia baseline.** Every country and researched division with an LGBTQ-rights
+   or trans-rights Wikipedia article carries that article as a source; on-topic sources
+   cited by those articles were harvested and verified through the intake lane
+   (dead/irrelevant leads dropped, never guessed).
+3. **Laws on the books vs. enforcement.** An unenforced statute is a small factor;
    documented arrests, convictions, or police practice is a large one.
-3. **Individual incidents are weighed by what they prove, not how shocking they are.**
+4. **Individual incidents are weighed by what they prove, not how shocking they are.**
    Most crime never makes news; a single report barely moves a medium/large country.
    Incidents count when patterned, state-implicated, met with impunity or
    victim-prosecution, or in very small jurisdictions — and a *good* institutional
    response (convictions, public outcry, reform) counts as positive evidence.
-4. **Burden-of-proof symmetry.** A documented positive counts as much as a documented
+5. **Burden-of-proof symmetry.** A documented positive counts as much as a documented
    negative. Absence of evidence is not evidence of absence — in either direction.
-5. **Rule of law mediates.** Protections + hostile public → the rating depends on
+6. **Rule of law mediates.** Protections + hostile public → the rating depends on
    whether the legal system actually works for trans people. Law and society aligned in
    acceptance → residual risk is general-travel risk, not trans-specific. Law *against*
    trans people + strong enforcement → rule of law becomes a liability.
@@ -85,26 +116,37 @@ rules guard against known failure modes — regional flattening, anchored correc
 (nudging a score instead of deriving it from the analysis that refuted it),
 over-weighting LGB statutes, and asymmetric burden of proof between regions.
 
-## Blind pairwise refinement
+## Blind pairwise refinement and settlement
 
-After the hand-calibrated map was complete (233 jurisdictions), it was stress-tested by
-an automated blind process (`tools/blind_pairwise.py`):
+Scores are stress-tested by an automated blind process (`tools/blind_pairwise.py`):
 
-1. Each jurisdiction's research was **anonymised** (`tools/make_blind_inputs.py` →
-   lightweight model → `tools/apply_blind_fields.py`): no names, no scores, no source
-   URLs, no comparator references, no region-identifying terms — validated by automated
-   leak checks before use.
-2. Over **10,000 randomised head-to-head pairs**, a rating model that never saw which
-   jurisdictions it was reading scored each anonymised dossier independently against
-   the scale and rules above (presentation order randomised to cancel position bias).
-3. Stored scores drifted toward the ratings in small, bounded steps (coarse early,
-   fine late; a score can never overshoot the direction the rating indicated).
-4. Two full passes were run; the second, after hardening the rating rules, showed a
-   neutral rater bias (+0.005) and repaired the first pass's over-corrections.
+1. Each jurisdiction's research was **anonymised** into blind mirror fields: no names,
+   no scores, no source URLs, no comparator references, no region-identifying terms —
+   validated by automated leak checks (per-item, agency-noun, state-leak and
+   meta-narrative gates) before use.
+2. Over multiple full passes of **randomised head-to-head pairs** (2026 edition: a
+   3,500-pair countries pass and a 9,500-pair division pass, re-run at 3,600 pairs
+   after rule recalibration), a rating model that never saw which jurisdictions it was
+   reading scored each anonymised dossier independently against the scale and rules
+   above (presentation order randomised to cancel position bias; update steps ramp
+   coarse-to-fine across each pass).
+3. **Dependent territories are scored in a dedicated mixed mode**, never as
+   countries-mode pairwise entities: the rater sees the territory's own anonymised
+   dossier plus the parent state's anonymised national framework as the regime imposed
+   on it ("A dependent territory stands under its parent's enforced regime" — local
+   tolerance does not neutralise parent rules enforced at the border, in funded
+   facilities, or through the document regime; the parent regime belongs to that
+   dossier alone and never leaks across pairs). The countries-mode record is a display
+   mirror of the territory's own score.
+4. **A settlement pass enforces the convergence invariant**: every jurisdiction's
+   stored score must equal its encounter-weighted rater mean (tolerance 0.02 on the
+   0–1 scale), topped up with focused pair runs until it does. After the 2026 edition's
+   final pass, all but two dozen jurisdictions converged in the main pass itself.
 
-The result is a hybrid: hand-researched dossiers → independent blind rating →
-rule-hardened re-rating. Every pair is logged with both ratings, the reasoning, and
-the exact update arithmetic (`data/blind-pairwise-*.jsonl`).
+Every pair is logged with both ratings, the reasoning, and the exact update arithmetic.
+The rating rulebook itself is public: see `tools/blind_pairwise.py` (rules 1–16,
+including the sexuality-law secondary rule, the visitor/resident boundary, severity
+ladders, the parent-regime rule, and the institutional-failure rule).
 
 ## Boundaries
 
@@ -133,7 +175,11 @@ Divisions are handled on three routes, in descending order of evidence:
    Tibet, Zanzibar, Iraqi Kurdistan): flagged model estimates (`"estimated": true`,
    marked in the popup), scored relative to the national score with a written
    justification.
-3. **Everything else**: no record — the division inherits the national score, and the
+3. **Dependent territories** (31, e.g. Puerto Rico, Faroe Islands, Aruba, Western
+   Sahara): full dossiers in their own right, scored in the mixed mode described above
+   — territory dossier + parent's enforced national framework, division names withheld
+   from the rater. Their popups are labelled "Territory of <parent>".
+4. **Everything else**: no record — the division inherits the national score, and the
    popup says so. Inheritance is the honest answer where no sub-national evidence
    exists; forced estimates from thin data cause more harm than good.
 
@@ -169,7 +215,9 @@ its year; per-jurisdiction research dates appear in the data
 | `research/audit-2026-08-21.md` | Random-sample pairwise audit |
 | `data/countries.json` | Scores, summaries, sources, anonymised dossiers |
 | `data/admin1.json` | Per-division scores (keyed by geoBoundaries shapeID) |
-| `tools/blind_pairwise.py` | Blind pairwise refinement driver (country + `--admin1` modes) |
+| `tools/blind_pairwise.py` | Blind pairwise refinement driver (countries, `--admin1`, and mixed territory modes) |
+| `tools/wiki_universal_sweep.py` | Wikipedia coverage sweep (LGBTQ-rights article per jurisdiction + cited-source harvest) |
+| `tools/settle_scores.py` | Settlement pass (converge scores to rater means) |
 | `tools/blind_fields.md` | Anonymisation spec + prompts |
 | `tools/build_data.py` | Validation, ranks, `data/meta.json` |
 
