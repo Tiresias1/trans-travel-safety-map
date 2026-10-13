@@ -80,7 +80,12 @@ def build_queue(enc, C, A):
             iso = next((k for k, v in C.items() if v is rec), None)
             gap = abs(float(rec["score"]) - mean)
             if gap >= TOL or (iso in TERRITORIES):
+                _p3 = rec.get("parentIso3")
+                if not _p3 and iso in TERRITORIES:
+                    _p3 = next((x.get("parentIso3") for x in A.values()
+                                if x.get("iso3") == iso and x.get("parentIso3")), None)
                 queue.append({"kind": "country", "iso": iso, "name": name,
+                              "parentIso3": _p3,
                               "stored": rec["score"], "mean": mean,
                               "n": len(ratings), "gap": round(gap, 3),
                               "rule12": iso in TERRITORIES})
@@ -122,13 +127,20 @@ def main():
              "--differential-weighting-percent", "0.01",
              "--absolute-weighting-percent", "0.12",
              "--absolute-weighting-shift", "0.0005",
-             "--workers", "2", "--seed", "77",
+             "--workers", "2", "--seed", "77", "--max-output-tokens", "3000",
              "--log", f"/tmp/settle_{q['kind']}_{q['iso']}_{q['name'][:12]}.jsonl".replace(" ", "_").replace("/", "_")]
-        if q["kind"] == "country":
+        if q.get("parentIso3"):
+            # territory mirror: rate in MIXED mode under the parent regime
+            # (never countries-mode --focus — territories are display mirrors)
+            w += ["--regions-vs-countries", "--regions-parent", q["parentIso3"],
+                  "--regions-unit-exact", "--regions-unit", q["name"],
+                  "--allow-fallback"]
+        elif q["kind"] == "country":
             w += ["--focus", q["iso"]]
         else:
             w += ["--regions-vs-countries", "--regions-parent", q["iso"],
-                  "--regions-unit-exact", "--regions-unit", q["name"]]
+                  "--regions-unit-exact", "--regions-unit", q["name"],
+                  "--allow-fallback"]
         try:
             p = subprocess.run(w, capture_output=True, text=True, timeout=1800)
             ok = p.returncode == 0
