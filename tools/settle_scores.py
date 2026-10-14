@@ -95,7 +95,7 @@ def build_queue(enc, C, A):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--logs", nargs="*",
-                    default=["/tmp/repair_countries2.jsonl", "/tmp/terr_wave2_final.jsonl"])
+                    default=["/tmp/repair_countries3.jsonl", "/tmp/terr_wave2_final.jsonl", "/tmp/pr_wave.jsonl"])
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--run", action="store_true")
     ap.add_argument("--workers", type=int, default=3)
