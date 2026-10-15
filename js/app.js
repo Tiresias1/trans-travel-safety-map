@@ -587,3 +587,16 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
   await setMode(mode);
   if (mode === "admin1") await setMode("admin1");
 })();
+
+/* ---------- header minimize ---------- */
+(() => {
+  const btn = document.getElementById("headerMin");
+  const hdr = document.getElementById("siteHeader");
+  if (!btn || !hdr) return;
+  btn.addEventListener("click", () => {
+    const min = hdr.classList.toggle("min");
+    btn.textContent = min ? "+" : "–";
+    btn.title = min ? "Restore header" : "Minimize header";
+    setTimeout(() => window.dispatchEvent(new Event("resize")), 50);
+  });
+})();
