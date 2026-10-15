@@ -140,11 +140,17 @@ def main():
             if len(lst) == 1 and iso in countries:
                 if iso in _TERRITORIES:
                     # territory: admin1 record is PRIMARY (scored independently
-                    # in mixed mode); the country record mirrors it for display
+                    # in mixed mode); the country record mirrors it for display —
+                    # score AND text (the popup reads the country record)
                     sid, r = lst[0]
                     c = countries[iso]
                     c["score"] = round(float(r["score"]), 6)
                     c["band"] = band_label(c["score"])
+                    for fld in _TEXT_FIELDS:
+                        if fld in r:
+                            c[fld] = r[fld]
+                        else:
+                            c.pop(fld, None)
                     continue
                 if lst[0][1].get("dossier"):
                     continue
