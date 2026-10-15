@@ -112,9 +112,9 @@ L.CRS.EqualEarth = L.Util.extend({}, L.CRS.Earth, {
   /* ---------- map ---------- */
   const map = L.map("map", {
     crs: L.CRS.EqualEarth,
-    center: [15, 0],
-    zoom: 2,
-    minZoom: 2,
+    center: [10, 0],
+    zoom: 1.5,
+    minZoom: 1,
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
