@@ -82,8 +82,9 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
   const EE_XMAX = 2.7056, EE_YMAX = 1.3105;   // Equal Earth full extent
   const Z_LO = 2.5, Z_HI = 3.5;               // blend band
 
+  let _hybMap = null;             // set right after L.map() is created (TDZ-safe)
   function currentW() {
-    const z = (typeof map !== "undefined" && map) ? map.getZoom() : 2;
+    const z = _hybMap ? _hybMap.getZoom() : 2;
     let w = (z - Z_LO) / (Z_HI - Z_LO);
     return Math.max(0, Math.min(1, w));
   }
@@ -185,6 +186,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     maxBounds: L.latLngBounds([-90, -180], [90, 180]),
     maxBoundsViscosity: 0.8,
   });
+  _hybMap = map;
 
   /* ---------- loading ---------- */
   async function getJSON(url) {
