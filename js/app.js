@@ -175,8 +175,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
   const map = L.map("map", {
     crs: L.CRS.Hybrid,
     center: [10, 0],
-    zoom: 2,
-    minZoom: 1.5,
+    zoom: 1.5,   /* world height (256*2^z) must fit the viewport: z=1.5 -> 724px */
+    minZoom: 1,
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
