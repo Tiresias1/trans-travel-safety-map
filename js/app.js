@@ -188,6 +188,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     maxBoundsViscosity: 0.8,
   });
   window.__setHybMap(map);
+  window.__map = map;   // debug/introspection handle
 
   /* ---------- loading ---------- */
   async function getJSON(url) {
