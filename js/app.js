@@ -95,7 +95,9 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     const l2 = l * l, l6 = l2 * l2 * l2;
     const d = M * (A1 + 3 * A2 * l2 + l6 * (7 * A3 + 9 * A4 * l2));
     const x = lam * Math.cos(l) / d, y = l * (A1 + A2 * l2 + l6 * (A3 + A4 * l2));
-    return new L.Point(x / (2 * EE_XMAX) + 0.5, 0.5 - y / (2 * EE_YMAX));
+    // BOTH axes normalised by the x span — preserves the 2.06:1 aspect inside
+    // the square tile space (normalising y by its own span re-squashes it)
+    return new L.Point(x / (2 * EE_XMAX) + 0.5, 0.5 - y / (2 * EE_XMAX));
   }
 
   function mercNorm(latlng) {
@@ -139,7 +141,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
 
   function invEq(p) {
     // invert the normalised Equal Earth
-    let y = (0.5 - p.y) * 2 * EE_YMAX;
+    let y = (0.5 - p.y) * 2 * EE_XMAX;
     let l = y, delta = 1;
     for (let i = 0; i < 12; i++) {
       const l2 = l * l, l6 = l2 * l2 * l2;
