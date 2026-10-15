@@ -70,21 +70,60 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
   const loadedBoundaries = new Set();
   const loadedData = new Set();
 
+/* ---------- Equal Earth projection (Šavrič et al. 2018; math ported from d3-geo) ---------- */
+L.Projection.EqualEarth = (() => {
+  const A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796;
+  const M = Math.sqrt(3) / 2;
+  const D2R = Math.PI / 180, R2D = 180 / Math.PI;
+  function project(latlng) {
+    const lam = latlng.lng * D2R, phi = latlng.lat * D2R;
+    const l = Math.asin(M * Math.sin(phi));
+    const l2 = l * l, l6 = l2 * l2 * l2;
+    const d = M * (A1 + 3 * A2 * l2 + l6 * (7 * A3 + 9 * A4 * l2));
+    return new L.Point(lam * Math.cos(l) / d,
+                       l * (A1 + A2 * l2 + l6 * (A3 + A4 * l2)));
+  }
+  function unproject(point) {
+    let l = point.y, delta = 1;
+    for (let i = 0; i < 12; i++) {
+      const l2 = l * l, l6 = l2 * l2 * l2;
+      const fy = l * (A1 + A2 * l2 + l6 * (A3 + A4 * l2)) - point.y;
+      const fpy = A1 + 3 * A2 * l2 + l6 * (7 * A3 + 9 * A4 * l2);
+      l -= delta = fy / fpy;
+      if (Math.abs(delta) < 1e-12) break;
+    }
+    const l2 = l * l, l6 = l2 * l2 * l2;
+    const lam = point.x * M * (A1 + 3 * A2 * l2 + l6 * (7 * A3 + 9 * A4 * l2)) / Math.cos(l);
+    return new L.LatLng(Math.asin(Math.sin(l) / M) * R2D, lam * R2D);
+  }
+  return { project, unproject };
+})();
+
+/* x spans ±2.7056 at lng ±180; y spans ±1.3105 at lat ±90 */
+L.CRS.EqualEarth = L.Util.extend({}, L.CRS.Earth, {
+  code: "EPSG:8857",
+  projection: L.Projection.EqualEarth,
+  transformation: new L.Transformation(0.5 / 2.7056, 0.5, -0.5 / 1.3105, 0.5),
+  wrapLng: undefined,
+  wrapLat: undefined,
+  infinite: true
+});
+
   /* ---------- map ---------- */
   const map = L.map("map", {
-    center: [20, 0],
+    crs: L.CRS.EqualEarth,
+    center: [15, 0],
     zoom: 2,
     minZoom: 2,
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
     wheelPxPerZoomLevel: 250,
-    worldCopyJump: true,
     scrollWheelZoom: true,
     zoomControl: true,
     attributionControl: true,
-    maxBounds: L.latLngBounds([-89, -720], [89, 720]),
-    maxBoundsViscosity: 0.6,
+    maxBounds: L.latLngBounds([-90, -180], [90, 180]),
+    maxBoundsViscosity: 0.8,
   });
 
   /* ---------- loading ---------- */
