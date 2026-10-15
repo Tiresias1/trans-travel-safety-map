@@ -103,7 +103,7 @@ L.Projection.EqualEarth = (() => {
 L.CRS.EqualEarth = L.Util.extend({}, L.CRS.Earth, {
   code: "EPSG:8857",
   projection: L.Projection.EqualEarth,
-  transformation: new L.Transformation(0.5 / 2.7056, 0.5, -0.5 / 1.3105, 0.5),
+  transformation: new L.Transformation(0.5 / 2.7056, 0.5, -0.5 / 2.7056, 0.5), /* same divisor both axes — preserves the 2.06:1 aspect */
   wrapLng: undefined,
   wrapLat: undefined,
   infinite: true
@@ -113,8 +113,8 @@ L.CRS.EqualEarth = L.Util.extend({}, L.CRS.Earth, {
   const map = L.map("map", {
     crs: L.CRS.EqualEarth,
     center: [10, 0],
-    zoom: 1.5,
-    minZoom: 1,
+    zoom: 2,
+    minZoom: 1.5,
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
