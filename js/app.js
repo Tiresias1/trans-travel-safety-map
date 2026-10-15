@@ -158,6 +158,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     project: projBlend,
     unproject: function(point) { return invBlend(point, currentW()); }
   };
+  window.__setHybMap = function(m) { _hybMap = m; };
 
   // both member projections already emit normalised [0,1] coordinates
   L.CRS.Hybrid = L.Util.extend({}, L.CRS.Earth, {
@@ -186,7 +187,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     maxBounds: L.latLngBounds([-90, -180], [90, 180]),
     maxBoundsViscosity: 0.8,
   });
-  _hybMap = map;
+  window.__setHybMap(map);
 
   /* ---------- loading ---------- */
   async function getJSON(url) {
