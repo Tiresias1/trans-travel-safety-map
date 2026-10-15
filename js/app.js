@@ -72,21 +72,20 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
 
 /* ---------- map ---------- */
   const map = L.map("map", {
-    crs: L.CRS.Hybrid,
-    center: [10, 0],
-    zoom: 1.5,   /* world height (256*2^z) must fit the viewport: z=1.5 -> 724px */
-    minZoom: 1,
+    center: [20, 0],
+    zoom: 2,
+    minZoom: 2,
     maxZoom: 10,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
     wheelPxPerZoomLevel: 250,
+    worldCopyJump: true,
     scrollWheelZoom: true,
     zoomControl: true,
     attributionControl: true,
-    maxBounds: L.latLngBounds([-90, -180], [90, 180]),
-    maxBoundsViscosity: 0.8,
+    maxBounds: L.latLngBounds([-89, -720], [89, 720]),
+    maxBoundsViscosity: 0.6,
   });
-  window.__setHybMap(map);
   window.__map = map;   // debug/introspection handle
 
   /* ---------- loading ---------- */
