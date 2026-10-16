@@ -190,6 +190,16 @@ RATING_RULES = """\
     near-worthless. Where law and society are aligned in acceptance, rule of law is for the most
     part just a general-travelers issue, not a trans issue. Where law is well against trans people,
     rule of law actually turns into a liability, particularly if the public is hostile as well.
+    APPLY THE LIABILITY CLAUSE FULLY: "functioning courts and institutions" are NOT a
+    mitigating factor when the documented practice being rated is the institutions
+    themselves enforcing hostile policy — facility bans, arrests for using facilities,
+    official refusal to investigate crimes against trans people. Efficient enforcement
+    of a hostile rule is exposure, not recourse; "the courts work" only mitigates when
+    the record shows them working FOR trans people (prosecutions of attackers, relief
+    granted, protections upheld). A jurisdiction with a documented hostile state policy
+    plus efficient institutions rates below, not above, the same policy weakly
+    enforced — do not let "functioning courts" cancel the exposure the dossier
+    documents.
 
 12. **A dependent territory stands under its parent's enforced regime.** Where the
    dossier states that the parent's entry, document, screening, facility or care rules
