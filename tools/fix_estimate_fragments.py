@@ -83,6 +83,8 @@ def main() -> int:
             new_s = fix_record(r, nat)
             if new_s is None:
                 print(f"[GATE] {r.get('name')}: rewrite rejected (invention/lowercase/digits)", flush=True)
+            else:
+                new_s = "<p>" + new_s.strip() + "</p>"   # validator requires <p> wrappers
             return key, new_s, ""
         except Exception as e:
             return key, None, str(e)[:120]
