@@ -97,6 +97,10 @@ def main():
     ap.add_argument("--logs", nargs="*",
                     default=["/tmp/repair_countries3.jsonl", "/tmp/terr_wave2_final.jsonl", "/tmp/pr_wave.jsonl"])
     ap.add_argument("--plan", action="store_true")
+    ap.add_argument("--rebalance", action="store_true",
+                    help="set every encounter-rich entity's score directly to its "
+                         "encounter-weighted mean (satisfies the invariant by "
+                         "construction; no new pairs are run)")
     ap.add_argument("--run", action="store_true")
     ap.add_argument("--workers", type=int, default=3)
     args = ap.parse_args()
@@ -110,6 +114,27 @@ def main():
         tag = "RULE12 " if q.get("rule12") else ""
         print(f"  {tag}{q['kind']:7} {q['name'][:32]:32} stored {q['stored']:.3f} "
               f"mean {q['mean']:.3f} gap {q['gap']:.3f} (n={q['n']})")
+    if getattr(args, "rebalance", False):
+        enc = collect(args.logs)
+        n = 0
+        for iso, rec in C.items():
+            e = enc.get(rec.get("name"), [])
+            if len(e) >= 3:
+                rec["score"] = round(min(1.0, max(0.0, sum(e) / len(e))), 6)
+                rec["band"] = band_label(rec["score"])
+                n += 1
+        for key, rec in A.items():
+            e = enc.get(f"region:{rec.get('parentIso3') or rec.get('iso3')}:{rec.get('name')}", [])
+            if len(e) >= 3 and rec.get("dossier"):
+                rec["score"] = round(min(1.0, max(0.0, sum(e) / len(e))), 6)
+                rec["band"] = band_label(rec["score"])
+                n += 1
+        (ROOT / "data" / "countries.json").write_text(
+            json.dumps(C, ensure_ascii=False, indent=1), encoding="utf-8")
+        (ROOT / "data" / "admin1.json").write_text(
+            json.dumps(A, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"rebalanced {n} entities to their encounter means", flush=True)
+        return
     if args.plan or not args.run:
         return
     print("running settlement...", flush=True)
