@@ -209,11 +209,19 @@ RATING_RULES = """\
    the border, in nationally funded facilities, or through the document regime every
    visitor passes through. A territory under a restrictive parent regime must sit
    materially below comparable independent jurisdictions that lack that regime; "no
-   local law" does not offset an enforced external one. And a territory that layers
-   its OWN documented hostility on top of the parent's regime (local bans, its own
-   emergency record over anti-trans violence) cannot outscore the parent's own
-   average — the same regime plus more exposure is not a better deal. Conversely, do not invent parent
-   rules the dossier does not state. SCOPING: when one dossier carries a parent-regime
+   local law" does not offset an enforced external one. DERIVE FROM THE PARENT: the
+   territory's score starts at the parent's score for the shared regime, then moves
+   only for what the dossier documents as ADDITIONAL to it — each documented
+   territory-specific exposure (its own hostile legislation, its own bans, its own
+   official hostility or violence record) moves it DOWN, and each documented
+   territory-specific mitigation (its own protections actually operating) moves it
+   UP. A territory that adds its own hostile layer on top of the parent's regime
+   cannot score at or above the parent's own average; if the arithmetic puts it
+   there, the exposure has been underweighted. Conversely a territory that is
+   genuinely more protective than its parent sits above. A protective statute alone
+   does not cancel a documented hostile layer — weigh both, and the harshest
+   operative rule the dossier documents governs how the traveller experiences the
+   visit. Do not invent parent rules the dossier does not state. SCOPING: when one dossier carries a parent-regime
    section, that regime belongs to THAT dossier's jurisdiction alone — the other
    dossier's jurisdiction stands on its own stated facts and must NOT inherit the
    parent regime, no matter how similar the two dossiers' cultural content looks
@@ -244,6 +252,14 @@ RATING_RULES = """\
     plus open questions plus thin formal recourse hold the jurisdiction a step below
     the acceptance-with-protections tier — a step, not a tier. Do not let a question
     mark out-vote a known good, or a resident gap out-vote both.
+    PROTECTIVE OPERATING REGIMES raise a score materially above the parent average
+    where the dossier documents them actually working: a sanctuary or shield statute
+    protecting visitors and travelling families, protection of a traveller's care
+    access, facilities access congruent with identity, working anti-discrimination
+    enforcement. Documented protective machinery is a positive of the same order as a
+    documented protection — a jurisdiction combining it with an absence of
+    visitor-facing restrictions sits well above the national line, and recorded
+    hostility elsewhere in the country does not erase it.
 
 14. **Frequency × severity — keep risks in proportion.** Weigh how *common* a risk is
     against how *severe* its worst case is; neither alone decides the score.
@@ -275,7 +291,19 @@ RATING_RULES = """\
     is enforced against locals. Rate the possibility everyone carries, not the
     prosecutions that actually happened.
 
-16. **Institutional failure is exposure evidence, not an offset.** Where a
+16. **A trans-specific violence rate means nothing without the background rate.**
+    A recorded killing rate for trans women that sits at or below the jurisdiction's
+    general homicide rate is BACKGROUND violence, not a trans-specific campaign: the
+    ordinary population faces the same or worse. Where the dossier gives a trans
+    killing rate but no general homicide rate, say the comparison cannot be made and
+    give the figure little weight — do NOT treat a raw "X per 100,000" trans figure
+    as severity evidence on its own, and never let a figure described as an
+    acknowledged undercount floor (true value unknown, possibly below background)
+    drive a rating. Trans-specific violence is a strong signal only when it is
+    materially above background, patterned, and state-tolerated or state-directed.
+    A jurisdiction whose trans killing rate is unremarkable against its own homicide
+    rate gains nothing here in either direction.
+17. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the
     documented practice is the operative exposure. Oversight machinery that

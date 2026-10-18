@@ -21,14 +21,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--only-file", default=None,
+                    help="file with one target per line (space-safe: names with "
+                         "spaces break shell word-splitting on --only)")
     args = ap.parse_args()
     C = json.loads((ROOT / "data" / "countries.json").read_text())
     A = json.loads((ROOT / "data" / "admin1.json").read_text())
     targets = [f"country:{k}" for k in sorted(C)]
     targets += [f"{r['iso3']}/{r['name']}" for r in sorted(A.values(), key=lambda x: x.get("name", ""))
                 if r.get("dossier")]
-    if args.only:
-        want = set(args.only)
+    want = set(args.only or [])
+    if args.only_file:
+        want |= {l.strip() for l in
+                 Path(args.only_file).read_text(encoding="utf-8").splitlines() if l.strip()}
+    if want:
         targets = [t for t in targets if t in want]
     print(f"regenerating {len(targets)} dossiers, {args.workers} workers", flush=True)
 

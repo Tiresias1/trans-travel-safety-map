@@ -61,6 +61,13 @@ RULES FOR THIS PASS (consolidation, not compression):
    anatomy inspection; outing risk in the process. "A guide for trans travellers
    advises packing strategies" is advice-column content — OUT.
    If a source's only usable content is OUT-material, drop it silently.
+   THE BACKGROUND RATE TEST (violence claims): a trans-specific killing or violence
+   rate must be stated WITH the jurisdiction's general homicide rate, or not at all.
+   A trans rate at or below the general rate is background violence and is not
+   trans-specific risk; a figure the source itself calls an undercount floor or a
+   known-undercount count cannot be presented as a magnitude. Where the general rate
+   is not in the inventory, state the raw count plainly and say the comparison cannot
+   be made — never present an uncaveated "X per 100,000 trans women" as severity.
 
 3. REGION SCOPE — a REGION (sub-national) summary contains ONLY what is
    specific to that region: its own laws, its own enforcement and incidents,
