@@ -1003,7 +1003,7 @@ def main() -> int:
     ap.add_argument("--endpoint-suffix", default="/v1/messages")
     ap.add_argument("--api", default="anthropic-messages",
                     help="message API dialect: anthropic-messages | openai")
-    ap.add_argument("--model", default=os.environ.get("LANE_MODEL", "xiaomi/mimo-v2.6-flash"),
+    ap.add_argument("--model", default=os.environ.get("LANE_MODEL", "deepseek/deepseek-v4.1-flash"),
                     help="lane model id (bulk work = contributor tier)")
     ap.add_argument("--anthropic-version", default="2023-06-01")
     ap.add_argument("--auth-style", choices=("api-key", "bearer", "both"), default="both")

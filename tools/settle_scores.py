@@ -151,7 +151,7 @@ def main():
         w = ["python3", "-u", str(ROOT / "tools" / "blind_pairwise.py"),
              "--api", "openai", "--baseurl", "https://openrouter.ai/api/v1",
              "--endpoint-suffix", "/chat/completions", "--auth-style", "bearer",
-             "--api-key", key, "--model", os.environ.get("LANE_MODEL", "xiaomi/mimo-v2.6-flash"),
+             "--api-key", key, "--model", os.environ.get("LANE_MODEL", "deepseek/deepseek-v4.1-flash"),
              "--num-pairs", str(SETTLE_PAIRS),
              "--differential-weighting-percent", "0.01",
              "--absolute-weighting-percent", "0.12",

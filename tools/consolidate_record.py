@@ -23,7 +23,7 @@ KEY = (__import__("os").environ.get("OPENROUTER_KEY")
 API = "https://openrouter.ai/api/v1/chat/completions"
 # Bulk-work lane model (orchestrator: meta/muse-spark-1.3; lanes: contributor).
 # Override with LANE_MODEL env for testing/fallback.
-MODEL = os.environ.get("LANE_MODEL", "xiaomi/mimo-v2.6-flash")
+MODEL = os.environ.get("LANE_MODEL", "deepseek/deepseek-v4.1-flash")
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
 
