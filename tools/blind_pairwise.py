@@ -774,6 +774,14 @@ def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
     }
 
 
+def _stamp_rater(rec: dict, args) -> None:
+    """Record which model produced the current score (judge drift must be
+    visible: every wave re-derives scores under ONE rater)."""
+    from datetime import datetime, timezone
+    rec["ratedBy"] = getattr(args, "model", None)
+    rec["ratedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
 def render_parent_bundle(parent: dict) -> str:
     """The encompassing state's blind profile, relabelled as the framework the
     region stands under."""
@@ -1373,6 +1381,7 @@ def main() -> int:
                              "idx": idx, "total": args.num_pairs}
             with lock:
                 store[sid_r]["score"] = round(upd["a"]["final"], 6)
+                _stamp_rater(store[sid_r], args)
                 stats["done"] += 1
                 stats["moves"] += abs(upd["a"]["final"] - r0)
                 for k, src in (("cache_read", "cache_read_input_tokens"),
@@ -1453,7 +1462,9 @@ def main() -> int:
                          "idx": idx, "total": args.num_pairs}
         with lock:
             store[iso_a]["score"] = round(upd["a"]["final"], 6)
+            _stamp_rater(store[iso_a], args)
             store[iso_b]["score"] = round(upd["b"]["final"], 6)
+            _stamp_rater(store[iso_b], args)
             stats["done"] += 1
             stats["moves"] += abs(upd["a"]["final"] - a0) + abs(upd["b"]["final"] - b0)
             for k, src in (("cache_read", "cache_read_input_tokens"),
