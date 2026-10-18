@@ -19,6 +19,7 @@ Usage:
 """
 from __future__ import annotations
 import argparse, json, subprocess, sys, threading, time
+from build_data import band_label
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -65,7 +66,9 @@ def build_queue(enc, C, A):
             _, iso, rname = name.split(":", 2)
             rec = next((x for x in A.values()
                         if x.get("iso3") == iso and x.get("name") == rname), None)
-            if not rec:
+            # route-3 / converted regions inherit the national score and are
+            # settled no further
+            if not rec or not rec.get("dossier"):
                 continue
             gap = abs(float(rec["score"]) - mean)
             # all dossier regions re-checked; territories flagged separately
@@ -95,7 +98,8 @@ def build_queue(enc, C, A):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--logs", nargs="*",
-                    default=["/tmp/repair_countries3.jsonl", "/tmp/terr_wave2_final.jsonl", "/tmp/pr_wave.jsonl"])
+                    default=["/tmp/redo_countries.jsonl", "/tmp/redo_admin1.jsonl",
+                             "/tmp/repair_countries3.jsonl", "/tmp/terr_wave2_final.jsonl", "/tmp/pr_wave.jsonl"])
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--rebalance", action="store_true",
                     help="set every encounter-rich entity's score directly to its "

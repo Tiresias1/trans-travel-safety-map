@@ -62,7 +62,28 @@ RULES FOR THIS PASS (consolidation, not compression):
    advises packing strategies" is advice-column content — OUT.
    If a source's only usable content is OUT-material, drop it silently.
 
-3. REPRESENTATIVENESS — for a national dossier, any single sub-national unit
+3. REGION SCOPE — a REGION (sub-national) summary contains ONLY what is
+   specific to that region: its own laws, its own enforcement and incidents,
+   its own institutions, its own documented practice. The parent country's
+   national/federal layer (national passports and markers, federal executive
+   orders, federal agencies, national custody rules, national statistics,
+   other regions' laws and events) is carried by the parent record and the
+   pairwise parent bundle — it must NOT be restated here, not even briefly
+   as background, and must NEVER be regenerated from your own knowledge when
+   the source inventory does not contain it. A national-source claim may
+   appear in a region record only through its region-specific content. If
+   the inventory holds no region-specific facts, the summary is one sentence:
+   that no region-specific signal was identified and the national assessment
+   applies. The full national layer belongs to the parent's own record.
+4. BASE RATE — when a source ranks jurisdictions by RAW counts (incidents,
+   killings, cases), say so with the denominator in the same breath: raw
+   counts track population, so "the most incidents of any state" is a base
+   rate fallacy without per-capita or population context. Where the source
+   itself provides no denominator, state the raw count plainly and note that
+   the ranking is by raw count only — do not imply that a populous
+   jurisdiction is more dangerous than a small one from raw counts, and do
+   not suppress a small jurisdiction's high raw count either.
+5. REPRESENTATIVENESS — for a national dossier, any single sub-national unit
    (state, province, city) is ONE data point illustrating a wider pattern,
    never the headline. Summarise the pattern first (how many states, which
    direction, what enforcement), then cite at most one or two named units as
@@ -161,8 +182,14 @@ def relevant_claims(rec):
 def build_user(rec, parent_summ=""):
     lines = [f"JURISDICTION: {rec.get('name')} ({rec.get('iso3')})"]
     if parent_summ:
-        lines.append(f"PARENT FRAMEWORK (restate if a region): {parent_summ}")
-    lines.append(f"CURRENT SUMMARY (for continuity): {rec.get('summary','')[:900]}")
+        lines.append(f"PARENT FRAMEWORK (context only — the national record and the "
+                     f"pairwise parent bundle already carry it; DO NOT restate any of it "
+                     f"in this region's summary): {parent_summ}")
+    if parent_summ:
+        lines.append("CURRENT SUMMARY (style and continuity reference ONLY — its national/federal "
+                     "content is outdated and must NOT be carried forward): " + rec.get("summary", "")[:600])
+    else:
+        lines.append(f"CURRENT SUMMARY (for continuity): {rec.get('summary','')[:900]}")
     lines.append("SOURCE CLAIM INVENTORY (include every substantive claim that passes the relevance gate):")
     kept, dropped = relevant_claims(rec)
     for i, s in enumerate(kept, 1):
