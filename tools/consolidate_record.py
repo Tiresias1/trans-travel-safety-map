@@ -531,6 +531,10 @@ Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length 
                 for k2, v in (changes or {}).items():
                     out[k2] = v
 
+    # displaySummary is a derived display variant: it must never outlive the
+    # summary it was derived from (NH 2026-10-16: popup showed a pre-fix federal
+    # essay because displaySummary survived the summary rewrite)
+    out.pop("displaySummary", None)
     if args.apply:
         # LOCKED READ-MODIFY-WRITE: concurrent children must never clobber
         # each other's records (2026-10-06 race fix — each child re-reads the
@@ -552,6 +556,8 @@ Return ONLY JSON: {{"claims": ["blind text for claim 0", ...]}} — same length 
                           "blindSummary", "blindTangential", "blindLocalsOnly", "blindOutOfScope"):
                     if out.get(k) is not None:
                         tgt[k] = out[k]
+                # a display variant derived from an older summary must not survive it
+                tgt.pop("displaySummary", None)
                 tmp = pth.with_suffix(".tmp")
                 tmp.write_text(json.dumps(D, ensure_ascii=False, indent=1), encoding="utf-8")
                 tmp.replace(pth)

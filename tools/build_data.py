@@ -177,6 +177,25 @@ def main():
             json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
+        # parent-inversion gate: a territory or region that the dossier documents as
+        # carrying its own hostile layer must not score at/above its parent regime
+        # (2026-10-16: PR scored above USA despite a care ban + emergency-era violence)
+        _inv = []
+        for sid, r in admin1.items():
+            p3 = r.get("parentIso3")
+            if not p3 or not r.get("dossier"):
+                continue
+            par = countries.get(p3)
+            if not par:
+                continue
+            own_hostile = (r.get("ownHostile") is True or
+                           bool(re.search(r"state of emergency|harshest|most restrictive|"
+                                          r"bans (?:gender-affirming )?care",
+                                          " ".join(str(r.get(f, "")) for f in _TEXT_FIELDS), re.I)))
+            if own_hostile and float(r.get("score", 0)) >= float(par.get("score", 0)):
+                _inv.append(f"{r.get('name')} {float(r.get('score',0)):.3f} >= {p3} {float(par.get('score',0)):.3f}")
+        if _inv:
+            warnings.append("PARENT-INVERSION: " + "; ".join(_inv[:8]))
         if set(admin1) - geo1_ids:
             errors.append(f"admin1 records without polygons: {sorted(set(admin1) - geo1_ids)[:8]}")
         n_missing = len(geo1_ids - set(admin1))
