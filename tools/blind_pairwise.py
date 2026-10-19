@@ -294,15 +294,14 @@ RATING_RULES = """\
 16. **A trans-specific violence rate means nothing without the background rate.**
     A recorded killing rate for trans women that sits at or below the jurisdiction's
     general homicide rate is BACKGROUND violence, not a trans-specific campaign: the
-    ordinary population faces the same or worse. Where the dossier gives a trans
-    killing rate but no general homicide rate, say the comparison cannot be made and
-    give the figure little weight — do NOT treat a raw "X per 100,000" trans figure
-    as severity evidence on its own, and never let a figure described as an
-    acknowledged undercount floor (true value unknown, possibly below background)
-    drive a rating. Trans-specific violence is a strong signal only when it is
-    materially above background, patterned, and state-tolerated or state-directed.
-    A jurisdiction whose trans killing rate is unremarkable against its own homicide
-    rate gains nothing here in either direction.
+    ordinary population faces the same or worse. Trans-specific violence is a strong
+    signal only when the dossier shows it materially ABOVE that background, patterned,
+    and state-tolerated or state-directed. A figure described as an undercount floor
+    makes the true value unknowable — it is not weak evidence in either direction, it
+    is no evidence: do not use it, and do not infer elevated risk from its absence
+    either. Raw counts without denominators carry no magnitude ("the most killings of
+    any state" tracks population). If the dossier's only violence content is such a
+    figure, treat the violence axis as undocumented rather than assessed.
 17. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the
