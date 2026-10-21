@@ -176,7 +176,9 @@ def check(rec, name):
 
 
 CHANGELOG_ISH = re.compile(
-    r"\b(?:earlier|previous|old|original|former|prior)\s+"
+    # require a RECORD-anaphor article: "the earlier profile's X" is changelog;
+    # "people with any prior profile" is about people, not the map's record
+    r"\b(?:the|this|that|its|our)\s+(?:earlier|previous|prior|former)\s+"
     r"(?:profile|dossier|summary|research|assessment|"
     r"characterisation|characterization|write-upper|revision)\b"
     r"|\binherited arithmetic\b|\bborrowed (?:custody )?stor(?:y|ies)\b"
@@ -190,7 +192,10 @@ CHANGELOG_ISH = re.compile(
     r"|\bfreshness check against\b|\bconfirmed by the record\'?s freshness check\b"
     r"|\bno longer appears in the current overview\b"
     r"|\bthe record summary records\b|\bcarried on the record\b"
-    r"|\bresearch pass\b|\bprune[ds]?\b", re.I)
+    r"|\bresearch pass\b"
+    # "sources/citations were pruned" = edit narrative; "obscenity law was
+    # pruned unevenly" = description of state law (legitimate)
+    r"|\b(?:sources?|citations?|inventory|evidence base|corpus)\b[^.]{0,40}?\bprune[ds]?\b", re.I)
 
 
 def changelog_scan(rec, name):
