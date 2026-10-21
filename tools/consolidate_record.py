@@ -295,7 +295,13 @@ def valid_summary(s):
 META_NARRATIVE = re.compile(
     r"earlier profile|previous profile|inherited arithmetic|borrowed custody|"
     r"SUPERSEDED|per freshness|\(rev [\d-]+\)|at fetch time|the audited record|"
-    r"were deleted|was deleted|deleted because|deleted for lack|model prior", re.I)
+    # changelog senses only: the deleted-thing must be a record artefact, not a
+    # real-world event (China's censored campus accounts were "deleted for
+    # violating account regulations" — a fact, not an edit narrative)
+    r"(?:the|this|that|its|a) (?:record|summary|paragraph|section|profile|text|"
+    r"sentence|claim|detail)s?\s+(?:was|were|has been|have been)\s+deleted|"
+    r"deleted because (?:the|this|it)\s+(?:record|summary|paragraph|claim)|"
+    r"deleted for lack of (?:support|evidence|sourcing)|model prior", re.I)
 VIS_ANON = re.compile(
     r"(?<![A-Za-z\x27\x2d])administering state|parent nation|parent state|parent government|"
     r"\bstate/province\b|\bstate/provinces\b", re.I)
