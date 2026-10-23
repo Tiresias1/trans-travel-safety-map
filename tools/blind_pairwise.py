@@ -1109,6 +1109,10 @@ def main() -> int:
                     help="omit cache_control (for endpoints that reject it)")
     ap.add_argument("--allow-partial-blind", action="store_true",
                     help="include countries missing some required blind* fields")
+    ap.add_argument("--regions-vs-parent-only", action="store_true",
+                    help="with --regions-vs-countries: rate each region ONLY against "
+                         "its own parent state (comparator fixed to parentIso3) — the "
+                         "relative-derivation mode for dependent territories")
     ap.add_argument("--show-region-names", action="store_true",
                     help="with --regions-vs-countries: name the region in its header "
                          "(default is identity-withheld)""")
@@ -1342,7 +1346,17 @@ def main() -> int:
                 # parent = the encompassing state: parentIso3 for migrated
                 # territories (iso3 is the territory's own code), iso3 otherwise
                 par = ur.get("parentIso3") or ur["iso3"]
-                iso_c = rng.choice([c for c in eligible if c != par])
+                if getattr(args, "regions_vs_parent_only", False):
+                    # relative derivation: the ONLY comparator is the parent,
+                    # so the pair yields a territory-vs-parent offset
+                    if par not in eligible:
+                        with lock:
+                            stats["errors"] += 1
+                            stats["done"] += 1
+                        return
+                    iso_c = par
+                else:
+                    iso_c = rng.choice([c for c in eligible if c != par])
                 r0 = float(ur["score"])
                 c0 = float(countries[iso_c]["score"])
                 flip = rng.random() < 0.5
