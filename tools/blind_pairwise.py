@@ -302,7 +302,18 @@ RATING_RULES = """\
     either. Raw counts without denominators carry no magnitude ("the most killings of
     any state" tracks population). If the dossier's only violence content is such a
     figure, treat the violence axis as undocumented rather than assessed.
-17. **Institutional failure is exposure evidence, not an offset.** Where a
+17. **Prevalence numbers need population, category and period — or they are noise.**
+    A survey percentage qualifies as an everyday-exposure signal only when it is
+    (a) about trans people specifically, (b) about the behaviour being rated
+    (violence, discrimination in a setting a traveller enters), and (c) current.
+    An LGBT-wide figure, a broad "human-rights abuse" category, or a figure whose
+    window closed a decade ago describes a population and a period the traveller is
+    not in: give it no weight as current prevalence, and never let it out-vote
+    documented legal protections. Likewise, a dossier statement phrased as a past
+    snapshot ("as of June 2014 no additional penalty for bias-motivated violence")
+    does not establish the present rule: if the dossier elsewhere shows the law was
+    later enacted, the present law governs and the snapshot is history, not exposure.
+18. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the
     documented practice is the operative exposure. Oversight machinery that

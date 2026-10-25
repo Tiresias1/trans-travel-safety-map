@@ -74,6 +74,14 @@ RULES FOR THIS PASS (consolidation, not compression):
    — and then state the background rate alongside it so the comparison is explicit.
    Raw counts without denominators likewise carry no magnitude and should not be
    ranked ("the most killings of any state" is population, not risk).
+   SURVEY FIGURES: state the population surveyed (trans people vs LGBT broadly),
+   the category measured, and the period covered, in the same sentence. A figure
+   that is LGBT-wide, broadly categorised ("human-rights abuse"), or whose window
+   closed years ago is NOT current trans prevalence — either date-stamp it
+   explicitly as historical or leave it out. Never present a superseded legal
+   snapshot ("as of <year> no penalty for X") as the present rule: if a later
+   claim shows the law changed, present the current law and mark the snapshot as
+   historical at most.
 
 3. REGION SCOPE — a REGION (sub-national) summary contains ONLY what is
    specific to that region: its own laws, its own enforcement and incidents,

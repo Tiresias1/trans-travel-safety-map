@@ -67,7 +67,7 @@ TEXT:
                     pcs.append(pc)
         if len(pcs) == len(chunks):
             summ = " ".join(pcs)
-    target = max(900, min(3200, int(len(summ) * 0.55)))
+    target = max(900, min(4200, int(len(summ) * 0.7)))
     for attempt in range(3):
         out = call_llm(
             "You write visitor-facing display text for a trans-visitor travel-safety map.",
@@ -98,7 +98,7 @@ Return ONLY JSON: {{"display": "..."}}""")
             continue
         s = re.sub(r"\s+", " ", out["display"]).strip()
         ok_shape = s and s[0].isupper() and s.endswith(".")
-        ok_len = len(s) <= target + 400
+        ok_len = len(s) <= target + 900
         # fabrication check: no NEW digits may appear. Dropped digits are fine —
         # compressing the federal layer legitimately drops federal dates/figures;
         # region-local preservation is a prompt duty + spot-check, not a
@@ -115,6 +115,8 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--missing", action="store_true",
+                    help="only records that do not yet have a displaySummary")
     ap.add_argument("--apply", action="store_true")
     args = ap.parse_args()
     A = json.loads((ROOT / "data" / "admin1.json").read_text())
@@ -122,6 +124,8 @@ def main() -> int:
     jobs = []
     for key, r in A.items():
         if r.get("dossier") and r.get("summary"):
+            if getattr(args, "missing", False) and r.get("displaySummary"):
+                continue
             who = f"{r['iso3']}/{r['name']}"
             if args.only and who not in args.only and f"country:{r['iso3']}" not in args.only:
                 continue
