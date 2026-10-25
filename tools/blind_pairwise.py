@@ -314,15 +314,17 @@ RATING_RULES = """\
     does not establish the present rule: if the dossier elsewhere shows the law was
     later enacted, the present law governs and the snapshot is history, not exposure.
 18. **Facts carry their date; the rating describes the present.** Weigh documented
-    events and statistics by their recency. A single incident from more than roughly a
-    decade ago, with no documented continuation, is historical context — it establishes
-    that such things have happened, not that they are the current climate, and it must
-    not be counted as present-day frequency. The same applies to dated statistics and to
-    phrases like "common" or "widespread" that carry no data: an undated or unsourced
-    prevalence word is not evidence. A continuing record (recent incidents in sequence,
-    a current pattern, an unremedied practice observed in the last few years) is what
-    makes a risk present. Conversely, do not credit stale good facts either: an old
-    protection is only mitigative if the dossier shows it still operates.
+    events and statistics by their recency. Where the dossier's most recent documented
+    instance of a harm is many years old, that is weak evidence about the PRESENT in
+    either direction: it establishes that such things have happened, and it does not
+    establish that they have stopped. Do not read an old record as evidence the harm has
+    ended, and do not read it as evidence of current frequency. Weight it as a dated
+    past event, and let the current signals (recent incidents, present law and practice,
+    documented enforcement in the last few years) carry the rating. The same applies to
+    dated statistics and to undated prevalence words ("common", "widespread") — an
+    unsourced prevalence word is not evidence. Conversely, do not credit stale good
+    facts either: an old protection is mitigative only if the dossier shows it still
+    operates.
 19. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the

@@ -74,12 +74,14 @@ RULES FOR THIS PASS (consolidation, not compression):
    — and then state the background rate alongside it so the comparison is explicit.
    Raw counts without denominators likewise carry no magnitude and should not be
    ranked ("the most killings of any state" is population, not risk).
-   RECENCY: every incident and statistic keeps its date in the sentence. An incident
-   older than roughly a decade with no documented continuation is presented as
-   historical ("in 2009 ... ; the dossier records no comparable incident since"), never
-   as the current climate. Never write undated prevalence words ("common", "widespread",
-   "frequent") without a figure and a period — if the inventory has none, describe the
-   specific documented events instead.
+   RECENCY: every incident and statistic keeps its date in the sentence. Where the most
+   recent documented instance of a harm is many years old, say exactly that and nothing
+   more: "the most recent documented case in this record is from 2009; no later instance
+   is documented." Do NOT label it "historical", "a thing of the past", "no longer
+   occurs", or imply the situation has ended — an undocumented present is not a safe
+   present. Equally, do not present an old incident as the current climate. Never write
+   undated prevalence words ("common", "widespread", "frequent", "often", "regularly",
+   "routinely", "typically", "in many cases") without a figure and a period — if the inventory has none, describe the specific documented events instead.
    SURVEY FIGURES: state the population surveyed (trans people vs LGBT broadly),
    the category measured, and the period covered, in the same sentence. A figure
    that is LGBT-wide, broadly categorised ("human-rights abuse"), or whose window
