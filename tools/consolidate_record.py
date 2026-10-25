@@ -74,6 +74,12 @@ RULES FOR THIS PASS (consolidation, not compression):
    — and then state the background rate alongside it so the comparison is explicit.
    Raw counts without denominators likewise carry no magnitude and should not be
    ranked ("the most killings of any state" is population, not risk).
+   RECENCY: every incident and statistic keeps its date in the sentence. An incident
+   older than roughly a decade with no documented continuation is presented as
+   historical ("in 2009 ... ; the dossier records no comparable incident since"), never
+   as the current climate. Never write undated prevalence words ("common", "widespread",
+   "frequent") without a figure and a period — if the inventory has none, describe the
+   specific documented events instead.
    SURVEY FIGURES: state the population surveyed (trans people vs LGBT broadly),
    the category measured, and the period covered, in the same sentence. A figure
    that is LGBT-wide, broadly categorised ("human-rights abuse"), or whose window

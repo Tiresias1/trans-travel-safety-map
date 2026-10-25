@@ -313,7 +313,17 @@ RATING_RULES = """\
     snapshot ("as of June 2014 no additional penalty for bias-motivated violence")
     does not establish the present rule: if the dossier elsewhere shows the law was
     later enacted, the present law governs and the snapshot is history, not exposure.
-18. **Institutional failure is exposure evidence, not an offset.** Where a
+18. **Facts carry their date; the rating describes the present.** Weigh documented
+    events and statistics by their recency. A single incident from more than roughly a
+    decade ago, with no documented continuation, is historical context — it establishes
+    that such things have happened, not that they are the current climate, and it must
+    not be counted as present-day frequency. The same applies to dated statistics and to
+    phrases like "common" or "widespread" that carry no data: an undated or unsourced
+    prevalence word is not evidence. A continuing record (recent incidents in sequence,
+    a current pattern, an unremedied practice observed in the last few years) is what
+    makes a risk present. Conversely, do not credit stale good facts either: an old
+    protection is only mitigative if the dossier shows it still operates.
+19. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the
     documented practice is the operative exposure. Oversight machinery that
