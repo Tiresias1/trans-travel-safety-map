@@ -346,6 +346,17 @@ def _llm_deanon(out, iso):
     return fix_record_deanon(out, iso)
 
 
+HISTORICAL_OVERREACH = re.compile(
+    # the harm must be named as historical; "historical flags ... law-enforcement"
+    # is not a claim about persecution
+    r"\bhistorical(?:ly)?\b[^.]{0,90}\b(?:violence|persecut\w*|abuse|attacks?|"
+    r"killings?|murders?|harassment|discrimination|penalt\w*|bans?|prohibitions?)\b"
+    r"|\b(?:violence|persecut\w*|abuse|attacks?|killings?|harassment|discrimination)"
+    r"\b[^.]{0,40}\b(?:is|are|was|were)\s+(?:now\s+)?historical\b"
+    r"|\ba thing of the past\b|\bno longer (?:occurs|happens|applies)\b"
+    r"|\bhas (?:ended|stopped)\b[^.]{0,40}\b(?:violence|persecution|abuse)\b", re.I)
+
+
 def validate_output(out, problems):
     for k in ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes"):
         t = str(out.get(k) or "")
@@ -353,6 +364,10 @@ def validate_output(out, problems):
             problems.append(f"{k}: edit-narrative/pipeline jargon (rejected)")
         if VIS_ANON.search(t):
             problems.append(f"{k}: blind vocabulary in visible text (rejected)")
+        if HISTORICAL_OVERREACH.search(t):
+            problems.append(f"{k}: claims the harm ended / is 'historical' without "
+                            f"evidence (rejected — an undocumented present is not a "
+                            f"safe present)")
     for k in ("summary", "tangentialFactors"):
         t = str(out.get(k) or "")
         if GENERIC_TRAVEL_OUT.search(t):
