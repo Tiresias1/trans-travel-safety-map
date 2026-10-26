@@ -253,7 +253,7 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
                 sr = d["choices"][0].get("finish_reason") or msg.get("stop_reason")
                 if attempt < 4:
                     time.sleep(3)
-                    max_tokens = min(max_tokens + 1500, 14000)
+                    max_tokens = min(max_tokens + 3000, 24000)
                     continue
                 raise ValueError(f"empty model content (stop={sr})")
             content2 = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip())
