@@ -342,7 +342,37 @@ RATING_RULES = """\
     unsourced prevalence word is not evidence. Conversely, do not credit stale good
     facts either: an old protection is mitigative only if the dossier shows it still
     operates.
-19. **Institutional failure is exposure evidence, not an offset.** Where a
+19. **Social friction is not social hostility, and neither is a culture war.**
+    Separate three things that dossiers often blur, because they carry very different
+    weight for a traveller:
+      (a) SOCIAL FRICTION — curiosity, staring, awkward misgendering, bemusement,
+          conservative disapproval, "I would not want my child to grow up like that".
+          The person is an ODDITY, not a threat. Very low weight: it is uncomfortable,
+          not dangerous, and it rarely escalates.
+      (b) SOCIAL HOSTILITY — the traveller is framed as a THREAT or a moral offender:
+          a deceiver preying on women, a corrupting influence on children, a violator
+          of religious or moral law, a target worth confronting. This can escalate to
+          confrontation, ejection from premises, violence or a police call. Real weight.
+      (c) STATE THREAT-FRAMING — the law and institutions themselves treat trans
+          people as a threat: excluding them from women's spaces on the premise of
+          risk, placing them in cells by birth sex, stripping them in front of the sex
+          they are not, restricting their access to emergency care. Tier 1 weight
+          under rule 15, regardless of how polite street-level life is.
+    Judge which one the dossier documents. Do not upgrade friction to hostility because
+    the prose is sympathetic to the trans community or describes hardship; do not
+    downgrade hostility to friction because it is expressed politely.
+20. **Activist visibility is not danger, and local vulnerability is not traveller risk.**
+    A dossier full of court petitions, marches, NGO reports, police-harassment
+    complaints and discrimination statistics shows that marginalised people can
+    organise and litigate — that is evidence of a functioning civil society, not of
+    traveller exposure. Those items describe the LOCAL sphere: family rejection,
+    housing, employment, street-based sex work. A visitor does not enter that sphere.
+    Rate the traveller-facing sphere (borders, documents, facilities, custody, care,
+    street violence against foreigners) and use local-sphere material only where it
+    demonstrably reaches visitors. High volume of domestic-rights news is not a risk
+    signal; a low-violence, high-hospitality society with conservative attitudes is
+    not a dangerous destination.
+21. **Institutional failure is exposure evidence, not an offset.** Where a
     dossier documents recurring violations BY state institutions — custody
     placement practices, border officers' conduct, service denial — the
     documented practice is the operative exposure. Oversight machinery that
