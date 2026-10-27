@@ -280,7 +280,24 @@ RATING_RULES = """\
       patterns. This combines high severity with high frequency and the state's own hand,
       and it dominates nearly everything else in the dossier.
     Universal-exposure measures and organised targeting both outrank scattered incidents,
-    baseline-elevated violence, or unenforced statutes. Two dossiers with the same number
+    baseline-elevated violence, or unenforced statutes.
+    PRECEDENCE LADDER (use this to compare two dossiers, not intuition): rank the worst
+    documented feature of each jurisdiction and compare tiers, not impressions:
+      (1) state-imposed universal exposure with no working remedy — facility exclusion
+          by birth sex, custody placement by birth sex, strip-search by birth sex,
+          documents that cannot be made to match, care denial in emergency;
+      (2) state-tolerated or state-directed targeting — police extortion, raids, arrests
+          for presentation, official calls for exclusion;
+      (3) documented societal hostility with THIN OR NO recourse — harassment and
+          discrimination that the traveller has no realistic way to remedy;
+      (4) dated or scattered incidents — a decade-old case, isolated events;
+      (5) paper protections not shown to operate.
+    A dossier whose worst feature is tier 1 rates MATERIALLY below one whose worst
+    feature is tier 3. Societal disapproval — "locals may not accept you as trans" — is
+    tier 3 language at most, and it does NOT cancel a tier-1 exposure: the traveller can
+    often pass, avoid, or leave a disapproving society, but cannot pass a strip-search,
+    choose her own cell, or talk her way out of a ward ban. State-imposed exposures
+    follow her and are enforced by the institutions themselves. Two dossiers with the same number
     of documented murders but different surrounding signals (near-baseline violence vs.
     organised sweeps) must receive different ratings, and the reasoning should say why.
 
