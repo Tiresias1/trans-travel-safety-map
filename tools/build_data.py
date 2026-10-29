@@ -175,6 +175,29 @@ def main():
         _terr_mirror = any(iso in _TERRITORIES for iso in _per)
         if _terr_mirror:
             json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
+        # ROUTE-3 INVARIANT (2026-10-29): an "estimated" region with the
+        # no-signal template IS the national assessment — its score must track
+        # the national score on every build. Previously these kept a stale
+        # absolute copy from whichever wave generated them (Mongolia's regions
+        # showed 0.68 while the country was 0.52; 94/190 countries affected).
+        _TMPL = "No sub-national signal was identified; the national assessment applies here"
+        _n_inh = 0
+        for sid, r in admin1.items():
+            if not r.get("estimated"):
+                continue
+            if _TMPL not in str(r.get("summary", "")):
+                continue
+            par = countries.get(r.get("iso3"))
+            if not par:
+                continue
+            sc = round(float(par.get("score", 0)), 6)
+            if abs(float(r.get("score", 0)) - sc) > 1e-9:
+                r["score"] = sc
+                r["band"] = band_label(sc)
+                _n_inh += 1
+            r["inherited"] = True
+        if _n_inh:
+            warnings.append(f"re-synced {_n_inh} route-3 regions to their national score")
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
         # parent-inversion gate: a territory or region that the dossier documents as

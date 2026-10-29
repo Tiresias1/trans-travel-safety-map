@@ -101,7 +101,7 @@ RATING_RULES = """\
    **The boundary cuts both ways.** The ABSENCE of that resident-facing machinery — no
    legal gender recognition, no marker-change procedure, no national anti-discrimination
    or hate-crime statute — is likewise a resident gap, not a visitor exposure: the
-   visitor's documents are issued and carried from their home country and never touch
+   visitor's documents are issued and carried from their home country and usually don't touch
    the jurisdiction's gender-marker process. Do not deduct for a country's missing
    domestic-recognition machinery unless the dossier documents that gap reaching
    visitors (officials rejecting or doubting foreign-issued documents, service denial
@@ -146,7 +146,7 @@ RATING_RULES = """\
    number. Do not start from a vague impression of "this sounds like a safe/unsafe place"
    and then decorate it.
 
-6. **Laws on the books vs. enforcement.** An unenforced statute a comparably small factor.
+6. **Laws on the books vs. enforcement.** An unenforced statute is a comparably small factor.
    A statute with documented arrests, convictions, or police practice is a quite large one.
    Note which you are looking at.
 
