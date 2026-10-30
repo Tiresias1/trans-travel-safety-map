@@ -48,8 +48,8 @@ traveler-facing axes below. 1.00 is an aspirational limit no jurisdiction fully 
   trans-specific risk (e.g. collapse of protection for an already-targeted group).
 
 **The visitor/resident boundary cuts both ways.** The *absence* of resident-facing
-machinery — no legal gender recognition regime, no national anti-discrimination or
-hate-crime statute — is likewise a resident gap, not a visitor exposure: the visitor's
+machinery (no legal gender recognition regime, no national anti-discrimination or
+hate-crime statute) is likewise a resident gap, not a visitor exposure: the visitor's
 documents are issued and carried from their home country and never touch the
 destination's gender-marker process. A missing LGR regime raises open questions for
 edge cases (which documents get believed at entry, how detention would place someone),
@@ -57,25 +57,45 @@ but an open question is not an exposure: it weighs almost nothing where the doss
 answers the visitor-facing questions, and merely holds the score back where it leaves
 them open. Factor kinds rank as: documented traveler-facing exposures (targeting,
 enforced criminal statutes, universal-exposure measures) heaviest; open questions far
-lighter; resident-machinery absence lightest — a local-attitudes cue the sources
-usually already cover. Relatedly, institutional failure is exposure *evidence*, not an
+lighter; resident-machinery absence lightest, which is a local-attitudes cue the
+sources usually already cover. Relatedly, institutional failure is exposure *evidence*, not an
 offset: oversight bodies that issue repeated findings without remedying a practice
 corroborate an unremedied exposure ("the traveller has recourse" does not soften a
 violation the record shows recurring), and survey-measured discrimination prevalence
 at scale is a primary everyday-exposure signal for the settings surveyed. A protection
-is credited only when the dossier documents it as in force — an advocacy submission's
+is credited only when the dossier documents it as in force. An advocacy submission's
 stated aims are not law.
 
-Two standing corrections encode hard-won lessons:
+Several standing corrections encode hard-won lessons:
 
-- **Sexuality law is not trans law.** A same-sex-conduct statute is a *secondary*
-  factor for trans visitors: it matters only through how it is actually used — as a
-  police lever against visibly gender-nonconforming people, or as license for
-  hostility toward them. Trans-specific primary factors (gender-expression law and
+- **Sexuality law is not trans law.** A same-sex-conduct statute is a secondary
+  factor for trans visitors. It matters through how it is used, as a police lever
+  against visibly gender-nonconforming people or as license for hostility toward
+  them. Trans-specific factors dominate instead: gender-expression law and its
   enforcement, document and screening practice, facilities and custody, care access,
-  trans-specific violence and its handling, documented social acceptance) dominate.
-  A documented tolerant society with an unrepealed, dead-letter sexuality statute is
-  not the same risk tier as a state that enforces against gender-nonconforming people.
+  trans-specific violence and how it is handled, documented social acceptance. A
+  tolerant society holding an unrepealed dead-letter sexuality statute is not the
+  same risk tier as a state that enforces against gender-nonconforming people.
+- **Social friction is not social hostility.** Curiosity, staring, misgendering and
+  conservative disapproval are tier-3 language at most: the traveller is an oddity,
+  not a threat. Hostility means the traveller is framed as a deceiver, a corrupting
+  influence on children, or a violator of moral law. That distinction decides how
+  heavily societal attitudes weigh, and it is not a wording preference.
+- **State threat-framing is the heaviest single input.** When law and institutions
+  treat trans people as a risk (exclusion from women's spaces, custody placement by
+  birth sex, strip-search by birth sex, denial of emergency care), the exposure
+  follows the traveller and outranks polite street-level life.
+- **A violence rate needs a denominator.** A trans killing rate at or below the
+  jurisdiction's general homicide rate is background violence. A rate the source
+  itself calls an undercount floor tells you nothing about magnitude. Both are
+  omitted rather than presented with false precision.
+- **Facts carry their date.** An incident from many years ago is not evidence about
+  the present in either direction. It does not show the harm continues, and it does
+  not show the harm has ended. The record says which case applies and nothing more.
+- **Activist visibility is not danger.** A dossier full of court petitions, marches
+  and discrimination statistics shows that marginalised people can organise and
+  litigate. That is civil society working. It describes the local sphere, which a
+  visitor does not enter.
 - **Severity dominates probability.** Every trans person carries some outing probability;
   what separates 0.9 from 0.2 is mostly what happens *after* the outing, and whether the
   state is perpetrator, bystander, or protector.
@@ -124,29 +144,70 @@ Scores are stress-tested by an automated blind process (`tools/blind_pairwise.py
    no scores, no source URLs, no comparator references, no region-identifying terms —
    validated by automated leak checks (per-item, agency-noun, state-leak and
    meta-narrative gates) before use.
-2. Over multiple full passes of **randomised head-to-head pairs** (2026 edition: a
-   3,500-pair countries pass and a 9,500-pair division pass, re-run at 3,600 pairs
-   after rule recalibration), a rating model that never saw which jurisdictions it was
-   reading scored each anonymised dossier independently against the scale and rules
-   above (presentation order randomised to cancel position bias; update steps ramp
-   coarse-to-fine across each pass).
-3. **Dependent territories are scored in a dedicated mixed mode**, never as
-   countries-mode pairwise entities: the rater sees the territory's own anonymised
-   dossier plus the parent state's anonymised national framework as the regime imposed
-   on it ("A dependent territory stands under its parent's enforced regime" — local
-   tolerance does not neutralise parent rules enforced at the border, in funded
-   facilities, or through the document regime; the parent regime belongs to that
-   dossier alone and never leaks across pairs). The countries-mode record is a display
-   mirror of the territory's own score.
+2. Over multiple full passes of **randomised head-to-head pairs**, a rating model that
+   never saw which jurisdictions it was reading scored each anonymised dossier
+   independently against the scale and the rules above. Presentation order is
+   randomised to cancel position bias, and update steps ramp coarse to fine across
+   each pass. The 2026 edition ran a 3,500-pair countries pass and a 9,500-pair
+   division pass, then re-ran both (3,600 and 9,500) after each rating-rule change,
+   because a rule change invalidates every earlier rater mean. A wave never mixes
+   rating models: scores carry a `ratedBy` stamp for exactly that reason.
+3. **Dependent territories are scored relative to their parent state.** The rater sees
+   the territory's own anonymised dossier plus the parent's anonymised national
+   framework as the regime imposed on it, and rates the territory head to head against
+   that parent in the same call, so both sides land on one scale. The territory's score
+   is the parent's score plus the mean offset across those pairs. Local tolerance does
+   not neutralise parent rules enforced at the border, in funded facilities, or through
+   the document regime, and the parent regime belongs to that dossier alone. The
+   countries-mode record for a territory is a display mirror of the territory's own
+   score, text included. An earlier scheme rated territories against random country
+   comparators while their parent was rated against other countries; the two scales were
+   not comparable, which let Puerto Rico score above the United States despite a harsher
+   local layer.
 4. **A settlement pass enforces the convergence invariant**: every jurisdiction's
-   stored score must equal its encounter-weighted rater mean (tolerance 0.02 on the
-   0–1 scale), topped up with focused pair runs until it does. After the 2026 edition's
-   final pass, all but two dozen jurisdictions converged in the main pass itself.
+   stored score must equal its encounter-weighted rater mean, within 0.02 on the 0 to 1
+   scale. Focused pair runs top up any entity that has drifted. Where a wave has
+   already produced enough encounters, the score is set directly to the encounter mean
+   instead of chasing it with more pairs, since a small focused run converges on its own
+   sample mean and the residuals oscillate.
 
 Every pair is logged with both ratings, the reasoning, and the exact update arithmetic.
-The rating rulebook itself is public: see `tools/blind_pairwise.py` (rules 1–16,
-including the sexuality-law secondary rule, the visitor/resident boundary, severity
-ladders, the parent-regime rule, and the institutional-failure rule).
+The rating rulebook itself is public: see `tools/blind_pairwise.py`, rules 1 to 21.
+The rules that matter most for reading a score are the visitor/resident boundary (rule
+1), the secondary status of sexuality law (rule 2), burden-of-proof symmetry (rule 3),
+the severity ladder and the precedence ladder for comparing two dossiers (rules 14 and
+15), the parent-regime rule (rule 12), the denominator rule for violence rates (rule
+16), the population/category/period requirement for prevalence figures (rule 17), the
+recency rule (rule 18), the friction/hostility/state-threat distinction (rule 19),
+activist visibility (rule 20), and institutional failure as exposure evidence rather
+than mitigation (rule 21).
+
+## Validation gates
+
+Nothing reaches the site without passing automated checks. Every text field is written
+by a model and then gated:
+
+- **Blind leak checks** (`check_blind.py`): banned vocabulary, agency and programme
+  proper nouns, state-leak patterns, and meta-narrative phrasing, checked per item
+  rather than across a joined list so that two innocent fragments cannot combine into a
+  false positive.
+- **Changelog scanner**: a record may not describe its own edit history. The map is not
+  a changelog.
+- **Historical-overreach gate**: output that calls a harm "historical", "a thing of the
+  past", or implies it has ended is rejected, because an undocumented present is not a
+  safe present.
+- **Dressing test**: a claim whose treatment is identical for every traveller, and which
+  merely names a trans-associated item to sound relevant, is dropped.
+- **Digit preservation and blind-vocabulary separation**: rewrites may not change
+  numbers, and anonymised vocabulary may not appear in visible text.
+- **Build validation**: band labels must match scores, summaries must be well formed,
+  and the route-3 and territory-mirror invariants must hold.
+- **Parent-inversion warning**: a territory or division that carries its own hostile
+  layer and still scores at or above its parent is flagged at build time.
+
+Text fixes go through model lanes, not string surgery. Regex is used for detection and
+for fixed-token redaction only, since a mechanical rewrite of prose is how truncated
+summaries and false positives get introduced.
 
 ## Boundaries
 
@@ -158,30 +219,36 @@ Sahara polygon from Natural Earth (public domain).
 
 ### Sub-national (first-level divisions)
 
-Divisions are handled on three routes, in descending order of evidence:
+Divisions are handled on four routes, in descending order of evidence.
 
-1. **Data-rich** (24 researched countries, `research/admin1/*.md`): a research pass
-   collects per-division evidence under the same single-incident and burden-of-proof
-   rules; initial scores are assigned from the dossiers; then an **in-country blind
-   pairwise pass** (`blind_pairwise.py --admin1 --country ISO3`) refines them — division
-   *scores* hidden, division names shown, the **parent country deliberately unblinded**
-   (name, national score, full national assessment and spectrum anchors in the cached
-   system prompt) so deviations are judged with national context. Sub-national rules:
-   don't re-rate national factors; where rule of law is strong and no explicit autonomy
-   exists, regional statutes cannot override national law (signalling, not operative
-   risk); where rule of law is weak, regional practice can bend national law in either
-   direction; enforcement beats statute.
-2. **Different legal systems** in otherwise data-poor countries (Chechnya, Xinjiang,
-   Tibet, Zanzibar, Iraqi Kurdistan): flagged model estimates (`"estimated": true`,
-   marked in the popup), scored relative to the national score with a written
-   justification.
-3. **Dependent territories** (31, e.g. Puerto Rico, Faroe Islands, Aruba, Western
-   Sahara): full dossiers in their own right, scored in the mixed mode described above
-   — territory dossier + parent's enforced national framework, division names withheld
-   from the rater. Their popups are labelled "Territory of <parent>".
-4. **Everything else**: no record — the division inherits the national score, and the
-   popup says so. Inheritance is the honest answer where no sub-national evidence
+1. **Full dossiers** (595 divisions across 28 researched countries plus the
+   territories below): a research pass collects per-division evidence under the same
+   single-incident and burden-of-proof rules as countries. Scoring runs in **mixed
+   mode**: each division is paired against a country comparator, the rater sees the
+   division's anonymised bundle together with the parent state's anonymised national
+   framework as the regime imposed on it, and division names are withheld. Division
+   scores move; comparator countries are frozen. Sub-national rules: do not re-rate
+   national factors; where the rule of law is strong and no explicit autonomy exists,
+   regional statutes signal rather than operate; where the rule of law is weak, regional
+   practice can bend national law in either direction; enforcement beats statute.
+2. **Estimated divisions with their own content** (Chechnya, Xinjiang, Tibet,
+   Zanzibar, Iraqi Kurdistan and similar, `"estimated": true`, marked in the popup):
+   the division's score is the national score plus an offset derived from head-to-head
+   pairs against its own country, so a documented deviation survives a change in the
+   national score instead of freezing an absolute copy of an old one.
+3. **Dependent territories** (31, for example Puerto Rico, the Faroe Islands, Aruba and
+   Western Sahara): full dossiers in their own right, scored relative to the parent as
+   described above. Their popups are labelled "Territory of <parent>".
+4. **Divisions with no sub-national signal**: the national score, exactly. A build-time
+   invariant enforces this on every build, so these divisions cannot drift away from
+   their country. Inheritance is the honest answer where no sub-national evidence
    exists; forced estimates from thin data cause more harm than good.
+
+Division popups show a `displaySummary` where one exists: the parent country's national
+framework compressed to a sentence or two with a pointer to the national record, and
+everything else strictly local. The full summary, which carries the national layer for
+the pairwise rater, stays in the data. A display summary is invalidated whenever its
+summary is rewritten, so a stale variant cannot outlive the text it was derived from.
 
 ## Update cycle
 
@@ -217,7 +284,11 @@ its year; per-jurisdiction research dates appear in the data
 | `data/admin1.json` | Per-division scores (keyed by geoBoundaries shapeID) |
 | `tools/blind_pairwise.py` | Blind pairwise refinement driver (countries, `--admin1`, and mixed territory modes) |
 | `tools/wiki_universal_sweep.py` | Wikipedia coverage sweep (LGBTQ-rights article per jurisdiction + cited-source harvest) |
-| `tools/settle_scores.py` | Settlement pass (converge scores to rater means) |
+| `tools/settle_scores.py` | Settlement pass and rebalance (scores equal rater means) |
+| `tools/derive_territories.py` | Parent-relative derivation for territories and estimated divisions |
+| `tools/audit_shared_claims.py` | Finds national claims copy-pasted into sibling division records |
+| `tools/scan_dating_defects.py` | Finds stale legal snapshots and undated prevalence wording |
+| `tools/make_display_summaries.py` | Generates the division popup summaries |
 | `tools/blind_fields.md` | Anonymisation spec + prompts |
 | `tools/build_data.py` | Validation, ranks, `data/meta.json` |
 

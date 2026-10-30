@@ -33,17 +33,26 @@ def main() -> int:
     ap.add_argument("--pairs", type=int, default=16)
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--scope", choices=("territories", "estimated"), default="territories")
     args = ap.parse_args()
     key = (Path("/tmp/.openrouter_key")).read_text().strip()
     A = json.loads((ROOT / "data" / "admin1.json").read_text())
     C = json.loads((ROOT / "data" / "countries.json").read_text())
-    terr = [(k, r) for k, r in A.items()
-            if r.get("parentIso3") and r.get("dossier")]
+    TMPL = "No sub-national signal was identified; the national assessment applies here"
+    if args.scope == "estimated":
+        # route-3 regions that carry region-specific content: their score must be
+        # national + documented deviation, so derive the offset from the parent.
+        terr = [(k, r) for k, r in A.items()
+                if r.get("estimated") and TMPL not in str(r.get("summary", ""))]
+    else:
+        terr = [(k, r) for k, r in A.items()
+                if r.get("parentIso3") and r.get("dossier")]
     print(f"territories: {len(terr)}", flush=True)
 
     def run_one(item):
         key_, r = item
-        name, parent = r["name"], r["parentIso3"]
+        name = r["name"]
+        parent = r.get("parentIso3") or r.get("iso3")
         log = f"/tmp/parentonly_{parent}_{name.replace(' ', '_')}.jsonl"
         w = [sys.executable, "-u", str(ROOT / "tools" / "blind_pairwise.py"),
              "--api", "openai", "--baseurl", "https://openrouter.ai/api/v1",
@@ -82,10 +91,10 @@ def main() -> int:
                 print(f"[FAIL] {r['name']}: {err}", flush=True)
                 continue
             delta, rr, cr, n = res
-            parent = C.get(r["parentIso3"], {})
+            parent = C.get(r.get("parentIso3") or r.get("iso3"), {})
             pscore = float(parent.get("score", 0.5))
             new = max(0.01, min(0.99, pscore + delta))
-            results.append((key_, r["name"], r["parentIso3"], pscore, delta, new, n))
+            results.append((key_, r["name"], parent.get("name"), pscore, delta, new, n))
             print(f"  {r['name'][:28]:28} parent {pscore:.3f} delta {delta:+.3f} "
                   f"-> {new:.3f} (n={n}, rated {rr:.2f} vs {cr:.2f})", flush=True)
     print(f"derived {len(results)}/{len(terr)}", flush=True)

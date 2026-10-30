@@ -1233,7 +1233,10 @@ def main() -> int:
                          Path(args.regions_unit_file).read_text(encoding="utf-8").splitlines()
                          if l.strip()]
         for sid, r in admin1.items():
-            if not r.get("dossier"):
+            # route-3 estimated regions are rateable too (they carry a visible
+            # summary); the dossier requirement applied to the blind-mirror pool
+            # used to exclude them entirely, leaving every derivation call empty.
+            if not (r.get("dossier") or r.get("estimated")):
                 continue
             eff_parent = r.get("parentIso3") or r.get("iso3")
             if parents and eff_parent not in parents:
@@ -1244,7 +1247,8 @@ def main() -> int:
                         continue
                 elif not any(s in str(r.get("name", "")).lower() for s in unit_sub):
                     continue
-            if r.get("blindV2") or (args.allow_fallback and r.get("blindSummary")):
+            if r.get("blindV2") or (args.allow_fallback and (
+                    r.get("blindSummary") or r.get("summary"))):
                 region_pool.append(sid)
         if not region_pool:
             print(f"error: no admin1 units for parents {sorted(parents)} "
