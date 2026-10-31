@@ -99,7 +99,12 @@ RULES FOR THIS PASS (consolidation, not compression):
    other regions' laws and events) is carried by the parent record and the
    pairwise parent bundle — it must NOT be restated here, not even briefly
    as background, and must NEVER be regenerated from your own knowledge when
-   the source inventory does not contain it. A national-source claim may
+   the source inventory does not contain it. NOT RESTATING IS NOT DENYING: the
+   national framework always applies in full. Never write that the region's own
+   statutes "set the terms", that local law displaces or overrides the national
+   layer, or that the national framework does not govern here; those statements are
+   false. State what is ADDITIONAL or different locally, never what replaces the
+   national layer. A national-source claim may
    appear in a region record only through its region-specific content. If
    the inventory holds no region-specific facts, the summary is one sentence:
    that no region-specific signal was identified and the national assessment
@@ -346,6 +351,17 @@ def _llm_deanon(out, iso):
     return fix_record_deanon(out, iso)
 
 
+NATIONAL_DISPLACED = re.compile(
+    r"(?:own|local)\s+(?:statutes?|laws?)[^.]{0,60}"
+    r"(?:not the (?:national|federal)|rather than the (?:national|federal)|"
+    r"instead of the (?:national|federal))"
+    r"|not the (?:national|federal) framework"
+    r"|(?:national|federal) (?:framework|layer|regime)[^.]{0,40}"
+    r"(?:does not|doesn't|no longer) (?:apply|govern)"
+    r"|(?:overrides?|displaces?|supersedes?)\s+the\s+(?:national|federal)\s+"
+    r"(?:framework|layer|regime)", re.I)
+
+
 HISTORICAL_OVERREACH = re.compile(
     # the harm must be named as historical; "historical flags ... law-enforcement"
     # is not a claim about persecution
@@ -364,6 +380,9 @@ def validate_output(out, problems):
             problems.append(f"{k}: edit-narrative/pipeline jargon (rejected)")
         if VIS_ANON.search(t):
             problems.append(f"{k}: blind vocabulary in visible text (rejected)")
+        if NATIONAL_DISPLACED.search(t):
+            problems.append(f"{k}: claims the national framework does not govern "
+                            f"here (rejected: it always applies)")
         if HISTORICAL_OVERREACH.search(t):
             problems.append(f"{k}: claims the harm ended / is 'historical' without "
                             f"evidence (rejected — an undocumented present is not a "

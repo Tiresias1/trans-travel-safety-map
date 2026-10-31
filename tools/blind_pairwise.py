@@ -1271,6 +1271,8 @@ def main() -> int:
     else:
         system_text = build_system_prompt(taxonomy)
 
+    focus = [f.upper() for f in args.focus] if args.focus else None
+
     def has_field(rec: dict, f: str) -> bool:
         v = rec.get(f)
         if isinstance(v, list):
@@ -1302,7 +1304,6 @@ def main() -> int:
             return 2
     else:
         only = {o.upper() for o in args.only_countries} if args.only_countries else None
-        focus = [f.upper() for f in args.focus] if args.focus else None
         for iso, rec in countries.items():
             if only and iso not in only:
                 continue
