@@ -55,6 +55,8 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--ckpt", default="/tmp/anchored_results.jsonl",
+                    help="append-only checkpoint; existing rows are skipped on restart")
     ap.add_argument("--repeats", type=int, default=1,
                     help="independent ratings per anchor (variance drops as 1/n)")
     ap.add_argument("--apply", action="store_true")
@@ -72,6 +74,17 @@ def main() -> int:
                    if f"{r.get('iso3')}/{r.get('name')}" in want or r.get("name") in want]
     if args.limit:
         targets = targets[: args.limit]
+    done_ids = set()
+    ckpt = Path(args.ckpt)
+    if ckpt.exists():
+        for line in ckpt.read_text().splitlines():
+            try:
+                done_ids.add(json.loads(line)["sid"])
+            except Exception:
+                pass
+    if done_ids:
+        targets = [(sid, r) for sid, r in targets if sid not in done_ids]
+        print(f"resuming: {len(done_ids)} already estimated", flush=True)
     print(f"divisions: {len(targets)} | anchors: {args.anchors}", flush=True)
 
     def block(r):
@@ -123,6 +136,8 @@ def main() -> int:
             if est is None:
                 continue
             results.append((sid, est, n))
+            with open(args.ckpt, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps({"sid": sid, "est": est, "n": n}) + "\n")
             if done % 25 == 0:
                 print(f"  {done}/{len(targets)} estimated", flush=True)
     print(f"estimated {len(results)}/{len(targets)}", flush=True)
@@ -135,7 +150,14 @@ def main() -> int:
         fcntl.flock(lock, fcntl.LOCK_EX)
         try:
             A = json.loads((ROOT / "data" / "admin1.json").read_text())
-            for sid, est, n in results:
+            allrows = []
+            if ckpt.exists():
+                for line in ckpt.read_text().splitlines():
+                    try:
+                        d = json.loads(line); allrows.append((d["sid"], d["est"], d.get("n", 0)))
+                    except Exception:
+                        pass
+            for sid, est, n in allrows or results:
                 rec = A.get(sid)
                 if not rec:
                     continue
