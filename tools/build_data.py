@@ -287,6 +287,9 @@ def main():
                                          "too many division estimates reached the index floor")
             else:
                 _c["scoreProvenance"] = "framework rating (no measured division set)"
+        # provenance and floor flags are computed AFTER the earlier countries dump:
+        # persist them now so the file matches the validated state
+        json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
         # parent-inversion gate: a territory or region that the dossier documents as
