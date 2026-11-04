@@ -254,6 +254,39 @@ def main():
             r["inherited"] = True
         if _n_inh:
             warnings.append(f"re-synced {_n_inh} route-3 regions to their national score")
+        # FLOOR-BOUND divisions: an estimate that reached the clamp is not a
+        # resolved score (review 2026-11-13). Flag them, keep the raw estimate for
+        # diagnostics, and do not let them be ranked against each other.
+        _n_floor = 0
+        for sid, r in admin1.items():
+            sc = r.get("score")
+            if not isinstance(sc, (int, float)):
+                continue
+            if sc <= 0.0201:
+                r["floorBound"] = True
+                r["rawEstimate"] = (r.get("derivedFrom") or {}).get("anchorRating")
+                r["worldRank"] = None
+                r["countryRank"] = None
+                _n_floor += 1
+            else:
+                r.pop("floorBound", None)
+                r.pop("rawEstimate", None)
+        if _n_floor:
+            warnings.append(f"{_n_floor} divisions are floor-bound (unresolved, unranked)")
+        # 2) national-score provenance, published per record
+        for _iso, _c in countries.items():
+            _m = (_c.get("derivedFrom") or {}).get("mode")
+            if _m == "reaggregate":
+                _n = (_c.get("divisionSpread") or {}).get("n")
+                _c["scoreProvenance"] = (f"destination summary: mean of {_n} measured "
+                                         f"divisions")
+            elif _m == "mirror":
+                _c["scoreProvenance"] = "mirrors the territory's own record"
+            elif _c.get("aggregationBlocked"):
+                _c["scoreProvenance"] = ("framework rating: no destination summary, because "
+                                         "too many division estimates reached the index floor")
+            else:
+                _c["scoreProvenance"] = "framework rating (no measured division set)"
         for sid, r in admin1.items():
             check_record(sid, r, errors, inherited_ok=True)
         # parent-inversion gate: a territory or region that the dossier documents as

@@ -218,13 +218,22 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       const parentRec = countryData[props.iso3];
       sub = `<p class="popup-sub">${parentRec ? esc(parentRec.name) : esc(props.iso3 || "")}</p>`;
       let r = "";
-      if (typeof rec.worldRank === "number" && meta.totalAdmin1)
+      if (rec.floorBound) {
+        r = "At the index floor: differences in this range are unresolved";
+      } else if (typeof rec.worldRank === "number" && meta.totalAdmin1) {
         r += `Rank ${rec.worldRank} of ${meta.totalAdmin1} states/provinces`;
-      if (typeof rec.countryRank === "number" && rec.unitsInCountry)
+      }
+      if (!rec.floorBound && typeof rec.countryRank === "number" && rec.unitsInCountry)
         r += ` · ${rec.countryRank} of ${rec.unitsInCountry} in ${parentRec ? esc(parentRec.name) : ""}`;
       rank = r;
     }
     const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
+    const provNote = (rec.scoreProvenance)
+      ? `<p class="popup-estimated">${esc(rec.scoreProvenance)}</p>`
+      : "";
+    const floorNote = rec.floorBound
+      ? `<p class="popup-estimated">The estimate reached the index floor, so the underlying value is unresolved; this record is not ranked.</p>`
+      : "";
     const estNote = rec.estimated
       ? `<p class="popup-estimated">Model estimate — derived from the national-level assessment rather than a dedicated division dossier.</p>`
       : "";
@@ -247,7 +256,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       <p class="popup-score">${score.toFixed(2)}</p>
       <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
       <p class="popup-rank">${rank}</p>
-      ${estNote}${summary}${outscope}${sources}`;
+      ${provNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
   }
 
   function openPopupAt(modeKey, feature, rec, latlng) {
