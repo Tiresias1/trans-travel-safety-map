@@ -1,6 +1,17 @@
 {
- "generatedAt": "2026-11-04T01:30:44+00:00",
+ "generatedAt": "2026-11-04T02:02:44+00:00",
  "rubricVersion": "r2026-11-12",
+ "anchorCalibration": {
+  "version": "anchors-2026-11-13-v1",
+  "countryScoreVersion": "r2026-11-12-pairwise",
+  "anchors": {
+   "BLR": 0.1,
+   "CIV": 0.297,
+   "VAT": 0.6,
+   "ESP": 0.84
+  },
+  "note": "chosen by matching target scale positions to the nearest scored country; not independent validation — see review 2026-11-13"
+ },
  "counts": {
   "countries": 233,
   "divisions": 3241,
@@ -32,6 +43,7 @@
  },
  "notes": {
   "inherited": "Divisions with no sub-national signal take the national score and are NOT independent evidence; they are excluded from any aggregation over divisions.",
-  "instruments": "Scores produced by different instruments (pairwise, mixed, anchored, in-country) are not yet bridged and must not be presented as one calibrated scale."
+  "instruments": "Countries with measured divisions publish a destination summary (mean of divisions); their framework rating is retained as nationalFrameworkScore. Divisions are calibrated to the frozen anchor version recorded here.",
+  "anchorDrift": "The anchors' displayed country scores have moved since the division pass (national re-aggregation). The pass is versioned to the frozen constants, not to today's country scores; a replacement ladder requires independent validation."
  }
 }

@@ -28,6 +28,10 @@ def main() -> int:
         from blind_pairwise import RUBRIC_VERSION
     except Exception:
         RUBRIC_VERSION = "unknown"
+    try:
+        from anchored_calibrate import ANCHOR_CALIBRATION
+    except Exception:
+        ANCHOR_CALIBRATION = {}
 
     def rubric_of(r):
         return r.get("rubricVersion") or "unversioned"
@@ -66,6 +70,7 @@ def main() -> int:
     manifest = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "rubricVersion": RUBRIC_VERSION,
+        "anchorCalibration": ANCHOR_CALIBRATION,
         "counts": {
             "countries": len(C), "divisions": len(A),
             "dossierDivisions": dossier, "estimatedDivisions": estimated,
@@ -78,9 +83,14 @@ def main() -> int:
             "inherited": "Divisions with no sub-national signal take the national "
                          "score and are NOT independent evidence; they are excluded "
                          "from any aggregation over divisions.",
-            "instruments": "Scores produced by different instruments (pairwise, "
-                           "mixed, anchored, in-country) are not yet bridged and must "
-                           "not be presented as one calibrated scale.",
+            "instruments": "Countries with measured divisions publish a destination "
+                           "summary (mean of divisions); their framework rating is "
+                           "retained as nationalFrameworkScore. Divisions are calibrated "
+                           "to the frozen anchor version recorded here.",
+            "anchorDrift": "The anchors' displayed country scores have moved since the "
+                           "division pass (national re-aggregation). The pass is "
+                           "versioned to the frozen constants, not to today's country "
+                           "scores; a replacement ladder requires independent validation.",
         },
     }
     out = ROOT / "data" / "measurement_manifest.json"

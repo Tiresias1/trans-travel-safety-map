@@ -33,7 +33,24 @@ import blind_pairwise as BP  # noqa
 from build_data import band_label  # noqa
 
 MODEL = "deepseek/deepseek-v4.1-flash"
-DEFAULT_ANCHORS = ["BLR", "CIV", "VAT", "ESP"]   # ~0.10 / 0.30 / 0.60 / 0.84
+# FROZEN ANCHOR CALIBRATION (2026-11-13, per review).
+# These are the constants the division pass was actually computed with. They are
+# frozen: the anchors' *displayed* country scores have since moved (BLR 0.100 ->
+# 0.057, CIV 0.297 -> 0.280, ESP 0.840 -> 0.869) because national scores were
+# re-aggregated from divisions, and substituting those would (a) silently change
+# every division score and (b) swap in values partly derived from the very
+# divisions being calibrated (circular). The pass is therefore versioned as
+# calibrated to the country-score version below, and a replacement ladder must be
+# decided on independent validation, not on this drift.
+ANCHOR_CALIBRATION = {
+    "version": "anchors-2026-11-13-v1",
+    "countryScoreVersion": "r2026-11-12-pairwise",
+    "anchors": {"BLR": 0.100, "CIV": 0.297, "VAT": 0.600, "ESP": 0.840},
+    "note": "chosen by matching target scale positions to the nearest scored "
+            "country; not independent validation — see review 2026-11-13",
+}
+DEFAULT_ANCHORS = list(ANCHOR_CALIBRATION["anchors"])
+FROZEN_ANCHOR_SCORES = ANCHOR_CALIBRATION["anchors"]
 
 
 def api_args():
@@ -138,7 +155,8 @@ def main() -> int:
             except Exception:
                 continue
             div_r, anc_r = (sb, sa) if flip else (sa, sb)
-            ests.append(float(anchor["score"]) + (div_r - anc_r))
+            ests.append(float(FROZEN_ANCHOR_SCORES.get(aid, anchor["score"]))
+                        + (div_r - anc_r))
         if not ests:
             return sid, None, 0
         return sid, statistics.mean(ests), len(ests)
@@ -184,7 +202,10 @@ def main() -> int:
                 rec["score"] = round(sc, 6)
                 rec["band"] = band_label(sc)
                 rec["ratedBy"] = MODEL
-                rec["derivedFrom"] = {"mode": "anchored", "anchors": args.anchors,
+                rec["derivedFrom"] = {"mode": "anchored",
+                                      "anchors": args.anchors,
+                                      "anchorVersion": ANCHOR_CALIBRATION["version"],
+                                      "anchorScores": FROZEN_ANCHOR_SCORES,
                                       "anchorRating": round(est, 6)}
             (ROOT / "data" / "admin1.json").write_text(
                 json.dumps(A, ensure_ascii=False, indent=1), encoding="utf-8")

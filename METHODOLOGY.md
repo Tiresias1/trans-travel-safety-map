@@ -206,6 +206,20 @@ instruments therefore sit on one scale, and the difference between a country's
 framework score and its division mean is a substantive difference in construct, not a
 measuring difference.
 
+**Held-out check.** The bridge was then repeated on a held-out sample of 40 countries
+weighted toward the dangerous end (20 below 0.20), compared against national-framework
+ratings that were obtained independently of division aggregation: slope 1.10, mean
+difference −0.025, mean absolute difference 0.035, largest 0.089. Split by range, the
+lowest band shows a systematic bias of −0.047 (anchored reads about five points harsher
+than the framework rating below 0.20), while the upper band agrees within 0.008. That
+bias is largest where the anchor ladder has no coverage, and it is why the floor-clamp
+guard exists.
+
+A frozen anchor set means the anchors' displayed country scores can drift away from the
+constants the pass used. The values are recorded in `measurement_manifest.json`
+(`anchorCalibration`) with the country-score version they belong to, and the divisions
+are calibrated to those constants rather than to today's country scores.
+
 **Known limits, published rather than hidden:**
 
 - The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated and
