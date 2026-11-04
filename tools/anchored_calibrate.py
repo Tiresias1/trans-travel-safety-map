@@ -60,18 +60,29 @@ def main() -> int:
     ap.add_argument("--repeats", type=int, default=1,
                     help="independent ratings per anchor (variance drops as 1/n)")
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--scope", choices=("divisions", "countries"), default="divisions",
+                    help="countries mode measures country dossiers with the same "
+                         "anchor ladder — the bridge sample the review asks for")
     args = ap.parse_args()
     A = json.loads((ROOT / "data" / "admin1.json").read_text())
     C = json.loads((ROOT / "data" / "countries.json").read_text())
     taxonomy = (ROOT / "research" / "outing-risk-taxonomy.md").read_text()
     system_text = BP.build_system_prompt(taxonomy)
     aa = api_args()
-    targets = [(sid, r) for sid, r in A.items()
-               if str(r.get("summary", "")).strip() and isinstance(r.get("score"), (int, float))]
+    if args.scope == "countries":
+        targets = [(iso, r) for iso, r in C.items()
+                   if str(r.get("summary", "")).strip() and r.get("blindSummary")
+                   and not r.get("parentIso3")]
+    else:
+        targets = [(sid, r) for sid, r in A.items()
+                   if str(r.get("summary", "")).strip() and isinstance(r.get("score"), (int, float))]
     if args.only:
         want = set(args.only)
-        targets = [(sid, r) for sid, r in targets
-                   if f"{r.get('iso3')}/{r.get('name')}" in want or r.get("name") in want]
+        if args.scope == "countries":
+            targets = [(sid, r) for sid, r in targets if sid in want or r.get("name") in want]
+        else:
+            targets = [(sid, r) for sid, r in targets
+                       if f"{r.get('iso3')}/{r.get('name')}" in want or r.get("name") in want]
     if args.limit:
         targets = targets[: args.limit]
     done_ids = set()
@@ -95,16 +106,22 @@ def main() -> int:
 
     def estimate(item):
         sid, r = item
-        parent_iso = r.get("parentIso3") or r.get("iso3")
-        parent = C.get(parent_iso)
-        fw = BP.render_parent_bundle(parent) if parent else ""
+        if args.scope == "countries":
+            fw = ""
+        else:
+            parent_iso = r.get("parentIso3") or r.get("iso3")
+            parent = C.get(parent_iso)
+            fw = BP.render_parent_bundle(parent) if parent else ""
         ests = []
         for aid in args.anchors * args.repeats:
             anchor = C.get(aid)
-            if not anchor:
+            if not anchor or aid == sid:
                 continue
             flip = random.random() < 0.5
-            div_block = f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n{fw}\n\n### THE DIVISION'S OWN CONTENT\n{block(r)}"
+            if args.scope == "countries":
+                div_block = block(r)
+            else:
+                div_block = f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n{fw}\n\n### THE DIVISION'S OWN CONTENT\n{block(r)}"
             anc_block = BP.dossier(anchor)
             if flip:
                 head = (f"## DOSSIER A\n\n{anc_block}\n\n## DOSSIER B\n\n{div_block}")
@@ -143,8 +160,10 @@ def main() -> int:
     print(f"estimated {len(results)}/{len(targets)}", flush=True)
     for sid, est, n in sorted(results, key=lambda t: -t[1]):
         rr = A.get(sid, {})
-        print(f"  {rr.get('iso3','')}/{str(rr.get('name',''))[:26]:26} {est:.3f} (n={n}, "
-              f"stored {float(rr.get('score', 0)):.3f})", flush=True)
+        label = (sid if args.scope == "countries"
+                 else f"{rr.get('iso3','')}/{str(rr.get('name',''))[:26]}")
+        print(f"  {str(label)[:30]:30} {est:.3f} (n={n}, stored "
+              f"{float(rr.get('score', 0)):.3f})", flush=True)
     if args.apply and results:
         lock = open(ROOT / "data" / ".apply.lock", "w")
         fcntl.flock(lock, fcntl.LOCK_EX)

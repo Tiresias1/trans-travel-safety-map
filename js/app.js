@@ -32,7 +32,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     [1.0, [0xa8, 0xdb, 0xe8]],
   ];
   const BANDS = [
-    { max: 0.2, label: "Do Not Travel" },
+    { max: 0.2, label: "Severe Risk" },
     { max: 0.4, label: "High Risk" },
     { max: 0.6, label: "Elevated Risk" },
     { max: 0.8, label: "Reduced Risk" },
@@ -463,7 +463,8 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     or is discovered to be, trans — in every country and, where evidence supports it, in each
     state/province. Scores run from 0.00 (dark red, highest risk) to 1.00 (light blue, lowest risk),
     using a continuous colour gradient whose anchor colours sit at the centre of the five
-    named bands (Do Not Travel, High Risk, Elevated Risk, Reduced Risk, Low Risk).</p>
+    named bands (Severe Risk, High Risk, Elevated Risk, Reduced Risk, Low Risk). These are
+    index ranges on the published scale, not travel advice.</p>
     <p>What the score covers: everyday exposure of a trans visitor — presence in public,
     use of public bathrooms, documents and border crossings, police interactions,
     arrest risk including detention in a gender-mismatched facility, harassment and violence,

@@ -8,11 +8,12 @@ public methodology; the working research artefacts it summarises live in `resear
 Each score answers one question: **how much risk does a transgender *visitor* face in
 this jurisdiction if they are, or are discovered to be, trans?**
 
-Scores run from **0.00 to 1.00, higher = safer**, in five named bands:
+Scores run from **0.00 to 1.00, higher = safer**. The bands below are index
+ranges on that scale, not travel advice:
 
 | Band | Range | Meaning |
 |---|---|---|
-| Do Not Travel | 0.00–0.19 | A discovered trans visitor faces near-certain imprisonment, execution, or comparable catastrophe |
+| Severe Risk | 0.00–0.19 | A discovered trans visitor faces near-certain imprisonment and likely execution |
 | High Risk | 0.20–0.39 | Severe outcomes (arrest, detention, serious violence) are realistically possible |
 | Elevated Risk | 0.40–0.59 | Meaningful risk of arrest, violence, or severe harassment; mitigation possible |
 | Reduced Risk | 0.60–0.79 | Risk exists but institutions and social climate substantially limit it |
@@ -181,6 +182,43 @@ the severity ladder and the precedence ladder for comparing two dossiers (rules 
 recency rule (rule 18), the friction/hostility/state-threat distinction (rule 19),
 activist visibility (rule 20), and institutional failure as exposure evidence rather
 than mitigation (rule 21).
+
+## What the published numbers mean, and what they do not
+
+**Countries with measured divisions** are published as a *destination summary*: the mean
+of their independently measured divisions, with the division range published alongside.
+The national-framework rating, which reflects the rules that apply throughout the
+country, is retained in the data as `nationalFrameworkScore` and is not overwritten. The
+weighting is currently unweighted, which is a declared choice rather than a default: it
+means the figure summarises the average division, not the average visitor (visitor-nights
+would be a different estimand).
+
+**Countries without measured divisions** keep their pairwise rating.
+
+**Divisions with no sub-national signal** inherit the national score and are marked
+`inherited`. They are not independent evidence and are excluded from any aggregation.
+
+**Bridging.** Two instruments are used: pairwise country rating, and anchored rating
+against a fixed four-anchor ladder (Belarus, Côte d'Ivoire, Vatican City, Spain). They
+were bridged on a held-out sample of 37 countries measured both ways: slope 1.06,
+intercept −0.03, r 0.97, mean difference −0.003, with 36 of 37 within 0.10. The two
+instruments therefore sit on one scale, and the difference between a country's
+framework score and its division mean is a substantive difference in construct, not a
+measuring difference.
+
+**Known limits, published rather than hidden:**
+
+- The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated and
+  clamp at the scale floor. Where more than 10% of a country's divisions are clamped,
+  aggregation is refused (`aggregationBlocked`) and the framework rating is published
+  instead. Twelve countries are affected today.
+- Anchored estimation removes partner-composition bias (the earlier method's ratings
+  correlated −0.39 with the rating given to a random partner) but does not prove the
+  scale is interval. Averages are conventions of the index.
+- A single score cannot carry the range of outcomes. Division dispersion is published
+  with the national figure for that reason.
+- Model priors, sparse reporting and language coverage remain sources of error that no
+  amount of pairwise refinement removes.
 
 ## Validation gates
 

@@ -15,11 +15,11 @@ Validation rules (fail loudly):
 - every boundary polygon key has a data record (warning only — research in
   progress) and every data record matches a polygon (error)
 """
-import json, os, re, sys
+import json, os, re, statistics, sys
 from datetime import date
 
 BANDS = [
-    (0.2, "Do Not Travel"),
+    (0.2, "Severe Risk"),
     (0.4, "High Risk"),
     (0.6, "Elevated Risk"),
     (0.8, "Reduced Risk"),
@@ -170,6 +170,62 @@ def main():
                 r["inherited"] = True
         if _n_sync:
             warnings.append(f"synced {_n_sync} single-unit admin1 stand-ins to country scores")
+        # NATIONAL AS DESTINATION SUMMARY (2026-11-13, review recommendation):
+        # where a country has >=3 independently measured divisions, its published
+        # score is the visitor-weighted mean of those divisions (currently
+        # unweighted, which is a declared choice, not a default). The pairwise
+        # national rating is retained separately as the national-framework
+        # component, and dispersion is published so a single number cannot hide a
+        # wide internal range. Inherited divisions carry no independent evidence
+        # and are excluded (missing-data model, not silent recursion).
+        _by_iso = {}
+        for sid, r in admin1.items():
+            if r.get("inherited") or not isinstance(r.get("score"), (int, float)):
+                continue
+            iso_ = r.get("parentIso3") or r.get("iso3")
+            _by_iso.setdefault(iso_, []).append(float(r["score"]))
+        _n_re = 0
+        for iso, scores in _by_iso.items():
+            c = countries.get(iso)
+            if c is None or len(scores) < 3:
+                continue
+            # ENDPOINT GUARD: the anchor ladder's lowest anchor is 0.10, so
+            # estimates below that are extrapolated and clamp at the floor. Where
+            # more than 10% of a country's divisions sit on the clamp, its
+            # division mean is not trustworthy as a level: keep the framework
+            # score and publish the division data as supplementary instead.
+            _clamped = sum(1 for s in scores if s <= 0.0201)
+            if _clamped / len(scores) > 0.10:
+                c["divisionSpread"] = {"n": len(scores),
+                                       "min": round(min(scores), 6),
+                                       "max": round(max(scores), 6),
+                                       "sd": round(statistics.pstdev(scores), 6)}
+                c["aggregationBlocked"] = ("endpoint-clamping: "
+                                           f"{_clamped}/{len(scores)} divisions "
+                                           "at the anchor-ladder floor")
+                # restore the framework score: a previously aggregated value
+                # must not survive once aggregation is disallowed
+                _fs = c.get("nationalFrameworkScore")
+                if isinstance(_fs, (int, float)):
+                    c["score"] = round(float(_fs), 6)
+                    c["band"] = band_label(c["score"])
+                if (c.get("derivedFrom") or {}).get("mode") == "reaggregate":
+                    c["derivedFrom"] = {"mode": "pairwise"}
+                continue
+            c.setdefault("nationalFrameworkScore", round(float(c.get("score", 0)), 6))
+            m = sum(scores) / len(scores)
+            c["score"] = round(min(1.0, max(0.0, m)), 6)
+            c["band"] = band_label(c["score"])
+            c["divisionSpread"] = {"n": len(scores),
+                                   "min": round(min(scores), 6),
+                                   "max": round(max(scores), 6),
+                                   "sd": round(statistics.pstdev(scores), 6)}
+            c["derivedFrom"] = {"mode": "reaggregate", "source": "divisions",
+                                "weighting": "unweighted"}
+            _n_re += 1
+        if _n_re:
+            warnings.append(f"national scores re-aggregated from divisions: {_n_re}")
+
         # territory mirrors changed the countries dict AFTER it was dumped —
         # persist the mirror now (ASM 2026-10-08: country showed a stale score)
         _terr_mirror = any(iso in _TERRITORIES for iso in _per)

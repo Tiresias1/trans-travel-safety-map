@@ -178,7 +178,7 @@ RATING_RULES = """\
    deliberate efforts by the state to out trans people ramp up the risk of outing, and thus
    the odds of adverse consequences to a trans traveler.
 
-10. 0.00 means a trans visitor who is discovered faces near-certain imprisonment or execution.
+10. 0.00 means a trans visitor who is outed faces near-certain imprisonment and likely execution.
     1.00 means law and society fully accept trans people with no discrimination or judgement
     (within the bounds of reason in that no society is 100 percent homogenous).
 
@@ -510,7 +510,8 @@ facts and the scale description alone.
 
 0.00–1.00, continuous, **higher is safer**.
 
-- **0.00** — A trans visitor who is outed faces near-certain imprisonment or execution.
+- **0.00** — A trans visitor who is outed faces near-certain imprisonment and
+  likely execution.
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
   perfectly, of course; do not withhold high scores merely because a flawless record
@@ -562,8 +563,8 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
 
 0.00–1.00, continuous, **higher is safer**.
 
-- **0.00** — A trans visitor who is outed faces near-certain imprisonment or execution. The
-  absolute extreme of "do not visit".
+- **0.00** — A trans visitor who is outed faces near-certain imprisonment and
+  likely execution: the absolute extreme of "do not visit".
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
   perfectly, of course; do not withhold high scores merely because a flawless record
@@ -843,11 +844,19 @@ def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
     }
 
 
+# Rubric version: bump on ANY change to the rating rules. Scores carrying an
+# older version are not comparable and must not be mixed into one published set
+# (2026-11-12, after review: "the endpoint revision has not produced a mixture of
+# old- and new-rubric scores" was an unverified claim).
+RUBRIC_VERSION = "r2026-11-12"
+
+
 def _stamp_rater(rec: dict, args) -> None:
     """Record which model produced the current score (judge drift must be
     visible: every wave re-derives scores under ONE rater)."""
     from datetime import datetime, timezone
     rec["ratedBy"] = getattr(args, "model", None)
+    rec["rubricVersion"] = RUBRIC_VERSION
     rec["ratedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
