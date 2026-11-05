@@ -305,8 +305,8 @@ def main():
                 _c["scoreProvenance"] = (
                     "framework rating: no destination summary, because "
                     f"{_c['aggregationBlocked']}. The {_sp.get('n', 0)} measured divisions "
-                    f"span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f}, but that range "
-                    "understates real variation because the floor truncates it")
+                    f"span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f}; the floor may "
+                    "mask variation, so the measured range may understate it")
             else:
                 _c["scoreProvenance"] = "framework rating (no measured division set)"
         # provenance and floor flags are computed AFTER the earlier countries dump:
