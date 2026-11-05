@@ -227,21 +227,36 @@ preregistration, raw per-anchor data and analysis are in `research/experiments/`
 
 Result: the six-anchor estimator reduced the systematic low-end bias (mean signed error
 −0.017 → +0.009) and cut floor incidence from 5 to 3 of 40, but its low-stratum mean
-absolute error was 0.021 against a preregistered threshold of 0.020, floor incidence did
-not halve, and within-parent division differences compressed rather than sharpened. **All
-three of those were declared success criteria in advance, so the extension was not
+absolute error was 0.021 against a preregistered threshold of 0.020 and floor incidence did
+not halve. **Both were declared success criteria in advance, so the extension was not
 adopted.** The production ladder remains the frozen four anchors.
 
-The completed preregistered report closed the question. A paired analysis on the same
-targets put the six-anchor improvement at 0.005 mean absolute error with a 95% confidence
-interval of (−0.015, +0.005) — indistinguishable from zero. The anchors themselves disagree
-by a mean standard deviation of 0.071 per target (max 0.104), which is larger than the
-differences the instrument is being asked to resolve at the dangerous end. The reviewer's
-proposed follow-up required two reference jurisdictions with independent framework scores
-between 0.02 and 0.05; the whole corpus contains exactly one (Afghanistan, 0.047), so that
-test is infeasible and the line of work stops there. Consequently divisions scored below
-0.20 are flagged in the data and in their popups as low-end estimates rather than precise
-values.
+Two qualifications, because they matter for how far the negative result reaches. A paired
+test on the same 19 countries put the improvement at 0.005 mean absolute error with a 95%
+confidence interval of −0.015 to +0.005, which does not establish the gain and does not
+prove it was noise. And the decision rule, not the statistics, is what settles it: the
+prespecified criteria were not met.
+
+A further caution about aggregate agreement: the anchors cancel each other. Belarus reads
+targets 0.055 above their framework rating while Côte d'Ivoire reads them 0.083 below, so
+the four-anchor average looks closer than any single anchor is. Dropping Côte d'Ivoire
+from the four anchors improves the agreement to 0.022; dropping Belarus worsens it to
+0.046. Anchor choice, not an underlying accuracy, is doing much of the work.
+
+The reviewer's proposed follow-up required two reference jurisdictions with independent
+framework scores between 0.02 and 0.05. The whole corpus contains exactly one (Afghanistan,
+0.047), so that specific test is infeasible and was not attempted. What remains possible
+without absent reference data is sensitivity analysis on the calls already made, and that
+is what the published caveats rest on: within-parent division differences were checked
+against every anchor exclusion, and 6 of 10 pairs kept their direction while 4 did not. The
+latter are reported as unresolved rather than presented as findings.
+
+Divisions scored below 0.20 are therefore flagged `lowEndUncertain`, with a popup note that
+states the measured spread across references and says plainly that it is a spread across
+references, not a measured error for that record. The 0.20 cut is a warning threshold, not
+a validated boundary between precise and imprecise scores. Floor-bound records are marked
+unresolved and unranked, which means their ordering is unresolved by this instrument, not
+that no comparison involving them could ever be made.
 
 The same data identified the mechanism. At the dangerous end the anchors disagree
 systematically: Côte d'Ivoire (0.297) scores targets 0.083 lower than their framework

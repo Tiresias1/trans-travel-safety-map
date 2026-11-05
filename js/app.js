@@ -232,10 +232,10 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       ? `<p class="popup-estimated">${esc(rec.scoreProvenance)}</p>`
       : "";
     const lowEndNote = rec.lowEndUncertain
-      ? `<p class="popup-estimated">Low-end estimate: measured anchor readings for this range disagree by about 0.07, so treat the exact value as an indication rather than a precise figure.</p>`
+      ? `<p class="popup-estimated">Low-end estimate: results in this range are sensitive to which reference jurisdictions were used. In a test of 19 low-scoring countries, the average standard deviation across six anchor-specific readings was about 0.07 on this scale. That is a spread across references, not a measured error for this record, so treat fine distinctions here as indicative.</p>`
       : "";
     const floorNote = rec.floorBound
-      ? `<p class="popup-estimated">The estimate reached the index floor, so the underlying value is unresolved; this record is not ranked.</p>`
+      ? `<p class="popup-estimated">This estimate reached the index floor. Its order relative to other floor-bound records is unresolved with this instrument, so it is not ranked.</p>`
       : "";
     const estNote = rec.estimated
       ? `<p class="popup-estimated">Model estimate — derived from the national-level assessment rather than a dedicated division dossier.</p>`

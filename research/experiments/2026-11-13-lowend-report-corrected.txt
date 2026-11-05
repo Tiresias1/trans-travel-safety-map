@@ -1,0 +1,44 @@
+== A. COUNTRY AGREEMENT (corrected labels) ==
+  A4: all n=19 |abs| 0.0264 | low stratum n=19 |abs| 0.0264
+  A6: all n=19 |abs| 0.0209 | low stratum n=19 |abs| 0.0209
+
+== B. FLOOR INCIDENCE, RAW AND PUBLISHED, per estimator ==
+  A4: raw at/below 0.02 = 5/40 (min -0.051)
+  A6: raw at/below 0.02 = 3/40 (min -0.028)
+  published (live) at/below 0.02: 7/20 measured divisions  [countries: 0/19 of the measured country sample]
+
+== C. LEAVE-ONE-ANCHOR-OUT, restricted to each ladder (corrected) ==
+  A4 full: 0.0264
+    minus BLR: 0.0456  (worse)
+    minus CIV: 0.0219  (better)
+    minus VAT: 0.0280  (worse)
+    minus ESP: 0.0283  (worse)
+  A6 full: 0.0209
+    minus BLR: 0.0204  (better)
+    minus CIV: 0.0334  (worse)
+    minus VAT: 0.0256  (worse)
+    minus ESP: 0.0254  (worse)
+    minus UGA: 0.0221  (worse)
+    minus NER: 0.0193  (better)
+
+== D. SENSITIVITY OF DIVISION COMPARISONS (does the direction survive?) ==
+  AFG: A6 diff +0.021 | anchor-exclusion signs [1] | published diff +0.000 | ROBUST
+  ARE: A6 diff -0.007 | anchor-exclusion signs [-1, 1] | published diff -0.027 | UNRESOLVED
+  BLR: A6 diff +0.030 | anchor-exclusion signs [1] | published diff +0.010 | ROBUST
+  BRN: A6 diff -0.014 | anchor-exclusion signs [-1, 1] | published diff +0.000 | UNRESOLVED
+  IRQ: A6 diff -0.026 | anchor-exclusion signs [-1] | published diff +0.000 | ROBUST
+  MMR: A6 diff +0.023 | anchor-exclusion signs [1] | published diff +0.009 | ROBUST
+  SAU: A6 diff -0.005 | anchor-exclusion signs [-1, 1] | published diff +0.000 | UNRESOLVED
+  SOM: A6 diff +0.088 | anchor-exclusion signs [1] | published diff +0.126 | ROBUST
+  TUN: A6 diff +0.007 | anchor-exclusion signs [-1, 1] | published diff +0.015 | UNRESOLVED
+  YEM: A6 diff +0.062 | anchor-exclusion signs [1] | published diff +0.044 | ROBUST
+
+  robust 6, unresolved 4 of 10 parent pairs
+
+== E. WITHIN-PARENT SPREAD change vs published ==
+  mean |difference| within parent: published 0.0230 | A4 0.0307 | A6 0.0282
+
+== F. COUNT VERIFICATION (reviewer asked to confirm published counts) ==
+  floorBound divisions in live data: 85
+  lowEndUncertain divisions in live data: 790
+  divisions with score < 0.20 (excluding floorBound): 790
