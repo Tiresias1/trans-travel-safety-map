@@ -74,8 +74,9 @@ class Audit:
                 return
             sid = d["sid"]
             if sid in self.anchored:
+                # PRODUCTION uses last-record-wins; an audit must not paper over that, so a
+                # duplicate is a hard error (it means the archive cannot resolve the value).
                 self.anchored_dupes[sid] = self.anchored_dupes.get(sid, 1) + 1
-                # explicit selection rule: later record wins, as in production; counted
             self.anchored[sid] = float(d["est"])
             return
         for s in ("a", "b"):
@@ -185,7 +186,7 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
             exp = expected.get((kind, key))
             rows.append((kind, key, r.get("name"), published, exp,
                          source.get((kind, key), "MISSING PROVENANCE")))
-    exact = tol = fail = miss = 0
+    exact = tol = fail = miss = residual = 0
     worst = []
     for kind, key, name, pub, exp, src in rows:
         if exp is None or not isinstance(pub, (int, float)):
@@ -195,12 +196,15 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
         gap = abs(float(pub) - exp)
         worst.append((gap, kind, key, name, pub, exp, src))
         if gap <= 1e-9: exact += 1
-        elif gap <= TOL: tol += 1
+        elif gap <= 0.005: tol += 1
+        elif gap <= TOL:
+            tol += 1; residual += 1   # reconciles only within tolerance: see residual note
         else: fail += 1
     print(f"logs: {[f.name for f in audit.files]}")
     print(f"published records: {len(rows)}")
     print(f"  exact match        : {exact}")
-    print(f"  within {TOL}        : {tol}")
+    print(f"  within 0.005       : {tol - residual}")
+    print(f"  residual 0.005-{TOL} : {residual}  (provenance incomplete, see note)")
     print(f"  outside {TOL}       : {fail}")
     print(f"  unreproducible     : {miss}")
     by_level = defaultdict(int)
@@ -210,7 +214,8 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
     for label in levels:
         print(f"  {label:38} {by_level.get(label,0)}")
     if audit.anchored_dupes:
-        print(f"  duplicate anchored ids (later wins, as production): {len(audit.anchored_dupes)}")
+        print(f"  DUPLICATE anchored ids (hard error): {len(audit.anchored_dupes)}")
+        audit.errors.append(f"{len(audit.anchored_dupes)} duplicate anchored ids")
     if audit.errors:
         print(f"  LOG ERRORS: {len(audit.errors)}")
         for e in audit.errors[:5]: print("   ", e)
@@ -222,6 +227,13 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
               f"expected {w[5] if w[5] is None else round(w[5],3)} [{w[6]}]")
     if verbose and unresolved:
         print("  unresolved:", unresolved[:8])
+    if residual:
+        note = (f"  NOTE: {residual} records reconcile only within the tolerance, not exactly. "
+                f"Their stored scores were last written by rebalance runs whose input log set "
+                f"is not in the archive; pooling every archived log does not reconcile them "
+                f"either, so this is incomplete provenance rather than rounding.")
+        print(note)
+        (ROOT / "research" / "experiments" / "2026-11-13-reproducibility-audit.txt").open("a").write("\n" + note + "\n")
     ok = (fail == 0 and miss == 0 and not audit.errors)
     print("AUDIT:", "PASS" if ok else "FAIL")
     return 0 if ok else 1

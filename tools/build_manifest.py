@@ -115,8 +115,9 @@ def main() -> int:
         },
         "reproducibilityAudit": {
             "tool": "tools/verify_from_logs.py",
-            "result": "3474/3474 published scores reconciled: 2242 exact, 1232 within "
-                      "0.02, 0 outside, 0 unreproducible; max gap 0.015, mean gap 0.0004",
+            "result": "3474/3474 published scores reconciled within 0.02: 2242 exact, "
+                      "1159 within 0.005, 73 residual (0.005-0.0153, incomplete provenance, "
+                      "detailed below), 0 outside, 0 unreproducible; mean gap 0.0004",
             "evidentialLevels": {
                 "fromArchivedRatings": 59,
                 "fromArchivedAnchoredEstimate": 2413,
@@ -130,6 +131,16 @@ def main() -> int:
                 "template) is read from the publication and is therefore taken as given, "
                 "not independently derived — a disclosed limitation. Published-and-"
                 "published consistency also holds but is not counted as provenance."),
+            "residualClass": (
+                "73 records (7 countries plus the 66 divisions that take their national "
+                "score) reconcile only within tolerance: their stored scores were last "
+                "written by rebalance runs whose input log set is not in the archive, and "
+                "pooling every archived log does not reconcile them either. Reported as "
+                "incomplete provenance, not as rounding."),
+            "toleranceJustification": (
+                "0.02 is the pipeline's own declared settlement precision, reported "
+                "alongside exact matches so a reader can see the difference between "
+                "faithful reproduction and agreement within the declared threshold."),
             "selftest": "tools/verify_from_logs.py --selftest (perturbation, missing-log, "
                         "duplicate-anchor tests) passes",
             "artefact": "research/experiments/2026-11-13-reproducibility-audit.txt",
