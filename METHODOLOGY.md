@@ -274,8 +274,9 @@ unresolved by this instrument; that is not a claim that no comparison involving 
 ever be made.
 
 The same data show where the disagreement sits. At the dangerous end the anchors differ
-systematically: Côte d'Ivoire (0.297) reads targets 0.083 below their framework ratings,
-while Belarus (0.100) reads them 0.055 above, Niger 0.078 above and Uganda 0.044 above. Two
+systematically: on average across the sample, Côte d'Ivoire (0.297) reads targets 0.083 below
+their framework ratings, while Belarus (0.100) reads them 0.055 above, Niger 0.078 above and
+Uganda 0.044 above. Those are sample means, not claims about every target. Two
 leave-one-out results follow, and they belong to different ladders: dropping Côte d'Ivoire
 from the experimental six-anchor ladder *raises* error to 0.033, while dropping it from the
 four-anchor ladder *lowers* error to 0.022. Reading those together, what the data establish
@@ -292,8 +293,9 @@ the instrument is being asked to resolve.
 
 **Known limits, published rather than hidden:**
 
-- The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated and
-  clamp at the scale floor. Where more than 10% of a country's divisions are clamped,
+- The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated rather
+  than measured, and clamp at the scale floor if they reach it (extrapolated estimates between
+  0.02 and 0.10 do occur and are published). Where more than 10% of a country's divisions are clamped,
   aggregation is refused (`aggregationBlocked`) and the framework rating is published
   instead. Twelve countries are affected today.
 - Fixed anchors remove the variation caused by pairing each division with a *different*
