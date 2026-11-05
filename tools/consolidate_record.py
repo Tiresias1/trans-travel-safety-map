@@ -27,7 +27,11 @@ MODEL = os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor")
 # If the requested lane model is unavailable for this account (OpenRouter
 # guardrails/data policy answer with 404 "0 endpoints ... available"), fall
 # back rather than failing a whole wave. Set LANE_FALLBACK_MODEL="" to disable.
-FALLBACK_MODEL = os.environ.get("LANE_FALLBACK_MODEL", "deepseek/deepseek-v4.1-flash")
+# Fallback must be a model that returns content on long prose inputs. The
+# deepseek rater burns its whole output budget on reasoning and returns empty
+# content (stop=length) on the longer dossiers, so it cannot serve as the prose
+# fallback; the base muse-spark build does return content.
+FALLBACK_MODEL = os.environ.get("LANE_FALLBACK_MODEL", "meta/muse-spark-1.3")
 _guardrail_fallback_logged = False
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
@@ -251,6 +255,13 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}],
                 "temperature": temperature, "max_tokens": max_tokens}
+        # Prose lanes: cap reasoning. Both available models spend unbounded
+        # reasoning tokens on long dossiers and return EMPTY content at
+        # finish_reason=length (Texas: 16k tokens, no output). `effort: low`
+        # makes them emit the text instead. Override with LANE_REASONING.
+        effort = os.environ.get("LANE_REASONING", "low")
+        if effort:
+            body["reasoning"] = {"effort": effort}
         try:
             req = urllib.request.Request(
                 API, data=json.dumps(body).encode(),
