@@ -206,7 +206,7 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
     print(f"  within 0.005       : {tol - residual}")
     print(f"  residual 0.005-{TOL} : {residual}  (provenance incomplete, see note)")
     print(f"  outside {TOL}       : {fail}")
-    print(f"  unreproducible     : {miss}")
+    print(f"  no comparison computable: {miss}")
     by_level = defaultdict(int)
     for (kind, key), src in source.items():
         for label, srcs in levels.items():

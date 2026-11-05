@@ -1,9 +1,10 @@
 logs: ['redo_c4.jsonl.gz', 'recency_wave.jsonl.gz', 'anchored_results.jsonl.gz']
 published records: 3474
   exact match        : 2242
-  within 0.02        : 1232
+  within 0.005       : 1159
+  residual 0.005-0.02 : 73  (provenance incomplete, see note)
   outside 0.02       : 0
-  unreproducible     : 0
+  no comparison computable: 0
   reconstructed from archived ratings    59
   reconstructed from archived estimate   2413
   transitively reconstructed             1002
@@ -16,8 +17,5 @@ published records: 3474
   division BRAGA                  published 0.826 expected 0.81 [national score (route-3)]
   division BRAGANÃA              published 0.826 expected 0.81 [national score (route-3)]
   division CASTELO BRANCO         published 0.826 expected 0.81 [national score (route-3)]
+  NOTE: 73 records reconcile only within the tolerance, not exactly. Their stored scores were last written by rebalance runs whose input log set is not in the archive; pooling every archived log does not reconcile them either, so this is incomplete provenance rather than rounding.
 AUDIT: PASS
-
-  NOTE: 73 records reconcile only within the tolerance, not exactly. Their stored scores were last written by rebalance runs whose input log set is not in the archive; pooling every archived log does not reconcile them either, so this is incomplete provenance rather than rounding.
-
-  NOTE: 73 records reconcile only within the tolerance, not exactly. Their stored scores were last written by rebalance runs whose input log set is not in the archive; pooling every archived log does not reconcile them either, so this is incomplete provenance rather than rounding.
