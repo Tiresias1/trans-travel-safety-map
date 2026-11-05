@@ -70,6 +70,19 @@ def build_queue(enc, C, A):
             # settled no further
             if not rec or not rec.get("dossier"):
                 continue
+            # INSTRUMENT GUARD (added 2026-11-13): settlement enforces the
+            # invariant "score == encounter mean". That invariant only applies
+            # where the encounter mean IS the instrument. Anchored-calibrated
+            # divisions are scored anchor + mean(deviation from fixed anchors),
+            # and their logs are contrast ratings against random partner
+            # countries (measured within-region correlation with partner rating
+            # -0.39). Settling them to encounter means would replace a calibrated
+            # estimate with a contrast-contaminated one and destroy the
+            # calibration. Anchored entities are therefore never queued here;
+            # their invariant is "score == anchorRating", audited by
+            # tools/verify_from_logs.py.
+            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
+                continue
             gap = abs(float(rec["score"]) - mean)
             # all dossier regions re-checked; territories flagged separately
             if gap >= TOL:
@@ -81,6 +94,8 @@ def build_queue(enc, C, A):
             if not rec:
                 continue
             iso = next((k for k, v in C.items() if v is rec), None)
+            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
+                continue   # see instrument guard above
             gap = abs(float(rec["score"]) - mean)
             if gap >= TOL or (iso in TERRITORIES):
                 _p3 = rec.get("parentIso3")
@@ -106,6 +121,11 @@ def main():
                          "encounter-weighted mean (satisfies the invariant by "
                          "construction; no new pairs are run)")
     ap.add_argument("--run", action="store_true")
+    ap.add_argument("--force-legacy-invariant", action="store_true",
+                    help="Override the guard and settle anyway. DESTRUCTIVE: the "
+                         "current pipeline scores anchored-calibrated divisions, so "
+                         "this replaces calibrated estimates with contrast-contaminated "
+                         "encounter means. Only valid for pre-anchored historical data.")
     ap.add_argument("--workers", type=int, default=3)
     args = ap.parse_args()
     C = json.loads((ROOT / "data" / "countries.json").read_text())
@@ -128,6 +148,8 @@ def main():
                 rec["band"] = band_label(rec["score"])
                 n += 1
         for key, rec in A.items():
+            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
+                continue   # instrument guard: never overwrite a calibrated estimate
             e = enc.get(f"region:{rec.get('parentIso3') or rec.get('iso3')}:{rec.get('name')}", [])
             if len(e) >= 3 and rec.get("dossier"):
                 rec["score"] = round(min(1.0, max(0.0, sum(e) / len(e))), 6)
@@ -141,6 +163,23 @@ def main():
         return
     if args.plan or not args.run:
         return
+    # HARD STOP (2026-11-13): no published score uses the encounter mean as its
+    # instrument any more. Divisions are anchored-calibrated (2,413 of them),
+    # countries are destination summaries of those divisions, framework ratings
+    # or territory mirrors. Running settlement would therefore overwrite a
+    # calibrated estimate with a contrast-contaminated encounter mean -- the
+    # confound we measured at within-region correlation -0.39 with partner
+    # rating. See the instrument guard in build_queue.
+    if not args.force_legacy_invariant:
+        print("REFUSING to run settlement.", flush=True)
+        print("  No published score uses the encounter mean as its instrument:", flush=True)
+        print("  divisions are anchored-calibrated, countries are destination", flush=True)
+        print("  summaries/framework ratings/territory mirrors. Settlement would", flush=True)
+        print("  overwrite calibrated estimates with contrast ratings (partner-rating", flush=True)
+        print("  correlation -0.39). The invariant is audited instead by", flush=True)
+        print("  tools/verify_from_logs.py (score == anchorRating for anchored units).", flush=True)
+        print("  Use --force-legacy-invariant only for pre-anchored historical data.", flush=True)
+        return
     print("running settlement...", flush=True)
     key_env = (ROOT / ".openrouter_key")
     import os
@@ -151,7 +190,9 @@ def main():
         w = ["python3", "-u", str(ROOT / "tools" / "blind_pairwise.py"),
              "--api", "openai", "--baseurl", "https://openrouter.ai/api/v1",
              "--endpoint-suffix", "/chat/completions", "--auth-style", "bearer",
-             "--api-key", key, "--model", os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor"),
+             # Rater model: must stay the model every published score is stamped
+             # with. Do NOT inherit LANE_MODEL (that is the prose-lane model).
+             "--api-key", key, "--model", os.environ.get("RATER_MODEL", "deepseek/deepseek-v4.1-flash"),
              "--num-pairs", str(SETTLE_PAIRS),
              "--differential-weighting-percent", "0.01",
              "--absolute-weighting-percent", "0.12",

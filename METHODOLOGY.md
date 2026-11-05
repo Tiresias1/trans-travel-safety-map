@@ -365,6 +365,29 @@ the instrument is being asked to resolve.
 - Model priors, sparse reporting and language coverage remain sources of error that no
   amount of pairwise refinement removes.
 
+## Settlement is retired (2026-11-13)
+
+`tools/settle_scores.py` enforced the invariant "score == encounter mean". That invariant no
+longer describes this pipeline. Its plan run against the archived wave logs queues 547 entities
+(before the instrument guard) or 147 (after), but **none of those gaps is a defect**: every
+published score now uses a different instrument than a raw encounter mean.
+
+- 3,241 of 3,241 divisions are anchored-calibrated: score = fixed anchor + mean(deviation from
+  those anchors). 2,328 equal their `anchorRating` exactly; the rest are route-3 re-syncs.
+- 155 countries are destination summaries (mean of their measured divisions).
+- 51 countries are framework ratings (no measured division set).
+- 27 countries mirror a territory's own record.
+
+The encounter means settlement wants to move toward are *contrast* ratings against random partner
+countries, with a measured within-region correlation of -0.39 against the partner's rating. Moving
+a calibrated estimate to that mean would import the confound at scale. So settlement now refuses to
+run and requires `--force-legacy-invariant` to override; that flag is valid only for pre-anchored
+historical data.
+
+The invariant that *does* hold is "score == anchorRating for anchored units" (plus the route-3,
+destination-summary, mirror and stand-in rules), and that is audited mechanically by
+`tools/verify_from_logs.py`: 3,474/3,474 published scores reconcile from the archived logs.
+
 ## Validation gates
 
 Nothing reaches the site without passing automated checks. Every text field is written

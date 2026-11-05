@@ -24,6 +24,11 @@ API = "https://openrouter.ai/api/v1/chat/completions"
 # Bulk-work lane model (orchestrator: meta/muse-spark-1.3; lanes: contributor).
 # Override with LANE_MODEL env for testing/fallback.
 MODEL = os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor")
+# If the requested lane model is unavailable for this account (OpenRouter
+# guardrails/data policy answer with 404 "0 endpoints ... available"), fall
+# back rather than failing a whole wave. Set LANE_FALLBACK_MODEL="" to disable.
+FALLBACK_MODEL = os.environ.get("LANE_FALLBACK_MODEL", "deepseek/deepseek-v4.1-flash")
+_guardrail_fallback_logged = False
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
 
@@ -240,8 +245,9 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
     """One MiMo call with the known failure-mode retries (content None with
     stop_reason=length needs max_tokens raised; content_filter retries)."""
     last = None
+    model = MODEL
     for attempt in range(5):
-        body = {"model": MODEL,
+        body = {"model": model,
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}],
                 "temperature": temperature, "max_tokens": max_tokens}
@@ -250,8 +256,33 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
                 API, data=json.dumps(body).encode(),
                 headers={"authorization": f"Bearer {KEY}",
                          "content-type": "application/json"})
-            with urllib.request.urlopen(req, timeout=300) as r:
-                d = json.loads(r.read().decode())
+            try:
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    d = json.loads(r.read().decode())
+            except urllib.error.HTTPError as e:
+                detail = ""
+                try:
+                    detail = e.read().decode()[:300]
+                except Exception:
+                    pass
+                # A guardrail/data-policy block answers 404 with "0 endpoints
+                # ... available"; that is a permanent property of the account
+                # for this model, so retrying it is pointless. Switch once to
+                # the fallback lane and carry on.
+                if (e.code == 404 and "available" in detail.lower()
+                        and FALLBACK_MODEL and model != FALLBACK_MODEL):
+                    global _guardrail_fallback_logged
+                    if not _guardrail_fallback_logged:
+                        print(f"[lane] {model} unavailable for this account "
+                              f"({detail.strip()[:120]}); using {FALLBACK_MODEL}",
+                              file=sys.stderr, flush=True)
+                        _guardrail_fallback_logged = True
+                    model = FALLBACK_MODEL
+                    continue
+                if attempt < 4:
+                    time.sleep(2 ** attempt)
+                    continue
+                raise
             msg = d["choices"][0]["message"]
             content = msg.get("content")
             if content is None:
