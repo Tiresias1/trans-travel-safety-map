@@ -243,15 +243,15 @@ confidence interval (−0.015, +0.005), where a negative value favours A6. That 
 zero, so the data establish neither a gain nor its absence. And the decision rule, not the statistics, is what settles it: the
 prespecified criteria were not met.
 
-A further caution about aggregate agreement, stated in the form the data supports. Single-anchor
-agreement on the same 19 countries: Spain 0.032, Vatican City 0.043, Uganda 0.047, Belarus
-0.055, Niger 0.082, Côte d'Ivoire 0.083, against a four-anchor average of 0.026. The average
-is therefore closer than most individual anchors but *not* closer than the best one, and part
-of its agreement comes from opposing biases cancelling: Belarus reads targets 0.055 high and
-Côte d'Ivoire 0.083 low. Dropping Côte d'Ivoire improves the average to 0.022; dropping
-Belarus worsens it to 0.046. Anchor choice therefore contributes materially to the measured
-agreement, alongside whatever underlying accuracy the instrument has; the data do not
-separate the two.
+A further point about aggregate agreement. Single-anchor mean absolute error on the same 19
+countries: Spain 0.032, Vatican City 0.043, Uganda 0.047, Belarus 0.055, Niger 0.082, Côte
+d'Ivoire 0.083, against a four-anchor average of **0.026**. The average is therefore lower,
+that is better, than *every* individual anchor. Part of that advantage comes from opposing
+biases offsetting: Belarus reads targets 0.055 high and Côte d'Ivoire 0.083 low. Dropping
+Côte d'Ivoire from the four-anchor ladder improves the average to 0.022; dropping Belarus
+worsens it to 0.046. Anchor composition therefore contributes materially to the measured
+agreement, alongside whatever underlying accuracy the instrument has, and the data do not
+separate those contributions.
 
 The reviewer's proposed follow-up required two reference jurisdictions with independent
 framework scores between 0.02 and 0.05. The whole corpus contains exactly one (Afghanistan,
@@ -284,9 +284,11 @@ carries most of the bias and that the missing low anchors do not: adding the two
 moved the mean signed error from −0.017 to +0.009, so their presence changes the result. Both
 contributions remain live.
 
-Repeat spread within a target is 0.05–0.07 per anchor, which puts the standard error of the
-current eight-call protocol at roughly 0.02, the same order as the differences it is being
-asked to resolve.
+Repeat spread within a target is 0.05–0.07 per anchor. If the eight calls per division are
+treated as independent, that implies a standard error of roughly 0.02 for the current
+protocol; the independence assumption is untested here, so the figure is an indication of
+scale, not a validated uncertainty bound. Either way it is the same order as the differences
+the instrument is being asked to resolve.
 
 **Known limits, published rather than hidden:**
 
@@ -294,9 +296,11 @@ asked to resolve.
   clamp at the scale floor. Where more than 10% of a country's divisions are clamped,
   aggregation is refused (`aggregationBlocked`) and the framework rating is published
   instead. Twelve countries are affected today.
-- Anchored estimation removes partner-composition bias (the earlier method's ratings
-  correlated −0.39 with the rating given to a random partner) but does not prove the
-  scale is interval. Averages are conventions of the index.
+- Fixed anchors remove the variation caused by pairing each division with a *different*
+  random partner (the earlier method's ratings correlated −0.39 with the rating given to
+  that partner). That is a narrower claim than removing reference-composition effects in
+  general, which this design does not establish. It also does not prove the scale is
+  interval. Averages are conventions of the index.
 - A single score cannot carry the range of outcomes. Division dispersion is published
   with the national figure for that reason.
 - Model priors, sparse reporting and language coverage remain sources of error that no

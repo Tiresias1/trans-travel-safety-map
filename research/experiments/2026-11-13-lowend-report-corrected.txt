@@ -127,10 +127,11 @@ H7. The 0.07 figure, defined precisely: the mean, across the 19 low-stratum coun
   A4 avg   19      -0.0170      0.0264
   A6 avg   19      +0.0091      0.0209
   -> Best single anchor by |error|: ESP at 0.0315. A4 average is 0.0264.
-     The four-anchor average is therefore LOWER (better) than EVERY individual anchor —
-     which is what averaging noisy references should do. Part of that benefit comes from
-     opposing biases offsetting (BLR +0.055, CIV -0.083), which is why the average should
-     not be read as evidence that any single anchor is accurate.
+     The four-anchor average is therefore LOWER (better) than EVERY individual anchor in
+     this sample. That is consistent with averaging, though averaging does not guarantee
+     beating every constituent. Part of the advantage comes from opposing biases offsetting
+     (BLR +0.055, CIV -0.083), so the average must not be read as evidence that any single
+     anchor is accurate.
 
 == I2. SIGN CONVENTION for the division-pair differences (reviewer's H1 catch) ==
   AFG: published diff (second minus first) = +0.000000
