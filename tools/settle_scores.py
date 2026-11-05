@@ -18,7 +18,7 @@ Usage:
   python3 tools/settle_scores.py --run       # execute the settlement runs
 """
 from __future__ import annotations
-import argparse, json, subprocess, sys, threading, time
+import argparse, gzip, json, subprocess, sys, threading, time
 from build_data import band_label
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -38,20 +38,22 @@ def collect(logs: list[str]) -> dict[str, list[float]]:
         p = Path(lp)
         if not p.exists():
             continue
-        for line in p.open():
-            try:
-                d = json.loads(line)
-            except Exception:
-                continue
-            # countries mode: both sides rated
-            if d.get("a_name") and d.get("rated_a") is not None and d.get("a_new") is not None:
-                enc.setdefault(d["a_name"], []).append(float(d["rated_a"]))
-            if d.get("b_name") and d.get("rated_b") is not None and d.get("b_new") is not None:
-                enc.setdefault(d["b_name"], []).append(float(d["rated_b"]))
-            # mixed mode: only the region side moves and is rated
-            if d.get("r_name") and d.get("rated_r") is not None and d.get("r_new") is not None:
-                enc.setdefault(f"region:{d['parent']}:{d['r_name']}",
-                               []).append(float(d["rated_r"]))
+        opener = gzip.open if str(p).endswith(".gz") else open
+        with opener(p, "rt", encoding="utf-8") as fh:
+            for line in fh:
+                try:
+                    d = json.loads(line)
+                except Exception:
+                    continue
+                # countries mode: both sides rated
+                if d.get("a_name") and d.get("rated_a") is not None and d.get("a_new") is not None:
+                    enc.setdefault(d["a_name"], []).append(float(d["rated_a"]))
+                if d.get("b_name") and d.get("rated_b") is not None and d.get("b_new") is not None:
+                    enc.setdefault(d["b_name"], []).append(float(d["rated_b"]))
+                # mixed mode: only the region side moves and is rated
+                if d.get("r_name") and d.get("rated_r") is not None and d.get("r_new") is not None:
+                    enc.setdefault(f"region:{d['parent']}:{d['r_name']}",
+                                   []).append(float(d["rated_r"]))
     return enc
 
 
@@ -60,16 +62,20 @@ def instrument_of(rec) -> str:
     caller must fail closed: a score we cannot classify must never be settled."""
     prov = str(rec.get("scoreProvenance") or "").lower()
     mode = (rec.get("derivedFrom") or {}).get("mode") or ""
-    if mode == "anchored" or "anchor" in prov:
-        return "anchored"
-    if "destination summary" in prov or mode == "reaggregate":
-        return "destination summary"
+    # Precedence matters: framework-rating prose contains the phrase
+    # "anchor-ladder floor", so a naive substring match on "anchor" misclassifies
+    # 12 countries as anchored. Classify on the most specific signal first, and
+    # prefer the structured field over prose wherever it exists.
     if "framework rating" in prov:
         return "framework rating"
+    if "destination summary" in prov or mode == "reaggregate":
+        return "destination summary"
     if "mirror" in prov or mode == "mirror":
         return "mirror"
     if "encounter mean" in prov:
         return "encounter mean"
+    if mode == "anchored" or "anchorRating" in rec.get("derivedFrom", {}) or "anchored" in prov:
+        return "anchored"
     return "unknown"
 
 
@@ -144,8 +150,12 @@ def build_queue(enc, C, A):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--logs", nargs="*",
-                    default=["/tmp/redo_countries.jsonl", "/tmp/redo_admin1.jsonl",
-                             "/tmp/repair_countries3.jsonl", "/tmp/terr_wave2_final.jsonl", "/tmp/pr_wave.jsonl"])
+                    # Production basis, matching tools/verify_from_logs.py. The older
+                    # defaults included superseded runs whose country ratings no longer
+                    # represent the published scores, which manufactured ~450 phantom
+                    # queue entries (the same class of error as the recency_wave bug).
+                    default=["data/measurement_logs/redo_c4.jsonl.gz",
+                             "data/measurement_logs/anchored_results.jsonl.gz"])
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--rebalance", action="store_true",
                     help="set every encounter-rich entity's score directly to its "
