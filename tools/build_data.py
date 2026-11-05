@@ -293,8 +293,11 @@ def main():
             _m = (_c.get("derivedFrom") or {}).get("mode")
             if _m == "reaggregate":
                 _n = (_c.get("divisionSpread") or {}).get("n")
-                _c["scoreProvenance"] = (f"destination summary: mean of {_n} measured "
-                                         f"divisions")
+                _sp = _c.get("divisionSpread") or {}
+                _c["scoreProvenance"] = (
+                    f"destination summary: mean of {_n} measured divisions; they range "
+                    f"{_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f} "
+                    f"(sd {_sp.get('sd', 0):.2f})")
             elif _m == "mirror":
                 _c["scoreProvenance"] = "mirrors the territory's own record"
             elif _c.get("aggregationBlocked"):
