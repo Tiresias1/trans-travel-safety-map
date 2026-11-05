@@ -7,7 +7,14 @@ is the single definition, so they cannot disagree again.
 
 Precedence matters: a country's provenance prose contains "anchor-ladder floor" when
 describing endpoint clamping, so a naive substring match on "anchor" misclassifies those
-records as anchored. Classify on the most specific signal first.
+records as anchored, and "no destination summary" contains the phrase it negates.
+
+DISCLOSED FRAGILITY: classification still reads free text for records whose structured
+field does not settle the question. Centralising this module prevents the three consumers
+from disagreeing with each other, but it does not make the inference itself authoritative;
+a shared classifier would propagate the same mistake everywhere. Known failure modes are
+locked by tools/test_instruments.py. The durable fix is an explicit per-record instrument
+field written when the score is produced, which the pipeline does not yet have.
 """
 from __future__ import annotations
 

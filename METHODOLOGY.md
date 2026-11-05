@@ -401,6 +401,16 @@ numerical instruments:
 The lesson: negative context must be tested before the phrase it negates, and an instrument
 should be read from a structured field wherever one exists. The published manifest, the audit and
 the settlement guard now all import the same classifier, so they cannot disagree.
+
+**This is disclosed as a residual fragility, not a resolved one.** Centralising the classifier
+stops the three consumers diverging; it does not make a prose-derived inference authoritative,
+because a shared classifier would propagate the same mistake everywhere. The known failure modes
+are locked by `tools/test_instruments.py`. The durable fix is an explicit per-record instrument
+field written when the score is produced, which the pipeline does not yet carry.
+
+Finally, "59 records satisfy the invariant" means the published scores are **within 1e-6** of
+their own instrument's output. That is consistency with the instrument, not independent evidence
+that the instrument, the encounter set or the scoring rules are the right ones.
 ### Reconciliation of the settlement counts
 
 These three numbers describe different populations and should not be read as one figure:
