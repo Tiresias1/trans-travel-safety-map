@@ -48,7 +48,9 @@ A separate discrepancy was chased down and resolved. Fresh samples appeared to r
 systematically low. Replaying the *exact archived partner sets* with the exact archived prompt
 (deltas +0.024, +0.047, +0.042, +0.070, −0.002, −0.026 across six countries spanning the scale)
 showed no uniform offset: mean +0.026 with mixed signs, within the spread expected from run-to-run
-variation at this sample size. Most of the apparent gap came from a wording relaxation I had
+variation at this sample size. That mean is suggestive rather than conclusive — four of six cases
+moved up, and individual countries moved by up to 0.07 — so the comparability warning stands rather
+than being retired. Most of the apparent gap came from a wording relaxation I had
 introduced after the wave in rule 1, not from the rater drifting. Nothing was corrected, and the
 panel is kept as a sentinel at `research/experiments/2026-11-13-replay-sentinel.json` so future
 releases can check comparability the same way.

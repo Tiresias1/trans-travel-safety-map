@@ -46,5 +46,11 @@
    "delta": -0.0264,
    "n": 40
   }
- ]
+ ],
+ "alertThresholds": {
+  "meanDeltaAbs": 0.03,
+  "anyCountryDeltaAbs": 0.08,
+  "note": "predeclared: a future sentinel run exceeding either triggers a comparability review before release"
+ },
+ "usage": "re-run the same six archived partner sets with the archived prompt; compare mean and per-country deltas against these thresholds"
 }
