@@ -558,6 +558,31 @@ do not force a difference, and do not let the order of presentation influence yo
 """
 
 
+def _restore_archived_wording(text: str) -> str:
+    """Diagnostic: restore the two wordings that changed after the production wave
+    (rule 1 'never touch' and the rule 6 typo) so a replay can use the archived
+    prompt exactly. Not a production mode."""
+    import os as _os
+    if not _os.environ.get("RESTORE_ARCHIVED_WORDING"):
+        return text
+    return (text.replace("usually don't touch", "never touch")
+                .replace("An unenforced statute is a comparably small factor.",
+                         "An unenforced statute a comparably small factor."))
+
+
+def _revert_endpoint(text: str) -> str:
+    """Diagnostic condition: restore the pre-2026-11-13 endpoint wording so the effect of
+    that wording change can be measured against the stored scores."""
+    import os as _os
+    if not _os.environ.get("REVERT_ENDPOINT"):
+        return text
+    return text.replace(
+        "near-certain imprisonment and\n  likely execution",
+        "near-certain imprisonment or execution").replace(
+        "near-certain imprisonment and likely execution",
+        "near-certain imprisonment or execution")
+
+
 def _strip_rule_10b(text: str) -> str:
     """Control condition for the rule-10b compatibility audit: remove that rule so the
     same sample can be rated under the previous rubric (A/B, not a production mode)."""
@@ -573,7 +598,7 @@ def _strip_rule_10b(text: str) -> str:
 
 def build_system_prompt(taxonomy_text: str) -> str:
     """Assemble the fixed prompt. Built once per process → byte-identical → cacheable."""
-    return _strip_rule_10b(f"""\
+    return _restore_archived_wording(_revert_endpoint(_strip_rule_10b(f"""\
 You are an expert assessor of travel risk for transgender people. You will be given two
 anonymised research dossiers, labelled A and B. Each describes one jurisdiction. You do not
 know which jurisdictions they are, and you must not try to guess: your rating must follow
@@ -609,7 +634,7 @@ across every axis below.
 
 ---
 
-{OUTPUT_FORMAT}""")
+{OUTPUT_FORMAT}""")))
 
 
 # --------------------------------------------------------------------------- #

@@ -43,11 +43,15 @@ materiality thresholds of 0.03 and 0.08. A single-arm comparison had appeared to
 rule. Compatibility is therefore supported within the audited sample; scores keep their older
 stamp and are not claimed to follow the new rubric record by record.
 
-That control also surfaced something separate, which is recorded here rather than acted on: a
-fresh ~15-pair sample reads on average about 0.04 *above* the stored encounter means that came
-from ~35 encounters per country. Whether that reflects small-sample optimism, drift in what the
-rater rewards, or something else is not established by this audit, and it is not corrected in
-the published scores.
+A separate discrepancy was chased down and resolved. Fresh samples appeared to read about
+0.06 above the stored encounter means, which would have implied the published map sat
+systematically low. Replaying the *exact archived partner sets* with the exact archived prompt
+(deltas +0.024, +0.047, +0.042, +0.070, −0.002, −0.026 across six countries spanning the scale)
+showed no uniform offset: mean +0.026 with mixed signs, within the spread expected from run-to-run
+variation at this sample size. Most of the apparent gap came from a wording relaxation I had
+introduced after the wave in rule 1, not from the rater drifting. Nothing was corrected, and the
+panel is kept as a sentinel at `research/experiments/2026-11-13-replay-sentinel.json` so future
+releases can check comparability the same way.
 
 **Visitor scenario.** The reference traveller holds a passport from their home country, travels
 on a short visit rather than as a resident, is an adult unless a claim states otherwise, has no

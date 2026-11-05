@@ -99,6 +99,19 @@ def main() -> int:
                      "supported within the audited sample, not proven for every record."),
         },
         "anchorCalibration": ANCHOR_CALIBRATION,
+        "productionProvenance": {
+            "productionWindow": "2026-11-12/13 (scores produced across multiple waves)",
+            "promptHash": __import__("hashlib").sha256(
+                __import__("blind_pairwise").build_system_prompt(
+                    (ROOT / "research" / "outing-risk-taxonomy.md").read_text()).encode()
+            ).hexdigest()[:16],
+            "comparabilityWarning": (
+                "Scores are outputs of a measurement procedure at a point in time, not "
+                "timeless measurements. Differences of a few hundredths between versions "
+                "should not be read as substantive country change without a sentinel "
+                "replay; research/experiments/2026-11-13-replay-sentinel.json records the "
+                "current sentinel panel and its spread."),
+        },
         "counts": {
             "countries": len(C), "divisions": len(A),
             "dossierDivisions": dossier, "estimatedDivisions": estimated,
