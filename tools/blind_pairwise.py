@@ -182,6 +182,16 @@ RATING_RULES = """\
     1.00 means law and society fully accept trans people with no discrimination or judgement
     (within the bounds of reason in that no society is 100 percent homogenous).
 
+10b. **The score is what happens if the traveller is outed, not the probability of being
+    outed.** Do not give a jurisdiction credit because a visitor could pass, stay silent, or
+    avoid scrutiny: that is a property of the traveller and the itinerary, not of the place,
+    and it evaporates the moment a passport is checked, an emergency happens, or a stranger
+    takes an interest. Conversely, do not add a penalty merely because a jurisdiction is
+    small or highly visible. Rate the consequences that follow discovery. Where a dossier
+    shows that discovery itself is engineered — mandatory marker disclosure, registration,
+    surveillance, checkpoint checking — that raising of discovery probability is itself part
+    of the exposure and is rated.
+
 11. **Rule of law partially mediates between paper protections and street reality.** Where legal
     protections coexist with public hostility, a partial factor to consider for the rating
     is whether the legal system actually works for trans people: are attackers prosecuted,
@@ -848,7 +858,7 @@ def compute_update_mixed(a0: float, country_score: float, ra: float, rb: float,
 # older version are not comparable and must not be mixed into one published set
 # (2026-11-12, after review: "the endpoint revision has not produced a mixture of
 # old- and new-rubric scores" was an unverified claim).
-RUBRIC_VERSION = "r2026-11-12"
+RUBRIC_VERSION = "r2026-11-13"
 
 
 def _stamp_rater(rec: dict, args) -> None:

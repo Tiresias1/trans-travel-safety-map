@@ -19,8 +19,20 @@ ranges on that scale, not travel advice:
 | Reduced Risk | 0.60–0.79 | Risk exists but institutions and social climate substantially limit it |
 | Low Risk | 0.80–1.00 | Strong protections, functioning recourse, no documented pattern of trans-specific harm |
 
-The score integrates **probability of being outed × severity if outed** across the
-traveler-facing axes below. 1.00 is an aspirational limit no jurisdiction fully reaches.
+The score is **conditional on discovery**: it rates what happens to a trans visitor who is
+identified as trans, not the likelihood of being identified. Outing probability is treated as
+a baseline every traveller carries and is not credited or debited, except where the dossier
+shows a jurisdiction engineering discovery itself (mandatory marker disclosure, registration,
+surveillance, checkpoint checking), which is exposure in its own right. A place does not score
+better because a visitor could pass or stay quiet; that is a property of the traveller and the
+itinerary, and it disappears the moment a passport is checked or an emergency happens. 1.00 is
+an aspirational limit no jurisdiction fully reaches.
+
+**Visitor scenario.** The reference traveller holds a passport from their home country, travels
+on a short visit rather than as a resident, is an adult unless a claim states otherwise, has no
+guaranteed local medical need, and arrives through ordinary points of entry. Where a dossier
+describes a rule that depends on age, care needs, document type or entry route, the summary
+says so rather than assuming the most or least favourable case.
 
 ## What is scored — and what is not
 
@@ -189,9 +201,15 @@ than mitigation (rule 21).
 of their independently measured divisions, with the division range published alongside.
 The national-framework rating, which reflects the rules that apply throughout the
 country, is retained in the data as `nationalFrameworkScore` and is not overwritten. The
-weighting is currently unweighted, which is a declared choice rather than a default: it
-means the figure summarises the average division, not the average visitor (visitor-nights
-would be a different estimand).
+weighting is currently unweighted, which is a declared choice rather than a default: it means
+the figure summarises the average division, not the average visitor. A visitor-weighted
+estimand would use visitor-nights per division, and the corpus contains no arrival or
+stay data, so that weighting cannot currently be computed. What can be published is the
+bound: any weighted mean of the divisions must lie between the lowest and highest division
+score, and both are published with the national figure, so a reader can see how far the
+national number could move under a different weighting. Acquiring arrival data is the
+prerequisite for the visitor-weighted figure, and until then the average division is what the
+number means.
 
 **Countries without measured divisions** keep their pairwise rating.
 
