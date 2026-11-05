@@ -22,23 +22,92 @@
     minus NER: 0.0193  (better)
 
 == D. SENSITIVITY OF DIVISION COMPARISONS (does the direction survive?) ==
-  AFG: A6 diff +0.021 | anchor-exclusion signs [1] | published diff +0.000 | ROBUST
+  AFG: A6 diff +0.021 | anchor-exclusion signs [1] | published diff +0.000 | ANCHOR-EXCLUSION ROBUST
   ARE: A6 diff -0.007 | anchor-exclusion signs [-1, 1] | published diff -0.027 | UNRESOLVED
-  BLR: A6 diff +0.030 | anchor-exclusion signs [1] | published diff +0.010 | ROBUST
+  BLR: A6 diff +0.030 | anchor-exclusion signs [1] | published diff +0.010 | ANCHOR-EXCLUSION ROBUST
   BRN: A6 diff -0.014 | anchor-exclusion signs [-1, 1] | published diff +0.000 | UNRESOLVED
-  IRQ: A6 diff -0.026 | anchor-exclusion signs [-1] | published diff +0.000 | ROBUST
-  MMR: A6 diff +0.023 | anchor-exclusion signs [1] | published diff +0.009 | ROBUST
+  IRQ: A6 diff -0.026 | anchor-exclusion signs [-1] | published diff +0.000 | ANCHOR-EXCLUSION ROBUST
+  MMR: A6 diff +0.023 | anchor-exclusion signs [1] | published diff +0.009 | ANCHOR-EXCLUSION ROBUST
   SAU: A6 diff -0.005 | anchor-exclusion signs [-1, 1] | published diff +0.000 | UNRESOLVED
-  SOM: A6 diff +0.088 | anchor-exclusion signs [1] | published diff +0.126 | ROBUST
+  SOM: A6 diff +0.088 | anchor-exclusion signs [1] | published diff +0.126 | ANCHOR-EXCLUSION ROBUST
   TUN: A6 diff +0.007 | anchor-exclusion signs [-1, 1] | published diff +0.015 | UNRESOLVED
-  YEM: A6 diff +0.062 | anchor-exclusion signs [1] | published diff +0.044 | ROBUST
+  YEM: A6 diff +0.062 | anchor-exclusion signs [1] | published diff +0.044 | ANCHOR-EXCLUSION ROBUST
 
   robust 6, unresolved 4 of 10 parent pairs
 
-== E. WITHIN-PARENT SPREAD change vs published ==
+== E. WITHIN-PARENT MEAN ABSOLUTE DIFFERENCE (corrected heading) ==
   mean |difference| within parent: published 0.0230 | A4 0.0307 | A6 0.0282
 
 == F. COUNT VERIFICATION (reviewer asked to confirm published counts) ==
   floorBound divisions in live data: 85
   lowEndUncertain divisions in live data: 790
   divisions with score < 0.20 (excluding floorBound): 790
+
+== G. FLOOR INCIDENCE, BROKEN DOWN BY TARGET KIND (preregistered detail) ==
+  A4: countries raw <=0.02: 0/20 (min +0.058) | divisions raw <=0.02: 5/20 (min -0.051)
+  A6: countries raw <=0.02: 0/20 (min +0.062) | divisions raw <=0.02: 3/20 (min -0.028)
+  PUBLISHED (live instrument, before this experiment): divisions <=0.02: 7/20; countries <=0.02: 0/19 (none in the measured country sample)
+
+  Scope: these figures describe the measured samples only. In the 20-country sample no country
+  reached the floor; the lowest country estimates were AT LEAST 0.058 (A4) and 0.062 (A6). The
+  floor cases here are all divisions of hostile parents. That pattern is consistent with a country
+  dossier carrying the whole national picture while a single division of a failed state sits at the
+  bottom of the index, but that is a HYPOTHESIS, not a result established by this experiment.
+
+== H. ITEMS RAISED IN VERIFICATION, ANSWERED ==
+H1. 'ANCHOR-EXCLUSION ROBUST' relabelled: the label means ANCHOR-EXCLUSION ANCHOR-EXCLUSION ROBUST only (the direction
+    survived removing each anchor in turn). It is not robustness to other modelling choices.
+    Published values shown as +0.000 are exact ties in the published data, not rounding:
+      AFG: published 0.046944 vs 0.046944 -> difference 0.000000
+      ARE: published 0.046809 vs 0.020000 -> difference 0.026809
+      BLR: published 0.048059 vs 0.058059 -> difference 0.010000
+      BRN: published 0.113667 vs 0.113667 -> difference 0.000000
+      IRQ: published 0.020000 vs 0.020000 -> difference 0.000000
+      MMR: published 0.031809 vs 0.040559 -> difference 0.008750
+      SAU: published 0.020000 vs 0.020000 -> difference 0.000000
+      SOM: published 0.020000 vs 0.145559 -> difference 0.125559
+      TUN: published 0.106809 vs 0.121809 -> difference 0.015000
+      YEM: published 0.020000 vs 0.064309 -> difference 0.044309
+
+H2. Published floor incidence per estimator: A4 and A6 were NEVER PUBLISHED.
+    Only the four-anchor ladder is in production, so there is no published A4/A6
+    incidence to report. The 7/20 figure is the production instrument's published output,
+    which is what the comparison can legitimately use.
+
+H3. Denominators. The experiment measured 20 countries. One of them (PRI) is a
+    territory display mirror whose score is derived from the admin1 territory record,
+    not a framework rating, so it has no independent reference and is excluded from every
+    agreement and LOO metric. All such metrics use the SAME 19 countries. Because the
+    sample was drawn entirely from the framework < 0.20 frame, the 'all' and 'low stratum'
+    rows in section A are the same sample and must not be read as two independent results.
+
+H4. Scope of interpretation corrected. The results support statements about the measured
+    samples only. Estimates in that sample were AT LEAST 0.058 (A4) and 0.062 (A6) at
+    their minimum, not strictly above those values. The explanation offered (a country
+    dossier carrying the whole national picture versus a single division of a failed
+    state) is a HYPOTHESIS consistent with the data, not a result.
+
+H5. Count verification, with set equality checked rather than counts alone:
+      floorBound = 85 records; all have score <= 0.0201: True; any score <=0.0201 not flagged: 0
+      lowEndUncertain = 790; identical to (score<0.20 AND NOT floorBound): True
+      overlap floorBound & lowEndUncertain = 0 (0 by construction)
+      records with score exactly 0.20 (boundary treatment): 0 - the flag uses a strict < 0.20 test, so a record at exactly 0.20 is not flagged
+
+H6. Section E heading corrected to 'mean absolute within-parent difference', and the
+    pairwise values it is computed from are listed here rather than implied:
+      AFG: published pair diff 0.0000 | A4 0.0363 | A6 0.0208
+      ARE: published pair diff 0.0268 | A4 0.0238 | A6 0.0067
+      BLR: published pair diff 0.0100 | A4 0.0425 | A6 0.0300
+      BRN: published pair diff 0.0000 | A4 0.0122 | A6 0.0137
+      IRQ: published pair diff 0.0000 | A4 0.0363 | A6 0.0258
+      MMR: published pair diff 0.0088 | A4 0.0112 | A6 0.0233
+      SAU: published pair diff 0.0000 | A4 0.0037 | A6 0.0050
+      SOM: published pair diff 0.1256 | A4 0.0606 | A6 0.0881
+      TUN: published pair diff 0.0150 | A4 0.0038 | A6 0.0067
+      YEM: published pair diff 0.0443 | A4 0.0762 | A6 0.0618
+    means: published 0.0230 | A4 0.0307 | A6 0.0282
+
+H7. The 0.07 figure, defined precisely: the mean, across the 19 low-stratum countries,
+    of the standard deviation of the six anchor-specific estimates for that country.
+    It is a between-anchor dispersion. It is NOT an uncertainty bound on a published
+    score and NOT a per-record error.

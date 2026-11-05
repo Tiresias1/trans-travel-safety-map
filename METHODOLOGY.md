@@ -220,6 +220,11 @@ constants the pass used. The values are recorded in `measurement_manifest.json`
 (`anchorCalibration`) with the country-score version they belong to, and the divisions
 are calibrated to those constants rather than to today's country scores.
 
+The low-end caveat popup states the 0.07 figure precisely: it is the mean, across 19
+low-scoring countries, of the standard deviation of six anchor-specific readings for each
+country. It is a between-anchor dispersion, not an uncertainty bound on an individual
+published score. The 0.20 cut is a warning threshold, not a validated boundary.
+
 **Low-end anchor extension, tested and not adopted.** A preregistered experiment added
 two low-end reference points (Uganda 0.090, Niger 0.093) to the ladder and re-measured 20
 untested low-framework countries and 20 divisions, twelve calls each, 480 calls total. Full
