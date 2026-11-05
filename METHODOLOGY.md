@@ -242,11 +242,15 @@ confidence interval of −0.015 to +0.005, which does not establish the gain and
 prove it was noise. And the decision rule, not the statistics, is what settles it: the
 prespecified criteria were not met.
 
-A further caution about aggregate agreement: the anchors cancel each other. Belarus reads
-targets 0.055 above their framework rating while Côte d'Ivoire reads them 0.083 below, so
-the four-anchor average looks closer than any single anchor is. Dropping Côte d'Ivoire
-from the four anchors improves the agreement to 0.022; dropping Belarus worsens it to
-0.046. Anchor choice, not an underlying accuracy, is doing much of the work.
+A further caution about aggregate agreement, stated in the form the data supports. Single-anchor
+agreement on the same 19 countries: Spain 0.032, Vatican City 0.043, Uganda 0.047, Belarus
+0.055, Niger 0.082, Côte d'Ivoire 0.083, against a four-anchor average of 0.026. The average
+is therefore closer than most individual anchors but *not* closer than the best one, and part
+of its agreement comes from opposing biases cancelling: Belarus reads targets 0.055 high and
+Côte d'Ivoire 0.083 low. Dropping Côte d'Ivoire improves the average to 0.022; dropping
+Belarus worsens it to 0.046. Anchor choice therefore contributes materially to the measured
+agreement, alongside whatever underlying accuracy the instrument has; the data do not
+separate the two.
 
 The reviewer's proposed follow-up required two reference jurisdictions with independent
 framework scores between 0.02 and 0.05. The whole corpus contains exactly one (Afghanistan,
@@ -256,12 +260,14 @@ is what the published caveats rest on: within-parent division differences were c
 against every anchor exclusion, and 6 of 10 pairs kept their direction while 4 did not. The
 latter are reported as unresolved rather than presented as findings.
 
-Divisions scored below 0.20 are therefore flagged `lowEndUncertain`, with a popup note that
-states the measured spread across references and says plainly that it is a spread across
-references, not a measured error for that record. The 0.20 cut is a warning threshold, not
-a validated boundary between precise and imprecise scores. Floor-bound records are marked
-unresolved and unranked, which means their ordering is unresolved by this instrument, not
-that no comparison involving them could ever be made.
+Divisions scored below 0.20 **that are not floor-bound** are flagged `lowEndUncertain`; the
+85 floor-bound records are a separate treatment (unresolved, unranked). The low-end popup
+note says the sensitivity is to which reference jurisdictions were used, and that the figure
+is a spread across references rather than a measured error for the record being viewed. The
+0.20 cut is a warning threshold, not a validated boundary between precise and imprecise
+scores. For floor-bound records, the ordering relative to other floor-bound records is
+unresolved by this instrument; that is not a claim that no comparison involving them could
+ever be made.
 
 The same data identified the mechanism. At the dangerous end the anchors disagree
 systematically: Côte d'Ivoire (0.297) scores targets 0.083 lower than their framework

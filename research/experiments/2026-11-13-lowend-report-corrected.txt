@@ -2,10 +2,10 @@
   A4: all n=19 |abs| 0.0264 | low stratum n=19 |abs| 0.0264
   A6: all n=19 |abs| 0.0209 | low stratum n=19 |abs| 0.0209
 
-== B. FLOOR INCIDENCE, RAW AND PUBLISHED, per estimator ==
+== B. FLOOR INCIDENCE. 'RAW' = raw experimental estimates across 40 targets; there is no published A4/A6 ==
   A4: raw at/below 0.02 = 5/40 (min -0.051)
   A6: raw at/below 0.02 = 3/40 (min -0.028)
-  published (live) at/below 0.02: 7/20 measured divisions  [countries: 0/19 of the measured country sample]
+  PRODUCTION instrument (the only published ladder), at/below 0.02: 7/20 measured divisions  [countries: 0/19 of the measured country sample]
 
 == C. LEAVE-ONE-ANCHOR-OUT, restricted to each ladder (corrected) ==
   A4 full: 0.0264
@@ -21,7 +21,12 @@
     minus UGA: 0.0221  (worse)
     minus NER: 0.0193  (better)
 
-== D. SENSITIVITY OF DIVISION COMPARISONS (does the direction survive?) ==
+== D. SENSITIVITY OF DIVISION COMPARISONS, computed on the EXPERIMENTAL SIX-ANCHOR ladder ==
+
+  Scope note: this is a test of A6 with each anchor removed in turn. It is not a test of the
+  published four-anchor ladder, and it does not show that all six pairs have a surviving
+  directional finding in the live scores. AFG and IRQ are exact published ties, so their
+  "robust" label refers only to the experimental ladder's direction.
   AFG: A6 diff +0.021 | anchor-exclusion signs [1] | published diff +0.000 | ANCHOR-EXCLUSION ROBUST
   ARE: A6 diff -0.007 | anchor-exclusion signs [-1, 1] | published diff -0.027 | UNRESOLVED
   BLR: A6 diff +0.030 | anchor-exclusion signs [1] | published diff +0.010 | ANCHOR-EXCLUSION ROBUST
@@ -111,3 +116,36 @@ H7. The 0.07 figure, defined precisely: the mean, across the 19 low-stratum coun
     of the standard deviation of the six anchor-specific estimates for that country.
     It is a between-anchor dispersion. It is NOT an uncertainty bound on a published
     score and NOT a per-record error.
+== I1. SINGLE-ANCHOR AGREEMENT (the claim the reviewer asked me to substantiate) ==
+  anchor   n  mean signed  mean |err|
+  BLR     19      +0.0550      0.0552
+  CIV     19      -0.0832      0.0832
+  VAT     19      -0.0205      0.0433
+  ESP     19      -0.0192      0.0315
+  UGA     19      +0.0442      0.0471
+  NER     19      +0.0783      0.0818
+  A4 avg   19      -0.0170      0.0264
+  A6 avg   19      +0.0091      0.0209
+  -> Best single anchor by |error|: ESP at 0.0315. A4 average is 0.0264.
+     So the four-anchor average is NOT closer than every individual anchor; it is closer
+     than the worst and worse than the best. Cancellation is real but partial.
+
+== I2. SIGN CONVENTION for the division-pair differences (reviewer's H1 catch) ==
+  AFG: published diff (second minus first) = +0.000000
+  ARE: published diff (second minus first) = -0.026809
+  BLR: published diff (second minus first) = +0.010000
+  BRN: published diff (second minus first) = +0.000000
+  IRQ: published diff (second minus first) = +0.000000
+  MMR: published diff (second minus first) = +0.008750
+  SAU: published diff (second minus first) = +0.000000
+  SOM: published diff (second minus first) = +0.125559
+  TUN: published diff (second minus first) = +0.015000
+  YEM: published diff (second minus first) = +0.044309
+
+== I3. UNROUNDED MINIMA (literal bounds check) ==
+  A4 country minimum (unrounded): 0.0580000000
+  A6 country minimum (unrounded): 0.0625000000
+
+== I4. PAIRED CONTRAST, stated explicitly ==
+  contrast = |err(A6)| - |err(A4)|;  mean = -0.0054 (negative means A6 has SMALLER error)
+  paired bootstrap 95% CI = (-0.0148, +0.0048)
