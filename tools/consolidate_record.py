@@ -21,17 +21,12 @@ ROOT = Path(__file__).resolve().parent.parent
 KEY = (__import__("os").environ.get("OPENROUTER_KEY")
        or Path("/tmp/.openrouter_key").read_text().strip())
 API = "https://openrouter.ai/api/v1/chat/completions"
-# Bulk-work lane model (orchestrator: meta/muse-spark-1.3; lanes: contributor).
-# Override with LANE_MODEL env for testing/fallback.
-MODEL = os.environ.get("LANE_MODEL", "meta/muse-spark-1.3-contributor")
-# If the requested lane model is unavailable for this account (OpenRouter
-# guardrails/data policy answer with 404 "0 endpoints ... available"), fall
-# back rather than failing a whole wave. Set LANE_FALLBACK_MODEL="" to disable.
-# Fallback must be a model that returns content on long prose inputs. The
-# deepseek rater burns its whole output budget on reasoning and returns empty
-# content (stop=length) on the longer dossiers, so it cannot serve as the prose
-# fallback; the base muse-spark build does return content.
-FALLBACK_MODEL = os.environ.get("LANE_FALLBACK_MODEL", "meta/muse-spark-1.3")
+# Bulk-work lane model. Muse Spark is not used at all. MiMo V2.6 Flash is the
+# lane model: it is non-reasoning (0 reasoning tokens) and returns content on the
+# long dossiers that made DeepSeek emit nothing at finish_reason=length.
+# Override with LANE_MODEL / LANE_FALLBACK_MODEL.
+MODEL = os.environ.get("LANE_MODEL", "xiaomi/mimo-v2.6-flash")
+FALLBACK_MODEL = os.environ.get("LANE_FALLBACK_MODEL", "")
 _guardrail_fallback_logged = False
 
 STYLE = (ROOT / "tools" / "STYLE_RULES.md").read_text()
@@ -259,7 +254,7 @@ def call_llm(system: str, user: str, temperature: float = 0.3,
         # reasoning tokens on long dossiers and return EMPTY content at
         # finish_reason=length (Texas: 16k tokens, no output). `effort: low`
         # makes them emit the text instead. Override with LANE_REASONING.
-        effort = os.environ.get("LANE_REASONING", "low")
+        effort = os.environ.get("LANE_REASONING", "")
         if effort:
             body["reasoning"] = {"effort": effort}
         try:
