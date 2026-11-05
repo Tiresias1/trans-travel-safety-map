@@ -384,6 +384,25 @@ a calibrated estimate to that mean would import the confound at scale. So settle
 run and requires `--force-legacy-invariant` to override; that flag is valid only for pre-anchored
 historical data.
 
+### Reconciliation of the settlement counts
+
+These three numbers describe different populations and should not be read as one figure:
+
+| Population | Count | Meaning |
+|---|---|---|
+| Entities with >= 3 encounter ratings in the archived logs | 764 | eligible to be *considered* |
+| Of those, gap vs encounter mean >= 0.02 (raw queue, no guard) | 546 | would have been settled by the old tool |
+| Of those, queued after excluding anchored entities | 147 | all country-level |
+| Queued after the fail-closed instrument guard | **0** | nothing is settlement-eligible |
+| Anchored divisions in the published data | 3241 | calibrated estimates the guard protects |
+| Published records whose instrument IS an encounter mean | **0** | the estimator settlement enforces |
+
+The 147 country-level gaps reach 0.171 (Mongolia 0.494 stored vs 0.664 encounter mean). That is a
+**cross-estimator difference**, not a defect: a destination summary (mean of measured anchored
+divisions) and a country-level encounter mean are different estimators and are not required to
+agree. Gaps of this size should be investigated as diagnostics — coverage, partner composition,
+weighting — and never corrected by moving the score.
+
 The invariant that *does* hold is "score == anchorRating for anchored units" (plus the route-3,
 destination-summary, mirror and stand-in rules), and that is audited mechanically by
 `tools/verify_from_logs.py`: 3,474/3,474 published scores reconcile from the archived logs.

@@ -55,8 +55,35 @@ def collect(logs: list[str]) -> dict[str, list[float]]:
     return enc
 
 
+def instrument_of(rec) -> str:
+    """Classify a record's declared score instrument. Unknown => 'unknown' and the
+    caller must fail closed: a score we cannot classify must never be settled."""
+    prov = str(rec.get("scoreProvenance") or "").lower()
+    mode = (rec.get("derivedFrom") or {}).get("mode") or ""
+    if mode == "anchored" or "anchor" in prov:
+        return "anchored"
+    if "destination summary" in prov or mode == "reaggregate":
+        return "destination summary"
+    if "framework rating" in prov:
+        return "framework rating"
+    if "mirror" in prov or mode == "mirror":
+        return "mirror"
+    if "encounter mean" in prov:
+        return "encounter mean"
+    return "unknown"
+
+
+# Settlement is only applicable to scores whose DECLARED instrument is the
+# encounter mean. Everything else is a different estimator and must not be moved.
+SETTLEABLE_INSTRUMENTS = {"encounter mean"}
+
+
+SKIPPED: dict[str, int] = {}
+
+
 def build_queue(enc, C, A):
     import statistics
+    SKIPPED.clear()
     queue = []
     for name, ratings in sorted(enc.items()):
         if len(ratings) < MIN_ENC:
@@ -81,7 +108,9 @@ def build_queue(enc, C, A):
             # calibration. Anchored entities are therefore never queued here;
             # their invariant is "score == anchorRating", audited by
             # tools/verify_from_logs.py.
-            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
+            instr = instrument_of(rec)
+            if instr not in SETTLEABLE_INSTRUMENTS:
+                SKIPPED[instr] = SKIPPED.get(instr, 0) + 1
                 continue
             gap = abs(float(rec["score"]) - mean)
             # all dossier regions re-checked; territories flagged separately
@@ -94,7 +123,9 @@ def build_queue(enc, C, A):
             if not rec:
                 continue
             iso = next((k for k, v in C.items() if v is rec), None)
-            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
+            instr = instrument_of(rec)
+            if instr not in SETTLEABLE_INSTRUMENTS:
+                SKIPPED[instr] = SKIPPED.get(instr, 0) + 1
                 continue   # see instrument guard above
             gap = abs(float(rec["score"]) - mean)
             if gap >= TOL or (iso in TERRITORIES):
@@ -134,6 +165,7 @@ def main():
     queue = build_queue(enc, C, A)
     print(f"settlement queue: {len(queue)} entities "
           f"({sum(1 for q in queue if q.get('rule12'))} rule-12 territories)")
+    print(f"excluded by instrument guard (fail-closed): {dict(sorted(SKIPPED.items()))}")
     for q in sorted(queue, key=lambda x: -x["gap"])[:40]:
         tag = "RULE12 " if q.get("rule12") else ""
         print(f"  {tag}{q['kind']:7} {q['name'][:32]:32} stored {q['stored']:.3f} "
