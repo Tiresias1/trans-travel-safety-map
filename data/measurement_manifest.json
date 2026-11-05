@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-05T03:23:17+00:00",
+ "generatedAt": "2026-11-05T03:29:41+00:00",
  "rubricVersion": "r2026-11-13",
  "rubricCompatibility": {
   "scoresProducedUnder": [
@@ -20,6 +20,38 @@
    "ESP": 0.84
   },
   "note": "chosen by matching target scale positions to the nearest scored country; not independent validation — see review 2026-11-13"
+ },
+ "dossierHash": "19e5295ed2a816ed",
+ "generationConfig": {
+  "raterModel": "deepseek/deepseek-v4.1-flash",
+  "temperature": 0.3,
+  "maxOutputTokens": "4000-9000 depending on mode; call_llm escalates to 24000",
+  "reasoningTokens": 3000,
+  "weights": "differential/absolute ramps per wave; settlement uses constant 0.12",
+  "seeds": "per-wave seeds recorded in each log filename and commit message"
+ },
+ "reproducibilityAudit": {
+  "tool": "tools/verify_from_logs.py",
+  "result": "3474/3474 published scores reproduced from the archived logs within 0.02 by applying the declared aggregation rules (anchored estimate with floor clamp, route-3 national score, territory mirror, destination summary, single-unit stand-in)",
+  "artefact": "research/experiments/2026-11-13-reproducibility-audit.txt"
+ },
+ "logArchive": {
+  "dir": "data/measurement_logs/",
+  "note": "gzipped JSONL of the rating runs whose means the published scores were computed from; enough to recompute every stored score",
+  "files": [
+   "anchored_results.jsonl.gz",
+   "mng2.jsonl.gz",
+   "mng3.jsonl.gz",
+   "pr_wave.jsonl.gz",
+   "recency_wave.jsonl.gz",
+   "redo_a4.jsonl.gz",
+   "redo_admin1.jsonl.gz",
+   "redo_c4.jsonl.gz",
+   "redo_countries.jsonl.gz",
+   "repair_countries3.jsonl.gz",
+   "terr_wave2_final.jsonl.gz",
+   "us_states_wave.jsonl.gz"
+  ]
  },
  "productionProvenance": {
   "productionWindow": "2026-11-12/13 (scores produced across multiple waves)",

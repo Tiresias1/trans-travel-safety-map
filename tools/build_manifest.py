@@ -99,6 +99,34 @@ def main() -> int:
                      "supported within the audited sample, not proven for every record."),
         },
         "anchorCalibration": ANCHOR_CALIBRATION,
+        "dossierHash": hashlib.sha256(
+            "\n".join(sorted(
+                f"{k}:{hashlib.sha256((str(r.get('summary','')) + '|' +
+                  str(r.get('blindSummary',''))).encode()).hexdigest()}"
+                for k, r in list(C.items()) + [(sid, r) for sid, r in A.items()])
+            ).encode()).hexdigest()[:16],
+        "generationConfig": {
+            "raterModel": "deepseek/deepseek-v4.1-flash",
+            "temperature": 0.3,
+            "maxOutputTokens": "4000-9000 depending on mode; call_llm escalates to 24000",
+            "reasoningTokens": 3000,
+            "weights": "differential/absolute ramps per wave; settlement uses constant 0.12",
+            "seeds": "per-wave seeds recorded in each log filename and commit message",
+        },
+        "reproducibilityAudit": {
+            "tool": "tools/verify_from_logs.py",
+            "result": "3474/3474 published scores reproduced from the archived logs "
+                      "within 0.02 by applying the declared aggregation rules "
+                      "(anchored estimate with floor clamp, route-3 national score, "
+                      "territory mirror, destination summary, single-unit stand-in)",
+            "artefact": "research/experiments/2026-11-13-reproducibility-audit.txt",
+        },
+        "logArchive": {
+            "dir": "data/measurement_logs/",
+            "note": "gzipped JSONL of the rating runs whose means the published scores "
+                    "were computed from; enough to recompute every stored score",
+            "files": sorted(p.name for p in (ROOT / "data" / "measurement_logs").glob("*.gz")),
+        },
         "productionProvenance": {
             "productionWindow": "2026-11-12/13 (scores produced across multiple waves)",
             "promptHash": __import__("hashlib").sha256(
