@@ -220,6 +220,27 @@ constants the pass used. The values are recorded in `measurement_manifest.json`
 (`anchorCalibration`) with the country-score version they belong to, and the divisions
 are calibrated to those constants rather than to today's country scores.
 
+**Low-end anchor extension, tested and not adopted.** A preregistered experiment added
+two low-end reference points (Uganda 0.090, Niger 0.093) to the ladder and re-measured 20
+untested low-framework countries and 20 divisions, twelve calls each, 480 calls total. Full
+preregistration, raw per-anchor data and analysis are in `research/experiments/`.
+
+Result: the six-anchor estimator reduced the systematic low-end bias (mean signed error
+−0.017 → +0.009) and cut floor incidence from 5 to 3 of 40, but its low-stratum mean
+absolute error was 0.021 against a preregistered threshold of 0.020, floor incidence did
+not halve, and within-parent division differences compressed rather than sharpened. **All
+three of those were declared success criteria in advance, so the extension was not
+adopted.** The production ladder remains the frozen four anchors.
+
+The same data identified the mechanism. At the dangerous end the anchors disagree
+systematically: Côte d'Ivoire (0.297) scores targets 0.083 lower than their framework
+ratings while Belarus (0.100) scores them 0.055 higher, Niger 0.078 higher and Uganda 0.044
+higher. Dropping Côte d'Ivoire is the single most damaging leave-one-out (absolute error
+rises to 0.033), so it is the middle anchor, not the absence of low anchors, that carries
+most of the bias. Repeat spread within a target is 0.05–0.07 per anchor, which puts the
+standard error of the current eight-call protocol at roughly 0.02 — the same order as the
+differences it is being asked to resolve.
+
 **Known limits, published rather than hidden:**
 
 - The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated and

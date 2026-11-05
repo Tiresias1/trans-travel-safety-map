@@ -130,6 +130,7 @@ def main() -> int:
             parent = C.get(parent_iso)
             fw = BP.render_parent_bundle(parent) if parent else ""
         ests = []
+        per_anchor = []
         for aid in args.anchors * args.repeats:
             anchor = C.get(aid)
             if not anchor or aid == sid:
@@ -155,24 +156,27 @@ def main() -> int:
             except Exception:
                 continue
             div_r, anc_r = (sb, sa) if flip else (sa, sb)
-            ests.append(float(FROZEN_ANCHOR_SCORES.get(aid, anchor["score"]))
-                        + (div_r - anc_r))
+            _e = float(FROZEN_ANCHOR_SCORES.get(aid, anchor["score"])) + (div_r - anc_r)
+            ests.append(_e)
+            per_anchor.append({"anchor": aid, "estimate": round(_e, 6),
+                               "divRating": div_r, "anchorRating": anc_r})
         if not ests:
-            return sid, None, 0
-        return sid, statistics.mean(ests), len(ests)
+            return sid, None, 0, []
+        return sid, statistics.mean(ests), len(ests), per_anchor
 
     results = []
     with ThreadPoolExecutor(args.workers) as ex:
         futs = [ex.submit(estimate, t) for t in targets]
         done = 0
         for f in as_completed(futs):
-            sid, est, n = f.result()
+            sid, est, n, pa = f.result()
             done += 1
             if est is None:
                 continue
             results.append((sid, est, n))
             with open(args.ckpt, "a", encoding="utf-8") as fh:
-                fh.write(json.dumps({"sid": sid, "est": est, "n": n}) + "\n")
+                fh.write(json.dumps({"sid": sid, "est": est, "n": n,
+                                     "perAnchor": pa}) + "\n")
             if done % 25 == 0:
                 print(f"  {done}/{len(targets)} estimated", flush=True)
     print(f"estimated {len(results)}/{len(targets)}", flush=True)

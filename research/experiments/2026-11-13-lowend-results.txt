@@ -1,0 +1,43 @@
+countries with an INDEPENDENT framework reference: 19/20 | divisions: 20
+
+1) COUNTRY AGREEMENT (independent framework reference)
+est    n    mean   |abs|  <0.20 mean  <0.20 |abs|  95% CI |abs| low stratum
+A4    19  -0.017   0.026      -0.017        0.026  (0.0177, 0.0359)
+A6    19  +0.009   0.021      +0.009        0.021  (0.0124, 0.0309)
+
+2) FLOOR INCIDENCE (raw estimates before clamping)
+  A4: 5/40 at/below 0.02, min -0.051
+  A6: 3/40 at/below 0.02, min -0.028
+
+3) PER-ANCHOR RESIDUALS at the dangerous end (countries, framework<0.20)
+  BLR: n=19 mean +0.055 sd 0.042 | within-target repeat spread 0.064
+  CIV: n=19 mean -0.083 sd 0.040 | within-target repeat spread 0.074
+  VAT: n=19 mean -0.020 sd 0.054 | within-target repeat spread 0.055
+  ESP: n=19 mean -0.019 sd 0.034 | within-target repeat spread 0.019
+  UGA: n=19 mean +0.044 sd 0.041 | within-target repeat spread 0.054
+  NER: n=19 mean +0.078 sd 0.050 | within-target repeat spread 0.049
+
+4) LEAVE-ONE-ANCHOR-OUT (low stratum |abs|)
+  drop BLR: |abs| 0.0204
+  drop CIV: |abs| 0.0334
+  drop VAT: |abs| 0.0256
+  drop ESP: |abs| 0.0254
+  drop UGA: |abs| 0.0221
+  drop NER: |abs| 0.0193
+
+5) DIVISION EFFECT (within-parent spread; published vs A4 vs A6)
+  AFG: published spread 0.000 | A4 0.018 | A6 0.010
+  ARE: published spread 0.013 | A4 0.012 | A6 0.003
+  BLR: published spread 0.005 | A4 0.021 | A6 0.015
+  BRN: published spread 0.000 | A4 0.006 | A6 0.007
+  IRQ: published spread 0.000 | A4 0.018 | A6 0.013
+  MMR: published spread 0.004 | A4 0.006 | A6 0.012
+  SAU: published spread 0.000 | A4 0.002 | A6 0.003
+  SOM: published spread 0.063 | A4 0.030 | A6 0.044
+  TUN: published spread 0.007 | A4 0.002 | A6 0.003
+  YEM: published spread 0.022 | A4 0.038 | A6 0.031
+
+6) PREREGISTERED CRITERIA
+  (a) low-stratum |abs| < 0.020 for A6: False (0.0209)
+  (b) overall agreement not worse for A6: True
+  (c) floor incidence reduction: A4 5 -> A6 3
