@@ -55,6 +55,18 @@ introduced after the wave in rule 1, not from the rater drifting. Nothing was co
 panel is kept as a sentinel at `research/experiments/2026-11-13-replay-sentinel.json` so future
 releases can check comparability the same way.
 
+### Reproducibility audit, and a caveat it withdrew
+
+`tools/verify_from_logs.py` reconstructs every published score from archived logs without using
+any published score as an input; routing metadata is taken from the publication and that is
+disclosed. Result: 3,474 of 3,474 agree — 2,302 exactly and 1,172 to within 1e-6, the
+sixth-decimal storage rounding. The first version of this audit carried an "incomplete
+provenance" class for 73 records whose stored scores would not reconcile. That class was
+withdrawn rather than quietly deleted: the cause was my own production-log selection. The final
+rebalance used `redo_c4` alone, and `recency_wave` had been superseded; including it invented 73
+gaps and reconciled nothing. The lesson is recorded because the same mistake — assuming which
+run fed which score — is the easiest one to repeat when several waves write to the same file.
+
 **Visitor scenario.** The reference traveller holds a passport from their home country, travels
 on a short visit rather than as a resident, is an adult unless a claim states otherwise, has no
 guaranteed local medical need, and arrives through ordinary points of entry. Where a dossier

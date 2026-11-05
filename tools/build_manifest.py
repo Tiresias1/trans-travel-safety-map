@@ -116,9 +116,18 @@ def main() -> int:
         "reproducibilityAudit": {
             "tool": "tools/verify_from_logs.py",
             "result": ("3474/3474 agree with archive-derived comparisons: 2302 exact, "
-                       "1172 rounding-level (under 0.005, from the rounding chain in "
-                       "nested means), 0 residual, 0 outside tolerance. Maximum absolute "
-                       "gap under 0.001, mean under 0.0001. No duplicate keys."),
+                       "1172 rounding-level (gaps at or below 1e-6, i.e. the sixth-decimal "
+                       "storage rounding — verified, not inferred from magnitude), "
+                       "0 residual, 0 outside tolerance. No duplicate keys."),
+            "withdrawnCaveat": ("An earlier 'incomplete provenance' class covering 73 records "
+                                "was WITHDRAWN after the production-log selection was "
+                                "corrected: those records reconcile exactly from redo_c4 "
+                                "alone, so the problem was my log selection, not missing "
+                                "data. Retained here as audit history rather than deleted."),
+            "basisAttribution": ("Attribution evidence for the production basis: the final "
+                                 "rebalance ran with an explicit log list of redo_c4 only "
+                                 "(commit e33802aa and successors), and recency_wave's writes "
+                                 "are not reflected in any stored score."),
             "productionBasis": ("countries from redo_c4 only, divisions from "
                                 "anchored_results. recency_wave is retained as history but "
                                 "was superseded: including it created 73 spurious gaps and "
