@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-05T03:29:41+00:00",
+ "generatedAt": "2026-11-05T03:33:37+00:00",
  "rubricVersion": "r2026-11-13",
  "rubricCompatibility": {
   "scoresProducedUnder": [
@@ -32,7 +32,14 @@
  },
  "reproducibilityAudit": {
   "tool": "tools/verify_from_logs.py",
-  "result": "3474/3474 published scores reproduced from the archived logs within 0.02 by applying the declared aggregation rules (anchored estimate with floor clamp, route-3 national score, territory mirror, destination summary, single-unit stand-in)",
+  "result": "3474/3474 published scores reconciled: 2242 exact, 1232 within 0.02, 0 outside, 0 unreproducible; max gap 0.015, mean gap 0.0004",
+  "evidentialLevels": {
+   "fromArchivedRatings": 59,
+   "fromArchivedAnchoredEstimate": 2413,
+   "transitivelyReconstructed": 1002
+  },
+  "honestScope": "Expected values are computed from archived logs without using any published score as an input; where a child feeds a parent the RECONSTRUCTED child value is used and dependency cycles are reported. Routing metadata (derivedFrom.mode, inherited, estimated, the no-signal template) is read from the publication and is therefore taken as given, not independently derived — a disclosed limitation. Published-and-published consistency also holds but is not counted as provenance.",
+  "selftest": "tools/verify_from_logs.py --selftest (perturbation, missing-log, duplicate-anchor tests) passes",
   "artefact": "research/experiments/2026-11-13-reproducibility-audit.txt"
  },
  "logArchive": {
