@@ -301,8 +301,12 @@ def main():
             elif _m == "mirror":
                 _c["scoreProvenance"] = "mirrors the territory's own record"
             elif _c.get("aggregationBlocked"):
-                _c["scoreProvenance"] = ("framework rating: no destination summary, because "
-                                         "too many division estimates reached the index floor")
+                _sp = _c.get("divisionSpread") or {}
+                _c["scoreProvenance"] = (
+                    "framework rating: no destination summary, because "
+                    f"{_c['aggregationBlocked']}. The {_sp.get('n', 0)} measured divisions "
+                    f"span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f}, but that range "
+                    "understates real variation because the floor truncates it")
             else:
                 _c["scoreProvenance"] = "framework rating (no measured division set)"
         # provenance and floor flags are computed AFTER the earlier countries dump:
