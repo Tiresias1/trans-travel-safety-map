@@ -37,12 +37,10 @@ def main() -> int:
         return r.get("rubricVersion") or "unversioned"
 
     def instrument_of(r):
-        d = r.get("derivedFrom") or {}
-        if d.get("mode"):
-            return d["mode"]
-        if r.get("ratedBy"):
-            return "pairwise"
-        return "unknown"
+        # canonical vocabulary shared with the settlement guard and the audit, so the
+        # same records cannot be called "pairwise" here and "framework rating" there
+        from instruments import classify
+        return classify(r)
 
     countries = Counter(instrument_of(r) for r in C.values())
     regions = Counter(instrument_of(r) for r in A.values())

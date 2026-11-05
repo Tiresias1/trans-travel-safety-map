@@ -58,31 +58,13 @@ def collect(logs: list[str]) -> dict[str, list[float]]:
 
 
 def instrument_of(rec) -> str:
-    """Classify a record's declared score instrument. Unknown => 'unknown' and the
-    caller must fail closed: a score we cannot classify must never be settled."""
-    prov = str(rec.get("scoreProvenance") or "").lower()
-    mode = (rec.get("derivedFrom") or {}).get("mode") or ""
-    # Precedence matters: framework-rating prose contains the phrase
-    # "anchor-ladder floor", so a naive substring match on "anchor" misclassifies
-    # 12 countries as anchored. Classify on the most specific signal first, and
-    # prefer the structured field over prose wherever it exists.
-    if "framework rating" in prov:
-        return "framework rating"
-    if "destination summary" in prov or mode == "reaggregate":
-        return "destination summary"
-    if "mirror" in prov or mode == "mirror":
-        return "mirror"
-    if "encounter mean" in prov:
-        return "encounter mean"
-    if mode == "anchored" or "anchorRating" in rec.get("derivedFrom", {}) or "anchored" in prov:
-        return "anchored"
-    return "unknown"
+    """Canonical instrument name (see tools/instruments.py)."""
+    from instruments import classify
+    return classify(rec)
 
 
-# Settlement is only applicable to scores whose DECLARED instrument is the
-# encounter mean. Everything else is a different estimator and must not be moved.
-SETTLEABLE_INSTRUMENTS = {"encounter mean"}
-
+# Settlement applies only to scores whose declared instrument IS the encounter mean.
+from instruments import SETTLEABLE as SETTLEABLE_INSTRUMENTS  # noqa: E402
 
 SKIPPED: dict[str, int] = {}
 

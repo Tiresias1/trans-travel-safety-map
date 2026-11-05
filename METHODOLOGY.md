@@ -365,25 +365,42 @@ the instrument is being asked to resolve.
 - Model priors, sparse reporting and language coverage remain sources of error that no
   amount of pairwise refinement removes.
 
-## Settlement is retired (2026-11-13)
+## Settlement has nothing to do (2026-11-13)
 
-`tools/settle_scores.py` enforced the invariant "score == encounter mean". That invariant no
-longer describes this pipeline. Its plan run against the archived wave logs queues 547 entities
-(before the instrument guard) or 147 (after), but **none of those gaps is a defect**: every
-published score now uses a different instrument than a raw encounter mean.
+`tools/settle_scores.py` enforces the invariant "score == encounter mean". That invariant is
+satisfied by the published data rather than inapplicable to it, and the distinction matters.
 
-- 3,241 of 3,241 divisions are anchored-calibrated: score = fixed anchor + mean(deviation from
-  those anchors). 2,328 equal their `anchorRating` exactly; the rest are route-3 re-syncs.
-- 155 countries are destination summaries (mean of their measured divisions).
-- 51 countries are framework ratings (no measured division set).
-- 27 countries mirror a territory's own record.
+Instruments, from the single definition in `tools/instruments.py`:
 
-The encounter means settlement wants to move toward are *contrast* ratings against random partner
-countries, with a measured within-region correlation of -0.39 against the partner's rating. Moving
-a calibrated estimate to that mean would import the confound at scale. So settlement now refuses to
-run and requires `--force-legacy-invariant` to override; that flag is valid only for pre-anchored
-historical data.
+| Instrument | Records |
+|---|---|
+| anchored (fixed anchors + mean deviation) | 3,241 divisions |
+| destination summary (mean of measured divisions) | 143 countries |
+| country-level rating (the encounter mean itself) | 63 countries |
+| territory mirror | 27 countries |
 
+Of the 63 country-level records, 59 have >= 3 archived encounters, and **all 59 satisfy
+|score - encounter mean| < 1e-6**. The settlement queue is therefore empty because every
+settleable record already equals its encounter mean, not because the guard excluded it.
+
+Anchored divisions are excluded on principle: their logs are contrast ratings against random
+partners (measured within-region correlation with partner rating -0.39), so moving a calibrated
+estimate to that mean would import the confound. Their invariant is "score == anchorRating",
+audited by `tools/verify_from_logs.py`.
+
+Three earlier errors are recorded here because they share one cause — prose classification of
+numerical instruments:
+
+1. A substring match on "anchor" classified 12 endpoint-clamped countries as anchored, because
+   their prose contains "anchor-ladder floor".
+2. A substring match on "destination summary" classified those same 12 as destination summaries,
+   because their prose reads "no destination summary, because endpoint-clamping".
+3. The settlement tool's default log set included superseded runs, manufacturing ~450 phantom
+   queue entries; against the production basis those records are exact to 1e-6.
+
+The lesson: negative context must be tested before the phrase it negates, and an instrument
+should be read from a structured field wherever one exists. The published manifest, the audit and
+the settlement guard now all import the same classifier, so they cannot disagree.
 ### Reconciliation of the settlement counts
 
 These three numbers describe different populations and should not be read as one figure:
