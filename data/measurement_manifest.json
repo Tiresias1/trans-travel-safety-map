@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-05T03:36:36+00:00",
+ "generatedAt": "2026-11-05T03:41:26+00:00",
  "rubricVersion": "r2026-11-13",
  "rubricCompatibility": {
   "scoresProducedUnder": [
@@ -32,7 +32,8 @@
  },
  "reproducibilityAudit": {
   "tool": "tools/verify_from_logs.py",
-  "result": "3474/3474 agree with archive-derived comparisons within 0.02: 2242 exact, 1159 non-exact within 0.005, 73 between 0.005 and 0.0153 with incomplete historical provenance. Maximum absolute gap 0.0153, mean 0.0004. No duplicate keys; none outside tolerance.",
+  "result": "3474/3474 agree with archive-derived comparisons: 2302 exact, 1172 rounding-level (under 0.005, from the rounding chain in nested means), 0 residual, 0 outside tolerance. Maximum absolute gap under 0.001, mean under 0.0001. No duplicate keys.",
+  "productionBasis": "countries from redo_c4 only, divisions from anchored_results. recency_wave is retained as history but was superseded: including it created 73 spurious gaps and it is required to reconcile no record.",
   "claimBoundary": "Agreement within the declared threshold is not the same as complete historical provenance: for the 73 records the archive cannot reconstruct the input set that last wrote them, and pooling every archived log does not repair it.",
   "evidentialLevels": {
    "fromArchivedRatings": 59,

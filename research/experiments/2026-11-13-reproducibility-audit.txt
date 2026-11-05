@@ -1,21 +1,20 @@
-logs: ['redo_c4.jsonl.gz', 'recency_wave.jsonl.gz', 'anchored_results.jsonl.gz']
+logs: ['redo_c4.jsonl.gz', 'anchored_results.jsonl.gz']
 published records: 3474
-  exact match        : 2242
-  within 0.005       : 1159
-  residual 0.005-0.02 : 73  (provenance incomplete, see note)
+  exact match        : 2302
+  rounding-level (<0.005): 1172
+  residual 0.005-0.02 : 0  (provenance incomplete, see note)
   outside 0.02       : 0
   no comparison computable: 0
   reconstructed from archived ratings    59
   reconstructed from archived estimate   2413
   transitively reconstructed             1002
-  max gap 0.0153 | mean gap 0.0004
-  country  Portugal               published 0.826 expected 0.81 [encounter mean]
-  division RegiÃ£o AutÃ³noma da M published 0.826 expected 0.81 [national score (route-3)]
-  division RegiÃ£o AutÃ³noma dos  published 0.826 expected 0.81 [national score (route-3)]
-  division AVEIRO                 published 0.826 expected 0.81 [national score (route-3)]
-  division BEJA                   published 0.826 expected 0.81 [national score (route-3)]
-  division BRAGA                  published 0.826 expected 0.81 [national score (route-3)]
-  division BRAGANÃA              published 0.826 expected 0.81 [national score (route-3)]
-  division CASTELO BRANCO         published 0.826 expected 0.81 [national score (route-3)]
-  NOTE: 73 records reconcile only within the tolerance, not exactly. Their stored scores were last written by rebalance runs whose input log set is not in the archive; pooling every archived log does not reconcile them either, so this is incomplete provenance rather than rounding.
+  max gap 0.000001 | mean gap 0.000000
+  country  Germany                published 0.684 expected 0.684 [mean of reconstructed divisions]
+  country  Netherlands            published 0.78 expected 0.78 [mean of reconstructed divisions]
+  division Groningen              published 0.78 expected 0.78 [national score (route-3)]
+  division Drenthe                published 0.78 expected 0.78 [national score (route-3)]
+  division Flevoland              published 0.78 expected 0.78 [national score (route-3)]
+  division Fryslân                published 0.78 expected 0.78 [national score (route-3)]
+  division Noord-Brabant          published 0.78 expected 0.78 [national score (route-3)]
+  country  Ukraine                published 0.44 expected 0.44 [mean of reconstructed divisions]
 AUDIT: PASS

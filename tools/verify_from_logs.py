@@ -33,7 +33,11 @@ ROOT = Path(__file__).resolve().parent.parent
 LOGDIR = ROOT / "data" / "measurement_logs"
 # Production manifest: the runs whose outputs the published scores were computed from.
 # Anything else in LOGDIR is retained history and is NOT part of the reconstruction.
-PRODUCTION_LOGS = ["redo_c4", "recency_wave", "anchored_results"]
+# Production basis, established by reconciliation: the final rebalance for countries used
+# redo_c4 only. recency_wave is retained as history but was superseded — including it
+# introduces 73 spurious gaps that vanish without it (and it is not needed to reconcile
+# any record).
+PRODUCTION_LOGS = ["redo_c4", "anchored_results"]
 TMPL = "No sub-national signal was identified; the national assessment applies here"
 TOL = 0.02
 
@@ -203,7 +207,7 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
     print(f"logs: {[f.name for f in audit.files]}")
     print(f"published records: {len(rows)}")
     print(f"  exact match        : {exact}")
-    print(f"  within 0.005       : {tol - residual}")
+    print(f"  rounding-level (<0.005): {tol - residual}")
     print(f"  residual 0.005-{TOL} : {residual}  (provenance incomplete, see note)")
     print(f"  outside {TOL}       : {fail}")
     print(f"  no comparison computable: {miss}")
@@ -221,7 +225,7 @@ def run(logdir=LOGDIR, production=PRODUCTION_LOGS, verbose=False):
         for e in audit.errors[:5]: print("   ", e)
     gaps = [w for w in worst if math.isfinite(w[0])]
     if gaps:
-        print(f"  max gap {max(w[0] for w in gaps):.4f} | mean gap {statistics.mean(w[0] for w in gaps):.4f}")
+        print(f"  max gap {max(w[0] for w in gaps):.6f} | mean gap {statistics.mean(w[0] for w in gaps):.6f}")
     for w in sorted(worst, key=lambda t: -t[0])[:8]:
         print(f"  {w[1]:8} {str(w[3])[:22]:22} published {w[4] if w[4] is None else round(float(w[4]),3)} "
               f"expected {w[5] if w[5] is None else round(w[5],3)} [{w[6]}]")
