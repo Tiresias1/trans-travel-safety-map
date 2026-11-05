@@ -231,6 +231,9 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     const provNote = (rec.scoreProvenance)
       ? `<p class="popup-estimated">${esc(rec.scoreProvenance)}</p>`
       : "";
+    const lowEndNote = rec.lowEndUncertain
+      ? `<p class="popup-estimated">Low-end estimate: measured anchor readings for this range disagree by about 0.07, so treat the exact value as an indication rather than a precise figure.</p>`
+      : "";
     const floorNote = rec.floorBound
       ? `<p class="popup-estimated">The estimate reached the index floor, so the underlying value is unresolved; this record is not ranked.</p>`
       : "";
@@ -256,7 +259,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       <p class="popup-score">${score.toFixed(2)}</p>
       <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
       <p class="popup-rank">${rank}</p>
-      ${provNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
+      ${provNote}${lowEndNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
   }
 
   function openPopupAt(modeKey, feature, rec, latlng) {

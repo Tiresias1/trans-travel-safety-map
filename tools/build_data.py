@@ -273,6 +273,21 @@ def main():
                 r.pop("rawEstimate", None)
         if _n_floor:
             warnings.append(f"{_n_floor} divisions are floor-bound (unresolved, unranked)")
+        # LOW-END UNCERTAINTY (2026-11-13): the anchor ladder's anchors disagree by
+        # ~0.07 sd per target, which is larger than the differences being resolved
+        # at the dangerous end. Flag such records rather than imply precision.
+        _n_low = 0
+        for sid, r in admin1.items():
+            sc = r.get("score")
+            if not isinstance(sc, (int, float)) or r.get("floorBound"):
+                continue
+            if sc < 0.20:
+                r["lowEndUncertain"] = True
+                _n_low += 1
+            else:
+                r.pop("lowEndUncertain", None)
+        if _n_low:
+            warnings.append(f"{_n_low} divisions below 0.20 carry low-end uncertainty")
         # 2) national-score provenance, published per record
         for _iso, _c in countries.items():
             _m = (_c.get("derivedFrom") or {}).get("mode")

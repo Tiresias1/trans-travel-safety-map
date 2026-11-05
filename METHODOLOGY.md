@@ -232,6 +232,17 @@ not halve, and within-parent division differences compressed rather than sharpen
 three of those were declared success criteria in advance, so the extension was not
 adopted.** The production ladder remains the frozen four anchors.
 
+The completed preregistered report closed the question. A paired analysis on the same
+targets put the six-anchor improvement at 0.005 mean absolute error with a 95% confidence
+interval of (−0.015, +0.005) — indistinguishable from zero. The anchors themselves disagree
+by a mean standard deviation of 0.071 per target (max 0.104), which is larger than the
+differences the instrument is being asked to resolve at the dangerous end. The reviewer's
+proposed follow-up required two reference jurisdictions with independent framework scores
+between 0.02 and 0.05; the whole corpus contains exactly one (Afghanistan, 0.047), so that
+test is infeasible and the line of work stops there. Consequently divisions scored below
+0.20 are flagged in the data and in their popups as low-end estimates rather than precise
+values.
+
 The same data identified the mechanism. At the dangerous end the anchors disagree
 systematically: Côte d'Ivoire (0.297) scores targets 0.083 lower than their framework
 ratings while Belarus (0.100) scores them 0.055 higher, Niger 0.078 higher and Uganda 0.044
