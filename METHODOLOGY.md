@@ -227,7 +227,8 @@ published score. The 0.20 cut is a warning threshold, not a validated boundary.
 
 **Low-end anchor extension, tested and not adopted.** A preregistered experiment added
 two low-end reference points (Uganda 0.090, Niger 0.093) to the ladder and re-measured 20
-untested low-framework countries and 20 divisions, twelve calls each, 480 calls total. Full
+low-framework countries (19 with an independent framework rating; the twentieth is a territory
+display mirror) and 20 divisions, twelve calls each, 480 calls total. Full
 preregistration, raw per-anchor data and analysis are in `research/experiments/`.
 
 Result: the six-anchor estimator reduced the systematic low-end bias (mean signed error
@@ -256,9 +257,12 @@ The reviewer's proposed follow-up required two reference jurisdictions with inde
 framework scores between 0.02 and 0.05. The whole corpus contains exactly one (Afghanistan,
 0.047), so that specific test is infeasible and was not attempted. What remains possible
 without absent reference data is sensitivity analysis on the calls already made, and that
-is what the published caveats rest on: within-parent division differences were checked
-against every anchor exclusion, and 6 of 10 pairs kept their direction while 4 did not. The
-latter are reported as unresolved rather than presented as findings.
+is what the published caveats rest on. Within-parent division differences from the
+experimental six-anchor ladder were checked against each anchor exclusion in turn: 6 of 10
+pairs kept their direction and 4 did not. That test concerns the experimental ladder, not the
+published four-anchor ladder, and two of the six stable pairs are exact ties in the published
+data, so their stability is a property of the experiment rather than of the live scores. The
+four unstable pairs are reported as unresolved rather than presented as findings.
 
 Divisions scored below 0.20 **that are not floor-bound** are flagged `lowEndUncertain`; the
 85 floor-bound records are a separate treatment (unresolved, unranked). The low-end popup
