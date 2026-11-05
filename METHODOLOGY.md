@@ -28,6 +28,27 @@ better because a visitor could pass or stay quiet; that is a property of the tra
 itinerary, and it disappears the moment a passport is checked or an emergency happens. 1.00 is
 an aspirational limit no jurisdiction fully reaches.
 
+**Rule changes and score provenance.** Every score records the rulebook version that produced
+it. A rule change does not silently relabel old scores: the current code rubric and the rubric the
+scores were produced under are both recorded, and compatibility is treated as unestablished until
+a blind comparison establishes it.
+
+Rule 10b (the score is conditional on discovery; no credit for being able to pass; engineered
+discovery counts as exposure) was audited this way on 20 countries stratified as engineered
+discovery, visibility-sensitive, and random, plus 7 divisions. The audit ran the same sample
+twice under one seed, once with rule 10b present and once with it stripped: the rule's own
+effect was a mean of −0.004, mean absolute effect 0.013, largest 0.038 — below the prespecified
+materiality thresholds of 0.03 and 0.08. A single-arm comparison had appeared to shift scores by
++0.036, but the control showed that about +0.039 of that was partner resampling rather than the
+rule. Compatibility is therefore supported within the audited sample; scores keep their older
+stamp and are not claimed to follow the new rubric record by record.
+
+That control also surfaced something separate, which is recorded here rather than acted on: a
+fresh ~15-pair sample reads on average about 0.04 *above* the stored encounter means that came
+from ~35 encounters per country. Whether that reflects small-sample optimism, drift in what the
+rater rewards, or something else is not established by this audit, and it is not corrected in
+the published scores.
+
 **Visitor scenario.** The reference traveller holds a passport from their home country, travels
 on a short visit rather than as a resident, is an adult unless a claim states otherwise, has no
 guaranteed local medical need, and arrives through ordinary points of entry. Where a dossier

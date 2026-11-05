@@ -1,0 +1,71 @@
+== RULE 10b COMPATIBILITY AUDIT (new rubric r2026-11-13 vs stored r2026-11-12) ==
+countries audited: 20 of 20 targeted
+mean signed shift: +0.0358 | mean absolute shift: 0.0389 | max |shift| 0.2100
+
+  stratum engineered   n_audited= 8 mean signed shift +0.0266
+  stratum visibility   n_audited= 6 mean signed shift +0.0549
+  stratum random       n_audited= 6 mean signed shift +0.0291
+
+iso   name                  stored     new   shift   n
+ASM   American Samoa         0.365   0.575  +0.210  15
+ESH   Western Sahara         0.121   0.199  +0.078  16
+KEN   Kenya                  0.271   0.344  +0.072  17
+ZAF   South Africa           0.653   0.712  +0.060  21
+CYM   Cayman Islands         0.514   0.572  +0.057  13
+NPL   Nepal                  0.502   0.558  +0.057  19
+PER   Peru                   0.365   0.418  +0.053  13
+MNG   Mongolia               0.494   0.543  +0.049  23
+BFA   Burkina Faso           0.278   0.304  +0.026  15
+VNM   Vietnam                0.513   0.534  +0.021  16
+MDA   Moldova                0.400   0.417  +0.017  13
+BHS   Bahamas                0.389   0.373  -0.016  19
+SAU   Saudi Arabia           0.070   0.083  +0.013  14
+PHL   Philippines            0.435   0.447  +0.012  24
+WSM   Samoa                  0.707   0.717  +0.010  16
+HRV   Croatia                0.706   0.713  +0.007  23
+MUS   Mauritius              0.617   0.611  -0.005  18
+MLT   Malta                  0.821   0.825  +0.004  17
+MDG   Madagascar             0.416   0.412  -0.004  17
+TWN   Taiwan                 0.737   0.733  -0.004  15
+
+divisions (anchored protocol, new rubric vs stored):
+  ASM/American Samoa         stored  0.365 new  0.487 shift +0.121 n=15
+  GIB/Gibraltar              stored  0.535 new  0.539 shift +0.005 n=11
+  FLK/Falkland Islands (Malv stored  0.523 new  0.620 shift +0.097 n=8
+  MTQ/Martinique             stored  0.554 new  0.587 shift +0.033 n=13
+  FRO/Faroe Islands          stored  0.734 new  0.680 shift -0.054 n=14
+  MYT/Mayotte                stored  0.472 new  0.487 shift +0.016 n=15
+  BES/Bonaire Sint Eustatius stored  0.768 new  0.741 shift -0.027 n=15
+
+== PRESPECIFIED MATERIALITY ==
+  (a) mean |shift| 0.0389 vs 0.03 -> TRIGGERED
+  (c) max |shift| 0.2100 vs 0.08 -> TRIGGERED
+
+== A/B CONTROL: same 20 targets, same seed, rule 10b present vs stripped ==
+iso   name                stored  oldrule  newrule rule_effect sample_effect
+PER   Peru                 0.365    0.410    0.418      +0.008        +0.045
+MNG   Mongolia             0.494    0.523    0.543      +0.020        +0.030
+PHL   Philippines          0.435    0.465    0.447      -0.018        +0.030
+VNM   Vietnam              0.513    0.568    0.534      -0.034        +0.055
+ZAF   South Africa         0.653    0.688    0.712      +0.025        +0.035
+HRV   Croatia              0.706    0.689    0.713      +0.024        -0.018
+MDA   Moldova              0.400    0.437    0.417      -0.020        +0.037
+MUS   Mauritius            0.617    0.617    0.611      -0.006        +0.000
+BHS   Bahamas              0.389    0.380    0.373      -0.007        -0.009
+WSM   Samoa                0.707    0.727    0.717      -0.010        +0.020
+KEN   Kenya                0.271    0.353    0.344      -0.010        +0.082
+TWN   Taiwan               0.737    0.732    0.733      +0.001        -0.005
+ASM   American Samoa       0.365    0.613    0.575      -0.038        +0.247
+CYM   Cayman Islands       0.514    0.570    0.572      +0.002        +0.056
+MDG   Madagascar           0.416    0.415    0.412      -0.003        -0.001
+BFA   Burkina Faso         0.278    0.301    0.304      +0.003        +0.024
+MLT   Malta                0.821    0.816    0.825      +0.009        -0.005
+ESH   Western Sahara       0.121    0.204    0.199      -0.006        +0.084
+NPL   Nepal                0.502    0.552    0.558      +0.006        +0.051
+SAU   Saudi Arabia         0.070    0.099    0.083      -0.016        +0.029
+
+rule effect (new minus old rubric, same sample): mean -0.0035, mean |.| 0.0132, max 0.0375
+sample effect (old rubric re-sample minus stored):  mean +0.0393, mean |.| 0.0430
+
+Decomposition: the apparent +0.036 shift seen in the single-arm audit is
+  ~+0.039 from sample/partner composition and ~-0.003 from rule 10b.

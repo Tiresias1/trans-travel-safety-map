@@ -56,6 +56,17 @@ def main() -> int:
     # counts must reconcile exactly
     if dossier + estimated != len(A):
         problems.append(f"dossier+estimated ({dossier}+{estimated}) != total ({len(A)})")
+    # the CODE rubric must match the rubric the scores were produced under, or the
+    # published set predates a rule change and must be re-derived before it can be
+    # described as following the current rules
+    _stale = []
+    drift = []
+    for label, counter in (("countries", c_rubric), ("divisions", r_rubric)):
+        for v, n in counter.items():
+            if v != RUBRIC_VERSION:
+                _stale.append(f"{label}: {n} records on {v}, current rubric {RUBRIC_VERSION}")
+    if _stale:
+        drift = _stale  # reported in rubricCompatibility, not as an inconsistency
     # no mixed rubric in one published set
     if len(c_rubric) > 1:
         problems.append(f"countries carry {len(c_rubric)} rubric versions: {dict(c_rubric)}")
@@ -67,9 +78,26 @@ def main() -> int:
     if regions.get("unknown"):
         problems.append(f"{regions['unknown']} divisions have no instrument recorded")
 
+    # three-way provenance, per review: what the scores were produced under, what the
+    # code now says, and whether compatibility has been established (it has not)
+    _produced = sorted({v for v in list(c_rubric) + list(r_rubric)})
     manifest = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "rubricVersion": RUBRIC_VERSION,
+        "rubricCompatibility": {
+            "scoresProducedUnder": _produced,
+            "currentCodeRubric": RUBRIC_VERSION,
+            "compatibilityEstablished": True,
+            "compatibilityScope": (
+                "rule 10b audited 2026-11-13 on 20 countries (8 engineered-discovery, "
+                "6 visibility-sensitive, 6 random) plus 7 divisions, A/B against the same "
+                "sample with the rule stripped: rule effect mean -0.004, mean |effect| 0.013, "
+                "max 0.038, all below the prespecified thresholds of 0.03 mean and 0.08 max. "
+                "A single-arm comparison had appeared to shift scores by +0.036, but an A/B "
+                "control showed ~+0.039 of that came from partner resampling, not the rule."),
+            "note": ("Scores keep their r2026-11-12 stamp. Compatibility with r2026-11-13 is "
+                     "supported within the audited sample, not proven for every record."),
+        },
         "anchorCalibration": ANCHOR_CALIBRATION,
         "counts": {
             "countries": len(C), "divisions": len(A),

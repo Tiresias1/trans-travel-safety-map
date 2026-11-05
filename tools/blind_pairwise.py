@@ -558,9 +558,22 @@ do not force a difference, and do not let the order of presentation influence yo
 """
 
 
+def _strip_rule_10b(text: str) -> str:
+    """Control condition for the rule-10b compatibility audit: remove that rule so the
+    same sample can be rated under the previous rubric (A/B, not a production mode)."""
+    import os as _os
+    if not _os.environ.get("STRIP_RULE_10B"):
+        return text
+    i = text.find("10b. **The score is what happens if the traveller is outed")
+    if i < 0:
+        return text
+    j = text.find("11. **Rule of law", i)
+    return text[:i] + (text[j:] if j > 0 else "")
+
+
 def build_system_prompt(taxonomy_text: str) -> str:
     """Assemble the fixed prompt. Built once per process → byte-identical → cacheable."""
-    return f"""\
+    return _strip_rule_10b(f"""\
 You are an expert assessor of travel risk for transgender people. You will be given two
 anonymised research dossiers, labelled A and B. Each describes one jurisdiction. You do not
 know which jurisdictions they are, and you must not try to guess: your rating must follow
@@ -581,7 +594,7 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
   cannot be proven.
 
 Bands (for orientation only — you output a number, not a band):
-[0.00, 0.20) Do Not Travel · [0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk ·
+[0.00, 0.20) Severe Risk · [0.20, 0.40) High Risk · [0.40, 0.60) Elevated Risk ·
 [0.60, 0.80) Reduced Risk · [0.80, 1.00] Low Risk
 
 The score integrates **probability of being outed** × **severity of what happens if outed**,
@@ -596,7 +609,7 @@ across every axis below.
 
 ---
 
-{OUTPUT_FORMAT}"""
+{OUTPUT_FORMAT}""")
 
 
 # --------------------------------------------------------------------------- #
