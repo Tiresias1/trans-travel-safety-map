@@ -237,10 +237,10 @@ absolute error was 0.021 against a preregistered threshold of 0.020 and floor in
 not halve. **Both were declared success criteria in advance, so the extension was not
 adopted.** The production ladder remains the frozen four anchors.
 
-Two qualifications, because they matter for how far the negative result reaches. A paired
-test on the same 19 countries put the improvement at 0.005 mean absolute error with a 95%
-confidence interval of −0.015 to +0.005, which does not establish the gain and does not
-prove it was noise. And the decision rule, not the statistics, is what settles it: the
+Two qualifications, because they matter for how far the negative result reaches. On the same
+19 countries the paired contrast is |error(A6)| minus |error(A4)|: mean −0.005, 95% bootstrap
+confidence interval (−0.015, +0.005), where a negative value favours A6. That interval spans
+zero, so the data establish neither a gain nor its absence. And the decision rule, not the statistics, is what settles it: the
 prespecified criteria were not met.
 
 A further caution about aggregate agreement, stated in the form the data supports. Single-anchor
@@ -273,14 +273,20 @@ scores. For floor-bound records, the ordering relative to other floor-bound reco
 unresolved by this instrument; that is not a claim that no comparison involving them could
 ever be made.
 
-The same data identified the mechanism. At the dangerous end the anchors disagree
-systematically: Côte d'Ivoire (0.297) scores targets 0.083 lower than their framework
-ratings while Belarus (0.100) scores them 0.055 higher, Niger 0.078 higher and Uganda 0.044
-higher. Dropping Côte d'Ivoire is the single most damaging leave-one-out (absolute error
-rises to 0.033), so it is the middle anchor, not the absence of low anchors, that carries
-most of the bias. Repeat spread within a target is 0.05–0.07 per anchor, which puts the
-standard error of the current eight-call protocol at roughly 0.02 — the same order as the
-differences it is being asked to resolve.
+The same data show where the disagreement sits. At the dangerous end the anchors differ
+systematically: Côte d'Ivoire (0.297) reads targets 0.083 below their framework ratings,
+while Belarus (0.100) reads them 0.055 above, Niger 0.078 above and Uganda 0.044 above. Two
+leave-one-out results follow, and they belong to different ladders: dropping Côte d'Ivoire
+from the experimental six-anchor ladder *raises* error to 0.033, while dropping it from the
+four-anchor ladder *lowers* error to 0.022. Reading those together, what the data establish
+is that anchor composition matters materially. They do not establish that the middle anchor
+carries most of the bias and that the missing low anchors do not: adding the two low anchors
+moved the mean signed error from −0.017 to +0.009, so their presence changes the result. Both
+contributions remain live.
+
+Repeat spread within a target is 0.05–0.07 per anchor, which puts the standard error of the
+current eight-call protocol at roughly 0.02, the same order as the differences it is being
+asked to resolve.
 
 **Known limits, published rather than hidden:**
 
