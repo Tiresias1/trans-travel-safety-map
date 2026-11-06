@@ -89,6 +89,14 @@ Rewrite it as a DISPLAY summary for a traveller viewing this region's popup:
   content, never into the region-local facts.
 - Do not invent, drop or alter any region-local fact or number. Complete
   sentences, capital first letter, terminal period. Same sober tone.
+- VOICE (strict): a professional human-rights / UN field report. State findings
+  directly; never refer to the writing itself. NEVER use "this record", "this
+  assessment", "this dossier", "the dossier", "the record", "this model
+  estimate", "this instrument", "this profile", or "the parent country" — name
+  the place and the law directly instead. Do not read like an AI: avoid delve,
+  navigate, nuanced, foster, landscape, underscore, unpack, pivotal, testament,
+  realm, "it is important to note", "it is worth noting", and "not only X but
+  also Y".
 
 CURRENT SUMMARY:
 {summ[:6000]}
@@ -104,7 +112,7 @@ Return ONLY JSON: {{"display": "..."}}""")
         # region-local preservation is a prompt duty + spot-check, not a
         # mechanical equality (that gate blocked every compression).
         ok_digits = not (set(nums(s)) - set(nums(summ)))
-        ok_jargon = not re.search(r"route \d|model estimate|SUPERSEDED|earlier profile", s, re.I)
+        ok_jargon = not re.search(r"route \d|model estimate|SUPERSEDED|earlier profile|this record|this assessment|this dossier|the dossier|this instrument|this profile|parent country", s, re.I)
         if ok_shape and ok_len and ok_digits and ok_jargon and len(s) >= 120:
             return s
     return None
