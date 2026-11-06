@@ -1,0 +1,71 @@
+MODELS (all thinking:medium, cheap->midrange, no Grok/Muse): claude-sonnet-5.5, deepseek-v4.1-flash, glm-5.3, gpt-6.1-terra:floor, mimo-v2.6-flash
+(deepseek-v4.1-flash is ALSO the model that produced the map's current scores.)
+
+INDIVIDUAL ratings, NPL vs GBR (gap = GBR-NPL):
+  [knowledge]
+     claude-sonnet-5.5      NPL=0.68 GBR=0.68 gap=0.0
+     deepseek-v4.1-flash    NPL=0.35 GBR=0.75 gap=0.4
+     glm-5.3                NPL=0.8 GBR=0.72 gap=-0.08
+     gpt-6.1-terra:floor    NPL=0.67 GBR=0.72 gap=0.05
+     mimo-v2.6-flash        NPL=0.58 GBR=0.64 gap=0.06
+     MEAN                   NPL=0.616 GBR=0.702 gap=+0.086
+  [articles]
+     claude-sonnet-5.5      NPL=0.62 GBR=0.52 gap=-0.1
+     deepseek-v4.1-flash    NPL=0.4 GBR=0.45 gap=0.05
+     glm-5.3                NPL=0.7 GBR=0.55 gap=-0.15
+     gpt-6.1-terra:floor    NPL=0.62 GBR=0.7 gap=0.08
+     mimo-v2.6-flash        NPL=0.58 GBR=0.55 gap=-0.03
+     MEAN                   NPL=0.584 GBR=0.554 gap=-0.030
+  [articles/blind]
+     claude-sonnet-5.5      NPL=0.52 GBR=0.58 gap=0.06
+     deepseek-v4.1-flash    NPL=0.45 GBR=0.4 gap=-0.05
+     glm-5.3                NPL=0.58 GBR=0.55 gap=-0.03
+     gpt-6.1-terra:floor    NPL=0.54 GBR=0.68 gap=0.14
+     mimo-v2.6-flash        NPL=0.42 GBR=0.58 gap=0.16
+     MEAN                   NPL=0.502 GBR=0.558 gap=+0.056
+  [instructions]
+     claude-sonnet-5.5      NPL=0.62 GBR=0.3 gap=-0.32
+     deepseek-v4.1-flash    NPL=0.55 GBR=0.42 gap=-0.13
+     glm-5.3                NPL=0.72 GBR=0.48 gap=-0.24
+     gpt-6.1-terra:floor    NPL=0.68 GBR=0.46 gap=-0.22
+     mimo-v2.6-flash        NPL=0.64 GBR=0.52 gap=-0.12
+     MEAN                   NPL=0.642 GBR=0.436 gap=-0.206
+  [instructions/blind]
+     claude-sonnet-5.5      NPL=0.52 GBR=0.3 gap=-0.22
+     deepseek-v4.1-flash    NPL=0.4 GBR=0.45 gap=0.05
+     glm-5.3                NPL=0.58 GBR=0.48 gap=-0.1
+     gpt-6.1-terra:floor    NPL=0.59 GBR=0.45 gap=-0.14
+     mimo-v2.6-flash        NPL=0.45 GBR=0.47 gap=0.02
+     MEAN                   NPL=0.508 GBR=0.430 gap=-0.078
+
+PAIRWISE ratings (A=NPL, B=GBR), gap=GBR-NPL:
+  [knowledge]
+     claude-sonnet-5.5      NPL=0.62 GBR=0.58 gap=-0.04
+     deepseek-v4.1-flash    NPL=0.38 GBR=0.74 gap=0.36
+     glm-5.3                NPL=0.65 GBR=0.78 gap=0.13
+     gpt-6.1-terra:floor    NPL=0.58 GBR=0.8 gap=0.22
+     mimo-v2.6-flash        NPL=0.7 GBR=0.78 gap=0.08
+  [articles]
+     claude-sonnet-5.5      NPL=0.5 GBR=0.5 gap=0.0
+     deepseek-v4.1-flash    NPL=0.35 GBR=0.55 gap=0.2
+     glm-5.3                NPL=0.58 GBR=0.62 gap=0.04
+     gpt-6.1-terra:floor    NPL=0.6 GBR=0.77 gap=0.17
+     mimo-v2.6-flash        NPL=0.63 GBR=0.47 gap=-0.16
+  [articles/blind]
+     claude-sonnet-5.5      NPL=0.5 GBR=0.55 gap=0.05
+     deepseek-v4.1-flash    NPL=0.45 GBR=0.65 gap=0.2
+     glm-5.3                NPL=0.55 GBR=0.7 gap=0.15
+     gpt-6.1-terra:floor    NPL=0.5 GBR=0.72 gap=0.22
+     mimo-v2.6-flash        NPL=0.45 GBR=0.6 gap=0.15
+  [instructions]
+     claude-sonnet-5.5      NPL=0.5 GBR=0.36 gap=-0.14
+     deepseek-v4.1-flash    NPL=0.5 GBR=0.35 gap=-0.15
+     glm-5.3                NPL=0.55 GBR=0.42 gap=-0.13
+     gpt-6.1-terra:floor    NPL=0.67 GBR=0.44 gap=-0.23
+     mimo-v2.6-flash        NPL=0.57 GBR=0.45 gap=-0.12
+  [instructions/blind]
+     claude-sonnet-5.5      NPL=0.5 GBR=0.25 gap=-0.25
+     deepseek-v4.1-flash    NPL=0.6 GBR=0.42 gap=-0.18
+     glm-5.3                NPL=0.55 GBR=0.4 gap=-0.15
+     gpt-6.1-terra:floor    NPL=0.61 GBR=0.43 gap=-0.18
+     mimo-v2.6-flash        NPL=0.55 GBR=0.4 gap=-0.15
