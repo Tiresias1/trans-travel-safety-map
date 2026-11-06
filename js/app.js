@@ -219,7 +219,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       sub = `<p class="popup-sub">${parentRec ? esc(parentRec.name) : esc(props.iso3 || "")}</p>`;
       let r = "";
       if (rec.floorBound) {
-        r = "At the index floor: differences in this range are unresolved";
+        r = "";   // floor-bound: not ranked. No jargon.
       } else if (typeof rec.worldRank === "number" && meta.totalAdmin1) {
         r += `Rank ${rec.worldRank} of ${meta.totalAdmin1} states/provinces`;
       }
