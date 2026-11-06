@@ -228,15 +228,6 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       rank = r;
     }
     const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
-    const lowEndNote = rec.lowEndUncertain
-      ? `<p class="popup-estimated">Low-end estimate: results in this range are sensitive to which reference jurisdictions were used. In a test of 19 low-scoring countries, the average standard deviation across six anchor-specific readings was about 0.07 on this scale. That is a spread across references, not a measured error for this record, so treat fine distinctions here as indicative.</p>`
-      : "";
-    const floorNote = rec.floorBound
-      ? `<p class="popup-estimated">This estimate reached the index floor. Its order relative to other floor-bound records is unresolved with this instrument, so it is not ranked.</p>`
-      : "";
-    const estNote = rec.estimated
-      ? `<p class="popup-estimated">Model estimate — derived from the national-level assessment rather than a dedicated division dossier.</p>`
-      : "";
     const outscope = rec.outOfScopeNotes
       ? `<div class="popup-outscope"><span class="label">Caveats and unresolved questions:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
       : "";
@@ -256,7 +247,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       <p class="popup-score">${score.toFixed(2)}</p>
       <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
       <p class="popup-rank">${rank}</p>
-      ${lowEndNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
+      ${summary}${outscope}${sources}`;
   }
 
   function openPopupAt(modeKey, feature, rec, latlng) {
