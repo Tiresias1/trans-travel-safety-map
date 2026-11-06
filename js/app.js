@@ -228,9 +228,6 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       rank = r;
     }
     const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
-    const provNote = (rec.scoreProvenance)
-      ? `<p class="popup-estimated">${esc(rec.scoreProvenance)}</p>`
-      : "";
     const lowEndNote = rec.lowEndUncertain
       ? `<p class="popup-estimated">Low-end estimate: results in this range are sensitive to which reference jurisdictions were used. In a test of 19 low-scoring countries, the average standard deviation across six anchor-specific readings was about 0.07 on this scale. That is a spread across references, not a measured error for this record, so treat fine distinctions here as indicative.</p>`
       : "";
@@ -259,7 +256,7 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
       <p class="popup-score">${score.toFixed(2)}</p>
       <div class="popup-band"><i style="background:${colour}"></i>${label}</div>
       <p class="popup-rank">${rank}</p>
-      ${provNote}${lowEndNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
+      ${lowEndNote}${floorNote}${estNote}${summary}${outscope}${sources}`;
   }
 
   function openPopupAt(modeKey, feature, rec, latlng) {
