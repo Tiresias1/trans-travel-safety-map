@@ -34,6 +34,16 @@ GRADIENT_ANCHORS = [
 # only as supplementary context. Staged rollout: apply to ROLLOUT_SUBSET first for
 # review, expand to all countries after sign-off.
 ROLLOUT_SUBSET = {"USA", "GBR", "NPL", "IND", "BRA", "ZAF", "CAN", "DEU", "AUS", "MEX"}
+# PROVISIONAL CALIBRATION (2026-11-13): for a country whose instrument-derived
+# national score is established (multi-model consensus + review) as miscalibrated,
+# publish a provisional consensus value, clearly labelled, pending the matched
+# propagation/calibration audit. The instrument value is retained as a diagnostic.
+PROVISIONAL_CALIBRATION = {
+    "USA": {"score": 0.33,
+            "note": ("multi-model consensus 0.30-0.35 (Claude 0.32, Gemini 0.32, Grok 0.39, "
+                     "GPT-5.6 0.18); a flat national-framework 0.264 is too harsh under our rubric; "
+                     "pending matched national-to-division propagation/calibration audit")},
+}
 
 def band_label(score):
     for mx, label in BANDS:
@@ -335,6 +345,20 @@ def main():
                     "mask variation, so the measured range may understate it")
             else:
                 _c["scoreProvenance"] = "framework rating (no measured division set)"
+        # PROVISIONAL CALIBRATION application: override the published score with the
+        # disclosed consensus value for miscalibrated countries (instrument value kept
+        # as a diagnostic in nationalFrameworkScore).
+        for _iso, _pc in PROVISIONAL_CALIBRATION.items():
+            _c = countries.get(_iso)
+            if _c is None:
+                continue
+            _c["score"] = round(_pc["score"], 6)
+            _c["band"] = band_label(_c["score"])
+            _c["provisionalCalibration"] = {"value": _pc["score"], "note": _pc["note"]}
+            _c["scoreProvenance"] = (
+                f"PROVISIONAL consensus calibration {_pc['score']:.3f}: {_pc['note']}. "
+                f"Instrument value: national-framework {_c.get('nationalFrameworkScore', 0):.3f} "
+                "retained as independent diagnostic")
         # provenance and floor flags are computed AFTER the earlier countries dump:
         # persist them now so the file matches the validated state
         json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
