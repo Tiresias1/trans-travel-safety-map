@@ -29,6 +29,11 @@ GRADIENT_ANCHORS = [
     [0.0, "#67000d"], [0.1, "#d73027"], [0.3, "#fc8d59"], [0.5, "#fee08b"],
     [0.7, "#91cf60"], [0.9, "#1a9850"], [1.0, "#a8dbe8"],
 ]
+# NATIONAL-SCORE RULE (2026-11-13): a country's score is its NATIONAL ASSESSMENT.
+# ADM1 divisions must NEVER change the national picture; their spread is published
+# only as supplementary context. Staged rollout: apply to ROLLOUT_SUBSET first for
+# review, expand to all countries after sign-off.
+ROLLOUT_SUBSET = {"USA", "GBR", "NPL", "IND", "BRA", "ZAF", "CAN", "DEU", "AUS", "MEX"}
 
 def band_label(score):
     for mx, label in BANDS:
@@ -214,14 +219,26 @@ def main():
                 continue
             c.setdefault("nationalFrameworkScore", round(float(c.get("score", 0)), 6))
             m = sum(scores) / len(scores)
-            c["score"] = round(min(1.0, max(0.0, m)), 6)
-            c["band"] = band_label(c["score"])
             c["divisionSpread"] = {"n": len(scores),
                                    "min": round(min(scores), 6),
                                    "max": round(max(scores), 6),
                                    "sd": round(statistics.pstdev(scores), 6)}
-            c["derivedFrom"] = {"mode": "reaggregate", "source": "divisions",
-                                "weighting": "unweighted"}
+            # NATIONAL-SCORE RULE: the national score is the NATIONAL ASSESSMENT,
+            # never the mean of ADM1 divisions (regions must not change the national
+            # picture). Staged rollout via ROLLOUT_SUBSET (module constant).
+            if iso in ROLLOUT_SUBSET:
+                _fw = c.get("nationalFrameworkScore")
+                if isinstance(_fw, (int, float)):
+                    c["score"] = round(float(_fw), 6)
+                    c["band"] = band_label(c["score"])
+                c["derivedFrom"] = {"mode": "pairwise"}
+                c.pop("aggregationBlocked", None)
+            else:
+                # pre-rollout: division mean (to be retired once rolled out)
+                c["score"] = round(min(1.0, max(0.0, m)), 6)
+                c["band"] = band_label(c["score"])
+                c["derivedFrom"] = {"mode": "reaggregate", "source": "divisions",
+                                    "weighting": "unweighted"}
             _n_re += 1
         if _n_re:
             warnings.append(f"national scores re-aggregated from divisions: {_n_re}")
@@ -298,6 +315,15 @@ def main():
                     f"destination summary: mean of {_n} measured divisions; they range "
                     f"{_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f} "
                     f"(sd {_sp.get('sd', 0):.2f})")
+            elif _m == "pairwise" and _c.get("divisionSpread") and not _c.get("aggregationBlocked"):
+                # rolled-out national-assessment record: division range is
+                # supplementary context, it does NOT set the national score
+                _sp = _c["divisionSpread"]
+                _c["scoreProvenance"] = (
+                    f"framework rating: national assessment. {_sp.get('n', 0)} measured "
+                    f"divisions span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f} "
+                    f"(sd {_sp.get('sd', 0):.2f}), published as supplementary context; "
+                    "they do not set the national score")
             elif _m == "mirror":
                 _c["scoreProvenance"] = "mirrors the territory's own record"
             elif _c.get("aggregationBlocked"):
