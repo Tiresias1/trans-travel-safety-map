@@ -227,7 +227,9 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
         r += ` · ${rec.countryRank} of ${rec.unitsInCountry} in ${parentRec ? esc(parentRec.name) : ""}`;
       rank = r;
     }
-    const summary = rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "";
+    const summary = rec.displaySummary
+      ? `<div class="popup-text"><p>${esc(rec.displaySummary)}</p></div>`
+      : (rec.summary ? `<div class="popup-text">${sanitizeSummary(rec.summary)}</div>` : "");
     const outscope = rec.outOfScopeNotes
       ? `<div class="popup-outscope"><span class="label">Caveats and unresolved questions:</span> ${sanitizeSummary(rec.outOfScopeNotes)}</div>`
       : "";
