@@ -3,8 +3,10 @@
 
 The old 1-3 <p> / 2800-char caps forced summarizers to *select* rather than
 *consolidate* (the USA dossier had 17 sources, each with distinct substantive
-claims, but the summary carried only ~4). With the caps raised (8000/12),
-this lane feeds the FULL claim inventory per source and instructs the model
+claims, but the summary carried only ~4). With the caps raised to the shared
+ceiling (MAX_SUMMARY_CHARS = 16000 chars / 12 <p>, the same validation
+build_data and apply_rework run), this lane feeds the FULL claim inventory
+per source and instructs the model
 to include every sourced substantive claim, in report voice (STYLE_RULES),
 with the four-field split + blind mirror.
 
@@ -16,6 +18,9 @@ tools/apply_rework.py-style merge (see --apply).
 from __future__ import annotations
 import argparse, json, os, re, sys, time, urllib.request
 from pathlib import Path
+from build_data import MAX_SUMMARY_CHARS  # shared summary ceiling: never let
+# this lane's validation gate drift from tools/build_data.py and
+# tools/apply_rework.py (all three check the same limit)
 
 ROOT = Path(__file__).resolve().parent.parent
 KEY = (__import__("os").environ.get("OPENROUTER_KEY")
@@ -341,7 +346,10 @@ def run(who, rec, parent_summ=""):
 
 
 def valid_summary(s):
-    if not s or len(s) > 8000:
+    # Shared length ceiling (build_data.MAX_SUMMARY_CHARS); paragraph checks
+    # remain lane-specific. The old hardcoded 8000 predated the shared 16000
+    # ceiling and rejected valid dossiers (the real 8,792-char USA summary).
+    if not s or len(s) > MAX_SUMMARY_CHARS:
         return False
     n = len(re.findall(r"<p[\s>]", s))
     return 1 <= n <= 12

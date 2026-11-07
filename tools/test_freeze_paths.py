@@ -13,6 +13,10 @@ Covers:
   C. tools/settle_scores.py refuses --rebalance and --run (incl. force) with
      nonzero before any mutation or provider call; read-only --plan still
      works.
+  D. tools/consolidate_record.py validates summaries against the SHARED
+     build_data.MAX_SUMMARY_CHARS ceiling (source + behaviour parity on the
+     real 8,792-char USA dossier and on at-/over-limit text), imported under
+     a controlled env so no credential file is opened and no API call runs.
 
 All builds run in temporary sandbox copies of data/ + boundaries/; this
 suite never writes into data/ or any repo file. No score output is applied
@@ -567,6 +571,83 @@ class RetiredCLIs(unittest.TestCase):
         self.assertNotIn("subprocess.run", src)
         self.assertNotIn("write_text", src)   # no data writes anywhere
         self.assertNotIn('rec["score"] =', src)  # no score assignment left
+
+
+class SharedSummaryCeilingAcrossLanes(unittest.TestCase):
+    """D: the consolidation lane's summary gate must be the shared
+    build_data.MAX_SUMMARY_CHARS ceiling used by build_data and apply_rework
+    — no lane-local hardcoded limit that silently rejects valid dossiers.
+    The lane module reads the provider key at import time, so the controlled
+    env below keeps that import credential-free and network-free."""
+
+    DUMMY_KEY = "unit-test-dummy-key-not-real"
+
+    def setUp(self):
+        self.src = (TOOLS / "consolidate_record.py").read_text(encoding="utf-8")
+
+    def test_d1_source_shares_the_constant_and_keeps_no_hardcoded_ceiling(self):
+        tree = ast.parse(self.src)
+        literals = {n.value for n in ast.walk(tree)
+                    if isinstance(n, ast.Constant) and isinstance(n.value, int)}
+        self.assertNotIn(8000, literals,
+                         "stale 8000 ceiling literal in consolidate_record")
+        imports = {(n.module, a.name) for n in ast.walk(tree)
+                   if isinstance(n, ast.ImportFrom) for a in n.names}
+        self.assertIn(("build_data", "MAX_SUMMARY_CHARS"), imports,
+                      "shared ceiling not imported from build_data")
+        fn = next(n for n in tree.body if isinstance(n, ast.FunctionDef)
+                  and n.name == "valid_summary")
+        names = {x.id for x in ast.walk(fn) if isinstance(x, ast.Name)}
+        self.assertIn("MAX_SUMMARY_CHARS", names,
+                      "valid_summary does not test against the shared name")
+        # obsolete ceiling description replaced by the current shared one
+        self.assertNotIn("(8000/12)", self.src)
+        self.assertIn("MAX_SUMMARY_CHARS = 16000", self.src)
+
+    def test_d2_three_lanes_agree_on_8792_and_boundary_text(self):
+        import apply_rework
+        sys.modules.pop("consolidate_record", None)
+        key_file = Path("/tmp/.openrouter_key")
+        real_read_text = Path.read_text
+
+        def guarded_read_text(p, *args, **kwargs):
+            if Path(p) == key_file:
+                raise AssertionError("test opened the real API key file")
+            return real_read_text(p, *args, **kwargs)
+
+        def no_net(*_a, **_k):
+            raise AssertionError("network attempted by consolidate_record import")
+
+        with mock.patch.dict(os.environ, {"OPENROUTER_KEY": self.DUMMY_KEY}), \
+                mock.patch.object(Path, "read_text", guarded_read_text), \
+                mock.patch("socket.create_connection", no_net), \
+                mock.patch("socket.getaddrinfo", no_net):
+            import consolidate_record
+
+        self.assertEqual(consolidate_record.KEY, self.DUMMY_KEY,
+                         "controlled env not used: module saw another key")
+        self.assertEqual(consolidate_record.MAX_SUMMARY_CHARS, 16000)
+        self.assertEqual(consolidate_record.MAX_SUMMARY_CHARS,
+                         build_data.MAX_SUMMARY_CHARS)
+        self.assertEqual(consolidate_record.MAX_SUMMARY_CHARS,
+                         apply_rework.MAX_SUMMARY_CHARS)
+
+        lanes = (build_data.valid_summary, apply_rework.valid_summary,
+                 consolidate_record.valid_summary)
+        usa = load(ROOT / "data" / "countries.json")["USA"]["summary"]
+        self.assertEqual(len(usa), 8792)
+        at_limit = "<p>" + "a" * (build_data.MAX_SUMMARY_CHARS - 7) + "</p>"
+        over = "<p>" + "a" * (build_data.MAX_SUMMARY_CHARS - 6) + "</p>"
+        self.assertEqual(len(at_limit), 16000)
+        self.assertEqual(len(over), 16001)
+        for lane in lanes:
+            self.assertTrue(lane(usa), f"{lane.__module__}.valid_summary "
+                                       f"rejected the 8792-char USA summary")
+            self.assertTrue(lane(at_limit), f"{lane.__module__}: at-limit "
+                                            f"16000 rejected")
+            self.assertFalse(lane(over), f"{lane.__module__}: over-limit "
+                                         f"16001 accepted")
+            self.assertFalse(lane(""))
 
 
 if __name__ == "__main__":
