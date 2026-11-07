@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:18:09.141948+00:00",
+ "cell": "ENG_primary",
+ "draw": 2,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 13801,
+  "completion_tokens": 2961,
+  "total_tokens": 16762,
+  "cost": 0.005770125,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.005770125,
+   "upstream_inference_prompt_cost": 0.003105225,
+   "upstream_inference_completions_cost": 0.0026649
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1754,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.00,\n  \"departures\": [\n    {\"fact\": \"England is the division where the national Equality Act 2010 definitional regime applies directly: the 16 April 2025 top-court ruling makes 'woman' and 'sex' mean biological sex, so a GRC does not carry sex-based protections, and prison/custody allocation follows biological sex.\",\n     \"local_evidence\": \"\\\"Prison and custody decisions in England are governed by the same national ruling, under which Article 8 ... confers no automatic right to accommodation with the opposite biological sex\\\"; \\\"the unanimous judgment of the country's highest court (handed down 16 April 2025) that 'woman' and 'sex' in the Equality Act 2010 refer to biological woman and biological sex\\\".\",\n     \"direction\": \"riskier\",\n     \"magnitude\": 0.00,\n     \"visitor_applicability\": \"This is national-level law and the national equality statute; it applies across the parent nation and is already priced into the fixed national level. The custody/gendered-space exposure it creates is not an England-only departure.\",\n     \"already_in_national_bundle\": true,\n     \"counted_in_delta\": false},\n    {\"fact\": \"The national equality and human-rights commission's code of practice (20 May 2025) is the operative enforcement guidance for venues, transport and services in England and Wales, permitting a birth-certificate request where there is 'genuine concern' about biological sex and exclusion from single-sex sport 'when necessary'.\",\n     \"local_evidence\": \"\\\"the national equality body ... updated its code of practice after the 2025 ruling, advising that services and businesses may ask for a person's birth certificate where there is 'genuine concern' about biological sex, and that trans people may be excluded from single-sex sport 'when necessary' for safety\\\".\",\n     \"direction\": \"riskier\",\n     \"magnitude\": 0.00,\n     \"visitor_applicability\": \"Reaches visitors in principle (service/document friction), but it is a parent-nation-wide equality-body code, not an England-specific instrument; the national dossier already carries the national single-sex-spaces guidance regime (in force August 2026). Duplication, not a local departure.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false},\n    {\"fact\": \"Official hate-crime baseline for England and a neighbouring component: 115,990 police-recorded hate crimes in the year to March 2025, transgender strand down 11% year on year, against a survey estimate of about 176,000 incidents annually.\",\n     \"local_evidence\": \"\\\"Official statistics for this state/province and a neighbouring component (published 9 October 2025): 115,990 police-recorded hate crimes ... the transgender strand down 11%\\\".\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.00,\n     \"visitor_applicability\": \"Aggregate recorded-crime counts without population denominator; the source itself warns the February 2024 recording-system change makes year-on-year comparison rest on a different counting basis. No trans-specific rate, so no measurable magnitude for a visitor.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false},\n    {\"fact\": \"Unresolved status of the 5 February 2026 judicial review on whether a blanket biological-sex prison rule breaches human rights, and of how the 'genuine concern' standard is applied in practice.\",\n     \"local_evidence\": \"\\\"The outcome of the judicial review heard on 5 February 2026 is unresolved in the sources used here; no English court decision on prison accommodation for trans prisoners is documented\\\".\",\n     \"direction\": \"riskier\",\n     \"magnitude\": 0.00,\n     \"visitor_applicability\": \"An open question about resident custody policy, not a documented visitor-facing practice; under the rubric an unanswered question is not an exposure and must not move the delta.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false}\n  ],\n  \"inherited_national_exposure\": [\n    \"April 2025 top-court definitional ruling (referenced nationally via the transport police strip-search change) and its knock-on custody logic\",\n    \"National transport police strip-search policy post-2025: trans women searched by officers of sex at birth\",\n    \"Regional prison-service guidance struck down 19 June 2026; biological-sex prison segregation\",\n    \"National equality-body single-sex-spaces guidance in force August 2026 and UN experts' 18 August 2026 warning on Equality Act revisions\",\n    \"National NHS ward-segregation plans and the documented Joelle case (ward removal, delayed cancer care)\",\n    \"National media climate, falling rainbow-index ranking, and absent trans-specific social-acceptance polling\"\n  ],\n  \"uncertainty\": \"The local bundle adds no England-specific instrument beyond the parent-nation regime: no England-only statute, border, facility or policing rule is documented. The EHRC code is a GB-wide equality-body document, the hate-crime figures carry no denominator or trans-specific rate, and the prison-rule litigation outcome is unresolved. With no documented local departure, the delta is a diagnostic zero rather than proof that England is exactly at the national level.\",\n  \"notes\": \"All four listed items are either direct duplications of the national dossier (April 2025 ruling, custody logic) or parent-nation-wide guidance/statistics that the fixed level already prices, so none is counted. No England-specific protective machinery reaching visitors is documented. local_delta = 0.00.\"\n}",
+ "finish_reason": "stop",
+ "id": "gen-1794053889-dSNPI8jN6Sy8SLxQmWIT"
+}

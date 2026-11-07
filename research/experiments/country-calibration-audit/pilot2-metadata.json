@@ -1,0 +1,75 @@
+{
+  "purpose": "Pre-registered non-publishing country-comparison pilot (terra-method-review.md section 3); diagnostics only, never a score, never published",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "api_dialect": "openai (BP.call_api -> call_api_openai)",
+  "settings": {
+    "temperature_setting": 0.3,
+    "temperature_sent": false,
+    "reasoning": {
+      "effort": "high"
+    },
+    "max_tokens": 11000
+  },
+  "rubric_version": "r2026-11-13",
+  "system_sha256": "700196113130bba3f86f1f07edb7420d51df51c4c3cd361c7eba41de04814c9e",
+  "system_file": "pilot2-prompts/system.txt",
+  "prompt_hash_def": "prompt_sha256 = sha256(system_text + user_text)",
+  "design": "9 pairs x 2 orders x 4 draws (72) + 3 isolated x 4 draws (12) + 3 targets x 2 orientations x 2 draws (12) = 96 calls",
+  "blocks": "4 balanced blocks of 24, shuffled within block (seed 20261107); block1 = matrix draw1 + isolated draw1 + copy afirst draw1; block2 = matrix draw2 + isolated draw2 + copy bfirst draw1; block3 = matrix draw3 + isolated draw3 + copy afirst draw2; block4 = matrix draw4 + isolated draw4 + copy bfirst draw2",
+  "pairs": [
+    [
+      "USA",
+      "PRY"
+    ],
+    [
+      "USA",
+      "FSM"
+    ],
+    [
+      "GBR",
+      "PRY"
+    ],
+    [
+      "GBR",
+      "FSM"
+    ],
+    [
+      "NPL",
+      "PRY"
+    ],
+    [
+      "NPL",
+      "FSM"
+    ],
+    [
+      "USA",
+      "GBR"
+    ],
+    [
+      "USA",
+      "NPL"
+    ],
+    [
+      "NPL",
+      "GBR"
+    ]
+  ],
+  "isolated_realization": "single DOS SIER A block, no comparator; same system prompt and scoring task; score_a is the assessment, any emitted score_b recorded but ignored",
+  "copy_orientation_realization": "dossier renders are byte-identical for these targets, so \"A/B formatting reversed\" = block-order reversal: afirst = DOS SIER A block first, bfirst = DOS SIER B block first",
+  "caps": {
+    "logical_calls": 96,
+    "attempt_ceiling": 112,
+    "input_tokens": 2000000,
+    "output_tokens": 800000,
+    "retry_policy": "max one retry per failed call, both attempts logged"
+  },
+  "optional_evidence_contrast": "NOT RUN (out of scope for this pilot)",
+  "limitations": [
+    "small purposive pilot",
+    "PRY/FSM purposive not representative",
+    "four draws = feasibility choice, not power",
+    "isolated condition uses a two-dossier system prompt (pre-registered fixed settings), so pair-vs-isolated differs in prompt condition as well as comparator",
+    "labels can be inferable from facts"
+  ]
+}

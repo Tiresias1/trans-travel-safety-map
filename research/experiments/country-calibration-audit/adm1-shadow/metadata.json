@@ -1,0 +1,138 @@
+{
+  "purpose": "Shadow-only ADM1 national-baseline interface test (terra-method-review.md §4). Non-publishing: no score is written to data/ or tools/; no commits.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "api": {
+    "baseurl": "https://openrouter.ai/api/v1",
+    "endpoint": "/chat/completions",
+    "dialect": "openai",
+    "reasoning": "effort=high (temperature not sent for reasoning models)",
+    "max_output_tokens": 8000,
+    "timeout_s": 300,
+    "retries": 3
+  },
+  "system_prompt_sha256": "700196113130bba3f86f1f07edb7420d51df51c4c3cd361c7eba41de04814c9e",
+  "system_prompt_chars": 41302,
+  "system_prompt_note": "byte-identical tools/blind_pairwise.build_system_prompt(outing-risk-taxonomy.md); diagnostic replay env flags cleared",
+  "rubric_version": "r2026-11-13",
+  "bounded_alternative": "clamp(additive, 0.02, 0.98); every boundary hit logged, never silent",
+  "baselines": {
+    "USA": {
+      "value": 0.33,
+      "display": "0.330",
+      "source": "data/countries.json USA.score = 0.330 (user-approved frozen published national score)"
+    },
+    "GBR": {
+      "value": 0.443529,
+      "display": "0.443529",
+      "source": "data/countries.json GBR.score = 0.443529 (frozen published national score)"
+    },
+    "NPL": {
+      "value": 0.559643,
+      "display": "0.559643",
+      "source": "data/countries.json NPL.score = 0.559643 (frozen published national score)"
+    }
+  },
+  "published_division_scores_diagnostic_only": {
+    "California": 0.380584,
+    "Texas": 0.185559,
+    "England": 0.485382,
+    "Bagmati": 0.555559
+  },
+  "diagnostic_warning": "published division scores are compared only as a diagnostic spread (mean gap, range), never as a target",
+  "cells": [
+    {
+      "cell": "CA_primary",
+      "role": "case",
+      "division": "California",
+      "iso": "USA",
+      "local": "blind",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2
+    },
+    {
+      "cell": "TX_primary",
+      "role": "case",
+      "division": "Texas",
+      "iso": "USA",
+      "local": "blind",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2
+    },
+    {
+      "cell": "ENG_primary",
+      "role": "case",
+      "division": "England",
+      "iso": "GBR",
+      "local": "blind",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2
+    },
+    {
+      "cell": "BAG_primary",
+      "role": "case",
+      "division": "Bagmati",
+      "iso": "NPL",
+      "local": "fallback",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2
+    },
+    {
+      "cell": "CTRL_no_local",
+      "role": "control-no-new-evidence",
+      "division": null,
+      "iso": "USA",
+      "local": "empty",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2,
+      "note": "national bundle only, zero local additions; delta near zero is a diagnostic expectation, not a rule"
+    },
+    {
+      "cell": "CTRL_dup",
+      "role": "control-duplication",
+      "division": null,
+      "iso": "USA",
+      "local": "dup",
+      "order": "national-first",
+      "label": "withheld",
+      "draws": 2,
+      "note": "local bundle contains a fact verbatim from the national bundle; must not count as a new local departure"
+    },
+    {
+      "cell": "CA_orderflip",
+      "role": "order-contrast",
+      "division": "California",
+      "iso": "USA",
+      "local": "blind",
+      "order": "local-first",
+      "label": "withheld",
+      "draws": 2,
+      "note": "same inputs as CA_primary, dossier blocks swapped"
+    },
+    {
+      "cell": "CA_label_ident",
+      "role": "label-contrast",
+      "division": "California",
+      "iso": "USA",
+      "local": "blind",
+      "order": "national-first",
+      "label": "identifying",
+      "draws": 2,
+      "note": "same inputs as CA_primary, division labelled by name"
+    }
+  ],
+  "draws_per_cell": 2,
+  "retry_policy": {
+    "max_attempts": 2,
+    "trigger": "attempt 1 empty, truncated or unparseable",
+    "retry_max_output_tokens": 16000,
+    "both_attempts_retained_and_reported": true,
+    "origin": "run1 (archived as *_run1.*) produced 2 reasoning-budget truncations and 1 malformed JSON; policy fixed before this run, not tuned per cell"
+  },
+  "total_calls": 16,
+  "generated": "2026-11-07T12:23:12.146559+00:00"
+}

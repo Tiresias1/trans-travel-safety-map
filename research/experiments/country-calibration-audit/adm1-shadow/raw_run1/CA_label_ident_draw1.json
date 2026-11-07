@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:18:37.260336+00:00",
+ "cell": "CA_label_ident",
+ "draw": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14468,
+  "completion_tokens": 3209,
+  "total_tokens": 17677,
+  "cost": 0.001445224,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8704,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.001445224,
+   "upstream_inference_prompt_cost": 0.000161624,
+   "upstream_inference_completions_cost": 0.0012836
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2447,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.02,\n  \"departures\": [\n    {\"fact\": \"State prison system houses transgender inmates by gender identity within the general population and funds gender-affirming surgery for inmates.\", \"local_evidence\": \"As of January 2021 this state/province is coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity... In 2015 this state/province became the first sub-unit to fund gender-affirming surgeries for transgender prison inmates.\", \"direction\": \"safer\", \"magnitude\": 0.02, \"visitor_applicability\": \"Reaches a transgender visitor only if arrested or detained in state custody; not a general border, document, or facilities protection.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true},\n    {\"fact\": \"State sanctuary law for transgender youth care, including shielding traveling families from child-abuse investigations or prosecution.\", \"local_evidence\": \"In September 2022 the governor signed a state bill making this state/province the first to declare itself a sanctuary for transgender young people seeking medical care... shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care, including families who travel to the state/province for it.\", \"direction\": \"safer\", \"magnitude\": 0.02, \"visitor_applicability\": \"Resident/traveling-family care shield and climate signal; it does not directly protect an ordinary transgender visitor from border, facilities, or street exposure.\", \"already_in_national_bundle\": false, \"counted_in_delta\": false},\n    {\"fact\": \"State recorded 198 anti-LGBTQ incidents in 2025, the highest raw count of any state/province, with a reported rise in hate-crime reports in its largest city.\", \"local_evidence\": \"this state/province recorded 198, the highest figure of any state/province. That ranking is by raw count only: the source supplies no population or per-capita denominator...\", \"direction\": \"riskier\", \"magnitude\": 0.01, \"visitor_applicability\": \"Raw count without denominator does not establish per-visitor risk; local-sphere reporting, not a documented traveler-facing pattern.\", \"already_in_national_bundle\": false, \"counted_in_delta\": false}\n  ],\n  \"inherited_national_exposure\": [\n    \"National passport and visa sex-marker restrictions, elimination of new X markers, and trans-athlete visa flagging/ban.\",\n    \"National executive-order climate and official hostility, including funding/pronoun rules, bounty language, and counterterrorism framing.\",\n    \"National corrections and immigration-custody harms, plus facility-access restrictions in many states/provinces.\",\n    \"National travel advisories and detentions of trans travelers over identity-document and data rules.\",\n    \"National hate-crime/discrimination patchwork and pending litigation over document and executive-order measures.\"\n  ],\n  \"uncertainty\": \"The state prison identity-placement policy is last documented in January 2021 with no later confirmation. The 198-incident figure lacks a population denominator, and the July 2026 law-score/incident figures have unstated methodology. No local evidence covers border screening, bathroom/facility access, or state-level document rules for visitors.\",\n  \"notes\": \"Delta is small and positive only for the documented state-custody protection. The care-sanctuary law is resident/traveling-family facing and is treated as climate signal, not a direct visitor protection. Raw incident counts are not converted into a riskier departure without denominators.\"\n}",
+ "finish_reason": "stop",
+ "id": "gen-1794053917-6IiAb3ZbaQhFQWVGVa28"
+}

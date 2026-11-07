@@ -11,14 +11,14 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
 
   /* ---------- data files ---------- */
   const BOUNDARIES = {
-    countries: "boundaries/countries.geojson?v=20261007c",
-    admin1: "boundaries/admin1.geojson?v=20261007c",
+    countries: "boundaries/countries.geojson?v=20261107a",
+    admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261007c",
-    admin1: "data/admin1.json?v=20261007c",
+    countries: "data/countries.json?v=20261107a",
+    admin1: "data/admin1.json?v=20261107a",
   };
-  const META_FILE = "data/meta.json?v=20261007c";
+  const META_FILE = "data/meta.json?v=20261107a";
 
   /* ---------- gradient ---------- */
   // Anchor points from PLAN.md §5.1: piecewise-linear RGB interpolation.

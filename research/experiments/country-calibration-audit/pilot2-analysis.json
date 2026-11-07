@@ -1,0 +1,2501 @@
+{
+  "completeness": {
+    "logical_calls_planned": 96,
+    "logical_calls_attempted": 96,
+    "logical_calls_ok": 95,
+    "attempt_rows": 100,
+    "ok_rows": 95,
+    "failed_rows": 5,
+    "cancelled_rows": 0,
+    "attempts_used": 100,
+    "attempt_ceiling": 112,
+    "failed_attempts": [
+      {
+        "row_id": "c-GBR-bfirst-d1#a1",
+        "block": 2,
+        "attempt": 1,
+        "retry_of": null,
+        "error": "ValueError: no scores in response (stop_reason=length): ''",
+        "usage": {
+          "input_tokens": 13613,
+          "output_tokens": 11000
+        }
+      },
+      {
+        "row_id": "m-NPL-GBR-d3#a1",
+        "block": 3,
+        "attempt": 1,
+        "retry_of": null,
+        "error": "ValueError: no scores in response (stop_reason=length): ''",
+        "usage": {
+          "input_tokens": 13507,
+          "output_tokens": 11000
+        }
+      },
+      {
+        "row_id": "m-GBR-PRY-d4#a1",
+        "block": 4,
+        "attempt": 1,
+        "retry_of": null,
+        "error": "ValueError: no scores in response (stop_reason=length): ''",
+        "usage": {
+          "input_tokens": 13468,
+          "output_tokens": 11000
+        }
+      },
+      {
+        "row_id": "m-GBR-PRY-d4#a2",
+        "block": 4,
+        "attempt": 2,
+        "retry_of": "m-GBR-PRY-d4#a1",
+        "error": "ValueError: no scores in response (stop_reason=length): ''",
+        "usage": {
+          "input_tokens": 13468,
+          "output_tokens": 11000
+        }
+      },
+      {
+        "row_id": "m-NPL-FSM-d4#a1",
+        "block": 4,
+        "attempt": 1,
+        "retry_of": null,
+        "error": "ValueError: no scores in response (stop_reason=length): ''",
+        "usage": {
+          "input_tokens": 11621,
+          "output_tokens": 11000
+        }
+      }
+    ],
+    "fully_missing_calls": [
+      {
+        "key": "m-GBR-PRY-d4",
+        "attempts": [
+          [
+            "m-GBR-PRY-d4#a1",
+            "failed",
+            "ValueError: no scores in response (stop_reason=length): ''"
+          ],
+          [
+            "m-GBR-PRY-d4#a2",
+            "failed",
+            "ValueError: no scores in response (stop_reason=length): ''"
+          ]
+        ]
+      }
+    ],
+    "missing_cells": [
+      {
+        "condition": "matrix",
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "order": [
+          "GBR",
+          "PRY"
+        ],
+        "orientation": null,
+        "draw": 4
+      }
+    ]
+  },
+  "budget": {
+    "input_tokens": 1322071,
+    "input_cap": 2000000,
+    "output_tokens": 391029,
+    "output_cap": 800000,
+    "input_pct": 66.1,
+    "output_pct": 48.9,
+    "block1_consumed": {
+      "input": 317466,
+      "output": 93644,
+      "attempts": 24
+    }
+  },
+  "matrix": {
+    "cell_stats": [
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "GBR"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.635,
+        "sd": 0.0173,
+        "min": 0.62,
+        "q1": 0.62,
+        "median": 0.635,
+        "q3": 0.65,
+        "max": 0.65,
+        "values": [
+          0.62,
+          0.62,
+          0.65,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "GBR"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.4425,
+        "sd": 0.0287,
+        "min": 0.42,
+        "q1": 0.42,
+        "median": 0.435,
+        "q3": 0.4575,
+        "max": 0.48,
+        "values": [
+          0.42,
+          0.42,
+          0.45,
+          0.48
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "order": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.61,
+        "sd": 0.02,
+        "min": 0.58,
+        "q1": 0.61,
+        "median": 0.62,
+        "q3": 0.62,
+        "max": 0.62,
+        "values": [
+          0.58,
+          0.62,
+          0.62,
+          0.62
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "order": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.4425,
+        "sd": 0.0222,
+        "min": 0.41,
+        "q1": 0.44,
+        "median": 0.45,
+        "q3": 0.4525,
+        "max": 0.46,
+        "values": [
+          0.41,
+          0.45,
+          0.45,
+          0.46
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "order": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "GBR",
+        "draws": 3,
+        "n": 3,
+        "mean": 0.4133,
+        "sd": 0.0115,
+        "min": 0.4,
+        "q1": 0.41,
+        "median": 0.42,
+        "q3": 0.42,
+        "max": 0.42,
+        "values": [
+          0.4,
+          0.42,
+          0.42
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "order": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "PRY",
+        "draws": 3,
+        "n": 3,
+        "mean": 0.5233,
+        "sd": 0.0252,
+        "min": 0.5,
+        "q1": 0.51,
+        "median": 0.52,
+        "q3": 0.535,
+        "max": 0.55,
+        "values": [
+          0.5,
+          0.52,
+          0.55
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "GBR"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.3875,
+        "sd": 0.0629,
+        "min": 0.3,
+        "q1": 0.375,
+        "median": 0.4,
+        "q3": 0.4125,
+        "max": 0.45,
+        "values": [
+          0.3,
+          0.4,
+          0.4,
+          0.45
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "GBR"
+        ],
+        "country": "PRY",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.505,
+        "sd": 0.0661,
+        "min": 0.42,
+        "q1": 0.48,
+        "median": 0.51,
+        "q3": 0.535,
+        "max": 0.58,
+        "values": [
+          0.42,
+          0.5,
+          0.52,
+          0.58
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "NPL"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.6075,
+        "sd": 0.0386,
+        "min": 0.57,
+        "q1": 0.5775,
+        "median": 0.605,
+        "q3": 0.635,
+        "max": 0.65,
+        "values": [
+          0.57,
+          0.58,
+          0.63,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "NPL"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.55,
+        "sd": 0.0739,
+        "min": 0.5,
+        "q1": 0.515,
+        "median": 0.52,
+        "q3": 0.555,
+        "max": 0.66,
+        "values": [
+          0.5,
+          0.52,
+          0.52,
+          0.66
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "order": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.565,
+        "sd": 0.0806,
+        "min": 0.5,
+        "q1": 0.515,
+        "median": 0.54,
+        "q3": 0.59,
+        "max": 0.68,
+        "values": [
+          0.5,
+          0.52,
+          0.56,
+          0.68
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "order": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.565,
+        "sd": 0.0443,
+        "min": 0.5,
+        "q1": 0.56,
+        "median": 0.58,
+        "q3": 0.585,
+        "max": 0.6,
+        "values": [
+          0.5,
+          0.58,
+          0.58,
+          0.6
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "order": [
+          "GBR",
+          "NPL"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.4125,
+        "sd": 0.0096,
+        "min": 0.4,
+        "q1": 0.4075,
+        "median": 0.415,
+        "q3": 0.42,
+        "max": 0.42,
+        "values": [
+          0.4,
+          0.41,
+          0.42,
+          0.42
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "order": [
+          "GBR",
+          "NPL"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.5375,
+        "sd": 0.0287,
+        "min": 0.52,
+        "q1": 0.52,
+        "median": 0.525,
+        "q3": 0.5425,
+        "max": 0.58,
+        "values": [
+          0.52,
+          0.52,
+          0.53,
+          0.58
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "order": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.41,
+        "sd": 0.0638,
+        "min": 0.32,
+        "q1": 0.3875,
+        "median": 0.43,
+        "q3": 0.4525,
+        "max": 0.46,
+        "values": [
+          0.32,
+          0.41,
+          0.45,
+          0.46
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "order": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.5675,
+        "sd": 0.0499,
+        "min": 0.52,
+        "q1": 0.5275,
+        "median": 0.565,
+        "q3": 0.605,
+        "max": 0.62,
+        "values": [
+          0.52,
+          0.53,
+          0.6,
+          0.62
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "order": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.6,
+        "sd": 0.0627,
+        "min": 0.52,
+        "q1": 0.565,
+        "median": 0.615,
+        "q3": 0.65,
+        "max": 0.65,
+        "values": [
+          0.52,
+          0.58,
+          0.65,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "order": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "PRY",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.3925,
+        "sd": 0.065,
+        "min": 0.3,
+        "q1": 0.375,
+        "median": 0.41,
+        "q3": 0.4275,
+        "max": 0.45,
+        "values": [
+          0.3,
+          0.4,
+          0.42,
+          0.45
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "NPL"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.595,
+        "sd": 0.0191,
+        "min": 0.58,
+        "q1": 0.58,
+        "median": 0.59,
+        "q3": 0.605,
+        "max": 0.62,
+        "values": [
+          0.58,
+          0.58,
+          0.6,
+          0.62
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "NPL"
+        ],
+        "country": "PRY",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.405,
+        "sd": 0.0342,
+        "min": 0.36,
+        "q1": 0.39,
+        "median": 0.41,
+        "q3": 0.425,
+        "max": 0.44,
+        "values": [
+          0.36,
+          0.4,
+          0.42,
+          0.44
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "USA"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.635,
+        "sd": 0.042,
+        "min": 0.58,
+        "q1": 0.6175,
+        "median": 0.64,
+        "q3": 0.6575,
+        "max": 0.68,
+        "values": [
+          0.58,
+          0.63,
+          0.65,
+          0.68
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "order": [
+          "FSM",
+          "USA"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.1925,
+        "sd": 0.0562,
+        "min": 0.12,
+        "q1": 0.165,
+        "median": 0.2,
+        "q3": 0.2275,
+        "max": 0.25,
+        "values": [
+          0.12,
+          0.18,
+          0.22,
+          0.25
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "order": [
+          "USA",
+          "FSM"
+        ],
+        "country": "FSM",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.605,
+        "sd": 0.037,
+        "min": 0.55,
+        "q1": 0.6025,
+        "median": 0.62,
+        "q3": 0.6225,
+        "max": 0.63,
+        "values": [
+          0.55,
+          0.62,
+          0.62,
+          0.63
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "order": [
+          "USA",
+          "FSM"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.235,
+        "sd": 0.1323,
+        "min": 0.13,
+        "q1": 0.145,
+        "median": 0.195,
+        "q3": 0.285,
+        "max": 0.42,
+        "values": [
+          0.13,
+          0.15,
+          0.24,
+          0.42
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "order": [
+          "GBR",
+          "USA"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.485,
+        "sd": 0.0443,
+        "min": 0.45,
+        "q1": 0.465,
+        "median": 0.47,
+        "q3": 0.49,
+        "max": 0.55,
+        "values": [
+          0.45,
+          0.47,
+          0.47,
+          0.55
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "order": [
+          "GBR",
+          "USA"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.2,
+        "sd": 0.0497,
+        "min": 0.15,
+        "q1": 0.165,
+        "median": 0.195,
+        "q3": 0.23,
+        "max": 0.26,
+        "values": [
+          0.15,
+          0.17,
+          0.22,
+          0.26
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "order": [
+          "USA",
+          "GBR"
+        ],
+        "country": "GBR",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.47,
+        "sd": 0.0346,
+        "min": 0.44,
+        "q1": 0.455,
+        "median": 0.46,
+        "q3": 0.475,
+        "max": 0.52,
+        "values": [
+          0.44,
+          0.46,
+          0.46,
+          0.52
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "order": [
+          "USA",
+          "GBR"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.31,
+        "sd": 0.0622,
+        "min": 0.26,
+        "q1": 0.275,
+        "median": 0.29,
+        "q3": 0.325,
+        "max": 0.4,
+        "values": [
+          0.26,
+          0.28,
+          0.3,
+          0.4
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "order": [
+          "NPL",
+          "USA"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.56,
+        "sd": 0.0589,
+        "min": 0.5,
+        "q1": 0.515,
+        "median": 0.56,
+        "q3": 0.605,
+        "max": 0.62,
+        "values": [
+          0.5,
+          0.52,
+          0.6,
+          0.62
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "order": [
+          "NPL",
+          "USA"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.2275,
+        "sd": 0.0359,
+        "min": 0.18,
+        "q1": 0.21,
+        "median": 0.235,
+        "q3": 0.2525,
+        "max": 0.26,
+        "values": [
+          0.18,
+          0.22,
+          0.25,
+          0.26
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "order": [
+          "USA",
+          "NPL"
+        ],
+        "country": "NPL",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.6,
+        "sd": 0.044,
+        "min": 0.55,
+        "q1": 0.5725,
+        "median": 0.6,
+        "q3": 0.6275,
+        "max": 0.65,
+        "values": [
+          0.55,
+          0.58,
+          0.62,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "order": [
+          "USA",
+          "NPL"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.2425,
+        "sd": 0.0287,
+        "min": 0.22,
+        "q1": 0.22,
+        "median": 0.235,
+        "q3": 0.2575,
+        "max": 0.28,
+        "values": [
+          0.22,
+          0.22,
+          0.25,
+          0.28
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "USA"
+        ],
+        "country": "PRY",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.46,
+        "sd": 0.0141,
+        "min": 0.45,
+        "q1": 0.45,
+        "median": 0.455,
+        "q3": 0.465,
+        "max": 0.48,
+        "values": [
+          0.45,
+          0.45,
+          0.46,
+          0.48
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "order": [
+          "PRY",
+          "USA"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.2425,
+        "sd": 0.0419,
+        "min": 0.2,
+        "q1": 0.2225,
+        "median": 0.235,
+        "q3": 0.255,
+        "max": 0.3,
+        "values": [
+          0.2,
+          0.23,
+          0.24,
+          0.3
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "order": [
+          "USA",
+          "PRY"
+        ],
+        "country": "PRY",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.4625,
+        "sd": 0.0403,
+        "min": 0.43,
+        "q1": 0.4375,
+        "median": 0.45,
+        "q3": 0.475,
+        "max": 0.52,
+        "values": [
+          0.43,
+          0.44,
+          0.46,
+          0.52
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "order": [
+          "USA",
+          "PRY"
+        ],
+        "country": "USA",
+        "draws": 4,
+        "n": 4,
+        "mean": 0.31,
+        "sd": 0.0702,
+        "min": 0.24,
+        "q1": 0.255,
+        "median": 0.31,
+        "q3": 0.365,
+        "max": 0.38,
+        "values": [
+          0.24,
+          0.26,
+          0.36,
+          0.38
+        ]
+      }
+    ],
+    "pair_pooled": [
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "country": "USA",
+        "n": 8,
+        "mean": 0.2762,
+        "sd": 0.0646,
+        "min": 0.2,
+        "q1": 0.2375,
+        "median": 0.25,
+        "q3": 0.315,
+        "max": 0.38,
+        "values": [
+          0.2,
+          0.23,
+          0.24,
+          0.24,
+          0.26,
+          0.3,
+          0.36,
+          0.38
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n": 8,
+        "mean": 0.4612,
+        "sd": 0.028,
+        "min": 0.43,
+        "q1": 0.4475,
+        "median": 0.455,
+        "q3": 0.465,
+        "max": 0.52,
+        "values": [
+          0.43,
+          0.44,
+          0.45,
+          0.45,
+          0.46,
+          0.46,
+          0.48,
+          0.52
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "country": "USA",
+        "n": 8,
+        "mean": 0.2137,
+        "sd": 0.0968,
+        "min": 0.12,
+        "q1": 0.145,
+        "median": 0.2,
+        "q3": 0.2425,
+        "max": 0.42,
+        "values": [
+          0.12,
+          0.13,
+          0.15,
+          0.18,
+          0.22,
+          0.24,
+          0.25,
+          0.42
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n": 8,
+        "mean": 0.62,
+        "sd": 0.04,
+        "min": 0.55,
+        "q1": 0.61,
+        "median": 0.625,
+        "q3": 0.635,
+        "max": 0.68,
+        "values": [
+          0.55,
+          0.58,
+          0.62,
+          0.62,
+          0.63,
+          0.63,
+          0.65,
+          0.68
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "GBR",
+        "n": 7,
+        "mean": 0.3986,
+        "sd": 0.0471,
+        "min": 0.3,
+        "q1": 0.4,
+        "median": 0.4,
+        "q3": 0.42,
+        "max": 0.45,
+        "values": [
+          0.3,
+          0.4,
+          0.4,
+          0.4,
+          0.42,
+          0.42,
+          0.45
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n": 7,
+        "mean": 0.5129,
+        "sd": 0.0499,
+        "min": 0.42,
+        "q1": 0.5,
+        "median": 0.52,
+        "q3": 0.535,
+        "max": 0.58,
+        "values": [
+          0.42,
+          0.5,
+          0.5,
+          0.52,
+          0.52,
+          0.55,
+          0.58
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "GBR",
+        "n": 8,
+        "mean": 0.4425,
+        "sd": 0.0238,
+        "min": 0.41,
+        "q1": 0.42,
+        "median": 0.45,
+        "q3": 0.4525,
+        "max": 0.48,
+        "values": [
+          0.41,
+          0.42,
+          0.42,
+          0.45,
+          0.45,
+          0.45,
+          0.46,
+          0.48
+        ]
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n": 8,
+        "mean": 0.6225,
+        "sd": 0.0219,
+        "min": 0.58,
+        "q1": 0.62,
+        "median": 0.62,
+        "q3": 0.6275,
+        "max": 0.65,
+        "values": [
+          0.58,
+          0.62,
+          0.62,
+          0.62,
+          0.62,
+          0.62,
+          0.65,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "NPL",
+        "n": 8,
+        "mean": 0.5975,
+        "sd": 0.043,
+        "min": 0.52,
+        "q1": 0.58,
+        "median": 0.59,
+        "q3": 0.6275,
+        "max": 0.65,
+        "values": [
+          0.52,
+          0.58,
+          0.58,
+          0.58,
+          0.6,
+          0.62,
+          0.65,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n": 8,
+        "mean": 0.3987,
+        "sd": 0.0485,
+        "min": 0.3,
+        "q1": 0.39,
+        "median": 0.41,
+        "q3": 0.425,
+        "max": 0.45,
+        "values": [
+          0.3,
+          0.36,
+          0.4,
+          0.4,
+          0.42,
+          0.42,
+          0.44,
+          0.45
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "NPL",
+        "n": 8,
+        "mean": 0.5575,
+        "sd": 0.057,
+        "min": 0.5,
+        "q1": 0.515,
+        "median": 0.55,
+        "q3": 0.585,
+        "max": 0.66,
+        "values": [
+          0.5,
+          0.5,
+          0.52,
+          0.52,
+          0.58,
+          0.58,
+          0.6,
+          0.66
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n": 8,
+        "mean": 0.5863,
+        "sd": 0.0628,
+        "min": 0.5,
+        "q1": 0.55,
+        "median": 0.575,
+        "q3": 0.635,
+        "max": 0.68,
+        "values": [
+          0.5,
+          0.52,
+          0.56,
+          0.57,
+          0.58,
+          0.63,
+          0.65,
+          0.68
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "country": "USA",
+        "n": 8,
+        "mean": 0.255,
+        "sd": 0.0786,
+        "min": 0.15,
+        "q1": 0.2075,
+        "median": 0.26,
+        "q3": 0.285,
+        "max": 0.4,
+        "values": [
+          0.15,
+          0.17,
+          0.22,
+          0.26,
+          0.26,
+          0.28,
+          0.3,
+          0.4
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "country": "GBR",
+        "n": 8,
+        "mean": 0.4775,
+        "sd": 0.0377,
+        "min": 0.44,
+        "q1": 0.4575,
+        "median": 0.465,
+        "q3": 0.4825,
+        "max": 0.55,
+        "values": [
+          0.44,
+          0.45,
+          0.46,
+          0.46,
+          0.47,
+          0.47,
+          0.52,
+          0.55
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "country": "USA",
+        "n": 8,
+        "mean": 0.235,
+        "sd": 0.0312,
+        "min": 0.18,
+        "q1": 0.22,
+        "median": 0.235,
+        "q3": 0.2525,
+        "max": 0.28,
+        "values": [
+          0.18,
+          0.22,
+          0.22,
+          0.22,
+          0.25,
+          0.25,
+          0.26,
+          0.28
+        ]
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "country": "NPL",
+        "n": 8,
+        "mean": 0.58,
+        "sd": 0.0526,
+        "min": 0.5,
+        "q1": 0.5425,
+        "median": 0.59,
+        "q3": 0.62,
+        "max": 0.65,
+        "values": [
+          0.5,
+          0.52,
+          0.55,
+          0.58,
+          0.6,
+          0.62,
+          0.62,
+          0.65
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "NPL",
+        "n": 8,
+        "mean": 0.5525,
+        "sd": 0.041,
+        "min": 0.52,
+        "q1": 0.52,
+        "median": 0.53,
+        "q3": 0.585,
+        "max": 0.62,
+        "values": [
+          0.52,
+          0.52,
+          0.52,
+          0.53,
+          0.53,
+          0.58,
+          0.6,
+          0.62
+        ]
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "GBR",
+        "n": 8,
+        "mean": 0.4113,
+        "sd": 0.0422,
+        "min": 0.32,
+        "q1": 0.4075,
+        "median": 0.415,
+        "q3": 0.4275,
+        "max": 0.46,
+        "values": [
+          0.32,
+          0.4,
+          0.41,
+          0.41,
+          0.42,
+          0.42,
+          0.45,
+          0.46
+        ]
+      }
+    ],
+    "order_contrasts": [
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "country": "USA",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.31,
+        "mean_second": 0.2425,
+        "contrast_first_minus_second": 0.0675,
+        "sd_first": 0.0702,
+        "sd_second": 0.0419,
+        "typical_within_cell_sd": 0.0561,
+        "contrast_exceeds_typical_within_cell": true
+      },
+      {
+        "pair": [
+          "USA",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.4625,
+        "mean_second": 0.46,
+        "contrast_first_minus_second": 0.0025,
+        "sd_first": 0.0403,
+        "sd_second": 0.0141,
+        "typical_within_cell_sd": 0.0272,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "country": "USA",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.235,
+        "mean_second": 0.1925,
+        "contrast_first_minus_second": 0.0425,
+        "sd_first": 0.1323,
+        "sd_second": 0.0562,
+        "typical_within_cell_sd": 0.0942,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "USA",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.605,
+        "mean_second": 0.635,
+        "contrast_first_minus_second": -0.03,
+        "sd_first": 0.037,
+        "sd_second": 0.042,
+        "typical_within_cell_sd": 0.0395,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "GBR",
+        "n_first": 3,
+        "n_second": 4,
+        "mean_first": 0.4133,
+        "mean_second": 0.3875,
+        "contrast_first_minus_second": 0.0258,
+        "sd_first": 0.0115,
+        "sd_second": 0.0629,
+        "typical_within_cell_sd": 0.0372,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "GBR",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n_first": 3,
+        "n_second": 4,
+        "mean_first": 0.5233,
+        "mean_second": 0.505,
+        "contrast_first_minus_second": 0.0183,
+        "sd_first": 0.0252,
+        "sd_second": 0.0661,
+        "typical_within_cell_sd": 0.0456,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "GBR",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.4425,
+        "mean_second": 0.4425,
+        "contrast_first_minus_second": 0.0,
+        "sd_first": 0.0222,
+        "sd_second": 0.0287,
+        "typical_within_cell_sd": 0.0254,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "GBR",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.61,
+        "mean_second": 0.635,
+        "contrast_first_minus_second": -0.025,
+        "sd_first": 0.02,
+        "sd_second": 0.0173,
+        "typical_within_cell_sd": 0.0187,
+        "contrast_exceeds_typical_within_cell": true
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "NPL",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.6,
+        "mean_second": 0.595,
+        "contrast_first_minus_second": 0.005,
+        "sd_first": 0.0627,
+        "sd_second": 0.0191,
+        "typical_within_cell_sd": 0.0409,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "NPL",
+          "PRY"
+        ],
+        "country": "PRY",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.3925,
+        "mean_second": 0.405,
+        "contrast_first_minus_second": -0.0125,
+        "sd_first": 0.065,
+        "sd_second": 0.0342,
+        "typical_within_cell_sd": 0.0496,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "NPL",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.565,
+        "mean_second": 0.55,
+        "contrast_first_minus_second": 0.015,
+        "sd_first": 0.0443,
+        "sd_second": 0.0739,
+        "typical_within_cell_sd": 0.0591,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "NPL",
+          "FSM"
+        ],
+        "country": "FSM",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.565,
+        "mean_second": 0.6075,
+        "contrast_first_minus_second": -0.0425,
+        "sd_first": 0.0806,
+        "sd_second": 0.0386,
+        "typical_within_cell_sd": 0.0596,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "country": "USA",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.31,
+        "mean_second": 0.2,
+        "contrast_first_minus_second": 0.11,
+        "sd_first": 0.0622,
+        "sd_second": 0.0497,
+        "typical_within_cell_sd": 0.0559,
+        "contrast_exceeds_typical_within_cell": true
+      },
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "country": "GBR",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.47,
+        "mean_second": 0.485,
+        "contrast_first_minus_second": -0.015,
+        "sd_first": 0.0346,
+        "sd_second": 0.0443,
+        "typical_within_cell_sd": 0.0395,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "country": "USA",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.2425,
+        "mean_second": 0.2275,
+        "contrast_first_minus_second": 0.015,
+        "sd_first": 0.0287,
+        "sd_second": 0.0359,
+        "typical_within_cell_sd": 0.0323,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "country": "NPL",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.6,
+        "mean_second": 0.56,
+        "contrast_first_minus_second": 0.04,
+        "sd_first": 0.044,
+        "sd_second": 0.0589,
+        "typical_within_cell_sd": 0.0514,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "NPL",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.5675,
+        "mean_second": 0.5375,
+        "contrast_first_minus_second": 0.03,
+        "sd_first": 0.0499,
+        "sd_second": 0.0287,
+        "typical_within_cell_sd": 0.0393,
+        "contrast_exceeds_typical_within_cell": false
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "country": "GBR",
+        "n_first": 4,
+        "n_second": 4,
+        "mean_first": 0.41,
+        "mean_second": 0.4125,
+        "contrast_first_minus_second": -0.0025,
+        "sd_first": 0.0638,
+        "sd_second": 0.0096,
+        "typical_within_cell_sd": 0.0367,
+        "contrast_exceeds_typical_within_cell": false
+      }
+    ],
+    "target_order_flags": [
+      {
+        "target": "USA",
+        "contrasts_by_pair": {
+          "USA,PRY": 0.0675,
+          "USA,FSM": 0.0425,
+          "USA,GBR": 0.11,
+          "USA,NPL": 0.015
+        },
+        "n_positive": 4,
+        "n_negative": 0,
+        "same_direction": "positive",
+        "mean_within_cell_sd_all_cells": 0.0596,
+        "n_pairs_where_contrast_exceeds_typical_within_cell_and_direction_repeats": 2,
+        "flag_repeated_same_direction_larger_than_within_cell_variation": false
+      },
+      {
+        "target": "GBR",
+        "contrasts_by_pair": {
+          "GBR,PRY": 0.0258,
+          "GBR,FSM": 0.0,
+          "USA,GBR": -0.015,
+          "NPL,GBR": -0.0025
+        },
+        "n_positive": 1,
+        "n_negative": 2,
+        "same_direction": "mixed",
+        "mean_within_cell_sd_all_cells": 0.0347,
+        "n_pairs_where_contrast_exceeds_typical_within_cell_and_direction_repeats": 0,
+        "flag_repeated_same_direction_larger_than_within_cell_variation": false
+      },
+      {
+        "target": "NPL",
+        "contrasts_by_pair": {
+          "NPL,PRY": 0.005,
+          "NPL,FSM": 0.015,
+          "USA,NPL": 0.04,
+          "NPL,GBR": 0.03
+        },
+        "n_positive": 4,
+        "n_negative": 0,
+        "same_direction": "positive",
+        "mean_within_cell_sd_all_cells": 0.0477,
+        "n_pairs_where_contrast_exceeds_typical_within_cell_and_direction_repeats": 0,
+        "flag_repeated_same_direction_larger_than_within_cell_variation": false
+      }
+    ]
+  },
+  "isolated": {
+    "isolated_stats": [
+      {
+        "target": "USA",
+        "n": 4,
+        "mean": 0.32,
+        "sd": 0.0141,
+        "min": 0.3,
+        "q1": 0.315,
+        "median": 0.325,
+        "q3": 0.33,
+        "max": 0.33,
+        "values": [
+          0.3,
+          0.32,
+          0.33,
+          0.33
+        ]
+      },
+      {
+        "target": "GBR",
+        "n": 4,
+        "mean": 0.4725,
+        "sd": 0.0206,
+        "min": 0.45,
+        "q1": 0.465,
+        "median": 0.47,
+        "q3": 0.4775,
+        "max": 0.5,
+        "values": [
+          0.45,
+          0.47,
+          0.47,
+          0.5
+        ]
+      },
+      {
+        "target": "NPL",
+        "n": 4,
+        "mean": 0.6125,
+        "sd": 0.0395,
+        "min": 0.58,
+        "q1": 0.58,
+        "median": 0.605,
+        "q3": 0.6375,
+        "max": 0.66,
+        "values": [
+          0.58,
+          0.58,
+          0.63,
+          0.66
+        ]
+      }
+    ],
+    "isolated_vs_pair": [
+      {
+        "target": "USA",
+        "isolated_mean": 0.32,
+        "pair_pooled_mean": 0.245,
+        "isolated_minus_pair_pooled": 0.075,
+        "isolated_sd": 0.0141,
+        "pair_pooled_sd": 0.0723,
+        "per_pair": {
+          "USA,PRY": {
+            "pair_mean": 0.2762,
+            "isolated_minus_pair": 0.0438
+          },
+          "USA,FSM": {
+            "pair_mean": 0.2137,
+            "isolated_minus_pair": 0.1063
+          },
+          "USA,GBR": {
+            "pair_mean": 0.255,
+            "isolated_minus_pair": 0.065
+          },
+          "USA,NPL": {
+            "pair_mean": 0.235,
+            "isolated_minus_pair": 0.085
+          }
+        }
+      },
+      {
+        "target": "GBR",
+        "isolated_mean": 0.4725,
+        "pair_pooled_mean": 0.4335,
+        "isolated_minus_pair_pooled": 0.039,
+        "isolated_sd": 0.0206,
+        "pair_pooled_sd": 0.0477,
+        "per_pair": {
+          "GBR,PRY": {
+            "pair_mean": 0.3986,
+            "isolated_minus_pair": 0.0739
+          },
+          "GBR,FSM": {
+            "pair_mean": 0.4425,
+            "isolated_minus_pair": 0.03
+          },
+          "USA,GBR": {
+            "pair_mean": 0.4775,
+            "isolated_minus_pair": -0.005
+          },
+          "NPL,GBR": {
+            "pair_mean": 0.4113,
+            "isolated_minus_pair": 0.0612
+          }
+        }
+      },
+      {
+        "target": "NPL",
+        "isolated_mean": 0.6125,
+        "pair_pooled_mean": 0.5719,
+        "isolated_minus_pair_pooled": 0.0406,
+        "isolated_sd": 0.0395,
+        "pair_pooled_sd": 0.0499,
+        "per_pair": {
+          "NPL,PRY": {
+            "pair_mean": 0.5975,
+            "isolated_minus_pair": 0.015
+          },
+          "NPL,FSM": {
+            "pair_mean": 0.5575,
+            "isolated_minus_pair": 0.055
+          },
+          "USA,NPL": {
+            "pair_mean": 0.58,
+            "isolated_minus_pair": 0.0325
+          },
+          "NPL,GBR": {
+            "pair_mean": 0.5525,
+            "isolated_minus_pair": 0.06
+          }
+        }
+      }
+    ]
+  },
+  "identical_copy": {
+    "copy_stats": [
+      {
+        "target": "USA",
+        "by_orientation": {
+          "afirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.315,
+              "sd": 0.0919,
+              "min": 0.25,
+              "q1": 0.2825,
+              "median": 0.315,
+              "q3": 0.3475,
+              "max": 0.38,
+              "values": [
+                0.25,
+                0.38
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.315,
+              "sd": 0.0919,
+              "min": 0.25,
+              "q1": 0.2825,
+              "median": 0.315,
+              "q3": 0.3475,
+              "max": 0.38,
+              "values": [
+                0.25,
+                0.38
+              ]
+            }
+          },
+          "bfirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.435,
+              "sd": 0.0212,
+              "min": 0.42,
+              "q1": 0.4275,
+              "median": 0.435,
+              "q3": 0.4425,
+              "max": 0.45,
+              "values": [
+                0.42,
+                0.45
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.435,
+              "sd": 0.0212,
+              "min": 0.42,
+              "q1": 0.4275,
+              "median": 0.435,
+              "q3": 0.4425,
+              "max": 0.45,
+              "values": [
+                0.42,
+                0.45
+              ]
+            }
+          }
+        },
+        "asymmetry_a_minus_b": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "mean_score_a_afirst": 0.315,
+        "mean_score_a_bfirst": 0.435,
+        "orientation_shift_a_minus_b_on_score_a": -0.12
+      },
+      {
+        "target": "GBR",
+        "by_orientation": {
+          "afirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.465,
+              "sd": 0.0212,
+              "min": 0.45,
+              "q1": 0.4575,
+              "median": 0.465,
+              "q3": 0.4725,
+              "max": 0.48,
+              "values": [
+                0.45,
+                0.48
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.465,
+              "sd": 0.0212,
+              "min": 0.45,
+              "q1": 0.4575,
+              "median": 0.465,
+              "q3": 0.4725,
+              "max": 0.48,
+              "values": [
+                0.45,
+                0.48
+              ]
+            }
+          },
+          "bfirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.5,
+              "sd": 0.0707,
+              "min": 0.45,
+              "q1": 0.475,
+              "median": 0.5,
+              "q3": 0.525,
+              "max": 0.55,
+              "values": [
+                0.45,
+                0.55
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.5,
+              "sd": 0.0707,
+              "min": 0.45,
+              "q1": 0.475,
+              "median": 0.5,
+              "q3": 0.525,
+              "max": 0.55,
+              "values": [
+                0.45,
+                0.55
+              ]
+            }
+          }
+        },
+        "asymmetry_a_minus_b": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "mean_score_a_afirst": 0.465,
+        "mean_score_a_bfirst": 0.5,
+        "orientation_shift_a_minus_b_on_score_a": -0.035
+      },
+      {
+        "target": "NPL",
+        "by_orientation": {
+          "afirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.565,
+              "sd": 0.0212,
+              "min": 0.55,
+              "q1": 0.5575,
+              "median": 0.565,
+              "q3": 0.5725,
+              "max": 0.58,
+              "values": [
+                0.55,
+                0.58
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.565,
+              "sd": 0.0212,
+              "min": 0.55,
+              "q1": 0.5575,
+              "median": 0.565,
+              "q3": 0.5725,
+              "max": 0.58,
+              "values": [
+                0.55,
+                0.58
+              ]
+            }
+          },
+          "bfirst": {
+            "score_a": {
+              "n": 2,
+              "mean": 0.575,
+              "sd": 0.0354,
+              "min": 0.55,
+              "q1": 0.5625,
+              "median": 0.575,
+              "q3": 0.5875,
+              "max": 0.6,
+              "values": [
+                0.55,
+                0.6
+              ]
+            },
+            "score_b": {
+              "n": 2,
+              "mean": 0.575,
+              "sd": 0.0354,
+              "min": 0.55,
+              "q1": 0.5625,
+              "median": 0.575,
+              "q3": 0.5875,
+              "max": 0.6,
+              "values": [
+                0.55,
+                0.6
+              ]
+            }
+          }
+        },
+        "asymmetry_a_minus_b": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "mean_score_a_afirst": 0.565,
+        "mean_score_a_bfirst": 0.575,
+        "orientation_shift_a_minus_b_on_score_a": -0.01
+      }
+    ],
+    "all_copy_calls": [
+      {
+        "key": "c-USA-afirst-d1",
+        "orientation": "afirst",
+        "score_a": 0.25,
+        "score_b": 0.25,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-USA-bfirst-d1",
+        "orientation": "bfirst",
+        "score_a": 0.45,
+        "score_b": 0.45,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-USA-afirst-d2",
+        "orientation": "afirst",
+        "score_a": 0.38,
+        "score_b": 0.38,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-USA-bfirst-d2",
+        "orientation": "bfirst",
+        "score_a": 0.42,
+        "score_b": 0.42,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-GBR-afirst-d1",
+        "orientation": "afirst",
+        "score_a": 0.45,
+        "score_b": 0.45,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-GBR-bfirst-d1",
+        "orientation": "bfirst",
+        "score_a": 0.45,
+        "score_b": 0.45,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-GBR-afirst-d2",
+        "orientation": "afirst",
+        "score_a": 0.48,
+        "score_b": 0.48,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-GBR-bfirst-d2",
+        "orientation": "bfirst",
+        "score_a": 0.55,
+        "score_b": 0.55,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-NPL-afirst-d1",
+        "orientation": "afirst",
+        "score_a": 0.55,
+        "score_b": 0.55,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-NPL-bfirst-d1",
+        "orientation": "bfirst",
+        "score_a": 0.55,
+        "score_b": 0.55,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-NPL-afirst-d2",
+        "orientation": "afirst",
+        "score_a": 0.58,
+        "score_b": 0.58,
+        "asymmetry": 0.0
+      },
+      {
+        "key": "c-NPL-bfirst-d2",
+        "orientation": "bfirst",
+        "score_a": 0.6,
+        "score_b": 0.6,
+        "asymmetry": 0.0
+      }
+    ]
+  },
+  "partner_contrasts": {
+    "by_target": [
+      {
+        "target": "USA",
+        "pair_pooled_means": {
+          "USA,PRY": 0.2762,
+          "USA,FSM": 0.2137,
+          "USA,GBR": 0.255,
+          "USA,NPL": 0.235
+        },
+        "mean_vs_PRY_partners": 0.2762,
+        "mean_vs_FSM_partners": 0.2137,
+        "partner_contrast_PRY_minus_FSM": 0.0625,
+        "typical_within_cell_sd": 0.0596,
+        "contrast_exceeds_typical_within_cell": true
+      },
+      {
+        "target": "GBR",
+        "pair_pooled_means": {
+          "GBR,PRY": 0.3986,
+          "GBR,FSM": 0.4425,
+          "USA,GBR": 0.4775,
+          "NPL,GBR": 0.4113
+        },
+        "mean_vs_PRY_partners": 0.3986,
+        "mean_vs_FSM_partners": 0.4425,
+        "partner_contrast_PRY_minus_FSM": -0.0439,
+        "typical_within_cell_sd": 0.0347,
+        "contrast_exceeds_typical_within_cell": true
+      },
+      {
+        "target": "NPL",
+        "pair_pooled_means": {
+          "NPL,PRY": 0.5975,
+          "NPL,FSM": 0.5575,
+          "USA,NPL": 0.58,
+          "NPL,GBR": 0.5525
+        },
+        "mean_vs_PRY_partners": 0.5975,
+        "mean_vs_FSM_partners": 0.5575,
+        "partner_contrast_PRY_minus_FSM": 0.04,
+        "typical_within_cell_sd": 0.0477,
+        "contrast_exceeds_typical_within_cell": false
+      }
+    ],
+    "direct_pair_gaps": [
+      {
+        "pair": [
+          "USA",
+          "GBR"
+        ],
+        "mean_USA": 0.255,
+        "mean_GBR": 0.4775,
+        "gap_first_minus_second": -0.2225,
+        "typical_within_cell_sd": 0.0472,
+        "gap_exceeds_typical_within_cell": true
+      },
+      {
+        "pair": [
+          "USA",
+          "NPL"
+        ],
+        "mean_USA": 0.235,
+        "mean_NPL": 0.58,
+        "gap_first_minus_second": -0.345,
+        "typical_within_cell_sd": 0.0537,
+        "gap_exceeds_typical_within_cell": true
+      },
+      {
+        "pair": [
+          "NPL",
+          "GBR"
+        ],
+        "mean_NPL": 0.5525,
+        "mean_GBR": 0.4113,
+        "gap_first_minus_second": 0.1412,
+        "typical_within_cell_sd": 0.0412,
+        "gap_exceeds_typical_within_cell": true
+      }
+    ]
+  },
+  "rationale_diagnostics": {
+    "n_ok": 95,
+    "n_with_why": 95,
+    "n_truncated": 0,
+    "why_len_chars": {
+      "n": 95,
+      "mean": 265.6632,
+      "sd": 42.7244,
+      "min": 163,
+      "q1": 238.0,
+      "median": 271.0,
+      "q3": 293.0,
+      "max": 344,
+      "values": [
+        163,
+        169,
+        178,
+        184,
+        189,
+        191,
+        194,
+        201,
+        208,
+        209,
+        210,
+        212,
+        214,
+        219,
+        221,
+        223,
+        225,
+        226,
+        227,
+        230,
+        234,
+        236,
+        236,
+        238,
+        238,
+        239,
+        240,
+        240,
+        242,
+        244,
+        245,
+        245,
+        245,
+        247,
+        251,
+        253,
+        253,
+        256,
+        258,
+        258,
+        259,
+        260,
+        262,
+        262,
+        265,
+        266,
+        267,
+        271,
+        271,
+        271,
+        272,
+        273,
+        273,
+        276,
+        278,
+        279,
+        280,
+        282,
+        285,
+        286,
+        286,
+        288,
+        288,
+        289,
+        290,
+        291,
+        291,
+        291,
+        291,
+        292,
+        293,
+        293,
+        295,
+        296,
+        296,
+        299,
+        301,
+        302,
+        307,
+        309,
+        309,
+        310,
+        313,
+        316,
+        320,
+        325,
+        329,
+        332,
+        333,
+        335,
+        336,
+        338,
+        338,
+        343,
+        344
+      ]
+    }
+  },
+  "notes": [
+    "Diagnostics only: no score interpretation, no published value changed.",
+    "Four draws per cell is a feasibility choice, not a power guarantee.",
+    "Isolated condition uses the fixed two-dossier system prompt (pre-registered settings), so pair-vs-isolated differences confound condition and comparator.",
+    "Identical-copy orientation = block-order reversal (A block first vs B block first); dossier content byte-identical."
+  ]
+}

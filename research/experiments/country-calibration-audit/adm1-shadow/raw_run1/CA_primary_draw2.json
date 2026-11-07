@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:17:08.113169+00:00",
+ "cell": "CA_primary",
+ "draw": 2,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14469,
+  "completion_tokens": 7952,
+  "total_tokens": 22421,
+  "cost": 0.011799564,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.011799564,
+   "upstream_inference_prompt_cost": 0.002257164,
+   "upstream_inference_completions_cost": 0.0095424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6794,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.06,\n  \"departures\": [\n    {\n      \"fact\": \"State sanctuary law for transgender youth medical care, shielding travelling families from child-abuse investigation or prosecution.\",\n      \"local_evidence\": \"In September 2022 the governor signed a state bill making this state/province the first to declare itself a sanctuary for transgender young people seeking medical care... law shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care, including families who travel to the state/province for it.\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.05,\n      \"visitor_applicability\": \"Reaches transgender visitors travelling for youth gender-affirming care and their families; does not reduce street violence, entry screening, or document mismatch exposure.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"State prison policy houses transgender inmates according to gender identity within general population and was first to fund gender-affirming surgery for inmates.\",\n      \"local_evidence\": \"As of January 2021 this state/province is coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity... In 2015 this state/province became the first sub-unit to fund gender-affirming surgeries for transgender prison inmates...\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.03,\n      \"visitor_applicability\": \"Applies if a trans visitor is arrested/detained in this state's custody; custody placement is a traveller-facing axis.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"State recorded the highest raw number of anti-LGBTQ incidents nationally in 2025 (198), and its largest city saw a dramatic increase in anti-LGBTQ hate-crime reports amid the governor's platforming of anti-trans figures.\",\n      \"local_evidence\": \"national LGBTQ monitoring group documented more than 1,000 anti-LGBTQ incidents nationwide in 2025, of which this state/province recorded 198, the highest figure... largest city in law-enforcement data covering the same period as the governor's platforming of anti-trans figures.\",\n      \"direction\": \"riskier\",\n      \"magnitude\": 0.02,\n      \"visitor_applicability\": \"Recorded anti-LGBTQ hostility in the state's largest city could reach a visibly trans visitor, but source gives no per-capita denominator and is not trans-specific.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"July 2026 analysis places state in top-tier protective-law band (score 4.1) with 1.9 recorded incidents.\",\n      \"local_evidence\": \"A July 2026 analysis places this state/province in a top-tier protective-law band with a score of 4.1 and 1.9 recorded incidents, and argues that even the most protective statutory floors do not eliminate recorded hostility.\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.02,\n      \"visitor_applicability\": \"Resident-facing legal climate signal at most; not a direct traveller protection under rating rules.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": false\n    }\n  ],\n  \"inherited_national_exposure\": [\n    \"January 2025 executive order redefining sex as male-female binary and restricting transgender facility access.\",\n    \"Foreign ministry stopped processing X-marker passports and non-birth-sex markers; existing X passports valid until expiry; policy challenged in courts.\",\n    \"Entry screening/visa flagging for transgender applicants and trans athletes; fraud-based permanent ban risk.\",\n    \"State/province bathroom bans in 9+ states, with some making trans bathroom use a criminal offence; first documented bathroom-restriction arrest.\",\n    \"National corrections bureau policies mandating conversion-therapy-style treatment for transgender inmates, including hormone removal and psychiatric substitution.\",\n    \"Immigration custody reports of forced labour, beatings, solitary confinement, and sexual abuse of transgender detainees.\",\n    \"December 2025 justice department cash bounties for identifying transgender activists; May 2026 counterterrorism strategy framing 'radically pro-transgender' ideology as a security threat.\",\n    \"National measures against gender-affirming care, including proposed public-insurance reimbursement bars for under-18 care and bans in 27 states.\",\n    \"National hate-crime and employment protections exist but are partial across states; national document and border regime remains the primary inherited exposure.\"\n  ],\n  \"uncertainty\": \"Local prison identity-based housing evidence is dated January 2021 with no later confirmation; 198-incident figure lacks per-capita denominator and source says it does not establish individual visitor risk; July 2026 protective-law score methodology is unstated; no local data on bathroom/facility access, identity-document rules, entry screening, or trans-specific violence rates; care sanctuary protects youth/families travelling for care but not all trans visitors.\",\n  \"notes\": \"Net positive local delta reflects documented sanctuary-care shield and identity-based custody policy, partly offset by raw anti-LGBTQ incident count and city-level hate-crime increase. Most severe exposures — national passport/visa rules, border screening, bathroom bans, federal custody practices — are inherited national exposure and not re-counted.\"\n}",
+ "finish_reason": "stop",
+ "id": "gen-1794053828-nnjBkQlHH9g1ym1ElI3d"
+}

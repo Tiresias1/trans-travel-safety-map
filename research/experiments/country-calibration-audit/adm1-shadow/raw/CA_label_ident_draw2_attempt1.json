@@ -1,0 +1,34 @@
+{
+ "timestamp": "2026-11-07T12:25:24.539301+00:00",
+ "cell": "CA_label_ident",
+ "draw": 2,
+ "attempt": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14468,
+  "completion_tokens": 7556,
+  "total_tokens": 22024,
+  "cost": 0.005678128,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8704,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.005678128,
+   "upstream_inference_prompt_cost": 0.000766728,
+   "upstream_inference_completions_cost": 0.0049114
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6563,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.07,\n  \"departures\": [\n    {\n      \"fact\": \"California's sanctuary law for transgender youth seeking medical care, including a shield for families who travel to California for care.\",\n      \"local_evidence\": \"governor signed a state bill making this state/province the first to declare itself a sanctuary for transgender young people seeking medical care... law shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care, including families who travel to the state/province for it.\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.05,\n      \"visitor_applicability\": \"Traveler-facing for trans youth and families who travel to California for care; for other trans visitors it is a protective institutional-climate signal.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"California prison system houses transgender inmates according to gender identity in general population and funds gender-affirming surgery; no trans-only facility documented.\",\n      \"local_evidence\": \"As of January 2021 this state/province is coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity... In 2015 this state/province became the first sub-unit to fund gender-affirming surgeries for transgender prison inmates.\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.03,\n      \"visitor_applicability\": \"Applies to a trans visitor if arrested or detained in California; a positive custody protocol. Primarily resident-facing otherwise.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"Independent July 2026 analysis places California in the top-tier protective-law band (4.1).\",\n      \"local_evidence\": \"July 2026 analysis: this state/province falls in the 'safest laws' band (score 4.1) with 1.9 recorded incidents.\",\n      \"direction\": \"safer\",\n      \"magnitude\": 0.02,\n      \"visitor_applicability\": \"Climate and institutional signal supporting lower risk of hostile enforcement; not a specific visitor-protection rule.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    },\n    {\n      \"fact\": \"Elevated recorded anti-LGBTQ hostility in California: 198 incidents in 2025, the highest raw count, and a dramatic increase in hate-crime reports in its largest city.\",\n      \"local_evidence\": \"this state/province recorded 198, the highest figure of any state/province... law-enforcement data shows 'a dramatic increase' in anti-LGBTQ hate-crime reports during the same period.\",\n      \"direction\": \"riskier\",\n      \"magnitude\": 0.03,\n      \"visitor_applicability\": \"Potential societal hostility affecting trans visitors, though no per-capita denominator and no trans-visitor-specific incident is documented; raw count alone cannot establish higher individual risk.\",\n      \"already_in_national_bundle\": false,\n      \"counted_in_delta\": true\n    }\n  ],\n  \"inherited_national_exposure\": [\n    \"Federal executive order redefining sex, restricting passport gender markers, and barring federal single-sex facilities congruent with gender identity.\",\n    \"Foreign ministry halt on X-marker passport processing; existing X passports valid only until expiration.\",\n    \"Federal visa flagging/permanent-ban treatment of applicants listing a gender other than assigned sex, including trans-athlete ban.\",\n    \"National facilities restrictions and bathroom-ban enforcement in other states, including a documented bathroom-law arrest.\",\n    \"National corrections-bureau and immigration-custody practices causing documented harm to transgender detainees.\",\n    \"National hostile speech and enforcement climate: cash bounties for identifying trans activists, counterterrorism framing of pro-trans ideology, and removal of pro-trans materials.\",\n    \"National hate-crime statute gaps and unresolved litigation over passport and executive-order measures.\"\n  ],\n  \"uncertainty\": \"Local bundle is silent on California-specific bathroom/facility rules, ID-marker practice for visitors, entry screening, and hate-crime statute coverage. The 198-incident figure lacks a per-capita denominator; the prison housing policy is last confirmed in January 2021; and the July 2026 score's methodology is unstated. These limit the size and confidence of the positive delta.\",\n  \"notes\": \"California adds protective shields and custody protocols relative to the fixed national average, but inherits the federal document, entry, and custody regime and shows high raw anti-LGBTQ incident counts. Net effect is a modest safer departure.\"\n}",
+ "finish_reason": "stop",
+ "id": "gen-1794054324-ytl5cnV9mNEp93UpACtt",
+ "max_output_tokens": 8000
+}

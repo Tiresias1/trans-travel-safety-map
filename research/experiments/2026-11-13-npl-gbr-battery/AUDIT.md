@@ -1,5 +1,15 @@
 # Matched national→division propagation + calibration audit (Sol's first fix)
 
+> **Correction:** The conclusions in this historical note are withdrawn. Counting terms
+> in division display summaries is not an audit of the comparison prompts, and differences
+> between division means and national assessments do not establish miscalibration or
+> under-propagation. They may reflect different instruments or real differences. The
+> prior note also incorrectly claimed all US states mentioned "federal" and that Nepal
+> had no national exposure: the scan omitted Nepal's estimated provinces and counted
+> selected words in display text. No causal conclusion follows. See
+> `../country-calibration-audit/HANDOFF.md` for the current audit and open questions.
+> The material below is retained as a record of the earlier analysis, not endorsed.
+
 ## Propagation (does the national exposure reach every division?)
 - UK: Scotland/England document the national tier-1 (biological-sex custody/search),
   Wales partially, **Northern Ireland not at all** (yet NI scores lowest 0.461 — its

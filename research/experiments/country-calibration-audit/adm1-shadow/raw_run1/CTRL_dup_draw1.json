@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:18:29.633216+00:00",
+ "cell": "CTRL_dup",
+ "draw": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 13287,
+  "completion_tokens": 949,
+  "total_tokens": 14236,
+  "cost": 0.000805992,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 12416,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000805992,
+   "upstream_inference_prompt_cost": 0.000267909,
+   "upstream_inference_completions_cost": 0.000538083
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.0,\n  \"departures\": [{\"fact\": \"The division's bundle contains a single item — reporting on the national executive order requiring national identity documents to reflect sex assigned at birth, the resulting civil-liberties suit against the passport agency, and trans/non-binary travellers reporting confiscated or blocked passports and being stranded abroad. No division-specific law, practice, incident, facility rule, enforcement record, or social-acceptance evidence appears.\", \"local_evidence\": \"Reporting (Mar 2025): 'an executive order requires all national identity documents to reflect sex assigned at birth; civil-liberties lawyers sued the passport agency on behalf of several plaintiffs; trans and non-binary travellers report passports confiscated or blocked, leaving some stranded abroad.'\", \"direction\": \"safer\", \"magnitude\": 0.0, \"visitor_applicability\": \"Reaches visitors only as inherited national border/document exposure already priced into the fixed level; it is not a local departure and adds nothing division-specific.\", \"already_in_national_bundle\": true, \"counted_in_delta\": false}],\n  \"inherited_national_exposure\": [\"National passport/visa sex-marker regime (Jan 2025 executive order; X-marker processing halted Feb 2025; Supreme Court allowed restrictions Nov 2025; confiscated/blocked passports; pending litigation).\", \"Entry-screening exposure: Feb 2025 visa flagging of trans athletes and permanent-ban-on-fraud treatment of applicants listing a non-assigned sex; allied-government advisories and detentions of foreign citizens by Mar–Apr 2025.\", \"Facility-access restrictions: K-12/government-building bathroom bans in a minority of units, criminal-offence provisions in some units, and the Apr 2025 bathroom-law arrest.\", \"Custody/detention harm: corrections policies mandating conversion-therapy-style treatment, denial of care, non-reporting of trans prisoner counts from 2025, immigration-custody forced labour, beatings, solitary confinement and sexual abuse.\", \"Official hostility to advocacy: Dec 2025 cash-bounty instruction against trans activists; May 2026 counterterrorism framing of 'radically pro-transgender' ideology.\", \"Partial protection machinery: national hate-crimes coverage and the 2020 employment ruling, alongside limited unit-level anti-bias statutes; contested and partly enjoined executive orders.\"],\n  \"uncertainty\": \"Very high. The local bundle is a single item and is verbatim identical to an item in the national dossier, so it documents no division-level fact at all. No unit-level law, enforcement practice, facility rule, violence record, or social-acceptance signal is supplied for this division; there is likewise no evidence of local mitigation. A zero delta here follows from absent local documentation and is a diagnostic of thin evidence, not proof that this division matches the national level in reality — local conditions could be materially better or worse and simply are not documented. No extrapolation was attempted in either direction because the bundle offers no structural signal (no local criminalisation, no local protection, no local institutional practice) to extrapolate from.\",\n  \"notes\": \"Rate-the-traveller rules applied: the sole local item concerns national identity documents and border/passport friction, which is inherited national exposure for every division and is already inside the fixed 0.330; under the burden-of-proof symmetry rule, repeating a national fact is not a new local departure. Nothing in the bundle is division-specific or visitor-facing in a way that differs from the national comparison, so local_delta = 0.00 by default rather than by inference of equality. Any future delta for this division should be driven by documented local departures such as its own facility rules, its own criminal provisions, local police or violence patterns, or documented local protections actually operating — none of which appear here.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794053909-3ODnS6tQAAmC9uxrwwbv"
+}

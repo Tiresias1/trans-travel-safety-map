@@ -1,0 +1,107 @@
+PILOT2 START resume=False model=deepseek/deepseek-v4.1-flash system_sha256=700196113130bba3 caps_in=2000000 caps_out=800000 max_calls=96 max_attempts=112 concurrency=4
+CALL m-NPL-USA-d1#a1 OK order=['NPL', 'USA'] scores={'NPL': 0.6, 'USA': 0.18} err=None in=14533 out=2301 totals_in=14533 totals_out=2301 attempts=4
+CALL c-NPL-afirst-d1#a1 OK order=['NPL', 'NPL'] scores={'NPL': 0.55} err=None in=13401 out=674 totals_in=27934 totals_out=2975 attempts=5
+CALL m-NPL-PRY-d1#a1 OK order=['NPL', 'PRY'] scores={'NPL': 0.65, 'PRY': 0.4} err=None in=13362 out=2221 totals_in=41296 totals_out=5196 attempts=6
+CALL m-FSM-USA-d1#a1 OK order=['FSM', 'USA'] scores={'FSM': 0.63, 'USA': 0.22} err=None in=12753 out=1692 totals_in=54049 totals_out=6888 attempts=7
+CALL i-NPL-d1#a1 OK order=['NPL'] scores={'NPL': 0.66} err=None in=11113 out=2911 totals_in=65162 totals_out=9799 attempts=8
+CALL c-GBR-afirst-d1#a1 OK order=['GBR', 'GBR'] scores={'GBR': 0.45} err=None in=13613 out=1000 totals_in=78775 totals_out=10799 attempts=9
+CALL c-USA-afirst-d1#a1 OK order=['USA', 'USA'] scores={'USA': 0.25} err=None in=15665 out=991 totals_in=94440 totals_out=11790 attempts=10
+CALL i-USA-d1#a1 OK order=['USA'] scores={'USA': 0.3} err=None in=12245 out=3840 totals_in=106685 totals_out=15630 attempts=11
+CALL m-PRY-GBR-d1#a1 OK order=['PRY', 'GBR'] scores={'PRY': 0.52, 'GBR': 0.4} err=None in=13468 out=7017 totals_in=120153 totals_out=22647 attempts=12
+CALL m-GBR-PRY-d1#a1 OK order=['GBR', 'PRY'] scores={'GBR': 0.42, 'PRY': 0.52} err=None in=13468 out=8183 totals_in=133621 totals_out=30830 attempts=13
+CALL m-PRY-USA-d1#a1 OK order=['PRY', 'USA'] scores={'PRY': 0.48, 'USA': 0.24} err=None in=14494 out=5201 totals_in=148115 totals_out=36031 attempts=14
+CALL m-GBR-FSM-d1#a1 OK order=['GBR', 'FSM'] scores={'GBR': 0.45, 'FSM': 0.62} err=None in=11727 out=3269 totals_in=159842 totals_out=39300 attempts=15
+CALL m-USA-FSM-d1#a1 OK order=['USA', 'FSM'] scores={'USA': 0.13, 'FSM': 0.63} err=None in=12753 out=787 totals_in=172595 totals_out=40087 attempts=16
+CALL i-GBR-d1#a1 OK order=['GBR'] scores={'GBR': 0.5} err=None in=11219 out=10545 totals_in=183814 totals_out=50632 attempts=17
+CALL m-NPL-GBR-d1#a1 OK order=['NPL', 'GBR'] scores={'NPL': 0.62, 'GBR': 0.46} err=None in=13507 out=2547 totals_in=197321 totals_out=53179 attempts=18
+CALL m-FSM-NPL-d1#a1 OK order=['FSM', 'NPL'] scores={'FSM': 0.58, 'NPL': 0.66} err=None in=11622 out=8315 totals_in=208943 totals_out=61494 attempts=19
+CALL m-GBR-USA-d1#a1 OK order=['GBR', 'USA'] scores={'GBR': 0.47, 'USA': 0.17} err=None in=14639 out=2006 totals_in=223582 totals_out=63500 attempts=20
+CALL m-USA-PRY-d1#a1 OK order=['USA', 'PRY'] scores={'USA': 0.38, 'PRY': 0.43} err=None in=14495 out=4067 totals_in=238077 totals_out=67567 attempts=21
+CALL m-FSM-GBR-d1#a1 OK order=['FSM', 'GBR'] scores={'FSM': 0.62, 'GBR': 0.48} err=None in=11727 out=1836 totals_in=249804 totals_out=69403 attempts=22
+CALL m-GBR-NPL-d1#a1 OK order=['GBR', 'NPL'] scores={'GBR': 0.42, 'NPL': 0.58} err=None in=13507 out=6515 totals_in=263311 totals_out=75918 attempts=23
+CALL m-USA-GBR-d1#a1 OK order=['USA', 'GBR'] scores={'USA': 0.26, 'GBR': 0.46} err=None in=14639 out=2894 totals_in=277950 totals_out=78812 attempts=24
+CALL m-PRY-NPL-d1#a1 OK order=['PRY', 'NPL'] scores={'PRY': 0.36, 'NPL': 0.58} err=None in=13362 out=4769 totals_in=291312 totals_out=83581 attempts=24
+CALL m-USA-NPL-d1#a1 OK order=['USA', 'NPL'] scores={'USA': 0.22, 'NPL': 0.65} err=None in=14533 out=4428 totals_in=305845 totals_out=88009 attempts=24
+CALL m-NPL-FSM-d1#a1 OK order=['NPL', 'FSM'] scores={'NPL': 0.58, 'FSM': 0.5} err=None in=11621 out=5635 totals_in=317466 totals_out=93644 attempts=24
+BLOCK 1 done: input=317466/2000000 (15.9%) output=93644/800000 (11.7%) attempts=24/112 reserved_in=0 reserved_out=0
+BLOCK 1 BUDGET REPORT (first 24 calls): consumed 317466 input tokens (15.9% of 2000000) and 93644 output tokens (11.7% of 800000) over 24 attempts; block-1 projection to 96 calls: in~1269864 out~374576
+CALL i-NPL-d2#a1 OK order=['NPL'] scores={'NPL': 0.58} err=None in=11113 out=2531 totals_in=328579 totals_out=96175 attempts=28
+CALL m-USA-NPL-d2#a1 OK order=['USA', 'NPL'] scores={'USA': 0.28, 'NPL': 0.62} err=None in=14533 out=2130 totals_in=343112 totals_out=98305 attempts=29
+CALL m-USA-FSM-d2#a1 OK order=['USA', 'FSM'] scores={'USA': 0.15, 'FSM': 0.55} err=None in=12753 out=2081 totals_in=369372 totals_out=101956 attempts=30
+CALL m-NPL-GBR-d2#a1 OK order=['NPL', 'GBR'] scores={'NPL': 0.6, 'GBR': 0.45} err=None in=13507 out=1570 totals_in=369372 totals_out=101956 attempts=30
+CALL m-GBR-FSM-d2#a1 OK order=['GBR', 'FSM'] scores={'GBR': 0.46, 'FSM': 0.58} err=None in=11727 out=3080 totals_in=381099 totals_out=105036 attempts=32
+CALL c-USA-bfirst-d1#a1 OK order=['USA', 'USA'] scores={'USA': 0.45} err=None in=15665 out=1352 totals_in=396764 totals_out=106388 attempts=33
+CALL m-NPL-PRY-d2#a1 OK order=['NPL', 'PRY'] scores={'NPL': 0.58, 'PRY': 0.42} err=None in=13362 out=7148 totals_in=410126 totals_out=113536 attempts=34
+CALL m-FSM-USA-d2#a1 OK order=['FSM', 'USA'] scores={'FSM': 0.68, 'USA': 0.12} err=None in=12753 out=797 totals_in=422879 totals_out=114333 attempts=35
+CALL m-NPL-FSM-d2#a1 OK order=['NPL', 'FSM'] scores={'NPL': 0.6, 'FSM': 0.52} err=None in=11622 out=2500 totals_in=434501 totals_out=116833 attempts=36
+CALL m-USA-GBR-d2#a1 OK order=['USA', 'GBR'] scores={'USA': 0.4, 'GBR': 0.52} err=None in=14639 out=3281 totals_in=449140 totals_out=120114 attempts=37
+CALL m-GBR-NPL-d2#a1 OK order=['GBR', 'NPL'] scores={'GBR': 0.42, 'NPL': 0.52} err=None in=13507 out=2500 totals_in=462647 totals_out=122614 attempts=38
+CALL i-USA-d2#a1 OK order=['USA'] scores={'USA': 0.33} err=None in=12245 out=7847 totals_in=474892 totals_out=130461 attempts=39
+CALL m-USA-PRY-d2#a1 OK order=['USA', 'PRY'] scores={'USA': 0.26, 'PRY': 0.46} err=None in=14494 out=1743 totals_in=489386 totals_out=132204 attempts=40
+CALL c-NPL-bfirst-d1#a1 OK order=['NPL', 'NPL'] scores={'NPL': 0.55} err=None in=13401 out=620 totals_in=502787 totals_out=132824 attempts=41
+CALL m-GBR-USA-d2#a1 OK order=['GBR', 'USA'] scores={'GBR': 0.45, 'USA': 0.22} err=None in=14639 out=1521 totals_in=517426 totals_out=134345 attempts=42
+CALL m-FSM-NPL-d2#a1 OK order=['FSM', 'NPL'] scores={'FSM': 0.63, 'NPL': 0.52} err=None in=11621 out=3117 totals_in=529047 totals_out=137462 attempts=43
+CALL m-GBR-PRY-d2#a1 OK order=['GBR', 'PRY'] scores={'GBR': 0.4, 'PRY': 0.5} err=None in=13469 out=3354 totals_in=542516 totals_out=140816 attempts=44
+CALL m-PRY-NPL-d2#a1 OK order=['PRY', 'NPL'] scores={'PRY': 0.4, 'NPL': 0.62} err=None in=13362 out=1101 totals_in=555878 totals_out=141917 attempts=45
+CALL m-NPL-USA-d2#a1 OK order=['NPL', 'USA'] scores={'NPL': 0.52, 'USA': 0.26} err=None in=14533 out=3046 totals_in=570411 totals_out=144963 attempts=46
+CALL m-PRY-USA-d2#a1 OK order=['PRY', 'USA'] scores={'PRY': 0.45, 'USA': 0.23} err=None in=14495 out=914 totals_in=584906 totals_out=145877 attempts=47
+CALL c-GBR-bfirst-d1#a1 FAILED order=['GBR', 'GBR'] scores=None err=ValueError: no scores in response (stop_reason=length): '' in=13613 out=11000 totals_in=598519 totals_out=156877 attempts=48
+CALL m-FSM-GBR-d2#a1 OK order=['FSM', 'GBR'] scores={'FSM': 0.62, 'GBR': 0.42} err=None in=11727 out=9246 totals_in=610246 totals_out=166123 attempts=49
+CALL c-GBR-bfirst-d1#a2 OK order=['GBR', 'GBR'] scores={'GBR': 0.45} err=None in=13613 out=743 totals_in=623859 totals_out=166866 attempts=49
+CALL m-PRY-GBR-d2#a1 OK order=['PRY', 'GBR'] scores={'PRY': 0.5, 'GBR': 0.4} err=None in=13468 out=3557 totals_in=637327 totals_out=170423 attempts=49
+CALL i-GBR-d2#a1 OK order=['GBR'] scores={'GBR': 0.47} err=None in=11219 out=9124 totals_in=648546 totals_out=179547 attempts=49
+BLOCK 2 done: input=648546/2000000 (32.4%) output=179547/800000 (22.4%) attempts=49/112 reserved_in=0 reserved_out=0
+CALL c-NPL-afirst-d2#a1 OK order=['NPL', 'NPL'] scores={'NPL': 0.58} err=None in=13401 out=677 totals_in=661947 totals_out=180224 attempts=53
+CALL m-USA-PRY-d3#a1 OK order=['USA', 'PRY'] scores={'USA': 0.36, 'PRY': 0.52} err=None in=14494 out=2682 totals_in=676441 totals_out=182906 attempts=54
+CALL m-GBR-USA-d3#a1 OK order=['GBR', 'USA'] scores={'GBR': 0.47, 'USA': 0.26} err=None in=14639 out=1209 totals_in=691080 totals_out=184115 attempts=55
+CALL m-PRY-USA-d3#a1 OK order=['PRY', 'USA'] scores={'PRY': 0.45, 'USA': 0.2} err=None in=14494 out=5679 totals_in=705574 totals_out=189794 attempts=56
+CALL m-USA-NPL-d3#a1 OK order=['USA', 'NPL'] scores={'USA': 0.22, 'NPL': 0.55} err=None in=14533 out=5242 totals_in=720107 totals_out=195036 attempts=57
+CALL i-GBR-d3#a1 OK order=['GBR'] scores={'GBR': 0.47} err=None in=11219 out=1375 totals_in=731326 totals_out=196411 attempts=58
+CALL m-FSM-GBR-d3#a1 OK order=['FSM', 'GBR'] scores={'FSM': 0.65, 'GBR': 0.45} err=None in=11727 out=7046 totals_in=743053 totals_out=203457 attempts=59
+CALL m-GBR-PRY-d3#a1 OK order=['GBR', 'PRY'] scores={'GBR': 0.42, 'PRY': 0.55} err=None in=13468 out=5181 totals_in=756521 totals_out=208638 attempts=60
+CALL c-GBR-afirst-d2#a1 OK order=['GBR', 'GBR'] scores={'GBR': 0.48} err=None in=13613 out=877 totals_in=770134 totals_out=209515 attempts=61
+CALL m-GBR-FSM-d3#a1 OK order=['GBR', 'FSM'] scores={'GBR': 0.45, 'FSM': 0.62} err=None in=11727 out=2284 totals_in=781861 totals_out=211799 attempts=62
+CALL m-USA-GBR-d3#a1 OK order=['USA', 'GBR'] scores={'USA': 0.28, 'GBR': 0.44} err=None in=14639 out=3809 totals_in=796500 totals_out=215608 attempts=63
+CALL m-NPL-PRY-d3#a1 OK order=['NPL', 'PRY'] scores={'NPL': 0.65, 'PRY': 0.45} err=None in=13362 out=3275 totals_in=809862 totals_out=218883 attempts=64
+CALL m-USA-FSM-d3#a1 OK order=['USA', 'FSM'] scores={'USA': 0.24, 'FSM': 0.62} err=None in=12753 out=9188 totals_in=822615 totals_out=228071 attempts=65
+CALL c-USA-afirst-d2#a1 OK order=['USA', 'USA'] scores={'USA': 0.38} err=None in=15665 out=896 totals_in=838280 totals_out=228967 attempts=66
+CALL m-GBR-NPL-d3#a1 OK order=['GBR', 'NPL'] scores={'GBR': 0.4, 'NPL': 0.52} err=None in=13507 out=3235 totals_in=851787 totals_out=232202 attempts=67
+CALL m-NPL-FSM-d3#a1 OK order=['NPL', 'FSM'] scores={'NPL': 0.58, 'FSM': 0.68} err=None in=11621 out=2608 totals_in=863408 totals_out=234810 attempts=68
+CALL m-NPL-USA-d3#a1 OK order=['NPL', 'USA'] scores={'NPL': 0.62, 'USA': 0.22} err=None in=14533 out=1638 totals_in=877941 totals_out=236448 attempts=69
+CALL m-FSM-NPL-d3#a1 OK order=['FSM', 'NPL'] scores={'FSM': 0.65, 'NPL': 0.5} err=None in=11621 out=3437 totals_in=889562 totals_out=239885 attempts=70
+CALL m-FSM-USA-d3#a1 OK order=['FSM', 'USA'] scores={'FSM': 0.58, 'USA': 0.18} err=None in=12753 out=7482 totals_in=902315 totals_out=247367 attempts=71
+CALL i-NPL-d3#a1 OK order=['NPL'] scores={'NPL': 0.63} err=None in=11113 out=1135 totals_in=913428 totals_out=248502 attempts=72
+CALL m-PRY-GBR-d3#a1 OK order=['PRY', 'GBR'] scores={'PRY': 0.58, 'GBR': 0.45} err=None in=13469 out=6204 totals_in=926897 totals_out=254706 attempts=73
+CALL i-USA-d3#a1 OK order=['USA'] scores={'USA': 0.33} err=None in=12245 out=7135 totals_in=939142 totals_out=261841 attempts=73
+CALL m-PRY-NPL-d3#a1 OK order=['PRY', 'NPL'] scores={'PRY': 0.44, 'NPL': 0.6} err=None in=13362 out=3686 totals_in=952504 totals_out=265527 attempts=73
+CALL m-NPL-GBR-d3#a1 FAILED order=['NPL', 'GBR'] scores=None err=ValueError: no scores in response (stop_reason=length): '' in=13507 out=11000 totals_in=966011 totals_out=276527 attempts=73
+CALL m-NPL-GBR-d3#a2 OK order=['NPL', 'GBR'] scores={'NPL': 0.53, 'GBR': 0.41} err=None in=13507 out=3028 totals_in=979518 totals_out=279555 attempts=74
+BLOCK 3 done: input=979518/2000000 (49.0%) output=279555/800000 (34.9%) attempts=74/112 reserved_in=0 reserved_out=0
+CALL i-GBR-d4#a1 OK order=['GBR'] scores={'GBR': 0.45} err=None in=11219 out=2666 totals_in=990737 totals_out=282221 attempts=78
+CALL m-GBR-NPL-d4#a1 OK order=['GBR', 'NPL'] scores={'GBR': 0.41, 'NPL': 0.53} err=None in=13507 out=1850 totals_in=1004244 totals_out=284071 attempts=79
+CALL m-GBR-FSM-d4#a1 OK order=['GBR', 'FSM'] scores={'GBR': 0.41, 'FSM': 0.62} err=None in=11727 out=2897 totals_in=1015971 totals_out=286968 attempts=80
+CALL m-USA-GBR-d4#a1 OK order=['USA', 'GBR'] scores={'USA': 0.3, 'GBR': 0.46} err=None in=14639 out=3293 totals_in=1030610 totals_out=290261 attempts=81
+CALL c-GBR-bfirst-d2#a1 OK order=['GBR', 'GBR'] scores={'GBR': 0.55} err=None in=13613 out=2687 totals_in=1044223 totals_out=292948 attempts=82
+CALL m-NPL-GBR-d4#a1 OK order=['NPL', 'GBR'] scores={'NPL': 0.52, 'GBR': 0.32} err=None in=13507 out=966 totals_in=1057730 totals_out=293914 attempts=83
+CALL m-PRY-USA-d4#a1 OK order=['PRY', 'USA'] scores={'PRY': 0.46, 'USA': 0.3} err=None in=14494 out=1787 totals_in=1072224 totals_out=295701 attempts=84
+CALL c-USA-bfirst-d2#a1 OK order=['USA', 'USA'] scores={'USA': 0.42} err=None in=15665 out=1178 totals_in=1087889 totals_out=296879 attempts=85
+CALL i-USA-d4#a1 OK order=['USA'] scores={'USA': 0.32} err=None in=12245 out=8114 totals_in=1100134 totals_out=304993 attempts=86
+CALL m-NPL-USA-d4#a1 OK order=['NPL', 'USA'] scores={'NPL': 0.5, 'USA': 0.25} err=None in=14533 out=1521 totals_in=1114667 totals_out=306514 attempts=87
+CALL m-PRY-NPL-d4#a1 OK order=['PRY', 'NPL'] scores={'PRY': 0.42, 'NPL': 0.58} err=None in=13362 out=4597 totals_in=1128029 totals_out=311111 attempts=88
+CALL m-FSM-GBR-d4#a1 OK order=['FSM', 'GBR'] scores={'FSM': 0.65, 'GBR': 0.42} err=None in=11727 out=1579 totals_in=1139756 totals_out=312690 attempts=89
+CALL m-USA-FSM-d4#a1 OK order=['USA', 'FSM'] scores={'USA': 0.42, 'FSM': 0.62} err=None in=12753 out=2482 totals_in=1152509 totals_out=315172 attempts=90
+CALL m-GBR-USA-d4#a1 OK order=['GBR', 'USA'] scores={'GBR': 0.55, 'USA': 0.15} err=None in=14639 out=4175 totals_in=1167148 totals_out=319347 attempts=91
+CALL m-GBR-PRY-d4#a1 FAILED order=['GBR', 'PRY'] scores=None err=ValueError: no scores in response (stop_reason=length): '' in=13468 out=11000 totals_in=1180616 totals_out=330347 attempts=92
+CALL m-USA-PRY-d4#a1 OK order=['USA', 'PRY'] scores={'USA': 0.24, 'PRY': 0.44} err=None in=14494 out=4795 totals_in=1195110 totals_out=335142 attempts=93
+CALL i-NPL-d4#a1 OK order=['NPL'] scores={'NPL': 0.58} err=None in=11113 out=8592 totals_in=1206223 totals_out=343734 attempts=94
+CALL c-NPL-bfirst-d2#a1 OK order=['NPL', 'NPL'] scores={'NPL': 0.6} err=None in=13401 out=1455 totals_in=1219624 totals_out=345189 attempts=95
+CALL m-GBR-PRY-d4#a2 FAILED order=['GBR', 'PRY'] scores=None err=ValueError: no scores in response (stop_reason=length): '' in=13468 out=11000 totals_in=1233092 totals_out=356189 attempts=96
+CALL m-PRY-GBR-d4#a1 OK order=['PRY', 'GBR'] scores={'PRY': 0.42, 'GBR': 0.3} err=None in=13468 out=5431 totals_in=1246560 totals_out=361620 attempts=97
+CALL m-FSM-USA-d4#a1 OK order=['FSM', 'USA'] scores={'FSM': 0.65, 'USA': 0.25} err=None in=12753 out=6151 totals_in=1259313 totals_out=367771 attempts=98
+CALL m-NPL-PRY-d4#a1 OK order=['NPL', 'PRY'] scores={'NPL': 0.52, 'PRY': 0.3} err=None in=13362 out=1075 totals_in=1272675 totals_out=368846 attempts=99
+CALL m-USA-NPL-d4#a1 OK order=['USA', 'NPL'] scores={'USA': 0.25, 'NPL': 0.58} err=None in=14533 out=2123 totals_in=1287208 totals_out=370969 attempts=99
+CALL m-NPL-FSM-d4#a1 FAILED order=['NPL', 'FSM'] scores=None err=ValueError: no scores in response (stop_reason=length): '' in=11621 out=11000 totals_in=1298829 totals_out=381969 attempts=99
+CALL m-FSM-NPL-d4#a1 OK order=['FSM', 'NPL'] scores={'FSM': 0.57, 'NPL': 0.52} err=None in=11621 out=7427 totals_in=1310450 totals_out=389396 attempts=100
+CALL m-NPL-FSM-d4#a2 OK order=['NPL', 'FSM'] scores={'NPL': 0.5, 'FSM': 0.56} err=None in=11621 out=1633 totals_in=1322071 totals_out=391029 attempts=100
+BLOCK 4 done: input=1322071/2000000 (66.1%) output=391029/800000 (48.9%) attempts=100/112 reserved_in=0 reserved_out=0
+PILOT2 END statuses={'ok': 95, 'failed': 5} attempts=100/112 input=1322071/2000000 output=391029/800000 stop=none

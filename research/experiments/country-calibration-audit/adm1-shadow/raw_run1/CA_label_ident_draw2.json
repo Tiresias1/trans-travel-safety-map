@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:19:05.061269+00:00",
+ "cell": "CA_label_ident",
+ "draw": 2,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14468,
+  "completion_tokens": 6315,
+  "total_tokens": 20783,
+  "cost": 0.01177372,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01177372,
+   "upstream_inference_prompt_cost": 0.00419572,
+   "upstream_inference_completions_cost": 0.007578
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5285,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.04, \"departures\": [{\"fact\": \"The division is a sanctuary for transgender youth seeking gender-affirming care, including families who travel there, shielding them from child-abuse investigations or prosecution.\", \"local_evidence\": \"In September 2022 the governor signed a state bill making this state/province the first to declare itself a sanctuary for transgender young people seeking medical care; the law shields families from child-abuse investigations or criminal prosecution, including families who travel to the state/province for it.\", \"direction\": \"safer\", \"magnitude\": 0.02, \"visitor_applicability\": \"Reaches a transgender visitor only where they travel to this division for gender-affirming care or as family of a trans youth; otherwise it is a climate signal, not a border or facilities protection.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true}, {\"fact\": \"The division's state prison system houses transgender inmates according to gender identity in the general population and funds gender-affirming surgery for transgender inmates.\", \"local_evidence\": \"As of January 2021 this state/province is coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity, with housing assigned identity-based within the general population; in 2015 this state/province became the first sub-unit to fund gender-affirming surgeries for transgender prison inmates.\", \"direction\": \"safer\", \"magnitude\": 0.01, \"visitor_applicability\": \"Only if a transgender visitor is arrested and held in this division's state custody; low probability for ordinary travel, but it mitigates a severe custody exposure.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true}, {\"fact\": \"The division is placed in a top-tier protective-law band by a July 2026 analysis.\", \"local_evidence\": \"A July 2026 analysis places this state/province in a top-tier protective-law band with a score of 4.1 and 1.9 recorded incidents, and argues that even the most protective statutory floors do not eliminate recorded hostility.\", \"direction\": \"safer\", \"magnitude\": 0.01, \"visitor_applicability\": \"Climate signal for local institutions and statutory environment; not a documented border, facilities, or police-protection rule for visitors.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true}, {\"fact\": \"The division recorded the highest raw number of anti-LGBTQ incidents of any state/province in 2025, and its largest city saw a reported rise in anti-LGBTQ hate-crime reports.\", \"local_evidence\": \"A national LGBTQ monitoring group documented more than 1,000 anti-LGBTQ incidents nationwide in 2025, of which this state/province recorded 198, the highest figure of any state/province; a separate analysis reports a dramatic increase in anti-LGBTQ hate-crime reports in the largest city.\", \"direction\": \"riskier\", \"magnitude\": 0.01, \"visitor_applicability\": \"No documented visitor-specific reach; the count is anti-LGBTQ rather than trans-specific and has no population denominator, so it does not establish individual visitor risk.\", \"already_in_national_bundle\": false, \"counted_in_delta\": false}], \"inherited_national_exposure\": [\"National passport sex-marker restrictions and withdrawal of X-marker processing; reports of confiscation or blocking leaving travellers stranded.\", \"National visa flagging and permanent-ban threat for applicants whose listed gender differs from assigned sex, including the trans-athlete entry ban.\", \"National facility-access restrictions in multiple states/provinces and documented bathroom-law arrest exposure elsewhere.\", \"National official hostility, including counterterrorism framing of pro-transgender activism and reported bounty instructions.\", \"National custody and immigration-detention harms, including conversion-therapy-style corrections policies and reported abuse.\", \"National care restrictions and proposed insurance exclusions, plus the patchwork of state/province hate-crime and discrimination coverage.\"], \"uncertainty\": \"The local bundle has no region-specific bathroom, identity-document, entry-screening, or hate-crime-enforcement data. The prison housing policy is dated January 2021 with no later confirmation. The 198-incident figure lacks a population denominator and is anti-LGBTQ, not trans-specific, so it is not counted as a riskier departure. The protective-law score's methodology is unstated.\", \"notes\": \"The net local delta is modestly positive: the documented sanctuary-care and custody protections are real but mostly resident-facing or conditional on unusual traveller contact with state custody. National border, document, facilities, and official-hostility exposures remain priced into the fixed national level and are not re-rated. The raw incident count is noted but not applied because it lacks per-capita and trans-specific evidence.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794053945-YiZ9IJrvvKHk7pU0aYIb"
+}

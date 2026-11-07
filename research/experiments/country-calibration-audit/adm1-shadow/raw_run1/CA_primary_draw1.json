@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:17:08.111884+00:00",
+ "cell": "CA_primary",
+ "draw": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14469,
+  "completion_tokens": 2816,
+  "total_tokens": 17285,
+  "cost": 0.00371137,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00371137,
+   "upstream_inference_prompt_cost": 0.00188097,
+   "upstream_inference_completions_cost": 0.0018304
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1701,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.03,\n  \"departures\": [\n    {\"fact\": \"The division operates a sanctuary/shield statute for transgender youth care, expressly covering families who travel into the division to obtain hormones or puberty blockers, shielding them from child-abuse investigation or prosecution.\",\n     \"local_evidence\": \"September 2022 law: 'first sanctuary state/province for transgender youth seeking care'; 'shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care'; young people from other state/provinces can access hormones and puberty blockers here.\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.03,\n     \"visitor_applicability\": \"Traveller-facing within its scope: a protective operating regime explicitly named in the rubric (sanctuary/shield statute protecting visitors and travelling families; protection of a traveller's care access). It does not extend to an ordinary adult trans tourist's general safety, so it moves the delta only modestly.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": true},\n    {\"fact\": \"Division-specific custody practice houses transgender inmates according to gender identity within the general population, and its corrections system funds gender-affirming surgery for transgender inmates.\",\n     \"local_evidence\": \"Coded as 'the single sub-unit allowing transgender inmates to be housed according to their gender identity'; 2015 first-in-country funding of gender-affirming surgeries for transgender inmates; corrections operational guidelines confirmed in 2015 coverage.\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.02,\n     \"visitor_applicability\": \"Custody/placement (axis H) is a traveller-facing layer if a trans visitor is detained, and it contrasts with the inherited national custody record; but it is a resident-custody policy and its latest documented statement is January 2021, so it is climate signal plus a thin edge-case protection.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": true},\n    {\"fact\": \"The division records the highest raw count of anti-LGBTQ incidents in the country for 2025, with a documented rise in anti-LGBTQ hate-crime reports in its largest city and a governor platforming anti-trans figures.\",\n     \"local_evidence\": \"'this state/province recorded 198' of more than 1,000 national incidents; law-enforcement data shows 'a dramatic increase' in anti-LGBTQ hate-crime reports alongside the governor's platforming of anti-trans figures; July 2026 piece notes even protective statutory floors do not eliminate recorded hostility.\",\n     \"direction\": \"riskier\",\n     \"magnitude\": 0.02,\n     \"visitor_applicability\": \"Hate-crime reporting in the largest city is a setting a visitor enters, so it is a genuine societal-hostility signal; however the count is raw with no denominator, so it cannot establish higher individual risk and is weighted as a small deduction only.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": true}\n  ],\n  \"inherited_national_exposure\": [\n    \"National executive order of 20 January 2025 redefining sex as binary and restricting markers, facilities and terminology.\",\n    \"Foreign ministry halting X-marker processing (Feb 2025); passport confiscations/stranding; pending civil-liberties litigation.\",\n    \"Entry screening: ban on trans athletes, internal visa flagging, gender-mismatch treated as fraud; allied governments' advisories (Mar-Apr 2025).\",\n    \"National facilities/bathroom restrictions and their spread across units, including criminal bathroom-use provisions and the April 2025 bathroom arrest.\",\n    \"National custody harms: corrections-bureau policies adopted from 2026, denial of care, non-reporting of transgender prisoner numbers, immigration-custody abuse.\",\n    \"Official threat-framing: December 2025 bounty instruction and May 2026 counterterrorism language.\",\n    \"Partial protection machinery: national hate-crimes coverage with only 23 units covering gender identity and 37 without bias statutes (2019 snapshot).\",\n    \"Recent unit-level legislative degradation (Feb 2026 marker-invalidation law, pending targeting bills) and advocacy 'Do Not Travel' designations.\"\n  ],\n  \"uncertainty\": \"The identity-based prison housing policy is documented only as of January 2021 with no later confirmation; the 198-incident figure has no population denominator and the 4.1/1.9 July 2026 figures have no stated methodology; the sanctuary statute's traveller reach is limited to youth-care travel. No local evidence exists on facilities, documents, entry screening or hate-crime coverage, so no departure is claimed there.\",\n  \"notes\": \"Delta is small and net positive: one genuine traveller-facing protective regime (youth-care shield reaching travelling families) plus a dated, edge-case custody protection, partly offset by raw-count hostility signals in the division's largest city. National border, document, screening and custody-climate exposures are inherited inside the fixed 0.330 and are not re-counted. A near-zero delta should not be read as evidence the division is safer overall; it reflects that local protective items are narrow or stale and local hostile items lack denominators.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794053828-5zvG9T1GCbOZeebCynSb"
+}

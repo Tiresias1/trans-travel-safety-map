@@ -1,0 +1,34 @@
+{
+ "timestamp": "2026-11-07T12:23:54.846605+00:00",
+ "cell": "ENG_primary",
+ "draw": 1,
+ "attempt": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 13802,
+  "completion_tokens": 2124,
+  "total_tokens": 15926,
+  "cost": 0.004139128,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8704,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004139128,
+   "upstream_inference_prompt_cost": 0.001590328,
+   "upstream_inference_completions_cost": 0.0025488
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 841,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.00,\n \"departures\": [\n  {\"fact\": \"England's services, searches and custody allocation operate on the biological-sex definitions fixed by the UK Supreme Court's 16 April 2025 judgment on 'woman'/'sex' in the Equality Act 2010.\",\n   \"local_evidence\": \"The local bundle itself states: \\\"The definitions that govern services, searches and detention allocation in England were fixed by the national supreme court's unanimous judgment handed down 16 April 2025\\\"; item: \\\"the unanimous judgment of the country's highest court (handed down 16 April 2025) that 'woman' and 'sex' in the Equality Act 2010 refer to biological woman and biological sex\\\".\",\n   \"direction\": \"riskier\",\n   \"magnitude\": 0.0,\n   \"visitor_applicability\": \"Reaches visitors (service refusal, facility access, strip-search/custody basis), but it is the national regime, not an England-only departure.\",\n   \"already_in_national_bundle\": true,\n   \"counted_in_delta\": false},\n  {\"fact\": \"EHRC code of practice of 20 May 2025 lets providers request a birth certificate on \\\"genuine concern\\\" about biological sex and exclude trans people from single-sex sport \\\"when necessary\\\"; described locally as the operative guidance a visitor meets at venues, transport and services.\",\n   \"local_evidence\": \"\\\"the national equality and human-rights commission ... updated its code of practice on 20 May 2025 ... services and businesses may ask a person for a birth certificate where there is 'genuine concern' about biological sex, and that trans people may be excluded from single-sex sport 'when necessary' for safety.\\\"\",\n   \"direction\": \"riskier\",\n   \"magnitude\": 0.0,\n   \"visitor_applicability\": \"Yes — venue/service-level, applies to a trans visitor; but the authoring body is national (England and Wales) and the guidance duplicates the national single-sex-spaces guidance.\",\n   \"already_in_national_bundle\": true,\n   \"counted_in_delta\": false},\n  {\"fact\": \"Prison/custody accommodation by biological sex, upheld in the ruling striking down identity-based prison guidance; a judicial review heard 5 February 2026 argues a blanket birth-sex rule breaches human rights and creates suicide risk.\",\n   \"local_evidence\": \"\\\"a judge ruled that guidance of a prison service allowing some trans prisoners to be housed by gender identity is unlawful\\\"; \\\"no outcome of that hearing is documented in the sources used here\\\".\",\n   \"direction\": \"riskier\",\n   \"magnitude\": 0.0,\n   \"visitor_applicability\": \"Only if a visitor is detained; the same litigation is already recorded at national level and its outcome is unresolved.\",\n   \"already_in_national_bundle\": true,\n   \"counted_in_delta\": false},\n  {\"fact\": \"Official hate-crime baseline for England and a neighbouring component: 115,990 police-recorded hate crimes in the year to March 2025, transgender strand down 11% year on year.\",\n   \"local_evidence\": \"\\\"Official statistics for this state/province and a neighbouring component (published 9 October 2025): 115,990 police-recorded hate crimes ... transgender strand down 11% ... no population denominator ... earlier years over-counted.\\\"\",\n   \"direction\": \"safer\",\n   \"magnitude\": 0.0,\n   \"visitor_applicability\": \"No — raw count without denominator, covers residents' reporting behaviour, and the bundle expressly says it supports no per-capita comparison; cannot outweigh tier-1 national exposures.\",\n   \"already_in_national_bundle\": false,\n   \"counted_in_delta\": false}\n ],\n \"inherited_national_exposure\": [\n  \"National Equality Act biological-sex interpretation (Supreme Court, 16 April 2025) and the EHRC code of practice built on it — inherited, governs England directly.\",\n  \"National strip-search policy for transport police (trans women searched by officers of sex at birth, interim position, April 2025) — inherited.\",\n  \"National prison-placement litigation (For Women Scotland-type ruling; 5 February 2026 judicial review argument on suicide risk) — inherited, unresolved.\",\n  \"National health-service ward policy (trans patients to be excluded from sex-based wards), the Joëlle case and the national clinical review's minor-prescribing restrictions — inherited national climate.\",\n  \"National gendered-spaces harassment survey and rising anti-trans media rhetoric; rainbow-index fall from 1st/86% (2015) to 22nd/45% (2025) — inherited climate signal.\",\n  \"Gender Recognition Act machinery, GRC recognition withdrawal for 50 foreign jurisdictions, and NHS/healthcare infrastructure — resident-facing, inherited, not re-counted.\"\n ],\n \"uncertainty\": \"The local bundle adds no England-only fact: every item is either explicitly national (Supreme Court ruling, EHRC code, interior-department bulletin) or duplicated from the national dossier. The 5 February 2026 prison judicial review outcome is unresolved, a regional police searching policy remains unretrieved (HTTP 403), and no England-specific trans hate-crime count or rate exists — so no evidentiary basis for a signed local departure in either direction.\",\n \"notes\": \"A delta of 0.00 here is a diagnostic of evidentiary duplication, not proof that England is equal to the national level or that the regime is benign. The operative driver — the biological-sex definitions governing services, searches and custody, plus the equality-body code permitting birth-certificate requests on 'genuine concern' — is expressly attributed in the local bundle to the national framework and therefore already priced into 0.443529. The only items not literally in the national dossier (the England-and-Wales hate-crime bulletin) are raw counts without a denominator, explicitly non-comparable, and a declining transgender strand that cannot offset tier-1 universal-exposure measures; they are recorded but not counted.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794054234-0rhG9w9gW3xfet9UE0VH",
+ "max_output_tokens": 8000
+}

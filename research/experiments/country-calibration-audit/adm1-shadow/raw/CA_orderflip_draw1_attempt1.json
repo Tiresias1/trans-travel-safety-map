@@ -1,0 +1,34 @@
+{
+ "timestamp": "2026-11-07T12:25:13.018227+00:00",
+ "cell": "CA_orderflip",
+ "draw": 1,
+ "attempt": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14469,
+  "completion_tokens": 2652,
+  "total_tokens": 17121,
+  "cost": 0.00484273,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8960,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00484273,
+   "upstream_inference_prompt_cost": 0.00166033,
+   "upstream_inference_completions_cost": 0.0031824
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1391,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.03,\n  \"departures\": [\n    {\"fact\": \"State sanctuary/shield law (Sept 2022) for transgender youth care, extending protection to families who travel into the state for that care, shielding them from child-abuse investigation or prosecution.\",\n     \"local_evidence\": \"\\\"the first sanctuary state/province for transgender youth seeking care: young people from other state/provinces can access hormones and puberty blockers here, and the law shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care\\\"\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.03,\n     \"visitor_applicability\": \"Directly reaches visitors only in the travelling-family/minor-care scenario (the rubric's named protective-regime category: a shield statute protecting travelling families and care access); for a lone adult trans visitor it is an operating institutional-acceptance signal rather than an everyday protection. It does not touch the inherited national border/document exposures.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": true},\n    {\"fact\": \"Corrections policy housing trans inmates by gender identity within the general population (documented to Jan 2021), with state-funded gender-affirming surgery since 2015.\",\n     \"local_evidence\": \"\\\"coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity ... first sub-unit to fund gender-affirming surgeries for transgender prison inmates\\\"\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.02,\n     \"visitor_applicability\": \"Resident-facing custody policy; it would only reach a visitor if detained, and the record's last confirmation is January 2021 with no later instance documented. Climate signal about institutional posture, not a documented traveller protection.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false},\n    {\"fact\": \"198 recorded anti-LGBTQ incidents in 2025 — highest raw count of any sub-unit — plus a 'dramatic increase' in hate-crime reports in the largest city.\",\n     \"local_evidence\": \"\\\"this state/province recorded 198, the highest figure of any state/province. That ranking is by raw count only: the source supplies no population or per-capita denominator\\\"\",\n     \"direction\": \"riskier\",\n     \"magnitude\": 0.02,\n     \"visitor_applicability\": \"The count is LGBT-wide rather than trans-specific, carries no denominator or period-normalised rate, and the sources themselves warn it does not establish higher individual risk; per the prevalence rules it is not usable as a current trans-specific exposure magnitude.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false},\n    {\"fact\": \"July 2026 analysis placing the state in a top protective-law band (4.1) with 1.9 recorded incidents.\",\n     \"local_evidence\": \"\\\"places this state/province in a top-tier protective-law band with a score of 4.1 and 1.9 recorded incidents ... methodology ... not stated\\\"\",\n     \"direction\": \"safer\",\n     \"magnitude\": 0.01,\n     \"visitor_applicability\": \"Uninterpretable metric (what the 1.9 counts is unstated); corroborates the statutory-protection climate signal only, not a traveller-facing protection.\",\n     \"already_in_national_bundle\": false,\n     \"counted_in_delta\": false}\n  ],\n  \"inherited_national_exposure\": [\n    \"Executive-order binary sex definition, removal of X markers and passport/visa marker restrictions, with reports of passports blocked or confiscated and litigation pending (national border/document regime).\",\n    \"Entry screening: February 2025 visa flagging treating a listed gender other than assigned sex as fraud grounds for permanent ban; foreign-government travel advisories for trans travellers.\",\n    \"Bathroom/facility bans in force in numerous states and one state-level criminal bathroom provision, with a documented arrest under such a law; the division's own facility/bathroom status is not documented either way.\",\n    \"Prison and immigration custody harms (conversion-therapy-style corrections policies, denial of care, abuse in immigration detention) at national level.\",\n    \"Official threat-framing: cash bounties for identifying trans activists, counterterrorism language targeting 'radically pro-transgender' ideology.\",\n    \"National hate-crime statute covering gender identity plus partial state coverage; 2025 polling showing majority support for birth-sex markers on documents and sports restrictions.\",\n    \"National trend of state-level anti-trans legislation and advocacy 'do not travel' designations (one further state added July 2026).\"\n  ],\n  \"uncertainty\": \"The division's facility/bathroom-ban status, its gender-marker and document practice for visitors, and its hate-crime statute coverage are not documented locally and cannot be assumed better than the national baseline. The 198-incident figure has no denominator and no trans-specific category, so no per-capita hostility conclusion is drawn. The identity-based prison-housing policy is last confirmed January 2021; its present force is unresolved. The 1.9/4.1 figures have no stated methodology. The positive delta rests mainly on one operating shield statute, so it is deliberately small.\",\n  \"notes\": \"The division differs from the national baseline mainly through a documented, in-force care-access shield statute that explicitly covers families who travel into the state — the rubric's named protective-regime category — which supports a modest positive delta. Its identity-based prison housing and surgery funding are resident-facing custody policy (climate signal only). The raw incident count and the uninterpretable 4.1/1.9 metric do not establish per-capita or trans-specific exposure and are not counted. Net local_delta = +0.03; the inherited national border, document and facility exposures continue to govern the visitor experience.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794054313-k54QD2U8diCOMkIfa0gv",
+ "max_output_tokens": 8000
+}

@@ -1,5 +1,14 @@
 # Where the pipeline loses Nepal–UK separation (root cause)
 
+> **Correction:** This historical title and causal diagnosis overstate the evidence.
+> The old published division mean was numerically closer than the national framework
+> ratings, but that does not establish that either instrument's rankings were correct,
+> that individual exposure was under-propagated, or that any policy applied uniformly
+> across the UK. A higher division score does not prove underweighting. The earlier
+> reviewer was given leading premises and the direct-rating battery is not the
+> production pairwise instrument. The original content remains below for transparency;
+> see `../country-calibration-audit/HANDOFF.md` for the current evidence and limits.
+
 ## The instruments
 - **Raw country judgement** (redo_c4 pairwise, rater deepseek-v4.1-flash):
   - UK ~0.42–0.46. The `why` fields explicitly apply rule 19 tier-1: "state-imposed

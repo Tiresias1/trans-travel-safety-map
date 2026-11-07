@@ -1,0 +1,48 @@
+{
+  "purpose": "Non-publishing paired-order diagnostic; not a new score or exact archived replay",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "rubric_version": "r2026-11-13",
+  "system_sha256": "700196113130bba3f86f1f07edb7420d51df51c4c3cd361c7eba41de04814c9e",
+  "pairs": [
+    [
+      "USA",
+      "PRY"
+    ],
+    [
+      "USA",
+      "FSM"
+    ],
+    [
+      "GBR",
+      "PRY"
+    ],
+    [
+      "GBR",
+      "FSM"
+    ],
+    [
+      "NPL",
+      "PRY"
+    ],
+    [
+      "NPL",
+      "FSM"
+    ],
+    [
+      "USA",
+      "GBR"
+    ],
+    [
+      "USA",
+      "NPL"
+    ],
+    [
+      "NPL",
+      "GBR"
+    ]
+  ],
+  "calls_planned": 18,
+  "randomisation": "Both orders once; output order is completion order",
+  "sources": "current data/countries.json and research/outing-risk-taxonomy.md",
+  "limitations": "small purposive sample; A/B order confounded with call randomness; labels can be inferable"
+}

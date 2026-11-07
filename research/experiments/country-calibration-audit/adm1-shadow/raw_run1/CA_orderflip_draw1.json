@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:18:35.068029+00:00",
+ "cell": "CA_orderflip",
+ "draw": 1,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 14469,
+  "completion_tokens": 11000,
+  "total_tokens": 25469,
+  "cost": 0.006679239,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8960,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006679239,
+   "upstream_inference_prompt_cost": 0.000442239,
+   "upstream_inference_completions_cost": 0.006237
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 10425,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.03, \"departures\": [{\"fact\": \"State sanctuary law for transgender youth care, shielding families (including those who travel to the state) from child-abuse investigations or criminal prosecution for seeking gender-affirming care.\", \"local_evidence\": \"In September 2022 the governor signed a state bill making this state/province the first to declare itself a sanctuary for transgender young people seeking medical care... law shields families from child-abuse investigations or criminal prosecution for seeking gender-affirming care, including families who travel to the state/province for it.\", \"direction\": \"safer\", \"magnitude\": 0.03, \"visitor_applicability\": \"Reaches transgender youth visitors and their families traveling for care; climate signal for other trans visitors.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true}, {\"fact\": \"State prison system houses transgender inmates according to gender identity within general population and funds gender-affirming surgeries, with no trans-only separate facility documented.\", \"local_evidence\": \"As of January 2021 this state/province is coded as the single sub-unit allowing transgender inmates to be housed according to their gender identity... In 2015 this state/province became the first sub-unit to fund gender-affirming surgeries for transgender prison inmates...\", \"direction\": \"safer\", \"magnitude\": 0.01, \"visitor_applicability\": \"Only reaches a transgender visitor if detained in state custody; does not affect ordinary travel.\", \"already_in_national_bundle\": false, \"counted_in_delta\": true}, {\"fact\": \"State recorded 198 anti-LGBTQ incidents in 2025, the highest raw count of any state/province.\", \"local_evidence\": \"A national LGBTQ monitoring group documented more than 1,000 anti-LGBTQ incidents nationwide in 2025, of which this state/province recorded 198, the highest figure of any state/province.\", \"direction\": \"riskier\", \"magnitude\": 0.0, \"visitor_applicability\": \"Raw count without denominator does not establish per-capita risk to an individual visitor; not counted.\", \"already_in_national_bundle\": false, \"counted_in_delta\": false}, {\"fact\": \"Largest city saw a dramatic increase in anti-LGBTQ hate-crime reports during the same period as the governor's platforming of anti-trans figures.\", \"",
+ "finish_reason": "length",
+ "id": "gen-1794053915-NEcPEOe6fuIcLuV7A4wK"
+}

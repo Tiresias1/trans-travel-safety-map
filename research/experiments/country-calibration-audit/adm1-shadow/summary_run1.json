@@ -1,0 +1,507 @@
+{
+  "generated": "2026-11-07T12:19:34.500708+00:00",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "system_sha256": "700196113130bba3f86f1f07edb7420d51df51c4c3cd361c7eba41de04814c9e",
+  "rubric_version": "r2026-11-13",
+  "cells": {
+    "CA_primary": {
+      "role": "case",
+      "division": "California",
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "blind",
+      "note": null,
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [],
+      "delta_stats": {
+        "n": 2,
+        "values": [
+          0.03,
+          0.06
+        ],
+        "mean": 0.045,
+        "min": 0.03,
+        "max": 0.06,
+        "spread": 0.03
+      },
+      "additive_raw": [
+        0.36,
+        0.39
+      ],
+      "bounded": [
+        0.36,
+        0.39
+      ],
+      "boundary_hits": [
+        false,
+        false
+      ],
+      "out_of_unit_scale": [
+        false,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        "consistent"
+      ],
+      "departure_counts": [
+        3,
+        4
+      ]
+    },
+    "TX_primary": {
+      "role": "case",
+      "division": "Texas",
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "blind",
+      "note": null,
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [
+        "no JSON with local_delta found"
+      ],
+      "delta_stats": {
+        "n": 1,
+        "values": [
+          -0.09
+        ],
+        "mean": -0.09,
+        "min": -0.09,
+        "max": -0.09,
+        "spread": 0.0
+      },
+      "additive_raw": [
+        0.24,
+        null
+      ],
+      "bounded": [
+        0.24,
+        null
+      ],
+      "boundary_hits": [
+        false,
+        null
+      ],
+      "out_of_unit_scale": [
+        false,
+        null
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        null
+      ],
+      "departure_counts": [
+        9,
+        null
+      ]
+    },
+    "ENG_primary": {
+      "role": "case",
+      "division": "England",
+      "iso3": "GBR",
+      "baseline": 0.443529,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "blind",
+      "note": null,
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [],
+      "delta_stats": {
+        "n": 2,
+        "values": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "spread": 0.0
+      },
+      "additive_raw": [
+        0.443529,
+        0.443529
+      ],
+      "bounded": [
+        0.443529,
+        0.443529
+      ],
+      "boundary_hits": [
+        false,
+        false
+      ],
+      "out_of_unit_scale": [
+        false,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        "consistent"
+      ],
+      "departure_counts": [
+        6,
+        4
+      ]
+    },
+    "BAG_primary": {
+      "role": "case",
+      "division": "Bagmati",
+      "iso3": "NPL",
+      "baseline": 0.559643,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "fallback",
+      "note": null,
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [],
+      "delta_stats": {
+        "n": 2,
+        "values": [
+          0.03,
+          0.02
+        ],
+        "mean": 0.025,
+        "min": 0.02,
+        "max": 0.03,
+        "spread": 0.01
+      },
+      "additive_raw": [
+        0.589643,
+        0.579643
+      ],
+      "bounded": [
+        0.589643,
+        0.579643
+      ],
+      "boundary_hits": [
+        false,
+        false
+      ],
+      "out_of_unit_scale": [
+        false,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        "consistent"
+      ],
+      "departure_counts": [
+        1,
+        3
+      ]
+    },
+    "CTRL_no_local": {
+      "role": "control-no-new-evidence",
+      "division": null,
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "empty",
+      "note": "national bundle only, zero local additions; delta near zero is a diagnostic expectation, not a rule",
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [
+        "no JSON with local_delta found"
+      ],
+      "delta_stats": {
+        "n": 1,
+        "values": [
+          0.0
+        ],
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "spread": 0.0
+      },
+      "additive_raw": [
+        0.33,
+        null
+      ],
+      "bounded": [
+        0.33,
+        null
+      ],
+      "boundary_hits": [
+        false,
+        null
+      ],
+      "out_of_unit_scale": [
+        false,
+        null
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "no departures listed",
+        null
+      ],
+      "departure_counts": [
+        0,
+        null
+      ]
+    },
+    "CTRL_dup": {
+      "role": "control-duplication",
+      "division": null,
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "national-first",
+      "label": "withheld",
+      "local": "dup",
+      "note": "local bundle contains a fact verbatim from the national bundle; must not count as a new local departure",
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [],
+      "delta_stats": {
+        "n": 2,
+        "values": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "spread": 0.0
+      },
+      "additive_raw": [
+        0.33,
+        0.33
+      ],
+      "bounded": [
+        0.33,
+        0.33
+      ],
+      "boundary_hits": [
+        false,
+        false
+      ],
+      "out_of_unit_scale": [
+        false,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        "consistent"
+      ],
+      "departure_counts": [
+        1,
+        1
+      ]
+    },
+    "CA_orderflip": {
+      "role": "order-contrast",
+      "division": "California",
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "local-first",
+      "label": "withheld",
+      "local": "blind",
+      "note": "same inputs as CA_primary, dossier blocks swapped",
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [
+        "no JSON with local_delta found"
+      ],
+      "delta_stats": {
+        "n": 1,
+        "values": [
+          0.08
+        ],
+        "mean": 0.08,
+        "min": 0.08,
+        "max": 0.08,
+        "spread": 0.0
+      },
+      "additive_raw": [
+        null,
+        0.41
+      ],
+      "bounded": [
+        null,
+        0.41
+      ],
+      "boundary_hits": [
+        null,
+        false
+      ],
+      "out_of_unit_scale": [
+        null,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        null,
+        "consistent"
+      ],
+      "departure_counts": [
+        null,
+        3
+      ]
+    },
+    "CA_label_ident": {
+      "role": "label-contrast",
+      "division": "California",
+      "iso3": "USA",
+      "baseline": 0.33,
+      "order": "national-first",
+      "label": "identifying",
+      "local": "blind",
+      "note": "same inputs as CA_primary, division labelled by name",
+      "calls": 2,
+      "errors": [],
+      "parse_errors": [],
+      "delta_stats": {
+        "n": 2,
+        "values": [
+          0.02,
+          0.04
+        ],
+        "mean": 0.03,
+        "min": 0.02,
+        "max": 0.04,
+        "spread": 0.02
+      },
+      "additive_raw": [
+        0.35,
+        0.37
+      ],
+      "bounded": [
+        0.35,
+        0.37
+      ],
+      "boundary_hits": [
+        false,
+        false
+      ],
+      "out_of_unit_scale": [
+        false,
+        false
+      ],
+      "rerate_guard": [],
+      "double_count": [],
+      "missed_duplication": [],
+      "other_flags": [],
+      "delta_consistency": [
+        "consistent",
+        "consistent"
+      ],
+      "departure_counts": [
+        3,
+        4
+      ]
+    }
+  },
+  "contrasts": {
+    "order_effect_CA": {
+      "primary_mean": 0.045,
+      "orderflip_mean": 0.08,
+      "difference": 0.035
+    },
+    "label_effect_CA": {
+      "primary_mean": 0.045,
+      "identifying_mean": 0.03,
+      "difference": -0.015
+    },
+    "controls": {
+      "no_new_local_evidence": {
+        "expected": "delta near 0 (diagnostic expectation, not a rule)",
+        "observed": {
+          "n": 1,
+          "values": [
+            0.0
+          ],
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "spread": 0.0
+        }
+      },
+      "duplication": {
+        "expected": "duplicated national fact not counted as new departure",
+        "observed": {
+          "n": 2,
+          "values": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "spread": 0.0
+        },
+        "double_count_flags": []
+      }
+    }
+  },
+  "diagnostic_spread": {
+    "per_case": {
+      "California": {
+        "shadow_additive_mean": 0.375,
+        "published": 0.380584,
+        "gap_shadow_minus_published": -0.005584
+      },
+      "Texas": {
+        "shadow_additive_mean": 0.24,
+        "published": 0.185559,
+        "gap_shadow_minus_published": 0.054441
+      },
+      "England": {
+        "shadow_additive_mean": 0.443529,
+        "published": 0.485382,
+        "gap_shadow_minus_published": -0.041853
+      },
+      "Bagmati": {
+        "shadow_additive_mean": 0.584643,
+        "published": 0.555559,
+        "gap_shadow_minus_published": 0.029084
+      }
+    },
+    "mean_gap": 0.009022,
+    "gap_range": [
+      -0.041853,
+      0.054441
+    ],
+    "warning": "diagnostic spread only; never a target, never fed back into any score"
+  },
+  "totals": {
+    "calls": 16,
+    "errors": 0,
+    "parse_errors": 3,
+    "rerate_guard_hits": 0,
+    "boundary_hits": 0,
+    "out_of_unit_scale": 0
+  }
+}

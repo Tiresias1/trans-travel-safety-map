@@ -1,0 +1,32 @@
+{
+ "timestamp": "2026-11-07T12:18:30.664771+00:00",
+ "cell": "CTRL_dup",
+ "draw": 2,
+ "model": "deepseek/deepseek-v4.1-flash",
+ "usage": {
+  "prompt_tokens": 13287,
+  "completion_tokens": 686,
+  "total_tokens": 13973,
+  "cost": 0.0008127717,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0008127717,
+   "upstream_inference_prompt_cost": 0.0006736509,
+   "upstream_inference_completions_cost": 0.0001391208
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 85,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "content": "{\"local_delta\": 0.0, \"departures\": [{\"fact\": \"The division's bundle contains only a national-level item: the executive order requiring all national identity documents to reflect sex assigned at birth, the resulting lawsuit against the passport agency, and reports of trans/non-binary travellers having passports confiscated or blocked abroad.\", \"local_evidence\": \"Reporting (Mar 2025): 'an executive order requires all national identity documents to reflect sex assigned at birth; civil-liberties lawyers sued the passport agency on behalf of several plaintiffs; trans and non-binary travellers report passports confiscated or blocked, leaving some stranded abroad.'\", \"direction\": \"riskier\", \"magnitude\": 0.0, \"visitor_applicability\": \"This is national passport/identity-document policy, inherited wholesale; it applies to travellers but is already priced into the fixed national level and adds nothing division-specific.\", \"already_in_national_bundle\": true, \"counted_in_delta\": false}], \"inherited_national_exposure\": [\"National passport sex-marker restriction (binary M/F only, X eliminated for new issues) and reported confiscation/blocking of trans travellers' passports, under litigation.\", \"February 2025 visa flagging and permanent-ban framing for applicants listing a gender other than assigned sex at birth; foreign-government travel advisories for trans citizens.\", \"State/province-level bathroom and facility bans, including a documented arrest under a bathroom-restriction law, and the February 2026 unit law invalidating mismatched birth certificates/driver's licences.\", \"Custody and immigration-detention harms: corrections-bureau policies affecting transgender inmates, denial of care, abuse in immigration custody.\", \"Official threat-framing: cash-bounty instruction for identifying trans activists and counterterrorism language targeting 'radically pro-transgender' ideology.\", \"Patchy protection machinery: national hate-crimes coverage for gender identity but only 23 units with unit-level bias statutes; uneven public-accommodations protections.\", \"Public-opinion data (2025) favouring birth-sex markers on documents and sports restrictions; 27 units banning youth gender-affirming care.\"], \"uncertainty\": \"The local bundle is a single item and is a verbatim duplicate of national source evidence, so there is no documented division-specific signal in either direction. Zero delta here reflects absence of local evidence, not demonstrated equality with the national level.\", \"notes\": \"Only one local item was supplied and it reproduces national passport/document policy already inside the 0.330 baseline; per the duplication rule it cannot be re-counted as a local departure. No local facts on facilities, policing, custody, care, violence or protective enforcement were provided, so no signed delta is warranted. The shadow score therefore equals the fixed national level by construction, which is a diagnostic of bundle thinness rather than a finding about the division.\"}",
+ "finish_reason": "stop",
+ "id": "gen-1794053910-2Rt55dIuCyuvYwCSRcjL"
+}
