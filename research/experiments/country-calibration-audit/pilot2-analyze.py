@@ -138,8 +138,10 @@ for pair in PAIRS:
 order_contrasts = []
 for pair in PAIRS:
     for c in pair:
-        first = cells.get((pair, pair, c), [])          # c presented first (A)
-        second = cells.get((pair, pair[::-1], c), [])   # c presented second (B)
+        first_order = pair if pair[0] == c else pair[::-1]
+        second_order = first_order[::-1]
+        first = cells.get((pair, first_order, c), [])   # c presented first (A)
+        second = cells.get((pair, second_order, c), []) # c presented second (B)
         if not first or not second:
             continue
         contrast = st.mean(first) - st.mean(second)

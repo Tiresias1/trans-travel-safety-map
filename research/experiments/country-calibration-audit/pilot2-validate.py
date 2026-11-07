@@ -82,10 +82,41 @@ ok_rows = sum(1 for r in rows if r['status'] == 'ok')
 print(f"rows={len(rows)} ok={ok_rows} failed={len(fails)} "
       f"logical_calls={len(keys)} attempts={len(rows)}/112 "
       f"input={inT}/2000000 output={outT}/800000")
+# Verify each analysis contrast against raw presentation order, not the
+# arbitrary ordering of names in the pair key. Both participants matter.
+analysis = json.loads((HERE / 'pilot2-analysis.json').read_text())
+contrasts = analysis['matrix']['order_contrasts']
+expected_contrasts = {(tuple(row['pair']), country)
+                      for row in rows if row['status'] == 'ok' and row['condition'] == 'matrix'
+                      for country in row['pair']}
+actual_contrasts = [(tuple(item['pair']), item['country']) for item in contrasts]
+if set(actual_contrasts) != expected_contrasts or len(actual_contrasts) != len(set(actual_contrasts)):
+    fail.append('matrix order contrasts missing, duplicated, or unexpected')
+for item in contrasts:
+    pair = item['pair']
+    country = item['country']
+    first, second = [], []
+    for row in rows:
+        if row['status'] != 'ok' or row['condition'] != 'matrix' or row['pair'] != pair:
+            continue
+        order = row['order']
+        if order[0] == country:
+            first.append(row['parsed_scores']['score_a'])
+        elif order[1] == country:
+            second.append(row['parsed_scores']['score_b'])
+    if not first or not second:
+        fail.append(f"{pair}/{country}: missing order group")
+        continue
+    expected = round(sum(first) / len(first) - sum(second) / len(second), 4)
+    if (item['n_first'], item['n_second']) != (len(first), len(second)) or abs(
+        item['contrast_first_minus_second'] - expected
+    ) > 1e-4:
+        fail.append(f"{pair}/{country}: first/second contrast differs from raw order")
+
 if fail:
     print("VALIDATION FAILED:")
     for f in fail:
         print(" -", f)
     sys.exit(1)
 print("VALIDATION PASS: schema, prompt hashes, scores, usage, retry linkage, "
-      "caps, block composition")
+      "caps, block composition, first/second contrasts")

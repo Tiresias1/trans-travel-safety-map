@@ -5,12 +5,27 @@ Reads:  data/countries.json (hand/data-model maintained), data/admin1.json
         (optional), boundaries/*.geojson (for key coverage checks)
 Writes: data/meta.json; augments records with rank fields.
 
+SCORE-FREEZING BUILD (2026-11-13): this is a score-PRESERVING
+validation/rank/metadata builder. No branch may change any country or
+division score based on any other record or any fixed numerical value:
+there is no provisional-calibration override, no ADM1-to-country (or
+territory-to-country) score copy or reaggregation, and no auto-sync of
+sparse local scores from the parent. Historical scores, scoreProvenance,
+provisionalCalibration, derivedFrom and local summaries are preserved
+verbatim as historical inputs until independently rerated; this script
+never asserts they are correct and never generates a new score for any
+record. Removed disallowed logic (frozen, not to be reintroduced without
+independent validation): PROVISIONAL_CALIBRATION country override,
+ROLLOUT_SUBSET national-score reaggregation, single-unit territory->country
+score/text mirror, single-unit stand-in sync from parent, route-3
+template auto-copy of the national score, and scoreProvenance rewriting.
+
 Validation rules (fail loudly):
-- score in [0,1]; stored at full precision (normalised to 6 dp) so that
-  iterative refinement (tools/blind_pairwise.py) can drift scores in small
-  increments. The UI displays 2 dp only.
+- score in [0,1]; stored precision is preserved EXACTLY as-is (the old
+  6-dp normalisation write was removed with the score freeze — no branch
+  in this builder rewrites a score). The UI displays 2 dp only.
 - band consistent with score
-- summary non-empty, 1-12 <p> paragraphs, <= 8000 chars
+- summary non-empty, 1-12 <p> paragraphs, <= MAX_SUMMARY_CHARS (16000) chars
 - sources non-empty unless inherited
 - every boundary polygon key has a data record (warning only — research in
   progress) and every data record matches a polygon (error)
@@ -29,21 +44,11 @@ GRADIENT_ANCHORS = [
     [0.0, "#67000d"], [0.1, "#d73027"], [0.3, "#fc8d59"], [0.5, "#fee08b"],
     [0.7, "#91cf60"], [0.9, "#1a9850"], [1.0, "#a8dbe8"],
 ]
-# NATIONAL-SCORE RULE (2026-11-13): a country's score is its NATIONAL ASSESSMENT.
-# ADM1 divisions must NEVER change the national picture; their spread is published
-# only as supplementary context. Staged rollout: apply to ROLLOUT_SUBSET first for
-# review, expand to all countries after sign-off.
-ROLLOUT_SUBSET = {"USA", "GBR", "NPL", "IND", "BRA", "ZAF", "CAN", "DEU", "AUS", "MEX"}
-# PROVISIONAL CALIBRATION (2026-11-13): for a country whose instrument-derived
-# national score is established (multi-model consensus + review) as miscalibrated,
-# publish a provisional consensus value, clearly labelled, pending the matched
-# propagation/calibration audit. The instrument value is retained as a diagnostic.
-PROVISIONAL_CALIBRATION = {
-    "USA": {"score": 0.33,
-            "note": ("multi-model consensus 0.30-0.35 (Claude 0.32, Gemini 0.32, Grok 0.39, "
-                     "GPT-5.6 0.18); a flat national-framework 0.264 is too harsh under our rubric; "
-                     "pending matched national-to-division propagation/calibration audit")},
-}
+# FROZEN (2026-11-13): the country-specific numeric PROVISIONAL_CALIBRATION
+# override and the ROLLOUT_SUBSET reaggregation logic were REMOVED from this
+# builder (see module docstring). Existing stored values, including the
+# historical USA 0.330 and its provisionalCalibration block, remain historical
+# inputs preserved verbatim - never recomputed, never asserted correct here.
 
 def band_label(score):
     for mx, label in BANDS:
@@ -51,12 +56,20 @@ def band_label(score):
             return label
     return BANDS[-1][1]
 
+# Shared summary-length ceiling. Raised 2026-11-13 from 8000 (itself raised
+# 2026-10-05 from 2800): dossiers must carry ALL sourced claims without
+# truncation — the real 8,792-char USA dossier must validate — while length
+# validation STAYS strict (anything over this limit is rejected). Shared with
+# tools/apply_rework.py, which imports this constant so the two gates can
+# never drift apart.
+MAX_SUMMARY_CHARS = 16000
+
 def valid_summary(s):
     if not s:
         return False
-    if len(s) > 8000:  # raised 2026-10-05: dossiers must carry ALL sourced claims;
-        # the old 2800 cap forced 3-4-para truncation that dropped evidence
-        # (USA federal layer, NER penal code). UI scrolls; no display cap.
+    if len(s) > MAX_SUMMARY_CHARS:
+        # over-limit summaries are rejected, never truncated (no facts dropped,
+        # no prose rewritten by this builder)
         return False
     n_p = s.count("<p") + s.count("<P")
     return 1 <= n_p <= 12
@@ -68,9 +81,9 @@ def check_record(iso, r, errors, inherited_ok=False):
     sc = r["score"]
     if not (0 <= sc <= 1):
         errors.append(f"{iso}: score out of range: {sc}")
-    # NB: scores are normalised to 6 dp in main() before this check runs, so
-    # extra precision is silently rounded rather than rejected — that is what
-    # lets tools/blind_pairwise.py drift scores in sub-cent increments.
+    # NB: scores are NOT normalised before this check — stored values are
+    # validated exactly as they come from the file (score freeze: the old
+    # round-to-6dp write in main() was removed, so >6-dp precision survives).
     if "band" in r and r["band"] != band_label(sc):
         errors.append(f"{iso}: band mismatch: {r['band']} vs {band_label(sc)}")
     if not valid_summary(r.get("summary", "")):
@@ -118,9 +131,7 @@ def main():
     geo_isos = {f["properties"]["iso3"] for f in geo["features"]}
 
     for iso, r in countries.items():
-        # normalise to 6 dp so tiny drift increments survive round-trips
-        if isinstance(r.get("score"), float):
-            r["score"] = round(r["score"], 6)
+        # SCORE-PRESERVING: validate only; stored scores are never rewritten.
         check_record(iso, r, errors)
     missing = geo_isos - set(countries)
     if missing:
@@ -137,150 +148,44 @@ def main():
         admin1 = json.load(open("data/admin1.json"))
         geo1 = json.load(open("boundaries/admin1.geojson"))
         geo1_ids = {f["properties"]["shapeID"] for f in geo1["features"]}
-        # ---- single-unit stand-ins TRACK their country record ----
-        # A one-division country's admin1 row IS the whole country: its score
-        # must equal the country's, or the map shows different values in
-        # countries vs states/provinces mode for the same place (ASM bug
-        # 2026-10-05). Enforced at build time so it can never drift again.
-        from collections import defaultdict
-        _per = defaultdict(list)
-        for sid, r in admin1.items():
-            _per[r["iso3"]].append((sid, r))
-        _n_sync = 0
+        # ---- SCORE-PRESERVING FREEZE (2026-11-13) ----
+        # The following historical writers are REMOVED and must not return
+        # without independent validation: single-unit stand-in sync from the
+        # parent, territory->country score/text mirror, ADM1->country score
+        # reaggregation (destination summary / ROLLOUT_SUBSET), route-3
+        # template auto-copy of the national score into thin regions, and
+        # nationalFrameworkScore setdefaults. Division dispersion below is
+        # METADATA only: it never feeds a score.
         _TEXT_FIELDS = ("summary", "tangentialFactors", "localsOnly", "outOfScopeNotes",
                         "blindSummary", "blindTangential", "blindLocalsOnly",
                         "blindOutOfScope", "sources")
-        _TERRITORIES = {r.get("iso3") for r in admin1.values() if r.get("parentIso3")}
-        for iso, lst in _per.items():
-            if len(lst) == 1 and iso in countries:
-                if iso in _TERRITORIES:
-                    # territory: admin1 record is PRIMARY (scored independently
-                    # in mixed mode); the country record mirrors it for display —
-                    # score AND text (the popup reads the country record)
-                    sid, r = lst[0]
-                    c = countries[iso]
-                    c["score"] = round(float(r["score"]), 6)
-                    c["band"] = band_label(c["score"])
-                    for fld in _TEXT_FIELDS:
-                        if fld in r:
-                            c[fld] = r[fld]
-                        else:
-                            c.pop(fld, None)
-                    continue
-                if lst[0][1].get("dossier"):
-                    continue
-                sid, r = lst[0]
-                c = countries[iso]
-                c_score = round(float(c["score"]), 6)
-                if abs(float(r.get("score", 0)) - c_score) > 1e-9:
-                    r["score"] = c_score
-                    r["band"] = band_label(c_score)
-                    _n_sync += 1
-                # text mirrors the country too: a one-division country IS the
-                # country — its region popup must read identically (2026-10-06)
-                for f in _TEXT_FIELDS:
-                    if c.get(f) and r.get(f) != c[f]:
-                        r[f] = c[f]
-                        _n_sync += 1
-                r["inherited"] = True
-        if _n_sync:
-            warnings.append(f"synced {_n_sync} single-unit admin1 stand-ins to country scores")
-        # NATIONAL AS DESTINATION SUMMARY (2026-11-13, review recommendation):
-        # where a country has >=3 independently measured divisions, its published
-        # score is the visitor-weighted mean of those divisions (currently
-        # unweighted, which is a declared choice, not a default). The pairwise
-        # national rating is retained separately as the national-framework
-        # component, and dispersion is published so a single number cannot hide a
-        # wide internal range. Inherited divisions carry no independent evidence
-        # and are excluded (missing-data model, not silent recursion).
+        # SUPPLEMENTARY DIVISION DISPERSION (metadata only, scores untouched):
+        # where a country has >=3 independently measured divisions, publish the
+        # spread so a single number cannot hide a wide internal range.
         _by_iso = {}
         for sid, r in admin1.items():
             if r.get("inherited") or not isinstance(r.get("score"), (int, float)):
                 continue
             iso_ = r.get("parentIso3") or r.get("iso3")
             _by_iso.setdefault(iso_, []).append(float(r["score"]))
-        _n_re = 0
         for iso, scores in _by_iso.items():
             c = countries.get(iso)
             if c is None or len(scores) < 3:
                 continue
-            # ENDPOINT GUARD: the anchor ladder's lowest anchor is 0.10, so
-            # estimates below that are extrapolated and clamp at the floor. Where
-            # more than 10% of a country's divisions sit on the clamp, its
-            # division mean is not trustworthy as a level: keep the framework
-            # score and publish the division data as supplementary instead.
+            # ENDPOINT GUARD (flag only): where more than 10% of a country's
+            # divisions sit on the historical anchor-ladder floor, the spread
+            # is flagged as untrustworthy — a note, never a score change.
             _clamped = sum(1 for s in scores if s <= 0.0201)
-            if _clamped / len(scores) > 0.10:
-                c["divisionSpread"] = {"n": len(scores),
-                                       "min": round(min(scores), 6),
-                                       "max": round(max(scores), 6),
-                                       "sd": round(statistics.pstdev(scores), 6)}
-                c["aggregationBlocked"] = ("endpoint-clamping: "
-                                           f"{_clamped}/{len(scores)} divisions "
-                                           "at the anchor-ladder floor")
-                # restore the framework score: a previously aggregated value
-                # must not survive once aggregation is disallowed
-                _fs = c.get("nationalFrameworkScore")
-                if isinstance(_fs, (int, float)):
-                    c["score"] = round(float(_fs), 6)
-                    c["band"] = band_label(c["score"])
-                if (c.get("derivedFrom") or {}).get("mode") == "reaggregate":
-                    c["derivedFrom"] = {"mode": "pairwise"}
-                continue
-            c.setdefault("nationalFrameworkScore", round(float(c.get("score", 0)), 6))
-            m = sum(scores) / len(scores)
             c["divisionSpread"] = {"n": len(scores),
                                    "min": round(min(scores), 6),
                                    "max": round(max(scores), 6),
                                    "sd": round(statistics.pstdev(scores), 6)}
-            # NATIONAL-SCORE RULE: the national score is the NATIONAL ASSESSMENT,
-            # never the mean of ADM1 divisions (regions must not change the national
-            # picture). Staged rollout via ROLLOUT_SUBSET (module constant).
-            if iso in ROLLOUT_SUBSET:
-                _fw = c.get("nationalFrameworkScore")
-                if isinstance(_fw, (int, float)):
-                    c["score"] = round(float(_fw), 6)
-                    c["band"] = band_label(c["score"])
-                c["derivedFrom"] = {"mode": "pairwise"}
-                c.pop("aggregationBlocked", None)
+            if _clamped / len(scores) > 0.10:
+                c["aggregationBlocked"] = ("endpoint-clamping: "
+                                           f"{_clamped}/{len(scores)} divisions "
+                                           "at the anchor-ladder floor")
             else:
-                # pre-rollout: division mean (to be retired once rolled out)
-                c["score"] = round(min(1.0, max(0.0, m)), 6)
-                c["band"] = band_label(c["score"])
-                c["derivedFrom"] = {"mode": "reaggregate", "source": "divisions",
-                                    "weighting": "unweighted"}
-            _n_re += 1
-        if _n_re:
-            warnings.append(f"national scores re-aggregated from divisions: {_n_re}")
-
-        # territory mirrors changed the countries dict AFTER it was dumped —
-        # persist the mirror now (ASM 2026-10-08: country showed a stale score)
-        _terr_mirror = any(iso in _TERRITORIES for iso in _per)
-        if _terr_mirror:
-            json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
-        # ROUTE-3 INVARIANT (2026-10-29): an "estimated" region with the
-        # no-signal template IS the national assessment — its score must track
-        # the national score on every build. Previously these kept a stale
-        # absolute copy from whichever wave generated them (Mongolia's regions
-        # showed 0.68 while the country was 0.52; 94/190 countries affected).
-        _TMPL = "No sub-national signal was identified; the national assessment applies here"
-        _n_inh = 0
-        for sid, r in admin1.items():
-            if not r.get("estimated"):
-                continue
-            if _TMPL not in str(r.get("summary", "")):
-                continue
-            par = countries.get(r.get("iso3"))
-            if not par:
-                continue
-            sc = round(float(par.get("score", 0)), 6)
-            if abs(float(r.get("score", 0)) - sc) > 1e-9:
-                r["score"] = sc
-                r["band"] = band_label(sc)
-                _n_inh += 1
-            r["inherited"] = True
-        if _n_inh:
-            warnings.append(f"re-synced {_n_inh} route-3 regions to their national score")
+                c.pop("aggregationBlocked", None)
         # FLOOR-BOUND divisions: an estimate that reached the clamp is not a
         # resolved score (review 2026-11-13). Flag them, keep the raw estimate for
         # diagnostics, and do not let them be ranked against each other.
@@ -315,51 +220,14 @@ def main():
                 r.pop("lowEndUncertain", None)
         if _n_low:
             warnings.append(f"{_n_low} divisions below 0.20 carry low-end uncertainty")
-        # 2) national-score provenance, published per record
-        for _iso, _c in countries.items():
-            _m = (_c.get("derivedFrom") or {}).get("mode")
-            if _m == "reaggregate":
-                _n = (_c.get("divisionSpread") or {}).get("n")
-                _sp = _c.get("divisionSpread") or {}
-                _c["scoreProvenance"] = (
-                    f"destination summary: mean of {_n} measured divisions; they range "
-                    f"{_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f} "
-                    f"(sd {_sp.get('sd', 0):.2f})")
-            elif _m == "pairwise" and _c.get("divisionSpread") and not _c.get("aggregationBlocked"):
-                # rolled-out national-assessment record: division range is
-                # supplementary context, it does NOT set the national score
-                _sp = _c["divisionSpread"]
-                _c["scoreProvenance"] = (
-                    f"framework rating: national assessment. {_sp.get('n', 0)} measured "
-                    f"divisions span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f} "
-                    f"(sd {_sp.get('sd', 0):.2f}), published as supplementary context; "
-                    "they do not set the national score")
-            elif _m == "mirror":
-                _c["scoreProvenance"] = "mirrors the territory's own record"
-            elif _c.get("aggregationBlocked"):
-                _sp = _c.get("divisionSpread") or {}
-                _c["scoreProvenance"] = (
-                    "framework rating: no destination summary, because "
-                    f"{_c['aggregationBlocked']}. The {_sp.get('n', 0)} measured divisions "
-                    f"span {_sp.get('min', 0):.2f} to {_sp.get('max', 0):.2f}; the floor may "
-                    "mask variation, so the measured range may understate it")
-            else:
-                _c["scoreProvenance"] = "framework rating (no measured division set)"
-        # PROVISIONAL CALIBRATION application: override the published score with the
-        # disclosed consensus value for miscalibrated countries (instrument value kept
-        # as a diagnostic in nationalFrameworkScore).
-        for _iso, _pc in PROVISIONAL_CALIBRATION.items():
-            _c = countries.get(_iso)
-            if _c is None:
-                continue
-            _c["score"] = round(_pc["score"], 6)
-            _c["band"] = band_label(_c["score"])
-            _c["provisionalCalibration"] = {"value": _pc["score"], "note": _pc["note"]}
-            _c["scoreProvenance"] = (
-                f"PROVISIONAL consensus calibration {_pc['score']:.3f}: {_pc['note']}. "
-                f"Instrument value: national-framework {_c.get('nationalFrameworkScore', 0):.3f} "
-                "retained as independent diagnostic")
-        # provenance and floor flags are computed AFTER the earlier countries dump:
+        # ---- PROVENANCE FREEZE (2026-11-13) ----
+        # Historical scoreProvenance, provisionalCalibration and derivedFrom
+        # are preserved VERBATIM from the input file: this builder no longer
+        # rewrites provenance text and no longer applies any
+        # PROVISIONAL_CALIBRATION override (USA's stored 0.330 and its
+        # provisionalCalibration block pass through untouched as historical
+        # inputs; nothing here asserts they are correct).
+        # floor flags are computed below AFTER the earlier countries dump:
         # persist them now so the file matches the validated state
         json.dump(countries, open("data/countries.json", "w"), indent=1, ensure_ascii=False)
         for sid, r in admin1.items():

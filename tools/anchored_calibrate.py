@@ -18,22 +18,26 @@ and the division's score is the mean of those estimates. Because every division
 sees the same anchors, the contrast bias is a constant across divisions and
 cancels in comparison.
 
-Usage:
-  python3 tools/anchored_calibrate.py --only USA/Mississippi USA/Alabama
-  python3 tools/anchored_calibrate.py --apply [--workers 5]
+Usage (RETIRED 2026-11-13 - see main()): every scoring invocation is
+refused with a nonzero exit before any data read, network call, checkpoint
+write, or --apply. --help remains available. The ANCHOR_CALIBRATION
+constants below remain importable for tools/build_manifest.py's historical
+audit only; they are HISTORICAL RECORD and are not usable to calculate
+scores.
 """
 from __future__ import annotations
-import argparse, fcntl, json, random, statistics, sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import argparse, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "tools"))
-import blind_pairwise as BP  # noqa
-from build_data import band_label  # noqa
+# (Local imports of blind_pairwise/build_data were removed together with the
+#  retired runner body — nothing left in this module needs them.)
 
 MODEL = "deepseek/deepseek-v4.1-flash"
 # FROZEN ANCHOR CALIBRATION (2026-11-13, per review).
+# HISTORICAL RECORD ONLY - NOT USABLE TO CALCULATE SCORES. This constants
+# block is kept solely so tools/build_manifest.py can report the historical
+# audit trail; the anchored CLI refuses every scoring invocation (see main()).
 # These are the constants the division pass was actually computed with. They are
 # frozen: the anchors' *displayed* country scores have since moved (BLR 0.100 ->
 # 0.057, CIV 0.297 -> 0.280, ESP 0.840 -> 0.869) because national scores were
@@ -53,21 +57,11 @@ DEFAULT_ANCHORS = list(ANCHOR_CALIBRATION["anchors"])
 FROZEN_ANCHOR_SCORES = ANCHOR_CALIBRATION["anchors"]
 
 
-def api_args():
-    class A:
-        pass
-    a = A()
-    a.api = "openai"; a.baseurl = "https://openrouter.ai/api/v1"
-    a.endpoint_suffix = "/chat/completions"; a.auth_style = "bearer"
-    a.api_key = Path("/tmp/.openrouter_key").read_text().strip()
-    a.model = MODEL; a.max_output_tokens = 8000; a.reasoning_tokens = 3000
-    a.anthropic_version = "2023-06-01"; a.no_cache = True
-    a.timeout = 300; a.retries = 3; a.backoff = 2.0; a.temperature = 0.3; a.admin = False
-    return a
-
-
 def main() -> int:
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(
+        description="RETIRED: anchored calibration no longer computes scores; "
+                    "every invocation is refused with a nonzero exit "
+                    "(--help shows usage only).")
     ap.add_argument("--anchors", nargs="*", default=DEFAULT_ANCHORS)
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--only", nargs="*")
@@ -81,144 +75,26 @@ def main() -> int:
                     help="countries mode measures country dossiers with the same "
                          "anchor ladder — the bridge sample the review asks for")
     args = ap.parse_args()
-    A = json.loads((ROOT / "data" / "admin1.json").read_text())
-    C = json.loads((ROOT / "data" / "countries.json").read_text())
-    taxonomy = (ROOT / "research" / "outing-risk-taxonomy.md").read_text()
-    system_text = BP.build_system_prompt(taxonomy)
-    aa = api_args()
-    if args.scope == "countries":
-        targets = [(iso, r) for iso, r in C.items()
-                   if str(r.get("summary", "")).strip() and r.get("blindSummary")
-                   and not r.get("parentIso3")]
-    else:
-        targets = [(sid, r) for sid, r in A.items()
-                   if str(r.get("summary", "")).strip() and isinstance(r.get("score"), (int, float))]
-    if args.only:
-        want = set(args.only)
-        if args.scope == "countries":
-            targets = [(sid, r) for sid, r in targets if sid in want or r.get("name") in want]
-        else:
-            targets = [(sid, r) for sid, r in targets
-                       if f"{r.get('iso3')}/{r.get('name')}" in want or r.get("name") in want]
-    if args.limit:
-        targets = targets[: args.limit]
-    done_ids = set()
-    ckpt = Path(args.ckpt)
-    if ckpt.exists():
-        for line in ckpt.read_text().splitlines():
-            try:
-                done_ids.add(json.loads(line)["sid"])
-            except Exception:
-                pass
-    if done_ids:
-        targets = [(sid, r) for sid, r in targets if sid not in done_ids]
-        print(f"resuming: {len(done_ids)} already estimated", flush=True)
-    print(f"divisions: {len(targets)} | anchors: {args.anchors}", flush=True)
-
-    def block(r):
-        if r.get("blindSummary"):
-            return BP.render_region_bundle(r)
-        txt = str(r.get("summary", "")) + "\n\n" + str(r.get("modelContext", ""))
-        return txt
-
-    def estimate(item):
-        sid, r = item
-        if args.scope == "countries":
-            fw = ""
-        else:
-            parent_iso = r.get("parentIso3") or r.get("iso3")
-            parent = C.get(parent_iso)
-            fw = BP.render_parent_bundle(parent) if parent else ""
-        ests = []
-        per_anchor = []
-        for aid in args.anchors * args.repeats:
-            anchor = C.get(aid)
-            if not anchor or aid == sid:
-                continue
-            flip = random.random() < 0.5
-            if args.scope == "countries":
-                div_block = block(r)
-            else:
-                div_block = f"### FRAMEWORK IMPOSED BY THE ENCOMPASSING STATE\n{fw}\n\n### THE DIVISION'S OWN CONTENT\n{block(r)}"
-            anc_block = BP.dossier(anchor)
-            if flip:
-                head = (f"## DOSSIER A\n\n{anc_block}\n\n## DOSSIER B\n\n{div_block}")
-                mapping = "score_a rates DOSSIER A (a country), score_b rates DOSSIER B (a division)"
-            else:
-                head = (f"## DOSSIER A\n\n{div_block}\n\n## DOSSIER B\n\n{anc_block}")
-                mapping = "score_a rates DOSSIER A (a division), score_b rates DOSSIER B (a country)"
-            user = ("Rate the two dossiers below on the 0.00-1.00 trans-visitor outing-risk scale.\n\n"
-                    + head + "\n\nReply with only the JSON object described in the output format, where "
-                    + mapping + ".")
-            try:
-                resp = BP.call_api(aa, system_text, user)
-                sa, sb, _why, _u = BP.parse_scores(resp, aa.api)
-            except Exception:
-                continue
-            div_r, anc_r = (sb, sa) if flip else (sa, sb)
-            _e = float(FROZEN_ANCHOR_SCORES.get(aid, anchor["score"])) + (div_r - anc_r)
-            ests.append(_e)
-            per_anchor.append({"anchor": aid, "estimate": round(_e, 6),
-                               "divRating": div_r, "anchorRating": anc_r})
-        if not ests:
-            return sid, None, 0, []
-        return sid, statistics.mean(ests), len(ests), per_anchor
-
-    results = []
-    with ThreadPoolExecutor(args.workers) as ex:
-        futs = [ex.submit(estimate, t) for t in targets]
-        done = 0
-        for f in as_completed(futs):
-            sid, est, n, pa = f.result()
-            done += 1
-            if est is None:
-                continue
-            results.append((sid, est, n))
-            with open(args.ckpt, "a", encoding="utf-8") as fh:
-                fh.write(json.dumps({"sid": sid, "est": est, "n": n,
-                                     "perAnchor": pa}) + "\n")
-            if done % 25 == 0:
-                print(f"  {done}/{len(targets)} estimated", flush=True)
-    print(f"estimated {len(results)}/{len(targets)}", flush=True)
-    for sid, est, n in sorted(results, key=lambda t: -t[1]):
-        rr = A.get(sid, {})
-        label = (sid if args.scope == "countries"
-                 else f"{rr.get('iso3','')}/{str(rr.get('name',''))[:26]}")
-        print(f"  {str(label)[:30]:30} {est:.3f} (n={n}, stored "
-              f"{float(rr.get('score', 0)):.3f})", flush=True)
-    if args.apply and results:
-        lock = open(ROOT / "data" / ".apply.lock", "w")
-        fcntl.flock(lock, fcntl.LOCK_EX)
-        try:
-            A = json.loads((ROOT / "data" / "admin1.json").read_text())
-            allrows = []
-            if ckpt.exists():
-                for line in ckpt.read_text().splitlines():
-                    try:
-                        d = json.loads(line); allrows.append((d["sid"], d["est"], d.get("n", 0)))
-                    except Exception:
-                        pass
-            for sid, est, n in allrows or results:
-                rec = A.get(sid)
-                if not rec:
-                    continue
-                sc = max(0.02, min(0.98, est))
-                rec["score"] = round(sc, 6)
-                rec["band"] = band_label(sc)
-                rec["ratedBy"] = MODEL
-                rec["derivedFrom"] = {"mode": "anchored",
-                                      "anchors": args.anchors,
-                                      "anchorVersion": ANCHOR_CALIBRATION["version"],
-                                      "anchorScores": FROZEN_ANCHOR_SCORES,
-                                      "anchorRating": round(est, 6)}
-            (ROOT / "data" / "admin1.json").write_text(
-                json.dumps(A, ensure_ascii=False, indent=1), encoding="utf-8")
-            print("applied", flush=True)
-        finally:
-            fcntl.flock(lock, fcntl.LOCK_UN)
-            lock.close()
-    return 0
-
+    # RETIRED (2026-11-13): anchored calibration - foreign-anchor score
+    # calculation - is frozen until a replacement method is independently
+    # validated. This refusal runs immediately after argument parsing (so
+    # --help still works) and BEFORE any data read, any provider/network
+    # call, any checkpoint append, and any --apply write. Every invocation
+    # that reaches this line is a scoring invocation, so all of them exit
+    # nonzero with no side effects.
+    print("RETIRED: tools/anchored_calibrate.py no longer computes scores.",
+          file=sys.stderr)
+    print("  Every scoring invocation is refused before any data read, "
+          "network call, checkpoint write, or --apply.", file=sys.stderr)
+    print("  The frozen ANCHOR_CALIBRATION constants remain importable for "
+          "build_manifest's historical audit only; they are HISTORICAL "
+          "RECORD, not a usable scoring ladder.", file=sys.stderr)
+    print("  A replacement method requires independent validation before "
+          "any runner is restored.", file=sys.stderr)
+    # (The historical runner body - target selection, anchor-ladder
+    #  estimation, checkpointing and --apply writes - was removed here:
+    #  retired code must not be reachable by any flag combination.)
+    return 2
 
 if __name__ == "__main__":
     raise SystemExit(main())

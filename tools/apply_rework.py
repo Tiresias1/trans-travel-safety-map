@@ -3,13 +3,17 @@
 
 Lanes write data/rework_out/rNNN.json {rewrites:[{who,summary,blindSummary,
 blindSourceSummaries,notes}]}. This tool validates (1-12 <p> paragraphs,
-<=8000 chars, blind mirror non-empty, scores untouched) and applies by `who`
+<= MAX_SUMMARY_CHARS = 16000 chars, the shared ceiling imported from
+build_data so both gates match, blind mirror non-empty, scores untouched) and
+applies by `who`
 (country:ISO -> countries; ISO/Region -> admin1 record with that iso3+name).
 Idempotent. Usage: python3 tools/apply_rework.py [--dry]
 """
 import json, os, re, sys
 from pathlib import Path
 from datetime import date
+from build_data import MAX_SUMMARY_CHARS  # shared ceiling: never let the two
+# summary gates drift (build_data validates the same limit on every build)
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/rework_out"
 
@@ -46,8 +50,9 @@ def gate_rewrite(r, who) -> list:
 
 def valid_summary(s):
     # 2026-10-05: caps raised from 2800/4 — dossiers must carry ALL sourced
-    # claims (UI scrolls, no display cap). Match tools/build_data.py.
-    if not s or len(s) > 8000: return False
+    # claims (UI scrolls, no display cap). 2026-11-13: ceiling raised again
+    # to 16000 and shared with tools/build_data.py (MAX_SUMMARY_CHARS).
+    if not s or len(s) > MAX_SUMMARY_CHARS: return False
     n = len(re.findall(r"<p[\s>]", s)); return 1 <= n <= 12
 
 def main():

@@ -19,6 +19,8 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install --quiet shapely
+      - name: Score-freeze enforcement tests (must pass BEFORE any build)
+        run: python3 tools/test_freeze_paths.py
       - name: Validate data + rebuild ranks/meta
         run: python3 tools/build_data.py
       - name: Check committed data is in sync with build output

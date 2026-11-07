@@ -1,32 +1,39 @@
 #!/usr/bin/env python3
-"""Settlement pass (2026-10-06): make the score EQUAL the rater's honest verdict.
+"""Settlement pass (2026-10-06) — MUTATIONS RETIRED 2026-11-13.
 
-The wave maths converges only ~40% of the gap per 20 encounters under gentle
-ramp parameters, and random sampling gives some entities very few encounters
-(Scotland: 7). This pass:
+(Historical description, kept for context: the pass WAS meant to make the
+score equal the rater's honest verdict.) The wave maths converges only ~40%
+of the gap per 20 encounters under gentle ramp parameters, and random
+sampling gives some entities very few encounters (Scotland: 7). It:
 
   1. parses the wave logs and computes each entity's encounter-weighted mean
      rater rating;
   2. queues every entity with >= 3 encounters and |stored - mean| >= TOL
      (territory dossiers are always queued after a rating-rule change);
-  3. runs focused convergence pairs for each queued entity with CONSTANT
-     weights (p_abs 0.12 of the remaining gap per encounter -> convergence in
-     ~16 encounters), via blind_pairwise.py's existing machinery.
+  3. [REMOVED] ran focused convergence pairs for each queued entity via
+     blind_pairwise.py, rewriting scores — this path no longer exists.
 
 Usage:
-  python3 tools/settle_scores.py --plan      # print the queue, run nothing
-  python3 tools/settle_scores.py --run       # execute the settlement runs
+  python3 tools/settle_scores.py --plan      # read-only queue report (the
+                                             # only surviving mode; default)
+  --rebalance / --run (incl. --force-legacy-invariant) are RETIRED: refused
+  with a nonzero exit immediately after argument parsing, before any data
+  read for mutation, any provider call, or any write. The mutation
+  implementations were deleted; see main(). Existing scores are preserved
+  as historical inputs until a replacement method is independently
+  validated.
 """
 from __future__ import annotations
-import argparse, gzip, json, subprocess, sys, threading, time
-from build_data import band_label
-from concurrent.futures import ThreadPoolExecutor, as_completed
+# REMOVED WITH THE RETIRED MUTATIONS (2026-11-13): subprocess/threading/time
+# (provider settlement machinery), band_label (score rewrites) and
+# ThreadPoolExecutor were deleted alongside --rebalance/--run; do not
+# re-add them without independent validation of a replacement method.
+import argparse, gzip, json, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TOL = float(__import__("os").environ.get("SETTLE_TOL", "0.02"))
 MIN_ENC = 3
-SETTLE_PAIRS = int(__import__("os").environ.get("SETTLE_PAIRS", "16"))
 
 # territories whose ratings change under RATING_RULES 12 (parent-regime rule)
 TERRITORIES = {"ASM", "GUM", "VIR", "MNP", "PRI"}
@@ -138,19 +145,38 @@ def main():
                     # queue entries (the same class of error as the recency_wave bug).
                     default=["data/measurement_logs/redo_c4.jsonl.gz",
                              "data/measurement_logs/anchored_results.jsonl.gz"])
-    ap.add_argument("--plan", action="store_true")
+    ap.add_argument("--plan", action="store_true",
+                    help="print the read-only settlement queue (default behaviour; "
+                         "the only mode that still exists)")
     ap.add_argument("--rebalance", action="store_true",
-                    help="set every encounter-rich entity's score directly to its "
-                         "encounter-weighted mean (satisfies the invariant by "
-                         "construction; no new pairs are run)")
-    ap.add_argument("--run", action="store_true")
+                    help="RETIRED: refused with a nonzero exit. This mutation "
+                         "rewrote scores to encounter means and is disabled "
+                         "until a replacement method is independently validated")
+    ap.add_argument("--run", action="store_true",
+                    help="RETIRED: refused with a nonzero exit. This mutation "
+                         "spawned provider runs and rewrote scores; disabled")
     ap.add_argument("--force-legacy-invariant", action="store_true",
-                    help="Override the guard and settle anyway. DESTRUCTIVE: the "
-                         "current pipeline scores anchored-calibrated divisions, so "
-                         "this replaces calibrated estimates with contrast-contaminated "
-                         "encounter means. Only valid for pre-anchored historical data.")
+                    help="RETIRED: accepted for command-line compatibility but "
+                         "re-enables NOTHING; --run is refused regardless")
     ap.add_argument("--workers", type=int, default=3)
     args = ap.parse_args()
+    # RETIRED MUTATIONS (2026-11-13): both score-mutation modes are refused
+    # immediately after parsing --help is handled inside parse_args - BEFORE
+    # any data file is read for mutation, before collect()/build_queue() run,
+    # before any provider subprocess could be spawned, and before any data
+    # write. Exit code 2 signals the retired mutation. Only the read-only
+    # plan below remains available.
+    if args.rebalance or args.run:
+        print("RETIRED: settlement mutations are disabled "
+              "(--rebalance and --run).", file=sys.stderr)
+        if args.force_legacy_invariant:
+            print("  --force-legacy-invariant re-enables NOTHING; --run is "
+                  "refused regardless.", file=sys.stderr)
+        print("  No scores are modified and no provider is run. Read-only "
+              "--plan remains available.", file=sys.stderr)
+        print("  Until a new method is independently validated, existing "
+              "scores are preserved as historical inputs.", file=sys.stderr)
+        return 2
     C = json.loads((ROOT / "data" / "countries.json").read_text())
     A = json.loads((ROOT / "data" / "admin1.json").read_text())
     enc = collect(args.logs)
@@ -162,97 +188,14 @@ def main():
         tag = "RULE12 " if q.get("rule12") else ""
         print(f"  {tag}{q['kind']:7} {q['name'][:32]:32} stored {q['stored']:.3f} "
               f"mean {q['mean']:.3f} gap {q['gap']:.3f} (n={q['n']})")
-    if getattr(args, "rebalance", False):
-        enc = collect(args.logs)
-        n = 0
-        for iso, rec in C.items():
-            e = enc.get(rec.get("name"), [])
-            if len(e) >= 3:
-                rec["score"] = round(min(1.0, max(0.0, sum(e) / len(e))), 6)
-                rec["band"] = band_label(rec["score"])
-                n += 1
-        for key, rec in A.items():
-            if (rec.get("derivedFrom") or {}).get("mode") == "anchored":
-                continue   # instrument guard: never overwrite a calibrated estimate
-            e = enc.get(f"region:{rec.get('parentIso3') or rec.get('iso3')}:{rec.get('name')}", [])
-            if len(e) >= 3 and rec.get("dossier"):
-                rec["score"] = round(min(1.0, max(0.0, sum(e) / len(e))), 6)
-                rec["band"] = band_label(rec["score"])
-                n += 1
-        (ROOT / "data" / "countries.json").write_text(
-            json.dumps(C, ensure_ascii=False, indent=1), encoding="utf-8")
-        (ROOT / "data" / "admin1.json").write_text(
-            json.dumps(A, ensure_ascii=False, indent=1), encoding="utf-8")
-        print(f"rebalanced {n} entities to their encounter means", flush=True)
-        return
-    if args.plan or not args.run:
-        return
-    # HARD STOP (2026-11-13): no published score uses the encounter mean as its
-    # instrument any more. Divisions are anchored-calibrated (2,413 of them),
-    # countries are destination summaries of those divisions, framework ratings
-    # or territory mirrors. Running settlement would therefore overwrite a
-    # calibrated estimate with a contrast-contaminated encounter mean -- the
-    # confound we measured at within-region correlation -0.39 with partner
-    # rating. See the instrument guard in build_queue.
-    if not args.force_legacy_invariant:
-        print("REFUSING to run settlement.", flush=True)
-        print("  No published score uses the encounter mean as its instrument:", flush=True)
-        print("  divisions are anchored-calibrated, countries are destination", flush=True)
-        print("  summaries/framework ratings/territory mirrors. Settlement would", flush=True)
-        print("  overwrite calibrated estimates with contrast ratings (partner-rating", flush=True)
-        print("  correlation -0.39). The invariant is audited instead by", flush=True)
-        print("  tools/verify_from_logs.py (score == anchorRating for anchored units).", flush=True)
-        print("  Use --force-legacy-invariant only for pre-anchored historical data.", flush=True)
-        return
-    print("running settlement...", flush=True)
-    key_env = (ROOT / ".openrouter_key")
-    import os
-    key = os.environ.get("OPENROUTER_KEY", "")
-    fails = 0
-    done = 0
-    def run_one(q):
-        w = ["python3", "-u", str(ROOT / "tools" / "blind_pairwise.py"),
-             "--api", "openai", "--baseurl", "https://openrouter.ai/api/v1",
-             "--endpoint-suffix", "/chat/completions", "--auth-style", "bearer",
-             # Rater model: must stay the model every published score is stamped
-             # with. Do NOT inherit LANE_MODEL (that is the prose-lane model).
-             "--api-key", key, "--model", os.environ.get("RATER_MODEL", "deepseek/deepseek-v4.1-flash"),
-             "--num-pairs", str(SETTLE_PAIRS),
-             "--differential-weighting-percent", "0.01",
-             "--absolute-weighting-percent", "0.12",
-             "--absolute-weighting-shift", "0.0005",
-             "--workers", "2", "--seed", "77", "--max-output-tokens", "3000",
-             "--log", f"/tmp/settle_{q['kind']}_{q['iso']}_{q['name'][:12]}.jsonl".replace(" ", "_").replace("/", "_")]
-        if q.get("parentIso3"):
-            # territory mirror: rate in MIXED mode under the parent regime
-            # (never countries-mode --focus — territories are display mirrors)
-            w += ["--regions-vs-countries", "--regions-parent", q["parentIso3"],
-                  "--regions-unit-exact", "--regions-unit", q["name"],
-                  "--allow-fallback"]
-        elif q["kind"] == "country":
-            w += ["--focus", q["iso"]]
-        else:
-            w += ["--regions-vs-countries", "--regions-parent", q["iso"],
-                  "--regions-unit-exact", "--regions-unit", q["name"],
-                  "--allow-fallback"]
-        try:
-            p = subprocess.run(w, capture_output=True, text=True, timeout=1800)
-            ok = p.returncode == 0
-            return q, ok, (p.stdout or "")[-160:].replace("\n", " ")
-        except Exception as e:
-            return q, False, str(e)[:160]
-    with ThreadPoolExecutor(args.workers) as ex:
-        futs = [ex.submit(run_one, q) for q in queue]
-        for f in as_completed(futs):
-            q, ok, tail = f.result()
-            done += 1
-            if not ok:
-                fails += 1
-                print(f"[FAIL] {q['name']}: {tail}", flush=True)
-            if done % 10 == 0:
-                print(f"... {done}/{len(queue)} settled ({fails} failed)", flush=True)
-    print(f"SETTLEMENT DONE: {len(queue) - fails} ok, {fails} failed", flush=True)
+    # RETIRED (2026-11-13): the --rebalance and --run implementations that
+    # lived here (score rewrites to encounter means; provider settlement
+    # subprocesses, including the --force-legacy-invariant path) were
+    # REMOVED. They are unreachable: both flags are refused with exit 2
+    # immediately after argument parsing. What remains is the read-only
+    # plan above.
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
