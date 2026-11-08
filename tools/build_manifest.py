@@ -225,10 +225,6 @@ def main() -> int:
         from blind_pairwise import RUBRIC_VERSION
     except Exception:
         RUBRIC_VERSION = "unknown"
-    try:
-        from anchored_calibrate import ANCHOR_CALIBRATION
-    except Exception:
-        ANCHOR_CALIBRATION = {}
 
     def rubric_of(r):
         return r.get("rubricVersion") or "unversioned"
@@ -318,7 +314,12 @@ def main() -> int:
             "note": ("Scores keep their r2026-11-12 stamp. Compatibility with r2026-11-13 is "
                      "supported within the audited sample, not proven for every record."),
         },
-        "anchorCalibration": ANCHOR_CALIBRATION,
+        "divisionCalibration": (
+            "Division estimates were produced by a retired foreign-reference "
+            "comparison lane whose reference set was not independently validated. "
+            "The tooling and its reference constants have been deleted; the "
+            "historical derivation record is documented in "
+            "research/experiments/country-calibration-audit/adm1-trace.md."),
         "dossierHash": hashlib.sha256(
             "\n".join(sorted(
                 f"{k}:{hashlib.sha256((str(r.get('summary','')) + '|' +
@@ -382,11 +383,8 @@ def main() -> int:
                    if overrides else
                    ", and no remaining country-level score departs from both the division mean "
                    "and its own nationalFrameworkScore")
-                + ". Divisions are calibrated to the frozen anchor version recorded here."),
-            "anchorDrift": "The anchors' displayed country scores have moved since the "
-                           "division pass (national re-aggregation). The pass is "
-                           "versioned to the frozen constants, not to today's country "
-                           "scores; a replacement ladder requires independent validation.",
+                + ". Division estimates came from a retired comparison lane; "
+                  "see research/experiments/country-calibration-audit/adm1-trace.md."),
         },
     }
     out = ROOT / "data" / "measurement_manifest.json"

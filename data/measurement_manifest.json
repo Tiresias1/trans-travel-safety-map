@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T01:04:47+00:00",
+ "generatedAt": "2026-11-08T14:50:59+00:00",
  "rubricVersion": "r2026-11-13",
  "rubricCompatibility": {
   "scoresProducedUnder": [
@@ -10,18 +10,8 @@
   "compatibilityScope": "rule 10b audited 2026-11-13 on 20 countries (8 engineered-discovery, 6 visibility-sensitive, 6 random) plus 7 divisions, A/B against the same sample with the rule stripped: rule effect mean -0.004, mean |effect| 0.013, max 0.038, all below the prespecified thresholds of 0.03 mean and 0.08 max. A single-arm comparison had appeared to shift scores by +0.036, but an A/B control showed ~+0.039 of that came from partner resampling, not the rule.",
   "note": "Scores keep their r2026-11-12 stamp. Compatibility with r2026-11-13 is supported within the audited sample, not proven for every record."
  },
- "anchorCalibration": {
-  "version": "anchors-2026-11-13-v1",
-  "countryScoreVersion": "r2026-11-12-pairwise",
-  "anchors": {
-   "BLR": 0.1,
-   "CIV": 0.297,
-   "VAT": 0.6,
-   "ESP": 0.84
-  },
-  "note": "chosen by matching target scale positions to the nearest scored country; not independent validation — see review 2026-11-13"
- },
- "dossierHash": "19e5295ed2a816ed",
+ "divisionCalibration": "Division estimates were produced by a retired foreign-reference comparison lane whose reference set was not independently validated. The tooling and its reference constants have been deleted; the historical derivation record is documented in research/experiments/country-calibration-audit/adm1-trace.md.",
+ "dossierHash": "3497cec09f851678",
  "generationConfig": {
   "raterModel": "deepseek/deepseek-v4.1-flash",
   "temperature": 0.3,
@@ -33,7 +23,7 @@
  "reproducibilityAudit": {
   "tool": "tools/verify_from_logs.py",
   "command": "python3 tools/verify_from_logs.py",
-  "verifiedAt": "2026-11-07T01:04:47+00:00",
+  "verifiedAt": "2026-11-08T14:50:58+00:00",
   "status": "fail",
   "exitCode": 1,
   "result": "3474 published records compared with archive-derived expectations: 2304 exact, 1169 rounding-level (gap <= 0.005), 0 residual (0.005-0.02), 1 outside the 0.02 tolerance, 0 with no comparison computable. AUDIT: FAIL. Largest gap, as printed by the verifier: country United States published 0.33 expected 0.264 [encounter mean]",
@@ -129,7 +119,6 @@
  },
  "notes": {
   "inherited": "Divisions with no sub-national signal take the national score and are NOT independent evidence; they are excluded from any aggregation over divisions.",
-  "instruments": "Countries with measured divisions are not all means: 133 of 174 publish a destination summary (mean of their divisions) with nationalFrameworkScore kept as supplementary context, 21 publish their nationalFrameworkScore as their score (the staged national-assessment rollout and countries whose provenance records no destination summary because of endpoint-clamping), 19 publish a framework rating with no nationalFrameworkScore field (provenance: no measured division set), and a provisional override covers the remaining 1: a country-level score that is neither its divisions' mean nor its own nationalFrameworkScore (see reproducibilityAudit). Divisions are calibrated to the frozen anchor version recorded here.",
-  "anchorDrift": "The anchors' displayed country scores have moved since the division pass (national re-aggregation). The pass is versioned to the frozen constants, not to today's country scores; a replacement ladder requires independent validation."
+  "instruments": "Countries with measured divisions are not all means: 133 of 174 publish a destination summary (mean of their divisions) with nationalFrameworkScore kept as supplementary context, 21 publish their nationalFrameworkScore as their score (the staged national-assessment rollout and countries whose provenance records no destination summary because of endpoint-clamping), 19 publish a framework rating with no nationalFrameworkScore field (provenance: no measured division set), and a provisional override covers the remaining 1: a country-level score that is neither its divisions' mean nor its own nationalFrameworkScore (see reproducibilityAudit). Division estimates came from a retired comparison lane; see research/experiments/country-calibration-audit/adm1-trace.md."
  }
 }

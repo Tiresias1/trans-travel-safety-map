@@ -7,9 +7,10 @@ Covers:
      (sandbox full-dataset builds; no score ever written; legacy override /
      reaggregate / route-3 / territory-mirror behaviours no longer occur;
      no country-specific score literals in code).
-  B. tools/anchored_calibrate.py refuses every scoring invocation (nonzero,
-     no network, no data/checkpoint writes; --help works; ANCHOR_CALIBRATION
-     stays importable as historical record only).
+  B. tools/anchored_calibrate.py is DELETED (2026-11-08, per user order): the
+     retired foreign-reference lane and its fixed reference constants must not
+     exist anywhere in tools/ or be importable; build_manifest must not load
+     them.
   C. tools/settle_scores.py refuses --rebalance and --run (incl. force) with
      nonzero before any mutation or provider call; read-only --plan still
      works.
@@ -475,11 +476,21 @@ class RetiredCLIs(unittest.TestCase):
         return subprocess.run([sys.executable, *argv], capture_output=True,
                               text=True, timeout=120)
 
-    def test_anchored_help_available(self):
-        p = self._run(str(TOOLS / "anchored_calibrate.py"), "--help")
-        self.assertEqual(p.returncode, 0)
-        self.assertIn("--apply", p.stdout)
-        self.assertIn("RETIRED", p.stdout)  # retirement visible in --help itself
+    def test_anchored_lane_and_constants_deleted(self):
+        # 2026-11-08, per user order: the retired anchor lane and its fixed
+        # reference constants are deleted, not merely retired.
+        self.assertFalse((TOOLS / "anchored_calibrate.py").exists(),
+                         "anchored_calibrate.py must be deleted")
+        for py in sorted(TOOLS.glob("*.py")):
+            if py.name == "test_freeze_paths.py":
+                continue  # this file names the deleted symbols in its assertions
+            src = py.read_text(encoding="utf-8")
+            self.assertNotIn("ANCHOR_CALIBRATION", src,
+                             f"anchor constants referenced in {py.name}")
+            self.assertNotIn("FROZEN_ANCHOR_SCORES", src,
+                             f"anchor constants referenced in {py.name}")
+            self.assertNotIn("anchored_calibrate", src,
+                             f"deleted module referenced in {py.name}")
 
     def test_freeze_suite_wired_into_ci_before_build(self):
         # P1-1: the enforcement suite must run in CI BEFORE the build step.
@@ -488,46 +499,6 @@ class RetiredCLIs(unittest.TestCase):
         self.assertIn("tools/test_freeze_paths.py", wf)
         self.assertLess(wf.index("tools/test_freeze_paths.py"),
                         wf.index("tools/build_data.py"))
-
-    def test_anchored_scoring_invocations_refuse_nonzero_no_writes(self):
-        sb = make_sandbox()
-        try:
-            ckpt = sb / "ckpt.jsonl"
-            for extra in (["--limit", "1"], ["--apply", "--limit", "1"],
-                          ["--scope", "countries"], []):
-                p = self._run(str(TOOLS / "anchored_calibrate.py"),
-                              "--ckpt", str(ckpt), *extra)
-                self.assertEqual(p.returncode, 2,
-                                 f"anchored did not refuse: {extra}")
-                self.assertIn("RETIRED", p.stderr)
-            self.assertFalse(ckpt.exists(),
-                             "checkpoint written by a refused invocation")
-        finally:
-            shutil.rmtree(sb, ignore_errors=True)
-
-    def test_anchored_refuses_in_process_with_network_poisoned(self):
-        import anchored_calibrate
-
-        def no_net(*_a, **_k):
-            raise AssertionError("network attempted by retired anchored CLI")
-
-        with mock.patch("socket.socket", no_net), \
-                mock.patch("socket.create_connection", no_net), \
-                mock.patch("socket.getaddrinfo", no_net), \
-                mock.patch.object(sys, "argv",
-                                  ["anchored_calibrate.py", "--apply"]):
-            self.assertEqual(anchored_calibrate.main(), 2)
-
-    def test_anchor_constants_importable_as_historical_record_only(self):
-        from anchored_calibrate import ANCHOR_CALIBRATION
-        self.assertIsInstance(ANCHOR_CALIBRATION, dict)
-        self.assertIn("anchors", ANCHOR_CALIBRATION)
-        src = (TOOLS / "anchored_calibrate.py").read_text(encoding="utf-8")
-        self.assertIn("HISTORICAL RECORD ONLY - NOT USABLE TO CALCULATE SCORES",
-                      src)
-        # build_manifest's audit import still resolves
-        self.assertIn("from anchored_calibrate import ANCHOR_CALIBRATION",
-                      (TOOLS / "build_manifest.py").read_text(encoding="utf-8"))
 
     def test_settle_mutations_refuse_nonzero(self):
         for argv in (["--rebalance"], ["--run"],

@@ -9,7 +9,7 @@ RECONSTRUCTED child value is used instead, and any dependency cycle is reported 
 unreproducible rather than silently resolved.
 
 Declared aggregation rules, each with its production-code reference:
-  R1 division/anchor      score = clamp(anchored estimate)                  [anchored_calibrate.py]
+  R1 division/anchor      score = clamp(anchored estimate)                  [retired lane; formula recorded in research/experiments/country-calibration-audit/adm1-trace.md]
   R2 division/rating      score = encounter mean, keyed by shape id         [blind_pairwise.py]
   R3 division/route3      score = the COUNTRY's reconstructed score         [build_data.py route-3]
   R4 division/standin     score = the COUNTRY's reconstructed score         [build_data.py single-unit]
