@@ -1,80 +1,148 @@
 # Methodology — Trans Travel Safety Map
 
-This map offers historical estimates of risk to transgender visitors. The scores
-are approximate comparisons, not measured probabilities or predictions for an
-individual trip. Evidence and uncertainty vary substantially between places.
+Each score answers one question: **how much risk does a transgender visitor face
+in this jurisdiction if they are, or are discovered to be, trans?**
 
-## The reference scenario
+Scores run from **0.00 to 1.00, higher = safer**. A score is a comparative
+judgment built from researched evidence: a rough placement of one jurisdiction
+against another. It is not a measured probability and not a prediction for any
+individual trip.
 
-The intended scenario is a visitor who is identified as trans. A place should
-not score better because someone could pass, remain silent, or avoid being
-identified. Those strategies are not reliable protections for every traveller.
+## The scale
 
-Scores run from 0.00 to 1.00, with higher values indicating lower estimated
-risk. **Exactly 0.00 means that an outed trans visitor faces near-certain
-imprisonment and likely execution.** No other point on the scale has a defined
-precise consequence. The named colour bands are display groupings, not
-calibrated thresholds or guarantees of safety.
+- **Exactly 0.00** means a discovered trans visitor faces near-certain
+  imprisonment **and** likely execution — both, not either.
+- **No other point on the scale has a defined precise consequence.** A score of
+  0.55 corresponds to no specified outcome, and a small gap between two scores
+  is not a measured difference in what would happen to anyone.
+- **1.00** is the top of the index. No place is claimed to have reached full
+  legal and social acceptance.
+- **The colour bands** (Severe Risk, High Risk, Elevated Risk, Reduced Risk,
+  Low Risk) are display groupings for reading the gradient, not calibrated
+  thresholds. Two places inside one band can differ materially in what their
+  sources describe.
 
-## What the map considers
+## The reference traveller
 
-Relevant evidence can include laws and their enforcement, entry and document
-checks, access to facilities and healthcare, police and detention practices,
-harassment and violence, and the response of institutions. Social attitudes
-and official rhetoric can provide context, but curiosity, societal hostility
-and state threat-framing are not interchangeable.
+The reference traveller holds a passport from their home country, visits
+shortly rather than residing, is an adult unless a claim states otherwise, and
+arrives through ordinary points of entry. Where a rule depends on age, care
+needs, document type or entry route, the record says so rather than assuming
+the most or least favourable case.
 
-The focus is trans-specific visitor risk, not general travel safety. Laws and
-experiences affecting residents may provide context but do not automatically
-apply to a short-term visitor. General crime, conflict and other travel risks
-still matter, even when they are outside the map's score.
+## Conditional on discovery — no credit for stealth
 
-Evidence needs to be read in context: a proposal is not an enacted rule, an
-individual incident does not establish a widespread practice, and a statement
-by a person or group is not necessarily government policy. Dates, geography,
-conditions of enforcement and available remedies matter. Missing evidence is
-not proof of either safety or danger.
+The score rates what happens to a visitor who is identified as trans, not the
+odds of being identified. Passing, silence and avoidance earn no credit: they
+belong to the traveller and the itinerary, and a document check, a record query
+or an emergency can defeat them. Where a jurisdiction engineers discovery
+itself — mandatory marker disclosure, registration, surveillance, checkpoint
+checking — that is exposure in its own right.
 
-Source links appear in popups where provided. Some records have detailed
-summaries; others have only links or limited local information. A lack of
-specific local evidence should not be read as a finding that a place is safe.
+## What is scored
 
-## How the displayed scores were produced
+The A–K taxonomy (full version in
+[`research/outing-risk-taxonomy.md`](research/outing-risk-taxonomy.md)):
 
-The published values were produced using different historical methods. Some
-country values reflect national-framework assessments; others aggregate
-regional scores, and at least one includes a manual override. Some assessments
-used comparisons of anonymised descriptions; anonymisation does not guarantee
-that every place was unrecognisable or that an assessment was accurate.
+- **A** Border, transit & security screening (document mismatches, scanners, device searches)
+- **B** Documents & everyday bureaucracy (hotel check-in, SIM registration, ID spot-checks)
+- **C** Gendered spaces (bathrooms, changing rooms, saunas, women-only transport, **hospital-ward placement**)
+- **D** Public presence & social reaction (harassment, filming/doxxing, service refusals)
+- **E** Violence & predation (hate violence, dating-app ambushes, blackmail — travellers are soft targets)
+- **F** Police interaction (stops, harassment, entrapment, extortion; protector vs. perpetrator)
+- **G** Law & criminal exposure if outed (expression/impersonation statutes, morality laws, propaganda laws)
+- **H** Arrest, detention & prison placement (misgendered facilities, "verification" exams, deportation)
+- **I** Health & medication (HRT import/customs, emergency care, insurance)
+- **J** Family & diaspora exposure (visiting-relatives scenarios, forced "conversion")
+- **K** State & media climate (a modifier of the picture above, never a standalone driver)
 
-For some division estimates, assessments were compared with reference countries
-and combined with fixed historical reference values. Only part of the parent
-country's context was supplied, and its national score was not the numerical
-starting point. Other divisions inherit their parent's score rather than having
-an independent local assessment. These historical methods do not constitute a
-single validated national-then-local scoring method.
+**Not scored**: general LGB rights per se; resident-only trans issues (a visitor
+uses their home passport and never enters the destination's gender-marker
+process); general crime, terrorism, disease or conflict, except where they
+independently amplify trans-specific risk. The map rates trans-specific visitor
+risk, not general travel safety — general risks still matter in practice and
+appear as context in popups where sources raise them.
 
-A country score cannot describe every local difference, and an inherited
-regional value is not evidence that conditions there match the national
-picture. Decimal differences and ranks should not be treated as precise
-measurements of relative safety.
+**The visitor/resident boundary cuts both ways.** The absence of resident-facing
+machinery — no legal-gender-recognition regime, no anti-discrimination statute —
+is a resident gap, not a visitor exposure. Where it leaves visitor questions
+open (which documents are believed at entry, how detention would place someone),
+an open question is weighed as an open question: much lighter than a documented
+traveller-facing exposure, and never proof of safety or danger. A protection is
+credited only when the record shows it in force; an advocacy submission's stated
+aims are not law. Institutional failure is exposure evidence, not an offset.
+
+## How evidence is weighed
+
+- **Research-driven.** Jurisdictions are assessed from collected sources, not
+  model recall. Popups list sources where provided; a record may carry
+  per-source summaries, a bare link, or little local material at all.
+- **Law, enforcement, actor, date and scope are read separately.** A bill is
+  not law. A statute without documented enforcement weighs differently from
+  documented arrests or police practice. Harm is attributed to whoever the
+  record shows responsible — a party rally, a personal video or supporters'
+  threats are not government policy unless the record makes them one. Facts
+  carry their date. Every claim carries its scope: who it applies to, under
+  what trigger, in which places.
+- **Individual incidents count for what they prove, not how shocking they are.**
+  A single report barely moves a large country; patterns, state implication,
+  impunity or victim-proofing, and very small jurisdictions change that. A good
+  institutional response — convictions, public outcry, reform — counts as
+  positive evidence.
+- **Burden-of-proof symmetry.** A documented positive counts as much as a
+  documented negative. Absence of evidence is not evidence of absence — in
+  either direction. Where sources run out or disagree, the uncertainty stays in
+  the record instead of being resolved toward safety or danger.
+- **Curiosity is not hostility; hostility is not state threat-framing.**
+  Staring, misgendering and conservative disapproval are friction: the
+  traveller is an oddity, not a threat. Hostility frames the traveller as a
+  deceiver or a danger to children or moral law. When law and institutions
+  themselves treat trans people as a threat, that state framing follows the
+  traveller and weighs heaviest.
+- **Sexuality law is not trans law.** A same-sex-conduct statute is secondary
+  for trans visitors: it matters through how it is used against visibly
+  gender-nonconforming people. Trans-specific law and practice dominate.
+- **A violence rate needs a denominator.** Killings at or below the general
+  homicide rate are background violence; an admitted undercount says nothing
+  about magnitude. Both are omitted rather than given false precision.
+- **Severity dominates probability.** Everyone carries some outing probability;
+  what separates places is mostly what happens after discovery, and whether the
+  state is perpetrator, bystander or protector.
+
+## Country and regional assessments
+
+A country's score is its own country assessment. It is **never** derived from
+regional scores; a national-to-regional spread is a diagnostic observation, not
+a target for adjusting anything.
+
+A regional assessment begins with the **full national picture** and then
+considers what is locally different — added restrictions or protections — with
+local facts weighed by the same rules above (scope, date, trigger, visitor
+applicability; local evidence never doubles as national evidence).
+
+Where no local signal exists, the region carries the national score and its
+popup says so. That is an evidence gap, not a finding that conditions there
+match the country. Sub-national variation can be large: a national score cannot
+describe every local difference, and decimal differences and ranks should not
+be read as precise measurements of relative safety.
 
 ## Boundaries and sources
 
-The map uses de jure boundaries: internationally recognised legal claims rather
-than lines of current control. Boundary choices are documented in
+Boundaries are **de jure** — internationally recognised legal claims, not lines
+of current control (Crimea and occupied territories render within Ukraine;
+Kashmir along the Line of Control). Patches are documented in
 [`tools/patch_dejure.md`](tools/patch_dejure.md). Country and first-level
-boundaries use [geoBoundaries](https://www.geoboundaries.org/) gbOpen (CC BY
-4.0); the Western Sahara polygon uses Natural Earth material (public domain).
+boundaries: [geoBoundaries](https://www.geoboundaries.org/) gbOpen (CC BY 4.0);
+Western Sahara polygon from Natural Earth (public domain).
 
-Research notes are available in [`research/`](research/). The previous version
-of this document is preserved there as a historical, non-authoritative archive.
+Research notes live in [`research/`](research/).
 
 ## Using the map
 
-The map is informational research, not personalised travel advice. Conditions
-change, and a visitor's circumstances matter. Check current, relevant sources
-before travelling and consider risks beyond those represented here.
+This map is **informational research, not personalised travel advice**. Risk
+depends on the individual — presentation, documentation, itinerary,
+companions — and conditions change; verify against current official travel
+advisories before travelling.
 
-The map, scores and project data are dedicated to the public domain under
-CC0 1.0. Boundary data retain their upstream licences.
+The map, its scores and project data are dedicated to the **public domain
+(CC0 1.0)**; boundary data retain their upstream licences.

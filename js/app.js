@@ -454,32 +454,41 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
 
   /* ---------- about dialog ---------- */
   function aboutHTML() {
-    const gen = meta.generatedAt ? esc(meta.generatedAt) : "—";
     const repo = (meta.repoUrl || "").replace(/\/+$/, "");
     const methUrl = repo ? `${repo}/blob/HEAD/METHODOLOGY.md` : "METHODOLOGY.md";
     return `
-    <p>This map presents <strong>historical, approximate estimates</strong> of risk to
-    transgender visitors. They are not probabilities or precise predictions for a trip.
-    Higher scores indicate lower estimated risk; the colour bands are display groupings,
-    not calibrated safety thresholds.</p>
-    <p>The intended scenario is a visitor who is identified as trans. Passing, silence and
-    avoidance do not earn a place credit. <strong>Exactly 0.00</strong> means an outed
-    trans visitor faces near-certain imprisonment <em>and</em> likely execution. No other
-    point on the scale has a defined precise consequence.</p>
-    <p>Evidence varies by place. Sources are linked where provided, and missing evidence
-    is not proof of safety or danger. Some national values reflect regional aggregates;
-    some divisions inherit a national score rather than having an independent local
-    assessment. A country score cannot describe every local difference.</p>
-    <p>Read more about the scope and limitations in
-    <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>.
-    Data generated: ${gen}.</p>
-    <p><strong>Boundaries are de jure</strong>: internationally recognised legal claims,
-    not lines of current control. Country and first-level boundaries use
+    <p>This map estimates the risk facing a <strong>transgender visitor</strong> —
+    someone who is, or is discovered to be, trans — in every country and, where
+    evidence supports it, in each state/province. Scores run from 0.00 (dark red,
+    riskiest) to 1.00 (light blue, safest), grouped into five named bands (Severe
+    Risk through Low Risk) for readability. The bands are display groupings, not
+    calibrated risk thresholds.</p>
+    <p>The score is <strong>conditional on discovery</strong>: it describes what
+    happens to a visitor who is identified as trans, not how likely identification
+    is. Passing, silence and avoidance earn no credit — a document check, a record
+    query or an emergency can defeat them. <strong>Exactly 0.00</strong> means an
+    outed trans visitor faces near-certain imprisonment <em>and</em> likely
+    execution. No other point on the scale has a defined precise consequence.</p>
+    <p>What it covers: a trans visitor's everyday exposure — public presence,
+    bathrooms and facilities, documents and border crossings, police contact,
+    arrest and detention, harassment and violence, medication. It deliberately
+    excludes general travel risks (crime, disease, conflict) and resident-only
+    issues, except where they bear directly on a trans visitor's safety.</p>
+    <p>Evidence varies by place. Each popup lists its sources where provided and
+    flags open questions. Where a region has no local evidence of its own it
+    carries the national score, and the popup says so. Missing evidence is not
+    proof of safety or danger.</p>
+    <p>See <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>
+    for what the score means, the risk taxonomy, and how evidence is weighed.</p>
+    <p><strong>Boundaries are de jure</strong>: internationally recognised legal
+    claims, not lines of current control. Country and first-level boundaries:
     <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener">geoBoundaries</a>
-    gbOpen (CC BY 4.0); the Western Sahara polygon uses Natural Earth material (public domain).
-    The map and project data are dedicated to the public domain under CC0 1.0.</p>
-    <p class="muted">This map is informational research, not personalised travel advice.
-    Conditions change; consult current, relevant sources before travelling.</p>`;
+    gbOpen (CC BY 4.0); Western Sahara polygon: Natural Earth (public domain).
+    <strong>License:</strong> the map, its scores and project data are dedicated to
+    the public domain (CC0 1.0).</p>
+    <p class="muted">This map is informational research, not personalised travel
+    advice. Conditions change; verify with current official travel advisories
+    before travelling.</p>`;
   }
   const dlg = document.getElementById("aboutDialog");
   document.getElementById("btnAbout").addEventListener("click", () => {
