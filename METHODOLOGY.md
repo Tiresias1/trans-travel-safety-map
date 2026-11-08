@@ -1,552 +1,80 @@
-# Methodology — Trans Travel Safety Map (2026 Edition)
-
-This document describes how every score on the map is produced. It is the canonical
-public methodology; the working research artefacts it summarises live in `research/`.
-
-## What the map measures
-
-Each score answers one question: **how much risk does a transgender *visitor* face in
-this jurisdiction if they are, or are discovered to be, trans?**
-
-Scores run from **0.00 to 1.00, higher = safer**. The bands below are index
-ranges on that scale, not travel advice:
-
-| Band | Range | Meaning |
-|---|---|---|
-| Severe Risk | 0.00–0.19 | A discovered trans visitor faces near-certain imprisonment and likely execution |
-| High Risk | 0.20–0.39 | Severe outcomes (arrest, detention, serious violence) are realistically possible |
-| Elevated Risk | 0.40–0.59 | Meaningful risk of arrest, violence, or severe harassment; mitigation possible |
-| Reduced Risk | 0.60–0.79 | Risk exists but institutions and social climate substantially limit it |
-| Low Risk | 0.80–1.00 | Strong protections, functioning recourse, no documented pattern of trans-specific harm |
-
-The score is **conditional on discovery**: it rates what happens to a trans visitor who is
-identified as trans, not the likelihood of being identified. Outing probability is treated as
-a baseline every traveller carries and is not credited or debited, except where the dossier
-shows a jurisdiction engineering discovery itself (mandatory marker disclosure, registration,
-surveillance, checkpoint checking), which is exposure in its own right. A place does not score
-better because a visitor could pass or stay quiet; that is a property of the traveller and the
-itinerary, and it disappears the moment a passport is checked or an emergency happens. 1.00 is
-an aspirational limit no jurisdiction fully reaches.
-
-**Rule changes and score provenance.** Every score records the rulebook version that produced
-it. A rule change does not silently relabel old scores: the current code rubric and the rubric the
-scores were produced under are both recorded, and compatibility is treated as unestablished until
-a blind comparison establishes it.
-
-Rule 10b (the score is conditional on discovery; no credit for being able to pass; engineered
-discovery counts as exposure) was audited this way on 20 countries stratified as engineered
-discovery, visibility-sensitive, and random, plus 7 divisions. The audit ran the same sample
-twice under one seed, once with rule 10b present and once with it stripped: the rule's own
-effect was a mean of −0.004, mean absolute effect 0.013, largest 0.038 — below the prespecified
-materiality thresholds of 0.03 and 0.08. A single-arm comparison had appeared to shift scores by
-+0.036, but the control showed that about +0.039 of that was partner resampling rather than the
-rule. Compatibility is therefore supported within the audited sample; scores keep their older
-stamp and are not claimed to follow the new rubric record by record.
-
-A separate discrepancy was chased down and resolved. Fresh samples appeared to read about
-0.06 above the stored encounter means, which would have implied the published map sat
-systematically low. Replaying the *exact archived partner sets* with the exact archived prompt
-(deltas +0.024, +0.047, +0.042, +0.070, −0.002, −0.026 across six countries spanning the scale)
-showed no uniform offset: mean +0.026 with mixed signs, within the spread expected from run-to-run
-variation at this sample size. That mean is suggestive rather than conclusive — four of six cases
-moved up, and individual countries moved by up to 0.07 — so the comparability warning stands rather
-than being retired. Most of the apparent gap came from a wording relaxation I had
-introduced after the wave in rule 1, not from the rater drifting. Nothing was corrected, and the
-panel is kept as a sentinel at `research/experiments/2026-11-13-replay-sentinel.json` so future
-releases can check comparability the same way.
-
-### Reproducibility audit, and a caveat it withdrew
-
-`tools/verify_from_logs.py` reconstructs every published score from archived logs without using
-any published score as an input; routing metadata is taken from the publication and that is
-disclosed. Result: 3,474 of 3,474 agree — 2,302 exactly and 1,172 to within 1e-6, the
-sixth-decimal storage rounding. The first version of this audit carried an "incomplete
-provenance" class for 73 records whose stored scores would not reconcile. That class was
-withdrawn rather than quietly deleted: the cause was my own production-log selection. The final
-rebalance used `redo_c4` alone, and `recency_wave` had been superseded; including it invented 73
-gaps and reconciled nothing. The lesson is recorded because the same mistake — assuming which
-run fed which score — is the easiest one to repeat when several waves write to the same file.
-
-**Visitor scenario.** The reference traveller holds a passport from their home country, travels
-on a short visit rather than as a resident, is an adult unless a claim states otherwise, has no
-guaranteed local medical need, and arrives through ordinary points of entry. Where a dossier
-describes a rule that depends on age, care needs, document type or entry route, the summary
-says so rather than assuming the most or least favourable case.
-
-## What is scored — and what is not
-
-**Scored** (the A–K taxonomy; full version in
-[`research/outing-risk-taxonomy.md`](research/outing-risk-taxonomy.md)):
-
-- **A** Border, transit & security screening (document mismatches, scanners, device searches)
-- **B** Documents & everyday bureaucracy (hotel check-in, SIM registration, ID spot-checks)
-- **C** Gendered spaces (bathrooms, changing rooms, saunas, women-only transport, **hospital-ward placement**)
-- **D** Public presence & social reaction (harassment, filming/doxxing, service refusals)
-- **E** Violence & predation (hate violence, dating-app ambushes, blackmail — travelers are soft targets)
-- **F** Police interaction (stops, harassment, entrapment, extortion; protector vs. perpetrator)
-- **G** Law & criminal exposure if outed (expression/impersonation statutes, morality laws, propaganda laws)
-- **H** Arrest, detention & prison placement (misgendered facilities, "verification" exams, deportation)
-- **I** Health & medication (HRT import/customs, emergency care, insurance)
-- **J** Family & diaspora exposure (visiting-relatives scenarios, forced "conversion")
-- **K** State & media climate (a probability *modifier*, never a standalone driver)
-
-**Not scored** (they may inform axis K as climate signals, but never drive a score):
-
-- General LGB rights — marriage equality, adoption, LGB criminalisation *per se*
-- Resident-only trans issues — domestic legal-gender-recognition regimes, transition
-  healthcare access, employment law. A visitor uses their home passport and will never
-  apply for the destination's LGR scheme.
-- General crime, terrorism, disease, conflict — except where they independently amplify
-  trans-specific risk (e.g. collapse of protection for an already-targeted group).
-
-**The visitor/resident boundary cuts both ways.** The *absence* of resident-facing
-machinery (no legal gender recognition regime, no national anti-discrimination or
-hate-crime statute) is likewise a resident gap, not a visitor exposure: the visitor's
-documents are issued and carried from their home country and never touch the
-destination's gender-marker process. A missing LGR regime raises open questions for
-edge cases (which documents get believed at entry, how detention would place someone),
-but an open question is not an exposure: it weighs almost nothing where the dossier
-answers the visitor-facing questions, and merely holds the score back where it leaves
-them open. Factor kinds rank as: documented traveler-facing exposures (targeting,
-enforced criminal statutes, universal-exposure measures) heaviest; open questions far
-lighter; resident-machinery absence lightest, which is a local-attitudes cue the
-sources usually already cover. Relatedly, institutional failure is exposure *evidence*, not an
-offset: oversight bodies that issue repeated findings without remedying a practice
-corroborate an unremedied exposure ("the traveller has recourse" does not soften a
-violation the record shows recurring), and survey-measured discrimination prevalence
-at scale is a primary everyday-exposure signal for the settings surveyed. A protection
-is credited only when the dossier documents it as in force. An advocacy submission's
-stated aims are not law.
-
-Several standing corrections encode hard-won lessons:
-
-- **Sexuality law is not trans law.** A same-sex-conduct statute is a secondary
-  factor for trans visitors. It matters through how it is used, as a police lever
-  against visibly gender-nonconforming people or as license for hostility toward
-  them. Trans-specific factors dominate instead: gender-expression law and its
-  enforcement, document and screening practice, facilities and custody, care access,
-  trans-specific violence and how it is handled, documented social acceptance. A
-  tolerant society holding an unrepealed dead-letter sexuality statute is not the
-  same risk tier as a state that enforces against gender-nonconforming people.
-- **Social friction is not social hostility.** Curiosity, staring, misgendering and
-  conservative disapproval are tier-3 language at most: the traveller is an oddity,
-  not a threat. Hostility means the traveller is framed as a deceiver, a corrupting
-  influence on children, or a violator of moral law. That distinction decides how
-  heavily societal attitudes weigh, and it is not a wording preference.
-- **State threat-framing is the heaviest single input.** When law and institutions
-  treat trans people as a risk (exclusion from women's spaces, custody placement by
-  birth sex, strip-search by birth sex, denial of emergency care), the exposure
-  follows the traveller and outranks polite street-level life.
-- **A violence rate needs a denominator.** A trans killing rate at or below the
-  jurisdiction's general homicide rate is background violence. A rate the source
-  itself calls an undercount floor tells you nothing about magnitude. Both are
-  omitted rather than presented with false precision.
-- **Facts carry their date.** An incident from many years ago is not evidence about
-  the present in either direction. It does not show the harm continues, and it does
-  not show the harm has ended. The record says which case applies and nothing more.
-- **Activist visibility is not danger.** A dossier full of court petitions, marches
-  and discrimination statistics shows that marginalised people can organise and
-  litigate. That is civil society working. It describes the local sphere, which a
-  visitor does not enter.
-- **Severity dominates probability.** Every trans person carries some outing probability;
-  what separates 0.9 from 0.2 is mostly what happens *after* the outing, and whether the
-  state is perpetrator, bystander, or protector.
-
-## Evidence standards
-
-1. **Research-driven, never memory-driven.** Every jurisdiction was assessed from web
-   research: a 14-dimension coverage matrix (criminalisation, expression, documents,
-   entry/visa, screening, facilities, custody, care access incl. youth care, violence,
-   discrimination, state/media hostility, partner recognition, youth & education, social
-   climate) drove source collection; extracted claims must share verbatim text with
-   their source (anti-fabrication gate). Each popup lists its sources with per-source
-   summaries.
-2. **Wikipedia baseline.** Every country and researched division with an LGBTQ-rights
-   or trans-rights Wikipedia article carries that article as a source; on-topic sources
-   cited by those articles were harvested and verified through the intake lane
-   (dead/irrelevant leads dropped, never guessed).
-3. **Laws on the books vs. enforcement.** An unenforced statute is a small factor;
-   documented arrests, convictions, or police practice is a large one.
-4. **Individual incidents are weighed by what they prove, not how shocking they are.**
-   Most crime never makes news; a single report barely moves a medium/large country.
-   Incidents count when patterned, state-implicated, met with impunity or
-   victim-prosecution, or in very small jurisdictions — and a *good* institutional
-   response (convictions, public outcry, reform) counts as positive evidence.
-5. **Burden-of-proof symmetry.** A documented positive counts as much as a documented
-   negative. Absence of evidence is not evidence of absence — in either direction.
-6. **Rule of law mediates.** Protections + hostile public → the rating depends on
-   whether the legal system actually works for trans people. Law and society aligned in
-   acceptance → residual risk is general-travel risk, not trans-specific. Law *against*
-   trans people + strong enforcement → rule of law becomes a liability.
-
-## Calibration
-
-Fifteen anchor jurisdictions were researched first and frozen
-([`research/anchors.md`](research/anchors.md)); every subsequent score was justified
-**pairwise** against at least one neighbour and one anchor. Six standing calibration
-rules guard against known failure modes — regional flattening, anchored corrections
-(nudging a score instead of deriving it from the analysis that refuted it),
-over-weighting LGB statutes, and asymmetric burden of proof between regions.
-
-## Blind pairwise refinement and settlement
-
-Scores are stress-tested by an automated blind process (`tools/blind_pairwise.py`):
-
-1. Each jurisdiction's research was **anonymised** into blind mirror fields: no names,
-   no scores, no source URLs, no comparator references, no region-identifying terms —
-   validated by automated leak checks (per-item, agency-noun, state-leak and
-   meta-narrative gates) before use.
-2. Over multiple full passes of **randomised head-to-head pairs**, a rating model that
-   never saw which jurisdictions it was reading scored each anonymised dossier
-   independently against the scale and the rules above. Presentation order is
-   randomised to cancel position bias, and update steps ramp coarse to fine across
-   each pass. The 2026 edition ran a 3,500-pair countries pass and a 9,500-pair
-   division pass, then re-ran both (3,600 and 9,500) after each rating-rule change,
-   because a rule change invalidates every earlier rater mean. A wave never mixes
-   rating models: scores carry a `ratedBy` stamp for exactly that reason.
-3. **Dependent territories are scored relative to their parent state.** The rater sees
-   the territory's own anonymised dossier plus the parent's anonymised national
-   framework as the regime imposed on it, and rates the territory head to head against
-   that parent in the same call, so both sides land on one scale. The territory's score
-   is the parent's score plus the mean offset across those pairs. Local tolerance does
-   not neutralise parent rules enforced at the border, in funded facilities, or through
-   the document regime, and the parent regime belongs to that dossier alone. The
-   countries-mode record for a territory is a display mirror of the territory's own
-   score, text included. An earlier scheme rated territories against random country
-   comparators while their parent was rated against other countries; the two scales were
-   not comparable, which let Puerto Rico score above the United States despite a harsher
-   local layer.
-4. **A settlement pass enforces the convergence invariant**: every jurisdiction's
-   stored score must equal its encounter-weighted rater mean, within 0.02 on the 0 to 1
-   scale. Focused pair runs top up any entity that has drifted. Where a wave has
-   already produced enough encounters, the score is set directly to the encounter mean
-   instead of chasing it with more pairs, since a small focused run converges on its own
-   sample mean and the residuals oscillate.
-
-Every pair is logged with both ratings, the reasoning, and the exact update arithmetic.
-The rating rulebook itself is public: see `tools/blind_pairwise.py`, rules 1 to 21.
-The rules that matter most for reading a score are the visitor/resident boundary (rule
-1), the secondary status of sexuality law (rule 2), burden-of-proof symmetry (rule 3),
-the severity ladder and the precedence ladder for comparing two dossiers (rules 14 and
-15), the parent-regime rule (rule 12), the denominator rule for violence rates (rule
-16), the population/category/period requirement for prevalence figures (rule 17), the
-recency rule (rule 18), the friction/hostility/state-threat distinction (rule 19),
-activist visibility (rule 20), and institutional failure as exposure evidence rather
-than mitigation (rule 21).
-
-## What the published numbers mean, and what they do not
-
-**Countries with measured divisions** are published as a *destination summary*: the mean
-of their independently measured divisions, with the division range published alongside.
-The national-framework rating, which reflects the rules that apply throughout the
-country, is retained in the data as `nationalFrameworkScore` and is not overwritten. The
-weighting is currently unweighted, which is a declared choice rather than a default: it means
-the figure summarises the average division, not the average visitor. A visitor-weighted
-estimand would use visitor-nights per division, and the corpus contains no arrival or
-stay data, so that weighting cannot currently be computed. What can be published is the
-bound: any weighted mean of the divisions must lie between the lowest and highest division
-score, and both are published with the national figure, so a reader can see how far the
-national number could move under a different weighting. Acquiring arrival data is the
-prerequisite for the visitor-weighted figure, and until then the average division is what the
-number means.
-
-**Countries without measured divisions** keep their pairwise rating.
-
-**Divisions with no sub-national signal** inherit the national score and are marked
-`inherited`. They are not independent evidence and are excluded from any aggregation.
-
-**Bridging.** Two instruments are used: pairwise country rating, and anchored rating
-against a fixed four-anchor ladder (Belarus, Côte d'Ivoire, Vatican City, Spain). They
-were bridged on a held-out sample of 37 countries measured both ways: slope 1.06,
-intercept −0.03, r 0.97, mean difference −0.003, with 36 of 37 within 0.10. The two
-instruments therefore sit on one scale, and the difference between a country's
-framework score and its division mean is a substantive difference in construct, not a
-measuring difference.
-
-**Held-out check.** The bridge was then repeated on a held-out sample of 40 countries
-weighted toward the dangerous end (20 below 0.20), compared against national-framework
-ratings that were obtained independently of division aggregation: slope 1.10, mean
-difference −0.025, mean absolute difference 0.035, largest 0.089. Split by range, the
-lowest band shows a systematic bias of −0.047 (anchored reads about five points harsher
-than the framework rating below 0.20), while the upper band agrees within 0.008. That
-bias is largest where the anchor ladder has no coverage, and it is why the floor-clamp
-guard exists.
-
-A frozen anchor set means the anchors' displayed country scores can drift away from the
-constants the pass used. The values are recorded in `measurement_manifest.json`
-(`anchorCalibration`) with the country-score version they belong to, and the divisions
-are calibrated to those constants rather than to today's country scores.
-
-The low-end caveat popup states the 0.07 figure precisely: it is the mean, across 19
-low-scoring countries, of the standard deviation of six anchor-specific readings for each
-country. It is a between-anchor dispersion, not an uncertainty bound on an individual
-published score. The 0.20 cut is a warning threshold, not a validated boundary.
-
-**Low-end anchor extension, tested and not adopted.** A preregistered experiment added
-two low-end reference points (Uganda 0.090, Niger 0.093) to the ladder and re-measured 20
-low-framework countries (19 with an independent framework rating; the twentieth is a territory
-display mirror) and 20 divisions, twelve calls each, 480 calls total. Full
-preregistration, raw per-anchor data and analysis are in `research/experiments/`.
-
-Result: the six-anchor estimator reduced the systematic low-end bias (mean signed error
-−0.017 → +0.009) and cut floor incidence from 5 to 3 of 40, but its low-stratum mean
-absolute error was 0.021 against a preregistered threshold of 0.020 and floor incidence did
-not halve. **Both were declared success criteria in advance, so the extension was not
-adopted.** The production ladder remains the frozen four anchors.
-
-Two qualifications, because they matter for how far the negative result reaches. On the same
-19 countries the paired contrast is |error(A6)| minus |error(A4)|: mean −0.005, 95% bootstrap
-confidence interval (−0.015, +0.005), where a negative value favours A6. That interval spans
-zero, so the data establish neither a gain nor its absence. And the decision rule, not the statistics, is what settles it: the
-prespecified criteria were not met.
-
-A further point about aggregate agreement. Single-anchor mean absolute error on the same 19
-countries: Spain 0.032, Vatican City 0.043, Uganda 0.047, Belarus 0.055, Niger 0.082, Côte
-d'Ivoire 0.083, against a four-anchor average of **0.026**. The average is therefore lower,
-that is better, than *every* individual anchor. Part of that advantage comes from opposing
-biases offsetting: Belarus reads targets 0.055 high and Côte d'Ivoire 0.083 low. Dropping
-Côte d'Ivoire from the four-anchor ladder improves the average to 0.022; dropping Belarus
-worsens it to 0.046. Anchor composition therefore contributes materially to the measured
-agreement, alongside whatever underlying accuracy the instrument has, and the data do not
-separate those contributions.
-
-The reviewer's proposed follow-up required two reference jurisdictions with independent
-framework scores between 0.02 and 0.05. The whole corpus contains exactly one (Afghanistan,
-0.047), so that specific test is infeasible and was not attempted. What remains possible
-without absent reference data is sensitivity analysis on the calls already made, and that
-is what the published caveats rest on. Within-parent division differences from the
-experimental six-anchor ladder were checked against each anchor exclusion in turn: 6 of 10
-pairs kept their direction and 4 did not. That test concerns the experimental ladder, not the
-published four-anchor ladder, and two of the six stable pairs are exact ties in the published
-data, so their stability is a property of the experiment rather than of the live scores. The
-four unstable pairs are reported as unresolved rather than presented as findings.
-
-Divisions scored below 0.20 **that are not floor-bound** are flagged `lowEndUncertain`; the
-85 floor-bound records are a separate treatment (unresolved, unranked). The low-end popup
-note says the sensitivity is to which reference jurisdictions were used, and that the figure
-is a spread across references rather than a measured error for the record being viewed. The
-0.20 cut is a warning threshold, not a validated boundary between precise and imprecise
-scores. For floor-bound records, the ordering relative to other floor-bound records is
-unresolved by this instrument; that is not a claim that no comparison involving them could
-ever be made.
-
-The same data show where the disagreement sits. At the dangerous end the anchors differ
-systematically: on average across the sample, Côte d'Ivoire (0.297) reads targets 0.083 below
-their framework ratings, while Belarus (0.100) reads them 0.055 above, Niger 0.078 above and
-Uganda 0.044 above. Those are sample means, not claims about every target. Two
-leave-one-out results follow, and they belong to different ladders: dropping Côte d'Ivoire
-from the experimental six-anchor ladder *raises* error to 0.033, while dropping it from the
-four-anchor ladder *lowers* error to 0.022. Reading those together, what the data establish
-is that anchor composition matters materially. They do not establish that the middle anchor
-carries most of the bias and that the missing low anchors do not: adding the two low anchors
-moved the mean signed error from −0.017 to +0.009, so their presence changes the result. Both
-contributions remain live.
-
-Repeat spread within a target is 0.05–0.07 per anchor. If the eight calls per division are
-treated as independent, that implies a standard error of roughly 0.02 for the current
-protocol; the independence assumption is untested here, so the figure is an indication of
-scale, not a validated uncertainty bound. Either way it is the same order as the differences
-the instrument is being asked to resolve.
-
-**Known limits, published rather than hidden:**
-
-- The anchor ladder's lowest anchor is 0.10, so estimates below that are extrapolated rather
-  than measured, and clamp at the scale floor if they reach it (extrapolated estimates between
-  0.02 and 0.10 do occur and are published). Where more than 10% of a country's divisions are clamped,
-  aggregation is refused (`aggregationBlocked`) and the framework rating is published
-  instead. Twelve countries are affected today.
-- Fixed anchors remove the variation caused by pairing each division with a *different*
-  random partner (the earlier method's ratings correlated −0.39 with the rating given to
-  that partner). That is a narrower claim than removing reference-composition effects in
-  general, which this design does not establish. It also does not prove the scale is
-  interval. Averages are conventions of the index.
-- A single score cannot carry the range of outcomes. Division dispersion is published
-  with the national figure for that reason.
-- Model priors, sparse reporting and language coverage remain sources of error that no
-  amount of pairwise refinement removes.
-
-## Settlement has nothing to do (2026-11-13)
-
-`tools/settle_scores.py` enforces the invariant "score == encounter mean". That invariant is
-satisfied by the published data rather than inapplicable to it, and the distinction matters.
-
-Instruments, from the single definition in `tools/instruments.py`:
-
-| Instrument | Records |
-|---|---|
-| anchored (fixed anchors + mean deviation) | 3,241 divisions |
-| destination summary (mean of measured divisions) | 143 countries |
-| country-level rating (the encounter mean itself) | 63 countries |
-| territory mirror | 27 countries |
-
-Of the 63 country-level records, 59 have >= 3 archived encounters, and **all 59 satisfy
-|score - encounter mean| < 1e-6**. The settlement queue is therefore empty because every
-settleable record already equals its encounter mean, not because the guard excluded it.
-
-Anchored divisions are excluded on principle: their logs are contrast ratings against random
-partners (measured within-region correlation with partner rating -0.39), so moving a calibrated
-estimate to that mean would import the confound. Their invariant is "score == anchorRating",
-audited by `tools/verify_from_logs.py`.
-
-Three earlier errors are recorded here because they share one cause — prose classification of
-numerical instruments:
-
-1. A substring match on "anchor" classified 12 endpoint-clamped countries as anchored, because
-   their prose contains "anchor-ladder floor".
-2. A substring match on "destination summary" classified those same 12 as destination summaries,
-   because their prose reads "no destination summary, because endpoint-clamping".
-3. The settlement tool's default log set included superseded runs, manufacturing ~450 phantom
-   queue entries; against the production basis those records are exact to 1e-6.
-
-The lesson: negative context must be tested before the phrase it negates, and an instrument
-should be read from a structured field wherever one exists. The published manifest, the audit and
-the settlement guard now all import the same classifier, so they cannot disagree.
-
-**This is disclosed as a residual fragility, not a resolved one.** Centralising the classifier
-stops the three consumers diverging; it does not make a prose-derived inference authoritative,
-because a shared classifier would propagate the same mistake everywhere. The known failure modes
-are locked by `tools/test_instruments.py`. The durable fix is an explicit per-record instrument
-field written when the score is produced, which the pipeline does not yet carry.
-
-Finally, "59 records satisfy the invariant" means the published scores are **within 1e-6** of
-their own instrument's output. That is consistency with the instrument, not independent evidence
-that the instrument, the encounter set or the scoring rules are the right ones.
-### Reconciliation of the settlement counts
-
-These three numbers describe different populations and should not be read as one figure:
-
-| Population | Count | Meaning |
-|---|---|---|
-| Entities with >= 3 encounter ratings in the archived logs | 764 | eligible to be *considered* |
-| Of those, gap vs encounter mean >= 0.02 (raw queue, no guard) | 546 | would have been settled by the old tool |
-| Of those, queued after excluding anchored entities | 147 | all country-level |
-| Queued after the fail-closed instrument guard | **0** | nothing is settlement-eligible |
-| Anchored divisions in the published data | 3241 | calibrated estimates the guard protects |
-| Published records whose instrument IS an encounter mean | **0** | the estimator settlement enforces |
-
-The 147 country-level gaps reach 0.171 (Mongolia 0.494 stored vs 0.664 encounter mean). That is a
-**cross-estimator difference**, not a defect: a destination summary (mean of measured anchored
-divisions) and a country-level encounter mean are different estimators and are not required to
-agree. Gaps of this size should be investigated as diagnostics — coverage, partner composition,
-weighting — and never corrected by moving the score.
-
-The invariant that *does* hold is "score == anchorRating for anchored units" (plus the route-3,
-destination-summary, mirror and stand-in rules), and that is audited mechanically by
-`tools/verify_from_logs.py`: 3,474/3,474 published scores reconcile from the archived logs.
-
-## Validation gates
-
-Nothing reaches the site without passing automated checks. Every text field is written
-by a model and then gated:
-
-- **Blind leak checks** (`check_blind.py`): banned vocabulary, agency and programme
-  proper nouns, state-leak patterns, and meta-narrative phrasing, checked per item
-  rather than across a joined list so that two innocent fragments cannot combine into a
-  false positive.
-- **Changelog scanner**: a record may not describe its own edit history. The map is not
-  a changelog.
-- **Historical-overreach gate**: output that calls a harm "historical", "a thing of the
-  past", or implies it has ended is rejected, because an undocumented present is not a
-  safe present.
-- **Dressing test**: a claim whose treatment is identical for every traveller, and which
-  merely names a trans-associated item to sound relevant, is dropped.
-- **Digit preservation and blind-vocabulary separation**: rewrites may not change
-  numbers, and anonymised vocabulary may not appear in visible text.
-- **Build validation**: band labels must match scores, summaries must be well formed,
-  and the route-3 and territory-mirror invariants must hold.
-- **Parent-inversion warning**: a territory or division that carries its own hostile
-  layer and still scores at or above its parent is flagged at build time.
-
-Text fixes go through model lanes, not string surgery. Regex is used for detection and
-for fixed-token redaction only, since a mechanical rewrite of prose is how truncated
-summaries and false positives get introduced.
-
-## Boundaries
-
-**De jure** — internationally recognised legal claims, not lines of current control
-(Crimea and occupied territories are shown within Ukraine; Kashmir along the Line of
-Control; etc.). Patches are documented in `tools/patch_dejure.md`. Base data:
-[geoBoundaries](https://www.geoboundaries.org/) gbOpen (CC BY 4.0), with the Western
-Sahara polygon from Natural Earth (public domain).
-
-### Sub-national (first-level divisions)
-
-Divisions are handled on four routes, in descending order of evidence.
-
-1. **Full dossiers** (595 divisions across 28 researched countries plus the
-   territories below): a research pass collects per-division evidence under the same
-   single-incident and burden-of-proof rules as countries. Scoring runs in **mixed
-   mode**: each division is paired against a country comparator, the rater sees the
-   division's anonymised bundle together with the parent state's anonymised national
-   framework as the regime imposed on it, and division names are withheld. Division
-   scores move; comparator countries are frozen. Sub-national rules: do not re-rate
-   national factors; where the rule of law is strong and no explicit autonomy exists,
-   regional statutes signal rather than operate; where the rule of law is weak, regional
-   practice can bend national law in either direction; enforcement beats statute.
-2. **Estimated divisions with their own content** (Chechnya, Xinjiang, Tibet,
-   Zanzibar, Iraqi Kurdistan and similar, `"estimated": true`, marked in the popup):
-   the division's score is the national score plus an offset derived from head-to-head
-   pairs against its own country, so a documented deviation survives a change in the
-   national score instead of freezing an absolute copy of an old one.
-3. **Dependent territories** (31, for example Puerto Rico, the Faroe Islands, Aruba and
-   Western Sahara): full dossiers in their own right, scored relative to the parent as
-   described above. Their popups are labelled "Territory of <parent>".
-4. **Divisions with no sub-national signal**: the national score, exactly. A build-time
-   invariant enforces this on every build, so these divisions cannot drift away from
-   their country. Inheritance is the honest answer where no sub-national evidence
-   exists; forced estimates from thin data cause more harm than good.
-
-Division popups show a `displaySummary` where one exists: the parent country's national
-framework compressed to a sentence or two with a pointer to the national record, and
-everything else strictly local. The full summary, which carries the national layer for
-the pairwise rater, stays in the data. A display summary is invalidated whenever its
-summary is rewritten, so a stale variant cannot outlive the text it was derived from.
-
-## Update cycle
-
-**Annual.** Conditions rarely change fast enough to justify more frequent full
-re-research; special-case updates are possible for acute changes. Each edition states
-its year; per-jurisdiction research dates appear in the data
-(`researchedAt` in `data/countries.json`).
-
-## Caveats
-
-- This map is **informational research, not personalised advice**. Risk depends heavily
-  on the individual (presentation, documentation, itinerary, companions), and conditions
-  change. Verify against current official travel advisories before travelling.
-- Small jurisdictions carry thin evidence bases; their popups and dossiers say so
-  explicitly, and their scores warrant extra caution in both directions.
-- Subnational variation can be large (e.g. United States, Mexico, Brazil, India,
-  Indonesia, Nigeria). Where admin-division data is loaded, use the divisions view;
-  where it is not yet researched, the national score is a rough average at best.
-
-## Repository layout
-
-| Path | Contents |
-|---|---|
-| `research/outing-risk-taxonomy.md` | The full A–K checklist and severity ladder |
-| `research/anchors.md` | Frozen anchor table + calibration rules 1–6 |
-| `research/countries/<ISO>.md` | Per-jurisdiction research notes |
-| `research/admin1/<ISO>.md` | Per-country sub-national research dossiers |
-| `research/ADM1_RESEARCH_PROMPT.md` | Hand-off prompt: sub-national research pass |
-| `research/ADM1_SCORING_PROMPT.md` | Hand-off prompt: initial division scoring |
-| `research/reanalysis-2026-08-21.md` | Systematic re-weighting pass (sodomy-as-situational etc.) |
-| `research/audit-2026-08-21.md` | Random-sample pairwise audit |
-| `data/countries.json` | Scores, summaries, sources, anonymised dossiers |
-| `data/admin1.json` | Per-division scores (keyed by geoBoundaries shapeID) |
-| `tools/blind_pairwise.py` | Blind pairwise refinement driver (countries, `--admin1`, and mixed territory modes) |
-| `tools/wiki_universal_sweep.py` | Wikipedia coverage sweep (LGBTQ-rights article per jurisdiction + cited-source harvest) |
-| `tools/settle_scores.py` | Settlement pass and rebalance (scores equal rater means) |
-| `tools/derive_territories.py` | Parent-relative derivation for territories and estimated divisions |
-| `tools/audit_shared_claims.py` | Finds national claims copy-pasted into sibling division records |
-| `tools/scan_dating_defects.py` | Finds stale legal snapshots and undated prevalence wording |
-| `tools/make_display_summaries.py` | Generates the division popup summaries |
-| `tools/blind_fields.md` | Anonymisation spec + prompts |
-| `tools/build_data.py` | Validation, ranks, `data/meta.json` |
-
-## License
-
-The map, its scores, and all project data files (`data/*.json`) are dedicated to the
-**public domain (CC0 1.0)** — free of copyright restrictions, no attribution required.
-Boundary geometry retains its upstream licences: geoBoundaries gbOpen (CC BY 4.0) and
-Natural Earth (public domain), as noted in the README.
+# Methodology — Trans Travel Safety Map
+
+This map offers historical estimates of risk to transgender visitors. The scores
+are approximate comparisons, not measured probabilities or predictions for an
+individual trip. Evidence and uncertainty vary substantially between places.
+
+## The reference scenario
+
+The intended scenario is a visitor who is identified as trans. A place should
+not score better because someone could pass, remain silent, or avoid being
+identified. Those strategies are not reliable protections for every traveller.
+
+Scores run from 0.00 to 1.00, with higher values indicating lower estimated
+risk. **Exactly 0.00 means that an outed trans visitor faces near-certain
+imprisonment and likely execution.** No other point on the scale has a defined
+precise consequence. The named colour bands are display groupings, not
+calibrated thresholds or guarantees of safety.
+
+## What the map considers
+
+Relevant evidence can include laws and their enforcement, entry and document
+checks, access to facilities and healthcare, police and detention practices,
+harassment and violence, and the response of institutions. Social attitudes
+and official rhetoric can provide context, but curiosity, societal hostility
+and state threat-framing are not interchangeable.
+
+The focus is trans-specific visitor risk, not general travel safety. Laws and
+experiences affecting residents may provide context but do not automatically
+apply to a short-term visitor. General crime, conflict and other travel risks
+still matter, even when they are outside the map's score.
+
+Evidence needs to be read in context: a proposal is not an enacted rule, an
+individual incident does not establish a widespread practice, and a statement
+by a person or group is not necessarily government policy. Dates, geography,
+conditions of enforcement and available remedies matter. Missing evidence is
+not proof of either safety or danger.
+
+Source links appear in popups where provided. Some records have detailed
+summaries; others have only links or limited local information. A lack of
+specific local evidence should not be read as a finding that a place is safe.
+
+## How the displayed scores were produced
+
+The published values were produced using different historical methods. Some
+country values reflect national-framework assessments; others aggregate
+regional scores, and at least one includes a manual override. Some assessments
+used comparisons of anonymised descriptions; anonymisation does not guarantee
+that every place was unrecognisable or that an assessment was accurate.
+
+For some division estimates, assessments were compared with reference countries
+and combined with fixed historical reference values. Only part of the parent
+country's context was supplied, and its national score was not the numerical
+starting point. Other divisions inherit their parent's score rather than having
+an independent local assessment. These historical methods do not constitute a
+single validated national-then-local scoring method.
+
+A country score cannot describe every local difference, and an inherited
+regional value is not evidence that conditions there match the national
+picture. Decimal differences and ranks should not be treated as precise
+measurements of relative safety.
+
+## Boundaries and sources
+
+The map uses de jure boundaries: internationally recognised legal claims rather
+than lines of current control. Boundary choices are documented in
+[`tools/patch_dejure.md`](tools/patch_dejure.md). Country and first-level
+boundaries use [geoBoundaries](https://www.geoboundaries.org/) gbOpen (CC BY
+4.0); the Western Sahara polygon uses Natural Earth material (public domain).
+
+Research notes are available in [`research/`](research/). The previous version
+of this document is preserved there as a historical, non-authoritative archive.
+
+## Using the map
+
+The map is informational research, not personalised travel advice. Conditions
+change, and a visitor's circumstances matter. Check current, relevant sources
+before travelling and consider risks beyond those represented here.
+
+The map, scores and project data are dedicated to the public domain under
+CC0 1.0. Boundary data retain their upstream licences.

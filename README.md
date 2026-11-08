@@ -1,82 +1,43 @@
-# Trans Travel Safety Map — 2026 Edition
+# Trans Travel Safety Map
 
-A zoomable, colour-coded world map scoring the risk to **transgender visitors** —
-people who are, or may be discovered to be, trans — in every country (233
-jurisdictions) and, where evidence supports it, in first-level administrative
-divisions.
+A static, zoomable map of historical estimates of trans-specific risk to
+visitors across countries and first-level divisions.
 
-**Live site:** https://tiresias1.github.io/trans-travel-safety-map/ (GitHub Pages,
-static, no build step).
+**Site:** https://tiresias1.github.io/trans-travel-safety-map/
 
-**Full methodology: [`METHODOLOGY.md`](METHODOLOGY.md)** — the risk taxonomy,
-evidence standards, calibration rules, and the blind pairwise refinement process.
-Also linked from the site's About dialog.
+**Methodology:** [METHODOLOGY.md](METHODOLOGY.md)
 
-## What the score means
+## Reading the map
 
-- **0.00 (dark red)** = a discovered trans visitor faces near-certain imprisonment or
-  execution … **1.00 (light blue)** = full legal and social acceptance. Continuous
-  gradient; five named bands (Do Not Travel / High Risk / Elevated Risk / Reduced
-  Risk / Low Risk) label it.
-- Covers the *visitor's* everyday exposure: public presence, bathrooms and facilities,
-  documents and border crossings, police interactions, arrest and detention (including
-  gender-mismatched placement), harassment and violence, medication. Deliberately
-  **excludes** general travel risks and resident-only issues (though both may appear in
-  a popup as context under "Not factored into the score").
-- **Research-driven, not memory-driven**: every jurisdiction was assessed from fetched
-  primary sources; each popup lists them with summaries. The whole map was then refined
-  through 10,000 **blind pairwise comparisons** — evidence presented anonymously to a
-  rating model, without names or prior scores.
-- **Updated annually.** This edition reflects research through September 2026.
+Scores are approximate comparisons, not probabilities or personalised travel
+advice. The intended scenario is a visitor who is identified as trans; passing,
+silence and avoidance do not earn a place credit. Higher values indicate lower
+estimated risk.
 
-## Boundaries (de jure)
+Exactly **0.00** means that an outed trans visitor faces near-certain
+imprisonment **and** likely execution. No other point has a defined precise
+consequence. The colour bands are display groupings, not calibrated safety
+thresholds.
 
-Internationally recognised legal claims, not lines of current control — Crimea and
-occupied territories render within Ukraine; Kashmir along the Line of Control. Every
-contested-area decision is documented in [`tools/patch_dejure.md`](tools/patch_dejure.md).
+Evidence varies by place. Sources are linked in popups where provided, and
+missing evidence is not proof of safety or danger. Some division scores inherit
+the national score; some historical country scores incorporate regional
+aggregates or manual adjustments. National and local values should not be
+read as precise, independently validated comparisons.
 
-- Countries: geoBoundaries gbOpen (CC BY 4.0), patched per that policy.
-- First-level divisions: geoBoundaries gbOpen ADM1 (CC BY 4.0).
-- Western Sahara polygon derived from the de jure Morocco/W.Sahara boundary line.
+## Boundaries and data
 
-## Repository layout
+Boundaries represent de jure legal claims rather than lines of current control.
+Boundary decisions are documented in [`tools/patch_dejure.md`](tools/patch_dejure.md).
+Country and first-level boundaries use geoBoundaries gbOpen (CC BY 4.0), with
+Natural Earth material for Western Sahara.
 
-```
-index.html, css/, js/       the Leaflet map app (vanilla JS)
-boundaries/                 countries.geojson (233), admin1.geojson (3,245)
-data/countries.json         scores, summaries, sources, anonymised dossiers
-data/admin1.json            per-division scores (keyed by shapeID)
-data/meta.json              bands, gradient anchors, edition, repoUrl
-research/                   per-country notes, anchors, audits, ADM1 dossiers
-research/admin1/            sub-national research dossiers (24 countries)
-tools/                      boundary pipeline, build/validation, blind-pairwise suite
-METHODOLOGY.md              canonical public methodology
-```
+- `index.html`, `css/`, `js/`: the Leaflet map application
+- `boundaries/`: country and first-level geometries
+- `data/`: scores, summaries, sources and metadata
+- `research/`: research notes, historical methods and experiments
+- `tools/`: data validation and boundary tooling
 
-## Data pipeline
-
-```
-raw geoBoundaries → tools/merge_adm0.py (de jure patches) → tools/promote_units.py
-  (HKG/MAC/PRI + territories to country level) → mapshaper simplify → boundaries/*.geojson
-research (hand + lightweight-model passes) → data/countries.json
-  → tools/blind_pairwise.py (blind pairwise refinement, 2 runs, 10k pairs)
-  → tools/build_data.py (validation + competition ranking) → data/meta.json
-sub-national: research/admin1/*.md dossiers → initial scores (tools/apply_admin1_scores.py)
-  → tools/blind_pairwise.py --admin1 --country <ISO3> (in-country, parent-context pairs)
-```
-
-CI (`.github/workflows/validate.yml`) runs the validator and fails if committed data
-is out of sync with `tools/build_data.py` output.
-
-## Status
-
-- ✅ Site, de jure boundaries, toggle, popups, gradient legend, mobile CSS
-- ✅ 233/233 jurisdictions researched, hand-calibrated (15 frozen anchors, 6 calibration
-  rules), reanalysed, and blind-pairwise-refined (10,000 pairs over 2 runs)
-- ✅ Annual-edition branding + public methodology (`METHODOLOGY.md`)
-- ⏳ Sub-national layer: 24-country research dossiers complete; USA divisions scored and
-  in refinement; remaining countries being scored from dossiers; divisions without
-  sub-national evidence inherit their national score (popup says so)
-
-*Informational research, not personalised advice. Conditions change; verify with
-current official travel advisories before travelling.*
+The map and project data are dedicated to the public domain under CC0 1.0;
+boundary data retain their upstream licences. Conditions change, so consult
+current, relevant sources before travelling.

@@ -457,46 +457,29 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     const gen = meta.generatedAt ? esc(meta.generatedAt) : "—";
     const repo = (meta.repoUrl || "").replace(/\/+$/, "");
     const methUrl = repo ? `${repo}/blob/HEAD/METHODOLOGY.md` : "METHODOLOGY.md";
-    const repoLinks = repo
-      ? `(see also the <a href="${repo}/blob/HEAD/research/outing-risk-taxonomy.md" target="_blank" rel="noopener">risk taxonomy</a> and <a href="${repo}/blob/HEAD/research/anchors.md" target="_blank" rel="noopener">calibration anchors</a>) `
-      : "";
     return `
-    <p>This map scores the risk to a <strong>transgender visitor</strong> — someone who is,
-    or is discovered to be, trans — in every country and, where evidence supports it, in each
-    state/province. Scores run from 0.00 (dark red, highest risk) to 1.00 (light blue, lowest risk),
-    using a continuous colour gradient whose anchor colours sit at the centre of the five
-    named bands (Severe Risk, High Risk, Elevated Risk, Reduced Risk, Low Risk). These are
-    index ranges on the published scale, not travel advice.</p>
-    <p>What the score covers: everyday exposure of a trans visitor — presence in public,
-    use of public bathrooms, documents and border crossings, police interactions,
-    arrest risk including detention in a gender-mismatched facility, harassment and violence,
-    access to medication. It deliberately <em>excludes</em> general travel risks (crime,
-    disease, conflict) and risks specific to residents (e.g. adoption or employment law),
-    except where those signal official or public hostility. General risks, where serious,
-    are listed in a region's popup under “Caveats and unresolved questions.”</p>
-    <p>Scores are derived from web research (search results and primary sources fetched and
-    read per region), not model memory. Every region's popup lists its sources. Ranks are
-    competition-ranked (ties share a rank). Regions are compared against calibration anchor
-    countries so the scale is relative as well as absolute, and the whole map was then
-    refined through thousands of blind pairwise comparisons (each region's evidence
-    presented anonymously, without names or prior scores, and rated against a randomly
-    drawn partner).</p>
-    <p>The full methodology — the risk taxonomy, the severity ladder, the calibration
-    rules, and the blind-refinement process — is documented in
-    <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>
-    ${repoLinks}in the project repository. This edition covers research through
-    ${esc(meta.edition || "2026")}; the map is updated annually.</p>
-    <p><strong>License:</strong> the map, its scores, and all project data files are
-    dedicated to the public domain (CC0 1.0) — free of copyright restrictions.</p>
-    <p><strong>Boundaries are de jure</strong> (internationally recognised legal claims, not
-    lines of current control — e.g. Crimea and occupied territories are shown within
-    Ukraine). Contested areas with two legal claims are rendered at the most widely
-    recognised position with a caveat in the relevant popups.
-    Country boundaries and first-level divisions: <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener">geoBoundaries</a> gbOpen (CC BY 4.0);
-    Western Sahara polygon: Natural Earth (public domain); de jure conflict patches are documented in the repository.</p>
-    <p>Data generated: ${gen}. Methodology version: ${esc(meta.methodologyVersion || "1.0")}.</p>
-    <p class="muted">This map is informational research, not personalised advice. Conditions change;
-    verify with current official travel advisories before travelling.</p>`;
+    <p>This map presents <strong>historical, approximate estimates</strong> of risk to
+    transgender visitors. They are not probabilities or precise predictions for a trip.
+    Higher scores indicate lower estimated risk; the colour bands are display groupings,
+    not calibrated safety thresholds.</p>
+    <p>The intended scenario is a visitor who is identified as trans. Passing, silence and
+    avoidance do not earn a place credit. <strong>Exactly 0.00</strong> means an outed
+    trans visitor faces near-certain imprisonment <em>and</em> likely execution. No other
+    point on the scale has a defined precise consequence.</p>
+    <p>Evidence varies by place. Sources are linked where provided, and missing evidence
+    is not proof of safety or danger. Some national values reflect regional aggregates;
+    some divisions inherit a national score rather than having an independent local
+    assessment. A country score cannot describe every local difference.</p>
+    <p>Read more about the scope and limitations in
+    <a href="${methUrl}" target="_blank" rel="noopener">METHODOLOGY.md</a>.
+    Data generated: ${gen}.</p>
+    <p><strong>Boundaries are de jure</strong>: internationally recognised legal claims,
+    not lines of current control. Country and first-level boundaries use
+    <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener">geoBoundaries</a>
+    gbOpen (CC BY 4.0); the Western Sahara polygon uses Natural Earth material (public domain).
+    The map and project data are dedicated to the public domain under CC0 1.0.</p>
+    <p class="muted">This map is informational research, not personalised travel advice.
+    Conditions change; consult current, relevant sources before travelling.</p>`;
   }
   const dlg = document.getElementById("aboutDialog");
   document.getElementById("btnAbout").addEventListener("click", () => {
