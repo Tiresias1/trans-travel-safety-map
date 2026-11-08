@@ -1,0 +1,66 @@
+{
+ "experiment": "research/experiments/country-calibration-audit/rule-contrasts",
+ "git_commit": "4ce04e50c45d5689ebbdbb3d81a581fc5552006f",
+ "sources": {
+  "tools/blind_pairwise.py": "5317d211628aaec4288541eef67ddc8375309e480babc5f733a6b183b012797e",
+  "research/outing-risk-taxonomy.md": "bce9348013b964795346f3372a272c4e0f0e4b94ec3dba90ec22624e746b8d79",
+  "research/experiments/country-calibration-audit/rule-contrasts/replacements.json": "a0e630cc3b8366cacb297e7480e5928b126d7791b34773aedb8a7ad4b0ed5672",
+  "research/experiments/country-calibration-audit/rule-contrasts/fixtures/P1_bundled_institutional_practice.json": "dd370e4ee5ea2d1e5c215e3b1499b5f28538463b9efb197c195adfa832fe6750",
+  "research/experiments/country-calibration-audit/rule-contrasts/fixtures/P2_custody_trigger.json": "7f86656f46d504505e88664db6e152bcdfd97a7d3ba2998c876a0bd3bab5de0c",
+  "research/experiments/country-calibration-audit/rule-contrasts/fixtures/P3_social_framing.json": "86d0b2fcf31d17690cf2bc1a678169e37098754d6ef27e2d0028ccd7c52b36a5",
+  "research/experiments/country-calibration-audit/rule-contrasts/fixtures/P4_identical_control.json": "af3adea290579e6a1d73aba78f02f3c0d175cae2f7731bfe9764066ab333d3f4",
+  "research/experiments/country-calibration-audit/rule-contrasts/fixtures/P5_general_hazard_control.json": "c279624236dfdd37f3fa98388ae7719aac9fb794c12a38b798eb17d8e4ef1055"
+ },
+ "proposal_sha256": "39e9d0ac92166939ced2795ca073d9079e1062249bc70998e2aae06461159e2e",
+ "prompts": {
+  "candidate_a.txt": {
+   "sha256": "ca8e3ea6d743315fdce74697752a1ebe9d72cf4299e23b3facd41fd2d7600b2e",
+   "bytes": 42287,
+   "path": "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_a.txt"
+  },
+  "candidate_b.txt": {
+   "sha256": "23a8acdfa705eee97895f75fda26f3df244393fca62b9feb5828d71e83a58b96",
+   "bytes": 42752,
+   "path": "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_b.txt"
+  }
+ },
+ "shared_replacements": 17,
+ "variant_sites": [
+  "rule9",
+  "rule10b",
+  "product",
+  "task_line",
+  "tax_intro",
+  "tax_guidance",
+  "tax_k"
+ ],
+ "excluded_from_scope": "review section 4 (rules 12/15-20 boundaries, ADM1 lane) not applied",
+ "models": [
+  "deepseek/deepseek-v4.1-flash",
+  "google/gemini-3.8-flash"
+ ],
+ "call_ceiling": 40,
+ "presentation_orders": [
+  "left_first",
+  "right_first"
+ ],
+ "caps": {
+  "per_call_output_tokens": 2000,
+  "total_input_tokens": 700000,
+  "total_output_tokens": 90000,
+  "stop_on_unknown_usage": true,
+  "draws_per_condition": 1,
+  "retries_selected_for_output": 0
+ },
+ "seed": 20261119,
+ "schedule_sha256": "66baf8431e0176fb0fd1b9dc03d7ef91696289f47439c3bab204b55f470e49db",
+ "schedule_file_sha256": "b2a4074a469c6684eae5d5846d20079ad188eda60946dd0646de5948812b318d",
+ "user_messages_file_sha256": "88a6713b275eb34cbf79245fb30ef23015c48785d9a47f2e0c3f7b816dde48d0",
+ "user_message_count": 40,
+ "forbidden_env_hooks": [
+  "STRIP_RULE_10B",
+  "REVERT_ENDPOINT",
+  "RESTORE_ARCHIVED_WORDING"
+ ],
+ "live_code": "none - no network, credential or provider code in this experiment"
+}

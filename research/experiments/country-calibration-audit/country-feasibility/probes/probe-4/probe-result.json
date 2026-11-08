@@ -1,0 +1,58 @@
+{
+ "slot": "probe-4",
+ "model": "google/gemini-3.8-flash",
+ "attempt_kind": "operational_probe",
+ "attempt_phase": "adaptive_followup",
+ "scoring_request": false,
+ "requested_settings": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_output_tokens": 2000
+ },
+ "reserved_input_units": 374,
+ "reserved_output_tokens": 2000,
+ "preflight_receipt_sha256": "430103f6a6c79d98b783c94779cc23c7fe1620478af01a13f020af43ec1dc54f",
+ "request_headers_logged": {
+  "Content-Type": "application/json",
+  "Authorization": "[REDACTED]"
+ },
+ "errors": [],
+ "retry": false,
+ "started_at": "2026-11-08T03:57:50+00:00",
+ "http_status": 200,
+ "finish_reason": "stop",
+ "returned_model": "google/gemini-3.8-flash",
+ "returned_provider": "Google",
+ "usage": {
+  "prompt_tokens": 53,
+  "completion_tokens": 154,
+  "total_tokens": 207,
+  "cost": 0.00061725,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00061725,
+   "upstream_inference_prompt_cost": 3.975e-05,
+   "upstream_inference_completions_cost": 0.0005775
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 148,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost": 0.00061725,
+ "billed_input_tokens": 53,
+ "billed_output_tokens": 154,
+ "status": "completed",
+ "raw_response": "\n         \n{\"id\":\"gen-1794110270-0TMzHxo7IM8DnbBoLgJS\",\"object\":\"chat.completion\",\"created\":1794110270,\"model\":\"google/gemini-3.8-flash\",\"provider\":\"Google\",\"system_fingerprint\":null,\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"probe\\\": \\\"ok\\\"}\",\"refusal\":null,\"reasoning\":\"**Synthesizing Operational Details**\\n\\nI'm currently focusing on extracting and structuring the operational transport schema. My progress involves identifying key data points for usage probing, aiming for a comprehensive understanding of how these elements function together in practice.\\n\\n\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"**Synthesizing Operational Details**\\n\\nI'm currently focusing on extracting and structuring the operational transport schema. My progress involves identifying key data points for usage probing, aiming for a comprehensive understanding of how these elements function together in practice.\\n\\n\",\"format\":\"google-gemini-v1\",\"index\":0},{\"type\":\"reasoning.encrypted\",\"data\":\"AY89a18F+vFIKdLMjjKUJns/LWjeCdjoEZ0tiHLLAE2mCzY3WmKfouGPWkKVzznlImlR//FY+n4O2MCcPIJbHsnpa0VqhZFnxKWi8ZcqU5RYGX7rwLVQmOsrq1bgzx3z5nzDpHlosYZp2ykyOU45v0vgFRhWDrxgwcwX41bLxgG9E+6wlUzomVf1/vrdj0d9fXQ0qmB1YikFGvZt0m6OMXvucPZe4r8rvF6ykPlkrV/DKkPnJ7Ba1fxynDenpBa+4otSdUHrI4Xoi+9Efn7VJZsyBdRt3P3upwTIjwBnVi6ccJQfecgTKQLcytDZS1Z440Ey+SXgP6ym9Dh1r9D9bAP7iMnrTyr9x3OgQN2vVis+BbWB28XJbPqaZYNGWsG71qeQVAGte3CtPmIGXFfZQKZFyWrrPc0SMuiKFEf0zrlCFONxMIkU/NiDsdN2EavGVIA3CyCuBxAme3NdhSePdZz0YXc2KgO//wOhgsNddtFRu/v8uI7Wpn4mZPfqeFW+AsWZJxDsdL8R3Y4B5Sh7tEWttXgZKNpWKIWRVOu+J81eUIKRTYrzU/Cw8uCATiYZ3yZ/xhtSkr6u9wGOO5UB2VMcOmTQhGwECd6xJk7OQSU169d7Iw0bmUU3D3xgpChqNmjkPn69SPnEw6Tnf1EFLosHlEz7VOX6ypS3INZz6hq3gVkhaHthw/Agz0Q8MIQBQcZQDIOQGuxA8+2JVEh/dIz7THTlXhpbYz4nCyTiw/r1OIvs+qU144bokYy5GtQqpm5qqZ30g2i+uuDPXm3bsMjfHLv0AtrGuFZVAnXayBN6nAO1jsOGbKYwCUBVMChpjpWVEW9WfEzM9LFes3KdgAXCHzpMAsU166vNjN4lOozIdSQSUxe2uNmMimtADkrncfT6w4YGTv9J12HB7q2/R1//UR79ievoi82C/Oqru8UGFhYSI1PobXm5QnaoYwNFnmc8yiwRaVpPlfT2qnJ7i4DPCl/BtvIADlsGvUg3poOfjlP3SmKIGMxjtw8oCFmLZQc2Z9ASxZLVEIBNXHum/kMjyMnj\",\"format\":\"google-gemini-v1\",\"index\":1}]}}],\"usage\":{\"prompt_tokens\":53,\"completion_tokens\":154,\"total_tokens\":207,\"cost\":0.00061725,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00061725,\"upstream_inference_prompt_cost\":0.00003975,\"upstream_inference_completions_cost\":0.0005775},\"completion_tokens_details\":{\"reasoning_tokens\":148,\"image_tokens\":0,\"audio_tokens\":0}}}",
+ "finished_at": "2026-11-08T03:57:53+00:00",
+ "used_input_tokens": 53,
+ "used_output_tokens": 154,
+ "used_usd": 0.00061725
+}

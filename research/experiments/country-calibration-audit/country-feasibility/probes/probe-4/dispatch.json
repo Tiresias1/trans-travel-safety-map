@@ -1,0 +1,49 @@
+{
+ "slot": "probe-4",
+ "model": "google/gemini-3.8-flash",
+ "attempt_kind": "operational_probe",
+ "attempt_phase": "adaptive_followup",
+ "scoring_request": false,
+ "scope": "transport/schema/usage only; makes no claim about future provider behavior, token bounds or scoring validity",
+ "request": {
+  "model": "google/gemini-3.8-flash",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Reply with only this JSON object and no other text: {\"probe\": \"ok\"}"
+   },
+   {
+    "role": "user",
+    "content": "Operational transport, schema and usage probe. This is not an assessment request: it contains no jurisdiction, evidence or rating content, and no output of it is used as a result."
+   }
+  ],
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 2000,
+  "stream": false,
+  "usage": {
+   "include": true
+  },
+  "provider": {
+   "allow_fallbacks": false
+  }
+ },
+ "request_sha256": "34f6cb28d1490f5c1f52e1778b6cfba63d6609eb17f027632b4dbb85d569d8e6",
+ "reserved_input_units": 374,
+ "reserved_output_tokens": 2000,
+ "reserved_usd": 0.00855855,
+ "preflight_receipt_sha256": "430103f6a6c79d98b783c94779cc23c7fe1620478af01a13f020af43ec1dc54f",
+ "manifest_sha256": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+ "probe_amendment_sha256": "be30bb2fd39c387043beff96f4830048c9a9118d22a3332e7c95a9914fd6bf3c",
+ "request_headers_logged": {
+  "Content-Type": "application/json",
+  "Authorization": "[REDACTED]"
+ },
+ "dispatched_at": "2026-11-08T03:57:50+00:00",
+ "retry": false,
+ "probe_followup_amendment_sha256": "cb4366bd15a5f03c25ca8620def33494714325b182b6612909f2db4555af98cd",
+ "adapted_after": {
+  "original_failure_slot": "probe-2",
+  "note": "adaptive-after-failure: the original 64-token output probe probe-2 recorded a failure; recorded in probe-followup-amendment.md before this dispatch"
+ }
+}

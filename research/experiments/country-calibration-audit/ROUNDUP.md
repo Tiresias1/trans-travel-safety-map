@@ -1,5 +1,10 @@
 # Roundup — state at end of this session (2026-11-07)
 
+> **Historical roundup; superseded where inconsistent.** See
+> [CURRENT_STATUS.md](CURRENT_STATUS.md) for the present state. The pairwise
+> order analysis was corrected, earlier ordering and causal claims were
+> overstated, and no score or country ordering is a target.
+
 All evidence and reports live in this folder. Nothing was committed; nothing user-visible
 was deployed; no published score changed at any point.
 

@@ -1,0 +1,57 @@
+{
+ "slot": "probe-1",
+ "model": "deepseek/deepseek-v4.1-flash",
+ "attempt_kind": "operational_probe",
+ "scoring_request": false,
+ "requested_settings": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_output_tokens": 64
+ },
+ "reserved_input_units": 374,
+ "reserved_output_tokens": 64,
+ "preflight_receipt_sha256": "262c698e5ddc6a104a86a6cca5eda7219c4832bb353c31e14040431b8a032600",
+ "request_headers_logged": {
+  "Content-Type": "application/json",
+  "Authorization": "[REDACTED]"
+ },
+ "errors": [],
+ "retry": false,
+ "started_at": "2026-11-08T03:03:10+00:00",
+ "http_status": 200,
+ "finish_reason": "stop",
+ "returned_model": "deepseek/deepseek-v4.1-flash",
+ "returned_provider": "Relace",
+ "usage": {
+  "prompt_tokens": 85,
+  "completion_tokens": 30,
+  "total_tokens": 115,
+  "cost": 1.551e-05,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 1.551e-05,
+   "upstream_inference_prompt_cost": 5.1e-07,
+   "upstream_inference_completions_cost": 1.5e-05
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 19,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost": 1.551e-05,
+ "billed_input_tokens": 85,
+ "billed_output_tokens": 30,
+ "status": "completed",
+ "raw_response": "\n         \n{\"id\":\"gen-1794106990-7PhsDMgoeYLY5Ey3xTWC\",\"object\":\"chat.completion\",\"created\":1794106990,\"model\":\"deepseek/deepseek-v4.1-flash\",\"provider\":\"Relace\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"probe\\\": \\\"ok\\\"}\",\"refusal\":null,\"reasoning\":\"We need answer only JSON object no other text: {\\\"probe\\\": \\\"ok\\\"}. Need comply.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"We need answer only JSON object no other text: {\\\"probe\\\": \\\"ok\\\"}. Need comply.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":85,\"completion_tokens\":30,\"total_tokens\":115,\"cost\":0.00001551,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00001551,\"upstream_inference_prompt_cost\":5.1e-7,\"upstream_inference_completions_cost\":0.000015},\"completion_tokens_details\":{\"reasoning_tokens\":19,\"image_tokens\":0,\"audio_tokens\":0}}}",
+ "finished_at": "2026-11-08T03:03:12+00:00",
+ "used_input_tokens": 85,
+ "used_output_tokens": 30,
+ "used_usd": 1.551e-05
+}

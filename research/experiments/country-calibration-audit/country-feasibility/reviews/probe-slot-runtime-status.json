@@ -1,0 +1,287 @@
+{
+  "lifecycleArtifactVersion": 3,
+  "runId": "659f25f3-c79e-450a-8fed-829538ed0e38",
+  "sessionId": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/2026-09-22T00-37-58-015Z_01a0c68c-4a7e-70bf-9430-0e3078b7a01b.jsonl",
+  "completionOwnerId": "15fd79be-2e3f-4750-b9b2-7e67aa269ebf",
+  "mode": "single",
+  "state": "complete",
+  "steering": {
+    "requested": 0,
+    "scheduled": 0,
+    "pending": 0,
+    "delivered": 0,
+    "failed": 0,
+    "recovered": 0,
+    "recent": []
+  },
+  "lastActivityAt": 1794110674031,
+  "startedAt": 1794110651835,
+  "lastUpdate": 1794110674100,
+  "pid": 1047182,
+  "pidNamespaceScope": "pid:[4026531836]",
+  "cwd": "/home/meme/kóði/kort",
+  "currentStep": 0,
+  "chainStepCount": 1,
+  "parallelGroups": [],
+  "launchContractDigest": "76d07d7d044a06b3470624ac6fc260b5de74aae32f15468f32915b1a49380fe6",
+  "launchResolvedExtensions": {
+    "version": 1,
+    "source": "launch-resolved",
+    "disableAmbientExtensions": false,
+    "runtime": [
+      "sha256:87124b684df3cbd3"
+    ],
+    "configured": [],
+    "required": [],
+    "effective": [
+      "sha256:87124b684df3cbd3"
+    ],
+    "omitted": {
+      "runtime": 0,
+      "configured": 0,
+      "required": 0,
+      "effective": 0
+    }
+  },
+  "runFanoutBudget": {
+    "used": 2,
+    "limit": 64,
+    "remaining": 62
+  },
+  "processTerminal": {
+    "version": 1,
+    "state": "observed",
+    "runId": "659f25f3-c79e-450a-8fed-829538ed0e38",
+    "runnerProcessInstanceId": "d9fa383d-7f80-44b4-a65c-a546cc5631f0",
+    "observedAt": 1794110674189,
+    "instances": [
+      {
+        "kind": "runner",
+        "processInstanceId": "d9fa383d-7f80-44b4-a65c-a546cc5631f0",
+        "closeObservedAt": 1794110674189,
+        "exitCode": 0,
+        "signal": null
+      }
+    ],
+    "resumeDisposition": "resumable",
+    "canonicalSession": {
+      "canonicalSessionId": "ddcd7f65cf0ef22d9575d46283dcc23bbce62ae6b31ff5eecb2b21365d1303dd",
+      "leaseDisposition": "released",
+      "freeAtObservation": true,
+      "canonicalSessionLeaseReleased": true
+    }
+  },
+  "steps": [
+    {
+      "agent": "reviewer",
+      "sessionName": "reviewer: You are reviving a previous subagent conversation. Origin...",
+      "description": "[prompt redacted]",
+      "context": "fresh",
+      "launchContractDigest": "76d07d7d044a06b3470624ac6fc260b5de74aae32f15468f32915b1a49380fe6",
+      "launchResolvedExtensions": {
+        "version": 1,
+        "source": "launch-resolved",
+        "disableAmbientExtensions": false,
+        "runtime": [
+          "sha256:87124b684df3cbd3"
+        ],
+        "configured": [],
+        "required": [],
+        "effective": [
+          "sha256:87124b684df3cbd3"
+        ],
+        "omitted": {
+          "runtime": 0,
+          "configured": 0,
+          "required": 0,
+          "effective": 0
+        }
+      },
+      "status": "complete",
+      "sessionFile": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/2026-09-22T00-37-58-015Z_01a0c68c-4a7e-70bf-9430-0e3078b7a01b/efa8233e-b930-4158-a592-ec7c711901ac/run-0/session.jsonl",
+      "transcriptPath": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/659f25f3-c79e-450a-8fed-829538ed0e38_reviewer_transcript.jsonl",
+      "skills": [],
+      "model": "openrouter-flex/openai/gpt-6.1-sol:floor:low",
+      "contextLimit": 1050000,
+      "thinking": "low",
+      "requestedModel": "openrouter-flex/openai/gpt-6.1-sol:floor:low",
+      "recentTools": [
+        {
+          "tool": "read",
+          "args": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/sub...",
+          "endMs": 1794110656118
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658873
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658875
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658876
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658877
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658878
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658880
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658881
+        },
+        {
+          "tool": "read",
+          "args": "research/experiments/country-calibration-audit/country-fe...",
+          "endMs": 1794110658885
+        }
+      ],
+      "recentOutput": [
+        "      \"model\": \"OpenAI assistant; exact model identifier unavailable in this session\",",
+        "      \"agent\": \"reviewer\",",
+        "      \"session_identity\": \"Revived reviewer conversation; original run 8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6; original session efa8233e-b930-4158-a592-ec7c711901ac\"",
+        "    },",
+        "    \"statement\": \"Inspected actual dispatch and result. Explicitly adaptive-after-failure non-country follow-up requested google/gemini-3.8-flash with max_tokens 2000 and provenance to probe-2, after probe-3 completed. Archived response identifies the requested model via Google, HTTP 200, finish_reason stop, content {\\\"probe\\\": \\\"ok\\\"}, status completed, and retry false. Reported usage is 53 input and 154 output tokens, including 148 reasoning tokens; reported cost is USD 0.00061725. This successful follow-up does not erase original probe-2's stopped failure or supply its missing HTTP status. It establishes neither causal recovery nor future behavior or scores; account billing was not independently reconciled. Hashes below are attributed to the independent hash audit, not recomputed by me.\",",
+        "    \"probe_result_sha256\": \"88e89f431dba67fee364048d5496d4b8905fa4168d65c9d05572cbf21e0db9f4\",",
+        "    \"raw_response_sha256\": \"e666978e0b9e9b14d3433eabb9379f8bfa8f8e4d8d94c80de2446d6ec6c6d223\",",
+        "    \"hash_source\": \"/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/outputs/2d35decd-6fa7-4a05-9aef-170d40152771/probe-final/hashes.md\"",
+        "  }",
+        "}"
+      ],
+      "processTerminal": {
+        "version": 1,
+        "runId": "659f25f3-c79e-450a-8fed-829538ed0e38",
+        "childIndex": 0,
+        "runnerProcessInstanceId": "d9fa383d-7f80-44b4-a65c-a546cc5631f0",
+        "resumeDisposition": "resumable",
+        "state": "not-started"
+      },
+      "startedAt": 1794110651853,
+      "lastActivityAt": 1794110674031,
+      "turnCount": 3,
+      "tokens": {
+        "input": 9,
+        "output": 2488,
+        "total": 2497,
+        "window": 24987,
+        "windowPeak": 24987
+      },
+      "toolCount": 9,
+      "endedAt": 1794110674096,
+      "durationMs": 22243,
+      "exitCode": 0,
+      "totalCost": {
+        "inputTokens": 9,
+        "outputTokens": 2488,
+        "costUsd": 0.032044175
+      },
+      "acceptance": {
+        "status": "attested",
+        "evidenceStatus": "attested",
+        "explicit": false,
+        "effectiveAcceptance": {
+          "level": "attested",
+          "explicit": false,
+          "inferredReason": [
+            "default lightweight attestation"
+          ],
+          "criteria": [
+            {
+              "id": "criterion-1",
+              "must": "Return a concise result and residual risks when applicable",
+              "evidence": [
+                "manual-notes",
+                "residual-risks"
+              ],
+              "severity": "required"
+            }
+          ],
+          "evidence": [
+            "manual-notes",
+            "residual-risks"
+          ],
+          "verify": [],
+          "stopRules": []
+        },
+        "inferredReason": [
+          "default lightweight attestation"
+        ],
+        "criteria": [
+          {
+            "id": "criterion-1",
+            "must": "Return a concise result and residual risks when applicable",
+            "evidence": [
+              "manual-notes",
+              "residual-risks"
+            ],
+            "severity": "required"
+          }
+        ],
+        "runtimeChecks": [],
+        "verifyRuns": [],
+        "childReport": {
+          "criteriaSatisfied": [
+            {
+              "id": "criterion-1",
+              "status": "satisfied",
+              "evidence": "Read all eight actual dispatch/result files and independent hashes.md; supplied four explicitly attributed slot attestations with result-file and raw-response digests."
+            }
+          ],
+          "changedFiles": [],
+          "testsAddedOrUpdated": [],
+          "commandsRun": [],
+          "validationOutput": [
+            "probe-1 reviewed_ok; probe-2 reviewed_failure; probe-3 reviewed_ok; probe-4 reviewed_ok."
+          ],
+          "residualRisks": [
+            "Exact reviewer model identifier and a new revival session identifier were not exposed; available original conversation identity is stated honestly.",
+            "Hash recomputation is attributed to the independent audit, not performed by this reviewer.",
+            "No independently reconciled account billing, future behavior, causal recovery, scoring validity, or execution authorization is attested.",
+            "Original probe-2 remains stopped with no archived HTTP status."
+          ],
+          "diffSummary": "Read-only follow-up; no files edited.",
+          "reviewFindings": [
+            "Per-slot statuses concern observed archived outcomes only; they do not establish satisfaction of every progression gate."
+          ],
+          "manualNotes": "No edits or provider calls. No review timestamp was invented. These returned attestations do not themselves write review.json files or update receipt bindings."
+        }
+      }
+    }
+  ],
+  "artifactsDir": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts",
+  "sessionDir": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/2026-09-22T00-37-58-015Z_01a0c68c-4a7e-70bf-9430-0e3078b7a01b/efa8233e-b930-4158-a592-ec7c711901ac/async-8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6",
+  "outputFile": "/tmp/pi-subagents-uid-1000/async-subagent-runs/659f25f3-c79e-450a-8fed-829538ed0e38/output-0.log",
+  "totalTokens": {
+    "input": 9,
+    "output": 2488,
+    "total": 2497,
+    "window": 24987,
+    "windowPeak": 24987
+  },
+  "turnCount": 3,
+  "toolCount": 9,
+  "outputs": {},
+  "endedAt": 1794110674100,
+  "sessionFile": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/2026-09-22T00-37-58-015Z_01a0c68c-4a7e-70bf-9430-0e3078b7a01b/efa8233e-b930-4158-a592-ec7c711901ac/run-0/session.jsonl",
+  "totalCost": {
+    "inputTokens": 9,
+    "outputTokens": 2488,
+    "costUsd": 0.032044175
+  }
+}

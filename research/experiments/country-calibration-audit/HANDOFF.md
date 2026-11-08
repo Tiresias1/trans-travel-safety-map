@@ -1,5 +1,10 @@
 # Country-comparison audit and bounded pilot — handoff
 
+> **Historical handoff; superseded where inconsistent.** See
+> [CURRENT_STATUS.md](CURRENT_STATUS.md) for current rules, deployed changes and
+> diagnostic results. In particular, no country score or range is a target,
+> and historical descriptions of active scoring paths are not current authority.
+
 ## Non-negotiable requirements
 
 - A country's rating is its own country assessment. ADM1 scores must **not** be averaged or otherwise used to change it. The user permits a summary of relevant additional regional restrictions/protections as blind comparison input; that is distinct from arithmetic feedback from ADM1 ratings. Do not add that summary without a reviewed, general method.

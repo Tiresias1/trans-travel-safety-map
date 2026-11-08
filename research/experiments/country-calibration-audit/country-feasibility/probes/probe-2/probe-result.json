@@ -1,0 +1,40 @@
+{
+ "slot": "probe-2",
+ "model": "google/gemini-3.8-flash",
+ "attempt_kind": "operational_probe",
+ "scoring_request": false,
+ "requested_settings": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_output_tokens": 64
+ },
+ "reserved_input_units": 374,
+ "reserved_output_tokens": 64,
+ "preflight_receipt_sha256": "262c698e5ddc6a104a86a6cca5eda7219c4832bb353c31e14040431b8a032600",
+ "request_headers_logged": {
+  "Content-Type": "application/json",
+  "Authorization": "[REDACTED]"
+ },
+ "errors": [
+  "probe: incomplete output - empty content"
+ ],
+ "retry": false,
+ "started_at": "2026-11-08T03:03:14+00:00",
+ "status": "stopped",
+ "raw_response": "\n         \n{\"id\":\"gen-1794106994-0siK3sXrXESUBEhvbyAa\",\"object\":\"chat.completion\",\"created\":1794106994,\"model\":\"google/gemini-3.8-flash\",\"provider\":\"Google\",\"system_fingerprint\":null,\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"length\",\"native_finish_reason\":\"MAX_TOKENS\",\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"reasoning\":\"**Clarifying Operational Scope**\\n\\nI'm currently zeroing in on the operational aspects of transport, specifically how its schema and usage are being probed. My focus is on understanding the mechanics and implications of this investigation, ensuring I don't misinterpret it as an assessment.\\n\\n**Detailing Usage Patterns**\\n\\nI'm now analyzing how the transport schema is being utilized. I want to pinpoint specific instances and the resulting impact of its application. This detailed examination should clarify the nuances of its function.\\n\\n\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"**Clarifying Operational Scope**\\n\\nI'm currently zeroing in on the operational aspects of transport, specifically how its schema and usage are being probed. My focus is on understanding the mechanics and implications of this investigation, ensuring I don't misinterpret it as an assessment.\\n\\n**Detailing Usage Patterns**\\n\\nI'm now analyzing how the transport schema is being utilized. I want to pinpoint specific instances and the resulting impact of its application. This detailed examination should clarify the nuances of its function.\\n\\n\",\"format\":\"google-gemini-v1\",\"index\":0},{\"type\":\"reasoning.encrypted\",\"data\":\"AY89a1/GCTmxHhtO8qqCF2PyJaRPL3g2z2t+TjTfvtk2xv9ngqnSYbcKcp4TJGg+Uj82JnUp8O1CGDMlhw7KClEkW9Y5eRGX3Jg7O19w4FfrAP5z2k/n7q3l63QMK2VlhO0C70JTMVCESuo4qjI76KlZ8aya6eWp5GPTOYHknLdc86yo3l3INs1+tQBmqSmmD7TgXy2v3oEt+xTdiIFmrqbUCr6hg3p2GOYEdyEsM0vXzO2jbE+3UoQ/QRaikt1ce/tzUa8EYlYW4Pzi48oVmUeQpCwLm4JFTBWx+POI0YJg3pBoObCLRKQRH+GUH8MzAvvw6d2ntOiqS7m+BCi8xDQCY2etZBbIM/edUF3maOHo0h14Z4vqyYk7tw5u1jeaushg6Bvh72LloHkqCTYXCXRgMWOuOuf4+XbVeuxZC2EWF8lVue9teVaH5fQVHKX3h8CPdUVuLbB8AtZoyY73/u+jbzI3XE5AtWwZBqfzCxxc7X7FWAousMRMmfkAz5Cj+7zlgAJT4maYHJIe8Ij+\",\"format\":\"google-gemini-v1\",\"index\":1}]}}],\"usage\":{\"prompt_tokens\":53,\"completion_tokens\":60,\"total_tokens\":113,\"cost\":0.00026475,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00026475,\"upstream_inference_prompt_cost\":0.00003975,\"upstream_inference_completions_cost\":0.000225},\"completion_tokens_details\":{\"reasoning_tokens\":60,\"image_tokens\":0,\"audio_tokens\":0}}}",
+ "stop_reason": "probe: incomplete output - empty content",
+ "billed_on_failure": {
+  "parsed": true,
+  "usage": {
+   "prompt_tokens": 53,
+   "completion_tokens": 60,
+   "total_tokens": 113
+  },
+  "cost": 0.00026475,
+  "reason": null
+ },
+ "finished_at": "2026-11-08T03:03:16+00:00",
+ "used_input_tokens": 53,
+ "used_output_tokens": 60,
+ "used_usd": 0.00026475
+}

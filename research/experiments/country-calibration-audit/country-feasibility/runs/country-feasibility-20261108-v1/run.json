@@ -1,0 +1,295 @@
+{
+ "run_id": "country-feasibility-20261108-v1",
+ "status": "in_progress",
+ "started_at": "2026-11-08T04:19:25+00:00",
+ "api_base": "https://openrouter.ai/api/v1",
+ "models": [
+  "deepseek/deepseek-v4.1-flash",
+  "google/gemini-3.8-flash"
+ ],
+ "requested_settings": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_output_tokens": 2000
+ },
+ "manifest_sha256": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+ "receipt_sha256": "ae2fa154bc7d8df91be6ad1f8b95964794c209034df3b3d63817a65629fba89d",
+ "receipt_bindings": {
+  "frozen/manifest.json": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+  "frozen/single_a.txt": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+  "frozen/single_b.txt": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+  "frozen/schedule.json": "b40d6bd87301d731885b1d807d3bba76e878f0205b0ad371a2ac739a710f5f47",
+  "frozen/user_messages.json": "eb37081737f89b59694f110cba1867d159247fa50e755f252ac32d1ffa942f14",
+  "frozen/packets/USA.txt": "1ba052e91d93ea728d496cab21137ce27b08e952dea8758b15d4ada2be47c1cf",
+  "frozen/packets/GBR.txt": "8290d08753ea7c710a3f243a5f08e4e94628cdeab1375f395f892d081c51b31c",
+  "frozen/packets/NPL.txt": "2d8bcf42f158273ae00dddc272eda488b5a8607d553e260f61b849e0024e815b",
+  "frozen/packets/VAT.txt": "1800643dd8eb943fef5cb57c2c503e390a6c1d0135b6d23435b9d9f0bca02fc1",
+  "ledger.json": "3e3b20bc52f933f5e6928078ebf4dd067093ae1eaf0c8fedee5677811b778f43",
+  "runner.py": "d1435d61533b85c0667626e0e52ef6f032a513d7ddfa1ce8f36565b38bdb8d42",
+  "budget-amendment.md": "403ea57fca2daa1b1691e7e3adee7cd900b5c7a4b61ae8e2655d90f784f7b138",
+  "probe-amendment.md": "be30bb2fd39c387043beff96f4830048c9a9118d22a3332e7c95a9914fd6bf3c",
+  "probe-review-policy.md": "ddf32492b5c8d67c29bf3661070cf98277b9db8c51d327b84a61786668087ee3",
+  "probe-followup-amendment.md": "cb4366bd15a5f03c25ca8620def33494714325b182b6612909f2db4555af98cd",
+  "preflight_receipt.json": "262c698e5ddc6a104a86a6cca5eda7219c4832bb353c31e14040431b8a032600",
+  "preflight.md": "52705d7596e29824bb0db5de9aa8ee58e9fdb14af8097638ae2441263dfcc139",
+  "preflight-signoff.md": "8c8589bcb0fba1ab8043eff39377ad2fde5bd459940207fa34f7aa3f9f795d9e",
+  "evidence-preflight-amendment.md": "ebc5e2843a83460a521b0142b4fe3392a98adb03013e8b0bdb83d4cde253fee1",
+  "data/countries.json": "c4a2c8339b0d389a42d8b90ec48bafab209d511185ab10e19789d29de4baebce",
+  "independent-evidence-review": "2638a2b2eeb9c3942babc0a17f25823821aedad7315b33b3a84679c277fdfb02",
+  "independent-budget-review": "4b74b7200735b733e7ae67543a450a4b70714e22101b3cc906713c4d091aaecc",
+  "independent-evidence-preflight-followup": "e6550d5a5da05117a81ae0a0d7eb238ed46adecd7bbc6a6e1cce3bb38d529557",
+  "independent-preflight-amendment-review": "aabd30b3deeb063f140d66a2a253ef49685054f9de18bef25eeab46785fc80ee",
+  "independent-preflight-adoption-review": "2649a416055f5fc3512c81edffa799d02b9134d3cc92eb8dbf740778084ce8b9",
+  "independent-probe-policy-review": "bbcfd1bada2b33eb73041fa767d0fe47d9ebfbd4f4b9b6d2473421e85506e62f",
+  "independent-probe-policy-final-review": "368c60f0ee06329c4f8b0e3cbd5d0fa7932fba0f21a77674d644640628693ab9",
+  "independent-runner-gate-review": "20c35b0cbaafba489387439111d936002827b8dab5e8672b260c5a4e90a5e02e",
+  "independent-original-probe-review": "e7865d6296fb47c67f7dfb06ea23c8fb0a248568354e306cb264a36b010d8dbe",
+  "independent-followup-original-block": "45262b95d8dfccc1d26ef0606cb196798eb93dd00ec2a348dc2c0baf12431bd4",
+  "independent-followup-live-block": "46a1f1b64378100936c1f1bfa077191f9e5521587c9394bd8eaec6282076f1cc",
+  "independent-probe-protocol-review": "d13bdffc23694c0ff7d881cb648dbfe0a305dc465ec421eef4a94b1c576be6ee",
+  "independent-probe-hash-audit": "c414b3725f79416249129e1ce418e10ab2f8157a42ce27d316d24175e677d4b7",
+  "independent-probe-slot-attestations": "1285c867386c8dbfccc43b884029f8c5495d894bae6d30fca70bf5e026c6b7a0",
+  "probe-slot-runtime-status": "f3d8d793d3e499846968d4027ccd720cd7bbf94241218fe7cb8d7bc455b77dd9",
+  "independent-pilot-final-protocol-block": "acc5f1ab89c1812bea5c05657cec88300cec9af6022a85fed1db5d8618d2d684",
+  "independent-pilot-final-attribution-review": "4065bf6f72bd2bd9f97f84bd8b26f8c8cf313158ea3344098cbb29fdcefd64a4",
+  "independent-pilot-final-hash-gate": "d310c6caf32bc5a37b11eec0f1ddb39fb8891e590d9a02fe3e37934768b26428",
+  "blocked-observation-receipt": "843eba11f378612b5c5d232df55c492ad4bb2b96814684a9b38e54913209562b",
+  "independent-probe-followup-review": "870732c39a02fab83bad2e2ebb56641bf26b362581c1c8f5b0715947dae12f38"
+ },
+ "preflight_signoff": {
+  "status": "signed_off",
+  "document": "preflight.md",
+  "signoff_artifact": "preflight-signoff.md",
+  "reviewed_by": "Independent Sol source reviews; coordinating Terra assistant",
+  "reviewed_at": "2026-11-08T04:06:41Z",
+  "statement": "Feasibility-only procedural decision under the user's request to continue. This is not human sign-off, comprehensive factual verification, or approval of published scores. The original probe failure and subsequent adaptive checks are retained."
+ },
+ "provider_semantics": {
+  "documentation": {
+   "status": "documented",
+   "sources": [
+    "https://openrouter.ai/docs/cookbook/administration/usage-accounting",
+    "https://openrouter.ai/api/v1/models"
+   ],
+   "reviewed_by": "coordinating Terra assistant",
+   "reviewed_at": "2026-11-08T04:06:41Z"
+  },
+  "live_behavior": {
+   "status": "observed_in_bounded_probe",
+   "observed_at": "2026-11-08T03:57:53Z",
+   "scope": "Two tiny non-country follow-up requests at a 2000-token allowance, after the recorded failure of the original 64-token Gemini probe. These observations do not establish future behavior, full-dossier reliability or scoring validity.",
+   "record": {
+    "original_failure": {
+     "slot": "probe-2",
+     "status": "stopped"
+    },
+    "probe_evidence": [
+     {
+      "path": "probes/probe-1/probe-result.json",
+      "sha256": "5b3bb14a03d36f11a1b5990971f60bc9102de99a8daa53a087e392fecd907ef2"
+     },
+     {
+      "path": "probes/probe-1/review.json",
+      "sha256": "774fe27845017bdcab1a940e5d19c7bdfb220821b06eac83a3e8b42c7d1715a0"
+     },
+     {
+      "path": "probes/probe-2/probe-result.json",
+      "sha256": "3a55716757b6aafc9122995196f1e0df8544eab52ff62a0e3e3d0b6930ee4b19"
+     },
+     {
+      "path": "probes/probe-2/review.json",
+      "sha256": "a022d6415d81395f34034da2cfa0247d83b70ce9ee005964ea6fbfed319de545"
+     },
+     {
+      "path": "probes/probe-3/probe-result.json",
+      "sha256": "3557d8f8f5866032686944ab7381ff34009625f6ed66304110bb9ff21c33c0a8"
+     },
+     {
+      "path": "probes/probe-3/review.json",
+      "sha256": "ff783af9ef6531f0cbe639e53d38454000ca8991f05f42420f4e38de2ebe6e25"
+     },
+     {
+      "path": "probes/probe-4/probe-result.json",
+      "sha256": "88e89f431dba67fee364048d5496d4b8905fa4168d65c9d05572cbf21e0db9f4"
+     },
+     {
+      "path": "probes/probe-4/review.json",
+      "sha256": "a4aa1b3a1e2974213037ec135e0468cd208b5a8b6d829a6bb67e7de079c98002"
+     }
+    ]
+   }
+  },
+  "residual_assumptions": [
+   "The follow-up was adaptive after an observed operational failure; no causation or future provider behavior is established.",
+   "Tokenizer and framing overhead are not guaranteed by UTF-8 reservation units.",
+   "The USD 10 budget is locally enforced and is not a provider-side hard limit.",
+   "Model availability, provider routing and prices can change; unexpected behavior stops execution.",
+   "The four evidence packets are not exhaustively verified or reliably blind; results are feasibility diagnostics only."
+  ]
+ },
+ "reservation_amendment": {
+  "id": "pre-outcome-reservation-amendment-1",
+  "status": "pre-outcome: recorded before any attempt has ever been dispatched; no receipt exists and no run has been made",
+  "unit": "administrative input reservation unit = UTF-8 bytes of the frozen system prompt + user message, plus a fixed 128-unit chat-framing allowance per call",
+  "not_claims": [
+   "not a proven provider-native token bound",
+   "not a provider-enforced spend limit",
+   "the USD 10.00 ceiling is enforced locally by runner.py, not by the provider account"
+  ],
+  "per_call_input_reservation_units": 70000,
+  "aggregate_input_reservation_units": 2400000,
+  "plan_max_per_call_units": 66611,
+  "plan_aggregate_units": 2316208,
+  "plan_reproduce": "renderer.reservation_plan over the frozen schedule + user messages; independently reproduced by runner.build_plan",
+  "preserved_original_proposal": {
+   "per_call_max_input_tokens": 20000,
+   "aggregate_max_input_tokens": 800000
+  },
+  "preserved_design": [
+   "40 attempts incl. failures",
+   "frozen prompts, packets, schedule and order",
+   "exact pre-registered models",
+   "frozen requested settings",
+   "zero retries",
+   "USD 10.00 aggregate local ceiling incl. failures"
+  ],
+  "rationale": "the byte+framing plan (66 611 max / 2 316 208 aggregate) did not fit the original 20 000/800 000 proposal; an explicit, reviewable reservation-only amendment keeps the design and the spend ceiling unchanged instead of silently raising or reinterpreting a cap",
+  "document": "budget-amendment.md"
+ },
+ "prior_run_state": {
+  "prior_runs": [],
+  "used_usd": 0.000913,
+  "used_input_tokens": 276,
+  "used_output_tokens": 274,
+  "probe_slots": [
+   "probe-1",
+   "probe-2",
+   "probe-3",
+   "probe-4"
+  ],
+  "probe_dispatched": 4
+ },
+ "plan": {
+  "caps": {
+   "attempt_ceiling_including_failures": 40,
+   "per_call_max_input_tokens": 20000,
+   "per_call_max_output_tokens": 2000,
+   "aggregate_max_input_tokens": 800000,
+   "aggregate_max_output_tokens": 80000,
+   "aggregate_max_usd_including_failures": 10.0,
+   "stop_on_unknown_billing_usage": true,
+   "retries_selected_for_output": 0,
+   "enforced_by_this_code": false,
+   "note": "PROPOSED settings only - renderer.py does not enforce them. The only observed fact is the byte measurement max_input_bytes_per_call_observed in this manifest (max UTF-8 bytes over BOTH prompt variants crossed with all 40 messages). Nothing here converts bytes into token counts or money: no provider tokenizer or price list was consulted, so the token and USD figures are unvalidated proposals, not enforced limits or a cost ceiling. The disabled-by-default runner (runner.py) enforces them only under an explicit --execute flag with a reviewed, hash-bound preflight receipt. Dispatch capacity is reserved under the PRE-OUTCOME reservation amendment recorded in reservation_amendment (see budget-amendment.md); this original proposal stays recorded unchanged and remains an in-run stop rule on billed native tokens",
+   "reservation_per_call_units": 70000,
+   "reservation_aggregate_units": 2400000
+  },
+  "per_call_input": [
+   66609,
+   66609,
+   50671,
+   59519,
+   57703,
+   59519,
+   59984,
+   66611,
+   66144,
+   57703,
+   50671,
+   66146,
+   51136,
+   43902,
+   66144,
+   43437,
+   59984,
+   57238,
+   51136,
+   57238,
+   66144,
+   51136,
+   66609,
+   57238,
+   59984,
+   59519,
+   57703,
+   57238,
+   43437,
+   59984,
+   66144,
+   43902,
+   50671,
+   59519,
+   66609,
+   66611,
+   50671,
+   57703,
+   66146,
+   51136
+  ],
+  "worst_usd": [
+   0.0045310590000000005,
+   0.063202425,
+   0.050053575,
+   0.004169469,
+   0.055854975,
+   0.057353175000000006,
+   0.004193184,
+   0.0045311610000000006,
+   0.004507344,
+   0.004076853,
+   0.003718221,
+   0.06282045,
+   0.0504372,
+   0.04446915,
+   0.06281880000000001,
+   0.003349287,
+   0.057736800000000005,
+   0.0040531379999999995,
+   0.003741936,
+   0.05547135,
+   0.06281880000000001,
+   0.003741936,
+   0.063202425,
+   0.05547135,
+   0.057736800000000005,
+   0.004169469,
+   0.055854975,
+   0.0040531379999999995,
+   0.044085525,
+   0.004193184,
+   0.004507344,
+   0.003373002,
+   0.003718221,
+   0.057353175000000006,
+   0.0045310590000000005,
+   0.063204075,
+   0.050053575,
+   0.004076853,
+   0.004507446,
+   0.0504372
+  ],
+  "max_per_call_input": 66611,
+  "aggregate_input": 2316208,
+  "aggregate_output": 80000,
+  "problems": [],
+  "preserved_original_proposal": {
+   "per_call_max_input_tokens": 20000,
+   "aggregate_max_input_tokens": 800000
+  },
+  "input_method": "UTF-8 byte count of the frozen prompt + message + 128 fixed chat-framing units per call (administrative reservation units: conservative under the documented tokenizer/framing assumptions, NOT a proven provider-native token bound)"
+ },
+ "prices_usd_per_token": {
+  "deepseek/deepseek-v4.1-flash": {
+   "prompt": 5.1e-08,
+   "completion": 5.67e-07
+  },
+  "google/gemini-3.8-flash": {
+   "prompt": 8.25e-07,
+   "completion": 4.125e-06
+  }
+ },
+ "attempt_ceiling": 40,
+ "total_dispatch_ceiling": 44,
+ "usd_ceiling": 10.0,
+ "budget_note": "USD ceiling enforced locally by this runner; not a provider-enforced spend limit; in-run USD comparisons include prior shared spend (probes + earlier runs) while used_usd stays run-local"
+}

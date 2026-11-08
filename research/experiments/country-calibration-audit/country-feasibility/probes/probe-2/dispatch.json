@@ -1,0 +1,43 @@
+{
+ "slot": "probe-2",
+ "model": "google/gemini-3.8-flash",
+ "attempt_kind": "operational_probe",
+ "scoring_request": false,
+ "scope": "transport/schema/usage only; makes no claim about future provider behavior, token bounds or scoring validity",
+ "request": {
+  "model": "google/gemini-3.8-flash",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Reply with only this JSON object and no other text: {\"probe\": \"ok\"}"
+   },
+   {
+    "role": "user",
+    "content": "Operational transport, schema and usage probe. This is not an assessment request: it contains no jurisdiction, evidence or rating content, and no output of it is used as a result."
+   }
+  ],
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 64,
+  "stream": false,
+  "usage": {
+   "include": true
+  },
+  "provider": {
+   "allow_fallbacks": false
+  }
+ },
+ "request_sha256": "b09d104f2484d35482bc52da303dcefd4a1c7f1271807084e072109ac159a33d",
+ "reserved_input_units": 374,
+ "reserved_output_tokens": 64,
+ "reserved_usd": 0.00057255,
+ "preflight_receipt_sha256": "262c698e5ddc6a104a86a6cca5eda7219c4832bb353c31e14040431b8a032600",
+ "manifest_sha256": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+ "probe_amendment_sha256": "be30bb2fd39c387043beff96f4830048c9a9118d22a3332e7c95a9914fd6bf3c",
+ "request_headers_logged": {
+  "Content-Type": "application/json",
+  "Authorization": "[REDACTED]"
+ },
+ "dispatched_at": "2026-11-08T03:03:14+00:00",
+ "retry": false
+}

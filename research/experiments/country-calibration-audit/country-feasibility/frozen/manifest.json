@@ -1,0 +1,128 @@
+{
+ "experiment": "research/experiments/country-calibration-audit/country-feasibility",
+ "version": "single-country-v1 (derived; NOT byte-identical to the pairwise originals)",
+ "git_commit": "80c573a5fe205a21c34657cdbfedb0dfda2f2aab",
+ "evidence_snapshot": {
+  "path": "data/countries.json",
+  "sha256": "c4a2c8339b0d389a42d8b90ec48bafab209d511185ab10e19789d29de4baebce",
+  "git_commit": "80c573a5fe205a21c34657cdbfedb0dfda2f2aab",
+  "note": "per-record source dates and limitations are retained inside the packets; all other record paths (score, band, rank, provenance, anchors, sub-national aggregates, named fields, source URLs) are excluded by structural path-level whitelist"
+ },
+ "source_prompts": {
+  "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_a.txt": "ca8e3ea6d743315fdce74697752a1ebe9d72cf4299e23b3facd41fd2d7600b2e",
+  "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_b.txt": "23a8acdfa705eee97895f75fda26f3df244393fca62b9feb5828d71e83a58b96"
+ },
+ "derived_prompts": {
+  "single_a.txt": {
+   "sha256": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+   "bytes": 43182
+  },
+  "single_b.txt": {
+   "sha256": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+   "bytes": 43647
+  }
+ },
+ "ledger_sha256": "3e3b20bc52f933f5e6928078ebf4dd067093ae1eaf0c8fedee5677811b778f43",
+ "ledger_ids": [
+  "T1_opening",
+  "T2_task_line",
+  "T3_rule3_partner_sentence",
+  "T4_rule4_two_dossier_sentence",
+  "T5_rule14_cross_dossier_compare",
+  "T8_rule14_forced_unequal_scores",
+  "T6_rule12_pairwise_scoping",
+  "T7_output_contract",
+  "GBR_index_summary",
+  "GBR_index_tangential"
+ ],
+ "packets": {
+  "USA": {
+   "sha256": "1ba052e91d93ea728d496cab21137ce27b08e952dea8758b15d4ada2be47c1cf",
+   "bytes": 22825
+  },
+  "GBR": {
+   "sha256": "8290d08753ea7c710a3f243a5f08e4e94628cdeab1375f395f892d081c51b31c",
+   "bytes": 16200
+  },
+  "NPL": {
+   "sha256": "2d8bcf42f158273ae00dddc272eda488b5a8607d553e260f61b849e0024e815b",
+   "bytes": 13919
+  },
+  "VAT": {
+   "sha256": "1800643dd8eb943fef5cb57c2c503e390a6c1d0135b6d23435b9d9f0bca02fc1",
+   "bytes": 7352
+  }
+ },
+ "neutral_sentinel": {
+  "case": "USA",
+  "neutral_label": "NEUTRAL-7",
+  "core_label": "DOSSIER",
+  "rule": "identical evidence bytes; only the dossier label differs"
+ },
+ "empty_sentinel": {
+  "label": "DOSSIER",
+  "body_sha256": "970ea0efa102d0ef7915c98b47c2fd36d79bf195b334d227187b36ca47a78154",
+  "abstention": "output contract permits status=insufficient_evidence with score=null; no score is forced"
+ },
+ "models": [
+  "deepseek/deepseek-v4.1-flash",
+  "google/gemini-3.8-flash"
+ ],
+ "requested_settings": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_output_tokens": 2000
+ },
+ "requested_settings_note": "requested, not provider-guaranteed",
+ "proposed_caps": {
+  "attempt_ceiling_including_failures": 40,
+  "per_call_max_input_tokens": 20000,
+  "per_call_max_output_tokens": 2000,
+  "aggregate_max_input_tokens": 800000,
+  "aggregate_max_output_tokens": 80000,
+  "aggregate_max_usd_including_failures": 10.0,
+  "stop_on_unknown_billing_usage": true,
+  "retries_selected_for_output": 0,
+  "enforced_by_this_code": false,
+  "note": "PROPOSED settings only - renderer.py does not enforce them. The only observed fact is the byte measurement max_input_bytes_per_call_observed in this manifest (max UTF-8 bytes over BOTH prompt variants crossed with all 40 messages). Nothing here converts bytes into token counts or money: no provider tokenizer or price list was consulted, so the token and USD figures are unvalidated proposals, not enforced limits or a cost ceiling. The disabled-by-default runner (runner.py) enforces them only under an explicit --execute flag with a reviewed, hash-bound preflight receipt. Dispatch capacity is reserved under the PRE-OUTCOME reservation amendment recorded in reservation_amendment (see budget-amendment.md); this original proposal stays recorded unchanged and remains an in-run stop rule on billed native tokens"
+ },
+ "reservation_amendment": {
+  "id": "pre-outcome-reservation-amendment-1",
+  "status": "pre-outcome: recorded before any attempt has ever been dispatched; no receipt exists and no run has been made",
+  "unit": "administrative input reservation unit = UTF-8 bytes of the frozen system prompt + user message, plus a fixed 128-unit chat-framing allowance per call",
+  "not_claims": [
+   "not a proven provider-native token bound",
+   "not a provider-enforced spend limit",
+   "the USD 10.00 ceiling is enforced locally by runner.py, not by the provider account"
+  ],
+  "per_call_input_reservation_units": 70000,
+  "aggregate_input_reservation_units": 2400000,
+  "plan_max_per_call_units": 66611,
+  "plan_aggregate_units": 2316208,
+  "plan_reproduce": "renderer.reservation_plan over the frozen schedule + user messages; independently reproduced by runner.build_plan",
+  "preserved_original_proposal": {
+   "per_call_max_input_tokens": 20000,
+   "aggregate_max_input_tokens": 800000
+  },
+  "preserved_design": [
+   "40 attempts incl. failures",
+   "frozen prompts, packets, schedule and order",
+   "exact pre-registered models",
+   "frozen requested settings",
+   "zero retries",
+   "USD 10.00 aggregate local ceiling incl. failures"
+  ],
+  "rationale": "the byte+framing plan (66 611 max / 2 316 208 aggregate) did not fit the original 20 000/800 000 proposal; an explicit, reviewable reservation-only amendment keeps the design and the spend ceiling unchanged instead of silently raising or reinterpreting a cap",
+  "document": "budget-amendment.md"
+ },
+ "seed": 20261121,
+ "blocks": 2,
+ "core_calls": 32,
+ "sentinel_calls": 8,
+ "attempt_ceiling": 40,
+ "max_input_bytes_per_call_observed": 66483,
+ "schedule_file_sha256": "b40d6bd87301d731885b1d807d3bba76e878f0205b0ad371a2ac739a710f5f47",
+ "user_messages_file_sha256": "eb37081737f89b59694f110cba1867d159247fa50e755f252ac32d1ffa942f14",
+ "preflight": "preflight.md - claim-level source preflight is REQUIRED before any provider execution; a signed preflight_receipt.json (schema v2) binding these exact hashes plus runner.py, budget-amendment.md and the independent evidence/budget reviews is the runner's hard gate",
+ "live_code": "none executed - no model call has ever been made and this renderer cannot make one; runner.py is disabled by default and requires both an explicit --execute flag and a hash-bound reviewed preflight receipt; no national score writes"
+}

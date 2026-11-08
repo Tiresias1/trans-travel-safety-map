@@ -1,0 +1,350 @@
+{
+ "design": {
+  "stage": "country-feasibility-v2 stage one (single reduced feasibility diagnostic; adaptive after the closed v1 failure)",
+  "attempts_max": 20,
+  "core_cells": "4 countries x 2 models x 2 prompt variants x 1 draw = 16",
+  "sentinel_cells": "anonymous empty-dossier sentinels: 2 models x 2 variants = 4 (case \"\", label DOSSIER)",
+  "countries": [
+   "USA",
+   "GBR",
+   "NPL",
+   "VAT"
+  ],
+  "models": [
+   "deepseek/deepseek-v4.1-flash",
+   "google/gemini-3.8-flash"
+  ],
+  "variants": [
+   "A",
+   "B"
+  ],
+  "draws": 1,
+  "blocks": 2,
+  "rows_per_block": 10,
+  "excluded_v1_sentinel_family": "the v1 neutral-label (NEUTRAL-7) cells are NOT in stage one: label invariance cannot be assessed by this design",
+  "generation": {
+   "method": "python3 random.Random (MT19937, CPython str-seed derivation). Single RNG stream over this exact sequence: (1) for each case in order USA,GBR,NPL,VAT, rng.randrange(2) selects which model-balanced, variant-balanced pair of that case's 4 cells goes to block 1 (pairs are {(deepseek,A),(google,B)} and {(deepseek,B),(google,A)}; the complement goes to block 2); (2) rng.randrange(2) selects the block-1 sentinel diagonal pair the same way; (3) block-1 rows rejection-shuffled (rng.shuffle loop) until constraints hold; (4) block-2 likewise. Constraints: sentinels neither at a block edge nor adjacent to each other; the two rows of every country non-adjacent within a block.",
+   "seed": "country-feasibility-v2-stage1",
+   "assignment_log": {
+    "case_block_assignment": [
+     {
+      "case": "USA",
+      "block1": [
+       [
+        "deepseek/deepseek-v4.1-flash",
+        "B"
+       ],
+       [
+        "google/gemini-3.8-flash",
+        "A"
+       ]
+      ]
+     },
+     {
+      "case": "GBR",
+      "block1": [
+       [
+        "deepseek/deepseek-v4.1-flash",
+        "A"
+       ],
+       [
+        "google/gemini-3.8-flash",
+        "B"
+       ]
+      ]
+     },
+     {
+      "case": "NPL",
+      "block1": [
+       [
+        "deepseek/deepseek-v4.1-flash",
+        "A"
+       ],
+       [
+        "google/gemini-3.8-flash",
+        "B"
+       ]
+      ]
+     },
+     {
+      "case": "VAT",
+      "block1": [
+       [
+        "deepseek/deepseek-v4.1-flash",
+        "B"
+       ],
+       [
+        "google/gemini-3.8-flash",
+        "A"
+       ]
+      ]
+     }
+    ],
+    "sentinel_block_assignment": {
+     "block1": [
+      [
+       "deepseek/deepseek-v4.1-flash",
+       "B"
+      ],
+      [
+       "google/gemini-3.8-flash",
+       "A"
+      ]
+     ]
+    },
+    "shuffle_attempts": {
+     "block-1": 2,
+     "block-2": 16
+    }
+   }
+  },
+  "balance": {
+   "per_block": "8 core + 2 sentinels; each country exactly 2 core; each model 4 core + 1 sentinel = 5; each variant 4 core + 1 sentinel = 5; the two sentinels cover two distinct model x variant pairs",
+   "global": "every country x model x variant core cell exactly once; every model x variant sentinel exactly once; sentinels cover all 4 pairs across the two blocks"
+  },
+  "frozen_before_outcomes": "This schedule was fixed offline before any v2 attempt exists; no outcome has been observed. It is authoritative and is never re-randomized, edited or reordered after any dispatch.",
+  "limitations": "One draw per cell: this design cannot estimate within-cell repeat variance; without neutral-label cells it cannot test label invariance; it cannot validate country rankings. Feasibility diagnostics only; no desired scores."
+ },
+ "rows": [
+  {
+   "case": "NPL",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "A",
+   "call": 1,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 18
+  },
+  {
+   "case": "",
+   "sentinel": "empty",
+   "model": "google/gemini-3.8-flash",
+   "variant": "A",
+   "call": 2,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 29
+  },
+  {
+   "case": "VAT",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "B",
+   "call": 3,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 19
+  },
+  {
+   "case": "GBR",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "B",
+   "call": 4,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 17
+  },
+  {
+   "case": "NPL",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "B",
+   "call": 5,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 5
+  },
+  {
+   "case": "USA",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "B",
+   "call": 6,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 1
+  },
+  {
+   "case": "",
+   "sentinel": "empty",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "B",
+   "call": 7,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 32
+  },
+  {
+   "case": "VAT",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "A",
+   "call": 8,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 3
+  },
+  {
+   "case": "USA",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "A",
+   "call": 9,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 15
+  },
+  {
+   "case": "GBR",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "A",
+   "call": 10,
+   "block": 1,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 4
+  },
+  {
+   "case": "NPL",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "B",
+   "call": 11,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 10
+  },
+  {
+   "case": "USA",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "B",
+   "call": 12,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 2
+  },
+  {
+   "case": "VAT",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "A",
+   "call": 13,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 11
+  },
+  {
+   "case": "GBR",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "B",
+   "call": 14,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 7
+  },
+  {
+   "case": "",
+   "sentinel": "empty",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "A",
+   "call": 15,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 16
+  },
+  {
+   "case": "GBR",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "A",
+   "call": 16,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 6
+  },
+  {
+   "case": "NPL",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "A",
+   "call": 17,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 20
+  },
+  {
+   "case": "",
+   "sentinel": "empty",
+   "model": "google/gemini-3.8-flash",
+   "variant": "B",
+   "call": 18,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 14
+  },
+  {
+   "case": "VAT",
+   "sentinel": "core",
+   "model": "google/gemini-3.8-flash",
+   "variant": "B",
+   "call": 19,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 13
+  },
+  {
+   "case": "USA",
+   "sentinel": "core",
+   "model": "deepseek/deepseek-v4.1-flash",
+   "variant": "A",
+   "call": 20,
+   "block": 2,
+   "draw": 1,
+   "label": "DOSSIER",
+   "fresh_context": true,
+   "source_v1_call": 9
+  }
+ ]
+}

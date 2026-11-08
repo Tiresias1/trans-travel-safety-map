@@ -1,0 +1,160 @@
+{
+ "experiment": "research/experiments/country-calibration-audit/country-feasibility-v2",
+ "version": "stage-one-feasibility-v2",
+ "git_commit": "80c573a5fe205a21c34657cdbfedb0dfda2f2aab",
+ "status": "prepared offline after the closed v1 failure; NOT executed; no preflight receipt exists; independent methodology/code/evidence reviews are absent until produced",
+ "adaptive_disclosure": {
+  "origin": "v1 country-feasibility-20261108-v1 is CLOSED: its only attempted cell (USA, variant B, deepseek, core) returned no final score (empty assistant content, finish_reason length) and 39 cells were never attempted; v1 files remain byte-identical and its no-retry contract is neither resumed nor amended by v2",
+  "partial_reasoning_exposure": "The preserved v1 failure record contains provider partial reasoning text with provisional numerical musings that reviewers were exposed to. No such provisional number is reproduced anywhere in v2, and none was used to select countries, models, prompt wording, schedule, sentinels or settings.",
+  "stage": "v2 is a new, explicitly adaptive feasibility stage designed after inspecting the v1 failure and the independent reviews; it is not confirmatory and cannot satisfy or retroactively amend v1",
+  "no_desired_scores": "The design states no desired score, band or ordering for any cell"
+ },
+ "files": {
+  "single_a.txt": {
+   "sha256": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+   "bytes": 43182
+  },
+  "single_b.txt": {
+   "sha256": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+   "bytes": 43647
+  },
+  "schedule.json": {
+   "sha256": "2ec2cb5fb67a7f0f36da457eb3ee1a1043972a8fe76d7187685c58b18d747d39"
+  },
+  "user_messages.json": {
+   "sha256": "5e1d11d7b04c5e9d53d4efaf132280c5f423fdc4c57f0c3c444d2791610f1d70"
+  }
+ },
+ "source_v1_frozen_byte_identity": {
+  "note": "v2 reuses the exact v1 prompt and evidence-message bytes; these are the pinned hashes of the v1 originals the copies must equal",
+  "single_a.txt": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+  "single_b.txt": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+  "schedule.json": "b40d6bd87301d731885b1d807d3bba76e878f0205b0ad371a2ac739a710f5f47",
+  "user_messages.json": "eb37081737f89b59694f110cba1867d159247fa50e755f252ac32d1ffa942f14",
+  "manifest.json": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+  "packets/USA.txt": "1ba052e91d93ea728d496cab21137ce27b08e952dea8758b15d4ada2be47c1cf",
+  "packets/GBR.txt": "8290d08753ea7c710a3f243a5f08e4e94628cdeab1375f395f892d081c51b31c",
+  "packets/NPL.txt": "2d8bcf42f158273ae00dddc272eda488b5a8607d553e260f61b849e0024e815b",
+  "packets/VAT.txt": "1800643dd8eb943fef5cb57c2c503e390a6c1d0135b6d23435b9d9f0bca02fc1",
+  "ledger.json": "3e3b20bc52f933f5e6928078ebf4dd067093ae1eaf0c8fedee5677811b778f43",
+  "runner.py": "d1435d61533b85c0667626e0e52ef6f032a513d7ddfa1ce8f36565b38bdb8d42"
+ },
+ "models": [
+  "deepseek/deepseek-v4.1-flash",
+  "google/gemini-3.8-flash"
+ ],
+ "requested_settings": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_output_tokens": 11000
+ },
+ "requested_settings_change": {
+  "preserved_from_v1": {
+   "temperature": 1.0,
+   "top_p": 1.0
+  },
+  "changed": {
+   "max_output_tokens": {
+    "from": 2000,
+    "to": 11000
+   }
+  },
+  "basis": "the prior, separate pilot2 instrument obtained 95/96 parseable logical calls at an 11000-token allowance; operational precedent for a cap choice only - explicitly not a guarantee of success, not proof that the 2000 cap caused the v1 failure, and not semantic validation",
+  "reasoning_parameter": "none: v1 requested no explicit reasoning parameter, so v2 requests none; 11000 is the maximum billed output per call including any provider reasoning tokens",
+  "note": "requested, not provider-guaranteed",
+  "sole_generation_setting_change": true,
+  "transport_timeout": {
+   "scope": "transport-only socket timeout for the chat request; NOT a generation setting - the sole generation-settings change remains max_output_tokens 2000 -> 11000",
+   "from_seconds": 30,
+   "to_seconds": 300,
+   "price_fetch_timeout_seconds": 30,
+   "basis": "pinned call-001 took 28 s for 2000 completion tokens and still ended finish_reason length; an 11000-token non-streaming response plausibly needs minutes of server silence, so the unchanged 30 s timeout would abort with no raw body and record a permanent unreconciled liability",
+   "fail_closed": "a timeout still raises a transport-error refusal, stops the stage before any further dispatch, and an unknown charge remains an unreconciled liability (never assumed to be zero)"
+  }
+ },
+ "design": {
+  "attempts_max": 20,
+  "core_cells": 16,
+  "sentinel_cells": 4,
+  "countries": [
+   "USA",
+   "GBR",
+   "NPL",
+   "VAT"
+  ],
+  "variants": [
+   "A",
+   "B"
+  ],
+  "draws": 1,
+  "blocks": 2,
+  "rows_per_block": 10,
+  "sentinel_family": "anonymous empty-dossier sentinels only (model x variant)",
+  "schedule_frozen_before_outcomes": true,
+  "limitations": "one draw per cell cannot estimate within-cell repeat variance; without neutral-label cells the design cannot test label invariance; nothing here validates country rankings. Feasibility diagnostics only.",
+  "sentinel_semantics": "empty-dossier sentinels must return status 'insufficient_evidence' with score null; any other output stops the run fail-closed (context-aware semantic check); core cells keep the unchanged contract and may abstain or score; the broader independent semantic review is a separate, still-open process",
+  "max_attempts_per_invocation": 1,
+  "semantic_checkpoint": "one scheduled cell per invocation under the shared lock; before the next dispatch every earlier completed output needs an independent PASS review (runs/<run-id>/semantic-reviews/call-NNN.json) bound to response_sha256, the score-blind sidecar sha256, the frozen system-prompt and user-message hashes and the rubric version - every record/sidecar/review message and prompt binding cross-checked against the re-read immutable frozen schedule/message/prompt bytes for that call (never only against the writable attempt record) and each attempt chained to this invocation's receipt hash - with named reviewer identity/session; missing/FAIL/UNCERTAIN/tampered review, a failed prior attempt, or an unreconciled liability blocks all later calls before price/credential/network access; reviewers judge source fidelity against the frozen dossier without numerical values or rankings; this runner never writes a review or authors a verdict"
+ },
+ "caps": {
+  "attempt_ceiling_including_failures": 20,
+  "prior_dispatches": 5,
+  "total_dispatch_ceiling": 25,
+  "retries": 0,
+  "aggregate_max_usd_including_failures": "10.00",
+  "per_call_max_output_tokens": 11000,
+  "v2_aggregate_output_reservation_tokens": 220000,
+  "reservation_per_call_units": 70000,
+  "reservation_aggregate_units": 1400000
+ },
+ "plan": {
+  "input_reservation_method": "UTF-8 bytes of the frozen prompt + message plus a fixed 128-unit chat-framing allowance per call; administrative reservation units under stated assumptions - explicitly NOT a guaranteed provider tokenizer bound and NOT a provider-enforced spend limit",
+  "plan_max_per_call_units": 66609,
+  "plan_aggregate_units": 1112686
+ },
+ "prior_accounting": {
+  "source": "reconstructed with Decimal directly from the four original probe-result.json files and v1 runs/country-feasibility-20261108-v1/attempts/call-001.json billed_on_failure",
+  "total_usd": "0.001993276",
+  "input_tokens": 13652,
+  "output_tokens": 2274,
+  "dispatches": 5,
+  "record_ids": [
+   "gen-1794106990-7PhsDMgoeYLY5Ey3xTWC",
+   "gen-1794106994-0siK3sXrXESUBEhvbyAa",
+   "gen-1794110261-QsQTj3oz7EAh67YH2wwb",
+   "gen-1794110270-0TMzHxo7IM8DnbBoLgJS",
+   "gen-1794111565-9wwedC2eXJIXQChRL86T"
+  ],
+  "rounded_summary_warning": "v1's rounded summary fields (0.00108 + 0.000913 = 0.001993) are display values only; budgeting uses the exact decimal 0.001993276 and never a rounded total"
+ },
+ "historical_output_budgets": {
+  "v1_aggregate_max_output_tokens": 80000,
+  "probe_output_allowance_tokens": 4128,
+  "v1_output_used_tokens_exact": 2274,
+  "note": "older and new output budgets are kept separately and never merged or rounded; the v2 budget is the exact integer 220000 tokens (20 x 11000)"
+ },
+ "expected_providers": {
+  "deepseek/deepseek-v4.1-flash": [
+   "Relace"
+  ],
+  "google/gemini-3.8-flash": [
+   "Google"
+  ]
+ },
+ "evidence_snapshot": {
+  "path": "data/countries.json",
+  "sha256": "c4a2c8339b0d389a42d8b90ec48bafab209d511185ab10e19789d29de4baebce",
+  "note": "data-only, path-whitelist-derived evidence reused byte-identically through the frozen messages; no published scores, no sub-national (ADM1) values and no new evidence are inputs"
+ },
+ "budget_risks": [
+  "the USD 10.00 guard is enforced locally between calls only; a single in-flight call is postpaid and can overshoot the local guard before the next check - there is no provider-side hard spend guarantee",
+  "unknown or inconsistent prices/usage, cache-WRITE billing that cannot be reconciled with the advertised prices, and any reservation breach stop the run fail-closed",
+  "the STRICT per-answer semantic checkpoint makes every later dispatch conditional on an independent PASS review of the previous answer - outcome-dependent stopping and partial outputs are disclosed limitations, not publication-grade evidence"
+ ],
+ "cache_policy": {
+  "request_cache_directives": "none ever sent (no cache key in the request whitelist); no cache warming, busting, forcing or retries to obtain a preferred cache condition",
+  "provider_initiated_reads": "allowed only when reported usage/cost arithmetic is valid (ints, totals consistent, cached_tokens <= prompt_tokens, finite cost within the reservation); full cache usage is logged in every attempt as an execution condition - with no claim of reproducibility or of uncached performance",
+  "cache_writes": "any nonzero cache_write_tokens stops the stage: cache-WRITE billing cannot be reconciled with the advertised prices this runner fetches, so it is never assumed to be free",
+  "provenance": "token counts alone do not identify cache provenance; provider cache state is uncontrolled and precludes latency/cost reproduction claims"
+ }
+}

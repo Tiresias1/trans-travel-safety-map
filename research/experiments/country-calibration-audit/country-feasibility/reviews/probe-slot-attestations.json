@@ -1,0 +1,58 @@
+{
+  "probe-1": {
+    "probe_slot": "probe-1",
+    "status": "reviewed_ok",
+    "reviewed_by": {
+      "type": "AI",
+      "model": "OpenAI assistant; exact model identifier unavailable in this session",
+      "agent": "reviewer",
+      "session_identity": "Revived reviewer conversation; original run 8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6; original session efa8233e-b930-4158-a592-ec7c711901ac"
+    },
+    "statement": "Inspected actual dispatch and result. Original non-country probe requested deepseek/deepseek-v4.1-flash with max_tokens 64; archived response identifies that model via Relace, HTTP 200, finish_reason stop, content {\"probe\": \"ok\"}, status completed, and retry false. Reported usage is 85 input and 30 output tokens, including 19 reasoning tokens; reported cost is USD 0.00001551. This attests the archived operational success only, not future behavior, scores, historical runner reconstruction, or independently reconciled account billing. Hashes below are attributed to the independent hash audit, not recomputed by me.",
+    "probe_result_sha256": "5b3bb14a03d36f11a1b5990971f60bc9102de99a8daa53a087e392fecd907ef2",
+    "raw_response_sha256": "12ddd307756e8a45ff51c213bf58200cf4258276e54a41b0dbb99104b31f859b",
+    "hash_source": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/outputs/2d35decd-6fa7-4a05-9aef-170d40152771/probe-final/hashes.md"
+  },
+  "probe-2": {
+    "probe_slot": "probe-2",
+    "status": "reviewed_failure",
+    "reviewed_by": {
+      "type": "AI",
+      "model": "OpenAI assistant; exact model identifier unavailable in this session",
+      "agent": "reviewer",
+      "session_identity": "Revived reviewer conversation; original run 8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6; original session efa8233e-b930-4158-a592-ec7c711901ac"
+    },
+    "statement": "Inspected actual dispatch and result. Original non-country probe requested google/gemini-3.8-flash with max_tokens 64; archived raw response identifies that model via Google, finish_reason length, native MAX_TOKENS, and null assistant content. The original status remains stopped, with incomplete-output error and retry false: this is a confirmed failure, not a success or a replaced slot. HTTP status is absent and is not inferred. Reported usage is 53 input and 60 output tokens, all 60 output tokens reported as reasoning; known reported failure charge is USD 0.00026475, not an unknown-charge case. This does not attest future behavior, scores, historical runner reconstruction, or independently reconciled account billing. Hashes below are attributed to the independent hash audit, not recomputed by me.",
+    "probe_result_sha256": "3a55716757b6aafc9122995196f1e0df8544eab52ff62a0e3e3d0b6930ee4b19",
+    "raw_response_sha256": "5e86f50f2173b77bc3134a2c1cd123df3a0eb00afebf99a5c1791278b4f12225",
+    "hash_source": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/outputs/2d35decd-6fa7-4a05-9aef-170d40152771/probe-final/hashes.md"
+  },
+  "probe-3": {
+    "probe_slot": "probe-3",
+    "status": "reviewed_ok",
+    "reviewed_by": {
+      "type": "AI",
+      "model": "OpenAI assistant; exact model identifier unavailable in this session",
+      "agent": "reviewer",
+      "session_identity": "Revived reviewer conversation; original run 8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6; original session efa8233e-b930-4158-a592-ec7c711901ac"
+    },
+    "statement": "Inspected actual dispatch and result. Explicitly adaptive-after-failure non-country follow-up requested deepseek/deepseek-v4.1-flash with max_tokens 2000 and provenance to probe-2. Archived response identifies the requested model via Relace, HTTP 200, finish_reason stop, content {\"probe\": \"ok\"}, status completed, and retry false. Reported usage is 85 input and 30 output tokens, including 19 reasoning tokens; reported cost is USD 0.00001551. This is a successful adaptive follow-up, not retroactive success of the original phase. It establishes neither causal benefit from the allowance change nor future behavior or scores; account billing was not independently reconciled. Hashes below are attributed to the independent hash audit, not recomputed by me.",
+    "probe_result_sha256": "3557d8f8f5866032686944ab7381ff34009625f6ed66304110bb9ff21c33c0a8",
+    "raw_response_sha256": "ee63cd915b9649d751eaa8c9d069eee1997abea9b860e59a71a83ce2864a0440",
+    "hash_source": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/outputs/2d35decd-6fa7-4a05-9aef-170d40152771/probe-final/hashes.md"
+  },
+  "probe-4": {
+    "probe_slot": "probe-4",
+    "status": "reviewed_ok",
+    "reviewed_by": {
+      "type": "AI",
+      "model": "OpenAI assistant; exact model identifier unavailable in this session",
+      "agent": "reviewer",
+      "session_identity": "Revived reviewer conversation; original run 8b9ab3ad-756f-4a70-a2ef-12bfcde4bbe6; original session efa8233e-b930-4158-a592-ec7c711901ac"
+    },
+    "statement": "Inspected actual dispatch and result. Explicitly adaptive-after-failure non-country follow-up requested google/gemini-3.8-flash with max_tokens 2000 and provenance to probe-2, after probe-3 completed. Archived response identifies the requested model via Google, HTTP 200, finish_reason stop, content {\"probe\": \"ok\"}, status completed, and retry false. Reported usage is 53 input and 154 output tokens, including 148 reasoning tokens; reported cost is USD 0.00061725. This successful follow-up does not erase original probe-2's stopped failure or supply its missing HTTP status. It establishes neither causal recovery nor future behavior or scores; account billing was not independently reconciled. Hashes below are attributed to the independent hash audit, not recomputed by me.",
+    "probe_result_sha256": "88e89f431dba67fee364048d5496d4b8905fa4168d65c9d05572cbf21e0db9f4",
+    "raw_response_sha256": "e666978e0b9e9b14d3433eabb9379f8bfa8f8e4d8d94c80de2446d6ec6c6d223",
+    "hash_source": "/home/meme/.pi/agent/sessions/--home-meme-kóði-kort--/subagent-artifacts/outputs/2d35decd-6fa7-4a05-9aef-170d40152771/probe-final/hashes.md"
+  }
+}

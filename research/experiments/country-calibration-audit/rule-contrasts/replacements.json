@@ -1,0 +1,165 @@
+{
+ "provenance": {
+  "proposal": "research/experiments/country-calibration-audit/rule-contrasts/proposal.md",
+  "proposal_sha256": "39e9d0ac92166939ced2795ca073d9079e1062249bc70998e2aae06461159e2e",
+  "scope": "review sections 2 (shared S1-S10) and 3 (variants A1-A4, B1-B4) only; review section 4 replacements deliberately not applied (declared out of diagnostic scope there)",
+  "editing": "literal exact-string replacement only; no regex prose transformation; every before-block must match exactly once in its source file and exactly once at apply time",
+  "weight_restore": "Review fix #2: explicit VERY LOW WEIGHT for oddity/curiosity and REAL WEIGHT for documented state threat-framing restored in shared S5 (both variants), with rhetoric vs implemented-policy distinction preserved."
+ },
+ "shared": [
+  {
+   "id": "S1.1",
+   "before": "10. 0.00 means a trans visitor who is outed faces near-certain imprisonment and likely execution.\n    1.00 means law and society fully accept trans people with no discrimination or judgement\n    (within the bounds of reason in that no society is 100 percent homogenous).",
+   "after": "10. 0.00 means a trans visitor who is outed faces near-certain imprisonment and likely execution.\n    1.00 means law and society fully accept trans people with no discrimination or judgement\n    (within the bounds of reason in that no society is 100 percent homogenous).\n    Intermediate points have no fixed definitions. Do not infer equal intervals or\n    mandatory numerical gaps from the severity ladder, evidence categories or band labels.\n    For each material exposure or protection, identify its documented geography,\n    effective date, institutional scope, trigger, visitor relevance, consequences and\n    operating remedy. Distinguish policy coverage from encountering its trigger and\n    from suffering its consequences. Missing information is uncertainty, not proof of\n    either safety or harm. Do not give credit for passing, stealth, silence or avoidance.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S2.1",
+   "before": "    - **Universal-exposure measures** — policies or practices that reach every trans\n      visitor, every crossing, every time: facility-access restrictions (bathroom bills),\n      document/ID-examination mismatches, mandatory marker disclosure, surveillance or\n      registration of visibly trans people. These are a continuous, inescapable exposure\n      for all travellers to the jurisdiction. Their weight is not diluted by the fact that\n      most exposures resolve without arrest — the possibility is carried by everyone.",
+   "after": "    - **Broadly applicable institutional measures** — facility-access restrictions,\n      document checks, mandatory marker disclosure, surveillance or registration.\n      Establish whom each measure covers, where and when it operates, and what\n      triggers it. Universal coverage within a specified domain does not establish\n      universal encounter or harm. Few prosecutions do not by themselves establish\n      little burden: exclusion, intrusive examination, disclosure and service denial\n      may themselves be consequences. Apply rules 9 and 10b to discovery probability.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S3.1",
+   "before": "    Universal-exposure measures and organised targeting both outrank scattered incidents,\n    baseline-elevated violence, or unenforced statutes.\n    PRECEDENCE LADDER (use this to compare two dossiers, not intuition): rank the worst\n    documented feature of each jurisdiction and compare tiers, not impressions:\n      (1) state-imposed universal exposure with no working remedy — facility exclusion\n          by birth sex, custody placement by birth sex, strip-search by birth sex,\n          documents that cannot be made to match, care denial in emergency;\n      (2) state-tolerated or state-directed targeting — police extortion, raids, arrests\n          for presentation, official calls for exclusion;\n      (3) documented societal hostility with THIN OR NO recourse — harassment and\n          discrimination that the traveller has no realistic way to remedy;\n      (4) dated or scattered incidents — a decade-old case, isolated events;\n      (5) paper protections not shown to operate.\n    A dossier whose worst feature is tier 1 rates MATERIALLY below one whose worst\n    feature is tier 3. Societal disapproval — \"locals may not accept you as trans\" — is\n    tier 3 language at most, and it does NOT cancel a tier-1 exposure: the traveller can\n    often pass, avoid, or leave a disapproving society, but cannot pass a strip-search,\n    choose her own cell, or talk her way out of a ward ban. State-imposed exposures\n    follow her and are enforced by the institutions themselves. Two dossiers with the same number\n    of documented murders but different surrounding signals (near-baseline violence vs.\n    organised sweeps) must receive different ratings, and the reasoning should say why.",
+   "after": "    Distinguish operative institutional restrictions without working remedy;\n    state-tolerated or state-directed targeting; societal hostility without realistic\n    recourse; dated or scattered incidents; and protections not shown to operate.\n    These distinctions guide evidence assessment, not automatic rankings or numerical\n    gaps. Compare severity, documented frequency, coverage, triggers, datedness and\n    remedy across the complete dossiers. Polite social life does not erase an\n    institutional restriction, and an institutional restriction does not erase\n    documented societal harm. Do not discount hostility because a traveller could\n    pass, avoid it or leave. Equal incident counts can support different assessments\n    where the evidence distinguishes background violence from organised targeting;\n    explain the distinction rather than forcing unequal scores.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S4.1",
+   "before": "15. **Universal-exposure measures are traveller-facing by definition.** When a rule or\n    practice applies to everyone presenting as a gender different from their documents —\n    bathrooms, changing rooms, custody placement, checkpoints, hospital wards — the\n    exposure is unavoidable for the outed or outable traveller regardless of how often it\n    is enforced against locals. Rate the possibility everyone carries, not the\n    prosecutions that actually happened.",
+   "after": "15. **Institutional coverage and conditional events are distinct.** A rule covering\n    people whose presentation differs from their documents may reach visitors, but\n    establish its actual scope. Custody placement requires detention; ward placement\n    requires admission; a document-mismatch rule requires the specified mismatch.\n    Being outed does not establish these additional triggers. Assess the documented\n    treatment when applicable and evidence about its operation. Neither assume every\n    visitor encounters it nor mitigate it by recommending concealment or avoidance.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S5.1",
+   "before": "          The person is an ODDITY, not a threat. Very low weight: it is uncomfortable,\n          not dangerous, and it rarely escalates.",
+   "after": "          The person is treated as an ODDITY, not a threat. Documented curiosity and\n          awkward friction of this kind carry VERY LOW WEIGHT: it is uncomfortable,\n          not dangerous. Distinguish discomfort from intimidation or danger; do not\n          infer escalation without evidence.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S5.2",
+   "before": "      (c) STATE THREAT-FRAMING — the law and institutions themselves treat trans\n          people as a threat: excluding them from women's spaces on the premise of\n          risk, placing them in cells by birth sex, stripping them in front of the sex\n          they are not, restricting their access to emergency care. Tier 1 weight\n          under rule 15, regardless of how polite street-level life is.",
+   "after": "      (c) STATE THREAT-FRAMING — officials, law or institutions portray trans people\n          as threats. Documented state threat-framing carries REAL WEIGHT: assess it\n          proportionally as an institutional signal. Distinguish official rhetoric\n          from implemented policy: facility exclusion, custody placement, intrusive\n          searches or care restrictions have consequences only where their scope,\n          date, trigger and operation are documented. Do not treat rhetoric alone as\n          proof of implementation, and do not dismiss documented threat-framing\n          merely because it has not yet produced violence. Polite street-level life\n          does not cancel documented institutional harm.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S6.1",
+   "before": "    BAND IMPLICATION — \"no criminalisation\" is not a floor: a jurisdiction whose\n    dossier documents universal-exposure practices (facility exclusion by birth\n    sex, birth-sex custody placement with reported harm, border document friction\n    for outed travellers) or discrimination prevalence at scale, WITHOUT a\n    documented remedy that actually works (enforcement changing outcomes, not\n    oversight findings recurring), sits in the Elevated Risk band even with no\n    criminal statute on the books. \"No criminalisation plus functioning\n    institutions\" does not anchor a jurisdiction at Reduced Risk; the documented\n    exposures subtract through the band. Recourse reduces the deduction only\n    where the record shows it working.",
+   "after": "    No criminalisation is not a numerical floor. Assess documented institutional\n    restrictions, border friction and discrimination in their actual settings,\n    including consequences and remedies. Functioning institutions mitigate only\n    where the record shows them providing relevant protection or relief.\n    None of these features mandates an intermediate band or numerical gap.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S6.2",
+   "before": "    everyday-exposure signal for the settings the survey covers — the same tier\n    as universal-exposure measures, not a background attitude note.",
+   "after": "    everyday-exposure signal for the settings the survey covers, subject to rule 17\n    and documented visitor applicability, not merely a background attitude note.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S7.1",
+   "before": "only moderately below jurisdictions documenting both comparable acceptance AND\n    working protections.",
+   "after": "below otherwise comparable jurisdictions documenting both comparable acceptance AND\n    working protections, without a prescribed numerical gap.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S7.2",
+   "before": "A latent tangential statute\n    plus open questions plus thin formal recourse hold the jurisdiction a step below\n    the acceptance-with-protections tier — a step, not a tier.",
+   "after": "Assess a latent tangential statute,\n    open questions and thin formal recourse without assigning them a prescribed\n    step, tier or numerical gap.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S7.3",
+   "before": "PROTECTIVE OPERATING REGIMES raise a score materially above the parent average",
+   "after": "PROTECTIVE OPERATING REGIMES support a safer local assessment",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S7.4",
+   "before": "visitor-facing restrictions sits well above the national line, and recorded",
+   "after": "visitor-facing restrictions supports a safer assessment than otherwise comparable\n    conditions without those protections, and recorded",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S8.1",
+   "before": "13. **Weak signals extrapolate; \"unknown\" is not the midpoint.** When a dossier is thin,",
+   "after": "13. **Weak signals extrapolate; \"unknown\" is not the midpoint.** Missing domestic\n    recognition machinery is a contextual signal only, subject to rule 1; do not\n    infer a direct visitor exposure from it. Distinguish sourced claims from\n    explicitly uncertain model inference and identify the basis of each inference.\n    When a dossier is thin,",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "S8.2",
+   "before": "## Thin-data extrapolation (2026-10-03 addition)",
+   "after": "## Thin-data extrapolation (2026-10-03 addition)\nMissing domestic recognition machinery is a contextual signal only, not a direct\nvisitor exposure without evidence of visitor reach. Distinguish sourced claims\nfrom explicitly uncertain model inference and identify each inference's basis.",
+   "source": "research/outing-risk-taxonomy.md"
+  },
+  {
+   "id": "S9.1",
+   "before": "0.0: Trans visitors have a high risk of being outed and outright executed for being trans. The absolute extreme end of \"DO NOT VISIT\"",
+   "after": "0.00: A trans visitor who is outed faces near-certain imprisonment and likely execution. The absolute extreme end of \"DO NOT VISIT\"",
+   "source": "research/outing-risk-taxonomy.md"
+  },
+  {
+   "id": "S10.1",
+   "before": "- **Universal-exposure measures** reach EVERY trans visitor every time: facility-access\n  restrictions (bathroom bills), document/ID-marker mismatches at any checkpoint,\n  mandatory marker disclosure, registration of visibly trans people. Continuous,\n  inescapable exposure for all travellers — weight by the possibility everyone carries,\n  not the prosecutions that actually happened.",
+   "after": "- **Broadly applicable institutional measures** include facility restrictions,\n  document checks, mandatory marker disclosure and registration. Establish their\n  geography, effective dates, covered population, triggers, consequences and remedies.\n  Universal coverage within a domain does not establish universal encounter or harm.\n  Few prosecutions do not establish absence of exclusion, intrusion or disclosure harm.\n  Do not mitigate these measures by crediting passing, stealth or avoidance.",
+   "source": "research/outing-risk-taxonomy.md"
+  },
+  {
+   "id": "S10.2",
+   "before": "- No documented trans killings (or enforcement works)\n- Hate-crime law covering GI (recourse — theoretical but real)\n- Functional institutions (police/courts will act, even imperfectly)",
+   "after": "- Evidence about trans-specific violence and effective responses; absence of reports alone is not established safety\n- Hate-crime law covering GI, distinguishing formal availability from documented operation\n- Functional institutions where the record supports relevant protection or relief",
+   "source": "research/outing-risk-taxonomy.md"
+  }
+ ],
+ "sites": [
+  {
+   "id": "rule9",
+   "before": "9. **Severity dominates probability of outing.** Every trans person carries some baseline\n   probability of being outed. What separates say 0.9 from 0.2 is mostly what happens *after*\n   the outing, and whether the state is the perpetrator, a bystander, or a protector. That said,\n   deliberate efforts by the state to out trans people ramp up the risk of outing, and thus\n   the odds of adverse consequences to a trans traveler.",
+   "A": "9. **Assess consequences conditional on trans status being known.** Consider severity,\n    documented frequency of harmful treatment once known, institutional conduct and\n    effective protection. Do not estimate or multiply by the probability of becoming\n    known. Distinguish knowledge of trans status from additional event triggers.",
+   "B": "9. **Assess consequences and documented institutional discovery exposure.** Consider\n    severity, documented frequency of harmful treatment, institutional conduct and\n    effective protection. Separately consider documented state-engineered discovery.\n    Do not estimate a traveller's personal chance of passing or use a probability-times-\n    severity formula. Distinguish knowledge of trans status from additional event triggers.",
+   "source": "tools/blind_pairwise.py",
+   "note": "proposal display normalized continuation indentation; source uses 3 spaces (review section 4.1 said four). Literal source bytes used; wording verified identical after whitespace removal."
+  },
+  {
+   "id": "rule10b",
+   "before": "10b. **The score is what happens if the traveller is outed, not the probability of being\n    outed.** Do not give a jurisdiction credit because a visitor could pass, stay silent, or\n    avoid scrutiny: that is a property of the traveller and the itinerary, not of the place,\n    and it evaporates the moment a passport is checked, an emergency happens, or a stranger\n    takes an interest. Conversely, do not add a penalty merely because a jurisdiction is\n    small or highly visible. Rate the consequences that follow discovery. Where a dossier\n    shows that discovery itself is engineered — mandatory marker disclosure, registration,\n    surveillance, checkpoint checking — that raising of discovery probability is itself part\n    of the exposure and is rated.",
+   "A": "10b. **Do not credit concealment or rate discovery probability.** Give no credit for\n    passing, stealth, silence or avoidance, and no penalty merely for small size or\n    visibility. Record state-engineered discovery separately. Include documented\n    coercion, intrusive examination, registration burdens, dissemination and subsequent\n    treatment as harms or institutional practices in themselves. An increase in the\n    probability of discovery alone is not an independent contribution to this score.\n    Do not count the same practice or consequence twice.",
+   "B": "10b. **Do not credit concealment; distinguish institutional discovery from personal\n    visibility.** Give no credit for passing, stealth, silence or avoidance, and no\n    penalty merely for small size or visibility. Documented mandatory disclosure,\n    targeted registration, surveillance or checkpoint practices may independently\n    increase institutional exposure by engineering discovery. Establish their scope,\n    operation and triggers rather than assuming every visitor encounters them.\n    Include coercion, intrusion, registration burdens, dissemination and subsequent\n    treatment where documented. Identify the discovery contribution separately and\n    do not count the same practice or consequence twice.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "product",
+   "before": "The score integrates **probability of being outed** × **severity of what happens if outed**,\nacross every axis below.",
+   "A": "Assess consequences conditional on trans status being known, across the applicable\naxes below. Discovery probability is not a multiplier or an independent score input;\napply rules 9 and 10b to discovery practices and their harms.",
+   "B": "Assess consequences when trans status is known and, separately, documented\nstate-engineered discovery exposure across the applicable axes below. Do not use a\nprobability-times-severity formula or credit personal concealment; apply rules 9 and 10b.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "task_line",
+   "before": "**transgender visitor** to that jurisdiction if they are discovered or outed there.",
+   "A": null,
+   "B": "**transgender visitor** to that jurisdiction: consequences when discovered or outed,\ntogether with documented state-engineered discovery exposure under rules 9 and 10b.",
+   "source": "tools/blind_pairwise.py"
+  },
+  {
+   "id": "tax_intro",
+   "before": "Two dimensions always apply: **probability of being outed** (documents routinely checked? scanners? social cues? police spot-checks?) and **severity if outed** (discretion-tolerant society vs. catastrophic consequences).  But do consider that every trans person always bears some probability of being outed, even if there's no \"surveilance\"; consequences are a more important aspect than percentage.  Also keep in mind the difference between laws on the books vs. how consistently they're enforced.",
+   "A": "Assess severity and documented frequency of harmful treatment conditional on trans\nstatus being known, including whether the state perpetrates harm, tolerates it or\nprovides effective protection. Record discovery practices, but do not score discovery\nprobability itself. Coercion, intrusive examination, registration burdens, dissemination\nand subsequent treatment can be harms in themselves. Distinguish laws on the books\nfrom operation and enforcement, and known status from additional event triggers.",
+   "B": "Assess consequences when trans status is known and, separately, documented\nstate-engineered discovery exposure. Mandatory disclosure, targeted registration,\nsurveillance or checkpoint practices may contribute independently where their scope,\noperation and triggers are documented. Do not estimate personal passing probabilities\nor use a probability-times-severity formula. Include documented harms of the practices\nand subsequent treatment without double counting. Distinguish laws on the books from\noperation and enforcement, and known status from additional event triggers.",
+   "source": "research/outing-risk-taxonomy.md"
+  },
+  {
+   "id": "tax_guidance",
+   "before": "2. Score = probability-of-outing × severity-if-outed, integrated across the axes the\n   country's situation makes salient.",
+   "A": "2. Assess applicable axes conditional on trans status being known. Do not multiply\n   by discovery probability; apply the discovery-practice distinction stated above.",
+   "B": "2. Assess applicable axes for consequences when known and documented state-engineered\n   discovery exposure. Keep their contributions distinct; do not multiply probabilities\n   or credit personal concealment.",
+   "source": "research/outing-risk-taxonomy.md"
+  },
+  {
+   "id": "tax_k",
+   "before": "### K. State & media climate (probability modifier, not standalone)\n- Government/media demonization campaigns raising likelihood & severity of all axes\n- Surveillance states (device/social monitoring raising discovery probability)",
+   "A": "### K. State & media climate (context and documented effects, not a discovery multiplier)\n- Government/media demonization: distinguish rhetoric from documented treatment and consequences\n- Surveillance: record discovery practices and their harms; do not score increased discovery probability alone",
+   "B": "### K. State & media climate (context, documented effects and institutional discovery)\n- Government/media demonization: distinguish rhetoric from documented treatment and consequences\n- Surveillance: assess documented state-engineered discovery under the stated scope and trigger requirements",
+   "source": "research/outing-risk-taxonomy.md"
+  }
+ ]
+}

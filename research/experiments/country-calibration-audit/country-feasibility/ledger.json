@@ -1,0 +1,81 @@
+{
+ "ledger_version": "single-country-v1",
+ "editing_rule": "literal exact-string replacement only; every before-block must match exactly once in its source at apply time (fail closed); no regex prose transformation",
+ "source_prompts": {
+  "A": "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_a.txt",
+  "B": "research/experiments/country-calibration-audit/rule-contrasts/frozen/candidate_b.txt"
+ },
+ "scope": "pairwise task framing (T1-T6, T8) and the two-score output contract (T7) only; every other substantive rule and the A/B variant differences are preserved verbatim",
+ "prompt_edits": [
+  {
+   "id": "T1_opening",
+   "scope": "shared",
+   "before": "You are an expert assessor of travel risk for transgender people. You will be given two\nanonymised research dossiers, labelled A and B. Each describes one jurisdiction. You do not\nknow which jurisdictions they are, and you must not try to guess: your rating must follow\nfrom the documented facts alone.",
+   "after": "You are an expert assessor of travel risk for transgender people. You will be given one\nanonymised research dossier. It describes one jurisdiction. You do not\nknow which jurisdiction it is, and you must not try to guess: your rating must follow\nfrom the documented facts alone."
+  },
+  {
+   "id": "T2_task_line",
+   "scope": "variant",
+   "before": {
+    "A": "Your task: rate **each** dossier on the scale below, independently, as the risk faced by a\n**transgender visitor** to that jurisdiction if they are discovered or outed there.",
+    "B": "Your task: rate **each** dossier on the scale below, independently, as the risk faced by a\n**transgender visitor** to that jurisdiction: consequences when discovered or outed,\ntogether with documented state-engineered discovery exposure under rules 9 and 10b."
+   },
+   "after": {
+    "A": "Your task: rate the dossier on the scale below, as the risk faced by a\n**transgender visitor** to that jurisdiction if they are discovered or outed there.",
+    "B": "Your task: rate the dossier on the scale below, as the risk faced by a\n**transgender visitor** to that jurisdiction: consequences when discovered or outed,\ntogether with documented state-engineered discovery exposure under rules 9 and 10b."
+   }
+  },
+  {
+   "id": "T3_rule3_partner_sentence",
+   "scope": "shared",
+   "before": "When one dossier\n   is silent and the other is documented, the documented one carries the evidentiary weight;\n   do not let silence out-vote evidence.",
+   "after": "Where this dossier\n   is silent, record the silence as such; documented evidence in this dossier\n   carries the evidentiary weight; do not let silence out-vote evidence."
+  },
+  {
+   "id": "T4_rule4_two_dossier_sentence",
+   "scope": "shared",
+   "before": "Two dossiers with identical facts must receive\n   identical ratings regardless of implied geography.",
+   "after": "Identical documented facts must receive\n   identical ratings regardless of implied geography."
+  },
+  {
+   "id": "T5_rule14_cross_dossier_compare",
+   "scope": "shared",
+   "before": "Compare severity, documented frequency, coverage, triggers, datedness and\n    remedy across the complete dossiers.",
+   "after": "Assess severity, documented frequency, coverage, triggers, datedness and\n    remedy across the complete dossier."
+  },
+  {
+   "id": "T8_rule14_forced_unequal_scores",
+   "scope": "shared",
+   "before": "Equal incident counts can support different assessments\n    where the evidence distinguishes background violence from organised targeting;\n    explain the distinction rather than forcing unequal scores.",
+   "after": "Equal incident counts can support different assessments\n    where the evidence distinguishes background violence from organised targeting;\n    explain that distinction rather than forcing the score up or down."
+  },
+  {
+   "id": "T6_rule12_pairwise_scoping",
+   "scope": "shared",
+   "before": "SCOPING: when one dossier carries a parent-regime\n   section, that regime belongs to THAT dossier's jurisdiction alone — the other\n   dossier's jurisdiction stands on its own stated facts and must NOT inherit the\n   parent regime, no matter how similar the two dossiers' cultural content looks\n   (shared traditions do not imply a shared parent).",
+   "after": "SCOPING: a parent-regime section, if one is supplied, applies only to the\n   jurisdiction this dossier describes; do not extend it to any other jurisdiction, no\n   matter how similar its cultural content looks\n   (shared traditions do not imply a shared parent)."
+  },
+  {
+   "id": "T7_output_contract",
+   "scope": "shared",
+   "before": "## Output format\n\nReply with **only** a single JSON object, no prose before or after it:\n\n{\"score_a\": <float 0.0-1.0>, \"score_b\": <float 0.0-1.0>, \"why\": \"<= 40 words, the decisive axis-level differences\"}\n\nBoth scores are on the same 0.00–1.00 scale described above, where **higher is safer**.\nGive two decimal places. `score_a` rates dossier A, `score_b` rates dossier B. They may be\nequal if the dossiers genuinely warrant it. Rate each on its merits against the scale —\ndo not force a difference, and do not let the order of presentation influence you.\n",
+   "after": "## Output format\n\nReply with **only** a single JSON object, no prose before or after it:\n\n{\"status\": \"ok\", \"score\": <float 0.0-1.0>, \"why\": \"<= 40 words, the evidence-based grounds for this score\", \"evidence_ids\": \"<= 8 short references to dossier items relied on, or none>\", \"discovery\": \"<= 15 words, documented state-engineered discovery contribution included or excluded, and why>\", \"direct_harms\": \"<= 15 words, direct burdens counted>\", \"scope_triggers\": \"<= 15 words, geographic or institutional scope and trigger conditions>\", \"uncertainty\": \"<= 15 words, key unknowns and the basis of any inference>\"}\n\nUse \"status\": \"ok\" with a score only where this dossier's evidence supports one. The\nscore is on the 0.00-1.00 scale described above, where **higher is safer**. Give two\ndecimal places; the score is an orientation output, not an interval measurement. Where\nthis dossier does not support a rating - for example an empty or evidence-free dossier\n- reply with \"status\": \"insufficient_evidence\" and \"score\": null instead, and state in\n\"why\" what is missing. Never resolve a missing or empty dossier to a midpoint, a prior\nor a remembered value, and never answer from general knowledge outside this dossier. A\nthin dossier whose structural facts in the record do support a rating may still be\nscored under the thin-data rule; state the extrapolation in \"uncertainty\". The fields\n\"evidence_ids\", \"discovery\", \"direct_harms\", \"scope_triggers\" and \"uncertainty\" are\nexplanations of how you used the evidence; they are not additive numerical components\nof the score.\n"
+  }
+ ],
+ "packet_edits": [
+  {
+   "id": "GBR_index_summary",
+   "iso": "GBR",
+   "field": "blindSummary",
+   "before": "Regional rainbow-index rankings show the country falling from 1st in the subregion with an 86% score in 2015 to 9th in 2020 with 66% and concern about a hostile climate on trans rights, then 22nd in 2025 with 45%, the third steepest drop in the subregion.",
+   "after": "Regional rainbow-index rankings show the country falling sharply in the subregion across the 2015, 2020 and 2025 assessments, with concern about a hostile climate on trans rights recorded in 2020 and the decline described as among the steepest drops in the subregion."
+  },
+  {
+   "id": "GBR_index_tangential",
+   "iso": "GBR",
+   "field": "blindTangential",
+   "before": "a regional rainbow-index ranking places it 22nd in the subregion in 2025 with 45%, down from 1st with 86% in 2015, described as the third steepest drop in the subregion from 2024.",
+   "after": "a regional rainbow-index ranking places it far lower in the subregion in 2025 than in 2015, a decline described as among the steepest drops in the subregion from 2024."
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "artifact": "post-hoc research-only score-blind semantic diagnostic of the terminally failed v2 stage-one call-001",
+ "artifact_version": 1,
+ "scope": {
+  "post_hoc": true,
+  "research_only": true,
+  "not_a_runner_semantic_input": true,
+  "not_a_runner_semantic_input_note": "runner semantic inputs are read only from runs/<run-id>/semantic-inputs/call-NNN.json (runner.sidecar_path); this file lives under analysis/ and is never read, written or referenced by runner.py in any invocation",
+  "cannot_authorize_another_call": true,
+  "cannot_validate_a_rating": true,
+  "note": "this sidecar is a shape/contract diagnostic only; it never re-opens, retries, reconciles or supersedes the failed run, never validates or rates the output, and never renders any prose, ranking or numeric value reviewable as a rating",
+  "writes_outside_this_file": "none - runs/, prompts, receipts, program and data untouched"
+ },
+ "source_attempt": {
+  "record_path": "runs/v2-stage1-call-001/attempts/call-001.json",
+  "record_sha256": "a9ebd16dfb81c303da15eff13d8d450b52c48dbf80fe5f6c36e34a10ce129f55",
+  "raw_response_sha256": "7e5d09a28af90933473f5e52d86d2080ee5893072d507e9ad5676a6780289ecf",
+  "raw_response_sha256_reverified": true,
+  "attempt_unchanged_by_this_artifact": true
+ },
+ "validation": {
+  "strict_json_parse": "passed (runner.json_loads_strict on attempt record and provider response)",
+  "assistant_content_present": true,
+  "output_contract": "passed (runner.validate_output_contract, unchanged v1 contract)",
+  "contract_status_value": "ok",
+  "contract_fields_present": [
+   "direct_harms",
+   "discovery",
+   "evidence_ids",
+   "scope_triggers",
+   "score",
+   "status",
+   "uncertainty",
+   "why"
+  ],
+  "score_blind_projection": "passed (runner.score_blind_sidecar)",
+  "frozen_dossier_system_prompt_sha256_reverified_against_frozen_bytes": true,
+  "frozen_dossier_user_message_sha256_reverified_against_frozen_bytes": true,
+  "score_blind_key_scan": {
+   "pattern": [
+    "score",
+    "rank",
+    "ranking",
+    "band"
+   ],
+   "scope": "whole artifact after assembly",
+   "leaks": []
+  }
+ },
+ "terminal_state_preserved": {
+  "run_id": "v2-stage1-call-001",
+  "status": "stopped",
+  "stage_state": "terminal_failure",
+  "stop_reason": "inconsistent reasoning count semantics: reasoning_tokens 1148 > billed completion 1119 (provider usage fields inconsistent - stop; never reconciled silently)",
+  "next_dispatch_requires": "none: a failed or ceiling-stopped attempt terminally ends this stage - no regeneration, no replacement cell, no retry; recovery requires a new, separately reviewed version",
+  "attempt_stop_reason": "inconsistent reasoning count semantics: reasoning_tokens 1148 > billed completion 1119 (provider usage fields inconsistent - stop; never reconciled silently)",
+  "attempt_errors": [
+   "inconsistent reasoning count semantics: reasoning_tokens 1148 > billed completion 1119 (provider usage fields inconsistent - stop; never reconciled silently)"
+  ],
+  "attempt_retry": false,
+  "billed_on_failure": {
+   "parsed": true,
+   "usage": {
+    "prompt_tokens": 11547,
+    "completion_tokens": 1119,
+    "total_tokens": 12666
+   },
+   "cost": 0.000628782,
+   "reason": null
+  },
+  "unreconciled_liability": null,
+  "statement": "verbatim from the immutable attempt/result records; the usage-count inconsistency is still unreconciled and the stage remains terminally stopped - this artifact changes none of it"
+ },
+ "sidecar": {
+  "sidecar_version": 1,
+  "score_blind": "the numeric score key is omitted; every other field is copied verbatim from the model output - no prose is rewritten, no value is rounded or selected",
+  "output": {
+   "status": "ok",
+   "why": "No trans-specific offence, no documented visitor targeting, border friction, facility bans or police profiling; but documented public harassment, institutional discrimination and rising official anti-LGBT rhetoric temper the score.",
+   "evidence_ids": [
+    "2007 Pant ruling; codes read in its light",
+    "Feb 2024 document-procedure call",
+    "Nov 2024 provincial harassment account",
+    "Oct 2024 anti-LGBT rally",
+    "Apr 2026 leader's video/death threats",
+    "2015 stigma study",
+    "education curriculum; pride parades",
+    "LGBT org drop-in centre, 50+ branches"
+   ],
+   "discovery": "Excluded: no state-engineered discovery of visitors documented; marker process is resident-facing.",
+   "direct_harms": "Societal harassment, service/institution discrimination, official derogatory rhetoric and threats; no criminal penalty counted.",
+   "scope_triggers": "Harassment recorded for visibly trans residents in provincial cities; no documented visitor-facing facility, border or custody trigger.",
+   "uncertainty": "Visitor-specific border, facility and policing practice undocumented; inference drawn from absence of trans-specific law and no visitor targeting."
+  },
+  "frozen_dossier": {
+   "system_prompt_sha256": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+   "user_message_sha256": "c13d0fdea77ed5bab48485a09485f38e13b676cc0d1f8e4e35a089a5c9574aa2",
+   "source_v1_call": 18,
+   "reference": "check source fidelity against exactly these frozen bytes (frozen/single_{a,b}.txt and frozen/user_messages.json row source_v1_call); no preferred numerical value or ranking is a review criterion"
+  }
+ }
+}

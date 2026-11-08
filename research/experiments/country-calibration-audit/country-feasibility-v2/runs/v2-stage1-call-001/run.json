@@ -1,0 +1,226 @@
+{
+ "run_id": "v2-stage1-call-001",
+ "stage": "country-feasibility-v2 stage one",
+ "status": "in_progress",
+ "started_at": "2026-11-08T06:24:49+00:00",
+ "dispatch_checkpoint": {
+  "max_attempts_per_invocation": 1,
+  "prior_stage_attempts": 0,
+  "dispatched_call": 1,
+  "semantic_checkpoint": "one scheduled cell per invocation under the shared lock; before the next dispatch every earlier completed output needs an independent PASS review (runs/<run-id>/semantic-reviews/call-NNN.json) bound to response_sha256, the score-blind sidecar sha256, the frozen system-prompt and user-message hashes and the rubric version - every record/sidecar/review message and prompt binding cross-checked against the re-read immutable frozen schedule/message/prompt bytes for that call (never only against the writable attempt record) and each attempt chained to this invocation's receipt hash - with named reviewer identity/session; missing/FAIL/UNCERTAIN/tampered review, a failed prior attempt, or an unreconciled liability blocks all later calls before price/credential/network access; reviewers judge source fidelity against the frozen dossier without numerical values or rankings; this runner never writes a review or authors a verdict",
+  "prior_semantic_reviews": []
+ },
+ "cache_policy": {
+  "request_cache_directives": "none ever sent (no cache key in the request whitelist); no cache warming, busting, forcing or retries to obtain a preferred cache condition",
+  "provider_initiated_reads": "allowed only when reported usage/cost arithmetic is valid (ints, totals consistent, cached_tokens <= prompt_tokens, finite cost within the reservation); full cache usage is logged in every attempt as an execution condition - with no claim of reproducibility or of uncached performance",
+  "cache_writes": "any nonzero cache_write_tokens stops the stage: cache-WRITE billing cannot be reconciled with the advertised prices this runner fetches, so it is never assumed to be free",
+  "provenance": "token counts alone do not identify cache provenance; provider cache state is uncontrolled and precludes latency/cost reproduction claims"
+ },
+ "stage_prior": {
+  "attempts": 0,
+  "used_usd": "0",
+  "used_input_tokens": 0,
+  "used_output_tokens": 0
+ },
+ "adaptive_disclosure": {
+  "origin": "v1 country-feasibility-20261108-v1 is CLOSED: its only attempted cell (USA, variant B, deepseek, core) returned no final score (empty assistant content, finish_reason length) and 39 cells were never attempted; v1 files remain byte-identical and its no-retry contract is neither resumed nor amended by v2",
+  "partial_reasoning_exposure": "The preserved v1 failure record contains provider partial reasoning text with provisional numerical musings that reviewers were exposed to. No such provisional number is reproduced anywhere in v2, and none was used to select countries, models, prompt wording, schedule, sentinels or settings.",
+  "stage": "v2 is a new, explicitly adaptive feasibility stage designed after inspecting the v1 failure and the independent reviews; it is not confirmatory and cannot satisfy or retroactively amend v1",
+  "no_desired_scores": "The design states no desired score, band or ordering for any cell"
+ },
+ "api_base": "https://openrouter.ai/api/v1",
+ "models": [
+  "deepseek/deepseek-v4.1-flash",
+  "google/gemini-3.8-flash"
+ ],
+ "requested_settings": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_output_tokens": 11000
+ },
+ "requested_settings_change": {
+  "preserved_from_v1": {
+   "temperature": 1.0,
+   "top_p": 1.0
+  },
+  "changed": {
+   "max_output_tokens": {
+    "from": 2000,
+    "to": 11000
+   }
+  },
+  "sole_generation_setting_change": true,
+  "basis": "prior separate pilot2 instrument: 95/96 parseable logical calls at 11000 max output tokens; operational precedent only - not a guarantee, not proof that 2000 caused the v1 failure, not semantic validation",
+  "reasoning_parameter": "none added: v1 requested no explicit reasoning parameter, so v2 requests none; 11000 caps billed output including reasoning",
+  "transport_timeout": {
+   "scope": "transport-only socket timeout for the chat request; NOT a generation setting - the sole generation-settings change remains max_output_tokens 2000 -> 11000",
+   "from_seconds": 30,
+   "to_seconds": 300,
+   "price_fetch_timeout_seconds": 30,
+   "basis": "pinned call-001 took 28 s for 2000 completion tokens and still ended finish_reason length; an 11000-token non-streaming response plausibly needs minutes of server silence, so the unchanged 30 s timeout would abort with no raw body and record a permanent unreconciled liability",
+   "fail_closed": "a timeout still raises a transport-error refusal, stops the stage before any further dispatch, and an unknown charge remains an unreconciled liability (never assumed to be zero)"
+  }
+ },
+ "expected_providers": {
+  "deepseek/deepseek-v4.1-flash": [
+   "Relace"
+  ],
+  "google/gemini-3.8-flash": [
+   "Google"
+  ]
+ },
+ "manifest_sha256": "87e441178732ea3cb3b4f5c5df510854b75382875a9f75f6ba35ea3d46c983f3",
+ "receipt_sha256": "3764a35f3bbde08a931e742a02c2f4531473b0351fa364b5fa622668dd12bfbc",
+ "receipt_bindings": {
+  "frozen/manifest.json": "87e441178732ea3cb3b4f5c5df510854b75382875a9f75f6ba35ea3d46c983f3",
+  "frozen/schedule.json": "2ec2cb5fb67a7f0f36da457eb3ee1a1043972a8fe76d7187685c58b18d747d39",
+  "frozen/user_messages.json": "5e1d11d7b04c5e9d53d4efaf132280c5f423fdc4c57f0c3c444d2791610f1d70",
+  "frozen/single_a.txt": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+  "frozen/single_b.txt": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+  "protocol.md": "9cebd1eee0b5a2d9264254016b4a7fb4bfbfa43958e2cb28a772ce01888e72e0",
+  "runner.py": "5df8b5d5be5385d04d33fdaff66e77a86a70b3a46c82832cf4876f3d82da5cd8",
+  "test_runner.py": "c73f143033c37c1e92ef293ce3c23ecdb255ac57076df88a27f1bb3f3500699b",
+  "data/countries.json": "c4a2c8339b0d389a42d8b90ec48bafab209d511185ab10e19789d29de4baebce",
+  "v1/frozen/manifest.json": "a55962ac1eba5458b3de517bdeb768f55db3a3ab6f20c10d887ab78e8692b756",
+  "v1/frozen/single_a.txt": "de747210956d1637b7a872f03a58dfe3d2aa483562c1de987ab34bcf66a5cc46",
+  "v1/frozen/single_b.txt": "7dfdeba76b963a6b4f53f6b8d37c76e865cfb1bdfe528f35657d886459850ee8",
+  "v1/frozen/schedule.json": "b40d6bd87301d731885b1d807d3bba76e878f0205b0ad371a2ac739a710f5f47",
+  "v1/frozen/user_messages.json": "eb37081737f89b59694f110cba1867d159247fa50e755f252ac32d1ffa942f14",
+  "v1/frozen/packets/USA.txt": "1ba052e91d93ea728d496cab21137ce27b08e952dea8758b15d4ada2be47c1cf",
+  "v1/frozen/packets/GBR.txt": "8290d08753ea7c710a3f243a5f08e4e94628cdeab1375f395f892d081c51b31c",
+  "v1/frozen/packets/NPL.txt": "2d8bcf42f158273ae00dddc272eda488b5a8607d553e260f61b849e0024e815b",
+  "v1/frozen/packets/VAT.txt": "1800643dd8eb943fef5cb57c2c503e390a6c1d0135b6d23435b9d9f0bca02fc1",
+  "v1/ledger.json": "3e3b20bc52f933f5e6928078ebf4dd067093ae1eaf0c8fedee5677811b778f43",
+  "v1/runner.py": "d1435d61533b85c0667626e0e52ef6f032a513d7ddfa1ce8f36565b38bdb8d42",
+  "v1/runs/country-feasibility-20261108-v1/run.json": "01d91bf82f5686e57e770f034616d39f99c97bf563aa04522513186b127e8f28",
+  "v1/runs/country-feasibility-20261108-v1/result.json": "f5b2ff64750c5471fc5bd95c7e375b842452ba416e952e0b88938ed29829c361",
+  "v1/runs/country-feasibility-20261108-v1/attempts/call-001.json": "0b091da4de2ffdf021beb17a3b8db6dd5d029f5b38baaaaee62e139dff5dc757",
+  "v1/probes/probe-1/dispatch.json": "7ac4dd6319b1533ae563fb94d01422801d08d597e6dcf2e595deec4677ab3da1",
+  "v1/probes/probe-1/probe-result.json": "5b3bb14a03d36f11a1b5990971f60bc9102de99a8daa53a087e392fecd907ef2",
+  "v1/probes/probe-1/review.json": "774fe27845017bdcab1a940e5d19c7bdfb220821b06eac83a3e8b42c7d1715a0",
+  "v1/probes/probe-2/dispatch.json": "7ef49398c1bfa53aa028e3109fb45f79587183cefde4d571f118a30ec4a3bdcf",
+  "v1/probes/probe-2/probe-result.json": "3a55716757b6aafc9122995196f1e0df8544eab52ff62a0e3e3d0b6930ee4b19",
+  "v1/probes/probe-2/review.json": "a022d6415d81395f34034da2cfa0247d83b70ce9ee005964ea6fbfed319de545",
+  "v1/probes/probe-3/dispatch.json": "a41b376e7c0ba6bca22b7ae5d992ceba30ec9ffe113df71c613f334e0170b7e3",
+  "v1/probes/probe-3/probe-result.json": "3557d8f8f5866032686944ab7381ff34009625f6ed66304110bb9ff21c33c0a8",
+  "v1/probes/probe-3/review.json": "ff783af9ef6531f0cbe639e53d38454000ca8991f05f42420f4e38de2ebe6e25",
+  "v1/probes/probe-4/dispatch.json": "9a62d935b6e3d2a998642d296aa7d3076628ea8354ee3860bc8f2c6cef406f54",
+  "v1/probes/probe-4/probe-result.json": "88e89f431dba67fee364048d5496d4b8905fa4168d65c9d05572cbf21e0db9f4",
+  "v1/probes/probe-4/review.json": "a4aa1b3a1e2974213037ec135e0468cd208b5a8b6d829a6bb67e7de079c98002",
+  "independent-methodology-review": "71bcdfc1591fe336f13d09e2906c0fcdd52bf463cf473b174972f5980c7cc0b0",
+  "independent-code-review": "b3efb3f5b8bd5022083eca69c08fbcaf3c6a022240d5a91aaf4a7707999e841d",
+  "independent-evidence-review": "f7cf46b8b7f5e48d3d3c290335ac4a38ae3e878a8e970e27335e35b5b23677ca"
+ },
+ "preflight": {
+  "status": "signed_off",
+  "document": "protocol.md",
+  "reviewed_by": "Independent Sol methodology and evidence reviews; independent MiMo code reviews; coordinating Terra assistant",
+  "reviewed_at": "2026-11-08T06:19:41Z",
+  "statement": "Feasibility-only procedural decision under the user's instruction to continue. This is an AI-coordinated review, not a human signature, exhaustive factual verification, or approval of published scores. V2 is adaptive after a failed V1 call; no final V1 score was produced and provisional reasoning was visible to reviewers. The fixed one-call-at-a-time schedule, independent semantic checkpoints, no-retry rules, source limitations and shared budget remain binding."
+ },
+ "prior_accounting": {
+  "source": "exact Decimal reconstruction from the 4 original probe-result.json files + v1 call-001 billed_on_failure (deduplicated provider ids, pinned raw hashes)",
+  "total_usd": "0.001993276",
+  "input_tokens": 13652,
+  "output_tokens": 2274,
+  "dispatches": 5,
+  "record_ids": [
+   "gen-1794106990-7PhsDMgoeYLY5Ey3xTWC",
+   "gen-1794106994-0siK3sXrXESUBEhvbyAa",
+   "gen-1794110261-QsQTj3oz7EAh67YH2wwb",
+   "gen-1794110270-0TMzHxo7IM8DnbBoLgJS",
+   "gen-1794111565-9wwedC2eXJIXQChRL86T"
+  ],
+  "note": "rounded v1 summary fields are never used for budgeting"
+ },
+ "output_budgets": {
+  "historical": {
+   "v1_aggregate_max_output_tokens": 80000,
+   "probe_output_allowance_tokens": 4128,
+   "v1_output_used_tokens_exact": 2274
+  },
+  "v2_max_output_per_call": 11000,
+  "v2_aggregate_output_reservation_tokens": 220000,
+  "note": "older and new output budgets retained separately as exact integers; never merged or rounded"
+ },
+ "plan": {
+  "per_call_input": [
+   57238,
+   43437,
+   51136,
+   59984,
+   57703,
+   66609,
+   43902,
+   50671,
+   66144,
+   59519,
+   57703,
+   66609,
+   50671,
+   59984,
+   43437,
+   59519,
+   57238,
+   43902,
+   51136,
+   66144
+  ],
+  "max_per_call_input": 66609,
+  "aggregate_input": 1112686,
+  "aggregate_output": 220000,
+  "input_method": "UTF-8 byte count of the frozen prompt + message + 128 fixed chat-framing units per call (administrative reservation units: conservative under the stated assumptions, NOT a guaranteed provider tokenizer bound)"
+ },
+ "plan_worst_usd": [
+  "0.009156138",
+  "0.081210525",
+  "0.008844936",
+  "0.094861800",
+  "0.092979975",
+  "0.009634059",
+  "0.008476002",
+  "0.087178575",
+  "0.099943800",
+  "0.009272469",
+  "0.009179853",
+  "0.100327425",
+  "0.008821221",
+  "0.009296184",
+  "0.008452287",
+  "0.094478175",
+  "0.092596350",
+  "0.081594150",
+  "0.087562200",
+  "0.009610344"
+ ],
+ "prices_usd_per_token": {
+  "deepseek/deepseek-v4.1-flash": {
+   "prompt": "0.000000051",
+   "completion": "0.000000567"
+  },
+  "google/gemini-3.8-flash": {
+   "prompt": "0.000000825",
+   "completion": "0.000004125"
+  }
+ },
+ "caps": {
+  "attempt_ceiling_including_failures": 20,
+  "prior_dispatches": 5,
+  "total_dispatch_ceiling": 25,
+  "retries": 0,
+  "usd_ceiling": "10.00",
+  "reservation_per_call_units": 70000,
+  "reservation_aggregate_units": 1400000
+ },
+ "budget_note": "USD guard enforced locally between calls only; not a provider-enforced spend limit; a single in-flight call is postpaid and can overshoot the local guard before the next check; prior shared spend is included in every in-run USD comparison while used_usd stays stage-local and exact (decimal strings, no rounding)",
+ "stop_conditions": [
+  "failed/empty/truncated/invalid output - TERMINAL, no retry",
+  "API error (HTTP != 200 or error object) - TERMINAL",
+  "provider mismatch (model substitution) or unexpected routing - TERMINAL",
+  "unknown or inconsistent billing/usage incl. reasoning-count semantics, unreconcilable cache-WRITE billing, BYOK - TERMINAL",
+  "empty-dossier sentinel not abstaining - TERMINAL",
+  "missing/FAIL/UNCERTAIN/tampered prior semantic review - all later calls blocked before price/credential/network access",
+  "budget/reservation/dispatch/attempt ceiling breach",
+  "receipt, lock, hash or other integrity failure"
+ ]
+}
