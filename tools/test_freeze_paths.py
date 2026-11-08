@@ -15,7 +15,7 @@ Covers:
      works.
   D. tools/consolidate_record.py validates summaries against the SHARED
      build_data.MAX_SUMMARY_CHARS ceiling (source + behaviour parity on the
-     real 8,792-char USA dossier and on at-/over-limit text), imported under
+     current USA dossier and on at-/over-limit text), imported under
      a controlled env so no credential file is opened and no API call runs.
 
 All builds run in temporary sandbox copies of data/ + boundaries/; this
@@ -102,7 +102,7 @@ class SandboxFullBuild(unittest.TestCase):
 
     def test_0_build_succeeds_with_no_validation_errors(self):
         # 2026-11-13 follow-up: the shared summary ceiling is now 16000, so
-        # the real 8,792-char USA dossier validates and the sandbox build
+        # the current USA dossier validates and the sandbox build
         # must be fully green — this test expects SUCCESS, not a known
         # failure, and will keep passing only while no new validation error
         # appears.
@@ -112,11 +112,10 @@ class SandboxFullBuild(unittest.TestCase):
         self.assertEqual(self.proc.returncode, 0,
                          self.proc.stdout + self.proc.stderr)
 
-    def test_7_actual_usa_8792_char_summary_accepted(self):
+    def test_7_actual_usa_summary_accepted(self):
         import apply_rework
         usa = self.in_c["USA"]["summary"]
-        self.assertEqual(len(usa), 8792)
-        self.assertTrue(build_data.valid_summary(usa), "8792-char USA rejected")
+        self.assertTrue(build_data.valid_summary(usa), "USA summary rejected")
         self.assertTrue(apply_rework.valid_summary(usa))
         self.assertEqual(apply_rework.MAX_SUMMARY_CHARS,
                          build_data.MAX_SUMMARY_CHARS)
@@ -635,14 +634,17 @@ class SharedSummaryCeilingAcrossLanes(unittest.TestCase):
         lanes = (build_data.valid_summary, apply_rework.valid_summary,
                  consolidate_record.valid_summary)
         usa = load(ROOT / "data" / "countries.json")["USA"]["summary"]
-        self.assertEqual(len(usa), 8792)
+        long_fixture = "<p>" + "a" * (8792 - 7) + "</p>"
+        self.assertEqual(len(long_fixture), 8792)
         at_limit = "<p>" + "a" * (build_data.MAX_SUMMARY_CHARS - 7) + "</p>"
         over = "<p>" + "a" * (build_data.MAX_SUMMARY_CHARS - 6) + "</p>"
         self.assertEqual(len(at_limit), 16000)
         self.assertEqual(len(over), 16001)
         for lane in lanes:
             self.assertTrue(lane(usa), f"{lane.__module__}.valid_summary "
-                                       f"rejected the 8792-char USA summary")
+                                       f"rejected the USA summary")
+            self.assertTrue(lane(long_fixture), f"{lane.__module__}: "
+                                               f"8792-character fixture rejected")
             self.assertTrue(lane(at_limit), f"{lane.__module__}: at-limit "
                                             f"16000 rejected")
             self.assertFalse(lane(over), f"{lane.__module__}: over-limit "
