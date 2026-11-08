@@ -934,6 +934,25 @@ def parse_five_way_response(text) -> list[dict]:
         raise OutputRejected(f"response is not one strict JSON object: {e}")
     if not isinstance(doc, dict):
         raise OutputRejected(f"top level must be a JSON object, got {type(doc).__name__}")
+    if "choices" in doc:
+        # Provider envelope (e.g. an OpenAI-style chat completion body): unwrap
+        # the assistant message strictly. The raw envelope is what gets
+        # preserved; the parse target is the message content.
+        try:
+            content = doc["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as e:
+            raise OutputRejected(f"provider envelope has no assistant content: {e}")
+        if not isinstance(content, str) or not content.strip():
+            raise OutputRejected("provider envelope has empty assistant content")
+        try:
+            doc = json.loads(content.strip(), parse_constant=_reject_constant)
+        except _NonJsonConstant as e:
+            raise OutputRejected(f"non-JSON constant {str(e)!r} in response")
+        except ValueError as e:
+            raise OutputRejected(f"assistant content is not one strict JSON object: {e}")
+        if not isinstance(doc, dict):
+            raise OutputRejected(
+                f"assistant content must be a JSON object, got {type(doc).__name__}")
     if set(doc) != RESPONSE_KEYS:
         raise OutputRejected(f"top-level keys must be exactly {{'results'}}, got {sorted(doc)}")
     results = doc["results"]
@@ -1110,8 +1129,14 @@ def _result_path(run_dir: Path, call: int) -> Path:
 
 
 def execute_schedule(path, run_id, caller, *, runs_dir=None, lock_path=None,
-                     max_usd=None) -> dict:
-    """Dispatch every call of a frozen schedule through an injected adapter.
+                     max_usd=None, call_subset=None) -> dict:
+    """Dispatch calls of a frozen schedule through an injected adapter.
+
+    `call_subset` (optional set of call numbers) limits which cells THIS
+    invocation dispatches — used for transparent continuations after a
+    failed draw. The schedule itself stays the frozen full document and all
+    gates still verify in full; a subset never alters, renumbers or re-draws
+    any cell.
 
     `caller(system_text, user_text)` must return
     {"raw_response": str, "usage": {"cost_usd": ..., "input_tokens": ...,
@@ -1141,8 +1166,10 @@ def execute_schedule(path, run_id, caller, *, runs_dir=None, lock_path=None,
         messages = rebuild_messages(doc)
         completed = 0
         for call, (system_text, user_text) in zip(doc["calls"], messages):
-            ledger.check_budget()
             call_no = call["call"]
+            if call_subset is not None and call_no not in call_subset:
+                continue
+            ledger.check_budget()
             try:
                 res = caller(system_text, user_text)
             except Exception as e:               # adapter failure: stop, never retry
@@ -1218,6 +1245,39 @@ def load_provider(spec: str):
 # CLI
 # --------------------------------------------------------------------------- #
 
+def parse_call_subset(spec: str) -> frozenset[int]:
+    """'17-20' or '17,18,19,20' -> frozenset of positive call numbers."""
+    out: set[int] = set()
+    try:
+        parts = str(spec).split(",")
+    except Exception as e:
+        raise HarnessError(f"invalid --calls spec: {e!r}")
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+        if "-" in part:
+            lo, _, hi = part.partition("-")
+            try:
+                lo_i, hi_i = int(lo.strip()), int(hi.strip())
+            except ValueError:
+                raise HarnessError(f"invalid --calls range {part!r}")
+            lo_i = _require_int(lo_i, "calls range start", minimum=1)
+            hi_i = _require_int(hi_i, "calls range end", minimum=1)
+            if hi_i < lo_i:
+                raise RunnerDisabled(f"invalid --calls range {part!r}")
+            out.update(range(lo_i, hi_i + 1))
+        else:
+            try:
+                n = int(part)
+            except ValueError:
+                raise HarnessError(f"invalid --calls entry {part!r}")
+            out.add(_require_int(n, "calls entry", minimum=1))
+    if not out:
+        raise RunnerDisabled("--calls selected no cells")
+    return frozenset(out)
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
         prog="harness.py",
@@ -1248,6 +1308,11 @@ def main(argv=None) -> int:
                    help="actually dispatch; absent => refusal before any write")
     p.add_argument("--provider", default=None,
                    help="with --execute: adapter as package.module:function")
+    p.add_argument("--calls", default=None,
+                   help="with --execute: dispatch only these cells, e.g. "
+                        "'17-20' or '17,18,19,20' (transparent continuation "
+                        "after a failed draw; the frozen schedule is still "
+                        "verified in full and no cell is renumbered)")
 
     args = parser.parse_args(argv)
     try:
@@ -1279,7 +1344,9 @@ def main(argv=None) -> int:
                     "--provider package.module:function (this harness ships no "
                     "network or credential code)")
             caller = load_provider(args.provider)
-            summary = execute_schedule(args.schedule, args.run_id, caller)
+            subset = parse_call_subset(args.calls) if args.calls else None
+            summary = execute_schedule(args.schedule, args.run_id, caller,
+                                       call_subset=subset)
             print(f"run {summary['run_id']}: {summary['calls_completed']} calls, "
                   f"exact cost {summary['total_usd']} USD "
                   f"(guard {summary['max_usd']})")

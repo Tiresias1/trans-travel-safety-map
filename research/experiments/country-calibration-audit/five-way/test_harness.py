@@ -138,6 +138,17 @@ def valid_response() -> str:
         {"slot": s, "score": 0.1 * s, "why": f"why {s}"} for s in range(1, 6)]})
 
 
+def _pre_runs_snapshot():
+    out = {"accounting.lock": (HERE / "accounting.lock").exists()}
+    runs = HERE / "runs"
+    out["runs"] = (runs.exists(),
+                   sorted(e.name for e in runs.iterdir()) if runs.exists() else ())
+    return out
+
+
+_PRE_RUNS_SNAPSHOT = _pre_runs_snapshot()
+
+
 class FakeCaller:
     def __init__(self, results):
         self.results = list(results)
@@ -805,11 +816,18 @@ class DisabledByDefaultTests(FixtureCase):
         self.assertFalse((self.root / "runs").exists())
         self.assertFalse((self.root / "accounting.lock").exists())
 
-    def test_real_lock_and_runs_dirs_never_created_by_tests(self):
+    def test_real_lock_and_runs_dirs_never_touched_by_tests(self):
         # This suite must leave the experiment dir untouched: these paths are
         # only reachable through execute_schedule with explicit temp dirs.
-        self.assertFalse((harness.HERE / "accounting.lock").exists())
-        self.assertFalse((harness.HERE / "runs").exists())
+        # Existence-agnostic: real runs/ artifacts may legitimately exist; the
+        # test asserts the SUITE changed nothing (snapshot taken at import).
+        def snap():
+            out = {"accounting.lock": (harness.HERE / "accounting.lock").exists()}
+            runs = harness.HERE / "runs"
+            out["runs"] = (runs.exists(),
+                           sorted(e.name for e in runs.iterdir()) if runs.exists() else ())
+            return out
+        self.assertEqual(snap(), _PRE_RUNS_SNAPSHOT)
 
     def test_harness_has_no_network_or_credential_code(self):
         src = (HERE / "harness.py").read_text(encoding="utf-8")
@@ -896,3 +914,62 @@ class TestPromptLeakGate(unittest.TestCase):
                 doc = json.loads(sched.read_text())
                 for sys_t, usr_t in harness.rebuild_messages(doc):
                     harness.assert_user_text_clean(usr_t)
+
+
+class TestProviderEnvelope(unittest.TestCase):
+    """2026-11-08: adapters may return the raw provider body; unwrap strictly."""
+
+    @staticmethod
+    def _content():
+        return json.dumps({"results": [
+            {"slot": s, "score": 0.5, "why": "w"} for s in range(1, 6)]})
+
+    def test_valid_envelope_parses(self):
+        env = json.dumps({"choices": [{"message": {"content": self._content()}}],
+                          "usage": {}})
+        parsed = harness.parse_five_way_response(env)
+        self.assertEqual(len(parsed), 5)
+
+    def test_envelope_empty_content_rejected(self):
+        env = json.dumps({"choices": [{"message": {"content": ""}}]})
+        with self.assertRaises(harness.OutputRejected):
+            harness.parse_five_way_response(env)
+
+    def test_envelope_bad_content_rejected(self):
+        env = json.dumps({"choices": [{"message": {"content": '{"results": []}'}}]})
+        with self.assertRaises(harness.OutputRejected):
+            harness.parse_five_way_response(env)
+
+    def test_plain_content_still_parses(self):
+        parsed = harness.parse_five_way_response(self._content())
+        self.assertEqual([e["slot"] for e in parsed], [1, 2, 3, 4, 5])
+
+
+class CallSubsetTests(FixtureCase):
+    """2026-11-08: --calls continuation subsets — dispatch only selected cells,
+    never renumber or re-draw anything."""
+
+    def setUp(self):
+        super().setUp()
+        self.build_country(n_calls=4, seed=5)
+        self.schedule = harness.country_schedule_path()
+        self.runs = self.root / "runs"
+        self.lock = self.root / "execute.lock"
+
+    def test_subset_dispatches_only_selected_cells(self):
+        caller = FakeCaller([{"raw_response": valid_response(),
+                              "usage": {"cost_usd": "0.001"}} for _ in range(2)])
+        res = harness.execute_schedule(self.schedule, "r-sub", caller,
+                                       runs_dir=self.runs, lock_path=self.lock,
+                                       call_subset=frozenset({2, 4}))
+        self.assertEqual(res["calls_completed"], 2)
+        present = sorted(p.name for p in (self.runs / "r-sub").glob("result-*.json"))
+        self.assertEqual(present, ["result-0002.json", "result-0004.json"])
+
+    def test_parse_call_subset(self):
+        self.assertEqual(harness.parse_call_subset("17-20"),
+                         frozenset({17, 18, 19, 20}))
+        self.assertEqual(harness.parse_call_subset("3,1"), frozenset({1, 3}))
+        for bad in ("", "0", "5-2", "x"):
+            with self.assertRaises(Exception):
+                harness.parse_call_subset(bad)
