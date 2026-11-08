@@ -25,6 +25,16 @@ interpreted that way without a negative result. This supports describing an
 inconsistent usage report; it does not establish the cause or prove the
 provider-reported monetary charge was wrong.
 
+A subsequent read-only generation-metadata lookup reported the same charge and
+native prompt/completion counts. It also reported different normalized token
+counts and a dated model identifier in place of the requested alias; the
+relationship between those fields is not established. Native reasoning still
+exceeded native completion, and the lookup and saved response disagree on
+upstream inference cost. The allowlisted metadata is preserved in
+`provider-generation-metadata.json`; only a hash of the original lookup
+response was retained, so its bytes cannot be independently rechecked here.
+This lookup does not reopen the stopped stage or independently verify billing.
+
 For diagnosis only, `failed-call-001-scoreblind.json` is a post-hoc projection
 of the saved response's contract-valid text, with the numeric score field
 omitted. It is outside the runner's semantic-input path, does not resolve the

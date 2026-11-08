@@ -55,8 +55,13 @@ attempt, not a representative country assessment.
 
 Exact provider-reported costs for the four probes plus the v1 and v2 country
 attempts total $0.002622058. This excludes independent reviewer usage and older
-experiments. The $10 guard was local and postpaid, not a provider-enforced hard
-limit. Preserve all failures, raw responses, costs and source limitations.
+experiments. A later read-only provider lookup matched the failed v2 call's
+charge but did not resolve its token-count inconsistency, and its upstream
+cost differed from the saved response. It also returned a dated model identifier
+rather than the requested alias. The relationship between those identifiers is
+not established. See the v2 analysis metadata.
+The $10 guard was local and postpaid, not a provider-enforced hard limit.
+Preserve all failures, raw responses, costs and source limitations.
 
 ## Earlier findings and open work
 
