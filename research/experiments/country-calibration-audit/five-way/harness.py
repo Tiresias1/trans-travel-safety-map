@@ -852,6 +852,63 @@ def make_country_schedule(n_calls, seed, locked_iso="USA",
     return doc
 
 
+def make_country_schedule_covering(seed) -> dict:
+    """Full-coverage country schedule: every eligible country appears in
+    exactly one five-country panel. Countries are sorted by percentile and
+    dealt into five equal strata (quintiles); each call takes one country per
+    stratum, so every panel spans the scale and coverage is exact
+    (ceil(n/5) calls; the two grid-fill slots at n=233 are pre-declared
+    duplicates). Deterministic under the seed.
+    """
+    check_diag_env()
+    seed = _validate_schedule_args(1, seed)[1]
+    countries = load_countries()
+    taxonomy = load_taxonomy()
+    pcts = percentile_ranks(countries)
+    eligible = sorted(eligible_countries(countries), key=lambda i: (pcts[i], i))
+    rng = random.Random(seed ^ 0xC0FE)
+    n = len(eligible)
+    n_calls = (n + SLOT_COUNT - 1) // SLOT_COUNT
+    strata: list[list[str]] = [[] for _ in range(SLOT_COUNT)]
+    for pos, iso in enumerate(eligible):
+        strata[pos % SLOT_COUNT].append(iso)   # round-robin over pct-sorted list
+    for s in strata:
+        rng.shuffle(s)
+    system_text = build_country_system(taxonomy)
+    calls, diversity_shas = [], {}
+    used = set()
+    for idx in range(1, n_calls + 1):
+        entries = []
+        for band in range(SLOT_COUNT):
+            s = strata[band]
+            iso = s[idx - 1] if idx <= len(s) else s[(idx - 1) % len(s)]
+            entries.append({"band": None, "iso3": iso,
+                            "forced_usa": False, "forced_lock": False,
+                            "duplicate_draw": iso in used})
+            used.add(iso)
+        rng.shuffle(entries)
+        slot_map = {str(s2): entries[s2 - 1] for s2 in range(1, SLOT_COUNT + 1)}
+        for e in entries:
+            if e["iso3"] not in diversity_shas:
+                diversity_shas[e["iso3"]] = sha256_text(load_diversity(e["iso3"]))
+        user_text = build_country_user(slot_map, countries)
+        calls.append({"call": idx, "selection": entries, "slot_map": slot_map,
+                      "system_sha256": sha256_text(system_text),
+                      "user_sha256": sha256_text(user_text)})
+    doc = {"kind": "country", "version": SCHEDULE_VERSION, "seed": seed,
+           "rng": _rng_metadata(seed), "n_calls": n_calls,
+           "locked_iso": None, "us_locked": False,
+           "coverage_mode": "all-eligible-countries-once",
+           "ablation_no_local": False,
+           "bands": [list(b) for b in BANDS],
+           "rubric_version": RUBRIC_VERSION,
+           "sources": _source_pins(("country",)),
+           "diversity_blind_sha256": diversity_shas,
+           "calls": calls}
+    write_json(Path(FROZEN_DIR) / "schedule_country_all.json", doc)
+    return doc
+
+
 def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None) -> dict:
     """Build (and write) frozen/schedule_admin1_<ISO3>.json.
 
@@ -1434,6 +1491,11 @@ def main(argv=None) -> int:
     p.add_argument("--locked", default="USA",
                    help="ISO3 forced into every call (default USA)")
 
+    p = sub.add_parser("schedule-country-all",
+                       help="write frozen/schedule_country_all.json (every "
+                            "country exactly once, stratified panels)")
+    p.add_argument("--seed", type=int, required=True)
+
     p = sub.add_parser("schedule-admin1",
                        help="write frozen/schedule_admin1_<ISO3>.json")
     p.add_argument("--iso3", required=True)
@@ -1466,6 +1528,11 @@ def main(argv=None) -> int:
             print(f"wrote {country_schedule_path(doc.get('locked_iso'))}: "
                   f"{doc['n_calls']} calls, seed {doc['seed']}, "
                   f"locked_iso={doc.get('locked_iso')}")
+            return 0
+        if args.command == "schedule-country-all":
+            doc = make_country_schedule_covering(args.seed)
+            print(f"wrote schedule_country_all.json: {doc['n_calls']} calls, "
+                  f"{len(doc['diversity_blind_sha256'])} countries covered")
             return 0
         if args.command == "schedule-admin1":
             doc = make_admin1_schedule(args.iso3, args.n_calls, args.seed)

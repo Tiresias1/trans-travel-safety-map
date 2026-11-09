@@ -114,3 +114,39 @@ claim-level grounding (v2). Validation run: re-run the US-locked and NPL-locked
 (US 0.346±0.046, NPL 0.563±0.021). All draws reported; no value targets.
 Note: visitor-likelihood weighting is model judgment — the corpus carries no
 arrival statistics.
+
+## Six-model panel run (pre-committed 2026-11-09, before any calls)
+
+Per user: all-countries and US-ADM1 runs on a PANEL of six models (mimo-v2.6-flash,
+deepseek-v4.1-flash-1017, qwen3.8-flash, glm-5.3-flash, claude-haiku-5.5,
+gpt-6-luna), averaged, with every per-model score stored.
+
+- Country wave: the shared covering schedule (40 calls, each of the 200
+  blind-complete countries in exactly one stratified panel), run identically on
+  all six models = 240 calls. Ensemble = per-country mean over the six model
+  draws; every model's draws stay in its own run directory AND in an aggregated
+  country x model matrix. 33 territory records lack blind dossiers and are
+  disclosed as uncovered (their blind-field drafts are generated in parallel for
+  a later wave).
+- ADM1 wave: the validated scored schedule (30 cells, 0.35 national anchor) on
+  all six models = 180 calls; ensemble per state over all model draws.
+- Generation settings uniform across the panel: thinking effort "low",
+  max_tokens 8000, one attempt per cell, same failed-draw rule (at most one
+  re-dispatch per failed cell). Disclosed: the deepseek member is the -1017
+  snapshot; the earlier deepseek-only waves used a different served snapshot.
+- Readouts (diagnostic, no value targets): per-country ensemble + per-model
+  spread (is the US still model-split in panels?), country ranking stability,
+  US-ADM1 state ensemble vs the 0.35 anchor sanity criterion, and comparison to
+  the single-model waves.
+
+## Qwen output-allowance amendment (2026-11-09, after mechanical diagnosis,
+## before any affected call)
+
+All three qwen attempts exhausted the full 8000-token output allowance on
+reasoning alone (usage: completion 8000 = reasoning 8000, finish_reason
+length, empty content). This is budget exhaustion, not output quality.
+Amendment: qwen cells only use max_tokens 16000; every other model stays at
+8000. qwen cell 1 (produced at 8000) stands; all other qwen cells are
+first-dispatch at 16000 and recorded as such. Cell 2 is closed (two failed
+draws). Same amendment applies to qwen's ADM1 wave. Disclosed as a
+model-specific generation-setting deviation caused by mechanical exhaustion.

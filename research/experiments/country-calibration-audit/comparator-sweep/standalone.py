@@ -53,13 +53,13 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def build_prompts() -> list[dict]:
+def build_prompts(models=None) -> list[dict]:
     countries = H.load_countries()
     taxonomy = H.load_taxonomy()
     scale = H._production_scale(taxonomy, admin1=False)
     rubric = scale + "\n\n" + H.RATING_RULES
     out = []
-    for model_key, model_id in MODELS.items():
+    for model_key, model_id in (models or MODELS).items():
         for iso3 in COUNTRIES:
             for cond in CONDITIONS:
                 for draw in range(1, DRAWS + 1):
@@ -88,13 +88,13 @@ def build_prompts() -> list[dict]:
     return out
 
 
-def freeze(out_name="standalone_calls.json") -> dict:
-    calls = build_prompts()
+def freeze(out_name="standalone_calls.json", models=None) -> dict:
+    calls = build_prompts(models)
     doc = {
         "kind": "standalone-ratings",
         "created": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "n_calls": len(calls),
-        "models": MODELS, "countries": COUNTRIES,
+        "models": models or MODELS, "countries": COUNTRIES,
         "conditions": {"S": "v2 clause + v2 regimes paragraph",
                        "N": "no clause, no regimes paragraph"},
         "draws_per_cell": DRAWS,
@@ -111,7 +111,7 @@ def _exact(value) -> str:
     return format(Decimal(str(value)), "f")
 
 
-def resolve_models() -> dict:
+def resolve_models(models=None) -> dict:
     key = KEY_FILE.read_text(encoding="utf-8").strip()
     req = urllib.request.Request(MODELS_URL, headers={
         "Authorization": "Bearer " + key, "Content-Type": "application/json"})
@@ -119,7 +119,7 @@ def resolve_models() -> dict:
     with urllib.request.urlopen(req, timeout=120) as resp:
         ids = {m["id"] for m in json.loads(resp.read())["data"]}
     resolved = {}
-    for role, pref in MODELS.items():
+    for role, pref in (models or MODELS).items():
         if pref in ids:
             resolved[role] = pref
             continue
@@ -130,10 +130,11 @@ def resolve_models() -> dict:
     return resolved
 
 
-def run(run_id: str, calls_file: str = "standalone_calls.json") -> int:
+def run(run_id: str, calls_file: str = "standalone_calls.json",
+        models=None) -> int:
     frozen = json.loads((HERE / "frozen" / calls_file).read_text())
-    resolved = resolve_models()
-    prompts = build_prompts()
+    resolved = resolve_models(models)
+    prompts = build_prompts(models)
     assert [{k: v for k, v in c.items() if not k.startswith("_")}
             for c in prompts] == frozen["calls"], "frozen prompts drifted"
     run_dir = HERE / "runs" / run_id
@@ -210,9 +211,14 @@ def main() -> int:
     ap.add_argument("--run-id")
     ap.add_argument("--execute", action="store_true")
     ap.add_argument("--calls-file", default="standalone_calls.json")
+    ap.add_argument("--models", default=None,
+                    help="comma list role:id to override the default model set")
     a = ap.parse_args()
+    models = None
+    if a.models:
+        models = dict(item.split(":", 1) for item in a.models.split(","))
     if a.command == "freeze":
-        doc = freeze(a.calls_file)
+        doc = freeze(a.calls_file, models)
         print(f"froze {doc['n_calls']} calls -> frozen/{a.calls_file}")
         return 0
     if a.command == "dry-run":
@@ -222,7 +228,7 @@ def main() -> int:
     if not a.execute or not a.run_id:
         print("STOP: run requires --execute and --run-id")
         return 2
-    return run(a.run_id, a.calls_file)
+    return run(a.run_id, a.calls_file, models)
 
 
 if __name__ == "__main__":

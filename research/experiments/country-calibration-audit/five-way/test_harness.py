@@ -1212,3 +1212,25 @@ class NoLocalAblationTests(FixtureCase):
         sys_t, usr_t = harness.rebuild_messages(doc)[0]
         self.assertIn("local regime", sys_t)
         self.assertIn("SUBNATIONAL REGIMES", usr_t)
+
+
+class CoveringScheduleTests(FixtureCase):
+    """2026-11-09: full-coverage country schedules for the six-model panel."""
+
+    def test_coverage_exact_and_deterministic(self):
+        a = harness.make_country_schedule_covering(5)
+        countries = harness.load_countries()
+        want = set(harness.eligible_countries(countries))
+        got = {e["iso3"] for c in a["calls"] for e in c["selection"]}
+        self.assertEqual(got, want)
+        b = harness.make_country_schedule_covering(5)
+        self.assertEqual([c["selection"] for c in a["calls"]],
+                         [c["selection"] for c in b["calls"]])
+
+    def test_each_panel_spans_strata(self):
+        doc = harness.make_country_schedule_covering(6)
+        pcts = harness.percentile_ranks(harness.load_countries())
+        for c in doc["calls"]:
+            ps = sorted(pcts[e["iso3"]] for e in c["selection"])
+            self.assertGreater(ps[-1] - ps[0], 30,
+                               "panel too homogeneous: " + str(ps))
