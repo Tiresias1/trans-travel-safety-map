@@ -1,0 +1,2097 @@
+{
+ "kind": "country",
+ "version": 1,
+ "seed": 20261108,
+ "rng": {
+  "module": "random.Random",
+  "algorithm": "MT19937",
+  "seed": 20261108,
+  "python": "3.14.8"
+ },
+ "n_calls": 20,
+ "locked_iso": "USA",
+ "ablation_no_local": true,
+ "us_locked": true,
+ "bands": [
+  [
+   0,
+   30
+  ],
+  [
+   20,
+   50
+  ],
+  [
+   35,
+   65
+  ],
+  [
+   50,
+   80
+  ],
+  [
+   70,
+   100
+  ]
+ ],
+ "percentile_method": "average-rank over all records in data/countries.json: p = 100 * avg_rank / (n - 1), zero-based ranks, tied scores share the average rank; band membership is lo <= p <= hi (closed intervals)",
+ "rubric_version": "r2026-11-13",
+ "sources": {
+  "research/outing-risk-taxonomy.md": "bce9348013b964795346f3372a272c4e0f0e4b94ec3dba90ec22624e746b8d79",
+  "tools/blind_pairwise.py": "5317d211628aaec4288541eef67ddc8375309e480babc5f733a6b183b012797e",
+  "data/countries.json": "e87cace96e36808e185b1c4fc51ba225b2d02736cbcae2cf1cc3e1fffccf1804"
+ },
+ "diversity_blind_sha256": {
+  "PAK": "c2dbae973235a2fa74b3a9bb3fac10a67e1779c6484e040c3a6198d1acd95c8c",
+  "USA": "a1bb3852e64c7548f6ccef3245c91261bad8f1bea5e2f9a3b61c5ceefe9b085c",
+  "MAC": "621211eeb5e03ee12d2d6d5442b4a23369405af02716eed3feb265cbe478f622",
+  "FJI": "2992327d9c42c9fbdfdd74af4e92f76ed382f17e8f3c16e8b141200c0a5200d6",
+  "VAT": "3b17b26e0e0953962080eee791184c4b4a6d788cba71fb8544e7d7b12f70f5fd",
+  "SYR": "c7307da370bef9be6ce328603eb3f12c0c6f47316f22c1a9f15298f5dea9573f",
+  "BIH": "1ca346ecb655c31efcee2c9f84a730165120dc2fb205bd42b5e5d4485c4b3fc0",
+  "XKX": "35606c0da140f4db47b324b3f2c6c5e6cd21f48f5be9d34c89e0f26774684447",
+  "ISL": "6d92aa3bef5d42215e2566c3f5f3ffd0fae2812c7a82892f30fcdd013850b2ad",
+  "SLV": "918ad238fcdffe6549591ebaecfa822249271867c21e58367b9381bd6abf7221",
+  "MDA": "35adfaf80917a967c82cef0d5040d32baaa8c1ed5eac0bf514ec259cd42da103",
+  "BLZ": "f1c9731140fdbd8485123280e4bad034c610ffbced2731d20908f4d69f85bff1",
+  "DEU": "49cd38d9e886aa0662b2947ddd5635a73c0828c44606d81ea1a71368ae1f346a",
+  "PNG": "35e4857d873730843f601c4ea2d017b129fcf39930043b33f13af8bb79777822",
+  "DMA": "0c7b55a690654a0274d013aa3fa8c337645c78c2ddad2a7f8a5c273d4b2f8704",
+  "LCA": "3dcde3aa7d6209d506ed96c28c3cccf1987e4c19a87e72658a7d0b2b54201f9a",
+  "HRV": "f5e3d302de22b1addc8e363ba8f73b832fbb21c9d06bf9653ae85371eefec145",
+  "UZB": "353ed5277bc4ee234a690ff0f7490840a1a99ab1722bb524a4d6bbc72e0dcd38",
+  "TON": "2aa311f0907bc26b07d287e3acc01961952cc79f413f331a0bff8ebe33febe68",
+  "BOL": "0ee7e3dab38d8fb3e337f40278d5560f5741a936bddc81a765cf28c6e54ddb42",
+  "SYC": "4b418ac2af96b2dfcf252fd6438026f5b66b7e60716dae36de9ea0e10590beff",
+  "CAF": "9e8a5c999815fae83af513d41fe12e14fc792816f8743eb30bd3427476614fd3",
+  "PER": "f72a739fb01f16129401c98ba1d2a4aaa6799dd72cab3e5dbb2cffa1d34ae9fc",
+  "KNA": "6b2133c18cf25a9b67c237eb49ee9b65f0037f13fb4f9c0f8f641da568099bb1",
+  "MUS": "b734b021a94328aa2368212ea9333e626baa36c3178282fe7cd31053d77d0277",
+  "BHR": "1624bb0c734d8e3c6b4f462719823333b7d7498b5b1443612d43b66456f73a91",
+  "GBR": "3c917cf1b628a93e6df76ab6def37d08eaa2f2323457b7cdedf930359ca918e0",
+  "WLF": "c7c0c08085ca0bf2a8b86b1493454f301e79deb47b9f52828974d4a0acb221c6",
+  "DZA": "1dae662769fa7e047d53de18186e7f2bca417e08f6bd6c244d695dc74003e3b2",
+  "GAB": "e4832c38101f78f5e68e32bc54edc131c358bf9b20529ddb9f4538a26b2eb071",
+  "TUV": "051a7da11a487e06d814fa1ae3a1373ee9f6676d251b976f764fb5b629e73837",
+  "COD": "86293d04346990cddd8d946f1a26e8a705bdb8dcff9ca75372a7c028e10eae62",
+  "COG": "f651031976523a98c25168be173294655b0395a5df3990852c3771e3c8e30833",
+  "VNM": "df5a992620abb1e50c38f3308818aa58040d90a34ef063033a7f5a00ef0d8db5",
+  "ESP": "17c0f169c9aa691362b7fcc128af91cd53eca6f500ab59af890895b0b6436aef",
+  "SAU": "7b85c42e4eeba7d95215e5bb006b84e6f7314ea4f9761c85c9b579215c22cbf3",
+  "BTN": "29325737d776bcd1c18a3a7e3fcc2bc37eb033fb6b371bde437d42c53c34a075",
+  "LVA": "a3c74dd1f55e06bb944c3ca4ddd5fa0148299f57596d574fa596bc95bdeeeb7a",
+  "HKG": "46f5d5036a95fc9e8b5e5be765a17862a1000dadb9abcf98275eec772bc5013c",
+  "LBY": "5c4e2de028949449441d8321f75f0243b8446d00857031e2ebfb8b70d911e602",
+  "THA": "0b55ece966eba95d7a3732f845aee55b2bdb6a778a6f1891591b9c46a8dacc6e",
+  "IRN": "2a4eb1306455e898c30b1b1cb359af8e5c193fd7c682bb26a5d042cd7cdaa66e",
+  "GNB": "06bb9344f20bc040b1631c37b368f0ff07a477e6dd86ac835951cf56f595b3b4",
+  "ITA": "4ba21e0527a21ad16e983066a0dac935ea9f16a00ac34cd4d38f27f1eb02bc7a",
+  "BDI": "c1b5ea81fedad3bbf03ea32976ca9b384136fdc13a8cfd85c25e786f55a00361",
+  "DOM": "c857ff12c06f1c6d9437929a4c1000db1c41e3d3570b76037d1b578c97a5158a",
+  "MKD": "aead3ba7f6d749b54cd370a5ff1c3b9e6ad725b4a17adb3995e7b985afb6d850",
+  "SVN": "e3e1d8bbbbd2fe958c51610f69cefe4b0e8fa699d726aaabd5b0c4ee81bc0f2e",
+  "KWT": "fa5827a46698fd936c32e9e0ecf8cf0bf465dfb4f7cea854df64d0341bdfd97e",
+  "LSO": "36b0c3fc8c4a5731e41e997127d9cf910129731f378f49331c152201e86aa88a",
+  "ARG": "0ef67af251bf5881881b3e8ab6b5f478b7ab03f78c560e97cb2ce763d554e48f",
+  "NOR": "e1b26e26e32862001b371dc369d4c085de7b2b611bb2151e294e98053c80fab2",
+  "FRA": "a198ffcea96c213a060480c8020c9166c3f683ea9017dd69a82a4333433061d4",
+  "KIR": "1dab3749c146a96a8bb5838d88b24f2916fc77ee8e3547fc14a8c5233ccdbb24",
+  "EST": "65ccdfd97d49e87e825483aa573a4fdf6e75bf1ec465202234f98efa0ce46839",
+  "LBN": "c6943e30e2b75e03590aa85aebe0081ad404376a1ba29549c576c2e5bff4d2e6",
+  "LAO": "ca30c9c9a3670c806ee93b5a1f7b014557dafc0b8010e06966985e6c47090d81",
+  "CYP": "f68bb00073d56f631ca7c58a5d528d6452e16c6244ce2a962f5b8ff5e4b9e249",
+  "AUS": "00d42bcab0e66ae31c02e7a9a5967482f0bc236265b16c9250dc5f4d4baed13d",
+  "IND": "20ece641fd4a7c6b80668fa4d233079d9d8dee7dc9856cd6f1676fe7631987d2",
+  "HUN": "3f15b38a3a83fa06d20860d6a1f49e46cea60709902a015c18398f7bf3b95b32",
+  "NLD": "13d7d865589b33e1718bd0dc58a8c5539eb8ac52a075476db9ff22f39cb95128",
+  "PSE": "4f7e27b45765d4dc7473cd730c658468d5e16028dee3168102a156d40a427199",
+  "MDV": "6f83e2e315db7309fa7a0e3945eaf82067340dc3c996721c11b47a91e81fe48b",
+  "LUX": "8cd13d8f4c3bffdc903ff5c6b4649f0eb3b85daf69672bd4b7c22f7a78e5a580",
+  "TUR": "631c2a8d8fb60b696c2e3633cab55d2a74aa40b98e8de0971dddd6e98825a187",
+  "TGO": "114cdd6477db7dd8b0358dd7af799b8738a190c98da1b25964042ad0ca3674ed",
+  "ROU": "6ba944168b15776ecfc75fd048b2b44af8d1f6cd22c8bcdfe8ef2b3aa9d90b54",
+  "LIE": "afdb18e0ecc1c0d6e99857f3f2a264fe11390597093832ddd94937f24280c0bf"
+ },
+ "calls": [
+  {
+   "call": 1,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PAK",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MAC",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "FJI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "VAT",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "2": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PAK",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "VAT",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "FJI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MAC",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "edc75a9b18c4b034148c094a9a05e9fcb4591832253d92d5704460dcb5a26365"
+  },
+  {
+   "call": 2,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SYR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BIH",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "XKX",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ISL",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "XKX",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BIH",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "4": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ISL",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SYR",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "fc1041cae4f5b6a2ad7e30ceef1811bf7535b68d8ae31d3c45de4050663dc6de"
+  },
+  {
+   "call": 3,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SLV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MDA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BLZ",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "DEU",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "DEU",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SLV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BLZ",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MDA",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "4137328b47db2e3957b43a21f5e2c9c59395773facdd4b8cc40fc18be322b4b0"
+  },
+  {
+   "call": 4,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PNG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "DMA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LCA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HRV",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "DMA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HRV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PNG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "5": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LCA",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "701a11d00fee1f48f64135bcb7a69d769d537d49113c9fb47a473b78e7551371"
+  },
+  {
+   "call": 5,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "UZB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TON",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BOL",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "SYC",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "UZB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TON",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "SYC",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BOL",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "ae9838e68bdc25c0942228f8d46cf5a4fc0efe8ca09183c2712e0b392eaad436"
+  },
+  {
+   "call": 6,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "CAF",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "PER",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "KNA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "MUS",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "PER",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "KNA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "CAF",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "MUS",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "8b9e348424566c510302fcea7f814846b40978b5740d7e31691dfe029374d1a4"
+  },
+  {
+   "call": 7,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BHR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "GBR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "MAC",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "WLF",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "MAC",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "GBR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "WLF",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BHR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "8933489aa74f99006521f55791388cb7c0e0b8622fbed871c42580700cf3e01c"
+  },
+  {
+   "call": 8,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "DZA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "GAB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "TUV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HRV",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "GAB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HRV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "TUV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "DZA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "495b25770f34c44bdd66ca63cfbbbc3926b227be274b964f60e3f5c6ea1ee76e"
+  },
+  {
+   "call": 9,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "COD",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "COG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "VNM",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ESP",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ESP",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "COD",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "COG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "VNM",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "3e4e9ac2ddfa8fa9e7b3bf856bd4ff8d09b01787be9c163943fdcb4a89586123"
+  },
+  {
+   "call": 10,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SAU",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BTN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LVA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HKG",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LVA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "HKG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BTN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "5": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "SAU",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "1d0b9a7d55505c8649c043141083566cac3e639f3f3c5914005a3fabb1be2bf5"
+  },
+  {
+   "call": 11,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBY",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TON",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LVA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "THA",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "THA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBY",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "4": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "LVA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TON",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "212ed9acd7dc307aa36fdab57cfc5e2c60c241c379a8a889fbd5e81de0553508"
+  },
+  {
+   "call": 12,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "IRN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BIH",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "GNB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ITA",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "IRN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "ITA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "GNB",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "BIH",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "c89d1aacc51e742fb162bb7a7d161ecaf1c83729e497b15e20976135af2e3bed"
+  },
+  {
+   "call": 13,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BDI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "DOM",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "MKD",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "SVN",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "SVN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "MKD",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "DOM",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BDI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "f95d624342be7292c2e861762a1305b259f89bac10e0369ec2edddbfe795d202"
+  },
+  {
+   "call": 14,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "KWT",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "LSO",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ARG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "NOR",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "LSO",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "NOR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "KWT",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ARG",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "6af79da6eaf29a4cc0c9ac5ebdcb0b603c3c2eafe2daaef12a8f54385a321aff"
+  },
+  {
+   "call": 15,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BDI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "FRA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "KIR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "EST",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "KIR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "BDI",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "EST",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "FRA",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "5b01f80ad8e8d9228ed3c41b8ae887f38752cfd87ca2d4fa8f6cc6c9862ab442"
+  },
+  {
+   "call": 16,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "LAO",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "CYP",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "AUS",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "2": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "CYP",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "AUS",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "LAO",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBN",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "ec1f43e0fc5ee01389ae3cb26e9dd7861369d8d9b3f11ac4cb455f7c84e75307"
+  },
+  {
+   "call": 17,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "IND",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "HUN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "NLD",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "HUN",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "IND",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "NLD",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "LBN",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "03ea6b97559f1943af465c382f38a9768b2f231b6d7b7c3690527aa034759498"
+  },
+  {
+   "call": 18,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PSE",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MDV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ARG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "LUX",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ARG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "LUX",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "PSE",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "MDV",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "d7981e108acc2e3bb868e8d2f4966cc816a98c641fad69c63cff0a173e154ddf"
+  },
+  {
+   "call": 19,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "TUR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "COG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BOL",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "AUS",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "BOL",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "COG",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "3": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "4": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "TUR",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "AUS",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "0f70867487e92ac0274476eb64d28c746927d1489b0aa8ee812cc00933de411d"
+  },
+  {
+   "call": 20,
+   "selection": [
+    {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "TGO",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TUV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ROU",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "LIE",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   ],
+   "slot_map": {
+    "1": {
+     "band": [
+      50,
+      80
+     ],
+     "iso3": "ROU",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "2": {
+     "band": [
+      20,
+      50
+     ],
+     "iso3": "USA",
+     "forced_usa": true,
+     "forced_lock": true
+    },
+    "3": {
+     "band": [
+      70,
+      100
+     ],
+     "iso3": "LIE",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "4": {
+     "band": [
+      35,
+      65
+     ],
+     "iso3": "TUV",
+     "forced_usa": false,
+     "forced_lock": false
+    },
+    "5": {
+     "band": [
+      0,
+      30
+     ],
+     "iso3": "TGO",
+     "forced_usa": false,
+     "forced_lock": false
+    }
+   },
+   "system_sha256": "ca205fe61c328cbb0c94a0e2babc136e55bb0014662519c631606ad254bae3c6",
+   "user_sha256": "3cfd446235791b8eca30f7b939b14951f549bc5c676f1f54cb517072587408f1"
+  }
+ ]
+}

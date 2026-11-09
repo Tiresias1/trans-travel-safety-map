@@ -235,7 +235,7 @@ class PromptRubricTests(unittest.TestCase):
         for text, needle in (
                 (self.country, "anonymised research dossiers, numbered 1 to 5"),
                 (self.country, "local regime in addition to the national picture"),
-                (self.country, "SUBNATIONAL REGIMES paragraph"),
+                (self.country, "SUBNATIONAL REGIMES"),
                 (self.admin1, "anonymised dossiers, numbered 1 to 5"),
                 (self.admin1, "Identities are withheld"),
                 (self.admin1, "the division's rating should reflect the mean"),
@@ -290,7 +290,8 @@ class PercentileAndDrawTests(unittest.TestCase):
         rng = harness.random.Random(3)
         selection, slot_map = harness._draw_call(rng, sorted(pcts), pcts, True)
         self.assertEqual(selection[0], {"band": [0, 30], "iso3": "USA",
-                                        "forced_usa": True})
+                                        "forced_usa": True,
+                                        "forced_lock": True})
         drawn = [e["iso3"] for e in selection]
         self.assertEqual(drawn.count("USA"), 1)
         self.assertEqual(len(set(drawn)), 5)   # distinct, USA once
@@ -973,3 +974,241 @@ class CallSubsetTests(FixtureCase):
         for bad in ("", "0", "5-2", "x"):
             with self.assertRaises(Exception):
                 harness.parse_call_subset(bad)
+
+
+# --------------------------------------------------------------------------- #
+# Parent-rating variant (pre-committed 2026-11-08, ANALYSIS_PLAN.md)
+# --------------------------------------------------------------------------- #
+
+class ParentRatingGateTests(unittest.TestCase):
+    """The ONE marked block is the only allowed score location, and only when
+    the gate's allow_parent_rating explicitly names its value."""
+
+    VALUE = "0.35"
+
+    def block(self):
+        return harness.parent_rating_block(self.VALUE)
+
+    def test_block_renders_exactly_two_declared_lines(self):
+        self.assertEqual(
+            self.block(),
+            "### PARENT RATING (provided): 0.35\n"
+            "The jurisdiction's national rating under the same rubric is 0.35 "
+            "(higher is safer).")
+
+    def test_gate_allows_exact_block_and_cleans_remainder(self):
+        harness.assert_user_text_clean(self.block(), allow_parent_rating=self.VALUE)
+        harness.assert_user_text_clean(
+            "Rate the five dossiers below.\n\n" + self.block()
+            + "\n\n## DOSSIER 1\n\nblinded evidence",
+            allow_parent_rating=self.VALUE)
+
+    def test_gate_with_allowance_rejects_score_text_outside_block(self):
+        for bad in (self.block() + "\n\nrated at 0.42 on the index",
+                    self.block() + "\n\na 0.90-style outlier",
+                    self.block() + "\n\nthe national score is high",
+                    self.block() + "\n\nsub-national score published",
+                    self.block() + "\n\nscores below the national score 0.36"):
+            with self.subTest(tail=bad[-40:]):
+                with self.assertRaises(harness.HarnessError):
+                    harness.assert_user_text_clean(bad, allow_parent_rating=self.VALUE)
+
+    def test_gate_rejects_tampered_or_duplicated_block(self):
+        cases = (
+            self.block().replace("0.35", "0.36"),          # wrong value everywhere
+            "### PARENT RATING (provided): 0.35\n"         # wrong value in the line
+            "The jurisdiction's national rating under the same rubric is 0.36 "
+            "(higher is safer).",
+            "### PARENT RATING (provided): 0.35\n"         # extra score-like token
+            "The jurisdiction's national rating under the same rubric is 0.35 "
+            "(higher is safer than 0.44).",
+            "### PARENT RATING (provided):\n"              # declared value missing
+            "The jurisdiction's national rating under the same rubric is "
+            "(higher is safer).",
+            self.block() + "\n" + self.block(),            # duplicate block
+            self.block() + "\n### PARENT RATING (provided): 0.99\n"
+            "The jurisdiction's national rating under the same rubric is 0.99 "
+            "(higher is safer).",                          # second, rogue block
+        )
+        for bad in cases:
+            with self.subTest(head=bad[:60]):
+                with self.assertRaises(harness.HarnessError):
+                    harness.assert_user_text_clean(bad, allow_parent_rating=self.VALUE)
+
+    def test_gate_without_allowance_never_exempts_block(self):
+        with self.assertRaises(harness.HarnessError):
+            harness.assert_user_text_clean(self.block())
+        with self.assertRaises(harness.HarnessError):
+            harness.assert_user_text_clean("blinded text\n\n" + self.block())
+
+    def test_gate_allowance_must_be_plain_decimal_and_block_present(self):
+        for bad in ("", "abc", "0,35", "0.35 ", " 0.35", "score 0.35", "0.3.5",
+                    "1e-2", "0.35\n", "-0.35", 0.35):
+            with self.subTest(bad=bad):
+                with self.assertRaises(harness.HarnessError):
+                    harness.assert_user_text_clean(self.block(),
+                                                   allow_parent_rating=bad)
+        with self.assertRaises(harness.HarnessError):
+            harness.assert_user_text_clean("Rate the five dossiers below.",
+                                           allow_parent_rating=self.VALUE)
+
+
+class ParentRatingVariantTests(FixtureCase):
+    """Schedule-level variant behaviour on fixture data (temp dirs only)."""
+
+    def build_scored(self, n_calls=3, seed=77, value="0.35"):
+        return harness.make_admin1_schedule(PARENT_ISO, n_calls, seed,
+                                            parent_rating=value)
+
+    def test_marked_block_renders_once_per_prompt_with_declared_value(self):
+        doc = self.build_scored()
+        self.assertEqual(doc["parent_rating"], "0.35")
+        path = harness.admin1_schedule_path(PARENT_ISO, "0.35")
+        self.assertEqual(path.name, "schedule_admin1_XXX_scored.json")
+        self.assertTrue(path.is_file())
+        block = harness.parent_rating_block("0.35")
+        _, users = zip(*harness.rebuild_messages(doc))
+        self.assertEqual(len(users), 3)
+        for user in users:
+            self.assertEqual(user.count(block), 1)                  # once per prompt
+            self.assertEqual(user.count("### PARENT RATING (provided)"), 1)
+            self.assertEqual(user.count("0.35"), 2)   # value only in the block, twice
+            self.assertEqual(user.count("### PARENT NATIONAL FRAMEWORK"), 5)
+            self.assertLess(user.index(block), user.index("## DOSSIER 1"))
+            self.assertNotIn(PARENT_SCORE_SENTINEL, user)  # real score still absent
+
+    def test_no_rating_schedule_renders_no_block(self):
+        doc = harness.make_admin1_schedule(PARENT_ISO, 2, 77)
+        self.assertIsNone(doc.get("parent_rating"))
+        _, users = zip(*harness.rebuild_messages(doc))
+        for user in users:
+            self.assertNotIn("PARENT RATING (provided)", user)
+            harness.assert_user_text_clean(user)
+
+    def test_same_seed_slot_maps_identical_with_and_without_rating(self):
+        plain = harness.make_admin1_schedule(PARENT_ISO, 6, 77)
+        scored = self.build_scored(n_calls=6)
+        for a, b in zip(plain["calls"], scored["calls"]):
+            self.assertEqual(a["slot_map"], b["slot_map"])
+            self.assertEqual(json.dumps(a["slot_map"], sort_keys=True),
+                             json.dumps(b["slot_map"], sort_keys=True))
+            self.assertEqual(a["selection"], b["selection"])
+            self.assertEqual(a["system_sha256"], b["system_sha256"])
+        self.assertNotEqual(plain["calls"][0]["user_sha256"],
+                            scored["calls"][0]["user_sha256"])
+
+    def test_schedule_doc_carries_parent_rating_and_hashes_rebuild(self):
+        doc = self.build_scored()
+        self.assertEqual(harness.verify_schedule_hashes(doc), [])
+        rebuilt = harness.rebuild_messages(doc)
+        for call, (sys_t, usr_t) in zip(doc["calls"], rebuilt):
+            self.assertEqual(harness.sha256_text(sys_t), call["system_sha256"])
+            self.assertEqual(harness.sha256_text(usr_t), call["user_sha256"])
+            harness.assert_user_text_clean(usr_t, allow_parent_rating="0.35")
+        harness.run_schedule_gates(harness.admin1_schedule_path(PARENT_ISO, "0.35"))
+
+    def test_schedule_schema_gates_parent_rating(self):
+        doc = self.build_scored(n_calls=2)
+        harness.validate_schedule_doc(doc)                    # declared value passes
+        for bad in ("score 0.35", "0.35 0.36", 0.35, ""):
+            with self.assertRaises(harness.HarnessError):
+                harness.validate_schedule_doc(dict(doc, parent_rating=bad))
+        country = self.build_country(n_calls=1, seed=5)
+        with self.assertRaises(harness.HarnessError):
+            harness.validate_schedule_doc(dict(country, parent_rating="0.35"))
+
+    def test_invalid_parent_rating_fails_closed_before_write(self):
+        for bad in ("abc", "0,35", 0.35):
+            with self.assertRaises(harness.HarnessError):
+                harness.make_admin1_schedule(PARENT_ISO, 1, 5, parent_rating=bad)
+        self.assertEqual(self.schedule_files(), [], "nothing may be written")
+
+
+class FrozenParentRatingScheduleTests(unittest.TestCase):
+    """The real frozen USA pair (read-only): same draws, one marked block."""
+
+    def _load(self, name):
+        path = harness.FROZEN_DIR / name
+        self.assertTrue(path.is_file(), f"missing frozen schedule {path}")
+        return json.loads(path.read_text(encoding="utf-8"))
+
+    def test_frozen_slot_maps_identical_between_schedules(self):
+        plain = self._load("schedule_admin1_USA.json")
+        scored = self._load("schedule_admin1_USA_scored.json")
+        self.assertEqual(scored["seed"], plain["seed"])
+        self.assertEqual(scored["n_calls"], plain["n_calls"])
+        self.assertEqual(len(scored["calls"]), len(plain["calls"]))
+        for a, b in zip(plain["calls"], scored["calls"]):
+            self.assertEqual(a["call"], b["call"])
+            self.assertEqual(a["slot_map"], b["slot_map"])
+            self.assertEqual(json.dumps(a["slot_map"], sort_keys=True),
+                             json.dumps(b["slot_map"], sort_keys=True))
+
+    def test_frozen_scored_carries_parent_rating_and_rebuild_matches_hashes(self):
+        plain = self._load("schedule_admin1_USA.json")
+        scored = self._load("schedule_admin1_USA_scored.json")
+        self.assertEqual(scored["parent_rating"], "0.35")
+        self.assertIsNone(plain.get("parent_rating"))
+        harness.run_schedule_gates(harness.FROZEN_DIR / "schedule_admin1_USA.json")
+        harness.run_schedule_gates(
+            harness.FROZEN_DIR / "schedule_admin1_USA_scored.json")
+        block = harness.parent_rating_block("0.35")
+        rebuilt = harness.rebuild_messages(scored)
+        for call, (sys_t, usr_t) in zip(scored["calls"], rebuilt):
+            self.assertEqual(harness.sha256_text(sys_t), call["system_sha256"])
+            self.assertEqual(harness.sha256_text(usr_t), call["user_sha256"])
+            self.assertEqual(usr_t.count(block), 1)
+            harness.assert_user_text_clean(usr_t, allow_parent_rating="0.35")
+        # the block is never exempt without the allowance
+        with self.assertRaises(harness.HarnessError):
+            harness.assert_user_text_clean(rebuilt[0][1])
+
+
+class LockedIsoTests(FixtureCase):
+    """2026-11-08: generalize the locked country beyond USA (GBR/NPL runs)."""
+
+    def test_locked_iso_forced_every_call_excluding_itself_from_draws(self):
+        iso = [k for k in sorted(harness.load_countries()) if k != "USA"][0]
+        harness.make_country_schedule(6, 11, locked_iso=iso)
+        doc = json.loads(harness.country_schedule_path(iso).read_text())
+        self.assertEqual(doc["locked_iso"], iso)
+        for call in doc["calls"]:
+            forced = [e for e in call["selection"] if e.get("forced_lock")]
+            self.assertEqual([e["iso3"] for e in forced], [iso])
+            self.assertEqual(sorted(call["slot_map"]), ["1", "2", "3", "4", "5"])
+
+    def test_usa_default_reproducible_and_legacy_flag(self):
+        self.build_country(n_calls=3, seed=11)          # default USA lock
+        a = json.loads(harness.country_schedule_path().read_text())
+        self.assertEqual(a["locked_iso"], "USA")
+        self.assertTrue(a["us_locked"])
+        # legacy call shape (us_locked=...) produces the same selection
+        b = harness.make_country_schedule(3, 11, us_locked=True)
+        self.assertEqual([c["selection"] for c in a["calls"]],
+                         [c["selection"] for c in b["calls"]])
+
+
+class NoLocalAblationTests(FixtureCase):
+    """2026-11-08: five-way panel baseline without the local-regime clause and
+    without the SUBNATIONAL REGIMES paragraph (user-requested comparison)."""
+
+    def test_ablation_prompts_omit_clause_and_paragraph(self):
+        doc = harness.make_country_schedule(3, 7, locked_iso="USA",
+                                            ablation_no_local=True)
+        self.assertTrue(doc["ablation_no_local"])
+        for sys_t, usr_t in harness.rebuild_messages(doc):
+            self.assertNotIn("local regime", sys_t)
+            self.assertNotIn("SUBNATIONAL REGIMES", sys_t + usr_t)
+
+    def test_ablation_draws_identical_to_default(self):
+        a = harness.make_country_schedule(3, 7, locked_iso="USA")
+        b = harness.make_country_schedule(3, 7, locked_iso="USA",
+                                          ablation_no_local=True)
+        self.assertEqual([c["selection"] for c in a["calls"]],
+                         [c["selection"] for c in b["calls"]])
+
+    def test_default_still_carries_clause_and_paragraph(self):
+        doc = harness.make_country_schedule(2, 8, locked_iso="USA")
+        sys_t, usr_t = harness.rebuild_messages(doc)[0]
+        self.assertIn("local regime", sys_t)
+        self.assertIn("SUBNATIONAL REGIMES", usr_t)

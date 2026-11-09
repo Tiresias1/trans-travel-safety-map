@@ -17,13 +17,18 @@ object holding five {slot, score, why} entries. Two schedule modes:
     division dossier carries the parent's blind national framework text
     (blindSummary/blindTangential/blindLocalsOnly/blindSourceSummaries,
     the sources capped at 8), NEVER the parent's score and NEVER the diversity
-    paragraph.
+    paragraph. The pre-committed parent-rating variant (ANALYSIS_PLAN.md) adds
+    ONE marked block carrying the parent national rating to the user prompt,
+    with the shared parent-framework context and once per prompt — the only
+    place an existing score may appear, and only when the leak gate's
+    allow_parent_rating explicitly names that value.
 
 Rubric consistency: the production rating rules (RATING_RULES), the scale
 blocks and the taxonomy reference are reused verbatim from
 tools/blind_pairwise.py, so the rubric stays r2026-11-13-consistent. Only the
 five-way framing, the mean-local-regime instruction, the five-way output
-contract and the shuffle are added. Existing scores never enter a prompt.
+contract and the shuffle are added. Existing scores never enter a prompt
+except the parent-rating variant's single marked block.
 
 Offline guarantees (this file, by construction):
   * no network code, no credentials, no provider call implementation;
@@ -367,21 +372,26 @@ def bands_containing(pct: float) -> list[int]:
 
 
 def _draw_call(rng: random.Random, eligible: list[str],
-               pcts: dict[str, float], us_locked: bool) -> tuple[list, dict]:
+               pcts: dict[str, float], locked_iso) -> tuple[list, dict]:
     """One call: one country per band without overlap, then shuffle to slots.
 
     Returns (selection in band order, slot_map display-slot 1..5 -> entry).
-    US-locked: USA occupies the FIRST band whose range contains its percentile;
-    the other four bands each draw one country excluding USA.
+    Locked mode (locked_iso, default USA): the locked country occupies the
+    FIRST band whose range contains its percentile; the other four bands each
+    draw one country excluding it.
     """
     selected: dict[int, str] = {}
-    if us_locked:
-        if US_ISO3 not in eligible:
-            raise HarnessError(f"US-locked mode requires {US_ISO3} in the eligible pool")
-        hits = bands_containing(pcts[US_ISO3])
+    if locked_iso is True:               # legacy positional bool == USA lock
+        locked_iso = US_ISO3
+    elif not locked_iso:
+        locked_iso = None
+    if locked_iso:
+        if locked_iso not in eligible:
+            raise HarnessError(f"locked mode requires {locked_iso} in the eligible pool")
+        hits = bands_containing(pcts[locked_iso])
         if not hits:
-            raise HarnessError(f"{US_ISO3} percentile {pcts[US_ISO3]:.4f} falls in no band")
-        selected[hits[0]] = US_ISO3
+            raise HarnessError(f"{locked_iso} percentile {pcts[locked_iso]:.4f} falls in no band")
+        selected[hits[0]] = locked_iso
     for band, (lo, hi) in enumerate(BANDS):
         if band in selected:
             continue
@@ -394,7 +404,8 @@ def _draw_call(rng: random.Random, eligible: list[str],
         pool.sort()
         selected[band] = rng.choice(pool)
     selection = [{"band": list(BANDS[b]), "iso3": selected[b],
-                  "forced_usa": us_locked and selected[b] == US_ISO3}
+                  "forced_usa": locked_iso == US_ISO3 and selected[b] == US_ISO3,
+                  "forced_lock": bool(locked_iso) and selected[b] == locked_iso}
                  for b in range(len(BANDS))]
     entries = [dict(e) for e in selection]
     rng.shuffle(entries)
@@ -446,10 +457,20 @@ presentation or the other dossiers influence a rating.
 """
 
 
-def build_country_system(taxonomy: str | None = None) -> str:
+LOCAL_REGIME_CLAUSE = (
+    "Where local regimes vary within a jurisdiction, the country's rating should reflect the\n"
+    "mean local regime in addition to the national picture, proportional to how likely trans\n"
+    "visitors are to visit them. Each dossier carries a blinded SUBNATIONAL REGIMES\n"
+    "paragraph; weigh it so that the rating reflects the local regime impacts in addition to\n"
+    "the national picture.")
+
+
+def build_country_system(taxonomy: str | None = None,
+                         local_regime: bool = True) -> str:
     check_diag_env()
     taxonomy = load_taxonomy() if taxonomy is None else taxonomy
     scale = _production_scale(taxonomy, admin1=False)
+    clause = LOCAL_REGIME_CLAUSE if local_regime else ""
     return f"""\
 You are an expert assessor of travel risk for transgender people. You will be given five
 anonymised research dossiers, numbered 1 to 5. Each describes one jurisdiction. You do not
@@ -467,10 +488,7 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
 
 Rate all five dossiers in a single response, one entry per dossier.
 
-Where local regimes vary within a jurisdiction, the country's rating should reflect the
-mean local regime in addition to the national picture. Each dossier carries a blinded
-SUBNATIONAL REGIMES paragraph; weigh it so that the rating reflects the mean local
-regime in addition to the national picture.
+{clause}
 
 {_taxonomy_section(taxonomy)}
 ---
@@ -517,7 +535,8 @@ picture.
 # Dossiers and user prompts (identity-stripped)
 # --------------------------------------------------------------------------- #
 
-def render_country_dossier(iso3: str, countries: dict) -> str:
+def render_country_dossier(iso3: str, countries: dict,
+                           include_regimes: bool = True) -> str:
     """Blinded country dossier: blind mirrors + the blinded regimes paragraph.
 
     Never includes: name, ISO3, score, band, rank, `comparisons`, `sources`
@@ -527,7 +546,8 @@ def render_country_dossier(iso3: str, countries: dict) -> str:
     if not isinstance(rec, dict):
         raise HarnessError(f"no country record for {iso3}")
     parts = [f"### ASSESSMENT\n{clean(rec.get('blindSummary'))}"]
-    parts.append(f"### SUBNATIONAL REGIMES\n{load_diversity(iso3)}")
+    if include_regimes:
+        parts.append(f"### SUBNATIONAL REGIMES\n{load_diversity(iso3)}")
     ss = rec.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
         items = "\n".join(f"- {clean(x)}" for x in ss if str(x).strip())
@@ -547,6 +567,8 @@ def render_country_dossier(iso3: str, countries: dict) -> str:
 # --------------------------------------------------------------------------- #
 # Fail-closed prompt leak gate (2026-11-08): no rendered user prompt may carry
 # score references or numeric score-like values. System rubric text is exempt.
+# The pre-committed parent-rating variant gets ONE narrowly exempted marked
+# block — and only via assert_user_text_clean's allow_parent_rating.
 # --------------------------------------------------------------------------- #
 
 LEAK_PATTERNS = (
@@ -561,7 +583,81 @@ LEAK_PATTERNS = (
 )
 
 
-def assert_user_text_clean(user_text: str, context: str = "user prompt") -> None:
+# The ONE marked block that may carry an existing score in a prompt (the
+# parent-rating variant). Exact rendering, no other wording: the marker line
+# with the declared value followed by one neutral line repeating it.
+PARENT_RATING_MARKER = "### PARENT RATING (provided): "
+PARENT_RATING_LINE = ("The jurisdiction's national rating under the same rubric "
+                      "is {value} (higher is safer).")
+PARENT_RATING_VALUE_RE = re.compile(r"[0-9]+\.[0-9]+")
+
+
+def _require_parent_rating_value(value) -> str:
+    """The declared parent rating: a plain decimal string (fail closed)."""
+    if not isinstance(value, str) or not PARENT_RATING_VALUE_RE.fullmatch(value):
+        raise HarnessError(
+            f"parent_rating must be a plain decimal string, got {value!r}")
+    return value
+
+
+def parent_rating_block(value: str) -> str:
+    """The ONE marked parent-rating block (marker line + one neutral line)."""
+    _require_parent_rating_value(value)
+    return (PARENT_RATING_MARKER + value + "\n"
+            + PARENT_RATING_LINE.format(value=value))
+
+
+def assert_user_text_clean(user_text: str, context: str = "user prompt",
+                           allow_parent_rating=None) -> None:
+    """Fail-closed leak gate over a rendered user prompt.
+
+    Without `allow_parent_rating` the whole text is scanned strictly with
+    LEAK_PATTERNS (unchanged behaviour) and a marked parent-rating block is
+    never exempt. With `allow_parent_rating` (a plain decimal string) exactly
+    ONE marked block for that value is allowed: it must render exactly and
+    carry exactly that value and nothing else score-like; the remainder is
+    then scanned strictly with the same LEAK_PATTERNS.
+    """
+    if allow_parent_rating is None:
+        if PARENT_RATING_MARKER in user_text:
+            raise HarnessError(
+                f"prompt leak gate ({context}): marked parent-rating block present "
+                "without allow_parent_rating — the block is never exempt implicitly")
+    else:
+        value = _require_parent_rating_value(allow_parent_rating)
+        block = parent_rating_block(value)
+        if user_text.count(PARENT_RATING_MARKER) != 1:
+            raise HarnessError(
+                f"prompt leak gate ({context}): expected exactly one marked "
+                f"parent-rating block, found {user_text.count(PARENT_RATING_MARKER)} "
+                "markers")
+        start = user_text.index(PARENT_RATING_MARKER)
+        line1_end = user_text.find("\n", start)
+        if line1_end == -1:
+            raise HarnessError(
+                f"prompt leak gate ({context}): marked parent-rating block is "
+                "truncated (no neutral line follows the marker line)")
+        line2_end = user_text.find("\n", line1_end + 1)
+        region = user_text[start:line2_end if line2_end != -1 else len(user_text)]
+        # The marked block carries exactly the declared value and nothing else
+        # score-like (once in the marker line, once in the neutral line).
+        tokens = re.findall(r"\d+\.\d+", region)
+        if tokens != [value, value]:
+            raise HarnessError(
+                f"prompt leak gate ({context}): marked block must contain exactly "
+                f"{value!r} and nothing else score-like, got {tokens}")
+        for pat in LEAK_PATTERNS:
+            for m in pat.finditer(region):
+                if m.group(0) != value:
+                    raise HarnessError(
+                        f"prompt leak gate ({context}): marked block carries "
+                        f"score-like text {m.group(0)!r} beyond the declared value "
+                        f"{value!r}")
+        if region != block:
+            raise HarnessError(
+                f"prompt leak gate ({context}): marked block wording must match "
+                f"exactly, got {region!r}")
+        user_text = user_text.replace(block, "", 1)   # strip; remainder is strict
     for pat in LEAK_PATTERNS:
         m = pat.search(user_text)
         if m:
@@ -570,11 +666,14 @@ def assert_user_text_clean(user_text: str, context: str = "user prompt") -> None
                 f"{user_text[max(0, m.start()-60):m.end()+40]!r}")
 
 
-def build_country_user(slot_map: dict, countries: dict) -> str:
+def build_country_user(slot_map: dict, countries: dict,
+                       include_regimes: bool = True) -> str:
     blocks = []
     for slot in range(1, SLOT_COUNT + 1):
         iso3 = slot_map[str(slot)]["iso3"]
-        blocks.append(f"## DOSSIER {slot}\n\n{render_country_dossier(iso3, countries)}")
+        blocks.append(f"## DOSSIER {slot}\n\n"
+                      + render_country_dossier(iso3, countries,
+                                               include_regimes=include_regimes))
     user_text = ("Rate the five dossiers below.\n\n" + "\n\n".join(blocks)
                  + "\n\nReply with only the JSON object described in the output format.")
     assert_user_text_clean(user_text, "country")
@@ -635,15 +734,21 @@ def render_admin1_dossier(record_id: str, parent_iso: str,
 
 
 def build_admin1_user(slot_map: dict, parent_iso: str,
-                      admin1: dict, countries: dict) -> str:
+                      admin1: dict, countries: dict,
+                      parent_rating=None) -> str:
     blocks = []
     for slot in range(1, SLOT_COUNT + 1):
         rid = slot_map[str(slot)]["record_id"]
         blocks.append(f"## DOSSIER {slot}\n\n"
                       + render_admin1_dossier(rid, parent_iso, admin1, countries))
-    user_text = ("Rate the five dossiers below.\n\n" + "\n\n".join(blocks)
+    preamble = "Rate the five dossiers below."
+    if parent_rating is not None:
+        # ONE marked block, with the shared parent-framework context and once
+        # per prompt (never per dossier): the only place a score may appear.
+        preamble += "\n\n" + parent_rating_block(parent_rating)
+    user_text = (preamble + "\n\n" + "\n\n".join(blocks)
                  + "\n\nReply with only the JSON object described in the output format.")
-    assert_user_text_clean(user_text, "admin1")
+    assert_user_text_clean(user_text, "admin1", allow_parent_rating=parent_rating)
     return user_text
 
 
@@ -651,12 +756,19 @@ def build_admin1_user(slot_map: dict, parent_iso: str,
 # Schedule builders (write only under frozen/)
 # --------------------------------------------------------------------------- #
 
-def country_schedule_path() -> Path:
-    return Path(FROZEN_DIR) / "schedule_country.json"
+def country_schedule_path(locked_iso="USA", ablation_no_local: bool = False) -> Path:
+    suffix = "_nolocal" if ablation_no_local else ""
+    if locked_iso and locked_iso != US_ISO3:
+        return Path(FROZEN_DIR) / f"schedule_country_{str(locked_iso).upper()}{suffix}.json"
+    return Path(FROZEN_DIR) / ("schedule_country%s.json" % suffix)
 
 
-def admin1_schedule_path(iso3: str) -> Path:
-    return Path(FROZEN_DIR) / f"schedule_admin1_{str(iso3).upper()}.json"
+def admin1_schedule_path(iso3: str, parent_rating=None) -> Path:
+    """frozen/schedule_admin1_<ISO3>.json — or the *_scored variant when a
+    parent rating is declared (a distinct artifact; the plain schedule of the
+    no-rating wave is never overwritten)."""
+    suffix = "_scored" if parent_rating is not None else ""
+    return Path(FROZEN_DIR) / f"schedule_admin1_{str(iso3).upper()}{suffix}.json"
 
 
 def _source_pins(kinds: tuple[str, ...]) -> dict[str, str]:
@@ -684,14 +796,21 @@ def _validate_schedule_args(n_calls, seed) -> tuple[int, int]:
     return _require_int(n_calls, "n_calls"), _require_int(seed, "seed", minimum=0)
 
 
-def make_country_schedule(n_calls, seed, us_locked: bool = True) -> dict:
-    """Build (and write) frozen/schedule_country.json.
+def make_country_schedule(n_calls, seed, locked_iso="USA",
+                          us_locked: bool = None,
+                          ablation_no_local: bool = False) -> dict:
+    """Build (and write) the frozen country schedule.
 
     Stratified five-country draws (one per overlapping percentile band, no
-    repeat inside a call; US-locked forces USA into its own band's slot),
-    dossiers shuffled into display slots, per-call slot map + system/user
-    message hashes recorded. Fails closed before writing anything.
+    repeat inside a call; locked mode forces `locked_iso` (default USA) into
+    its own band's slot), dossiers shuffled into display slots, per-call slot
+    map + system/user message hashes recorded. `us_locked=False` (legacy CLI
+    `--no-us-lock`) means no locked country at all. Fails closed before
+    writing anything.
     """
+    if us_locked is not None:            # legacy argument compatibility
+        locked_iso = US_ISO3 if us_locked else None
+    locked_iso = US_ISO3 if locked_iso == "USA" else locked_iso
     check_diag_env()
     n_calls, seed = _validate_schedule_args(n_calls, seed)
     countries = load_countries()
@@ -699,23 +818,28 @@ def make_country_schedule(n_calls, seed, us_locked: bool = True) -> dict:
     pcts = percentile_ranks(countries)
     eligible = eligible_countries(countries)
     rng = random.Random(seed)
-    system_text = build_country_system(taxonomy)
+    system_text = build_country_system(taxonomy,
+                                       local_regime=not ablation_no_local)
 
     calls, diversity_shas = [], {}
     for idx in range(1, n_calls + 1):
-        selection, slot_map = _draw_call(rng, eligible, pcts, bool(us_locked))
+        selection, slot_map = _draw_call(rng, eligible, pcts, locked_iso)
         for entry in selection:
             iso3 = entry["iso3"]
             if iso3 not in diversity_shas:
                 diversity_shas[iso3] = sha256_text(load_diversity(iso3))
-        user_text = build_country_user(slot_map, countries)
+        user_text = build_country_user(slot_map, countries,
+                                       include_regimes=not ablation_no_local)
         calls.append({"call": idx, "selection": selection, "slot_map": slot_map,
                       "system_sha256": sha256_text(system_text),
                       "user_sha256": sha256_text(user_text)})
 
     doc = {"kind": "country", "version": SCHEDULE_VERSION, "seed": seed,
            "rng": _rng_metadata(seed), "n_calls": n_calls,
-           "us_locked": bool(us_locked), "bands": [list(b) for b in BANDS],
+           "locked_iso": locked_iso,
+           "ablation_no_local": bool(ablation_no_local),
+           "us_locked": bool(locked_iso == US_ISO3),
+           "bands": [list(b) for b in BANDS],
            "percentile_method": "average-rank over all records in data/countries.json: "
                                 "p = 100 * avg_rank / (n - 1), zero-based ranks, tied "
                                 "scores share the average rank; band membership is "
@@ -724,22 +848,27 @@ def make_country_schedule(n_calls, seed, us_locked: bool = True) -> dict:
            "sources": _source_pins(("country",)),
            "diversity_blind_sha256": diversity_shas,
            "calls": calls}
-    write_json(country_schedule_path(), doc)
+    write_json(country_schedule_path(locked_iso, ablation_no_local), doc)
     return doc
 
 
-def make_admin1_schedule(iso3, n_calls, seed) -> dict:
+def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None) -> dict:
     """Build (and write) frozen/schedule_admin1_<ISO3>.json.
 
     Five divisions of ONE country drawn per call (no repeat inside a call),
     identities withheld in the prompts, per-call slot map + message hashes.
-    Fails closed before writing anything.
+    With `parent_rating` (a plain decimal string) every user prompt carries ONE
+    marked parent-rating block and the schedule is written to the *_scored
+    variant; the draws are byte-identical to the no-rating schedule under the
+    same seed. Fails closed before writing anything.
     """
     check_diag_env()
     iso3 = str(iso3).upper().strip()
     if not re.fullmatch(r"[A-Z]{3}", iso3):
         raise HarnessError(f"iso3 must be three letters, got {iso3!r}")
     n_calls, seed = _validate_schedule_args(n_calls, seed)
+    if parent_rating is not None:
+        _require_parent_rating_value(parent_rating)
     countries = load_countries()
     admin1 = load_admin1()
     taxonomy = load_taxonomy()
@@ -759,7 +888,8 @@ def make_admin1_schedule(iso3, n_calls, seed) -> dict:
         entries = [{"record_id": rid} for rid in drawn]
         rng.shuffle(entries)
         slot_map = {str(s): entries[s - 1] for s in range(1, SLOT_COUNT + 1)}
-        user_text = build_admin1_user(slot_map, iso3, admin1, countries)
+        user_text = build_admin1_user(slot_map, iso3, admin1, countries,
+                                      parent_rating=parent_rating)
         calls.append({"call": idx, "selection": [e["record_id"] for e in entries],
                       "slot_map": slot_map,
                       "system_sha256": sha256_text(system_text),
@@ -767,13 +897,14 @@ def make_admin1_schedule(iso3, n_calls, seed) -> dict:
 
     doc = {"kind": "admin1", "version": SCHEDULE_VERSION, "seed": seed,
            "rng": _rng_metadata(seed), "n_calls": n_calls, "iso3": iso3,
+           "parent_rating": parent_rating,
            "us_locked": False,
            "percentile_method": "not applicable (one country's divisions; "
                                 "simple random draws without replacement inside a call)",
            "rubric_version": RUBRIC_VERSION,
            "sources": _source_pins(("admin1",)),
            "calls": calls}
-    write_json(admin1_schedule_path(iso3), doc)
+    write_json(admin1_schedule_path(iso3, parent_rating), doc)
     return doc
 
 
@@ -800,6 +931,11 @@ def validate_schedule_doc(doc: dict) -> None:
     kind = doc.get("kind")
     if kind not in SCHEDULE_KINDS:
         raise HarnessError(f"unknown schedule kind {kind!r}")
+    if kind == "country":
+        if doc.get("parent_rating") is not None:
+            raise HarnessError("country schedules never carry a parent_rating")
+    elif doc.get("parent_rating") is not None:
+        _require_parent_rating_value(doc["parent_rating"])
     if isinstance(doc.get("seed"), bool) or not isinstance(doc.get("seed"), int):
         raise HarnessError("schedule seed missing or not an integer")
     n_calls = doc.get("n_calls")
@@ -870,8 +1006,10 @@ def rebuild_messages(doc: dict) -> list[tuple[str, str]]:
     taxonomy = load_taxonomy()
     if kind == "country":
         countries = load_countries()
-        system_text = build_country_system(taxonomy)
-        return [(system_text, build_country_user(c["slot_map"], countries))
+        no_local = bool(doc.get("ablation_no_local"))
+        system_text = build_country_system(taxonomy, local_regime=not no_local)
+        return [(system_text, build_country_user(c["slot_map"], countries,
+                                                 include_regimes=not no_local))
                 for c in doc["calls"]]
     admin1 = load_admin1()
     countries = load_countries()
@@ -879,7 +1017,10 @@ def rebuild_messages(doc: dict) -> list[tuple[str, str]]:
     if not isinstance(parent_iso, str):
         raise HarnessError("admin1 schedule missing iso3")
     system_text = build_admin1_system(taxonomy)
-    return [(system_text, build_admin1_user(c["slot_map"], parent_iso, admin1, countries))
+    parent_rating = doc.get("parent_rating")
+    return [(system_text,
+             build_admin1_user(c["slot_map"], parent_iso, admin1, countries,
+                               parent_rating=parent_rating))
             for c in doc["calls"]]
 
 
@@ -1289,7 +1430,9 @@ def main(argv=None) -> int:
     p.add_argument("--n-calls", type=int, required=True)
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--no-us-lock", action="store_true",
-                   help="do not force USA into every call")
+                   help="do not force any locked country into every call")
+    p.add_argument("--locked", default="USA",
+                   help="ISO3 forced into every call (default USA)")
 
     p = sub.add_parser("schedule-admin1",
                        help="write frozen/schedule_admin1_<ISO3>.json")
@@ -1317,14 +1460,16 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
     try:
         if args.command == "schedule-country":
+            locked = None if args.no_us_lock else args.locked
             doc = make_country_schedule(args.n_calls, args.seed,
-                                        us_locked=not args.no_us_lock)
-            print(f"wrote {country_schedule_path()}: {doc['n_calls']} calls, "
-                  f"seed {doc['seed']}, us_locked={doc['us_locked']}")
+                                        locked_iso=locked)
+            print(f"wrote {country_schedule_path(doc.get('locked_iso'))}: "
+                  f"{doc['n_calls']} calls, seed {doc['seed']}, "
+                  f"locked_iso={doc.get('locked_iso')}")
             return 0
         if args.command == "schedule-admin1":
             doc = make_admin1_schedule(args.iso3, args.n_calls, args.seed)
-            print(f"wrote {admin1_schedule_path(doc['iso3'])}: "
+            print(f"wrote {admin1_schedule_path(doc['iso3'], doc.get('parent_rating'))}: "
                   f"{doc['n_calls']} calls, seed {doc['seed']}, parent {doc['iso3']}")
             return 0
         if args.command == "verify":
