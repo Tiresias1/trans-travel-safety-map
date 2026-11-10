@@ -80,3 +80,35 @@ def call_haiku(system_text: str, user_text: str) -> dict:
 
 def call_luna(system_text: str, user_text: str) -> dict:
     return _call("openai/gpt-6-luna", system_text, user_text)
+
+
+def call_mimo_medium(system_text: str, user_text: str) -> dict:
+    """MiMo V2.6 Flash at thinking effort medium (phase-2 anchored raters)."""
+    key = KEY_FILE.read_text(encoding="utf-8").strip()
+    body = json.dumps({
+        "model": "xiaomi/mimo-v2.6-flash",
+        "max_tokens": MAX_TOKENS,
+        "reasoning": {"effort": "medium"},
+        "messages": [
+            {"role": "system", "content": system_text},
+            {"role": "user", "content": user_text},
+        ],
+    }).encode("utf-8")
+    req = urllib.request.Request(URL, data=body, method="POST", headers={
+        "Authorization": "Bearer " + key,
+        "Content-Type": "application/json",
+    })
+    del key
+    with urllib.request.urlopen(req, timeout=TIMEOUT_S) as resp:
+        raw = resp.read().decode("utf-8", "replace")
+    doc = json.loads(raw)
+    usage = doc.get("usage") or {}
+    out = {"raw_response": raw, "usage": {}}
+    if isinstance(usage.get("cost"), (int, float)):
+        out["usage"]["cost_usd"] = format(Decimal(str(usage["cost"])), "f")
+    for src, dst in (("prompt_tokens", "input_tokens"),
+                     ("completion_tokens", "output_tokens")):
+        v = usage.get(src)
+        if isinstance(v, int):
+            out["usage"][dst] = v
+    return out

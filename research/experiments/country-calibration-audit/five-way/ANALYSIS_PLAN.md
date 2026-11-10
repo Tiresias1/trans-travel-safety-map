@@ -150,3 +150,14 @@ Amendment: qwen cells only use max_tokens 16000; every other model stays at
 first-dispatch at 16000 and recorded as such. Cell 2 is closed (two failed
 draws). Same amendment applies to qwen's ADM1 wave. Disclosed as a
 model-specific generation-setting deviation caused by mechanical exhaustion.
+
+## Noise waves w2/w3 (pre-committed 2026-11-09, per user)
+
+Two additional draws per country and per state, all six models, on NEW
+seeds (fresh panel contexts, so repeats capture context noise as well as
+draw noise): 480 country + 360 ADM1 calls. Settings unchanged — per user,
+FAILED DRAWS ARE PREFERRED OVER EXCESSIVE TOKEN BURN: no allowance
+increases anywhere (qwen stays at its documented 16000), failed draws are
+accepted and recorded under the existing rule. Readout: model-vs-draw
+variance decomposition per country/state, US reevaluation, ensemble
+stability, ADM1 anchor-gap persistence.

@@ -1234,3 +1234,33 @@ class CoveringScheduleTests(FixtureCase):
             ps = sorted(pcts[e["iso3"]] for e in c["selection"])
             self.assertGreater(ps[-1] - ps[0], 30,
                                "panel too homogeneous: " + str(ps))
+
+
+class CalibrationAnchorTests(FixtureCase):
+    """Phase 2: synthetic calibration anchors in rater prompts (2026-11-10)."""
+
+    def test_anchor_flag_injects_exactly_once_and_default_is_clean(self):
+        doc = harness.make_country_schedule(2, 21, locked_iso="USA",
+                                            calibration_anchors=True)
+        self.assertTrue(doc["calibration_anchors"])
+        for sys_t, usr_t in harness.rebuild_messages(doc):
+            self.assertEqual(sys_t.count("Calibration anchors"), 1)
+            self.assertIn("0.05-A", sys_t)
+        plain = harness.make_country_schedule(2, 21, locked_iso="USA")
+        sys_t, _ = harness.rebuild_messages(plain)[0]
+        self.assertNotIn("Calibration anchors", sys_t)
+
+    def test_bag_schedule_focus_and_repeats(self):
+        elig = sorted(harness.eligible_countries(harness.load_countries()))
+        bag = [elig[0], elig[len(elig)//2], elig[-1]]
+        doc = harness.make_country_schedule_bag(bag, 2, 31)
+        self.assertEqual(doc["n_calls"], 6)
+        for i, c in enumerate(doc["calls"]):
+            focus = [e["iso3"] for e in c["selection"] if e["bag_focus"]]
+            self.assertEqual(focus, [bag[i % 3]])
+        self.assertEqual(len(doc["diversity_blind_sha256"]) >= 3, True)
+
+    def test_anchor_schedules_reproduce_hashes(self):
+        doc = harness.make_country_schedule(2, 22, locked_iso="USA",
+                                            calibration_anchors=True)
+        self.assertEqual(harness.verify_schedule_hashes(doc), [])

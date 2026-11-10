@@ -457,6 +457,18 @@ presentation or the other dossiers influence a rating.
 """
 
 
+ANCHORS_PATH = HERE.parent / "anchors" / "synthetic_anchors.md"
+
+
+def load_calibration_anchors() -> str:
+    text = ANCHORS_PATH.read_text(encoding="utf-8").strip()
+    return ("\n---\n\n# Calibration anchors (fictional reference vignettes)\n\n"
+            "The following are FICTIONAL calibration anchors: synthetic jurisdictions "
+            "constructed to sit at labeled points of the scale. Use them to calibrate "
+            "your own readings and stay consistent with them; they are reference "
+            "points, not evidence about any real place.\n\n" + text + "\n")
+
+
 LOCAL_REGIME_CLAUSE = (
     "Where local regimes vary within a jurisdiction, the country's rating should reflect the\n"
     "mean local regime in addition to the national picture, proportional to how likely trans\n"
@@ -466,11 +478,14 @@ LOCAL_REGIME_CLAUSE = (
 
 
 def build_country_system(taxonomy: str | None = None,
-                         local_regime: bool = True) -> str:
+                         local_regime: bool = True,
+                         calibration_anchors: bool = False) -> str:
     check_diag_env()
     taxonomy = load_taxonomy() if taxonomy is None else taxonomy
     scale = _production_scale(taxonomy, admin1=False)
     clause = LOCAL_REGIME_CLAUSE if local_regime else ""
+    anchors = (load_calibration_anchors() + "\n\n") \
+        if calibration_anchors else ""
     return f"""\
 You are an expert assessor of travel risk for transgender people. You will be given five
 anonymised research dossiers, numbered 1 to 5. Each describes one jurisdiction. You do not
@@ -493,10 +508,11 @@ Rate all five dossiers in a single response, one entry per dossier.
 {_taxonomy_section(taxonomy)}
 ---
 
-{FIVE_WAY_OUTPUT_FORMAT}"""
+{anchors}{FIVE_WAY_OUTPUT_FORMAT}"""
 
 
-def build_admin1_system(taxonomy: str | None = None) -> str:
+def build_admin1_system(taxonomy: str | None = None,
+                        calibration_anchors: bool = False) -> str:
     check_diag_env()
     taxonomy = load_taxonomy() if taxonomy is None else taxonomy
     scale = _production_scale(taxonomy, admin1=True)
@@ -528,7 +544,7 @@ picture.
 {_taxonomy_section(taxonomy)}
 ---
 
-{FIVE_WAY_OUTPUT_FORMAT}"""
+{(load_calibration_anchors() + chr(10) + chr(10)) if calibration_anchors else ""}{FIVE_WAY_OUTPUT_FORMAT}"""
 
 
 # --------------------------------------------------------------------------- #
@@ -756,18 +772,25 @@ def build_admin1_user(slot_map: dict, parent_iso: str,
 # Schedule builders (write only under frozen/)
 # --------------------------------------------------------------------------- #
 
-def country_schedule_path(locked_iso="USA", ablation_no_local: bool = False) -> Path:
+def country_schedule_path(locked_iso="USA", ablation_no_local: bool = False,
+                          calibration_anchors: bool = False) -> Path:
     suffix = "_nolocal" if ablation_no_local else ""
+    if calibration_anchors:
+        suffix += "_anchored"
     if locked_iso and locked_iso != US_ISO3:
         return Path(FROZEN_DIR) / f"schedule_country_{str(locked_iso).upper()}{suffix}.json"
     return Path(FROZEN_DIR) / ("schedule_country%s.json" % suffix)
 
 
-def admin1_schedule_path(iso3: str, parent_rating=None) -> Path:
+def admin1_schedule_path(iso3: str, parent_rating=None,
+                         calibration_anchors: bool = False) -> Path:
     """frozen/schedule_admin1_<ISO3>.json — or the *_scored variant when a
     parent rating is declared (a distinct artifact; the plain schedule of the
-    no-rating wave is never overwritten)."""
+    no-rating wave is never overwritten); *_anchored marks the calibration-
+    anchor variant."""
     suffix = "_scored" if parent_rating is not None else ""
+    if calibration_anchors:
+        suffix += "_anchored"
     return Path(FROZEN_DIR) / f"schedule_admin1_{str(iso3).upper()}{suffix}.json"
 
 
@@ -798,7 +821,8 @@ def _validate_schedule_args(n_calls, seed) -> tuple[int, int]:
 
 def make_country_schedule(n_calls, seed, locked_iso="USA",
                           us_locked: bool = None,
-                          ablation_no_local: bool = False) -> dict:
+                          ablation_no_local: bool = False,
+                          calibration_anchors: bool = False) -> dict:
     """Build (and write) the frozen country schedule.
 
     Stratified five-country draws (one per overlapping percentile band, no
@@ -819,7 +843,8 @@ def make_country_schedule(n_calls, seed, locked_iso="USA",
     eligible = eligible_countries(countries)
     rng = random.Random(seed)
     system_text = build_country_system(taxonomy,
-                                       local_regime=not ablation_no_local)
+                                       local_regime=not ablation_no_local,
+                                       calibration_anchors=calibration_anchors)
 
     calls, diversity_shas = [], {}
     for idx in range(1, n_calls + 1):
@@ -838,6 +863,7 @@ def make_country_schedule(n_calls, seed, locked_iso="USA",
            "rng": _rng_metadata(seed), "n_calls": n_calls,
            "locked_iso": locked_iso,
            "ablation_no_local": bool(ablation_no_local),
+           "calibration_anchors": bool(calibration_anchors),
            "us_locked": bool(locked_iso == US_ISO3),
            "bands": [list(b) for b in BANDS],
            "percentile_method": "average-rank over all records in data/countries.json: "
@@ -848,11 +874,13 @@ def make_country_schedule(n_calls, seed, locked_iso="USA",
            "sources": _source_pins(("country",)),
            "diversity_blind_sha256": diversity_shas,
            "calls": calls}
-    write_json(country_schedule_path(locked_iso, ablation_no_local), doc)
+    write_json(country_schedule_path(locked_iso, ablation_no_local,
+                                     calibration_anchors), doc)
     return doc
 
 
-def make_country_schedule_covering(seed) -> dict:
+def make_country_schedule_covering(seed,
+                                   calibration_anchors: bool = False) -> dict:
     """Full-coverage country schedule: every eligible country appears in
     exactly one five-country panel. Countries are sorted by percentile and
     dealt into five equal strata (quintiles); each call takes one country per
@@ -874,7 +902,8 @@ def make_country_schedule_covering(seed) -> dict:
         strata[pos % SLOT_COUNT].append(iso)   # round-robin over pct-sorted list
     for s in strata:
         rng.shuffle(s)
-    system_text = build_country_system(taxonomy)
+    system_text = build_country_system(taxonomy,
+                                       calibration_anchors=calibration_anchors)
     calls, diversity_shas = [], {}
     used = set()
     for idx in range(1, n_calls + 1):
@@ -900,16 +929,84 @@ def make_country_schedule_covering(seed) -> dict:
            "locked_iso": None, "us_locked": False,
            "coverage_mode": "all-eligible-countries-once",
            "ablation_no_local": False,
+           "calibration_anchors": bool(calibration_anchors),
            "bands": [list(b) for b in BANDS],
            "rubric_version": RUBRIC_VERSION,
            "sources": _source_pins(("country",)),
            "diversity_blind_sha256": diversity_shas,
            "calls": calls}
-    write_json(Path(FROZEN_DIR) / "schedule_country_all.json", doc)
+    suffix = "_anchored" if calibration_anchors else ""
+    write_json(Path(FROZEN_DIR) / f"schedule_country_all{suffix}.json", doc)
     return doc
 
 
-def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None) -> dict:
+def make_country_schedule_bag(bag, repeats, seed,
+                              calibration_anchors: bool = True) -> dict:
+    """Grab-bag consistency schedule: every call contains one bag country
+    (round-robin) plus four stratified random partners (one per percentile
+    quartile). n_calls = repeats x len(bag), so each bag country appears in
+    exactly `repeats` calls. Deterministic under the seed.
+    """
+    check_diag_env()
+    repeats, seed = _validate_schedule_args(repeats, seed)
+    countries = load_countries()
+    taxonomy = load_taxonomy()
+    pcts = percentile_ranks(countries)
+    eligible = sorted(eligible_countries(countries))
+    bag = [b.upper() for b in bag]
+    for b in bag:
+        if b not in eligible:
+            raise HarnessError(f"bag country {b} not eligible")
+    rng = random.Random(seed ^ 0xBA6)
+    strata: list[list[str]] = [[] for _ in range(4)]
+    for iso in eligible:
+        strata[min(3, int(pcts[iso] // 25))].append(iso)
+    for s in strata:
+        s.sort()
+        rng.shuffle(s)
+    n_calls = repeats * len(bag)
+    system_text = build_country_system(taxonomy,
+                                       calibration_anchors=calibration_anchors)
+    calls, diversity_shas = [], {}
+    for idx in range(1, n_calls + 1):
+        focus = bag[(idx - 1) % len(bag)]
+        partners = []
+        for q in range(4):
+            pool = [i for i in strata[q] if i != focus and i not in partners]
+            partners.append(rng.choice(pool))
+        entries = [{"band": None, "iso3": focus, "forced_usa": False,
+                    "forced_lock": False, "duplicate_draw": False,
+                    "bag_focus": True}] + [
+                   {"band": None, "iso3": i, "forced_usa": False,
+                    "forced_lock": False, "duplicate_draw": False,
+                    "bag_focus": False} for i in partners]
+        rng.shuffle(entries)
+        slot_map = {str(s2): entries[s2 - 1] for s2 in range(1, SLOT_COUNT + 1)}
+        for e in entries:
+            if e["iso3"] not in diversity_shas:
+                diversity_shas[e["iso3"]] = sha256_text(load_diversity(e["iso3"]))
+        user_text = build_country_user(slot_map, countries)
+        calls.append({"call": idx, "selection": entries, "slot_map": slot_map,
+                      "system_sha256": sha256_text(system_text),
+                      "user_sha256": sha256_text(user_text)})
+    doc = {"kind": "country", "version": SCHEDULE_VERSION, "seed": seed,
+           "rng": _rng_metadata(seed), "n_calls": n_calls,
+           "locked_iso": None, "us_locked": False,
+           "coverage_mode": "grab-bag-consistency",
+           "bag": bag, "repeats": repeats,
+           "ablation_no_local": False,
+           "calibration_anchors": bool(calibration_anchors),
+           "bands": [list(b) for b in BANDS],
+           "rubric_version": RUBRIC_VERSION,
+           "sources": _source_pins(("country",)),
+           "diversity_blind_sha256": diversity_shas,
+           "calls": calls}
+    write_json(Path(FROZEN_DIR) / "schedule_country_bag.json", doc)
+    return doc
+
+
+def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None,
+                         calibration_anchors: bool = False) -> dict:
     """Build (and write) frozen/schedule_admin1_<ISO3>.json.
 
     Five divisions of ONE country drawn per call (no repeat inside a call),
@@ -937,7 +1034,8 @@ def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None) -> dict:
             f"{iso3} has {len(pool)} eligible divisions; five-way needs at least "
             f"{SLOT_COUNT} (scored + blind-complete records only)")
     rng = random.Random(seed)
-    system_text = build_admin1_system(taxonomy)
+    system_text = build_admin1_system(taxonomy,
+                                      calibration_anchors=calibration_anchors)
 
     calls = []
     for idx in range(1, n_calls + 1):
@@ -955,13 +1053,15 @@ def make_admin1_schedule(iso3, n_calls, seed, parent_rating=None) -> dict:
     doc = {"kind": "admin1", "version": SCHEDULE_VERSION, "seed": seed,
            "rng": _rng_metadata(seed), "n_calls": n_calls, "iso3": iso3,
            "parent_rating": parent_rating,
+           "calibration_anchors": bool(calibration_anchors),
            "us_locked": False,
            "percentile_method": "not applicable (one country's divisions; "
                                 "simple random draws without replacement inside a call)",
            "rubric_version": RUBRIC_VERSION,
            "sources": _source_pins(("admin1",)),
            "calls": calls}
-    write_json(admin1_schedule_path(iso3, parent_rating), doc)
+    write_json(admin1_schedule_path(iso3, parent_rating,
+                                    calibration_anchors), doc)
     return doc
 
 
@@ -1064,7 +1164,9 @@ def rebuild_messages(doc: dict) -> list[tuple[str, str]]:
     if kind == "country":
         countries = load_countries()
         no_local = bool(doc.get("ablation_no_local"))
-        system_text = build_country_system(taxonomy, local_regime=not no_local)
+        system_text = build_country_system(
+            taxonomy, local_regime=not no_local,
+            calibration_anchors=bool(doc.get("calibration_anchors")))
         return [(system_text, build_country_user(c["slot_map"], countries,
                                                  include_regimes=not no_local))
                 for c in doc["calls"]]
@@ -1073,7 +1175,8 @@ def rebuild_messages(doc: dict) -> list[tuple[str, str]]:
     parent_iso = doc.get("iso3")
     if not isinstance(parent_iso, str):
         raise HarnessError("admin1 schedule missing iso3")
-    system_text = build_admin1_system(taxonomy)
+    system_text = build_admin1_system(
+        taxonomy, calibration_anchors=bool(doc.get("calibration_anchors")))
     parent_rating = doc.get("parent_rating")
     return [(system_text,
              build_admin1_user(c["slot_map"], parent_iso, admin1, countries,
@@ -1496,6 +1599,13 @@ def main(argv=None) -> int:
                             "country exactly once, stratified panels)")
     p.add_argument("--seed", type=int, required=True)
 
+    p = sub.add_parser("schedule-country-bag",
+                       help="write frozen/schedule_country_bag.json "
+                            "(grab-bag consistency schedule)")
+    p.add_argument("--bag", nargs="+", required=True)
+    p.add_argument("--repeats", type=int, required=True)
+    p.add_argument("--seed", type=int, required=True)
+
     p = sub.add_parser("schedule-admin1",
                        help="write frozen/schedule_admin1_<ISO3>.json")
     p.add_argument("--iso3", required=True)
@@ -1533,6 +1643,11 @@ def main(argv=None) -> int:
             doc = make_country_schedule_covering(args.seed)
             print(f"wrote schedule_country_all.json: {doc['n_calls']} calls, "
                   f"{len(doc['diversity_blind_sha256'])} countries covered")
+            return 0
+        if args.command == "schedule-country-bag":
+            doc = make_country_schedule_bag(args.bag, args.repeats, args.seed)
+            print(f"wrote schedule_country_bag.json: {doc['n_calls']} calls, "
+                  f"bag {doc['bag']}, repeats {doc['repeats']}")
             return 0
         if args.command == "schedule-admin1":
             doc = make_admin1_schedule(args.iso3, args.n_calls, args.seed)
