@@ -161,3 +161,18 @@ increases anywhere (qwen stays at its documented 16000), failed draws are
 accepted and recorded under the existing rule. Readout: model-vs-draw
 variance decomposition per country/state, US reevaluation, ensemble
 stability, ADM1 anchor-gap persistence.
+
+## Full anchored single-rating sweep (pre-committed 2026-11-10, per user)
+
+The corrected instrument, after the user's format correction: ONE jurisdiction
+per call (never panels), rubric + 50 synthetic anchors, NO parent score for
+admin1 (parent framework text only, marked "no score is given"). Models: the
+six earlier cheap models plus meta/muse-ember per explicit operator instruction
+(note: this supersedes the older "no Muse" standing rule; recorded consciously).
+One draw per (model, region): 233 countries + 51 US states/DC = 284 regions x
+7 models = 1988 calls. Uniform settings: thinking medium, max_tokens 8000.
+Territory blind dossiers (33) merged into data/countries.json with score digest
+verified unchanged, so "all countries" = 233. Failed draws preferred over token
+burn; no retries; continuations via --calls under the existing rule. Readouts:
+per-region 7-model ensemble + spread; US level; Kansas-family comparisons;
+ensemble vs displayed map (diagnostic).

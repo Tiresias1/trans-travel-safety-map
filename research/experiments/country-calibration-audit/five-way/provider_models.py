@@ -23,14 +23,14 @@ KEY_FILE = Path("/tmp/.openrouter_key")
 
 
 def _call(model: str, system_text: str, user_text: str,
-          max_tokens: int = MAX_TOKENS) -> dict:
+          max_tokens: int = MAX_TOKENS, effort: str = "low") -> dict:
     key = KEY_FILE.read_text(encoding="utf-8").strip()
     if not key:
         raise RuntimeError("empty provider credential")
     body = json.dumps({
         "model": model,
         "max_tokens": max_tokens,
-        "reasoning": {"effort": "low"},
+        "reasoning": {"effort": effort},
         "messages": [
             {"role": "system", "content": system_text},
             {"role": "user", "content": user_text},
@@ -112,3 +112,21 @@ def call_mimo_medium(system_text: str, user_text: str) -> dict:
         if isinstance(v, int):
             out["usage"][dst] = v
     return out
+
+
+# ---- medium-effort family for the anchored single-rating instrument ----
+
+SINGLE_MODELS = {
+    "mimo": "xiaomi/mimo-v2.6-flash",
+    "deepseek": "deepseek/deepseek-v4.1-flash-1017",
+    "qwen": "qwen/qwen3.8-flash",
+    "glm": "z-ai/glm-5.3-flash",
+    "haiku": "anthropic/claude-haiku-5.5",
+    "luna": "openai/gpt-6-luna",
+    "muse": "meta/muse-ember",
+}
+
+
+def call_single(model_key: str, system_text: str, user_text: str) -> dict:
+    return _call(SINGLE_MODELS[model_key], system_text, user_text,
+                 max_tokens=8000, effort="medium")
