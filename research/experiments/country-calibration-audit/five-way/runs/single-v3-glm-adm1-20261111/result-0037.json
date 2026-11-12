@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.001418534",
+ "parsed": {
+  "rating": 0.56,
+  "explanation": "The combined regime splits sharply. Within the state, documented protections actually operate: courts have enjoined the binary-definition law, blocked the facility-segregation statute as animus-motivated, permanently struck the minor-care ban, and upheld dignity-based relief on appeal — the July 2026 assessment records this as the only improving jurisdiction. But the national framework imposes unavoidable tier-1/2 entry exposure on every trans visitor: binary passport policy in force since November 2025, cables instructing refusal where 'reasonable doubt' about sex arises, fraud-based lifetime-ineligibility findings, documented confiscations stranding travellers, detentions of foreign nationals that prompted at least eight allied governments to issue advisories. These entry measures are unremedied (litigation pending) and apply at the border regardless of the state's protective courts. State detention placement is undocumented; national custody practices are abusive but apply mainly to national custody. Net: strong local protection sits below a serious, universal, currently operative border/document regime.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary passport policy in effect; X markers discontinued; officers instructed to refuse cases on reasonable doubt about sex; fraud findings carry lifetime ineligibility; documented confiscations stranding travellers and detentions of foreign nationals; allied governments issued travel advisories.",
+    "protection": "Civil-liberties litigation pending; existing X passports remain valid until expiry; limited fraud waivers exist though findings are never automatic.",
+    "interaction": "Entry screening is national and precedes any contact with the state's protective institutions; a border refusal or fraud finding occurs before state law can operate.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National custody record: conversion-style policies for trans inmates, hormone removal, forced labour, beatings and sexual abuse in immigration custody. State detention placement for visitors is not documented.",
+    "protection": "Not documented.",
+    "interaction": "A visitor entering national immigration custody (e.g. after a visa fraud allegation) faces the abusive national custody regime, not the state's courts.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent facilities in government-funded single-sex facilities; 20+ states have bans; some criminalise use. Within this state, the 2025 facility-segregation statute is under a temporary restraint and a 2024 proposal was defeated.",
+    "protection": "State courts enjoined the facility ban, finding animus and no safety evidence; the state's equal-protection doctrine is repeatedly and successfully applied.",
+    "interaction": "National facilities rules reach national buildings; the state restraint governs state-funded facilities. Status of the restraint past April 2025 is unsourced — uncertain.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National orders frame minor care as 'mutilation'; funding freezes and proposed insurance rules; hospitals subpoenaed nationally. These mostly touch residents.",
+    "protection": "The state's minor-care ban was permanently struck down (May 2025); highest court kept the injunction on privacy grounds. Visitors can plausibly access care in-state.",
+    "interaction": "National insurance/funding rules may constrain reimbursement; a travelling minor's care in this state is protected by the struck-down ban, unlike 27 other states.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National rhetoric: 'gender ideology' removals, 'radical gender ideology' in extremist guidance, counterterrorism prioritising 'radically pro-transgender' groups; 66% public support for birth-sex documents; drag/flag laws signed though partly enjoined; state RFRA licence to discriminate.",
+    "protection": "Drag-performance ban TRO'd; March 2025 drag-definition bill defeated; state courts treat transgender status with dignity; national hate-crime statute covers gender identity.",
+    "interaction": "Hostile national framing shapes federal law enforcement the traveller may meet; state enforcement is mediated by protective courts.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs criminal investigation of teachers facilitating a minor's social transition; national records and entry screening apply to the family; a trans minor's documents follow the binary rule.",
+    "protection": "In-state minor care is lawful and protected by the struck-down ban; school-related state restrictions are enjoined or defeated.",
+    "interaction": "A travelling family passes through national entry screening before reaching state protections; the teacher-prosecution order targets schools, mainly a resident exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific violence data — explicitly not assessable from the dossier. One documented restroom arrest elsewhere in the country under a state law not in force here.",
+    "protection": "National hate-crime statute applies; municipal ordinances cover discrimination in some cities.",
+    "interaction": "Absence of state violence data is not evidence of safety; the national recourse statute is theoretical for the traveller.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved: 2026 binary-definition bill's litigation outcome; permanence of the facility restraint; passport suit; state marker-change availability described as blocked pending trial despite the injunction; state detention placement; state violence record.",
+    "protection": "Documented pattern of state courts granting effective, upheld relief — a genuinely operating remedy, unlike oversight findings elsewhere.",
+    "interaction": "Exposure depends on which measures are operative at travel time; state court relief cannot displace national entry and custody authority.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-E",
+    "comparison": "Similar border-profile: recurring, partially remediated entry friction with visitors affected. Here friction is national and unremedied at entry (refusals, fraud findings, documented detentions), somewhat worse; but local protections are far stronger, keeping the case near this anchor."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "That anchor features unremedied universal invasive screening. The national entry regime here is comparably universal (binary documents, 'reasonable doubt' refusals), but this jurisdiction adds a documented, operating state-court protective layer that 0.45-D lacks, placing it above that level."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C pairs cultural acceptance with a dead-letter statute and working ordinary courts. Here the state side resembles it (enjoined bans, functioning courts, care access), but the operative national entry regime is an active, enforced restriction with documented detentions — materially below 0.75."
+   }
+  ],
+  "synthesis": "The traveller encounters two regimes in sequence. At the border, national rules dominate: binary passport sex, officer instructions to refuse on doubt, fraud findings, and documented detentions that alarmed eight foreign governments — a universal, currently enforced exposure with no working remedy (litigation only pending). Inside the state, the picture inverts: the worst enacted laws (binary definitions, facility segregation, minor-care ban, drag restrictions) are all blocked by courts whose relief is documented and upheld on appeal, and care is available where 27 other states ban it. Per the combined-regime rule, the operative final interaction for entry is the national one, and it cannot be cancelled by state equal-protection doctrine. The state's protective machinery is genuine and counts, but it operates only after admission; the unremedied entry exposure plus undocumented state detention and violence data hold the rating in the middle of the elevated band."
+ },
+ "parse_error": null
+}

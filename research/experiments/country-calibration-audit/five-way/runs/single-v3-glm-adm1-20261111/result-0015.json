@@ -1,0 +1,78 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00473763",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "Combined regime: the division is genuinely protective — codified gender-identity non-discrimination (2023), an explicit gender identity/expression hate-crime statute in force since 2025, no facility ban mapped, and 2003 national case-law shielding same-sex conduct. But the parent's universal-exposure measures bind every visitor: entry screening that can flag, refuse or strand a trans applicant on a fraud ground, and severe documented harm if detained (forced labour, beatings, sexual abuse in immigration custody; corrections-bureau policies revoking hormones and enforcing conversion therapy if jailed). The division's protections operate only in the resident-facing, everyday sphere; the parent's universal-exposure measures (entry screening, visa fraud ground) apply to every visitor regardless of state — they are tier-1-ish exposures. So the division's score is above the parent's average, but the parent's shared regime (entry screening, visa fraud) still operates in this division. I'd say 0.45-0.50.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent entry screening cable: document discrepancy or reasonable doubt on sex triggers refusal; fraud ground permits lifetime ineligibility; passport confiscation/blocks reported. Division's own documents accepted; visitor's passport is home-issued.",
+    "protection": "Civil-liberties union suit challenging foreign ministry policy; division documents accept identity as issued.",
+    "interaction": "National entry screening operates on arrival regardless of division; no documented division override of the federal fraud ground or refusal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau mandates conversion therapy for trans inmates, hormone withdrawal, hair cutting; immigration custody forced labour, beatings, sexual abuse. Division 'falls short on protections for incarcerated transgender people' (unspecified).",
+    "protection": "Not documented at division level.",
+    "interaction": "Federal custody rules apply regardless of division; no documented division override of the federal custody regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Parent national facility bans in 22+ other states; this division has no facility ban per the 7 Nov 2026 map.",
+    "protection": "Division's civil-rights act prohibits gender-identity discrimination; statewide ban not documented.",
+    "interaction": "Visitor in this division does not face facility ban; other state/provinces within the parent do apply.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Parent ordered care for minors described as 'chemical and surgical mutilation'; 27 states ban youth care. Division records shortfalls in healthcare equity but no documented local care restriction.",
+    "protection": "Division has no documented care restriction; conversion therapy banned; insurance companies barred from discriminating on gender identity.",
+    "interaction": "National health rules proposed Oct 2025 may bar public insurance reimbursement for care to trans patients under 18; federal funding freeze.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Parent counterterrorism strategy prioritizes 'radically pro-transgender' groups; 'gender ideology' framing; 'radical gender ideology' in law-enforcement guidance. Division court pronoun decision limited to judges.",
+    "protection": "Division court declared gender identity protected under 1992 hate-crime statute; panic defence abolished; 2023 codified non-discrimination law.",
+    "interaction": "Parent's threat framing is national; division's own law-enforcement is documented as protective, not hostile.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Parent ordered teachers facilitating a trans minor's social transition prosecuted as criminal exploitation; 27 states ban youth care; national crisis lifeline services shut down.",
+    "protection": "Division has no documented care restriction; conversion therapy banned statewide; insurance companies barred from discriminating on gender identity.",
+    "interaction": "Federal law-enforcement directive applies to schools regardless of division; division courts have not been documented as blocking it.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented division-level anti-trans violence or arrest data; 'falls short on healthcare equity and protections for incarcerated transgender people' (unspecified).",
+    "protection": "Division gender identity/expression hate-crime statute signed Jan 2025, effective ~April 2025; panic defence abolished.",
+    "interaction": "No documented division enforcement statistics; 'no later confirmation' of X marker; 'no state/province-specific data on anti-trans violence or enforcement statistics identified'.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented division-level enforcement statistics on anti-trans violence or on enforcement of the federal screening cable; 'no state/province-specific data on anti-trans violence or enforcement statistics identified'.",
+    "protection": "Division codified non-discrimination law (2023), explicit gender identity/expression hate-crime statute (2025), conversion therapy ban.",
+    "interaction": "Parent's universal-exposure measures (entry screening, visa fraud ground) apply to every visitor regardless of division; division's protections operate in the resident/everyday sphere.",
+    "status": "not_documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a birth-sex facility rule applied everywhere plus courts rejecting complaints; here no local facility ban, real protections operating. Lower exposure than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has some friction, no organised targeting, some unremedied exclusion; here comparable friction from entry screening, no organised targeting, documented protections. Similar weight of friction and uncertainty about detention placement among other things."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has strong acceptance traditions and functioning recourse in ordinary services; here no documented acceptance traditions, no documented division enforcement statistics, and parent's universal-exposure measures (entry screening, visa fraud ground) bind every visitor. Lower than 0.75-C."
+   }
+  ],
+  "synthesis": "The division's documented protections (codified non-discrimination law, gender identity/expression hate-crime statute, conversion therapy ban, no facility ban) are real and operative in the resident/everyday sphere. But the parent's universal-exposure measures bind every visitor regardless of division: entry screening cable, visa fraud ground, and if detained, federal custody harm. The division's protections operate only in the resident-facing, everyday sphere; the parent's universal-exposure measures apply to every visitor. So the division sits above the parent's average, but the parent's shared regime (entry screening, visa fraud) still operates in this division. I'd say 0.45-0.50."
+ },
+ "parse_error": null
+}

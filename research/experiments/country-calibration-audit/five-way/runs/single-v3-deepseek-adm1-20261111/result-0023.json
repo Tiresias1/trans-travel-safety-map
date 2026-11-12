@@ -1,0 +1,82 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.003206356",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime is high risk. National entry/document screening can flag sex-marker or purpose discrepancies, with refusal and possible fraud ineligibility; a national executive order bars gender-congruent access to government-funded single-sex facilities; custody records include conversion practices and abuse; counterterrorism rhetoric frames pro-trans groups. The division adds no statewide adult bathroom or adult-care ban, but also no statewide nondiscrimination or gender-identity hate-crime coverage, and municipal protections cover only about 46% of residents. National hate-crime law, court challenges, marriage recognition and the absence of criminalisation for expression keep it above severe profiles. Unresolved litigation and missing violence data add uncertainty.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National screening flags sex-marker or purpose discrepancies; officers may refuse and consider permanent fraud ineligibility. Existing foreign X markers may face scrutiny; trans athletes are banned from women's competition.",
+    "protection": "Fraud finding is not automatic and requires all elements; limited waivers exist; passport restrictions are under national court challenge.",
+    "interaction": "A home passport that does not match presentation or records can move a visitor from routine entry into secondary screening, refusal, or a lifetime ineligibility finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies impose conversion-style practices on trans inmates; immigration custody reports forced labour, beatings, solitary confinement and sexual abuse. Trans prisoner counts stopped being reported from 2025.",
+    "protection": "National hate-crime statute covers gender identity; some executive orders are enjoined. No division-specific custody protection is documented.",
+    "interaction": "A document discrepancy at entry can escalate into immigration detention, where national custody practice, not local tolerance, governs placement and treatment.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities matching gender identity. Many states/provinces impose bathroom bans; this division has no statewide adult bathroom ban.",
+    "protection": "Division has no statewide adult facility ban, but four municipalities covering about 46% of residents bar gender-identity discrimination in public accommodations. National EO still governs federal facilities.",
+    "interaction": "Local ordinances and the division's lack of an adult bathroom statute do not displace the national facility rule; school-district policies affect minors separately.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures target youth gender-affirming care, insurance coverage and school facilitation. Division medical board approved a draft rule treating under-18 transition care as unprofessional conduct.",
+    "protection": "Division has no statewide ban on adult gender-affirming care; the youth-care draft is not yet operative and must pass review and comment. Emergency adult care exclusion is not documented.",
+    "interaction": "Adult visitors face mainly national care/climate signals; a travelling minor could encounter youth-care restrictions if care is sought, though the division rule remains pending.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; DOJ reward guidance references 'radical gender ideology'. Division hate-crime law omits gender identity.",
+    "protection": "National hate-crime statute covers gender identity; several executive orders are blocked or enjoined; no division-specific police targeting of trans visitors is documented.",
+    "interaction": "Hostile national framing raises the stakes of any police or security encounter; local lack of hate-crime enhancement weakens recourse for bias violence.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders restrict youth care and direct investigation of schools facilitating social transition; division medical board draft restricts under-18 transition care; one school district mandates birth-sex bathrooms or private alternative.",
+    "protection": "Division has no statewide adult facility or adult-care ban; the youth-care draft is not operative; no statewide school bathroom statute is documented.",
+    "interaction": "A minor travelling with an adult faces national youth-care and facility rules plus pending division regulatory action; school-district policy applies to enrolled students, not transient visitors.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division hate-crime statute does not list gender identity; no statewide nondiscrimination coverage outside four municipalities; no trans-specific violence count or general homicide comparison is sourced.",
+    "protection": "National hate-crime statute covers gender identity; municipal ordinances cover parts of the division; no documented police sweeps or extortion targeting trans visitors in this division.",
+    "interaction": "Outside the four municipalities, a trans visitor has no state or local discrimination recourse in hotels or restaurants, and bias violence does not trigger state hate-crime enhancement.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport-marker litigation, executive-order challenges and the division youth-care draft remain unresolved; enforcement of municipal ordinances is not sourced; violence data is absent.",
+    "protection": "National courts have blocked some orders; civil-liberties litigation continues; limited waiver possibilities exist for fraud findings.",
+    "interaction": "Practical exposure depends on which national measures are in force at travel time, and local protection varies by municipality rather than statewide.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal birth-sex public-building rule, rejected complaints, no offence and polite shops. This case is lower: it adds national entry-document scrutiny with possible fraud ineligibility and documented custody abuse, while its division lacks an adult bathroom ban but has only patchy municipal protection."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D has compulsory birth-sex facilities, hospital ward placement, rejected complaints and police stops/extortion. This case is slightly higher: it lacks documented police sweeps or extortion in the division, has a national gender-identity hate-crime statute and some municipal protections, though national facility exclusion and custody harm remain."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has a universal birth-sex bathroom rule but ordinary emergency care, no custody harm and a prosecuted assault. This case is lower because national entry screening, custody abuse and threat framing add exposure, and state-level nondiscrimination and hate-crime recourse are weaker."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a dead-letter same-sex offence, accepted foreign documents, documented traditional acceptance, ordinary courts granting compensation and no organised targeting. This case is far lower: national facility exclusion, entry-document risk, custody harm and missing state-level recourse are absent there."
+   }
+  ],
+  "synthesis": "The operative regime is national-first. At entry, sex-marker and record discrepancies can trigger refusal or fraud ineligibility. In government-funded facilities, the national order bars gender-congruent access, and detention carries documented conversion-style and abusive practices. The division does not add a statewide adult bathroom or adult-care ban, but it also lacks statewide nondiscrimination and gender-identity hate-crime coverage; only four municipalities protect, covering about 46% of residents. National hate-crime law, marriage recognition, no criminalisation of expression, municipal ordinances and court challenges are real but partial mitigations. For a travelling minor, national youth-care restrictions and the pending division medical-board rule add exposure. Missing violence data and unresolved litigation make the practical edge uncertain, not safe."
+ },
+ "parse_error": null
+}

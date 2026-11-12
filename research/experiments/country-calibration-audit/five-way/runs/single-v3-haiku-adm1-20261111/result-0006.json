@@ -1,0 +1,78 @@
+{
+ "cell": 6,
+ "region": "66186276B17406925856308:Vermont",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0062395",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "Combined regime: national entry, custody and federal-facility rules govern this visitor, and the division's protections do not pre-empt them. Entry exposure is documented: X and non-matching markers are not processed, passports have been blocked, and discrepancies trigger refusal and possible fraud findings. Immigration custody has documented forced labour, beatings and sexual abuse of trans men, with no working federal remedy. National hostility framing and hospital subpoenas add exposure. The division's operative protections (public accommodation, hate-crime enhancement, panic-defence abolition, shield laws, self-determination documents) are strong but do not reach federal border or custody actors. Enforcement records for them are not sourced. Elevated band, below the 0.55 tier because of documented federal custody abuse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Foreign ministry stopped processing X and non-matching markers; blocked or confiscated passports leave some travellers stranded. Entry cable refuses cases with document discrepancies and allows lifetime fraud findings for wilful misrepresentation.",
+    "protection": "Existing X passports remain valid until expiry. Litigation challenging the passport policy is pending, not decided.",
+    "interaction": "Division self-ID and document rules do not govern passports or entry. A discrepancy moves a visitor from routine entry into refusal or fraud investigation, which can lead to detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Federal corrections adopted conversion-therapy-style policies (hair cutting, hormone removal) and stopped reporting trans prisoner numbers.",
+    "protection": "Not documented. No operative custody protection reaches visitors; the division's protections do not reach federal custody.",
+    "interaction": "A document discrepancy that leads to detention can place a traveller in federal custody with documented harm, outside any division protection.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal EO bars gender-identity access to government-funded single-sex facilities. Trespass-type bathroom criminalisation and bans in many states, including a state-level criminal trespass arrest and capitol-level bans, are documented in other units; whether this division's public buildings are covered is not established.",
+    "protection": "Division public-accommodation law and gender-neutral single-user bathroom rule are in force. The capital-chamber bathroom-ban measure is pending and its status is uncertain.",
+    "interaction": "Federal facility rules and any national-capital bathroom measure apply regardless of division law; the division's protections apply to private and state-level settings.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospitals for minors' records, proposed rules barring public reimbursement for under-18 care, and national funding cuts to LGBTQ services. Gender-affirming care for minors is banned in 27 states; this division is not listed among them.",
+    "protection": "Division requires insurer coverage of transgender care (since 2013) and bans conversion therapy on minors. Federal proposed rules are unresolved and may be enjoined.",
+    "interaction": "Federal reimbursement and records rules can reach a visitor's care even where the division requires coverage, particularly for a minor.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for prioritised neutralisation; a cash-reward system targets leadership of groups using the same framing; advocates describe the trajectory as early-genocide-like. The 2025 federal EO directs investigation of schools and prosecution of teachers facilitating social transition.",
+    "protection": "The strategy states counterterrorism powers will not target people who simply disagree. Several orders are blocked or enjoined.",
+    "interaction": "State threat-framing at national level carries into border and custody practice; a division's protective posture does not reduce it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-visitor-specific rule is documented. Minor care is restricted nationally, and records of minors' care can be subpoenaed. A parent facilitating a minor's social transition is in the federal enforcement frame. Entry documents for minors follow the same marker rules.",
+    "protection": "Division bans conversion therapy on minors, requires insurer coverage, and has a school anti-bullying law. These do not govern federal entry or subpoenas.",
+    "interaction": "A minor's documents create the same entry discrepancy risk as adults; a guardian's care decisions may come under federal scrutiny.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Bias against sexual orientation is a large share of hate incidents; gender-identity-specific incident data is not sourced. Some regional violence advisories are cited without enforcement data.",
+    "protection": "Federal hate-crime statute covers gender identity. Division hate-crime enhancement since 1999 and abolition of the panic defence since 2021 are in force. Enforcement outcomes are not sourced.",
+    "interaction": "Division protections should apply to street crime against a visitor; federal policing and prosecution posture is not documented as hostile to these cases.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation is unresolved; the civil-liberties suit over passports is pending. Division public-accommodation complaints have no enforcement data in the sources. Federal custody reporting has stopped.",
+    "protection": "Division shield laws (2023, 2024) are enforceable against out-of-state action. Courts have blocked several federal orders.",
+    "interaction": "Division remedies do not reach federal entry, custody or facility rules; federal litigation outcomes can shift exposure at any time.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Veluna enforces birth-sex toilets in all public buildings and birth-sex emergency wards with no visitor exemption. This case has similar federal entry and facility exposures, but it has no documented immigration custody abuse, no national hostility framing and no strong division protections. It is therefore lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Teravi has documented hostile treatment by operators and no birth-sex placement rule, with working mediators. This case has comparable division-level protections, but national border and custody exposures are more severe and unremedied, so it is lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Ilvora has no documented traveller-facing restriction and accepts documents, with working courts and no organised targeting. This case has documented national entry refusal, federal custody abuse and hostile national framing, so it is markedly lower."
+   }
+  ],
+  "synthesis": "The division's strong operative protections (public accommodation, hate-crime enhancement, shield laws, self-determination documents) are real but do not reach the national entry, custody and facilities regime that the visitor encounters first. Discrepancy-triggered refusal and fraud findings, documented immigration custody abuse and a hostile national framing form the operative exposure. Several federal measures are unresolved in court, so remedies are uncertain. The rating sits in the elevated band."
+ },
+ "parse_error": null
+}

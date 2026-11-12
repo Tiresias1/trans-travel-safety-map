@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006558142",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined regime exposes trans visitors at entry through sex-marker and fraud screening, including refusals, stranding and lifetime ineligibility, while national and state facility restrictions, criminal trespass arrests, and custody care bans create severe consequences if outed. Documented immigration-custody abuse and corrections conversion therapy are especially weighty. Official counterterrorism language heightens threat framing, and courts uphold hostile measures, so rule-of-law protects institutions against trans travelers. Partial protections—hate-crime statutes, employment rulings, sanctuary cities, litigation—reduce but do not offset traveler-facing exposure. Minors face additional care and school hostility. Score above near-automatic imprisonment but below high-risk universal exclusion.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport/visa sex-marker rules and entry cable allow refusal, additional evidence demands, and fraud-based lifetime ineligibility when documents/presentation mismatch; trans/nonbinary travelers report confiscation, blocking, stranding, and foreign detentions.",
+    "protection": "Existing X markers remain valid; courts continue challenges; legal-aid FAQ advises travelers.",
+    "interaction": "Document mismatch can cascade into investigation, visa denial, detention or removal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary and severe sexual abuse; national corrections adopted conversion-therapy-like rules, HRT removal and denied care; facility trespass arrest led to men's ward placement.",
+    "protection": "Hate-crime statute and judicial review exist, but courts allowed key restrictions and custody counts are no longer reported.",
+    "interaction": "Document or facility disputes can lead to police/immigration detention, where birth-sex/care rules apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts government-funded single-sex facilities; state/province bans cover many public buildings and some private venues; four jurisdictions criminalize refusal to depart, with a reported arrest charged trespass.",
+    "protection": "Several mapped jurisdictions have no facility ban; sanctuary cities and private businesses may be inclusive, but not nationwide traveler relief.",
+    "interaction": "Federal document/custody exposure persists even in protective states/provinces; state rules vary by destination.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans minor transition care, public insurance and prison/jail care, with no taper for inmates; national orders attack minor services. Adult HRT import and ward placement are not documented.",
+    "protection": "Private or adult care may be available; sanctuary cities provide local refuge, but traveler-facing service relief is not established.",
+    "interaction": "Custody arrest or minor travel can trigger care denial; emergency access remains unresolved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism prioritizes 'radically pro-transgender' groups; school, pronoun, athlete and funding orders frame trans life as hostile. Entry/facility enforcement can convert mismatch into fraud or trespass.",
+    "protection": "Counterterrorism memo disclaims targeting mere disagreement; employment-discrimination ruling and hate-crime statutes remain partially protective.",
+    "interaction": "Rhetoric plus document checks raise policing risk; efficient enforcement of restrictive rules is exposure, not recourse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-18 gender-affirming care is barred from starting and publicly funded; schools face investigation/prosecution for facilitating social transition; trans minors and guardians risk denial of treatment and scrutiny.",
+    "protection": "SAFE Act permits continuation for existing patients; some adoption and sanctuary-city policies are less hostile; adult guardian-specific relief not documented.",
+    "interaction": "A traveling minor's records, school activities or health needs can intersect with entry, custody and state care bans.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific recent violent incident with outcome is documented; public support for sex-marker rules and hostile official framing could embolden confrontations, with facility laws supplying a police pathway.",
+    "protection": "National hate-crime law covers gender identity; some state/provinces and cities have protections; courts can act against bias violence.",
+    "interaction": "Service refusal or restroom dispute may escalate to harassment, detention or fraud allegations rather than simple street crime.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Core passport and state-care restrictions are allowed by high courts; some orders remain in force; short-stay travelers may leave before complaints conclude.",
+    "protection": "Civil-liberties litigation, injunctions against some orders, FAQ guidance, sanctuary cities and hate-crime law offer partial recourse.",
+    "interaction": "Remedy timing and venue can change exposure; custody, entry and emergency-care outcomes are not reliably documented.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "Worse than 0.35-D: 0.35 has birth-sex facility rule but polite shops; this regime adds entry fraud/lifetime bans, immigration-custody abuse, corrections conversion therapy, criminal facility arrests, state care bans and hostile framing."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Less safe than 0.25-C because national passport/visa screening plus immigration-custody abuse and many-state facility/care restrictions exceed local confiscation/extortion, even though some protections remain."
+   },
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "More protective than 0.15-D because no visitor registry or checkpoint disclosure and no documented near-automatic imprisonment for presentation; entry screening, custody abuse and hostile framing keep the score near 0.15 rather than 0.25."
+   }
+  ],
+  "synthesis": "National entry and document rules turn a trans traveler's appearance or marker into visa denial, investigation or fraud-based ban; state/province facility and custody rules then make public buildings, detention, and care unsafe. Courts uphold core restrictions, making institutional efficiency an aggravating exposure. Residual protections—existing X passports, lawsuits, sanctuary cities, hate-crime law—matter but cannot reliably reverse entry denial, ward/custody harm, or minor-care restrictions. The combined regime is severe but not automatic execution, producing elevated/high risk around severe-risk threshold."
+ },
+ "parse_error": null
+}

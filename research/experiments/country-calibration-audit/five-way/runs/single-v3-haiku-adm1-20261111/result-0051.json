@@ -1,0 +1,78 @@
+{
+ "cell": 51,
+ "region": "66186276B99594608635082:Hawaii",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.006003",
+ "parsed": {
+  "rating": 0.57,
+  "explanation": "The combined regime pairs a heavy national layer with a strongly protective state layer. National exposures reach visitors regardless of state law: passports are restricted to sex at birth with X markers no longer issued, entry refusal and a possible lifetime fraud finding apply to document discrepancies, federal facilities are closed to congruent identity, and documented harms occur in federal immigration custody. The state adds real protections: a shield law for care, public-accommodation and employment protections, gender-identity hate-crime coverage, marker change by request, an X option, no bathroom restriction on the national inventory, and a Most Protective ranking. Federal screening and custody are not pre-empted by state law, and no state-level enforcement data exists. The state layer lifts the score into Elevated Risk, but it stays well below the Reduced Risk tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passports issue sex at birth only; X markers are not issued for new applications; passports confiscated or blocked; entry refusal for discrepancies and possible permanent fraud ineligibility; foreign advisories.",
+    "protection": "Existing X passports remain valid until expiry; litigation pending; no state-level document protection reaches federal passports.",
+    "interaction": "Federal document rules apply at any airport or consular stage; state marker rules do not change what a federal officer checks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections adopted conversion-style policies from 2026 and stopped reporting trans prisoner numbers.",
+    "protection": "Not documented for federal custody. The state's own placement rules are not documented as operating for federal detainees.",
+    "interaction": "A visitor whose documents or presentation trigger federal investigation enters federal custody, where state protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent facility access in government-funded buildings. Not on the state's ten-jurisdiction bathroom-restriction list; state government buildings are not documented as restricted.",
+    "protection": "State public-accommodation law since 2006; state facilities not documented as restricted; the bathroom criminal offence is not documented in this state.",
+    "interaction": "Federal buildings and funded facilities follow the national order; state buildings and private accommodation follow state law. A trip crossing both sees the national restriction in federal settings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospital records for patients under 19; proposed federal rules barring public insurance reimbursement for under-18 care; national funding cuts to youth services.",
+    "protection": "State healthcare shield law (current as of 27 September 2026) protects visitors from charges for care banned at home. Mandated insurance coverage. Operation for visitors, documentation and pre-arrival care are not documented.",
+    "interaction": "The shield protects care sought inside the state. Federal records requests and funding cuts can still reach care providers and records.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as priority targets; cash-reward memo uses 'radical gender ideology'; official rhetoric treats gender diversity as a threat.",
+    "protection": "State framing is protective; hate-crime and anti-discrimination protections are on the books. The national counterterrorism memo states that powers will not target those who simply disagree.",
+    "interaction": "Federal threat-framing can reach visitors through federal investigative authority, and the state does not override it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "For a minor visiting from a youth-care ban state: national executive orders target minor care and social transition; the national funding and prosecution climate threatens guardians and schools; federal records subpoenas reach minors' data.",
+    "protection": "State shield law covers guardians and providers for care lawful here; conversion therapy banned for minors since 2018; anti-bullying law covers gender identity in state schools.",
+    "interaction": "A guardian travelling with a minor faces federal exposure on records and documents, with state shield and conversion-therapy protections on the state side.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence figures or prosecution counts in the inventory; national hate-crime data show bias against sexual orientation as a share of incidents, not trans-specific.",
+    "protection": "Gender-identity hate crimes covered by the state statute; gay and trans panic defences abolished in 2019; state law prohibits anti-trans bias in public accommodations.",
+    "interaction": "Federal police and national climate could affect response, but no operating state-level record of enforcement is provided.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National orders and documents not yet resolved; federal litigation pending; visitor-specific operation of the shield law, the X-marker status in practice and state-level enforcement of protections are unknown.",
+    "protection": "State marker change by request; X option on licences and birth certificates; state commission (2022); anti-discrimination enforcement and protections in force since 2005–2023.",
+    "interaction": "State remedies run through state agencies and do not reach federal document refusals, federal custody or federal facilities.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has an enforced birth-sex public-building rule with unrelieved exclusion and emergency ward placement. This case has no state-level equivalent and documented state protections, but it carries federal document refusal and federal custody harm, so it is higher than 0.35-A but still exposed to a national universal restriction."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has provincial readmission and inspector remedies, with some hostile service treatment. This case has stronger state protections and documented shield law, but federal exposure is heavier and universal (passport and federal screening), which holds it near 0.55-B rather than above."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has accepted documents, identity-based facilities and documented protections operating. This case lacks the federal document and custody protections and has no documented state enforcement record, so it sits well below 0.75-C."
+   }
+  ],
+  "synthesis": "The state's protective layer is substantial on paper: a shield law, public-accommodation and hate-crime coverage, marker change by request and no state bathroom ban. The national layer governs the traveller's most unavoidable exposures: passport sex markers, screening refusals and fraud findings, federal facility exclusion, and documented harm in federal immigration custody. Federal rules and enforcement are not pre-empted by state protections, so the state's protections mitigate street and care exposure but not federal document, custody or facilities exposure. State enforcement is undocumented, so the rating stays in the Elevated band, above the national baseline but below Reduced Risk."
+ },
+ "parse_error": null
+}

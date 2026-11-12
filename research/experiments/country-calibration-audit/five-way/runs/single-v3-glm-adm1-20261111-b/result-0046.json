@@ -1,0 +1,82 @@
+{
+ "cell": 46,
+ "region": "66186276B97229519707655:Oregon",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.001402244",
+ "parsed": {
+  "rating": 0.65,
+  "explanation": "The combined operative regime pairs a documented hostile national layer with a documented protective state layer. At entry, the national passport/visa regime is a real traveller-facing exposure: binary marker rule, refusal-and-fraud-investigation cable, reported confiscations and stranding, foreign travel advisories, and airport secondary screening — universal for anyone whose documents or presentation invite scrutiny. Within the state, however, documented protections actually operate: a 2008 gender-identity public-accommodations law, trans panic defence abolition, hate-crime penalties, X markers on licences, and a 2023 care shield covering visitors from banning jurisdictions; no state facility ban, no state targeting. Consequences of outing in-state are moderate (discrimination recourse, prosecution of bias crimes), not imprisonment. That combination — strong in-state protection plus a serious but non-catastrophic national entry/screening and custody exposure — matches reduced risk, below 0.75 because the federal layer is current, documented, and partly unremedied.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-marker rule on new passports; February 2025 cable instructing officers to refuse cases with document/sex discrepancies and consider lifetime fraud ineligibility; reported passport confiscations and stranding; X-marker processing halted; allied governments' travel advisories; visa/sports-ban case-note tagging.",
+    "protection": "Existing X passports remain valid until expiry; M/F matching foreign passports accepted; policy under active court challenge; legal-aid FAQ exists.",
+    "interaction": "Discrepancy at visa or border can escalate into refusal or fraud investigation before the visitor ever reaches the protective state layer; once in-state, state documents are not implicated for a visitor.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau adopts conversion-therapy-style policies (hair, hormone removal); immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; transgender prisoner reporting discontinued.",
+    "protection": "Not documented at state level; state custody placement practice not documented.",
+    "interaction": "Any arrest or federal detention inside the state can route a visitor into the national custody regime where documented harms occur; state anti-discrimination law does not govern national facilities.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans access to government-funded single-sex facilities congruent with identity; ~21 states/provinces have bathroom bans, 4 with criminal provisions (trespass arrest documented March 2025); February 2026 state law voiding non-birth-sex documents elsewhere.",
+    "protection": "This state is in the 'Most Protective' tier: no state facility ban; X markers on licences and birth certificates since 2017; 29+ states and the capital lack such bans.",
+    "interaction": "National facilities rules govern national buildings (airports, courts) within the state; state law governs state and private premises, where the visitor's daily use is protected.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "27 states ban youth care; national rule proposal would bar public insurance reimbursement for under-18 care; hospitals subpoenaed for minors' records nationally.",
+    "protection": "2023 shield law protects patients and providers (including arriving visitors) from civil or criminal action for care legal in-state; state coverage of gender-affirming care established since 2013–2014; protected tier ranking.",
+    "interaction": "A travelling family seeking care is shielded in-state; federal actors could still investigate providers, and the shield's narrowed scope after legislative amendment is unresolved.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Executive orders framing gender-affirming care as 'mutilation'; counterterrorism strategy targeting 'radically pro-transgender' groups; federal schools investigation into the state over trans athletes; 2025 polling majority favouring birth-sex documents.",
+    "protection": "State equality law, hate-crime statutes and trans-panic defence abolition in force; state government not adopting federal framing; litigation blocking several orders.",
+    "interaction": "Federal framing and investigations pressure state institutions, but state law and courts operate independently for the settings a visitor uses.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs prosecution of teachers facilitating a trans minor's social transition; subpoena of minors' hospital records; proposed insurance ban for under-18 care; national youth crisis services shut.",
+    "protection": "In-state: youth care shielded and covered, school transgender policy upheld through the national supreme court (2020), anti-bullying law inclusive, conversion therapy banned since 2015.",
+    "interaction": "A trans minor travelling with a guardian is protected in-state (schools, care) but exposed to federal investigation/records pressure and to any entry-document discrepancy the guardian's family shares.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State-specific policing data not located; national landscape includes a documented bathroom-law arrest in another state; bias incidents nationally substantial.",
+    "protection": "State hate-crime statutes add gender-identity penalties; trans-panic defences abolished; public-accommodations law enforceable.",
+    "interaction": "Police response quality in-state is assumed through statute but enforcement statistics are absent — a documented protection whose operation is not quantified.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved: state police-stop, custody and screening practice; enforcement of the accommodation law; shield law's post-amendment scope; federal litigation outcomes could worsen entry and care rules.",
+    "protection": "Active litigation, legal-aid resources, equality maps and a protective tier ranking give the visitor identifiable recourse channels.",
+    "interaction": "Practical exposure varies with which federal measures are enjoined at travel time; state remedies do not reach federal entry screening or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Veluna's birth-sex facility rule is unremedied and universal within the visited territory; here the state layer has no facility ban and enforceable protections, so the operative in-state exposure is materially lower than 0.35-A despite a comparably hostile national document regime."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Teravi has a parent regime with no restriction and local friction partially remedied. This jurisdiction is the inverse: a documented hostile national layer at entry and custody plus a genuinely protective local layer; the national exposures are heavier than Teravi's ferry refusals, keeping it near the same level."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Ilvora's only negative is a dead-letter statute with working protections and social acceptance. Here the national layer is not dead-letter — documented confiscations, a refusal cable, custody harms — so this sits below 0.75-C; the state's documented operating protections keep it well above 0.55-A."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "Pelora has border friction (humiliating questioning, one open complaint) plus working remedies. The national entry regime here is more systematic and adversarial (fraud findings, stranding, advisories), but in-state protections are stronger than Pelora's — net similar, placing the case around 0.65."
+   }
+  ],
+  "synthesis": "The traveller's journey splits into two operative systems. At the border, the national regime imposes a universal exposure for anyone presenting an X marker or a document/presentation discrepancy: refusal lanes, potential fraud findings, reported confiscation and stranding, with foreign governments issuing advisories. Once inside the state, the operative rules flip: no facility ban, identity-based accommodation and care protections in force since 2008, a care shield explicitly covering arrivals from banning jurisdictions, X-marked state documents, hate-crime penalties, and an upheld inclusive schools policy for a travelling minor. The residual exposures are federal custody (if arrested or detained) and federal facilities within the state, plus the unresolved question of whether entry proceeds at all. Outing in-state carries moderate, remediable consequences; the dominant risk concentrates at the national entry and custody stages, keeping the combined regime at reduced rather than low risk."
+ },
+ "parse_error": null
+}

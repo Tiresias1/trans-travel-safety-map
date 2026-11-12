@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007574702",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is restrictive at national entry and custody, less restrictive locally on facilities. National document/visa screening can refuse or strand travellers over marker mismatch, with fraud consequences and possible detention; immigration/correction custody reports severe abuse and care denial. In the state, the 2016 bathroom ban is repealed, no criminal facility-use rule exists, and some cities/counties protect gender identity; private-service and bias-crime recourse remain patchy. Minor care, sports and custody care are closed. No organised local targeting is documented, but severe document/custody consequences keep risk elevated near its lower boundary.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/entry screening may refuse when passports, markers, or records mismatch birth sex or create 'reasonable doubt'; material fraud findings can trigger permanent ineligibility; travellers report passport blocks and stranding.",
+    "protection": "Existing X passports remain valid until expiry; waivers possible; some restrictions challenged or blocked.",
+    "interaction": "A document discrepancy can escalate into investigation, refusal, detention, and then custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and severe sexual abuse; national corrections impose conversion-like practices and care denial; state custody bars transition care.",
+    "protection": "No traveller-specific custody remedy documented; litigation remains incomplete.",
+    "interaction": "Entry or service encounters can become immigration/state custody, where care and safety are denied.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts congruent facility use in government-funded settings; other-state trespass arrests and pending bills show pattern; private accommodation protections are not statewide.",
+    "protection": "State has no current statute criminalising or banning congruent facility use; 2016 ban repealed; some cities/counties protect by ordinance.",
+    "interaction": "Federal facility restrictions and local no-ban coexist; enforcement and private-sector coverage vary by location.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "State bars transition care for minors and state-funded custody care; national rules block public insurance for youth care; care seeker can become subject to scrutiny.",
+    "protection": "No documented visitor-facing care shield; ordinary patient visitation rights exist but do not protect gender care.",
+    "interaction": "For families/minors or emergency care, absence of care access may force unsafe alternatives or denial.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National documents remove/trans-exclude; school orders may prosecute staff; counterterrorism names radical pro-transgender groups; public support for birth-sex markers; official hostility frames trans presence as threat.",
+    "protection": "National hate-crime and employment non-discrimination rulings remain law; local ordinances; several orders blocked.",
+    "interaction": "National hostility can embolden private refusal and reduce local enforcement even where laws exist.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors in-state face care and sports bans; school notification may force outing to guardians; guardians may encounter document screening and care restrictions.",
+    "protection": "Not documented for visitors; local ordinances do not create operative child care or school shield.",
+    "interaction": "Family travel links guardian documents, minor care, schools and possible custody under same hostile regime.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No organised local targeting documented; recorded trans killings are undercount and background-comparison unknown; state hate-crime coverage lacks gender identity; private recourse uneven.",
+    "protection": "National hate-crime law; local ordinances and university/employment protections in some jurisdictions; courts sometimes extend protections.",
+    "interaction": "Assault response may vary by city; bias charges less likely absent state coverage.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Legal challenges have not removed operative document/care/facility restrictions; county marker-display and bill enforcement unknown; absence of evidence not safety.",
+    "protection": "Some executive orders blocked/enjoined; legal-aid guidance and courts provide partial recourse.",
+    "interaction": "Unresolved uncertainty can still create border delay and service refusal; remedies may depend on location and timing.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Higher than 0.25-A: no street sweeps, raids, or criminal presentation offence documented for this state. Lower than mid-0.45 profiles in one respect because custody is not a routine outcome, but severe national entry/custody consequences keep it below stronger anchors."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similar to 0.45-D in carrying universal document exposure with incomplete remedy; lower because entry screening can deny or strand and national custody abuse is documented, but higher than 0.35 profiles because local facility bans are absent and some ordinances protect services."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Far lower: in 0.75-C foreign passports are accepted without special review and service rights are enforced. Here national markers/visas are restricted, custody reports severe abuse, minors care closed, and state recourse is patchy despite local no-ban facilities."
+   }
+  ],
+  "synthesis": "The operative journey begins with national entry screening: mismatch or doubt can deny or strand a visitor and create investigation/custody routes, where severe abuse and care denial are documented. Within the state, adults encounter less daily exclusion because the 2016 bathroom ban is repealed and no criminal facility-use rule exists; some cities protect services. But national government-facility and funding restrictions remain, state private protections are patchy, bias-crime coverage weak, and minors/custody care closed. The result is elevated risk with severe document/custody consequences, not severe organised street targeting."
+ },
+ "parse_error": null
+}

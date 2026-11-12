@@ -1,0 +1,78 @@
+{
+ "cell": 45,
+ "region": "66186276B94082813086253:District of Columbia",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006139972",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime is high risk. National rules make travel documents the sharpest exposure: sex assigned at birth for visas/passports, refusal on discrepancy or suspected fraud, with some travelers stranded. A national facility ban is attached to the seat despite local low-risk status, so public restrooms and government-funded single-sex spaces can exclude visitors. If detained, immigration and corrections custody show forced labor, sexual abuse, solitary and conversion therapy. Official threat framing raises scrutiny; minors face hostile care and school-related orders. Litigation, legal-aid guidance and some local protections exist but do not reliably offset enforced federal rules.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport rules use birth sex, reject X or marker mismatch, and treat suspected misrepresentation as possible material fraud with lifetime ineligibility; foreign travelers report confiscation, blockage, stranded status and visa detentions.",
+    "protection": "Existing X passports remain valid until expiration; civil-liberties litigation and a legal-aid FAQ contest the rules, but enforcement remains active.",
+    "interaction": "Document mismatch triggers additional screening, possible entry refusal, fraud allegation, immigration detention and downstream custody/facility exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports transgender men subjected to forced labor, beatings, solitary confinement and severe sexual abuse; national corrections adopted conversion-therapy policies, denied care and stopped reporting transgender inmates.",
+    "protection": "No traveler-specific custody shield documented; litigation may contest national policies, but no effective local protection is shown.",
+    "interaction": "Entry fraud, visa refusal or facility trespass can move a visitor into immigration or jail custody, where birth-sex placement and abuse risk are documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National bar on government-funded single-sex facilities congruent with gender identity applies directly; the seat has a national-legislature facility restriction despite no local ban, and many other units add K-12, government-building or criminal bans.",
+    "protection": "Seat lacks its own bathroom ban and a July 2026 legal risk assessment lists it low-risk, but that local shield is vulnerable to national override.",
+    "interaction": "Federal/local facilities rules can require staff document checks and removal; private/public scope is partly unspecified, leaving open exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility restricts minors’ care funding and crisis services; facility restrictions may extend to hospitals, but visitor ward practice is not documented.",
+    "protection": "Not documented. Some states allow care, but no traveler-facing care shield for the seat is evidenced.",
+    "interaction": "An emergency, prescription issue or minor’s care request can invite document review, refusal or suspicion under national rules.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism language prioritizes neutralization of radically pro-transgender groups and reward memoranda use radical gender ideology, legitimating police suspicion; airport guides warn invasive screening/outing.",
+    "protection": "Officials state powers do not target mere disagreement; some injunctions and anti-discrimination/hate-crime laws remain partially in force.",
+    "interaction": "Threat framing increases likelihood of questioning, device/record scrutiny and harsher treatment when outed, especially for minors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors face same entry-document and facility rules; guardian seeking care or school-related support may encounter criminalized transition-facilitation threats and funding bans.",
+    "protection": "Not documented for traveling families; no local shield for minors’ facility access, medication continuity or emergency care is shown.",
+    "interaction": "A minor’s mismatched documents or care needs can trigger refusal, investigation, detention or removal from facilities, with guardian exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No seat-specific street-violence record is documented, but national hostility, facility arrests elsewhere and threat framing create risk in any police encounter.",
+    "protection": "Some state anti-discrimination and national hate-crime statutes exist; no local police recourse demonstrated.",
+    "interaction": "A facility dispute, document check or bias report can become enforcement rather than protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key gaps remain: scope/enforcement of the seat’s national facility ban, whether private settings are covered, and visitor ward/custody outcomes.",
+    "protection": "Litigation, legal-aid guidance, existing X validity and the seat’s low legal-risk ranking offer partial information but no assured remedy.",
+    "interaction": "Unresolved court cases make exposure time-dependent; a visitor may encounter federal rules despite nominal local protections.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to 0.35-A in having a universal facilities restriction and polite-service uncertainty, but this regime is lower because entry documents can be refused, suspected fraud can trigger lifetime ineligibility and immigration/custody abuse are documented, not merely an unresolved rate."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Higher than 0.25-D because the seat lacks the dossier’s documented compulsory hospital-placement rule and routine terminal fraud stops; however federal document refusal, hostile custody and threat framing still keep it high risk."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Well below 0.75-C: unlike that reduced-risk case with accepted documents, traditional tolerance, enforced remedies and no facility ban, this seat sits under enforced federal restrictions, hostile custody rules and no effective visitor remedy."
+   }
+  ],
+  "synthesis": "The operative risk chain is entry documents -> possible refusal/fraud -> detention/custody; and public presence -> facilities ban -> removal/arrest; and minors -> care hostility. Federal rules override the local low-risk law, so nominal protection is fragile. Positive litigation and legal-aid guidance do not cancel active restrictions or severe custody abuse. The seat's lack of a local ban helps avoid state-level criminalization but does not shield visitors from national facility/document enforcement."
+ },
+ "parse_error": null
+}

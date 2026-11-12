@@ -1,0 +1,82 @@
+{
+ "cell": 6,
+ "region": "66186276B17406925856308:Vermont",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0043895",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined operative regime pairs one of the most protective subnational jurisdictions (working public-accommodations law, hate-crime coverage, shield laws for travelling patients, neutral single-user facilities) with a national layer that is actively hostile: binary birth-sex passport rules with confiscations and strandings, visa adjudication instructions inviting fraud findings on 'reasonable doubt' about sex, a trans-athlete entry ban, federal custody policies documented as conversion practices and abuse, and state threat-framing that raises outing probability nationwide. Within the state itself the traveller faces low exposure and documented remedies; at the border and in federal custody the exposures are universal and unremedied. This sits at elevated, not reduced, risk: the state protections do not pre-empt federal entry screening or detention.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport regime forces birth-sex markers; new X markers stopped; documented confiscations and strandings. Visa cable instructs refusal on 'reasonable doubt' about sex and potential lifetime fraud ineligibility; trans-athlete entry ban.",
+    "protection": "Existing X passports valid until expiry; ACLU litigation pending; many travellers hold matching M/F documents.",
+    "interaction": "Border officers act under national rules the state cannot override; state law does not reach the port of entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau adopted policies described as conversion practices for trans inmates (hair, hormones removed); immigration custody documented with forced labour, beatings, sexual abuse; reporting stopped.",
+    "protection": "Not documented at visitor level; some orders enjoined in court.",
+    "interaction": "Any arrest or immigration issue moves the traveller into federal custody governed by hostile national rules regardless of state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans access to congruent single-sex facilities in federally funded buildings; 4 states criminalise in circumstances, with a documented restroom arrest; 1 state invalidated mismatched documents.",
+    "protection": "In this state: no facility ban mapped, gender-neutral single-user bathrooms mandated since 2018, full public-accommodations coverage.",
+    "interaction": "State-protective facilities rules apply locally; federal buildings follow the national rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility to care: funding freezes, proposed insurance bars for minors, hospital record subpoenas; minors' care banned in 27 states.",
+    "protection": "State shield laws (2023/2024) enforceable against out-of-state action protect visiting patients' care access; insurers must cover trans care.",
+    "interaction": "A travelling adult or minor seeking care is shielded within the state but exposed under national rules elsewhere and to federal funding/prosecution policy.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders frame trans people as threats ('mutilation', 'radical gender ideology'); counterterrorism strategy targets 'radically pro-transgender' groups; teachers facilitating a minor's transition face prosecution; 66-69% poll support for birth-sex rules.",
+    "protection": "National employment-discrimination ruling and hate-crime statute remain; some orders blocked in court.",
+    "interaction": "Threat framing raises outing severity and police-lever risk nationally; state polices hate crimes with panic-defence ban.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor travelling with trans guardian faces national framing of trans youth care as 'mutilation'; criminal-prosecution directive for facilitation; care bans in most states; a minor's records could be subpoenaed.",
+    "protection": "State anti-bullying and school-protection policy; shield laws cover care travel; minor-care ban does not apply in this state.",
+    "interaction": "Guardian's documents and the minor's care both touch federal rules the state cannot displace.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented restroom arrest with handcuffing and men's-ward holding in one state; uneven hate-crime coverage nationally; public opinion majority favours birth-sex rules.",
+    "protection": "In this state: hate-crime penalties for gender identity since 1999, panic defence repealed, nondiscrimination statute in force since 2007; no documented local arrests.",
+    "interaction": "State police operate under protective law; federal surveillance framing could colour investigations.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "State-level enforcement of accommodations and hate-crime provisions is not sourced; shield-law contents itemised only in outline; detention placement for visitors undocumented.",
+    "protection": "ACLU passport litigation and injunctions on several orders pending; legal-aid FAQ operates.",
+    "interaction": "Litigation makes the operative regime time-dependent; unknowns are open questions, not exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A features one unremedied universal facility ban with polite society. This jurisdiction adds federal document, visa and custody exposures on top, but pairs them with far stronger state protections and shield laws — the combination is somewhat worse than 0.45-A overall because exposure spans multiple federal stages, not just bathrooms."
+   },
+   {
+    "anchor_id": "0.55-D",
+    "comparison": "0.55-D has functioning courts, isolated incidents and no facility ban. This case matches on strong state remedies and acceptance within the state, but carries a heavier documented national layer (passport confiscations, fraud findings, custody abuse), pulling it toward or slightly below that anchor."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows lawful expression, accepted documents and a dead-letter statute. This jurisdiction cannot reach that level: its national layer is not dead-letter — it is enforced at the border and in federal custody — so the operative regime sits materially below despite comparable state-level social and legal protection."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "0.35-B features unremedied birth-sex ward placement plus humiliating treatment. This jurisdiction's state layer is far more protective and its documented federal custody harms, while severe, are less certain to reach an ordinary visitor than 0.35-B's hospital rule; hence it sits above that anchor."
+   }
+  ],
+  "synthesis": "The traveller experiences two regimes in sequence. Inside the state: lawful presentation, full public-accommodations and hate-crime protection, gender-neutral facilities mandate, shield laws protecting care access, no local targeting documented — comparable to a reduced-risk jurisdiction. The journey's entry and any custody stage route through the national regime: birth-sex markers, confiscation reports, visa refusal instructions with fraud exposure, federally mandated facility exclusion, and custody policies documented as conversion practices and abuse, none of which state law displaces. The national threat-framing raises both outing probability and severity everywhere in the country. The state's documented protections partially mitigate everyday exposure but cannot reach the border or federal detention; the unresolved litigation makes even the state tier conditional. Net: elevated risk, roughly mid-band."
+ },
+ "parse_error": null
+}

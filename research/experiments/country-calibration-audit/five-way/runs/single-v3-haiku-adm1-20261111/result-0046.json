@@ -1,0 +1,78 @@
+{
+ "cell": 46,
+ "region": "66186276B97229519707655:Oregon",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0060864",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime is Elevated Risk. The national layer carries the heaviest traveller-facing exposure: passports and entry screening use birth-sex markers, with refusal on documentary doubt and a possible lifetime fraud ineligibility finding. Immigration custody has documented forced labour, beatings and sexual abuse of trans men, and federal corrections policy adopts conversion-style measures. Federal facility rules and counterterrorism framing reach every traveller. The state layer is strongly protective: statewide public-accommodation and hate-crime protections, no panic defences, accessible X markers on state IDs and birth certificates, and a care shield. Those protections are documented but do not reach the border, federal custody or federal facilities. Enforcement data for this state's police and custody practice is absent, so that axis is unknown rather than safe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports issued or renewed as M or F by birth sex; X markers not issued for new applications. Cable instructs refusal on documentary doubt and considers a lifetime fraud ineligibility finding. Passports confiscated or blocked, leaving some travellers stranded.",
+    "protection": "Existing X passports remain valid until expiry. Ineligibility finding is not automatic and has limited waivers. Litigation is ongoing.",
+    "interaction": "Home-country documents meet national passport rules at entry. A mismatch can move from questioning to refusal to a fraud allegation, and then into the immigration code's ineligibility process.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections adopted conversion-style policies and stopped reporting trans prisoner counts.",
+    "protection": "Not documented.",
+    "interaction": "Federal immigration and corrections custody operate regardless of the state's shield and anti-discrimination protections. A traveller detained under a document doubt is exposed to this federal custody regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars facilities congruent with gender identity in government-funded single-sex facilities. The national policy governs federal buildings and funded facilities in the state. The state-level facilities ban is not documented for this state.",
+    "protection": "State public-accommodation law covers public facilities and services. No state facility-ban finding is documented for this state.",
+    "interaction": "The state's public-accommodation protection does not reach federally funded facilities. The federal rule governs national buildings even where the state law protects access.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospital records for patients under 19. Proposed federal rules would bar public insurance reimbursement for under-18 care, not yet in force. National youth-care executive order is partly enjoined.",
+    "protection": "State shield law protects patients and providers from civil or criminal charges where care is legal in this state. Its amended scope is unresolved.",
+    "interaction": "The shield protects the traveller's care within this state, but federal records demands and federal data reach remain outside it. Minors' care exposure depends on federal data access.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for prioritised neutralisation. Federal investigations target schools and teachers facilitating social transition. National framing treats trans advocacy as a threat.",
+    "protection": "Strategy states counterterrorism powers will not target people who merely disagree. The state's hate-crime statute and no-panic-defence law apply to state crimes.",
+    "interaction": "Federal threat framing sits above state-level protection and can reach advocacy or community support organisations, which in turn affects the visitor's local networks.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal rules and investigations target minors' social transition and care. Travelling with a minor brings the same document mismatch exposure as for adults, plus federal hospital records access. Teachers face prosecution risk in schools.",
+    "protection": "State conversion-therapy ban on minors since 2015. State shield law covers care legal in this state.",
+    "interaction": "A parent or guardian with a minor faces federal document and records exposure. State protections reduce minors' exposure to conversion practice but do not block federal data reach.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific data on police stops, searches or custody for trans travellers. Hate-crime charging and prosecution statistics not found. The trespass arrest belongs to a different state and is not attributed here.",
+    "protection": "State anti-discrimination law covers public accommodation. Enhanced hate-crime penalties for gender-identity bias. Panic defences abolished since 2022. Shield law. Ranked in the most protective tier.",
+    "interaction": "State protections support local response, but the national framing and custody exposure described above apply once a traveller is in police or immigration hands.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal orders and passport rules are litigated and partly blocked, so the operative regime changes over time. Federal custody and border remedies are not documented as working.",
+    "protection": "State anti-discrimination enforcement and shield law are statutory. The July 2025 adoption ruling is not yet shown to change practice.",
+    "interaction": "Federal litigation can change border and facility rules mid-trip. State remedies cover state-sphere harms but not federal border or custody harms.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar in showing a national birth-sex facility or screening rule that cannot be exempted for foreign travellers. This case is somewhat higher because the state layer has documented anti-discrimination and shield protections, and the federal rule is not universal in state facilities. It is lower in border and custody severity, because documented federal sexual abuse and ineligibility risk are added."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similar in universal federal exposure at a national checkpoint where the practice persists after review and the national policy is defended. This case is higher because the state offers stronger documented protections and shield law. It is lower or similar in its custody exposure, since documented federal immigration custody abuse is severe."
+   },
+   {
+    "anchor_id": "0.55-E",
+    "comparison": "Similar in border misconduct with partial state-level protections and a working tribunal. This case is lower because the federal passport refusal, fraud-ineligibility route and documented federal custody abuse are unremedied and broader than the single-airport problem described there."
+   }
+  ],
+  "synthesis": "The traveller's operative risk is set by federal rules. The passport sex-marker rule, refusal on documentary doubt and possible lifetime ineligibility create an entry exposure that travels with them. Federal immigration custody has documented severe harm, and federal facility and records rules apply regardless of state law. The state's strong public-accommodation, hate-crime, shield and marker protections are documented, and they moderately offset the state-sphere harms. They do not cancel border or custody exposure. Enforcement data for state police and custody is absent, so the street-level picture stays uncertain. The combined result sits in the elevated band, well above the severe tier and below the reduced tier."
+ },
+ "parse_error": null
+}

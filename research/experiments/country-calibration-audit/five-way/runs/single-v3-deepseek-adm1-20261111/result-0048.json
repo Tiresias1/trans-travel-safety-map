@@ -1,0 +1,82 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007059708",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is split. In the state's private sphere, strong nondiscrimination, hate-crime, panic-defense repeal, healthcare-shield and gender-neutral single-occupancy rules reduce everyday risk, and no local anti-trans violence is documented. But the visitor cannot stay inside that sphere: federal entry screening can refuse documents, demand extra evidence, or consider permanent fraud ineligibility; trans travellers report blocked passports and detentions. Federal facilities apply birth-sex exclusion at airports and government sites, and federal immigration/corrections custody has documented forced labour, sexual abuse, hormone removal and conversion-style practices. Local law does not pre-empt these federal actors. Official threat framing and minors' care rhetoric add severity, while litigation leaves some rules enjoined. Net: elevated risk, above a blanket criminalisation regime but below a jurisdiction with only private-service friction.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National cable permits refusal or additional evidence where documents or records cast doubt on sex, and consideration of permanent fraud ineligibility for suspected misrepresentation; trans travellers report blocked or confiscated passports and detentions.",
+    "protection": "Existing X-marker passports remain valid until expiry; a fraud finding is not automatic and requires four elements; the passport policy is under legal challenge. Local ID protections do not align a visitor's foreign documents.",
+    "interaction": "Border processing is federal; state nondiscrimination and ID law cannot override entry screening. A document mismatch can move the traveller into secondary inspection or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody is documented to subject trans men to forced labour, beatings, solitary confinement and severe sexual abuse; federal corrections adopted conversion-style practices including hair cutting and hormone removal.",
+    "protection": "National hate-crime law covers gender identity, and the local state has hate-crime enhancements and panic-defense repeal, but these do not govern federal custody. Passport litigation is pending.",
+    "interaction": "Entry/document discrepancy or federal arrest routes the traveller into federal custody, where the protective state statutes do not operate and remedies are not shown to work.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities consistent with identity; multiple states criminalise bathroom use, and a trans student was arrested and held in a men's ward under one state law.",
+    "protection": "The local state has no general bathroom ban, allows gender-neutral single-occupancy toilets, and protects public accommodations. These do not cancel federal building or airport rules.",
+    "interaction": "At airports, federal buildings and federally funded sites, federal facility rules apply; in local private venues the state's protections are stronger.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy frames gender-affirming care for minors as mutilation, proposes insurance bars, and care is banned in 27 states; federal custody denies hormones. Adult emergency and hormone access are not clearly documented.",
+    "protection": "The local state has healthcare nondiscrimination since 2023, a conversion-therapy ban for minors, and a shield-law listing; the shield's scope for visitors is unresolved.",
+    "interaction": "State shields may protect local providers, but federal funding, insurance and custody rules follow the traveller; visitor and minor coverage remains uncertain.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The May 2026 counterterrorism strategy prioritises 'radically pro-transgender' violent groups, and a DOJ reward memo references 'radical gender ideology'; official rhetoric is hostile. No ordinary trans visitor prosecution on this basis is documented.",
+    "protection": "The strategy says counterterrorism powers will not target mere disagreement; national hate-crime law covers gender identity; some executive orders are enjoined.",
+    "interaction": "The framing raises severity for advocacy-linked travellers or federal enforcement encounters; its direct application to an ordinary tourist is not established.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A national executive order describes minor gender-affirming care as mutilation and directs investigation of teachers facilitating social transition; care is banned in 27 states and insurance restrictions are proposed. A trans minor travelling with a guardian faces federal document and care hostility.",
+    "protection": "The local state bans conversion therapy for minors, has anti-bullying and healthcare nondiscrimination law, and appears on shield-law lists; these cover local providers and schools, not federal border or custody.",
+    "interaction": "State protections may help in local care and school settings, but federal entry rules and care rhetoric follow the family; visitor scope of the shield is unresolved.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No anti-trans violence incident in the local state is documented, and no dated local prevalence figure is available; national public opinion is conservative on documents and sports, but no visitor-targeted violence pattern is shown.",
+    "protection": "Local hate-crime enhancement covers gender identity, the panic defense is repealed, and public accommodations are protected; national hate-crime law covers gender identity. Enforcement data are absent.",
+    "interaction": "Local police and courts are the likely responders within the state and have protective statutes; federal border and custody encounters bypass them. Paper protection is not proof of operational protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport restrictions and some executive orders are in litigation; several orders are enjoined, so operative rules shift. Local nondiscrimination and shield laws lack documented visitor enforcement, and custody/entry remedies are not shown to work.",
+    "protection": "A civil-liberties suit challenges the passport policy, courts have blocked some orders, and local statutes plus hate-crime law provide formal recourse; a legal-aid FAQ exists.",
+    "interaction": "Remedies are strongest in local private-service disputes and weakest at the federal border and in custody; pending litigation makes exposure date-dependent.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal all-public-building bathroom ban upheld by courts; this state has no general ban and protects private accommodations. But this dossier adds federal entry/fraud exposure and severe immigration-custody abuse, so it is only a little safer than 0.35-A overall."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D has a documented mandatory invasive birth-sex search at transport security with no remedy; this case lacks that specific universal search rule but adds document-refusal/permanent-ineligibility risk and severe federal custody abuse. It is close to 0.45-D, slightly lower because the universal search practice is not established."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "0.55-A has recurring service refusals with slow remedies, no facility ban and no systematic police targeting. This state's service law is stronger, but federal entry, facility and custody exposures are heavier and unremedied, so it sits below 0.55-A."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D combines compulsory birth-sex public facilities and hospital wards with police stops. This case has no local police sweeps and has a protective state, but federal custody abuse and entry fraud remain; it sits above 0.25-D."
+   }
+  ],
+  "synthesis": "Local protections are real but bounded to state-regulated private and local settings. The combined journey crosses federal border, airport, facility and potential custody systems where the hostile national regime operates without a working visitor remedy. An adult alone faces entry/document and federal-facility exposures; a family with a trans minor also faces federal care hostility and unresolved shield coverage. The protective state keeps the score out of the high-risk tier, but unremedied federal tier-1 exposures prevent reduced risk."
+ },
+ "parse_error": null
+}

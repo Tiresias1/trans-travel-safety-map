@@ -1,0 +1,78 @@
+{
+ "cell": 30,
+ "region": "66186276B69138566591314:Mississippi",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01033233",
+ "parsed": {
+  "rating": 0.35,
+  "explanation": "The combined regime is a high-risk destination for a trans visitor. The parent framework imposes universal document and entry exposure: passport/visa marker restrictions, discrepancy screening, possible refusal, and permanent fraud ineligibility. Facilities in government-funded buildings are restricted to birth sex, and the state adds a school bathroom ban, no gender-identity public-accommodations or hate-crime protections, and a religious-refusal statute. Immigration custody has documented severe harm. The state's facility enforcement against adult visitors is not documented, and the violence data is only slightly above baseline, not a campaign. The result is a high-risk institutional exposure with limited effective remedy.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent passport/visa rules restrict X and non-birth markers; discrepancy screening may refuse cases, demand additional evidence, and consider permanent fraud ineligibility. State marker rules are hostile but do not directly change a visitor's home passport.",
+    "protection": "Existing X-marker passports remain valid until expiry; national court challenge is pending; no documented automatic arrest at entry.",
+    "interaction": "Document mismatch can trigger refusal, secondary screening, or immigration detention. State document rules do not directly affect the visitor's passport, but they signal hostile institutional treatment.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Parent immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse; national corrections impose conversion-style policies and denial of care. State custody bans name changes and has no documented visitor placement.",
+    "protection": "National hate-crime prosecution and some court challenges exist; no state gender-identity protections.",
+    "interaction": "Entry refusal or document discrepancy can lead to immigration detention, where custody harm is severe and documented. State custody rules add hostile climate but visitor placement is not documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Parent bars trans people from government-funded single-sex facilities congruent with identity. State has a 2024 school bathroom law and 2024/2025 facility bans; scope for adults and visitors is unclear.",
+    "protection": "Some municipalities have non-discrimination ordinances; no enforcement data against adult visitors; state bans are not shown to cover all public buildings.",
+    "interaction": "National and state public buildings may require birth-sex use. Enforcement for visitors is uncertain, so the exposure is universal in principle but not documented in practice.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care under 18 and closed its adolescent clinic; religious-refusal statute lets providers refuse. Parent orders frame minor care as mutilation and restrict funding.",
+    "protection": "National emergency care is not explicitly banned; no documented visitor care denial; some court orders are blocked.",
+    "interaction": "A minor traveller needing care may face refusal; adult care access is not documented. Custody care denial is documented in the parent immigration system.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Parent counterterrorism strategy labels 'radically pro-transgender' groups as priority; justice memo mentions 'radical gender ideology.' State has no gender-identity hate-crime statute or non-discrimination law and has a religious-refusal statute.",
+    "protection": "National hate-crime statute covers gender identity; national prosecution secured a 2017 bias-murder conviction; four municipalities have full protections.",
+    "interaction": "State-level hostility and remedy gaps are significant. National prosecution is available for violence, but not for general service refusal or local police response.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State supreme court denied a trans teen's name change; state bans care under 18; parent orders target teachers and schools and describe minor care as mutilation. School bathroom law applies.",
+    "protection": "National court injunctions block some orders; no documented visitor-minor enforcement.",
+    "interaction": "A trans minor travelling with a guardian may face a hostile school and medical environment. No visitor-specific minor detention or enforcement is documented.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National analysis reports 6.6 trans-women killings per 100k vs 6.0 general, only slightly above baseline. The most recent documented state bias killing is 2017. State has no gender-identity hate-crime statute.",
+    "protection": "National hate-crime prosecution secured a 49-year sentence in 2017; some municipal protections exist; local police response is not documented.",
+    "interaction": "Violence is not documented as a current campaign. State remedy gaps may deter reporting, but the available data does not show organised targeting.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state public-accommodations or employment protections on gender identity; religious-refusal statute; no gender-identity hate-crime statute; only four municipalities have full protections. Most of the state lacks local recourse.",
+    "protection": "National hate-crime statute, national employment-discrimination ruling, national court challenges, municipal ordinances, and legal-aid guidance exist.",
+    "interaction": "Remedy depends heavily on municipality and national action. State-level remedies are absent for most services, so a visitor refused service may have no practical local recourse.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to 0.35-A: universal birth-sex facility restrictions and ineffective complaints, plus a stronger border/document exposure. Our dossier adds entry screening and immigration-custody harm, but the state's adult visitor enforcement is less documented, so the rating is close to 0.35 rather than lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than 0.55-B: 0.55-B has no public-facility restriction, accepts foreign documents, and shows working mediation and police prosecution. Our dossier has parent facility restrictions, passport/visa marker exposure, and state-level remedy gaps, so it is materially less safe."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much lower than 0.75-C: 0.75-C documents accepted foreign documents, lawful expression, ordinary courts granting compensation, and identity-based facility access. Our dossier has universal document/entry exposure, facility bans, no state gender-identity protections, and a religious-refusal statute."
+   }
+  ],
+  "synthesis": "The operative regime combines a restrictive parent border and document system with a state that adds facility bans, a religious-refusal statute, no gender-identity public-accommodations or hate-crime protections, and hostile court treatment of trans minors. The sharpest exposure is document/entry screening: a marker mismatch can trigger refusal, secondary inspection, or immigration detention, where custody harm is documented. Facility restrictions are universal in parent-funded buildings, but enforcement against adult visitors is not documented. Violence is only slightly above baseline and not a current campaign. National hate-crime prosecution and municipal protections exist, but they do not remedy the state-level service gaps or the border exposure."
+ },
+ "parse_error": null
+}

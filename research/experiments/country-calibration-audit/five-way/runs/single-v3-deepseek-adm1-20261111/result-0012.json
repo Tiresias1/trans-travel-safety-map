@@ -1,0 +1,82 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.006182208",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime: the division is comparatively protective—no state bathroom ban, public-accommodations and hate-crime coverage, conversion-therapy ban—but a visitor cannot escape the national layer. National passport/visa rules treat sex as birth-assigned, allow refusal and possible permanent fraud ineligibility where documents or appearance raise doubt, and federal facility/custody rules include birth-sex exclusion and documented abusive practices. State protections do not pre-empt federal border, detention or facilities. A trans adult with matching documents may experience ordinary daily life; an outed or discrepant traveller faces refusal, detention, or custody harm. Travelling with a trans minor adds federal care/school hostility but state protections. Rating below reduced-risk anchors because entry/custody exposure is real and unremedied; above severe/high anchors because no state targeting or universal state bathroom ban.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require birth-assigned sex on documents, have stopped new X markers, instruct visa officers to refuse/request evidence on discrepancy or reasonable doubt, and allow possible permanent fraud ineligibility; trans athletes are barred. Travellers report confiscated/blocked passports and foreign governments issued advisories.",
+    "protection": "Existing X-marker passports remain valid until expiry; a fraud finding is never automatic and requires four elements with limited waiver; passport litigation is pending and some orders are enjoined.",
+    "interaction": "The division cannot override federal border screening; a document/ appearance mismatch can move a visitor from entry questioning into refusal, immigration detention, or later inadmissibility.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies impose conversion-style practices on trans inmates, including hair cutting, hormone removal and psychiatric substitution; immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse. The bureau stopped reporting trans prisoner numbers from 2025.",
+    "protection": "No operative state or national custody protection is documented that would override these federal practices; litigation does not establish a working remedy for detained visitors.",
+    "interaction": "Border document doubt can lead to immigration detention, where the national custody regime governs regardless of this division’s protective state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities consistent with gender identity. Many states impose broader bans, but this division has no state bathroom ban and no recorded state restriction.",
+    "protection": "This division’s anti-discrimination act covers public accommodations, and the equality map records no local facilities ban; private and state-regulated settings are generally more protective.",
+    "interaction": "State non-discrimination does not cancel the federal facility rule at federal buildings and federally funded sites a visitor may enter.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy frames gender-affirming care for minors as mutilation, proposes insurance bars for under-18 care, restricts health-agency language, and subpoenas hospital records. Adult emergency care is not documented as barred.",
+    "protection": "This division bans conversion therapy for minors, prohibits gender-identity insurance discrimination, and has no documented state care ban; national hate-crime and employment protections also exist.",
+    "interaction": "State care protections help in local clinics, but federal funding, insurance and investigation rules can chill care, especially for a travelling minor.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "A national counterterrorism strategy names “radically pro-transgender” groups among priorities, and a justice memo references “radical gender ideology”; public opinion shows majority support for birth-sex document and sports rules.",
+    "protection": "National hate-crime law covers gender identity; this division adds a 2013 bias-crime penalty enhancement and public-accommodations protection. Some national orders are enjoined.",
+    "interaction": "Federal threat rhetoric may increase scrutiny of visible advocacy but is not documented as ordinary visitor policing in this division; local courts and bias statutes provide some recourse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive orders target social transition in schools, direct investigation/prosecution of teachers, restrict minor care funding, and hostile care rhetoric creates risk for a trans minor travelling with a guardian.",
+    "protection": "This division bans conversion therapy for minors and covers gender identity in insurance and public accommodations; no state bathroom ban is recorded.",
+    "interaction": "A guardian and trans minor face the federal border/document regime first; locally, state protections operate but cannot displace federal school, care-funding or facility rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence incidents or enforcement figures are recorded; national climate is hostile and public opinion divided, so absence of local reports is not proof of safety.",
+    "protection": "This division has a gender-identity hate-crime enhancement since 2013, public-accommodations coverage, and a state LGBTQ+ commission; national hate-crime law also covers gender identity.",
+    "interaction": "Local police and courts have documented bias-crime tools, but federal border and custody actors are outside those state remedies.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions took effect after national court action; federal custody abuses are documented without demonstrated remedy; state custody placement policy is undocumented; the 2023 panic-defence bill’s disposition is unresolved.",
+    "protection": "Civil-liberties litigation is active, some national orders are enjoined, and the division has enforceable anti-discrimination, hate-crime and conversion-therapy protections plus an LGBTQ+ commission.",
+    "interaction": "State remedies work for local service and bias-crime matters, but they do not reach federal entry, immigration detention, or federal facilities; key outcomes remain pending.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal public-building bathroom ban enforced by staff, rejected complaints and no foreign-passport exemption. This division has no state bathroom ban and has public-accommodations protection, but federal entry/document refusal and custody abuse are worse than 0.35-A’s polite street life. Net slightly above 0.35-A."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D has invasive birth-sex transport searches whenever a traveller is identified as trans, persisting despite complaints, but no federal custody abuse. This jurisdiction has broader state service protections yet documents national entry refusal/ineligibility and abusive custody. Slightly lower than 0.45-D."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C has no border document regime but repeated bus harassment and uneven complaints. Here local transport/services are protected and no such pattern is recorded, yet federal entry and custody exposure is more severe and unremedied. Lower than 0.55-C."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A accepts foreign passports including nonbinary markers and shows working service remedies, with no custody abuse. This jurisdiction has state remedies but a hostile federal document regime, federal facility exclusion and documented custody harm. Materially lower than 0.65-A."
+   }
+  ],
+  "synthesis": "The operative system is layered: in-state daily life is relatively safe because the division has no bathroom ban and enforces public-accommodations and hate-crime protections; but every visitor first crosses a national border governed by birth-sex document rules and possible fraud findings, and any detention moves the traveller into federal custody with documented conversion-style practices and abuse. For an adult alone, the main risk is document-triggered refusal/detention; for an adult with a trans minor, federal care/school hostility adds chilling effects, though state law remains protective. Remedies are partial and do not reach federal custody."
+ },
+ "parse_error": null
+}

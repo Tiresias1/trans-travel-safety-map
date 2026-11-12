@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007033372",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "The combined regime is high risk. National passport/entry rules force birth-sex markers and allow refusal or fraud findings when presentation contradicts records; federal custody and government-funded facility restrictions are severe and traveller-facing. State courts block several enacted local restrictions, so local bathrooms, K-12 facilities, youth care and marker rules are materially safer than the parent average; ordinances and equal-protection rulings provide some recourse. But these local protections do not displace border screening, federal buildings/funding, immigration/federal custody, or national hostility to minor care. Adult-alone exposure centres on entry/federal facilities/custody; travelling with a minor adds unresolved national child-care/school investigations. Local violence data is absent, which is uncertainty, not safety. Net slightly below 0.35 anchors due federal border/custody exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passports require M/F at birth; X markers stopped. Entry screening can refuse, demand evidence, and pursue fraud/permanent ineligibility when records conflict; travellers report passports blocked or confiscated.",
+    "protection": "Existing X passports remain valid; national court suits and legal-aid FAQs exist. State courts block local marker hostility but cannot change national border rules.",
+    "interaction": "A border discrepancy can escalate into immigration custody or denial; federal screening operates irrespective of state equal-protection rulings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections/immigration custody reports: removal of hormone medication, conversion-therapy-like measures, forced labour, beatings, solitary and severe sexual abuse. Document mismatch may trigger detention.",
+    "protection": "Not documented for state custody. National litigation and legal-aid may help, but no local remedy displaces federal placement.",
+    "interaction": "Border/federal investigation can feed custody; state protective rulings are irrelevant to federal detention conditions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-congruent use of government-funded single-sex facilities; many other jurisdictions criminalise or exclude. Federal buildings and programs still pose risk.",
+    "protection": "State facilities bill is temporarily restrained; a 2024 proposal failed; local ordinances/municipal protections may aid. State public buildings may be safer if restraint holds.",
+    "interaction": "Local injunctions do not pre-empt federal facilities or funding conditions; traveller may pass through both systems.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National rules freeze funding, threaten reimbursement, criminalise school facilitation, and subpoena hospital records for youth care; adult visitor care not documented.",
+    "protection": "State minor care ban permanently struck; state highest court keeps privacy protections; some local services may continue.",
+    "interaction": "Family care requests or school transitions can interact with federal investigations and national funding conditions, not just state law.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National hostility frames gender identity as ideology and links advocacy to security threats; flag ban and drag bill in state show hostile legislative culture.",
+    "protection": "State courts repeatedly block anti-trans laws as animus/sex discrimination and affirm dignity; national hate-crime statute and some local ordinances apply.",
+    "interaction": "State rule of law lowers local street/service risk, but federal agencies and border officers still enforce hostile national rules.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Adult travelling with trans or gender-nonconforming minor may encounter national child-care/school criminalization, records scrutiny, and care interruption; unresolved federal rules.",
+    "protection": "State youth care ban struck and facility/marker restrictions blocked; marriage/adoption climate supportive; courts emphasize dignity.",
+    "interaction": "A minor's care or school needs can trigger federal child-protection/funding exposure even when state law is protective.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence, count, or policing pattern is documented; national data are partial and not jurisdiction-specific.",
+    "protection": "National hate-crime statute applies, but state statute lacks gender identity; local municipal protections and functioning courts are indirect only.",
+    "interaction": "Without local incident data, cannot infer frequent street targeting or safety; if violence occurs, state courts may offer recourse better than many jurisdictions.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key federal and state injunctions remain provisional; facilities TRO and marker litigation may lapse; passport rules already in force; traveller remedy uncertain and slow.",
+    "protection": "State appellate courts upheld injunctions; legal-aid FAQ provides documentation advice; some state ordinances exist.",
+    "interaction": "Outcomes depend on timing and whether encounter is state or federal; federal enforcement can bypass local protections.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a nationwide public-building birth-sex rule with no exemption. This state's local facilities and care restrictions are blocked, improving ordinary service exposure. But national passport/entry rules and federal custody abuse create border/custody severity absent from 0.35-A. Net slightly below because federal exposure follows the traveller and lacks local remedy."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D has compulsory birth-sex facilities/hospitals and police fraud stops in the destination state itself. Here the state's own facility/care rules are restrained by courts, so local exposure is lower. The federal border/fraud and custody layer keeps the rating well below 0.45 but above 0.25-D."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D features invasive national transport searches with recurring complaints and some bias prosecutions, but no state-level passport/care hostility. Here entry screening can deny/fraud, federal custody abuse is documented, and national minor-care hostility exists, while local courts only partially mitigate. This places it below 0.45-D."
+   }
+  ],
+  "synthesis": "National rules create a tier-one journey: passport/marker mismatch can trigger denial, additional evidence, immigration detention, and harsh federal custody; government-funded facilities may exclude. Local courts neutralize the worst state statutes: no operative bathroom/care ban, injunctions on marker and school rules, and equal-protection dignity rulings. This raises the state above many subnational divisions and above the parent average, but cannot override federal screening, federal custody, or national child-care hostility. Minors and families face additional care/school uncertainty. Absent local violence figures, the score follows the documented federal exposure and its only partially effective state remedy."
+ },
+ "parse_error": null
+}

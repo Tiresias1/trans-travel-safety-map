@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00447005",
+ "parsed": {
+  "rating": 0.63,
+  "explanation": "The combined regime pairs a protective state layer with a hostile national layer. At entry and in national custody the traveller faces universal-exposure measures: sex redefined as assigned-at-birth for passports/visas, X markers discontinued, consular officers instructed to refuse documents showing 'reasonable doubt' about sex with potential lifetime fraud findings, and documented detentions of foreign trans travellers plus allied travel advisories — a tier-1 exposure no state law displaces. Inside the state, however, documented operating protections materially raise the baseline: no facility ban, gender-identity anti-discrimination in public accommodations since 2013, a hate-crime penalty enhancement, marker changes by medical affidavit, and an LGBTQ+ commission. These sit the state above the national average but below protective-province anchors because the federal document/entry regime reaches every arrival.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passports/visas processed as birth-assigned sex only; X markers discontinued; officers instructed to refuse on 'reasonable doubt' about sex with possible lifetime fraud ineligibility; travellers reported passports blocked/stranded abroad; allied governments issued advisories.",
+    "protection": "State marker-change rules do not operate at the national border; litigation against the passport policy is unresolved.",
+    "interaction": "Entry screening is federal and reaches every arrival regardless of state protections; a document discrepancy can escalate to a fraud finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau adopted conversion-style policies for trans inmates (hair cutting, hormone removal); immigration custody trans men reported forced labour, beatings, solitary confinement and sexual abuse; reporting stopped.",
+    "protection": "No state-specific placement policy documented; state hate-crime enhancement applies to violent crimes.",
+    "interaction": "Any federal arrest or detention bypasses state protections entirely; state custody placement is an open question.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; many other states criminalise bathroom use, with a documented arrest and men's-ward holding.",
+    "protection": "This state has no bathroom/facility ban per the equality map; state anti-discrimination covers public accommodations.",
+    "interaction": "The facility exposure is contained within this jurisdiction but re-arms whenever the traveller crosses into restrictive states or federal facilities.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders defund care, bar minor care in 27 states, subpoena hospitals for under-19 records; proposed rules bar public-insurance reimbursement for minors.",
+    "protection": "State bans conversion therapy for minors; insurance discrimination prohibited since 2016; emergency care access for visitors not documented as restricted here.",
+    "interaction": "Adult visitor care appears available on ordinary terms; a travelling minor's care touches federal enforcement orders aimed at facilitators.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders frame gender-affirming care as 'mutilation'; counterterrorism strategy targets 'radically pro-transgender' groups; prohibited-terms lists and webpage scrubbing; 2026 season described as degrading rights.",
+    "protection": "State created an LGBTQ+ commission (Jan 2025) and retains the 2013 anti-discrimination act; courts have enjoined several national orders.",
+    "interaction": "State framing is protective while national framing is hostile; enforcement power sits mostly with federal actors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs criminal prosecution of teachers facilitating a minor's social transition (names/pronouns) as exploitation or unlicensed medicine; hospital records subpoenas for under-19s.",
+    "protection": "State bans conversion therapy on minors and restricts referrals; the state is not among minor-care-ban states per the inventory.",
+    "interaction": "A guardian travelling with a trans minor risks federal scrutiny if the minor's transition intersects schools or care systems; exposure is edge-case rather than universal.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "State enforcement figures for the hate-crime enhancement not reported; national bias statistics only partly cover gender identity; local anti-trans violence record undocumented.",
+    "protection": "State bias-motivated penalty enhancement for gender identity since 2013; national hate-crime statute covers gender identity.",
+    "interaction": "Local police response is undocumented; the documented restroom arrest occurred in a different restrictive state, not here.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "State panic-defence repeal passed but unsigned; no X marker on licences (2020, unverified); nonbinary custody/ward placement undocumented; state violence data absent.",
+    "protection": "Legal-aid FAQ on document rules; active litigation against the passport policy may change entry treatment.",
+    "interaction": "State remedies operate but do not reach federal documents, custody or entry decisions; several unknowns remain open rather than established exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Veluna imposes a birth-sex facility rule everywhere with rejected complaints. This state imposes no such rule and its discrimination remedies operate, but the parent layer adds something Veluna lacks: universal document/entry exposure with possible lifetime fraud findings and documented foreign-traveller detentions, which holds the score above 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Teravi has a protective parent with local hostile operators and partial remedies. This case inverts the structure: a protective sub-unit under a hostile parent whose entry and custody exposures are unavoidable and unremedied. State protections are stronger than Teravi's local remedies, keeping it modestly above, but the federal layer prevents 0.65–0.75 territory."
+   },
+   {
+    "anchor_id": "0.75-B",
+    "comparison": "Umbera is a protective province under a protective parent with no universal national exposure. Here the same quality of state protections operates, but the national regime imposes birth-sex documents, entry refusals, custody harms and hostile state framing — a tier of exposure Umbera's dossier entirely lacks. This jurisdiction must sit materially below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime is two-tiered. Every arrival passes through a federal gate where sex is read as assigned at birth, X markers are gone, and officers are instructed to treat doubt about sex as refusable — with fraud ineligibility and documented detentions behind it; that exposure is universal and carries no state remedy. Once inside, the traveller encounters a documented protective environment: no facility ban, an operating 2013 anti-discrimination act covering public accommodations, a gender-identity hate-crime enhancement, medical-affidavit marker changes and an LGBTQ+ commission. The hostile national custody and care regimes engage only if the traveller is detained or seeks minor-related care. The protections lift this state clearly above the parent's own average, but the federal gate, custody harms and unresolved litigation cap it in reduced risk — around 0.63."
+ },
+ "parse_error": null
+}

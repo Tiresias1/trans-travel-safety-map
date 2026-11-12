@@ -1,0 +1,78 @@
+{
+ "cell": 44,
+ "region": "66186276B91272823970344:Wisconsin",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.008994228",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The division is comparatively low-risk locally: no state facility ban, no state ban on gender-affirming care, governor vetoes of restrictive bills, state employment/services nondiscrimination, local ordinances, marriage recognition, and no documented pattern of anti-trans street violence. But the visitor must pass the national border and document regime, which treats sex as binary, restricts X markers, can refuse cases on document discrepancy or reasonable doubt, and can consider permanent fraud ineligibility. National immigration custody has documented severe abuse, and national threat framing plus funding pressure on minor care reach the division. Local protections do not offset national border, custody, or funding exposures. Daily life in the state is relatively safer for an adult alone; a minor may face care interruption.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document regime; X markers not newly issued; visa/entry refusal where documents or appearance cast doubt on sex; possible permanent fraud ineligibility.",
+    "protection": "Existing X markers valid until expiry; policy remains challenged in court; legal-aid guidance exists.",
+    "interaction": "The division cannot override national border or visa screening; document discrepancy can escalate to investigation or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and sexual abuse; national corrections policies impose conversion-style practices on trans inmates.",
+    "protection": "Division prisons provide hormone therapy under court ruling; state protections do not govern national immigration custody.",
+    "interaction": "A border document discrepancy can place a visitor in national detention, bypassing state prison protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans access to government-funded single-sex facilities congruent with identity; some states criminalise bathroom use.",
+    "protection": "This division has no state facility ban, no sex-definition law and no drag restriction; local ordinances protect in some cities.",
+    "interaction": "National funding conditions and facility rules interact with state/local practice; the division does not impose its own ban.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding pressure led two hospital systems to pause youth pharmacologic care; national rules would bar public insurance for under-18 care; national executive order is hostile.",
+    "protection": "No state ban on gender-affirming care; governor vetoed restrictions; state joined challenge to national health declaration; adult public insurance coverage remains inclusive.",
+    "interaction": "National funding conditions can contract care even where state law does not ban it.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names radically pro-transgender groups; national orders direct investigation of schools and prosecution of teachers facilitating social transition.",
+    "protection": "Division is assessed low-risk; governor is supportive; no state targeting campaign; national hate-crime statute covers gender identity.",
+    "interaction": "National threat framing may embolden hostility, but direct visitor exposure is mainly in activism or school-related contexts.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders frame minor gender-affirming care as mutilation; insurance denial and hospital pauses affect under-18 care; teachers may be prosecuted for social transition.",
+    "protection": "Division has no state ban; governor vetoed a care ban; mental and behavioural services continue; state challenges national health declaration.",
+    "interaction": "A trans minor needing pharmacologic care faces national funding-driven interruption; guardian scrutiny is documented in school contexts, not at the border.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No statewide gender-identity hate-crime protection; prosecutors sometimes use perceived sexual orientation as the charging route; national climate is hostile.",
+    "protection": "National hate-crime statute covers gender identity; local ordinances exist; one city police department stopped listing victim gender; no documented anti-trans violence pattern in the division.",
+    "interaction": "Local police and courts generally function and the state is not targeting trans adults, but recourse is patchwork.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport policy and executive orders are only partly enjoined; enforcement varies; whether national facility rules reach division buildings is unclear; care-pause status is unresolved.",
+    "protection": "Litigation, injunctions, legal-aid guidance, state executive order and local ordinances provide partial remedies.",
+    "interaction": "State remedies cannot cure national border or custody exposure; national remedies remain contested.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal birth-sex bathroom exclusion in all public buildings, upheld by courts with no visitor exemption. This division has no local facility ban and some state protections, so daily facilities are better; but national entry/document refusal and national custody abuse are comparable institutional exposures. The combined regime is close to, or slightly above, this anchor."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a parent regime accepting foreign documents and no facility restriction, with local hostile ferry/guesthouse treatment but partial remedies. This division is locally less hostile, yet its national border/document regime and immigration-custody exposure are materially worse. It therefore sits below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C accepts foreign documents, has an established gender-diverse tradition, facilities by identity, and ordinary-court compensation; only custody edge cases are open. This division shares some local positives but has documented national entry/document, custody and minor-care exposures, so it is much below 0.75-C."
+   }
+  ],
+  "synthesis": "The division's local climate is comparatively low-risk: no state facility ban, no care ban, supportive vetoes, state employment/services protections, local ordinances, marriage recognition and no documented anti-trans street-violence pattern. But the operative regime is not local alone. The visitor passes a national border and document system that can refuse or investigate sex-marker discrepancy, and national immigration custody carries documented severe abuse. National threat framing and funding pressure on minor care reach the division despite state law. An adult alone faces the sharpest risk at entry and if detained; daily life in the state is relatively safer. An adult travelling with a trans minor faces possible interruption of under-18 pharmacologic care."
+ },
+ "parse_error": null
+}

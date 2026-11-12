@@ -1,0 +1,78 @@
+{
+ "cell": 39,
+ "region": "66186276B83300161667341:Oklahoma",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006945542",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined federal/division regime: federal executive orders enforce assigned-sex documents, passports/visas, gendered entry screening, and hostile custody policies; courts allowed passport restrictions and multiple orders are enjoined but not reversed. The division adds assigned-sex rules for state-owned facilities and K-12 schools, tight document/marker limits, public facility care exclusions, sports/minor bans, and no state anti-discrimination/hate-crime coverage. A visitor who is outed can face document refusal/lifetime visa bar, facility removal/arrest where enforced, misgendered detention/shelter placement, denied or privatized care, and school/care exposure for a minor. Formal marriage/employment/hate-crime rules are resident-facing and do not offset traveler-facing border, facility, custody, or care exposure. Street violence against visitors is not documented, so uncertainty remains.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports/visas require assigned-sex markers; discrepancy or doubt triggers refusal/advisory review; suspected misrepresentation can support permanent visa ineligibility; reports of passports confiscated or blocked, strandings.",
+    "protection": "Existing X passports remain valid until expiration; legal-aid guidance and pending challenges may inform travelers.",
+    "interaction": "Home-passport mismatch with local M/F rules can start entry screening, then escalate to detention, refusal, facility exclusion, or care denial.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary, severe sexual abuse; corrections adopts assigned-sex/conversion-like policies; state order applies assigned sex to incarceration.",
+    "protection": "Not documented; no visitor-specific custody review or guaranteed congruent placement is evidenced.",
+    "interaction": "Document or facility disputes can produce detention; placement by assigned sex raises abuse and medication denial risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal bars gender-congruent use of government-funded single-sex facilities; division bans congruent school/state facilities, shelters, changing rooms; several states allow removal or trespass-style enforcement.",
+    "protection": "Some jurisdictions elsewhere protect access, but not in division; litigation may limit some federal orders.",
+    "interaction": "Restroom/shelter need in schools, courts, clinics, or state buildings can out visitor and lead to forced departure or custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bars state funds, Medicaid, and state facilities from transition care for minors/adults, leaving care private; federal rules restrict funding/reimbursement; emergency exemptions are ambiguous.",
+    "protection": "State exempts emergency treatment to prevent death/major impairment and some counseling/medications; private care remains available.",
+    "interaction": "A health crisis, prescription issue, or minor’s care request can expose gender identity and cause refusal, delay, or out to family.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal language treats gender identity as gender ideology, prioritizes counterterrorism against radical pro-transgender groups, criminalizes teacher affirmation of minors, and tags visa files by sex.",
+    "protection": "National hate-crime and employment rulings exist, but they are not traveler-facing border/care protections.",
+    "interaction": "Hostile framing increases official suspicion during ID checks, school events, shelters, or security screening.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans/gender-nonconforming minors face assigned-sex school facilities, sports exclusion, banned transition care, and schools investigated; guardians may be denied shelters or forced into outing during appointments.",
+    "protection": "Limited counseling/emergency exemptions; marriage/adoption recognition is resident-facing and does not shield a travelling child.",
+    "interaction": "A family trip with school visit, sports event, clinic, or border screening can expose minor and guardian together.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current documented trans-visitor street attacks in the division; enforcement incidents involve residents, students, shelters, or nearby-state arrests, leaving rates uncertain.",
+    "protection": "Federal hate-crime statute could cover bias violence, but no documented visitor response protocol or enforcement record.",
+    "interaction": "If violence occurs, assigned-sex facility policies and detention risk may deter reporting or worsen police handling.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Exposure depends on unsettled litigation, pending bills, blocked orders, and changing marker guidance; no stable exemption route is documented for visitors.",
+    "protection": "Existing X validity, legal-aid FAQ, court challenges, and some injunctions may narrow but not erase risks.",
+    "interaction": "Inconsistent enforcement creates planning uncertainty: a traveler may avoid one exposure while encountering another at entry, care, or facility use.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "The dossier is materially lower: besides compulsory birth-sex facilities with rejected complaints and terminal fraud threats, it adds federal document/visa fraud bars, immigration custody sexual abuse, minor healthcare bans, and no division protections. The worse features are more severe and cross multiple journey stages."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "The dossier is lower than 0.45-D’s invasive transport searches with unresolved complaints. Here passport/visa rules can create permanent entry bars, immigration custody abuse, state healthcare denial, and assigned-sex facility enforcement, making the operative exposure more severe than isolated airport searches."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "The dossier sits above 0.15-A’s criminal presentation sweeps and recurring imprisonment, because there is no documented general arrest for presentation/visitor raids. Yet administrative border denial, custody abuse, and facility enforcement keep it near the severe/high boundary rather than merely elevated."
+   }
+  ],
+  "synthesis": "The combined regime operates across the journey: federal assigned-sex document rules can create visa refusal or permanent ineligibility; airport/hotel document checks can out the traveler; state law places school, shelter, changing, custody, and clinic spaces under assigned-sex control; public gender-affirming care is barred; teachers are threatened over minors; official rhetoric frames trans advocacy as security risk. Litigation and existing passports provide partial, unstable relief, but not traveler immunity. For an adult alone the main risk is administrative/care exclusion and possible detention placement. For a guardian with a trans minor, school, sports, healthcare, and family outing compounds it. The score reflects serious institutional exposure without documented execution or general criminalization of presentation."
+ },
+ "parse_error": null
+}

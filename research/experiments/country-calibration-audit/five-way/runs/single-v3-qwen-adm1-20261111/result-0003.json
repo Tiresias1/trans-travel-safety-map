@@ -1,0 +1,78 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006301042",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "Combined regime is high-risk. A trans adult may experience protective local service access in this state/province, but national entry screening, passport marker restrictions, visa refusal/permanent-fraud findings, and federal/immigration custody remain traveller-facing and not overridden by local law. The national order restricts government-funded single-sex facilities and documents abuse and conversion therapy in custody; these are severe universal exposures once outed. The state’s public-accommodation, hate-crime and care-shield laws materially reduce discrimination and care-seeking risk for adults and travelling families, but they cannot address ports of entry, federal facilities, or detention placement. For a minor, the shield helps only for care sought locally; national hostility to school transition and possible detention/document scrutiny persists. Therefore score below 0.35.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visa/entry screening can demand additional evidence where documents/records or reasonable doubt suggest sex mismatch; suspected wilful misrepresentation may support a permanent fraud bar. Traveller reports of passports confiscated or blocked, plus foreign advisories, indicate trans and nonbinary documents are a direct exposure.",
+    "protection": "Existing X-marker passports may remain valid until expiration, and foreign passports without discrepancy may pass; state/provincial protections do not apply at ports. No documented dedicated traveller remedy.",
+    "interaction": "Border stage can escalate into investigation/detention; protective state cannot alter federal entry screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and severe sexual abuse. National corrections policy adopts conversion-therapy-like measures, cutting hair, removing HRT and substituting psychiatric therapy; federal/immigration placement risks birth-sex exposure.",
+    "protection": "No documented federal or immigration remedy. State civil-rights and hate-crime protections do not override custody placement or medication policy.",
+    "interaction": "Document discrepancy or refusal at entry can feed investigation/custody; custody exposure dominates once outed.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities congruent with identity; other state/provinces criminalise facility use, and one arrest is documented. This state/province lacks a mapped ban, but the national restriction still reaches federal/state-funded buildings.",
+    "protection": "This state/province protects public accommodation; city all-gender bathrooms and single-occupancy gender-neutral rules; multi-occupancy statute unresolved. Protections do not govern federal facilities.",
+    "interaction": "Local buildings may be safer; federal buildings, airports, immigration offices and detention remain parent-controlled.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility to youth care, insurance-reimbursement proposals, record subpoenas and HRT removal in custody; state/province care may be contested by federal funding or immigration status.",
+    "protection": "State/province shield law protects patients/providers from charges for care lawful locally but banned elsewhere; conversion-therapy ban, anti-discrimination and youth programme protections.",
+    "interaction": "For adults and travelling families seeking local care, shield materially reduces risk; for minors, national school/health rules can still interfere.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism prioritizes radical pro-transgender actors and orders frame gender identity policy; agencies are directed to investigate schools promoting transition, creating chilling climate.",
+    "protection": "State/province hate-crime statute covers gender identity, panic defence repealed, public-accommodation and employment/housing/credit bans.",
+    "interaction": "Local statutes may protect street/service incidents, but federal framing and immigration/corrections agencies can outflank them.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travel with a minor still faces passport/visa document scrutiny and possible detention; federal orders criminalise school staff supporting social transition and threaten funding; guardians’ documents matter for minor admission/care.",
+    "protection": "State/province shield covers out-of-state care, school anti-bullying, local marker options and public accommodations; local services are protective-tier.",
+    "interaction": "School and care shields may help locally, but do not block federal custody, records or entry checks involving the child or guardian.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dossier evidence of state/province-specific trans street attacks or local police targeting; general crime is out of scope unless trans-specific.",
+    "protection": "State/province hate-crime and public-accommodation enforcement exist, though actual prosecution/reporting outcomes are not sourced.",
+    "interaction": "Local police response may be better than national agencies, but federal officers and immigration enforcement follow the parent regime.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Permanent-fraud ineligibility, stranding, custody harms and unresolved court challenges; shield-law durability against federal action is not sourced; enforcement of local remedies may be slow for short stays.",
+    "protection": "Civil-liberties litigation, legal-aid passport guidance, state civil-rights remedies and hate-crime law provide partial recourse; some federal orders are enjoined.",
+    "interaction": "Remedies may correct local services but cannot reliably reverse entry refusals or federal custody placement before itinerary changes.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has birth-sex public-building rule with complaints rejected but no fraud bar. This regime adds national entry/permanent-fraud exposure and immigration custody abuse; however its state/province has local service and care-shield protections, so it is near or slightly worse than 0.35-A due to the border/custody tier."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D is humiliating transport searches without ward/criminal facility rule. Here entry can produce refusal/permanent bar and federal custody birth-sex/HRT abuse, plus broader national facility restriction; local protective laws do not cancel that. Clearly below 0.45-D."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has routine raids, extortion and birth-sex custody. This dossier lacks documented street raids and adds strong local anti-discrimination/hate-crime/care-shield protections, but keeps border/federal custody exposure; therefore slightly above 0.25-A, still high risk."
+   }
+  ],
+  "synthesis": "The operative system layers a hostile national border/federal custody regime over a protective state/province. Outing at entry can trigger visa refusal or permanent fraud bar; if taken into federal/immigration custody, birth-sex placement, HRT removal and abuse are likely severe. Local anti-discrimination, hate-crime and care-shield laws materially improve adult access to shops, hotels, clinics and care for travelling families. They cannot neutralize passport screening, federal facilities or detention, and their durability against federal action is unresolved. Thus the traveller’s worst exposure occurs at institutional checkpoints, not everyday street encounters."
+ },
+ "parse_error": null
+}

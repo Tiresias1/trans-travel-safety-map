@@ -1,0 +1,82 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0008970235",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "Combined regime: the parent imposes universal, traveller-facing exposures — passports and visas issued/checked as birth sex with X markers discontinued, entry refusal and potential lifetime fraud findings where an officer 'casts reasonable doubt' on an applicant's sex, bans on trans athletes, hostile national framing of trans people, and documented abuse of trans detainees including sexual violence and hormone denial. Courts partially resist (suits pending, some orders enjoined), but the passport rule is now operative by Supreme Court order. The visited state is in the top protective tier: broad nondiscrimination including healthcare, hate-crime coverage, shield laws, marker changes. State protections cannot touch the border, national facilities, or federal custody, and custodial placements and emergency care under the parent's regime remain serious unremedied exposures. Elevated risk: no criminalisation, no state-level targeting, but an unremedied universal document/entry regime the traveller passes through every trip.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Birth-sex-only passport/visa rules; X markers discontinued; 'reasonable doubt' refusal instructions with possible lifetime fraud ineligibility; documented confiscations stranding travellers; trans athlete entry ban; foreign governments' travel advisories.",
+    "protection": "X passports valid until expiry; litigation pending; none operative at entry yet.",
+    "interaction": "Entry screening precedes state protections; document discrepancy can escalate into fraud allegations and federal refusal before any state remedy applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections policies mandating haircuts, hormone removal, conversion-style therapy for trans inmates; immigration-custody forced labour, beatings, solitary, sexual abuse; prior LGBTQ-prison protections rescinded.",
+    "protection": "None documented operative at the national level.",
+    "interaction": "Any federal arrest or immigration encounter places the traveller inside a documented abusive custody regime regardless of state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars gender-identity-congruent access in government-funded single-sex facilities; national-capital legislative ban noted; state-level bans elsewhere, some criminal (trespass arrests documented).",
+    "protection": "Within the state: no documented facility ban; nondiscrimination statutes since 2001; gender-neutral single-occupancy provision.",
+    "interaction": "National buildings and the capital inside the state follow the federal ban, not state law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal funding freezes, proposed public-insurance bar for under-18 care, subpoenaed hospital records of minors; school-transition prosecution directive affects travelling families with trans minors.",
+    "protection": "State healthcare nondiscrimination (2023), shield laws enforceable against out-of-state action; scope for visitors partly unresolved.",
+    "interaction": "A travelling minor or care-seeking parent is protected in-state but exposed under federal records demands and any federal-facility care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal rhetoric: 'chemical and surgical mutilation', 'radical gender ideology' in counterterror materials, prioritisation of 'radically pro-transgender' groups; 'forbidden terms' purge; 66% public support for birth-sex document mandates.",
+    "protection": "Several orders enjoined; courts functioning and showing documented resistance.",
+    "interaction": "Official threat-framing raises outing stakes at federal touchpoints; state framing is protective.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Care bans in 27 states nationally; prosecution directive against facilitators; school-sports federal ban; youth lifeline closure; records subpoenas — a travelling trans minor or guardian faces federal-facility and interstate exposure.",
+    "protection": "In this state: no minor-care ban documented; conversion-therapy prohibition; shield-law listing; sports participation continues under revised association policy.",
+    "interaction": "Guardian's compliance duties shift crossing state/national lines; federal criminal-prosecution directive overrides local tolerance.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated state prevalence figure either way; one restroom arrest (custody in men's ward, handcuffed) documented under a state bathroom law elsewhere; national hate-crime statute exists but coverage is uneven.",
+    "protection": "State hate-crime enhancements (§ 42-28-46), panic-defense repeal (2018), nondiscrimination enforcement routes existing though unmeasured.",
+    "interaction": "Police response quality varies nationally; in-state statutes provide standing recourse for bias incidents.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No enforcement data for state statutes; shield-law scope for visitors unresolved; private-venue facility access unmapped; custody placement under state law undisclosed; several federal rules in flux pending court outcomes.",
+    "protection": "Active litigation, injunctive relief, and legal-aid documentation infrastructure show courts engaging, though not yet displacing operative exposures.",
+    "interaction": "Practical exposure depends on measures in force at travel time; a moving federal landscape keeps the entry/document route the dominant risk.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Shares universal-exposure logic (birth-sex facility/document rules) but this regime's exposures concentrate at the federal layer contested by functioning courts; the state layer is protective rather than merely polite, so it sits above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-E",
+    "comparison": "Similar to 0.55-E: documented recurrent federal border/document misconduct with partial corrections, otherwise unrestrictive services in-territory. Here the exposure is broader (entry fraud findings, federal custody) but judicial pushback is stronger; roughly comparable, slightly below on custody severity."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has no operative universal restriction; this jurisdiction's birth-sex passport regime and federal facility ban are operative universal exposures that state protections cannot neutralise, so it falls well below 0.75-C."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Below-0.25 features are absent locally: no criminal offence of presentation, no routine police raids or extortion in the state; but documented federal custody abuse and fraud-bar entry risk keep it clearly above 0.25-D, around the elevated midpoint."
+   }
+  ],
+  "synthesis": "The operative regime is bifurcated. The state layer is genuinely protective — nondiscrimination across public accommodations and healthcare, hate-crime coverage, shield laws, marker changes — giving a visitor a largely unobstructed in-state stay. But every entry crossing, visa application, national facility, and federal custody encounter runs through a parent regime that documents birth-sex-only documents, 'reasonable doubt' refusals with lifetime fraud bars, athlete entry bans, trans athlete/hostile framing, and abusive custody of trans detainees. State law cannot displace those federal touchpoints. The combination lands in Elevated Risk: no criminalisation or local targeting, but a continuous, traveller-facing document/entry exposure with partial, contested remedies."
+ },
+ "parse_error": null
+}

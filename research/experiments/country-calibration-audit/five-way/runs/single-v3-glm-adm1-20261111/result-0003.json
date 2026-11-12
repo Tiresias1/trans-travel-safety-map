@@ -1,0 +1,78 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0043949",
+ "parsed": {
+  "rating": 0.65,
+  "explanation": "The combined regime pairs a genuinely protective subnational layer with a hostile national layer. Within the state, gender-identity public-accommodations discrimination has been banned since 2006, hate-crime and panic-defence protections operate, single-occupancy facilities are neutral, care is shielded for out-of-jurisdiction patients, and documents accept self-attested markers — documented, operating protections. The national layer imposes universal exposure: passports must show birth sex, X markers are frozen, a visa cable directs refusals where officers hold 'reasonable doubt' about sex with potential lifetime fraud findings, and screening risks outing. National custody (immigration detention, corrections) documents severe abuse, but a short-stay visitor in this state avoids those stages unless detained. No criminalisation of presentation, no local facility ban, no organised sweeps; consequence is friction and a fraud-lever risk, not imprisonment. This matches the 0.65 reduced-risk band: strong documented protections with nontrivial, partly unremedied border exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy forces birth-sex markers; X passports valid only until expiry; 2025 cable instructs visa officers to refuse cases on 'reasonable doubt' about sex, with potential lifetime fraud ineligibility; travellers report confiscated/blocked passports.",
+    "protection": "M/F passports matching presentation pass normally; litigation ongoing; foreign advisories warn travellers but do not change the rule.",
+    "interaction": "Document discrepancy at entry can escalate to refusal or fraud investigation before any state protection applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections and immigration custody document hormone denial, forced labour, beatings, solitary and sexual abuse of trans detainees; any visitor entering national custody faces birth-sex placement and the school-transition prosecution order affects accompanying minors.",
+    "protection": "State jurisdiction excludes national custody; no documented state custody harm.",
+    "interaction": "An entry or visa dispute can move a visitor from protected state territory into national custody with documented abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal orders bar congruent facility access in federally funded single-sex facilities; state-level bans exist in other states, not here.",
+    "protection": "State bans identity-based facilities discrimination since 2006; single-occupancy neutral restrooms statewide; largest city's ordinance requires access per self-identified gender.",
+    "interaction": "Traveller's facility access depends on whether the building is state/municipal (protected) or national (exposed).",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National insurance-reimbursement proposals and records subpoenas create climate risk; federal funding restrictions on trans-related services.",
+    "protection": "2023 shield law protects care for travelling patients including from ban states; no state care restriction; documented as operating.",
+    "interaction": "A travelling parent or patient can obtain care here but remains exposed to home-jurisdiction and federal records actions the shield may not withstand.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal rhetoric ('mutilation', 'radical gender ideology', counterterrorism prioritisation of 'radically pro-transgender' groups) raises outing salience; 66-69% poll majorities support birth-sex documents and sports alignment.",
+    "protection": "State hate-crime statute covers gender identity, panic defence repealed, discrimination law enforceable; state framing is protective.",
+    "interaction": "State institutions operate against the national framing; national authorities, not state police, control entry and custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order directs prosecution of facilitation of minor social transition; 27-state youth-care bans; national insurance rule proposed for under-18s; school investigations.",
+    "protection": "State shield law and 2023 care protections cover travelling minors' care; school anti-bullying and trans-student procedures operate in state schools.",
+    "interaction": "A travelling minor is protected in-state for care and schools but exposed at federal entry/documents and in any ban-state transit.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Gender-identity bias crime exists; 37 states lacked bias statutes as of 2019; state-level hate-crime prosecution data not sourced.",
+    "protection": "State hate-crime enhancement since 2016 (perceived orientation since 1991), enforceable discrimination law; no documented state police targeting.",
+    "interaction": "State police/courts provide ordinary recourse; no documented local hostility pattern in the state dossier.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation unresolved; visitor-facing facility practice in mixed national/state buildings; outcome of state facilities bill (May 2023) unresolved; detention placement for visitors not mapped.",
+    "protection": "Legal-aid FAQ on passport rules; state discrimination enforcement functioning; shield law in effect.",
+    "interaction": "Practical exposure depends on which federal measures are enjoined at travel time.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A features a universal unremedied birth-sex facility rule enforced where the visitor actually is. Here the state has no such rule and enforces anti-discrimination; the universal exposure sits only at national entry/documents and federally controlled facilities, so this jurisdiction rates materially above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows recurring visitor-facing hostility with partially working remedies. Here documented state-level hostility is absent and remedies are stronger (shield law, long-standing equality statute), but the national document/screening exposure is heavier than 0.55-B's ferry/guesthouse friction — roughly comparable overall, slightly above."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C combines acceptance, dead-letter tangential law and functioning courts with only open questions on custody. This dossier matches on state-level acceptance and recourse but carries a live, enforced national document regime and documented custody abuses, so it sits below 0.75-C."
+   }
+  ],
+  "synthesis": "The traveller experiences two regimes in sequence. In-state, the documented protective machinery — enforceable public-accommodations law, hate-crime coverage, care shield, neutral facilities — gives a visit most of the qualities of a 0.75-0.85 jurisdiction. But entry is nationally controlled: the birth-sex passport rule, the frozen X marker, and the visa cable's 'reasonable doubt'/fraud mechanism are universal-exposure measures that apply before state protections engage, and national custody — should a dispute lead there — documents severe abuse. With an M/F passport matching presentation, the operative visit is low-friction; for an X-marker or nonbinary traveller, exposure at entry is real and unremedied. No criminalisation, no state targeting, no organised violence documented. Net: elevated-border, protected-interior — the 0.65 band."
+ },
+ "parse_error": null
+}

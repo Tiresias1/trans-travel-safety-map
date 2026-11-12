@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.006056",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime: the national passport sex-marker restriction is in force (Supreme Court allowed it November 2025), so mismatched or X-marker travellers face refusal, confiscation and stranding. Entry screening can refuse discrepant cases and raise a fraud-based lifetime-ineligibility question. Facility bans cover government buildings across most states, with trespass criminalisation in four and one documented arrest. Federal immigration custody shows documented beatings, forced labour and sexual abuse of trans men. Counterterrorism rhetoric names 'radically pro-transgender' groups. Offsetting protections are partial: national hate-crime law, 22 states plus DC banning gender-identity discrimination, and litigation that has blocked some measures. No organised police sweeps, capital penalty or documented visitor violence pattern appears. Severity is high for anyone detained or documented-mismatched, placing the case in the High Risk band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passports show birth sex; new X-marker and non-matching marker applications are not processed. Passports reported confiscated or blocked, leaving some travellers stranded. Discrepancies can trigger refusal and a possible fraud lifetime-ineligibility finding.",
+    "protection": "Existing X-marker passports remain valid to expiry. Litigation over passport markers is unresolved and some orders are enjoined.",
+    "interaction": "A home-country document mismatch becomes a refusal or fraud allegation at entry, which can carry into later stages such as detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "One documented trespass arrest in a state capitol with handcuffing and 24 hours in a men's ward. Federal immigration custody reports forced labour, beatings, solitary and severe sexual abuse of trans men. Federal corrections adopted conversion-therapy-style policies in 2026 and stopped reporting trans prisoner counts.",
+    "protection": "Trespass requires willful entry plus refusal to leave, not automatic arrest on entry. Some detention-placement litigation is ongoing.",
+    "interaction": "Facility or document friction at a state building can escalate into arrest and then federal custody, where abuse is documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars identity-congruent use of government-funded single-sex facilities. Nine states plus one ban all government buildings, nine more cover schools and some government buildings, three cover schools only, and six reach some private settings. Four states criminalise certain bathroom use.",
+    "protection": "Twenty-nine states, four units and the capital district have no mapped ban. Some bans are enjoined.",
+    "interaction": "Federal rules and state bans stack, so a visitor can meet a restriction in one jurisdiction with no relief from another.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "One state bans minors' hormones and surgery and Medicaid coverage at any age, and bars inmates' care from July 2026. Providers face licence loss and suits up to 15 years later. National under-18 insurance rule is proposed. Hospital records of patients under 19 were subpoenaed.",
+    "protection": "Patients already in treatment may continue for minors in the affected state. Care bans for inmates are partly blocked in two other states.",
+    "interaction": "A visitor's care can be interrupted at a state border or hospital, and an arrested or detained traveller may lose medication access.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for priority neutralisation. A cash-reward system is set up for leadership identification. The education order calls for prosecuting teachers who facilitate social transition.",
+    "protection": "The strategy states counterterrorism powers will not target people who disagree with it.",
+    "interaction": "State-level threat framing can raise the chance that police and federal agencies scrutinise trans-presenting people in public.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minors cannot start hormones or puberty blockers in the affected state and face surgery bans. Passports for minors follow birth sex. Guardians face school and records exposure, and teachers face prosecution for facilitating social transition.",
+    "protection": "Minors already in hormone treatment may continue in the affected state. Hate-crime statutes cover gender identity in many states.",
+    "interaction": "A minor travelling with a guardian meets document mismatch at entry and state care bans, and the guardian's records may be subpoenaed.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated incident of violence against a trans person with an outcome appears in the dossier. No trans-specific violence rate is given, and no organised sweeps are documented.",
+    "protection": "National hate-crime statute covers gender identity. Twenty-three states cover gender identity in bias-violence law. The division's hate-crime law covers gender identity.",
+    "interaction": "Police response to violence against visitors is not documented, so street risk stays unassessed beyond the protections listed.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Many orders are being litigated and enjoined. The state's non-discrimination law omits gender identity. Its marker rule now requires surgery documentation and a court order. The record gives no custody count or 2027 sunset outcome.",
+    "protection": "Two cities declared sanctuaries for trans people. Litigation has blocked some national and state measures. Domestic partnerships are recognised in some municipalities.",
+    "interaction": "A visitor cannot rely on local sanctuary status to cover federal documents, detention or state facility rules.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Veluna applies birth-sex toilets and emergency wards across all public buildings, with no documented arrests. This case has similar universal facility exposure, but the patchwork of state bans and documented arrests and federal custody abuse make it somewhat lower in the band, while the lack of birth-sex ward rules keeps it above Veluna."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Savorek combines a birth-sex rule for all public facilities and wards with police extortion stops. This case has no documented systematic police stops or extortion, but it has documented federal document blocking, a counterterrorism framing and custody abuse. It is roughly comparable, with slightly more severe custody harm and less systematic police targeting."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Veleda requires invasive birth-sex searches at transport screening, with no criminalisation and no custody abuse documented. This case adds documented custody abuse, the passport-blocking documented harm, criminal trespass and a counterterrorism framing, so it sits clearly below that anchor."
+   }
+  ],
+  "synthesis": "The traveller's exposure is layered across sovereigns. A birth-sex passport rule at entry can produce refusal, confiscation or a fraud allegation, which can lead to detention and then to documented abuse in federal immigration custody. Facility bans are patchy, but where they apply the state trespass route can produce arrest. Care restrictions can interrupt medication for an adult or for a minor, and a guardian's records can be subpoenaed. Counterterrorism rhetoric adds a threat-framing layer. Protections are real but partial: national hate-crime coverage, sanctuary cities and litigation that blocks some measures. Nothing here shows organised sweeps, capital penalty or a visitor violence pattern, so the case sits in High Risk rather than the severe band."
+ },
+ "parse_error": null
+}

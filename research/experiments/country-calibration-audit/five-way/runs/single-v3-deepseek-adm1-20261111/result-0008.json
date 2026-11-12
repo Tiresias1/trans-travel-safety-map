@@ -1,0 +1,82 @@
+{
+ "cell": 8,
+ "region": "66186276B22881275445497:North Dakota",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00423148",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime imposes traveller-facing entry/document screening with refusal and fraud-ineligibility risk, government-facility exclusion at national and state levels, and documented severe harm in immigration and correctional custody. The state adds a bathroom restriction, no gender-identity hate-crime coverage, and minor-care/school restrictions. Protections are partial: existing X passports remain valid, national hate-crime law covers gender identity, courts have enjoined some orders, private hotels are outside the state ban, and polling shows majority support for anti-discrimination. No general criminalisation or organised street sweeps are documented, but the institutional exposures are unremedied, placing the jurisdiction in High Risk rather than Severe or Elevated.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-binary passport/visa rules; new X markers not processed; screening cable tags discrepancy cases, can refuse and consider fraud/lifetime ineligibility; reports of blocked or confiscated passports and detentions.",
+    "protection": "Existing X passports valid until expiry; fraud finding is not automatic and requires four elements with limited waivers; litigation pending; legal-aid FAQ available.",
+    "interaction": "A foreign passport may match, but any mismatch or X marker at visa or entry can trigger secondary screening, detention, and custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and severe sexual abuse of trans men; national corrections policies include conversion-like measures and denial of care; a bathroom arrest led to men's-ward detention.",
+    "protection": "National hate-crime statute is not a custody remedy; courts have enjoined some orders; no documented visitor custody protocol or effective remedy for immigration-custody abuse.",
+    "interaction": "An entry discrepancy or facility arrest can move a traveller into immigration or criminal custody with severe placement risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules bar trans people from government-funded single-sex facilities congruent with identity; state law permits restriction in many state-run facilities; some states criminalise bathroom use, with one documented arrest.",
+    "protection": "The state trespass offence requires wilful entry and refusal to depart, with exemptions; private hotels are not covered by the state ban; some national orders are enjoined.",
+    "interaction": "A visitor using a government building may be excluded or asked to leave; refusal escalates to trespass, while private venues may be safer but lack statewide protection.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans gender-affirming care for minors; national orders and proposed rules restrict care and insurance; no documented emergency-care exclusion for adult visitors.",
+    "protection": "No visitor-facing care denial is documented; some court injunctions apply; national hate-crime law does not address care access.",
+    "interaction": "Adult visitor medication and emergency care are unresolved; a minor travelling for care faces the state ban; ordinary emergency care is not shown to be trans-specific.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; a justice memo uses 'radical gender ideology'; executive orders target school gender ideology and teachers.",
+    "protection": "The strategy says counterterrorism is not for mere disagreement; national hate-crime law covers gender identity; courts have enjoined several orders.",
+    "interaction": "This raises the official-hostility climate and discovery risk for advocacy or social-media content, but direct visitor enforcement is not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State schools must disclose trans students and restrict pronouns; care for minors is banned; national orders threaten teachers; visitor minors are not specifically addressed.",
+    "protection": "No documented visitor-minor protection; some national orders are enjoined.",
+    "interaction": "An adult with a minor faces the same entry and facility rules; school and care rules are mostly resident-facing; custody separation is not documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated trans-specific violence incident in this state appears in the sources; the state hate-crime law excludes gender identity; official rhetoric is hostile.",
+    "protection": "National hate-crime law covers gender identity; 78% poll support for anti-discrimination; no documented police sweeps or extortion.",
+    "interaction": "National prosecution is available but the state bias-crime gap weakens local recourse; visitor street risk is not quantified.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation is pending; bathroom-penalty enforcement and the religious-refusal bill's disposition are unresolved; visitor detention frequency and some state document rules are unclear.",
+    "protection": "Civil-liberties litigation, existing X passport validity, court injunctions and a legal-aid FAQ provide partial recourse.",
+    "interaction": "Remedies are partial and slow; practical exposure depends on which measures are operating at the time of travel.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar universal government-facility exclusion with no visitor exemption, but this jurisdiction adds national entry/document screening and documented abusive immigration custody, so it sits slightly below 0.35-A despite national hate-crime coverage and majority poll support."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "0.45-B has abusive birth-sex custody placement but no general bathroom ban and generally serving hotels; this jurisdiction has broader government-facility exclusion plus entry-screening risk, so it is lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B documents service hostility with partial remedies but no universal facility or custody exposure; this jurisdiction's institutional exclusions and custody harm make it materially less safe."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C combines traditional acceptance with a dead-letter statute and ordinary court remedies; this jurisdiction has active document, facility and custody exposures, placing it far below."
+   }
+  ],
+  "synthesis": "The regime is not a general criminalisation of trans identity and there are no documented street sweeps, but the traveller-facing exposures are institutional and recurring: sex-binary document and entry screening, government-facility exclusion in national and state buildings, and severe documented custody conditions. State law adds a bathroom restriction, no gender-identity hate-crime coverage, and minor-care and school restrictions. National hate-crime protection, existing X passport validity, court injunctions, private-hotel practice and majority poll support are real but do not remedy the entry, facility or custody exposures. Unknowns about visitor detention and care access resolve toward high risk from the structural signals, not neutrality."
+ },
+ "parse_error": null
+}

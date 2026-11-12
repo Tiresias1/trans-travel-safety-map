@@ -1,0 +1,82 @@
+{
+ "cell": 49,
+ "region": "66186276B98555229882405:Washington",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007375452",
+ "parsed": {
+  "rating": 0.31,
+  "explanation": "The combined regime pairs severe national traveler-facing exposures—birth-sex visa/document screening, possible refusal and fraud inadmissibility, national/federal custody abuse, and federal/national facility exclusion—with a protective state/province layer for local facilities, care shields, and courts. For an adult alone, local life in the protective state may be manageable, but border screening, federal services, and immigration/federal detention carry high severity if outed. For an adult with a trans minor, entry-document risk and national hostility toward minors add exposure, while state/province care protections mitigate. Effective national relief is uncertain, so high risk, not severe-risk execution level.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport sex rules require birth-sex alignment; discrepancies or suspected misrepresentation can cause refusal, delays, possible permanent fraud inadmissibility, and reports of confiscated/blocked traveler documents.",
+    "protection": "Existing X markers remain valid until expiry; ongoing litigation and legal-aid FAQ help; some orders contested. State shield does not affect entry screening.",
+    "interaction": "Home-passport mismatch can trigger border review, then custody/fraud exposure; protective state cannot offset federal visa or immigration screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections adopt conversion-therapy practices and denial of care; immigration custody reports forced labour, beatings, solitary, severe sexual abuse; restroom arrest held in men's ward; state prison transfer to men's as punishment.",
+    "protection": "State court orders require prison gender-affirming healthcare; injunctions and legal aid exist; state shield may reduce local punitive placement, but federal/national custody remains severe.",
+    "interaction": "A border document issue or local arrest can flow into federal/immigration placement, where national rules override protective state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars government-funded single-sex facilities congruent with gender identity; many state/provinces ban access and four criminalize restroom/changing use, including arrest under state law.",
+    "protection": "This state/province is listed among most protective; the dossier does not document a local mapped facility ban for it, and shield/care measures support access.",
+    "interaction": "Visitor may avoid local bans but remains exposed in federal buildings, schools receiving federal funds, or restrictive transit through other state/provinces.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict minors’ gender-affirming care, funding, and insurance, and hostile agencies removed gender-identity materials; adult emergency-ward treatment is not clearly documented.",
+    "protection": "Protective state/province has comprehensive insurance, shields against external actions, and court-ordered prison care; refuge protections. These help travelers seeking care locally.",
+    "interaction": "State shield may protect care from out-of-state action, but national funding/insurance and federal detention/facility rules still apply; adult emergency care remains partly unknown.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official orders call care mutilation, target gender-ideology advocacy/schools, bar athletes, and counterterrorism language includes radically pro-transgender groups; public polls favor birth-sex documents.",
+    "protection": "Hate-crime statute, courts, injunctions, state protective policies, legal aid, and refuge protections signal some recourse.",
+    "interaction": "Hostile framing increases border and federal-discretion risk; local protective enforcement can soften non-federal encounters but not national screening or detention.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor can be outed by mismatched travel documents and faces national care/school restrictions; a parent or guardian accompanying them may be scrutinized, though direct guardian incidents are not documented.",
+    "protection": "State/province care shield, insurance coverage, court orders, and refuge protections benefit families; legal aid provides document guidance.",
+    "interaction": "National border/facility/funding rules apply to minors despite state protection; a minor’s detention, school visit, or emergency care can expose the guardian.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dossier-documented pattern of anti-trans street attacks or police extortion against visitors; single arrest and advisories show friction but not rates.",
+    "protection": "National hate-crime law and local protective laws exist; state coverage and enforcement uneven.",
+    "interaction": "If outed in protective state, police may be less hostile; if detained/federal, response follows national rules; reporting may itself risk outing.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Court challenges, injunctions, and enforcement windows remain uncertain; ballot initiatives targeting residents are flagged but not sourced; national custody reporting was stopped.",
+    "protection": "Legal-aid FAQ, active litigation, state/province shield laws, court orders, and some protective statutes exist.",
+    "interaction": "Protective state/province remedies may not bind federal entry, visa fraud, immigration detention, or national corrections; relief can change rapidly.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal public-building birth-sex rule and no effective remedy. This is somewhat safer because the protective state/province provides courts, care shields, and likely no local mapped ban; but more dangerous because national border screening can create fraud inadmissibility and immigration/federal custody abuse is documented."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D combines compulsory facilities, emergency ward placement, and fraud threats. This shares national facility/document/custody exposures, but its protective state/province shield and court-ordered care reduce local exposure; therefore slightly safer than 0.25-D, though still high risk."
+   },
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "0.15-D has a registration/checkpoint disclosure system leading routine detention/fraud and custody abuse. Here, severe national visa/custody exposure exists, but no documented universal visitor registry, and local protective institutions operate; so above 0.15-D."
+   },
+   {
+    "anchor_id": "0.45-E",
+    "comparison": "0.45-E lacks border hostility and only has emergency-care exclusion with some social acceptance. This has hostile national entry screening, national custody abuse, and official threat framing, so below 0.45-E despite the protective state/province."
+   }
+  ],
+  "synthesis": "The operative regime splits by journey stage and institution. Border/visa screening, federal immigration detention, and national corrections are the dominant severity drivers if a trans traveler is outed: document discrepancy, refusal, fraud inadmissibility, and abusive custody/federal facility placement are documented. The state/province's protective laws, shield measures, and courts materially lower everyday service, facility, and care risk for local encounters, including adult with minor care access. Those protections do not erase federal/national screening or detention, and official hostility plus public-opinion bias raise discretion at checkpoints. Thus risk remains high: severe, traveler-facing institutional exposure with partial but uneven remedy, below elevated-reduced thresholds but above execution-level severe risk."
+ },
+ "parse_error": null
+}

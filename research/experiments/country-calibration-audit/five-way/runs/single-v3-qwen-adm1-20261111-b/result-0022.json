@@ -1,0 +1,78 @@
+{
+ "cell": 22,
+ "region": "66186276B53580985925186:Virginia",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007639182",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "Combined regime is mixed: adult alone encounters state-level civil-rights protection for lodging, transport, shops, ID issuance, and hate-crime recourse, and no documented adult facility ban. But the national layer is traveler-facing and operative: passport/visa birth-sex rules, reasonable-doubt refusals and possible permanent fraud bars, government-funded single-sex facility exclusion, and documented hostile federal/immigration custody. These restrictions follow the traveller across state lines and are not cured by state markers or accommodations law. For adult with trans minor, school bathroom/pronoun and athletics rules plus federal youth-care hostility add direct exposure; cis-minor travel reduces age-specific risk but not the adult’s border/facility exposure. Enforcement and current school reversal are uncertain, so protections cannot offset federal exposure. Integrated adult-alone/family risk sits mid-elevated.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require birth-sex M/F; X markers eliminated for new issues. Discrepancy or reasonable doubt can trigger refusal, additional evidence, and possible permanent fraud ineligibility; travelers report blocked or confiscated passports.",
+    "protection": "State offers X licences/birth certificates, but that does not cure foreign-issued home passports or federal visa screening. No operative entry shield is documented.",
+    "interaction": "A document or presentation mismatch can escalate to denial, stranding, and investigation; if detention follows, federal custody severity increases.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections and immigration custody expose trans detainees to birth-sex placement, coerced conformity-style practices, forced labour, beatings, solitary confinement, and sexual abuse.",
+    "protection": "Not documented. State hate-crime law addresses private violence, not federal custody.",
+    "interaction": "Entry discrepancy, fraud allegation, or arrest can move a traveller into federal custody, where documented abuse is severe.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities. State school policies banned trans-student bathroom access and pronouns; athletics were restricted.",
+    "protection": "State civil-rights statute prohibits public-accommodation discrimination; no state adult public-facility ban is documented, and a low-risk adult assessment exists.",
+    "interaction": "Federal venues and schools may follow national or administrative restrictions; private/state venues depend on state law, whose enforcement is not documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding, materials, and youth-care hostility narrow services; no state-specific emergency-ward birth-sex rule is documented.",
+    "protection": "State public-accommodation and conversion-therapy-ban laws may cover some services, but enforcement for trans visitors is not documented.",
+    "interaction": "Care in federally funded venues may follow national sex rules; care in private or state systems turns on unresolved enforcement of state protections.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National executive orders, school prosecution directives, counterterrorism language against radical pro-transgender actors, and travel advisories frame trans people as suspect.",
+    "protection": "State hate-crime law, public-accommodation law, and panic-defense repeal provide local legal recourse; courts have protected students in some settings.",
+    "interaction": "State law may moderate local encounters but cannot neutralise federal screening, facility, custody, or official threat framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "If the minor is trans or gender nonconforming, state school bathroom/pronoun and athletics restrictions add direct exclusion; federal school-prosecution and youth-care measures raise guardian scrutiny.",
+    "protection": "State civil-rights protections and conversion-therapy ban for minors may help outside school; designated-visitor rules protect some family settings.",
+    "interaction": "School or family visits trigger age-dependent rules; intended reversal is unconfirmed, and a cis minor lowers age-specific exposure but not adult border/facility risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific trans violence rate is documented; national hostility and police/federal document encounters can raise exposure.",
+    "protection": "State hate-crime law, public-accommodation statute, and panic-defense repeal give formal recourse.",
+    "interaction": "Violence or service denial could be pursued locally, but federal document and custody exposure dominates severe harm.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation is pending or enjoined but not documented as reliably operative; state enforcement and school reversal are unresolved.",
+    "protection": "State statutes, advocacy guidance, and court challenges exist.",
+    "interaction": "A traveller may rely on local law only outside federal venues; remedies do not remove passport, facility, or custody risk.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Shares national birth-sex facility/custody exposure and local hospitality. Sits above B because state civil-rights law, low-risk adult assessment, and document access materially protect adult private/state encounters, not merely a help desk; remains below reduced risk because federal entry/facility restrictions and custody abuse are unremedied."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Similar to A's universal public-facility exclusion, but this jurisdiction protects private and many state public accommodations and no adult service ban is documented. Higher than A on local services, lower on entry because passports/visas impose reasonable-doubt refusals and possible fraud bars, so comparable elevated risk."
+   },
+   {
+    "anchor_id": "0.65-D",
+    "comparison": "D has no national passport/facility restriction and some enforced remedies. This jurisdiction's federal passport/visa mismatch screening, government-funded single-sex exclusion, and hostile custody prevent reaching D despite state adult protections."
+   }
+  ],
+  "synthesis": "Adult alone: state public-accommodation rights and low-risk adult assessment materially improve hotels, shops, ID-related access, and local recourse, but national passport/visa birth-sex rules, government-funded single-sex exclusion, and hostile federal/immigration custody are unremedied traveler-facing exposures. Adult with trans minor: school bathroom/pronoun and athletics restrictions plus national youth-care hostility raise risk; if minor cis, lower age-specific exposure remains above safe because adult border/facility risk persists. Enforcement and reversal of school policies are uncertain. Final number reflects mixed protective-local/high-restrictive-federal system."
+ },
+ "parse_error": null
+}

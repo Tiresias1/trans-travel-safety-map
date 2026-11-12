@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.00559",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime: national passport sex-marker restrictions now in effect after the November 2025 ruling, with entry refusal and a lifetime fraud-ground finding possible on any document discrepancy. Documented custody harms include forced labour, beatings and severe sexual abuse in immigration custody, and a treatment-restriction policy in national prisons. State facility rules extend to universities and carry a criminal trespass trigger, with one documented arrest and 24 hours in a men's ward. A national counterterrorism framing names 'radically pro-transgender' groups, and no state hate-crime statute exists. Partial court blocks and a pending passport suit offer limited, uneven recourse. No registry, sweeps or death penalty are documented. This places the case in the high-risk band, below the elevated tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports carry birth sex; X markers no longer issued. Discrepancy triggers refusal and possible lifetime fraud ineligibility. Documented passport confiscation and stranding.",
+    "protection": "Existing X passports valid until expiry; passport suit pending with several plaintiffs; some orders enjoined.",
+    "interaction": "Document mismatch at entry leads to refusal or fraud allegation, which can escalate to detention. Parent regime applies to all visitors.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced labour, beatings, solitary, severe sexual abuse reported for trans men. National prisons adopted restrictive treatment policies; prisoner count no longer reported. Visitor detained 24 hours in men's ward on state trespass charge.",
+    "protection": "Not documented beyond oversight and litigation; no cell-placement ruling recorded at state level.",
+    "interaction": "Trespass arrest in a state facility can lead to placement by birth sex; federal custody practices apply independently of state rules.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State bans cover schools, colleges and some government buildings, with criminal trespass for willful entry and refusal to depart. Ban extended to universities in May 2026. Some bans reach private settings in other states.",
+    "protection": "Court order bars enforcement against one student plaintiff pending litigation; courts have not ruled on merits. No state hate-crime statute.",
+    "interaction": "Federal court rulings do not generally cover visitors; the state law remains operative for a visitor in a covered public building.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Hospital records of patients under 19 subpoenaed. Specialised youth lifeline services closed. Proposed rules would bar public reimbursement for minors. Treatment restrictions in state prison system.",
+    "protection": "Care for adults not documented as restricted at visitor level; ward placement follows birth sex only where documented.",
+    "interaction": "A medical or custody encounter can lead to a record request or placement by birth sex, linking care to enforcement.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy names 'radically pro-transgender' groups for neutralisation; cash rewards for leadership identification; officials describe gender identity as ideology. State government frames rules as safety measures.",
+    "protection": "Strategy states powers not used against mere disagreement; no visitor-targeting sweeps documented.",
+    "interaction": "Threat framing at national level shapes how police and prosecutors apply trespass and fraud provisions to trans people.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "K-12 facility rules apply to minors in covered states; teachers face criminal prosecution for facilitating social transition; minors' hospital records subpoenaed; gender-affirming care for under-18s banned in 27 states.",
+    "protection": "Schools in some states outside the ban; court relief for one student plaintiff.",
+    "interaction": "A minor travelling with a guardian enters school or hospital settings under the birth-sex rule; a guardian's care decisions may expose records or prosecution.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific violence rate for visitors. Hate-crime coverage for gender identity limited to 23 states; 37 lacked anti-bias statutes as of 2019.",
+    "protection": "National hate-crimes statute covers gender identity; one state-level arrest was for trespass, not assault. Gender-identity discrimination outlawed in 22 states plus capital district.",
+    "interaction": "Where state law lacks gender-identity bias coverage, police response to street violence depends on federal jurisdiction.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Recourse is partial: blocked or enjoined orders, pending suits, and an unsettled state bathroom law. Visitor detention placement outside the trespass case is not documented.",
+    "protection": "Court orders in some cases; civil-liberties and advocacy litigation active; some states offer protections.",
+    "interaction": "Remedies apply to specific plaintiffs and orders; a visitor in a non-covered state or federal custody may lack relief.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Closest match: a parent birth-sex custody rule with documented sexual harassment and unremedied complaints. This dossier adds a national passport discrepancy-to-refusal route and state criminal trespass, which push it lower. It has no provincial help desk comparable to the anchor's partial remedy, so it stays near 0.35 rather than above."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Similar birth-sex facility and hospital ward rules with recurring abuse and rejected complaints. This dossier adds immigration-custody sexual abuse and state trespass arrests but lacks documented police extortion or raids on visitors. It is slightly above the 0.25 band on that basis."
+   },
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "Also includes document-based detention and medication denial, but the anchor has a registry, state fraud prosecutions and custody-death patterns. This dossier has none of those, and the death penalty and sweeps are absent, so it sits well above 0.15."
+   }
+  ],
+  "synthesis": "The national regime supplies the dominant exposure: passport sex-marker rules at entry, a fraud route to lifetime ineligibility, and documented custody abuse in immigration and prison settings. The state adds universal facility exclusion extended to universities, with a criminal trespass trigger that has produced at least one documented arrest and a men's-ward placement. Threat framing at national level and subpoenas of minors' records add exposure, while court orders and pending suits give only partial and plaintiff-specific relief. Without documented sweeps, extortion or executions, the case stays in the high-risk tier."
+ },
+ "parse_error": null
+}

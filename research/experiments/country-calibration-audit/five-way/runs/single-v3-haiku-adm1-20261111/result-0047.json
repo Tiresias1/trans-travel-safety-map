@@ -1,0 +1,78 @@
+{
+ "cell": 47,
+ "region": "66186276B98021244841737:Alabama",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059816",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime rated across national and state/province layers. Federal exposures are the heaviest: passport sex markers are restricted to birth-sex M/F, entry refusal and a possible lifetime fraud finding apply on any documentary discrepancy, and federal immigration custody has documented forced labour, beatings and severe sexual abuse of trans men. The corrections bureau adopted a conversion-style policy and stopped reporting trans prisoner numbers. Federal facilities are birth-sex restricted, and counterterrorism rhetoric names 'radically pro-transgender' groups. The state layer adds a bathroom-trespass offence, with one documented arrest and 24 hours held in a men's ward. Visitors also face ID-check mismatch and no statewide nondiscrimination recourse. The 3.8/100k killing figure is an undercount floor and is treated as undocumented. No execution or organised sweeps are documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports show birth sex; X markers not processed for new applications. Cable directs refusal on any document discrepancy or reasonable doubt; possible permanent fraud ineligibility. Passports confiscated or blocked, leaving some stranded abroad.",
+    "protection": "Existing X passports remain valid until expiry. A civil-liberties suit is pending, and the policy is contested in court.",
+    "interaction": "Home-passport discrepancy triggers refusal, fraud review and possible lifetime ban at federal entry; stranding removes the traveller from any local remedy.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary and severe sexual abuse of trans men. Federal corrections adopted conversion-style policy (hair cut, hormone removal) and stopped reporting trans prisoner numbers. State trespass arrest led to 24 hours in men's ward.",
+    "protection": "Pretrial release was granted in the state case. No documented remedy for federal custody abuse.",
+    "interaction": "Document or presentation discrepancy at entry or in a state building can move into detention and placement by birth sex, with federal custody harms following.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal bar on gender-congruent government-funded single-sex facilities. State bans in 9+1 jurisdictions cover all government buildings, and 9 more cover schools plus some buildings. State bathroom use is a criminal trespass offence in 4 states; this state's schools and possibly colleges are covered.",
+    "protection": "Twenty-nine states plus the capital district have no mapped ban. The state's ban has no mapped private-setting extension, but its scope is not verified.",
+    "interaction": "Federal and state facility rules layer, so a traveller in a government building faces both. Trespass requires refusal to depart on request, so the risk is conditional on refusal but still universal in scope.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State criminalises minor gender-affirming care (10-year felony for providers). Federal subpoenas for under-19 hospital records. Proposed federal rules would bar public reimbursement for under-18 care. Federal shutdown of LGBTQ youth crisis services.",
+    "protection": "Adult care is not documented as restricted. Hospital ward placement and emergency access for visitors are not documented.",
+    "interaction": "A visitor accompanying a minor may be denied care or have records subpoenaed, and records can reach federal investigators.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal framing of trans people as a threat: counterterrorism strategy prioritises 'radically pro-transgender' groups; reward system for identification of leaders; executive orders on 'gender ideology'; state 'Do Not Travel' flag and 'legislatively erasing' grouping.",
+    "protection": "The strategy states counterterrorism powers will not target people who merely disagree.",
+    "interaction": "Threat framing at federal level raises discovery and scrutiny risk, which reaches state enforcement and custody actors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor gender-affirming care criminalised in the state; federal investigation of schools and teachers who use preferred names. Accompanying parents or guardians face care denial and records scrutiny.",
+    "protection": "Ban on minors' care has been enforced since 2023; no protective shield for travelling families is documented.",
+    "interaction": "A minor's documents and records can prompt investigation of the accompanying adult, and care denial reaches the minor during travel.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State lacks gender-identity hate-crime coverage; national hate-crime statute applies. Sexual-orientation hate crimes not covered at state level. Visitors face ID-check mismatch, since most trans residents carry wrong-gender ID. Trans-specific killing rate is an undercount floor and is not used.",
+    "protection": "National hate-crime statute covers gender identity. Two municipalities prohibit gender-identity discrimination.",
+    "interaction": "ID-check mismatch can expose a visitor during police stops. Limited local recourse means state-level complaints have little remedy.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No statewide public-accommodations recourse. Federal orders and state laws are being litigated. Stranding abroad and no documented remedy for custody abuse. Detention placement for visitors is not documented beyond the single state case.",
+    "protection": "Some federal orders have been enjoined. Pretrial release occurred in the state case. Marriage recognition has improved on paper.",
+    "interaction": "Blocked federal orders may restore access at moments of travel, but the rule in effect at travel is uncertain, so the traveller carries that uncertainty.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar in its birth-sex public-building toilet rule, document checks, and no visitor exemption, with no offence of presentation. This case adds documented federal immigration custody abuse, a state trespass arrest with a men's-ward hold, and counterterrorism framing, so it sits at or slightly below 0.35-A."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Similar in birth-sex facility and custody exposure with documented abuse and a complaint route that does not change practice. This case lacks the police extortion and fraud-charge pattern in 0.25-D, but adds entry refusal risk and federal conversion-style policy, placing it near that level."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "This case is lower because 0.45-B has a provincial custody rule documented as a single exposure with recurring inspections and no presentation offence, while this case adds federal entry-refusal and fraud exposure, a criminal trespass offence and federal custody abuse. The state also lacks statewide nondiscrimination recourse, which 0.45-B partly has."
+   }
+  ],
+  "synthesis": "The traveller meets stacked exposures across layers: federal document restrictions and entry refusal, federal custody abuse, state facility bans with a criminal trespass offence, and no statewide recourse. Documented custody abuse and federal conversion-style policy are severe, and facility and document exposures reach every traveller. Violence is not assessed because the only figure is an undercount floor. No execution or organised sweeps are documented, so the rating stays in high risk rather than severe. The dossier is largely documented, with the rule in effect at travel uncertain given ongoing litigation."
+ },
+ "parse_error": null
+}

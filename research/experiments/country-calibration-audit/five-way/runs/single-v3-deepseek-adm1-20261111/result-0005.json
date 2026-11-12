@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0104946",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The traveller meets two regimes at once. Entry, federal facilities and immigration custody are governed by a national framework that no longer issues X markers, treats document/appearance discrepancy as grounds for refusal and possible lifetime fraud ineligibility, excludes trans people from federally funded sex-segregated facilities congruent with identity, and holds trans detainees under documented abusive practices. The division is strongly protective: public-accommodation law covering gender identity (upheld by popular vote), hate-crime coverage with reporting machinery, self-declared state documents, a 2022 shield law, codified gender-affirming care protection, and a 'Most Protective' ranking. State law cannot displace federal border, facility or custody practice, so everyday life is comparatively safe while federal touchpoints carry unremedied universal exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy requires sex assigned at birth on passports/visas, ended new X markers, and instructs officers to refuse cases with document discrepancy or doubt about sex, with possible material-misrepresentation/lifetime ineligibility findings; allied governments issued advisories after detentions.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding requires all four elements, is never automatic, and limited waivers exist; litigation ongoing; state-level self-ID documents exist but do not govern entry.",
+    "interaction": "A visitor carries a foreign passport, so national issuance rules do not apply directly, but the screening cable governs the officer who examines it; discrepancy can escalate to refusal, secondary screening, or a fraud ground.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections practice from 2026 mandates haircutting, hormone removal and psychiatric substitution for trans inmates; immigration custody documents forced labour, beatings, solitary confinement and severe sexual abuse of trans men; prisoner counts no longer reported.",
+    "protection": "National hate-crime statute covers gender identity; state shield law and state custody standards do not reach federal immigration detention.",
+    "interaction": "Any document dispute at entry can move the traveller from screening into federal immigration custody, where the documented harm is unremedied by the division's protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Executive order bars trans people from government-funded single-sex facilities congruent with identity; four divisions criminalise certain restroom use, one via trespass after refusal to depart, with a documented arrest of a student.",
+    "protection": "In this division, public-accommodation law covers gender identity in places open to the public, and no state facility ban applies; state documents carry X markers.",
+    "interaction": "Federal buildings, airports and national sites follow the national rule regardless of state law; the traveller's ordinary hotels, shops, restaurants and transport follow the protective state rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures target youth gender-affirming care, propose blocking public insurance reimbursement, subpoenaed hospital records, and an executive order frames such care as mutilation; 27 divisions ban youth care.",
+    "protection": "Division codified gender-affirming care protections in 2022 and holds a shield law protecting patients and providers where care legal here was banned at home; emergency and ordinary care not conditioned on gender history locally.",
+    "interaction": "Care sought inside the division is protected; care involving national funding, minors crossing national rules, or records held federally remains exposed.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "May 2026 counterterrorism strategy names 'radically pro-transgender' groups among priorities for rapid neutralisation; a DOJ reward memorandum uses 'radical gender ideology' in framing violent extremism; schools face investigation for affirming trans minors.",
+    "protection": "The same documents state counterterrorism powers will not target mere disagreement; state hate-crime statute covers gender identity with a dedicated reporting unit and task force.",
+    "interaction": "Federal framing raises the stakes of any federal contact (border, airport, investigation); local police and prosecutors in this division operate under protective state law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs prosecution of teachers affirming trans minors and treats youth care as mutilation; national health rules would bar reimbursement under 18; 27 divisions ban youth care.",
+    "protection": "Division bans conversion therapy on minors, protects gender-affirming care, and enforces anti-bullying and public-accommodation rules; parentage laws cover non-marital families.",
+    "interaction": "A guardian travelling with a trans minor is safe in local services but exposed at federal touchpoints and if any federal funding, school, or custody issue arises.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No organised anti-trans street campaign documented for this division; national risk assessment flags four other divisions as Do Not Travel for trans people, and bias incidents nationally are recorded.",
+    "protection": "Division hate-crime law covers gender identity, with police, justice department and legislative reporting since 1990/1991; public-accommodation enforcement retained by 67.8% ballot vote.",
+    "interaction": "Local reporting and prosecution operate; federal hate-crime coverage exists but state-level statistics and response are stronger where the traveller actually moves.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National entry and custody rules are unremedied by state law; passport litigation unresolved; which measures are currently enjoined is unsettled, so exposure varies by date.",
+    "protection": "Working state remedies: public-accommodation complaints, hate-crime reporting, shield law, confidential name changes; legal-aid FAQ on document rules.",
+    "interaction": "Remedies reach the division's businesses, landlords and services but stop at the federal border, airport and detention desk; unresolved injunction status makes the operative federal rule uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Similar in having a national birth-sex facility rule that state-level hospitality cannot override, but here the exclusion is federal-scope rather than all public buildings, and the division adds enforceable public-accommodation law, hate-crime machinery and a care shield, which 0.45-A lacks."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has local hostility in services with partial remedies and no state-imposed facility or custody rule. This jurisdiction has far stronger documented protections locally but a federal entry/document and custody exposure 0.55-B does not carry, so it sits lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C pairs a dead-letter statute with documented social acceptance and only open questions. Here acceptance and protections are comparable locally, but the exposure is a documented, current federal document-refusal and custody regime rather than an unanswered edge case."
+   }
+  ],
+  "synthesis": "The traveller experiences a protective division nested inside a hostile national perimeter. Inside the division, hotels, transport, clinics, documents and hate-crime recourse are documented as operating and were defended at the ballot. At the border, however, foreign documents are read by federal officers instructed to refuse cases showing discrepancy or doubt about sex, with a possible lifetime fraud finding; federal facilities follow birth-sex rules; and federal immigration custody carries documented haircutting, hormone removal, forced labour and sexual abuse that state law cannot reach. The rating reflects that split: low everyday risk, unremedied universal exposure at every federal checkpoint."
+ },
+ "parse_error": null
+}

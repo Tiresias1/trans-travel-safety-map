@@ -1,0 +1,78 @@
+{
+ "cell": 51,
+ "region": "66186276B99594608635082:Hawaii",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006350232",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime: national border, visa, federal facilities, and custody dominate. A visitor presenting outside birth-sex documents can face screening, refusal, fraud investigation, or detention with severe abuse; state-level protections reduce local facilities and care friction. Adult alone is exposed at entry and any federal/funded single-sex space. With a minor, state health shield may protect lawful local care, but national orders and federal investigative authority create uncertainty and possible criminalization. The protective division raises the risk above pure exclusion cases but does not offset the final operative federal interaction: document discrepancy to investigation and custody. Absence of local bans and strong statutes are meaningful, not decisive; enforcement and shield invocation are partly undocumented. Overall elevated risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal entry screening and visa adjudication use birth-sex records; mismatch or doubt can trigger refusal, permanent fraud ineligibility; traveler reports passport confiscation/blocking and foreign advisories.",
+    "protection": "State-level equality and marker rules are not documented to bind federal entry screening.",
+    "interaction": "A home-passport marker/body mismatch can become a visa denial or investigation at entry, raising outing probability.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal custody documents birth-sex/misgendered placement, forced labour, solitary, sexual abuse; corrections remove hormones; immigration detention possible after fraud or border refusal.",
+    "protection": "State anti-discrimination and hate-crime laws are documented but no operative preemption of federal custody is shown.",
+    "interaction": "Entry discrepancy can move to investigation and custody; a minor's care-seeking may become a criminalized subject under national orders.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order restricts congruent use of government-funded single-sex facilities; some parent states criminalize bathroom use; federal buildings and transport spaces are covered.",
+    "protection": "The state has no mapped bathroom ban and long-standing public-accommodation protections, reducing local facility exclusion.",
+    "interaction": "State rules may protect state/local facilities, but federal-funded or federal-operated facilities remain governed by birth-sex national orders.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National youth-care orders, criminalization of school transition support, and proposed reimbursement bars; custody can deny medication; border screening may interrupt care.",
+    "protection": "State shield protects lawful local care from state prosecution; public-accommodation equality law supports service access for visitors.",
+    "interaction": "Care access may improve, but shield invocation, records access, and federal preemption are undocumented.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism rewards frame 'radically pro-transgender' with violent extremism; school investigations and funding freezes increase official hostility.",
+    "protection": "State anti-hate and panic defence laws, public-accommodation statutes, Most Protective ranking, and equality commission exist locally.",
+    "interaction": "Local equality infrastructure may reduce street and service policing, but federal framing can harden border and investigation decisions.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A minor travelling for care or attending school faces national orders against youth transition, insurance limits, and criminalized school support.",
+    "protection": "State shield and public-accommodation law may protect lawful local care and guardian-led access, if invoked successfully.",
+    "interaction": "Care request can become investigation or border/federal custody; shield may not stop federal action or national funding conditions.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state/province-specific anti-trans violence or enforcement data is given; harassment could occur and may reach police.",
+    "protection": "State hate-crime, public-accommodation, and panic-defence laws are documented and would apply to visitors in local settings.",
+    "interaction": "Strong statutes may deter local violence, but federal border/custody exposure is separate and not mitigated by them.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Some orders are enjoined or challenged; operative status at travel time uncertain; visitor-facing enforcement and shield process unknown.",
+    "protection": "Courts, civil-rights litigation, legal FAQ, and state equality bodies may provide relief, but visitor outcomes are not documented.",
+    "interaction": "Timely remedy depends on whether the issue is federal or state; document discrepancy may lead to custody before relief.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Like 0.45-D, federal entry/screening is an unremedied universal exposure. Stronger state protections raise it slightly, but national custody and visa fraud make it worse than pure transport-search cases."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A's all-building birth-sex rule is partly answered here by state non-ban and public-accommodation protections; however federal facilities, visa screening, and custody abuse keep it close to 0.45."
+   },
+   {
+    "anchor_id": "0.55-D",
+    "comparison": "0.55-D has no universal facility ban and functioning equality enforcement. This jurisdiction adds federal birth-sex facility control and custody risk, so it sits below despite protective local laws."
+   }
+  ],
+  "synthesis": "The operative system stacks state sanctuary on top of restrictive federal controls. Local visitors may use nondiscrimination laws and avoid state bathroom bans, but arrival, federal buildings, immigration detention, and care-related investigations are governed nationally. A passport/body mismatch can become a visa denial or fraud case; if custody follows, hormone denial and birth-sex placement risk severe harm. For minors, shield protection may help only where state authorities and providers can act without federal intervention. Uncertainty is high because litigation and enforcement vary."
+ },
+ "parse_error": null
+}

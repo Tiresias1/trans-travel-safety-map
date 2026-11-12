@@ -1,0 +1,78 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.001273214",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "The combined regime pairs a strongly protective state with a hostile federal layer the state cannot displace. State-level exposure is mild: public-accommodations and healthcare nondiscrimination since 2001/2023, gender-identity hate-crime enhancements, panic-defense repeal, self-declaration markers, shield laws, no documented violence. Federal exposure is heavier: visa adjudication cable inviting refusal and lifetime fraud findings over sex doubt, government-funded single-sex facility exclusion by birth sex (partly litigated), documented conversion-therapy-style federal prison policy, and severe immigration-custody abuse. Airport screening outing and multiple foreign travel advisories raise discovery probability. Custody and border chain harms are conditional but state-conducted; state street protections do not offset them.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 visa cable directs refusal on sex-doubt document discrepancies and consideration of lifetime fraud ineligibility; X markers discontinued; foreign advisories issued; passport litigation unresolved.",
+    "protection": "Visitor's foreign passport issued at home; existing X markers valid until expiry; ongoing civil-liberties suit and legal-aid FAQ.",
+    "interaction": "Border doubt can escalate into fraud allegation → detention, leaving state protections behind.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections conversion-therapy-style policy (hair cutting, hormone removal); immigration custody reports of forced labour, beatings, solitary confinement and severe sexual abuse of trans detainees.",
+    "protection": "No documented custody harm in this state's own facilities; state hate-crime law exists.",
+    "interaction": "Document discrepancy → federal custody triggers the hostile federal regime regardless of state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities (airports, federal buildings); 21+ subnational units have bans, 4 with criminal triggers; one arrest documented elsewhere.",
+    "protection": "This state has no facility ban, is ranked 'Most Protective', allows gender-neutral single-occupancy toilets since 2022, and its nondiscrimination statutes cover public accommodations.",
+    "interaction": "State hospitality does not reach federal facilities or travel through ban states; enforcement status of the federal order is partly litigated.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders, funding freezes and proposed insurance rules target trans care, especially for minors; DOJ subpoenaed youth patient records.",
+    "protection": "State bars gender-identity discrimination in patient care since June 2023 and appears on the shield-law map as enforceable against out-of-state action; prescribed medication continuity not documented.",
+    "interaction": "A visiting minor's care sits between a state shield and federal insurance/funding rules — scope unresolved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal framing: 'gender ideology' as extremist-adjacent, counter-terrorism language on 'radically pro-transgender' groups, orders directing investigations; 66% national poll support for birth-sex documents.",
+    "protection": "State officials not documented using threat framing; panic defense repealed 2018; hate-crime enhancements for gender identity.",
+    "interaction": "National rhetoric raises outing and hostility probability but state institutions remain protector at street level.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order criminalising teachers facilitating social transition, subpoenaed youth records, proposed under-18 care restrictions create a colder climate for visibly trans families.",
+    "protection": "State conversion-therapy ban, anti-bullying statute, healthcare nondiscrimination and shield laws; no documented enforcement against visitors.",
+    "interaction": "A visiting parent and child mainly meet state protections unless entering federal facilities or seeking reimbursed care.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state incidents documented; national hate-crime statistics show persistent bias incidents and uneven state bias statutes.",
+    "protection": "State hate-crime penalty enhancements, nondiscrimination in public accommodations, panic-defense repeal; functional courts.",
+    "interaction": "Strong state recourse plus rule of law mitigates street hostility within the state.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No enforcement data for state nondiscrimination provisions against visitors; federal orders partly blocked with outcomes unresolved; shield-law scope for visitors unstated.",
+    "protection": "Working state statutes, hate-crime law, active litigation, legal-aid guidance, national equality maps tracking changes.",
+    "interaction": "Uncertain remedies moderate but do not cancel documented federal exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Like 0.45-A there is a government-funded birth-sex facility rule reaching visitors with weak remedy. But this state adds operative public-accommodations, healthcare and hate-crime protections the anchor lacks, while adding visa-fraud and custody-harm exposures it lacks — roughly netting to that level."
+   },
+   {
+    "anchor_id": "0.55-D",
+    "comparison": "Higher than 0.55-D: that anchor's worst feature is recurring border humiliation with partial correction; here border exposure can support lifetime fraud ineligibility and custody carries documented conversion-therapy and abuse, while state street protections are comparable or stronger."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Below 0.65-B: that province has no parent facility or custody regime to overcome. Here the parent layer contributes a universal federal facility restriction, adverse visa adjudication and severe custody practices that the state's enforcement machinery cannot reach."
+   }
+  ],
+  "synthesis": "The traveller experiences two systems at once. Within the state, everyday exposure is low: enforceable-looking public-accommodations and healthcare nondiscrimination, hate-crime enhancements, repealed panic defense, self-declaration markers and shield laws, with no documented violence — genuine, documented protection. But journey stages controlled federally follow the hostile parent regime: visa adjudication inviting refusal and lifetime fraud findings, government-funded single-sex facilities barred by birth sex (litigation ongoing), routine airport screening that outs, and, if a discrepancy escalates into detention, documented conversion-therapy-style federal prison policy and immigration-custody abuse. State law cannot displace those stages. Net is elevated risk: strong street-level safety with serious conditional-but-state-conducted border and custody severity."
+ },
+ "parse_error": null
+}

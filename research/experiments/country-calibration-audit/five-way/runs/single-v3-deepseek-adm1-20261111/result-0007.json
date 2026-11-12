@@ -1,0 +1,82 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.009092928",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The state is strongly protective in everyday life: public-accommodations nondiscrimination, hate-crime coverage, sanctuary law, protective facilities rulings and gender-affirming care access. But the national regime controls entry documents, federal facilities, immigration detention and national custody. A trans visitor with an X marker or sex-marker discrepancy faces documented border refusal, tagging, possible lifetime fraud ineligibility, and immigration custody with reported abuse. State protections do not override those national stages. Local risk is low, but the border and custody exposure holds the combined regime in the elevated band; litigation and sanctuary coverage for nonresident visitors remain uncertain.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require birth-sex M/F markers; X processing stopped, existing X valid only until expiry; officers instructed to refuse cases with sex discrepancy and consider lifetime fraud ineligibility; reports of confiscated passports and detentions.",
+    "protection": "Existing X passports valid until expiration; policy challenged in court; legal-aid FAQ; fraud finding not automatic and waivers possible.",
+    "interaction": "National border controls apply regardless of state sanctuary; state law cannot prevent refusal, tagging or immigration detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections adopt conversion-therapy-style policies, deny hormones and stopped reporting trans prisoner numbers.",
+    "protection": "State sanctuary and nondiscrimination may protect within state; national hate-crime statute exists but is not a custody remedy; state custody placement unknown.",
+    "interaction": "A border discrepancy can lead into national immigration detention; state protections are not documented to reach nonresident detainees.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans access to government-funded single-sex facilities congruent with identity; some states criminalise bathroom use, though this state does not.",
+    "protection": "State has no bathroom ban; 2018 court ruling allows students by identity; county/city gender-neutral provisions; state public-accommodations law.",
+    "interaction": "Federal buildings follow the national rule; state, local and private facilities follow protective state law; a visitor may encounter both.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures label minor gender care mutilation, propose barring public insurance under 18, subpoena hospital records for patients under 19 and restrict funding; adult visitor care is not explicitly banned.",
+    "protection": "State sanctuary for gender-affirming care, insurance law, conversion-therapy ban and public coverage for residents.",
+    "interaction": "National subpoenas and funding conditions can reach providers even in a protective state; visitor and minor eligibility is uncertain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for prioritisation; DOJ reward guidance references 'radical gender ideology'; school-transition prosecution order.",
+    "protection": "State hate-crime law, panic-defence repeal, sanctuary and commission; national hate-crime statute covers gender identity.",
+    "interaction": "National law enforcement and funding can act inside the state; state protections do not preempt national threat framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target social transition, teachers and care for minors; proposed insurance ban; hospital record subpoenas under 19; care banned in 27 states.",
+    "protection": "State sanctuary, conversion-therapy ban, insurance coverage and school facilities ruling.",
+    "interaction": "A parent travelling with a trans minor faces national border/document risk and possible national investigation or subpoena despite state protection; sanctuary coverage for visitors is unsourced.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two Black trans women shot in one city within ten weeks, perpetrator at large; raw count lacks a denominator and cannot establish above-background risk.",
+    "protection": "State hate-crime statute, nondiscrimination law and low recorded-incident band; police and courts generally functional.",
+    "interaction": "Local police response is likely protective; national climate may embolden hostility, but no pattern is documented.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport, facility and custody rules remain under litigation; sanctuary law application to nonresident visitors is unsourced; state custody placement unknown.",
+    "protection": "Courts have blocked some national orders; legal aid exists; state commission operates; existing X passports remain valid until expiry.",
+    "interaction": "Relief is partial and timing-dependent; a visitor cannot rely on state law to override national border or detention.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Like 0.45-D, there is a recurring national screening exposure with incomplete remedy: document refusal, possible lifetime ineligibility and immigration custody abuse. This state adds strong local service, facility and hate-crime protections, but the national transport/border stage remains comparable, placing it near this anchor."
+   },
+   {
+    "anchor_id": "0.55-E",
+    "comparison": "0.55-E has recurring but partially corrected border questioning, working tribunals and no mandatory birth-sex search. This dossier's national border exposure is more severe, including refusal, permanent ineligibility and custody abuse, so it rates below 0.55-E despite stronger local protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C combines traditional acceptance, a dead-letter sexuality law and working service remedies, with no national border or custody exposure. This state resembles that local profile, but national entry documents, federal facilities and custody abuse are documented traveller-facing layers that preclude 0.75."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal birth-sex bathroom rule in all public buildings, upheld with no exemption. Here everyday state and private facilities are protected, so everyday exposure is lower; but national border refusal, ineligibility and custody abuse are severe. The combined regime sits above 0.35-A but remains elevated."
+   }
+  ],
+  "synthesis": "The operative regime splits by stage. Inside the state, documented protections make hotels, transport, public accommodations, local facilities, hate-crime response and care access comparatively safe for an adult visitor. The controlling exposure is national: entry document screening, federal facility rules, immigration detention and national custody cannot be displaced by state sanctuary. A trans visitor whose documents trigger suspicion faces refusal, tagging or detention; a travelling minor adds national care and school-transition enforcement exposure. Local protective law is real but does not reach the national border, federal custody or unresolved national litigation."
+ },
+ "parse_error": null
+}

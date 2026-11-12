@@ -1,0 +1,78 @@
+{
+ "cell": 1,
+ "region": "66186276B10610315112087:Minnesota",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0035016912",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The state/province layer is genuinely protective: gender identity is covered in public-accommodations, employment, housing and health-benefit law; care is covered; conversion therapy is banned; hate-crime and trans-panic reforms exist; and a 2023 shield law guards gender-affirming care from other jurisdictions' process. But the visitor passes through a national border and national custody system first. The federal passport/visa regime requires birth-sex markers, has withdrawn X processing, and its screening cable invites refusal and possible lifetime fraud findings on document discrepancy; immigration custody has documented beatings, forced labour and sexual abuse. State protections cannot reach those federal stages. Local everyday risk therefore sits nearer the reduced band, while the unavoidable entry and detention exposure pulls the combined regime down to elevated risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require M/F markers; X processing stopped; screening cable directs refusal where sex is doubted and flags possible lifetime fraud ineligibility; reports of confiscated or blocked passports and stranded travellers.",
+    "protection": "Existing X passports remain valid until expiry; the passport policy is under court challenge; state-level marker rules are open but do not govern entry.",
+    "interaction": "Federal screening occurs before any state protection applies; a document discrepancy can route the traveller into federal detention rather than state services.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and severe sexual abuse of trans detainees; national prison policy imposes conversion-style practices and denies hormones.",
+    "protection": "The state shield law covers gender-affirming-care subpoenas and warrants from other jurisdictions, not federal immigration custody.",
+    "interaction": "A border discrepancy can convert a visitor into a federal detainee, where state anti-discrimination and shield law do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars federal funding for single-sex facilities congruent with gender identity; many states ban such access, but this state is not among them in the dossier.",
+    "protection": "State anti-discrimination law covers public accommodations, goods and services, and hospital visitation; no state facility ban is documented.",
+    "interaction": "State facilities and private premises are governed by protective local law; federal buildings and national programmes remain under the restrictive federal rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures target gender-affirming care, funding and materials; national health rules would bar public insurance for minors; national custody denies hormones.",
+    "protection": "State public insurance covers transgender care; insurers may not exclude it; conversion therapy is banned; the 2023 shield protects travelling families seeking care.",
+    "interaction": "Emergency and ordinary care inside the state is protected, but federal border and custody stages can interrupt medication and care access.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The 2026 counterterrorism strategy names 'radically pro-transgender' groups among targets; a DOJ memo references 'radical gender ideology'.",
+    "protection": "The strategy states counterterrorism will not target mere disagreement; state hate-crime law has covered gender identity since 1993 and the trans-panic defence was abolished.",
+    "interaction": "Risk rises with activism or visible protest, not ordinary tourism; state prosecutors are unlikely to adopt the federal framing, but federal agencies operate independently.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive orders target social transition in schools and gender-affirming care for minors; 27 states ban such care; federal border screening can scrutinise accompanying documents.",
+    "protection": "The state shield law protects families travelling for care from out-of-state process; state law covers care and bans conversion therapy for minors.",
+    "interaction": "A parent and trans minor inside the state fall under protective care and shield rules, but the federal border and national funding conditions remain outside that shield.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific violence figures are sourced; national climate and counterterrorism rhetoric may embolden hostility.",
+    "protection": "State hate-crime law covers gender identity; anti-discrimination law is broad; trans-panic defence abolished; local courts and agencies have a protective record.",
+    "interaction": "Ordinary street and service encounters in this state are likely to be policed under protective local law, though federal framing can affect reporting and official tone.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "The shield law's application to specific out-of-state orders is untested; enforcement data for state hate-crime and non-discrimination provisions are absent; federal litigation remains unresolved.",
+    "protection": "Civil-liberties litigation challenges the passport policy; legal-aid guidance exists; state courts and agencies provide a functioning remedial forum.",
+    "interaction": "A traveller harmed at the border has federal remedies that are contested and slow; a traveller harmed inside the state has stronger local remedies, but their practical enforcement is not quantified.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A imposes a universal birth-sex facility rule enforced against visitors, with courts rejecting challenges. This state has no facility ban and broad anti-discrimination protection, so local conditions are materially better. But the federal entry-document regime and federal custody harms are serious exposures absent from 0.35-A's local facility rule, so the combined regime is higher, not lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B documents repeated local hostile service refusals with partial provincial remedies. Here local service law is stronger and no local refusal pattern is documented, which points above 0.55-B. However, the federal border regime can refuse entry or trigger lifetime ineligibility, and federal custody has documented severe abuse, which is more severe than local service refusals; these pull the combined score below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C combines a dead-letter statute, documented social acceptance and working ordinary remedies, with no federal entry restriction. This state's statutory protections are comparably strong or stronger, but the national passport/screening regime and national custody record introduce traveller-facing exposures absent from 0.75-C. It therefore sits well below 0.75-C."
+   }
+  ],
+  "synthesis": "Inside this state/province the traveller encounters a protective regime: gender identity is covered across public accommodations, services, health benefits and hospital visitation; care is insured; conversion therapy is banned; hate-crime law covers gender identity; and a shield law protects travelling families seeking gender-affirming care. Those protections are real and documented, but they begin after entry. The unavoidable federal layer is hostile: passport and visa rules require birth-sex markers, X processing has stopped, screening can refuse entry and consider lifetime fraud findings, and federal immigration custody has documented beatings, forced labour and sexual abuse. State law cannot reach that layer. The combined regime is therefore elevated risk, not reduced risk: everyday life in the state is comparatively safe, while the border and federal custody remain the dominant traveller-facing exposures."
+ },
+ "parse_error": null
+}

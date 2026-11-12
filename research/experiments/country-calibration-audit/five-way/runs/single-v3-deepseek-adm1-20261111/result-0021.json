@@ -1,0 +1,78 @@
+{
+ "cell": 21,
+ "region": "66186276B52324970173776:Tennessee",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005026545",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is high risk: national entry screening treats sex-document discrepancies as potential fraud, while state law imposes birth-sex facilities, shelter exclusion, prison placement, and a drag/performance ban. If outed, a visitor can face refusal, immigration detention with documented abuse, or birth-sex custody; remedies are unresolved. National hate-crime and employment protections exist but do not reach the facility, entry, or custody exposures. This is not severe-risk because trans identity is not generally criminalized and no organised police sweeps are documented, but it is well below reduced-risk because universal exclusion and custody harm are documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require binary sex on documents; X-marker processing stopped; screening tags discrepancy cases and can consider lifetime fraud ineligibility. Travellers report passports blocked or confiscated, and foreign governments issued advisories.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; no blanket ban on transgender visitors is documented.",
+    "interaction": "A foreign passport encounter with a national officer can escalate to refusal or detention; state marker rules do not govern the visitor's passport but reinforce suspicion of mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of transgender men. State prisons place inmates by birth sex, ban inmate gender-affirming care, and one bathroom arrest led to a men's-ward hold.",
+    "protection": "National hate-crime law covers gender identity; ordinary courts exist, but no visitor-specific custody remedy is documented.",
+    "interaction": "A border discrepancy can lead to immigration detention; a state bathroom or trespass charge can lead to birth-sex custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law requires birth-sex facility use; the 2026 Act bars trans women from shelters and mandates prison placement by birth sex. National government-funded facilities are also restricted. Some state bathroom bans carry criminal trespass or indecent-exposure risk.",
+    "protection": "Private hotels may be more accommodating, but no statewide visitor protection is documented; local ordinances cover public employment only.",
+    "interaction": "National and state restrictions combine in public buildings, shelters and prisons; private alternatives do not displace the public-facility ban.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans gender-affirming care for minors and inmates; national orders restrict funding, recognition and care for minors. Emergency adult care and medication continuity for visitors are not documented.",
+    "protection": "No visitor-facing care shield is documented; national employment and hate-crime protections do not establish care access.",
+    "interaction": "A minor travelling with a guardian faces the state care ban and national hostile policy; an adult's routine care access remains undocumented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism rhetoric lists 'radically pro-transgender' groups among priorities; justice guidance mentions 'radical gender ideology'. The state drag ban criminalises impersonators, and officials have a hostile record.",
+    "protection": "National guidance says counterterrorism is not used against mere disagreement; national hate-crime law covers gender identity; a state prosecutor opinion permits gender-bias enhancement.",
+    "interaction": "Official framing raises the risk that presentation or advocacy is treated as a security issue; the state performance ban applies where a child could see it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The state bans gender-affirming care under 18, authorises regret suits and civil penalties, and requires schools to out name/pronoun requests. National orders threaten prosecution of teachers; sports participation is restricted by birth sex.",
+    "protection": "Some national orders are blocked or enjoined; no documented protection for a visiting transgender minor in the state is shown.",
+    "interaction": "A guardian travelling with a transgender minor faces care bans, school outing rules and possible legal exposure; an adult travelling alone is not directly affected by these minor-specific rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The state records a high trans-woman killing rate, but the figure is an undercount floor. The gay/trans panic defence remains available; police and legal officials are reported to turn a blind eye; the state hate-crime statute lacks gender identity; no statewide non-discrimination law.",
+    "protection": "National hate-crime law covers gender identity; a 2019 prosecutor opinion treats anti-trans bias as gender-based enhancement; some local ordinances exist.",
+    "interaction": "A violence complaint may reach local police without a state bias law; national recourse exists but is not shown to operate for visitors.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No working remedy is documented for facility exclusion, custody abuse, or border document mismatch; litigation remains unresolved.",
+    "protection": "Civil-liberties litigation, national hate-crime and employment rulings, and some court blocks of national orders exist.",
+    "interaction": "Relief is uncertain and slow; a traveller may leave before a remedy, and enforcement varies by state.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Sits above 0.25-D because no documented police stop-and-extortion campaign is shown, but the universal birth-sex facility rule and entry/custody exposure remain comparable in kind."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Sits below 0.35-A: the state facility rule is broader than public-building toilets, national entry screening adds document/fraud exposure, and custody harm is documented; 0.35-A lacks those border and custody risks."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "Sits below 0.45-B: 0.45-B has parent document acceptance and local police prosecuting assaults, while here border screening, state facility/prison rules, and custody abuse are unremedied."
+   }
+  ],
+  "synthesis": "The operative regime is a hostile national document/entry layer layered onto a state birth-sex facilities and prison regime. A visitor with matching documents may avoid the sharpest border exposure, but if outed the encounter can move from questioning to refusal or lifetime fraud consideration and immigration detention, where abuse is documented. In-state, public facilities, shelters and custody follow birth sex. National hate-crime and employment protections exist, but they do not reach the entry, facility, or custody sphere. Minors face care bans and school outing. The central exposures have no documented working remedy, so the rating is high risk rather than reduced risk."
+ },
+ "parse_error": null
+}
