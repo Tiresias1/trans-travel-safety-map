@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261111b",
-    admin1: "data/admin1.json?v=20261111b",
+    countries: "data/countries.json?v=20261111c",
+    admin1: "data/admin1.json?v=20261111c",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -467,8 +467,8 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     happens to a visitor who is identified as trans, not how likely identification
     is. Passing, silence and avoidance earn no credit — a document check, a record
     query or an emergency can defeat them. <strong>Exactly 0.00</strong> means an
-    outed trans visitor faces near-certain imprisonment <em>and</em> likely
-    execution. No other point on the scale has a defined precise consequence.</p>
+    outed trans visitor faces imprisonment highly likely after discovery, with
+    the potential for execution. No other point on the scale has a defined precise consequence.</p>
     <p>What it covers: a trans visitor's everyday exposure — public presence,
     bathrooms and facilities, documents and border crossings, police contact,
     arrest and detention, harassment and violence, medication. It deliberately

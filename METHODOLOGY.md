@@ -10,8 +10,7 @@ individual trip.
 
 ## The scale
 
-- **Exactly 0.00** means a discovered trans visitor faces near-certain
-  imprisonment **and** likely execution — both, not either.
+- **Exactly 0.00** means a discovered trans visitor faces imprisonment highly likely after discovery, with the potential for execution.
 - **No other point on the scale has a defined precise consequence.** A score of
   0.55 corresponds to no specified outcome, and a small gap between two scores
   is not a measured difference in what would happen to anyone.

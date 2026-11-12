@@ -178,7 +178,7 @@ RATING_RULES = """\
    deliberate efforts by the state to out trans people ramp up the risk of outing, and thus
    the odds of adverse consequences to a trans traveler.
 
-10. 0.00 means a trans visitor who is outed faces near-certain imprisonment and likely execution.
+10. 0.00 means a trans visitor who is outed faces imprisonment highly likely after discovery, with the potential for execution.
     1.00 means law and society fully accept trans people with no discrimination or judgement
     (within the bounds of reason in that no society is 100 percent homogenous).
 
@@ -520,8 +520,7 @@ facts and the scale description alone.
 
 0.00–1.00, continuous, **higher is safer**.
 
-- **0.00** — A trans visitor who is outed faces near-certain imprisonment and
-  likely execution.
+- **0.00** — A trans visitor who is outed faces imprisonment highly likely after discovery, with the potential for execution.
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
   perfectly, of course; do not withhold high scores merely because a flawless record
@@ -611,8 +610,7 @@ Your task: rate **each** dossier on the scale below, independently, as the risk 
 
 0.00–1.00, continuous, **higher is safer**.
 
-- **0.00** — A trans visitor who is outed faces near-certain imprisonment and
-  likely execution: the absolute extreme of "do not visit".
+- **0.00** — A trans visitor who is outed faces imprisonment highly likely after discovery, with the potential for execution: the absolute extreme of "do not visit".
 - **1.00** — the aspirational limit: law and society fully accept trans people as their
   gender identity with zero discrimination or judgement. No jurisdiction reaches it
   perfectly, of course; do not withhold high scores merely because a flawless record
