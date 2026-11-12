@@ -34,7 +34,8 @@ sys.path.insert(0, str(HERE))
 import harness as H           # noqa: E402
 import provider_models as PM  # noqa: E402
 
-ANCHORS_PATH = HERE.parent / "anchors" / "synthetic_anchors.md"
+ANCHORS_PATH = HERE.parent / "anchors" / "synthetic_anchors_v4.md"
+H.ANCHORS_PATH = ANCHORS_PATH
 ANCHOR_IDS = tuple(re.findall(r"^### (0\.\d+-[A-E])$", ANCHORS_PATH.read_text(),
                               flags=re.M))
 if len(ANCHOR_IDS) != 50:
