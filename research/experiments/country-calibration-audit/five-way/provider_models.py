@@ -141,3 +141,13 @@ def call_v3(model_key: str, system_text: str, user_text: str) -> dict:
     """
     return _call(SINGLE_MODELS[model_key], system_text, user_text,
                  max_tokens=16000, effort="medium")
+
+def call_v4(model_key: str, system_text: str, user_text: str) -> dict:
+    """Provider wrapper for the v4 structured instrument.
+
+    Keep the v4 adapter explicitly named so v3 artifacts cannot silently call
+    the newer settings and vice versa. It intentionally shares the v3 call
+    configuration.
+    """
+    return call_v3(model_key, system_text, user_text)
+
