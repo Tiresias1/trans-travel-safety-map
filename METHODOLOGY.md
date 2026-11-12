@@ -115,16 +115,20 @@ A country's score is its own country assessment. It is **never** derived from
 regional scores; a national-to-regional spread is a diagnostic observation, not
 a target for adjusting anything.
 
-A regional assessment begins with the **full national picture** and then
-considers what is locally different — added restrictions or protections — with
-local facts weighed by the same rules above (scope, date, trigger, visitor
+A regional assessment is a **combined-regime assessment**: national, regional,
+and local rules are read together as the system a visitor actually encounters.
+The national picture is context for the operative regime, not a starting score
+to which a local premium or discount is added. One level of government does not
+cancel another level's exposure — a local protection mitigates only where the
+dossier shows it can reach the actor or stage that creates the risk. Evidence
+is weighed by the same rules above (scope, date, trigger, visitor
 applicability; local evidence never doubles as national evidence).
 
-Where no local signal exists, the region carries the national score and its
-popup says so. That is an evidence gap, not a finding that conditions there
-match the country. Sub-national variation can be large: a national score cannot
-describe every local difference, and decimal differences and ranks should not
-be read as precise measurements of relative safety.
+Where no local signal exists, the region is assessed on the national regime
+visible in the record; uncertainty is stated rather than treated as a finding
+that conditions there match the country. Sub-national variation can be large:
+a national score cannot describe every local difference, and decimal differences
+and ranks should not be read as precise measurements of relative safety.
 
 ## Boundaries and sources
 

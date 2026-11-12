@@ -130,3 +130,14 @@ SINGLE_MODELS = {
 def call_single(model_key: str, system_text: str, user_text: str) -> dict:
     return _call(SINGLE_MODELS[model_key], system_text, user_text,
                  max_tokens=8000, effort="medium")
+
+
+def call_v3(model_key: str, system_text: str, user_text: str) -> dict:
+    """Structured-worksheet provider call for the v3 instrument.
+
+    The v3 output contains a required factor matrix and anchor comparisons,
+    so give every model enough room to complete the JSON instead of ending
+    mid-reasoning (Qwen's v1/v2 failure mode).
+    """
+    return _call(SINGLE_MODELS[model_key], system_text, user_text,
+                 max_tokens=16000, effort="medium")
