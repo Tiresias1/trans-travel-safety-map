@@ -1,0 +1,78 @@
+{
+ "cell": 177,
+ "region": "REU",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.001645788",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "No criminalisation, entry ban or facility ban is documented, and a penal-code ground enables prosecution of transphobia. The decisive exposure is state custody: trans women are imprisoned by legal-sex assignment and a 2021 watchdog found serious persistent violations against transgender detainees, with no documented working remedy. Resident legal-gender and marriage reforms are climate signals only for a visitor. Thin data on borders, facilities, care and street violence prevents a higher score; the custody exposure prevents a low-risk score.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Trans women imprisoned by legal-sex assignment; 2021 watchdog reported serious persistent violations against transgender detainees.",
+    "protection": "Not documented.",
+    "interaction": "Discovery of legal sex in detention determines placement, converting any arrest into birth-sex custody exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Custodial placement by legal sex is documented; other facility rules are not documented.",
+    "protection": "Not documented.",
+    "interaction": "National custodial rules apply unchanged to the island department, with no local variation documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No trans-specific criminalisation documented.",
+    "protection": "Sexual identity added as penal-code discrimination ground, enabling prosecution of transphobia.",
+    "interaction": "Protection operates nationally and applies to the island; it does not displace birth-sex custodial placement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented.",
+    "protection": "Penal-code discrimination ground enabling prosecution of transphobia is documented nationally.",
+    "interaction": "No department-specific incidents or police practice are documented; protection effectiveness in custody is contradicted by persistent violations.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Persistent serious violations indicate remedies are not working in detention; local enforcement and incident data are absent.",
+    "protection": "Penal-code ground for transphobia is a documented recourse avenue.",
+    "interaction": "Resident legal-gender facilitation and marriage equality do not remedy visitor custody exposure.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar tier-1 birth-sex prison housing with assaults and slow remedies, but this case lacks the 0.25-C cross-dressing arrest trigger and frequent-assault documentation, so it sits materially above 0.25."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Lower than 0.55-C: hospital ward assignment by document causes delay and denial, whereas prison placement by legal sex plus persistent serious violations carries severe custodial harm."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much lower than 0.75-C, where document mismatch leads only to brief detention, release, counsel and compensation; here custody placement and persistent violations lack a documented working remedy."
+   }
+  ],
+  "synthesis": "The island adds no separate regime; national law governs unchanged. Everyday visitor risk is undocumented rather than proven safe, but the combined operative regime contains a documented state-imposed custody exposure with persistent violations and no demonstrated remedy in that setting. The penal-code transphobia ground and resident-facing reforms provide partial recourse and climate context, yet they do not offset birth-sex imprisonment. No entry, facility, care or minor-specific exposure is documented, limiting the deduction to the custody tier and thin-data uncertainty."
+ },
+ "parse_error": null
+}

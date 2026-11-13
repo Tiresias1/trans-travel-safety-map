@@ -1,0 +1,78 @@
+{
+ "cell": 152,
+ "region": "NER",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.001622476",
+ "parsed": {
+  "rating": 0.16,
+  "explanation": "A trans visitor who is outed faces a trans-specific criminal law: Article 390 gives 5-10 years, with no mitigating circumstances or suspended sentences, for LGBTQIA+ acts and changing or attempting to change sex at birth. Enforcement is a documented coordinated campaign with dozens arrested and 16 imprisoned, judges sanctioned for leniency, no broad protection, and official cultural hostility. No execution or custodial torture is documented, keeping this above the 0.05 tier, but long imprisonment after discovery is the operative risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No source addresses passport markers or screening; discovery through any official check would interact with Articles 390-392.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented coordinated enforcement: at least 40 arrested and 16 imprisoned in reports by July 2026; Article 390 carries 5-10 years without mitigating circumstances or suspended sentences.",
+    "protection": "Not documented.",
+    "interaction": "Judges were reassigned or allegedly sanctioned after acquittals, indicating institutional enforcement rather than reliable judicial protection.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Transition-related steps fall within Article 390's prohibition on changing sex at birth; HIV prevention, testing, condoms and PrEP access collapsed after organisations stopped working.",
+    "protection": "Not documented.",
+    "interaction": "Care-seeking or medication could reveal trans status and trigger investigation under the same criminal provisions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 25 bans LGBTQIA+ practices; Articles 390-392 impose 5-10 years for acts, 10-20 years for same-sex marriage and 10-20 years for LGBTQIA+ organisations, clubs or venues.",
+    "protection": "Article 95 of the 2022 data-protection law penalises processing data revealing sexual orientation, but enforcement is not documented.",
+    "interaction": "Broad wording was reported to reach asexuality, expanding uncertainty beyond the headings; officials frame all LGBTQ practices as contrary to social and cultural values.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No age-specific rule is documented; a guardian's arrest could separate the minor from their parent, but that consequence is not documented in the dossier.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Stigma is recorded as a standing condition; asylum seekers demonstrating in the capital faced refusal of service and verbal or physical violence, while LGBTQ people went into hiding after the law.",
+    "protection": "Not documented.",
+    "interaction": "Public hostility aligns with, rather than restrains, the state enforcement campaign, increasing outing and exposure risks.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No broad legal protection against sexual-orientation or gender-identity discrimination; prior protective provision was repealed in 2023; judges faced consequences after acquittals.",
+    "protection": "Not documented.",
+    "interaction": "Formal appeal routes cannot be assumed effective given institutional sanctions against leniency and the documented campaign climate.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "Similar to 0.15-B because imprisonment is documented, penalties are long, and judicial relief is undermined; lower than that anchor only insofar as no beatings, torture or capital provision is documented here."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Materially below 0.25-B: that anchor has short jail terms, rare imprisonment and occasional successful compensation, whereas this regime imposes 5-10 years with no suspended sentences and documented imprisonments."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Materially below 0.35-A: that anchor centres on exclusion, humiliation and detention without imprisonment, while this dossier documents a criminal campaign, long mandatory custodial exposure and imprisoned people."
+   }
+  ],
+  "synthesis": "The combined regime is state-directed criminalisation of gender transition itself, enforced through arrests, imprisonments and pressure on judges, reinforced by social stigma and collapse of supportive services. There is no documented execution, torture or custodial-violence campaign, so this is not the 0.00-0.05 tier. Yet a trans visitor who is outed faces prosecution under a 5-10-year offence with no suspended sentence or mitigation. Entry screening and facility placement are undocumented and were not inferred; the documented law-enforcement and care exposures alone drive the low rating."
+ },
+ "parse_error": null
+}

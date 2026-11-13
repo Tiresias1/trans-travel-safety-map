@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0035576",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "Combined regime is elevated risk: federal entry screening can refuse on document discrepancy and pursue lifetime fraud ineligibility, federal facilities require birth sex, and documented national/immigration custody abuse follows detention. The state layer mitigates: no current facility ban or criminalisation, repealed 2016 law, local protections for ~30% population. But no statewide private-sector/hate-crime recourse, 2025 revived bathroom bill, minors' care and sports bans, and amended certificates retaining original sex keep exposure universal at borders/federal sites. No execution or likely imprisonment for presence alone; functioning courts provide partial, unresolved remedies.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary-sex order; X/new mismatched passports stopped Feb 2025, Supreme Court Nov 2025 allowed it. Entry cable: document discrepancy causing reasonable doubt requires refusal and more evidence; suspected wilful misrepresentation may support permanent lifetime fraud ineligibility (four elements, not automatic).",
+    "protection": "Existing X passports valid to expiry; ACLU suit for seven plaintiffs and other litigation unresolved; several 2025 orders enjoined.",
+    "interaction": "Discrepancy at entry can escalate to investigation, refusal, or fraud allegation, then detention/custody exposures.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "From 2026 national corrections bureau adopted model described as conversion therapy: short hair, hormone removal, psychiatric drugs; immigration custody reports of forced labour, beatings, solitary, severe sexual abuse of trans men.",
+    "protection": "Courts challenge orders; no documented effective remedy for custody practices in dossier.",
+    "interaction": "Immigration or criminal detention triggers birth-sex placement, care denial and abuse risk; state also bars public funds for transition care in prison.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars use of government-funded single-sex facilities congruent with identity. State has no current facility ban/criminalisation after 2017 repeal, but 2025 legislature revived bathroom bill; status uncertain.",
+    "protection": "State repeal in 2017; no state statute bars facility matching identity; local ordinances in largest city and one county from 2022.",
+    "interaction": "Federal buildings/airports apply birth-sex rule even where state/local facilities do not; revived state bill could close state gap.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State laws effective Aug 2023 end puberty blockers, hormone therapy and surgery under 18; 2025 law bars state funds for minors and prisoners. National orders target minors' care and some are litigated.",
+    "protection": "No documented visitor protection for non-emergency gender care; adult routine care not documented as barred.",
+    "interaction": "A travelling minor needing continuity faces state ban regardless of home treatment; detained adult faces hormone removal under national model.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Executive orders redefine sex as binary, remove gender-identity materials/policies, prosecute teachers facilitating social transition, sports/entry bans. May 2026 counterterrorism strategy prioritises groups described as radically pro-transgender, while stating mere disagreement is not targeted.",
+    "protection": "Several orders blocked/enjoined; national employment and hate-crime statutes exist, but state hate-crime law covers neither gender identity nor sexual orientation.",
+    "interaction": "Threat framing raises police/administrative discretion at borders and schools, though reward memo never uses radical gender ideology as criterion.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor visitor subject to state care ban and ban on assigned-male-at-birth participation in female sports; school parents-rights law requires notification on name/pronoun requests for residents and bars K-4 instruction.",
+    "protection": "No documented visitor-specific guardian protection; parents' rights and local school policies vary.",
+    "interaction": "Guardian travelling with minor cannot obtain state-funded transition care or female-team sports entry; care-seeking can expose family to records/investigation context nationally.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No statewide private employment/housing/public-accommodations protection; only ~30% population under local gender-identity ordinances. State bias-crime law excludes gender identity, limiting bias charging/recourse. 2025 poll: 66% support assigned-sex document laws.",
+    "protection": "National hate-crime statute covers gender identity; 22 states plus capital district outlaw gender-identity discrimination, not this state statewide.",
+    "interaction": "Assault may be prosecuted generally but not as state bias crime; remedy depends on city/county ordinance and local police.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport, executive-order and health-rule litigation unresolved; travel exposure depends on measures in force at travel. Outcome of 2025 bathroom bill, county application of amended-certificate original-sex display, and local enforcement not established.",
+    "protection": "Legal-aid FAQ, civil-liberties litigation, courts enjoining some orders, and local ordinances provide partial recourse.",
+    "interaction": "Remedies may operate after refusal/detention but cannot reliably prevent initial outing, refusal, or custody placement.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar universal border exclusion without guaranteed imprisonment and weak appeal, but here refusal is discretionary, fraud requires four elements, and courts actively litigate; lower than 0.35 would require routine exclusion as settled practice."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Higher than this case: 0.55 is mainly delay, secondary screening and administrative denial. Here federal facility ban, possible lifetime ineligibility, and documented severe custody abuse push materially below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Lower than 0.75: there, mismatched documents cause brief detention with counsel/compensation and working tribunal. Here entry refusal/fraud, federal facility exclusion, custody harm, and no statewide bias recourse lack such operative protection."
+   }
+  ],
+  "synthesis": "The operative interaction is federal-first: document/presentation mismatch at entry or in a federal facility triggers birth-sex treatment, possible refusal/fraud pursuit, and if detained, documented care denial and abuse. The state layer softens street/facility risk—no current ban, repealed 2016 law, some local ordinances—but adds minors' care/sports bans, certificate disclosure, and no statewide anti-discrimination or bias-crime recourse. Courts and litigation moderate, not eliminate, exposure. Hence elevated risk, above organised-targeting and imprisonment regimes, below administrative-friction regimes."
+ },
+ "parse_error": null
+}

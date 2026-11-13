@@ -1,0 +1,78 @@
+{
+ "cell": 34,
+ "region": "66186276B76680759932915:Ohio",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0037161",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "Combined regime is hostile at federal entry, documents and government facilities, with severe custody tail-risk, but division facility law has no criminal enforcement and courts have enjoined several measures. Federal binary passport rule, visa-discrepancy refusal with possible permanent fraud ineligibility, and ban on gender-congruent government facilities are universal traveller-facing exposures. Immigration/prison custody abuse and forced-labour reports raise severity if detained. Counterbalanced by active litigation, municipal protections, and no documented routine arrest for presentation in this division. Net: elevated risk, below administrative-friction anchors, above routine-detention anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex rule; X-marker passports stopped, Supreme Court allowed Nov 2025. Visa cable: document discrepancy causing reasonable doubt -> refusal and extra evidence; suspected wilful misrepresentation -> possible permanent lifetime fraud ineligibility. Trans travellers reported passports confiscated/blocked and governments issuing advisories.",
+    "protection": "Existing X passports valid to expiry; fraud finding requires four elements, never automatic, limited waivers. Civil-liberties suit pending; several executive orders enjoined.",
+    "interaction": "Home-passport mismatch at visa/entry can trigger refusal, then any detention moves traveller into federal custody/facilities regime, compounding exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal prisons from 2026 adopted conversion-therapy model: hair cutting, hormone removal, psychiatric drugs; denial of care. Immigration custody: trans men reported forced labour, beatings, solitary, severe sexual abuse with dehumanising justification.",
+    "protection": "National hate-crime statute exists, courts hear challenges, but no documented effective remedy for custody abuse in dossier; bureau stopped reporting trans prisoner numbers from 2025.",
+    "interaction": "Entry fraud suspicion or facility trespass in criminalising states can lead to detention where birth-sex placement and abuse risks apply, despite division law lacking criminal penalty.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal ban on gender-congruent government-funded single-sex facilities. Division Protect All Students Act requires schools/colleges public and private to designate facilities by sex at birth and students use birth-certificate facilities. Nationally 9+1 jurisdictions ban all government buildings, 4 make use criminal in circumstances.",
+    "protection": "Division law has single-occupancy exemption, contains no enforcement mechanism and no criminal penalty; no arrest/citation under it documented. 29 states plus capital have no mapped ban, but other sex-definition laws may affect access.",
+    "interaction": "Adult visitor mainly exposed via federal facilities and any government building; minor/student visitor exposed via division school facility rule, with institutional refusal rather than arrest as documented consequence.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal EO describes minor gender-affirming care as mutilation; proposed national rule would bar public insurance under-18. Division care/sports bill bans blockers/hormones/surgery under-18 and trans girls/women in women's sports, but status unresolved after Mar 2025 re-enjoinment.",
+    "protection": "Proposed adult-care perpetual-counselling rules dropped Feb 2024, not in force. Care ban court-blocked, then allowed, then re-enjoined; operative position must be checked. No documented adult traveller care denial.",
+    "interaction": "Minor traveller: care interruption and school/sport exclusion possible if enjoined bill revives on appeal; adult traveller care exposure not documented.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal orders remove gender-identity policies, forbid terms, direct investigation/prosecution over school social transition, ban trans athletes entry, counterterrorism strategy prioritises 'radically pro-transgender' groups and DOJ memo uses 'radical gender ideology' as extremist viewpoint. 2025 poll: 66% support birth-sex on documents.",
+    "protection": "Several orders blocked/enjoined, national employment ruling and hate-crime statute remain, counterterrorism statement says not for mere disagreement, reward not based on gender ideology criterion.",
+    "interaction": "Official threat-framing increases discretionary border/facility enforcement risk, while functioning courts have sometimes restrained it - efficient hostile enforcement is exposure, enjoined parts are mitigation.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division school staff must out LGBTQ students to parents, ban undefined gender ideology K-3; facility law bars gender-congruent school facilities by birth certificate; trans candidate stripped from ballot 2024. Federal EO directs criminal prosecution of teachers facilitating social transition.",
+    "protection": "Care/sports bill re-enjoined Mar 2025, several federal orders enjoined. Single-occupancy exemption in facility law. No documented traveller-family detention.",
+    "interaction": "Travelling guardian/minor seeking school enrolment, camp, or college housing faces birth-certificate facility and outing rules; parent/guardian may face school disclosure and care-access uncertainty despite injunction.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Nationally first known bathroom arrest Mar 2025: handcuffed, held 24h in men's ward, trespass charge up to 60 days - in another state, not this division. Bias incidents reported nationally; only 23 states cover gender identity in bias statutes as of 2019, division has no gender-identity discrimination statute.",
+    "protection": "33 cities/counties in division bar gender-identity discrimination in employment/housing/public accommodations; 2018 state executive order covers state employment; national appeals court held trans discrimination is sex discrimination.",
+    "interaction": "Municipal ordinances may help in some localities but do not pre-empt federal entry/facility/custody exposure; absence of state statute limits recourse outside those municipalities.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport suit, challenges to January 2025 orders, and care-rule challenges unresolved; practical exposure depends on measures in effect at travel. Division ID rules Aug 2026 announced M/F only with exact-matching birth certificate/passport, final text/effective date/challenge not sourced. County birth-certificate refusals continue unsourced.",
+    "protection": "Courts have enjoined care ban and some federal orders; national district court allowed birth-certificate corrections from June 2021, though counties vary. Monitoring groups track bans.",
+    "interaction": "Litigation creates uncertainty rather than safety: a traveller cannot rely on enjoined-now provisions remaining enjoined, and local appointment-level refusal may persist despite court order.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar universal exclusion without imprisonment as main outcome, but this case has functioning courts enjoining measures, division facility law without enforcement, and no routine presentation detention in division, so higher than 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55 is administrative secondary screening, delay and slow appeal without custody abuse. This has federal facility ban, visa refusal with permanent-fraud risk, and documented severe custody abuse, so materially lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75 has recognised markers, trained respectful inspection, brief detention and compensation. Here markers are being removed, discrepancy leads to refusal, and facilities are restricted by birth sex, so far lower."
+   }
+  ],
+  "synthesis": "Interaction is key: document discrepancy at visa stage can become refusal/fraud allegation, any detention leads to federal custody with documented severe abuse and conversion-therapy policies, and government-facility bans apply regardless of local municipal protections. Division adds school-only birth-certificate facilities and outing rules for minors, but no criminal bathroom penalty, and courts have enjoined care/sports provisions. Protections are real but partial and unstable, not operative pre-emption of federal exposures. Result is elevated risk driven by universal federal exposures plus severe custody tail, mitigated by litigation and local ordinances."
+ },
+ "parse_error": null
+}

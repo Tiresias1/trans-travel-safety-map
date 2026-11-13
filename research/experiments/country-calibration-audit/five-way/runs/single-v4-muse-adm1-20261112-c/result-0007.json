@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0040695",
+ "parsed": {
+  "rating": 0.6,
+  "explanation": "A protective state regime coexists with a hostile federal regime. State law protects public accommodations, facilities, hate-crime recourse and healthcare, but does not cancel federal entry screening, federal-facility restrictions, or federal immigration/prison custody. Document discrepancy at visa stage can lead to refusal and a possible lifetime fraud finding, while documented federal custody abuse is severe if detention occurs. Two killings in ten weeks in one city are documented without a denominator or background rate. Litigation and visitor scope of sanctuary protections remain uncertain, placing the combined regime between the 0.55 and 0.65 anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex definition; new X and mismatched markers stopped, existing X valid until expiry; visa cable directs refusal on document discrepancy and consideration of permanent fraud ineligibility for wilful misrepresentation.",
+    "protection": "Existing X passports remain valid; passport restrictions are being challenged in national courts; state IDs allow X for residents.",
+    "interaction": "State document rules do not control federal visa/passport screening; any discrepancy can move a visitor from entry into federal investigation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal prisons adopted conversion-therapy model including hair cutting, hormone removal and psychiatric drugs; immigration custody reports include forced labour, beatings, solitary confinement and severe sexual abuse of trans men.",
+    "protection": "Not documented for federal custody placement or care; state custody placement for trans people is not documented.",
+    "interaction": "Federal custody rules override state protections if a visitor is detained; state protections offer no documented federal remedy.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Executive order bars trans people from government-funded single-sex facilities congruent with gender identity nationwide.",
+    "protection": "State court ruled trans students may use restrooms/locker rooms consistent with identity; gender-neutral facilities adopted locally; state public-accommodations nondiscrimination law since 2014.",
+    "interaction": "State protection covers state/private facilities in this state, but federal buildings and federally funded facilities remain under the federal ban.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders restrict minor gender-affirming care, funding, student-loan forgiveness for providers, and direct investigations of hospitals and schools.",
+    "protection": "State described as most trans-healthcare friendly; public insurance covers gender-affirming treatment for eligible residents; conversion therapy on minors banned since 2018.",
+    "interaction": "Whether state protections extend to non-resident visitors is not sourced; federal funding and immigration rules may still affect access.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal rhetoric and measures treat gender identity as binary, remove gender-identity materials, and 2026 counterterrorism strategy prioritizes groups described as radically pro-transgender; reward memo did not make ideology a criterion.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime enhancement added 2021 and panic defence abolished; several federal orders blocked or enjoined.",
+    "interaction": "Hostile federal framing can affect discretion at borders and federal facilities, while state protections and litigation provide partial counterweight.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal ban on trans athletes entering to compete in women's sports; federal orders target minor care and direct prosecution of teachers facilitating social transition including names/pronouns.",
+    "protection": "State athletes may participate according to gender identity without proof; state conversion-therapy ban and healthcare protections apply to minors.",
+    "interaction": "A travelling minor athlete faces federal entry exclusion despite state inclusion; a non-athlete minor's school/care access as a visitor is not documented.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "September 2026: Black trans woman shot dead in largest city, second such killing within ten weeks, perpetrator at large; no denominator or background homicide rate documented.",
+    "protection": "State hate-crime law covers gender identity; state placed in safest band on recorded incidents in one analysis, but without per-capita denominator.",
+    "interaction": "Killings show street risk cannot be treated as zero, but rate and police response effectiveness are not established from raw count alone.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Major federal measures remain in litigation; sanctuary law's application to visitors not sourced; state prison placement not documented; outcomes of some state health bills not recorded.",
+    "protection": "Civil-liberties suit against passport policy, court challenges to executive orders, state LGBTIQ+ commission and nondiscrimination law provide potential remedies.",
+    "interaction": "Remedies are strongest in state courts for state matters and weakest/most uncertain for federal entry, facilities and custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Similar in having document-marker-based ward/facility placement and uneven remedies without execution, but this case has stronger state facility protection and nondiscrimination law than 0.55-C, so it sits above it."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Similar in that state healthcare and anti-discrimination remedies are operative, but federal entry fraud risk, federal facility ban and documented federal custody abuse are more severe than brief clinic refusal in 0.65-B, so it sits below it."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Below 0.35 is not warranted: unlike routine police stops, confiscation and fines with deference to police, here state courts, nondiscrimination law and litigation provide real recourse and detention is not the routine outcome for visitors."
+   }
+  ],
+  "synthesis": "The operative regime is bifurcated: protective in state spaces, hostile at federal checkpoints, federal facilities and federal custody. A visitor who is not detained and avoids federal facilities benefits from strong state protections; a visitor whose documents trigger visa scrutiny, who needs a federal facility, or who enters immigration/prison custody faces refusal, misplacement, hormone denial or abuse with remedies pending in court. That interaction, plus two recent killings of unknown rate, supports 0.60 rather than a higher protective-state-only score."
+ },
+ "parse_error": null
+}
