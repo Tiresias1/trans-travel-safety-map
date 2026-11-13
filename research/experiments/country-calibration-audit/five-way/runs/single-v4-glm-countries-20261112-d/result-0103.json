@@ -1,0 +1,78 @@
+{
+ "cell": 103,
+ "region": "ISR",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00207794",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The operative regime combines strong, functioning legal protections (hate-crime enhancement, anti-discrimination enforcement, court-ordered relief for trans prisoners, high court defending gender changes) with two serious documented exposures: (1) universal-exposure border screening — an airport with no trans-interaction rules, documented humiliating questioning and detainment ('still a male' without surgery) — and (2) 2025 official data showing 433 homophobic/transphobic incidents including dating-app traps and organized ambushes, with trans people 'bearing the brunt'. Custody defaults to isolation and trans women have been held in men's prisons, though judicial relief exists case-by-case. Lethal attacks are dated (2005–2015) individual extremist incidents, not a current campaign. Anchoring near 0.55: exposure and violence above the 0.65 anchors, but functioning remedies and no criminalisation above the 0.45 tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: main airport has no regulations for interacting with trans travelers; a 2023 first-person account records humiliating gender-identity screening, questioning, detainment, and officers insisting surgery is required for recognition — a universal exposure at the entry stage.",
+    "protection": "Not documented: no evidence of training, guidance, or remedies at the border; domestic LGR reforms do not govern a visitor's foreign passport.",
+    "interaction": "Airport screening can out a traveler before any domestic protections engage; security practice operates independently of national recognition law.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: default practice isolates/segregates trans prisoners; trans women have at times been held in men's prisons; humiliating searches of trans detainees prompted a 2023 police regulation.",
+    "protection": "Documented: 2023 search regulation; 2019 court order secured HRT and transfer to a women's facility after civil-liberties litigation.",
+    "interaction": "Relief is case-by-case litigation, not a rule; whether it extends to a detained foreign visitor is unestablished.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Documented: birth-sex or isolation-based placement in custody; no statute or prison-service placement regulation documented.",
+    "protection": "Not documented beyond the 2019 ruling; outcome of the general-population petition unreported.",
+    "interaction": "Court oversight partially mitigates but has not produced a systematic placement rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Documented: gender care funnels through a single hospital committee with stringent standards; residents commonly pay out of pocket or travel abroad; visitor continuity-of-care access is uncertain.",
+    "protection": "Public insurance funds approved treatment; a court ordered prison HRT; conversion therapy banned for licensed professionals by 2022 directive (uncodified).",
+    "interaction": "A visitor cannot readily use the resident committee pathway; emergency care nondiscrimination not specifically documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented: 2025 official data show 433 homophobic/transphobic incidents, including dating-app traps and organized ambushes, trans people bearing the brunt; foreign-head-of-state rhetoric inflaming local climate; Pride once municipally banned.",
+    "protection": "Double-punishment hate-crime law for orientation-motivated violence; courts overturn bans; 2025 high court upheld a gender change against repeal attempt.",
+    "interaction": "Whether gender identity (vs. orientation) is a named protected ground is unresolved; police protection quality for street incidents not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented for visiting minors; transition initiation restricted to 18+, surgery normally 21+, but these are resident-facing rules.",
+    "protection": "Not documented.",
+    "interaction": "No dossier evidence that adult-accompanied minors face distinct border or custody exposure.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented: lethal extremist attacks at Pride (2005, 2009, 2015 — dated incidents); 2025 organized ambush and dating-app-trap pattern; hate-crime killings above background are not established given no denominator.",
+    "protection": "Hate-crime sentencing enhancement; large-scale protected Prides (250,000 in 2022); 2005 assailant imprisoned; Tolerance Square commemoration signals societal response.",
+    "interaction": "Dating-app ambushes specifically target the traveler-relevant sphere (apps, meeting strangers).",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Open questions: whether gender identity is a named protected ground; whether judicial placement relief covers foreign detainees; per-capita violence level unknown (raw counts); conflicting source claiming no legal recognition unresolved.",
+    "protection": "Courts demonstrably rule for trans people (print-shop service case, 2019 prison order, 2025 certificate ruling); civil-liberties groups litigate effectively.",
+    "interaction": "Rule of law partially mediates: documented judicial relief for locals mitigates, but border and custody exposure recurs despite oversight.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Comparable secondary-screening friction and discretionary outing at entry with administrative rather than criminal outcomes; here the exposure is documented as more humiliating (surgery-demanding screening), but domestic courts are stronger than the anchor's rarely-revised appeal desk."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Shares the 0.65-A pattern of strong national protections and courts that grant relief, but this jurisdiction adds a documented organized-ambush/dating-app-trap violence pattern and a structurally outing border regime, placing it below that anchor."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Shares universal exposure through registration/screening and database-visible trans status, but far weaker hostility machinery: no morality-police interviews, no eviction-driven harms, functioning courts, and public civil-society presence — materially above 0.45-D."
+   }
+  ],
+  "synthesis": "The combined regime pairs a protective legal environment — hate-crime enhancement, enforced anti-discrimination, and courts that repeatedly rule for trans people — with two structural exposures a visitor cannot avoid: border screening that has no trans-interaction protocol and has demonstrably detained and humiliated travelers, and a current, officially recorded pattern of ambush-style anti-trans violence in which trans people bear the brunt. Custody, if reached, defaults to isolation and birth-sex placement with only case-by-case judicial fixes. Lethal incidents are dated and individual, not a state campaign. The traveler's worst realistic path — airport outing followed by ambush-pattern exposure or non-matching custody — sits between the 0.45 universal-exposure tier and the 0.65 functioning-recourse tier; the border exposure plus the 2025 violence data pull it down to 0.55, with legal remedies preventing a lower rating."
+ },
+ "parse_error": null
+}

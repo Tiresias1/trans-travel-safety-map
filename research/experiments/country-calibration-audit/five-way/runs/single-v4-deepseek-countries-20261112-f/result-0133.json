@@ -1,0 +1,78 @@
+{
+ "cell": 133,
+ "region": "MEX",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002204576",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "No trans-specific entry ban or border screening is documented; anti-discrimination law, marriage equality, court recognition floor, and large Pride/hub infrastructure are positive climate signals. But police corruption/extortion and nightlife targeting are documented, violence against trans people including killings and impunity is reported, and formal rights are rarely enforced uniformly. LGR patchwork is resident-facing and not a visitor protection. For an outed visitor, risk is elevated: humiliation, extortion, assault, and low-probability lethal violence, not imprisonment for identity. Score 0.55.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border screening, marker flagging, or pat-down practice documented; foreign-document treatment unknown.",
+    "protection": "Anti-discrimination law and court recognition floor; no entry ban documented.",
+    "interaction": "Mismatch could invite discretionary questioning, but no sourced border practice.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police documented as corrupt, extortionate, abusive toward transvestites; nightlife districts targeted. No data on trans prison housing.",
+    "protection": "Anti-discrimination law, human-rights commission, conjugal-visit policy; no trans custody protocol.",
+    "interaction": "Police stop could escalate to extortion/humiliation; custody placement unknown.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom/facility ban or state facility exclusion for trans visitors; prison housing by sex unknown.",
+    "protection": "Formal equality and anti-discrimination; no facility-access restriction sourced.",
+    "interaction": "Facilities exposure not documented; subnational implementation varies.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No sourced data on trans-specific visitor care, HRT continuity, or denial.",
+    "protection": "Not documented.",
+    "interaction": "Unknown; general anti-discrimination may apply but enforcement weak.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No law criminalizing trans identity/expression; police abuse and nightlife targeting documented.",
+    "protection": "Constitutional anti-discrimination, supreme/regional court rulings, transfemicide law in capital.",
+    "interaction": "Formal protections coexist with weak enforcement and impunity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-specific minor/guardian rules or incidents documented; LGBTQ-wide family rejection data undated and not trans-specific.",
+    "protection": "Not documented.",
+    "interaction": "Unknown; general protections apply.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented killings of trans people, activist shot, hundreds of transfemicides in raw counts; impunity warning.",
+    "protection": "Protests, transfemicide law, regional commission urging investigation.",
+    "interaction": "Police response weak/corrupt; law rarely enforced uniformly.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Formal rights rarely enforced fairly; impunity may be alarming; transfemicide law's operation not documented.",
+    "protection": "Supreme court self-declaration ruling, regional court, anti-discrimination council, marriage equality.",
+    "interaction": "Remedies exist but are slow/uneven; visitor recourse uncertain.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar administrative friction and discretion, but this dossier lacks documented border secondary screening; however it has more documented police extortion and lethal violence/impunity, so similar or slightly lower."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has a documented incident but working national equality remedy and court release; here remedies are formal and weakly enforced, so lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, tribunal appeals, and low severity; here no border practice is documented but police abuse and impunity are worse, so materially lower."
+   }
+  ],
+  "synthesis": "The operative regime is a rights-on-paper state with uneven enforcement. A visitor is unlikely to face a trans-specific entry rule, and no universal facility or custody exposure is documented. But outing can lead to police extortion/humiliation, service friction, and street violence; trans killings and impunity are documented, though raw counts lack denominators. Legal recognition patchwork is resident-facing. The combined effect is elevated risk, below jurisdictions where remedies demonstrably work, above those with systematic state targeting or criminalization."
+ },
+ "parse_error": null
+}

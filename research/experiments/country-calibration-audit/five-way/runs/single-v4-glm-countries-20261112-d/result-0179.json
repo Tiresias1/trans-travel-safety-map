@@ -1,0 +1,82 @@
+{
+ "cell": 179,
+ "region": "RUS",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00178172",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime is dominated by state-directed targeting: the 'international LGBT movement' extremist designation, 101 convictions by mid-2025, venue raids with patrons photographed, and a death in extremism-related pretrial custody. Propaganda law reaches ordinary expression across all ages. No legal gender recognition exists and the 2023 ban guarantees document mismatch for the visitor's whole stay. Border handling of trans visitors is undocumented, but any outing — police check, venue visit, expression — feeds a documented machine of arrest, prosecution and custodial lethality, with no anti-discrimination recourse and non-recording of hate crimes. Societal hostility (74% rejection) compounds this. Severe consequences, state-as-perpetrator, credible imprisonment risk place this near the high/severe boundary, slightly above anchors where visitors face only extortion or fines.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No gender recognition exists; 2023 law bars marker change, so a visitor's papers permanently mismatch. Not documented: how border guards treat mismatched appearance or changed foreign passports.",
+    "protection": "Not documented.",
+    "interaction": "Document mismatch at any police or security check could be treated as deception or extremism-adjacent conduct; visitor-specific border screening is an open question.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: 101 extremism convictions (administrative and criminal), raids, and a man arrested over an LGBT travel agency found dead in pretrial detention (Dec 2024).",
+    "protection": "None documented; no anti-discrimination protection, no bias aggravation, hate crimes not recorded.",
+    "interaction": "Venue raids swept patrons (potentially visitors); propaganda/extremism charges can attach to a visitor's expression or associations.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented for visitor-facing facilities (wards, shelters, custody placement by birth sex).",
+    "protection": "Not documented.",
+    "interaction": "Custody conditions evidenced only through the 2024 death; placement practices unrecorded.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "2023 law bans gender reassignment surgery domestically; continuity-of-care access for visitors not documented.",
+    "protection": "Not documented.",
+    "interaction": "A visitor carrying HRT relies solely on personal supply; no documented domestic replenishment route.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State frames the LGBT movement as extremist; propaganda statutes extended to all ages (180+ cases in 2023, eighteenfold growth); masked police raids on friendly venues within 48 hours of designation; arrests, raids and charges 'defined LGBT life' through 2025.",
+    "protection": "None documented; state leaves the regional human-rights court's oversight (2022).",
+    "interaction": "Display of symbols or online material by a visitor is a prosecutable exposure; enforcement against foreign nationals uncounted.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Propaganda law criminalises material giving minors a 'desire to change sex'; a parent travelling with a minor risks scrutiny for any affirming content or identity visibility. Adoption bans affect residents only.",
+    "protection": "Not documented.",
+    "interaction": "Family exposure could convert routine documentation checks into investigation of a parent.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented conversion-therapy captivity of a trans woman (2021) with police involvement incidental; no hate-crime recording; 74% societal rejection (2022).",
+    "protection": "Not documented; no bias sentencing aggravation.",
+    "interaction": "Police responsiveness to anti-trans victimisation is structurally absent; reporting may itself expose the victim.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No effective remedies: no anti-discrimination law, no recourse for custodial abuse, capital-city pride never permitted. Foreign-national prosecution counts and border practice unknown.",
+    "protection": "Not documented.",
+    "interaction": "External asylum assessments treat LGBT people as a refugee social group — confirming, not mitigating, internal danger.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "0.15-C features organised morality-police sweeps directly arresting visitors with lethal custody. Here organised state targeting is documented (raids, convictions, a custody death), but the dossier documents enforcement against locals/venues, not regular visitor arrest; that gap keeps this above 0.15."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C's worst tier is birth-sex prison placement plus cross-dressing arrest with brief sentences. This dossier's state threat-framing is more severe (extremism designation, criminal convictions, death in custody), so it sits below 0.25 despite comparable absence of visitor-specific arrest records."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A's exposure is universal administrative exclusion without imprisonment. Here consequences after outing reach criminal prosecution and documented custodial death — a higher severity tier — though visitor-facing probability of encounter is less universally documented, placing this below 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B caps at administrative refusal and humiliation with working appeal desks. This jurisdiction lacks any working remedy and carries documented lethal custody, materially worse; no comparison supports 0.55."
+   }
+  ],
+  "synthesis": "The operative regime is a state that has criminalised the very category 'LGBT movement' as extremist, prosecutes it through both criminal and administrative codes, raids venues and photographs patrons, and has produced a death in extremism-related pretrial custody — while stripping all legal gender recognition and anti-discrimination recourse. For a visitor, the exposure is not a single checkpoint but the whole journey: a permanent document mismatch, propaganda law reaching any expression, raids that swept venue patrons, and police/courts structurally hostile if anything goes wrong. The dossier does not document border screening or foreign-national convictions, so visitor-specific frequency is uncertain — but thin data in a state showing this enforcement pattern resolves toward the risk its structure implies. Minor-travelling families add propaganda-law exposure. The result sits in the severe/high boundary zone, around 0.22."
+ },
+ "parse_error": null
+}

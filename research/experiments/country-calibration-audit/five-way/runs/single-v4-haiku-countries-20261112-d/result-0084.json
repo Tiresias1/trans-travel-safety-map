@@ -1,0 +1,78 @@
+{
+ "cell": 84,
+ "region": "GRC",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.00484",
+ "parsed": {
+  "rating": 0.66,
+  "explanation": "The combined regime shows a recognised same-sex marriage, self-ID gender recognition since 2017, and equal-treatment protections in goods, services, healthcare, housing and employment, with documented arrests (21, including minors) after a 2024 mob attack. The main traveller-facing exposure is custody: placement starts from the registered sex, and the only documented correction is an on-request transfer route that worked for four detainees in 2021. Police-stop mistreatment is dated (2013) and its complaints were discontinued. Survey prevalence is LGBTI-wide rather than trans-specific and is weighted lightly. Entry-document treatment, minors' travel and adult conversion-practice coverage are not documented. Score reflects an acceptance-with-protections tier, pulled down by the birth-sex default in custody.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented for border treatment of foreign-issued documents or gender-marker mismatches.",
+    "protection": "Self-declaration gender recognition since 2017 is resident-facing and not a traveller protection in itself.",
+    "interaction": "Visitor documents come from home; no evidence of friction at entry.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Custody placement starts from registered sex; four trans detainees were held isolated at male-linked facilities before 2021 transfers.",
+    "protection": "On-request transfer to women's facilities existed and was used successfully by four petitioners in 2021 under a senior official's decision.",
+    "interaction": "A visitor detained with birth-sex records would default to male placement unless they petition; transfer depends on individual request.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National correctional default follows registered sex; the dossier records no sub-national divergence beyond named prisons.",
+    "protection": "National on-request route documented as operating.",
+    "interaction": "Single national correctional system; no federal-state split documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No documented denial of care to visitors; the 2024 equal-treatment law covers healthcare.",
+    "protection": "Equal-treatment grounds in healthcare enacted 2024; no operative enforcement record for visitors.",
+    "interaction": "Care access for a visitor is not evidenced either way beyond the legal guarantee.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official religious opposition to marriage equality; 2013 capital-city street stops and removal from cars of trans sex workers and their lawyer, complaints discontinued.",
+    "protection": "Hate-speech protections in force; a criminal case opened over an online incitement post.",
+    "interaction": "The 2013 police conduct is dated and sits against a 2024-2025 record of legal protections; no current police targeting documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Age of consent 15 for all; conversion practices banned for minors; the 2024 mob attack included minors among arrestees.",
+    "protection": "Adoption and foster care by same-sex couples permitted; conversion ban covers minors.",
+    "interaction": "No documented rule on a trans minor travelling with a guardian; not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "March 2024 mob of about 150 attacked two trans people; 2017 attack by foreign tourists convicted on appeal in 2025; survey shows 36% avoid locations for fear of assault (LGBTI-wide).",
+    "protection": "21 arrests including minors after the 2024 mob attack; appellate conviction in 2025; hate-speech protections in force.",
+    "interaction": "Official response is prosecutorial rather than shielding; public outrage and arrests show the state treats the violence as unacceptable.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Conviction outcome of the March 2024 arrests not sourced; compliance with the 2024 regional court judgment on a detained LGBTI refugee not sourced; adult conversion-practice protection not established.",
+    "protection": "Regional court access and national equality law exist; the on-request transfer route is documented.",
+    "interaction": "Unresolved outcomes reduce confidence in remedy for visitors specifically.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Both involve birth-sex or document-linked placement with partial denial. This case is higher because placement has a documented, working on-request transfer route, whereas 0.55-C relies on administrator exceptions with improvised rooms and no credible route."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Both show documented acceptance with remedies that work. This case is lower because custody defaults to birth sex and the record shows a mob attack and an unresolved 2013 policing record, while 0.65-B documents a clinic refusal overturned within hours and no custody threat."
+   },
+   {
+    "anchor_id": "0.75-D",
+    "comparison": "Both have equality statutes and documented prosecutions after street violence. This case is lower because 0.75-D lacks a documented birth-sex custody default and a mob attack with minors involved, and its police review is stronger."
+   }
+  ],
+  "synthesis": "Equality law, self-ID recognition and documented prosecution of attackers sit alongside a national custody default to registered sex. The on-request transfer route worked for four trans detainees in 2021, which mitigates but does not remove that exposure for a detained visitor who must petition. Street violence is documented and was met with arrests, including minors, and an appellate conviction. The 2013 police-stop record is dated, its complaints were discontinued, and no current police targeting is documented. Survey figures are LGBTI-wide and carry little weight as trans-specific prevalence. Unresolved outcomes (arrest convictions, refugee-judgment compliance, adult conversion-practice coverage) keep confidence moderate. Overall: Reduced Risk, held below the protective tier by the custody default."
+ },
+ "parse_error": null
+}

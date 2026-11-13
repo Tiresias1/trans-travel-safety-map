@@ -1,0 +1,78 @@
+{
+ "cell": 32,
+ "region": "66186276B73434888205604:New Jersey",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00747168",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "Adult travelling alone can often use protected lodging, transport, policing, and care in the state; street violence is low. But the combined operative regime includes national border screening that can refuse visas, create fraud/lifetime-ineligibility risk, and lead into immigration custody with documented beatings and sexual abuse. National facilities restrictions and federal record investigations also apply. State protections do not pre-empt these. Minors/guardians face extra risk from federal youth-transition investigations, records subpoenas, and unresolved parental-notification policies. No execution or likely imprisonment merely for visiting is documented, but severe federal traveler-facing exposures without working remedy keep this Elevated, below Reduced Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rule bars X/self-selected passport/visa markers, uses birth sex; discrepancy or doubt triggers refusal, additional evidence, possible fraud permanent ineligibility; travelers report passport blocked/confiscated and stranded abroad.",
+    "protection": "Existing X passports remain valid until expiration; courts/suits pending; state legal-aid guidance; no state rule pre-empts federal entry screening.",
+    "interaction": "Every foreign visitor passes federal screening; state open IDs do not change border risk; mismatch can flow into investigation/fraud and detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody documented forced labor, beatings, solitary, severe sexual abuse; corrections bureau applies coercive gender policies to trans inmates; prisoner counts no longer reported.",
+    "protection": "State bias-crime law, police SOGI practices, public-accommodation remedies; none documented as limiting federal custody or placement.",
+    "interaction": "Border discrepancy/fraud can become immigration detention; federal custody overrides state protections and may involve birth-sex coercion.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order restricts transgender people from government-funded single-sex facilities by assigned sex; federal buildings/programs remain hostile regardless of state.",
+    "protection": "State bars denial of facilities/lodging/public accommodation based on identity; no evidence of a state bathroom ban.",
+    "interaction": "State law helps hotels, transit, many services; it does not pre-empt federal facilities or federal funding-linked single-sex rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal policies threaten youth care, subpoena hospital records for under-19 patients, restrict crisis services and reimbursement; adults may face record exposure if care or investigation triggers.",
+    "protection": "State protects gender-affirming care for in-state visitors, requires hospital SOGI privacy, and directs agencies to defend care access.",
+    "interaction": "Adult care access locally stronger, but federal investigative authority and minors’ records create unresolved conflict; shield’s effect not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism ties radical pro-transgender ideology to violent groups and lists gender ideology in domestic-terrorism framing, chilling advocacy and raising official hostility.",
+    "protection": "State bars trans panic defense, enhances bias crimes where GI is bias, and police report gender X data.",
+    "interaction": "Federal framing affects speech/organizing and may influence investigations; state enforcement protects local harassment claims but not federal posture.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal orders treat facilitation of minor social transition as investigable/criminalizable, restrict youth healthcare, subpoena records; parental-notification policies risk outing; mismatched minors can face entry screening/fraud.",
+    "protection": "State protects minors’ healthcare access, school facilities/guidance, bars conversion efforts, and anti-discrimination/bias-crime laws.",
+    "interaction": "Care-seeking minor becomes a records/investigation target across state/federal systems; school-board suit and pre-emption outcome unknown.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National travel advisories and poll show hostile climate; crossing out can enter arrest/ban regimes; no documented elevated anti-trans killings in this state.",
+    "protection": "State among safest per-capita trans killings; bias-crime enhancements, police SOGI data, public-accommodation enforcement indicate responsive local protection.",
+    "interaction": "Low local violence improves daily travel, but federal border/custody risk persists; violence data is background not offset for state exposure.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border/fraud consequences lack clear traveler remedy; state complaint outcomes not documented; parental-notification and shield-law interactions unresolved; enforcement changes with litigation.",
+    "protection": "Courts/suits challenge national orders; legal-aid guidance; state civil-rights complaints and bias-crime remedies available in theory.",
+    "interaction": "State remedies help local violations; they do not clearly control federal entry screening, custody, subpoenas, or investigations.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Similar to 0.45-A because national document rules expose visitors. Above it on everyday services and healthcare because state anti-discrimination and care shield apply; below 0.55 because federal fraud/immigration-custody abuse is documented and lacks state remedy."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Border screening resembles 0.55-B, with secondary checks/refusal. But 0.55-B has appeals/consular and no custody abuse; here cable can impose permanent fraud bar and immigration custody includes beatings/sexual abuse, so overall lower, despite local state protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has passport markers accepted and brief detention released with compensation. This regime is far lower: national rules deny X/marker matching, foreign advisories, federal facilities/custody hostile; state safety raises it only for local services."
+   }
+  ],
+  "synthesis": "Federal border/custody and facility rules are the operative traveler-facing exposures; state law mitigates private hotels, transport, care, and policing. An outed adult may still be returned/barred, and if detained faces severe abuse. A minor’s care or social transition can become a federal investigation target despite the shield. Court challenges create uncertainty but not a traveler remedy against federal screening. Local safety therefore cannot lift the jurisdiction into Reduced Risk; the combined regime remains Elevated with severe, state-imposed, partially avoidable consequences."
+ },
+ "parse_error": null
+}

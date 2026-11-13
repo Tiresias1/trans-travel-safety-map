@@ -1,0 +1,78 @@
+{
+ "cell": 156,
+ "region": "NLD",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0053507",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "Combined regime: entry is strongly protective. Foreign-issued passports with a non-birth marker or 'X' are accepted, and no extra gender documents are demanded at the border. Social and legal climate is favourable: discrimination in accommodation, employment and services is prohibited on gender identity and expression grounds, conversion practices are banned, and 91% public support is recorded. The main documented exposure is custody. Trans detainees have no governing placement rule, are placed by municipal gender designation plus case-by-case factors, and are often held in an Extra Care wing with sex offenders. Appeals rulings record assaults after mismatched placement, and the promised guidelines are unpublished. Application of this to visitors is uncertain. Street exposure is rising in reports, with weak convictions, but has no denominator. Overall: Reduced Risk, held below the 0.75 tier by unremedied custody exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Marker-mismatched and X passports accepted if officially issued; visa depends on nationality only. No extra gender documentation demanded at the border.",
+    "protection": "Documented: foreign-issued gender-marker documents are accepted at entry without additional gender proof.",
+    "interaction": "Home-issued documents are honoured at entry, so the custody gateway is not triggered by the border itself.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No law or policy governs trans detainee placement. Placement follows municipal gender designation plus case-by-case factors. Trans detainees are often held in an Extra Care wing alongside intellectual-disability detainees and sex offenders. Documented cases include men's-wing placement with reported assaults and molestation, and appeals rulings treating mismatched wings as making imprisonment considerably heavier.",
+    "protection": "Extra Care placement is used to protect detainees from other prisoners. Appeals courts have recognised the mismatch harm. Guidelines are drafted but unpublished.",
+    "interaction": "Placement keys off the home municipal record, so a visitor's placement is uncertain. Detention of a visitor would likely be governed by ad hoc case-by-case decisions rather than a visitor rule.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National prison service sets placement; no subnational variation documented in the dossier.",
+    "protection": "Protective wing and case-by-case factors, including the detainee's own preference, are considered.",
+    "interaction": "Single national placement practice; no evidence of pre-emption or override by any other body.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No documented refusal of care to visitors. Trans-youth care is publicly recommended, but specific visitor access is not documented.",
+    "protection": "Health-board reaffirmation of gender-affirming care (July 2026). Conversion therapy banned (ratified 8 Sept 2026). Discrimination in services prohibited on gender identity grounds.",
+    "interaction": "Protection rests on anti-discrimination law; the dossier does not show visitors using it.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No trans-specific criminal offence or gender-expression law is documented. Police record discrimination reports, but no documented targeting of trans visitors by police.",
+    "protection": "Discriminatory motive is an aggravating factor in criminal cases since 1 July 2025. Public sentiment is favourable at national level.",
+    "interaction": "Aggravation applies to criminal cases; whether it covers gender identity is unresolved in the sources.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor visitors face the same custody placement rules; a minor's placement by municipal record is not addressed. Youth gender-care guidance exists, but care access for visiting minors is not documented.",
+    "protection": "Youth gender-care is publicly endorsed and the general climate is favourable.",
+    "interaction": "A guardian accompanying a minor faces the same custody uncertainty as an adult.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police-recorded anti-LGBTQIA+ reports rose to 4,800 (trans reports 264 to 399). Pride reports run 25 to 45 with perpetrators fleeing. 17% of trans people report physical or sexual violence, with no background comparator.",
+    "protection": "Safer Spaces reporting points and priority enforcement were announced for Pride, and the mayor committed to fast action.",
+    "interaction": "Reports are raw counts with no denominator. Convictions are few (six), so the response is only partly effective.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Low conviction count against reported discrimination. No statutory hate-crime definition. Unresolved whether gender identity is covered by the aggravation provision.",
+    "protection": "Enhanced victims' rights and victim-data protection. Anti-discrimination enforcement in accommodation and services. Ombudsman-style complaint routes exist.",
+    "interaction": "Recourse exists on paper and in part in practice, but convictions are few relative to reports.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Both have documented remedies and a generally respectful, rights-based climate. This case has a more severe, unremedied custody exposure (placement by record, assaults, unpublished guidelines), which pulls it below 0.65-B's working complaint route. It sits slightly higher on the everyday-climate and entry axes, so it is close."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Both accept foreign-issued documents and have a respectful border. 0.75-C has brief detention with clear remedies and no placement exposure. This case has a documented, unremedied custody exposure that 0.75-C lacks, so it sits below."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C has a documented ward-placement exposure by birth-sex record with partial denial of care, and no credible detention route. This case has a similar placement mechanism but documented assaults and detention, and stronger anti-discrimination protections and public opinion. It is higher than 0.55-C."
+   }
+  ],
+  "synthesis": "The visitor's entry and everyday climate are strongly favourable: documents are honoured, discrimination is prohibited in accommodation and services, and public opinion is supportive. The decisive documented exposure is custody. Placement follows the municipal gender record with case-by-case factors, the protective wing mixes trans detainees with sex offenders, and appeals rulings record assaults after mismatched placement. The guidelines remain unpublished. Whether a visitor would be placed by a home-record rule is uncertain, so this exposure is probabilistic for visitors. Violence reporting is rising with few convictions and no denominator. Net: Reduced Risk, held below the 0.75 tier."
+ },
+ "parse_error": null
+}

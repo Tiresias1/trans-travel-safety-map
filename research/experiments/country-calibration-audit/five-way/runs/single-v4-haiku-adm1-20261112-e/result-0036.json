@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0056437",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "Combined operative regime is High Risk. Traveller-facing exposures: passport sex-marker restrictions in force since Nov 2025 with documented confiscation and stranding; entry cable directing refusal on any document discrepancy and a possible lifetime fraud ineligibility finding; documented abuse in immigration custody (forced labour, beatings, reported severe sexual abuse); national corrections policy with documented denial of care. Division layer adds birth-sex facility rules extended to universities, a criminal trespass trigger, a documented arrest with 24 hours in a men's ward, and a treatment restriction for inmates. Mitigations are partial: national hate-crime statute, anti-discrimination law in 22 states plus DC, and litigation that has blocked some orders. No execution or trans-specific violence rate is documented. Rating reflects universal-exposure measures and documented custody harm.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport sex markers must match sex at birth; new applications issued only as M or F. Passports confiscated or blocked, travellers stranded. Entry cable refers discrepancies for refusal and raises a possible lifetime fraud ineligibility finding.",
+    "protection": "Civil-liberties suit pending; existing X passports valid until expiry; policy challenged in national courts.",
+    "interaction": "Document mismatch at any checkpoint converts directly into refusal, detention, or stranding abroad; discretion sits with posts and officers.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Division trespass arrest: handcuffed, held 24 hours in men's ward.",
+    "protection": "Pretrial release was granted in the division case; the national court has blocked some orders.",
+    "interaction": "Facility-based arrest in a public building can feed directly into custody placement by birth sex and documented abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Government-owned facility bans in 19 states/provinces including schools and colleges; 6 extend to some private settings. Criminal trespass trigger in 4 states/provinces. Division ban expanded to universities in May 2026.",
+    "protection": "Facility bans do not apply in 29 states/provinces, 4 units and the capital district. A litigation order protects one plaintiff in the division; it does not cover visitors.",
+    "interaction": "A visitor's use of a public restroom can trigger trespass after a staff request to leave, which can escalate to arrest and custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Corrections bureau adopted conversion-type treatment for trans inmates from 2026 and stopped reporting prisoner numbers. Division restricts inmate treatments. Hospital records subpoenaed for patients under 19. Proposed rules would bar public insurance for under-18s.",
+    "protection": "Emergency and routine care for adult visitors is not documented as refused. Some national orders are enjoined.",
+    "interaction": "Custody can cut off hormone and medical care, and a visitor detained for document issues would face this.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as a neutralisation priority; a reward system targets leaders. Enforcement orders direct criminal investigation of schools facilitating social transition.",
+    "protection": "Strategy states counterterrorism will not target people who merely disagree; several orders enjoined.",
+    "interaction": "Threat-framing is aimed at advocacy and organised groups, so direct visitor exposure is indirect, but it raises the institutional hostility baseline.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling minors face the same document and facility rules. Execution order threatens criminal exposure for teachers facilitating social transition. Division school bathroom rule applies to minors. Minor's medical records subpoenaed.",
+    "protection": "Some orders blocked; the division student plaintiff is protected during litigation only.",
+    "interaction": "A family with a minor passing through a restricted state faces school and facility rules; a parent may face custody or document questioning alongside the child.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence rate is documented. Bias-crime data cover sexual orientation only. Travel guide advises checking violence reports before travel.",
+    "protection": "National hate-crime statute covers gender identity; only 23 states/provinces cover it in state bias statutes; 37 lacked such statutes as of 2019. The division has no hate-crime statute.",
+    "interaction": "Recourse varies by location; a visitor in the division has no state hate-crime remedy.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Oversight is slow and unevenly enforced; policies change with litigation; the visitor cannot predict which measures will be in force at travel. Unresolved questions: discretion at remote crossings and the scope of the fraud finding.",
+    "protection": "Anti-discrimination law in 22 states plus DC; national courts blocking some orders; legal-aid FAQ for documents.",
+    "interaction": "Remedies are available for residents more than visitors; a visitor in custody has little practical access.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest analogue: birth-sex custody with assaults, arrests for presentation in administrative buildings, and no execution. This case is similar in custody harm and facility exposure, with a documented sexual abuse record and universal passport mismatch, so it sits at or slightly below 0.25-C."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Exclusion-register refusals with no imprisonment are a lower-severity exposure than documented immigration custody abuse. This case has more severe custody harm but no register-based universal exclusion, so it is comparable or somewhat below."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "Detention with assaults and no recourse is more severe than this case, which records pretrial release, no execution pathway and some litigation relief. This case sits above 0.15-B."
+   }
+  ],
+  "synthesis": "Document mismatches at entry can lead to refusal, detention or stranding. Detention carries documented abuse, and state-level facility rules can convert a restroom use into trespass, arrest and a men's-ward holding. Division escalation adds university settings and a treatment restriction for inmates. Protective litigation and national hate-crime law exist but do not operate reliably for visitors in custody. No execution pathway is documented. Overall exposure is High Risk."
+ },
+ "parse_error": null
+}

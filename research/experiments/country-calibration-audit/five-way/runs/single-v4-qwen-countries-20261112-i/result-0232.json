@@ -1,0 +1,78 @@
+{
+ "cell": 232,
+ "region": "ZMB",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0049197",
+ "parsed": {
+  "rating": 0.18,
+  "explanation": "The operative regime is national: enforced same-sex criminalisation, documented police violence/harassment based on gender identity and sexual orientation, prolonged detention, extortion, and forced anal examinations in prosecutions. For a trans visitor who is outed—especially if presentation, documents, or a relationship invite suspicion—the likely harm is arrest, detention, torture-like exams, years’ imprisonment, and bribery, with no working remedy. Presidential hostility and a public-advocacy ban raise social violence. Missing border, facility, care, and minor rules are not safety. Compared with anchors, severity approaches 0.15 custody/torture cases; below 0.25 because no visitor-specific sweeps or capital law are documented, but consequences are worse than 0.35 friction/eviction regimes.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented border/visa/passport gender-marker rules for trans visitors. If ordinary entry checks, ticket-name mismatches, or relationship scrutiny expose trans status, the national same-sex/gender-identity policing regime becomes operative.",
+    "protection": "Not documented.",
+    "interaction": "Unknown screening rules cannot be treated as safe; any document or social mismatch could route the traveller into police custody rather than administrative refusal.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: police violence and harassment based on gender identity/sexual orientation, prolonged LGBTQI+ detentions, routine bribery after arrest, threats of other charges, and forced anal exams used as prosecution evidence in same-sex cases.",
+    "protection": "No credible government effort to rescind discriminatory laws; no documented protective protocol for detained trans travellers.",
+    "interaction": "Police are perpetrator; criminalisation plus extortion means outing can escalate to interrogation, detention, and prosecution without independent remedy.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented prison/custody placement, bathroom, shelter, transport, or gendered-facility rules for trans visitors.",
+    "protection": "Not documented.",
+    "interaction": "If arrested or placed in custody/ward, hostile national practice and absent protocols would likely govern placement and search.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Documented: no broad legal protection against healthcare discrimination; LGBTQI+ inability to access care; HIV programmes ignore same-sex relationships; fear after official hostility.",
+    "protection": "Limited: 2014 health-professions ethics code bars sexuality discrimination; 2022 HIV guidelines require adolescent service regardless orientation. No trans/HRT-specific rules.",
+    "interaction": "A care seeker may be outed to staff; narrow guidelines are not shown to protect visitors or medication continuity.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented: president opposed LGBTQI+ protections, 2022 hate speech/assault spike; police target LGBTQI+; assembly/expression barred; organisation registration refused.",
+    "protection": "One 2013 acquittal recognised free expression, but government contested it and later practice shows no usable advocacy relief.",
+    "interaction": "State threat framing lowers likelihood of police protection and raises private violence; efficient enforcement of hostile policy is exposure.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented visitor rules for trans minors or guardians. Child same-sex gross-indecency provision marks resident asymmetry; hostile policing could still expose a minor to questioning/detention.",
+    "protection": "Not documented.",
+    "interaction": "A guardian’s passport/medical records or a minor’s ambiguous marker/relationship could invite scrutiny, with no family-safe pathway.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented mob incidents (2014/2015, police reportedly involved), 2022 assault spike, most LGBTQI+ closeted, fear of targeting.",
+    "protection": "No credible state protection or effective recourse; police themselves are a risk source.",
+    "interaction": "Being outed publicly may trigger confrontation, service refusal, extortion, or police custody; bystander risk is compounded by official hostility.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No working traveller remedies: advocacy nonexistent, courts not shown to help, current forced-exam frequency unknown, border/facility/medication rules unknown.",
+    "protection": "Limited paper ethics/HIV non-discrimination and a contested 2013 precedent only; not shown as operative visitor relief.",
+    "interaction": "Absence of evidence is treated as uncertainty, not safety; unknowns could increase exposure if routine checks occur.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Similar police morality targeting, coerced detention and torture-like exams; but no documented gender-expression sweeps of visitors or capital charging. Still, multi-year imprisonment and forced exams justify a nearby high-severity score."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Caldera’s vague morality provisions produced short jail, plea deals and appellate pushback. Here enforced same-sex prosecutions include forced anal exams, years of imprisonment, official hostility and no effective remedy; materially lower."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Karthovia’s stop-and-checks usually release after hours/fines. This regime’s possible outcome is prolonged detention, extortion, torture-like exams and prosecution; no border data, so severe consequences push it well below 0.35."
+   }
+  ],
+  "synthesis": "The combined national regime is hostile: criminalised same-sex conduct, gender-identity police abuse, and investigative practices that can make a visitor’s trans status into evidence. Once an ID check, relationship, presentation, hospital or street encounter reveals trans status, the operative path is extortion, detention, forced exams and prosecution, not protective review. Local subnational variation is not documented; capital and rural gaps are unknown. Minor-family travel adds uncertainty because no child-trans protections exist, while resident-oriented gender asymmetry in law may heighten suspicion. The result is severe-risk exposure with some probability discount: not a documented execution regime, but imprisonment and torture-like abuse after outing are credible."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 183,
+ "region": "SEN",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00284346",
+ "parsed": {
+  "rating": 0.17,
+  "explanation": "The operative regime combines an enforced criminal statute explicitly extended in 2026 to cover 'transsexuality' in its promotion ban, with documented and ongoing arrest waves (22 in two weeks in 2026; 71 men facing up to 20 years), torture in police custody, second-hand-report arrests, and a border-post detention of a person attempting to leave. Severity of custody abuse and societal violence (corpse exhumation and street burning with a crowd of hundreds, with apparent impunity) reaches the severe tier; no execution pathway for gender identity is documented, and some judicial relief (2009 convictions overturned, bail releases) exists. Enforcement is politically cyclical and incident lists are a documented floor. This sits between the 0.15 and 0.25 anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "A visitor was detained at a border post attempting to leave the country (Feb 2026). No documented gender-marker screening regime at entry.",
+    "protection": "No documented border protections; 2009 name-change precedent is individual, not a process.",
+    "interaction": "Border contact can funnel into investigation under Art 319 or the 2026 promotion ban.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented arrests of dozens of men on second-hand reports; torture in custody recorded (2008-09); penalties now 5-10 years, with 71 facing up to 20 years after amendment.",
+    "protection": "2009 convictions overturned and some bail releases show occasional judicial relief, but limited and inconsistent.",
+    "interaction": "Arrest-at-border and arrest-on-video-circulation patterns show any visibility triggers the penal system.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Custody conditions during detention episodes are the documented facility exposure.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "2026 amendment criminalises support and financing of 'transsexuality', potentially reaching medical support; no care access documented for visitors.",
+    "protection": "Not documented.",
+    "interaction": "A care-seeking visitor could be exposed under the promotion/support provisions; interpretation unresolved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State frames same-sex conduct and 'transsexuality promotion' as criminal; officials defend enforcement; police act on neighbour reports and videos; political surges around elections.",
+    "protection": "None documented; UPR rejections of moratorium and protection recommendations (2009, 2013).",
+    "interaction": "Head of government's 'not accepted, but tolerated' framing licenses police action without legal change.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Maximum penalty 'always applied' where the act involves a person under 21 — a trans adult with a local or travelling companion under 21 faces aggravated exposure.",
+    "protection": "Not documented.",
+    "interaction": "Travelling with a minor raises statutory severity ceiling regardless of conduct.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented lethal and degrading violence: exhumation and street burning of an outed gay man before hundreds (2023), corpse desecrations (2009), assault of a couple (2012); trans people face documented violence and prosecution; incident list is a floor.",
+    "protection": "Four suspected masterminds apprehended in the 2023 case; otherwise impunity is the documented pattern.",
+    "interaction": "Low media coverage and low group profile mean police response cannot be relied on.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No anti-discrimination law; UPR protections refused; no LGR; enforcement intensity politically variable and unpredictable.",
+    "protection": "Occasional judicial relief (acquittals, bail) exists but is inconsistent and slow.",
+    "interaction": "No remedy pathway for an outed visitor; courts' reading of the 2026 promotion ban unknown.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Oskara features morality-unit sweeps and lethal custody risk. Here arrests are comparable in scale and torture in custody is documented, but no execution pathway for gender-related conduct is shown and some convictions were overturned — slightly less severe than Oskara."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Caldera's selective morality enforcement with blackmail and short terms is milder: this jurisdiction has longer sentences (5-10, up to 20), documented torture, and lethal mob violence with near-impunity, placing it below Caldera."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's universal border-exposure regime ends in exclusion, not custody. This jurisdiction's documented custodial and lethal-violence record makes it materially more dangerous than the 0.35 tier."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Vesskaria shows a documented lethal capital pathway for trans-related detention. That lethal state pathway is absent here; mob violence with impunity is documented but not state killing, so this sits clearly above 0.05."
+   }
+  ],
+  "synthesis": "The combined regime is an enforced criminal statute plus a freshly escalated 2026 amendment that names 'transsexuality' in its promotion ban, enforced through politically timed arrest waves, neighbour and video denunciations, and border interceptions, with torture in custody and extreme societal violence (public burning of a corpse) met largely with impunity. Judicial relief exists occasionally but is not a reliable remedy, and the state has formally refused every protection recommendation. For a trans visitor — especially one with any companion under 21 — discovery plausibly leads to arrest and multi-year imprisonment with custodial abuse risk; no execution pathway is documented. This resolves between the severe-risk and high-risk bands, near 0.17."
+ },
+ "parse_error": null
+}

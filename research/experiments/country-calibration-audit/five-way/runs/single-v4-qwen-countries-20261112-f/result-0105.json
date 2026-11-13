@@ -1,0 +1,82 @@
+{
+ "cell": 105,
+ "region": "JAM",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00555059",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined operative regime is high risk. Buggery remains criminal, but the dominant trans-specific exposure is absence of legal gender recognition, no GI anti-discrimination, hostile policing and severe custodial harm: identity-targeted violence, corrective rape, isolation, scalding-liquid attack, life-threatening overcrowding, and no accommodation framework. Street/mob violence against gender-nonconforming people is documented, including unsolved killing of a 16-year-old; police leak details, fail to investigate, and said they could not protect LGBT events. Venue cancellations show official hostility can reach public spaces. Visitor-facing border, hotel, medication and checkpoint risks are not documented, and major resorts are reported insulated; however these do not create reliable protection if discovery occurs outside resort bubbles. Adult alone faces severe consequences if outed and detained; minors/guardians lack documented visitor-specific rules but inherit hostility and no recourse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No visitor-facing border, hotel, ID-mismatch or checkpoint trans scrutiny documented; unknowns remain. If mismatch occurs, no GI law or LGR framework may allow discretionary secondary screening or accommodation friction.",
+    "protection": "No operative trans visitor protection documented; tourism director welcome is climate signal only and does not bind officers.",
+    "interaction": "Possible document mismatch could escalate to questioning/detention, but no documented escalation chain.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented severe custody harm for perceived LGBTQI+/trans people: prison/lockup violence, corrective rape, isolation, scalding-liquid attack, harsh overcrowding; no gender-recognition or specialized accommodation policy.",
+    "protection": "No protective custody protocol, gendered accommodation, bail, consular or remedy documented; investigations reportedly leaked and ignored.",
+    "interaction": "If outed and detained, lack of LGR increases mismatch-based placement and abuse; buggery suspicion may funnel into same system.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Public facilities and services show documented hostility: venue/cultural-centre blocks, Pride cancellation, hospital staff harassment, service exclusion survey; no gender-facility right.",
+    "protection": "Major tourist resort areas reported insulated where incidents are rare; this is situational, not enforceable protection.",
+    "interaction": "Private operators/venues may refuse or cancel after official pressure; resort bubbles may lower exposure but not eliminate risk outside.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Documented hospital staff harassment and service exclusion for LGBT/trans patients, including transgender care in national survey; emergency medication/customs not documented.",
+    "protection": "No operative healthcare non-discrimination, continuity-of-care, interpreter, or emergency protocol documented.",
+    "interaction": "Health-seeking can out traveller to staff; poor policing/recourse compounds harm.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Buggery criminalisation, constitutional union ban, no GI anti-discrimination/LGR; police fail, leak, non-intervene, cite inability to protect; officials and media incite hostility.",
+    "protection": "Tourism welcome statement contradicted; no operative protection or enforcement for trans people.",
+    "interaction": "Hostile law plus weak rule-of-law for trans victims converts ordinary encounters into exposure.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No visitor minor/guardian rule documented; resident 16-year-old gender-nonconforming mob killing signals age-related violence, but not traveler-facing.",
+    "protection": "No guardian, school, care or entry protection documented.",
+    "interaction": "If travelling with minor, adults inherit jurisdiction's hostility; parent/guardian not specified, so uncertain.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented mob/vigilante assault and unsolved GNC killing; raw counts show harassment/assault; police non-intervention, failure to investigate, inability to protect public events.",
+    "protection": "None. Resort insulation reported but does not guarantee street safety elsewhere.",
+    "interaction": "Public hostility and absent policing raise both likelihood of confrontation and severity if reported.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No anti-discrimination, LGR, gender-facility, care, custody, or protection remedy documented; border, hotel, ID, medication and current incident frequency unresolved.",
+    "protection": "Only vague tourism welcome and resort insulation; regional advocacy not operative for visitors.",
+    "interaction": "Open questions are not safety; severity if outed remains high due hostile policing/custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar severe, identity-targeted custody isolation/abuse and no execution or gender accommodation; weaker than anchor because visitor-facing cross-dressing arrest at family visits is not documented and resort insulation reduces everyday exposure."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "0.35-B has routine stop-check/identity extortion of visitors with release; this dossier lacks documented visitor stop-checks but adds severe prison violence and unsolved mob killing, placing it near or slightly below 0.35."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has universal biometric/document mismatch exposure. That is absent here, so score should be above pure 0.45-type; however hostile policing and custody severity pull it below 0.40."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "0.15-B has credible border detention/torture/capital ambiguity. Here no border/execution chain documented, so score higher than 0.15 despite severe custody abuse."
+   }
+  ],
+  "synthesis": "No protective machinery operates for travellers. Documented resort insulation and a tourism welcome reduce everyday exposure only in limited visitor spaces. Outside them, presentation mismatch can be read under a criminalising, non-recognition, non-enforcing system: police non-intervention, leaking, and inability to protect increase both outing and harm, while custody places LGBTQI+ people in violent, segregated, resource-deprived settings. The absence of explicit border or facility restrictions is an open question, not a safety guarantee. Severity dominates probability; therefore high-risk rather than severe-campaign territory."
+ },
+ "parse_error": null
+}

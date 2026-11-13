@@ -1,0 +1,78 @@
+{
+ "cell": 79,
+ "region": "GIN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00564686",
+ "parsed": {
+  "rating": 0.14,
+  "explanation": "Combined regime criminalizes same-sex conduct and documents police using clothing/appearance arrests, extortion, and morality investigations. Trans women are arrested, imprisoned on protective pretext in male prisons, and subjected to sexual violence. Rule of law enforces hostility rather than mitigating it. Border and care exposures for visitors are not documented, but absence of protections, stigma, and threat framing leave no safe recourse if a visitor is outed. Severity centers on arbitrary custody, abuse, and extortion, not proven execution. The dossier's thin trans-specific violence data does not reduce risk; it shows state-directed targeting of gender presentation. No traveler-specific rule protects an adult travelling with a minor; if the minor is trans, documented younger-person pressure and presentation-based policing remain uncertain harms.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific entry or document refusal documented. A visitor presenting differently could attract suspicion in general policing, but border questioning, marker verification, or denial of admission for trans travelers is not evidenced.",
+    "protection": "Aeronautical rules bar government use of PNR data revealing sex life or orientation. This is a limited privacy signal, not evidence of trans-safe screening or document acceptance.",
+    "interaction": "Document mismatch remains an open question at entry. If an encounter later becomes a police stop, foreign passport discrepancy may intensify extortion or investigative referral, but that pathway is not documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Arrests on clothing/appearance are documented; Art274 supports extortion. Transgender women are imprisoned on protective pretext in male prisons and face sexual violence; LGBTQ custody abuse and arbitrary detention are documented.",
+    "protection": "No documented safe-custody protocol or trans-traveler recourse. Release commonly requires bribes or fines.",
+    "interaction": "The conduct statute and morality office make presentation an investigative trigger, converting a transit or lodging encounter into custody risk with birth-sex placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National facilities place trans women in male prisons after arrest; this is a state-imposed custody facility exposure. No subnational data shows local facilities mitigating or preventing placement abuse.",
+    "protection": "No documented facilities matching identity, sheltering in transit, or gender-safe detention. Local social differences are resident-only and unmeasured.",
+    "interaction": "Subnational evidence only describes residents fleeing hostile religious/cultural areas; enforcement and prison placement are stated nationally, so no local shield is documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Not documented for trans visitors. General healthcare discrimination and no legal protection are resident-facing climate signals; HIV law lists trans people as vulnerable but gives no entry/clinic trans procedure.",
+    "protection": "No documented emergency-care guarantee, privacy rule, or clinic oversight for trans visitors.",
+    "interaction": "If emergency care or HRT continuity occurs, stigma and document mismatch could create friction or disclosure; current dossier leaves this unproven.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Art274 criminalizes same-sex conduct; morality unit investigates; police arrest on presentation, extort, harass, and use violence; LGBTQ people framed as Western agenda and social-order disruptors.",
+    "protection": "None documented. No anti-discrimination law, hate-crime recourse, or official protection for trans visitors.",
+    "interaction": "State framing validates community hostility and makes police an aggressor rather than protector, increasing downstream violence and extortion.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No traveler-specific rule for children. Pressure falls heavily on younger LGBTQ people; if a trans minor is present, appearance-based policing could extend to them, and family conversion harms are documented as resident risks.",
+    "protection": "None documented. No child-safe custody, guardianship, or privacy rule for trans minors visiting.",
+    "interaction": "An adult guardian could face suspicion or extortion if linked to a minor's presentation or medical needs, but this pathway is not documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Hostile, sometimes lethal environment with threats and violence on gender-expression grounds. Police arrest, harass, extort, and commit violence rather than protecting victims; stigma hinders reporting.",
+    "protection": "No documented effective police protection, investigations, or anti-violence response for trans people or visitors.",
+    "interaction": "Reporting to police can become a detaining/extortion event, so private violence and state violence interact rather than being offset by rule of law.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No remedy shown: detention beyond limit, bribe release, impunity, no effective complaints. Border screening and care pathways are unknown; absence of data is not safety.",
+    "protection": "None documented. Courts or ombuds mechanisms are not shown to intervene for LGBTQ visitors.",
+    "interaction": "Unknown document or care exposures remain severe because the operative state response, once engaged, is detention, extortion, or birth-sex custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar to anchor: criminalization plus appearance-based arrest, custody abuse, and illusory remedies. This dossier lacks explicit capital ambiguity and months-long detention detail, but adds trans-specific male-prison sexual violence, so it sits near the anchor."
+   },
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "More comparable to anchor's morality-unit targeting: state actors arrest and abuse for presentation. Difference: no documented street sweeps or coerced confession pattern; however birth-sex imprisonment and sexual violence are severe. Score is near anchor, not materially higher."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Anchor has birth-sex placement and short sentences but no active moral-investigation unit. This dossier adds investigative policing, extortion, violent policing, and no remedy, so it sits materially below 0.25-C, closer to 0.15 band."
+   }
+  ],
+  "synthesis": "Operative regime is state-directed targeting of gender presentation. Even where entry and care are uncertain, an outed trans visitor can face arrest for appearance, bribery, detention in male prisons, and sexual violence. The moral-policing unit makes ordinary presentation an investigative trigger, and hostile social framing supplies community threat. Rule of law is not mitigation because institutions enforce, exploit, and abuse rather than remedy. Absence of documented trans-specific homicide or trans-specific border refusal prevents a 0.05 execution rating, but does not move the case into reduced-risk bands. For an adult alone or with a trans minor, the core documented risk is discovery turning into custody, extortion, and birth-sex placement."
+ },
+ "parse_error": null
+}

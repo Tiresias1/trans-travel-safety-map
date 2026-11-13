@@ -1,0 +1,78 @@
+{
+ "cell": 22,
+ "region": "BHR",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00496169",
+ "parsed": {
+  "rating": 0.25,
+  "explanation": "The operative regime combines documented traveler-facing exposure at entry—airport checks targeting effeminate presentation and official statements banning such entrants—with moral/indecency provisions used against suspected LGBTQI+ and cross-dressing people, carrying imprisonment and deportation for non-citizens. There are no gender-identity anti-discrimination or hate-crime remedies, no LGBTQ organisations or shelters, and courts have denied recognition/healthcare, indicating hostile institutions. Violence and facility details are thin, so absence is not safety. For an adult alone, risk is high at borders, street policing, and any document/service check; for a minor or guardian, school-age discipline and teacher-spotting proposals add reporting exposure. No documented execution/torture pathway keeps it above 0.15 anchors, but criminal arrest plus entry screening places it near the high-risk boundary.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Airport checks target effeminate presentation; official statement bans suspected effeminate homosexual entrants. Indecency provisions include deportation.",
+    "protection": "No legal gender-recognition or anti-discrimination shield for travelers.",
+    "interaction": "Border presentation suspicion can escalate into refusal, questioning, or domestic moral-law charge.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Morality/indecency articles have been used against suspected LGBTQI+ and cross-dressing persons; 2009 abaya sentence and 2011 party raid.",
+    "protection": "No documented LGBTQ shelters, community organizations, or legal protections; registration is considered improbable.",
+    "interaction": "Arrest can lead to detention, fines, possible imprisonment, and deportation; STD-testing/relocation exposure remains uncertain.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No specific bathroom, ward, or public-facility bans documented; absence does not establish safe access.",
+    "protection": "No protections or inclusive facilities documented.",
+    "interaction": "Presentation/document mismatch during service could trigger moral policing.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Courts denied gender-affirming healthcare/recognition citing Sharia; traveler emergency-care conduct not documented.",
+    "protection": "No documented care protection for visitors.",
+    "interaction": "Medical or school-health contact may force disclosure and scrutiny.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official entry bans, moral-law enforcement, legislative targets, media hostility, and false accusations frame trans/GNQ people as morality threats.",
+    "protection": "No GI/GIE anti-discrimination or hate-crime law; hate speech unpunished.",
+    "interaction": "Law enforcement and ministries can treat presentation as actionable disorder.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Education policy disciplines students whose appearance contradicts values; teacher-spotting and punishment proposals target youth.",
+    "protection": "No documented minor-specific protections or family exemptions.",
+    "interaction": "A trans minor or accompanying guardian may face school discipline, forced disclosure, or police involvement.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific killings; independent monitoring is blocked. Police are documented as targeting actor, not protector.",
+    "protection": "No documented victim-support or accountable police response.",
+    "interaction": "Reporting harassment or assault could expose victim to morality questioning/arrest.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No effective remedy documented for discrimination, border refusal, or moral-law arrest; legal recognition denied; monitoring restricted; law-status conflict unresolved.",
+    "protection": "No operational remedy documented.",
+    "interaction": "Unknowns are traveler-facing: border, police, and school contacts can escalate without appeal.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar traveler-facing entry exposure: border checks and ban. This scores lower because documented morality/indecency arrests, possible imprisonment, and deportation exceed administrative exclusion and humiliation."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Closest: morality provisions applied against gender-nonconforming people with short custody. This is comparable or slightly more hazardous due official airport presentation bans, deportation exposure, hostile youth/media climate, and blocked monitoring."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "More dangerous anchor has explicit criminal presentation, routine visitor arrest, months pretrial, and capital ambiguity. Here no trans-specific statute or capital pathway is documented, so this scores higher despite border exclusion and moral-law arrests."
+   }
+  ],
+  "synthesis": "National morality enforcement, border presentation screening, and zero protections combine: exposure begins at airport and continues in any police contact. Lack of shelters, remedies, and LGBTQ organisations means discovery has few buffers; minors/school settings add disciplinary reporting risk. Thin monitoring means absence of documented killings is weak safety. Compared with anchors, administrative border bans alone are insufficient to offset criminal arrest and deportation risk, placing it low in the high-risk band."
+ },
+ "parse_error": null
+}

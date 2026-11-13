@@ -1,0 +1,78 @@
+{
+ "cell": 21,
+ "region": "66186276B52324970173776:Tennessee",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059917",
+ "parsed": {
+  "rating": 0.25,
+  "explanation": "Combined regime: a national passport sex-marker restriction now in force (Supreme Court, Nov 2025) means traveller documents must match birth sex, with documented passport confiscation and stranding. Entry cable directs refusal on document discrepancy and flags a possible permanent fraud ineligibility. Documented custody harm includes immigration detention with forced labour and reported severe sexual abuse of trans men, and corrections policy from 2026 mandates conversion-style treatment. The state layer adds birth-sex prison and shelter placement, an enforceable criminal drag ban, a bathroom trespass arrest (held 24h in men's ward), and no state non-discrimination protection. The 7.8/100k killing figure is an undercount floor and is not used. Recourse is partial and largely unremedied.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports carry birth sex; new X markers are not issued. Entry cable directs refusal on document discrepancy and suggests permanent fraud ineligibility. Passports confiscated or blocked, leaving some travellers stranded.",
+    "protection": "Existing X passports valid to expiry; a national civil-liberties suit is pending.",
+    "interaction": "Document mismatch at border leads to refusal, possible detention, and fraud-ground exposure that follows the traveller's record.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. A state bathroom trespass arrest held 24 hours in the men's ward. Bathroom-use arrests are documented.",
+    "protection": "Pretrial release was available in the trespass case; no documented custody protection.",
+    "interaction": "Border refusal or bathroom incident moves into detention, and birth-sex placement applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal government facilities restricted by birth sex in many states; 9+1 jurisdictions ban in all government buildings, 4 criminalise bathroom use in some circumstances. State prisons placed by birth sex (2026 Act). Shelters barred to trans women. Federal corrections adopted conversion-therapy-style policy; the bureau stopped reporting trans prisoner counts.",
+    "protection": "Federal hate-crime statute and national employment protection operate; no documented facility-access accommodation.",
+    "interaction": "Federal and state rules layer: a trans visitor is placed by birth sex in state custody and under federal corrections policy.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care banned for minors (upheld June 2025) and for inmates (Apr 2024). Proposed federal rule would bar public reimbursement under 18. Federal subpoenas sought patient records of under-19s.",
+    "protection": "Adult care not described as banned for visitors in the record; no operative visitor care protection documented.",
+    "interaction": "Care-seeking by a minor or a minor's family brings regret suits and provider penalties; records may be disclosed to federal authorities.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State enforceable drag ban (impersonators anywhere children could see; felony on repeat). Indecent-exposure definition for trans bathroom use (2019). National counterterrorism strategy names 'radically pro-transgender' groups as a neutralisation priority. Police and officials reported turning a blind eye to LGBTQ assaults (2021).",
+    "protection": "Drag ban litigation continues without status; the counterterrorism strategy disclaims targeting people who merely disagree.",
+    "interaction": "Official framing of trans people as a threat increases discovery and the likelihood that a presentation arrest occurs.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Teachers must report name or pronoun requests to parents (2024). Care ban with parental regret suits and civil penalties for adults assisting minors. Federal directive threatens criminal prosecution of teachers facilitating social transition. Adoption agencies may refuse LGBTQ parents.",
+    "protection": "Teacher shield for birth-certificate pronouns; several federal orders enjoined.",
+    "interaction": "A traveller with a minor may be outed through school or medical contact, and the adult faces civil or criminal exposure for facilitating care or social transition.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Killings of trans women at 7.8/100k are an undercount floor and are not used. Gay and trans panic defence remains available. Discrimination and refusal of service are reported. Police and legal officials reported as turning a blind eye to assaults (2021).",
+    "protection": "Hate-crime statute covers gender identity federally; state statute does not list gender identity; the state's chief prosecutor has opined gender-based enhancement applies.",
+    "interaction": "Police inaction and the panic defence reduce the remedy for a visitor assaulted in the state.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Recourse partial: no state non-discrimination statute; municipal ordinances preempted for private employers. Federal litigation ongoing; state drag, shelter and facility suits unresolved. Undocumented: the 2019 indecent-exposure enforcement, status of the 2026 Act challenges, licence-marker suit outcome.",
+    "protection": "Federal courts have enjoined several federal orders; the national employment ruling protects against firing.",
+    "interaction": "Unknown enforcement status means visitors cannot predict whether a given measure is operative at the time of travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest. Both have birth-sex prison placement and a cross-dressing arrest route. This case adds documented immigration custody sexual abuse, a federal passport and entry regime, and a criminal drag ban, which places it at about the same tier. It lacks the documented assault pattern in ordinary prisons that 0.25-C reports."
+   },
+   {
+    "anchor_id": "0.15-E",
+    "comparison": "Lower-risk comparison. 0.15-E shows arrests with assaults in jails and capital ambiguity. This dossier documents no capital exposure and no custody-death pattern, so it sits above 0.15 but shares the custody-abuse signal."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Higher-risk-band comparison. 0.35-A is exclusion without imprisonment or custody abuse. This dossier adds documented detention with sexual abuse, birth-sex custody, and arrests, placing it below 0.35."
+   }
+  ],
+  "synthesis": "A trans visitor's documents carry birth sex, so the border regime (refusal, stranding, possible fraud ineligibility) is the most likely first point of exposure. A refusal or bathroom incident can move into detention, where documented harms include forced labour and sexual abuse in immigration custody and birth-sex placement in state prisons. The state layer adds an enforceable drag ban, indecency-based bathroom exposure, and no state non-discrimination protection. Federal hate-crime and employment protections and pending litigation are partial and do not stop these practices. Violence is not scored from the undercount-floor figure. The result is a documented custody-abuse tier, not execution-level risk, so the rating sits at about 0.25."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 13,
+ "region": "66186276B31593004124297:Utah",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0074733",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime has documented traveller-facing exposures: entry screening treats gender-marker/presentation mismatch as doubt/fraud, risking refusal, permanent ineligibility and possible immigration custody, where forced labour, beatings and sexual abuse are documented. National and division facility rules exclude trans travellers from birth-sex-incongruent government/school facilities; complaint mechanisms and a criminal trespass arrest in comparable public buildings make this universal. Adult-with-minor care and school restrictions increase severity. Some court challenges, legal-aid guidance and hate-crime statutes exist, but they do not erase active federal/state restrictions. No credible death/imprisonment campaign is documented, and street violence data are thin, so score sits in High Risk rather than Severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visa/passport screening treats marker, presentation or record mismatch as doubt or misrepresentation; X/new markers not accepted as identity. Consequences include refusal, additional evidence demands, possible fraud/permanent lifetime ineligibility.",
+    "protection": "Court challenge, legal-aid FAQ, limited fraud waivers, foreign advisories; prior X documents may remain valid until expiry but not a guaranteed visitor entry route.",
+    "interaction": "Entry mismatch can escalate into secondary questioning, refusal, removal delay, or immigration custody if authorities doubt sex or purpose.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Border detentions/questioning reported. Immigration custody: forced labour, beatings, solitary, severe sexual abuse; facility complaints can trigger questioning/removal; arrest/held men's ward documented in comparable state law.",
+    "protection": "Some court review, legal-aid guidance, foreign advisories, consular access possible; no documented traveller-specific release immunity or reliable protection from hostile custody.",
+    "interaction": "Screening decision can become custody; custody placement and abuse are state-run and not offset by local non-discrimination.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules bar birth-sex-incongruent use of government-funded single-sex facilities; division bans public schools and government buildings; comparable states criminalise refusal to depart, with arrest and men's ward reported.",
+    "protection": "Single-occupant new facilities; division ban excludes private venues; complaint defence possible, but requires foreign/unavailable documents and has no visitor-specific practical route.",
+    "interaction": "Federal facility rules and state bans interact; local protections do not cancel government-building exclusion or complaint-driven enforcement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors face documented bans on gender-affirming care; adults have no explicit ban but funding, reimbursement hostility, crisis-service shutdowns and record subpoenas create care-denial/misgendering risk.",
+    "protection": "Adult care restrictions not documented; some court blocks, legal aid, local ordinances/university policies; minor care access remains hostile and uncertain.",
+    "interaction": "Care-seeking with a minor can force document disclosure and school/family review; adult emergency care exposure is unclear.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy singles out 'radically pro-transgender' ideology for identification/neutralization; federal orders hostile to trans policies; officials may treat mismatch as fraud or disruption.",
+    "protection": "Reward memo lists radical gender ideology but not as arrest criterion; courts, civil-liberties suits, local counter-signals and rule of law limit blanket targeting.",
+    "interaction": "Hostile framing can justify stricter screening/facility enforcement, though primary exposure is documented administrative/criminal facility rules.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor can be excluded from schools/government facilities and denied care; teacher social-transition prosecutions and care ban create risk. Guardian may face document/fraud scrutiny when travelling with child.",
+    "protection": "No documented criminalisation of parents alone; some city/university protections, court challenges, legal aid, single-occupant facilities; practical visitor route remains absent.",
+    "interaction": "Minor school/care needs can force guardian into entry/facility questioning, raising family-level outing and detention risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division violence counts or organised sweep found; harassment possible where flags/facility bans normalize complaint; police response to victims unclear.",
+    "protection": "National and state hate-crime coverage for gender identity, employment/housing nondiscrimination, partial public-accommodation protections; police generally bound by courts.",
+    "interaction": "Facility complaints may bring police into encounter; protective statutes do not guarantee prompt support for foreign visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement counts under complaint form unknown; waiver, detention length, foreign document treatment and interaction of marker rules unresolved; enforcement varies.",
+    "protection": "Court suits, legal-aid passport FAQ, foreign advisories, some injunctions, single-occupant facilities, state marker/hate-crime rules. These can mitigate after harm.",
+    "interaction": "Partial remedies do not erase active border/facility/care restrictions; uncertainty itself increases exposure at checkpoints.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower: both impose entry denial/secondary screening, but this dossier adds possible immigration-custody abuse, criminal facility trespass risk, and permanent fraud bar. 0.35-A lacks custody violence and criminal facility arrest."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Similar-to-higher: both create universal document/facility exclusion and visitor questioning without execution. This jurisdiction lacks support-centre raids but has severe border-fraud and immigration-custody exposure; local protections and courts slightly temper it."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar: both enforce birth-sex facility/custody placement and criminal arrest risk for visitors. This jurisdiction lacks a broad cross-dressing statute, but national entry screening and documented immigration-custody abuse remain severe."
+   }
+  ],
+  "synthesis": "The operative final interaction is: a traveller at the border or in a government/school facility may be questioned when markers, records or presentation conflict with assigned-sex rules. If outed, exclusion, investigation, visa fraud/bar, complaint-driven removal, short arrest, or immigration custody can follow. Federal rules are not displaced by local protections. Adult-with-minor care and school denial add severity; remedies are partial."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 45,
+ "region": "COL",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00152511",
+ "parsed": {
+  "rating": 0.56,
+  "explanation": "The operative regime for a visitor is paradoxical: strong, documented legal protections (courts enforcing access, detainee rights, anti-discrimination law) coexist with lethal, patterned violence against trans people and armed-group kill lists, with little accountability. No border/document screening, facility bans, or custody-placement exposure is documented for visitors, so the exposure is street-level: organized non-state targeting concentrated in conflict-affected departments, killings rising, and state response that orders investigations but achieves limited accountability. Severity is lethal (5), but frequency relative to the country's general homicide rate is unestablished from the record; the targeting is patterned and organized rather than scattered, which raises it above the 0.55 anchors, while the absence of any state-imposed universal-exposure measure and the presence of working judicial recourse keep it well below the 0.25 band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented for trans visitors; no border screening or gender-keyed entry rule beyond general visa entitlements. Not documented.",
+    "protection": "Same-sex couples married abroad receive equal visa/benefits rights (documented).",
+    "interaction": "No interaction with a screening regime is documented; visitors' documents are home-issued.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Not documented for visitors.",
+    "protection": "National court ruling protecting a trans woman deprived of liberty; 2011 Constitutional Court ruling on detainee treatment (dated, resident-facing).",
+    "interaction": "Court protections operate in the detention context; if a visitor were detained, these precedents plausibly apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Court orders against hotel refusal (2011), mall-guard harassment (2011), and police harassment on a boardwalk (2004); 2016/2018 decrees covering institutions' LGBTI obligations.",
+    "interaction": "Judicial enforcement of access shows courts work for trans claimants.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Care denial to visitors not documented.",
+    "protection": "2016 decree addresses LGBTI rights in health care; strong resident-facing framework.",
+    "interaction": "Visitor-facing care access not specifically documented; decree coverage is a climate signal.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Armed groups in two departments issue kill lists naming trans people as military targets; 'social cleansing' flyers; a trans salon owner forced to move twice. 2025 police-airline warning analogy not present; no state framing of trans people as threats. Documented.",
+    "protection": "State ordered urgent investigation of the Millerey killing; JEP indicted rebels for gender persecution as a crime against humanity (2023).",
+    "interaction": "State is a bystander/protector, not perpetrator; but accountability 'little' per cable-news investigation — impunity tempers the protection.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented for visitors.",
+    "protection": "Education manuals review ordered by Constitutional Court after 2014 suicide; no visitor-specific rule.",
+    "interaction": "Resident-facing; no visitor-specific exposure documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "13 trans people killed Q1 2025; 40+ trans women killed in 2023; 35 LGBTI murders Jan–May 2025; killings continue after Millerey with little accountability. Documented patterned lethal violence.",
+    "protection": "Urgent investigation ordered; national anti-discrimination law (2011); police conduct ordered to stop harassment (2004).",
+    "interaction": "Violence is concentrated in conflict-affected departments; the state's response is documented but not shown to be effective.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Killings continue with little accountability; background homicide rate unknown, so trans-specific excess cannot be calibrated. Documented impunity gap.",
+    "protection": "Working courts, UN Independent Expert mission praised legal reforms; 2025 court order against a volleyball-league regulator for discrimination.",
+    "interaction": "Recourse exists and has operated, but does not stop the lethal pattern.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has administrative border humiliation with no crime risk. Here the traveler-facing core is street-level lethal violence with impunity, not border friction — a different severity profile, but the patterned nature and the documented accountability gap push the score below that anchor's 0.55 level."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D features state morality police using blackmail, arrests, short jail terms. Here the state is not the perpetrator, courts enforce protections, and no visitor-facing arrest risk is documented — but organized non-state targeting of trans people is lethal and patterned. That places this case above 0.25-D, but the violence axis is worse than 0.55 anchors."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A documents one visitor incident resolved by a working accountability board. Here the visitor-facing machinery is not the issue — it is the patterned lethal violence and impunity. The severity of the worst documented outcome is higher than 0.65-A, so the score is below that anchor."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has detention risk but no documented lethal violence. Here the lethal violence is documented and patterned, but no state-imposed traveler-facing restriction exists. This is below 0.75-C on the violence axis, but above it on the absence of state-imposed exposure."
+   }
+  ],
+  "synthesis": "This is a combined regime where legal protections for trans people are documented as strong and functioning, and the visitor-specific exposure is not border or facility restrictions but rather a patterned, organized, lethal violence from non-state actors concentrated in conflict-affected departments, with a documented accountability gap. No visitor-facing state-imposed exposure is documented. The exposure sits at the level of societal/organized violence with impunity, which is the highest-frequency-and-severity combination for a visitor, and the state's response is documented but not shown to be effective. The result is a mid-range score: well above the 0.25 band where the state itself is the exposure, but well below the 0.75 band where lethal violence would be absent from the record."
+ },
+ "parse_error": null
+}

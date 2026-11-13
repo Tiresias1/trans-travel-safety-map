@@ -1,0 +1,78 @@
+{
+ "cell": 31,
+ "region": "66186276B73402293045483:Nebraska",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0051866",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime creates traveler-facing, state-imposed exposure: assigned-sex passport/visa screening can deny entry, strand travellers or impose fraud bars; national/division facilities rules and a documented restroom arrest make identity mismatch an ejection or criminal-trespass pathway; custody is severe, with birth-sex placement, conversion-like prison measures, sexual abuse in immigration detention, and court dismissal of recourse; care for under-19 is barred; national counterterrorism language frames pro-trans advocacy as a threat. National hate-crime, fair-housing, employment rulings and some local ordinances provide partial remedies, but hostile institutions enforce restrictions rather than protect trans visitors. Adult travelling alone faces entry/facility/detention risks; with a minor, care denial, school records and possible child-welfare or fraud investigations worsen exposure. The regime is severe but below execution/high-imprisonment tiers.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports/visas are restricted to assigned sex; X markers ended, existing X can be scrutinized. Document-appearance mismatch may trigger refusal, additional evidence demands, detention, return, or a permanent fraud bar. Reports of confiscated or blocked passports and stranded travellers.",
+    "protection": "Existing X passports remain valid until expiration; litigation and legal-aid guidance continue. Permanent fraud is not automatic and requires elements plus limited waiver possibilities.",
+    "interaction": "Border screening converts a passport issue into secondary inspection, possible immigration detention, and exclusion. A home-country marker mismatch is the first traveler-facing exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If arrested or detained, custody practice is assigned-sex. National corrections adopts conversion-like measures; immigration custody reports forced labour, solitary, beatings, and severe sexual abuse. Division case: trans woman housed among men, assaulted by cellmate, claims dismissed.",
+    "protection": "National hate-crime law covers gender identity; some courts enjoin orders; division has broader bias-crime statute. Legal remedies exist but are partial and not shown to change custody practice.",
+    "interaction": "Entry or facility dispute can escalate into local/national detention. Hostile custody systems turn detention into severe sexual-abuse and care-denial exposure rather than neutral process.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules bar identity-congruent use of government-funded single-sex facilities; division backs single-sex bathrooms/changing rooms. Many jurisdictions impose bans; four criminalize some use; one arrest involved handcuffing and 24 hours in a men’s ward.",
+    "protection": "Some states/cities have public-accommodation or anti-discrimination rules; division has one city ordinance but no documented state-wide gender-identity public-accommodation protection.",
+    "interaction": "Restrooms, schools, capitol buildings, transit, hospitals and private settings can force disclosure, staff refusal, reporting, ejection, or trespass arrest if mismatch appears.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care is barred for under-19 in the division and many jurisdictions; federal rules propose blocking insurance reimbursement. Youth crisis services were cut; records subpoenas chill care. A minor or guardian visitor cannot obtain care lawfully in the division.",
+    "protection": "No documented national ban on adult gender-affirming care; emergency care is not expressly barred in this dossier; court challenges to federal rules continue.",
+    "interaction": "Hormone therapy, school health, hospital admission, or a minor’s care can prompt disclosure to providers, guardians, police or benefits systems, increasing exclusion risk.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism prioritizes “radically pro-transgender” violent groups; reward guidance mentions radical gender ideology among extreme viewpoints. Orders direct investigation of schools promoting gender ideology and prosecution of teachers facilitating transition. Agencies remove trans-related materials.",
+    "protection": "Counterterrorism says mere disagreement is not targeted; several orders are litigated or enjoined; some courts protect expression and employment.",
+    "interaction": "Advocacy, school contacts, protest, phone contents, or perceived association can invite scrutiny. State threat framing validates refusal, detention, or investigation beyond ordinary service friction.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "An adult travelling with a trans minor faces the under-19 care ban, school athletics and records rules, and potential investigations of adults facilitating social transition. Entry/facility mismatch can combine with child-welfare or fraud questions.",
+    "protection": "Same-sex marriage and adoption recognition reduce partner-family issues; some municipal protections exist. No documented traveler-facing remedy for denied minor care or school hostility.",
+    "interaction": "A parent seeking a clinic, school, ID, or restroom for a child may become the subject of an investigation; the child’s needs can trigger custody or service denial.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division trans-specific violence statistics are documented; official hostility and document checks raise exposure. Division lacks a state-wide gender-identity hate-crime or public-accommodation statute; a municipal ordinance was removed.",
+    "protection": "National hate-crime law covers gender identity; fair-housing and employment rulings apply; some city/state protections exist. Police can act in ordinary assaults.",
+    "interaction": "If harassed or attacked, protection depends on federal or local action while state agencies may prioritize assigned-sex facility rules or immigration screening over victim protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Several national measures are contested, so exact operative scope varies; passport restrictions are upheld, while facilities, care, funding and school orders may shift. No documented reliable remedy changes custody, border or facility outcomes.",
+    "protection": "Civil-liberties lawsuits, court injunctions, legal-aid FAQ, federal hate-crime/fair-housing mechanisms, and local ordinances provide partial recourse.",
+    "interaction": "Travellers must track live court status and local enforcement. Discretion at borders, hotels, clinics, police desks and prison intake determines whether a mismatch becomes refusal, arrest or abuse.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to administrative border exclusion, but lower: the dossier adds criminal facility exposure, birth-sex custody, sexual abuse in immigration detention, minor care denial, and possible permanent immigration fraud bars, not merely denial and return."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Close to birth-sex prison placement and facility-based arrest exposure. It is slightly below because national custody includes conversion-like measures, immigration sexual abuse and forced labour, and entry screening can strand travellers without reliable custody remedy."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "Higher than regimes with routine pretrial custody, coerced confessions, capital ambiguity, and long detention. Here execution is absent and ordinary arrest is not the default, but discovery can still lead to severe custody or exclusion."
+   }
+  ],
+  "synthesis": "Entry and facilities are the ordinary traveler interfaces; passports turn identity presentation into a verification and exclusion problem. A border mismatch can escalate into immigration custody; a restroom mismatch can escalate into trespass arrest and birth-sex detention. Custody documents show abuse and care denial that courts are not reliably correcting. For minors, care bans and school rules make a parent’s presence an investigative trigger. Partial remedies exist under national hate-crime, fair-housing and employment law plus local ordinances, but hostile institutions enforce restrictions rather than protect trans visitors. The result is severe, traveler-facing exposure without the capital or routine imprisonment tier that would place the jurisdiction lower."
+ },
+ "parse_error": null
+}

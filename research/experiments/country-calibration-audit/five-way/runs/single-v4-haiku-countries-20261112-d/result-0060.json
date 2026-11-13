@@ -1,0 +1,78 @@
+{
+ "cell": 60,
+ "region": "ECU",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0050216",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime: no documented visitor-facing criminalisation of gender expression, no documented border or document refusals of foreign trans travellers, conversion practices criminalised, and pride events authorised with official participation. Against this, detention is the documented severe exposure: placement follows birth or legal sex in an almost all-male prison system, with a 2023 foreign-national trans woman sent to a male pavilion without medical care or HIV treatment, plus a 2021 death during a massacre, a 2026 custodial death, and sexual violence. Violence is reported as rising with weak official response, but no denominator exists. Detention probability for a visitor is low, but severity is high, placing the rating in the Elevated band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No visitor-facing entry refusal or marker-mismatch practice documented. Foreign-issued documents are not shown as contested.",
+    "protection": "No documented border protection beyond the absence of recorded refusals.",
+    "interaction": "Entry status is an open question; any mismatch would feed into detention exposure below.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Trans women held in male pavilions by birth or legal sex; documented gender-identity discrimination, sexual violence, forced suppression of expression, health-care barriers; deaths in 2021 and 2026; a foreign-national trans woman placed in a male pavilion in 2023 without HIV treatment or medical exams.",
+    "protection": "Protective 'prioritaria' pavilion exists but is used unevenly; a 2016 government decision to develop LGBT detention protocols is documented, but no operative protocol is shown.",
+    "interaction": "A visitor who is detained after a document or presentation check would be placed by birth or legal sex, so the state's custody rule converts an entry question into severe custody harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National prison system operates almost entirely on male lines, so the custody rule is nationwide rather than regional.",
+    "protection": "Subnational variation is documented only for pride events; no regional custody protections are documented.",
+    "interaction": "Public official participation in pride does not offset national custody placement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Health-care barriers in custody are documented, including denial of HIV treatment and medical exams for a trans detainee.",
+    "protection": "Conversion practices are criminalised, a non-exposure signal. No documented visitor-facing care protection.",
+    "interaction": "Detention care denial compounds the custody exposure; routine community care access for visitors is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No gender-expression criminal statute documented. Official hostility from office-holders is penalised (2013 candidate fined and barred). The 2026 adoption ban targets resident families, not visitors.",
+    "protection": "Constitutional sexual-orientation non-discrimination since 1998; official hostility penalised.",
+    "interaction": "Constitutional protection and the 2026 adoption statute point in opposite directions; the adoption ban is resident-facing and not scored.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Conflicting sources on under-18 legal gender recognition; a minor with mismatched documents has no documented pathway; custody placement of minors is not documented.",
+    "protection": "April 2026 rulings reportedly allow adolescents to change records; reach is disputed.",
+    "interaction": "A travelling minor's document status is unresolved; if detained, placement rules for minors are not documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Monitoring group documents 27 LGBTQ+ murders in 2023 with inadequate official response; violence reported increasing since January 2024 amid armed conflict. No denominator or general homicide baseline.",
+    "protection": "Pride marches authorised with police protection; prosecution of LGBTQ killers not documented.",
+    "interaction": "Weak official response to LGBT deaths raises severity of any street attack against a visitor; magnitude cannot be measured.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Investigations of LGBT deaths are reported as inadequate; the 2011 report is the most recent official country report; custody complaints have led to calls for investigation rather than documented remedies.",
+    "protection": "Court rulings on marker changes and the 2018 registry order show courts acting on civil-status claims; a national constitutional ban on discrimination exists.",
+    "interaction": "Recourse for custody harms is not shown operating; remedies for visitors in custody are not documented.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has an enforced border register that excludes visibly trans visitors with no effective appeal. This dossier documents no entry exclusion, so it sits above 0.35-A. Its custody exposure is not the 0.35-A administrative-exclusion pattern, however."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C combines birth-sex prison housing, frequent assaults, and a criminal cross-dressing statute in administrative buildings. This dossier shows birth-sex custody with comparable harms but no documented gender-expression criminal statute and a stronger constitutional and civic record, so it sits modestly above 0.25-C."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C is birth-sex ward placement with partial denial of care but no custodial deaths and no criminal exposure. This dossier's custody exposure is more severe (deaths, sexual violence), so it sits below 0.55-C, though its remedies and climate are comparable."
+   }
+  ],
+  "synthesis": "The dossier documents a severe, nationally uniform custody exposure: trans women are placed by birth or legal sex in male prisons, with documented sexual violence, care denial and deaths, and a foreign-national trans woman has been affected. A visitor is rarely detained, so the likelihood is low, but severity is high and the state's custody rule applies on any detention. Street exposure is raised by rising violence and inadequate investigation, though it is unmeasured. Positives include a constitutional non-discrimination ban, criminalised conversion practices, authorised pride with official participation, and penalised official hostility. Resident-facing marker reform and the adoption statute are not scored. Overall the exposure sits in the Elevated band."
+ },
+ "parse_error": null
+}

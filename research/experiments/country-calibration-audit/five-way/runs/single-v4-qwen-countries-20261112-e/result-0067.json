@@ -1,0 +1,78 @@
+{
+ "cell": 67,
+ "region": "FIN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00720801",
+ "parsed": {
+  "rating": 0.81,
+  "explanation": "Adult alone: strongest documented factors are national criminalisation of gender-identity discrimination, equality statute covering goods/services and health, no criminalisation of trans expression, high civic visibility, and no documented state or border targeting. Open questions remain on passport-marker checks, airport/body screening, facilities, and visitor care. Adult with a trans minor: care is protected in principle but documented recommendations and poor access signal potential service friction; guardian/child disclosure risk is not specified. Societal SOGIE hostility is evidenced by rising hate-crime reports, but counts lack denominators and show reporting more than organised targeting; legal recourse and rule of law reduce severity. Overall low risk with moderate uncertainty; below 0.85 because traveler-facing entry/facility/care regimes are unresolved and care access for trans minors is poor.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented for visitor passport-marker handling: mismatch screening, secondary checks, airline-ticket mismatch, or entry refusal are unresolved.",
+    "protection": "Gender-identity discrimination is criminal and equality law covers services; no trans or expression criminalisation. State travel advice sides with trans travellers abroad, but only as outbound advice.",
+    "interaction": "If a traveller presents differently, general border/security rules would apply; no documented subnational or federal facility mismatch reaches visitors.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Not documented: no evidence of stops, registration, strip-searches, forced verification, birth-sex custody, or detention practices targeting trans visitors or travelling minors.",
+    "protection": "No criminalisation of trans expression; discrimination is a crime; conversion conduct has been prosecuted as assault; police record SOGI motive.",
+    "interaction": "Any custody issue would be governed by ordinary criminal law; no documented subnational variation or federal interaction.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented: no explicit bathroom, locker, sauna, women-only service, checkpoint, or public-accommodation exclusion for trans visitors or minors.",
+    "protection": "Equality statute covers goods and services; gender-identity discrimination is criminal; Pride and venues operate in numerous cities, indicating broad public acceptance.",
+    "interaction": "Local facility disputes would be mediated by national law, but operative facility policy is absent from the dossier.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Documented resident care problems: more than 40% of trans survey respondents could not access needed care; minor care is centralised, restrictive, and case-by-case. Visitor HRT/emergency access is not documented.",
+    "protection": "Health services are expressly protected by equality law; discrimination in services is criminal; no documented refusal to a travelling adult or accompanied minor.",
+    "interaction": "A minor or care-seeker could encounter delay, gatekeeping, or disclosure; an adult's routine care interaction is unknown.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "SOGI-motivated suspected offences rise and are recurrent; LGBT youth violence is documented; conversion practices are not fully banned. This signals social threat framing, not state hostility.",
+    "protection": "Gender-identity discrimination is criminal; equality law reaches health, education, services; first conversion prosecution convicted; citizens' initiatives and monitoring institutions exist.",
+    "interaction": "No hate-crime charge category; counts are reported suspicions without denominators, so they evidence reporting climate as well as incidents.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented for a trans minor visitor: school placement, sports/facilities, child protection, emergency decision-making, or guardian outing. Minor care is centralised, slow, and medically restricted.",
+    "protection": "Education and health services are protected; diverse parentage is recognised; conversion practices have been prosecuted; no documented visitor-specific minor ban.",
+    "interaction": "A travelling guardian could face disclosure or delay in care; national protection limits likely local exclusion, but interaction is unresolved.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "High recorded SOGI hate reports, including defamation/assault, and documented LGBT child violence indicate public hostility risk. No trans-specific killing rate or campaign is documented.",
+    "protection": "No organised police targeting; discrimination criminal; assault/defamation charged; police train college tracks motive; support organisations and oversight culture are visible.",
+    "interaction": "Visitor risk is ordinary public violence risk with legal recourse; counts lack denominators and background rates, so magnitude is uncertain.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved: border/screening, facilities, detention, care continuity, minor protections; conversion ban pending; source year and sterilisation phase-out disagree; care survey undated.",
+    "protection": "Legal complaints under equality and discrimination law are available; active civil society and citizens'-initiative route show institutional remedy culture.",
+    "interaction": "These are open questions rather than known exposures; they reduce confidence and slightly raise practical uncertainty.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Similar protections and civic visibility, but 0.85-A documents trained border, audits, and compensation after a refusal. This dossier lacks traveler-facing entry/facility evidence and shows recurring SOGI hate reports plus poor care access, so it sits slightly below 0.85, not far above."
+   },
+   {
+    "anchor_id": "0.75-D",
+    "comparison": "0.75-D accepts public attacks with police review. This jurisdiction has broader legal protection and social visibility, but weaker evidence on border screening and care continuity. It fits at or just above 0.75; the unresolved traveler-facing mechanisms keep it below 0.85."
+   },
+   {
+    "anchor_id": "0.95-A",
+    "comparison": "0.95-A has routine border acceptance, audits, rapid ombuds correction, and no credible custody risk. This dossier supports those outcomes only indirectly; border, custody, and facility regimes are not documented, and minor-care friction is visible. Thus materially below 0.95."
+   }
+  ],
+  "synthesis": "The operative regime is national and generally protective: gender-identity discrimination is criminal, equality law reaches goods/services and health, and no law or documented practice targets trans visitors. That keeps severity after discovery low. The main risks are social hostility and service friction, not state punishment: rising reported hate offences, minor-care restrictions, and access gaps signal possible outing consequences. However, counts lack denominators and are largely resident reporting, not visitor campaigns. Border, screening, facilities, detention, and care continuity are not documented, so the combined regime cannot be scored as fully reliable. A lone adult would probably face low legal exposure with uncertain administrative friction; a travelling family/minor could face care or disclosure delay. The net is low-risk but uncertain."
+ },
+ "parse_error": null
+}

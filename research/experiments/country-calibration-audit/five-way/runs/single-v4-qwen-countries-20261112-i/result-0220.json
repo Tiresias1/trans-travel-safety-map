@@ -1,0 +1,78 @@
+{
+ "cell": 220,
+ "region": "VAT",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.004396232",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "Combined regime shows no criminal penalty for trans status or consensual private conduct, and no prison system, so severe custody/exposure risk is weakly supported. However, governing institution’s doctrine frames gender theory as dangerous, denies anti-discrimination recourse, and sets a hostile local climate. Visitor-facing entry, facility, care and custody rules are undocumented; absent evidence is not safety. If outed, expected harm is service friction, embarrassment or denied care rather than prosecution. No documented traveler-facing universal-exposure measures; lack of protections keeps below protective regimes.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific border questioning, marker rule, refusal, scanner/device-search practice, or entry restriction for visitors.",
+    "protection": "No documented acceptance of X markers, training, or protection against document-appearance mismatch.",
+    "interaction": "A passport-presentation mismatch could be discretionary at screening, but no operative rule or incident is documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Pretrial cells exist; no trans-specific placement policy. If detained, birth-sex placement, segregation or external prison transfer are uncertain.",
+    "protection": "No domestic prison system and no documented trans prisoner placement case.",
+    "interaction": "Any sentence would be served in a neighbouring jurisdiction’s prisons, but no trans-specific custody rule reaches visitors.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented facility bans, but access to restrooms, changing rooms or gendered public spaces is unspecified.",
+    "protection": "No stated right to congruent facilities, no accommodation/venue protection, and no complaint route documented.",
+    "interaction": "Doctrinal hostility may influence private or institutional staff, but no operative exclusion rule is documented.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No trans anti-discrimination law; doctrine calls transition risky, so routine/emergency care friction is possible if status is known.",
+    "protection": "No documented care access guarantee, chosen-name record rules, ombuds, or HRT continuity for visitors.",
+    "interaction": "A medical or pharmacy visit could force disclosure; consequences unknown but likely administrative/clinical, not criminal.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State/institutional doctrine opposes gender-theory protections, rejects anti-discrimination framing, and dismisses employees admitting gay status.",
+    "protection": "Criminal law contains no trans offence and no documented police/border targeting of trans visitors.",
+    "interaction": "Hostile framing colors officials and residents, but no documented traveler-facing enforcement or state-directed campaign.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No age-specific trans rule documented; conservative guardianship/religious marriage norms could raise friction for a trans minor.",
+    "protection": "No safeguard for a minor’s gender expression, facilities, care, or non-disclosure to family/guardians.",
+    "interaction": "Adult guardian may encounter institutional expectations, but no operative restriction on travelling families is documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current documented anti-trans street violence or police failure against visitors; 1998 self-immolation is old and not trans-specific.",
+    "protection": "No documented hate-crime response, victim support, or reliable complaint enforcement.",
+    "interaction": "If violence occurs, response likely general assault law only, with no identity-based recourse shown.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No gender-recognition route or anti-discrimination remedy; unknown border/facility/care practices create open questions.",
+    "protection": "No documented ombuds, tribunal, legal aid, or audit that changes outcomes for trans visitors.",
+    "interaction": "Uncertainty is the main deduction: absence of traveler-facing exposure evidence is not evidence of safety.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A has explicit equality law, police training, and functioning complaint board. This jurisdiction lacks criminalization but also lacks protections/remedies and shows hostile institutional doctrine, so it sits below that anchor."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "0.65-B has a documented care refusal but rapid national-law remedy. Here care friction is hypothetical and no remedy is documented; however, severity is likely lower because no binding care ban exists, placing it near this anchor."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "0.55-A imposes universal police registration/checkpoint holds, a continuous exposure. This dossier documents no such registration or checkpoint rule, so the known risk profile is above 0.55-A despite open questions."
+   }
+  ],
+  "synthesis": "The operative regime is not criminalized: a trans visitor faces no trans offence, no prison placement record, and no documented entry/facility ban. Risk derives mainly from institutional hostility and lack of remedies, which could turn discovery into embarrassment, service refusal, care delay, or custody ambiguity. Because those harms are not shown as universal traveler-facing rules, severity remains moderate rather than elevated. The score reflects weak evidence of exposure, weak evidence of protection, and an unknown but low-severity path after outing."
+ },
+ "parse_error": null
+}

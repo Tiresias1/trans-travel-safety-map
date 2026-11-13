@@ -1,0 +1,78 @@
+{
+ "cell": 16,
+ "region": "66186276B38006515706420:South Dakota",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0056738",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "Combined regime: the national entry cable refuses applicants with document or record discrepancies and flags a lifetime fraud-ground ineligibility risk, so a visitor whose presentation conflicts with documents faces refusal at entry. Federal immigration custody has documented beatings, forced labour and sexual abuse of trans men, and federal prisons have adopted restrictive policies. The state layer adds a criminal trespass offence for facilities use in public buildings, with a documented arrest and 24 hours in a men's ward, and no state anti-discrimination or gender-identity hate-crime coverage. Hospital record subpoenas, the minors-care ban and the counterterrorism rhetoric add broader exposure. Documented protections are limited to national employment and hate-crime law and marriage recognition, which do not cover facilities, entry or custody. Violence baseline is undocumented for trans visitors. Outcomes are severe but not imprisonment-by-default or execution.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Entry cable directs refusal where documents or records discrepancy casts doubt on sex; lifetime fraud-ground ineligibility possible; passports blocked or confiscated for trans travellers; X markers no longer issued.",
+    "protection": "Ministry-level litigation over passport markers is ongoing; no documented operative relief for visitors at entry.",
+    "interaction": "A mismatch between home-issued documents and presentation can trigger refusal, then investigation and a fraud finding; the parent rule governs entry regardless of state law.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse of trans men; state facility trespass arrest with handcuffing and 24 hours in men's ward.",
+    "protection": "Pretrial release was granted in the documented state case; no documented custody protections for trans detainees.",
+    "interaction": "State trespass enforcement occurs in public buildings the visitor may enter; custody then follows birth-sex placement practice in the federal and state systems.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State bans cover K-12 and state-owned buildings in this state, with a criminal trespass offence on refusal to leave; federal orders restrict government-funded facilities; the state map notes other sex-defining rules may affect access.",
+    "protection": "Statutory exemptions exist for emergencies, chaperoning and custodial purposes, but they do not cover trans visitors as a class.",
+    "interaction": "Universal exposure: every visitor presenting against documents faces the facility rule in state buildings, and an employee's request to leave converts it into a trespass arrest.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for under-18s banned in the state; federal proposals would bar public insurance reimbursement under 18; federal subpoenas of hospital records for patients under 19.",
+    "protection": "Adult care not banned in the state per dossier; no documented visitor-access protection.",
+    "interaction": "Care-seeking visitors may be exposed to records disclosure to federal authorities; minors cannot receive the restricted care locally.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups as a neutralisation priority; federal orders direct criminal prosecution of teachers facilitating social transition; state legislators framed the facilities law around 'biological sex'.",
+    "protection": "Strategy states powers will not target people who simply disagree; no operative safeguard for trans visitors documented.",
+    "interaction": "State and federal law enforcement treat trans presentation as a regulatory or security concern, which increases discovery and escalation risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minors cannot receive restricted care in the state; school facilities restrictions apply to minors on school trips; teachers facing prosecution for facilitating social transition; minors' records subpoenaed.",
+    "protection": "Not documented for travelling minors; the state's ban on under-18 care is an exposure, not a protection.",
+    "interaction": "A minor in school-linked or school-trip settings meets the facilities rule; a guardian may face records disclosure or school-level exclusion.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Trans-specific street violence rate for visitors not documented; state and federal hostility may embolden harassment; police have made facilities-based arrests.",
+    "protection": "National hate-crime statute covers gender identity; state law does not; 23 states cover gender identity in bias-violence statutes nationally.",
+    "interaction": "Police response to violence against a trans visitor is uncertain because state law does not cover gender identity, leaving federal hate-crime law as the only backstop.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state anti-discrimination statute for gender identity; national employment protection applies; national legal challenges are unresolved; enforcement of the facilities law in custody is unspecified.",
+    "protection": "National employment protection and national hate-crime prosecution operate; municipal protections are patchy; a 2024 settlement shows a state-level remedy was obtained in one case.",
+    "interaction": "Recourse exists mainly at national level and depends on the visitor's documents and location; state remedies are thin.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Both combine birth-sex custody placement with a criminal statute for presentation in government buildings and universal facilities exposure. This case has documented immigration custody abuse and a federal lifetime fraud ground, but more documented arrests and a stronger national remedy structure, so it sits similar to slightly above."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Both have entry refusal for trans visitors and universal exposure at border checks. The 0.35-A case has no criminal penalty and a route to exclusion rather than custody; this case adds documented custody abuse and a criminal trespass arrest, so it sits lower."
+   },
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "Both show documented custody abuse of trans detainees. The 0.15-D case has sentences, forced nudity and extortion, plus a capital statute; this case has no documented capital pathway and no sentences tied to presentation, so it sits clearly above."
+   }
+  ],
+  "synthesis": "Entry screening, facilities rules and custody practice interact across national and state levels. A visitor whose presentation conflicts with documents can be refused at entry, face a federal fraud finding, or be detained in immigration custody where documented abuse has occurred. Inside state buildings the facilities rule is enforced through criminal trespass, with a documented arrest. Protections are limited to national employment and hate-crime law. No documented capital or lethal pathway applies, but custody abuse, universal facilities exposure and entry refusal place the operative regime in the high-to-elevated risk range."
+ },
+ "parse_error": null
+}

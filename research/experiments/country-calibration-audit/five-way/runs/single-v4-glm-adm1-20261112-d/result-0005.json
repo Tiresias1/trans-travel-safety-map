@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0008956559",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined regime pairs one of the country's most protective state/province layers — enforceable public-accommodation and housing nondiscrimination, hate-crime coverage, self-declared state documents, X markers, and a healthcare shield law covering visitors — with a hostile national framework the visitor cannot avoid: passport/sex-marker rules and entry screening that route document discrepancies toward refusal and potential lifetime fraud findings, national facility rules, and documented abuse in national custody. In-state daily exposure is low and remedies operate; entry/custody exposure is universal and unremedied. That mixture of tier-1 border/facility exposure with strong documented local protections sits in the middle of the scale.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: federal sex-marker rules, case-note tagging, refusal of discrepant cases, possible lifetime fraud ineligibility; foreign governments issued trans-specific travel advisories.",
+    "protection": "Litigation ongoing; existing passports honored; X passports valid until expiration; legal-aid FAQ exists.",
+    "interaction": "State protections cannot reach federal entry screening; discrepancy can escalate to fraud investigation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: national corrections policies mandating hair-cutting, hormone removal; immigration-custody forced labour, beatings, sexual abuse of trans men.",
+    "protection": "Not documented for visitors facing detention here.",
+    "interaction": "Any state-level police encounter can chain into national custody with these conditions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Documented: federal funding ban on congruent facilities in government buildings; state/province bathroom bans elsewhere; 4 states criminalise use in certain circumstances.",
+    "protection": "Within this division, no bathroom ban documented; most-protective tier; public-accommodation law operative.",
+    "interaction": "Federal buildings and travel outside the division impose the national/state-ban rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Not documented within the division; national orders target minors' care, largely enjoined.",
+    "protection": "Documented shield law protecting visiting patients from home-jurisdiction bans; codified care protections since 2022.",
+    "interaction": "Visitors from ban states can obtain lawful care here without civil/criminal exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented: national 'gender ideology' removals, counterterrorism framing of pro-trans ideology, first bathroom-trespass arrest elsewhere (handcuffed, men's ward).",
+    "protection": "Division hate-crime statute and reporting apparatus; public-accommodation enforcement; retained by 67.8% ballot vote.",
+    "interaction": "State police operate under protective statutes; national agencies carry hostile framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Documented nationally: orders framing minors' care as 'mutilation', prosecutions of teachers facilitating transition, hospital-record subpoenas; a travelling minor's social transition could draw national scrutiny.",
+    "protection": "Division bans conversion therapy on minors; shield law; protective schools framework.",
+    "interaction": "A travelling minor's care is shielded in-state but exposed to federal orders and home-state rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Uncertain: no division-specific violence figures; 66% of national poll respondents support assigned-sex documents, signalling broad conservative sentiment nationally.",
+    "protection": "Division hate-crime coverage and functioning reporting since 2012.",
+    "interaction": "Police response within the division follows protective statutes.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National measures partly enjoined, partly in effect; effectiveness varies by moment of travel and officer discretion; passport suits unresolved.",
+    "protection": "Division protections are operating law with documented enforcement history; state court struck sodomy enforcement in 1974.",
+    "interaction": "State remedies cannot offset federal entry/custody exposure; residual unrepealed sodomy statutes are latent.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both feature discretionary border secondary screening with administrative rather than criminal outcomes and slow, imperfect remedies. Here the stakes are higher (possible fraud finding, advisories from allied governments), but the division adds protective law absent in the anchor; net similar."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The national register-style entry exposure (case-note tags, refusal pipeline, confiscations stranding travelers) resembles 0.35-A's universal travel-control mechanism. But here that regime coexists with a documented protective operating layer for most of the stay, unlike the anchor's total regime, so materially above 0.35."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers and working tribunals with brief detention only. This regime's federal layer is more hostile than that anchor's, and custody conditions are documented abusive; the division layer matches or exceeds 0.75-C protections. Sits below 0.75 because the traveler's exposure at entry is not officer courtesy but policy."
+   }
+  ],
+  "synthesis": "The operative regime is split-source. Within the division, the visitor encounters documented, operating protections: public-accommodation nondiscrimination with real enforcement, hate-crime coverage, self-declared state documents, X markers, a shield law extending care access to visitors, and no local facility ban. These are positive operating machinery, not paper. But entry is federal: sex-marker restrictions, discrepancy-based refusal with a possible lifetime fraud finding, foreign-government advisories, and documented abusive national custody if detention occurs. Federal facility rules also reach national buildings inside the state. The traveler's worst operative feature is thus tier-1/2 universal exposure at the border and in national custody, unremedied, layered over a genuinely protective local regime — placing the combined system near 0.55, above hostile-jurisdiction anchors but well below jurisdictions where entry and daily life are uniformly respectful."
+ },
+ "parse_error": null
+}

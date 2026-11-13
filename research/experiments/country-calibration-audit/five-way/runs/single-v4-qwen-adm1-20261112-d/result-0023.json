@@ -1,0 +1,78 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00673163",
+ "parsed": {
+  "rating": 0.4,
+  "explanation": "Combined federal/state regime. Federal passport/visa and entry screening create documented traveler-facing exposure: mismatched documents can trigger refusal, secondary questioning, possible permanent fraud bars, and immigration detention where severe abuse is reported. The state lacks adult facility or care bans and has municipal protections, but no statewide nondiscrimination or hate-crime coverage; school/sports/board measures mainly affect minors. Hostility is contested, not wholly enforced, so consequences are elevated rather than catastrophic. Adult-with-minor adds school, sports, and youth-care uncertainty. Absence of violence data is not safety.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport/visa restrictions; mismatched or suspected misrepresenting documents can trigger secondary screening, refusals, evidence requests, permanent fraud bars; blocked/confiscated passports and stranded travelers are reported.",
+    "protection": "Existing X passports remain valid; lawsuits and legal-aid guidance exist; limited waiver may apply.",
+    "interaction": "Federal border rules apply before state-local protections; a document question can escalate into detention or exclusion.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If detained, immigration custody reports forced labour, beatings, solitary and severe sexual abuse; national prison policy includes hormone removal and psychiatric conversion-like treatment.",
+    "protection": "Not documented for visitors; some federal orders are enjoined and consular/legal aid may intervene.",
+    "interaction": "Border discrepancy can move directly into custody; birth-sex placement and official hostility compound harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules restrict government-funded single-sex facilities by birth sex; one school district imposes student bathroom controls; state lacks adult facility ban but outside four municipalities service recourse is weak.",
+    "protection": "No statewide adult facility or care ban; four municipal ordinances cover accommodations; no state adult criminal trespass.",
+    "interaction": "Federal facility rule coexists with moderate state; local tolerance does not neutralize government-funded or school settings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National climate limits youth care, school transitions, crisis services, records subpoenas and insurance; ward/document mismatch effects are not sourced.",
+    "protection": "No state ban on adult care; state youth-care regulation is only a draft; local health recourse is weak.",
+    "interaction": "A minor, guardian or emergency could trigger records, refusal or placement problems; adult routine care exposure remains uncertain.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritizes violent radical pro-transgender groups; domestic terror memo mentions radical gender ideology; school/teacher investigation orders exist.",
+    "protection": "National hate-crime law may apply; several hostile orders are blocked or litigated; advocacy litigation remains active.",
+    "interaction": "Framing can justify surveillance, fraud inquiries and indifferent bias-crime response, especially in custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor may face sports board restrictions, district bathroom policy, pending youth-care rule, national school/teacher measures and health records inquiries.",
+    "protection": "State medical board rule not yet effective; adult facilities/care not banned; governor’s facilities attempt failed.",
+    "interaction": "Guardian status can be questioned through school, sports or clinic; unresolved regulations raise risk without proving operative harm.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific street-violence count or police profiling inventory for this state/province is provided.",
+    "protection": "Municipal ordinances protect four cities; national hate-crime statute exists; rule-of-law complaints may sometimes be heard.",
+    "interaction": "Absence of evidence is not safety; outside municipalities, service discrimination and bias crimes may lack realistic remedy.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement of passport, visa, facility, care and police rules varies; whether a mismatch becomes questioning, exclusion or custody is unpredictable.",
+    "protection": "Limited waivers, courts, legal-aid FAQ and some injunctions reduce, but do not cancel, federal exposure.",
+    "interaction": "Protective state measures operate locally; national entry, custody and facility rules dominate combined traveler risk.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has explicit entry denial for visibly trans visitors without prison. This regime has less universal trans entry bar but documented border discrepancy, possible permanent fraud bars and severe immigration custody; local state lacks adult bans, so risk is similar to or slightly below that exclusion-heavy model."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves secondary screening/delay with administrative penalties. Here, courts allowed marker restrictions, possible permanent ineligibility and immigration detention abuse, making consequences worse than routine bureaucratic friction."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained respectful inspection, legal counsel and release. This lacks that border protocol and has hostile federal entry/custody rules, so rating is well below."
+   }
+  ],
+  "synthesis": "The operative regime is hostile federal law overlaid by a moderate state. Entry and document discrepancy are the clearest traveler exposure; if a border/visa question escalates, refusal, detention and severe custody harm are credible. Within the state, an adult alone is less likely to face criminal facility rules and may find municipal protections, but those do not cover all service settings or offset federal facilities/custody. Minors face added school, sports and youth-care uncertainty. Contested enforcement creates elevated but not catastrophic risk."
+ },
+ "parse_error": null
+}

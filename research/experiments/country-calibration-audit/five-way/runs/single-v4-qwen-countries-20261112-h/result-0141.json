@@ -1,0 +1,78 @@
+{
+ "cell": 141,
+ "region": "MNP",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00440477",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "The combined regime lacks documented trans-specific criminalisation or organised targeting. Parent national rules govern entry, documents and airport screening, but their content is unstated, so traveler-facing border risk is uncertain rather than safe. Local positives—marriage recognition, hate-crime enhancement, Pride—reduce likely severity to administrative friction or discrimination, but they do not document direct protections for facilities, care, minors, or enforcement. Adult visitors may encounter ordinary checks; with minors, family/school/health interactions remain unknown. Score sits in Reduced Risk, discounted for undocumented parent screening and absent operative safeguards.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent national immigration and airport screening applies; passport-name or marker mismatches may arise, but no trans-specific border restriction is documented.",
+    "protection": "No criminalisation; governing state's top-court marriage equality is a non-trans signal that parent law is not overtly hostile. Local hate-crime law is not traveler-facing.",
+    "interaction": "Border risk depends on the unstated parent layer; local tolerance cannot offset restrictive federal screening if such screening exists.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No documented stops, arrests, or custody for gender expression; possible federal secondary inspection or immigration detention is not characterized.",
+    "protection": "No trans-specific offence; hate-crime enhancement; stable legal institutions implied by marriage recognition.",
+    "interaction": "Any local custody could interact with federal screening; enforcement and placement rules are not documented.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, prison, hospital, or public-facility rules for visitors; federal or parent facility practices are unstated.",
+    "protection": "Marriage recognition and a small Pride event suggest institutional tolerance; no facility ban is recorded.",
+    "interaction": "Local law cannot control federal facilities or border-linked placements; facility exposure remains unknown.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No documented trans health-care access, refusal, marker rules, medication seizure, or continuity-care barriers.",
+    "protection": "Legal gender change requires a medical process, but that is resident-facing and not a direct visitor care safeguard.",
+    "interaction": "Emergency or routine care could intersect with local and federal systems; care access is not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No comprehensive nondiscrimination law beyond government employees; no documented state threat framing or profiling of trans visitors.",
+    "protection": "January 2023 public law adds enhanced sentencing for gender-identity hate crimes; same-sex conduct is not criminalised.",
+    "interaction": "Enforcement record is absent; parent equality signals may shape treatment but are not trans-specific.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented rules for transgender minors, guardians, schools, facilities, child care, or family screening; parent layer is unstated.",
+    "protection": "Marriage and adoption recognition are climate signals only; no child-specific traveler safeguards are documented.",
+    "interaction": "An adult travelling with a minor may face unknown federal, local, school, or health-care interactions.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented anti-trans violence, harassment, extortion, or police targeting; absence of incident records is not proof of safety.",
+    "protection": "Hate-crime enhancement exists; a local newspaper reports a first Pride event described as successful by its organiser.",
+    "interaction": "Police response under local and federal law is undocumented; the small Pride signal is mild but positive.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Limited civil recourse beyond government employment; no record of enhanced-sentencing application; parent border and care rules unknown.",
+    "protection": "Hate-crime law is on the books; marriage recognition under the governing state's top court is a positive institutional signal.",
+    "interaction": "Traveler remedies may depend on undocumented parent channels; enforcement and border practices remain uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Higher: that anchor has trained border officers, accepted markers, and a working tribunal. This dossier only shows parent rules apply with unknown content, so entry safety is not documented."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Close: that anchor records a document-mismatch stop with a remedy under equality law. Here no incident is documented and no equality statute exists, giving slightly lower confidence but less demonstrated harm."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Higher: that anchor has documented extended screening, refused admissions, and administrative penalties. This dossier documents no such universal border friction; only absent parent specifics create uncertainty."
+   }
+  ],
+  "synthesis": "The operative picture is neither openly hostile nor affirmatively protective. No trans-specific offence, targeting, or facility restriction is documented, and social/legal signals suggest discovery may produce inconvenience rather than custody. But the governing state's entry layer is central to travelers and is not characterized; care, facilities, and minor interactions are likewise undocumented. The score therefore reflects low observed severity tempered by material unknowns and no verified protections."
+ },
+ "parse_error": null
+}

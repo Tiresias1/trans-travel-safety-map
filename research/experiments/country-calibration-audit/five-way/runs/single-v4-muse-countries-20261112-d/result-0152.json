@@ -1,0 +1,78 @@
+{
+ "cell": 152,
+ "region": "NER",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.001609688",
+ "parsed": {
+  "rating": 0.16,
+  "explanation": "Article 390 explicitly criminalises changing or attempting to change sex at birth, with 5-10 years' imprisonment, no suspended sentences or mitigating circumstances, and Articles 391-392 impose 10-20 years for same-sex marriage and LGBTQ organisations. A coordinated enforcement campaign since the February 2026 code produced at least 40 arrests and 16 imprisonments, judges were sanctioned after acquittals, officials frame LGBTQ practices as culturally unacceptable, and no broad anti-discrimination protection exists. Outing therefore risks long imprisonment through state action, with remedies actively punished. No execution or torture is documented, placing the case above 0.05 anchors but at the severe 0.15 tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No passport, visa, marker or screening practice is documented; nothing is inferred from its absence.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Coordinated campaign: at least 40 arrested and 16 imprisoned after the 2026 code; Article 390 carries 5-10 years with no suspended sentences or mitigating circumstances.",
+    "protection": "Not documented. No functioning remedy is shown; judges were reassigned or allegedly sanctioned after acquittals.",
+    "interaction": "Criminalisation of transition and LGBTQ conduct converts discovery into arrest, prosecution and imprisonment, with judicial leniency itself punished.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Article 390 reaches anyone who changes or attempts to change sex at birth, placing transition-related medical steps inside criminal law; HIV prevention, condoms, testing and PrEP access collapsed after organisations stopped working.",
+    "protection": "Not documented.",
+    "interaction": "Seeking transition care or HIV services can expose identity in an environment where the underlying conduct is criminalised and providers have ceased operating.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The transitional charter bans LGBTQIA+ practices; the justice minister calls all LGBTQ practices contrary to social and cultural values; enforcement is described as a coordinated witch-hunt in a toxic climate.",
+    "protection": "Not documented. No broad legal protection against discrimination on sexual orientation or gender identity exists.",
+    "interaction": "Official threat-framing, explicit transition criminalisation and an active arrest campaign combine to make state action, not only social hostility, the operative risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific travel, custody or care rule is documented. The pre-2025 age of consent was 21 for same-sex acts versus 13 for different-sex acts; the 2026 position is not stated.",
+    "protection": "Not documented.",
+    "interaction": "A guardian faces the same criminal exposure as an adult if outed, with no documented family-specific protection; no separate minor rule should be inferred.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Stigmatisation is a standing condition; asylum seekers at a 2022 demonstration faced service refusals and verbal or physical violence and were not recognised as refugees; post-2026 LGBTQ people went into hiding.",
+    "protection": "Not documented. No trans-specific violence rate with a denominator is provided, and 2013 data do not describe the current period.",
+    "interaction": "Social hostility is amplified by a police-enforced criminal campaign and by evidence that acquitting judges face consequences, undermining expectations of protection.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No broad anti-discrimination protection; Article 95 data protection is not shown to operate as a remedy and its enforcement is undocumented; acquitting judges were sanctioned.",
+    "protection": "Not documented.",
+    "interaction": "Formal legal avenues are negated in practice by judicial sanctions and an active enforcement campaign, leaving no documented effective recourse for an outed visitor.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar: explicit criminalisation, routine arrest, imprisonment, beatings or illusory remedies in the anchor versus 5-10 years, a documented arrest campaign and punished acquittals here. This case lacks documented beatings and a capital provision, but explicit transition criminalisation and no suspended sentences keep it at the 0.15 tier."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Lower: the anchor has brief sentences, no execution and slow remedies despite birth-sex prison placement. Here penalties are 5-10 and 10-20 years, imprisonment is already documented for 16 people, and judges are sanctioned for leniency, making consequences materially more severe."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Materially lower: the anchor involves hours-long detention, fines and weak courts without imprisonment as a typical outcome. Here long imprisonment is the statutory penalty and has been imposed in a coordinated campaign, with transition itself criminalised."
+   }
+  ],
+  "synthesis": "The combined regime is one of explicit state criminalisation: transition, same-sex conduct, marriage and LGBTQ organisations all carry long prison terms, enforced in a recent coordinated campaign. Official cultural hostility and judicial sanctions for acquittals mean discovery is likely to trigger investigation and imprisonment rather than discretion, while collapsed health and community services remove practical support. Unknowns about border documents, facilities and minor-specific rules are not credited as safety. Absence of documented execution or custodial torture prevents a 0.05 rating, but documented long imprisonment with punished remedies places the case near 0.15."
+ },
+ "parse_error": null
+}

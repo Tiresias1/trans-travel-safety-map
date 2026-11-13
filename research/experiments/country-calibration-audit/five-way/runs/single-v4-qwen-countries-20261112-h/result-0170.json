@@ -1,0 +1,82 @@
+{
+ "cell": 170,
+ "region": "PRI",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00683567",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "Combined regime is unsafe mainly for family travel. Adult-alone risk is elevated, not severe: no documented border/facility bans, hate-crime law covers gender identity, and private adult care is outside the under-21 class. But anti-discrimination is employment-only, and a governor declared emergency over murders, assaults and rape of transgender people. The 2025 minors wellbeing law criminalizes youth transition-related care and can reach guardians or a minor carrying prescribed hormones through its broad definition and fixed penalties. Patient/guardian prosecution is legally uncertain, not safe; practical exposure is questioning, detention or care disruption. Federal framework interactions are unspecified. This places adult-alone near elevated/high boundary and adult-with-minor high risk, supporting a combined score below 0.45 but above 0.25/0.15.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented territory-specific border refusal, marker mismatch denial, or device search targeting trans visitors; federal entry framework is asserted but unspecified. For an adult alone, risk is mostly open. With a minor, hormones/care issues are not entry-specific unless secondary screening occurs.",
+    "protection": "No traveler-facing entry protection documented; territory stands under federal framework but dossier gives no safe-entry rule. Absence of territory restrictions is weak positive, not proof of federal nondiscrimination.",
+    "interaction": "Federal screening could interact with minor hormone carriage or parent status; unresolved because no federal operative rules are specified in the dossier.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "The 2025 law broad definition of under-21 hormone use and severe penalties create risk of questioning, detention, or investigation if a minor traveller carries or continues prescribed hormones and a guardian facilitates care. Adult-only risk is lower. Custody/placement rules are not documented.",
+    "protection": "No protective law-enforcement protocol for trans travellers. The patient/guardian prosecution reading is unresolved and likely to fail, reducing certainty of conviction but not of harassment or detention.",
+    "interaction": "Federal custody could apply if investigation escalates; territory-specific correctional policy absent. Parental prosecution risk makes family travel legally hazardous even if the minor cannot be convicted.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, lodging, transport, or public-facility bans on trans travellers. The 2013 anti-discrimination law covers employment only, leaving hotels, transit, housing and venues without explicit identity protections.",
+    "protection": "No facility-access protection documented at territory level; no subnational variation sourced. Federal facility rules unknown. Employment-only protection does not shield most traveler interactions.",
+    "interaction": "If outed, service refusal could occur with limited recourse; employment-only coverage does not mitigate lodging/transport friction for a minor or guardian.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "For under-21 travellers, gender-affirming medication and surgery are banned and public funding withdrawn; providers and parents risk prosecution. Continuity of prescribed HRT can be interrupted. Adults 21+ are not within the protected class but face hostile climate.",
+    "protection": "No documented traveler-facing care safeguard, exception, or continuity protocol. Health secretary proposed exemptions were not enacted. Private care not assessed.",
+    "interaction": "Federally funded care may interact with territory law; unresolved. A guardian seeking refill could turn ordinary health contact into criminal exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The care law treats transition-related youth care as criminal conduct, mandates risk campaigns, and was deliberately vague. A governor 2021 emergency over murders, assaults and rape of transgender people signals severe enforcement and social threat.",
+    "protection": "Hate-crime statute includes gender identity; 2020 hate-crime charges were brought after trans women murders. Professional bodies, the bar, and an LGBT federation opposed the law.",
+    "interaction": "Law-enforcement hostility may be most consequential for minors/guardians; violence pattern affects adults too but is not shown to target foreign travellers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The protected class is anyone under 21. A travelling minor and accompanying adult risk investigation, harassment, detention, or legal jeopardy for prescribed hormone use or care facilitation; the law fixed penalties are severe even if patient reach is unresolved.",
+    "protection": "Lawsuit planned and opposition exists, but no operative safe-conduct, guardian exemption, or continuity-of-care rule. Health secretary amendments were not enacted.",
+    "interaction": "Adult-alone exposure is much lower, but any age misreading, school/clinic contact, or medication request can pull the guardian into the criminal-law sphere.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Governor declared emergency over ongoing murders, assaults and rape of transgender individuals. Two transgender women were murdered in 2020, with hate-crime charges and one confession, giving a documented pattern of severe anti-trans violence.",
+    "protection": "Hate-crime charging occurred; rule of law not wholly absent. No recent data or evidence that police protect foreign travellers specifically.",
+    "interaction": "For an outed adult or minor, worst-case violence is severe; however no documented visitor sweeps or targeted attacks on tourists are sourced.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key risks are untested: whether under-21 hormone carriage by travellers violates article 6, whether vagueness voids it, how federal entry/custody/facilities interact, and whether service refusals have remedy. No corrections policy or federal detail found.",
+    "protection": "Federal marriage ruling, hate-crime statute, repeal of sodomy, and planned court challenge are positive climate signals, but not direct traveller-facing remedies for care/facility exposure.",
+    "interaction": "Protective federal/local elements do not offset a documented care-criminalization plus partial discrimination coverage; unknowns should not be read as safety.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "More severe for family travel than 0.25-C? 0.25-C has birth-sex custody and cross-dressing arrest. This lacks documented custody/placement abuse, so adult-only is safer. But under-21 care criminalization, guardianship exposure and violence emergency create comparable high family risk."
+   },
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "0.35-D uses routine state gender exams for transit/clinics. This does not document routine exams, so adult-alone safer than 0.35-D. Yet if a minor or guardian presents hormone treatment at a border/clinic, legal jeopardy and questioning can occur, making family travel similar to 0.35-D."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C is ward-placement friction without criminal punishment. Here criminal penalties for youth care, employment-only protections and a documented emergency over trans killings/rape make family travel well below 0.55-C; adult-alone only moderately below because facility bans are absent."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, release remedies, and low detention risk. This territory lacks documented border protections or facility recourse, and its care law plus violence emergency dominate; only adult-alone might approach 0.75-C, while family travel remains high risk."
+   }
+  ],
+  "synthesis": "Adult-alone risk is mainly social/legal hostility with thin recourse; family travel is high-risk because the care ban, fixed penalties, and medication carriage create possible investigation/detention, while documented murders/rape raise severe outing consequences. Federal entry/care/custody links are unspecified but cannot be treated as protective. Unresolved vagueness is an open question, not safety."
+ },
+ "parse_error": null
+}

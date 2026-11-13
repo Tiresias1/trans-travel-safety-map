@@ -1,0 +1,82 @@
+{
+ "cell": 43,
+ "region": "66186276B89395128410123:Arizona",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0060589",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "The combined regime is elevated risk. The national layer governs entry and custody: passport sex-marker restrictions are in force, entry cables direct refusal for document discrepancies and flag possible lifetime fraud ineligibility, and immigration and federal custody show documented forced labour, beatings and sexual abuse. The state layer is comparatively protective for adults: employment protection, a governor's veto of bathroom bills, marker change without surgery, and no documented state trans-specific arrests. The state's youth surgery and sports bans, the adult Medicaid surgery exclusion, and the 2026 Pride dissolution are exposures. Documented adult-facing remedies do not offset the national exposures. No state-specific violence is recorded, but that silence is weak evidence.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National cable refuses applicants with document discrepancies and requests evidence; possible permanent fraud ineligibility; passports blocked or confiscated for some trans travellers; airport screening can out travellers.",
+    "protection": "No documented state-level entry protection; the national passport restriction is in force after the November 2025 Supreme Court order.",
+    "interaction": "State airports and entry points operate under federal entry screening, so state protections do not reach the border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented for forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; national corrections policy imposes conversion-style measures and stopped reporting trans prisoner numbers.",
+    "protection": "Several national orders have been enjoined, but no operating protection is documented for detainees.",
+    "interaction": "Federal custody applies regardless of state law; a visitor detained at a federal point would face federal rules.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National funding and government-facility rules restrict gender-identity facility use in federal settings; the state's own bathroom statute is not documented as in force, and the governor vetoed bathroom bills.",
+    "protection": "No state facilities ban is documented; the governor's veto is a documented protection.",
+    "interaction": "Federal facility rules and any state rules could both apply to a government building; private-setting coverage is not documented.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "The 1982 Medicaid rule excludes adult sex-reassignment surgery; a federal proposed rule would bar public reimbursement for under-18s; state youth surgery ban.",
+    "protection": "A June 2023 order gives state employees over 21 Medicaid gender-affirming coverage; the 2020 challenge is pending.",
+    "interaction": "Which instrument controls for a given patient is unresolved, so a visitor's coverage cannot be assumed.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as targets; federal directives frame trans advocacy as a threat.",
+    "protection": "The strategy disclaims targeting people who merely disagree; no state-level threat framing is documented.",
+    "interaction": "National framing sets the climate for state and local enforcement, although its effect on visitors is indirect.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans on youth surgery and youth sports; state hotline for reporting schools; national directive to prosecute teachers who facilitate social transition; national subpoenas for minors' hospital records.",
+    "protection": "Limited family-court standard for disputed care is documented; surgery exception for intersex children.",
+    "interaction": "A travelling minor's care may be restricted and records may be subpoenaed, which affects a guardian's options.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence or police incidents are documented in this state; the state hate-crime statute omits gender identity, and a gay and trans panic defence remains available.",
+    "protection": "The national hate-crimes statute covers gender identity; municipal ordinances in nine cities apply.",
+    "interaction": "Recourse for violence against visitors depends on national law and on local police practice, which is undocumented.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Pride organising dissolved in 2026; the birth-certificate ruling's appeal status is unknown; the Medicaid interaction and the survival of the 2023 orders across administrations are unresolved.",
+    "protection": "Title VII rulings, a 2023 gubernatorial order, a 2023 justice-department interpretation and municipal ordinances apply, with exemptions; marriage recognition is in place.",
+    "interaction": "State-level protections could narrow with a change of administration, while the national layer stays in place.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The anchor has a universal exclusion register with no effective appeal, so it is lower. This case has a national entry-refusal and custody exposure but no documented state exclusion and documented adult protections, so it sits above."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Both have universal exposure with weak oversight. This case has documented state protections for adults and an operating local layer, so it sits slightly higher."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both rest on secondary screening and discretionary entry risk. This case adds documented immigration-custody abuse and national prosecution threats, which pulls it down, while state-level protections bring it back up to the same level."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "The anchor has working appeals and barred detention, which this case does not document at entry or in national custody. This case is therefore lower."
+   }
+  ],
+  "synthesis": "Documented national measures (passport restriction, entry refusal with possible lifetime ineligibility, custody abuse and conversion-style policy) apply to every visitor in this state and are not offset by the state's adult-facing protections. The state layer (governor's veto, employment protections, marker change without surgery, no documented state trans arrests) mitigates ordinary street and local exposure. Remedies are pending or unproven, and the Medicaid and Pride items are unresolved. Net: elevated risk, around 0.50."
+ },
+ "parse_error": null
+}

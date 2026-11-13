@@ -1,0 +1,78 @@
+{
+ "cell": 190,
+ "region": "SOM",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00161897",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The dossier documents no trans-specific provision, incident or survey; the record is entirely about same-sex conduct. Under thin-data extrapolation (rule 13), the structural facts resolve toward serious risk: an actively enforced criminalisation regime (regular prosecutions, prison up to three years plus Article 410 police surveillance), capital punishment at judges' discretion under sharia in insurgent-controlled and southern areas, documented executions/killings of people accused of homosexual conduct by armed groups including two men in 2024, near-total social taboo, no discrimination protection, and documented impunity. A trans visitor outed would almost certainly be processed through these morality regimes — enforcers rarely distinguish identity from conduct — with no functioning recourse. Not anchor-0.15 because the documented death pathway is regional/non-state rather than a state campaign against gender presentation; above 0.25 anchors because enforcement is regular and killings recur.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No source addresses entry or visa rules, passport or gender-marker handling, or checkpoint screening.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Regular prosecutions of LGBTQ people in government areas; up to three years' imprisonment plus Article 410 police surveillance; death penalty possible at judge's discretion in insurg-controlled/southern areas. Detention conditions not sourced.",
+    "protection": "Not documented.",
+    "interaction": "Which penalty applies depends on the control-line regime the visitor is in.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No source addresses facility access, bathrooms, or ward placement.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Family planning and sexuality information hard to access; no source addresses gender-affirming care or medication import.",
+    "protection": "International organisations provide HIV care since 1999; trans-specific care not documented.",
+    "interaction": "Not documented.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Criminalisation actively enforced with regular prosecutions; sharia death penalty recorded in parts of the country; 99% Muslim society with severe stigma; no GI/SOG discrimination protection; impunity the norm.",
+    "protection": "Not documented.",
+    "interaction": "Two parallel legal regimes (government civil law vs insurgent/southern sharia).",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-specific or age-differentiated material; the criminalisation and insurgent-killings record includes victims aged 15-20, indicating minors are within the enforcement and non-state-violence reach.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented killings by non-governmental armed groups of people alleged to engage in homosexual activity (2017, 2018, 2024); activists and accused persons forced to flee for fear of execution or assassination; impunity general.",
+    "protection": "Not documented.",
+    "interaction": "State does not restrain non-state violence; no recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No GI discrimination protection; impunity for violence; thin, discreet community infrastructure; penalty range unreconciled across sources; enforcement data absent for 2022; killing counts lack denominators.",
+    "protection": "None documented; a 2016 report supports persecution findings against return.",
+    "interaction": "Not documented.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Oskara shows morality units sweeping on presentation with a capital clause. Here the state's documented tool is prosecution for conduct, and the death pathway is regional/non-state; violence reaches identity indirectly. Not as trans-specific or state-directed as the anchor."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Meridia features extortion and short detentions without lethal outcomes. This jurisdiction is materially worse: regular prosecutions, police surveillance after sentence, a discretionary sharia death penalty in parts, and recurring executions by armed groups, so it sits below that anchor."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's universal exclusion regime is humiliating but never lethal. Here the worst documented feature (regional death penalty and non-state killings of accused persons) exceeds that anchor's severity, so the rating sits below 0.35."
+   }
+  ],
+  "synthesis": "The combined operative regime is a two-track morality-enforcement system over which the dossier carries no trans-specific data. Extrapolating (rule 13): a trans visitor outed is processed under the same actively enforced criminal law as gay people — regular prosecution, short imprisonment plus surveillance — while in insurgent-controlled and southern areas judges may impose death, and armed groups have killed accused persons including recently in 2024. Society is near-totally stigmatising, institutions offer no protection, and impunity is general. No entry, document, facility or custody rules are sourced; the severity that follows discovery dominates the thin probability side. Weighing the regional character of the capital pathway and absence of trans-specific targeting against regular enforcement, non-state killings and zero recourse, the jurisdiction sits just inside the High Risk band."
+ },
+ "parse_error": null
+}

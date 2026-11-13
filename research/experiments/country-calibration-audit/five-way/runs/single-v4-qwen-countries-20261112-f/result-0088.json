@@ -1,0 +1,78 @@
+{
+ "cell": 88,
+ "region": "GUF",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00399162",
+ "parsed": {
+  "rating": 0.57,
+  "explanation": "Combined national-apply-overseas regime: no trans-specific criminal restriction; formal anti-discrimination and hate-crime protections apply, but for visitors these are climate signals, not direct safe harbor. Main documented exposure is custody: if detained, placement follows legal gender case-by-case without protective standard, and a watchdog says serious detention violations persist. Care gap adds delay/cost if gender-related treatment is needed; local transphobia/underreporting weakens recourse. No border, facility-exclusion, policing targeting, or violence data, so not severe, but institutional custody exposure and thin local remedy keep this below Reduced-Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific entry checks, passport-marker rejection, visa refusal, or border humiliation in the department.",
+    "protection": "National law applies directly; formal equality and marriage framework imply no criminalized traveler-facing restriction.",
+    "interaction": "Parent-document and identity rules may still be tested at entry, but no department screening data is recorded.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If detained, placement is by legal gender case-by-case with no protective standard; national watchdog says serious violations persist in detention.",
+    "protection": "No functioning department-specific custody protection is documented; national anti-discrimination law may be invoked.",
+    "interaction": "Overseas department applies the governing state's detention practice, making custody a parent-regime exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented public facility bans, bathroom restrictions, checkpoints, or venue ejection. Specialist gender-related care is absent locally.",
+    "protection": "Pride events and formal LGBTQ+ legal framework suggest some public accommodation, but not trans-specific.",
+    "interaction": "National rules apply without local variation; the care gap is the operative facility/service exposure.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Specialist assessment or surgery is not provided locally; any medical step may require costly, delayed mainland travel.",
+    "protection": "No emergency-care refusal is documented; general healthcare is presumably available under the national system.",
+    "interaction": "If investigation, detention, or injury occurs, care delay can coincide with document disclosure and identity exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Cultural transphobia discourages visibility; abuse is less likely reported, including to police. No official demonization or targeted raids are documented.",
+    "protection": "No criminalization of gender identity; national hate-crime and anti-discrimination provisions exist.",
+    "interaction": "Weak local reporting reduces practical protection for visitors, while national law remains the only formal shield.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented specifically. A transgender minor’s care could require mainland travel, increasing disclosure through parents, appointments, or documents.",
+    "protection": "No minor-specific safeguards or restrictions are documented.",
+    "interaction": "Family or child custody exposure is unknown; care-distance and document mismatch could interact if guardians accompany.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No counts of trans-specific violence, arrests, or complaints; under-reporting is documented, so silence is not safety.",
+    "protection": "No documented violence or police hostility; Pride presence and equality law are climate positives.",
+    "interaction": "Visitor recourse depends on reporting to police whose local effectiveness is undocumented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unknowns include border screening, emergency placement, detention transfer, consular access, complaint outcomes, and minor/guardian handling.",
+    "protection": "National legal-recognition, anti-discrimination, and hate-crime frameworks exist; no department-specific working remedy is documented.",
+    "interaction": "Parent-law remedies may be accessible in principle, but distance, taboo, and under-reporting make them uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has a brief stop, national equality law, and successful complaint with compensation. Here national protections are stronger on paper, but custody has documented persistent serious violations and no local remedy; therefore lower than 0.65-A."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C features document-based ward placement, delayed care, and advocacy remedies. This dossier lacks routine ward placement but has no local specialist care and a more severe, unremedied detention exposure; roughly at or slightly below 0.55-C."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has raids, clinic birth-sex document rules, and repeated detention under law. This jurisdiction lacks active criminalization/raids and has Pride/legal equality, though detention placement is risky; materially safer than 0.25-A."
+   }
+  ],
+  "synthesis": "The operative regime is national equality law exported to an overseas department, with local gaps in custody protection and specialist care. For a visitor who is not outed or detained, everyday exposure appears low: there are no documented entry checks, facility bans, police raids, or trans-specific criminal laws. If a passport mismatch, emergency, or crime leads to detention, the worst documented consequence is legal-gender placement without a protective standard, reinforced by a watchdog finding persistent serious violations. Local transphobia and under-reporting weaken remedies, while the care gap adds cost and disclosure risk for medical needs. Thus the jurisdiction is below the 0.65 anchors because the most serious conditional exposure is institutional custody, but well above severe-risk anchors because targeting is not routine and national law supplies formal recourse."
+ },
+ "parse_error": null
+}

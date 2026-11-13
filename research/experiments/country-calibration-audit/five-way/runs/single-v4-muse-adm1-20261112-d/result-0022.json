@@ -1,0 +1,78 @@
+{
+ "cell": 22,
+ "region": "66186276B53580985925186:Virginia",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.001678272",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "Combined regime pairs state protections for adults in public accommodations, housing, employment and hate-crime law with federal universal exposures: binary passport policy, birth-sex federal facilities, discrepancy-based entry refusal with possible fraud ineligibility, and documented severe immigration-custody abuse and birth-sex prison policies. No execution or trans-specific criminalisation, and courts contest several orders, keeping risk below 0.35 anchors, but tier-1 federal facility/document/custody exposure places it below 0.55 administrative-friction anchors. Minors face additional school, sports and care restrictions.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex policy stopped X/mismatched passport processing; discrepancy can cause refusal, additional-evidence demands, and consideration of permanent fraud ineligibility. Neighbour citizens were detained and governments issued advisories.",
+    "protection": "Existing X passports remain valid to expiry; litigation is pending and some orders were enjoined. State X licence and easier birth-certificate change do not control federal entry documents.",
+    "interaction": "Document mismatch at entry can escalate to secondary screening, refusal, or immigration custody, where documented abuse and birth-sex placement risks arise.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports include forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections policy from 2026 removes hormones, cuts hair and substitutes psychiatric treatment.",
+    "protection": "No documented visitor-specific custody protection or remedy in dossier. Courts and civil-liberties litigation provide some general recourse, but outcomes and timing are uncertain.",
+    "interaction": "Entry discrepancy or overstay can move a visitor from border screening into immigration detention; arrest for facilities trespass in some states can lead to birth-sex ward placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal government-funded facilities must follow sex assigned at birth. Many states ban identity-congruent use in government buildings; four criminalise certain use via trespass after refusal to depart, with a documented handcuffed arrest and 24 hours in a men's ward in one state.",
+    "protection": "This state prohibits gender-identity discrimination in public accommodations, and 29 states plus capital district have no mapped ban, but this state's own bathroom-ban status is not verified.",
+    "interaction": "Private public-accommodations protection does not override federal facility rules or another state's criminal trespass law encountered during travel.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders and proposed rules restrict or deprioritise gender-affirming care for minors, freeze funding, and investigate providers; emergency or adult visitor care access is not documented as protected.",
+    "protection": "State law prohibits attempts to change a minor's gender identity, and state anti-discrimination law may help adult access, but no operative visitor care guarantee is documented.",
+    "interaction": "Loss or confiscation of medication, delayed care, or disclosure during treatment can interact with document checks and federal facility/ward placement.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal policy defines sex by birth, removes gender-identity promotion, directs investigations of schools over social transition, and counterterrorism material lists 'radically pro-transgender' actors among violent extremist viewpoints.",
+    "protection": "National hate-crime statute covers gender identity; this state added gender identity to hate-crime law in 2020 and repealed the panic defence in 2021. Several federal orders are blocked or enjoined.",
+    "interaction": "Threat-framing increases police, border and school scrutiny, while state hate-crime and anti-discrimination law provides partial recourse for violence or private discrimination.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Critically, minors face documented state school bathroom/pronoun restrictions adopted in 2023, a 2025 ban from girls' sports, and federal investigations/prosecution threats concerning social transition and gender-affirming care.",
+    "protection": "Reversal of the 2023 school policies was intended in 2026 but not established. State bans conversion practices for minors, and a July 2026 assessment places this state in low-risk for adult targeting.",
+    "interaction": "A travelling minor may encounter school-facility, sports, pronoun and care restrictions; a guardian may be investigated or denied services, though enrolment or care-seeking by a visitor is not documented.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific figures on anti-trans violence or hate-crime enforcement are documented. Airport security screening can be invasive and outing; one other state's bathroom arrest involved handcuffing and men's-ward holding.",
+    "protection": "State constitutional/statutory public-accommodations protection, hate-crime coverage, panic-defence repeal, and a 2014 bathroom-access ruling allowed to stand in 2021 support police/court recourse for adults.",
+    "interaction": "State protection may improve street and private-business encounters, but federal screening, policing priorities and birth-sex custody can override that protection after outing.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport, executive-order and health-rule litigation remains unresolved; several orders blocked, others operative. Advisories from allied governments and a 'Do Not Travel' flag for four states show remedy uncertainty.",
+    "protection": "Civil-liberties suits, injunction practice, state courts and anti-discrimination law are documented recourse, but no timely visitor-specific remedy for border refusal, facilities exclusion or detention is shown.",
+    "interaction": "Uncertain federal injunctions mean exposure depends on travel date; state remedies cannot reliably cure federal entry, facility or custody consequences.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower severity than 0.35: no visitor register, routine exclusion without charge, or near-certain denial for all visibly trans travellers, and no execution. Entry refusal and humiliation are real but less systematic."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "More severe than 0.55: beyond secondary screening and discretionary refusal, dossier documents binary federal documents, possible lifetime fraud ineligibility, federal birth-sex facilities, and severe immigration-custody abuse."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Well below 0.75: 0.75 has brief detention with counsel and compensation for unlawful holding. Here federal exposure is structural, custody harm is documented, and remedies are slow or unresolved despite state protections."
+   }
+  ],
+  "synthesis": "For adults, state public-accommodations, hate-crime and panic-defence protections improve private and street encounters, but the operative federal layer controls passports, entry, federal facilities and much detention. That creates a tier-1 universal exposure: document mismatch can trigger refusal or investigation, facilities follow birth sex, and custody can lead to hormone removal, misplacement and reported abuse. Litigation and state law mitigate but do not reliably override these federal consequences. Travelling with a minor adds school, sports and care restrictions. Overall: elevated risk, near the 0.45 anchor."
+ },
+ "parse_error": null
+}

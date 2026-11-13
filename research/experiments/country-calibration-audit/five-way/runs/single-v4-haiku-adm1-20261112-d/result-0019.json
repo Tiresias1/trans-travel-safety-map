@@ -1,0 +1,78 @@
+{
+ "cell": 19,
+ "region": "66186276B43575054209436:New York",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.005898",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The combined regime is split. Nationally, documented exposures run through entry and custody: marker-mismatch refusals and case-note tagging at posts, possible lifetime fraud ineligibility on a wilful-misrepresentation finding, facility mandates in national buildings, and immigration custody with documented forced labour, beatings and sexual abuse of trans men. A state layer adds documented protections that operate: a shield law against out-of-jurisdiction care charges, statewide anti-discrimination and hate-crime coverage, and X markers. Those protections do not reach federal entry, federal detention or national facilities, and the state's own bathroom-trespass exposure is not documented as applying here. Minors face national subpoena and investigation exposure with no documented shield against it. Band: Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport marker restrictions and a 2025 cable directing refusal of mismatched or doubtful sex records, with case-note tagging and possible lifetime ineligibility on wilful misrepresentation; refusals and passport blocks reported.",
+    "protection": "No documented visitor-facing entry protection; the state has no entry role.",
+    "interaction": "National consular and border rules govern entry regardless of the state's shield or equality statutes.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody with documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men; national corrections adopted conversion-type policies; corrections stopped reporting trans prisoner numbers.",
+    "protection": "Litigation pending; some national orders enjoined. No documented operative custody protection for visitors.",
+    "interaction": "A document discrepancy can move a visitor from refusal into national detention, where federal policy governs and the state's protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National facility restrictions and state trespass-style bathroom offences in other jurisdictions; federal buildings follow national sex-based rules.",
+    "protection": "State gender-neutral bathroom mandate and statewide public-accommodation coverage; no documented state bathroom ban or arrest in this state.",
+    "interaction": "State protections do not bind federal facilities or national custody; the 2025 arrest is in a different unit and is not attributed to this state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospitals for records of patients under 19; proposed federal insurance bar for under-18 care, not in force.",
+    "protection": "State shield law (2023) and municipal executive order protect patients and providers from charges when care was banned at home, and bar cooperation with out-of-jurisdiction custody or abuse actions.",
+    "interaction": "The shield protects care received here but not records already subpoenaed nationally and offers no protection after return to a ban jurisdiction.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National rhetoric framing 'radically pro-transgender' groups as counterterrorism targets; federal orders directing prosecution of teachers who facilitate social transition.",
+    "protection": "State statutes repealed the former loitering-type statute used against trans people; state law bars discrimination by state agencies.",
+    "interaction": "Federal counterterrorism and enforcement sit above the state's protective posture and are not limited by it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minors and guardians face national hospital-record subpoenas, national school-enforcement orders and proposed insurance bars; guardians could be investigated for facilitating care.",
+    "protection": "State shield protects custody transfers and law-enforcement cooperation on out-of-jurisdiction youth care; state anti-bullying law covers gender identity in schools.",
+    "interaction": "A minor's documents, records and school exposure follow national rules; the state shield does not clearly cover federal process.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incident or rate documented in this state; background violence not quantified.",
+    "protection": "Hate-crimes coverage of gender identity since 2019; prior loitering-style statute repealed; 2024 constitutional bar on gender-identity discrimination.",
+    "interaction": "Protections operate at state level; no documented evidence of their enforcement against trans visitors.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal remedies pending and partly enjoined; no documented outcome on the county sports ban or the IVF lawsuit; shield interaction with national funding restrictions unaddressed.",
+    "protection": "State anti-discrimination enforcement and a 2009 state-agency complaint process documented as in force.",
+    "interaction": "Visitors' federal exposure is only partly offset by state remedies that do not reach national agencies.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "The anchor has birth-sex prison housing with frequent assaults and a criminal cross-dressing statute, all state-run. This case has documented federal custody harm and sexual abuse, but no criminal presentation statute here and documented working state shield and hate-crime protections. It sits above 0.25."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "The anchor has nightly registration and database exposure with harassment and eviction as typical harms. This case has a comparable entry-stage federal exposure and custody harm, but the state's shield, anti-discrimination and hate-crime protections operate, so it sits slightly above 0.45."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "The anchor has discretionary secondary screening and administrative refusal with no criminal exposure. This case adds documented immigration custody abuse and national facility rules, which are heavier, so it sits below 0.55."
+   }
+  ],
+  "synthesis": "Federal entry screening, national custody and national facility rules apply to visitors regardless of the state's protections. Those federal exposures are documented and include custody abuse. The state layer is strong and operating: a care shield, anti-discrimination coverage and hate-crime protection. Its remedies do not reach national agencies, and the state's own bathroom-trespass exposure is not shown to apply here. Minors and their guardians face the widest unresolved exposure through national subpoenas. The combined result is Elevated Risk, held down from the lower band by the working state protections."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00640577",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime creates traveler-facing tier-1 exposure: national passport and visa rules refuse or strand mismatched documents and can trigger permanent fraud bars; division and national facility rules bar identity-congruent public buildings and impose criminal trespass for refusal to leave; one arrest led to men's-ward custody. Immigration custody reports severe sexual abuse, forced labour, HRT removal, and minors' care is banned or blocked. Protective state/local rules and litigation do not offset active entry, facility, custody and care restrictions. There is no credible execution or routine long imprisonment, but discovery can cause denial of entry, arrest, misgendered detention and care harm.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "New passports require birth-sex M/F; X barred; visa officers must refuse or demand evidence when sex doubt exists. Suspected wilful misrepresentation can become permanent ineligibility. Travelers report passport confiscation, blocked processing and stranding.",
+    "protection": "Existing X passports remain valid until expiry; litigation and legal-aid guidance challenge passport rules; fraud findings require elements and are not automatic.",
+    "interaction": "Passport mismatch can escalate through national entry screening to refusal/stranding; state ID rules and facility enforcement feed suspicion.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented severe sexual abuse, forced labour, beatings and solitary; corrections adopts HRT removal/psychiatric conversion; state facility arrest resulted in men's-ward holding.",
+    "protection": "National hate-crime statute and courts can review detention, but no documented reliable release or protection from birth-sex placement.",
+    "interaction": "Entry refusal or facility trespass can lead to detention/custody; document mismatch may invite questioning and custody placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars identity-congruent government-funded single-sex facilities; division statute bans them in public/state buildings, schools, airports and imposes criminal trespass if nonmembers refuse to leave.",
+    "protection": "Private businesses are outside division scope; some localities ban discrimination; national court rulings on employment discrimination exist but do not restore facilities.",
+    "interaction": "Federal facility rule plus state ban covers airports and schools during travel; refusal-to-leave mechanic exposes visitors to arrest.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bars gender-affirming care for minors and restricts adults via insurance, waiting, physician-only, conscience refusals; national rules freeze youth services and propose reimbursement bans.",
+    "protection": "Partial injunctions/stays and local protections exist, but appellate status unresolved; no documented emergency care override.",
+    "interaction": "Care-seeking, injury or medication refill can out a traveler; minors' care denial can turn guardian into investigation subject.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National policies label gender identity radical ideology, counterterrorism prioritises violently pro-trans groups, and immigration fraud language treats mismatch as misrepresentation; polls favour binary documents.",
+    "protection": "Reward criteria are not trans status; courts have blocked some orders; no trans-specific capital law documented.",
+    "interaction": "Framing raises officer discretion at entry, facilities and schools, increasing discovery and severity of administrative/criminal responses.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minors cannot access HRT or surgery; schools/public facilities ban identity-congruent use; social transition in schools is criminalised for staff and care may trigger custody modification.",
+    "protection": "Some injunctions limited; localities and national ruling provide partial employment/public accommodation checks, but not child care.",
+    "interaction": "Adults travelling with trans minors face denied care, school/facility outing, and possible scrutiny of guardianship or medical decisions.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division analysis reports 3.7 trans women murdered per 100k/year and 'Do Not Travel' label; social hostility and facility confrontations can arise. Visitor-specific attacks not documented.",
+    "protection": "National hate-crime law exists; local anti-discrimination coverage is uneven; state law lacks gender-identity bias coverage.",
+    "interaction": "Street risk is independent of legal exposure but compounds consequences of public facility use and refusal to leave.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions were allowed; facility arrest untested substantively; care litigation and travel advisories unresolved; enforcement varies by officer, airport, state and facility.",
+    "protection": "Lawsuits, legal FAQs, some local commissions, injunctions and appeals offer partial recourse, but none reliably prevent entry denial, arrest or birth-sex custody.",
+    "interaction": "Unknowns widen risk because visitors cannot verify which rules are operative before each border, facility, or care encounter.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar to 0.25-C in birth-sex custody placement and criminal facility enforcement, but worse because national entry screening can deny/strand travelers and immigration custody has severe sexual abuse; above it slightly because no routine detention, death penalty, or campaign-level sweeps."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "0.35-C involves eviction/fines with imprisonment not credible. Here refusal to leave a facility is criminal trespass, there is one arrest and men's-ward custody, plus entry stranding/permanent fraud, making this materially more severe than 0.35-C."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A has routine transit arrests, long pretrial custody, torture and capital ambiguity. Here arrest is tied to refusal-to-leave, not routine for all outed visitors; no credible execution and remedies exist, so above 0.15-A."
+   }
+  ],
+  "synthesis": "The operative regime is not a single border rule but a chain: national document/screening policy makes mismatch visible and can deny or strand; once in the division, facility bans in airports, schools and public buildings make identity-congruent use unsafe; refusal can lead to trespass arrest and birth-sex custody, while immigration/corrections custody carries abuse and medication withdrawal. Care restrictions and anti-advocacy framing increase severity, especially for minors and guardians. Because hostile institutions enforce these rules, courts/localities do not cancel exposure. Score sits in high risk, below 0.35 anchors and above 0.15 due absence of routine long imprisonment/execution."
+ },
+ "parse_error": null
+}

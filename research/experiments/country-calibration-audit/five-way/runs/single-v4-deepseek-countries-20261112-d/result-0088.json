@@ -1,0 +1,82 @@
+{
+ "cell": 88,
+ "region": "GUF",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00286665048",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The governing state supplies protective formal law (anti-discrimination, hate-crime provisions, simplified legal gender recognition), but legal gender recognition is resident-facing. The visitor-facing exposure is concentrated in detention: no local custody protocol, placement by legal gender, and a national detention watchdog finding serious violations persisting. Specialist trans care requires mainland travel, adding cost and delay. Local transphobia suppresses reporting, so the absence of violence counts is not evidence of safety. No documented border friction, facility bans, criminalisation or organised targeting is shown. Ordinary travel may be low-friction, but if outed and detained the consequences are severe and remedies are not shown working.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented. No trans-specific border, document-mismatch or entry-refusal incident is recorded for the department.",
+    "protection": "National anti-discrimination and hate-crime law apply, but no visitor-specific border protocol or remedy is documented.",
+    "interaction": "The governing state's document regime applies without local variation; frontline treatment of foreign markers is unrecorded.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No local custody protocol; detainees are assigned to men's or women's wings by legal gender case by case, and the national detention watchdog reports serious violations persisting.",
+    "protection": "None documented; oversight findings are not shown to produce a working remedy or protective placement standard.",
+    "interaction": "National detention practice applies directly in the department, so a detained visitor enters birth-sex placement without a local protective procedure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Custody placement by legal gender is documented; specialist gender-affirming surgery and assessment are not provided locally.",
+    "protection": "No local facility standard or custody protocol is documented.",
+    "interaction": "National detention and health rules operate in the department; specialist care routes patients to the mainland.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Specialist gender-affirming surgery and assessment require travel to the mainland, adding cost and delay, including during a stay in the department.",
+    "protection": "The governing state's health framework applies, but no local specialist service or visitor care protocol is documented.",
+    "interaction": "The national care model routes specialist needs offshore; routine and emergency trans care in the department are not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Transphobia and cultural taboos discourage visibility, and abuse is less likely to be reported, including to police.",
+    "protection": "National hate-crime and anti-discrimination provisions exist; no local enforcement or complaint data are documented.",
+    "interaction": "Paper protections meet documented local under-reporting; police response to trans victims is unrecorded.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented. No department-specific evidence on trans minors, schools, guardians or family-related exposure.",
+    "protection": "Not documented.",
+    "interaction": "The governing state's law applies, but no local practice for trans minors or travelling guardians is recorded.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No department-specific counts of trans violence, arrests or complaints; under-reporting is documented, so absence of counts cannot be read as safety.",
+    "protection": "National hate-crime provisions and Pride events exist; the travel guide's 'very safe' rating is not trans-specific.",
+    "interaction": "A small visible community and no listed venue network reduce orientation support; the violence rate cannot be assessed from the dossier.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Detention oversight findings persist; local complaint data are absent and under-reporting is documented; mainland travel delays specialist care.",
+    "protection": "National anti-discrimination, hate-crime and simplified legal gender recognition exist, but legal gender recognition is resident-facing and local operation of remedies is undocumented.",
+    "interaction": "Paper protections are not shown working locally; the unremedied custody practice is the operative exposure if a visitor is detained.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a standing visitor register and routine entry refusals for transgender travellers. This dossier documents no entry screening, register or refusal pattern, so it is materially safer at the border, though its custody exposure is more severe if detention occurs."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B centres on border secondary screening, humiliation and discretionary refusal. This dossier shows no similar border practice, but adds documented birth-sex custody placement, persistent detention violations and a mainland-only specialist care route, making the ordinary visit less exposed yet the detention outcome comparable or worse."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has border training, tribunal appeals and remedies that actually reverse adverse decisions. This dossier has protective national law on paper but no shown working remedy for custody placement or local care gaps, so it sits below that anchor."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A exposes visitors through routine biometric checks and a deceptive-presentation statute. This dossier lacks documented routine checks or a presentation statute, but its custody placement risk and under-reporting are more severe once a visitor enters the system."
+   }
+  ],
+  "synthesis": "The combined operative regime is the governing state's national law applied without local variation. Formal protections exist, but the visitor-relevant exposure is not formal equality on paper: it is the absence of a local custody protocol, legal-gender-based placement, and a national watchdog finding serious violations persisting in detention. Specialist trans care is offshore, adding delay and cost. Local transphobia suppresses reporting, so the missing violence figures cannot be treated as safety. No documented border friction, facility ban, criminalisation or organised targeting is present, which keeps the rating out of the severe band, but the unremedied custody risk and care-access gap keep it in Elevated Risk."
+ },
+ "parse_error": null
+}

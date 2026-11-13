@@ -1,0 +1,82 @@
+{
+ "cell": 42,
+ "region": "COD",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0128646",
+ "parsed": {
+  "rating": 0.24,
+  "explanation": "The dossier shows no same-sex criminalisation, but that is not protection. Article 176 and local ordinances target public LGBTQ expression with imprisonment, no legal gender recognition exists (a climate signal), and police, security forces and the army are documented perpetrators of violence, harassment and torture against LGBTQ people. In the east, armed militias commit extreme violence with near-total impunity amid collapsed state authority, and legal protections are theoretical. No working remedy, accountability or consular access is documented; detention and care conditions are unsourced. For a trans visitor, being outed risks arrest under morality provisions and serious state or militia violence. This sits above explicit trans-criminalisation anchors because no trans-specific statute or routine border arrest is documented, but below exclusion-only anchors because state and militia violence is severe and unpunished.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border rule documented; visitor uses home passport. A mismatch could invite Article 176 or local-ordinance morality scrutiny, but no border incidents or refusal counts are sourced.",
+    "protection": "None documented.",
+    "interaction": "Discretionary morality enforcement at checkpoints or hotels could out a traveler; no documented remedy.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police, security forces and the army are reported to commit violence, harassment and torture against LGBTQ people; Article 176 can imprison for public 'outrage to morals'. LGBTQ detention conditions are unsourced.",
+    "protection": "No working remedy or accountability documented.",
+    "interaction": "An outed traveler detained by hostile forces faces abuse with impunity; consular access is unknown.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No facility-access or custody-placement rule is documented. State security institutions are themselves implicated in anti-LGBTQ violence.",
+    "protection": "None documented.",
+    "interaction": "State facilities are a source of harm rather than protection; in the east state authority has collapsed.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No sourced information on HIV, transition-related or emergency care for trans visitors.",
+    "protection": "Not documented.",
+    "interaction": "No evidence of care access or denial; the question is unresolved.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 176 and local ordinances frame public gender or sexuality expression as indecency; expression is censored with imprisonment exposure; church groups promote moral condemnation.",
+    "protection": "None documented.",
+    "interaction": "Law enforcement can treat visible trans presentation as a public-morals offence; no recourse is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific evidence. A trans minor travelling with a guardian would face the same undisclosed risks plus heightened visibility.",
+    "protection": "None documented.",
+    "interaction": "No documented safeguarding or remedy; unknown.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Violence, harassment and torture by police, security forces and the army are documented; armed militias in the east commit extreme violence against LGBTQ people with near-total impunity.",
+    "protection": "No effective police protection or remedy; legal protections are theoretical where authority has collapsed.",
+    "interaction": "Reporting violence to police is unsafe because state forces are implicated; militia impunity prevails in the east.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No prosecution counts under Article 176; no data on detention, healthcare, asylum or refoulement; no legal gender recognition (resident climate).",
+    "protection": "None documented; legal protections are described as theoretical.",
+    "interaction": "Complaints against state forces are unlikely to succeed; unknowns resolve toward risk given documented impunity.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A is lower: it documents a public-decency statute explicitly covering gender presentation, routine arrests of visitors with document mismatches, months of pretrial custody, beatings, and a capital provision. This dossier lacks an explicit trans-specific criminal statute and routine border arrests, though it shares state custody abuse and impunity."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B is roughly comparable: police extort trans travelers, threaten vagrancy arrest, and hold people overnight with harassment. This dossier documents worse severity—state torture and militia extreme violence with impunity—but less routine, trans-specific extortion and short-term detention detail."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is higher: a visitor register denies entry and humiliates, but outcomes are exclusion and return flights rather than police torture or militia killing. This dossier's documented state and militia violence with no remedy places it below that exclusion-only tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is much higher: administrative secondary screening, refused admission and return transport, with appeal and consular notification available. This dossier documents violence and torture by state forces and impunity for militia attacks, so it cannot reach that administrative-friction tier."
+   }
+  ],
+  "synthesis": "National decriminalisation of same-sex conduct does not create safety for a trans visitor: enforcement runs through Article 176 and local ordinances, expression is censored with imprisonment, and the state's own security forces are implicated in anti-LGBTQ violence. Eastern militia violence and collapsed authority remove any effective remedy. No legal gender recognition is resident-facing climate evidence but reinforces institutional hostility. A traveler whose presentation or documents attract attention can be outed and then face police abuse, morality prosecution, or militia violence with impunity. Care and detention specifics are unknown, but unknowns do not offset documented state and militia harm. The combined regime is High Risk."
+ },
+ "parse_error": null
+}

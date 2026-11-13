@@ -1,0 +1,78 @@
+{
+ "cell": 103,
+ "region": "ISR",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00473197",
+ "parsed": {
+  "rating": 0.47,
+  "explanation": "Combined regime is Elevated: no criminalisation of trans presence and courts can protect recognition, but traveller-facing border screening can detain and humiliate; airport lacks trans guidance; police searches historically humiliating and prison practice defaults to isolation or birth-sex placement, with uncertain visitor relief. Organized ambushes, dating-app traps and rising transphobic violence add severity, while hate-crime protections may not name gender identity. Protections are real but resident-facing or incomplete; absence of evidence is not safety. Moderate outing probability, moderate-to-severe consequences if discovered.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Main airport has no trans rules; documented security insisted no surgery means male, with humiliating questioning and detainment. Border screening can out mismatched documents. No evidence entry ban.",
+    "protection": "Legal gender change without surgery since 2015, 2024 dead-name removal, 2025 court upheld certificate; general document acceptance may apply, but not airport-specific.",
+    "interaction": "Document mismatch can trigger secondary security, possible detention before ordinary entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "New police search regulation followed complaints of humiliating trans detainee searches. Prison response isolates/segregates trans inmates rather than matching identity; trans women have been held in men's prisons.",
+    "protection": "2023 search rules; 2019 court ordered HRT and transfer to women's prison for resident, though general-population petition unreported. No statute or visitor extension.",
+    "interaction": "If arrested, custody placement may compound outing; relief uncertain for foreign traveller.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented. No traveler-facing bathroom, lodging, spa, or public-venue restriction found.",
+    "protection": "Not documented. No explicit positive identity-congruent facility rule for visitors.",
+    "interaction": "Subnational variation concerns Pride security and municipal posture, not facility access rules.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Care access is gatekept by one committee; many pay privately. Border/medical scrutiny can demand surgery despite law. Traveler emergency care rules not documented.",
+    "protection": "Publicly funded transition exists for residents; prison HRT court-ordered in one case; legal gender change without surgery.",
+    "interaction": "A care request could trigger document/surgery scrutiny; outcome for visitors uncertain.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Border/security and police have treated trans presentation as requiring verification. 2025 official data reports rising transphobic violence; organized ambushes and dating-app traps target people, trans bearing brunt; foreign anti-trans rhetoric inflames climate. Pride events have faced bans and attacks.",
+    "protection": "Courts overturned Pride ban, convicted attackers in past, criminalized violence; orientation-motivated violent crimes treated as hate crimes; police issued trans-search regulation.",
+    "interaction": "Gender-identity hate-crime status unresolved, so trans-specific violence may receive weaker enhanced protection; legal system may protect orientation more than identity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No child-specific trans visitor exposure documented. If traveller includes a minor, foreign guardianship, school/medical documents, or custody escalation could raise scrutiny; conversion practices not codified and clergy exempt, creating unresolved risk for trans minors.",
+    "protection": "No documented minor-specific visitor safeguard. Resident youth transition limits are not traveller protections.",
+    "interaction": "Document mismatch or care-seeking may involve parents/guardians, police, or medical gatekeepers; relief unknown.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Organized ambushes, dating-app traps, lethal attacks at Pride and gay centre; violence reports 2025 rose. Trans people described bearing brunt; public expression drew extremist knife attacks.",
+    "protection": "Some attackers prosecuted/sentenced; courts protect Pride; civil society centres; police regulation addresses searches. Rule of law partially mitigates but does not guarantee.",
+    "interaction": "Police may worsen if called: historic humiliating searches and custody bias; victim reporting uncertain.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved whether gender identity is protected anti-discrimination ground, whether airport/custody remedies apply to foreign travellers, and whether 2025 violence counts reflect per-capita rate.",
+    "protection": "Functioning courts, legal-recognition cases, prison relief in 2019, municipal infrastructure indicate some recourse for residents.",
+    "interaction": "Positive institutional signals are mostly resident-facing; traveller-facing remedy for border/custody exposure remains undocumented.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has universal border exclusion by register, ticket seizure, routine denial; this dossier lacks formal entry-ban but documents airport security questioning/detention demanding surgery. Border humiliation is present, but consequences are less standardized and less universal, so slightly above 0.35 despite custody and violence concerns."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is extended secondary screening and refusal/return, humiliating but administrative with appeals. Here, border detention is documented without airport rules, plus organized ambushes, rising violence, and prison isolation default, with no documented traveller remedy. These make operative risk somewhat lower than 0.55."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has equality law, courts reliably order release/compensation after document mismatch. This jurisdiction has legal recognition and courts, but no airport trans rules, documented humiliating questioning, uncertain gender-identity hate-crime protection, and custody isolation. Therefore it sits below 0.65; institutional recourse helps but does not neutralise traveller-facing exposures."
+   }
+  ],
+  "synthesis": "Border friction, police/custody isolation, and societal ambushes create real trans-specific exposure for an outed traveller. Decriminalisation, anti-discrimination and hate-crime norms for orientation, legal gender recognition, and functioning courts provide partial mitigation. However, protections are resident-facing or uncertain for visitors, and no documented remedy prevents airport humiliation or birth-sex custody. Adult-alone risk is Elevated; with a minor, unresolved youth/conversion/guardianship scrutiny raises uncertainty but not known severe harm."
+ },
+ "parse_error": null
+}

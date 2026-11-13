@@ -1,0 +1,78 @@
+{
+ "cell": 42,
+ "region": "COD",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0010148",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Thin-data jurisdiction whose structural signals resolve toward risk. No criminalisation of same-sex conduct, but enforcement runs through Article 176 and local ordinances applied to LGBT people, with no documented remedy; expression is censored with imprisonment exposure; violence, harassment and torture involving police, security forces and the army are documented, with the security apparatus shown to use lethal force against civilians with total impunity; militia extreme violence with near-total impunity in the east and collapsed state authority render protections theoretical. Severity (state-involved torture, imprisonment exposure) is high, though no death penalty is documented and no organised trans-specific sweeps; frequency is unknown, which is not safety. Mismatched documents plus discretionary enforcement put the visitor at tier-2/3 exposure without working recourse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No legal gender recognition exists; no gender-identity recognition of any kind, so foreign documents are the traveller's only recourse and no local accommodation is documented. Discretionary enforcement via Article 176 and ordinances once identity is noticed.",
+    "protection": "No explicit national criminalisation of same-sex conduct; equal age of consent. Not documented as a border protection.",
+    "interaction": "Document mismatch could route into police interaction where impunity dominates.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Article 176 and ordinances applied against LGBTQ people; imprisonment exposure for censored expression. Violence, harassment and torture involving police, security forces and army documented. No sourced data on detention conditions for LGBT detainees.",
+    "protection": "Not documented.",
+    "interaction": "Detention would occur inside a security apparatus shown to kill civilians without accountability.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No sourced information on access to transition-related or HIV healthcare.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State neither protects nor promotes LGBTIQ+ rights (March 2024 UN submission); church groups frame homosexuality as immoral; LGBT expression censored with imprisonment exposure; violence involving police, security forces and army.",
+    "protection": "Not documented.",
+    "interaction": "No functioning protective authority in parts of the country; legal protections described as theoretical.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented specifically; militia extreme violence in the east and impunity would apply to a travelling family if exposed.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Armed militia groups in the east commit extreme violence against LGBTQ people with near-total impunity; state-involved violence, harassment and torture reported, no geographic limits.",
+    "protection": "Not documented.",
+    "interaction": "Police are implicated in violence, so calling police cannot be assumed protective.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No prosecution counts, no remedy machinery, no accountability for lethal force; enforcement frequency unknown; militia violence uncounted and undated.",
+    "protection": "None documented.",
+    "interaction": "Uncertainty resolves toward the risk implied by impunity and absence of recourse, not the midpoint.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Both feature police extortion-adjacent enforcement and no recourse, but here violence escalates to torture involving the army and militia extreme violence with total impunity — materially worse severity than short shakedowns with an oversight board and occasional compensation."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Karthovia's police detention resolves in hours with no lethal threat and courts at least accept complaints; here security forces torture and kill with documented impunity and protections are theoretical, so the case sits below 0.35."
+   },
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Oskara has organised morality-unit sweeps and coerced detentions with capital-adjacent statutes; this jurisdiction lacks documented organised sweeps and any capital pathway, keeping it above 0.15, but shares the impunity and thin-recourse character."
+   }
+  ],
+  "synthesis": "The combined operative regime: no same-sex criminalisation but active moral-indecency enforcement (Article 176, ordinances) against LGBTQ people, expression censorship carrying imprisonment, no legal recognition, and a security apparatus documented to use violence, torture and lethal force against civilians with impunity, alongside militia extreme violence in the east. There is no documented protective or remedy machinery anywhere in the chain — police are perpetrators, not protectors. The severity ladder reaches torture and near-lethal state violence; frequency is undated but the structural signals (impunity, no recourse, church hostility, High Risk rating) extrapolate downward. No execution pathway is documented, so this sits in the lower High-Risk band rather than Severe."
+ },
+ "parse_error": null
+}

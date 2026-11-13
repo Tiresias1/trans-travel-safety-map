@@ -1,0 +1,78 @@
+{
+ "cell": 189,
+ "region": "SMR",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0033932",
+ "parsed": {
+  "rating": 0.81,
+  "explanation": "The combined regime is unitary: an open border, no trans criminalisation, no documented facility-use statute, and foreign documents governing identity. If a visitor is outed, the dossier shows no arrest, custody, border denial, or state facility exclusion. Legal and social signals are broadly tolerant toward sexual orientation, with LGBTQ-inclusive education and civil unions, but gender identity is omitted from protections and implementation. The absence of resident legal gender recognition is not visitor-facing exposure except as a weak climate signal. Care, minor-guardian exposure, and incident frequency are thin, so the score sits just below explicit anti-trans-rights anchors rather than near 0.85.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented gender-marker entry screening, document mismatch checks, or refusal for transgender travelers.",
+    "protection": "Open land border; foreign passport governs identity; no local reissue is needed during stay.",
+    "interaction": "Entry does not create outing through local registration or a domestic gender-marker process.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No transgender-specific arrest, detention, or custody placement rule is documented; the repealed sexuality provision was never applied.",
+    "protection": "No criminalization of gender identity or expression; ordinary custody rules are unspecified.",
+    "interaction": "If arrested for unrelated conduct, cell placement could follow local practice, but no traveler-facing rule is documented.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No statute regulating bathrooms, changing rooms, hospitals, or other gendered facilities; no documented facility denial.",
+    "protection": "No subnational restrictions recorded; visitor encounters are governed by ordinary service practice, not a special ID regime.",
+    "interaction": "Private staff or clinics could still create discretionary friction, but that is unrecorded.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No documented care denial, medication seizure, ward placement, or emergency-care rule for transgender visitors.",
+    "protection": "Civil unions cover healthcare for residents, but visitor care continuity and gender-affirming care are not documented.",
+    "interaction": "Foreign documents govern records; lack of local gender-marker recognition may cause administrative friction if disclosure occurs.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No state threat framing or enforcement against transgender presentation; gender identity is omitted from the 2008 hate-crime enhancement and 2019 constitutional clause.",
+    "protection": "Sexual-orientation discrimination law exists; LGBTQ-inclusive education and civil unions support a tolerant institutional signal.",
+    "interaction": "If violence is read as anti-LGBT rather than solely trans-specific, remedy may vary; gender-identity implementation is absent.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No age-specific facility, custody, or guardian-approval rule is recorded; a traveling minor faces the same entry and service gaps.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Occasional anti-LGBT violence is reported, but no published rates, trans-specific pattern, or background comparison exist; police response is undocumented.",
+    "protection": "No documented police targeting, extortion, or refusal to investigate transgender visitors; ordinary assault law is presumed available.",
+    "interaction": "In a small state, informal practice may dominate; the sexual-orientation enhancement may not reach trans-specific motive.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No implemented gender-identity discrimination or hate-crime statute; enforcement frequency is unknown; incident data are sparse.",
+    "protection": "Ordinary criminal law and sexual-orientation enhancements may apply if facts fit; UPR recommendations were accepted but unimplemented.",
+    "interaction": "Visitors may lack realistic remedy for misgendering or service denial; no local registry or marker-change challenge process is triggered.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A has explicit gender-identity equality law, trained police, visitor document recognition, and operating remedies. This jurisdiction lacks trans restrictions and has tolerant orientation signals, but no implemented gender-identity protections or enforcement data, placing it slightly below 0.85 anchors."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C documents formal border training, appeals, and some brief detention risk for document mismatch. This dossier records no entry screening or marker friction, which is more protective at borders, but care and remedy gaps keep it below 0.85."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A involves an active document mismatch stop, intrusive questioning, and brief holding. This jurisdiction documents no traveler-facing check, criminal exposure, or facility rule, so consequences after outing appear lower and place it above the 0.65 band."
+   }
+  ],
+  "synthesis": "The operative regime is mainly absence-of-restriction: no border outing, no gender-expression criminal law, no facility statute, and foreign documents governing identity. The residual risk is social and bureaucratic: gender identity lacks dedicated protection, anti-LGBT incident data are thin, care and minor-guardian encounters are undocumented, and remedies may not be triggered for trans-specific conduct. That yields low risk overall, but below jurisdictions with explicit, working gender-identity protections."
+ },
+ "parse_error": null
+}

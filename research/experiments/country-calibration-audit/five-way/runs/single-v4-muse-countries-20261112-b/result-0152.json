@@ -1,0 +1,82 @@
+{
+ "cell": 152,
+ "region": "NER",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.001560356",
+ "parsed": {
+  "rating": 0.14,
+  "explanation": "Transition itself is criminalised under Article 390 with 5-10 years' imprisonment, no suspended sentences, and documented coordinated enforcement: at least 40 arrested and 16 imprisoned shortly after the 2026 code took effect. Judges acquitting defendants were reassigned or sanctioned, organisations face 10-20 years, officials frame LGBTQIA+ practice as culturally unacceptable, and HIV services have collapsed. No execution, torture or custody sexual-violence pattern is documented, so this is not 0.05-level, but the long custodial penalty and active state campaign place it at severe risk, below 0.25.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport, visa and entry screening for trans visitors are not described; no inference can be drawn from absence. If transition status is discovered, Article 390 criminal exposure applies.",
+    "protection": "Not documented.",
+    "interaction": "Discovery at entry or during any document check could convert a routine inspection into investigation under the criminalised transition ban.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "At least 40 arrests and 16 imprisonments were reported in July 2026 in a coordinated campaign; conviction versus pre-trial detention is unstated. Article 390 carries 5-10 years with no suspended sentences.",
+    "protection": "No effective recourse documented; judges who acquitted were reassigned or allegedly sanctioned for leniency.",
+    "interaction": "Efficient courts and police enforce the hostile policy, so institutional functioning is a liability, not mitigation.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Trans-specific bathroom, ward and detention placement rules are not documented.",
+    "protection": "Not documented.",
+    "interaction": "Any detention following outing would occur within the same criminalised system, but placement practice itself is unknown.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Transition-related medical steps fall within Article 390's ban on changing sex at birth. HIV prevention organisations stopped working, cutting condoms, testing and PrEP access.",
+    "protection": "No broad anti-discrimination protection on sexual orientation or gender identity is documented.",
+    "interaction": "Seeking transition care or HIV prevention can itself expose a visitor to the criminal regime.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 25 bans LGBTQIA+ practices; Article 390 criminalises indecent, unnatural and LGBTQIA+ acts and changing sex at birth; Articles 391-392 impose 10-20 years for same-sex marriage and LGBTQIA+ organisations. Justice minister framed practices as against social and cultural values.",
+    "protection": "No protective framing or exemption for foreign visitors is documented.",
+    "interaction": "State threat-framing plus documented arrests makes outing a direct criminal risk, not merely social disapproval.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Pre-2025 age of consent was 21 for same-sex acts versus 13 for different-sex acts; the 2026 code's age of consent is not stated. Article 392 reaches participation in organisations, which could affect a travelling family only if such participation occurred.",
+    "protection": "Not documented.",
+    "interaction": "No distinct child-specific entry, care-shield or family protection is documented; a minor does not mitigate adult criminal exposure under Article 390.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Stigmatisation is a standing condition; asylum seekers in 2022 faced shop refusals and verbal or physical violence from strangers and no recognised refugee status. No current trans-specific violence rate with denominator is documented.",
+    "protection": "Police protection for LGBTQIA+ victims is not documented; people have gone into hiding since the 2026 law.",
+    "interaction": "Social hostility compounds state enforcement, and reporting violence could expose the victim to investigation.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Raw arrest counts lack denominators and later totals; custody placement, facilities, entry screening and trans-specific killings remain undocumented. Unknowns are not treated as safety.",
+    "protection": "No working complaint, compensation or release remedy is documented; judicial leniency was punished.",
+    "interaction": "The documented campaign and institutional punishment of acquittals show remedies do not operate for the targeted class.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar severe tier: recurring state targeting, imprisonment and failed recourse. This dossier is comparable or slightly worse on penalty length (5-10 years versus months), but lacks documented sexual assault in custody, so it sits near this anchor rather than materially below it."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Materially worse than 0.25-A: there presentation is not explicitly criminalised and detention is shorter, whereas here transition is expressly criminalised, sentences are 5-10 years, enforcement is a documented coordinated campaign, and judges are sanctioned."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Higher than 0.05-A because execution after identification is not documented; the documented worst outcome is long imprisonment. The absence of a death penalty keeps it above the near-certain execution tier."
+   },
+   {
+    "anchor_id": "0.35-E",
+    "comparison": "Materially lower than 0.35-E: that anchor has an unremedied birth-sex ward rule but no criminalisation of trans identity or transition, while here the state criminalises transition itself and imprisons people for it."
+   }
+  ],
+  "synthesis": "The combined regime is hostile at every stage a traveller could be outed: discovery risks investigation under a law that expressly covers changing sex at birth, prosecution carries 5-10 years without suspended sentences, and early enforcement shows arrests and imprisonment at national scale. Courts do not provide countervailing relief, as judges were punished for acquittals, and organisations and health services that might assist have been shut down or driven underground. Social stigmatisation and official cultural framing reinforce the legal exposure. Undocumented entry, facility and custody specifics cannot offset these documented exposures."
+ },
+ "parse_error": null
+}

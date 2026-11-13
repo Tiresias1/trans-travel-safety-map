@@ -1,0 +1,82 @@
+{
+ "cell": 84,
+ "region": "GRC",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007958148",
+ "parsed": {
+  "rating": 0.64,
+  "explanation": "The jurisdiction has strong traveller-relevant legal protections: gender identity and expression are covered in goods, services, healthcare, housing and education; hate-speech and discrimination laws exist; there is no criminalisation of trans identity and no documented border exclusion. However, current social climate is less accepting than regional averages, a 2024 mob attacked two trans people, 2013 police mistreatment complaints were discontinued, and prison placement defaults to registered sex with only petition-based transfer. These documented exposures temper the otherwise protective regime, placing it in the lower Reduced Risk band rather than alongside jurisdictions with both strong law and broadly documented social acceptance.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border, passport-mismatch or entry-refusal incident is documented.",
+    "protection": "No criminalisation of trans identity or expression; legal gender change exists on self-declaration (climate signal); same-sex marriage recognised.",
+    "interaction": "Border practice for mismatched documents is not documented; absence of evidence is not treated as an affirmative safety finding.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Prison placement defaults to registered sex; four trans detainees, including one foreign national, were held isolated at male facilities. A regional court condemned detention of an LGBTI refugee.",
+    "protection": "An on-request transfer route to women's facilities exists and was granted after individual petitions.",
+    "interaction": "A detained trans visitor faces initial birth-sex placement and must navigate an unfamiliar petition remedy to obtain transfer.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No bathroom, changing-room or public-facility ban affecting trans visitors is documented.",
+    "protection": "Equal-treatment law covers goods and services, education, healthcare and housing.",
+    "interaction": "No dossier evidence of facility denial directed at trans visitors; prison facilities are addressed under custody.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No trans-specific denial of healthcare to visitors is documented; the conversion-practices ban covers minors only.",
+    "protection": "Healthcare is covered by equal-treatment law; self-declared legal gender recognition since 2017 is a climate signal.",
+    "interaction": "Resident-facing gaps such as no trans parenthood recognition and age limits on forename changes do not directly reach visitors.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The dominant religious authority opposed marriage equality and transphobic comments occurred publicly; 2013 police mistreatment of trans sex workers ended with discontinued complaints.",
+    "protection": "Hate-speech and discrimination protections are in force; an incitement case was opened.",
+    "interaction": "Hostility is largely social and religious rather than state threat-framing, but old police conduct shows uneven protection.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific exposure for a trans visitor or travelling family is documented.",
+    "protection": "Education and healthcare are covered by equal-treatment law; conversion practices are banned for minors.",
+    "interaction": "No evidence of school, facility or guardian rules that would specifically affect a travelling trans minor.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "A 2024 mob of about 150 attacked two trans people and a masked group attacked counter-protesters; survey data show elevated fear and low openness.",
+    "protection": "Arrests followed the 2024 attack, including of minors; three foreign tourists were convicted on appeal for a 2017 attack; hate-crime protections exist.",
+    "interaction": "State response exists, but whether the 2024 arrests produced convictions is unsourced, leaving deterrence uncertain.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Outcomes of the 2024 mob arrests and the incitement case are unknown; compliance with the LGBTI refugee judgment is unsourced.",
+    "protection": "Courts convicted 2017 attackers; prison transfers were granted on petition; regional human-rights court oversight exists.",
+    "interaction": "Remedies operate but are delayed or uncertain, and a short-stay visitor may not know the petition or complaint routes.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's visitor-register exclusion has no effective remedy and routinely denies entry. This dossier documents no entry ban or criminalisation and has equal-treatment law, so it is materially safer than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles has discretionary secondary screening and refused admission without strong legal protection. This jurisdiction has no documented border exclusion and broader equality law, but recent mob violence and birth-sex custody default make it somewhat higher than 0.55-B rather than clearly safe."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Vellmaris had a brief document-mismatch hold, apology and compensation, with courts reliably ordering release. This jurisdiction has comparable or stronger equality law, but a large 2024 mob attack and custody default below 0.65-A."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, tribunal appeals and brief detention, with low-to-moderate severity. This jurisdiction has wider equal-treatment guarantees, but documented social hostility, mob violence and default birth-sex custody keep it below 0.75-C."
+   }
+  ],
+  "synthesis": "The combined regime is protective on paper: gender identity and expression are covered across services, housing, education and healthcare, hate speech is regulated, and no trans-specific criminal offence or border exclusion is documented. Those protections operate unevenly. Current survey data show elevated social fear, a 2024 mob attack drew arrests but no sourced convictions, old police mistreatment complaints were discontinued, and prison placement still starts from registered sex with transfer only after individual petition. A trans visitor is unlikely to face criminal punishment for being outed, but may face social hostility and, if detained, a documented custody-placement exposure before a remedy is applied."
+ },
+ "parse_error": null
+}

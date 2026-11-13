@@ -1,0 +1,82 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00603795",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "Split combined regime: severe national border/passport, federal facilities and custody exposure remain, while strong state protections lower everyday in-state risk. Adult alone and minor-guardian are Elevated Risk because entry screening can out, strand, or refer into abusive federal custody; shield law and anti-discrimination protect state services and care but not federal.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National order bars self-selected passport/visa markers; new passports/visas follow birth sex; officers may refuse visas when documents/presentation mismatch and treat wilful misrepresentation as fraud, risking stranding.",
+    "protection": "Existing X passports remain valid; civil-liberties suit and legal-aid guidance; state M/F/X IDs help after entry but do not override border/visa rules.",
+    "interaction": "Mismatch can trigger secondary screening, denial, removal, and immigration custody; state non-discrimination does not shield entry adjudication.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary, sexual abuse; federal corrections adopts conversion-therapy policies and hormone removal; entry denial can lead to detention.",
+    "protection": "State custody policy treats detained people by gender identity in strip/housing; shield law protects care-seeking.",
+    "interaction": "State protections do not cover federal immigration/national corrections; federal custody exposure can follow border referral despite protective state.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars government-funded single-sex facilities congruent with identity; several states ban or criminalize; federal facilities in this state likely enforce.",
+    "protection": "State public-accommodation law prohibits identity discrimination; Most Protective tier and no documented state bathroom ban.",
+    "interaction": "Private/state facilities may be protective, but federal/funded facilities and immigration housing can still exclude or place by birth sex.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National minors-care orders, school investigation threats, funding freeze, proposed reimbursement bans, and record subpoenas restrict care access.",
+    "protection": "State shield law protects patients/providers from home-state charges; anti-discrimination; conversion ban; sports protections.",
+    "interaction": "Visiting family can use state care, but federal school/funding actions may chill providers and expose minors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism names 'radically pro-transgender'; national directives investigate schools/prosecute teachers; federal funding and enforcement frame care as hostile.",
+    "protection": "National hate-crime law, employment ruling; state hate-crime law strengthened, anti-discrimination, gay-panic repeal.",
+    "interaction": "State actors may protect; federal actors can investigate/freeze schools and providers, especially after document mismatch.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National regime criminalizes/prosecutes social transition and funds school investigations; parent/minor travel may be questioned and care access chilled.",
+    "protection": "Shield law, anti-bullying, conversion ban, athlete eligibility, custody policy protect minors and guardians.",
+    "interaction": "Care-seeking minor is safer state-side; guardian's entry/federal care still exposed; home-state bans do not control state care.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state violence count; national polls and hostility may increase misgendering, refusal, or police interest.",
+    "protection": "State anti-discrimination/hate-crime and gay-panic repeal; local police may be more respectful, not evidenced.",
+    "interaction": "Street risk likely lower than national average; remedies exist but enforcement incidents unquantified.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Orders contested; several enjoined; timing/agency/federal-state boundary changes outcome; no state incident or homicide baseline.",
+    "protection": "Courts, civil-liberties suit, legal FAQ, shield law and state remedies may help; no documented federal relief.",
+    "interaction": "Protections are robust in state but uncertain against federal border/custody; absence of data is not safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex prison placement and cross-dressing arrests; this division has identity-consistent custody and no criminal facilities law, raising it, but federal border/custody severity keeps it in Elevated Risk."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is routine visitor exclusion without custody; our visa/screening exposure is severe but not universal reporting, and state shield/anti-discrimination protections push above it despite federal custody abuse."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is extended secondary screening with administrative denial; similar border friction, but this regime adds documented immigration custody abuse and counterterrorism framing, partly offset by strong state protections."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A shows brief friction with working remedy and no plausible imprisonment; here federal document refusal, fraud ineligibility, and custody outcomes are harsher, so the combined regime rates below despite state protections."
+   }
+  ],
+  "synthesis": "The operative regime is split. At border, national passport/visa birth-sex rules, mismatch screening, fraud ineligibility and possible removal/stranding are traveler-facing and severe. If a traveller is referred into federal immigration or national corrections custody, documented abuse, forced labour, sexual violence, and conversion-therapy policies raise consequences materially. The protective state layer substantially reduces everyday state-level risk: public accommodations, identity documents, anti-hate-crime machinery, shield law for care, custody consistency and school protections help adults and travelling minors, especially those fleeing home-state bans. It does not erase federal entry screening or federal facilities, and the national counterterrorism/minors-care framing leaves uncertainty. Adult alone and guardian with minor are safer in-state than the national average but remain exposed at entry and any federal encounter."
+ },
+ "parse_error": null
+}

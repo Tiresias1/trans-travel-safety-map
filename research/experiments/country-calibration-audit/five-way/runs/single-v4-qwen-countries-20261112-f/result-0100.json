@@ -1,0 +1,78 @@
+{
+ "cell": 100,
+ "region": "IRN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00567834",
+ "parsed": {
+  "rating": 0.09,
+  "explanation": "The combined operative regime is extremely hostile: sexual law, flogging/death provisions, no anti-discrimination protections, and coercive recognition only after surgery/sterilisation; security forces raid, monitor, detain suspected trans people; officials restrict trans presence in public. Documented custodial rape, forced anal tests, indefinite detention and summary trials establish severe consequences if outed. Border/facility protections are not documented, so no offset exists; visitor-specific entry screening remains uncertain but cannot raise safety because the worst documented outcomes are arrest, torture and capital exposure. A trans minor with a guardian faces analogous moral-law coercion, family pressure and no child-specific remedy. Severe state-directed targeting and absence of remedy dominate thin entry/facility evidence, placing this near severe-risk anchors with potential lethal consequences.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented for visitor entry, visas, airport screening or passport-marker checks. Domestic documents may disclose trans status: military cards list gay/trans exemptions/mental disorder; corrected papers only after surgery.",
+    "protection": "No documented acceptance of foreign passports, chosen names/markers, or nonbinary markers; no border protection.",
+    "interaction": "If a visitor is outed and placed in custody, domestic ID/diagnosis practices could be imposed; unknown but severe custody context.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented security raids/house checks/internet monitoring, arrests of suspected trans/gay people, indefinite detention without lawyer, intelligence-ministry rape, forced anal tests, summary trials, threats of execution.",
+    "protection": "No documented due-process safeguards or trans-respecting custody standards; commutation in one non-trans death case does not prove visitor remedy.",
+    "interaction": "Criminal moral law feeds custody; victims/perpetrators both liable; no anti-discrimination recourse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No subnational variation; national morality enforcement. Official capital advisory tells transgender people to avoid busy public areas, restricting visible trans presence; gendered facility rules not documented.",
+    "protection": "No documented public-accommodation, shelter, toilet or lodging protection; no facility matching identity.",
+    "interaction": "Public-space restriction can trigger police encounters that flow into arrest/custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender recognition requires surgery/sterilisation/court; state subsidises surgery but reporting describes coercion. No protections for visitors seeking routine/emergency care; no GI anti-discrimination law.",
+    "protection": "Legal/funded GRS only as binary conformity route; not traveler-facing protection; free HIV meds general but no LGBTQ education and blood bans signal stigma.",
+    "interaction": "Care-seeking could require invasive diagnosis, disclosure, or force binary transition; unknown but no protection.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Law treats all non-heterosexual conduct, and visibly trans lives, as criminal/moral deviance; officials classify trans/gay people as mental disorder; state pressure to binary transition or legal penalty; no GI protections.",
+    "protection": "Post-surgery name/gender court change and funded surgery are institutional culture at best; coercive and not visitor protection.",
+    "interaction": "Rule-of-law institutions enforce hostile policy; efficient detention/monitoring increases risk rather than provides recourse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No child-specific safe-care or custody rules documented. Minor trans/guardian could face family outing, coercive binary surgery/sterilisation, moral-law penalties; 2017 report raised concerns about LGBTI minors; traditional family pressures.",
+    "protection": "No documented minor protections, guardianship safeguards, or travel-with-child procedures.",
+    "interaction": "Parent/guardian may be treated as responsible for child's moral presentation; no recognized same-sex union for family.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police/paramilitary/security forces raid and detain suspected trans people; official public advisory targets visibility; private/family murder documented; no bias-crime law.",
+    "protection": "No documented police protection, hate-crime reporting, witness support or remedy for victims.",
+    "interaction": "Victim/perpetrator liability and no protections make reporting dangerous; visitors face strangers with no recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Absence of documented anti-discrimination or bias-violence remedy; convictions pretexts/summary trials; unknown entry, facilities, emergency care, consular access for detained visitors.",
+    "protection": "Only resident-facing surgery/court recognition after binary transition; not operative for visitor and can coerce.",
+    "interaction": "Unknowns are open questions, not safety; severe detention outcomes dominate.",
+    "status": "not_documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Higher than 0.05-A because dossier does not document routine visitor border arrest or recent execution in a gender-presentation case; but remains near 0.05 due to documented custody rape, forced anal tests, official public-space restriction, lethal same-sex law and threats."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Below 0.15-A: 0.15-A criminalises presentation and arrests mismatched visitors but capital not applied to presentation; here same-sex/custody record includes execution provisions/practice, forced anal tests, no protections, coercive surgery, state hostility, so severity is higher despite less visitor-border evidence."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Far below 0.25-B: that anchor is extortion/short custody without execution; this dossier has flogging/death provisions, execution practice for same-sex conduct, paramilitary telling detainees they would be executed, and intelligence-ministry rape of a trans person."
+   }
+  ],
+  "synthesis": "The operative regime is one national hostile system: moral-criminal law, coercive surgery-only recognition, security surveillance/raids, official exclusion from public space, and abusive custody with possible lethal outcomes. Visitor-specific entry and facility rules are not documented, but that absence is not protective; the worst consequences if outed are arrest, forced verification, torture/rape, summary prosecution, flogging or capital exposure. No effective GI remedy exists, and state institutions are the threat. Adult alone and trans minor/guardian share catastrophic severity; the minor adds family and medical-disclosure pressure without documented child safeguards. Thin border evidence lowers only certainty about the first contact, not the danger after discovery."
+ },
+ "parse_error": null
+}

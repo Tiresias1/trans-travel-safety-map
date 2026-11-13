@@ -1,0 +1,78 @@
+{
+ "cell": 188,
+ "region": "SLV",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00367312",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime lacks documented visitor-facing entry restrictions, but exposes an outed traveller to hostile state practice: mass raids under the exception regime, birth-sex ordinary-prison placement, forced shaving, punitive drills, denied HIV care, and guard/sexually abusive targeting of effeminate presentation. Social attitudes are violent, with a survey showing majority acceptance of attacking trans people, and police frequently fail to investigate hate crimes. Hate-crime law, one homicide conviction, judicial release, complaint policies, and health guidelines are partial but unreliable mitigations. Adult-alone risk is severe; adult-with-minor adds uncertain child exposure but no documented minor-specific traveller protection.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific entry refusal, marker check, device scrutiny, or border outing for foreign passports.",
+    "protection": "No documented traveler-facing border protection or marker-recognition mechanism; absence of evidence is not safety.",
+    "interaction": "Document mismatch could interact with police or custody screening if secondary checks occur, but this is not documented.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Exception-regime mass raids arbitrarily capture trans women, held in ordinary prisons with birth-sex placement, forced shaving, punitive outdoor drills, denied HIV clinic access, and guard abuse.",
+    "protection": "A judge freed one trans woman after unsupported arrest; one trans homicide conviction shows courts can act, but remedy is rare and inconsistent.",
+    "interaction": "National police, soldiers, and prison system create one custody pathway; a detained visitor would likely face the same accommodation-free placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Ordinary prisons and police lockups have no gender-identity accommodation; prison rules punish effeminate presentation and expose trans prisoners to searches, theft, and sexual assault.",
+    "protection": "Capital rainbow paintings and formal complaint policies are climate signals; 2009 health nondiscrimination guidelines exist on paper.",
+    "interaction": "Subnational capital cases and national institutional rules interact: facility access is shaped by federal exception regime and local prison practice.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Hospital specialists dismiss trans patients, hormone and surgery protocols are absent, and custody denial of HIV clinic care shows emergency and routine care exposure.",
+    "protection": "Health ministry guidelines ban LGBT discrimination and HIV plan prohibits orientation discrimination; 2018 policy allows discrimination complaints.",
+    "interaction": "Seeking care can out a traveller and interact with bureaucratic or police custody systems; documented protections are not shown to operate for visitors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State of exception, police raids, guard violence, and police refusal in death investigations; gangs target trans people with assault, extortion, and forced recruitment; survey shows 85% accept violence against trans individuals.",
+    "protection": "Hate-crime statutes prescribe enhanced penalties; first trans homicide conviction sentenced officers to 20 years; complaint policy exists.",
+    "interaction": "Paper anti-discrimination and hate-crime tools coexist with hostile enforcement; rule of law partially mitigates but does not cancel state custody abuse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented traveler-facing minor restriction, school rule, guardian requirement, or family-visitation conversion threat for visitors.",
+    "protection": "No documented protection for travelling minors; resident family and school hostility is marked as affecting residents more than visitors.",
+    "interaction": "If a minor is detained, seeks care, or encounters border or school systems, generic custody and care risks may apply; unresolved.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented hate crimes, gang physical and sexual assault, extortion, and police refusal; public attitudes indicate readiness to attack trans people.",
+    "protection": "Hate-crime law and one successful trans homicide prosecution; institutional complaint channels; capital visible symbols suggest limited official visibility.",
+    "interaction": "Police may prosecute serious homicides but are documented as refusing death investigations and abusing prisoners, making everyday street response unreliable for visitors.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unknown whether exception-regime raids, prison placement, and care denial explicitly extend to foreign visitors; slow remedies and unreported violence remain.",
+    "protection": "Documented complaints, judicial review, hate-crime law, health nondiscrimination guidelines, and one homicide conviction show partial recourse.",
+    "interaction": "Remedies interact with hostile police and prison practice; international reports say systemic failure to protect LGBT people despite some court successes.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar to 0.25-C in birth-sex prison placement, guard abuse, and assault risk. Slightly worse for exception-regime arbitrary mass raids and denied HIV care; somewhat better because one homicide conviction and judicial release show partial remedy."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Below 0.35-B because consequence is not merely brief questioning and release but multi-month ordinary-prison custody, forced shaving, punitive drills, sexual violence, and care denial, with only occasional judicial relief."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Materially below 0.45-A: routine document or service friction is less severe than documented state custody placements, mass raids, prison abuse, and social support for violence. Absence of trans criminalisation and one conviction prevent a 0.15 placement."
+   }
+  ],
+  "synthesis": "Adult alone: an outed traveller faces tier-1/tier-2 exposure—arbitrary capture, birth-sex prison placement, guard abuse, care denial, and societal/gang violence—with unreliable remedies. Adult with minor: same national custody and care risks apply if detained or seeking services; minor-specific traveller rules are not documented, so child exposure remains uncertain and not safely assumed. Combined operative regime: state institutions and hostile enforcement dominate; hate-crime law, one homicide conviction, complaint policies, and health guidelines provide partial mitigation but do not offset documented custody and social violence."
+ },
+ "parse_error": null
+}

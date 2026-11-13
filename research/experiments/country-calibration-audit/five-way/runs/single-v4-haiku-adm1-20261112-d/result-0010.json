@@ -1,0 +1,78 @@
+{
+ "cell": 10,
+ "region": "66186276B2592965416524:New Mexico",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0061352",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "Combined regime: the state's protections are strong and operate locally: no facilities ban, gender-neutral single-occupancy restrooms, marker change without surgery, public-accommodation and hate-crime coverage, and a shield law against home-state charges. However, federal entry screening (discrepancy-based refusal, a fraud-ground lifetime-ineligibility route), documented federal immigration-custody abuse, and federal pressure on minors' care (hospital subpoenas, proposed rules) apply regardless of state law and are not cancelled by it. Federal exposure is the operative constraint at the border and in custody. Street-level violence is undocumented for this state, and the 2025 arrest occurred in a different unit. Score sits in the Elevated band: well above the hostile-national floor because of the state layer, but held down by federal entry and custody exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal cable instructs refusal of applicants with document discrepancy or doubt about sex; passport marker restrictions in force; possible permanent fraud-ground ineligibility if misrepresentation is material.",
+    "protection": "Lifetime ineligibility is not automatic and requires four elements; limited waiver possibilities exist. State marker rules do not govern entry.",
+    "interaction": "Federal entry screening applies to all visitors, and state protections do not pre-empt it. A discrepancy at the border can escalate to refusal and, rarely, a lifetime bar.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented for trans men: forced labour, beatings, solitary confinement, severe sexual abuse. National corrections policy adopted from 2026 includes conversion-style measures and stopped reporting trans prisoner numbers.",
+    "protection": "Not documented for federal custody. Litigation is unresolved.",
+    "interaction": "Federal custody applies on entry or detention regardless of the state's shield and protective laws. Detention is the highest-severity federal channel, though the probability for a visitor is not documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-identity-congruent use of government-funded single-sex facilities. The state itself has no facilities ban and mandates gender-neutral single-occupancy restrooms. The extent of federal-building bans within this state is not stated.",
+    "protection": "State law requires gender-neutral single-occupancy facilities and bans discrimination in public accommodations, including government-run agencies.",
+    "interaction": "Federal rules may still bind federal buildings and funded facilities in this state, while state rules govern state and local settings. The operative federal-building reach here is uncertain.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospital records for under-19 patients; proposed federal rules to bar public insurance for under-18 care; federal youth-care restrictions in force or litigation.",
+    "protection": "State shield law protects patients and providers from home-state charges; adult gender-affirming care protected on request; state funds maintain Medicaid coverage for gender-affirming care.",
+    "interaction": "The shield protects against home-state prosecution but not federal subpoenas or federal rules on minors. Whether the adult care protection extends to non-resident minors is not specified.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups as a priority; federal guidance uses 'radical gender ideology' in a reward framework; executive orders direct criminal investigation of schools and teachers.",
+    "protection": "State hate-crime law covers gender identity; state statute repealed the gay and trans panic defence (2022). The strategy says powers will not target people who merely disagree.",
+    "interaction": "Federal threat framing toward trans-advocacy groups does not target an individual visitor directly, but it raises the institutional posture behind federal enforcement, which the state cannot override.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal youth-care restrictions, hospital record subpoenas, and proposed insurance rules affect minors and their guardians. Federal school-directed prosecution orders are in litigation. Entry discrepancies apply to minors travelling with guardians.",
+    "protection": "State bullying law covers gender identity (2019); state birth-certificate change requires parental consent for minors; state care protection is documented for adults only.",
+    "interaction": "A minor travelling for care or with a guardian faces federal entry scrutiny and federal records exposure, and state care protection may not reach non-resident minors. Guardians with discrepant documents face the same federal entry risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incidents, homicide counts, or enforcement outcomes are documented for this state. Absence of documentation is not evidence of safety.",
+    "protection": "Hate-crime law covers gender identity since 2003; state public-accommodation anti-discrimination law; the 2025 bathroom arrest was in a different unit and is not attributed here.",
+    "interaction": "Recourse exists on paper and is protective in form, but operating outcomes are undocumented. Unknown violence rates are not inferred as low.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation is unresolved; a visitor's exposure depends on which federal measures are in effect at the time of travel. The interaction of the state's X designation with federal document rules for crossings is unresolved.",
+    "protection": "State shield law and anti-discrimination coverage operate in form; federal orders blocked or enjoined in some cases. Legal-aid FAQs exist.",
+    "interaction": "Unresolved federal-state document interactions create uncertainty for visitors at entry and departure, and remedies sit mostly at the state level, which does not reach federal entry or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower than 0.35-A is not warranted: 0.35-A has a universal, state-imposed register exclusion of all visibly trans travellers with no effective appeal. Here the entry exposure is discrepancy-triggered, appeals exist, and the state layer is protective."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar. Both involve border secondary screening, discretionary refusal and documented humiliation, with uncertain outcomes. This dossier is stronger on state facilities, shield, and hate-crime recourse, but adds documented federal custody abuse that 0.55-B lacks."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Lower than 0.75-C. That anchor has respectful border practice, brief detention, and working remedies. Here, federal custody harms are documented with sexual abuse and forced labour, and federal youth-care and entry rules apply regardless of state protection."
+   }
+  ],
+  "synthesis": "The state layer is strongly protective in local settings: no facilities ban, marker change without surgery, anti-discrimination and hate-crime coverage, and a shield law against home-state charges. Federal layers operate independently of it. Entry screening can refuse discrepant applicants and, rarely, impose a lifetime bar. Federal immigration custody has documented severe abuse, and federal pressure on minors' care and records applies to families. The operative interaction is that a border discrepancy can move a visitor from refusal into federal custody, where state protections do not reach. Street-level risk is undocumented rather than low. The net reading is Elevated Risk."
+ },
+ "parse_error": null
+}

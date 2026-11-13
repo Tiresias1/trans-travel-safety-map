@@ -1,0 +1,78 @@
+{
+ "cell": 227,
+ "region": "WLF",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00636273",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "0.52: parent/national protections do not offset documented custody/care exposures. No criminalisation, entry restriction, facility ban, or targeted violence is documented. If a visitor is outed, risk concentrates in detention/hospital interactions: legal-sex placement, serious violations, delayed specialist care, and minor/guardian burden. Local stigma is social friction rather than organised targeting. Thin border data is not proof of safety, so Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border screening, marker rejection or X-marker practice is documented. Absence of local rules is suggestive but not proof; parent border behaviour for visitors is untested.",
+    "protection": "Parent civil/criminal law applies; no local entry restriction or gender-presentation offence is identified.",
+    "interaction": "Any passport, ID or ticket issue would combine parent screening with local isolation; unresolved X-marker recognition is an open question.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Detention follows parent framework. Trans women legally male are placed in all-male facilities; 2021 mechanism reports serious rights violations persisting, citing ~40 transgender detainee referrals.",
+    "protection": "Parent law decriminalises trans people, bans discrimination and aggravates transphobic crimes; formal oversight and courts exist.",
+    "interaction": "A visitor, detained companion or minor could inherit birth-sex placement; oversight findings show practice may not improve through remedy.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom or service exclusion laws, but detention facilities use legal sex, and care facilities locally lack specialists.",
+    "protection": "Parent equality law covers housing, services and employment; marriage/partnership recognition supports visitors in family settings.",
+    "interaction": "National facility law reaches locally; informal religious norms and small communities may make access ambiguous, but no specific ban is documented.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No local specialists; 2022 report found delayed access, inequity and weak self-determination. Minors face stalled transition-ban uncertainty and consent/documentation hurdles.",
+    "protection": "Parent health law, national insurance coverage, lawful surgeries, and late-2024 paediatric guidelines support care.",
+    "interaction": "Local isolation converts protections into travel and disclosure burdens; emergencies can out adults or minors to clinicians/guardians.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No state threat-framing or targeted harassment documented; local religious/cultural stigma, concealment and gender-variant roles coexisting with stigma are documented.",
+    "protection": "Parent law prohibits discrimination, criminalises conversion therapy and treats transphobia as aggravating.",
+    "interaction": "Formal deterrence exists, but unremedied custody violations and unknown local enforcement reduce reliability.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors or adults travelling with trans minors face specialist absence, travel, consent checks and policy uncertainty; guardians may be compelled to disclose documents or history.",
+    "protection": "Parent guidelines support blockers; national law permits care and recognizes families/marriages.",
+    "interaction": "Local isolation and medical caution create practical friction; a minor's care request can become an outing event.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Trans-specific street violence or police extortion is not documented; social staring/misgendering is possible from stigma.",
+    "protection": "Parent hate-crime and equality law nominally protect visitors; formal complaint channels exist.",
+    "interaction": "Reporting would enter institutions with custody failures; small isolated communities may add witness and retaliation uncertainty.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Persistent detention violations lack shown remedy; care access, border practice, local enforcement, non-binary markers, and minor-ban application are unresolved.",
+    "protection": "Courts, preventive mechanism, equality law and criminal protections are documented nationally.",
+    "interaction": "Visitor short-stay, travel distance, language and consent may make recourse too slow or expose identity further.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar birth-sex custody severity, but 0.25-C also criminalises cross-dressing and documents frequent assaults; this dossier has parent non-criminalisation, anti-discrimination law and no documented sweeps, so it is materially safer."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C has document-driven hospital placements and uneven denial. This dossier adds legal-sex custody placement, serious violations and specialist care gaps; border routine is less documented, but custody/care severity puts it slightly below 0.55-C."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A’s equality law produced release, complaint and remedy after brief detention. Here custody violations persist despite oversight and care access is poor, making the operative institutional exposure greater than 0.65-A."
+   }
+  ],
+  "synthesis": "Combined regime: strong metropolitan rights law plus local isolation. The operative threat is institutional contact, not prosecution. Custody uses legal sex and oversight shows abuse; care is nationally protected but locally thin. For adults alone, everyday exposure seems limited; for anyone needing security, health, or care as a minor/guardian, discovery can produce humiliation, delay, or serious rights violations. No state campaign, no death penalty; social acceptance constrained."
+ },
+ "parse_error": null
+}

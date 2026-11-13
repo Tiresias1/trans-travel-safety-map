@@ -1,0 +1,78 @@
+{
+ "cell": 35,
+ "region": "CAF",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00635529",
+ "parsed": {
+  "rating": 0.25,
+  "explanation": "National public-morality law criminalizes public same-sex affection, while legal gender recognition, gender-identity anti-discrimination, and documented trans-specific border/facility/custody/care protections are absent. The statute is secondary to trans exposure, but entrenched hostility toward transgender and LGBTQ people, false-accusation arrests, and law-enforcement mistreatment/torture make discovery capable of severe arbitrary consequences. No traveler-facing screening or facilities regime is documented, so probability is uncertain; no effective recourse is documented, so severity dominates. For minors, ordinary family travel is not penalized, but lack of protections leaves a gender-nonconforming minor or guardian without remedy.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific entry/screening rule documented, but officials assess visitors against home documents; absence of domestic gender recognition or marker-change leaves mismatch questions unresolved.",
+    "protection": "No documented border protection, marker-acceptance, or non-discrimination rule; home-country documents do not offset local stigma.",
+    "interaction": "A passport/name/marker mismatch could invite questioning and, if linked to perceived public same-sex affection, public-morality exposure.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Public expression of same-sex love punishable 6 months-2 years (child provision 2-5 years); CSOs document false-accusation arrests and law-enforcement mistreatment/torture of LGBTQ people. Harsh custody and impunity are also recorded.",
+    "protection": "No documented custody procedure, hate-crime rule, or effective remedy; international statements are not operational.",
+    "interaction": "Document discovery can escalate into arbitrary custody where prior abuse and impunity raise severe harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No subnational variation and no documented facility, bathroom, ward, or checkpoint restrictions specifically reaching transgender visitors.",
+    "protection": "No positive facility-access rule documented.",
+    "interaction": "Open question: gendered facilities or detention placement could expose a mismatched visitor, but evidence is absent.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No anti-discrimination law in health; documented healthcare discrimination against LGBTQ people; no trans-specific visitor care-denial rule.",
+    "protection": "None; sensitive-data rule names sexual orientation, not gender identity.",
+    "interaction": "Emergency or hormone continuity could trigger disclosure/stigma, with no documented remedy.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "SOGI framed as imported and contrary to local values; public-morality law; entrenched societal discrimination; police false accusations and mistreatment documented.",
+    "protection": "UN joint statement and UPR recommendations are aspirational, not operative.",
+    "interaction": "Law plus stigma removes recourse and can turn public visibility or mismatch into police risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Child provision raises penalties for criminalized public same-sex affection involving a child; no documented trans-family or guardian-facing restriction.",
+    "protection": "None documented.",
+    "interaction": "Ordinary family travel is not penalised, but a gender-nonconforming minor with mismatched documents lacks recognition and protections.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Societal discrimination is entrenched; LGBTQ concealment is normal; relationships are dangerous; law-enforcement mistreatment is documented; no known advocacy organisations.",
+    "protection": "No anti-harassment, hate-crime, or reliable police-recourse mechanism is documented.",
+    "interaction": "Victim reporting may invite scrutiny or abuse rather than protection, especially for isolated foreign travellers.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No legal recognition, anti-discrimination, conversion ban, or trans-specific traveler rule; arrest/custody/facility data gaps; 2023 violence silence unresolved.",
+    "protection": "Data-protection names sexual orientation only; international recommendations do not create enforceable recourse.",
+    "interaction": "Thin data in a hostile setting means unknowns cannot offset documented stigma and abuse.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "That anchor criminalizes presentation directly and implies routine arrest, prolonged custody, beatings, and capital threat. This dossier lacks a trans-specific presentation offence and credible capital pathway, but has public-morality arrests, false accusations, and documented law-enforcement mistreatment, placing it above 0.15 but not by a large margin."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "That anchor applies a morality provision selectively to transgender people, with blackmail and short detention. This dossier has a narrower public-same-sex offence and no explicit trans application, but similar absence of protections and documented LGBTQ mistreatment; lack of direct anti-presentation enforcement keeps it near 0.25."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "That anchor documents routine identity-stop regimes targeting trans visitors, with hours of detention but little credible imprisonment/torture. Here, no universal stop regime is documented, yet discovery can carry criminal arrest and severe custodial abuse, making outcomes more uncertain and potentially harsher."
+   }
+  ],
+  "synthesis": "The combined regime is national and uniform: public-morality criminal law, entrenched anti-trans/anti-LGBT stigma, absent legal recognition, and no effective remedies. Because sexuality law is not identical to trans law, it should not alone dominate; however, it becomes operative for a visitor through false accusations, perceived relationships, and police abuse. The absence of documented facility, care, or border rules creates open questions, but silence does not create safety. A visitor may face daily concealment and discrimination; if outed, the risk of arbitrary detention with mistreatment is serious, though not a documented execution campaign."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00528075",
+ "parsed": {
+  "rating": 0.58,
+  "explanation": "Combined regime: local equality law and no facility ban materially lower everyday discrimination/harassment risk, especially in private/state public accommodations. But the parent national regime controls passports, entry screening, federal facilities, federal custody and minor-related health/education rules. Those are traveller-facing and severe: document mismatch can cause refusal, permanent fraud claims or federal detention with abuse; guardians with trans minors face care/school scrutiny. Court challenges and state remedies help after local harm, not at border/federal contexts. Adult alone: moderate-high friction; adult with trans minor: worse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passports require birth-sex marker; X unavailable for new issues, may mismatch presentation. Entry officers may question, deny, demand evidence, or pursue permanent fraud if wilful misrepresentation suspected; trans athletes separately restricted.",
+    "protection": "Existing X passports valid until expiration; legal-aid FAQ; court challenges and state nondiscrimination do not correct national entry screening or passport rules.",
+    "interaction": "State protections reduce local document friction, not border or federal screening; a passport discrepancy can move a traveller into denial or federal custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If referred to federal corrections or immigration custody, documented severe harm: conversion-therapy-like prison policies, forced labour, beatings, solitary and sexual abuse; prisoner counts stopped reporting.",
+    "protection": "State has no documented trans inmate placement protocol; local law enforcement may not handle federal custody, and anti-discrimination law does not shield detainees.",
+    "interaction": "Border or federal-building encounters can escalate into federal detention where national custody practices dominate the local layer.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities congruent with gender identity, and many states/federal rules restrict bathrooms, schools and public buildings; criminal trespass elsewhere.",
+    "protection": "This jurisdiction has no state/province facility ban and public accommodation discrimination is prohibited; equality mapping records no local restriction.",
+    "interaction": "State no-ban and public-accommodation law help local venues, but federal facilities and federally funded settings may remain excluded.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policies attack youth gender-affirming care, fund youth service cuts, target schools/clinics and subpoena records; continuity of adult care during travel is not documented and may be disrupted.",
+    "protection": "State anti-discrimination and insurance protections exist; local care access may be less hostile, but no explicit traveller-facing care guarantee is documented.",
+    "interaction": "Adult alone may find local services workable; guardian with trans minor faces federal education/health posture that state law does not fully block.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal orders and guidance use hostile gender-ideology framing, direct school investigations and teacher prosecution, and counterterrorism rhetoric links pro-trans ideology with violent groups; public opinion favours birth-sex documents.",
+    "protection": "State hate-crime enhancement, anti-discrimination act, LGBTQ+ commission and public-accommodation law give local recourse; national hate-crime statute may cover bias violence.",
+    "interaction": "State/local authorities are more likely protective; federal agents and institutions may be hostile, especially around minors, schools or records.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor or accompanying guardian risks care denial, school scrutiny, records subpoenas, criminalized facilitation of social transition, and youth-service reductions under national measures.",
+    "protection": "State bans conversion therapy, protects insurance and public accommodations, and created a commission; no traveler-specific guardian/care shield is documented.",
+    "interaction": "For a minor’s care or schooling, federal funding/education rules can override local protections and increase exposure for adults who assist.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No jurisdiction-specific anti-trans violence or enforcement data; national climate and majority support for restrictive document rules suggest residual street and stranger danger.",
+    "protection": "State hate-crime penalties, public-accommodation nondiscrimination and low-risk classification indicate formal local recourse; national hate-crime law may help.",
+    "interaction": "Local police response is probably better than federal screening contexts, but unremedied federal hostility and border encounters remain separate exposures.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Several national orders are enjoined or litigated, so enforcement varies by agency, port, court and state; private gatekeeper compliance and airport/federal building practice are not fully documented.",
+    "protection": "ACLU suit, legal aid resources, state equality mechanisms and commission provide some paths; local no-ban status lowers everyday uncertainty.",
+    "interaction": "Remedies are strongest after a local service or discrimination problem arises, weakest at entry, federal facilities, custody, and minor-related federal programs.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has brief document-mismatch questioning but national equality law and reliable release/courts. Here the state protections are local, while federal passports/entry actively refuse or investigate mismatch and can lead to federal custody; therefore clearly below 0.65."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Closest on immigration screening: mismatched travel records can produce secondary questioning, refusal and return travel. This dossier adds stronger state public-accommodation and hate-crime protections, but also permanent-fraud threat and federal detention abuse; net remains around 0.55, with local life safer than the anchor’s purely bureaucratic exposure."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C assumes markers can match presentation and border officers are trained with appeal rights. Here new passports are forced to birth sex, X is eliminated, and entry may be denied; the state’s non-discrimination laws do not displace federal screening or facilities, so lower than 0.75."
+   }
+  ],
+  "synthesis": "The operative risk is split: local services are relatively shielded by state nondiscrimination, hate-crime enhancement, no facility ban, and a low-risk local classification. But federal touchpoints remain hostile and decisive: passports may mismatch presentation, border officers can refuse or investigate, federal facilities may exclude, and federal custody abuse is documented. For adults alone, severe harm is contingent on being routed into federal enforcement; for adults with trans minors, national care, school and records policies sharply increase exposure. The result is elevated risk mitigated locally but not at border or federal interfaces."
+ },
+ "parse_error": null
+}

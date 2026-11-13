@@ -1,0 +1,82 @@
+{
+ "cell": 117,
+ "region": "LBN",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00162948",
+ "parsed": {
+  "rating": 0.23,
+  "explanation": "The operative regime explicitly criminalises trans feminine presentation (Article 521, up to six years), with documented de facto and explicit enforcement targeting trans women: arrests, police raids, and forced anal examinations ordered by prosecutors — severity-4 state exposure with a state hand, not scattered incidents. Article 534 remains in force with arrests historically brought under it, though courts have consistently declined to apply it to consensual conduct (2009–2023), a partial judicial counterweight. Rising anti-trans violence in the capital is documented. No legal gender recognition exists; judicial marker-review practice is a climate signal, not visitor protection. Nothing documents execution, but imprisonment after outing is a realistic, state-driven outcome. Calibrates in the upper High Risk band: above 0.15 anchors (no documented lethal custody), below 0.35 anchors only marginally.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documentation barriers for trans people documented regionally; no sourced information on entry screening or marker procedures for visitors.",
+    "protection": "Judiciary has a history of reviewing name/marker changes since 2015 — resident-facing climate signal only.",
+    "interaction": "Visitor documents issued abroad; unknown how border officers treat mismatches.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Arrests of LGBT people documented (2012 raid, 36 arrested); forced anal examinations ordered by prosecutors — intrusive medical procedure in state custody.",
+    "protection": "Courts have declined to apply Article 534 to consensual conduct repeatedly; appellate relief exists in principle.",
+    "interaction": "Criminalisation of expression funnels trans people into criminal process; detention conditions not documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No LGR; medical authorities hold heavy roles in marker proceedings — resident-facing signal.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 521 criminalises trans feminine presentation explicitly; state applies 'de facto and explicit criminalisation' targeting trans women; interior ministry ordered forces to prevent LGBT gatherings (2022, frozen by court); 2018 activist arrest and Pride suppression.",
+    "protection": "National administrative court froze the 2022 assembly ban after advocacy challenge.",
+    "interaction": "Executive hostile framing with partial judicial pushback; post-freeze scope unknown.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented for visitors travelling with minors; criminalisation and assembly crackdowns would apply regardless of age.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented rise in prejudice and violence against trans and queer people in the capital, including incidents responding to a decriminalisation bill.",
+    "protection": "None documented; no evidence police protect trans victims.",
+    "interaction": "Hostile police enforcement amplifies vulnerability to violence.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Current prosecution rates under Articles 521/534 unsourced; scope of frozen assembly order unknown; facilities, border practice, and police treatment of visitors undocumented.",
+    "protection": "Repeated judicial rulings against applying 534 to consensual conduct; working courts with independent advocacy sector.",
+    "interaction": "Thin dossier resolves toward structural risk: enforced criminalisation, no LGR, hostile executive.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Like 0.35-A, exposure is state-administered and universal for visibly trans people, but here the tool is criminal arrest and forced examination rather than administrative exclusion — harsher consequence, pushing below that anchor's consequence level."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves administrative screening friction with reliable eventual release; this dossier documents actual arrests, raids, coerced medical exams and street violence — materially worse, so the rating sits well below it."
+   },
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "0.15-C features morality sweeps with coerced statements, custodial violence and capital-charge ambiguity. This dossier shares raids, arrests and anal examinations but lacks documented custodial beatings or a credible lethal pathway, and courts function against 534 — so it sits above that anchor."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Similar structure: morality provisions applied selectively, courts annulling some cases, no lethal state policy. This dossier adds explicit trans-specific criminalisation (521) and documented rising violence, placing it at or slightly below 0.25-D."
+   }
+  ],
+  "synthesis": "The combined regime is dominated by an explicit, enforced criminalisation of trans feminine presentation backed by documented arrests, raids, and prosecutorial forced examinations — a state-directed targeting tier that outweighs the judiciary's repeated refusals to apply the parallel sodomy article to consensual conduct. Courts provide partial, episodic counterweight (frozen assembly ban, 2009–2023 rulings), but 521 remains fully operative and no remedy is documented for expression-based arrest. Rising anti-trans violence in the capital compounds societal hostility with thin recourse. Unknowns — border practice, current prosecution rates, custody conditions — resolve downward given the structural pattern of criminalisation, hostile executive action, and no legal recognition. Result: High Risk, ~0.23."
+ },
+ "parse_error": null
+}

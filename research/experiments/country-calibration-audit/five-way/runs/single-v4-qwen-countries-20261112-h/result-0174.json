@@ -1,0 +1,78 @@
+{
+ "cell": 174,
+ "region": "PSE",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00501901",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime splits: a decriminalized 1960-code region still faces harsh social/family persecution and state hostility to queer activity; a 1936-code region may enforce morality provisions reaching trans presentation, while criminal status is contested. No explicit trans ban, but public-morality exposure, periodic transphobic threats/attacks, no legal-recognition or anti-discrimination recourse, and very low acceptance. Traveler-facing border/documents/facilities/detention are not documented, so outing probability is uncertain. Severity if outed by police, family, services, or collapsed healthcare is major: harassment, extortion, arrest, violence, denial of care, possible prosecution. For an adult with a minor, conservative education/youth climate and fragile medical access add uncertainty, though no child-specific rule is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Unknown how document or marker mismatch would interact with the split penal regimes.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police are documented arresting and torturing gay residents; advocacy says public-morality provisions can reach trans people, and official action targeted queer organizing.",
+    "protection": "No documented trans-specific procedural safeguards, habeas relief, or consular access.",
+    "interaction": "A document or presentation mismatch could invite questioning, arrest, or abuse, but enforcement against trans visitors is unquantified.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No traveler-facing bathroom, lodging, checkpoint, or ward-placement rule is documented; blockaded-region public settings show discrimination/abuse reports.",
+    "protection": "1960-code region has no consensual-sex crime; no explicit trans facility ban is documented.",
+    "interaction": "Regional split means facility exposure may vary, but combined system lacks a uniform traveler protection.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "HIV treatment is described as interrupted for queer people by medication scarcity and stigma; blockaded-region healthcare collapse makes life-saving medicine especially difficult.",
+    "protection": "No documented gender-affirming-care denial for visitors; no clinic-specific trans refusal is sourced.",
+    "interaction": "If a visitor or minor needs care, discovery can delay treatment or force disclosure; emergency pathways are unknown.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Police prohibited LGBTQ organizing; hate messages followed; Islamist actors contest queer content in education/youth; morality provisions can criminalize presentation.",
+    "protection": "No source records enforceable gender-identity protection, complaint channel, or anti-discrimination order.",
+    "interaction": "State hostility and moral framing lower trust in police, raising private violence and extortion risk after outing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-specific child rule documented; family/public settings are hostile to queer people and health access is collapsing.",
+    "protection": "No source documents child protections, school safety, or guardian access to care.",
+    "interaction": "A trans minor or guardian could face outing through schooling or medical care, but magnitude is unknown.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Periodic undated transphobic threats/attacks are reported; residents describe public/family abuse and gay blackmail; police response to queer targets is hostile.",
+    "protection": "No functioning recourse is documented; hate-crime statutes are absent or unspecified.",
+    "interaction": "Police contact may worsen rather than stop violence, especially outside the safer legal-lineage region.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No legal gender recognition or broad anti-discrimination law is documented; 1936-code enforceability and treaty scope remain unresolved.",
+    "protection": "No traveler-facing remedy, complaint mechanism, or effective relief is sourced.",
+    "interaction": "Absence of evidence means unknown exposure, not safety; regional and temporal gaps prevent recency weighting.",
+    "status": "not_documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Higher than 0.15-A: no documented routine arrest/torture of trans visitors, no highly likely imprisonment pathway; criminal status contested and evidence is queer-general rather than traveler-specific, though severity remains serious."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Close to 0.25-A: state hostility, official bans, and morality exposure resemble Varnalia. It sits slightly above because no weekly raids, visitor detentions, or fines are documented, and the criminal provision’s force is contested."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Between 0.25 and 0.35-B: unlike 0.35-B, there is no documented stop-and-search program for trans visitors, but possible imprisonment/torture and absent recourse make it more severe than routine release/fine cases."
+   }
+  ],
+  "synthesis": "The operative regime is hostile but evidentially patchy. Formal trans criminalization is absent, yet public-morality provisions, social/family persecution, police abuse of gay residents, and official bans create high severity after outing. The decriminalized region does not protect visitors because enforcement and attitudes remain hostile; the contested 1936 region keeps prosecution possible. Unknown traveler-facing screening, facilities, and custody do not offset those consequences; they leave probability uncertain while recourse remains documented as absent. For a minor, fragile health access and conservative youth/education framing add uncertainty without specific child-level exposure."
+ },
+ "parse_error": null
+}

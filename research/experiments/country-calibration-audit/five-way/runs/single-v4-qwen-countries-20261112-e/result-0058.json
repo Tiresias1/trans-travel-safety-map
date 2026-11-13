@@ -1,0 +1,78 @@
+{
+ "cell": 58,
+ "region": "DOM",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00418728",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "Combined regime lacks active trans-specific criminal law or documented border/custody targeting, so discovery is not catastrophic. Yet authorities historically arrested Pride marchers, shut venues, and continue crackdowns on visible LGBTQ signage; broad discrimination is permitted; religious conservatism and polls show deep trans hostility. Trans visitors whose presentation or documents attract attention may face questioning, service denial, or short police friction with little recourse. The missing legal-gender regime is mainly a resident gap and is weighted only where mismatched documents or family status reach visitors. For a solo adult, risk is elevated but not systematic; for an adult with a minor or partner, same-sex family recognition barriers add possible bureaucratic scrutiny. Overall Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented traveler-facing border refusal or routine document examination is stated. Passport/gender-presentation mismatch could invite questioning, but the dossier does not show an operative immigration restriction.",
+    "protection": "No criminalisation of same-sex conduct; no documented trans-specific entry ban. Home-issued passports are presumably used, but no recognition rule is stated.",
+    "interaction": "Document friction could combine with visible LGBTQ expression or police scrutiny; otherwise entry exposure remains weakly evidenced.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented state/police targeting of LGBTQ expression: Pride marchers arrested in the capital, gay venues shut under harassment, ongoing crackdowns on visible LGBTQ signage. No trans-specific custody record.",
+    "protection": "No trans-specific criminal statute and no active sodomy prohibition; public-order use is historically tied to LGBTQ visibility, not identity alone.",
+    "interaction": "If a trans visitor is read as politically visible LGBTQ, police may apply public-order or event-crackdown practice; outcome for ordinary tourism is less clear.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, transport, ward, or shelter rule by birth sex. Broad lack of GI/SO anti-discrimination law means service denial and misgendering are possible without prohibition.",
+    "protection": "Constitutional health care exists; HIV-specific law bars GI/SO discrimination in its narrow domain. No general facility protection is documented.",
+    "interaction": "Facility friction would likely arise informally after outing; no operative state facility regime is documented.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "GI/SO discrimination is legal in general health care outside the HIV law. Trans-related medication continuity, privacy, or ward placement are not addressed and could expose a visitor.",
+    "protection": "Constitutional right to care; HIV/AIDS law expressly prohibits discrimination based on sexual orientation and gender identity in that sector.",
+    "interaction": "Emergency or HIV-related care may be protected; non-HIV gender-related care lacks recourse and staff discretion may worsen outing.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Visible politically active LGBTQ signage is frequently targeted by government crackdowns, sometimes with religious leaders’ support. Polls show hostility: 5% support trans legal gender change, 69% favour criminalising same-sex relationships.",
+    "protection": "No current trans criminal law; no active sodomy statute. Constitutional court review ended without retaining prohibition.",
+    "interaction": "Trans visitors may be swept into broader state hostility toward visible LGBTQ people; the climate is restrictive even though law is not trans-specific.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Same-sex family recognition is constitutionally barred. A trans visitor with a child or partner may face scrutiny where relationship, consent, or household status is read as same-sex.",
+    "protection": "No documented restriction specifically targeting travelling minors, guardians, or family units.",
+    "interaction": "Family-status mismatch could add bureaucratic friction in services, lodging, or health consent, but no enforcement pattern is documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific violence rate or organised sweeps against trans visitors. Still, broad social hostility, lack of protections, and police harassment of LGBTQ spaces reduce confidence in reporting.",
+    "protection": "General criminal law is assumed to apply, but no GI/SO hate-crime recourse, protection data, or police training is documented.",
+    "interaction": "A violent incident may be treated as general crime; identity-based aggravation or victim support appears absent, making remedy uncertain.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No standing legal-gender procedure for residents, no documented hate-crime route, unresolved advisory-opinion implementation, and no evidence accepted human-rights commitments changed visitor-facing practice.",
+    "protection": "Narrow HIV anti-discrimination law exists; constitutional courts can review rights claims, but no traveler remedy is documented.",
+    "interaction": "Lack of documented recourse makes service denial, questioning, or minor family-status problems more consequential after outing.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a formal visitor register routinely denying boarding/admission for transgender travellers. This dossier lacks systematic entry exclusion or a trans-specific screening apparatus, so it is safer than 0.35, though state hostility to visible LGBTQ people prevents it from being far above that level."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B features border secondary screening, discretionary refusal, and appeal mechanisms. This jurisdiction has weaker documented border friction but stronger state crackdowns on LGBTQ visibility, fewer protections, and little recourse, placing it somewhat below 0.55 despite the absence of routine immigration punishment."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has equality law, prompt release, compensation, and institutional correction after document questioning. Here broad GI/SO discrimination is permitted, legal-gender status is absent for residents, and police crackdowns on LGBTQ expression persist, so protections are much weaker and the score falls well below 0.65."
+   }
+  ],
+  "synthesis": "The operative regime is not catastrophic: no trans-specific criminal law, no current sodomy offence, and no documented border/custody programme targeting trans visitors. But authorities and socially conservative forces have repeatedly cracked down on visible LGBTQ expression, and general anti-discrimination law is absent outside a narrow HIV context. If a trans traveller is outed through presentation, documents, family status, care-seeking, or public visibility, likely harms are harassment, refusal of services, questioning, and short police friction with weak remedy. Missing legal gender recognition alone is not treated as visitor risk, but it signals institutional coldness. Adult-with-minor and family-status questions are underdocumented but could raise bureaucratic exposure. Overall Elevated Risk, below protective mid-range anchors and above structured exclusion regimes."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 141,
+ "region": "MNP",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00155924",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "The combined regime shows no trans-specific criminalisation, recognised same-sex marriage and adoption, a 2023 hate-crime enhancement covering gender identity, and no documented hostility, targeting, border friction or violence against trans people. Document change is possible subject to a medical requirement. The federal screening layer is undocumented — an open question, not an exposure. Weak local community infrastructure (a first Pride of ~60) and no comprehensive nondiscrimination statute temper but do not drive risk. Thin-data extrapolation from structural signals — no criminalisation, a documented protective statute, no documented adverse enforcement — places this in the lower Reduced Risk band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Travel documents, immigration and airport screening follow the governing state's national rules; their content is not provided, so visitor-facing border practice is uncertain.",
+    "protection": "Legal gender change is permitted with a specified medical process, allowing local identity alignment; visitors' home documents are unaffected.",
+    "interaction": "Federal screening applies at every crossing; local law cannot modify it, but no adverse federal practice is documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Not documented.",
+    "protection": "Hate-motivated crimes carry enhanced sentencing under the January 2023 public law covering gender identity.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No subnational variation documented; territorial layer supplies hate-crime enhancement and government-employee protections only.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "No state threat-framing, police profiling, or morality enforcement is documented.",
+    "protection": "Same-sex conduct is not criminalised; the 2023 hate-crime statute provides sentencing recourse; marriage recognition since 2015 signals institutional acceptance.",
+    "interaction": "Federal hate-crime coverage derives from the governing state; territorial enhancement supplements it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Adoption available to same-sex couples since 2015; no age-dependent visitor rules documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence, harassment, or police hostility documented; small first-Pride turnout suggests limited community visibility rather than danger.",
+    "protection": "Enhanced sentencing for gender-identity-motivated crimes, though no recorded prosecutions under it.",
+    "interaction": "Recourse beyond federal complaint channels is limited for non-government employees.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Open questions: which medical procedures satisfy the gender-change requirement; frequency of hate-crime provision application; content of federal screening rules.",
+    "protection": "Documented 2023 hate-crime statute; marriage and adoption recognition since 2015 as institutional-culture signals.",
+    "interaction": "Advocacy index figures are policy coverage, not enforcement records — given no direct weight.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B documents routine secondary screening and discretionary denial of entry for trans visitors. Here border practice is undocumented rather than adverse, and the local regime is more protective (hate-crime statute, marriage recognition), so this jurisdiction sits above 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, a functioning appeal tribunal and compensation remedies, but inconsistent airport practice. This jurisdiction has comparable structural protections and no documented friction, but thinner evidence, no documented remedy operation, and unknown federal screening — modestly below 0.75-C."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A shows broad equality law, independent oversight and prompt remedies. This jurisdiction lacks comprehensive nondiscrimination coverage, has no documented enforcement record, and federal screening is unresolved — clearly below, though no documented negative anywhere narrows the gap."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A features a universal visitor-facing registration and exclusion regime with no remedy. Nothing analogous exists here; no visitor-facing exposure of any kind is documented, placing this jurisdiction far above 0.35-A."
+   }
+  ],
+  "synthesis": "The operative regime the traveller encounters combines a non-criminalising, institutionally accepting territory (marriage, adoption, medical-process legal gender change, 2023 hate-crime enhancement) with a federal screening layer whose content is unknown. No documented exposure reaches visitors: no targeting, violence, police hostility, facility rules, or custody practice appears in the record. The protections are documented in force but unproven in application (no prosecutions under the hate-crime law). Under thin-data extrapolation, structural signals — absence of criminalisation, presence of a protective statute, no documented adverse enforcement — resolve upward, while the unknown federal screening layer and sparse community infrastructure hold the score below the 0.75 tier. Best estimate: 0.68, Reduced Risk."
+ },
+ "parse_error": null
+}

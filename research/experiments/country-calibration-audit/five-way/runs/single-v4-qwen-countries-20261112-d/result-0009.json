@@ -1,0 +1,78 @@
+{
+ "cell": 9,
+ "region": "ARM",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00395245",
+ "parsed": {
+  "rating": 0.25,
+  "explanation": "Combined regime: no trans criminalisation, but severe political and societal hostility, no equality law, ambiguous hate-crime recourse, restricted care, documented violence/extortion/torture, and state actors condoning outing. Adult traveller alone faces high harm if outed; with minor, child/guardians face similar exposure and fewer safeguards. Missing border/facility rules temper but do not offset tier-2 state-directed threat framing and tier-3 hostility.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented border or airline refusal for trans visitors, but a mismatch could trigger questioning in a hostile climate with no anti-discrimination law.",
+    "protection": "Decriminalisation means document mismatch alone is not a trans-specific crime; no entry restriction was found.",
+    "interaction": "Discovery at check-in, transit, or police stops could expose the traveller to harassment or service denial; not sourced.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No visitor custody cases are documented. However, reports of torture, sexual violence, extortion and slow state response against LGBT people imply severe harm if detained or investigated.",
+    "protection": "No law criminalises trans expression; foreign visitor detention on that basis is not documented.",
+    "interaction": "If an emergency, border issue or complaint arises, police conduct in LGBT cases may increase custody risk.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No state facility ban, bathroom rule or visitor reporting system is documented; public hostility and lack of protections could still produce service denial or unsafe shared spaces.",
+    "protection": "No evidence of official exclusion of trans visitors from hotels, transport or public buildings.",
+    "interaction": "A visible traveller may face staff discretion, ejection or segregation; remedies are unclear.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care is restricted, hormone access is limited and nonbinary recognition absent; a visitor seeking continuity or emergency treatment may face disclosure or denial.",
+    "protection": "Not documented that emergency care is refused solely because a visitor is trans.",
+    "interaction": "Care needs can force contact with clinicians and records, increasing outing in hostile institutions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Legislators threatened to burn a trans woman, courts allowed outing, hate speech is documented and police readiness was insufficient for events; state actors contribute to threat framing.",
+    "protection": "No trans-specific criminalisation and some suspects were detained after arson; hate-crime rules exist but are ambiguous.",
+    "interaction": "Hostile elite and institutional messaging lowers protection and may license private violence against outed visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific visitor law is documented, but hostile attitudes, no protections and restricted care endanger an outed child; guardians may face pressure or refusal of services.",
+    "protection": "No documented child detention, family separation or care denial; minor-specific rules are not sourced.",
+    "interaction": "Schools, clinics, hotels and family settings could become outing sites with little recourse.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Arson at a bar, death threats, hate speech, extortion and torture/sexual violence were reported; police response was slow or absent in several accounts.",
+    "protection": "Arson suspects were later detained; no documented protection specifically for trans visitors.",
+    "interaction": "General hostility can escalate street encounters; traveller-specific assault frequency is not established.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No equality statute, ambiguous hate-crime coverage, slow investigations and court-condoned outing reduce practical remedy for an outed visitor.",
+    "protection": "Decriminalisation and existing legal gender recognition may indicate some institutional capacity, but these are resident-facing, not visitor protections.",
+    "interaction": "Whether complaints, care disputes or detention would be handled fairly is unresolved.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Higher than 0.15: no public decency criminalisation, no routine visitor arrests, no documented months of custodial abuse or capital pathway."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Similar to 0.25: extortion and police-hostility risk, but this dossier has extreme political death threats, court-condoned outing and no effective remedy; lacks systematic checkpoint abuse."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Lower than 0.55: 0.55 has facility rules with patient advocate remedies; here facility bans are absent, but state hostility, no protection and violence reports make consequences of outing worse."
+   }
+  ],
+  "synthesis": "Absence of criminalisation removes formal arrest/imprisonment risk, but public acceptance 5/100, official death-threat rhetoric, court-legitimised outing, police slowness, and 2024 torture/sexual violence/extortion create a high probability that an outed or visible visitor will be harassed, denied service, targeted for violence or exploited, with little recourse. Restricted care adds practical exposure during emergencies. With a minor, hostile institutions and no discrimination protection make family travel unsafe, though child-specific rules are not documented. Overall score reflects severe social/political danger mitigated by no explicit traveller restriction."
+ },
+ "parse_error": null
+}

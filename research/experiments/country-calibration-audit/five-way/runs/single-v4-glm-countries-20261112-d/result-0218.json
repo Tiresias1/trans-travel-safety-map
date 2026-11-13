@@ -1,0 +1,82 @@
+{
+ "cell": 218,
+ "region": "USA",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00552615",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined operative regime imposes tier-1 universal exposures: a federal entry directive instructing officers to refuse applicants whose documents cast doubt on sex, with a paper pathway to permanent fraud ineligibility; documented detentions of foreign citizens over visa issues; and facilities bans across roughly a fifth of subnational units, criminal in four, with one documented arrest including 24 hours in a birth-sex ward. Custody exposure is severe: immigration detention with documented forced labour, beatings and sexual abuse, and single-source corrections policies described as conversion-therapy-style. Mitigation is partial and contested: courts have enjoined several orders but the passport-marker restriction took effect; hate-crime and anti-discrimination law operate in parts of the country; most units lack mapped facility bans. No documented trans-specific violence rate. This sits above universal-register anchors like 0.35-A but below administrative-friction anchors like 0.55-B.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal cable requires refusal where documents cast reasonable doubt on sex, with advisory-opinion referrals; wilful-misrepresentation findings could trigger permanent ineligibility. Trans and nonbinary travellers report confiscated or blocked passports and stranded travellers; allied governments issued advisories after detentions of their citizens over visa issues.",
+    "protection": "Existing X-marker passports valid until expiry; policy challenged in national courts; limited fraud-ground waivers exist.",
+    "interaction": "Entry refusal can escalate to detention and removal; fraud finding permanently bars re-entry, compounding any later stranding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: transgender men report forced labour, beatings, solitary confinement and severe sexual abuse. National corrections policies from 2026 described as mandating hair-cutting, hormone withdrawal and psychiatric substitution for transgender inmates; prisoner counts no longer reported.",
+    "protection": "Habeas and court review function; several related orders enjoined.",
+    "interaction": "Any visa refusal or facility arrest can route a visitor into this custody system.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facilities bans in roughly 21 mapped subnational units (all government buildings, schools-plus, or schools-only), some extending to private settings; four units criminalise use in certain circumstances; one state invalidates non-birth-sex documents; documented arrest of a trans student handcuffed and held 24 hours in a men's ward.",
+    "protection": "29 units plus capital district have no mapped ban; arrest requires wilful entry plus refusal to depart, with statutory exemptions.",
+    "interaction": "State criminal law stacks on federal screening: an outed traveller risks trespass charges, jail exposure up to 60 days, and birth-sex holding.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for minors banned in 27 units; proposed national rules would bar public insurance reimbursement for under-18 care; hospitals subpoenaed for records of patients under 19; specialised LGBTQ youth services removed from the national crisis lifeline.",
+    "protection": "Care access remains lawful for adults in most of the country; litigation pending.",
+    "interaction": "A traveller with a trans minor risks care denial or record exposure; minors travelling with a guardian face restricted care access across much of the country.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' groups; justice-department memo uses 'radical gender ideology' among violent-extremist agendas; executive order directs prosecution of teachers facilitating minors' social transition; school investigation and funding-removal orders in force or enjoined.",
+    "protection": "Documents state counterterrorism powers will not target mere disagreement; cash-bounty system not documented in use.",
+    "interaction": "Threat-framing licenses facility enforcement and document scrutiny; no documented instance of bounty or fraud-ground application to a visitor.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor was arrested under a facilities law; care for minors banned in 27 units; schools-directed orders criminalise facilitating social transition, creating guardian anxiety though visitor families are not squarely targeted.",
+    "protection": "Exemptions in trespass statute (chaperoning); no documented criminalisation of visiting parents.",
+    "interaction": "Travelling with a trans minor multiplies facility and care exposure; no documented case of a visiting family being prosecuted.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence rate documented; 2025 polling shows 66-69% support for assigned-sex documents and sports alignment, signalling broad social disapproval; state legislative hostility documented at scale.",
+    "protection": "National hate-crime statute covers gender identity; 22 units outlaw gender-identity discrimination; employment protection under 2020 ruling, though contested by executive order.",
+    "interaction": "Police response varies by unit; no documented pattern of street targeting of visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport policy upheld by the Supreme Court in November 2025 and remains litigated; no final outcome on fraud-ground use, health rules, or corrections policies; four-unit 'do not travel' designation is one advocacy publication with unstated criteria.",
+    "protection": "Civil-liberties litigation has enjoined several orders; legal-aid FAQ and equality maps provide practical navigation; functioning courts partially work for trans people.",
+    "interaction": "A traveller's exposure depends on travel date and unit; injunctions can lift, and facility rules shift without notice.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A bars every noncompliant trans visitor through a universal register with near-total exclusion. This jurisdiction's entry gate is conditional on document discrepancy and advisory-opinion referral, with detentions of foreign nationals documented, but most compliant travellers enter ordinarily and patchwork protections exist, so it rates above that anchor."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D durably exposes every visitor via registration databases, with harassment and eviction typical and custody rare. This jurisdiction's facilities bans, criminal trespass provisions and documented custody abuse (forced labour, sexual violence) exceed that anchor's severity and enforcement, so it rates below 0.45-D."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B features extended secondary screening, discretionary refusal and functioning appeal desks without custody harm. This jurisdiction shares the screening exposure but adds criminal facility laws, a permanent-fraud-ban threat, documented foreign-citizen detentions and severe custody conditions, placing it materially below 0.55-B."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C documents birth-sex custody placement and administrative-building cross-dressing arrests. This jurisdiction's documented immigration-custody abuse and facility-law arrest match that severity, but enforcement is patchier, most units lack bans, and national anti-discrimination and hate-crime machinery partially operates, rating slightly above 0.25-C."
+   }
+  ],
+  "synthesis": "The operative regime is a federation whose federal layer imposes gated universal exposure at entry (sex-doubt refusals, fraud-ineligibility threat, documented foreign-citizen detentions) whose worst-custody layer is severe (forced labour, sexual abuse, conversion-style corrections policies) and whose subnational layer criminalises facility use in four units and restricts it in about twenty more. Interactions compound: a document discrepancy at the border can produce refusal, detention in an abusive custody system, and permanent exclusion; a facility choice in a ban state can produce trespass arrest and birth-sex holding. Partially functioning courts and geographically patchy protections keep the jurisdiction above the organised-targeting band, but the documented custody record, directive-driven screening, and escalating legislative trajectory place it clearly in Elevated Risk, near the top of the High-Risk boundary."
+ },
+ "parse_error": null
+}

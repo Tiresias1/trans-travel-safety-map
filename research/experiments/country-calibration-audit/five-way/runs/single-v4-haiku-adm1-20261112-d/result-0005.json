@@ -1,0 +1,82 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059037",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "Combined regime: a documented federal layer (entry-screening cable with discrepancy refusals and a possible lifetime fraud finding, documented immigration-custody abuse of trans men, federal corrections policy, and federal threat-framing of 'radically pro-transgender' groups) interacts with a strongly protective state layer (public-accommodation and employment protections, gender identity in hate-crime law, a healthcare shield law, no facilities ban, confidential name change). The state layer is operative for visitors inside the state but does not pre-empt federal entry, detention or custody. The federal custody and entry exposures are documented and severe; the state protections are documented and operative. Visible state-level violence data is thin. Net: elevated risk, with the state protections keeping the rating above the national line.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 cable: discrepancy or doubt about sex leads to refusal; suspected wilful misrepresentation can support a lifetime ineligibility finding. Passport marker restrictions and confiscations/blocks reported, with some travellers stranded.",
+    "protection": "Documented limits: fraud finding requires four elements, waivers exist, and it is never automatic. Passport suit pending; restrictions in effect per Nov 2025 ruling.",
+    "interaction": "Federal entry rules apply regardless of state protections. Mismatch between home passport and appearance at a visa or entry point triggers federal refusal; the state shield does not reach this stage.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections policy adopted from 2026 mandates conversion-type treatment, removal of hormones and hair cutting, and denial of care. Federal bureau stopped reporting trans prisoner counts from 2025.",
+    "protection": "Documented: reported abuses are under litigation and the record shows recurring harm, not remedy.",
+    "interaction": "A document discrepancy at entry can lead to detention, and custody is federal. State protections do not follow the detainee into federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars facilities congruent with gender identity in government-funded settings. In this state, state law sets facility access by identity and no state facility ban is recorded. Four other states criminalise certain bathroom use; none is the state assessed.",
+    "protection": "This state has no facility ban in the mapped categories; the public-accommodation law covers public places and is operative.",
+    "interaction": "Federal facility restriction and state accommodation protection coexist. Federal government buildings or funded sites remain exposed under federal rules, and the state protection does not cancel them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospital records for under-19 patients. Proposed rules would bar public insurance reimbursement for minors' care. Federal youth crisis services shut down. Federal funding bans affect care.",
+    "protection": "State shield law (since 2022) protects patients and providers from charges for care lawful here, which is directly relevant to visitors from banning states. Codified care protections, emergency-clause effective.",
+    "interaction": "The shield protects the visitor's care within the state, but federal records demands and insurance rules can still reach records and funding. Federal rules are unresolved.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism memo and May 2026 strategy frame 'radically pro-transgender' groups as targets for neutralisation, alongside violent extremists. Federal reward system for leadership identification.",
+    "protection": "Strategy states that powers will not target people who disagree; no visitor-level enforcement documented.",
+    "interaction": "Federal threat-framing is a background posture, not a documented traveller-level action. It may shape federal enforcement against advocacy visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order directs investigation of schools for facilitating social transition and threatens teacher prosecution. Federal care restrictions for under-18s and records subpoenas. Accompanying minors face federal records and care exposure.",
+    "protection": "State shield, conversion-therapy ban for minors (2019), anti-bullying procedures, and the state's protective school framework.",
+    "interaction": "A minor's care in state is protected by the shield, but federal records requests and proposed insurance rules can reach the family. School-based federal exposure does not apply to a visiting family directly.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence data for this state. National hate-crime data show sexual orientation bias dominates single-bias reports. Only 23 states cover gender identity in bias-violence statutes nationally; this state is among those covered.",
+    "protection": "Gender identity in state hate-crime law since 2012; state reporting unit and task force; state public-accommodation coverage upheld by 2018 ballot.",
+    "interaction": "State police and courts are the operative local responders. Federal reporting gaps can reduce visibility of incidents.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal remedies pending and partly enjoined. Stranding and passport blocks have no timely recourse for visitors abroad. Residual sodomy provisions are on the books but unenforceable as applied to private conduct; repeal stalled in 2025.",
+    "protection": "State ombudsman-style enforcement of public-accommodation and employment law; confidential name change; state courts applying protections. Repeal pending.",
+    "interaction": "State remedies are operative for state-regulated settings. Federal exposures lack equivalent operative remedy within the visit.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal visitor-register exclusion with no effective remedy and no state protections. This case has documented federal entry refusal risk but also an operative state accommodation and shield regime, so it sits higher."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has secondary screening, denial and humiliating but mostly administrative outcomes, with remedies that are slow. This case adds documented federal immigration custody abuse and federal care-records exposure, so it is lower. The state layer, which 0.55-B lacks, offsets part of that gap."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "0.65-E has operative remedies and no custody harm. This case has strong operative state protections but documented severe federal custody harm and federal care and facility exposure, so it sits below."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex housing and a criminal cross-dressing statute with documented assaults. This case has no state criminal gender-presentation law and strong state protections, so it is higher, though federal custody harm keeps it well below the 0.65 tier."
+   }
+  ],
+  "synthesis": "The federal layer supplies the documented exposures a visitor is most likely to hit: document-discrepancy refusals at entry, possible lifetime fraud findings, and federal detention in which trans detainees reported forced labour, beatings and sexual abuse. The state layer supplies operative protections inside the state's borders: public accommodation, hate-crime coverage, facility access by identity, and a shield law for care. These do not cancel federal exposure. The combined regime therefore sits in the elevated band, with protections keeping it above the national line. Violence data for the state are thin, so that axis is assessed as uncertain rather than as a deduction."
+ },
+ "parse_error": null
+}

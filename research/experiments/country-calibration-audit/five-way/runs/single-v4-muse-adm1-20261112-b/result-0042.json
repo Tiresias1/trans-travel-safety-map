@@ -1,0 +1,78 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0037226",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime is divergent: strong state anti-discrimination, hate-crime enforcement and 88% support mitigate street and private-service risk, but federal passport/entry rules, government-facility restrictions and documented custody abuse are universal traveller-facing exposures that state law does not override. Document discrepancy can lead to refusal, confiscation, stranding or possible fraud ineligibility; detention has documented severe abuse. Minor care is banned at state and pressured nationally. Litigation leaves several measures uncertain.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federally, X-marker processing stopped, existing X passports remain valid only until expiration, passports reported confiscated/blocked, and document discrepancy can trigger refusal and possible lifetime fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiration; passport restrictions are being challenged in national courts.",
+    "interaction": "A federal document discrepancy can trigger investigation and refusal regardless of this state's anti-discrimination law.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National custody reports include hormone and care denial in prisons and, in immigration custody, forced labour, beatings, solitary confinement and severe sexual abuse of transgender men.",
+    "protection": "National hate-crime law exists; no operative visitor custody-placement protection is documented.",
+    "interaction": "Entry or facility investigation can move a traveller into federal detention, where state protections do not govern placement or treatment.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National policy bars transgender people from government-funded single-sex facilities inconsistent with assigned sex; some states criminalise certain restroom use, including one documented arrest.",
+    "protection": "State law covers gender identity in public accommodations, housing, employment and health care, with a 2026 court finding for an assault.",
+    "interaction": "State public-accommodation protection may help in private settings but does not override federal facilities or a state ban if one applies; no state bathroom ban is documented for this division.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "State laws ban gender-affirming medicine, surgery, puberty blockers, hormones and chest surgery for minors, with provider discipline and a right to sue; national measures target minor care and funding.",
+    "protection": "Grandfathering applies to minor treatment already underway as of 1 January 2026 under the August 2025 laws; adult care restrictions are not documented.",
+    "interaction": "A travelling trans minor may face interrupted care or inability to obtain treatment, while an adult's documented exposure is primarily medication scrutiny and emergency placement uncertainty.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National executive orders define sex on a binary basis, remove gender-identity protections, investigate schools over social transition and prioritise groups described as radically pro-transgender for counterterrorism attention.",
+    "protection": "Several national orders have been blocked or enjoined; the state constitutionally protects anti-discrimination coverage and its highest court protected transgender students in 2024.",
+    "interaction": "Federal framing and enforcement can affect border, school and facility encounters despite state protections, especially where federal authority applies.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A parent or guardian travelling with a transgender minor faces state bans on puberty blockers, hormones, medicine and surgery, a girls-sports birth-certificate rule whose stay status is unresolved, and national orders targeting school-facilitated transition.",
+    "protection": "Grandfathering for treatment already underway and state court protection for transgender students provide partial help; schools may not disclose gender identity under a failed 2022 bill.",
+    "interaction": "Care or school-related issues for a minor remain governed by state and federal rules even if the family is only visiting and does not relocate.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "A 2025 census recorded 72 anti-LGBTQ incidents in this state, but publishes no per-capita denominator and therefore does not establish an incident rate.",
+    "protection": "Hate-crime enhancements for gender identity took effect in 2019, the gay and trans panic defence was abolished in 2024, and a 2026 court found a man violated civil-rights law by striking a transgender woman.",
+    "interaction": "Local police and courts show some capacity to remedy assault, but federal investigation can create a separate exposure.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation and challenges to executive orders remain unresolved; the operative status of the sports ban and minor-care injunctions is not established.",
+    "protection": "A legal-aid organisation maintains passport and identity-document guidance, and some federal orders have been enjoined.",
+    "interaction": "Unresolved federal litigation limits reliance on either restriction or protection, while state complaints and courts do not control federal entry or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Similar in that birth-sex placement in national detention and hospital systems is not overridden by local protections. Higher than 0.35-B because this division documents enforceable public-accommodation protection and no local hospital or bathroom rule is documented."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similar in that a universal screening exposure, here document scrutiny and possible fraud consequences, and custody risk lack a documented effective remedy. The state protections and existing-X validity keep the case from falling to the level of an unremedied birth-sex search regime."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Lower than 0.65-A because foreign nonbinary markers are not reliably accepted at national entry, government facilities are restricted, and custody abuse is documented, whereas 0.65-A accepts nonbinary markers and has corrections after discriminatory refusals."
+   }
+  ],
+  "synthesis": "The traveller encounters one system, not a safe state inside an unsafe country. State law credibly protects private services and can punish assault, and public support is high. Those protections do not control federal passports, entry screening, national facilities or federal detention. The decisive exposures are document discrepancy at entry, possible refusal or fraud consequences, birth-sex restrictions in government facilities, and severe documented custody abuse. Minor-care bans add a family-specific block. Litigation creates uncertainty but is not a working remedy."
+ },
+ "parse_error": null
+}

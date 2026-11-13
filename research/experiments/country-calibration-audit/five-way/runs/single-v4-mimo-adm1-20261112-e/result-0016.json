@@ -1,0 +1,78 @@
+{
+ "cell": 16,
+ "region": "66186276B38006515706420:South Dakota",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.001961676",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The combined regime pairs a fixed federal document/entry regime with state facilities, care and service rules. Universal exposure: marker policy (X barred, M/F only), officer discretion to refuse where documents cast doubt on sex, a possible fraud finding carrying lifetime ineligibility (waivers exist, never automatic), reported passport confiscation/stranding, and advisories from eight foreign governments. The state bars identity-congruent facility use in its buildings (one documented arrest, trespass, 24h in a men's ward), permits religious service refusal, has no state anti-discrimination or hate-crime coverage, and bans under-18 care reaching a travelling minor. Federal custody abuse is documented. No identity criminalisation, no trans killings recorded; federal hate-crime law, employment protection, injunctions and an enforced settlement provide partial recourse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal order: binary sex at conception/birth; X markers discontinued Feb 2025, restrictions upheld Nov 2025; cables instruct refusal where documents cast doubt on sex and permit a fraud finding with permanent lifetime ineligibility; travellers report confiscated or blocked passports and stranding.",
+    "protection": "Existing X-marker passports valid to expiry; a national civil-liberties suit is pending; waivers for fraud findings exist and the finding is never automatic; a legal-aid FAQ tracks current rules.",
+    "interaction": "State's March 2026 bar on birth-certificate marker change removes the documentary corroboration a visitor might otherwise obtain before travel.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "One documented restroom arrest (trespass, up to 60 days, held 24 hours in a men's ward); immigration custody reports of forced labour, beatings, solitary confinement and sexual abuse of trans men; federal corrections conversion-therapy-style policies; state floor debate raised solitary confinement for incarcerated trans people.",
+    "protection": "Facility offence requires willful entry plus refusal to leave when asked, not automatic arrest; national hate-crime statute covers gender identity; courts review custody challenges; some orders enjoined.",
+    "interaction": "Document discrepancy → fraud investigation → detention → birth-sex placement is a live escalation path.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State 2025 law bars identity-congruent use of bathrooms, locker rooms and changing areas in state buildings, schools and colleges including off-campus activities; federal order bars government-funded single-sex facilities; four states criminalise in certain circumstances.",
+    "protection": "State ban limited to state-owned settings; private venues largely unaffected here; 29 states plus capital district have no mapped ban; exemptions exist in the criminal-trespass model.",
+    "interaction": "A visitor entering a state capitol, public university or state park building falls inside the ban; federal funding rules extend it federally.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for under-18s (taper required by Dec 2023), directly reaching a travelling minor; state 2021 law lets businesses deny goods or services to LGBTQ people on religious grounds; federal funding freezes and proposed insurance exclusions.",
+    "protection": "Adult emergency care is not documented as denied; national employment protection and a 2024 state apology plus $300,000 settlement show some recourse; litigation window for minors runs to age 25.",
+    "interaction": "A parent travelling with a trans minor faces care refusal and discretionary service refusal with no state anti-discrimination complaint route.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "May 2026 counterterrorism strategy prioritises groups 'radically pro-transgender'; Dec 2025 reward memo uses 'radical gender ideology'; executive orders describe minor care as 'mutilation'; 2025 poll shows 66% back assigned-sex markers on documents; state ranked among worst for anti-trans bills.",
+    "protection": "Reward is not keyed to gender ideology and DOJ says counterterrorism powers will not target mere disagreement; several orders blocked or enjoined; national backstop statutes intact.",
+    "interaction": "Official framing raises both the probability of scrutiny at documents/facilities and the severity of institutional response.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State 2023 care ban with mandatory taper; federal executive order on minor care and directive to investigate schools facilitating social transition; facility ban reaches K-12 and college settings including off-campus activities.",
+    "protection": "Private right of action for affected minors until 25; teaching-prosecution order is aimed at residents, not visiting families; national employment and hate-crime law unaffected.",
+    "interaction": "A travelling trans minor needing a refill or school-age facility use meets the state bans directly, with the parent exposed through religious-refusal service denial.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state statute covering gender identity in employment, housing or public accommodations; state hate-crime law excludes gender identity; only 23 states cover it in bias statutes; national data show sustained bias incidents by orientation.",
+    "protection": "National hate-crime statute covers gender identity; a national court bars employment discrimination; no trans-specific killing of a visitor is recorded; a prior discrimination suit produced apology and payment.",
+    "interaction": "Street-level response depends on which sovereign responds; state officers lack a bias statute while federal prosecutors may use one.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport suit, January 2025 orders and proposed health rules all unresolved; status of the licence/ID marker-change process after the March 2026 ruling unconfirmed; enforcement of the facilities law in custody unspecified; state has no discrimination or bias-motivated-violence statute.",
+    "protection": "Multiple orders blocked or enjoined; courts hear challenges; a settlement produced apology, payment and an ongoing non-discrimination commitment; legal-aid FAQ tracks rules.",
+    "interaction": "Remedy availability varies by stage of journey and by which sovereign acts, so outcomes are unpredictable in real time.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar in kind: entry can be refused where sex is doubted, a lifetime fraud finding looms, and appeals run through the same apparatus — exclusion and humiliation with thin remedy. But ours has no universal conduct register barring all trans visitors, existing X passports stay valid, litigation is live, and facility exposure is confined to state buildings. Higher than 0.35."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Closest mechanical match: durable exposure at identity-document and database checks, official discretion to demand repeated interviews, criminal charges uncommon, slow or confidential remedies, with harassment and service refusal the typical harms. Our documented restroom arrest and federal custody-abuse reports add state-hand severity, keeping the rating at roughly this level."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than this: our exposure is not discretionary secondary screening that usually ends in refused admission. The marker rule is fixed policy upheld by the Supreme Court, the fraud route can impose permanent lifetime ineligibility, custody abuse is documented, and the state adds facility bans and religious service refusal. Imprisonment for visitors remains unlikely."
+   }
+  ],
+  "synthesis": "The traveller meets one integrated system. Federal document rules make outing structural rather than incidental: every passport presentation carries refusal, secondary scrutiny, or a fraud theory with lifetime consequences, and eight foreign governments now warn their citizens — a documented universal exposure whose main remedy (litigation) is unresolved, so recourse does not yet change outcomes. State law layers on facility exclusion in its buildings, criminal trespass exposure with a real arrest precedent including men's-ward detention, statewide religious service refusal, no state discrimination or bias statute, and an under-18 care ban that reaches a travelling minor. Federal custody reports show the state as perpetrator where detention occurs. Offsetting this: no identity criminalisation, no trans-specific violence recorded, functional federal courts that have enjoined several orders, a hate-crime statute, and a completed discrimination settlement. Worst feature sits at precedence tier 1 with only partial remedy — placing the visit in Elevated Risk."
+ },
+ "parse_error": null
+}

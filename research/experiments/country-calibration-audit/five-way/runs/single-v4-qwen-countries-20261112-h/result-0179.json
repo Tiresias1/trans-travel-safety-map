@@ -1,0 +1,78 @@
+{
+ "cell": 179,
+ "region": "RUS",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00540532",
+ "parsed": {
+  "rating": 0.12,
+  "explanation": "The combined regime is severe. The state has designated LGBT expression extremist, enforces propaganda laws covering transition-related material, raided venues, searched and photographed patrons, obtained 101 convictions, and documented a death in pretrial custody. There is no anti-discrimination or hate-crime protection, and institutions do not record or remedy violence. Visitor border handling is not documented, but that absence does not create safety, especially for someone outed as trans in public or while travelling with a minor. Execution is not documented, keeping it above the 0.05 anchors; nevertheless, detention, prosecution, exposure and lethal custody risk make visiting very unsafe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented border, secondary screening, refusal, or treatment of foreign passports whose gender marker differs from presentation. The law bars marker changes domestically but is not shown to reach visitors.",
+    "protection": "None documented.",
+    "interaction": "Any later document check or incident could surface a mismatch, but entry exposure itself is not evidenced.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented police raids on LGBT-friendly venues; patrons ordered against walls, searched and photographed; arrests, 101 extremism convictions, administrative/criminal charges; death in pretrial custody.",
+    "protection": "None documented; no recorded hate-crime protection or effective judicial relief.",
+    "interaction": "Venue presence or perceived movement affiliation can escalate into detention, abuse risk, and lethal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented visitor-facing bathroom, changing-room, ward, prison, or shelter rules. Subnational enforcement is capital-centred without regional mitigation.",
+    "protection": "None documented.",
+    "interaction": "Unknowns remain: public facilities, gendered spaces, or detention placement could expose a trans visitor if contacted.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No documented refusal of emergency or hormone continuity care for visitors; resident-facing transition ban is not shown to target traveller care.",
+    "protection": "None documented.",
+    "interaction": "If care is sought or an emergency outs a visitor, hostile law and social climate could affect treatment; not evidenced.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Extremist designation of LGBT movement; propaganda laws extended to all ages and transition desires; venue raids, searches, convictions, fines; do-not-travel advisory; broad public hostility.",
+    "protection": "None documented.",
+    "interaction": "State, law, media climate and policing align to treat visible trans/LGBT expression as suspect or criminal.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented foreign minor or guardian case. Propaganda law covers material giving minors a desire to change sex; resident family conversion incident shows coercive practice.",
+    "protection": "None documented.",
+    "interaction": "A trans or gender-nonconforming minor, or guardian perceived as supporting transition, may face heightened scrutiny or accusation under the expression regime.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Hostile surveys; no anti-discrimination/hate-crime law; authorities do not record LGBT hate crimes; police conduct raids rather than protect.",
+    "protection": "None documented.",
+    "interaction": "Street harassment or assault by public may escalate, with police likely a source of risk and no reliable remedy.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Left regional human rights court; no hate-crime recourse; no anti-discrimination; unknown visitor prosecutions/border conduct.",
+    "protection": "None documented.",
+    "interaction": "Thin visitor-specific evidence does not soften documented state-directed targeting; unknowns should be read as unresolved risk.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar tier: state-directed detention and abuse risk for outed people. Difference: this dossier lacks routine visitor arrest at transit checks, but adds venue raids, 101 convictions, and a custody death; consequences if targeted are severe, so rating sits just below 0.15."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Higher risk than the anchor. 0.25-A has raids, extortion, short jail, no execution. Here the state designates the movement extremist, raids are part of nationwide enforcement, convictions are frequent, and a detainee died in custody; no anti-discrimination or hate-crime recourse. That is materially worse than 0.25."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Safer than 0.05-A. That anchor documents an executed or execution-threatened pathway; this dossier does not show capital punishment or systematic lethal campaigns. But death in pretrial custody, state raids and extremist prosecutions keep this below high-risk and close to the lower severe-risk band."
+   }
+  ],
+  "synthesis": "The combined operative regime is one of state threat-framing with functioning enforcement: laws against transition-related expression, extremist designation, propaganda prosecutions, venue raids and searches, and recorded custody deaths create severe consequences for a trans visitor who is read as LGBT. Visitor-specific border or facility data are absent, so probability cannot be measured at entry, but severity if outed or associated with venues/symbols is high. Lack of anti-discrimination, hate-crime recognition, regional human-rights access and reliable remedy leaves no meaningful protection. Adult guardians with trans minors face added uncertainty under the minors/propaganda rules, while unknown care and documents remain open risks rather than mitigations."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 218,
+ "region": "USA",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00642705",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "Combined regime is hostile and traveller-facing: federal passport/visa rules force binary markers, entry officers can refuse cases or trigger lifetime fraud ineligibility for perceived misrepresentation. Many state/province and federal-funded facilities ban gender-congruent use; a few criminalise it as trespass, with one arrest and men's-ward hold. If detained, immigration/corrections policies permit hormone removal, forced labour, beatings, solitary and sexual abuse. Courts and anti-discrimination/hate-crime laws provide partial recourse but institutions enforce restrictions; minors face youth-care bans and school directives. Not execution/imprisonment highly likely, but severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal order/visa cable: sex at birth binary, X no new; mismatch or doubt -> refuse/request evidence; suspected wilful misrepresentation -> possible permanent ineligibility under fraud ground; foreign detentions reported.",
+    "protection": "Existing X passports valid until expiry; litigation ongoing; legal FAQ; waivers limited but permanent bar never automatic.",
+    "interaction": "Document mismatch can escalate into secondary screening, refusal, detention, fraud inquiry, and state document/facility exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Visa detentions and facility men's-ward hold documented. Reported immigration custody forced labour, beatings, solitary, sexual abuse; corrections conversion-style hormone removal. Custody-abuse detail single-sourced.",
+    "protection": "No operational traveller-facing protection documented; courts may review, but hostile custody practices appear enforced.",
+    "interaction": "Outing at border/facility can lead to custody; federal custody policy shapes treatment of detained travellers.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal bar on gender-congruent government-funded single-sex facilities; many states ban in schools/government; some private; 4 criminal trespass; arrest/24h men's ward.",
+    "protection": "No nationwide criminalisation; many jurisdictions no ban; trespass requires willful entry and refusal to depart, not automatic arrest.",
+    "interaction": "Federal facility policy + state laws create variable continuous exposure; arrest can feed custody/harm.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors' gender care banned 27 states; proposed insurance denial; funding freeze; youth crisis services shut; hospital subpoenas. Adult/visitor continuity care not explicitly barred.",
+    "protection": "Some orders blocked/enjoined; general emergency care not documented as denied; state protections vary.",
+    "interaction": "Care-seeking or injury can expose records/ward placement; adult with trans minor faces combined care/school bans.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National removal of gender terminology, funding freeze, school prosecution orders, counterterrorism labels radically pro-transgender, memos reference radical gender ideology.",
+    "protection": "Hate-crime statute, employment discrimination precedent, 22 states/province non-discrimination; no documented bounty use against travellers.",
+    "interaction": "Official threat framing can validate border/facility enforcement and reduce perceived recourse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors face youth care bans, social-transition prosecutions, school funding penalties; guardians may share refusal/permanent-fraud exposure if travel blocked.",
+    "protection": "Some full-support states; courts block orders; guardianship not otherwise documented.",
+    "interaction": "Adult + trans minor layers entry screening, facilities, care and school regimes.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific street violence rate; police exposure appears via border detentions, visa issues, facility arrest and custody abuse.",
+    "protection": "Hate-crime law and state bias statutes in 23; many protective jurisdictions; some functional courts.",
+    "interaction": "Local response varies; national hostility can affect police and facility staff.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions allowed pending litigation; fraud bar possible but no gender-marker fraud imposition documented; custody claims single-sourced; do-not-travel advocacy criteria unstated.",
+    "protection": "Appeals, lawsuits, legal FAQ, injunctions; hate-crime/employment law remain partial recourse.",
+    "interaction": "Outcomes depend on port/state/officer/court timing; protection may not halt entry or facility enforcement.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Like 0.35-A, entry is discretionary and document-driven, but worse: suspected misrepresentation can trigger lifetime fraud ineligibility, and facility/custody policies add criminal detention and abuse risk."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Close to 0.25-C: birth-sex facility and custody harm with limited remedy; but no campaign of cross-dressing arrests and stronger anti-discrimination/hate-crime machinery, so slightly above 0.25."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Above 0.55-B: screening/refusal friction is only lower tier; this regime includes enforceable facility bans, criminal trespass, and immigration/corrections custody abuse."
+   }
+  ],
+  "synthesis": "The combined regime layers federal entry and facility restrictions over hostile state laws. Passport binary rules make discovery likely at visa/entry; suspected mismatch can escalate to refusal, investigation, and possible lifetime ineligibility. Facility bans create continuous exposure; a few criminalize use, and one arrest included a men's-ward hold. If custody follows, documented policies and reports indicate hormone removal, forced labour, beatings, solitary, sexual abuse. Courts, hate-crime and employment protections provide partial recourse, but institutions are enforcing restrictive rules, so protection does not erase exposure. Rating sits in High Risk, above lethal-imprisonment anchors but well below reduced-risk anchors."
+ },
+ "parse_error": null
+}

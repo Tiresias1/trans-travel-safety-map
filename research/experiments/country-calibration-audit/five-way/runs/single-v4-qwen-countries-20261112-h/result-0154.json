@@ -1,0 +1,82 @@
+{
+ "cell": 154,
+ "region": "NIC",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00559645",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "Operative regime combines decriminalisation and a formal health non-discrimination rule with state-tolerated violence and weak enforcement. No documented visitor border/document, facility, custody or care restriction targets trans travellers, but the state’s 2023 human-rights finding and yearly NGO counts describe a national pattern of assaults, hate crimes, sexual assault, extortion and missing persons against LGBTI people, with trans women most targeted and police named as aggressors. Authorities reportedly do not investigate or prosecute, media suppression and fear keep reporting down, and family law/public opinion remain restrictive. For adults alone and adults with minors, the chief risk is street/police exposure if outed, with little documented remedy; absence of explicit traveler rules is not safety. Score sits in Elevated Risk, below 0.55 anchors but above universal 0.35-style visitor systems.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented border, visa, passport-marker or screening rule restricting trans visitors; entry practice remains an evidence gap.",
+    "protection": "No traveler-facing restriction is documented, but decriminalisation is only climate signal, not an active border safeguard.",
+    "interaction": "Document mismatch at entry could feed police questioning or care denial, but no such pathway is documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No trans-visitor detention, custody placement or forced exam documented; however police/parapolice violence and non-investigation are documented.",
+    "protection": "No documented release, oversight, consular access, or custody safeguard for visitors.",
+    "interaction": "A street report, emergency or checkpoint could become police involvement; the record gives no reliable stopping mechanism.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, changing-room, prison, hospital-ward or lodging rule targeting trans visitors.",
+    "protection": "No documented facility-access protocol or operator enforcement is provided.",
+    "interaction": "Emergency or single-sex spaces could expose mismatch, but no rule or incident shows the operative practice.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No documented refusal, medication seizure or ward denial against visitors; rural practice unknown.",
+    "protection": "2014 health resolution prohibits discrimination in public/private health units on sexual orientation, gender identity and expression; enforcement not evidenced.",
+    "interaction": "Care-seeking can reveal status to staff; no documented remedy if treatment is delayed or refused.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State-tolerated climate: 2023 report places LGBTI violence/threats in a police/parapolice campaign against perceived enemies, with no investigations.",
+    "protection": "Sexual-orientation aggravator, HIV and employment rules exist; no trans-specific hate-crime aggravator documented.",
+    "interaction": "Police are potential attackers and the nominal responders; formal protections are weakened by impunity and media suppression.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No age-dependent trans rule, guardianship restriction, or visitor facility/care rule for minors is documented.",
+    "protection": "Gender-neutral sexual-offence law and age 16 consent exist; health resolution includes GI/GE for residents.",
+    "interaction": "A minor needing care or a guardian’s documents could intersect with police/facility practice; outcome unknown.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Patterned NGO counts 2021-2024: trans women most targeted; assaults, hate crimes, sexual assault, extortion, suicide/murder, missing persons; police named as aggressors.",
+    "protection": "Formal non-discrimination law exists, but reports say attacks are underreported, feared, and not investigated or prosecuted.",
+    "interaction": "Street strangers, lodging staff, police and medical systems can all be contact points; no functioning recourse is shown.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Weak reporting, suppressed media, undercounted violence, unresolved family-code challenge, and unknown border/facility practice.",
+    "protection": "No documented effective complaint, apology, release, retraining, or compensation remedy for visitors.",
+    "interaction": "Unknown document verification, care enforcement and custody rules can combine with police violence; silence is not safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Similar in scarce remedies and variable enforcement, but less institutionalized than universal biometric checks. Higher exposure from patterned anti-trans assaults and police aggression; lower state-directed detention risk. Overall close to but slightly below 0.45-A due weaker formal friction but worse violence climate."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Clearly above: 0.35-A has state visitor exclusion, ticket seizure, universal accommodation denial. Here no documented border/lodging reporting or administrative removal of trans visitors; risk arises mainly after discovery in street/police encounters, so it sits higher."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Below: 0.65-A has an individual document mismatch, brief questioning, but working complaints board, release, apology and compensation. Here harms are patterned, perpetrators include police, authorities do not investigate, and media/reporting are suppressed; effective remedy is not documented."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Above: 0.25-A has weekly raids, document checks, fines and custody. Here no documented raids, visitor custody or criminal enforcement against presentation, although street/hate violence and impunity are severe; score stays above 0.25."
+   }
+  ],
+  "synthesis": "The combined regime is decriminalised on paper but enforcement is hostile by omission. Formal protections are oriented to residents: health non-discrimination and sexual-orientation aggravator, family-law limits not visitor-facing. The operative traveler risk is low at entry by default, because no border/facility restriction is documented, but severe after outing: police are among aggressors in a patterned national violence record, investigations are absent, and reporting is suppressed. Adult-only and adult-with-minor travellers share the same street/medical/bureaucratic exposure; minors add no documented special rule but also no documented safeguard. Unknown document verification and care enforcement pull down from Reduced Risk; no criminalisation or universal state exclusion keeps it above Severe Risk."
+ },
+ "parse_error": null
+}

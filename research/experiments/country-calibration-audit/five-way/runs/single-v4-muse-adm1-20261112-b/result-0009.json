@@ -1,0 +1,82 @@
+{
+ "cell": 9,
+ "region": "66186276B22971435435932:Kentucky",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0036734",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "Combined regime: no adult presentation offence or state-wide adult facility ban in this division, and existing X passports remain valid, but national passport/entry, federal-facility, custody and minor-care rules create documented traveller-facing exposures. Entry discrepancy can trigger refusal and fraud consideration; federal single-sex facilities are restricted; national custody reports include hormone removal and abuse; the division bans school bathrooms by birth sex, school sport for trans girls, and gender-affirming care for minors without phase-out. Municipal protections in 19 places and federal hate-crime/employment law provide patchy, litigated recourse, offset by state hate-crime exclusion of gender identity and a religious-freedom override route. For adults the main risk is conditional/outings at borders and federal sites; for travelling minors, care and school exposures are direct.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National X-marker issuance stopped Feb 2025, existing X valid to expiry; reported confiscations/blocking; entry cable directs refusal and fraud/permanent-ineligibility consideration where documents cast doubt on sex.",
+    "protection": "Existing X passports remain valid until expiration; permanent ineligibility is not automatic and requires four elements; passport policy is under litigation.",
+    "interaction": "Document discrepancy can escalate from entry questioning to refusal/fraud allegation, then to detention placement risks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau from 2026 adopted conversion-therapy model including hormone removal; immigration-custody reports of forced labour, beatings, solitary and sexual abuse; arrest example held trans woman in men's ward 24h.",
+    "protection": "Not documented. No division-specific custody placement protection is documented.",
+    "interaction": "Any arrest, e.g. trespass-based facility charge elsewhere or immigration detention, risks birth-sex/harmful custody with stopped reporting of trans prisoners.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; division bans birth-sex bathrooms for K-12 students only, no adult state-wide rule documented; 4 states criminalise in some circumstances.",
+    "protection": "33 states/district have no mapped ban; in this division no adult ban documented, and 19 municipalities cover public accommodations.",
+    "interaction": "Adult visitor may be safe in most state/private facilities but exposed in federal buildings and, for a minor, in public schools.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans puberty blockers/hormones for minors from July 2023, no phase-out for existing patients; national orders target minor gender-affirming care and funding.",
+    "protection": "No adult care ban documented. Conversion therapy on minors illegal division-wide since Sept 2024.",
+    "interaction": "Adult visitor care access not documented as restricted; travelling minor needing continuing hormones/blockers faces denial/interruption in this division.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' violent groups; 2025 orders direct investigation/prosecution over school social transition; officials frame trans participation as threat.",
+    "protection": "Several 2025 orders blocked/enjoined or in litigation; national hate-crime statute covers gender identity; no trans presentation offence documented.",
+    "interaction": "Hostile state framing raises outing/investigation risk without making adult presence per se criminal in this division.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "School bathroom restriction by birth sex, 2022 school-sport ban for trans girls, minor care ban; national order threatens teachers who facilitate social transition.",
+    "protection": "Parents sued care ban; conversion-therapy ban protects minors; municipal ordinances in 19 places.",
+    "interaction": "Guardian travelling with minor faces school, sport and care barriers if enrolling or seeking treatment; non-resident short visit reduces school exposure but not care ban.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State hate-crime statute covers sexual orientation but expressly excludes gender identity; religious-freedom statute can override local non-discrimination ordinances; no trans-specific violence statistics documented.",
+    "protection": "Federal hate-crime law covers gender identity; 2011 sexual-orientation beating led to arrests/guilty pleas; 19 municipal ordinances.",
+    "interaction": "Patchy local recourse means service refusal or assault remedy depends on municipality and federal action.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport, executive-order and care-ban litigation unresolved; enforcement of school bathroom rule not quantified; adult facility and custody outcomes in division not documented.",
+    "protection": "Civil-liberties suit on passports, injunctions on some orders, appellate employment protection, municipal recourse.",
+    "interaction": "Remedies exist but are contested and uneven, so they do not reliably cancel documented national or minor-specific exposures.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Lower than 0.45-A on adult facilities: that anchor has an unremedied all-government-building adult bathroom ban; here adult ban is federal-only plus K-12 in this division, so adult exposure is narrower."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "Higher than 0.35-C: no documented routine police stops, photographing/extortion of trans visitors in this division; entry risk is document-based and litigated, not organised street targeting."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar to 0.55-B: repeated/patchy service friction and incomplete remedies without a universal adult ban, but national custody/care harms and minor bans pull slightly below its primarily local, partially remedied pattern."
+   },
+   {
+    "anchor_id": "0.65-C",
+    "comparison": "Lower than 0.65-C: that anchor has dead-letter sexuality law, accepted documents and court compensation; here passport restriction, federal facilities, custody harms and minor care ban are active, not dead-letter."
+   }
+  ],
+  "synthesis": "Interaction drives the score: home documents determine entry/federal-facility treatment, and an outing can move to investigation, refusal or custody where documented harms are severe but conditional. In this division adult everyday facilities/services are not state-wide banned and municipal/federal protections give some recourse, preventing a 0.35 rating. That is outweighed for minors by direct school and care bans, and for all visitors by national document, federal-facility and custody exposures with contested, patchy remedies, placing the combined regime at the elevated-risk midpoint."
+ },
+ "parse_error": null
+}

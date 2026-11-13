@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00620527",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime imposes border/visa screening on document mismatches and can route suspected misrepresentation to immigration custody, where reported abuse occurs. National rules bar government-funded facilities from identity-congruent use, while this state/province has no current facility ban but also no statewide hate-crime or private-accommodation coverage. Minor care and sports bans sharply worsen travelling with a child. Courts, local ordinances and legal FAQs mitigate some harms but do not offset federal entry, facility and custody exposure. Uncertain but severe enough for High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visa/entry discrepancy can trigger refusal, additional evidence, and fraud/permanent-ineligibility review; X passports stopped for new issues; foreign advisories and visa-related detentions documented.",
+    "protection": "Existing X passports remain valid; legal-aid FAQ and ongoing litigation; visitor documents are issued from home country.",
+    "interaction": "State/province document mismatches or marker display can feed federal secondary screening and possible refusal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports transgender men forced labour, beatings, solitary, severe sexual abuse; national prison policies hostile; no identity-congruent placement documented.",
+    "protection": "Courts may review detentions; national hate-crime statute; some orders enjoined, but not reliable visitor-facing custody relief.",
+    "interaction": "Entry or facility encounters can escalate to custody where abuse risk is high.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal rules bar identity-congruent government-funded single-sex facilities; other jurisdictions criminalise bathroom use; visitor must navigate federal buildings and transport without reliable access.",
+    "protection": "Division has no current facility ban after 2017 repeal; municipal/county ordinances exist in some places; revived 2025 bill remains unresolved.",
+    "interaction": "Federal facility rules operate despite local non-discrimination; uneven municipal coverage leaves hotels, schools, and private spaces unprotected.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans minors’ gender-affirming care and public funds for transition, including prison; sports restrictions; national youth services cut; records climate.",
+    "protection": "Adult-specific care denial not documented; designated-visitor and hospital visitation rights exist.",
+    "interaction": "A travelling minor loses public transition-care continuity; adults face provider uncertainty, not an explicit documented ban.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism language associates radical gender ideology and pro-transgender groups with violence; public opinion supports document/sports restrictions; state lacks hate-crime gender-identity coverage.",
+    "protection": "National hate-crime statute covers gender identity; some local ordinances; courts provide some independent review.",
+    "interaction": "Assault may be investigated, but state bias enhancement is absent; official threat-framing discourages reporting.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor’s transition care barred; schools must notify parents and restrict instruction; document law keeps original sex displayed; sports ban; no public funds in custody.",
+    "protection": "No current division facility ban; domestic-violence protection extended to couples; local ordinances may shelter some cities.",
+    "interaction": "Guardian documents may reveal discrepancy at entry, school, or service use; minor care gaps make emergency continuity riskier.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Recorded 3.0 per 100k trans-women killings, undercount >3; but baseline comparison and visitor targeting not documented; no statewide nondiscrimination in many places.",
+    "protection": "Police and courts functioning; municipal ordinances cover about 30% population; federal hate-crime recourse if conditions met.",
+    "interaction": "Violence cannot be treated as a documented campaign against visitors; state coverage gaps leave private-accommodation and bias-remedy uncertain.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Effectiveness of state document-display rules, facility enforcement, county practices, and current status of revived bathroom bill uncertain; remedies may fail before short visits end.",
+    "protection": "Litigation, legal-aid guidance, local ordinances, national hate-crime statute, and some enjoined orders; rule of law supports some relief.",
+    "interaction": "Remedies are slow and jurisdiction-dependent; they do not cancel federal entry, facility, or custody constraints.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Worse than 0.35-B: identity checks are not merely questioning; visa mismatches can trigger refusal/permanent-ineligibility review and immigration-custody abuse, plus federal facility restrictions and minor care bans. Local ordinances and courts lift it slightly, but not to 0.35 safety."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Custody placement by birth sex and violence are comparable, but this jurisdiction lacks a current division facility ban, has partial local ordinances, and national hate-crime recourse. Federal border screening and fraud review raise entry exposure, so it sits near but above 0.25."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Compared with 0.45-D, universal exposure is heavier here: visa scrutiny can become refusal or detention, and federal facility/custody rules reach government-funded spaces. Remedies and local ordinances are somewhat stronger, but custody abuse and minor care bans keep it below 0.45."
+   }
+  ],
+  "synthesis": "The operative risk is layered: federal documents/entry screening and facility rules reach any trans visitor regardless of local tolerance, while state/province rules shape care, bias-crime recourse, and private spaces. For an adult alone, discovery can mean visa refusal, fraud review, detention in a system with documented abuse, or denial of identity-congruent public facilities; state lack of facility ban only partially offsets this. For a minor, care bans, school notification, and sports restrictions materially worsen the result. Courts and local ordinances provide some protection, but slow, uneven, and non-travelling-specific. The present rule set is severe enough to be High Risk, not Reduced/Elevated, because state-imposed universal exposure and custody harm dominate."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 8,
+ "region": "ARG",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00670772",
+ "parsed": {
+  "rating": 0.64,
+  "explanation": "Combined regime: historically strong gender-identity and care law, X markers, marriage equality, life sentences for identity killings, and an April 2025 ruling restoring under-18 care. Adult travellers show no documented trans-specific border or street targeting; a recent capital visitor account supports low everyday exposure. Risks come from recent state decrees: a prison-housing rule remains unresolved, under-18 care compliance is unverified, national anti-discrimination machinery was abolished, and an aggregate 2025 hate-crime count plus activist vulnerability signal deteriorating climate. Adult-alone risk is reduced; adult-with-minor or detention risk is more uncertain. The score reflects absent severe targeting but significant custody/care unknowns.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific entry checks, X-marker rejection, or refusal of foreign passports. Risk remains if a home-document mismatch triggers secondary screening or custody, but dossier does not show border targeting.",
+    "protection": "No documented active restriction; 2021 X markers on national IDs/passports and self-ID law are climate cues, not visitor protections. A recent capital visitor account suggests low everyday friction, but not trans-specific.",
+    "interaction": "Document discrepancies could interact with investigation or detention under unresolved prison-housing decree; border screening details and compliance at crossings are unknown.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Feb 2025 decree on housing transgender people in prisons is documented but its rule is unspecified; if a visitor is detained, placement by birth sex or segregation remains possible with no recorded court ruling.",
+    "protection": "No trans-specific criminalisation documented; residents report improved custody treatment, but that is resident-facing climate. Strong penalty for identity killing exists, yet hate aggravator is not applied.",
+    "interaction": "Arrest or visa dispute could move from screening into detention and then into unremedied prison-placement policy; adult-only risk lower, detention/care emergencies raise it.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No national anti-discrimination or harassment law expressly covering gender identity; only local coverage, agency abolished in 2024. Conservative provinces report hostile treatment; visitor service denial outside capital is not documented but possible.",
+    "protection": "Capital has community infrastructure and a recent visitor safety account; local ordinances may cover services, but protections are uneven and not shown to operate for visitors.",
+    "interaction": "Facility, lodging, or transport encounters in provinces could expose mismatch without remedy; capital institutions and positive visitor guide lower everyday risk.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Feb 2025 decree barred under-18 gender-affirming surgery and hormones; adult care not restricted, but a minor visitor or guardian seeking continuity could face refusal and uncertain compliance after court restoration.",
+    "protection": "April 2025 national court ruled ban unconstitutional and restored access nationwide; 2012 law guarantees care through public/private plans, but foreign-visitor coverage and enforcement are undocumented.",
+    "interaction": "Care-seeking can create document/name disclosure; if compliance lags, guardian may be drawn into disputes or hospital administration.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Recent state decrees, activists' claim that policies made trans people vulnerable, abolition of national anti-discrimination agency, and international assessment reporting deterioration and negative ratings signal institutional threat-framing.",
+    "protection": "High court upheld life sentence for identity killing; judiciary struck care ban; self-ID law and marriage equality indicate trans-respecting legal culture.",
+    "interaction": "State-level deterioration may lower police willingness to protect and raise severity of outed encounters, though no documented visitor profiling.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-18 care ban and unresolved custody decree affect trans minors or travelling guardians: medication/surgery refusals, disclosure to clinicians/administrators, and possible detention placement questions.",
+    "protection": "Court restored minor care access nationwide; prior child name-change and youth care rulings show legal recognition, but compliance for visitors and guardians is unverified.",
+    "interaction": "Guardian may face bureaucratic hurdles if minor's documents or care needs are revealed; adult alone not affected.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "2025 aggregate SO/GI hate-crime count is a pattern signal, not trans-specific rate; activists report vulnerability. No documented targeting of trans visitors, but conservative provinces and thin recourse could worsen incidents.",
+    "protection": "No documented police harassment of visitors; capital visitor account positive. Homicide prosecution exists, but hate aggravator removal weakens enhanced protection.",
+    "interaction": "Police response could worsen in custody; street encounters may be safer in capital, less predictable outside.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No national remedy after agency abolition; prison-housing decree untested; hate-motivated aggravator not applied; post-restoration care compliance unknown; unknown appeal or enforcement.",
+    "protection": "Courts can intervene, as in care-ban reversal, and life sentence was upheld; local coverage may offer some redress.",
+    "interaction": "Remedy likely effective for conspicuous judicial issues in capital, but visitor stays may be too short and provincial enforcement uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Similar formal equality and judicial remedies for adults, but lower because national protections are thin/local, prison-housing decree unresolved, minor-care compliance unknown, and deteriorating institutional climate reduces confidence for family travellers."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Comparable: no severe targeting and courts work for key rights, but here state decrees and abolished agency add custody/care exposure beyond an isolated stopped-and-compensated traveller incident."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Close: care refusal was promptly reversed in anchor; here under-18 care was struck but compliance and prison placement are undocumented, making remedy less certain for a minor with guardian."
+   }
+  ],
+  "synthesis": "Adult travellers face low routine exposure in capital and no documented border targeting; protections exist on paper and courts can intervene. Yet combined national-subnational reality is uneven: national anti-discrimination coverage is thin/local, agency abolished, prison-housing decree unresolved, and under-18 care compliance after restoration is unverified. Outside capital and in detention/custody or family-care encounters, outing may meet hostility or bureaucratic uncertainty with limited recourse, though severe state punishment is absent. The score sits at reduced-risk lower end, above thin-recourse harassment anchors but below jurisdictions with operative visitor protections and stable enforcement."
+ },
+ "parse_error": null
+}

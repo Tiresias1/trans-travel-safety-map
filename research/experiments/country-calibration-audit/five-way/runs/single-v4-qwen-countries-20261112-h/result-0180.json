@@ -1,0 +1,82 @@
+{
+ "cell": 180,
+ "region": "RWA",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00539124",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "No trans or same-sex criminal statute is documented, and border restrictions are not evidenced, but national law blocks legal gender change and recent reports document police abuse of transgender people at identity checks, arbitrary public-order arrests and violent detention. That creates state-directed exposure for an outed visitor, likely above anchor 0.45 and below safer 0.55 checkpoints. Asylum procedures name gender-identity vulnerability and one claimant received protection, but these are protection-claimant measures, not ordinary-visitor safeguards. No anti-discrimination claim or NGO registration means limited recourse. Social stigma exists, but no campaign, death penalty or entry refusal documented. Minor-specific and care/facility visitor rules are unknown.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No traveler-facing entry screening, visa denial or border marker rule is documented. The ban on legal gender change is mainly a resident gap; visitor documents usually come from home country.",
+    "protection": "Same-sex intimacy and transgender identity are not criminalised; no evidence of document-mismatch refusals. Age of consent is universal.",
+    "interaction": "If police identity checks occur rather than border checks, a mismatch could become enforcement; entry evidence missing.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Recent UN submission documents transgender people harassed during identity checks and arbitrarily arrested on vagrancy/public-order grounds; older reports include violent detention and blackmail.",
+    "protection": "No custody safeguard or complaint procedure for visitors documented; asylum procedures apply to claimants, not ordinary arrests.",
+    "interaction": "An encounter that begins as ID check could escalate to detention without clear visitor-specific remedy.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No subnational facility regime; no documented bathroom, lodging, hospital-ward or checkpoint rules applying to transgender visitors.",
+    "protection": "Resident patient policy promises equal health access, but does not create visitor-facing facility guarantee.",
+    "interaction": "Unknown facility placement if a visitor is injured or detained.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No evidence of HRT seizure, medication access refusal, or discrimination in clinics for visitors.",
+    "protection": "Patient rights policy and asylum protections name gender for claimants/residents, not ordinary travelers.",
+    "interaction": "Emergency care could expose status if hospitalised, but placement rules are not documented.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Police and morality/public-order frameworks are reported as tools against transgender people; stigma and official non-engagement raise risk.",
+    "protection": "Senior minister supported an LGBTQ singer; asylum SOPs expressly consider gender-identity vulnerability.",
+    "interaction": "Protective instruments are administrative/asylum-centered and do not neutralise street-level enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific school, family, guardianship or child-detention findings; travel-with-minor exposure is not sourced.",
+    "protection": "Universal age of consent and absence of child-specific criminalisation are general; no visitor child protections documented.",
+    "interaction": "A guardian could face ID-check/facility exposure alongside child, but no operative child rules are known.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Reports include neighbourhood harassment, blackmail, police harassment and arbitrary/violent detention, but no counts or campaign evidence.",
+    "protection": "No effective police protection for trans victims documented; Pride 2021 indicates some social space.",
+    "interaction": "Calling police may worsen an encounter if officers are implicated.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No constitutional or statutory gender-identity anti-discrimination claim; NGO registration constrained; complaint outcomes undocumented.",
+    "protection": "Refugee/asylum procedures explicitly address gender identity; a transgender claimant received status and 2024 immigration/asylum protections.",
+    "interaction": "These remedies work within asylum systems, not as ordinary visitor safeguards.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Similar police ID-check harassment and arbitrary detention, but dossier lacks explicit visitor stop-and-search instructions, passport seizure or lodging reporting. Violent detention raises severity; missing universal visitor machinery keeps it slightly above 0.35."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has routine biometric/checkpoint exposure and humiliating detention; this lacks universal ID linkage and documented visitor entry checks, but has recent arbitrary arrests and violent detention. It is broadly comparable, not clearly safer."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "0.55-A is mainly checkpoint holds, delays and partial denial with legal aids; here public-order arrests and violent detention are worse than friction, so the score is below 0.55 despite absence of criminalisation."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D has vague morality used near markets with blackmail/entrapment; this has less systematic raids or frequency evidence and some asylum-system recognition, so it sits above 0.25 but remains elevated."
+   }
+  ],
+  "synthesis": "The operative regime is not lawless anti-trans criminalisation, but it contains a known state-exposure layer: transgender people are reported harassed during identity checks and arbitrarily arrested under public-order/vagrancy frameworks, with a violent-detention report. For a visitor, that means an outed encounter can move from street or bureaucratic scrutiny into custody, with no anti-discrimination remedy or NGO recourse. Border screening is not documented, so discovery is less engineered than universal-registration anchors; same-sex conduct is not criminalised and asylum procedures explicitly recognise gender-identity vulnerability, which raises the score above 0.35 anchors. However, those protections are claimant/resident-facing and do not guarantee ordinary hotels, hospitals, police stops, or minors. Given dated recent incidents and unresolved entry/care questions, the combined regime sits in the lower Elevated Risk band."
+ },
+ "parse_error": null
+}

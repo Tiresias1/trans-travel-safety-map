@@ -1,0 +1,78 @@
+{
+ "cell": 182,
+ "region": "SDN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00489173",
+ "parsed": {
+  "rating": 0.18,
+  "explanation": "A reported Article 152 cross-dressing offence criminalises gender-nonconforming presentation, while sodomy carries imprisonment. No legal recognition; transition care is constrained by fatwa and conflict. Documented state violence, official discrimination, vigilante hostility, low tolerance and weak recourse create severe post-outing exposure. Enforcement against visitors is not documented, but absence is not safety. The combined regime is severe risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Document/presentation mismatch can itself satisfy Article 152; border/screening practices not sourced.",
+    "protection": "None documented.",
+    "interaction": "Foreign passport marker, if checked, could trigger questioning, detention or prosecution.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Arrest/investigation under Article 152 or Article 148 plausible; documented state torture/extrajudicial killings. Custody placement not sourced.",
+    "protection": "None; no legal gender recognition or protective procedure documented.",
+    "interaction": "Any document mismatch may escalate into investigative custody in an armed-conflict setting.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No subnational variation documented; no bathroom/facility rules sourced.",
+    "protection": "None documented.",
+    "interaction": "National penal code applies; facilities exposure remains an open traveler-facing question.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Transition-related care legally constrained and blocked by Sunni fatwas; conflict restricts access; emergency care for outed visitors not documented.",
+    "protection": "None documented.",
+    "interaction": "Outing during clinic/pharmacy/ward could interrupt HRT or deny care, including for minors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Gender nonconformity criminalised; official discrimination against gender identity, state violence, vigilante hostility, public anti-LGBT campaigns.",
+    "protection": "None documented.",
+    "interaction": "Law and enforcement treat trans presentation as criminal/immoral, raising post-discovery harm.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No age-specific rules documented; but no legal gender recognition, blocked care, conflict, hostile climate affect trans/gender-nonconforming minors and guardians.",
+    "protection": "None documented.",
+    "interaction": "A guardian's presentation or a minor's documents may expose both to scrutiny, care denial, or family/community hostility.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Vigilante attacks, public hostility, police/state documented as perpetrators; local organising contracted; trans-specific street data absent.",
+    "protection": "None documented.",
+    "interaction": "Outed travellers have little community protection and unlikely reliable police recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No effective remedy; UN anti-LGBT stance; thin documentation on visitor enforcement, facilities, custody, minors, current killings.",
+    "protection": "None documented.",
+    "interaction": "Unknowns remain open questions, not mitigations, because hostile structural facts govern severity.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar: gender-presentation statute and state failure. Lower severity: no routine visitor arrests, no capital provision after 2020 repeal. But care constraints, conflict and state violence keep it near 0.15."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "More dangerous: 0.25-A has fines/short custody and some judicial relief; here official torture/extrajudicial violence, fatwa-blocked care, armed conflict and no recourse, despite less documented visitor arrests."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Safer: no documented capital punishment or executions; 2020 repeal reduces legal extreme severity. Still severe due to criminalised presentation and lethal state/vigilante climate."
+   }
+  ],
+  "synthesis": "A visitor who is outed faces criminal liability merely for gender-nonconforming presentation, hostile institutions, restricted care and possible state or vigilante violence. Enforcement data are missing, but no protective rules, no recourse and armed-conflict scarcity mean unknowns cannot lower the rating. For families, the same document/care gaps and social hostility create additional exposure."
+ },
+ "parse_error": null
+}

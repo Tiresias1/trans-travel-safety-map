@@ -1,0 +1,78 @@
+{
+ "cell": 47,
+ "region": "66186276B98021244841737:Alabama",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00575712",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "Combined national-plus-state regime creates traveler-facing exposure: entry documents can be refused or escalated to a permanent fraud finding when sex/presentation is doubted; single-sex facilities are legally aligned to birth sex; a documented bathroom arrest was held in a men’s ward; immigration/corrections custody reports abuse, coercion, and care denial; minors’ care access is criminalized for providers. State-level public-accommodation and hate-crime recourse is absent, though national courts, statutes, and protective jurisdictions partially mitigate. The regime is severe but not execution/imprisonment-for-identity at anchor-0.15 level, so score sits in High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport/visa discrepancy or reasonable doubt about sex can trigger refusal, evidence demands, and permanent immigration fraud finding; X-marker issuance stopped; reports of passports blocked or confiscated and travelers stranded.",
+    "protection": "Pending litigation, legal-aid guidance, and some protective states or DC; national employment and hate-crime law. These do not cancel federal entry screening or document doubt.",
+    "interaction": "An entry document check can escalate into secondary inspection, denial, removal risk, or detention if fraud is suspected.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary confinement, and severe sexual abuse; national corrections policies remove hormones, cut hair, and coerce psychiatric therapy; bathroom arrest led to 24-hour male-ward holding.",
+    "protection": "Pretrial release, court challenges to some orders, and federal hate-crime jurisdiction exist; remedies for foreign travelers remain uneven.",
+    "interaction": "Custody becomes severe once a traveler is outed at border, facility, or care stage; birth-sex placement and care denial compound risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal single-sex spaces are defined by birth sex; state law bars birth-cert-mismatched school facilities and equality maps record public-facility bans, with college and criminal details partly uncertain; enforcement can mean exclusion or trespass arrest.",
+    "protection": "Many other states or DC protect access; private-setting scope varies. No statewide public-accommodation recourse in this jurisdiction.",
+    "interaction": "Federal spaces and state facility laws interact, so a visitor can face exclusion even where national protections exist elsewhere.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor’s gender-affirming care is criminalized for providers; national rules treat such care as harm and remove supportive materials; continuity or emergency care may be denied or expose records.",
+    "protection": "Not documented for trans visitors. Generic emergency-care norms and partial court injunctions exist, but they do not guarantee care access.",
+    "interaction": "A guardian seeking care for a trans minor can trigger refusal, disclosure, and school or custody exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Officials frame gender identity as deception or dangerous ideology; counterterrorism language names radical pro-trans groups; state enforcement can arrest for facility use; bias-crime coverage is absent locally.",
+    "protection": "National hate-crime statute, employment-discrimination ruling, and 22-state/local ordinances. These are general recourse, not facility or care protection.",
+    "interaction": "Functioning institutions enforce hostile rules, so rule of law can increase exposure unless the law operates for trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces school bathroom and sports exclusion, provider care denial, and forced disclosure; guardian may be drawn into investigation or denied care while traveling; entry mismatch adds stranding risk.",
+    "protection": "Same-sex marriage/adoption recognition and some local ordinances are climate signals only; no statewide public-accommodation or care protection.",
+    "interaction": "Care and school settings convert privacy disclosure into denial, investigation, or custody exposure for guardian and minor.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific street-violence pattern or rate in this division, but police enforce facility bans and ID checks can expose mismatched documents; no state recourse is documented.",
+    "protection": "Federal hate-crime jurisdiction, some municipal ordinances, and judicial review of arrests exist; general policing remains under rule-of-law checks.",
+    "interaction": "Private violence may be closer to background, but unresolved incidents are worse where bias-crime recourse is absent.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Litigation is ongoing, several orders are blocked, campus-bathroom and criminal details are unresolved, and trans-violence counts are absent; no effective state public-accommodation remedy is documented.",
+    "protection": "Civil-liberties suits, legal-aid FAQ, immigration appeals, and federal habeas review exist; courts have enjoined some measures.",
+    "interaction": "Partial judicial relief does not cancel operative passport, facility, or custody rules; traveler risk remains inconsistent and high.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Comparable to birth-sex placement and facility-enforcement anchors: this regime documents male-ward holding, bathroom arrest, and severe immigration custody. It is less systematically raid-like, and national recourse exists, but state-level erasure and care denial keep it near the lower end of high risk."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Worse than border exclusion without arrest anchors: the jurisdiction adds documented criminal/custody exposure, permanent fraud risk, and immigration-detention abuse. Although execution is not credible and rule of law functions partially, severity exceeds the 0.35 administrative-exclusion band."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Below administrative secondary-screening anchors: entry discrepancies here can be tied to permanent ineligibility and combine with facility bans, birth-sex custody, and care denial. Remedies exist, but the worst documented outcomes are materially more severe than 0.55 friction/denial."
+   }
+  ],
+  "synthesis": "The operative regime is one combined system: federal document and entry screening, federal facility restrictions, custody practices, and state-level bathroom, document, care, and sports laws. For an adult trans traveler, the dominant exposure is discovery through documents or facilities, potentially producing denial, permanent fraud, arrest, or detention. For an adult traveling with a trans minor, the regime adds school facility exclusion and provider care criminalization, increasing forced disclosure and service denial. National courts and protective jurisdictions partially mitigate, but they do not offset the traveler-facing rules that actually operate here."
+ },
+ "parse_error": null
+}

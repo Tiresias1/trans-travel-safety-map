@@ -1,0 +1,78 @@
+{
+ "cell": 205,
+ "region": "TJK",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00418402",
+ "parsed": {
+  "rating": 0.18,
+  "explanation": "Combined regime lacks traveler-facing protections. Same-sex conduct is decriminalised, but no SOGI law, no effective state advocacy, and documented police registers, fake-meeting entrapment, raids, forced HIV testing, arbitrary charges, extortion, sexual abuse and sham marriages create high severity if a trans visitor is outed. Domestic document/care mismatches add exposure at clinics and any ID check, while border/screening is unknown, which is not safety. Repressive political context means institutions enforce hostility rather than remedy. Minors lack specific evidence, but parent or guardian encounters can escalate through the same police/care system.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No border/airport screening, visa or passport-marker evidence. Domestic legal-gender changes are blocked in practice, so in-country ID, hotel or clinic checks may expose mismatch.",
+    "protection": "Not documented.",
+    "interaction": "If routine checks occur, mismatch can feed questioning or registration; no traveler protection is established.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police register, fake-meeting luring, raids, forced HIV testing, arbitrary criminal charges, ill-treatment, sexual abuse and extortion are documented. Trans detention placement or conditions are not.",
+    "protection": "No SOGI accountability; complaints ineffective; rights lawyers repressed; no access to state.",
+    "interaction": "Outing during a stop, meeting or clinic contact can trigger database entry, abuse, or charges.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, transport or detention facility rules. Care and document institutions do not issue transition paperwork and lack gender-affirming services, creating likely service friction.",
+    "protection": "Not documented.",
+    "interaction": "No local shield offsets national hostility; facility unknown remains open risk.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No gender-affirming care or HRT; doctors inexperienced, disrespectful, or offering pseudoscientific cures; forced HIV testing during raids.",
+    "protection": "NGO protocol and anonymous trans NGO only; no state protection or ministry access.",
+    "interaction": "A visitor seeking refills or emergency care may be tested, misgendered, or referred abusively.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State framing treats LGBT people as registrable targets: police database, social-media harvesting, raids, extortion, sham marriages; politicians and religious leaders are hostile.",
+    "protection": "No SOGI anti-discrimination; 2022 law only sex; public expression suppressed.",
+    "interaction": "Institutions enforce threat framing; lack of rule-of-law recourse increases severity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-minor or school evidence. Forced or sham marriage reports could involve younger people but are not shown as traveler or minor exposure.",
+    "protection": "Not documented.",
+    "interaction": "A parent or guardian encountering police or clinics may escalate; child-specific risk uncertain.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police are perpetrators: blackmail, extortion, arbitrary arrest, sexual abuse; 27 recorded 2024 violations and older abuse-after-disclosure accounts.",
+    "protection": "No effective police remedy; oversight absent; civil society anonymous.",
+    "interaction": "Public nightlife, apps or meetings can become traps; calling police may worsen exposure.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border screening, custody placement, facilities, registry status, minors, and partner recognition remain not documented; violation counts lack denominators.",
+    "protection": "No documented traveler-facing remedy.",
+    "interaction": "Unresolved questions cannot be scored safe; documented state targeting supplies extrapolation.",
+    "status": "not_documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Above 0.15-A because it lacks explicit presentation criminalisation, months-long custody, or credible capital reach. Sexual abuse, forced testing, sham marriage, and no recourse keep it severe."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Similar state morality targeting: fake meetings, blackmail, arbitrary punishment. Higher severity from forced HIV testing, sexual abuse, repressive no-recourse context, and sham marriages puts it below 0.25-D."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Below 0.35-B: that anchor involves identity checks, fines, and release without credible imprisonment. Here arbitrary charges, sexual abuse, and forced testing are more severe than short administrative detention."
+   }
+  ],
+  "synthesis": "The operative regime is national police targeting and civic suppression rather than traveler-facing border exclusion. Documented registers, entrapment, raids and sham marriage create high severity after outing; repressive courts and no SOGI law mean little recourse. Decriminalisation of same-sex conduct lowers formal punishment, but trans visibility still enters hostile institutions. Care and document gaps create everyday exposure if medical help or IDs are needed. Minors and border screening are unknown, so they must be treated as open, not safe. Overall, consequences after discovery are severe enough for High Risk, below state-directed abuse anchors and well below jurisdictions with functioning visitor remedies."
+ },
+ "parse_error": null
+}

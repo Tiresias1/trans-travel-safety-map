@@ -1,0 +1,82 @@
+{
+ "cell": 149,
+ "region": "MYT",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0038371",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined operative regime is the parent state's national framework applied on a predominantly Muslim island with thin local recourse. The heaviest documented feature is birth/document-sex custody placement: trans women held in all-male facilities where detainees threaten them, with a 2021 national watchdog finding of persistent serious violations since 2010 extended to the island's jails — a documented, unremedied institutional exposure (rule 21: recurring findings corroborate, not mitigate). No facility bans, criminalisation, or border-specific trans friction is documented; anti-discrimination law, hate-crime aggravation and marriage equality exist on paper, but island-level enforcement is unresolved and no LGBT-friendly lawyer practices locally. Social climate shows a gap between written law and lived experience. Conditional-on-detention severity plus documented-but-unapplied protections and thin recourse places this in the Elevated band, moderately below a friction-only jurisdiction and above organised-targeting regimes.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific border or entry friction; visitor documents issued by home country and the dossier records no rejection or doubting of foreign documents at entry.",
+    "protection": "National anti-discrimination law covers gender identity, but no documented application at border points.",
+    "interaction": "Entry occurs under the governing state's national framework; any document mismatch could route into national police processes.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: detainees held by identity-document gender, placing trans women in all-male facilities where other detainees threaten them; watchdog found persistent serious violations across all state establishments since 2010, extending to island jails.",
+    "protection": "Watchdog oversight exists but has issued recurring findings without documented remedy; no island-specific data.",
+    "interaction": "Any arrest or immigration hold on the island triggers this national placement rule; no local opt-out documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Hospital ward and single-sex facility placement practices on the island are not documented; custody facility exposure is the documented one.",
+    "protection": "Not documented.",
+    "interaction": "National framework governs all state establishments including island jails.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "2022 regional rights report found lack of self-determination, extended waiting times and inequitable access by location; under-18 transition ban passed the senate (status unresolved, government-opposed).",
+    "protection": "Treatment funded under national long-term-condition scheme; 2024 pediatric society guidelines support youth care; ban not enacted as of last record.",
+    "interaction": "A travelling minor needing care faces uncertain, contested access; adults face delay and location inequity.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Not documented as island-specific; national rise in homophobic/transphobic attacks (2019) is a combined national figure, not an island rate. Predominantly Muslim island with documented gap between written law and lived experience.",
+    "protection": "Transphobia is an aggravating factor for all imprisonable crimes since 2017; penal code covers gender identity; no island enforcement record.",
+    "interaction": "Local police application of national protections is unresolved.",
+    "status": "uncertain"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling minor seeking gender care: senate-passed under-18 ban unresolved since July 2024; conservative local social climate may complicate access.",
+    "protection": "Ban opposed by government; national pediatric guidelines recommend puberty blockers; no operative ban documented.",
+    "interaction": "Any care-seeking minor interacts with national health regulation and contested legislation.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No island-specific incident data; national figures show rising anti-trans attacks but cannot establish island prevalence.",
+    "protection": "Hate-crime aggravation exists in national law; enforcement on the island undocumented.",
+    "interaction": "Victims would depend on local police applying national hate-crime provisions; recourse quality unknown.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No LGBT-friendly lawyer referenced anywhere on the island; legal representation thinly available locally; mainland counsel required for serious matters.",
+    "protection": "National anti-discrimination, hate-crime and marriage-equality frameworks apply directly to the department.",
+    "interaction": "Distance and thin local legal infrastructure limit practical recourse for a short-stay visitor.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "This dossier lacks the universal, discretionary traveller-facing exclusion machinery of 0.35-A (entry register, boarding checks); its worst documented feature is conditional custody placement rather than near-certain exclusion, so it rates materially above 0.35."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "0.55-A documents routine checkpoint friction with brief holding; this jurisdiction documents a deeper custody harm (all-male placement with threats, persistent watchdog findings) but less documented everyday friction and formal national protections, netting to a similar but slightly lower level."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows brief detention ending in release, functioning tribunals and compensation. Here the detention pathway is far worse and remedies have not demonstrably worked (recurring violations, no local lawyer), so this sits well below 0.75."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C features birth-sex prison placement plus a cross-dressing statute and raids. This jurisdiction shares the custody placement exposure but has no documented trans-specific criminalisation or enforcement campaign, placing it clearly above 0.25."
+   }
+  ],
+  "synthesis": "The operative regime is a protective national legal framework (anti-discrimination, hate-crime aggravation, simplified gender recognition, marriage equality) layered over a documented, unremedied custody exposure: document-marker placement of trans detainees into all-male facilities, corroborated by a decade of watchdog findings and extended by national law to the island's jails. For a visitor this exposure is conditional on detention rather than universal at entry, but it is severe and institutional. Offsetting positives — no criminalisation, no facility bans, no documented border friction — are real but their island-level operation is unverified, and practical recourse is thin (no local LGBT-friendly lawyer, conservative social climate where written law diverges from lived experience). Youth-care legislation is contested but not operative. Net: elevated risk, mid-band, dominated by the custody placement finding and recourse gap rather than by everyday hostility."
+ },
+ "parse_error": null
+}

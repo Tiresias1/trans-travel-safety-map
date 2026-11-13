@@ -1,0 +1,78 @@
+{
+ "cell": 152,
+ "region": "NER",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00519653",
+ "parsed": {
+  "rating": 0.11,
+  "explanation": "Combined domestic regime criminalises transition itself: Article 390 punishes attempts to change legal/medical sex, five to ten years, no mitigation; Articles 391-392 add marriage/venue penalties. Documented coordinated arrests and imprisonments, judges punished for acquittals, and collapse of HIV prevention show enforcement, not dead-letter. For a trans adult, being outed through presentation, documents, care-seeking or a marker mismatch can lead to criminal investigation; no operative protection is documented. Border-specific checks are absent, but severe domestic exposure governs: discovery risks major imprisonment and possible family separation. No execution is documented, and violence data lack denominators, so above 0.05 lethal anchors, but below 0.15 because explicit sex-change ban plus active campaign creates a near-certain major-prison consequence if discovered. Minor exposure is not documented but inherits the same criminal risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No border or passport marker rules documented. If entry screening reveals a foreign gender marker, HRT evidence, or transition-related legal step, Article 390 may treat it as an unlawful sex-change attempt.",
+    "protection": "Not documented. There is no recognition of foreign gender markers or non-discrimination law; silence cannot be read as safety.",
+    "interaction": "A document mismatch could become an investigation under domestic criminal law; no documented pre-emption or immunity.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented coordinated campaign: dozens arrested, 16 imprisoned after the 2026 code; Article 390 has no mitigation; judges sanctioned for leniency.",
+    "protection": "Not documented; no legal aid, consular access, release standards, or oversight is recorded.",
+    "interaction": "Presentation, records or medical steps that identify transition could trigger arrest; minors seeking care could involve guardians.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No visitor facility-access rules documented, but Article 392 criminalises LGBTQIA+ clubs and social venues, making venue use itself a major offence.",
+    "protection": "Not documented; no public accommodation, restroom, transit or hospital-placement safeguard.",
+    "interaction": "Entering or seeking services at such venues can generate suspicion or reporting, feeding Article 390/392 enforcement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Article 390 treats transition-related medical steps as criminal; documented HIV prevention collapse removes condoms, testing and PrEP; care-seeking would expose identity.",
+    "protection": "Not documented; no clinic shield, continuity-of-care rule, privacy exception or emergency-care safeguard.",
+    "interaction": "A visitor refilling HRT or a minor receiving gender care could create evidence of attempted change and guardian involvement.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Military charter and justice minister frame LGBTQIA+ as unnatural/social contagion; code explicitly bans transition; enforcement described as witch-hunt.",
+    "protection": "Not documented; repeal removed prior anti-discrimination provision; no official protection for trans travellers.",
+    "interaction": "State hostility increases police and public willingness to report or arrest mismatched travellers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific arrest documented. Article 390 reaches anyone attempting to change sex; guardian assistance, documents or care may be evidence.",
+    "protection": "Not documented; no family, age-based, or medical-care exception is recorded.",
+    "interaction": "A trans minor's marker, therapy request, or parent supporting it could escalate a routine visit into investigation or separation.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented refusals, verbal/physical violence against LGBTQ demonstrators and societal stigmatisation; police arrest campaign; LGBTQ people in hiding.",
+    "protection": "Not documented; no police victim-support, hate-crime response, or independent complaint mechanism.",
+    "interaction": "A stranger's report or public dispute can bring police attention, after which document/appearance mismatches become criminal evidence.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No anti-discrimination law; Article 95 penalises processing orientation data; unknown border enforcement, no denominators, unclear conviction/pretrial mix.",
+    "protection": "Not documented; mitigation/suspended sentences excluded and judicial leniency punished.",
+    "interaction": "Unknowns do not offset the documented major-prison consequence of discovery; absence of evidence is not safety.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "0.05-A includes execution and lethal custody as established outcomes. This dossier lacks documented execution or lethal violence, but criminalises transition and reports coordinated imprisonment. It scores above 0.05-A while remaining severe."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A criminalises presentation, arrests visitors, months pretrial custody, abuse and illusory remedies. Here Article 390 directly criminalises attempted sex change, no mitigation, active campaign and punished judges, so similar to or riskier than 0.15-A."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex placement, short sentences and no capital punishment, but no campaign. This dossier has explicit sex-change ban, 5-10 and 10-20 year penalties, and dozens arrested/imprisoned, so materially riskier than 0.25-C."
+   }
+  ],
+  "synthesis": "The operative regime combines an explicit criminal ban on transition with active enforcement and no protective infrastructure. A visitor's document marker, HRT, clinic visit, venue presence, or public relationship announcement can each be read as evidence under Articles 390 or 392; once reported, police and courts are documented to pursue and imprison, while judicial leniency is punished. Border-specific screening is unknown, but domestic law means any ordinary identity check can route into major criminal custody. For minors, the absence of a family exception means guardians may face the same exposure; no evidence of execution keeps it above the 0.05 lethal anchors."
+ },
+ "parse_error": null
+}

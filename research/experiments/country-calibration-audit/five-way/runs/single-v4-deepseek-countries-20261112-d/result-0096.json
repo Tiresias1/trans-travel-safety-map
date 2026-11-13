@@ -1,0 +1,82 @@
+{
+ "cell": 96,
+ "region": "IDN",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0028200144",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined regime is high-risk: the national penal code criminalises extra-marital/same-sex conduct (selectively enforced), a subnational Islamic code can cane a 'person with gender disorder', an October 2025 presidential decree frames LGBTQ people as national-defence threats, police raid LGBT gatherings, and August 2026 reports describe vigilante mobs attacking trans women. A trans traveller died in custody after an airport arrest amid extortion allegations; police deny beating him. No anti-discrimination protections operate, psychiatric pathologisation and conversion therapy persist, and paper police circulars are not shown working. Visitor-specific border/facility rules are undocumented, and no execution-for-trans-identity pathway is documented, so the score sits above the 0.15 tier but below 0.25/0.35 anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border or document rule is documented. The only traveller case is an airport drug arrest, not a marker mismatch.",
+    "protection": "Not documented.",
+    "interaction": "Official threat framing and selective morality enforcement could escalate checks, but no direct link to entry documents is documented.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "A trans traveller arrested at an airport died in custody; his mother alleges beating and a US$100,000 demand, which police deny. Police raided an LGBT villa and arrested 75 people; local rules have fined trans women.",
+    "protection": "A 2015 police circular and 2009 regulation exist, but no outcome data show them operating.",
+    "interaction": "Selective criminalisation and raids create custody exposure; unresolved allegations limit certainty but do not remove the documented death.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The special region's religious police can cane a 'person with gender disorder'; over 400 religious bylaws exist; two cities fine trans women; city rehabilitation raids detain trans women residents.",
+    "protection": "National police have refused to enforce some local rules conflicting with national guarantees.",
+    "interaction": "The harshest operative rule varies by locality; the special region's code is the most severe documented facility/penal exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The national psychiatric association calls trans identity a mental illness and recommends rehabilitation; conversion therapy is widely practised; no anti-discrimination protections exist.",
+    "protection": "Local HIV clinic, safe houses and a madrasa serve residents, not documented as visitor protections.",
+    "interaction": "Institutional pathologisation raises risk in health settings, but visitor-specific care denial is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The October 2025 presidential decree lists LGBTQ people among nonmilitary national-defence threats; officials' rhetoric is tied to vigilante attacks; broadcasting and online LGBT content are censored.",
+    "protection": "Police circulars exist but their enforcement outcomes are not documented.",
+    "interaction": "State framing legitimises monitoring, raids and public hostility toward gender-nonconforming people.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Officials urged parents to monitor children in 'this lifestyle'; abuse against LGBT students rose; conversion therapy is advertised.",
+    "protection": "Not documented.",
+    "interaction": "For a travelling minor, family-monitoring rhetoric and school/student hostility raise outing and family-harm risk; no visitor-specific safeguard is documented.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "August 2026 reports describe vigilante mobs attacking transgender women, tied to official rhetoric; venue raids target LGBT gatherings.",
+    "protection": "No anti-discrimination law; police protection for trans victims is not documented as operating, though national police refused some local rules.",
+    "interaction": "State threat-framing licenses mob violence; police response to anti-trans attacks is not documented as protective.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No anti-discrimination protections as of 2019; a gay officer's lawsuit was rejected; complaints against raids and abuse are not shown remedied.",
+    "protection": "The Constitution and Human Rights Law provide theoretical employment protection; a human rights commission gave advice; police circulars exist.",
+    "interaction": "Paper guarantees are not shown to deliver traveller-facing relief; unresolved issues include penal-code application to visitors and the 2025 online-content bill.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia criminalises gender presentation, routinely arrests visitors, holds them for months and applies beatings, with a latent capital provision. This dossier lacks a national presentation offence and capital charging, but has caning, state threat-framing, mob attacks and a custody death, so it sits somewhat higher than 0.15 but still in the high-risk band."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra uses border registration to exclude trans visitors but imposes no criminal charge or lethal custody. This dossier documents criminal penalties, caning, official threat-framing, police raids, vigilante mobs and a trans traveller's death in custody, so it is materially lower than 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and administrative refusal, with humiliation and cost but no credible custody death or state threat doctrine. This dossier has criminal law, subnational caning, state framing of LGBTQ people as security risks and documented mob violence, so it is materially lower than 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia trains border officers and provides tribunal review, with brief detention and release. This dossier lacks such operating remedies and documents custody death, raids, caning and vigilante attacks, so it is far below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime combines selective national criminalisation of same-sex conduct, subnational caning and local fines, official national-defence framing of LGBTQ people, police raids on gatherings, and vigilante attacks on trans women. A trans traveller died in custody after an airport arrest, with unresolved extortion and beating allegations. No anti-discrimination protection or working remedy is documented; police circulars are paper only. Visitor-specific border and facility rules are not documented, and there is no execution pathway for trans identity, but the state's threat-framing and documented violence place the traveller in High Risk, not at the 0.15 extreme."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 31,
+ "region": "66186276B73402293045483:Nebraska",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0057059",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime is High Risk. Traveller-facing exposures are documented at the national layer: passport marker restrictions with confiscation and stranding, refusal of entry when documents are discrepant, a possible lifetime fraud ineligibility finding, and birth-sex custody with documented sexual abuse and forced labour in immigration custody. Federal corrections policy adopted from 2026 mandates conversion-style treatment and stopped reporting trans prisoner numbers. Facilities bans reach roughly 19 state/provinces, with 4 criminalising use in some circumstances and one documented arrest. The state adds birth-sex custody with documented harm, a birth-sex-based facilities endorsement, and an under-19 care ban. Mitigation is partial: national hate-crime and housing and employment enforcement operate, and some orders are enjoined. No trans-specific violence figures are documented, so the violence axis is undocumented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports confiscated or blocked; X markers no longer issued; refusal where documents are discrepant; possible permanent fraud ineligibility; allied governments issuing advisories.",
+    "protection": "Civil-liberties suit pending; existing X passports valid to expiry; Supreme Court allowed restrictions in November 2025.",
+    "interaction": "Document discrepancy at entry can escalate to refusal, stranding, or a lifetime bar on the fraud ground, and the state layer does not govern visitor passports.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced labour, beatings, solitary confinement and severe sexual abuse of transgender men reported. State men's-prison placement by birth sex with documented assault and dismissed claims.",
+    "protection": "Partial: a court ruling was possible but the documented case was dismissed; no operative protection for detainees is documented.",
+    "interaction": "Document or facilities discrepancy can lead to detention, after which birth-sex placement applies across both federal and state custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars facilities congruent with identity in government buildings. Facilities bans in 19 state/provinces, including 6 reaching some private settings. Criminal trespass in 4 state/provinces; one documented arrest in a women's restroom with 24 hours in men's custody.",
+    "protection": "Facilities access is open in 29 state/provinces, 4 units and the capital district, though the map notes other sex-definition laws may still apply.",
+    "interaction": "Trespass liability requires refusal to leave on request, but it is triggered by ordinary facility use, so compliance is the only shield.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Under-19 care barred in the state; a visitor cannot obtain care for a minor in their care. Federal proposed rules would bar public reimbursement for under-18s. Federal crisis-line LGBTQ youth services were shut down.",
+    "protection": "Adult care is not barred in the state under the documented facts, and no care-refusal finding is documented for adults.",
+    "interaction": "Federal subpoenas of hospital records for patients under 19 create a disclosure path that can reach a visitor's care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State order defines sex by birth and ends recognition of trans people. Federal counterterrorism strategy names 'radically pro-transgender' groups for neutralisation. Federal orders direct prosecution of teachers for social transition.",
+    "protection": "The order states that counterterrorism powers will not target those who simply disagree; several orders are enjoined.",
+    "interaction": "The official framing raises the chance that police or security actors treat visible trans presence as a threat, and this flows into custody and entry.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-19 care bar; athletics bar; federal subpoenas of minors' records; prosecution threats for facilitating social transition. A minor's guardian visiting has no care route.",
+    "protection": "Not documented for minors visiting.",
+    "interaction": "A guardian seeking care for a minor has no lawful route; a minor passing through entry faces the same document and facilities rules as adults.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Trans-specific violence figures are not sourced. National hate statute covers gender identity, but only 23 state/provinces cover it in bias statutes.",
+    "protection": "National hate-crime coverage and the state's 1997 hate-crime statute's association-bias application show enforcement capacity, though gender identity is not in the state statute.",
+    "interaction": "A bias crime can be charged federally where state law is silent, but police response to trans victims is not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No working remedy documented for entry refusals or custody harm. Ombuds routes are slow or unresponsive. The state's current marker practice for locally issued documents is unresolved.",
+    "protection": "National housing and employment enforcement operating; same-sex marriage recognised; national civil-rights suits and injunctions in progress.",
+    "interaction": "Federal litigation can reverse some measures but outcomes are pending, so the operative rule at travel time must be checked.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar: a universal entry screen with routine refusals, confiscated documents and no effective remedy. This case adds documented custody sexual abuse, which places it at or below 0.35."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar: birth-sex custody with documented assaults, solitary confinement as protection, and a cross-dressing arrest route. This case is comparable or slightly higher because it has national housing and hate-crime coverage."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Lower: 0.45-D has registration and harassment but no documented custody sexual abuse or entry-level stranding. This case's custody and entry exposures are more severe."
+   }
+  ],
+  "synthesis": "The national entry, facilities and custody measures are universal and traveller-facing, and they reach any visitor whose documents or presentation diverge from birth sex. The state adds birth-sex custody with documented harm, facilities exposure and a minor-care bar. Mitigation is real but partial: national courts are enjoining some orders and national hate-crime and housing enforcement operate, but none of these is documented as protecting a visitor at the border or in custody. Because the custody record and the entry-stranding record are documented, not hypothetical, the combined regime sits in the High Risk band."
+ },
+ "parse_error": null
+}

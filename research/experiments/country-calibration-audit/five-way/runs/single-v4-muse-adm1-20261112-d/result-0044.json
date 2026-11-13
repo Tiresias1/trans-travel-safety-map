@@ -1,0 +1,78 @@
+{
+ "cell": 44,
+ "region": "66186276B91272823970344:Wisconsin",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.00186032",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "State law documents no bathroom/facility ban, no sex-definition exclusion, and repeated vetoes of youth-care and sports bans, with patchwork city protections. The combined regime is nevertheless constrained federally: birth-sex passport rules, entry refusal/investigation for document discrepancy, birth-sex federal facilities, and documented immigration/prison custody abuse. Courts have enjoined some measures, but passport and entry provisions are operative. For a minor, hospital youth pharmacologic care is paused under federal funding pressure. Overall exposure is administrative and facility-based, with severe custody consequences if detained, but no documented routine arrest regime in this state.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex rule; X/new mismatched passports not processed, existing X valid until expiry. Entry cable directs refusal and evidence request where documents cast reasonable doubt, and consideration of permanent fraud ineligibility for wilful misrepresentation, not automatic.",
+    "protection": "Existing X passports remain valid; fraud finding requires four elements and limited waivers; passport policy challenged in court.",
+    "interaction": "Document discrepancy can move visitor from entry screening to refusal, investigation, or immigration custody, interacting with federal custody risks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports for trans men include forced labour, beatings, solitary confinement and severe sexual abuse. Federal corrections model from 2026 reportedly cuts hair, removes hormones, substitutes psychiatric treatment/drugs.",
+    "protection": "No documented routine detention of visitors for identity alone in this state; court challenges and injunctions may limit some federal measures.",
+    "interaction": "Entry fraud suspicion or any arrest could lead to custody where documented abuse and birth-sex placement risks apply; state access to hormones for prisoners is a resident protection and does not negate federal custody exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars government-funded single-sex facilities congruent with gender identity. State itself has no bathroom/facility ban and no law defining sex to exclude trans people.",
+    "protection": "State government buildings have no mapped ban; private-setting bans do not apply here; some cities fully protect public accommodations.",
+    "interaction": "State openness does not cancel federal facility restrictions; visitor may face different rules in state versus federal buildings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Two major hospital systems paused gender-affirming pharmacologic care for under-18s in Jan 2026 after federal threat to deny payment; federal executive order targets minor care.",
+    "protection": "State has no youth-care ban, governor vetoed bans, mental/behavioural services continued, state joined multistate legal challenge.",
+    "interaction": "For a travelling minor, state permissiveness is overridden in practice by hospital/federal funding pressure; adult continuity care not documented as banned in state.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal materials frame 'radical gender ideology'/'radically pro-transgender' in extremism contexts; public polling shows 66% support assigned-sex document listing. No documented state police targeting of trans visitors.",
+    "protection": "National hate-crime law covers gender identity; state hate-crime law does not, though prosecutors sometimes use perceived sexual orientation; state employment executive order covers state services.",
+    "interaction": "Hostile federal framing raises outing/investigation probability, while state enforcement and courts are comparatively restrained but uneven.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Youth pharmacologic care paused at major hospitals; federal order directs investigation/prosecution related to facilitating social transition in schools; guardian may face disclosure or care disruption.",
+    "protection": "State youth-care ban vetoed Dec 2023; no state sports ban enacted; temporary sports association policies retained; mental health services continue.",
+    "interaction": "A minor visitor is not shown to face school enrolment prosecution, but care access and records disclosure can be affected through federal funding and hospital decisions.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented pattern of street violence against trans visitors in this state. Patchwork protection: 21% live in cities with full ordinances, 12% partial; no statewide discrimination law.",
+    "protection": "Several cities/counties ban gender-identity discrimination; city police stopped listing victim gender to avoid misgendering; sexual orientation is protected statewide since 1982.",
+    "interaction": "Visitor remedy depends on city; state-level absence of gender-identity hate-crime protection limits recourse after harassment outside protected cities.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Status unresolved for passport suit, federal executive orders, and health-declaration challenge; some orders enjoined, others operative. Specific licence-change standard and persistence of hospital pause not documented.",
+    "protection": "Courts have blocked/enjoined several measures; state joined multistate challenge; legal-aid FAQ guidance exists.",
+    "interaction": "Remedies exist but timing and scope uncertain, so a traveller cannot rely on prompt relief at entry, in federal facilities, or in custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Higher than 0.35-B because no documented routine police stops, passport confiscation, or district exclusion in this state, and courts enjoin some measures. Federal entry/facility exposure keeps it well below safer regimes."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar to 0.55-B: document discrepancy leads to secondary scrutiny and administrative refusal, remedies slow and uncertain. Slightly lower due to federal facility ban and documented severe immigration-custody abuse, offset by no state bathroom ban."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Lower than 0.75-C, where border largely accepts matching markers and detention is brief with compensation. Here federal passport/entry rules and birth-sex federal facilities are operative, and custody abuse is documented, though state facilities remain open."
+   }
+  ],
+  "synthesis": "Combined regime: state law is comparatively permissive for everyday facilities, employment in state services, and youth-care legality, with city-level protection uneven. Federal rules create the traveller-facing ceiling: birth-sex documents, entry refusal/fraud inquiry, federal facility exclusion, and youth-care funding pauses. If outed only in public state spaces, likely friction; if document discrepancy triggers federal processes, risk escalates to refusal, detention, and documented custody abuse. Courts provide partial but uncertain mitigation, supporting an elevated-risk rating near the middle of the scale."
+ },
+ "parse_error": null
+}

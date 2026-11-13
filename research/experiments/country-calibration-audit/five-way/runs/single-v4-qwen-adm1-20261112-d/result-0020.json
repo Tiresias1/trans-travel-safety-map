@@ -1,0 +1,78 @@
+{
+ "cell": 20,
+ "region": "66186276B48953429733047:Idaho",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0076403",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined regime: national passport/visa rules refuse or delay trans travelers; marker mismatch or visible doubt can trigger refusal, secondary screening, and permanent fraud ineligibility; government-funded facilities are barred. Division law criminalizes restroom/changing room mismatch in government and public-facing private spaces, including hospitals; an analogous capitol arrest involved 24-hour male-ward custody. Border and immigration custody have documented forced labour, solitary, beatings, and sexual abuse; corrections policies include forced hair and hormone disruption. For minors, facility policing plus parent-notification and care-restriction rules raise exposure. Remedies are partial: pending lawsuits, hate-crime law, some protections, but no documented short-stay remedy. Score is high-risk because arrest/imprisonment is credible, tempered by lack of routine visitor enforcement.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "M or F passport/visa rules; X or marker mismatch, or evidence casting doubt on sex, can trigger refusal, evidence requests, case-note screening, and permanent fraud ineligibility; stranded travelers reported.",
+    "protection": "Existing X passports remain valid; waivers possible; legal-aid FAQ and pending suit challenge processing.",
+    "interaction": "Document mismatch at border can turn entry screening into detention, denial, and later facility or care exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Secondary screening, immigration detention, and facility arrests can escalate; trans men in immigration custody report forced labour, beatings, solitary, and sexual abuse; prisoners report hormone removal and forced psychiatric treatment.",
+    "protection": "No documented visitor detention protections; oversight reports stopped; habeas or complaint relief unclear.",
+    "interaction": "A passport discrepancy, healthcare visit, or facility accusation can place a traveler in gendered custody where abuse occurs.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules restrict government-funded facilities; division law criminalizes restroom mismatch in government and public-facing private businesses, including hospitals; first offence reported up to one year, classification contested; no enforcement against visitors recorded.",
+    "protection": "Not documented. Municipal ordinances and driver-licence X option exist but do not block criminal enforcement at facilities.",
+    "interaction": "State private-business reach stacks on national government-facility ban, creating continuous everyday exposure; border status may inform staff.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Hospitals are covered by facility law; government-funded care can require birth-sex placement; minors face parent notification within three days and narrow reimbursement/care policies, risking outing and denial.",
+    "protection": "Not documented. Emergency or continuity care for visitors is not established despite court challenges.",
+    "interaction": "A medical emergency can expose documents, force facility placement, trigger parental or guardian notification, and lead to detention.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism language mentions radical gender ideology and pro-transgender groups; schools and teachers face prosecution directives; polls show support for birth-sex rules and facility restrictions.",
+    "protection": "National employment discrimination and hate-crime coverage remain, but they are not documented as traveler facility or border protections.",
+    "interaction": "Threat framing can increase suspicion during border, phone, or facility disputes and may harden staff and police enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Transminor facility use could trigger criminal law; schools, childcare, or hospitals may notify parents/guardians; guardian border scrutiny can arise from document mismatch or care questions.",
+    "protection": "No guardian protection documented; attempted parent criminalization bill was blocked, but no operative visitor safeguard exists.",
+    "interaction": "Adults traveling with minors combine entry screening, facility policing, disclosure, and care denial; guardian could be questioned or detained.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans violence above general homicide documented; airport or street friction can be filmed and reported; a capitol restroom arrest shows police can enforce facility rules.",
+    "protection": "National hate-crime law, partial state protections, and civil-rights suits provide limited avenues, not visitor short-stay safety.",
+    "interaction": "Police response is mixed: they may protect or arrest; facility complaints can become custody exposure.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Suit over division facility law is pending; no enforcement against visitors recorded; litigation over document and narrowing rulings remains uncertain; traveler remedies vary by state and officer.",
+    "protection": "Legal-aid FAQ and some injunctions help, but no documented successful quick remedy for a short-stay visitor.",
+    "interaction": "Partial legal recourse does not neutralize federal entry screening or division criminal facility exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower than 0.35-A: that anchor stops at exclusion and humiliation; this regime adds criminal facility law, possible imprisonment, and documented custody abuse, despite no routine visitor enforcement."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Slightly below 0.25-C: both have birth-sex placement and criminalized presentation risk; here border fraud/stranding and immigration sexual abuse heighten severity, while the newest facility law is untested."
+   },
+   {
+    "anchor_id": "0.15-E",
+    "comparison": "Above 0.15-E: that anchor has systematic reporting, violent long custody, and ambiguous capital reach; this lacks routine visitor arrests under the new law and no credible execution pathway."
+   }
+  ],
+  "synthesis": "The combined regime works in series: border document checks can deny or delay entry; if admitted, the division criminalizes ordinary facility use; any medical or restroom dispute can produce arrest; arrest or immigration detention can produce sexual abuse, solitary, or forced hormonal changes. National government-facility rules extend that exposure even outside private businesses. For adults with minors, school, childcare, hospital disclosure, and care restrictions add guardian exposure. Hostile official rhetoric increases suspicion, while courts provide only partial, slow relief. Absence of documented enforcement under the new state law lowers frequency, not severity."
+ },
+ "parse_error": null
+}

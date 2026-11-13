@@ -1,0 +1,82 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.015078",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "The combined regime is driven by national border, facilities and custody exposures: sex-binary document rules, discrepant-case refusal and possible lifetime fraud, federal single-sex facility exclusion, and documented abuse in immigration custody. The division is genuinely more protective than the national line — its courts have enjoined facilities and care bans and blocked marker restrictions — but those rulings bind state actors, not federal border officers, federal buildings or immigration detention. No execution or explicit criminalisation of trans identity is documented; the worst visitor-facing risks are refusal/stranding, federal facility exclusion, and detention abuse. Result: High Risk, above routine administrative friction but below jurisdictions where courts and border practice protect travellers.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-binary order; X markers stopped for new passports; visa/border officers may refuse discrepant cases and consider lifetime fraud; reports of confiscated or blocked passports and stranded travellers; foreign advisories.",
+    "protection": "Existing X passports remain valid until expiry; litigation challenges the policy; legal-aid FAQ exists; no documented border protection for visitors.",
+    "interaction": "Home passport meets national screening; mismatch can trigger secondary inspection or refusal; division court rulings do not bind federal border officers.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: trans men report forced labour, beatings, solitary confinement and sexual abuse; national corrections conversion practices include cutting hair and removing hormones; reporting of trans prisoner numbers stopped.",
+    "protection": "Some executive orders enjoined; national hate-crime statute is not a custody remedy; no documented visitor-specific safeguard.",
+    "interaction": "Border discrepancy can lead to immigration detention, where national custody rules govern regardless of state courts.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities matching identity; many state bans exist; the division facilities law is enjoined, but federal buildings remain covered.",
+    "protection": "Division court temporary restraint against the 2025 facilities bill; bathroom bill defeated; state constitutional dignity rulings.",
+    "interaction": "State courts block state facilities law but cannot enjoin federal facilities rule; visitor in a federal building faces birth-sex access.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding freeze, hostility to minor care, insurance rules, shutdown of LGBTQ youth services; 27 states ban minor care.",
+    "protection": "Division minor-care ban struck down; no state prohibition; national care access not protected.",
+    "interaction": "Adult visitor care is not clearly documented; a minor visitor faces national funding and insurance restrictions; state courts protect only against state bans.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' groups; justice-department reward memo cites 'radical gender ideology'; school-prosecution executive order.",
+    "protection": "Some orders enjoined; division courts block state bills; no visitor-specific protection.",
+    "interaction": "Raises official hostility and risk if a visitor engages in advocacy; federal framing is not offset by state courts.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order threatens prosecution of teachers using preferred names; care bans in 27 states; health rules bar insurance for under-18 care; division care ban struck.",
+    "protection": "Division court struck minor-care ban; parental opt-in sex education; no state care prohibition.",
+    "interaction": "A trans minor travelling with a guardian faces national care/funding restrictions and school-related threat framing; state courts protect only within the division.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans violence data; state hate-crime law omits gender identity; religious-refusal law; national hate-crime statute covers gender identity.",
+    "protection": "National hate-crime statute; 22 states plus capital outlaw gender-identity discrimination; division courts' dignity rulings.",
+    "interaction": "A visitor reporting violence may rely on the national hate-crime route; state law gaps and religious refusal weaken local recourse.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "2026 state law codifying biological sex is challenged but unresolved; facilities-injunction status unknown; passport litigation unresolved; federal border and custody have no working remedy.",
+    "protection": "Strong division court record blocking anti-trans laws; legal-aid FAQ; national civil-liberties suit.",
+    "interaction": "State remedies work for state laws but cannot reach federal entry, facilities or custody; outcomes depend on which measures are in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Higher than this anchor: no documented routine police extortion, raids or short jail for presentation in the division, and state courts actively block anti-trans laws. National border and custody exposures remain worse than the anchor's localised shakedowns."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Slightly below: both feature border exclusion and humiliation without execution, but this dossier adds documented immigration-custody abuse and federal facilities exclusion; division court injunctions partly offset them but cannot reach the federal border."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Below: 0.55-B has extended screening and administrative refusal but no documented custody abuse or universal federal facilities exclusion; here national facilities and detention harms are more severe, despite state court protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much below: 0.75-C has trained border officers, brief detention and working remedies; here federal document screening, facilities exclusion and custody abuse are documented, and state remedies do not bind federal actors."
+   }
+  ],
+  "synthesis": "The visitor experiences a split regime. In the division, court injunctions keep bathroom and care bans inoperative, and state constitutional dignity rulings are a real protection. At entry and in federal custody or facilities, national rules govern and are hostile: document mismatch can lead to refusal or fraud findings, federal facilities are birth-sex segregated, and immigration detention has documented abuse. State protections do not pre-empt federal authority. The rating reflects severe but not universally lethal consequences, mitigated locally but not at the border."
+ },
+ "parse_error": null
+}

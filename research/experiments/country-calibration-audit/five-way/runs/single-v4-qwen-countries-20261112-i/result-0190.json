@@ -1,0 +1,78 @@
+{
+ "cell": 190,
+ "region": "SOM",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00530327",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "Combined regime: government law criminalises same-sex conduct with conflicting prison/life penalties, regular LGBTQ prosecutions and surveillance; insurgent/southern sharia and non-state killings can impose death for alleged homosexual people. No gender-identity protections or traveler-facing trans rules are documented; severe taboo and impunity make an outed trans visitor likely be read as morally/gay deviant. Risk is below 0.15 anchors because trans-specific document arrest/prison practices are not documented, but above 0.35 because credible prosecution and lethal violence exist.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific border checks or marker rules; unstable screening, criminalisation, sharia and severe stigma leave any mismatch risky.",
+    "protection": "No documented entry protections, X-marker acceptance, or anti-discrimination enforcement.",
+    "interaction": "Ports unknown; government versus insurgent/southern control may change severity.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented for alleged homosexual people: prosecutions, Article 410 surveillance, conflicting prison/life terms, and non-state/southern death penalties.",
+    "protection": "No documented custody safeguards, legal aid, or consular access; 2022 enforcement data absent.",
+    "interaction": "If outing is treated as same-sex/morality offence, custody placement and abuse risk depend on controlling authority.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, shelter, hospital, changing-room, checkpoint or public-venue placement rules; hostile stigma could make any mismatch dangerous.",
+    "protection": "No documented facility-access protections or identity-congruent placement.",
+    "interaction": "Unknown facilities interact with unstable governance and armed-group jurisdictions.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No trans-care/HRT rules; clinics and emergencies could expose status; NGO-delivered HIV information and low HIV prevalence do not document trans care access.",
+    "protection": "No documented emergency care, medication continuity, or refusal protections.",
+    "interaction": "Seeking care can bring documents, family, staff, or police into contact with a highly stigmatised status.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Law and religious/morality authorities treat homosexual conduct as criminal/death-worthy in places; gender identity is not protected; public orientation/identity disclosure is taboo.",
+    "protection": "No anti-discrimination law, official protection, or police-recourse record; no documented protection.",
+    "interaction": "State prosecution and non-state sharia enforcement combine to frame visible gender nonconformity as moral/criminal deviance.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-minor rules; adolescents alleged homosexual were killed, and severe stigma can cause forced outing or guardianship intervention.",
+    "protection": "No documented minor-specific protections, medical consent safeguards, or shelter.",
+    "interaction": "An adult travelling with a minor may be scrutinised as a family unit; parent/guardian could be penalised or separated.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented killings of alleged gay persons by armed groups; impunity; regular prosecutions; no evidence police protect trans victims.",
+    "protection": "No documented hate-crime, harassment, or assault remedy; police may surveil rather than protect.",
+    "interaction": "Street violence risk rises where morality enforcement exists and state authority is weak or absent.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented legal remedy for gender-identity outing; penalties conflict; enforcement missing; unstable government and civil-war economy obscure accountability.",
+    "protection": "No operational remedy documented; appeals, tribunals, or police accountability are not evidenced.",
+    "interaction": "Unknown border/facility/care rules plus non-state law create multiple unresolved exposure paths.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Higher than 0.05-A: that anchor has a documented trans/gender-presentation lethal pathway through arrest and custody; here lethal exposure is tied to alleged homosexuality and non-state/sharia zones, not a stated trans-visitor rule."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Above 0.15-A but close: no public decency/deception law routinely arresting outed visitors for document mismatch, yet criminalisation, impunity and non-state executions still make risk severe."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Below 0.35-A: that anchor is exclusion/humiliation without credible imprisonment or execution; this regime has prosecutions, surveillance, conflicting prison/life terms, and death in some jurisdictions."
+   }
+  ],
+  "synthesis": "The operative regime is a split morality system: civil law in government areas criminalises same-sex conduct and supports prosecutions/surveillance, while insurgent and southern sharia apply death penalties and non-state actors have killed alleged gay people. No gender-identity protection or trans-specific traveler screening is documented, but severe taboo, lack of recourse, armed-group jurisdiction, and civil instability mean an outed trans visitor should not be treated as safe. The main uncertainty is whether gender nonconformity would be charged as homosexuality; if it is, consequences can range from short prison to lethal targeting, with minors exposed through the same stigma and documented adolescent killings."
+ },
+ "parse_error": null
+}

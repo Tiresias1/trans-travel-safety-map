@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0060109",
+ "parsed": {
+  "rating": 0.6,
+  "explanation": "Combined regime is split. The state layer is strongly protective: a documented 2022 healthcare shield law, public-accommodation and employment bans covering gender identity, a hate-crime statute strengthened from 1 October 2026, state custody placement by gender identity, a minor conversion-therapy ban, and a 'Most Protective' tier placement. The national layer is documented and traveller-facing at entry: discrepant documents lead to refusal and a possible lifetime fraud bar, and immigration custody shows documented forced labour, beatings and sexual abuse. Federal hostility (counterterrorism framing, subpoenas, funding limits) is not offset by state shields. Facilities exposure in this state is not explicitly mapped, so it is uncertain. Net: reduced risk, held down by federal entry and custody exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 cable: document or record discrepancy or doubt about sex leads to refusal and a request for more evidence; wilful misrepresentation may support permanent lifetime ineligibility under the fraud ground. Airport screening may be invasive and risks outing (advocacy guide).",
+    "protection": "Lifetime ineligibility is not automatic and requires all four elements; limited waiver possibilities exist. Court challenges to passport restrictions are pending.",
+    "interaction": "Home passport discrepancy at federal entry is the operative exposure; the state's marker-change regime does not reach a visitor's home documents.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented: forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. State-level trespass arrest for restroom use is documented in another state/province, not shown for this one.",
+    "protection": "State custody since 2018 is housed and searched by recognised gender identity. Visitors' federal custody is not covered by the state rule.",
+    "interaction": "Federal entry discrepancy can lead to federal detention; state custody rules do not govern federal immigration custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national order bars facilities consistent with gender identity in government-funded single-sex facilities. Scope in federal buildings is not specified. This state's facilities status on the national map is not stated.",
+    "protection": "Public-accommodation law bans gender-identity discrimination in public places and goods and services. Custody by gender identity applies to state custody.",
+    "interaction": "Federal facility restriction and state accommodation protection coexist. The state's protection does not cancel federal rules in federal buildings.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National subpoenas of hospitals for under-19 records, proposed federal bar on public reimbursement for minors, and funding freezes. Adult visitors are not directly covered in the dossier.",
+    "protection": "State shield law protects patients and providers from charges when care lawful here was banned in the home state. Youth-care bans are tracked, some permanently blocked.",
+    "interaction": "The shield protects a visitor's care in this state against home-state criminal or civil action, but not federal record demands or federal funding limits.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "December 2025 federal memorandum and May 2026 counterterrorism strategy name 'radically pro-transgender' groups as targets. Federal orders direct investigation and prosecution of teachers using preferred names.",
+    "protection": "Stated that counterterrorism powers will not target people who merely disagree. State hate-crime law covers gender identity and is strengthened from 1 October 2026.",
+    "interaction": "Federal threat-framing is national and applies in this state. State hate-crime protection is a state-level counterweight.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive orders target minors' care and school social transition. A travelling minor could face school or records exposure through federal channels. Proposed federal health rules would bar reimbursement for minors' care.",
+    "protection": "State anti-bullying law covers gender identity on all school premises. State conversion-therapy ban applies to minors. Age of consent is 16 regardless of gender.",
+    "interaction": "A minor's care is protected under state shield law, but federal investigation and records demands can reach the family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Single documented trespass arrest of a trans woman in a different state/province's capitol; no state-specific violence or killing count is in the dossier, so the violence baseline cannot be compared.",
+    "protection": "State gender-identity hate-crime law with additional penalties. State anti-discrimination law covers public places. Visible state protections.",
+    "interaction": "Local police response is governed by state law, not the federal bathroom and facility regime, but the federal framing may affect enforcement priorities.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation over passports, executive orders and proposed rules is unresolved. Enforcement records for the state's protections are not documented.",
+    "protection": "State protections are in force: 2022 shield law, 2011 discrimination ban, 2019 gay-panic repeal, 2025 ranking placement. Enforcement outcomes are not documented.",
+    "interaction": "A visitor's exposure depends on which federal measures are in effect at the time of travel, so federal and state remedies are not reliably aligned.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both cases have documented entry discretion that can deny admission on document discrepancy. The 0.55-B case is administrative with no custodial abuse documented. This dossier adds documented immigration-custody abuse and a possible lifetime bar, so it sits higher only because of the state shield and hate-crime layer."
+   },
+   {
+    "anchor_id": "0.65-D",
+    "comparison": "Both show documented protections that operate in practice. The 0.65-D case has robust oversight and a dismissed charge after misconduct, with no documented custody abuse. This dossier's federal custody abuse and counterterrorism framing place it lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Both have entry screening with brief humiliating checks and some state protection. The 0.75-C case has no documented custody abuse, no lifetime-ban risk, and no federal hostile framing. This dossier sits lower because of those documented federal exposures."
+   }
+  ],
+  "synthesis": "The state layer (shield law, hate-crime statute, accommodation ban, custody by gender identity, minor conversion-therapy ban) is documented as operative and places the state in the most protective tier. The federal layer is documented as hostile at the traveller-facing points: entry discrepancy can mean refusal or a possible lifetime bar, immigration custody shows documented sexual abuse and forced labour, and federal threat-framing names pro-transgender groups. State shields cover care and state custody but not federal entry, federal custody or federal records demands. The combined regime therefore sits in reduced risk, with the federal exposure keeping it below the state's own tier."
+ },
+ "parse_error": null
+}

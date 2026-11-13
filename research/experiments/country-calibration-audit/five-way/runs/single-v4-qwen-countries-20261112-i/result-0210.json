@@ -1,0 +1,78 @@
+{
+ "cell": 210,
+ "region": "TUN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00358331",
+ "parsed": {
+  "rating": 0.12,
+  "explanation": "Article 226 morality enforcement actively targets gender expression; 2024–25 sweeps arrested 84 people, mainly gay men and trans women, with sentences up to 4.5 years upheld. Outed visitors face arbitrary detention, abuse, forced anal exams, birth-gender processing in custody/courts, and prosecution. No visitor protection, care, facility, or effective remedy is documented; pledges against exams did not stop courts ordering them. Minors are documented sentenced under morality law, so a travelling child faces similar custody risk; guardians may be drawn into mismatch investigations. Severe risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented; however general morality/public-decency enforcement could make document-presented mismatch a trigger for secondary checks or arrest.",
+    "protection": "Not documented.",
+    "interaction": "Entry or ID discrepancy can feed investigation and birth-gender records under Articles 226/230.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented arbitrary detention, beatings, humiliation, forced anal exams, refusal guilt; trans women processed by birth gender/former names in custody and court.",
+    "protection": "Not documented.",
+    "interaction": "Investigation can move directly into prosecution and birth-gender detention; minors documented sentenced.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No protective public facility rules documented; prison/detention facility processing forces birth-gender records.",
+    "protection": "Not documented.",
+    "interaction": "Custodial facility treatment compounds outing and detention harm; no state/local shelter described.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No trans-specific medical or victim care protection documented; forced exams by state suggest abuse rather than care.",
+    "protection": "Not documented.",
+    "interaction": "Emergency or health contact may require identification and expose birth-gender mismatch.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 226 applied to gender expression; Article 230 active; officials frame homosexuality as perversion and 2024–25 mass arrests/convictions documented.",
+    "protection": "No protective law or enforcement against state targeting documented.",
+    "interaction": "Public order/morality statutes provide routine lever for police to detain visibly trans travellers and minors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Documented 16-year-old sentenced under morality law; no juvenile protection described. Travelling guardians not documented but likely exposed via investigations and records.",
+    "protection": "Not documented.",
+    "interaction": "A child outed by presentation/documents can face arrest/court; guardian may be questioned or separated during custody.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Private anti-trans violence lacks denominators; police response is hostile, with arrests, sweeps and custodial abuse documented.",
+    "protection": "No protective police response to trans victims documented.",
+    "interaction": "Public morality sweeps can convert ordinary street presence into criminal custody.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Appeals upheld mass convictions; legal gender recognition unsettled; forced-exam pledges ineffective; no visitor remedy documented.",
+    "protection": "Not documented.",
+    "interaction": "Unresolved court practices leave travellers unable to predict whether complaints stop detention or exams.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar public-decency enforcement with routine arrests and abuse, but visitor-specific arrest and months pretrial are not documented; execution uncertain and no capital provision, so slightly above 0.15 anchor."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Birth-gender detention and arrests are severe, but documented mass convictions up to 4.5 years, forced anal exams and no remedy make this lower than 0.25-C where sentences were shorter and death penalty absent."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Far above 0.05 because no executions, lethal custody or capital statute documented; still severe because arbitrary detention, abuse and birth-gender processing are documented and state-directed."
+   }
+  ],
+  "synthesis": "The operative regime combines criminal morality law, active gender-expression enforcement, abusive detention practices and birth-gender custody processing. A visitor who is read as trans faces discovery through presentation or documents, then arrest, interrogation, possible forced exams and prosecution, with no documented protective or remedy layer. Adult travellers bear severe criminal-custody consequences. Children are not shielded: the dossier documents juvenile sentencing under morality law, and guardians may face investigation if a minor’s documents or presentation mismatch. Thus the regime is severe, below high-risk but above execution-level anchors."
+ },
+ "parse_error": null
+}

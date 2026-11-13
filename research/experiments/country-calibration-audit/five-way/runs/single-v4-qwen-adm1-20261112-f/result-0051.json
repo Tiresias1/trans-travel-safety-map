@@ -1,0 +1,78 @@
+{
+ "cell": 51,
+ "region": "66186276B99594608635082:Hawaii",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00738156",
+ "parsed": {
+  "rating": 0.41,
+  "explanation": "Combined operative regime: federal entry/document rules and immigration/federal custody are the dominant exposures. Passports/visas restrict X markers, allow refusal for discrepancy, and suspected misrepresentation may support lifetime fraud inadmissibility; immigration custody reports severe abuse. Division protections—public accommodations, hate-crime coverage, no listed facility ban, marker recognition, care shield—reduce local street/service harm and are traveler-facing, but cannot cancel federal screening, federal facilities, or custody. Youth-care hostility raises risk for minors, while shield may help but visitor use unknown. No execution or likely imprisonment for mere identity is documented; worst credible harm is refusal, delay, humiliation, fraud-based exclusion, and abusive federal detention. Absence of local violence data is weak. Overall Elevated Risk, slightly above severe-exclusion anchors but well below protective-border anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules stop X marker and require birth-sex M/F; officers may refuse when appearance/records create reasonable doubt, and suspected misrepresentation can trigger fraud-based lifetime inadmissibility.",
+    "protection": "Existing X passports remain valid until expiry; waivers and legal challenge exist but are not operative traveler protection.",
+    "interaction": "Applies at all ports and in the division; local marker changes and anti-discrimination laws cannot override entry screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary, severe sexual abuse; federal corrections impose conversion-therapy-like measures; some parent jurisdictions criminalise facility use.",
+    "protection": "Ongoing court challenges; hate-crime statute and state protections exist but not documented to stop federal custody or facility placement.",
+    "interaction": "A border discrepancy or alleged fraud can move traveller into federal detention/care custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive limits government-funded single-sex facilities to birth sex; other parent jurisdictions ban/criminalise; federal buildings/funded facilities may enforce despite state map.",
+    "protection": "Division has no listed school/government facility ban, public accommodations/housing/employment protections, X marker, Most Protective ranking.",
+    "interaction": "Local facilities safer, but federal-funded/facility exposure and travel through other jurisdictions persist.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders frame trans minor care as harmful, threaten criminal prosecution of educators, freeze funding, subpoena records; emergency/inpatient ward placement unclear.",
+    "protection": "Division shield protects lawful trans care where banned elsewhere; insurance/health equity laws; no state ban shown. Visitor invocation undocumented.",
+    "interaction": "Visiting minor or family may seek care; shield may mitigate but records/documentation unknown.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism prioritizes radical pro-trans groups as violent; official rhetoric treats gender identity as ideology; some parent jurisdictions criminalise facility use; hostile federal posture.",
+    "protection": "State hate-crime covers expression, anti-discrimination, panic defences abolished; courts remain contested.",
+    "interaction": "Federal law-enforcement framing can override local protections when travel, border, funding, custody are involved.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Age-dependent: youth care criminalization/funding threats, document mismatch at entry, possible questions to guardian; child's care/school/social transition exposure.",
+    "protection": "Division anti-bullying/education equity, shield law, youth care protections; visitor invocation undocumented.",
+    "interaction": "Guardian seeking care or documentation may face federal entry scrutiny plus local shield, not fully protective.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented. No division-specific anti-trans violence or police-response figures; ordinary traveller friction remains possible.",
+    "protection": "State public accommodations/hate-crime laws, non-discrimination, X marker, Most Protective ranking.",
+    "interaction": "State remedies may operate for hotels/services, but federal border/facility exposure remains separate.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Lawsuits ongoing; enforcement uneven; shield/marker practical use for visitors unknown; multiple governments advise caution.",
+    "protection": "Court challenges and legal FAQ exist; commission/ombuds? Not documented as effective visitor remedy.",
+    "interaction": "Traveller cannot reliably predict current operative rules during journey.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Closer: port officers may route mismatched travellers to secondary screening and deny entry administratively. We are lower because national rules eliminate X, treat discrepancy as possible fraud with lifetime ineligibility, and immigration custody reports beatings/sexual abuse; local protections help but not border/custody."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Higher than 0.35-A: no universal rule barring all transgender visitors, existing X passports remain valid, court challenges create possible relief, and division protections reduce service risk. Still not much higher because document doubt, refusal, and fraud-based lifetime exclusion are severe."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much lower: 0.75-C recognises identity documents and trained border screening with brief detention and tribunal remedy. Here the parent eliminates X, allows entry refusal/fraud findings, and documents hostile federal custody; division protections cannot offset federal border and facilities."
+   }
+  ],
+  "synthesis": "The operative travel regime is split by journey stage. Entry, federal facilities, and federal custody are hostile: document mismatch can produce refusal, lengthy screening, and fraud-based permanent exclusion, while detention reports abuse and conversion-therapy-like measures. Within the protective division, daily accommodations, public facilities, housing, healthcare shield, and hate-crime coverage lower local friction; no local bathroom ban is listed and police may have more supportive rules. The shield and markers are real traveler-facing protections but not proven to neutralise federal screening or emergency custody. For minors, care-seeking and guardian documentation add uncertainty; the national youth-care hostility may intersect with local shield in unknown ways. Because severity if outed at the border is high and locally moderate, the combined result sits in Elevated Risk rather than High or Reduced Risk."
+ },
+ "parse_error": null
+}

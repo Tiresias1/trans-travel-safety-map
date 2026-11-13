@@ -1,0 +1,78 @@
+{
+ "cell": 137,
+ "region": "MLT",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00391278",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "Combined regime: extensive national gender-identity protections, constitutional gender-identity recognition, hate-crime law, protected bathroom access, low SOGIE victimisation, and court damages show institutions largely protect visitors and travelling families. But traveler-facing exposure is documented at entry/asylum screening: an LGBTI arrival was detained, later faced removal, and border-detention conditions and lack of individualised assessment are contested. Correctional custody also lagged, with prison placement, forced showering, and sexual abuse documented, though later policy allowed female-section transfer and courts awarded damages. These failures are severe but not universal; robust legal protection and low organized targeting keep the score below high-risk but under the safest tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented border/asylum case: LGBTI arrival detained on arrival, later removal order; observations allege detention conditions, refoulement risk, and no individualised assessment.",
+    "protection": "No documented trans-specific entry ban; constitutional gender-identity status and equality/hate-crime law support legal recourse.",
+    "interaction": "Entry checks can move an outed traveler into detention/removal; no protective border training or pre-emption is documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Correctional lag: seven transgender inmates placed in male prison with forced showering and sexual abuse; border-detention conditions remain unresolved.",
+    "protection": "Civil court awarded damages and held prison director liable; post-reform practice allowed individual cells in female section.",
+    "interaction": "Border and custody systems interact if a traveler is detained; protective policy is not shown to fully guarantee conditions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No standing subnational variation; documented facility harm centres on one prison and correctional agency lag, not universal local bans.",
+    "protection": "Bathroom access is protected by national law; anti-discrimination and hate-crime statutes cover gender identity and expression.",
+    "interaction": "National facility rules protect public use, but custody placement remains under correctional agency discretion.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Healthcare gaps are documented in custody interviews; no direct denial of traveler or minor care is documented.",
+    "protection": "Conversion therapy ban and gender-identity recognition are resident-facing climate signals; no traveler care barrier is shown.",
+    "interaction": "Care risk mainly arises during detention or emergency treatment, but visitor access rules are not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Border/asylum enforcement is contested; LGBTIQ+ people report higher harassment and online hatred, and violence reporting remains low.",
+    "protection": "Gender identity is constitutionally protected; hate-crime provisions, equality mechanisms, and court remedies exist.",
+    "interaction": "General enforcement appears protective, but border detention and custody lag are the weak points.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No traveler-facing rule restricting trans minors is documented; border/asylum detention risk is not evidenced for minors specifically.",
+    "protection": "National gender-identity recognition, bathroom protection, and conversion-therapy ban create a protective climate.",
+    "interaction": "Families still pass entry checks; unresolved border screening could affect a guardian or minor, but scope is unknown.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "LGBTIQ+ people report higher harassment/online hatred; police reporting of violence remains low despite reforms.",
+    "protection": "Physical/sexual victimisation is at or below regional low; hate-crime law and functioning courts provide recourse.",
+    "interaction": "No organized targeting appears documented; street risk is background friction rather than a campaign.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border case is pending; post-2024 correctional implementation and local variation are unknown; underreporting obscures everyday friction.",
+    "protection": "Courts awarded damages, and equality/hate-crime frameworks offer real remedies.",
+    "interaction": "Civil remedies reduce custody exposure but do not resolve border-detention uncertainty.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Similar to the anchor: rights exist and courts provide compensation after detention/questioning. This jurisdiction has broader constitutional and facility protections and lower victimisation, but also a pending border-detention/removal case, so it is only modestly higher."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Lower than the anchor. The anchor shows trained border officers, accepted markers, brief detention, and reliable review. Here border/asylum detention is contested and correctional custody lagged, despite stronger domestic rights."
+   },
+   {
+    "anchor_id": "0.85-B",
+    "comparison": "Materially below the anchor. The anchor documents trans/nonbinary passport recognition, specialist training, oversight, and rapid remedies. This dossier lacks protective border practice and has unresolved entry/detention concerns."
+   }
+  ],
+  "synthesis": "Everyday travel appears comparatively protected: gender identity is constitutionally recognised, bathroom access is national, harassment/victimisation is not campaign-level, and courts have awarded damages. The residual risk is institutional: border/asylum screening and custody can expose an outed traveler to detention, removal pressure, and correctional lag. Those exposures are severe where they operate, but they are not shown as universal anti-trans policies. The score therefore sits in reduced risk, pulled down by documented state custody and border failures and pulled up by functioning legal remedies and broad protections."
+ },
+ "parse_error": null
+}

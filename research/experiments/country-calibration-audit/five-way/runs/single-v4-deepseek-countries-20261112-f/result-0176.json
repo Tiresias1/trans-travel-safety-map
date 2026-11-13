@@ -1,0 +1,82 @@
+{
+ "cell": 176,
+ "region": "QAT",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0018622044",
+ "parsed": {
+  "rating": 0.14,
+  "explanation": "The operative regime is a national, trans-specific public-morality detention system: up to six months without charge for 'impersonating the opposite gender', with documented appearance-based arrests, custody beatings and sexual harassment, fake dating-app stings, denial of lawyer/translator and HIV medicines, and deportation/bans. Same-sex criminalisation is secondary but adds partner/cohabitation exposure; the capital sentence is theoretical and never imposed. Forced surgical detransition is uncorroborated and officially rejected, so not weighted as fact. No effective remedy or subnational variation is documented. A solo adult faces severe state-imposed exposure once outed; a guardian with a minor faces the same regime, but minor-specific rules are not documented. The score sits in the severe band near 0.15 anchors, below exclusion-only and administrative-friction anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No explicit trans border rule is documented, but enforcement reaches visitors; appearance-based detention, deportation and nationality-targeted police operations create immigration-status risk after discovery.",
+    "protection": "None documented; cited cases show no effective appeal, lawyer or timely consular access.",
+    "interaction": "Document/appearance mismatch can feed public-morality detention, then deportation or ban without explanation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Up to six months' detention without trial or charge on suspicion of 'impersonating the opposite gender' or public morality. Documented 44-day detention after a fake dating profile, interrogation, no lawyer/translator, beatings, sexual harassment and denial of HIV medicines.",
+    "protection": "No operative remedy documented; a UN working group raised concerns, but no release mechanism, counsel or translator is shown working.",
+    "interaction": "Gender expression triggers arrest; custody can lead to abuse, forced signing, deportation or ban.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National detention facilities are documented sites of beatings and sexual harassment. Trans detainees are reported to face forced detransition, but that account is uncorroborated and officially rejected.",
+    "protection": "No independent oversight or functioning complaint mechanism is documented.",
+    "interaction": "Custody is national with no documented subnational variation; visitors and residents are held under the same morality powers, though release conditions differ for residents.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "HIV antiretrovirals were denied in detention; conversion 'therapy' is reported for residents after release. No trans-specific care protection is documented.",
+    "protection": "None documented.",
+    "interaction": "Care denial occurs inside custody; visitors are generally not documented as subject to post-release conversion conditions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The state frames gender nonconformity as impersonation/public morality; public affection is policed, rainbow flags may be confiscated, LGBTQ advocacy is banned and protesters were arrested.",
+    "protection": "A statement that visitors are welcome if they respect local culture is not an enforceable protection.",
+    "interaction": "Official threat-framing increases police stops, public reporting and detention risk after discovery.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "A minor travelling with a guardian would face the same documented morality-detention regime, but age-specific consequences are unknown.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police are documented perpetrators of beatings and sexual harassment and make appearance-based public arrests; some hotels refused same-sex couples and social norms view cross-dressing harshly.",
+    "protection": "No hate-crime recourse or reliable police protection is documented; complaints can lead to detention.",
+    "interaction": "Because police are the threat actor, reporting victimisation is unsafe and unlikely to produce protection.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No lawyer or translator in the 44-day case; UN concerns produced no documented remedy; deportation and ban occurred without explanation.",
+    "protection": "UN working group concern is documented, but no operative remedy is shown.",
+    "interaction": "Appeals and consular access are ineffective in cited cases; unknowns include corroboration of forced detransition and whether entry-ban practices are permanent.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Close. Both criminalise gender presentation/impersonation, impose detention without effective remedy and document custody beatings. 0.15-A has a capital provision not applied; this dossier has only a theoretical same-sex capital sentence and no execution for presentation. The trans-specific six-month detention power places it in the same severe band."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "This dossier is materially worse. 0.35-B describes stops, confiscation, short detention and fines; here there is six-month detention without charge, sexual harassment, fake-profile stings, denial of counsel and deportation bans. It cannot score at 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Far below. 0.55-B is administrative secondary screening, refused admission and return transport, not criminal morality detention or custody violence. This regime reaches visitors with state detention and abuse after discovery."
+   },
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Above 0.05. 0.05-A documents executions and lethal custody for gender presentation; here capital punishment is theoretical and never imposed, and forced surgical detransition is uncorroborated and rejected. Severe custody abuse remains documented, so the score stays near 0.15, not 0.05."
+   }
+  ],
+  "synthesis": "The combined regime is national and universally exposed: a trans visitor outed by appearance or documents can be detained up to six months without charge under morality/impersonation powers, with documented beatings, sexual harassment, fake-profile entrapment, denial of counsel and deportation. Same-sex criminalisation adds secondary partner/cohabitation risk but no applied capital sentence. No subnational variation or working remedy is documented, and officials reject the forced-detransition report. The result is severe risk once outed, moderated only by the absence of a documented execution pathway for gender presentation itself."
+ },
+ "parse_error": null
+}

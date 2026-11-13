@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "CIV",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0048584",
+ "parsed": {
+  "rating": 0.35,
+  "explanation": "Combined regime for a visitor: no documented traveller-facing entry, document, facility, or custody rule, so these are not_documented, not safe. Known exposures: state-security raids on a gender-nonconforming bar (2012) and beatings of trans people (2010-11), both dated; a 2024 wave of 45 assaults in the largest city after influencer incitement, with inadequate police response; police victim-blaming as of 2023; a 2024 presidential pledge against 'expansion' of homosexuality with unknown outcome; forced conversion therapy (2023). Protections: a 2024 Human Rights Council statement (non-binding); no sourced anti-discrimination or hate-crime law. Murder counts lack a baseline denominator. Wealth lowers hostility. Overall: elevated, state-tolerated street risk with unremedied police inaction, not a universal-exposure regime.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented border, document-mismatch, or entry-screening practice for trans visitors.",
+    "protection": "Not documented.",
+    "interaction": "Absence is not safety; visitor documents from home state are not traced in this dossier.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "2012 security-force raid on a bar: effeminate men and travestis forced into a cargo truck, clothing removed, fines demanded under threat of transfer to bases. Dated but state-implicated.",
+    "protection": "No documented current custody protection; no sourced prison placement practice.",
+    "interaction": "Police/security extortion pattern against gender-nonconforming people could reach a visitor at a venue; placement rules unknown.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented national facility, shelter, or restroom rules applying to visitors. Shelter exclusion is local-sphere only.",
+    "protection": "Not documented.",
+    "interaction": "Unknown whether national rules bind visitors.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "2023 forced conversion therapy (prayer camp) reported; a 2011 clinic refusal reversed by protest; healthcare discrimination documented.",
+    "protection": "Refusals were reversed under protest, not through a documented remedy.",
+    "interaction": "A visitor needing care could meet refusal or coerced referral; no documented care-denial statute.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Presidential 2024 pledge to counter 'expansion' of homosexuality; religious leaders preach against the community; media and influencer incitement. Outcome unsourced.",
+    "protection": "National Human Rights Council (Sept 2024) called for an end to online hatred and violence against woubis and lelés, affirming their rights.",
+    "interaction": "Official framing raises the chance that hostility escalates; the protective statement is advisory.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Family expulsion and school dropout documented for residents; conversion pressure on a trans man. Article 360 doubles penalties for same-sex acts in the presence of a minor.",
+    "protection": "Not documented.",
+    "interaction": "A minor travelling with a guardian could be exposed to a public-decency charge if the guardian's presentation is read as a same-sex act; no evidence on how this is applied.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "2024: 45 assaults on LGBTQ people in two months in the largest city; a trans man beaten; fighters targeting travestis; police response described as inadequate and victim-blaming (2023). Rates lack denominators.",
+    "protection": "Authorities reported as handling complaints somewhat better than before; no conviction data.",
+    "interaction": "Victims rarely report, so recourse for a visitor is weak; wealthier people face less hostility.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No hate-crime or anti-discrimination statute covering gender identity; no sourced outcome of the 2024 bill; no prison-placement data.",
+    "protection": "Constitutional and treaty rights invoked by the national council; no documented operative remedy.",
+    "interaction": "Unknowns are open questions, weighted lightly; they do not offset documented street and police exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal, enforced exclusion register and no effective appeal. This dossier documents no entry exclusion, so it sits above 0.35-A. Its street and police hostility is comparable in kind."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "0.25-D has undercover entrapment, footage blackmail and short jail terms as a recurring state practice. This dossier documents a dated 2012 raid and bar pressure, but no current entrapment, so it sits slightly above 0.25-D."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has universal biometric exposure and documented detention for deceptive presentation. This dossier lacks documented universal document checks, so it sits below 0.45-A on frequency of exposure."
+   }
+  ],
+  "synthesis": "The dossier documents no traveller-facing border, facility, or custody exclusion, but it does document a current wave of street violence against gender-nonconforming people with inadequate police response, a dated state-security campaign of extortion and removal against them, and official hostile rhetoric. Recourse is weak and unremedied. The protective statement is advisory, and the rating reflects that absence of documented universal exposure keeps it above high-risk tiers while documented state-tolerated targeting and unremedied violence keep it in the elevated band."
+ },
+ "parse_error": null
+}

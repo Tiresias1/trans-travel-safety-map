@@ -1,0 +1,82 @@
+{
+ "cell": 20,
+ "region": "66186276B48953429733047:Idaho",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00233207",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime presents tier-1 universal exposures: entry screening keyed to birth-sex markers with a documented fraud-ineligibility lever, passports confiscated or blocked leaving travelers stranded, and facility bans — with the rated division criminalizing restroom use at private businesses by birth sex (up to one year jail), a documented arrest and 24-hour men's-ward holding in a comparable state. Custody is documented as harmful: immigration detention featuring forced labour, beatings and sexual abuse; prison policies withholding hormones. State counterterrorism rhetoric frames pro-trans ideology as hostile. Mitigations are partial and contested: courts have enjoined several orders, litigation is live, no sodomy law, hate-crime statute, marriage recognition, and most states lack bathroom bans. Severity is high but not capital; outcomes are uneven, discretionary, and worsening.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport sex-marker policy forces birth-sex markers; travelers report confiscated/blocked passports and stranding abroad; entry cable directs refusal on document discrepancy and permits lifetime fraud ineligibility for material misrepresentation of sex.",
+    "protection": "X-marker passports remain valid until expiry; policy under active court challenge; legal-aid FAQ helps travelers prepare documentation.",
+    "interaction": "Document mismatch at entry can escalate to visa refusal, fraud finding, or detention under the national regime.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National prison policies mandate hormone withdrawal, forced haircuts and conversion-style therapy for trans inmates; immigration detention documented with forced labour, beatings, solitary confinement and severe sexual abuse of trans men; reporting on trans prisoner numbers ended.",
+    "protection": "Not documented.",
+    "interaction": "Any entry dispute, fraud investigation or arrest can funnel a visitor into these custody systems with birth-sex placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facility bans by birth sex in ~21+ states/provinces; division-level law criminalizes restroom/changing use in government buildings AND public-facing private businesses (up to one year jail, first offence); documented trespass arrest and 24-hour men's-ward holding in a comparable state; 4 states criminalize in some circumstances.",
+    "protection": "29 states, 4 units and capital district have no mapped ban; division statute under constitutional challenge; trespass-style offences require willful entry plus refusal to leave.",
+    "interaction": "A visitor's facility use is governed by whichever state they are in; the division's private-business reach makes exposure unavoidable in daily travel there.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Hospital-ward and emergency care governed by birth-sex facility rules in many states; national subpoena of hospital records of trans minors creates a disclosure pathway; insurance reimbursement rules proposed to bar care for under-18s.",
+    "protection": "Not documented for visitors; some states maintain marker updates and healthcare access.",
+    "interaction": "A traveling minor needing care, or a trans adult seeking routine care, can trigger records exposure and parent notification rules.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State counterterrorism strategy targets 'radically pro-transgender' groups for 'neutralization'; justice-department memoranda frame 'radical gender ideology' alongside violent extremism; executive orders describe trans youth care as 'mutilation'; law-enforcement directed at schools facilitating transitions.",
+    "protection": "Documents state counterterrorism powers will not target mere disagreement; courts have enjoined several orders.",
+    "interaction": "Framing raises outing severity across police, border and custody encounters; may license street-level hostility.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division requires professionals to disclose a trans minor's status to parents within three days; schools barred from chosen pronouns; teachers face criminal prosecution under a national order for facilitating social transition; 27 states ban youth gender-affirming care; proposed felony liability (blocked) for parents seeking out-of-state care.",
+    "protection": "National order partially enjoined; upper chamber blocked the felony-parent bill.",
+    "interaction": "An adult traveling with a trans minor faces disclosure mandates and potential criminal exposure of the minor's status; the minor's documented identity is exposed at every institutional checkpoint.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "66% public support for birth-sex documentation mandates and 69% for sports restrictions signal broad acceptance of the state's framing; no trans-specific violence rate materially above the general homicide rate was identified.",
+    "protection": "National hate-crime statute covers gender identity; 22 states plus capital district outlaw gender-identity discrimination; courts actively adjudicate trans claims.",
+    "interaction": "Police response to a trans visitor depends heavily on state; documented bathroom-law arrest shows enforcement of hostile law rather than protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "The division bathroom law's felony/misdemeanour classification is unresolved; whether a June 2026 narrowing survives is unknown; no enforcement against visitors yet recorded — but the possibility is carried by every visitor in the division.",
+    "protection": "Live litigation nationwide (passport suit, bathroom challenges); district courts have enjoined multiple orders; equality maps and legal-aid FAQs allow preparation.",
+    "interaction": "Remedies operate but slowly and after the fact; they do not reliably prevent detention, stranding, or prosecution.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar in that the state itself imposes universal, discretionary document-based exclusion (marker refusals, fraud findings, stranding). Here the exposure is less certain per-crossing (courts partially check it) but custody harms are documented as more severe than 0.35-A's exclusion-only outcome, pulling both directions around the high-0.30s/low-0.40s."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B's worst feature is secondary screening, denied entry, humiliation — administrative, no custody abuse. This jurisdiction exceeds that: documented criminalization of facility use, birth-sex custody with assault and hormone withdrawal, and state threat-framing. Rates materially below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C features trained border officers, functioning tribunals awarding compensation, brief detention ending in release. Partially present here (courts enjoin orders, litigation operates), but the documented custody abuses, criminalized bathrooms and hostile national framing are absent from 0.75-C. This jurisdiction sits well below 0.75."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex prison placement, assaults, and a cross-dressing statute — structurally close. This jurisdiction has comparable custody harms and heavier state apparatus (fraud findings, threat-framing) but also stronger countervailing protections: no sodomy law, hate-crime statute, working litigation, most states unbanned. Sits slightly above 0.25."
+   }
+  ],
+  "synthesis": "The operative regime is a large federal system whose national layer imposes universal, traveler-facing exposures — birth-sex document rules, discrepancy-based entry refusal with a lifetime fraud lever, facility exclusion, and documented custody abuse — while its division layer adds criminal penalties reaching private businesses, the broadest bathroom criminalization documented. These are tier-1 exposures: unavoidable, state-enforced, with no pre-emptive remedy. The mitigations that operate (courts enjoining orders, live litigation, hate-crime statute, marriage recognition, most states without bathroom bans) are partial, contested, and post-hoc; they reduce but do not neutralize the exposure. Severity is high (imprisonment, assault in custody) but not capital, and enforcement is uneven across a large territory. This places the jurisdiction between the 0.25 and 0.55 anchors, near 0.42: materially riskier than a merely-frictional regime, clearly less dangerous than one with organized raids or capital pathways."
+ },
+ "parse_error": null
+}

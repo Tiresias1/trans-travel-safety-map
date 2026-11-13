@@ -1,0 +1,82 @@
+{
+ "cell": 33,
+ "region": "66186276B75419826371250:Georgia",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0155706",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "The combined regime is a lower-end Elevated Risk case. The sharpest visitor-facing exposures are national: passport sex-marker restrictions, border refusal or fraud exposure on document discrepancy, and government-funded single-sex facility exclusion by birth sex. The division adds an under-18 care ban, one documented adult surgical cancellation, and city violence against trans women without denominator data. Custody practices are documented as abusive, but detention is conditional rather than routine for ordinary visitors. Protections exist but are partial and not shown to remedy the passport, facility, or custody exposures: national hate-crime coverage, some enjoined orders, litigation, and police investigations. Social violence is not shown to exceed background rates. A travelling minor faces added care-access and document scrutiny, but the rating remains driven by the border/document and facilities regime.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy restricts sex markers, stops new X markers, and border guidance permits refusal or fraud/lifetime-ineligibility findings on document discrepancy; travellers report confiscation or being stranded.",
+    "protection": "Existing X-marker passports remain valid until expiry; litigation challenges the policy, but no working border remedy is documented.",
+    "interaction": "Home passport marker and presentation mismatch can trigger secondary screening, refusal, or fraud inquiry; state document rules add uncertainty.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody is documented with forced labour, beatings, solitary confinement, and severe sexual abuse of transgender men; national corrections policies impose conversion-style practices.",
+    "protection": "Some national orders are enjoined and litigation is pending, but no visitor-facing custody protection is shown to operate.",
+    "interaction": "A border document discrepancy can escalate into immigration detention, where the documented harms apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with identity; state/province bathroom bans exist in many jurisdictions, with one documented trespass arrest.",
+    "protection": "Trespass statutes may require refusal to depart and contain exemptions; no documented effective visitor remedy for facility exclusion.",
+    "interaction": "National facility restriction overlays any state/province ban; enforcement precedent shows criminal process is possible.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans licensed transition-related care for under-18 patients; a coastal-city hospital cancelled all gender-affirming surgeries, including an adult procedure, citing legal compliance.",
+    "protection": "A public-employee health-plan settlement covers medically necessary care, and some minors already on HRT may continue; these do not clearly protect short-stay visitors.",
+    "interaction": "National funding restrictions and state care bans interact; a travelling minor or adult needing care faces denial or delay.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language names 'radically pro-transgender' groups among priorities, and justice guidance uses 'radical gender ideology'; executive orders target transition-related school support and care.",
+    "protection": "National hate-crime statute covers gender identity and some orders are enjoined, but official threat framing remains documented.",
+    "interaction": "Rhetoric raises scrutiny risk at borders and in facilities; courts partially check enforcement but do not remove the framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-18 care is banned in the division; national orders direct investigation of schools facilitating social transition and restrict documents; a minor traveller faces care denial and document scrutiny.",
+    "protection": "Some national orders are enjoined and the state health-plan settlement may cover out-of-state care for dependents, but visitor coverage is not documented.",
+    "interaction": "A parent travelling with a trans minor faces combined document, care-access, and official-scrutiny exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "City police investigated three violent crimes against transgender women in 2023, including two fatal shootings; the department called violence epidemic-level, but raw counts lack a denominator and the 4.8 per 100k figure is an undercount floor.",
+    "protection": "Police opened investigations and a national hate-crime statute covers gender identity; outcomes of the 2023 cases are not documented.",
+    "interaction": "Violence is documented as a local pattern but cannot be shown to exceed background rates; police response is partial.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation is unresolved, travellers report confiscation, and fraud findings carry limited waiver; facility and custody harms lack documented effective remedy.",
+    "protection": "Civil-liberties litigation, injunctions on some orders, legal-aid guidance, and hate-crime recourse exist but do not reliably resolve border or custody exposure.",
+    "interaction": "Remedies operate after or alongside harm and are slow; they do not prevent the initial document, facility, or detention exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a universal visitor register denying entry with no effective appeal. This jurisdiction's border exclusion is discretionary and document-triggered rather than universal, but it adds facility exclusion and documented custody abuse, so the net is near that tier, slightly above because entry is not uniformly barred."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves extended secondary screening, refusal, and administrative return transport, with slow remedies. This jurisdiction is lower because custody harm, facility exclusion, and official threat framing are documented, not merely administrative delay."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, working tribunal review, and brief detention. This jurisdiction is much lower: border document friction, facility restrictions, custody abuse, and care restrictions are documented, with remedies not shown to work at the point of exposure."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has routine identity exposure through linked biometric checks, detention and denial of care, but no credible imprisonment for identity. This jurisdiction is similar in facing universal document/facility exposure, but its national border fraud findings and custody-abuse record make it slightly less safe."
+   }
+  ],
+  "synthesis": "The operative regime combines national passport and border-document controls, government-funded facility exclusion by birth sex, and abusive custody practices with division-level care restrictions and a documented local violence pattern that lacks denominator data. Protections are real but partial: a hate-crime statute, some enjoined orders, litigation, legal-aid guidance, and police investigations. They do not demonstrably prevent border refusal, facility exclusion, or custody harm. The result is a lower-end Elevated Risk rating: not a routine imprisonment or execution regime, but a jurisdiction where an outed trans visitor faces serious administrative, facility, care, and conditional custody exposure."
+ },
+ "parse_error": null
+}

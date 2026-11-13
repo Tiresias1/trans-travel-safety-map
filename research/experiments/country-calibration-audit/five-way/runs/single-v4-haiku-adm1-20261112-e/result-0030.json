@@ -1,0 +1,78 @@
+{
+ "cell": 30,
+ "region": "66186276B69138566591314:Mississippi",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0056852",
+ "parsed": {
+  "rating": 0.26,
+  "explanation": "Combined regime is High Risk. Federal passport sex-marker restrictions are in effect, so a visitor's home-issued documents can be refused or confiscated at processing, leaving some stranded. Entry screening carries a discrepancy-refusal rule and a lifetime fraud-ground exposure. Federal immigration custody has documented forced labour, beatings and severe sexual abuse of trans men. The state adds a facilities statute enforced by criminal trespass, with one documented arrest and 24 hours held in a men's ward. The state's minor-care ban and name-change bar add exposure for travelling minors. Mitigating factors are national hate-crime coverage, a documented 49-year federal sentence for a bias killing, nationwide marriage recognition and four municipal protections. The state's trans-specific murder rate is near the general homicide rate, which places violence in the background tier. Several federal measures are enjoined, so exposure varies over time.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Foreign ministry stopped X markers and non-birth-sex markers; passports confiscated or blocked; stranding reported. Entry cable requires refusal on any document discrepancy and considers lifetime fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiry. Civil-liberties suit pending; restrictions not enjoined as of the dossier.",
+    "interaction": "Home-passport mismatch triggers refusal at entry; state marker rules do not govern entry, but a fraud finding could follow from a mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced labour, beatings, solitary confinement and severe sexual abuse reported for trans men. State trespass arrest with handcuffing and 24 hours in a men's ward.",
+    "protection": "Pretrial release was available in the documented arrest; no custody protocol for trans detainees is documented.",
+    "interaction": "A facilities refusal in a state building leads to state arrest, then custody by birth sex, which is the federal and state chain.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal policy bars gender-congruent government-funded single-sex facilities. State bans cover public buildings and schools in 2024–25 enactments. Criminal trespass applies to willful entry plus refusal to leave when asked. Federal prison conversion-type policy reported from 2026.",
+    "protection": "Exemptions for chaperoning, emergencies and facility-out-of-order situations; the trespass offence requires refusal to leave, not entry alone.",
+    "interaction": "Federal rules and state trespass stack; the state law operates where the visitor is in a public building, and federal prison policy applies if detained.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for under-18s (2023). Largest public hospital closed its adolescent clinic. Federal subpoenas of hospital records for patients under 19. Proposed federal rule to bar reimbursement for under-18 care. Federal lifeline youth services shut.",
+    "protection": "A single LGBTQ-specialising clinic operates in one city; adult care access is not documented as restricted for visitors.",
+    "interaction": "Minors seeking care face state ban and federal record demands; adult visitors' care access is not documented as restricted.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal memorandum uses 'radical gender ideology' in a terrorism context; May 2026 strategy names 'radically pro-transgender' groups as priorities for neutralisation. Federal orders direct prosecution of teachers for facilitating a minor's social transition. State majority opinion calls a trans boy a 'minor female'.",
+    "protection": "Strategy states counterterrorism powers will not target those who merely disagree; several orders enjoined.",
+    "interaction": "National rhetoric and state judicial framing reinforce each other; the protective disclaimer has no operative reach for trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor cannot change name without best-interest finding; state ban on minor care; school dress-code threats; federal school-prosecution order. A travelling minor's guardian faces documented risk of care denial and record disclosure.",
+    "protection": "Parental consent is recognised in the name-change petition but does not carry the petition.",
+    "interaction": "A minor's identity documents and medical needs fall under state and federal restrictions at once; guardian exposure rises with any medical need.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Most recent documented bias killing in the state is 2017; state hate-crime statute omits gender identity. Killing rate of 6.6 per 100k is close to the 6.0 general homicide rate.",
+    "protection": "National hate-crime statute applies; a 49-year federal sentence was documented for a bias killing. Municipal ordinances cover four cities.",
+    "interaction": "Violence is background-level, but recourse depends on federal prosecution rather than state law.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state recourse for gender-identity discrimination in employment, housing or public accommodation outside four cities. Religious-liberties statute gives providers a basis to refuse service. Adult enforcement of facilities rules and the March 2026 licence law's treatment of visitors are not documented.",
+    "protection": "Federal courts have enjoined several orders; national anti-discrimination law covers employment. Same-sex marriage recognised.",
+    "interaction": "Federal recourse is partial and slow; state remedies are absent in most of the state.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Both involve birth-sex custody placement with documented assaults and restricted remedies. This case adds federal immigration custody with documented sexual abuse and forced labour, but has no documented execution pathway and no remedy against custody harm. It sits similar to 0.25-C, with a more severe custody record offset by lower capital and criminal exposure."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Both involve universal exposure via document mismatch and refusal, with weak appeal routes. This case adds documented custody abuse and state criminal trespass arrest, which is more severe. The 0.35-A case has exclusion but no documented custody sexual abuse, so this case sits lower."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Both involve universal exposure through registration or identity checks and bureaucratic harm. This case adds criminal trespass arrest and custody abuse, which 0.45-D lacks, so it sits lower. Unlike 0.45-D, it has a national hate-crime statute and a documented federal prosecution for a bias killing, which lifts it slightly."
+   }
+  ],
+  "synthesis": "Documented national measures create the main traveller exposure: passport marker refusal, entry screening with lifetime fraud risk, and federal custody harm including sexual abuse. The state adds an enforced facilities trespass offence with a documented arrest and birth-sex holding, plus minor-care and name-change limits. Mitigation is partial: national hate-crime coverage and a federal prosecution exist, and background violence is near the general homicide rate. Several federal orders are enjoined and the state picture is moving, so the rating holds High Risk rather than the lowest tiers."
+ },
+ "parse_error": null
+}

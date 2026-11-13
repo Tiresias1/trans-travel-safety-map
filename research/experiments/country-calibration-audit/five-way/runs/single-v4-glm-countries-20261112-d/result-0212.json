@@ -1,0 +1,78 @@
+{
+ "cell": 212,
+ "region": "TUV",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00224259",
+ "parsed": {
+  "rating": 0.65,
+  "explanation": "The operative regime is a latent criminal statute (male same-sex conduct, 5–14 year felonies) that applies to a trans woman read as male, but with no documented enforcement since 2013, no prosecutions of consenting adults, no documented government abuses, no hate-crime record, and the state signing UN SOGI statements in 2011. No trans-specific traveler-facing restriction is documented on any axis: no border screening, custody, facility, or care exposures. The state is a small, thin-data jurisdiction with constitutional protection limited to 'sex', no gender-identity protection, and a 2023 constitutional ban on same-sex marriage — a latent, tangential statute plus open questions (custody classification, document treatment) hold it a step below the acceptance-with-protections tier, but not into the Elevated Risk band, since the worst documented feature is tier 3 (societal disapproval) at most, not state-imposed universal exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented in the record; entry and visa screening for trans visitors is not covered.",
+    "protection": "State signed UN SOGI joint statements in 2011, signaling no hostile border stance.",
+    "interaction": "Visitor documents are issued by home country; no local gender-marker regime applies.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Penal Code ss.153–155 (felonies, 5–14 years) could theoretically apply to a trans woman read as male; classification at charge/custody is unsourced.",
+    "protection": "No prosecutions of consenting adults as of 2013; no government abuses reported.",
+    "interaction": "Enforcement data ends 2013; the present is undocumented.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No subnational variation; no facility, bathroom or custody-placement rules documented.",
+    "protection": "None documented.",
+    "interaction": "Single statute book, no island-by-island comparison.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Not documented.",
+    "protection": "National HIV response includes transgender residents as a key population (2017), showing institutional engagement.",
+    "interaction": "No gender-identity protection in law; care access for trans visitors unsourced.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Latent felony statute; heavier penalties than other sexual conduct; 2023 constitutional amendment banned same-sex marriage, signalling conservative direction.",
+    "protection": "No prosecutions, no government abuses, no documented police targeting.",
+    "interaction": "Traditional customs perpetuate religious/social discrimination per 2013 report.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Age of consent asymmetry falls on young men who have sex with men (14% of local men 15–24); no child-specific trans rules documented.",
+    "protection": "None documented.",
+    "interaction": "No education-policy or youth-service findings in the record.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No hate-crime incidents, statistics or legislation documented; absence in this record is not proof of absence.",
+    "protection": "2013 report recorded no government abuses.",
+    "interaction": "Thin-data jurisdiction; absence of record is not a strong positive signal.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No gender-identity protection anywhere; constitutional protection limited to 'sex'; no partner-visa or foreign-union recognition.",
+    "protection": "Labour Act 2017 (resident-facing, no GI protection); no visitor-facing remedy documented.",
+    "interaction": "Statute is latent, not enforced; no recourse tested.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A shows a documented, enforced, universal visitor-facing restriction (border register, routine exclusion). This dossier has no enforced traveler-facing restriction at all — only a latent statute with no prosecutions — so it sits materially above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows documented secondary screening friction with administrative penalties. This dossier documents no such friction but also no working recourse; its latent statute plus open questions (custody classification, document treatment) place it a step below 0.55-B's documented-but-bounded friction, roughly at the same level or slightly higher."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows trained officers, functioning appeal, and brief detention risk. This dossier lacks documented protective machinery (no recourse, thin data) but also documents less friction and no enforcement; it sits slightly below 0.75-C, around the 0.65 mark."
+   }
+  ],
+  "synthesis": "The operative regime combines a colonial latent felony statute (male same-sex conduct, applicable to a trans woman read as male) with no documented enforcement, no prosecutions since 2013, no government abuses, no hate-crime record, and no trans-specific traveler-facing restriction on any axis. The state signed UN SOGI statements in 2011, and the HIV response includes transgender residents as a key population. Exposures are open questions (custody classification, document treatment, entry screening) rather than documented harms; the 2023 same-sex marriage ban is a resident-facing signal, not traveler exposure. Absence of enforcement data is not proof of safety, but the worst documented feature is latent societal disapproval, not state-imposed universal exposure or targeting. This places the jurisdiction at the boundary between Reduced and Elevated Risk, around 0.65."
+ },
+ "parse_error": null
+}

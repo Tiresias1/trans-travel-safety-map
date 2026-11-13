@@ -1,0 +1,82 @@
+{
+ "cell": 32,
+ "region": "66186276B73434888205604:New Jersey",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.001466532",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined regime is two-layered. Federal: a Feb 2025 consular cable tells officers to refuse visas where documents cast doubt on sex, with fraud-based lifetime ineligibility considered; X markers halted; trans travellers report blocked/stranded passports; eight governments issued advisories; trans people face documented abuse in immigration custody; a federal order bars trans people from government-funded single-sex facilities, reaching federal buildings inside this state. No criminalisation of trans identity exists. State: open marker changes, public-accommodation and lodging protections, hate-crime enhancements, panic-defense ban, care protections for travelling families, lowest-tier per-capita killings, and a civil-rights body that investigates. Entry and federal custody exposures are real and largely unreviewable; everyday state life is comparatively safe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 cable instructs refusal where document discrepancy or 'reasonable doubt' about sex; X/mismatched markers halted for visas; fraud finding could mean permanent ineligibility; trans travellers report blocked/confiscated passports; foreign advisories issued after detentions of trans visitors from a neighbouring jurisdiction.",
+    "protection": "Not documented at the federal border. State-level open document rules (X markers, surgery-free changes) govern state documents only and do not reach entry adjudication.",
+    "interaction": "Border decisions are federal; the state's protective law cannot reach the port of entry. A refusal means return transport or stranding, and a fraud finding follows the traveller permanently.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "In immigration custody, trans men report forced labour, beatings, solitary confinement and severe sexual abuse justified by guards. A bathroom-trespass arrest precedent exists in another unit, not this one; here trespass requires refusal to depart.",
+    "protection": "State civil-rights enforcement investigates service/lodging denials; bias-motivated crimes carry enhanced penalties; no state arrest policy for facility use is documented here.",
+    "interaction": "A visa overstay or adverse entry decision moves the traveller from a protective state into federal custody, where documented abuse applies and state remedies do not.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars trans people from government-funded single-sex facilities congruent with identity, covering federal buildings inside this state (post offices, courthouses, parks, parts of airports); nationwide maps show widening state bans but none here.",
+    "protection": "No state facility ban; state public-accommodation law covers hotels, restaurants, stores and transportation; state buildings and documents are open to trans people.",
+    "interaction": "A visitor moving between a state hotel and a federal building crosses from protected to restricted space within the same city; the federal rule governs at the federal touchpoint.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas sought full records of patients under 19 from 20+ hospitals; funding freezes and proposed insurance bans target trans youth care; federal orders frame minor care as abuse.",
+    "protection": "State executive order (Apr 2023) directs agencies to defend gender-affirming care within the state, including for people travelling in from other jurisdictions; state hospital records must protect gender-identity data.",
+    "interaction": "State authorisation does not document shield against federal warrants or subpoenas — expressly not_documented; a visiting minor's care is state-protected but federally exposed.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy prioritises groups 'radically pro-transgender'; DOJ reward memo invokes 'radical gender ideology'; hostile executive orders; 66% of the public back birth-sex document rules.",
+    "protection": "State hate-crime enhancements for gender identity; gay/trans panic defense banned (73-0, 39-0); chief legal officer sued to block school outing policies.",
+    "interaction": "Federal threat-framing raises risk at federal touchpoints (border, federal buildings, custody); state institutions counter locally but cannot neutralise federal framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order directs criminal investigation/prosecution of teachers facilitating social transition; DOJ hospital-record subpoenas for under-19s; gender-affirming care banned for minors in 27 other units.",
+    "protection": "State executive order protects gender-affirming care including for travelling families; state school guidance supports names, pronouns and facilities; no state minor-care ban.",
+    "interaction": "A visiting parent and child are protected in state clinics and schools but remain exposed to federal record demands and national policy shifts during the visit.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Hundreds of confirmed national trans killings since 2008; national bias incidents persist; state-level rate not separately documented.",
+    "protection": "2026 dataset places this unit among the safest per-capita rates; bias-crime enhancements; civil-rights body investigates; anti-bias training as sentencing condition.",
+    "interaction": "Private-violence risk tracks locality, not law; the protective state record contrasts with hotter units a traveller could cross into.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No complaint or prosecution statistics for the gender-identity provisions; enforcement is untested in the sources; several federal measures are in litigation and outcomes shift by travel date.",
+    "protection": "Civil-rights enforcement body investigates and can grant relief; ACLU suit against passport policy ongoing; state ranked in the most-protective tier (advocacy rubric, not enforcement data).",
+    "interaction": "State remedies function but do not reach federal border, custody or facility decisions, which remain effectively unreviewable for the traveller.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower than this case: Vellandra's exclusion is automatic, universal, and remedy-free for any visibly trans visitor. Here refusal is discretionary and evidence-triggered, the traveler lands in a protective state with working civil-rights machinery, and no entry-status register exists. Yet the sex-doubt refusal instruction plus reported stranding keeps this case well below the 0.65 tier, unlike Vellandra's pure exclusion model."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Closest match: secondary screening, discretionary refusal, administrative rather than criminal outcomes, slow and rarely revised remedies, high officer-discretion uncertainty. This case adds a strongly protective state layer (lodging protections, open documents, low violence) that Kestrel Isles lacks, but also adds federal facility restrictions and documented immigration-custody abuse, netting out at roughly the same level."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Higher than this case: Vellmaris shows national equality law explicitly protecting gender identity with courts reliably ordering release and compensation. Here the federal side actively restricts documents and entry, and the strongest protections stop at the state line — so the combined regime sits below the 0.65 friction-with-working-remedies tier."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Higher: Meridia has trained border officers, respectful inspection, tribunal appeal, and compensation for unlawful detention. This case's federal entry posture is the opposite — a targeted refusal instruction, halted markers, foreign advisories, and no documented border remedy — placing it materially below despite superior state-level protections."
+   }
+  ],
+  "synthesis": "The traveller experiences one country with two operating systems. At the border and in federal buildings or custody, the January–February 2025 regime governs: sex-doubt visa refusals, halted markers, facility exclusion, hostile official framing, and documented abuse in immigration detention, all with no demonstrated remedy for a visitor. Inside the state, the opposite machinery operates: open documents, public-accommodation and lodging protections covering hotels and transport, hate-crime enhancements, a working civil-rights body, care protections extended explicitly to travelling families, and among the lowest per-capita trans killing rates. The state's protections are real but stop at federal touchpoints, which every entrant must pass. Net: everyday life is comparatively safe (Reduced Risk locally), but entry screening, federal facilities and custody tail risk hold the combined regime at the Elevated/Reduced boundary. For a travelling family, federal under-19 record demands add exposure the state cannot offset."
+ },
+ "parse_error": null
+}

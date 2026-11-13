@@ -1,0 +1,78 @@
+{
+ "cell": 178,
+ "region": "ROU",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00599925",
+ "parsed": {
+  "rating": 0.56,
+  "explanation": "No trans-specific criminalisation or documented visitor detention; main exposure is bureaucratic/service friction when documents mismatch identity, plus anti-trans hostility in politics and some Pride bans. National protections cover sexual orientation/sex but not gender identity, and council follow-through is limited. Courts enforce some rights, including transcription of foreign gender recognition and striking blanket bans; police supervise Pride and receive training. A visitor who is outed faces harassment, delays in health/transport/banking, possible local official obstruction, not likely prison or lethal harm. Adult with minor: no age-specific rules documented; conservative rhetoric about children may increase scrutiny but remedies are uncertain.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No border, visa, checkpoint or traveler-specific screening exposure documented. Mismatched identity documents are documented to cause service friction, but whether foreign passports trigger secondary checks is uncertain.",
+    "protection": "Court rulings recognize foreign gender recognition certificates and member-state free movement principles; no traveler-facing border protection explicitly documented.",
+    "interaction": "Document mismatch may surface at hotels, banks, clinics, or transport checks, moving a routine discrepancy into service delay or questioning.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No traveler-facing arrest, detention, custody placement, or investigation for trans status documented.",
+    "protection": "General courts and constitutional review can address discrimination; no trans custody protocol documented.",
+    "interaction": "A document mismatch could theoretically become a fraud dispute, but no operative escalation path is documented.",
+    "status": "not_documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No nationwide facility bans documented; one western municipality repeatedly attempted Pride bans and fined participants, creating localized exclusion risk.",
+    "protection": "Other Pride cities incident-free; high police supervision; courts/regulator can sanction restrictions; anti-discrimination council addresses refusals.",
+    "interaction": "Urban venues generally usable, but municipal hostility may affect Pride attendance and short-term gatherings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Mismatched documents are documented to cause health-care problems; gender identity is absent from explicit statutory protection and visitor refusal cases are not sourced.",
+    "protection": "Sex/sexual-orientation anti-discrimination framework applies to services; foreign recognition rulings may support documentation continuity; institutional follow-through limited.",
+    "interaction": "If illness or injury occurs, presentation versus passport could delay placement, prescriptions, or emergency treatment.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Political figures framed gender markers and child choice as threats; election smears and municipal Pride bans show official hostility in some settings.",
+    "protection": "Audiovisual regulator warned derogatory Pride framing; constitutional courts struck blanket gender-identity bans; police hate-crime training occurred.",
+    "interaction": "State hostility is uneven: capital/regional Pride tolerated under supervision, western city officials attempted suppression and fines.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No age-dependent trans restrictions documented. Rhetoric about children choosing gender could increase scrutiny of trans minors or guardians in schools/clinics.",
+    "protection": "Final education drafts removed anti-LGBT provisions; courts may enforce rights of recognized trans children, but visitor-specific guardian rules not sourced.",
+    "interaction": "A guardian with mismatched identity and child may face service questioning if documents appear inconsistent.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence prevalence with denominator; social hostility, Pride strain, and conservative areas suggest harassment risk, but absence is not safety.",
+    "protection": "Pride police supervision and training for hate-crime response; complaints to equality council; regional court avenues exist.",
+    "interaction": "Police may protect visible events yet fined participants in a banned Pride; response varies by city and issue.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Gender identity is not expressly covered by anti-discrimination/hate-crime law; equality-body follow-through is limited; border, detention, and visitor care outcomes unknown.",
+    "protection": "Domestic and regional courts have enforced some trans recognition, struck discriminatory bills, and supported transcription; police training exists.",
+    "interaction": "Remedies tend to operate after harm/delay; preventive certainty for travelers is weak.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A Vellmaris has an explicit gender-identity equality law and a reliable post-detention remedy for a document mismatch. This dossier lacks express gender-identity statutory protection, has limited equality-body follow-through, and has political/municipal hostility, so it sits below that anchor."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C Marisol imposes ward placement by document marker and staff refusal, a clear traveler-facing health exposure. This dossier documents only indirect document-mismatch friction plus hostility, without an explicit ward ban, so it is slightly above Marisol despite weaker protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C Caldera has trained border acceptance for mismatched markers and tribunal oversight. This dossier has no documented traveler-border protection, explicit anti-trans statutory gaps, and municipal Pride suppression attempts, so it is below Caldera."
+   }
+  ],
+  "synthesis": "The operative regime combines a lawful baseline (no criminalisation, Pride tolerated in capital and some cities, courts enforcing some recognition) with institutional gaps: gender identity absent from key protections, weak equality-body follow-through, and localized official hostility. Outed travelers are more likely to face bureaucratic questioning, service delay, and harassment than arrest. A minor's exposure is mainly speculative, resting on child-identity rhetoric and service settings rather than enacted restrictions. Protection exists but is reactive and uneven, so the place sits in elevated risk, not reduced risk."
+ },
+ "parse_error": null
+}

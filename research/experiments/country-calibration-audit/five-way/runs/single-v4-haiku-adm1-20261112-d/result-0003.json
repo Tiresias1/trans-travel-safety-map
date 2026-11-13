@@ -1,0 +1,78 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0056604",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined regime is split. The division is strongly protective: it has gender-identity discrimination bans, hate-crime coverage, gender-neutral restrooms, a shield law for care, and no marker-change barrier on its own documents. But the national layer governs the traveller's entry, documents and custody. A passport marker mismatch can lead to refusal, stranding, or a lifetime fraud finding. Immigration custody has documented forced labour, beatings and sexual abuse of trans men, and national corrections policy has documented harm. Federal subpoenas reach minors' hospital records, and national policy threatens teachers who support trans minors. The division's protections do not pre-empt these national actors, and the national remedies are unresolved in court. Exposure therefore sits in the Elevated band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports bear sex assigned at birth; new X markers are not issued. Discrepancies lead to refusal and additional-evidence requests. Blocked or confiscated passports have stranded travellers. Fraud-ground lifetime ineligibility is possible.",
+    "protection": "Existing X passports remain valid to expiry. No documented operative remedy; litigation is pending.",
+    "interaction": "The national passport rule governs at the port of entry regardless of the division's protective law. Mismatch can move to fraud allegation and then to detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented: forced labour, beatings, solitary confinement and severe sexual abuse reported for trans men. Documentary discrepancy can lead to detention.",
+    "protection": "Not documented.",
+    "interaction": "Custody is national, so the division's protections do not reach it. Detention can follow a document discrepancy at entry.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National facilities follow the national regime, including birth-sex-linked corrections policy adopted from 2026. The corrections bureau has stopped reporting trans prisoner numbers. National funding restrictions reach facilities.",
+    "protection": "The division's own public facilities are congruent with identity, and its restrooms are gender-neutral. These cover only state-controlled spaces.",
+    "interaction": "A visitor moving between division facilities and national ones meets the stricter national rule on any federal or custodial contact.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National subpoenas for hospital records of under-19 patients. Proposed national rules would bar federal reimbursement for under-18 care. Federal ban pressure on youth care.",
+    "protection": "The division's shield law protects patients and providers from civil or criminal charges where care is banned in the home jurisdiction, and covers care provided within the division. Care is not contingent on the national regime.",
+    "interaction": "Shield protection holds for care delivered in the division but does not cover national records demands or federal reimbursement rules. Documentation may still reach federal actors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders frame gender-ideology advocacy as a counterterrorism concern. Law enforcement is directed to investigate schools, and a national strategy names 'radically pro-transgender' groups as targets.",
+    "protection": "Official statements disclaim targeting people who merely disagree. No documented operative enforcement against visitors in the division.",
+    "interaction": "Advocacy or public visibility for a visitor could draw national attention, while the division's law does not restrict it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling with a minor who is socially transitioned exposes both the minor and the guardian to national threats against teachers and hospitals, and to federal records demands on care.",
+    "protection": "The division's shield law and anti-bullying rules apply within the division. The division's school policies provide protection for students.",
+    "interaction": "Federal records requests and entry documents for a minor can conflict with the division's protections. Care within the division is shielded; national consequences may still follow.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for the division. The 2025 arrest and trespass charge occurred in a different state. Division-level violence data is not sourced.",
+    "protection": "Gender-identity hate-crime penalties (since 2016), a ban on the gay and trans panic defence (2018), and discrimination bans in public accommodations and housing.",
+    "interaction": "The division's protections operate locally. Police response in the division is not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National remedies are contested and unresolved, with orders enjoined but policy in effect. The passport suit and the youth-care rules are pending. Hate-crime prosecution data for the division is unsourced.",
+    "protection": "Division-level complaint routes and hate-crime recourse are documented as in force. The shield law's reach against outside subpoenas is unsourced.",
+    "interaction": "Division-level recourse does not reach entry or national custody decisions. The traveller's experience depends on which national measure is in effect at the time of travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Anchor 0.35-A has a universal registry that bars trans visitors at entry with no effective appeal. This dossier has a comparable documented entry-refusal path and stranding, but it has pending litigation and a division with strong local protections. It sits above 0.35-A because custody abuse is less routine and the division's protections operate."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Anchor 0.55-B has secondary screening and discretionary entry denial with administrative consequences and slow remedies. This dossier adds documented immigration-custody abuse and a fraud-ground lifetime finding. It sits below 0.55-B on custody severity, offset by the division's shield and hate-crime protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Anchor 0.75-C has documented traveller-protective entry rules and brief detentions with compensation. This dossier lacks those national protections and has documented custody abuse and passport refusal. It sits well below 0.75-C, though the division's protections are comparable to its protective features."
+   }
+  ],
+  "synthesis": "The division's strong local protections (discrimination bans, hate-crime coverage, shield law for care, gender-neutral facilities) are real and operating. They do not cancel the national layer. Passport mismatch can lead to refusal, stranding, or a fraud finding at entry. Discrepancy can then become immigration detention, where abuse of trans men is documented. National custody and facilities follow the national regime. Minors and guardians face federal records demands and threats to teachers and hospitals. Division protections reach visitors for local care and public accommodation but not for entry or federal custody. The combined regime lands in the Elevated band."
+ },
+ "parse_error": null
+}

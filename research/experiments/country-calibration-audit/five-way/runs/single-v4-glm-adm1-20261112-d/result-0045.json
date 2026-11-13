@@ -1,0 +1,82 @@
+{
+ "cell": 45,
+ "region": "66186276B94082813086253:District of Columbia",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0008431208",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined operative regime pairs a partially protective local layer with heavy federal exposures. Universal-exposure measures dominate: visa/border adjudication now carries a 'reasonable doubt on sex' refusal lever and a lifetime fraud-ineligibility path, passports are confiscated or blocked for some travellers, foreign governments issue advisories and report detentions of their citizens over visa issues, and body screening outs travellers. Federal custody shows severe documented harm (forced labour, beatings, sexual abuse of trans detainees), and state threat-framing ('radically pro-transgender' counterterrorism prioritisation) raises the climate risk. Mitigations: the capital itself has no local bathroom ban, its facilities restriction is of uncertain scope, courts actively enjoin hostile orders, hate-crime and anti-discrimination law operate, and a 2026 assessment lists the jurisdiction low-risk — while warning that override risk makes protection fragile. Worst documented features sit between tier 1 (custody, entry fraud lever) and tier 2 (arrests at the legislature), yielding mid-band Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: visa officers instructed to refuse on 'reasonable doubt' about sex; wilful-misrepresentation readings can trigger lifetime ineligibility; passports confiscated/blocked, some travellers stranded; foreign advisories and reported detentions of visitors over visa issues.",
+    "protection": "Fraud finding requires four elements and is never automatic; limited waivers exist; litigation against the passport policy ongoing.",
+    "interaction": "Document discrepancy at entry can flow into investigation, refusal or detention under federal authority; local law does not reach the border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody documented: trans men subjected to forced labour, beatings, solitary confinement and severe sexual abuse; national corrections policies remove hormone care and mandate hair-cutting and 'therapy' for trans inmates; trans-prisoner reporting halted.",
+    "protection": "National employment-discrimination ruling and hate-crime statute remain; several hostile orders enjoined in court.",
+    "interaction": "An entry dispute can route a visitor into federal custody where the documented harms apply; local protections are irrelevant there.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "In the capital, a facilities restriction attached by the national legislature, scope and visitor reach unspecified; activists arrested at the national legislature in Dec 2024. Nationally, bathroom bans in many states, criminalised use in 4.",
+    "protection": "No local bathroom ban of its own; capital placed on a low-risk list in July 2026; 29+ other units without bans show the national floor is not uniform.",
+    "interaction": "National legislature directly overrides local law; a federal building in the capital is governed by national rules the visitor cannot avoid.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "For a travelling minor: 27 units ban minors' gender-affirming care; proposed national rules would block public insurance reimbursement; national youth crisis services defunded; 190+ anti-trans bills in one season; hospitals subpoenaed for minors' records.",
+    "protection": "Care access for adults in the capital not documented as restricted; the unit largely refrains from targeting trans adults per the 2026 assessment.",
+    "interaction": "A parent with a trans minor faces national record-subpoena and insurance exposure that the local layer cannot shield.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State threat-framing documented: justice-department memorandum framing 'radical gender ideology' alongside violent extremism; 2026 counterterrorism strategy prioritising 'radically pro-transgender' groups; December 2024 arrests of trans-rights protesters at the national legislature.",
+    "protection": "Counterterrorism text states powers will not target mere disagreement; courts have blocked several hostile orders.",
+    "interaction": "Threat-framing by national institutions raises outing probability and worsens every downstream encounter, including protest and advocacy.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order labels minors' care 'mutilation', directs prosecution of teachers facilitating social transition; hospitals subpoenaed for under-19 records; care bans in 27 units.",
+    "protection": "Several orders blocked or enjoined; capital unit not documented as enforcing care restrictions on visitors.",
+    "interaction": "A travelling parent's child could become an investigated subject through national school or hospital channels regardless of local tolerance.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for the capital specifically; nationally, bias statistics show sexual-orientation hate incidents as a recurring share; local police practice and custody conditions deliberately not counted.",
+    "protection": "Hate-crime statute covers gender identity nationally; 23 units add bias statutes; local low-risk listing.",
+    "interaction": "Local police response unknown; national hate-crime law is the only documented recourse floor.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Override risk is the operative exposure: national legislature controls the local legislature and budget; the July 2026 assessment warns the jurisdiction may no longer warrant its protective reputation; bans may extend beyond mapped settings.",
+    "protection": "Civil-liberties litigation, injunctions against orders, legal-aid documentation guidance, and the functioning courts are documented and operative.",
+    "interaction": "Remedies work against executive overreach but cannot repeal the legislature-attached facilities ban; a favourable ranking can be overtaken without local change.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar: both centre on entry-stage secondary scrutiny and discretionary refusal for document divergence, administrative rather than criminal outcomes. This jurisdiction is somewhat worse because the refusal lever includes a lifetime fraud-ineligibility path and documented detentions of foreign citizens; slightly better because everyday life in the capital is documented low-risk."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Drellia's universal registration/database exposure resembles the federal document and cable regime here, with harassment and eviction the typical harms. This jurisdiction matches on universal entry exposure but is worse on custody severity (documented sexual abuse, forced labour) and better on local operating protections and court remedies."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, functioning tribunal remedies and mostly brief detention. The capital's local layer resembles that, but the federal regime — passport confiscations, fraud-lever refusals, hostile custody conditions, state threat-framing — is materially worse, pulling below 0.75 despite comparable local tolerance."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's register bars entry to trans visitors routinely with no remedy. This jurisdiction's entry exposure is discretionary and contested in court, and there is no systematic exclusion or ban — clearly above that tier, though the fraud lever and foreign advisories keep it well below 0.65."
+   }
+  ],
+  "synthesis": "The operative regime is federal-dominated at the journey's most dangerous stages. Entry screening carries a universal, documented exposure: officers may refuse on 'reasonable doubt' about sex and can treat misrepresentation as lifetime fraud ineligibility, with passports confiscated and foreign governments issuing advisories after real detentions. If an entry dispute escalates, federal custody shows the dossier's severest documented harms — forced labour, beatings, sexual abuse, denial of hormones. State threat-framing amplifies discovery probability. Offsetting this, the capital itself is a relatively protective local layer: no local bathroom ban, low-risk listing, enjoining courts, hate-crime and anti-discrimination law, and active civil-liberties litigation — but the legislature can and does override local law, and the facilities restriction already attached is of unsourced scope. Net: mid-band Elevated Risk, above hostile-regime anchors, below acceptance-with-working-protections anchors."
+ },
+ "parse_error": null
+}

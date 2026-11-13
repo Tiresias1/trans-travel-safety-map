@@ -1,0 +1,82 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0037074",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "Combined regime: national entry, passport, federal-facility and custody rules create universal document exposure and severe consequences if detained, while the state layer provides operating anti-discrimination and hate-crime remedies for adults. Entry discrepancy can lead to refusal and a possible permanent fraud finding; federal facilities are barred by birth sex; immigration and prison custody have documented abuse and care removal. State protections mitigate street and service risk but do not cancel federal screening, facilities or custody. Minors face state and national care bans. Overall elevated risk, below administrative-friction-only cases and above routine police-detention regimes.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National X-marker and mismatched-marker passports not processed; entry cable directs refusal where documents cast reasonable doubt on sex, and consideration of permanent fraud ineligibility for suspected wilful misrepresentation. Foreign advisories issued.",
+    "protection": "Existing X passports remain valid until expiration; fraud finding requires four elements, is never automatic, and has limited waivers. Passport policy is litigated.",
+    "interaction": "Document discrepancy at entry can escalate to refusal, investigation/fraud allegation, detention and birth-sex custody, regardless of state protections.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports of forced labour, beatings, solitary and severe sexual abuse of trans men; national corrections model from 2026 includes hair cutting, hormone removal and psychiatric substitution, with denials of care reported.",
+    "protection": "Not documented for visitors in these custody pathways; consular or independent safeguards not documented.",
+    "interaction": "State remedies do not govern federal immigration or national prison custody; an entry or facilities encounter can move into this custody regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Executive order bars access to government-funded single-sex facilities congruent with gender identity. State layer documents no such ban and has public-accommodations anti-discrimination law since 2018.",
+    "protection": "State civil-rights coverage of housing, employment, public accommodations and health care; 2026 court found assault on a trans woman violated it.",
+    "interaction": "Federal facilities and national buildings remain under the federal ban even where state public-accommodations law is protective; operative exposure depends on facility ownership.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National order calls minor gender-affirming care chemical and surgical mutilation; proposed rules would bar public insurance under 18. Airport screening can out trans travellers and involve invasive secondary screening.",
+    "protection": "State law extended anti-discrimination protection to health care from 2020; interaction with visitor care access not documented.",
+    "interaction": "Adult care continuity may be obstructed by document or federal-facility rules; minor care is separately banned as below.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National poll found 66% support assigned-sex documents; counterterrorism strategy prioritizes groups described as radically pro-transgender, and guidance uses radical gender ideology among extremist viewpoints, though not as a reward criterion.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime enhancements since 2019 and panic defence abolished 2024.",
+    "interaction": "Threat framing raises police and screening discretion, but dossier does not document routine visitor arrests for presentation alone.",
+    "status": "uncertain"
+   },
+   "minors_guardians": {
+    "exposure": "State bans gender-affirming medicine and surgery for minors, expanded 2025 to puberty blockers, hormones and chest surgery from 2026 with grandfathering and provider discipline; national order directs investigation/prosecution over school social transition.",
+    "protection": "Grandfather clause for treatment under way on 1 Jan 2026; state highest court protected trans students on privacy/autonomy in 2024 and a judge stayed sports ban, outcome not recorded.",
+    "interaction": "A travelling trans minor cannot obtain banned care in-state and a guardian may face hostile official framing; a cis minor travelling with a trans parent is not documented as targeted.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "2025 census recorded 72 anti-LGBTQ incidents in the state, second-highest raw count, but no per-capita denominator, so rate cannot be inferred. National opinion shows substantial support for birth-sex documents.",
+    "protection": "State poll 88% supported sexual-orientation and gender-identity discrimination protections; 2026 superior-court finding against a man who struck a trans woman shows remedy operating.",
+    "interaction": "State policing and courts are documented as a partial recourse for street assault, unlike federal custody and entry actors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and executive-order challenges are unresolved, several orders enjoined, and the Supreme Court allowed passport restrictions to take effect; operative status on any travel date is uncertain.",
+    "protection": "Civil-liberties suit on passports, state civil-rights enforcement, hate-crime enhancements and documented 2026 relief.",
+    "interaction": "Remedies are fragmented by sovereign and stage: state relief does not restore federal passport status, entry admission or federal facility access.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "More severe than 0.55-B: that anchor centres on secondary screening and discretionary refusal with appeal and consular notification. Here refusal can be linked to permanent fraud ineligibility, federal facilities are categorically barred, and custody abuse is documented."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Less severe than 0.35-B: no documented routine police confiscation of visitor passports/phones or district exclusion, and state courts did grant relief in 2026. Still below 0.55 because federal custody harms and categorical facility/document exposure are state-implicated."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Clearly below 0.65-A, where brief detention ended in apology, compensation and reliable court-ordered release. Here passport restrictions were allowed by the highest court, federal facility exclusion is categorical, and remedies for custody harms are not documented."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similar to 0.45-D in universal registration/document exposure and weak remedy, but state anti-discrimination law and a documented 2026 remedy move it slightly up, while federal fraud and custody exposures keep it in the 0.40s."
+   }
+  ],
+  "synthesis": "The traveller encounters two interacting sovereigns. The state layer is comparatively protective for adults in housing, employment, public accommodations and assault remedies, reflected in high local support. The national layer governs the journey stages that are hardest to avoid: passport recognition, entry screening with refusal and possible lifetime fraud ineligibility, federal single-sex facilities, and detention where forced labour, beatings, sexual abuse and hormone removal are documented. Those federal exposures are not cancelled by state law. For minors, state and national care bans add a further restriction, mitigated only by grandfathering and unresolved court protection. The result is elevated risk driven by severity after outing, not by general street danger."
+ },
+ "parse_error": null
+}

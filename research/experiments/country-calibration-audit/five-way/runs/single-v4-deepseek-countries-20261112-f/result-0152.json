@@ -1,0 +1,78 @@
+{
+ "cell": 152,
+ "region": "NER",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0041449122",
+ "parsed": {
+  "rating": 0.18,
+  "explanation": "The operative regime is explicitly hostile: Article 390 criminalises 'LGBTQIA+ acts' and changing or attempting to change sex at birth, with 5–10 years' imprisonment, and enforcement since 2026 is a documented campaign with arrests and imprisonments. No visitor-facing border or document evidence is supplied, and no trans-specific violence denominator exists. The decisive exposure is that if a trans visitor is outed, the broad criminal law plus official threat framing can turn discovery into prosecution, with no effective remedy and judges sanctioned for leniency. There is no death penalty or documented custody torture, so it sits above the 0.15 anchors but below tiers with ordinary fines or administrative exclusion.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No source addresses passport markers, visa screening or border document inspection for trans visitors; nothing is inferred from that silence.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Article 390 imposes 5–10 years for 'indecent, unnatural, and LGBTQIA+ acts' and changing/attempting to change sex at birth; Article 392 imposes 10–20 years for organisations. Since 2026 at least 40 arrests and 16 imprisonments are reported; no suspended sentences.",
+    "protection": "No effective remedy documented; judges who acquitted in earlier same-sex cases were reassigned or allegedly sanctioned.",
+    "interaction": "If outing triggers investigation, broad wording and campaign enforcement can lead to prosecution and imprisonment; no trans-specific custody protocol is documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No trans-specific bathroom, ward, facility or custody-placement rule is sourced; state facilities operate under the hostile criminal law but no visitor-facing practice is documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Article 390 places transition-related medical steps inside the criminal law. HIV prevention groups stopped work after 2026, cutting condoms, testing and PrEP. No broad anti-discrimination protection exists.",
+    "protection": "Not documented.",
+    "interaction": "Seeking hormones, PrEP or emergency care may reveal trans status and invite criminal exposure; no documented care protection for visitors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The justice minister says all LGBTQ practices contravene social and cultural values; 'social contagion' discourse is recorded. The law frames LGBTQ and transition as criminal, and judges were punished for leniency.",
+    "protection": "Not documented.",
+    "interaction": "Official threat framing increases the likelihood that discovery is treated as a crime rather than a private matter.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No minor-specific evidence is supplied; the age of consent under the 2026 code is not stated; the transition ban could apply to a minor if outed.",
+    "protection": "Not documented.",
+    "interaction": "A trans minor travelling with a guardian has no documented protection; criminal law and family/community stigma may compound risk, but specifics are unknown.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "LGBTQ asylum protesters faced refusal of service, verbal and physical violence, and no refugee recognition. Stigma and underreporting are documented; no trans-specific violence figure with a denominator is given.",
+    "protection": "Not documented.",
+    "interaction": "Police and state response is hostile or absent, so violence against outed LGBTQ people is unlikely to be remedied.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No broad sexual orientation or gender identity anti-discrimination law; judges were sanctioned for acquittals; no remedy is documented for criminal exposure.",
+    "protection": "Article 95 bars processing sexual orientation data, but no trans visitor protection is documented.",
+    "interaction": "Recourse is illusory against a state campaign; unknowns include border document handling, trans-specific violence, and the 2026 age of consent.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Similar explicit criminalisation and active enforcement, but this dossier lacks that anchor's routine visitor arrests for document mismatch, documented custody beatings, and capital provision. It is therefore slightly above 0.15, not below."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "The 0.25-A anchor centres on raids, fines, extortion and rare imprisonment. Here the statute itself imposes 5–10 years and a national campaign has produced imprisonments, so this jurisdiction is materially below 0.25."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The 0.35-A anchor uses exclusion and return without arrest or criminal charge. This dossier instead criminalises transition and LGBTQ acts with imprisonment, so it is far below 0.35."
+   }
+  ],
+  "synthesis": "National and subnational material describes one combined hostile regime: the 2025 charter ban and 2026 penal code criminalise LGBTQ practices and changing sex at birth, with 5–10 years for acts and harsher terms for organisations. Enforcement is a coordinated campaign with arrests and imprisonments, and judges have faced consequences for acquittals. No border, document, facility or custody evidence specific to trans visitors is supplied, and no trans-specific violence denominator exists. The key interaction is that discovery of trans status, especially through care seeking or official contact, can move a visitor into a criminal system with no functioning remedy; the absence of death-penalty or custody-abuse findings keeps the score above the extreme floor, but only just."
+ },
+ "parse_error": null
+}

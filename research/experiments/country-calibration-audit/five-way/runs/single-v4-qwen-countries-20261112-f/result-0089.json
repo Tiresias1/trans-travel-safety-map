@@ -1,0 +1,78 @@
+{
+ "cell": 89,
+ "region": "GUM",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0048659",
+ "parsed": {
+  "rating": 0.7,
+  "explanation": "Local law and social record indicate relative acceptance: same-sex marriage, employment protections for gender identity/expression, historical tolerance, Pride, and no trans-specific criminalisation. Surgery-based legal gender recognition and the failed reform bill are resident-facing, not direct visitor exposure. The 2025 federal ban on open transgender military service is trans-specific but personnel-facing; its visitor effects are undocumented. Airport screening follows federal rules, but no trans traveller refusal, detention, facility ban, or care denial is documented. Absence of trans-specific violence and policing data is not evidence of safety. Consequences if outed appear mostly social or bureaucratic, with meaningful uncertainty from the federal security layer.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-visitor border friction, visa denial, or marker rejection. Federal airport screening rules are stated but not specified; document mismatch pathways remain unknown.",
+    "protection": "Visitor uses home passport. Local same-sex marriage recognition and tolerant social climate may reduce hostility; no trans-specific entry bar is documented.",
+    "interaction": "Federal airport screening could escalate a document or presentation discrepancy into secondary inspection, but parent-level rules are not documented for civilian visitors.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No trans-specific detention, interrogation, strip-search, birth-sex placement, or custody violence documented for visitors.",
+    "protection": "No criminalisation of trans presentation is documented; the federal military ban applies to service members, not travellers.",
+    "interaction": "Airport or lodging checks could lead to questioning, but no documented chain connects appearance or document mismatch to detention.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, ward, shelter, prison, or military-facility restriction reaching civilian visitors; federal airport screening details are unknown.",
+    "protection": "Local equality and marriage law plus historical tolerance; employment anti-discrimination law is resident-facing but a climate signal.",
+    "interaction": "Federal airport and military facilities operate under parent rules; the DOD ban affects personnel, not visitor facilities.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No documented denial of visitor emergency, routine, or trans-related care; customs seizure or HRT continuity issues are not addressed.",
+    "protection": "Local tolerance and no criminal law; healthcare access for visitors is otherwise undocumented.",
+    "interaction": "Federal military clinics may be affected by DOD policy for personnel, but civilian care rules and practice are not specified.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The 2025 federal executive order frames transgender service members as excluded from open service; no local trans-specific policing or visitor targeting is documented.",
+    "protection": "Local employment law protects gender identity/expression, courts affirmed same-sex marriage, and the social record shows tolerance and Pride.",
+    "interaction": "Parent-level hostility may influence federal institutions and airport conduct, but does not map onto local street or care enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented rules for trans minors, guardians, school enrolment, housing, medical consent, or family outing while visiting.",
+    "protection": "Marriage recognition and employment law suggest a non-hostile family climate; no minor-specific trans restriction is documented.",
+    "interaction": "A travelling parent and minor could still meet unknown airport or health-care checks under federal/local layering.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific hate violence, extortion, raids, or police misconduct toward visitors is documented; the source inventory is explicitly thin here.",
+    "protection": "General reports of little societal discrimination, a visible LGBTQ scene, and tourism marketing support a tolerant street climate.",
+    "interaction": "Police response and hate-crime enforcement for trans visitors are not documented; the local/federal split remains unclear.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unknown whether visitor complaints involving federal airport screening, hotels, or care are remedied; no case examples are provided.",
+    "protection": "Local courts struck the marriage ban; employment law exists; Pride and civil-society visibility hint at some recourse.",
+    "interaction": "Federal screening and military rules may route disputes to parent-level remedies, while local machinery does not cover all visitor contexts.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "Vesperia documents routine, protected care for trans visitors with complaint machinery; this dossier has local tolerance but no visitor care or screening protections, and the 2025 federal military ban adds institutional uncertainty, placing it slightly below 0.75-A."
+   },
+   {
+    "anchor_id": "0.85-B",
+    "comparison": "Norathia explicitly recognises trans passports, trains border officers, and provides tribunal remedies for detention. Here airport screening follows federal rules, but marker recognition, refusal rates, and remedies are undocumented, so this sits below 0.85-B."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "Tambera has documented care refusal but an effective ombudsperson remedy. This dossier has no documented care refusal or remedy, only general acceptance and legal equality; unknown visitor-facing care keeps it modestly above 0.65-B but below 0.75."
+   }
+  ],
+  "synthesis": "The combined operative regime is a tolerant local legal and social environment overlaid by an untested federal security layer. Local equality, marriage recognition, employment protection, visible LGBTQ culture, and absence of trans-specific criminalisation imply that an outed visitor would likely face social or bureaucratic friction rather than severe punishment. The surgery requirement and failed reform are resident-facing, not direct exposure. The federal executive order is the clearest hostile documented signal, but it targets service members; its spillover into visitor screening, care, facilities, or policing is unknown. Because trans-specific visitor data are thin, that uncertainty prevents a high score. Net: reduced risk with material federal/local ambiguity."
+ },
+ "parse_error": null
+}

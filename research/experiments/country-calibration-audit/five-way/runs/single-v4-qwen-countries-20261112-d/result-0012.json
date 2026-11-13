@@ -1,0 +1,82 @@
+{
+ "cell": 12,
+ "region": "AUS",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00561105",
+ "parsed": {
+  "rating": 0.68,
+  "explanation": "Adult alone faces Reduced Risk: no criminalisation of trans life, federal protection of gender identity, a 2024 damages ruling recognising trans women as women, and 2025 hate-crime penalties make post-discovery severity moderate-low. Exposure arises from marker/document mismatch, organised anti-trans campaigns, facilities/records disputes and uneven state coverage. Functioning courts mediate social hostility, but current border/marker rules and custody practice outside one state are unknown. Trans minors and guardians face lower safety because one state restricted new under-18 prescriptions, though existing patients are exempt and the directive was judicially challenged. Integrated rating weights adult safety but reflects the age-dependent care exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific entry refusal documented. 2003 brief records sex-marker friction on passports, licences and certificates; current border/marker rules unknown, leaving mismatch risk at ID checks.",
+    "protection": "Home passport controls entry; no criminalisation; federal sex-discrimination law supports service and document complaints.",
+    "interaction": "A document-presentation mismatch could surface at immigration, hotel check-in, banking or emergency services.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Custody placement documented only for one state; staff discretion and a surgery exception create gaps; other jurisdictions’ practice is not documented.",
+    "protection": "2022 detention standards in one state direct admission to lived/experienced-gender facilities; no trans-specific crime.",
+    "interaction": "Detention would expose a traveller to jurisdiction-dependent placement and frontline discretion.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "Organised exclusionary campaigns and documented disputes over facilities and records; state/territory gender-identity coverage is uneven.",
+    "protection": "Federal sex-discrimination protection; 2024 court damages; national hate-crime law.",
+    "interaction": "Local gaps may encourage denial, but federal remedy likely limits severity.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Adult HRT continuity undocumented; one state restricts new under-18 blocker/hormone prescriptions; surgery cost/waiting gaps.",
+    "protection": "National health scheme covers many surgeries; child framework permits agreed treatment; no documented adult refusal.",
+    "interaction": "Restrictions are age-dependent, mainly affecting minors and guardians.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Rights-rollback pressure and targeted activism frame trans people as contested; no hate-crime prosecution data.",
+    "protection": "Hate-crime penalties up to seven years; damages awarded; apprehended-violence order against an activist.",
+    "interaction": "State/local hostility can escalate encounters; courts have intervened.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor in the restricted state may be denied new blockers/hormones; care-seeking can out the child or guardian.",
+    "protection": "Existing patients exempt; court ruled directive unlawful; challenge filed; national framework permits treatment.",
+    "interaction": "Guardian travel through that state is the main age-dependent exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "2003 research and 2024 order show harassment/assault risk; current frequency and police response data unknown.",
+    "protection": "Hate-crime law, anti-discrimination, pride-city culture; no documented state targeting of trans visitors.",
+    "interaction": "Local campaigns could worsen street incidents where state protections are weaker.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Missing prosecution data, unresolved state reforms, unknown current marker rules and custody practice in other jurisdictions.",
+    "protection": "Court damages, active legal challenge, detention standards and federal complaints indicate functioning remedies.",
+    "interaction": "Known relief lowers severity; gaps sustain uncertainty rather than safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Below 0.85-A: national protections and remedies exist, but visitor passport/marker acceptance, uniform facilities, and border protocols are not documented; organised campaigns raise visible risk."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "Near 0.75-A: adult care and anti-discrimination are protective, yet youth-care restrictions and uneven state coverage keep it slightly below this anchor."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "At/above 0.65-E: no routine invasive border medical questioning is documented and remedies work; subnational facility disputes and minor-care limits add exposure but do not reach detention-heavy risk."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Far above 0.55-B: no registration/checkpoint system is documented and national law/courts provide remedies, though marker friction remains unresolved."
+   }
+  ],
+  "synthesis": "The combined regime is a protective national layer with contested state pockets. Federal anti-discrimination and hate-crime law, recent civil damages, and at least one detention standard for lived-gender placement reduce the consequences of outing for adult travellers. State campaigns, uneven vilification coverage, historic document friction and missing prosecution data keep exposure above a clear low-risk setting. A minor traveller’s care pathway is the sharpest age-dependent interaction: one jurisdiction’s prescription restriction can force disclosure and delay treatment, but exemption and court challenge limit severity."
+ },
+ "parse_error": null
+}

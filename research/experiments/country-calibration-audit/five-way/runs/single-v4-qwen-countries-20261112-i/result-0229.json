@@ -1,0 +1,78 @@
+{
+ "cell": 229,
+ "region": "XKX",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00573966",
+ "parsed": {
+  "rating": 0.7,
+  "explanation": "The combined regime offers constitutional equality, gender-identity anti-discrimination law, hate-crime aggravation, no trans-specific criminalisation, and visible Pride held without incident. That lowers severity if an adult traveller is outed: arrest or lethal state punishment is not documented. However, traveller-facing border, detention, facility, care and minor rules are absent from the dossier, and rights implementation is inconsistent amid political hate speech, Pride threats, and underreporting. Absence is not safety, but these are open questions rather than known universal exposures. For a travelling family, social hostility and unclear service or health access add uncertainty. Deriving from reduced-risk anchors, documented positives and lack of documented targeting keep it reduced-risk, while unknowns and hostility pull it to 0.70.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented entry screening, passport-marker checks, or visa denial targeting trans travellers; how foreign mismatched markers are treated is unresolved.",
+    "protection": "No criminalisation of gender expression; constitutional equality and gender-identity anti-discrimination law create favourable climate, but no visitor-specific border protocol is documented.",
+    "interaction": "If a passport mismatch triggers officer discretion, open questions could become friction; no known universal-exposure border rule is documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No documented police stops, investigation, immigration detention, custody placement, strip-search or forced verification for trans visitors.",
+    "protection": "Hate-crime aggravation for gender identity and a prosecuted official calling for LGBTQ killings suggest some state response, though not travel-specific.",
+    "interaction": "Emergency or fraud suspicion could draw a visitor into custody; placement and document-verification rules are unknown, so severity is uncertain.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom codes, facility bans, checkpoint rules, or visitor service-denial targeting trans presentation; Pride ran without incident under threats.",
+    "protection": "Anti-discrimination law covers goods, services, education and housing including gender identity; but implementation is reported inconsistent and no facility enforcement is documented.",
+    "interaction": "Local gatekeepers or staff could make facility use contingent on documents/appearance, creating outing; no operative restriction recorded, but no operative protection either.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "No documented refusal of hormone care, emergency ward placement, insurance issue, or clinic denial for short-term visitors; visitor eligibility is unresolved.",
+    "protection": "National PrEP clinic, LGBTQI+ sexual-health and legal services, and ministry cooperation for hormone procedures indicate some supportive infrastructure.",
+    "interaction": "Health emergency or continuity need may force document/appearance exposure; without visitor care protocol, outcome uncertain, but no documented care exclusion.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented political hate speech, intolerance reports, stalled unions, Pride threats/anonymous warnings and one artist death threat create social threat framing.",
+    "protection": "No trans-specific criminal offence; gender identity is protected against discrimination and hate-crime aggravation; police opened a case against an official inciting death.",
+    "interaction": "Rhetoric may embolden service refusals or street friction while law gives possible recourse; inconsistent implementation means protection is not reliably felt.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No documented child-facility, school, guardianship, or family-visitation restrictions for trans minors; hostile social attitudes and underreporting leave possible friction unresolved.",
+    "protection": "Anti-discrimination law nominally covers education and services for gender identity; no age-specific visitor protection or enforcement outcome is documented.",
+    "interaction": "A guardian seeking school, health or lodging for a minor may encounter document/appearance checks and social reactions; no known child-specific exposure.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence or killing rate with denominator; 2015 LGBTQ-wide survey and dated 2019 bias counts are not current trans prevalence.",
+    "protection": "Hate-crime penalties, police case against incitement, and capital Pride held without incident suggest some protection; quality for foreign visitors unknown.",
+    "interaction": "If outed, street reaction may be harassment rather than attack; police response depends on local enforcement and reporting, which residents often avoid.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Visitor remedy routes are undocumented: border complaints, detention review, facility or health claims, and minor protections have no known successful application.",
+    "protection": "Formal complaint channels, hate-crime law, constitutional equality, court rulings for residents, NGO legal aid and psychological support exist in principle.",
+    "interaction": "For a short stay, delay, language, retaliation and inconsistent implementation may make remedies unreliable; open questions dominate, not proven recourse.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has documented respectful border screening and tribunal remedies; here border treatment is not documented and political hostility is present, so lower despite similar non-criminalisation."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A records a traveller stopped at a transport check, then released with recourse. Our dossier documents no comparable traveller-facing stop, but also no operating remedy; roughly similar, slightly higher for legal posture."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A shows visitor-facing equality enforcement and police training. Here protections are general and implementation inconsistent, with threats/hate speech and unknown visitor remedies, so materially lower."
+   }
+  ],
+  "synthesis": "In practice, a trans adult visitor who is outed would likely encounter a legal system recognising gender identity rather than a criminal penalty, but could meet discriminatory services, bureaucratic friction, or street hostility where implementation is inconsistent. The absence of documented border or custody rules means the risk is uncertain rather than severe; political hostility and underreporting dampen confidence. With a minor, guardianship, schooling, and health-care gaps become more salient, but no child-specific restriction is documented. Thus the score sits near mid-0.7: safer than 0.65 anchors with documented adverse encounters, below 0.85 where visitor-facing protections actually operate."
+ },
+ "parse_error": null
+}

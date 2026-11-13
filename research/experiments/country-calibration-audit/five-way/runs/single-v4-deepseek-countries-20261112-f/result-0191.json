@@ -1,0 +1,78 @@
+{
+ "cell": 191,
+ "region": "SRB",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.003314864",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "The combined regime has no trans-specific criminal offence or documented border/document ban, and anti-discrimination and hate-crime laws cover gender identity. But the operative record shows police accused of assaulting and torturing LGBT people without sanction, repeated unsanctioned attacks on LGBT infrastructure, pride events needing heavy protection, weak hate-crime enforcement, and a hostile social climate with limited care access. For an outed visitor the likely harms are police harassment or assault, street violence, service friction and poor recourse rather than imprisonment or execution. No universal facility, registration or border-screening exposure is documented, so this sits above the 0.35 administrative-exclusion anchors but below the 0.55 border/facility-friction tier; police impunity and weak remedies keep it in Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border or document-mismatch rule documented; no reported entry refusal for trans visitors.",
+    "protection": "Anti-discrimination law covers gender identity; trans identity is not criminalised.",
+    "interaction": "Entry practice is undocumented; no universal screening or marker-disclosure regime is shown.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police investigation opened into alleged assault, torture and sexual harassment of two LGBT people in a capital apartment raid; no sanction reported. Custody search practice flagged by anti-torture body.",
+    "protection": "Anti-torture recommendation that trans women at intake may choose a female officer for searches; hate-crime provision exists.",
+    "interaction": "Police are both potential perpetrator and weak remedy; the custody recommendation is not shown to be enforced.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No visitor-facing bathroom, shelter or facility restriction is documented; custody search concern is noted elsewhere.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "HRT is not state-financed and testosterone shortages are reported; trans-specific surgery is only partially covered. No documented denial of emergency care to visitors.",
+    "protection": "Anti-discrimination law covers services; partial insurance coverage for sex-change surgery.",
+    "interaction": "Care access is uneven and mostly resident-oriented; visitor-specific denial is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Politicians' hate speech documented; state response to protests included activist arrests and smear campaigns; police violence against LGBT people recorded.",
+    "protection": "No law criminalising trans identity; anti-discrimination and hate-crime statutes exist.",
+    "interaction": "Formal protection coexists with hostile political rhetoric and weak enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "No trans-specific visitor or minor rule documented; social attitudes hostile to LGBT parenting and adoption.",
+    "protection": "Not documented.",
+    "interaction": "Resident social climate may affect travelling families, but no border, custody or facility rule for minors is shown.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Intolerance and violence against LGBT people remained significant in 2024; an LGBT centre was attacked repeatedly, over 20 times since 2018, with no proper sanction; pride history includes violence and cancellations.",
+    "protection": "Hate-crime provision exists; heavy police protection was provided at the 2022 pride event.",
+    "interaction": "Police protection appears event-specific; routine attacks and police violence go unpunished.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Police raid investigation outcome is unknown; hate-crime enforcement is weak; repeated attacks on LGBT infrastructure were unsanctioned.",
+    "protection": "Anti-discrimination law, hate-crime provision and complaints mechanisms exist.",
+    "interaction": "Paper remedies are not shown to operate reliably; rule-of-law weaknesses are documented.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra imposes a universal visitor conduct register and entry denial. This dossier documents no equivalent border exclusion or visitor register, so it is materially higher; however police violence and impunity prevent a clean midscore."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel has documented universal secondary screening and discretionary refusal for document divergence. This dossier does not document that border exposure, but has sharper police-violence and impunity signals, plus unsanctioned anti-LGBT attacks; net rating is close, slightly below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has matching-marker entry, trained border officers, brief detention and working remedies. This dossier lacks those documented protections and shows police assault without sanction and weak hate-crime enforcement, so it is clearly lower."
+   }
+  ],
+  "synthesis": "No trans-specific criminalisation or universal border/facility restriction is documented, and anti-discrimination and hate-crime law exists. But the operative regime is marked by police violence against LGBT people without reported sanction, repeated unsanctioned attacks on LGBT infrastructure, pride events requiring heavy protection, hate speech and weak rule of law. For a trans visitor, outing mainly risks police harassment or assault, street hostility and poor recourse; imprisonment or execution is not documented. The legal protections are real but not shown to operate reliably, so the score sits in Elevated Risk rather than Reduced."
+ },
+ "parse_error": null
+}

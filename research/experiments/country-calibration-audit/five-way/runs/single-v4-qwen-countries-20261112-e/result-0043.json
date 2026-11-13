@@ -1,0 +1,78 @@
+{
+ "cell": 43,
+ "region": "COG",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00456908",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "Adult trans visitors face no trans-specific criminal statute or documented border/custody restriction, and adults over 21 are outside Article 331’s ambiguous same-sex exposure. But the operative national regime is hostile to visible gender/sexuality nonconformity: police exploit a same-sex-age provision to extort perceived gay men, state and nonstate actors harass or extort LGBTQI+ people, and there is no gender-identity discrimination or hate-crime remedy. For adult-with-minor travel, age-dependent under-21 same-sex classification and family/community hostility create uncertain added risk, though no visitor-specific incident is documented. General LGBTQ hostility is secondary for trans risk, but absence of trans-specific acceptance and protection prevents a Reduced Risk score.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No documented trans-specific border refusal, marker screening, or secondary inspection. Potential document mismatch friction remains inferred from absence of gender-marker recognition, not recorded against visitors.",
+    "protection": "No criminalization of adult same-sex conduct; air-passenger and cyber data rules protect sexual orientation, but not gender identity.",
+    "interaction": "If passport or hotel checks expose mismatch or transition history, officers or staff could question or deny service; outcome unmeasured.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police use the ambiguous same-sex provision to solicit bribes from men perceived gay; LGBTQI+ extortion and harassment by government actors are documented. No specific trans custody pattern is recorded.",
+    "protection": "Reported extortion and violence are investigated; law enforcement punishes violence where reported.",
+    "interaction": "A visibly gender-nonconforming traveler stopped under suspicion of same-sex conduct could face extortion or humiliating questioning before any lawful custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, transport, shelter, ward, or checkpoint rule targeting trans visitors. Absence of legal gender recognition and binary marriage definition may create bureaucratic mismatch, but no traveler-facing incident is evidenced.",
+    "protection": "No explicit facility ban or trans-specific criminal presentation rule is documented.",
+    "interaction": "Facility placement could follow documents and birth-sex assumptions; because no subnational variation is evidenced, the national framework governs.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "No documented denial of care to trans visitors. Lack of gender-identity protection and sensitive-data coverage means medical or pharmacy encounters could expose transition history without legal remedy.",
+    "protection": "Sexual-orientation data protections exist; criminal law does not target adult consensual conduct; reported violence is investigated.",
+    "interaction": "Emergency care could out a traveler through medication, notes, or document mismatch; frequency and severity are unmeasured.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 331 is ambiguous and treated as a basis for discrimination and bribe extortion against perceived gay men; state and nonstate LGBTQI+ harassment/extortion are documented.",
+    "protection": "No arrests or prosecutions under the provision in 2023; investigations occur when abuse is reported; no explicit anti-trans law.",
+    "interaction": "Sexuality-law hostility is secondary for trans risk, but it creates a policing template that may be applied to visible nonconformity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-21 same-sex acts remain legally ambiguous; family hostility and harassment are documented in the general LGBTQ sphere. No visitor incident involving a trans minor or guardian is recorded.",
+    "protection": "No age-specific trans border, custody, or care restriction is documented; adults above 21 are not covered by Article 331.",
+    "interaction": "A trans minor with an adult guardian could face heightened scrutiny if presentation, documents, or relationships are misread; uncertainty is high.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Psychological and physical harassment, financial extortion, and violence against LGBTQI+ people are documented, including by state actors; capital survey shows high homophobia.",
+    "protection": "Where violence is reported, law enforcement punishes it; police extortion is investigated when reported.",
+    "interaction": "General anti-LGBT hostility may escalate if a traveler is visibly nonconforming, but trans-specific street targeting is not separately measured.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No gender-identity discrimination protection or hate-crime law; Article 331 scope unresolved; no trans-specific incident counts, border friction data, or facility practice evidence.",
+    "protection": "Investigations of reported abuse; no adult same-sex criminalization; some sexual-orientation privacy protections.",
+    "interaction": "Absence of evidence is not safety; traveler-facing recourse is thin, and practice outside the capital is unmeasured.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Anchor 0.45-A involves routine biometric or document-linked exposure and a deceptive-presentation statute reaching many places. This dossier lacks documented universal checkpoints, biometric flags, or presentation offenses, but has hostile attitudes, police extortion of perceived gay men, and no gender-identity remedy, placing it near the lower side rather than clearly safer."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "Anchor 0.55-A has mandatory registration and roadside verification causing delay and occasional holding. The assessed regime does not document trans registration or checkpoint holds, so routine exposure is lower. However, police extortion, anti-LGBT violence, absence of gender-identity protection, and unresolved document mismatch risk reduce its safety below a well-remedied checkpoint regime."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Anchor 0.65-A is a single document mismatch handled briefly, followed by functioning complaint, apology, and compensation, with strong equality law. Here, national equality law is absent for gender identity, police abuse is documented, and social hostility is high, so even without a specific trans visitor incident the operative climate is less protective."
+   }
+  ],
+  "synthesis": "Combined regime: formal law does not criminalize adult same-sex conduct, and no documented trans-specific checkpoint, custody, facility, or care restriction exists. This limits catastrophic legal exposure. Risk arises mainly through secondary sexuality controls: ambiguous under-21 law supplies a pretext for police extortion of perceived gay men, and documented state/nonstate LGBTQ harassment plus hostile capital attitudes create a climate where visibly nonconforming trans adults may be targeted. No gender-identity anti-discrimination or hate-crime remedy makes street friction harder to challenge. For adult-with-minor travel, under-21 classification and family/community hostility add uncertain but potentially sharper exposure. Overall elevated, not high."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 7,
+ "region": "ARE",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00201554",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime presents tier-1/tier-2 exposures: documented, repeated entry refusal, interrogation and deportation of trans visitors at the major gateways (2016, 2022, 2025), including invasive X-ray anatomy checks; a presentation-based criminal offence enforced against visitors with a documented one-year imprisonment of two foreign trans women in 2017, followed by head-shaving, confiscation of hormones and custodial abuse; and a documented prolonged detention of a foreign trans woman (2022–2023). No protective machinery exists: no legal gender recognition, no anti-discrimination law, no civil-society recourse, state censorship of trans content. Same-sex-conduct criminalisation is secondary but reinforces the hostile enforcement environment. The traveller's consequence if outed at entry is deportation; if detained in-country, imprisonment and documented custodial mistreatment. This sits between the 0.15 organised-hostility tier and the 0.25 extortion/short-detention tier, nearer the latter.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented repeated denial of entry to trans visitors at the two main airports (2016, 2022, 2025) on passport-marker/presentation mismatch, including X-ray anatomy verification, nine-hour interrogation, passport confiscation and transit refusal.",
+    "protection": "None documented; no rule on updated markers or how consistent documents are assessed.",
+    "interaction": "Entry refusal resolves as deportation, stranding; screening discretion can escalate into investigation or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: foreign trans woman held since September 2022, unresolved; 2017 visitor convictions with three weeks' custody, head-shaving, hormone confiscation; 2013–14 three-month detention of two foreign trans women; detention mistreatment including beatings and forced rectal exams documented.",
+    "protection": "Sentences converted to deportation in 2017; consulate complaint filed (2023) with no documented relief.",
+    "interaction": "Entry friction can escalate into criminal charge (Article 412(2)/412 predecessors) and custodial detention.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Custody placement of feminine-appearing detainees in a dedicated 'effeminate' cell; guards' abuse documented; no sourced facility rules for visitors.",
+    "protection": "Not documented.",
+    "interaction": "Mixed federal and emirate-level public-morals law; enforcement clustering at gateways but federal regime uniform.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Hormone pills confiscated in custody; sex-reassignment surgery heavily state-restricted; forced hormonal/psychological treatment documented in connection with suspected conduct; no care infrastructure for visitors.",
+    "protection": "Not documented.",
+    "interaction": "Medication confiscation compounds detention severity for visitors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Gender nonconformity criminal (Art. 412(2), formerly Art. 359); enforcement targets presentation in ordinary public places; police campaigns (2011), raids (2005, 2012), deportations of residents (2020); officials publicly hostile; trans content banned by regulator, ISP and retailers.",
+    "protection": "Complaint-basis requirement on Art. 409 limits some prosecutions; no documented cases of same-sex-conduct charges since 2015.",
+    "interaction": "State media/censorship apparatus raises outing probability and social hostility toward visible trans people.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented for travelling minors specifically; guardianship-complainant structure affects women's criminal exposure.",
+    "protection": "Not documented.",
+    "interaction": "A guardian's complaint can trigger prosecution where the relationship structure provides one.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police arrest trans people who report prejudice (2013 nightclub case); raids and campaigns targeting gender-nonconforming people; no hate-crime recourse.",
+    "protection": "None documented; calling police increased risk in the documented case.",
+    "interaction": "Police are an active threat vector, not a protector, for visibly trans visitors.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No LGBT organisation can register or operate; no anti-discrimination law; no legal gender recognition; frequency of entry refusals unquantified; Art. 412(2) post-2017 visitor enforcement unresolved.",
+    "protection": "None documented; the 2017 deportation conversion and 2017 tourist charge-dropping are isolated interventions, not remedies.",
+    "interaction": "Thin recourse means entry screening, detention and prosecution outcomes are officer-discretionary.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Oskara features organised morality sweeps with decoy encounters and torture-charged prosecutions. This dossier documents arrests of visitors for presentation, custodial beatings and forced rectal exams, but organised street-sweep frequency is not shown; entry denial is administrative-deportation rather than prolonged criminal custody. Slightly above 0.15-C."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia's birth-sex prison placement and cross-dressing statute mirror this jurisdiction's presentation offence and custodial placement, but Ostravia lacks documented visitor imprisonment and entry refusals. This dossier's documented visitor convictions, prolonged detention and X-ray entry checks are more severe than 0.25-C's worst features."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Karthovia's pattern is hours-long detentions and fines without imprisonment. This jurisdiction exceeds it: documented one-year sentences of visitors, three-month detentions, custodial abuse and hormone confiscation. Materially below 0.35-B."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Drellia's universal registration/database exposure creates pervasive outing but outcomes are eviction and harassment, not imprisonment. This jurisdiction's documented visitor imprisonment and entry refusal sit below 0.45-D despite Drellia's broader surveillance reach."
+   }
+  ],
+  "synthesis": "The operative regime combines a universal-exposure entry screen at both major gateways (documented denial, interrogation, anatomy verification, deportation), a presentation-based criminal offence with documented convictions of foreign visitors including a one-year sentence, and a custodial environment with documented abuse and medication confiscation. No protective layer exists at any level: no recognition, no anti-discrimination law, no civil society, no working remedy; police themselves have detained trans people who sought help. Same-sex-conduct criminalisation is secondary but signals the enforcement climate. The worst operative feature is between state-tolerated targeting (tier 2) and administrative-universal exclusion (tier 1), with deportation as the common outcome and imprisonment with mistreatment as the documented escalation. Execution is not documented as a credible outcome for visitors; the highest consequence is imprisonment and custodial abuse. This supports a rating near 0.22."
+ },
+ "parse_error": null
+}

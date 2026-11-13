@@ -1,0 +1,78 @@
+{
+ "cell": 197,
+ "region": "SWE",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00293344",
+ "parsed": {
+  "rating": 0.86,
+  "explanation": "The combined regime is broadly protective: gender identity is covered by hate-crime (2018) and hate-speech (2019) law with a functioning national crime dataset, institutions work, and the country ranks at the top of third-party LGBT travel indices. No border, document, custody, or police-targeting exposure against trans visitors is documented. The worst documented traveller-facing item is a national swimming-pool chain's changing-room restriction reaching ordinary public facilities — a real but narrow, contested, private-operator exposure, tier-2/3 at most. Minor-related care restrictions (under-16 blocker/hormone stop at one institution, 2022 cautious guidance) affect a travelling family only if care was sought; prescriptions have risen slightly, and it is guidance, not a statutory ban. Organised political opposition and harassment of advocates sits largely in the resident sphere. No criminalisation; severity if outed is low.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "No LGBTQ entry rules sourced; nothing indicates marker scrutiny or refusal at entry for solo adults or families.",
+    "interaction": "Entry is a national competence; no adverse practice recorded at any border stage.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Not documented.",
+    "protection": "Working courts and hate-crime statute imply recourse; no custody-placement risk recorded.",
+    "interaction": "Rule of law mediates: strong institutions, no documented hostile enforcement.",
+    "status": "not_documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National swimming-pool chain since Oct 2025 bars trans customers from choosing changing rooms — reaches ordinary public facilities, legally contested; scope beyond the chain unknown.",
+    "protection": "Contestation reported; not statute-driven.",
+    "interaction": "Applies to visitors equally; a minor faces the same restriction as an adult.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "One major institution stopped blockers/hormones for under-16s (2021); 2022 authority guidance restricts blockers to exceptional cases — applies if a travelling minor needs care. Visitor care access itself not documented.",
+    "protection": "Guidance not statutory ban; 2026 data show prescriptions rising; depathologisation 2017.",
+    "interaction": "A guardian travelling with a minor on medication may face refills outside trials being refused.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Organised opposition (far-right/Christian-democrat parties, women's umbrella platform framing trans reform as threat); scholarly record of harassment, threats and vilification of advocates.",
+    "protection": "Hate-speech law exists but contested: imam not prosecuted, preacher acquitted on religious-speech grounds.",
+    "interaction": "Mostly resident-sphere; frames climate, not visitor targeting.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "For a travelling 16–17-year-old, domestic LGR requires guardian consent; under-16 clinical access limited to trials; surgery age floors are resident-facing.",
+    "protection": "Care restrictions are guidance-based, not criminalising; nothing documented reaching visiting families at entry or in daily life.",
+    "interaction": "These are resident-pathway rules; visitor exposure is indirect and undocumented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "National hate-crime dataset records offences with police-identified LGBTQI motives; unreported hostility unmeasured. No visitor-specific violence documented.",
+    "protection": "Gender identity in hate-crime law since 2018, hate speech since 2019; police recording practice exists and works.",
+    "interaction": "Recourse is documented and operative, though prosecution of hate speech is uneven.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Changing-room restriction scope beyond one chain unknown; conversion-practices bill status unresolved; hate-speech enforcement uneven (religious-speech acquittals).",
+    "protection": "Counselling centres in three cities; compensation precedent for past wrongs shows institutional accountability.",
+    "interaction": "Open questions are lighter than exposures under the rubric.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Similar tier: statutory hate-crime protection, functioning oversight, occasional facility friction (shelter hesitation vs. pool chain). Anonymised jurisdiction shows no documented officer stops, so slightly better on street-police axis."
+   },
+   {
+    "anchor_id": "0.95-C",
+    "comparison": "Below 0.95-C: that anchor shows strong enforced health protections nationwide; here clinical access has narrowed for minors and a documented facility restriction exists with contested remedies, subtracting materially."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Well above: 0.55-C features ward assignment by documents causing routine denial of care. Here care restriction is institution/guidance-scoped, hate-crime recourse works, and no universal document or ward exposure is documented."
+   }
+  ],
+  "synthesis": "The operative regime combines strong protective law (gender identity in hate-crime and hate-speech statutes since 2018/2019, a working national recording dataset, functioning courts, top-tier third-party travel standing) with two documented narrow exposures: a single national pool chain's changing-room rule reaching ordinary public facilities, and minor-scoped clinical restrictions on blockers/hormones that could affect a travelling family seeking refills. Neither is criminalising, universal-exposure, or state-enforced against visitors; both are contested. Organised political opposition and vilification of advocates are resident-sphere signals that colour but do not target the traveller. Severity if outed is low — humiliation and service friction, not custody — with real recourse. Net: high safety, a step below the 0.95 tier because of the documented facility restriction and narrowed minor care."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 182,
+ "region": "SDN",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00269544",
+ "parsed": {
+  "rating": 0.24,
+  "explanation": "The operative regime criminalises gender presentation itself (Article 152, on its face reaching any visitor whose appearance mismatches documents) plus a sodomy statute carrying up to life imprisonment post-2020. Documented state violence against LGBTQIA+ people — extrajudicial killings and torture — is the worst documented feature: tier-2 state targeting with severity 5, though the sourcing is dated and no arrest statistics exist. No LGR, fatwa-blocked care, thin community infrastructure, no documented relief, and a conflict setting where institutions function poorly. Thin-data extrapolation from criminalisation, state hostility and absent recourse resolves toward the High Risk band, not the middle.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific document/screening data sourced; however, presentation-document mismatch is exactly what pulls a visitor into Article 152's scope at any ID check.",
+    "protection": "Not documented.",
+    "interaction": "A border or police ID check revealing mismatch can convert into a presentation offence.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No trans-specific custody data sourced; sodomy penalties up to life imprisonment; documented torture and extrajudicial killings by authorities against LGBTQIA+ people imply custody abuse is credible. No remedy record.",
+    "protection": "2020 amendment removed death penalty and lashes.",
+    "interaction": "Any arrest escalates within a weak-rule-of-law conflict state.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming healthcare legally constrained; Sunni fatwa framework blocks transition; armed conflict further restricts access. A visitor needing refills faces likely denial.",
+    "protection": "Not documented.",
+    "interaction": "Care access failure can force outing to obtain treatment.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official discrimination on grounds of gender identity documented; vigilante violence against suspected LGBT people; public anti-homosexuality demonstrations; Article 152 directly criminalises presentation. State is perpetrator, not protector.",
+    "protection": "Not documented.",
+    "interaction": "Police involvement compounds rather than mitigates any incident.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented specifically; the criminalisation regime applies regardless of the accompanying minor, whose guardian faces the same Art 152/148 exposure.",
+    "protection": "Not documented.",
+    "interaction": "A guardian's outing could expose both to state and social hostility.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented vigilante violence targeting LGBT people and official violence including extrajudicial killings; no evidence police protect victims. Frequency unquantified.",
+    "protection": "Not documented.",
+    "interaction": "Reporting to police risks further exposure.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented relief, no functioning recourse, no arrest statistics; enforcement of Article 152 against visitors unsourced — an open question that does not neutralise the statute's reach.",
+    "protection": "Decriminalisation steps (2020) are a marginal directional signal only; activists say they fall short.",
+    "interaction": "Thin community infrastructure offers visitors no support network.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar: birth-sex facility assignment and cross-dressing statute, brief sentences, no executions. This dossier is worse on state violence (extrajudicial killings documented vs. none) and a sodomy statute with life imprisonment, so it sits slightly below that anchor."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "0.35-B's worst outcome is fines and brief detention with courts at least nominally functioning. Here the state is documented as killing and torturing LGBT people, and no remedy operates at all — materially harsher, well below this anchor."
+   },
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "0.15-C shows organised morality sweeps with coerced statements and routine custodial violence. This dossier lacks documented sweeps or visitor arrests, and the 2020 reform removed capital penalties — so it sits above that anchor, though state violence keeps it in the same risk region's lower edge."
+   },
+   {
+    "anchor_id": "0.25-D",
+    "comparison": "Comparable blackmail/prosecution patterns, but 0.25-D caps at fines and short terms with some appellate relief. Here penalties reach life imprisonment and killings are documented with impunity — harsher, placing it near or below that anchor."
+   }
+  ],
+  "synthesis": "The combined regime is a national criminalisation state in armed conflict: Article 152 reaches presentation directly, Article 148 carries up to life imprisonment, and the documented institutional record includes state torture and extrajudicial killings of LGBT people with no functioning recourse. The 2020 repeal of the death penalty and lashes lowers the worst-case ceiling, and the dated nature of the killing/torture record (2010 report, pre-repeal) limits current-frequency inference. But with no LGR, fatwa-blocked care, no protections, thin community infrastructure, and hostile state votes internationally, the operative regime offers a visitor nothing protective. Severity after discovery is high; the rating sits at the top of the High Risk band, near the 0.25 anchors but pulled down by state violence."
+ },
+ "parse_error": null
+}

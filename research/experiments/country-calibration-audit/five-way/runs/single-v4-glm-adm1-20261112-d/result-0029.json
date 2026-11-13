@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0008499276",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The combined regime mixes a hostile national layer with a milder state layer. Nationally: passport policy now records birth sex, the 'X' marker is stopped, and a 24 Feb 2025 cable directs officers to refuse visas where documents cast 'reasonable doubt' on sex, with potential lifetime fraud ineligibility — a universal-exposure measure reaching every trans visitor at adjudication. Trans athletes face an entry ban; foreign governments issue advisories. If detained or placed in immigration custody, documented harms (forced labour, sexual abuse, hormone denial in national custody) are severe, and state custody would deny transition care. Official threat-framing ('radically pro-transgender' extremism) elevates climate risk. The state layer is comparatively mild: the 2016 bathroom statute was repealed, no facility-use offence exists, and roughly 30% live under GI-inclusive ordinances — but there is no statewide hate-crime or public-accommodation coverage, minor visitors face a care ban, and a revived bathroom bill is pending. Custody and visa-fraud exposures dominate.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: national passports/records record birth sex; visa cable requires refusal on 'reasonable doubt' about sex and considers permanent fraud bars; trans-athlete entry ban; foreign governments issue travel advisories after detentions of their citizens.",
+    "protection": "X-marker passports issued pre-2025 remain valid; fraud finding requires four elements and is never automatic; court challenges pending.",
+    "interaction": "Document discrepancy can escalate from visa refusal into fraud allegation and detention under the national regime.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: immigration custody includes forced labour, beatings, solitary confinement and severe sexual abuse of trans men; national corrections policies cut hormones and mandate 'conversion' practices; pretrial holding in the arrest case placed a trans woman in a men's ward for 24 hours.",
+    "protection": "Not documented for visitors beyond habeas/consular norms.",
+    "interaction": "Visa questioning or an arrest can flow into custody where abuse is documented and hormones are denied.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State layer: no current statute bars facility use per identity; the 2016 birth-certificate rule was repealed 30 Mar 2017; the trespass offence requires willful entry plus refusal to leave. But a revived bill is pending, and one arrest has occurred under a different state's law.",
+    "protection": "Repeal, exemptions in facility statutes, and local ordinances in the largest city and one county covering ~30% of the population.",
+    "interaction": "Facility policy is unsettled; a 2025 bill could reimpose restrictions within a legislative term.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors travelling with a parent cannot obtain blockers, hormones or surgery in this state (2023 veto-override laws). A visitor held in state custody would be denied transition care by the 2025 funding bar. National custody also denies hormones.",
+    "protection": "No documented adult visitor-facing care restriction within the state for routine clinic access.",
+    "interaction": "Emergency or detention scenarios remove continuity of care; national funding rules tighten further.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented state threat-framing: December 2025 reward memorandum invokes 'radical gender ideology'; May 2026 counterterrorism strategy targets 'radically pro-transgender' groups; DOJ labels state facility-law violations discrimination; public opinion (66–69%) favors birth-sex rules.",
+    "protection": "2020 employment ruling, national hate-crime statute, 22 states with GI non-discrimination — climate signals, not visitor remedies.",
+    "interaction": "Framing raises outing severity across police and administrative encounters.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling minor: care entirely banned (blockers, hormones, surgery); schools must notify parents of name/pronoun requests; sports barred by birth sex; DOJ subpoenas hospitals for minors' records. A guardian risks investigation exposure.",
+    "protection": "Not documented; DOJ guidance says powers will not target mere disagreement — contested.",
+    "interaction": "A minor's transition can trigger school notification and national investigative interest.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State hate-crime statute covers neither gender identity nor sexual orientation; bias violence may not be charged as bias crime. 3.0 killings per 100k trans women (acknowledged undercount); no general-homicide comparison established per dossier instructions.",
+    "protection": "Municipal/county ordinances cover ~30% of population; a national judge extended domestic-violence protection to same-sex couples; 2015 marriage recognition; hospital visitation statute.",
+    "interaction": "Police response depends on the city or county the visitor is in.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved questions: 2025 bathroom bill's text/status; how county offices apply dual-marker birth certificates to licences; enforcement at facilities; whether local law enforcement would intervene after street violence.",
+    "protection": "Active litigation (passport suit), enjoined orders, a legal-aid FAQ — partial, contested recourse.",
+    "interaction": "A visitor's exposure shifts with litigation outcomes and pending legislation.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Comparable tier: Drellia's registration/database exposure parallels this regime's universal document screening with birth-sex recording; here visa-fraud stakes are higher, but the local layer has no facility offence and partial local protections, offsetting slightly. This case is marginally harsher on custody; net similar to Drellia, slightly above on state-layer malleability."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles documents discretionary secondary screening with administrative outcomes only. This regime is materially worse: documented custodial abuse, fraud bars carrying lifetime ineligibility, and state threat-framing — placing it below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia shows trained border officers, functioning tribunals, and brief detention ending in release. Here, entry scrutiny is deliberately engineered against trans visitors, custody harms are severe and documented, and hate-crime recourse is absent at state level — clearly below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime the traveller encounters is dominated by the national layer: birth-sex document recording, a visa cable engineering refusal where 'reasonable doubt' about sex arises, potential lifetime fraud ineligibility, a trans-athlete entry ban, and documented custody abuse with hormone denial — a tier-1-to-2 universal-exposure system with no working remedy, aggravated by state threat-framing that treats pro-trans ideology as extremism. The state layer is the mitigating component: the bathroom statute was repealed, facility use is not criminal, local ordinances cover roughly 30% of the population, and marriage recognition and visitation rights operate. Minors travelling with a guardian face a closed care regime and school-notification exposure, adding risk to family travel. Net: severe consequences if the visitor enters the visa/custody pathway, milder ordinary-state conditions, no near-certain imprisonment — placing the rating around 0.44, in the Elevated Risk band."
+ },
+ "parse_error": null
+}

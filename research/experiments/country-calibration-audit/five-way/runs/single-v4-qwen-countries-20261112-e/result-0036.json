@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "CAN",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00436612",
+ "parsed": {
+  "rating": 0.69,
+  "explanation": "Combined regime: national gender-identity/expression protections, hate-crime law, and documented provincial human-rights recourse. No visitor-facing border, screening, facility, or care restriction is documented; absence is not safety. Adult-alone if outed faces legal remedies and no criminalisation, but border, detention, care, and foreign-document handling remain uncertain. Adult-with-minor is materially less safe where one province requires parental consent for under-16 name/identity and another shields health, education, sport laws from challenge. Broad 2SLGBTQI violence and organised anti-trans activity raise street friction, not severe traveler exposure. Overall Reduced Risk, not high.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific border refusal, secondary screening, device search, marker mismatch, or denial of foreign documents is documented. Absence is not safety; recognition of foreign X or presentation mismatch is unresolved.",
+    "protection": "National human-rights act covers gender identity/expression; hate-crime provisions exist. Resident marker reforms and national X are climate signals, not visitor-facing border protection.",
+    "interaction": "If an encounter arises, provincial/federal rights law and complaint machinery may mitigate, but operative border conduct is not documented.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "No visitor detention/custody practice documented. General custody rules place prisoners by gender identity but reports allege abuse, sexual-assault risk, and litigation over placement/medical care.",
+    "protection": "No trans-specific criminalisation; hate-crime framing may apply; no credible imprisonment/execution threat. Custody safeguards not shown operating for visitors.",
+    "interaction": "If arrest occurs, domestic placement/care gaps could become traveler exposure; otherwise remains not documented.",
+    "status": "uncertain"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented bathroom, transit, spa, or lodging exclusion applying to visitors. Subnational school and sport rules can expose minors: parental consent for preferred name/identity and shielded health/education/sport statutes.",
+    "protection": "Provincial human-rights codes cover gender identity/expression in documented areas; one commission publishes policy/case law; most jurisdictions have anti-bullying laws.",
+    "interaction": "Adult-alone facility risk appears low but uncertain; adult-with-minor school/sport/care interactions trigger documented provincial restrictions in at least two jurisdictions.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No adult visitor care access, hormone continuity, emergency ward placement, or HRT import rules documented. Provincial healthcare rollbacks and shielded minor-care statutes indicate care uncertainty for families.",
+    "protection": "National/provincial equality law and complaint routes exist; no documented service denial aimed at trans visitors.",
+    "interaction": "Care encounters are provincial and may collide with age-restricted or shielded statutes; adult-alone emergency care remains unresolved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Rising organised anti-trans activity and school/health policy backsliding in some provinces create threat framing; survey reports 39% of 2SLGBTQI+ identity violence over five years, mostly verbal.",
+    "protection": "Hate-motivation provisions, police-reported hate-crime enforcement, human-rights recourse, and absence of targeted state detention campaign mitigate official hostility.",
+    "interaction": "Broad survey is not trans-specific; rule of law reduces severity but does not eliminate street friction or subnational policy hostility.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "For a travelling minor, one province requires parental consent before under-16 use of preferred name/identity; another shields health, education, and sport laws from challenge; guardian may face forced disclosure and service denial.",
+    "protection": "Most jurisdictions have anti-bullying laws; human-rights complaints may lie, but override clauses limit challenge to documented provincial statutes.",
+    "interaction": "Adult-alone is mostly exempt; parent/guardian becomes the gatekeeper, increasing outing and bureaucratic exposure during school, sport, or care contacts.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violent campaign against visitors documented. General LGBTQI survey indicates frequent verbal abuse and some physical violence; organised movement may increase harassment or targeting in some settings.",
+    "protection": "Police treat hate-motivated offences under criminal-code enhancement; human-rights commissions offer routes; no credible state-directed sweeps or lethal punishment.",
+    "interaction": "Victim response may be supportive, but not disaggregated data and visitor-specific incident evidence are missing.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Entry, screening, detention, care, foreign-document handling, and trans-specific hate-crime frequency are not documented; absent evidence must not be read as safety.",
+    "protection": "Documented recourse exists in one provincial human-rights commission and federal/provincial equality law; complaints and police enforcement mechanisms are available.",
+    "interaction": "Visitors may lack time, language, or access to pursue remedies; unresolved federal border and subnational care rules dominate uncertainty.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Similar rights protections and complaint outcomes, but this dossier lacks documented immigration questioning for visitors while adding shielded provincial minor restrictions and broad violence data. Score is slightly above or near 0.65 because severe consequences are not documented but entry/care uncertainty remains high."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Lower: no evidence border officers respect mismatched passports, training, or release appeals; adult-alone may approach this level, but minors face documented parental-consent and service statutes."
+   },
+   {
+    "anchor_id": "0.85-B",
+    "comparison": "Materially below: 0.85-B has recognized markers, trained officers, body cameras and reliable review; here visitor entry and care are undocumented and organized anti-trans hostility plus provincial rollbacks are recorded."
+   }
+  ],
+  "synthesis": "Adult alone likely encounters low-severity if outed: no documented criminalisation or targeted border/facility restrictions, and legal protections/complaint routes. But visitor-facing border and care rules are silent, so safety cannot be inferred. The combined regime is pulled down by minors: documented provincial laws require parental consent for under-16 name/identity and shield health/education/sport statutes from challenge, creating forced disclosure, service denial, and reduced recourse. Street hostility and broad LGBTQI violence data add friction but not severe state exposure; prison/health reports are mainly resident-facing and not shown to operate for travellers. The operative worst case is humiliating screening or denial of care/school services, not custody or death; the main residual risk is uncertainty about entry, detention, and foreign documents."
+ },
+ "parse_error": null
+}

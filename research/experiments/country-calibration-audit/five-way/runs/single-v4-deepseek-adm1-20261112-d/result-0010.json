@@ -1,0 +1,78 @@
+{
+ "cell": 10,
+ "region": "66186276B2592965416524:New Mexico",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00998884",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined regime is a protective state embedded in a restrictive national border and custody framework. The state’s anti-discrimination, public-accommodations, no-bathroom-ban, hate-crime, panic-defence, and care-shield provisions make local life safer. But the federal visa/document screening, sex-marker mismatch, possible fraud-based lifetime ineligibility, and documented immigration-custody abuse are not cancelled by state law. A traveller’s principal exposure is at the federal border and in federal detention; once admitted, the state’s protections materially reduce risk. The rating is elevated rather than high because the state is a strong protective layer, but the federal exposure remains documented and operative.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport screening treats sex-marker or appearance discrepancies as grounds for refusal, additional evidence, and possible fraud-based lifetime ineligibility; new national passports do not allow X markers.",
+    "protection": "The state offers X designations on state IDs and broad non-discrimination, but no evidence shows this controls federal border or visa decisions.",
+    "interaction": "State documents do not bind federal border officers; a mismatch can trigger federal secondary screening, refusal, or fraud finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody is documented to include forced labour, beatings, solitary confinement, and sexual abuse against transgender detainees; fraud allegations can extend detention.",
+    "protection": "No visitor-facing federal remedy or custody protection is documented; the state’s shield and non-discrimination do not reach federal immigration detention.",
+    "interaction": "Document discrepancy can lead to federal secondary inspection, detention, and custody abuse, with state protections not applying.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The national executive order bars transgender people from government-funded single-sex facilities congruent with identity; the state has no such ban.",
+    "protection": "The state prohibits discrimination in public accommodations and requires gender-neutral single-occupancy restrooms; it has no mapped bathroom ban.",
+    "interaction": "State and private facilities are protected, but federal facilities remain subject to the national order.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders target gender-affirming care for minors, propose insurance exclusions, and create investigative pressure; the state has a shield law and 2023 care protection.",
+    "protection": "The state protects gender-affirming care, including for interstate travellers, and maintained Medicaid coverage through national funds; no surgery requirement for legal change.",
+    "interaction": "The state shield protects care that is legal locally, but federal border and immigration custody can still expose a traveller.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy and justice guidance name “radically pro-transgender” ideology as a priority; schools may be investigated for facilitating minor social transition.",
+    "protection": "The state has gender-identity hate-crime coverage, non-discrimination law, and a panic-defence repeal.",
+    "interaction": "National threat framing may affect federal enforcement, while state protections reduce local police and accommodation risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders treat gender-affirming care for minors as harmful and direct investigation of schools and teachers; national health rules may bar public insurance for minors.",
+    "protection": "The state’s care shield and 2023 statute protect gender-affirming care, but whether “on request” applies to non-resident minors is not specified.",
+    "interaction": "A parent travelling with a minor may find state care protection, but federal orders and border scrutiny remain unresolved.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "National public opinion shows majority support for birth-sex document rules and sports restrictions; no state-specific trans violence data are documented.",
+    "protection": "The state’s hate-crime law covers gender identity, public accommodations are protected, and non-discrimination law covers gender identity.",
+    "interaction": "State protections and enforcement make local street response more protective, but the absence of trans-specific violence data is a gap.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport, visa, and health rules remain contested; the interaction between state X designations and national document rules is unresolved.",
+    "protection": "State courts, non-discrimination enforcement, and the care shield provide real remedies within the state, but border and custody remedies are not documented.",
+    "interaction": "State remedies may not reach federal border or immigration custody; the traveller’s protection depends on the stage of the journey.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra’s border exclusion and humiliation are similar in kind, but this dossier adds documented federal immigration-custody abuse and possible fraud-based lifetime ineligibility, while the state’s protective laws offset local risk. The net is above 0.35, but not as low as 0.15 because the border is not a general execution pathway."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles’ extended secondary screening, discretionary refusal, and administrative rather than criminal consequences closely match the federal border exposure. This dossier adds a stronger protective state layer, but also documented immigration-custody harm, so it is near 0.55 rather than clearly above."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia documents border training, tribunal appeals, and low-to-moderate detention. This dossier lacks reliable border remedies for visitors and has federal custody harm, so it sits below 0.75 despite the state’s protective local regime."
+   }
+  ],
+  "synthesis": "The state is a genuinely protective local environment: anti-discrimination, public-accommodations coverage, no bathroom ban, gender-neutral single-occupancy restrooms, care shields, hate-crime coverage, and panic-defence repeal. Those protections reduce everyday risk once a traveller is admitted. The federal layer is not neutralised by state law: visa and passport screening, sex-marker discrepancy, possible fraud findings, and documented immigration-custody abuse create a serious border-stage exposure. The final rating is therefore elevated, not reduced: strong local protections, but a restrictive federal border and custody regime that a traveller cannot avoid."
+ },
+ "parse_error": null
+}

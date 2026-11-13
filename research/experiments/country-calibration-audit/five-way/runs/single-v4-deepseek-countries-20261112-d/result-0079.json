@@ -1,0 +1,82 @@
+{
+ "cell": 79,
+ "region": "GIN",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.001529065",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "The operative regime combines a same-sex conduct statute used against appearance, police stops and extortion, a moral-police investigative unit, and documented placement of arrested trans women in male prisons with sexual violence. No trans-specific border screening is documented, but once a visibly trans visitor attracts police attention, detention and custody abuse are realistic. Society is documented as hostile and reporting is suppressed. No death penalty for gender presentation is documented, so this sits above the execution-tier anchors but below jurisdictions with only extortion or short administrative holds.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No trans-specific entry screening, visa rule, or border document practice is documented. PNR rules restrict some data use but do not address trans travelers.",
+    "protection": "Aeronautical regulations bar use of PNR data revealing sexual orientation, but the dossier gives no operative entry protection for trans visitors.",
+    "interaction": "Unknown whether border officers would question appearance or documents; the dossier does not document this stage.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Police arrest on clothing and appearance; Article 274 supports extortion and detention beyond the 48-hour limit. Trans women are arrested on protective pretexts and held in male prisons where sexual violence is common.",
+    "protection": "A 48-hour legal limit exists but is documented as routinely exceeded; no effective custody protection for trans detainees is shown.",
+    "interaction": "Appearance-based stops can escalate into extortion, arrest, and male-prison placement, with release often dependent on payment.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Trans women arrested under protective pretexts are placed in male prisons; LGBTQ people in custody are frequently abused.",
+    "protection": "No documented facility protocol or placement protection for trans detainees.",
+    "interaction": "National enforcement and prison placement combine to expose detained trans visitors to sexual violence.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No law protects LGBTQ people from discrimination in health services; discrimination is documented in healthcare, housing, education, and employment.",
+    "protection": "HIV laws list sexual minorities as vulnerable, but no enforceable anti-discrimination protection in care is documented.",
+    "interaction": "A trans visitor seeking care could face refusal or exposure without a working remedy.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Article 274 criminalises same-sex conduct and is enforced through appearance-based arrests. A moral-police unit investigates same-sex conduct, and officials have framed LGBTQ people as disruptive or imperialist.",
+    "protection": "No documented legal protection or official restraint against this enforcement.",
+    "interaction": "Law and enforcement treat gender nonconformity as a policing target, increasing discovery risk and severity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Resident LGBTQ youth face family-arranged heterosexual marriage and conversion pressure. No visitor-specific minor exposure is documented.",
+    "protection": "No documented protection for minors travelling with a trans guardian or for trans minors.",
+    "interaction": "Uncertain whether a travelling family would encounter official or familial scrutiny; the dossier does not document a visitor case.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "A hostile, sometimes lethal environment is documented, with threats of violence and widespread stigmatisation that hinders reporting. Police harassment and extortion are documented.",
+    "protection": "No effective police protection or hate-crime recourse for LGBTQ people is documented.",
+    "interaction": "Police are both a source of extortion and the body to whom violence would be reported, leaving no reliable recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Detention beyond the legal limit, extortion, and custody abuse are documented; complaints are hindered by stigma and fear.",
+    "protection": "Formal limits exist but are not enforced; no working remedy for trans visitors is shown.",
+    "interaction": "Remedies are paper-only in practice, so the documented exposures remain unremedied.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A has explicit presentation criminalisation, routine arrests, custody beatings, and a capital provision. This dossier documents appearance-based arrest, imprisonment, and male-prison sexual violence, but no capital application for gender presentation, so it is less severe."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B has appearance-based extortion, overnight cells, and short jail terms. This dossier documents longer imprisonment and trans women placed in male prisons with sexual violence, making it somewhat worse."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is exclusion and humiliation at the border without arrest or imprisonment. This dossier documents police arrest, custody, and sexual violence, so it is materially worse."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves administrative secondary screening and refused admission, not criminal custody. This dossier's documented arrest and prison-abuse pathway places it far below that anchor."
+   }
+  ],
+  "synthesis": "The decisive feature is not the same-sex statute alone but its documented use against appearance: police stop and extort gender-nonconforming people, a moral-police unit investigates same-sex conduct, and arrested trans women are placed in male prisons where sexual violence is common. No trans-specific border practice is documented, so entry-stage risk is uncertain rather than proven. But once a visibly trans visitor is stopped, the state is the perpetrator or an indifferent custodian, and remedies are not shown to work. This is severe, short of the execution-tier anchors."
+ },
+ "parse_error": null
+}

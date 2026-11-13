@@ -1,0 +1,82 @@
+{
+ "cell": 179,
+ "region": "RUS",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004314267",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The dossier documents no explicit visitor ban on trans identity and no border practice, but the operative regime is a state campaign: the LGBT movement is designated extremist, with 101 convictions, 180 propaganda cases in 2023, bar raids with mass searches and photographs, and a death in pretrial detention after an LGBT-related charge. Trans identity is bound up with the targeted group; there is no anti-discrimination, hate-crime recording, or aggravating-factor protection, and public attitudes are hostile. If outed, a visitor faces real police detention, extremism/propaganda investigation, and severe custody risk; remedies are absent. A trans minor with a guardian is additionally exposed to the propaganda framing around minors. This is below the 0.35 administrative-exclusion anchors and above the 0.15 direct-criminalisation anchors, but closer to the latter.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "No legal gender recognition; 2023 law bans gender-marker change and surgery. Treatment of foreign passports with changed markers is expressly undocumented, so no documented border screening but also no alignment route.",
+    "protection": "Not documented.",
+    "interaction": "A foreign marker could be queried or mismatched; whether that triggers secondary inspection or refusal is unknown, and there is no local reconciliation mechanism.",
+    "status": "uncertain"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Supreme court designated the 'international LGBT movement' extremist; 101 extremism convictions by June 2025; arrests for rainbow symbols; masked police raided bars, searched and photographed about 100 patrons; one man charged over an LGBT travel agency died in pretrial detention.",
+    "protection": "No anti-discrimination, hate-crime, or custody protection documented.",
+    "interaction": "A trans visitor identified at a venue or through expression can be detained and investigated under extremism or propaganda law; detention carries lethal risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No documented trans custody or facility protocol; pretrial detention death after an LGBT-related charge; no hate-crime recording; no anti-discrimination.",
+    "protection": "Not documented.",
+    "interaction": "If arrested, the visitor enters a hostile custody system with no documented safeguard, medical or placement protection.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "2023 law bans gender reassignment and marker changes; a trans woman was held in a conversion centre for nine months. No visitor care protection documented.",
+    "protection": "Not documented.",
+    "interaction": "A visitor needing hormones or emergency care faces exposure and no local trans-affirming recourse; care may be denied or coercive.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Propaganda laws reach all ages, bar material promoting 'non-traditional' relationships and material giving minors a desire to change sex; more than 180 cases in 2023, with fines; state frames LGBT expression as extremism.",
+    "protection": "Not documented.",
+    "interaction": "Trans expression or speech can be treated as banned propaganda or movement participation; police are enforcement actors, not protectors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Propaganda statute explicitly covers material giving minors a desire to change sex; no documented protection for a trans minor traveller or guardian.",
+    "protection": "Not documented.",
+    "interaction": "A trans minor with a guardian could face official suspicion or propaganda framing; no documented border rule, so exact risk is uncertain.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "2022 survey found 74% said homosexuality should not be accepted; no hate-crime recording; no aggravating factor; police raid LGBT venues.",
+    "protection": "Not documented.",
+    "interaction": "Police are documented enforcers against LGBT venues, so reporting anti-trans violence is unlikely to yield protection; social hostility raises severity.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No anti-discrimination, no partner recognition, no effective remedy; regional court exit; asylum and emigration framed as escape.",
+    "protection": "Not documented.",
+    "interaction": "If outed, the visitor cannot rely on local complaint or protection; the only documented remedy is leaving.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's administrative visitor register bars entry and imposes exclusion and humiliation, but no criminal extremism charge or lethal custody. This dossier adds documented criminal enforcement and a custody death, so it is less safe."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles allows secondary screening and refused admission but keeps penalties administrative and provides appeal and consular process. This dossier has extremism convictions, raids, no remedy, and lethal detention risk, so it is lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia uses trained border officers, brief detention, tribunal review, and compensation. This dossier has no independent remedy, no anti-discrimination, and punitive enforcement, so it is far lower."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia directly criminalises deceptive gender presentation, with routine arrests and abusive pretrial custody. This dossier lacks a documented presentation statute or routine border arrests, but its extremism and propaganda campaign and custody death make it only somewhat safer."
+   }
+  ],
+  "synthesis": "National law and enforcement operate as one regime: extremism and propaganda statutes reach expression and venues, and police conduct raids rather than protect. Border handling of foreign documents is the key unknown; it is not documented, but it is also not a safeguard. If outed, the visitor's realistic exposure is police detention, extremism or propaganda investigation, and custody risk, with no anti-discrimination or hate-crime recourse. Subnational evidence is capital-centred with no measured regional variation. A trans minor accompanied by a guardian faces the same national regime plus the propaganda law's minor-specific framing. Overall this is worse than administrative-exclusion anchors and better than direct presentation-criminalisation anchors."
+ },
+ "parse_error": null
+}

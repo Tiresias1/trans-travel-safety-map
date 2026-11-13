@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00258825",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime: the parent's national framework imposes universal-exposure measures — passport markers restricted to birth sex, X-marker passports suspended, entry adjudication refusals for document discrepancies, and officers instructed to treat suspected misrepresentation as potential fraud — plus documented facility bans in many states and a documented restroom arrest. The state adds its own hostile layer on top: a bathroom ban extended to schools and universities (2026), a criminal trespass statute applied to a trans woman (arrested, handcuffed, held 24 hours in a men's ward), a freeze-frame prison treatment policy, no hate-crime statute, and an unrepealed sodomy provision. Rule of law partially mitigates: national courts blocked the law against one student, and municipal employment protections exist. But the state's documented hostile layer means it cannot sit at or above the parent's average; it sits in the 0.45 tier: universal-exposure facility/document restrictions with partial, uneven recourse, no credible imprisonment/execution pathway for the visitor, but real criminal exposure and custody friction.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport regime restricts markers to birth sex; X markers suspended; entry officers instructed to refuse cases with document discrepancies and to consider fraud-based lifetime ineligibility for suspected misrepresentation. Trans visitors report passports confiscated/blocked at processing.",
+    "protection": "Not documented.",
+    "interaction": "State-level bathroom rules interact with documents: a visitor whose passport bears birth sex faces the facility ban on entry to any covered facility; the state's own rules do not override national document checks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented arrest under the state's trespass statute: a trans woman held 24 hours in a men's ward before release. State operates a freeze-frame prison treatment policy restricting transgender inmates' care (documented harm to residents; custody exposure if a visitor is detained).",
+    "protection": "Pretrial release was granted; the national courts have blocked enforcement against at least one student pending litigation.",
+    "interaction": "State criminal enforcement interacts with national immigration custody rules; the freeze-frame policy is a resident-facing custody rule, not a visitor-facing one.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State bathroom ban extended to public schools, colleges and universities (May 2026); criminal trespass statute applies to willful use of opposite-sex facilities at public buildings with refusal to depart. Parent's national framework bars government-funded single-sex facilities congruent with identity.",
+    "protection": "The trespass statute requires willful entry plus refusal to depart when asked; not automatic arrest on entry. A national appellate order blocked enforcement against one student.",
+    "interaction": "State ban operates within the parent's broader facility-restriction regime; both apply to the traveller.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Not documented for visitors in this state.",
+    "protection": "Not documented.",
+    "interaction": "Parent's national freeze-frame prison policy and proposed national health rules for minors are resident-facing; the state's freeze-frame policy is a resident custody rule, not a visitor-facing service restriction.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State's criminal trespass statute is a documented enforcement lever against trans visitors; the state lacks a hate-crime statute and retains an unrepealed sodomy provision (dead letter, secondary signal). Parent's national framework treats gender-affirming care for minors as 'mutilation' and directs law enforcement to investigate schools facilitating social transition.",
+    "protection": "Not documented.",
+    "interaction": "National enforcement posture interacts with state-level criminal exposure for visitors; state sodomy law is a latent, not enforced, factor.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The state's bathroom ban explicitly covers public schools, colleges and universities — a trans minor travelling with a parent faces the same facility restriction; the parent's executive order criminalises teachers facilitating a trans minor's social transition and bans gender-affirming care for minors in 27 state/provinces.",
+    "protection": "Not documented.",
+    "interaction": "Parent and state rules interact to restrict a minor's facilities access and school-related care.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for visitors in this state specifically.",
+    "protection": "Municipal employment protections cover gender identity in several municipalities; national hate-crime statute covers gender identity though the state lacks its own.",
+    "interaction": "National police enforcement posture interacts with local crime reporting; the state's lack of hate-crime statute limits recourse.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "State enforcement of the bathroom law remains contested in court; the state has no hate-crime statute and an unrepealed sodomy provision; state tier assessment places it among escalating jurisdictions.",
+    "protection": "National courts blocked enforcement against one student; municipal employment protections exist; parent's national hate-crime statute covers gender identity.",
+    "interaction": "Parent's national litigation and state-level court orders interact to produce uneven, partial recourse.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Similar: universal-exposure document/identity friction, routine exposure at checkpoints, documented detention, humiliation, denial of care, with partial recourse. This state adds a documented criminal trespass statute and a documented arrest, but the parent's national courts partially block enforcement. Similar tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than this anchor: the parent's national framework imposes universal-exposure measures (passport markers, entry screening refusals, fraud-based lifetime ineligibility) that the anchor's discretionary secondary screening does not match. The state's hostile layer (criminal statute, freeze-frame policy, no hate-crime law) adds further exposure beyond the anchor's administrative-only outcome."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Higher than this anchor: the anchor permits transgender visitors to enter on passports matching presentation with trained border officers and brief detention. Here the parent's national framework restricts passport markers to birth sex, suspends X markers, and instructs officers to treat suspected misrepresentation as potential fraud — a materially harsher document and entry regime than the anchor's."
+   }
+  ],
+  "synthesis": "The combined operative regime layers a hostile national framework (birth-sex passport markers, suspended X markers, entry adjudication refusals, fraud-ineligibility findings, national facility bans in many states) on top of a state that adds its own hostile layer: a 2026 bathroom ban extending to schools and universities, a criminal trespass statute with a documented arrest and 24-hour men's-ward custody, a freeze-frame prison treatment policy, no hate-crime statute, and an unrepealed sodomy provision. The parent's national courts partially block enforcement against one student, and municipal employment protections exist, but the state's documented criminal exposure and custody friction cannot be offset by the parent's partial litigation. This places the state in the 0.45 tier: universal-exposure document and facility restrictions with partial, uneven recourse, no credible imprisonment or execution pathway for the visitor, but real criminal exposure and custody friction."
+ },
+ "parse_error": null
+}

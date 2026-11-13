@@ -1,0 +1,82 @@
+{
+ "cell": 43,
+ "region": "66186276B89395128410123:Arizona",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00726626",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime has national entry/document restrictions: X markers stopped, visas/passports tied to assigned sex; discrepancies can lead refusal and possible permanent fraud finding. Travel advisories and stranded reports show traveler-facing risk. This division has adult-facing local protections (no bathroom ban, vetoes, municipal public-accommodation ordinances), but they do not offset federal screening, government-funded facility limits, or immigration/correctional custody. Documented custody harms include forced labor, beatings, solitary, severe sexual abuse, hormone removal, birth-sex confinement. Minors face care/school restrictions and possible guardian scrutiny. No death penalty/execution documented, so not catastrophic band; still High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport/visa markers tied to assigned sex; X processing stopped. Discrepancy or reasonable doubt can refuse and demand evidence; suspected intentional misrepresentation may trigger permanent lifetime fraud ineligibility. Stranded-passport reports and foreign advisories document risk.",
+    "protection": "Existing X passports remain valid until expiry in cited cases; ACU litigation and legal-aid FAQ exist. No documented operative entry relief for a visitor.",
+    "interaction": "Border or secondary screening can convert document/presentation mismatch into refusal, fraud finding, detention, removal, and custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If detained for entry, documents, or facilities, immigration custody reports forced labor, beatings, solitary, severe sexual abuse. Corrections adopts conversion therapy: hair cut, hormone removal, psychiatric therapy/drugs, denial of care. Birth-sex/men's-ward confinement documented after arrest.",
+    "protection": "National hate-crime statute, some court contests, legal aid. No documented visitor-specific remedy preventing birth-sex placement or abuse.",
+    "interaction": "A passport or facility encounter can move into investigation/custody, where placement and care denial become operative exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts government-funded single-sex facilities; many states have bans and four criminal provisions. Arrest produced 24-hour men's-ward hold. This division is not mapped as banning facilities.",
+    "protection": "No mapped bathroom ban; governor vetoed bills; nine cities have public-accommodation ordinances, though with religious/small-business exemptions.",
+    "interaction": "Local protections reduce everyday exposure in this division but do not override federal/national facility, border, or immigration placement rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor visitors face documented youth-care restrictions; custody removal/denial of hormones documented. Adult visitor emergency-care discrimination not separately documented.",
+    "protection": "State coverage orders and litigation are resident-facing; no documented traveler-facing care continuity or emergency shield.",
+    "interaction": "Medical or care encounters can expose records, trigger refusal/investigation, and escalate if detention follows.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Orders frame gender identity as fraud/ideology; schools investigate; teachers may be prosecuted for minor transition support. Counterterrorism names radical pro-transgender groups; high public support for birth-sex rules.",
+    "protection": "National hate-crime statute, DOJ/state affirmations, some enjoined orders, and statement against targeting disagreement.",
+    "interaction": "Official framing can increase border/facility/police discretion; protections are not shown to change visitor outcomes.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces entry document scrutiny, sports/facility limits, youth-care denial, school-hotline climate; guardians may be questioned or detained if care/documents raise doubts. Adult low-risk label does not protect minors.",
+    "protection": "No documented visitor-family sanctuary, minor-care shield, or operative guardian remedy; local vetoes are not traveler-specific.",
+    "interaction": "Minor care/school needs can create document checks, refusals, investigations, and possible family custody exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Pride cancellation, advisories, polls, and a documented bathroom arrest show social/legal hostility. No specific visitor assault documented in division; absence is not safety.",
+    "protection": "National/state employment and municipal public-accommodation protections; national hate-crime recourse exists if violence is reported.",
+    "interaction": "Street or service confrontation can become document/facility challenge or police custody; police victim-response is undocumented.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement varies by port/facility; device screening may reveal records; short-stay visitors lack prompt relief. Litigation ongoing, restrictions operative. No documented visitor remedy success.",
+    "protection": "ACU suit and legal-aid FAQ. No documented functioning visitor-specific ombuds or tribunal remedy.",
+    "interaction": "Courts and local protections create uncertainty but do not cancel current federal entry, facility, or custody restrictions.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra excludes and humiliates trans visitors but says imprisonment is not credible. Here entry refusal can carry permanent fraud ineligibility, and documented custody includes forced labor, sexual abuse, solitary, and birth-sex confinement, so combined exposure is more severe than 0.35."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia has birth-sex custody and arrest exposure but no death penalty. This division lacks mapped bathroom bans and has municipal protections, yet national entry/fraud restrictions and documented immigration custody abuse keep it close to, slightly above, 0.25."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles allows extended secondary screening and administrative refusal without credible detention. The combined regime can escalate into permanent ineligibility and severe custody abuse, so it rates materially below 0.55."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia routinely arrests visitors, holds them months, beats them, and leaves capital ambiguity. Here there is no documented death-penalty/routine presentation imprisonment and local protections exist, though custody harms are severe; rate above 0.15."
+   }
+  ],
+  "synthesis": "The operative regime is not merely the division’s adult low-risk label. Federal entry/document rules are traveler-facing: assigned-sex markers, discrepancy refusal, and possible permanent fraud ineligibility. If outed and detained, custody harms are severe: forced labor, solitary, sexual abuse, hormone removal, and birth-sex placement. Local protections reduce some street and facility exposure but do not immunize from federal screening, government-funded facility rules, or immigration custody. Minors and guardians add care/school investigation exposure. No execution or routine imprisonment is documented, so the case sits above the 0.15 anchors but firmly in High Risk."
+ },
+ "parse_error": null
+}
