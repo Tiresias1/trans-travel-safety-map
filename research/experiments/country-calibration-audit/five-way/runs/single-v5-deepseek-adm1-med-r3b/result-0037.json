@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005724978",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The combined regime is split between a hostile federal layer and an unusually protective state judiciary. Federal entry screening can refuse or tag a trans traveller with document discrepancies, and suspected misrepresentation may support permanent fraud ineligibility; federal facilities are restricted by executive order, and immigration/corrections custody carries documented severe harm. State courts, by contrast, have enjoined the state bathroom law, struck down the minor care ban, and repeatedly blocked anti-trans statutes on constitutional dignity and sex-discrimination grounds. Those state remedies do not reach federal border, facility or custody exposure. No state-specific trans violence data is documented; the state hate-crime statutes omit gender identity and a religious-refusal law adds service-access friction. The result is Elevated Risk, not Reduced.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar new X markers and require refusal or additional evidence where sex is doubted; suspected misrepresentation can support permanent fraud ineligibility; foreign governments issued advisories after detentions.",
+    "protection": "Existing X passports remain valid until expiry; fraud findings are never automatic and require four elements; litigation challenges the policy; state court rulings do not reach the federal border.",
+    "interaction": "A visitor's home passport and visa meet federal screening; a discrepancy can trigger secondary inspection, refusal, tagging or detention before any state-law protection applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody records forced labour, beatings, solitary confinement and sexual abuse of trans men; corrections policies impose conversion-style practices on trans inmates; visa-related detentions are documented.",
+    "protection": "National hate-crime law covers gender identity; legal-aid guidance and litigation exist; state constitutional courts protect state law, not federal immigration custody.",
+    "interaction": "A border discrepancy or fraud suspicion can move a traveller into federal detention, where birth-sex custody and abuse risks are documented; state remedies do not follow.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities congruent with identity; the state's 2025 facilities law is under a TRO and not shown in force; federal facilities remain covered.",
+    "protection": "A state court enjoined the 2025 facilities law as animus-based; a bathroom proposal was defeated; state constitutional dignity protects state settings, but not federal facilities.",
+    "interaction": "State and municipal facilities are relatively protected in practice, while federal buildings and federally funded single-sex spaces remain a universal-exposure layer.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National executive orders frame minor gender-affirming care as mutilation, propose insurance exclusions, and investigate schools; no visitor-specific care denial is documented.",
+    "protection": "The state minor care ban was permanently struck down; care remains legal in the state; state courts apply sex-discrimination and privacy protections.",
+    "interaction": "An adult or minor visitor's routine care depends on provider and insurance; state law is protective, but federal funding rules and national climate remain hostile.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; a DOJ reward memo mentions 'radical gender ideology'; state flag and drag rules signal official hostility.",
+    "protection": "State courts enjoined the drag-performance law as vague and overbroad; national hate-crime law covers gender identity; the state constitution limits some official overreach.",
+    "interaction": "Ordinary visitors are unlikely to be treated as terrorists, but visible advocacy could attract scrutiny; state courts block state expressive restrictions, not federal framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target minors' transition, school facilitation and insurance; federal entry/document and facility rules reach a trans minor travelling with a guardian.",
+    "protection": "The state court struck down the minor care ban; no state prohibition on care; the state facilities ban is enjoined; state adoption and parentage law is favourable.",
+    "interaction": "Within the state, a trans minor with a guardian has unusually strong court protection; at the federal border and in federal facilities, national rules still govern.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific trans violence incident or rate is documented. State hate-crime statutes omit gender identity; a religious-refusal law can license service discrimination.",
+    "protection": "National hate-crime law covers gender identity; municipal ordinances bar some discrimination; state courts protect constitutional dignity.",
+    "interaction": "A victim may rely on federal hate-crime prosecution or municipal ordinances; state-level recourse is thinner, and service refusal may be defended religiously.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "The national passport/entry policy remains in effect despite suit; state court relief does not reach federal border, immigration custody or federal facilities; the 2026 state law challenge and facilities TRO status are unresolved.",
+    "protection": "State courts have repeatedly enjoined anti-trans laws; existing X passports remain valid; legal-aid guidance and national civil-liberties litigation exist.",
+    "interaction": "State judicial protection works for state statutes but cannot cancel federal screening or custody; traveller exposure shifts with which national measures are in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has document mismatch, no detention, denial of boarding, a retained manifest and weak remedy. This jurisdiction has comparable border friction but adds possible federal detention and federal facility exclusion; its state courts are stronger for state law, leaving the overall risk similar."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has secondary screening but an ombudsman secures release without detention. This jurisdiction lacks an equivalent federal border remedy, so it sits below that protective level despite its stronger state court record."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has a functioning formal protection after public scrutiny and no detention. This jurisdiction's state courts protect some settings, but federal border, facility and custody exposure prevents reaching that level."
+   }
+  ],
+  "synthesis": "The combined regime is split. At and beyond the federal border, national document screening, possible fraud findings, federal facility exclusion and immigration or corrections custody create serious traveller-facing exposure, and state court injunctions do not reach them. Inside the state, courts have blocked the bathroom law, struck the minor care ban, and upheld dignity-based limits on marker restrictions, so everyday facilities and care are more protective than the national framework. A visitor with matching documents may experience the state as relatively safe, but if outed at entry or in federal custody the consequences are severe; state hate-crime gaps and religious-refusal law add friction. This places the jurisdiction in Elevated Risk, not Reduced."
+ },
+ "parse_error": null
+}

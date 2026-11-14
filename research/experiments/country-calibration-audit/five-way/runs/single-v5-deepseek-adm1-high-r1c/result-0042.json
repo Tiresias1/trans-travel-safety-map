@@ -1,0 +1,78 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004792832",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The state/province layer is comparatively protective: public-accommodation and hate-crime coverage, a recent civil-rights judgment, and anti-discrimination enforcement. But national border screening, document rules, facility exclusion, and immigration custody are operative and not displaced. A trans visitor outed at entry faces refusal, invasive evidence demands, possible lifetime fraud ineligibility, and, if detained, documented abusive custody; national facility rules add inescapable exposure in federal settings. State protections lower street and service risk but cannot offset federal border, custody, and facility exposure. Overall High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National screening treats marker/appearance discrepancy as possible misrepresentation: visa/passport X markers not processed, cases refused for additional evidence, and permanent lifetime fraud ineligibility possible if material. Advisories followed detentions over visa issues.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; legal-aid FAQ and litigation challenge the rules.",
+    "interaction": "A foreign passport is checked by national border officers; state/province anti-discrimination does not govern entry screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: trans men reported forced labour, beatings, solitary confinement and severe sexual abuse; national corrections adopted conversion-therapy-style policies and stopped reporting trans prisoner numbers.",
+    "protection": "Some national orders enjoined; fraud finding has waiver possibilities; no documented working visitor remedy in custody is recorded.",
+    "interaction": "Border document discrepancy can escalate to immigration detention; state/province civil-rights protections do not bind national custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with gender identity; national facilities and airports can enforce it. State/province bathroom-ban status is not documented here.",
+    "protection": "State/province public-accommodations law covers gender identity; no state/province facility ban is recorded in this dossier.",
+    "interaction": "Federal facilities follow the national rule; state/province protections reach private and state accommodations but not federal buildings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State/province bans gender-affirming medicine and surgery for minors (2024/2025), with provider discipline and private right to sue; national measures target minor social transition and funding.",
+    "protection": "State/province health-care anti-discrimination since 2020; conversion-therapy ban; grandfather clause for care underway; court has protected trans students' privacy/autonomy.",
+    "interaction": "An adult visitor's routine care is not documented as barred; a travelling minor cannot access gender-affirming care in this state/province.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; justice reward guidance invokes 'radical gender ideology'; schools ordered investigated over social transition.",
+    "protection": "Strategy says CT powers are not for mere disagreement; several orders enjoined; state/province hate-crime and civil-rights law operate.",
+    "interaction": "Risk rises with visible advocacy/activism; ordinary visitor exposure is lower, but national framing colours police and border encounters.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A travelling trans minor faces state/province care bans, national hostility to social transition, and possible passport/document friction; provider discipline and lawsuits chill care.",
+    "protection": "Grandfather clause; state/province anti-bullying law and court ruling protect trans students; parental opt-out exists but is not a safeguard for the minor.",
+    "interaction": "A guardian cannot obtain blocked care in-state; national border, facility and custody rules apply to the family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "2025 census records 72 anti-LGBTQ incidents, second-highest raw count but no per-capita denominator; an attributed description calls this state/province least safe for trans citizens after 2025 changes.",
+    "protection": "State/province civil-rights act enforced: July 2026 court found an attacker violated it; hate-crime enhancements since 2019; panic defence abolished; public-accommodation coverage.",
+    "interaction": "State/province recourse can address street violence and service denial; national climate and border/custody remain outside it.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Many national measures remain in litigation or have unresolved status; care-ban and sports-ban enforceability is not established; incident count lacks a denominator.",
+    "protection": "Courts have enjoined several orders; legal-aid FAQ exists; state/province civil-rights enforcement is documented.",
+    "interaction": "Practical exposure varies by date and which national measure is in force; unresolved status is not safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has document mismatch, invasive review, denial and no imprisonment. This case is worse because national screening can trigger permanent fraud ineligibility and immigration custody abuse, and national facility exclusion applies; state/province civil-rights protection is better but does not reach federal border or custody."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B resolves after supervisor intervention with no detention. Here national border and custody exposures are not shown to have a working visitor remedy, so it sits materially lower despite state/province anti-discrimination."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has clinic friction resolved by directive and no detention. This case has documented national facility exclusion and abusive immigration custody, so it is far below the protective-operating-regime tier."
+   }
+  ],
+  "synthesis": "The state/province has real protective machinery for street-level and service discrimination, including hate-crime coverage and an enforced civil-rights statute. But the visitor's journey crosses national borders, national facilities, and potentially national custody, where the documented rules and practices are hostile and state law does not reach. The combined regime therefore remains High Risk: not catastrophic for every visitor, but with serious document, facility and detention exposures if outing occurs."
+ },
+ "parse_error": null
+}

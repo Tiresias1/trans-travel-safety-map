@@ -1,0 +1,78 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00601130862",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime is Elevated Risk. National border/document rules dominate: binary sex markers, refusal of new X markers, secondary screening, reported passport confiscation and stranding, and possible fraud-based lifetime ineligibility. This state has no statewide adult facilities or adult care ban, plus marriage equality and repealed sodomy law, but lacks statewide gender-identity nondiscrimination and hate-crime coverage outside four municipalities. National immigration custody carries documented severe harm if a document dispute escalates. Minor-specific state measures are mostly school/clinical and not operative for visitors. Active universal-exposure border risk and thin recourse keep it below Reduced; absence of adult facility/care prohibition and no criminalisation of trans identity keep it above Severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require binary sex assigned at birth on passports/visas, stop new X markers, and direct refusal or added evidence when sex is doubted; reported confiscations/blocked passports and possible lifetime fraud ineligibility.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding is not automatic and requires four elements with limited waiver; court challenges ongoing. No traveler-facing remedy shown to prevent border refusal.",
+    "interaction": "A document mismatch can trigger secondary screening, refusal, referral to immigration custody, or fraud inquiry; this state's document rules do not cure national border exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement, and sexual abuse of trans men; suspicion of misrepresenting sex can lead to fraud and lifetime ineligibility. State/local custody practice is not documented.",
+    "protection": "Fraud finding is not automatic; limited waiver possibilities exist and national orders are contested in court. No operative custody protocol protecting trans visitors is documented.",
+    "interaction": "A border discrepancy can escalate from interview to detention and immigration-custody placement; national rather than state rules govern that encounter.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities congruent with identity. This state has no statewide adult restroom or changing-room ban, but one school district restricts trans students; other states' criminal bans do not apply here.",
+    "protection": "No statewide adult facilities ban is documented; four municipalities have local nondiscrimination ordinances. The national facilities order remains an exposure in federal settings.",
+    "interaction": "An adult visitor faces possible federal-facility exclusion; state adult public accommodations are not banned statewide, and local ordinances cover only parts of the state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The state medical board approved a draft rule treating gender-transition care under 18 as unprofessional conduct; it is not operative pending review and comment. National youth-care hostility and other states' care bans do not establish a statewide adult ban here.",
+    "protection": "The youth-care draft is not in effect; adult care is not banned statewide; national court challenges block some measures. No specific visitor-facing care protection is documented.",
+    "interaction": "An adult visitor is likely unaffected for routine care; a travelling minor could face regulatory chill if seeking youth care, but the draft is not operative and other states' rules do not bind this state.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism rhetoric names 'radically pro-transgender' groups; justice reward guidance invokes 'radical gender ideology'; the state hate-crime statute omits gender identity and there is no statewide nondiscrimination law.",
+    "protection": "A national hate-crimes statute covers gender identity; four municipal ordinances prohibit gender-identity discrimination; private consensual sex and marriage equality are protected.",
+    "interaction": "State-level recourse is absent outside four municipalities, while national threat framing can raise official suspicion; the national hate-crime law is not shown operating for trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The state medical-board draft and education-board sports rule target trans minors; one school district requires birth-sex bathrooms or a private alternative. National executive orders threaten teachers over social transition. These are mostly school/clinical and resident-facing.",
+    "protection": "The youth-care draft is not operative; no statewide adult facilities ban; marriage equality and no criminalisation of trans identity. No specific protection for visiting trans minors is documented.",
+    "interaction": "An adult travelling with a minor faces the same border/document screening; minor-specific state rules operate through schools and clinical boards and are unlikely to bind a short-term visitor, but signal hostility.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The state hate-crime statute does not cover gender identity; no trans-specific violence count or general homicide baseline is recorded; outside four municipalities there is no public-accommodation recourse. National advisories and threat framing may increase official scrutiny.",
+    "protection": "A national hate-crimes statute covers gender identity; no documented pattern of trans-specific violence in this state is recorded, though absence is not safety; private sex is legal and marriage is recognised.",
+    "interaction": "If assaulted, state penalty enhancement is unavailable; a national statute may apply but no enforcement for trans visitors is documented; local ordinances cover only four municipalities.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "State nondiscrimination law excludes gender identity; the hate-crime statute omits it; enforcement of local ordinances is not sourced. National border and fraud rules remain contested and can strand travellers.",
+    "protection": "National hate-crimes law, marriage equality, repealed sodomy law, a legal-aid FAQ, and court injunctions against some national orders exist. No working remedy is shown for border refusal or facility exclusion.",
+    "interaction": "Remedies are partial and uneven; court challenges may change operative rules, so practical exposure depends on which measures are in force at the moment of travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Similar to the anchored denial-at-border scenario: document mismatch, confiscated papers, refusal of entry, no documented detention in that case. This dossier adds possible lifetime fraud ineligibility and documented national immigration-custody harm, but this state has no adult facilities ban, so it is somewhat worse at the border and somewhat better in-state."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "The anchored clinic-refusal vignette has no arrest, slow appeal, and no detention. This dossier's national border rules are more consequential: refusal, confiscation, possible permanent ineligibility, and possible custody escalation. State recourse is thinner outside four municipalities, so it sits near or slightly below that anchor rather than above it."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "In the anchored care scenario, a formal protection eventually worked after staff misgendering. Here the state has no statewide gender-identity nondiscrimination and no hate-crime coverage, and the national border regime has no demonstrated working remedy. It is clearly lower than this anchor."
+   }
+  ],
+  "synthesis": "The operative regime is driven by national border and document rules, not by a statewide adult facilities or adult care ban. A trans visitor with a marker mismatch or visible discrepancy can be refused, delayed, or referred to a fraud/lifetime-ineligibility process; if held in immigration custody, the national record shows severe harm. In-state, this state is comparatively moderate: adult facilities and adult care are not prohibited, marriage equality and private-sex legality are documented, and four municipalities protect gender identity. But statewide nondiscrimination and hate-crime coverage are absent, local enforcement is unsourced, and national threat framing and custody practices remain active. The result is an Elevated Risk profile: worse than purely administrative-friction jurisdictions, but not the severe-risk tier because adult facility bans, adult care bans, and criminalisation of trans identity are not operative here."
+ },
+ "parse_error": null
+}

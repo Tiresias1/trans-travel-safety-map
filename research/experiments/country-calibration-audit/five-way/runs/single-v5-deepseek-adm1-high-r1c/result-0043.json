@@ -1,0 +1,78 @@
+{
+ "cell": 43,
+ "region": "66186276B89395128410123:Arizona",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0008288408",
+ "parsed": {
+  "rating": 0.33,
+  "explanation": "The combined regime is driven by the national border and federal-facility layer, not by this state/province. Locally the state is low-risk: no adult bathroom ban, vetoed anti-trans bathroom/pronoun bills, employment protections, and municipal ordinances. But the national passport/visa regime can refuse entry on sex-marker discrepancy, consider permanent fraud ineligibility, and has produced confiscated passports and stranded travelers. Federal facilities exclude trans people from congruent single-sex spaces, and immigration custody has documented severe abuse. State protections do not reach border screening, federal custody, or federal buildings. The result is high risk: local everyday life may be comparatively safe, but the unavoidable entry and federal-facility exposures dominate.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy restricts sex markers to M/F per birth sex; X-marker issuance stopped; discrepancies can trigger refusal, additional evidence demands, or possible permanent fraud ineligibility. Reports document confiscated passports and stranded travelers.",
+    "protection": "Existing X-marker passports remain valid until expiry; a fraud finding is not automatic and requires all elements; litigation challenges the policy; legal-aid guidance exists.",
+    "interaction": "State protections do not govern federal border screening. A document mismatch can move from inspection to refusal or immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Neighbouring citizens were detained over visa issues, prompting travel advisories.",
+    "protection": "Fraud findings are not automatic; waiver possibilities exist; some national measures are enjoined. No visitor-specific custody protection is documented.",
+    "interaction": "A border document discrepancy can escalate into detention, where federal custody rules and documented abuse apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with gender identity. Some states criminalise bathroom use; one documented arrest occurred elsewhere.",
+    "protection": "This state/province has no adult facilities ban; the governor vetoed bathroom and pronoun bills; local low-risk assessment and municipal protections.",
+    "interaction": "Federal facilities such as airports and federal buildings follow national exclusion; state and private facilities are comparatively protected.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "This state/province bans gender-affirming surgery for minors and retains a Medicaid exclusion; national policy attacks gender-affirming care and frames it as mutilation.",
+    "protection": "State employee coverage over 21 was expanded; some court orders protect care; national injunctions apply to some measures.",
+    "interaction": "An adult visitor's routine care is not clearly documented; a trans minor travelling with a guardian faces restricted care access and hostile national framing.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; 'radical gender ideology' appears in enforcement guidance. State education hotline and Pride cancellation signal a chilling climate.",
+    "protection": "National hate-crime statute covers gender identity; state employment protections and municipal ordinances exist; governor vetoed some anti-trans bills.",
+    "interaction": "Federal threat framing raises outing and reporting risk, while state-level protections are partial and do not control federal law enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State law bans surgery for transgender minors and bars trans children from female sports; national order directs prosecution of teachers who affirm trans minors; care restrictions apply.",
+    "protection": "Some state court rulings protect limited family-court and birth-certificate matters; governor vetoed several anti-trans bills; national injunctions block some orders.",
+    "interaction": "A guardian travelling with a trans minor faces border document scrutiny plus state and national restrictions on care and affirmation.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incident in this state/province is documented. The state hate-crime statute omits gender identity, and a gay/trans panic defence remains available.",
+    "protection": "National hate-crime law covers gender identity; municipal anti-discrimination ordinances exist; the state is assessed as low-risk for targeting trans adults.",
+    "interaction": "Local police response is not documented; national hate-crime coverage exists but state-level recourse is incomplete.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation is unresolved; enforcement depends on which national measures remain in effect; state protections rest on executive orders and municipal patchwork.",
+    "protection": "Courts have blocked some national orders; legal-aid FAQ and civil-liberties litigation provide some recourse; national hate-crime statute remains.",
+    "interaction": "Outcomes vary by officer discretion and current injunctions; state protections cannot override federal border or custody rules.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves border refusal and invasive review but no imprisonment and no documented custody abuse. This case is worse because national immigration custody has documented severe abuse and federal facilities exclude trans people, so it sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a working appeal that prevents detention and allows onward travel. Here the national border regime can refuse entry or escalate to custody, and state protections do not reach it, so this case is materially less safe than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "0.75-A shows a functioning traveler protection clearing a document mismatch. This case has no equivalent border protection; the national policy actively restricts markers and can treat discrepancy as fraud, so it is far below 0.75-A."
+   }
+  ],
+  "synthesis": "Local conditions in this state/province are comparatively protective: no adult bathroom ban, vetoed anti-trans bills, employment protections and municipal ordinances. But a trans visitor's unavoidable exposures sit at the national layer: passport and visa screening can refuse entry or trigger immigration custody, federal facilities exclude congruent sex use, and federal custody has documented severe abuse. The state cannot pre-empt those rules. A travelling minor adds care and affirmation restrictions. The combined operative regime therefore remains high risk despite the relatively low-risk local climate."
+ },
+ "parse_error": null
+}

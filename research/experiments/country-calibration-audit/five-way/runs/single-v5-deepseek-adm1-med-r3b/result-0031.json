@@ -1,0 +1,78 @@
+{
+ "cell": 31,
+ "region": "66186276B73402293045483:Nebraska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00832739",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The operative regime is high-risk but below the catastrophic tier. National document rules cannot reliably produce a matching marker for new documents; border officers may refuse entry or consider lifetime fraud ineligibility when presentation and documents diverge. The division adds sex-segregated facilities, a surgery-based local marker regime, a ban on under-19 care, and documented custody harm: a trans woman was housed with male prisoners and assaulted, with her claims dismissed. National hate-crime coverage and marriage recognition are real but do not offset traveler-facing border, facility, and custody exposures. An adult alone faces border and facility risk; an adult with a trans minor faces the care ban and school/athletics restrictions. No death penalty or routine imprisonment for trans identity is documented, so this sits above 0.15 but below 0.25.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy processes new markers only as M/F matching birth; X issuance stopped. Border officers may refuse cases with document discrepancy and consider permanent fraud ineligibility. Existing X passports remain valid until expiry, but screening risk persists.",
+    "protection": "The passport-marker policy is challenged in court; a legal-aid FAQ exists; existing X-marker passports remain valid until expiration.",
+    "interaction": "A passport check can move from secondary screening to refusal, additional evidence demands, or a lifetime ineligibility finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement, and sexual abuse of trans men. In the division, custody follows birth sex; a trans woman was celled with a male sex offender and assaulted, and her claims were dismissed.",
+    "protection": "National hate-crime law covers gender identity, but no custody placement protection is documented.",
+    "interaction": "A document discrepancy or facility arrest can lead to detention, where birth-sex placement and abuse risk are documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Many states ban facilities use consistent with gender identity; some make it criminal trespass. The division's executive order backs single-sex bathrooms and changing rooms. No local facility-use enforcement provision is documented in the division.",
+    "protection": "Some states have no mapped facility ban; the division's order does not itself document an arrest mechanism.",
+    "interaction": "Facility mismatch can trigger denial, security involvement, or arrest in criminal-ban states; the division's enforcement practice is uncertain.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for people under 19 is barred in the division. National proposals would bar public insurance reimbursement for trans patients under 18. A visitor cannot obtain this care for a minor in their care.",
+    "protection": "Adult care is not explicitly banned in the dossier; national protections and some local ordinances exist.",
+    "interaction": "A trans minor or an adult seeking care for a minor cannot access it locally; adult emergency or routine care exposure is not fully documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes groups described as 'radically pro-transgender'; a justice reward system and official rhetoric frame trans advocacy as extremist. Direct traveler targeting is not documented unless activism is involved.",
+    "protection": "The strategy states counterterrorism powers will not target mere disagreement; several national orders are enjoined or in litigation.",
+    "interaction": "Official threat framing raises risk for visibly activist visitors but is not shown to reach ordinary trans travelers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The division bans under-19 gender-affirming care and bars trans athletes from sports. School and facility rules are restrictive. A parent cannot obtain covered care for a trans minor locally.",
+    "protection": "Marriage and adoption recognition are settled nationally; national hate-crime law covers gender identity.",
+    "interaction": "An adult travelling with a trans minor faces care denial and school/athletics restrictions; custody and facility rules also follow the minor.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division has no statewide gender-identity hate-crime provision and no statewide anti-discrimination statute; one city has local protections. No state-level trans violence statistics are provided.",
+    "protection": "National hate-crime law covers gender identity; one city prohibits gender-identity discrimination in employment and public accommodations.",
+    "interaction": "Bias-motivated violence can be charged nationally, but local enforcement and recourse vary; the absence of state data leaves frequency unknown.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National measures are in litigation; border practice, local marker rules, and facility enforcement remain unresolved. Foreign governments have issued travel advisories.",
+    "protection": "Courts have blocked or enjoined several measures; legal-aid guidance and pending lawsuits provide potential recourse.",
+    "interaction": "The operative position may change with court rulings; a traveler should verify current document and facility rules before travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Safer than 0.15-A: no capital provision or routine long-term imprisonment for trans identity is documented. The risk here is border refusal, fraud ineligibility, facility exclusion, and custody abuse, not a standard multi-year sentence."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Slightly below 0.25-B in safety: 0.25-B shows coercive detention and extortion without formal charges. Here border screening can produce refusal or lifetime fraud ineligibility, and custody harm is documented, though national protections exist."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Materially below 0.45-A: 0.45-A involves denied boarding and registry flags without detention. Here national border rules can refuse entry or find fraud, and custody includes documented assault, so the operative exposure is more severe."
+   }
+  ],
+  "synthesis": "The combined regime is driven by national border and document screening layered over a division that endorses sex-segregated facilities, restricts local markers to surgery-based proofs, bans under-19 care, and documents serious custody harm. A trans visitor's passport or appearance mismatch can lead to refusal, fraud ineligibility, or detention; if held, birth-sex placement and abuse are documented. National hate-crime coverage, marriage recognition, and some local protections are real but do not offset the traveler-facing border, facility, and custody exposures. An adult alone faces border and facility risk; an adult with a trans minor faces care denial and school/athletics restrictions. The unresolved litigation and uncertain local enforcement keep the score below 0.25 but well above the catastrophic tier."
+ },
+ "parse_error": null
+}

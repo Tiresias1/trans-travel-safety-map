@@ -1,0 +1,78 @@
+{
+ "cell": 24,
+ "region": "66186276B63937528568220:Iowa",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002953978",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined national and division regime creates a high-risk traveller profile: birth-sex passport/visa rules, possible refusal or lifetime fraud finding at entry, documented custody abuse if detained, widespread subnational facility bans, and a division that stripped gender-identity civil-rights protections and imposes a school-grounds birth-certificate restroom rule binding visitors. National litigation, existing X-passport validity, hate-crime law and non-automatic fraud findings are partial mitigants. No execution or general criminalisation of trans identity, so above the 0.00–0.20 band, but official hostility, border document exposure, facility exclusion and absent local remedy keep it in High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules use birth sex; X markers not newly issued; discrepant documents can trigger refusal, added evidence demands, or possible lifetime fraud finding; reports of confiscated/blocked passports and stranded travellers.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; litigation and legal-aid FAQ exist.",
+    "interaction": "Border officers apply national rules; the division cannot soften them, and refusal can strand a visitor.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse; national prison policies include conversion-style practices.",
+    "protection": "Limited waiver possibilities for fraud findings; court challenges to national policies; detention is not automatic for all discrepancies.",
+    "interaction": "A document discrepancy can escalate into immigration custody, where local remedies do not reach.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Many states ban gender-identity facility use; four states criminalise certain bathroom use; the division requires birth-certificate sex for multiperson school restrooms/changing rooms, binding visitors on school grounds.",
+    "protection": "Some states have no mapped ban; single-person accommodation for students with guardian consent; no division adult public-restroom statute documented.",
+    "interaction": "Visitors at school events are covered by the division rule; adult public facilities are not documented as restricted outside school grounds.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy is hostile to gender-affirming care, with minor bans, insurance limits and hospital records subpoenas.",
+    "protection": "Some national measures are enjoined; adult visitor care access is not documented.",
+    "interaction": "A visitor seeking HRT or emergency care faces the national policy climate; the division offers no gender-identity protection.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' violent groups; justice memo uses 'radical gender ideology'; official hostility is documented.",
+    "protection": "Reward memo does not use gender ideology as a criterion; strategy says mere disagreement is not targeted; national hate-crime statute covers gender identity.",
+    "interaction": "Raises police-scrutiny climate, while the division has removed civil-rights protection.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor care bans; executive order threatens prosecution of teachers using preferred names/pronouns; school facility rule requires birth-cert sex and offers single-person use only by guardian consent.",
+    "protection": "Some court injunctions apply; national parentage rules are relatively developed but do not offset traveller-facing school/facility exposure.",
+    "interaction": "An adult travelling with a trans minor faces school, facility and care exposure plus possible official scrutiny.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific homicide or violence figures; counts are undercounts; legal-risk grades describe state behaviour, not private violence.",
+    "protection": "National hate-crime statute covers gender identity, but state bias-crime coverage is partial.",
+    "interaction": "Local police response is uneven, and the division provides no civil-rights remedy for discrimination.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "The division removed gender-identity protections from civil-rights law and preempted stronger local ordinances; no state-law remedy for service denial.",
+    "protection": "National civil-liberties litigation, legal-aid guidance and some court blocks exist; national hate-crime law remains available.",
+    "interaction": "A visitor may seek national remedies, but local enforcement and protection are absent or uncertain.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor involves refusal of entry and confiscated papers without detention. This dossier adds documented custody abuse, facility exclusion and removal of local civil-rights protection, so it is lower."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "That anchor has administrative friction and denied boarding but no detention or severe custody harm. This dossier adds possible lifetime fraud findings, facility bans and official threat framing, so it is materially lower."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "That anchor shows a protection operating after uncomfortable friction. Here local remedy has been withdrawn and national entry/facility policy is hostile, so it is much lower."
+   }
+  ],
+  "synthesis": "The national document and entry regime is the first severe traveller-facing exposure; the division adds removal of gender-identity civil-rights protections and a school-grounds birth-certificate facility rule that reaches visitors. If outing occurs at the border, refusal, stranding or immigration detention with documented abuse is possible; in covered facilities, exclusion or arrest risk exists; locally, there is no discrimination remedy. National litigation, existing X-passport validity, hate-crime law and non-automatic fraud findings are partial mitigants, not offsets. With no execution or general criminalisation of identity, the result is High Risk rather than Severe."
+ },
+ "parse_error": null
+}

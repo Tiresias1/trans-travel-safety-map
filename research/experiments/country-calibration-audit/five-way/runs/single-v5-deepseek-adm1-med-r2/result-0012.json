@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.011481832",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "The state-level layer is genuinely protective: a 2013 anti-discrimination act covers public accommodations, hate-crime enhancement covers gender identity, there is no state bathroom ban, conversion therapy for minors is banned, and a July 2026 national assessment groups it among low-risk jurisdictions. But the national framework remains operative and is not offset: sex-assigned-at-birth passport/visa rules, border refusal and possible lifetime fraud findings for perceived misrepresentation, federal facilities exclusion, and documented abuse in immigration custody. A visitor meets the national border before state protections attach. A minor travelling with a guardian benefits from state protections but remains subject to national border and care-funding rules. Net: High Risk, upper end.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy requires sex assigned at birth on passports/visas; X markers are not processed for new issues. Border cable instructs refusal where documents or records show a discrepancy or reasonable doubt about sex, and possible lifetime fraud findings for suspected misrepresentation. Detentions of travellers over visa issues are reported.",
+    "protection": "State anti-discrimination and marker-change rules do not reach the national border. No documented border protection for trans visitors; legal-aid FAQ only.",
+    "interaction": "Foreign passport is checked at the national border before any state protection applies. A marker/appearance mismatch can trigger secondary screening, refusal, or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. National corrections policy adopted from 2026 mandates conversion-therapy-style practices for trans inmates. Border flags can escalate to immigration detention.",
+    "protection": "No documented visitor-specific custody protection. State inmate name-change law does not govern federal immigration custody. National hate-crime statute does not regulate custody conditions.",
+    "interaction": "A border discrepancy can move the traveller into national immigration detention, where documented abuse applies and state protections do not govern.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with gender identity; this reaches federal buildings and federally funded facilities. State has no bathroom ban.",
+    "protection": "State anti-discrimination act covers public accommodations; no state facilities ban; state is in the low-risk assessment group.",
+    "interaction": "State-regulated venues are protected, but federal facilities remain exclusionary. A visitor may not know which facilities are federally governed.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules threaten funding for gender-affirming care, propose insurance bars for under-18 care, and national health agencies have removed related terms. Visitor HRT import/refill is not documented.",
+    "protection": "State insurance nondiscrimination since 2016; state conversion-therapy ban for minors; state marker change by provider statement.",
+    "interaction": "State protections apply to state-regulated care, but national funding and insurance rules persist. Emergency and pharmacy access for a visitor is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' groups; a justice-department reward memo references 'radical gender ideology'; national justice department targets schools facilitating social transition. Official hostility raises climate risk.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime enhancement since 2013; state anti-discrimination act; state LGBTQ+ commission created in 2025.",
+    "interaction": "National threat framing can embolden hostility, while state law provides recourse. Enforcement outcomes are not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs prosecution of teachers facilitating a minor's social transition; national health rules target under-18 gender-affirming care. Border screening may scrutinise travelling families.",
+    "protection": "State conversion-therapy ban for minors; state anti-discrimination in public accommodations; no state bathroom ban; state marker-change rules.",
+    "interaction": "A visiting minor with a guardian benefits from state protections once admitted, but national border and care-funding rules remain. School-prosecution orders target residents, not short-term visitors.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence data. National threat framing and uneven hate-crime coverage may elevate risk. Police response to trans victims in this state is not documented.",
+    "protection": "State hate-crime enhancement since 2013; national hate-crime statute; state anti-discrimination act; low-risk assessment grouping.",
+    "interaction": "State law provides recourse, but no enforcement outcomes are documented. No evidence of organised targeting in this state.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and border policies are in litigation; state panic-defence bill disposition unresolved; gender X on state ID unverified since 2020; no state custody-placement policy documented.",
+    "protection": "State anti-discrimination, hate-crime enhancement, LGBTQ+ commission; national civil-liberties lawsuit; legal-aid FAQ.",
+    "interaction": "Practical exposure depends on which national measures are in effect. State remedies exist but are untested for visitors; border decisions are discretionary.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor has document-mismatch screening but an ombudsman secures release without detention. Our national border cable permits refusal and possible detention, and immigration custody abuse is documented, so the border exposure is worse; state protections are stronger once admitted. Our rating sits slightly below."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "That anchor involves denial of boarding and future scrutiny but no detention. Our case adds documented immigration-custody harm and federal facilities exclusion, so it is materially less safe."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "That anchor is a quiet hotel correction with no state hostility. Our case carries national threat framing, border refusal risk, and custody abuse, so it is much less safe."
+   }
+  ],
+  "synthesis": "The state's protective layer is real but cannot reach the national border, federal facilities, or immigration custody. The visitor's first encounter is the national document regime; a mismatch can trigger refusal or detention, where documented abuse occurs. If admitted, the state's anti-discrimination act, no bathroom ban, and hate-crime enhancement make everyday life comparatively safer, but national threat framing and federal facility exclusion persist. Minors with guardians benefit from the state conversion-therapy ban but remain subject to national border and care-funding rules. Uncertainty remains on enforcement and litigation outcomes."
+ },
+ "parse_error": null
+}

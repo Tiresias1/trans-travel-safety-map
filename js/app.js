@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261114a",
-    admin1: "data/admin1.json?v=20261114a",
+    countries: "data/countries.json?v=20261114b",
+    admin1: "data/admin1.json?v=20261114b",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -408,7 +408,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     loadedBoundaries.add(modeKey);
     await ensureData(modeKey);
     if (modeKey === "countries") await ensureData("admin1"); // for parent names/inherit
-    if (modeKey === "admin1") applyModelComposite();
+    if (modeKey === "admin1") { applyModelComposite(); applyThought(); }
     layers[modeKey] = buildLayer(modeKey, geo);
     setLoading(null);
   }
@@ -426,6 +426,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     }
     mode = nextMode;
     document.getElementById("modelPanel").hidden = nextMode !== "admin1";
+    document.getElementById("thoughtPanel").hidden = nextMode !== "admin1";
     for (const k of Object.keys(layers)) {
       if (map.hasLayer(layers[k])) map.removeLayer(layers[k]);
     }
@@ -466,6 +467,29 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
   }
   document.querySelectorAll(".modelBox").forEach(el =>
     el.addEventListener("change", applyModelComposite));
+
+  function selectedThoughts() {
+    return [...document.querySelectorAll(".thoughtBox:checked")].map(el => el.value);
+  }
+  function applyThought() {
+    if (!loadedData.has("admin1")) return;
+    const sel = selectedThoughts();
+    for (const rec of Object.values(admin1Data)) {
+      if (rec && rec.thoughtScores) {
+        const vals = sel.map(k => rec.thoughtScores[k]).filter(v => typeof v === "number");
+        if (vals.length) {
+          rec.score = vals.reduce((a, b) => a + b, 0) / vals.length;
+          rec.band = bandLabel(rec.score);
+        }
+      }
+    }
+    if (layers.admin1) {
+      layers.admin1.setStyle(styleFeature);
+      updateDots();
+    }
+  }
+  document.querySelectorAll(".thoughtBox").forEach(el =>
+    el.addEventListener("change", applyThought));
 
   /* ---------- legend ---------- */
   function drawLegendBar() {

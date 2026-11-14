@@ -151,3 +151,9 @@ def call_v4(model_key: str, system_text: str, user_text: str) -> dict:
     """
     return call_v3(model_key, system_text, user_text)
 
+
+
+def call_v5(model_key: str, system_text: str, user_text: str, effort: str = "medium") -> dict:
+    """Provider call for the Gemini-anchor v5 comparison instrument."""
+    return _call(SINGLE_MODELS[model_key], system_text, user_text,
+                 max_tokens=16000, effort=effort)

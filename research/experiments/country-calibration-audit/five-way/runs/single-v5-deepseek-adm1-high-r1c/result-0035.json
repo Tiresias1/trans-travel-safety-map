@@ -1,0 +1,78 @@
+{
+ "cell": 35,
+ "region": "66186276B78821008370123:Maine",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004107804",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined regime is split. At the border, national rules govern: a trans visitor with a document/presentation discrepancy faces secondary inspection, possible refusal, a possible misrepresentation finding, and—if detained—documented abuse in immigration custody. Those national entry and custody rules are not cancelled by the division's protections. Once admitted, the division is strongly protective: anti-discrimination and hate-crime law, no facility ban, court-backed bathroom access, X markers, care protections, and a low-risk assessment. The university-system sports capitulation and undefined state-violence data are minor negatives. Net: low everyday risk inside, but a serious mandatory entry chokepoint keeps the overall visitor rating in the Elevated Risk band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary marker policy, removal of X for new documents, and screening instructions to refuse discrepancy cases and consider permanent misrepresentation findings.",
+    "protection": "Division X markers and anti-discrimination law do not reach federal border screening; passport litigation is pending.",
+    "interaction": "A home passport is checked by federal officers; division protections begin only after admission.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans detainees; national corrections adopts conversion-style policies.",
+    "protection": "Division corrections places by current gender identity; state law protects trans residents.",
+    "interaction": "Federal immigration detention is separate from state custody, and state protections do not bind federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from federally funded single-sex facilities congruent with identity; some states criminalise bathroom use.",
+    "protection": "Division has no facility ban, public-accommodations law, and a 2014 court ruling supporting bathroom access.",
+    "interaction": "Federal buildings follow the federal rule; state and local facilities follow the division's protective rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders condemn minor care, propose insurance exclusions, and threaten funding; university system complied on sports.",
+    "protection": "Division protects gender-affirming care, bans conversion therapy for minors, and allows 16–17-year-olds hormone therapy.",
+    "interaction": "National insurance and funding rules can affect care, but state law shields providers and patients within the division.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice department reward memo uses 'radical gender ideology'.",
+    "protection": "Division hate-crime enhancement, anti-discrimination law, and abolished panic defence; no state targeting.",
+    "interaction": "Federal rhetoric and investigative authority raise risk, but state law enforcement is comparatively protective.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order frames minor care as mutilation and directs prosecution of teachers; national insurance rules would bar under-18 care.",
+    "protection": "Division care shield, conversion-therapy ban, and access to hormone therapy for 16–17-year-olds.",
+    "interaction": "A guardian travelling with a minor faces hostile federal framing but strong state care protections and school-level compliance pressure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific violence data; national climate and hostile rhetoric may elevate risk.",
+    "protection": "Division hate-crime enhancement, anti-discrimination law, protective court ruling, and low-risk assessment.",
+    "interaction": "Local police and courts operate under protective state law; federal hate-crime statute also covers gender identity.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal border and custody practices are not remedied by state law; passport and executive-order litigation remains unresolved.",
+    "protection": "Division courts, anti-discrimination enforcement, hate-crime law, and care shield operate after admission.",
+    "interaction": "State remedies are meaningful inside the division but do not reach federal border or immigration detention decisions.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor involves document-mismatch denial with no detention and no protective state. This case has a worse federal custody possibility but a far more protective division once admitted, so it sits modestly above the anchor."
+   },
+   {
+    "anchor_id": "0.55-D",
+    "comparison": "That anchor has a functioning traveler-protection statute and legal aid that clears entry without detention. This case has strong division protections but no equivalent federal border protection, so it rates below."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "That anchor has a recognized identity endorsement and a supervisor clearing entry after a brief delay. This division is comparably protective internally, but the federal entry regime lacks that recognition, so the overall rating is materially lower."
+   }
+  ],
+  "synthesis": "The division's protective law, hate-crime coverage, facilities access, care shield and low-risk assessment make everyday life relatively safe for an admitted trans visitor. But entry is a mandatory federal stage, and national rules on sex markers, discrepancy screening, possible misrepresentation findings, immigration detention and federal facilities are not cancelled by state law. The operative regime therefore combines a strong protective interior with a hostile federal chokepoint, producing an Elevated Risk rating rather than a Reduced Risk one."
+ },
+ "parse_error": null
+}

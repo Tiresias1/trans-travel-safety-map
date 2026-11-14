@@ -1,0 +1,78 @@
+{
+ "cell": 28,
+ "region": "66186276B6628180846672:Pennsylvania",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004151832",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The operative regime is split. The destination division is genuinely protective: gender-identity discrimination is prohibited with a commission that investigates and awards damages, state IDs offer X markers, there is no facility ban, gender-affirming care is lawful, and the largest city is a sanctuary shielding care-seekers. Those protections, however, cannot bind the federal layer the traveller actually passes through: visa and passport processing requires sex assigned at birth, X-marker passports are not processed, discrepant cases are refused or referred toward lifetime fraud findings, allied governments have issued advisories after detentions, and immigration custody carries documented beatings, forced labour and sexual abuse. Federal facilities exclude trans people by birth sex, and national prisons apply conversion practices. Everyday in-state life is comparatively safe; the border, document and custody pathway is the controlling severe exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal visa/passport processing requires sex assigned at birth; X-marker passports not processed; discrepant cases refused pending extra evidence and may support permanent fraud ineligibility. Reports of traveller detentions over visa issues; allied advisories.",
+    "protection": "State driver's licences/IDs offer X since 2020; state birth-certificate marker change available on physician's note. No effect at federal border.",
+    "interaction": "Sanctuary order and state X markers cannot bind federal consular or border officers; the document check at entry is federal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: trans men report forced labour, beatings, solitary confinement and severe sexual abuse. National corrections bureau adopted conversion-style policies (hair cutting, hormone removal, psychiatric substitution).",
+    "protection": "Some executive orders enjoined; courts active. No documented working remedy for custody placement or immigration detention conditions.",
+    "interaction": "Document discrepancy can escalate from secondary screening to immigration detention, where placement and treatment are federal and harmful.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities congruent with identity. Over 20 states ban facilities; one trespass arrest of a trans student in a capitol restroom.",
+    "protection": "No facility ban in this division; largest city requires gender-neutral bathrooms in publicly owned buildings and bars discrimination against trans youth in city-funded settings.",
+    "interaction": "State and city rules govern state/local buildings and are protective; federal facilities and funding follow the federal exclusion.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal funding freeze, executive order framing minor care as mutilation, hospital record subpoenas, proposed national insurance restrictions. Federal scrutiny can reach providers.",
+    "protection": "Gender-affirming care lawful in the division; sanctuary-city order bars use of city resources to investigate or punish care-seekers and deprioritises outside enforcement; human-rights commission remedies discrimination in services.",
+    "interaction": "Protections operate within city/state jurisdiction; federal subpoenas, funding conditions and insurance rules are not displaced by them.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' groups; justice-department reward memo invokes 'radical gender ideology'; executive order directs prosecution of teachers affirming trans minors.",
+    "protection": "Memo does not make gender ideology a reward criterion; courts have enjoined several orders; state commission investigates discrimination and issues stop orders and damages.",
+    "interaction": "Federal threat-framing raises climate risk and resource diversion; local police and the state commission remain the operative protective channel for in-state conduct.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order targets teachers who use a trans minor's name or pronouns; federal push against minor care; 27 states ban minor care. A state district court allowed parents to opt children out of trans-identity lessons.",
+    "protection": "No division statute banning gender-affirming care documented; city ordinances protect trans and nonbinary youth in youth-serving organisations.",
+    "interaction": "A trans minor crosses the same federal document and screening exposure as an adult guardian; in-state schooling rules are mixed.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division hate-crime statute does not reach anti-LGBTQ bias (2002 law struck down 2008, no reinstatement). National climate hostile; no division-specific trans violence data documented.",
+    "protection": "State non-discrimination law covering gender identity with commission investigation and damages; national hate-crime statute covers gender identity; municipal bans.",
+    "interaction": "Local police and commission provide civil recourse; hate-crime charging depends on federal or absent state statute.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Statutory codification of gender-identity protection stalled in upper chamber; hate-crime reinstatement stalled; school-sports bills repeatedly advanced; lower-chamber intentions unstated.",
+    "protection": "Commission interpretation since 2018 and December 2022 regulations are legally binding; sanctuary order; courts have blocked several federal orders.",
+    "interaction": "Current protections rest on interpretation and regulation rather than statute, leaving them politically vulnerable, but they operate now.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor ends in denial of entry with papers confiscated but explicitly no detention. Here denial is possible and the record adds documented immigration custody abuse plus a visa-stage bar on X-marker passports and potential lifetime fraud findings, so severity is higher; the division's working anti-discrimination and sanctuary protections pull back somewhat, but the federal border and custody layer keeps this near, not above, that level."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "That anchor resolves through a supervisor, a temporary permit and no detention. Here a document discrepancy can escalate into federal secondary screening, immigration custody, or a lifetime ineligibility finding, and state sanctuary law cannot reach federal officers. The protective in-state machinery does not offset that escalation path, so this sits materially below."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "That anchor has care access protected with only pharmacy-database uncertainty. Here care is lawful and shielded within the city, but federal funding conditions, record subpoenas and the entry-document regime remain outside local protection. The combined regime is materially less safe than that anchor despite comparable in-state care protections."
+   }
+  ],
+  "synthesis": "For a visitor whose documents are consistent and who stays in the protective city, daily life is comparatively safe: discrimination is actionable, X markers exist on state IDs, no facility ban applies, and care is lawful and shielded. The controlling exposure is the federal layer the traveller cannot avoid: visa and passport processing keyed to sex assigned at birth, refusal of discrepant cases with a fraud-eligibility path, advisories following detentions, federal facility exclusion, and documented abuse in immigration custody. State sanctuary and non-discrimination rules operate below the border and custody regime and do not displace it."
+ },
+ "parse_error": null
+}

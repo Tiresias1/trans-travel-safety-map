@@ -1,0 +1,78 @@
+{
+ "cell": 49,
+ "region": "66186276B98555229882405:Washington",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00304036",
+ "parsed": {
+  "rating": 0.36,
+  "explanation": "The combined regime is split: the division has protective shield, insurance, care and prison-health rules, but national entry screening, passport/visa sex-marker practice, federal facilities and federal custody are not pre-empted and apply to every visitor. A trans traveller is exposed first at the border, where a marker mismatch or suspicion can lead to refusal, detention, or a lifetime fraud finding; federal immigration custody has documented severe abuse. In-state daily life and care are comparatively protected, but division shield law cannot reach the federal border or federal custody. Minors face the same entry exposure plus a hostile national climate on minor transition, partly offset by division care protections. Net High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-as-birth document regime; X markers discontinued for new issues; entry cable allows refusal where sex is doubted and possible lifetime fraud finding; confiscations and stranded travellers reported.",
+    "protection": "National courts are challenging the passport policy; a legal-aid FAQ exists. Division shield laws do not bind federal border officers.",
+    "interaction": "A foreign passport marker mismatch can trigger secondary screening, refusal, or referral to immigration custody; division protections begin only after admission.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody documents forced labour, beatings, solitary confinement and sexual abuse against trans men; national prison policies include coercive conversion practices and care denial.",
+    "protection": "Division prisons are under court order to provide gender-affirming care, and shield laws exist; these do not govern federal immigration custody.",
+    "interaction": "Document discrepancy → suspected misrepresentation → detention → birth-sex custody, where division shield law is inoperative.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans access to federal single-sex facilities congruent with identity; federal buildings follow national rules.",
+    "protection": "Division is rated among the most protective and has no documented statewide facilities ban; private and division facilities are comparatively safer.",
+    "interaction": "A visitor in division spaces is safer, but federal facilities and national custody remain governed by the hostile national rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict minors’ care, public insurance reimbursement and gender-identity materials; federal custody denies care.",
+    "protection": "Division has comprehensive insurance coverage, shield laws for care travellers, and court-ordered prison care.",
+    "interaction": "Care sought inside the division is protected from outside action, but federal entry or custody can interrupt access and care standards.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names ‘radically pro-transgender’ groups as a priority; justice-department reward guidance references ‘radical gender ideology’.",
+    "protection": "The reward text does not make gender ideology a criterion; division institutions are protective and national hate-crime law covers gender identity.",
+    "interaction": "Threat framing raises climate risk for visible activists and advocates, but does not create a general visitor arrest offence by itself.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor faces the same federal entry/document scrutiny; national executive orders target school social transition and minor gender-affirming care.",
+    "protection": "Division care and insurance protections are comparatively strong, and shield laws cover care provided there.",
+    "interaction": "A guardian can access division-protected care after entry, but cannot shield the minor from federal border screening or national custody if detention occurs.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific pattern of anti-trans street violence or police targeting is documented; national public opinion is conservative on documents and sports but not shown as violent.",
+    "protection": "National hate-crime statute covers gender identity; division is among the most protective and has anti-discrimination coverage.",
+    "interaction": "Police response inside the division is likely comparatively protective, but a border or federal custody encounter moves the traveller outside that system.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal custody abuse and border fraud findings have no documented working remedy; two division ballot initiatives targeting trans residents are unresolved.",
+    "protection": "National litigation has blocked some orders; division shield laws and court-ordered prison care are documented protections.",
+    "interaction": "Remedies operate unevenly: division courts and shield laws may protect in-state care, but federal border and custody exposure remains unremedied.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A documents invasive administrative review and denial of entry but expressly no imprisonment. This dossier adds federal detention/fraud exposure and documented custody abuse, partly offset by a protective division; net close to, not clearly better than, 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a protection that actually works after escalation and no detention. Here division protections work in-state, but the unavoidable federal border layer and federal custody are not cured, so this case is materially lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows a privacy directive operating at the point of service with only residual uncertainties. Here the operative care protections are division-level and do not reach federal entry or custody, so the combined regime is much lower."
+   }
+  ],
+  "synthesis": "The division is a protective island inside a hostile national regime. Once admitted, a trans visitor benefits from shield laws, insurance coverage, care protections and comparatively protective institutions. But every visitor must first pass national entry screening, where documents can be doubted, refused, or treated as misrepresentation, and where federal custody has documented severe abuse. Division law does not pre-empt federal border, facilities or custody authority. The final operative interaction therefore carries a High Risk border/custody exposure, moderated but not erased by strong in-state protections."
+ },
+ "parse_error": null
+}

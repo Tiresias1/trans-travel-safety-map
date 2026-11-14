@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005053397",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "The combined regime is hostile at the national border and in custody, with division-level care bans. A trans visitor with a marker mismatch or X passport faces invasive secondary screening, possible refusal, and a non-automatic but available lifetime fraud finding; if detained, national immigration custody has documented severe abuse. National executive orders restrict federal facilities, while the division bans minors' gender-affirming care and prison care. Hate-crime coverage and pending litigation are partial remedies, not working protections. Street violence in the division is undocumented. The score sits below administrative-exclusion anchors because detention and custody harm are documented, but above imprisonment-for-status anchors because mere trans status is not generally criminalised.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar self-selected markers, stop X processing, and require sex assigned at birth; discrepancy or reasonable doubt can trigger refusal and possible lifetime fraud ineligibility. Reports document confiscated or blocked passports and detentions.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements with limited waiver. Litigation is pending.",
+    "interaction": "Foreign passports are checked under national border authority; the division has no separate entry rule.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of trans men. National corrections adopted conversion-style policies; the division bars prison gender-affirming care.",
+    "protection": "Some national orders are enjoined; no division-specific custody protocol for trans visitors is documented.",
+    "interaction": "A border discrepancy can lead to national immigration detention; division prison rules apply if state custody follows.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities congruent with identity. Many states ban such access, and four make certain bathroom use criminal; the division's own ban is not documented.",
+    "protection": "The division is not documented as a facilities-ban state; some states have no mapped ban.",
+    "interaction": "National rules govern federal facilities; state-facility access depends on division law, which is not documented here.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The division's SAFE Act bans hormones, blockers and surgery for minors, bars Medicaid coverage for any age, and restricts prison care. National orders are hostile to minors' transition care.",
+    "protection": "Adults are not generally banned from care in the division; minors already in treatment may continue; litigation continues.",
+    "interaction": "A visiting minor cannot access gender-affirming care in the division; an adult visitor not on Medicaid is less directly affected but faces a hostile care climate.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as a priority; a justice reward memo references 'radical gender ideology'; an executive order directs prosecution of teachers supporting social transition.",
+    "protection": "The strategy says counterterrorism powers will not target mere disagreement; several orders are blocked or enjoined.",
+    "interaction": "This raises risk for activists and guardians of trans minors, but not necessarily for an ordinary tourist unless advocacy or custody arises.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "The division bans gender-affirming care for under-18s; national orders frame such care as mutilation and direct investigations of teachers who support social transition.",
+    "protection": "The SAFE Act allows existing minor patients to continue treatment; some national orders are enjoined.",
+    "interaction": "A trans minor's care access is governed by division law; national entry and document rules apply to the guardian and minor at the border.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented. The dossier records no dated trans-specific violence incident or police-response pattern in the division.",
+    "protection": "National and division hate-crime statutes cover gender identity; the division has no general gender-identity nondiscrimination law.",
+    "interaction": "Recourse exists on paper, but enforcement is not shown; national climate may deter reporting.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport-marker policy and several executive orders remain challenged or unresolved; the division's care ban was upheld. No division gender-identity nondiscrimination law exists.",
+    "protection": "Courts have blocked some national orders; hate-crime coverage exists; legal-aid guidance is available.",
+    "interaction": "Remedies are slow and partial; a visitor encounters policies as currently enforced at the border and in custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A involves likely severe imprisonment for identity misrepresentation and rare capital exposure. This case is higher: mere trans status is not generally imprisoned, but border refusal, possible lifetime fraud ineligibility, and documented immigration-custody abuse are serious without routine capital risk."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has coercive detention, extortion and no formal protection, ending in release. This case is similar or slightly higher: national entry screening and custody abuse are systemic, but routine street extortion is not documented; division care bans add a hostile layer."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is administrative exclusion with invasive review but no detention and an ombudsman remedy. This case is lower: detention and severe custody harm are documented, facilities are restricted nationally, and remedies are partial or unresolved."
+   }
+  ],
+  "synthesis": "The operative regime combines national border and custody authority with division-level care restrictions. The sharpest visitor exposure is documentary: a marker mismatch or X passport can trigger invasive screening, refusal, and possible lifetime fraud ineligibility, with detention leading into a custody system where trans people have documented severe abuse. National executive orders restrict federal facilities, while the division bans minors' care and prison care. Hate-crime coverage and pending litigation provide only partial, uncertain recourse. Street violence in the division is undocumented, so it is not weighted as a proven pattern, but absence of evidence is not safety."
+ },
+ "parse_error": null
+}

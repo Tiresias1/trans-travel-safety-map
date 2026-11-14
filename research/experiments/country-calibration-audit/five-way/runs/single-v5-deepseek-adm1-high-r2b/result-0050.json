@@ -1,0 +1,78 @@
+{
+ "cell": 50,
+ "region": "66186276B98615608994420:Nevada",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.006886402",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The combined regime is dominated by the national border and custody framework: binary-only document policy, refusal where sex is doubted, possible lifetime fraud findings, and documented abuse in immigration custody. Federal facilities are restricted, and national rhetoric frames pro-transgender views as extremist. The state layer is genuinely protective—public-accommodation and hate-crime law, no recorded bathroom ban, care coverage, correctional protections, and a low-risk assessment—but these do not reach the national border or national custody. Daily life once inside is comparatively safe; the unavoidable entry gate is not.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy refuses cases with sex-document discrepancy and warns of lifetime fraud ineligibility for wilful misrepresentation; foreign X markers are not accommodated.",
+    "protection": "State X markers and anti-discrimination law do not govern national border screening of foreign passports.",
+    "interaction": "A foreign passport with X or mismatched marker meets national binary-only screening and can trigger refusal, secondary evidence demands, or fraud findings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse; national corrections adopt conversion-therapy-style policies.",
+    "protection": "State law explicitly protects transgender inmates in state custody, though the July 2026 assessment still finds a protection shortfall.",
+    "interaction": "A border discrepancy can move a visitor into national immigration detention, where state correctional protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with identity; some states criminalise bathroom use.",
+    "protection": "State public-accommodation law covers gender identity; no state bathroom ban is recorded in the inventory.",
+    "interaction": "Federal buildings and airports follow national facility rules; state facilities follow protective state law, but the map entry for this state is unresolved.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict gender-affirming care for minors and threaten funding; national health rules propose reimbursement bars.",
+    "protection": "State insurers are barred from discriminating against transgender patients, and state law mandates coverage of medically necessary care effective 2024.",
+    "interaction": "State coverage and anti-discrimination apply in state-regulated care; national rules govern national programmes and may create friction for minors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' ideology among priorities, and DOJ promotes reward-based identification of extremist leaders.",
+    "protection": "State hate-crime law covers gender identity and a hate-crime hotline operates; state assessment is low-risk.",
+    "interaction": "National threat framing chills advocacy and can influence federal law-enforcement posture; state recourse remains available for bias crimes.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs prosecution of teachers who affirm trans minors and restricts care for minors; national care rules target under-18 patients.",
+    "protection": "State anti-bullying law covers gender identity, and state insurance mandates cover gender-affirming care.",
+    "interaction": "An adult travelling with a trans minor faces national care and school-related restrictions at federal level, while state protections apply in state-regulated settings.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated state-level incident of violence against a transgender person is recorded; national hate-crime statistics are broad and not trans-specific.",
+    "protection": "State hate-crime law covers gender identity, a reporting hotline exists, and the state is assessed as low-risk.",
+    "interaction": "State and local police operate under protective bias-crime law; national framing may affect federal response but not routine local policing.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and entry policies remain challenged; enforcement varies with litigation, creating uncertainty about which rules apply at travel time.",
+    "protection": "State anti-discrimination law, hate-crime hotline, and legal-aid guidance provide remedies once inside the state.",
+    "interaction": "A traveller may face national border measures that state remedies cannot reach, while state remedies operate only after entry.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A describes border questioning, confiscation and denial of entry but no imprisonment. This dossier adds possible detention with documented custody abuse and a lifetime fraud finding, so it sits lower despite the state's protective local law."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves a temporary permit after advocacy and no detention. Here national screening can refuse entry and place a traveller in custody with severe documented harms, so this regime is materially worse."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows a clinic protection working after brief friction, with no custody exposure. This dossier has a protective state care regime but an actively hostile national border and custody system, so it is far below."
+   }
+  ],
+  "synthesis": "The operative regime is split: the state layer is one of the safer ones in the country, with public-accommodation protections, hate-crime recourse, care coverage, correctional protections, and no recorded bathroom ban. But every visitor must pass the national border, where binary-only document rules, refusal for sex discrepancy, potential lifetime fraud findings, and documented immigration-custody abuse create a severe traveller-facing exposure that state law cannot offset. The rating reflects that unavoidable gate rather than the comparatively safe daily life inside the state."
+ },
+ "parse_error": null
+}

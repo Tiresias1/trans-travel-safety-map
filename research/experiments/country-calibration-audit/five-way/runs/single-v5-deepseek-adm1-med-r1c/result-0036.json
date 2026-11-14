@@ -1,0 +1,82 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007000021",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime's main traveller-facing exposure is national: binary-sex document rules, entry screening that can refuse or flag sex discrepancies, possible material-misrepresentation ineligibility, and facility exclusion. The state/province adds a school-to-university bathroom ban, prison treatment freeze, and no state hate-crime statute. Protections—existing X passports until expiry, national hate-crime coverage, employment ruling, litigation, legal aid—are partial and rarely operate at the border or in custody. Documented immigration-custody abuse makes detention severe if triggered, while denial, stranding and lifetime visa ineligibility are the more probable harms. There is no general imprisonment or execution for trans identity, so this is not catastrophic, but universal exposures and conditional severe custody harm place it in High Risk. Adult-alone and adult-with-minor travel share the border/facility exposure; a trans minor adds care and school-setting risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex policy; new X markers stopped; entry cable requires refusal or additional evidence for sex discrepancy and considers material-misrepresentation lifetime ineligibility; trans-athlete entry ban; reported document blocks and travel advisories.",
+    "protection": "Existing X-markers remain valid until expiry; passport policy is challenged; legal-aid FAQ exists; fraud finding is discretionary and never automatic.",
+    "interaction": "Foreign passport or visa check can trigger secondary screening, refusal, or fraud inquiry; post discretion governs; litigation may not help at the border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies cut hair, remove hormones and substitute psychiatric treatment; state freeze-frame prison treatment.",
+    "protection": "National hate-crime statute and courts exist, but no documented custody remedy for trans migrants; state cell-placement rules are not documented.",
+    "interaction": "Document discrepancy can escalate from secondary inspection to detention, where birth-sex or punitive custody practices apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities matching identity; state/province bathroom ban now covers public schools, colleges and universities; four states make some bathroom use criminal trespass.",
+    "protection": "State law is enjoined against one plaintiff during litigation; some municipalities have local gender-identity employment protections.",
+    "interaction": "Visitor using public or campus restrooms may be forced to birth-sex facilities; enforcement for non-students is unsettled, and criminal trespass requires refusal to depart in one state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy attacks gender-affirming care for minors, proposes insurance exclusions, and investigates school social transition; state prison policy restricts treatments; adult visitor refill or emergency care denial is not documented.",
+    "protection": "Several executive orders are blocked or enjoined; legal-aid guidance exists; no visitor-specific care protection is documented.",
+    "interaction": "A travelling minor may face care denial; an adult needing HRT has uncertain access, and custody can cut treatment.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' violent groups; justice reward memo mentions 'radical gender ideology'; school-transition prosecutions and official hostility create a chilling climate.",
+    "protection": "Strategy says counterterrorism will not target mere disagreement; courts have enjoined some orders; national hate-crime law covers gender identity.",
+    "interaction": "Ordinary tourist is less exposed unless visible activism or an official encounter occurs; rhetoric raises police suspicion and outing consequences.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs prosecution of teachers who use preferred names or pronouns or facilitate social transition; care bans in 27 states; sports bans; state school bathroom law; family document checks.",
+    "protection": "Some orders are enjoined; litigation is ongoing; no documented child-specific border protection.",
+    "interaction": "Adult with trans minor faces bathroom, care and school-setting exposure; border document mismatch may scrutinise family; visitor status does not clearly exempt.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific violence pattern in dossier; state has no hate-crime statute; sodomy provision unrepealed; public opinion majorities back birth-sex documents and sports bans.",
+    "protection": "National hate-crime statute covers gender identity; 22 states plus capital outlaw gender-identity discrimination; some local employment protections.",
+    "interaction": "State-level recourse for bias violence is thin; national statute may apply but local enforcement and climate vary.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Bathroom-law enforcement unsettled; passport and visa rules challenged; custody abuse documented; state lacks hate-crime statute; fraud ineligibility waiver is limited.",
+    "protection": "Courts have blocked some orders; legal-aid FAQ; national employment ruling and hate-crime statute; state bathroom law unenforceable against one plaintiff pending merits.",
+    "interaction": "Protections are partial and litigation-dependent; a traveller cannot rely on injunctions at a border or in custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B has actual multi-day coercive custody, extortion and threats with no protection. This dossier has less routine street custody but a universal border-document exposure and documented severe immigration-custody abuse; courts and legal aid exist but do not reliably reach the border. Slightly above 0.25-B, still high risk."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A denies entry after invasive review but expressly bars detention for document mismatch. Here no equivalent safeguard is documented, federal facilities are restricted, and custody abuse is documented, so this case rates below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B resolves a document flag through a supervisor applying guidelines, with no detention. Here border discretion, possible fraud ineligibility and facility/custody exposures remain, so it is clearly below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C resolves a clinic record mismatch under a privacy directive with only minor uncertainty. This dossier has national document exclusion, facility bans and documented custody harm, far below 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime is layered: national binary-sex document rules and entry screening create the main universal exposure, and the state/province adds a school-to-university bathroom ban and prison treatment freeze while lacking a state hate-crime statute. Protections—existing X passports until expiry, national hate-crime coverage, employment ruling, litigation and legal aid—are real but partial and often unavailable at the border or in custody. The worst documented outcomes are conditional—refusal or stranding, fraud ineligibility, detention with abuse—rather than routine imprisonment or execution for trans identity. That places the combined regime in High Risk, above a purely discretionary-custody case but below a jurisdiction whose safeguards actually operate at entry."
+ },
+ "parse_error": null
+}

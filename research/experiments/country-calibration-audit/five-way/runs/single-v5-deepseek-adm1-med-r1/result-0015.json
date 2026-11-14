@@ -1,0 +1,82 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.003469376",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The combined regime is driven by the federal border and custody layer. A trans visitor is screened under national document rules that reject X/new markers, treat discrepancies as possible misrepresentation, and can refuse entry, strand, or initiate fraud/detention exposure; federal facilities and immigration custody carry documented exclusion and abuse. The division is genuinely protective in interior life—civil-rights coverage, hate-crime law, conversion-therapy and panic-defence bans, no state bathroom ban—but those protections do not pre-empt federal border, facility, custody, or investigative authority. For an adult alone, the main exposure is entry/document mismatch; for an adult with a minor, national minor-care and school-directed hostility add risk, though state protections remain relevant locally. Net: High Risk, not the division's low-risk local tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules reject X markers on new documents and treat sex/document discrepancies as possible wilful misrepresentation, supporting refusal, secondary screening, or lifetime fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiry; litigation challenges the passport policy; legal-aid guidance exists. State non-discrimination law does not bind federal border officers.",
+    "interaction": "Border screening is the first unavoidable federal stage, before any state protection applies; a passport/appearance mismatch can escalate to refusal, fraud inquiry, or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement, and sexual abuse of trans detainees; federal corrections policies impose conversion-therapy-style conditions and deny care.",
+    "protection": "Some executive orders are enjoined; litigation is pending. State civil-rights and hate-crime protections do not reach federal immigration or corrections custody.",
+    "interaction": "Document discrepancy can become a fraud/misrepresentation investigation, then federal detention, where placement and treatment are governed by hostile federal practice.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities congruent with gender identity; some states criminalise restroom use, but not this division.",
+    "protection": "The division has no mapped bathroom ban and has civil-rights protections; local facilities are relatively protective. Federal buildings, parks, and federally funded sites are not covered by that shield.",
+    "interaction": "A visitor's exposure depends on venue: local private/state facilities are safer, while federal facilities follow the national exclusion rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy restricts gender-affirming care for minors and public funding; the division's risk map notes healthcare-equity shortfalls. No division-specific care ban is documented.",
+    "protection": "Division law bans conversion therapy and covers insurance/corporate discrimination; state civil-rights protections remain operative for local care settings.",
+    "interaction": "Adult routine care is locally more protected; a minor's care and any federal funding/records issue remain subject to national restrictions despite state law.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism guidance names 'radically pro-transgender' ideology among priorities and federal rhetoric frames gender ideology as extremist, raising scrutiny risk at federal encounters.",
+    "protection": "The division has explicit gender-identity hate-crime coverage, non-discrimination law, and an abolished panic defence; no division-specific police targeting incident is documented.",
+    "interaction": "Federal threat framing can colour border, fraud, and custody handling; local police and courts operate under the division's more protective law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive orders describe minor gender-affirming care as mutilation and direct investigation of teachers who affirm trans minors; care bans exist in many states. A travelling trans minor may face border/facility scrutiny.",
+    "protection": "The division has no documented state care ban and protects gender identity in civil-rights, hate-crime, and conversion-therapy law; these do not bind federal border or custody actors.",
+    "interaction": "A guardian cannot shield a minor from federal entry screening or federal custody; within the division, local care and school-adjacent protections are stronger.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific anti-trans violence or enforcement data is documented; national climate is hostile and may elevate risk. General street violence data is not trans-specific.",
+    "protection": "Division hate-crime law covers gender identity, non-discrimination is codified, panic defence is abolished, and the risk map places it in a low-risk tier.",
+    "interaction": "Local police and prosecutors have protective tools; federal threat framing and national rhetoric may still affect reporting and official response.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport and entry policies remain partly in force and litigation is unresolved; state remedies do not reach federal border or custody harm. Enforcement of hate-crime law is undocumented.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, state civil-rights commission, and codified protections provide some recourse locally.",
+    "interaction": "Remedies are strongest after local harm and weakest at the federal border/detention stage, where the operative rules are national.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves invasive review and denial of entry with no detention and uncertain future transit. This jurisdiction is lower because federal document mismatch can also trigger fraud ineligibility and immigration detention with documented abuse, though its division-level protections are stronger than 0.25-A's setting."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a logged manifest, denied boarding, and possible future scrutiny, but no custody. This jurisdiction is broadly similar at the border but lower overall because federal custody exposures are documented and state protections do not bind federal actors."
+   },
+   {
+    "anchor_id": "0.45-C",
+    "comparison": "0.45-C shows transit-pass mismatch, weak local review, no custody, and an uncertain incident log. This jurisdiction is lower because the federal entry layer carries refusal, fraud, and detention risk, although its division's non-discrimination and hate-crime law exceed 0.45-C's local recourse."
+   },
+   {
+    "anchor_id": "0.65-C",
+    "comparison": "0.65-C shows a facility protection that works once escalated, with public awkwardness but no detention. This jurisdiction is materially lower because the border, federal facilities, and federal custody are governed by a hostile national regime that local protection cannot override."
+   }
+  ],
+  "synthesis": "The division is one of the more protective local jurisdictions in the dossier: codified gender-identity non-discrimination, explicit hate-crime coverage, conversion-therapy and panic-defence bans, marker-change procedures, and no state bathroom ban. But the traveller first passes through a hostile federal border and may encounter federal facilities or federal custody, where state law does not operate. The operative risk is therefore concentrated at entry and in any federal detention: outing can lead to refusal, fraud findings, or custody abuse. Interior daily life in the division is comparatively safer, but it cannot neutralise the federal layer."
+ },
+ "parse_error": null
+}

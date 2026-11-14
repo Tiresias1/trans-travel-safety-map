@@ -1,0 +1,78 @@
+{
+ "cell": 22,
+ "region": "66186276B53580985925186:Virginia",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00430764",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The division is comparatively protective for adult visitors: public-accommodations, housing, employment and credit protections cover gender identity; hate-crime law covers gender identity; X markers exist on state IDs; and the July 2026 risk assessment places it in the low-risk group and says youth-targeting policies are unlikely to extend to adults. But the combined regime is dominated by the parent national layer. Entry screening can flag document/sex discrepancies, refuse visas or entry, and consider lifelong fraud findings; trans athletes are barred; national custody and immigration detention carry documented severe abuse, including coercive practices and sexual violence. Division protections do not cancel national border, detention or custody authority. The result is materially safer than a criminalising state but still High Risk for an outed traveller.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa regime rejects X markers for new issues, requires male/female markers, and border guidance treats sex discrepancies as possible misrepresentation, with refusal and lifetime fraud ineligibility possible.",
+    "protection": "Fraud finding is not automatic; limited waiver exists; state IDs may carry X markers but do not control national entry.",
+    "interaction": "A foreign passport with X or mismatched marker can trigger secondary screening, case-note tagging, refusal, or referral; state-level document protections do not bind national border officers.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement, sexual abuse and coercive practices against transgender detainees; national prison policies adopted from 2026 include conversion-therapy-style measures.",
+    "protection": "National hate-crime statute covers gender identity, but it does not govern immigration custody conditions or protect against national detention practices.",
+    "interaction": "A border document discrepancy can escalate from screening to detention, where national custody rules apply regardless of state protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive action bars transgender people from federally funded single-sex facilities congruent with identity; many states ban such access, with criminal trespass exposure in four states and a documented bathroom arrest.",
+    "protection": "This division has public-accommodations protections and no documented adult facility ban; its restrictions are concentrated in schools and minors.",
+    "interaction": "State accommodation protections cover many everyday settings, but national facilities and any national custody placement remain outside them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy frames gender-affirming care for minors as abuse, restricts federal funding and proposes insurance exclusions; national custody denies hormones and substitutes psychiatric treatment.",
+    "protection": "Division law bans conversion therapy for minors and protects gender identity in public accommodations; adult visitor care access is not documented as restricted by the division.",
+    "interaction": "A visitor needing emergency or custody care may encounter national rules; ordinary state-regulated care is more protected but not shown to override national custodial policy.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' violent groups among priorities, and national guidance uses 'radical gender ideology' in threat language.",
+    "protection": "The same documents state counterterrorism powers will not target people who merely disagree with the government; no direct prosecution of trans visitors is documented.",
+    "interaction": "The framing raises risk of hostile official attention, especially if a traveller is already flagged at the border, but is not shown to create a standalone arrest offence for visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National measures target minors' social transition, school speech and gender-affirming care; some are enjoined or contested. A minor travelling with a guardian may face document-mismatch scrutiny at entry.",
+    "protection": "Division law bars conversion therapy for minors and protects gender identity in public accommodations; school restrictions are not shown to reach visiting minors outside school.",
+    "interaction": "The guardian carries the same national border exposure as the minor; state protections do not alter national entry or custody rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific hate-crime enforcement or violence statistics are provided; national climate includes official hostility and travel advisories from allied governments.",
+    "protection": "Division hate-crime law covers gender identity; public-accommodations protections are statutory; the state is rated low-risk for trans adults in the July 2026 assessment.",
+    "interaction": "Local police and courts are more likely to treat anti-trans violence as bias-motivated than in states without such law, but national investigative and custody authority remains separate.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport-marker litigation, executive-order challenges and health rules are unresolved; enforcement may vary by which measures are in effect.",
+    "protection": "Civil-liberties litigation and legal-aid guidance exist; several national orders have been enjoined; the division has statutory protections and a low-risk assessment.",
+    "interaction": "State remedies do not reach national border or immigration custody; the traveller's practical risk depends on the national measure in force at the moment of entry.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves invasive administrative review and denial of entry but no detention. This case is worse: national border screening can add fraud/lifetime-ineligibility exposure, and national detention conditions include documented severe abuse, though the division is more protective."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows delay and invasive review resolved by a supervisor, with no detention and limited uncertainty. This case has stronger state-level protections but a harsher national border and custody layer that the state cannot override, so it rates below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a functioning privacy directive and no detention; the main uncertainty is a legacy database. Here everyday state protections are comparably strong, but national entry and immigration custody remain documented severe exposures, placing it far below 0.75-C."
+   }
+  ],
+  "synthesis": "The division is one of the more protective units for adult trans visitors: statutory public-accommodations, employment, housing and credit protections; gender-identity hate-crime coverage; accessible state X markers; and a low-risk adult assessment. That materially lowers everyday risk in hotels, services and ordinary police response. The parent national regime nevertheless controls the border, visas, national facilities and all immigration custody. A passport or record discrepancy can trigger secondary screening, refusal, a fraud finding that is not automatic but carries lifelong consequences, and possible detention with documented severe abuse. State protections do not bind those national actors. The combined score is therefore High Risk, not Reduced Risk: safer than a criminalising jurisdiction, but with a real state-imposed exposure at the point every traveller must pass."
+ },
+ "parse_error": null
+}

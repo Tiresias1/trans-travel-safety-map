@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01287398",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The state/province is genuinely protective: public-accommodations nondiscrimination, hate-crime coverage, inclusive school/facility rulings, a sanctuary law, and low recorded incidents. But the visitor-facing border, visa, federal-facility and immigration-custody regime is national and hostile. A document or appearance discrepancy can trigger refusal, a fraud/lifetime-ineligibility tag, or detention; federal immigration custody has documented beatings, forced labour and sexual abuse. State sanctuary does not override federal border or custody. Local street violence is documented but lacks denominators, and state remedies do not reach federal detention. The combined regime therefore sits in the high-risk band, above a purely exclusionary bureaucracy but well below a jurisdiction where the protective state law governs the whole journey.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex passport/visa policy, no new X markers, refusal where documents or appearance create reasonable doubt, possible material-misrepresentation/lifetime-ineligibility finding; allied governments issued advisories after detentions.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding requires four elements and is not automatic; court challenges ongoing.",
+    "interaction": "Border and visa processing are federal; state/province ID protections and sanctuary do not control the port of entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration detention documented with forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; national corrections policies include conversion practices and hormone removal.",
+    "protection": "Fraud findings are not automatic and require elements; litigation is pending, but no visitor-facing federal custody remedy is documented.",
+    "interaction": "A border discrepancy can move the traveller into federal detention; state sanctuary does not reach immigration custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars federal funding for single-sex facilities congruent with gender identity; federal buildings, airports and national sites are governed nationally.",
+    "protection": "State/province law and court rulings protect restroom/locker access in state schools and some local facilities; local ordinances are inclusive.",
+    "interaction": "State/local inclusive rules do not override federal facility rules in federal buildings or at the border.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict gender-affirming care funding, describe minor care as mutilation, and threaten providers; visitor access to federal facilities is not protected.",
+    "protection": "State/province sanctuary law, health-equity coverage and nondiscrimination protections support care access for residents; extension to nonresident visitors is not sourced.",
+    "interaction": "State shield law may protect local providers, but federal funding and immigration rules remain operative; a minor traveller is exposed to national care-hostile policy framing.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' violent groups as a priority; justice-department guidance uses 'radical gender ideology' rhetoric, though not as a reward criterion.",
+    "protection": "Guidance states counterterrorism powers will not target mere disagreement; state/province nondiscrimination and hate-crime law remain in force.",
+    "interaction": "National rhetoric raises climate risk and may embolden federal actors; local police and state courts are governed by protective state law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation/prosecution of teachers facilitating a minor's social transition; national care restrictions and school facility bans apply in many states.",
+    "protection": "This state/province has inclusive school rulings, nondiscrimination law and sanctuary protections; visitor-specific school exposure is limited.",
+    "interaction": "A travelling family faces federal entry/document risk; within the state, local protections cover public accommodations and schools, but federal custody and border rules still apply.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two Black trans women were shot in the largest city within ten weeks in 2026, perpetrator(s) at large; raw count lacks a denominator, so background-rate comparison is unresolved.",
+    "protection": "State hate-crime law covers gender identity, a state LGBTIQ+ commission exists, recorded incident counts are low by law-score comparison, and local police/courts operate under protective state law.",
+    "interaction": "Local police response is state/local; federal hate-crime law also exists, but immigration custody remains outside state protection.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented working remedy for federal border refusal, fraud tagging or immigration-custody abuse; whether the sanctuary law covers nonresident visitors is not sourced.",
+    "protection": "State civil-rights enforcement, hate-crime penalties, sanctuary law, and legal-aid passport FAQ provide partial recourse.",
+    "interaction": "Remedies operate for state-level discrimination but cannot bind federal border or custody actors; pending litigation leaves border practice uncertain.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Similar to the port-exclusion anchor: invasive document review and denial of entry with retained papers. This dossier adds possible federal detention with documented abuse, but also a protective state/province for daily life. The severe federal custody exposure and entry-fraud tag make it somewhat worse than the anchor, while state protections keep it above the worst exclusion-only tier."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Higher risk than the ombudsman-release anchor. There, a charter representative secured release without detention and the discrepancy was merely logged. Here the border is federal and hostile, no equivalent visitor remedy is documented, and detention can lead to documented abuse; state sanctuary does not reach the port of entry."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Materially lower than the functioning-protection anchor. There, a hotel code was invoked and entry completed with only registry uncertainty. Here daily accommodation may be protected by state law, but the decisive journey stage—federal entry and custody—lacks an operating protection and carries refusal, fraud-tagging and abuse risk."
+   }
+  ],
+  "synthesis": "The state/province supplies a strong domestic protective floor: nondiscrimination, hate-crime coverage, inclusive facilities in state schools, sanctuary policy and low recorded incidents. But the traveller must first pass a federal border operating under a binary-sex document regime that can refuse, tag or detain. Federal facilities and immigration custody are outside state control, and custody evidence is severe. State protections therefore improve daily life after entry but do not neutralise the border and federal-custody exposure that dominates the rating."
+ },
+ "parse_error": null
+}

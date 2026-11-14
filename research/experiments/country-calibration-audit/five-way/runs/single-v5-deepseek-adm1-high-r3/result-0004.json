@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.009687",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime's worst features are state-imposed and traveller-facing: a national sex-as-birth document regime that permits refusal and a possible lifetime misrepresentation finding for marker/appearance discrepancies (reported passport confiscations; allied governments issued advisories), federal exclusion of trans people from sex-congruent government-funded facilities, and documented severe abuse of trans people in immigration custody. Against these sit real mitigations: no criminalisation of trans identity, no documented bathroom ban or bathroom prosecution in this division, gender-identity hate-crime coverage nationally and locally, and courts that have repeatedly enjoined parts of the programme. Division-level law (minor care ban, inmate care ban, surgical document requirements) is largely resident-facing and does not itself reach a visitor.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy redefines sex at birth; X markers no longer issued, existing ones valid until expiry. Cable directs refusal where documents/records raise doubt about sex, and a possible lifetime misrepresentation finding. Travellers reported passports confiscated or blocked; multiple governments issued advisories.",
+    "protection": "Existing X-marker passports remain valid until expiration; fraud finding is never automatic and requires four elements; litigation against the passport policy is pending; legal-aid FAQ exists.",
+    "interaction": "Document mismatch at the border is the first stage and can cascade into refusal, secondary screening, or removal/detention exposure under immigration authority that no state law can offset.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "In national immigration custody, trans men reported forced labour, beatings, solitary confinement and severe sexual abuse; national corrections adopted conversion-therapy-style policies (hair cutting, hormone withdrawal, psychiatric substitution).",
+    "protection": "Gender-identity hate crimes are punishable nationally; consular and legal-aid channels exist; several executive orders enjoined in court.",
+    "interaction": "A border-stage discrepancy can move a traveller into immigration detention, where the documented custodial harm is the operative risk, not the state's protective statutes.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; many states restrict facilities, and four criminalise certain use (one via trespass after refusal to depart), with a documented arrest elsewhere.",
+    "protection": "No facility ban documented in this division's own law; the cited trespass statute requires wilful entry plus refusal to depart, not automatic arrest.",
+    "interaction": "Federal buildings and federally funded settings impose the exclusion regardless of local tolerance; state-level absence of a ban does not neutralise the federal rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for minors (continuation permitted), bars public coverage at any age, and bars funds for inmate transition care with no taper; providers face licence loss and suits.",
+    "protection": "Existing minor patients may continue; two cities are sanctuaries; national care rules were withdrawn and several orders enjoined.",
+    "interaction": "These are resident-facing provider/coverage rules; a visiting adult's home prescriptions are not directly targeted, but a visiting minor could not obtain new care locally.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy names 'radically pro-transgender' groups among priorities; a reward memorandum uses 'radical gender ideology' rhetorically. Advising governments' travel warnings followed detentions of foreign citizens.",
+    "protection": "The memorandum does not make gender ideology a reward criterion; the strategy states powers will not target mere disagreement; courts have blocked several orders.",
+    "interaction": "Rhetoric raises climate and police-attention risk without documenting a traveller-facing enforcement practice in this division.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor travelling with a guardian faces the same document screening risk, and this division bans new gender-affirming care for under-18s; a national order frames such care as mutilation.",
+    "protection": "Continuation of existing treatment is permitted; guardians are not documented as subject to state action for a visiting minor's presentation.",
+    "interaction": "Border screening applies to the minor's own documents; state care law blocks local treatment but does not criminalise the guardian.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated trans-specific violence incident with an outcome is documented for this division; national hate-crime reporting exists and only 23 states cover gender identity in bias statutes.",
+    "protection": "Gender identity is covered by the national hate-crimes statute and by this division's hate-crime statute.",
+    "interaction": "Absence of documented incidents in a well-documented jurisdiction is a mildly positive signal, not proof of safety; recourse exists on paper.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Remedy for border refusals is limited and offshore; a lifetime misrepresentation finding has restricted waiver routes; facility exclusion in federal buildings has no documented working remedy.",
+    "protection": "Ongoing litigation, injunctions, legal-aid guidance, and a functioning (if partial) hate-crime and courts system.",
+    "interaction": "Rule of law operates here partly against the traveller: efficient enforcement of the document and facility rules is exposure, while litigation offers slow, uncertain relief.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor ends in denial of entry and retained papers with no imprisonment. This case is harsher: refusal is paired with a possible lifetime inadmissibility finding, documented passport confiscations, and a facility-exclusion regime that follows the traveller inland."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor has a working charter remedy that releases the traveller without detention and only a log entry. Here the mitigations are litigation and paper protections, while the border rule and federal facility exclusion operate regardless; documented custodial harm is more severe than the anchor's delay."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "That anchor shows a protection actually functioning after a moment of humiliation. Here protections are contested and partly enjoined, and the state's own care and document rules add hostile layers rather than a working safeguard."
+   }
+  ],
+  "synthesis": "The operative regime is a national document and screening system that treats a marker or appearance discrepancy as a reason to refuse, question, or (non-automatically) find misrepresentation, layered over federal exclusion of trans people from sex-congruent government-funded facilities and documented severe harm in immigration custody. Division law adds resident-facing care bans and surgical document requirements but no bathroom criminal statute, no trans-specific offence, and a gender-identity hate-crime provision. A traveller who presents matching documents and avoids detention encounters bureaucratic rather than carceral risk; one whose documents or presentation diverge can face refusal, stranding, or the custody pathway, which is where the severity lies."
+ },
+ "parse_error": null
+}

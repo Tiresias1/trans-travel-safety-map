@@ -1,0 +1,78 @@
+{
+ "cell": 31,
+ "region": "66186276B73402293045483:Nebraska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004315278",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is hostile at the national border: visa and passport sex-marker rules, refusal where sex is doubted, and a possible fraud or lifetime-ineligibility finding create a universal document exposure for outed trans visitors. The state adds a 2023 executive order fixing sex at birth and backing single-sex facilities, an under-19 care ban, no statewide gender-identity hate-crime or anti-discrimination law, and birth-sex custody with a documented assault and dismissed failure-to-protect claim. National hate-crime coverage, marriage recognition and some local ordinances are real but do not offset the border, facilities and custody exposures. There is no execution risk or general criminalisation of trans identity; the risk is elevated rather than severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports and visas; X markers are no longer processed; officers may refuse cases where sex is doubted and consider fraud or lifetime ineligibility. Existing X passports remain valid but screening can flag a mismatch.",
+    "protection": "National courts are reviewing the policy; existing X-marker passports remain valid until expiry; trans identity itself is not an entry bar.",
+    "interaction": "A foreign visitor's home passport and visa are checked at the border; a marker or presentation mismatch can trigger secondary screening, refusal, or a fraud finding, with possible detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; state prisons house by birth sex, and a trans woman was celled with a male sex offender who assaulted her, with her claims dismissed.",
+    "protection": "National hate-crime statute covers gender identity; courts exist, but the documented state prison ruling denied relief.",
+    "interaction": "Border fraud suspicion or arrest can move a visitor into immigration or state custody, where placement follows birth sex and documented abuse is unremedied.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The state's 2023 executive order defines sex at birth and backs single-sex bathrooms and changing rooms; national maps show facility bans in many states, but this state's criminal enforcement is not documented. No statewide public-accommodation protection exists.",
+    "protection": "Some city ordinances protect gender identity in public accommodations; no documented state facility-access protection.",
+    "interaction": "A visitor using state government or regulated facilities may face exclusion or scrutiny; private facilities depend on local practice, and no clear remedy is documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for anyone under 19 is banned statewide; adult visitor care is not documented, and emergency or ward practice is not specified.",
+    "protection": "No state protection is documented; national law does not create care access for visitors.",
+    "interaction": "An adult travelling with a trans minor cannot obtain banned care in-state; an adult needing routine or emergency care faces unspecified document and facility friction.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National executive orders frame gender-affirming care as mutilation and direct investigation of 'gender ideology'; the counterterrorism strategy names 'radically pro-transgender' groups. The state order fixes sex at birth.",
+    "protection": "National hate-crime law covers gender identity; the state hate-crime law does not name it; local ordinances are patchy.",
+    "interaction": "Official threat-framing can shape police and institutional response if a visitor is outed or reports violence, though no direct prosecution of trans identity is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-19 gender-affirming care is banned; school sports are restricted; the state order backs single-sex school facilities. National order targets teachers facilitating social transition.",
+    "protection": "None documented for trans minors in this state; national marriage and adoption recognition are irrelevant to this exposure.",
+    "interaction": "A trans minor visitor cannot access care in-state; a guardian may face institutional friction in facilities or care settings, but no visitor-specific enforcement is documented.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-level trans violence statistics are provided; the state hate-crime law omits gender identity; public opinion supports birth-sex document rules. No documented pattern of anti-trans violence against visitors is supplied.",
+    "protection": "National hate-crime statute covers gender identity; some city anti-discrimination ordinances; national employment and housing protections.",
+    "interaction": "If a visitor is attacked, national hate-crime charging is possible, but state-level recourse is uneven and local police practice is undocumented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and visa policy is in effect and challenged; several executive orders are enjoined or in litigation; the state has no statewide gender-identity anti-discrimination or hate-crime provision.",
+    "protection": "Civil-liberties litigation, national hate-crime law, national employment and housing rulings, local ordinances, and marriage recognition.",
+    "interaction": "Remedies are slow and patchy; a traveller cannot rely on them at the border or in custody, and operative national measures must be checked at travel time.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has an explicit bar on detention for document mismatch and only denies entry. This regime allows refusal, a possible fraud or lifetime-ineligibility finding, and detention with documented custody abuse. This case is therefore lower than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B resolves a document flag through a supervisor and temporary permit, with no detention. Here the national border process itself can refuse the case and consider permanent fraud ineligibility, and state custody is documented as harmful; this is materially below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has an operating patient-privacy directive and a clinic director correcting the record. This regime has no comparable visitor-facing protection and instead bans under-19 care and backs single-sex facilities. It is far below 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime combines a hostile national border and document system with a state framework that fixes sex at birth, restricts facilities and bans under-19 care. A trans visitor is most exposed at visa or passport screening, where a marker mismatch can lead to refusal, a fraud finding, or detention; if detained, immigration and state custody follow birth sex and documented abuse is unremedied. State facilities and care rules add exclusion and care denial, especially for a minor. National hate-crime coverage, marriage recognition and local ordinances are real but do not reach the border, custody, or statewide facilities. The result is Elevated Risk, not severe criminalisation."
+ },
+ "parse_error": null
+}

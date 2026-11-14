@@ -1,0 +1,78 @@
+{
+ "cell": 9,
+ "region": "66186276B22971435435932:Kentucky",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005486397",
+ "parsed": {
+  "rating": 0.23,
+  "explanation": "The combined regime is harsh at the traveller-facing border: national rules require birth-sex markers, bar new X markers, treat document discrepancies as possible misrepresentation, and allow refusal or lifetime fraud findings; trans travellers report confiscated passports and stranded trips. Detention/custody exposes trans people to documented severe abuse. Facilities exposure is broader nationally than locally: the division's only facility rule is K-12 school-only, with no statewide adult bathroom ban. Care restrictions and hostile official rhetoric mainly affect residents and minors, but they colour risk if a visitor is outed. Some national hate-crime coverage, local ordinances, litigation and legal-aid guidance exist, but no working border remedy is documented. The result sits below the 0.25 exclusion-only anchors and well above imprisonment-standard anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require birth-sex markers, stop new X markers, and treat discrepancy as possible wilful misrepresentation supporting refusal or lifetime fraud inadmissibility; passports have been confiscated or blocked, stranding travellers.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; litigation continues.",
+    "interaction": "Border officer discretion combines with document regime; an outed traveller can move from screening to refusal, detention, or fraud proceedings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of transgender detainees; national corrections policies impose abusive practices on trans inmates.",
+    "protection": "Court challenges and legal-aid guidance exist, but no operative custody protection for trans visitors is documented.",
+    "interaction": "A border document discrepancy can escalate into immigration detention, where the documented custody harm becomes the operative risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars congruent single-sex facility use in government-funded settings; many states ban facilities by birth sex, and one state arrested a trans student for bathroom use.",
+    "protection": "The division's facility restriction is K-12 school-only; no statewide adult bathroom rule is documented. Nineteen municipalities have local non-discrimination ordinances.",
+    "interaction": "National restrictions overlay the division's narrower rule; adult tourists are not covered by the school provision but may encounter national government-funded facilities.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The division bans gender-affirming care for minors with no phase-out; national policy attacks such care and restricts funding. Visitor-specific care denial is not documented.",
+    "protection": "Conversion therapy on minors is barred division-wide; no visitor-facing care protection is documented.",
+    "interaction": "A trans minor traveller needing care would face the division ban; an adult visitor's routine care exposure is mainly identity scrutiny, not a documented ban.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; executive orders direct investigations and prosecutions over gender ideology; a bathroom arrest shows enforcement.",
+    "protection": "National hate-crime statute covers gender identity; some executive orders are enjoined; the reward memo does not list gender ideology as a criterion.",
+    "interaction": "Official threat-framing raises the chance that outing triggers hostile official attention, but the division's own hate-crime statute omits gender identity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division law restricts trans students' school facilities and bans minors' care; national orders target social transition and school support. Visitor-minor reach is limited unless enrolled or needing care.",
+    "protection": "No visitor-specific protection documented; conversion-therapy ban applies division-wide.",
+    "interaction": "A family at the border faces document scrutiny that can strand a parent and minor; school bathroom rules are not tourist-facing.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division hate-crime statute excludes gender identity; no trans-specific violence statistics are reported. A bathroom arrest illustrates police enforcement of facility rules.",
+    "protection": "National hate-crime law covers gender identity; local ordinances exist in 19 municipalities; police did act in a documented 2011 beating case.",
+    "interaction": "Recourse is patchy: an outed visitor in the division may lack state hate-crime coverage even where national law applies.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions are in effect; outcomes depend on officer discretion and current injunction status; no on-site border remedy is documented.",
+    "protection": "Litigation has blocked some orders; legal-aid FAQ exists; fraud findings require elements and are not automatic.",
+    "interaction": "Remedies operate after the fact and unevenly; they do not prevent a border refusal or custody exposure at the point of encounter.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves passport mismatch, invasive review, denial of entry and held papers, but no physical detention. This dossier adds documented detention/custody abuse, passport confiscation and possible lifetime fraud findings, so it is less safe than 0.25-A."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "0.35-C has a clinic refusal and brief detention, but an advocate invokes a directive and care is provided. Here no on-site border or custody remedy is documented, and custody harm is severe, so the rating is materially below 0.35-C."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "0.15-B features routine transfer to a maximum-security penitentiary with decades of hard labour for identity/document issues. This dossier does not document routine imprisonment for being trans, so it sits above 0.15-B, though border and custody exposures remain serious."
+   }
+  ],
+  "synthesis": "The division's own adult-facing rules are comparatively narrow: no statewide adult bathroom ban, school-only facility restriction, and no visitor-specific care ban. But the national regime supplies the operative traveller exposure: birth-sex document rules, possible refusal or lifetime fraud findings, passport confiscation, and abusive immigration custody. National facility restrictions and hostile official rhetoric overlay the division's gaps. Local protections are patchy and do not operate at the border. A trans adult is therefore exposed mainly at entry and in any detention; a family travelling with a minor shares that border risk, while the division's school and care rules mostly affect residents. The combined result is high risk, not extreme imprisonment-for-status risk."
+ },
+ "parse_error": null
+}

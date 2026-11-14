@@ -1,0 +1,78 @@
+{
+ "cell": 17,
+ "region": "66186276B41335105066757:Louisiana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005264916",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined regime is high risk, not extreme: no general law criminalising trans identity and no execution, but the visitor faces border document scrutiny that can refuse entry, tag cases, and consider lifetime fraud ineligibility; national facilities exclusion; a municipality with a severe restroom ordinance and a documented mob attack where victims were charged, attackers unarrested, one denied hospital care and held in a men's jail with a male search; immigration-custody abuse; a state minors' care ban; and no state gender-identity public-accommodations or hate-crime protection. Working protections are partial and mainly national or in litigation; local remedy is not shown to operate. It sits below 0.25-A and well below 0.55-B, above 0.15-A because imprisonment for identity is not the standard outcome.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National border policy treats sex as binary; X markers are not processed, discrepancies can trigger refusal, case-note tagging, and consideration of lifetime fraud ineligibility; foreign governments issued advisories after detentions.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding is not automatic and requires four elements; litigation continues; legal-aid guidance exists.",
+    "interaction": "A foreign passport with a marker or presentation mismatch can move from secondary screening into visa refusal, tagging, or immigration custody; no local shield is documented.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of trans detainees; a trans woman in local custody was held in a men's facility and searched by a male guard despite a female licence marker.",
+    "protection": "Not documented.",
+    "interaction": "Border or local arrest can lead to birth-sex custody; a restroom incident documented denial of hospital care and male jail placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; the division municipality enacted a severe anti-trans restroom ordinance, and a mob attacked a trans couple over restroom use.",
+    "protection": "Statewide facilities statute is not established by the sources; some municipalities have no such ban, but no operative protection is documented for this municipality.",
+    "interaction": "Federal facilities exclusion applies nationally; local ordinance adds criminal-trespass exposure in at least one municipality, enforced alongside documented hostile police response.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans puberty blockers, hormones and surgery for minors; transition-related care is excluded from insurance and public coverage; a trans mob-attack victim was denied hospital care; national orders target minor gender-affirming care.",
+    "protection": "Several national orders are enjoined; no operative visitor-facing care protection is documented in the division.",
+    "interaction": "An adult with a trans minor faces care denial; an adult needing emergency care can face refusal once trans status is known, as documented after the attack.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for prioritised neutralisation; national orders direct investigations of schools and prosecution of teachers; state hate-crime law excludes gender identity; police charged mob victims while no attacker was arrested.",
+    "protection": "National hate-crimes statute covers gender identity; two municipalities ban gender-identity discrimination; national employment-discrimination processes remain available.",
+    "interaction": "Official threat rhetoric and local police practice combine to make complaints by trans victims risky and remedies unreliable in the division.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State minors' care ban is in force; national policy frames gender-affirming care for minors as mutilation, directs school investigations, and has subpoenaed hospital records; passport rules make minor document matches harder.",
+    "protection": "Some national measures are enjoined; no state exemption or visitor protection is documented.",
+    "interaction": "A parent travelling with a trans minor can face care denial and official scrutiny if the minor's identity becomes known; school-related orders heighten risk in interactions with authorities.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "A trans couple was beaten over restroom use; victims were charged, no attacker arrested that day, one was denied hospital care and held in a men's jail; state hate-crime law omits gender identity.",
+    "protection": "National hate-crimes statute covers gender identity; two municipalities have local protections; no state public-accommodations protection is documented.",
+    "interaction": "Local police response converted a bias attack into charges against the victims, showing thin or no recourse and a high risk of custody harm after street violence.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state gender-identity employment, housing or public-accommodations protection; hate-crime gap; marker changes require surgical proof; local ordinance enforcement against visitors and outcome of charges are unresolved.",
+    "protection": "National hate-crimes and employment-discrimination law; ongoing passport litigation; legal-aid FAQ; two municipal anti-discrimination ordinances.",
+    "interaction": "National remedies exist on paper but local custody, facilities and police practice are not shown to be constrained by them; several key outcomes remain unknown.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A has immediate transfer to high-security prison under statutes mandating severe multi-year imprisonment for identity misrepresentation. This case lacks a general imprisonment mandate for trans identity, but border fraud ineligibility and documented custody abuse make it materially less severe than 0.15-A, not equivalent."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves invasive review, denied entry and confiscated papers without detention. This case is worse: border screening can tag and consider lifetime fraud ineligibility, federal facilities are restricted, local restroom ordinance and custody practices expose the visitor to arrest, male custody and care denial."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a hotel ID mismatch resolved by a manager invoking a non-discrimination code, with no police. This case has documented police charging victims, no attacker arrest, male jail placement and no working local remedy, so it is far below 0.55-B."
+   }
+  ],
+  "synthesis": "The operative regime is a layered exposure: national border and facilities rules reach the visitor regardless of locality, while the division adds a severe municipal restroom ordinance, a documented mob attack with victim-blaming police response, male custody and search despite a female marker, care denial, a minors' care ban, and no state gender-identity public-accommodations or hate-crime protection. National hate-crimes and employment protections and ongoing litigation exist, but they are not shown to constrain local custody, police or facilities practice. The result is high risk upon outing, short of the extreme imprisonment-and-execution tier."
+ },
+ "parse_error": null
+}

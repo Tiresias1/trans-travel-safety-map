@@ -1,0 +1,78 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00820174",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "The state's moderate profile (no statewide adult facility or care ban) is offset by the parent national regime: passport marker restrictions, border refusal for discrepancies, possible lifetime fraud ineligibility, and documented abuse in immigration custody. State protections are thin: no gender-identity nondiscrimination or hate-crime coverage outside four municipalities. An adult alone faces border/document outing and service discrimination; a family with a minor also faces youth-targeted national and state measures. The score sits below administrative-exclusion anchors because detention consequences are severe, but above imprisonment/execution anchors because there is no general criminalization of trans identity and state adult facility use is not banned.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport rules restrict markers to birth sex; X markers are discontinued for new issues. Border cable allows refusal for sex-document discrepancies and possible lifetime fraud ineligibility for suspected misrepresentation.",
+    "protection": "Existing X-marker passports remain valid until expiration; fraud finding is not automatic; policy is challenged in court; state document changes are available to residents.",
+    "interaction": "A visitor's home passport may mismatch appearance or destination records; border officers can secondary-screen, refuse, or flag for fraud, while state document rules do not govern visitors.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement, and severe sexual abuse of transgender detainees. National prison policies impose conversion-style practices and deny care.",
+    "protection": "Legal-aid FAQ and court challenges exist; some national orders are enjoined. No documented visitor-specific custody protection or enforceable remedy is provided.",
+    "interaction": "A border discrepancy can escalate from secondary inspection to immigration detention, where the documented harms are severe and remedies uncertain.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities congruent with gender identity. State law has no statewide adult restroom or changing-room ban.",
+    "protection": "Statewide adult facility use is not banned; four municipalities have local nondiscrimination ordinances. National facility restrictions still apply in covered settings.",
+    "interaction": "A visitor may encounter national facility rules in federal or federally funded buildings, while state-level adult facilities are mostly unrestricted but locally variable.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No statewide adult gender-affirming care ban is documented. National measures target minors and funding; the state medical board drafted a youth-care restriction.",
+    "protection": "Adult care is not banned statewide; document changes are available to residents with provider letters and fees. Visitor emergency-care practice is not documented.",
+    "interaction": "A visitor needing care may face provider caution from national hostility and state youth-care signals, but no adult care ban is documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; state hate-crime law omits gender identity, and state nondiscrimination law omits gender identity.",
+    "protection": "National hate-crime statute covers gender identity; four municipalities prohibit gender-identity discrimination. Enforcement of municipal ordinances is not documented.",
+    "interaction": "If a visitor is targeted, state-level penalty enhancement and statewide accommodation recourse are absent; national and local remedies exist but are uneven.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order threatens prosecution of teachers facilitating a minor's social transition; state board drafted youth-care restrictions, sports bans, and one district bathroom policy.",
+    "protection": "No statewide adult facility or adult care ban; state youth measures are partly regulatory or district-level. Traveling minors are not shown to face state facility bans outside schools.",
+    "interaction": "An adult travelling with a minor may face border scrutiny and national youth-focused hostility; state school rules do not directly bind visitors but signal risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence count or homicide baseline is provided. State hate-crime statute omits gender identity, so bias violence lacks state penalty enhancement.",
+    "protection": "National hate-crime statute covers gender identity; four municipalities have local protections. No enforcement data for these protections is provided.",
+    "interaction": "Response to street violence depends on locality; statewide recourse is weak, while national and municipal remedies are not shown to operate for visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and border policies remain challenged; municipal ordinance enforcement is unsourced; no statewide gender-identity accommodation or hate-crime coverage.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, and some injunctions exist; marriage equality and sodomy repeal are documented but not direct visitor protections.",
+    "interaction": "Remedies are contested and may not reach border or custody encounters; a visitor cannot rely on state-level recourse outside the four municipalities.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar border document mismatch and invasive review/denial, but this dossier adds possible lifetime ineligibility, immigration detention with documented abuse, and national facility restrictions. The state lacks an adult facility ban but also lacks statewide protections. Lower than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a working transit guideline and temporary permit preventing detention. Here national border rules are hostile, state remedies are absent outside municipalities, and custody harms are documented. Much lower than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a director invoking a privacy directive to ensure care. Here no statewide nondiscrimination or hate-crime coverage exists, and national policy targets gender identity. Much lower than 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime is parent-dominated: document and border screening carry the sharpest exposure, with refusal, possible lifetime ineligibility, and severe custody harms if detention follows. The state's moderate profile means no statewide adult facility or care ban, but its protections are thin: no gender-identity nondiscrimination or hate-crime coverage outside four municipalities. An adult alone faces outing at borders and service discrimination; a family with a minor also faces youth-targeted national and state measures. National litigation and local ordinances are real but not shown to protect a visitor at the border or in custody."
+ },
+ "parse_error": null
+}

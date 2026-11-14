@@ -1,0 +1,78 @@
+{
+ "cell": 22,
+ "region": "66186276B53580985925186:Virginia",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002074882",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is dominated by the parent national border and custody system. A trans visitor with a marker/appearance discrepancy faces secondary screening, possible refusal, case-note tagging, and a discretionary lifetime fraud finding. If detained, national immigration custody has documented beatings, forced labour, solitary confinement and sexual abuse. The division is comparatively protective for adults: public-accommodations, hate-crime and document rules cover gender identity, and a July 2026 assessment calls it low-risk for adults. Those protections operate after entry and cannot cancel national border, federal-facility or custody exposure. Facilities and school restrictions are concentrated in the national layer and in youth settings; the division has no documented adult facilities ban. The result is High Risk, below refusal-only anchors because custody harm is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy no longer issues X markers and requires M/F per supporting documents; cables direct refusal where documents or records cast doubt on sex, with possible lifetime fraud ineligibility. Existing X passports remain valid only until expiry.",
+    "protection": "Division offers X markers on licences and accessible birth-certificate changes, and its public-accommodations law covers gender identity, but these do not bind national border officers.",
+    "interaction": "A state-issued licence or certificate cannot cure a national passport or visa discrepancy at entry; the national border stage governs.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; national corrections policy imposes conversion-therapy-like measures on trans inmates. Fraud proceedings can produce permanent ineligibility.",
+    "protection": "Division anti-discrimination and hate-crime laws do not reach national immigration detention or national custody; no division remedy is documented for federal detainees.",
+    "interaction": "A border discrepancy can escalate into national detention, where the documented abuses apply regardless of state protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with gender identity. Many states impose broader facility bans, but this division has no documented adult facilities ban and protects public accommodations.",
+    "protection": "Division public-accommodations law covers gender identity, and its restrictions are concentrated in schools and minors, not adult visitor facilities.",
+    "interaction": "Division protections do not cancel national facility rules in federal buildings or federally funded settings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict gender-affirming care for minors, bar public insurance reimbursement for under-18 care, and target providers; adult visitor care access is not specifically documented.",
+    "protection": "Division prohibits attempts to change a minor's gender identity and protects public accommodations, but no division rule is documented that shields a visiting minor from national care rules.",
+    "interaction": "An adult visitor seeking routine care has no documented national restriction; a travelling minor faces the national youth-care restrictions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; national justice guidance uses 'radical gender ideology' and creates rewards for information on listed domestic terrorist leadership. School-transition prosecution policy targets teachers.",
+    "protection": "National hate-crime statute covers gender identity; division hate-crime law covers gender identity and repeals panic defences.",
+    "interaction": "Threat-framing chills reporting and raises risk if a visitor is caught in a national investigation, but it is not shown to criminalise mere trans status.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation and criminal prosecution of teachers who use preferred names or facilitate a minor's social transition; national care restrictions apply to minors. Division school policies restrict bathrooms and pronouns, though intended for reversal in 2026.",
+    "protection": "Division prohibits conversion attempts on minors and has public-accommodations protections; a 2014/2021 ruling allowed a trans student bathroom access, but later administrative policies restrict students.",
+    "interaction": "A parent travelling with a minor faces national care and school-related threat framing; division protections are incomplete and school rules remain contested.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific figures on anti-trans violence or hate-crime enforcement appear. National hate-crime coverage is partial across states, and official threat-framing may deter reporting.",
+    "protection": "Division hate-crime law covers gender identity, and national hate-crime statute covers gender identity; public-accommodations protections exist.",
+    "interaction": "The division's hate-crime law offers recourse for reported violence, but the record does not establish enforcement frequency or visitor-specific outcomes.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport restrictions and executive orders remain in litigation, so operative rules can shift. Reports exist of passports confiscated or blocked, leaving travellers stranded; fraud findings are discretionary.",
+    "protection": "A national civil-liberties union lawsuit challenges passport policy, and legal-aid FAQs track document rules. Division statutes provide local protections.",
+    "interaction": "Remedies are prospective and do not prevent border-stage harm; a traveller cannot rely on litigation to resolve an entry or custody encounter.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves a border discrepancy with explicit legal protection against detention, resulting in denial of entry and document retention. This case is lower: national rules permit refusal with possible fraud ineligibility, and national immigration custody has documented severe abuse, which 0.35-A excludes."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has administrative denial, no formal detention, and only open questions about future scrutiny. This case is lower because national detention and custody harm are documented, not merely uncertain, and border refusal can carry a lifetime fraud finding."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a working transit guideline that prevents detention and waives penalties after an ID mismatch. This case lacks an operative national border protection of that kind; division protections do not reach national entry or custody, so it sits materially below 0.55-B."
+   }
+  ],
+  "synthesis": "The division is one of the more protective adult environments in the parent system: gender identity is covered in public accommodations, hate crimes and local documents, and the July 2026 assessment calls it low-risk for adults. But the visitor first passes through the national border regime, where passport-marker mismatch, refusal, case-note tagging and discretionary lifetime fraud findings are documented, and where detention can lead to severe abuse in national custody. Division law cannot bind national officers or national detention. Facilities and care restrictions likewise sit mostly in the national and youth layers, not in a division adult facilities ban. The combined operative regime therefore remains High Risk."
+ },
+ "parse_error": null
+}

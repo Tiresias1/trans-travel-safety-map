@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00294532",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime: in this division, public-accommodation, hate-crime, self-ID document and care-shield rules are strongly protective, so hotels, shops, transport and many services are comparatively safe. But entry, national identity documents, federal facilities, immigration custody and federal investigative authority are governed by the parent framework, which treats marker mismatch as possible misrepresentation and permits refusal, fraud findings and detention. Local shield and non-discrimination law cannot reach those federal stages. Everyday life is closer to Reduced Risk; the border/custody overlay adds documented severe exposure. Net: Elevated Risk, above the national average but below a jurisdiction whose protections cover entry and custody.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent rules require sex assigned at birth on passports/visas; X markers are not processed; border officers may refuse cases with document discrepancy and consider material-misrepresentation fraud, with possible lifetime ineligibility.",
+    "protection": "Division issues self-declared state IDs and X markers, but these do not govern national entry or passport screening.",
+    "interaction": "A visitor's foreign passport is checked under parent rules; state self-ID cannot override border officers' fraud/refusal authority.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of trans men; a border fraud finding can trigger detention or ineligibility.",
+    "protection": "State shield law and non-discrimination law do not bind national immigration custody.",
+    "interaction": "A document discrepancy at entry can move the traveller into federal detention, where state protections do not follow.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Parent order bars trans people from government-funded single-sex facilities matching identity; some states criminalise bathroom use, but not this division.",
+    "protection": "Division has no bathroom ban and public-accommodation law covers gender identity in places open to the public.",
+    "interaction": "Local hotels/restaurants are protected; federal buildings and federally funded facilities remain under the parent restriction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Parent measures attack youth gender-affirming care, restrict funding/insurance, and direct investigations; national custody removes hormones.",
+    "protection": "Division codified gender-affirming care protections and a 2022 shield law for patients/providers where the home jurisdiction bans care.",
+    "interaction": "Adult visitor care in the division is shielded locally; national funding/insurance and custody rules still apply at federal touchpoints, and minors face parent investigations.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice reward guidance and school-prosecution order create a hostile investigative climate.",
+    "protection": "Division hate-crime statute covers gender identity with police reporting/task force; public-accommodation protections apply.",
+    "interaction": "Local police recourse exists for street crime, but federal investigative threat-framing is outside state control and can escalate document, school or care encounters.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Parent order describes gender-affirming care for minors as mutilation; directs investigating schools and prosecuting teachers who use preferred names/pronouns; youth-care bans exist nationwide.",
+    "protection": "Division protects gender-affirming care, bans conversion therapy for minors, has anti-bullying rules and a shield law.",
+    "interaction": "A minor travelling with a guardian is locally safer in this division, but federal orders create investigation/prosecution risk at schools and care/funding interfaces.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No visitor-specific trans violence is documented in the dossier; national hate-crime data are partial and many states lack gender-identity bias statutes.",
+    "protection": "Division hate-crime law covers gender identity, requires collection/reporting, and has a task force; public-accommodation law applies.",
+    "interaction": "Local police and courts are more likely than the national average to treat anti-trans violence as a bias crime; federal response and cross-state gaps remain.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport/border policies remain contested; outcomes depend on which measures are in effect and officer discretion; state remedies do not reach federal acts.",
+    "protection": "Division has strong statutes, advocacy infrastructure and a Most Protective ranking; local complaints have enforcement machinery.",
+    "interaction": "A traveller can remedy local service discrimination but not federal entry/custody harms; unresolved litigation makes border risk uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has invasive administrative review and denial of entry but no criminal custody. This division's everyday protections are much stronger, yet parent border fraud and immigration-detention exposure is more severe; net similar to slightly above the 0.35 anchor."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D involves hotel refusal under weak civil mediation and no detention. Here public-accommodation and hate-crime law are enforceable, so local life is safer; but national entry and custody exposure is worse, keeping the combined score near 0.45 rather than higher."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A shows formal protection operating at the border, with delay and public scrutiny but clearance. Here state protection does not reach national entry, federal facilities or custody, so the combined regime sits materially below the 0.65 anchor."
+   }
+  ],
+  "synthesis": "The division is genuinely protective for a trans visitor once inside: public accommodations, hate-crime recourse, self-ID state documents and care-shield law operate locally, and the state ranks Most Protective. That does not neutralise the parent regime. The traveller first passes through national border screening, where a document mismatch can trigger refusal, a material-misrepresentation finding, or immigration detention; federal facilities and custody are also outside state protection. Everyday risk is therefore lower than the national average, but the combined operative regime remains Elevated Risk because the harshest federal exposures follow the traveller into the jurisdiction."
+ },
+ "parse_error": null
+}

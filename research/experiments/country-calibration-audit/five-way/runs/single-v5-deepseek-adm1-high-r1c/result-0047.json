@@ -1,0 +1,78 @@
+{
+ "cell": 47,
+ "region": "66186276B98021244841737:Alabama",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007164878",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined federal–state regime creates several traveller-facing exposures without a working remedy: national entry screening can refuse document-discrepant cases and consider lifetime fraud ineligibility; federal facilities and state schools/colleges bar identity-congruent restroom use; the state criminalises gender-affirming care for anyone under 19; statewide nondiscrimination and gender-identity hate-crime coverage are absent. National hate-crime law, pending litigation and non-automatic fraud findings are limited mitigants. No trans-specific criminalisation of adult identity, organised targeting or usable violence rate is documented; the 3.8/100k figure is an undercount floor. An adult alone faces border, facility and service risk; a family with a trans minor faces care denial and facility exclusion.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National executive order requires sex assigned at birth on passports/visas; X marker halted; border posts refuse cases with document discrepancy or reasonable doubt and may consider lifetime fraud ineligibility. Trans travellers report confiscations and stranding.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; litigation pending; legal-aid FAQ exists.",
+    "interaction": "A foreign visitor's home passport may avoid the US marker rule, but any presentation/document mismatch can trigger secondary screening, refusal, or visa ineligibility.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; federal corrections policies impose conversion-style practices. State/local custody practices are not documented.",
+    "protection": "National hate-crime statute and pending court challenges; no documented visitor-specific custody safeguard.",
+    "interaction": "A border document discrepancy can escalate to immigration detention; state arrest for facility trespass could enter local custody, but no state-specific trans custody policy is documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars trans people from government-funded single-sex facilities matching identity; state bans cover public schools and college campuses (HB322, 2024 bill, SB79), with no statewide public-accommodations protection.",
+    "protection": "Private settings are not generally banned by state law; national hate-crime law and court injunctions on some federal orders apply.",
+    "interaction": "A visitor using the correct restroom in a federal building or public university risks ejection or challenge; private hotels/restaurants lack state protection but no blanket ban is documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State felony for providers giving puberty blockers, hormones or surgery to anyone under 19; no insurance inclusion; national rules target under-18 care. Adult care restrictions are not documented.",
+    "protection": "National legal challenges; emergency care is not shown restricted; no documented adult HRT ban.",
+    "interaction": "An adult alone may obtain routine care, but a family with a trans minor faces provider refusal and criminalised care; disclosure can expose the family.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; state SB79 declares an immutable binary; no state hate-crime coverage for gender identity; low public support.",
+    "protection": "National hate-crime statute covers gender identity; national employment ruling; some court injunctions.",
+    "interaction": "Official threat rhetoric raises risk of hostile reporting or policing, but no documented state campaign against trans visitors; local hate-crime recourse is absent.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor with a parent faces the care ban (felony for provider), school/college bathroom restrictions, sports exclusion, and national executive order prosecuting teachers who affirm social transition.",
+    "protection": "National court injunctions on some federal orders; no state protection.",
+    "interaction": "A parent seeking care or affirming a minor in public facilities may be refused service or investigated; an adult alone is not directly affected.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific incident in this state; the killing-rate figure is an undercount floor and unusable; state hate-crime law excludes gender identity; low public support.",
+    "protection": "National hate-crime statute; no state bias-crime coverage; no documented police targeting.",
+    "interaction": "If assaulted, federal hate-crime recourse exists, but local reporting and investigation are not documented; social climate is hostile but violence rate is unassessed.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No statewide nondiscrimination in employment, housing, public accommodations or schools; only two municipalities protect; courts upheld refusal of accurate state IDs.",
+    "protection": "National hate-crime and employment law; pending litigation; legal-aid FAQ.",
+    "interaction": "A visitor facing service denial or facility ejection has little state recourse; federal remedies are narrow and not shown to operate for visitors.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is a documented border denial with confiscated papers and no detention. This dossier shares a national refusal policy and possible lifetime ineligibility, but no visitor denial is documented here; it adds state facility and care bans. The combination is broader in daily exposure, though slightly less immediately severe than a completed stranding, so it sits just above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves a delayed rail journey where an advocate invokes guidelines and the traveller proceeds without detention. Here there is no reliable advocate, and statutory facility and care exclusions operate without state public-accommodations recourse, making the regime materially worse than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a clinic initially refuse a refill, but a director invokes a directive and the prescription is issued. Here the care restriction is criminal law for minors, state nondiscrimination protection is absent, and no working remedy is documented, so the jurisdiction is much worse than 0.75-C."
+   }
+  ],
+  "synthesis": "Federal entry/document rules and state facility/care bans operate together. A document mismatch can move from border questioning to refusal or immigration custody; state facility rules can eject a visitor from a public university or government building; a trans minor with a parent can be denied care because providers face felony liability. Private hotels and restaurants are not blanket-banned but lack state public-accommodations recourse. National hate-crime and employment protections exist but are not shown to remedy visitor-facing exclusion. The state's low support and binary-statute framing add social and state hostility, but no documented police campaign or trans-specific violence pattern is established. Overall Elevated Risk, lower than jurisdictions where protections actually operate."
+ },
+ "parse_error": null
+}

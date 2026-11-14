@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00294198208",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The state/province layer is genuinely protective: non-discrimination, hate-crime coverage, X markers, a healthcare shield law, and custody rules consistent with gender identity. But a visitor cannot avoid the national border and federal systems, which the dossier documents as hostile and operative: passport sex-marker restrictions, refusal where documents raise doubt, possible lifetime fraud findings, document confiscation, a federal facilities ban, and abusive immigration custody. State law does not pre-empt these federal exposures. The combined regime therefore sits well below the state's own protective tier and in the Elevated Risk band: everyday life in the state is low-risk, while entry and any federal detention carry the sharpest documented exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar new X markers, require sex assigned at birth, and direct refusal where documents cast doubt on sex; officers may consider a lifetime fraud finding. Confiscations and stranded travellers are reported.",
+    "protection": "The state offers M/F/X markers and marker changes, but these are resident-facing and do not bind national border officers.",
+    "interaction": "A visitor's home passport is screened under national rules; the protective state document regime does not govern entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody is documented with forced labour, beatings, solitary confinement, sexual abuse, and conversion-style practices; a fraud finding can carry lifetime ineligibility.",
+    "protection": "The state's 2018 custody policy requires treatment consistent with gender identity, including strip searches and housing, but it does not govern federal immigration custody.",
+    "interaction": "A document discrepancy can move the visitor from border screening into federal detention, where the documented abuse regime applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national order bars transgender people from federally funded single-sex facilities congruent with identity, reaching airports and federal buildings.",
+    "protection": "The state has no bathroom ban and sits in the 'Most Protective' tier; state and private facilities are covered by non-discrimination law.",
+    "interaction": "Federal facilities follow the national ban; state and private facilities follow protective state law. The visitor encounters both.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding restrictions and proposed rules target transgender care, and youth-care bans exist in 27 states/provinces, though not this one.",
+    "protection": "The state's 2022 shield law protects patients and providers, and gender-identity discrimination is banned in goods and services.",
+    "interaction": "Care sought inside the state is comparatively protected; national funding and insurance rules may still affect coverage.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities, and a justice-department memo references 'radical gender ideology'.",
+    "protection": "The state's hate-crime law covers gender identity and was strengthened effective October 2026; state non-discrimination law applies.",
+    "interaction": "National rhetoric chills but no documented enforcement against travellers is shown; state law enforcement operates under protective state statutes.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A national executive order directs prosecution of teachers who facilitate a minor's social transition; youth-care bans exist in many states/provinces, though not this one.",
+    "protection": "The state has no youth-care ban, bans conversion therapy on minors, and its anti-bullying law covers gender identity on all school premises.",
+    "interaction": "A trans minor travelling with a guardian faces the same national border-document exposure, but state schools and care settings are protective.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The dossier provides no state/province-specific count of anti-trans violence, so no comparison with the general homicide rate can be made.",
+    "protection": "State hate-crime law covers gender identity with additional penalties; state non-discrimination law covers public places and services.",
+    "interaction": "Protective recourse exists on paper in the state, but enforcement outcomes for visitors are not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and entry policies remain in litigation and can change; a traveller's exposure depends on which measures are in effect at the moment of travel.",
+    "protection": "A civil-liberties suit challenges the passport policy, and a legal-aid FAQ tracks document rules; several national orders have been enjoined.",
+    "interaction": "Court relief is partial and unresolved, so the operative border rule may shift, but the hostile baseline is currently in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves invasive border review, denial of entry, and confiscated papers but no protective destination state. Here the border exposure is comparable or worse (possible lifetime fraud finding), but the state layer adds strong non-discrimination, hate-crime, care and custody protections, so this case rates above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a document flag, delay, and legal-aid intervention that ultimately permits entry. Here national border rules can refuse entry and trigger a lifetime finding, and federal custody is documented as abusive; despite the protective state layer, the entry outcome is worse than 0.55-B, so this case sits below it."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows a working protection resolved at the clinic with minor friction. Here the national border and federal facilities regimes are hostile and operative, not merely friction; state protections do not pre-empt them, so this case is materially below 0.75-C."
+   }
+  ],
+  "synthesis": "The visitor experiences two regimes at once. Inside the state/province, law and institutions are protective: non-discrimination, hate-crime coverage, X markers, a shield law for care, and custody rules consistent with gender identity. At the national layer, however, border screening, document rules, federal facilities, and immigration custody are documented as hostile and are not displaced by state law. The pinch points are entry and any federal detention; everyday life in the state is comparatively low-risk. The combined regime therefore rates in the Elevated band rather than at the state's protective tier."
+ },
+ "parse_error": null
+}

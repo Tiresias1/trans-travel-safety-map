@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.003744001",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime is dominated by national entry screening: passport sex-marker restrictions, refusal for document discrepancies, and possible lifetime fraud ineligibility create a continuous traveler-facing exposure. If entry refusal escalates to immigration custody, documented abuse of transgender detainees is severe. The division adds no current state bathroom ban or facility criminalization, which is a real positive, but state hate-crime law excludes gender identity and statewide nondiscrimination is absent. Care restrictions and school rules affect residents and minors more than adult visitors. Courts have blocked some national measures, but the passport policy remains operative. Overall: High Risk, below jurisdictions where entry protections function.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy restricts X markers and markers not matching birth sex; entry screening can refuse cases with document discrepancy or reasonable doubt, with possible lifetime fraud ineligibility.",
+    "protection": "Existing X-marker passports remain valid until expiration; fraud finding is not automatic and requires four elements; legal-aid FAQ exists.",
+    "interaction": "Home-country passport meets national screening; discrepancy can trigger refusal, secondary evidence demands, or fraud consideration.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; national corrections policies include conversion-therapy-like practices.",
+    "protection": "Fraud finding requires all four elements and limited waiver possibilities; some national orders are enjoined.",
+    "interaction": "Document discrepancy can lead to refusal, detention, and custody placement with documented harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National map shows facility bans in many states; this division has an active 2025 bathroom bill and a 2025 law requiring amended birth certificates to display original sex.",
+    "protection": "The 2016 bathroom law was repealed in 2017; no current state statute bars or criminalizes facility use matching gender identity; some local ordinances cover gender identity.",
+    "interaction": "State layer currently permits facility use, but legislative conflict keeps the position open; national facilities restrictions do not apply here as state law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bars transition care for minors and for people in state custody; national funding restrictions and proposed insurance rules target trans care.",
+    "protection": "No direct restriction on adult visitor emergency or routine care is documented; local ordinances and hospital visitation rules exist.",
+    "interaction": "Care restrictions mainly affect residents and minors; a visitor needing care could face administrative friction but not a documented blanket denial.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice memo uses 'radical gender ideology'; official hostility is documented.",
+    "protection": "Strategy states counterterrorism powers will not target simple disagreement; courts have blocked several executive orders.",
+    "interaction": "Threat framing raises climate hostility but is not shown to directly target trans visitors at checkpoints or facilities.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State laws restrict gender-affirming care for minors and require parental notification for name/pronoun changes in schools; national entry screening applies to minors.",
+    "protection": "No current state facility ban; local ordinances and some school policies may be protective.",
+    "interaction": "A trans minor travelling with a guardian faces the same national entry screening and possible custody risk; state care and school rules affect residents more than visitors.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State hate-crime statute excludes gender identity; no statewide nondiscrimination in public accommodations; local coverage is partial. Violence data is an acknowledged undercount and not used.",
+    "protection": "National hate-crime statute covers gender identity; some local ordinances and university policies protect; no documented pattern of police targeting trans visitors in this division.",
+    "interaction": "Recourse after violence is uneven; a visitor in a covered locality has more protection than elsewhere in the state.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport-marker policy remains in effect; possible lifetime ineligibility; legal challenges unresolved; state hate-crime coverage absent.",
+    "protection": "National civil-liberties litigation, legal-aid FAQ, national hate-crime statute, and some court injunctions provide partial recourse.",
+    "interaction": "Remedies exist but are uncertain and slow; a visitor may be refused or stranded before relief is available.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B involves direct detention, mockery, threats and a coerced statement. This case shares conditional detention risk but adds possible lifetime entry ineligibility and documented severe custody abuse; however, no current state facility ban and some local protections make it slightly above 0.25-B."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has entry denial and invasive administrative review but no detention or imprisonment. This case is below 0.35-A because entry refusal can escalate to immigration custody with documented abuse and possible permanent fraud ineligibility, though the division lacks a current bathroom ban."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a functioning protection: a supervisor invokes guidelines, issues a temporary permit, and no detention occurs. This case lacks reliable entry protection and carries custody harm, so it is materially below 0.55-B."
+   }
+  ],
+  "synthesis": "The operative regime is a national entry and custody system that treats document discrepancy as a potential fraud and can refuse or detain a trans visitor, with documented severe harm in immigration custody. The division is comparatively better on facilities: no current state bathroom ban or criminalization, though a 2025 bill and ID restrictions keep the climate hostile. State hate-crime and nondiscrimination coverage is thin, leaving uneven recourse. The result is High Risk: not a routine imprisonment-for-being-trans regime, but a real chance of refusal, lifetime ineligibility, or custody abuse if outed at the border."
+ },
+ "parse_error": null
+}

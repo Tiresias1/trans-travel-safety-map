@@ -1,0 +1,78 @@
+{
+ "cell": 45,
+ "region": "66186276B94082813086253:District of Columbia",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002565636",
+ "parsed": {
+  "rating": 0.26,
+  "explanation": "The capital district has no bathroom ban of its own and is listed low-risk locally, but the combined regime is dominated by the national framework: sex-binary document rules, case-note tagging of trans visa cases with refusal and possible lifetime fraud findings, documented detentions of foreign nationals over visa issues, allied-government advisories, a facilities restriction attached by the national legislature (beyond local repeal), and severe documented abuse in immigration custody. Local protection is real but overridable and does not reach border screening, national facilities or detention. Entry refusal and custody harm, not street violence, drive the score; no criminalisation of trans identity as such keeps it above the imprisonment-likely tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: foreign ministry case-note tagging where documents raise doubt on sex; refusal and requests for extra evidence; possible material-misrepresentation/lifetime-ineligibility finding; detentions of foreign citizens over visa issues; allied governments issued advisories.",
+    "protection": "Fraud finding is never automatic and requires all four elements; limited waivers exist; policy under litigation and partially enjoined.",
+    "interaction": "Home-issued passport meets national adjudication: mismatch triggers secondary screening, possible refusal, and custody pathway.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: detentions of foreign nationals over visa issues; immigration custody reports of forced labour, beatings, solitary confinement and severe sexual abuse against trans men; corrections bureau adopted conversion-therapy-style policies from 2026.",
+    "protection": "Not documented for trans immigration detainees; oversight reporting discontinued from 2025.",
+    "interaction": "Document discrepancy escalates into immigration custody, where documented harm is severe.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facilities restriction in force in this jurisdiction, attached by the national legislature, not locally repealable; activists protesting it arrested 5 Dec 2024. Scope and reach to visitors unsourced.",
+    "protection": "No local bathroom ban; local council generally refrains from targeting trans adults; July 2026 low-risk listing.",
+    "interaction": "Local legislative autonomy is overridden by the national legislature and executive orders; a favourable local ranking can be overturned without local law changing.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules restrict gender-affirming care; hospitals subpoenaed for records of patients under 19; national health rules proposed to bar reimbursement for under-18 care. Visitor-specific emergency-care denial not documented.",
+    "protection": "No documented traveller-facing care protection in this jurisdiction.",
+    "interaction": "Records-based inquiry is resident-facing; a traveller needing care enters a system under active national restriction.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "May 2026 counterterrorism strategy prioritises 'radically pro-transgender' groups; DOJ reward memorandum references 'radical gender ideology'. No documented prosecution of trans visitors on this basis.",
+    "protection": "Strategy states counterterrorism powers will not target mere disagreement; national hate-crime statute covers gender identity.",
+    "interaction": "Frames trans advocacy as extremism, raising official suspicion without a documented enforcement lever against individuals.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Executive order directs investigation of schools and prosecution of teachers facilitating a minor's social transition; care bans in 27 states/provinces; one state/province law invalidates documents not matching birth sex.",
+    "protection": "Several orders blocked or enjoined in court; this jurisdiction issues no local ban of its own.",
+    "interaction": "A guardian travelling with a visibly gender-nonconforming minor faces heightened scrutiny at documents and facilities; schools are not the visitor's setting.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for this jurisdiction; no trans-specific violence data or police targeting record supplied.",
+    "protection": "National gender-identity hate-crime statute exists; local record not documented.",
+    "interaction": "Unresolved; the dossier supplies no local police-practice or violence evidence.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Scope of the attached facilities ban (buildings covered, reach to visitors, enforcement beyond Dec 2024 arrests) and local custody/marker-change practice are unsourced.",
+    "protection": "Civil-liberties litigation ongoing; legal-aid FAQ on passport rules; local legal-risk assessment favourable.",
+    "interaction": "Recourse operates through national courts and is contested; favourable local ranking traces enacted law, not ground conditions.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor ends in denial of entry plus invasive administrative review with explicit statutory bar on detention. Here denial of entry is likewise documented, but the dossier adds actual detentions of foreign citizens over visa issues, a live facilities restriction in the capital with arrests, and severe documented abuse in immigration custody — worse than the anchor."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor resolves with an ombudsman securing release and no detention, a functioning local protection. This jurisdiction's local protections are overridden by the national legislature and executive, and no traveller-facing remedy for border or custody exposure is documented — materially below the anchor."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "That anchor is bureaucratic flagging with denied boarding, no detention, uncertainty about future scrutiny. Here the harms are heavier and state-attributed: refusal risk with lifetime-ineligibility potential, facilities exclusion by national fiat, and documented custodial abuse — clearly below the anchor."
+   }
+  ],
+  "synthesis": "The operative regime is the national one applied directly in the capital district. Locally there is no bathroom ban and a favourable legal-risk listing, but the sitting facilities restriction was imposed by the national legislature, cannot be repealed locally, and the national executive and legislature act on this jurisdiction without local consent. Border adjudication, facilities rules, immigration custody and threat framing are therefore all national. A visitor with discrepant documents faces questioning, possible refusal and possible detention, and detention carries documented severe harm; facilities exclusion is universal-exposure in principle though its scope here is unsourced. No criminalisation of trans identity as such, an available hate-crime statute and pending litigation keep this above the imprisonment-likely tier, but the combined exposure sits at High Risk."
+ },
+ "parse_error": null
+}

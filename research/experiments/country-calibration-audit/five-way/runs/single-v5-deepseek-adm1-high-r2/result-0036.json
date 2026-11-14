@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0032140936",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime is hostile at the border and in state-run facilities, but does not generally criminalise trans identity or impose execution. National sex-marker rules, refusal/fraud screening, federal single-sex facility exclusion, and documented immigration-custody abuse create real outing risk; the division adds an expanded educational bathroom ban, no state hate-crime statute, and prison treatment restrictions. National hate-crime law, courts, injunctions and legal-aid guidance are partial mitigations. A minor travelling with a guardian faces the same border and facility regime, though school-transition enforcement mainly targets residents. High Risk, not Severe: no general imprisonment or execution for being trans is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport rules require sex assigned at birth; discrepancies or reasonable doubt can lead to refusal and possible lifetime fraud ineligibility. Foreign governments issued trans travel advisories after detentions.",
+    "protection": "Fraud finding is not automatic and requires elements/waiver; passport policy is challenged in court; legal-aid guidance exists.",
+    "interaction": "Border officer discretion controls; division protections cannot override national entry screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies impose conversion-style treatment and stop reporting trans prisoner counts.",
+    "protection": "Some executive orders are enjoined; national hate-crime statute covers gender identity, but no visitor-specific custody safeguard is documented.",
+    "interaction": "A document discrepancy can escalate from screening into immigration detention and birth-sex custody exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; division bathroom ban reaches public schools, colleges and universities. Four states make certain bathroom use a criminal trespass.",
+    "protection": "Division trespass requires wilful entry and refusal to depart; litigation shields one student; no general visitor exemption documented.",
+    "interaction": "National facility exclusion and division educational bans compound in government/campus settings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policies attack gender-affirming care for minors and restrict prison treatments; division has a freeze-frame prison treatment policy. No visitor emergency-care denial is documented.",
+    "protection": "Not documented.",
+    "interaction": "A care encounter can trigger document or facility scrutiny, especially if detention or a minor is involved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for priority neutralisation; justice guidance uses 'radical gender ideology'; division has no state hate-crime statute.",
+    "protection": "National gender-identity hate-crime statute exists; some municipal protections; courts have blocked some orders.",
+    "interaction": "Official threat framing raises police/social licence against visible trans people, though visitor activism is the main trigger.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target school social transition and minor gender-affirming care; division bathroom ban covers public schools and higher education. A trans minor visitor faces the same border/facility risks.",
+    "protection": "Courts have enjoined some orders and litigation shields one student; no visitor-specific protection documented.",
+    "interaction": "A guardian cannot override national border screening or division facility rules; school enforcement mainly affects residents.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence rate is documented; division lacks a state hate-crime statute and retains an unrepealed sodomy provision as a secondary signal.",
+    "protection": "National gender-identity hate-crime statute and some municipal protections exist.",
+    "interaction": "Recourse varies by locality; no documented police targeting of trans visitors, but state-level recourse is thin.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Division bathroom-law enforcement is unsettled; national passport and entry policies remain litigated; fraud consequences are discretionary and potentially severe.",
+    "protection": "Courts, injunctions, legal-aid FAQ and national hate-crime law provide partial remedies.",
+    "interaction": "Outcome depends on which measures are operative at the moment of travel; unknown is not safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor has document-mismatch denial and invasive review but no detention, no national fraud/lifetime-ineligibility screening, no federal facility exclusion and no documented immigration-custody abuse. This jurisdiction is lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "That anchor shows a supervisor invoking a transit guideline and issuing a temporary permit, so protection operates after delay. Here border protection is discretionary and litigated, and the division adds educational bathroom restrictions; this jurisdiction is materially lower."
+   },
+   {
+    "anchor_id": "0.45-C",
+    "comparison": "That anchor resolves a document mismatch through a cited policy after inconvenience. Here national entry rules and state facility restrictions are not reliably overridden for visitors, and custody harm is documented; this jurisdiction is lower."
+   }
+  ],
+  "synthesis": "The operative regime is layered: national border sex-marker rules and custody practices are not cancelled by state protections, while the division adds educational bathroom restrictions and weak state hate-crime recourse. A trans visitor is most exposed at entry/document checks and in any detention or government facility; private hospitality is not documented as categorically barred. Courts, injunctions and the national hate-crime statute provide partial mitigation but do not remedy the recurring border and facility exposures. The absence of execution or general imprisonment keeps it out of the Severe band, but state-imposed universal exposures and documented custody harm place it in High Risk."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 19,
+ "region": "66186276B43575054209436:New York",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007463204",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "The state/province has strong, documented protections: public-accommodations law covering gender identity, hate-crimes coverage, gender-neutral bathrooms, a care shield, and no local bathroom ban. But the combined regime is dominated at the border and in national custody by hostile national rules: sex-assigned-at-birth passport/visa treatment, case tagging, refusal where documents cast doubt, possible permanent fraud ineligibility, federal facility exclusion, and documented abuse in immigration custody. These national exposures reach every outed traveller at entry and cannot be neutralised by state law. A visitor who clears the border and stays out of national custody faces low in-state risk; a traveller with document mismatch, or a family with a minor, faces material border and federal-premises exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas, stop new X markers, tag cases, and permit refusal where documents cast doubt on sex; suspected misrepresentation can support permanent fraud ineligibility. Athlete entry ban documented.",
+    "protection": "State X markers, self-affirmation and shield law do not govern national border or visa adjudication; no documented working border remedy; litigation pending.",
+    "interaction": "Home passport and national visa/border system control entry; state law is irrelevant at the port of entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement and sexual abuse; corrections policies impose conversion-like practices and deny hormones. State protections do not reach national custody.",
+    "protection": "State shield bars cooperation with out-of-jurisdiction care investigations; hate-crimes and accommodations law apply locally, but no documented protection in national immigration custody.",
+    "interaction": "Document discrepancy can lead to secondary inspection and detention, moving the traveller into national custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities matching identity; applies in national buildings, airports, parks and custody.",
+    "protection": "State GENDA covers public accommodations; gender-neutral bathrooms mandated; no state bathroom ban; state is in the Most Protective tier.",
+    "interaction": "State facilities are protected, but national premises and funding remain governed by national rule and cannot be overridden locally.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding freeze, insurance restrictions, subpoenas and rhetoric target gender-affirming care, especially minors; national rules can affect federally funded settings.",
+    "protection": "State shield law protects patients and providers from out-of-state bans; state care and marker rules remain; conversion therapy on minors banned.",
+    "interaction": "Care legal in state is shielded, but national funding, insurance rules and border/custody exposure can interrupt access.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice-department memo references 'radical gender ideology'; executive order directs investigation and prosecution of teachers facilitating social transition. Official hostility documented.",
+    "protection": "State hate-crimes law covers gender identity; GENDA; panic defence repealed; no documented state police targeting of trans people.",
+    "interaction": "National law enforcement and prosecutorial authority can act despite state protections; state law does not bind national agencies.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order frames care for minors as mutilation and directs investigation/prosecution over social transition; proposed insurance ban under 18; border document scrutiny affects families.",
+    "protection": "State does not ban youth care; shield law; anti-bullying law; parental consent for marker changes under 17; state accommodations protections.",
+    "interaction": "Parent/guardian at border faces national document rules; in-state care and school protections are local and do not shield national action.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incident or magnitude is documented for this state/province; no evidence of police targeting; only LGBTQ-general hate-incident data is cited.",
+    "protection": "Hate Crimes Act covers gender identity since 2019; GENDA; the loitering law used against trans people was repealed in 2021; gender-neutral bathrooms mandated.",
+    "interaction": "State recourse exists for in-state violence, but no enforcement record is documented and the national climate may chill reporting.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border refusal and fraud findings have no documented working remedy; national custody abuses lack effective recourse; several national measures remain in litigation, so operative rules can shift.",
+    "protection": "Civil-liberties lawsuit against passport policy; legal-aid FAQ; state human-rights and hate-crime remedies; shield law.",
+    "interaction": "State remedies operate after entry; they cannot cure border exclusion or national custody harm.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "0.35-C had regulations barring detention but intrusive administrative questioning and denial of entry. Here local protections are far stronger, but the national border can refuse entry and potentially find fraud, and national custody abuse is documented; severity is higher than 0.35-C despite the protective state."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involved a rail delay, a supervisor applying guidelines, and no detention. Here in-state accommodations are stronger, but the border and national-custody exposures are more severe and lack an on-the-spot protector; the combined regime is lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C had a clinic directive securing a refill with minor record uncertainty. Here state care and accommodation protections are comparable, but national border refusal and federal custody exposure are documented and not neutralised; materially lower."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A had strong equal-access law and only a minor system mismatch. Here the state law is comparably protective, but the national border, federal facilities and custody regime add documented exposures absent from 0.85-A; not as safe."
+   }
+  ],
+  "synthesis": "The visitor encounters two operative systems. At entry and in national custody, national rules control: sex-assigned-at-birth document treatment, case tagging, refusal where documents cast doubt, possible permanent fraud ineligibility, federal facility exclusion, and documented abuse in immigration custody. Inside the state/province, public accommodations, bathrooms, hate-crimes recourse, care shields and non-discrimination law are strong and documented. State protection cannot neutralise the border or federal custody. Everyday in-state risk is reduced, but the combined regime keeps the rating in the Elevated Risk band because universal-exposure border and federal-custody risks remain unremedied."
+ },
+ "parse_error": null
+}

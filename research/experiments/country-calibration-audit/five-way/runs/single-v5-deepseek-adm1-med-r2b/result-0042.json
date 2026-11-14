@@ -1,0 +1,78 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0021161952",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is dominated at the traveler-facing edge by national document and entry rules: binary sex markers, no new X passports, refusal where sex is doubted, and possible lifetime fraud ineligibility. Federal facility exclusion and documented immigration-custody abuse are severe if triggered, and state protections cannot offset federal border or custody conduct. Inside the division, anti-discrimination, hate-crime enforcement, panic-defence repeal and a 2026 civil-rights judgment are real protections, with no documented local bathroom ban or police targeting. Minors face care bans at both levels. Raw incident counts lack denominators. Net: elevated risk, not severe across the whole visit.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex passport/visa rules, no new X markers, refusal where sex is doubted, possible fraud-based lifetime ineligibility, and athlete-entry ban; state birth certificates require surgery/court order.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and limited waivers exist; state licences offer X since 2020.",
+    "interaction": "Border screening is federal; state identity protections and licence markers cannot cure a federal passport/visa mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Document discrepancies can lead to refusal or immigration custody; custody reports include forced labour, beatings, solitary confinement and sexual abuse; national prisons use conversion-therapy-style policies.",
+    "protection": "Fraud finding requires elements and is not automatic; national hate-crime law exists but does not govern immigration custody.",
+    "interaction": "A border document issue can move the traveler into federal detention, where state anti-discrimination and hate-crime law do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; many states have bathroom bans, though this division is not documented as one.",
+    "protection": "Division anti-discrimination law covers public accommodations; no division facility ban is documented.",
+    "interaction": "Federal facilities follow the national exclusion; private and state venues in the division are more protected, but federal buildings remain a separate exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans puberty blockers, hormones and chest surgery for under-18 gender-affirming care; national policy restricts minors and funding. Adult visitor care is not documented as denied.",
+    "protection": "Division anti-discrimination covers health care; conversion-therapy ban and public-insurance surgery coverage remain; grandfather clause for existing minor treatment.",
+    "interaction": "Adult travelers have local health-care protections, but a traveling minor cannot access gender-affirming care in the division even where medically indicated.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice guidance references 'radical gender ideology'; official hostility raises scrutiny risk.",
+    "protection": "State hate-crime enhancements, civil-rights enforcement and national hate-crime statute cover gender identity; no division police targeting of trans visitors documented.",
+    "interaction": "National threat rhetoric may increase border or investigative attention, while local courts have enforced civil-rights protections in at least one 2026 case.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division and national rules deny gender-affirming care to minors; national order directs investigation of teachers facilitating social transition; sports ban and birth-certificate eligibility rules apply.",
+    "protection": "Grandfather clause for treatment underway by 1 January 2026; state anti-bullying and school privacy ruling; adult guardian not directly criminalised for travel.",
+    "interaction": "A parent traveling with a trans minor faces care denial and possible institutional scrutiny; the adult alone faces the border/document regime rather than these minor-specific care rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division recorded 72 anti-LGBTQ incidents in 2025, second-highest raw count, but no per-capita denominator; one source calls it least safe for trans residents after 2025 changes.",
+    "protection": "Hate-crime enhancements since 2019, panic-defence abolition, public-accommodations protections, high polled support, and a 2026 court finding against a man who struck a trans woman.",
+    "interaction": "Raw incident volume is inconclusive; local recourse is documented and operating, while national rhetoric may embolden hostility.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and executive-order litigation is unresolved; care-ban and sports-ban status varies; whether this division has a facility ban is not documented.",
+    "protection": "State civil-rights enforcement, hate-crime law and legal-aid guidance exist; several national orders have been enjoined.",
+    "interaction": "Federal measures may change with litigation, but current border practice remains the operative exposure; state remedies work only after admission and outside federal custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Both involve document mismatch, invasive administrative review and possible exclusion without routine imprisonment. This case has stronger local anti-discrimination and hate-crime enforcement, but also a harsher national entry regime with possible fraud ineligibility and documented custody abuse, leaving it modestly above the anchor."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "In the anchor, a protection mechanism eventually resolved the document flag and permitted travel. Here the border is governed by a hostile national regime, and state protections do not reach entry screening or federal custody, so this case sits below the anchor."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "The anchor shows a working privacy directive resolving a care-document mismatch with minor uncertainty. Here adult care is locally protected, but minors face care bans and the national entry/document regime remains a major unresolved exposure, so this case is materially lower."
+   }
+  ],
+  "synthesis": "The division layer is comparatively protective: gender-identity anti-discrimination in public accommodations and health care, hate-crime enhancements, panic-defence repeal, and documented civil-rights enforcement. Those protections operate after arrival and outside federal custody. The national layer controls the highest-risk moments: passport and visa screening can refuse or penalise a marker mismatch, federal facilities exclude by birth sex, and immigration custody carries documented severe abuse. Minors face compounded care restrictions. The result is not a severe-risk jurisdiction across an ordinary visit, but it is not reduced-risk either, because the border and federal custody exposures are real and not offset by state law."
+ },
+ "parse_error": null
+}

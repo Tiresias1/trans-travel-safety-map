@@ -1,0 +1,78 @@
+{
+ "cell": 11,
+ "region": "66186276B29106115751815:Texas",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005962614",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined national and state regime exposes a trans visitor at the border, in government facilities, and in custody. National screening rules allow refusal or permanent fraud ineligibility where sex is doubted; the state's women's-privacy law requires birth-certificate-matched restrooms in public buildings, with ID checks and fines, and enforcement began immediately. Custody is documented as harmful, including immigration detention abuse and birth-sex ward placement after a bathroom arrest. Official threat-framing and weak state remedies compound the risk. Protections exist—national hate-crime coverage and some city ordinances—but no visitor-facing remedy is shown to work. This is below the administrative-friction anchors and well below protected-friction anchors, but not the execution/imprisonment-likely endpoint.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar new X markers, require M/F per birth records, and screening cables direct refusal or extra evidence where sex is doubted, with possible permanent fraud ineligibility.",
+    "protection": "Existing foreign-issued X markers are not documented as accepted; passport litigation is pending but no operative visitor remedy is shown.",
+    "interaction": "Passport/appearance mismatch at a border can trigger secondary screening, refusal, or immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse of trans men; state bathroom trespass can yield misdemeanour custody in a men's ward.",
+    "protection": "Trespass requires refusal to leave; the state gender-placement statute does not govern cell assignment. No visitor-specific custody protection is documented.",
+    "interaction": "Document discrepancy can move to investigation/fraud allegation, then detention and birth-sex custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The state's women's-privacy law requires restrooms in public schools, universities, prisons, and state buildings to match birth certificate; ID checks and fines are documented. National and many state bans also restrict gender-congruent facilities.",
+    "protection": "Some private settings and many states are not covered; trans women holding female ID markers were admitted in one documented check.",
+    "interaction": "A visitor in a government building can be ID-checked and excluded; enforcement guidance is unclear and uneven.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The state bans gender-affirming care for minors; national policy attacks minor care; state prison policy denied surgery; there is no statewide gender-identity anti-discrimination law.",
+    "protection": "Adult visitor care is not expressly criminalised; some cities prohibit gender-identity discrimination; national hate-crime law covers gender identity.",
+    "interaction": "Emergency or refill care may expose identity; a trans minor cannot access covered gender-affirming care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice-department guidance and school-prosecution orders create a hostile official climate; state bathroom enforcement is active.",
+    "protection": "The counterterrorism document says powers will not target mere disagreement; courts have enjoined some orders.",
+    "interaction": "Official framing raises police/reporting attention and chills recourse for visitors who are outed.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order threatens prosecution of teachers affirming trans minors; state law bans minor gender-affirming care and mandates deadnaming/misgendering in schools; parental-rights law expands control.",
+    "protection": "Some court injunctions exist; no visitor-specific protection for a trans minor is documented.",
+    "interaction": "A trans minor travelling with a guardian faces care denial and legal/school exposure if identity surfaces.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The state records 44 killings of trans women over 2008–2025 (about 7.6 per 100k trans women per year), described as the national worst in absolute terms; it is in the top 'Do Not Travel' tier; the state hate-crime law omits gender identity.",
+    "protection": "National hate-crime law covers gender identity; some cities have local protections.",
+    "interaction": "Police enforcement of the bathroom law and weak state bias coverage can deter reporting; no visitor-specific protection is shown.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No statewide gender-identity anti-discrimination law; state hate-crime law excludes gender identity; passport litigation is unresolved; bathroom-law guidance is unclear.",
+    "protection": "National hate-crime statute, some city ordinances, legal-aid guidance, and court injunctions against some national orders.",
+    "interaction": "A visitor has thin practical recourse against exclusion, detention, or violence; outcomes depend on which contested measures are operative.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves invasive entry review and refusal/stranding without detention. This case is lower: it adds possible immigration detention with documented abuse, a state facility law enforced by ID checks, and criminal trespass exposure."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a multi-hour administrative hold resolved by an ombudsman, with no detention. This case is materially lower: no working visitor remedy is shown, state bathroom enforcement is active, and custody conditions are documented as harmful."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a functioning non-discrimination code and hospitality protection after minor friction. This case is far lower: a birth-certificate-matched facilities law, ID checks, official threat-framing, and severe custody risks displace the protected-friction model."
+   }
+  ],
+  "synthesis": "The national entry and custody framework and the state's facilities and document regime operate together. A passport or appearance mismatch can move a visitor from border questioning into immigration custody, where abuse is documented. In the state, government-building restrooms are birth-certificate-matched and enforced by ID checks; refusal to leave can become trespass and birth-sex custody. National hate-crime coverage and scattered city protections exist, but the state lacks statewide gender-identity anti-discrimination and its hate-crime law omits gender identity. Contested national measures and unclear local guidance create uncertainty, but the documented operative exposures—entry refusal, facility exclusion, custody harm, and official hostility—dominate over unproven remedies, placing this in the High Risk band."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 49,
+ "region": "66186276B98555229882405:Washington",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0035966352",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is bifurcated. The state/province is protective: shield laws, insurance coverage for gender-affirming care, no mapped local facilities ban, and court-ordered prison care. But national border, document, facility and custody rules operate independently and are hostile. A trans visitor with a marker/appearance discrepancy or X marker faces secondary screening, refusal, possible lifetime fraud ineligibility, and, if detained, national immigration custody with documented severe abuse. State protections do not reach national entry or custody. Once admitted, everyday exposure falls markedly, but the border chokepoint and unresolved litigation keep the combined rating in Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National entry guidance permits refusal where documents or records create reasonable doubt about sex, and suspected misrepresentation can support permanent fraud ineligibility; advisories warn trans travelers over identity-document rules.",
+    "protection": "No documented border protection for trans visitors; state shield laws do not bind national entry screening. National passport litigation is unresolved.",
+    "interaction": "A document mismatch at the national border can trigger refusal or detention before any state protection applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labor, beatings, solitary confinement and sexual abuse of transgender detainees; national corrections practices include conversion-therapy-type measures. State prison birth-sex placement was used as discipline in 2024.",
+    "protection": "State prisons are under court order to provide gender-affirming care and surgery; shield laws limit outside action, but are not shown to cover national immigration custody.",
+    "interaction": "A border discrepancy can route a visitor into national custody, bypassing state protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive policy bars trans people from government-funded single-sex facilities congruent with identity; national buildings are universal-exposure settings.",
+    "protection": "The state/province has no mapped facilities ban and is rated protective; state and private facilities are likely more accessible.",
+    "interaction": "A visitor is safer in state/private facilities but remains exposed in national facilities.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict funding and insurance for trans care, especially for minors, and national custody denies care. Proposed national health rules remain unresolved.",
+    "protection": "State insurance covers facial-hair removal and expanded gender-affirming procedures; shield laws protect in-state care from outside action.",
+    "interaction": "Care travelers are protected inside the state, but national border, custody and minors' rules still apply.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups, and national guidance references 'radical gender ideology'; official climate is hostile.",
+    "protection": "National hate-crime law covers gender identity, and the state/province is protective; no visitor-specific targeting is documented.",
+    "interaction": "Threat framing raises risk for visible advocacy, not ordinary tourism; state protection does not control national law enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders frame minors' gender-affirming care as abuse, direct prosecution of teachers using preferred names, and restrict care in many states; passport/entry mismatch affects minors too.",
+    "protection": "State shield and insurance protections may cover care within the state; some national orders are enjoined.",
+    "interaction": "An adult travelling with a minor faces national border scrutiny plus possible conflict between state care protections and national rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence incident is documented; national climate is hostile, and only 23 states cover gender identity in hate-crime statutes.",
+    "protection": "National hate-crime law covers gender identity; the state/province is among the most protective, suggesting better local police response.",
+    "interaction": "Local street risk is reduced by state protection, but national custody and border exposure are separate.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and custody rules remain operative; fraud findings have limited waiver; two ballot initiatives could erode state protections; shield enforcement is unspecified.",
+    "protection": "Civil-liberties litigation, court injunctions, state shield laws and care coverage provide partial remedies.",
+    "interaction": "Remedies are unresolved and do not stay national border or custody rules; state protection is contingent on admission and ballot outcomes.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves no-detention denial at a port with documents held. This case has comparable entry-refusal risk but adds documented national custody abuse and possible lifetime fraud ineligibility; it also has strong state shield/care protections absent there. Net slightly above 0.35, still Elevated."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a functioning transit guideline, no detention and a temporary permit after delay. Here national entry rules are hostile and custody abuse is documented; state protections do not reach the border. This case is lower than 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a working privacy directive and only administrative uncertainty. This case has documented national universal exposures and custody harm, so it is materially lower than 0.75."
+   }
+  ],
+  "synthesis": "State protections are real but operate after entry and do not pre-empt national border, facilities or custody rules. The operative journey is a national document check, possible refusal or detention, and only then state protection. That chokepoint and documented custody harm dominate; care shield and the absence of a local facilities ban lift the score above a national-only worst case but not into Reduced Risk. Minors face compounded national document and care restrictions."
+ },
+ "parse_error": null
+}

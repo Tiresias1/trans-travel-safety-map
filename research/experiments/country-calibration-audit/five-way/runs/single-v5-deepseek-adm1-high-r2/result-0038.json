@@ -1,0 +1,78 @@
+{
+ "cell": 38,
+ "region": "66186276B82803899326534:Indiana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0018859152",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is dominated by federal entry and custody exposure. A trans visitor whose documents or presentation raise doubt can be refused, tagged, detained, or face a lifetime fraud finding; immigration custody has documented severe abuse. The state layer adds hostile ID policy for residents, a minor care ban, and conservative climate, but no current bathroom ban or criminalisation of trans identity. Hate-crime aggravation exists. The visitor is not jailed for being trans, but outing at the border or in custody carries high severity.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules bar new X markers, require birth-sex markers, and instruct officers to refuse cases with sex discrepancy or doubt, with possible lifetime fraud ineligibility; trans travellers report confiscated or blocked passports.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud findings are not automatic and require four elements; litigation is pending.",
+    "interaction": "A foreign visitor's passport is checked at federal entry, not by the state; a mismatch can trigger refusal, detention, or fraud proceedings before any state-layer issue arises.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement, and sexual abuse of transgender detainees; national corrections policy imposes conversion-style practices on trans inmates.",
+    "protection": "National hate-crime law covers gender identity; litigation has blocked some executive orders, but no working custody protection for trans migrants is documented.",
+    "interaction": "Border document suspicion can move a traveller into federal immigration detention, where the documented abuses operate regardless of state-level protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars transgender people from government-funded single-sex facilities congruent with gender identity. State law currently has no bathroom ban; a restrictive facilities bill passed one chamber but is not law.",
+    "protection": "State law places no restriction on restroom use matching gender identity; two cities protect it by ordinance; a 2023 injunction barred school restriction in pending litigation.",
+    "interaction": "Federal facilities and funding conditions reach visitors in federal settings; state and city protections cannot cancel federal facility rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans gender-affirming surgery, puberty blockers, and hormones for minors under 18, with limited phase-out. Adult care availability is not documented.",
+    "protection": "No visitor-facing care protection is documented; emergency care exposure is not documented.",
+    "interaction": "An adult travelling with a trans minor cannot obtain blocked care in-state; federal funding and policy hostility add climate risk but do not establish adult care denial.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups among priorities; a reward system targets domestic terrorist leadership; executive orders direct investigation of schools and prosecution of teachers affirming trans minors.",
+    "protection": "The counterterrorism document states powers will not target people who simply disagree with the government; courts have enjoined several orders.",
+    "interaction": "This is primarily climate and resident-facing; it raises the stakes if a visitor is already entangled with federal law enforcement but no direct visitor prosecution policy is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans visitor under 18 cannot obtain gender-affirming care in the state; schools must notify parents of name/pronoun requests; federal orders threaten prosecution of teachers who affirm trans minors.",
+    "protection": "No visitor-specific protection for trans minors is documented; some court injunctions limit enforcement.",
+    "interaction": "A guardian travelling with a trans minor faces care denial and a hostile school/federal climate, though short-term visitor status reduces school exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented pattern of trans-specific violence or police targeting in this state is provided; general social climate is conservative but not framed as organised targeting.",
+    "protection": "State hate-crimes law includes gender identity as an aggravating circumstance; local ordinances protect restroom use in two cities.",
+    "interaction": "If violence occurs, state hate-crime aggravation is available but enforcement data is absent; federal hate-crime law also covers gender identity.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "The passport-marker litigation, challenges to executive orders, and the state motor-vehicle ban challenge are unresolved; adult care access, hate-crime enforcement frequency, and the pending facilities bill's future are unknown.",
+    "protection": "A legal-aid FAQ and pending civil-liberties litigation provide some recourse, but no outcome is documented.",
+    "interaction": "Unresolved federal litigation means the operative entry rules may shift; absent enforcement data, the hate-crime protection cannot be assumed to work consistently.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has invasive entry review and denial but an explicit bar on detention for document mismatch. This jurisdiction permits federal detention, possible lifetime fraud ineligibility, and documented custody abuse, so it sits below that anchor."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A involves administrative scrutiny and denied boarding without detention, with uncertain follow-up. Here entry refusal can escalate to immigration custody and fraud findings, and facilities/custody exposures are documented, so it is materially lower."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A shows a formal protection operating after public friction. This jurisdiction has no working border protection for trans document mismatch and documented harms in federal custody, so it is far below that anchor."
+   }
+  ],
+  "synthesis": "The state layer is uneven rather than uniformly catastrophic: no current bathroom ban, a hate-crime aggravator, and local protections coexist with a hostile ID policy, a minor care ban, and a pending restrictive facilities bill. But the combined regime is federal-first. The visitor meets federal entry screening, where document mismatch can lead to refusal, detention, or a lifetime fraud finding, and federal immigration custody has documented severe abuse. State-level protections do not cancel those federal exposures. The result is high risk at the border and in custody, moderated by the absence of a current state bathroom ban or general criminalisation of trans identity."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 8,
+ "region": "66186276B22881275445497:North Dakota",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005434656",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined national and state regime creates several traveller-facing exposures: passport/visa screening can out a trans visitor with a document mismatch and lead to refusal, case tagging, or possible lifetime fraud ineligibility; state-run facilities restrict trans bathroom use; detention and custody include documented conversion practices and abuse; the state lacks gender-identity bias-crime and nondiscrimination coverage. National hate-crime law, existing X passports, litigation/injunctions and legal-aid guidance are real but partial mitigations. An adult alone faces border, facilities and custody risk. An adult with a minor faces added document scrutiny, school disclosure/pronoun rules, and banned minor care. This is not imprisonment for status, but it is a high-risk regime.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex passport/visa policy; X markers no longer issued; discrepancy or reasonable doubt triggers refusal and case-note tagging; possible permanent fraud ineligibility; reports of confiscated passports and stranded travellers; visa-related detentions reported.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and limited waivers exist; litigation challenges continue; legal-aid FAQ covers document rules.",
+    "interaction": "A border officer seeing a mismatch can move the traveller into secondary screening or refusal; state birth-certificate rules do not normally govern the visitor's home passport, but national visa systems do.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Flagged travellers may face secondary inspection or detention; immigration custody documents forced labour, beatings, solitary confinement and sexual abuse; national corrections practices include conversion-style treatment; a bathroom arrest example was held in a men's ward.",
+    "protection": "Some executive orders are enjoined; legal aid exists; national hate-crime law does not serve as custody protection.",
+    "interaction": "A document discrepancy can escalate into immigration custody; a facility trespass arrest can lead to birth-sex ward placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rules bar trans use of government-funded single-sex facilities congruent with identity; state law allows restricting trans bathroom use in many state-run facilities; some states make certain bathroom use criminal trespass.",
+    "protection": "No state public-accommodation protection; national order is contested; trespass statutes include emergency and assistance exemptions.",
+    "interaction": "A visitor using a state-run building or restroom can be excluded or asked to leave; refusal may trigger trespass liability in some jurisdictions, though not documented for this state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor gender-affirming care is banned in the state and many states; national orders frame such care as mutilation; proposed national rules would bar insurance reimbursement; no visitor-specific adult emergency-care denial is documented.",
+    "protection": "State licensing-board conversion-therapy ban; national employment ruling; some court injunctions; none is a documented visitor care-access guarantee.",
+    "interaction": "Adult traveller medication/refill exposure is undocumented; travelling with a trans minor makes care access and disclosure acute.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official 'radical gender ideology' rhetoric; counterterrorism strategy names radically pro-transgender groups; state pronoun/disclosure law; state hate-crime law excludes gender identity; no state nondiscrimination statute.",
+    "protection": "National hate-crimes statute covers gender identity; national employment ruling; some city-level protections; courts have blocked some orders.",
+    "interaction": "Official framing raises outing and reporting risk and may chill police response; national prosecution is possible but state bias-crime coverage is absent.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National passport/visa screening applies to minors; state bans minor gender-affirming care; school law forbids required preferred pronouns and mandates disclosure to parents; national order targets teachers facilitating social transition.",
+    "protection": "Existing passports remain valid until expiry; litigation and injunctions apply to some measures; no visitor-minor enforcement instance is documented.",
+    "interaction": "An adult with a minor faces added document scrutiny; a trans minor in a state school setting faces disclosure; care is unavailable in-state.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated anti-trans violence incident appears for this state; state bias-crime law excludes gender identity; official hostility and anti-trans legislation are documented; no state nondiscrimination coverage.",
+    "protection": "National hate-crime statute covers gender identity; limited city protections; a 2022 poll found majority support for state anti-discrimination law; no documented pattern of anti-trans violence in the state.",
+    "interaction": "Absence of reported incidents is not safety; police response to anti-trans crime is uncertain where state bias law excludes gender identity.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport/visa rules remain contested; confiscation and stranding are reported; lifetime ineligibility is possible; state birth-certificate regulations are unresolved; some laws lack documented enforcement; a religious-refusal service bill's disposition is unrecorded.",
+    "protection": "Civil-liberties litigation, injunctions, legal-aid FAQ, and the national hate-crime statute are available but slow and not border-side.",
+    "interaction": "Practical safety depends on which measures are in force at the moment of travel; remedies do not reliably prevent an initial border or facility encounter.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves mismatched papers, invasive customs questioning, and denial of entry without detention. This dossier has comparable or worse border refusal/tagging and possible lifetime ineligibility, plus state facility exclusion and documented custody abuse, so it sits lower than 0.25-A."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "0.35-C is a clinic refusal where a patient advocate resolves the issue and no detention occurs. Here the exposure is broader and state-imposed: national border screening, facility restrictions, and custody harm, with no equivalent visitor-facing advocate remedy documented, so this is lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a hospitality non-discrimination code that accepts documents and completes service without exclusion. This dossier has active document-mismatch screening, possible refusal, facility bans, and custody abuse, so it is clearly lower."
+   }
+  ],
+  "synthesis": "The operative regime is a stack: national passport and visa rules create the first outing point; state facility and school rules create a second; custody rules create the severe tail. National hate-crime coverage and litigation mitigate but do not neutralize the universal border and facility exposures. A visitor who passes may avoid much, but if outed the consequences include refusal or stranding, exclusion, and documented abuse in detention. An adult alone faces border, facilities and custody risk; an adult with a minor faces added document scrutiny, state school disclosure rules, and banned minor care."
+ },
+ "parse_error": null
+}

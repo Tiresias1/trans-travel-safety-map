@@ -1,0 +1,78 @@
+{
+ "cell": 32,
+ "region": "66186276B73434888205604:New Jersey",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.008789556",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is split: the state division is strongly protective — public-accommodations anti-discrimination covering gender identity, hate-crime enhancements, open state ID markers, sanctuary for gender-affirming care, and low recorded trans-homicide rates. But federal authority governs the border, federal facilities, and immigration custody, where the dossier documents passport/visa marker restrictions, refusal and potential lifetime fraud findings for discrepancies, facility exclusion by birth sex in federal buildings, and severe abuse in federal detention. State remedies do not reach these federal actors. The traveller therefore faces a high-severity chokepoint at entry and in any federal custody, while everyday in-state life is comparatively safe. This places the jurisdiction in the Elevated Risk band, materially below its protective state tier but above uniformly hostile destinations.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules restrict passport/visa sex markers to birth sex, do not process X markers, and instruct officers to refuse cases with discrepancies or reasonable doubt about sex, with potential lifetime fraud findings.",
+    "protection": "State ID documents offer X/M/F markers without medical proof, but these are state-issued and do not govern federal passport/visa adjudication or border screening.",
+    "interaction": "A visitor's foreign passport is assessed under federal rules; state anti-discrimination and open-ID laws cannot bind federal border officers or override a refusal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody has documented forced labour, beatings, solitary confinement, and severe sexual abuse of transgender detainees; national corrections policies impose conversion-like practices and stop reporting trans prisoner counts.",
+    "protection": "State anti-discrimination and hate-crime laws do not reach federal immigration detention or federal prisons; no documented working remedy for federal custody was located.",
+    "interaction": "A border document discrepancy can lead to federal detention and birth-sex placement, a chain state law cannot interrupt.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A federal executive order bars transgender people from government-funded single-sex facilities congruent with gender identity; federal buildings and airports are covered.",
+    "protection": "This state has no facility ban and its public-accommodations law covers gender identity in hotels, restaurants, and transportation, but not federal facilities.",
+    "interaction": "State and private facilities are protected; federal facilities at the border and in federal buildings remain governed by the restrictive national policy.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal actions target gender-affirming care for minors, public insurance coverage, and provider records; national health rules would bar reimbursement for under-18 care.",
+    "protection": "A state executive order protects gender-affirming care within state borders, including access by people travelling in from other jurisdictions; state anti-discrimination covers service provision.",
+    "interaction": "In-state care access is shielded by state policy, but federal insurance rules and subpoenas can create friction, and federal custody care is not protected.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy lists 'radically pro-transgender' groups among priorities for neutralization; executive orders describe gender-affirming care as mutilation and direct investigation of schools promoting gender ideology.",
+    "protection": "State law enforcement operates under strong anti-discrimination and hate-crime statutes; the state chief legal office has sued school districts over policies that out transgender students.",
+    "interaction": "Federal threat-framing raises climate risk and may embolden hostility, but state law enforcement and legal institutions remain protective in practice.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive orders direct prosecution of teachers who use preferred names or facilitate social transition, and seek to restrict gender-affirming care for minors.",
+    "protection": "State guidance promotes inclusive school policies on names, pronouns, and facilities; state law protects gender-affirming care and anti-discrimination covers minors in public accommodations.",
+    "interaction": "A trans minor travelling with a guardian is protected by state law in schools and care settings, but federal border and facility policies still apply at entry and in federal custody.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National hate-crime data show bias incidents, and federal rhetoric may increase social hostility; only 23 states cover gender identity in state bias-crime statutes.",
+    "protection": "This state has hate-crime enhancements for gender identity, anti-discrimination in public accommodations, police data systems that record gender X, and per-capita trans-homicide rates among the safest measured.",
+    "interaction": "State and local police operate under protective statutes, and the state's recorded violence is low; federal climate is a background concern but not a direct street-level enforcement threat in-state.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport, border, custody, and care policies are in litigation and their final scope is uncertain; state remedies do not reach federal actors, and complaint statistics for the state anti-discrimination law's gender-identity provisions are not documented.",
+    "protection": "The state civil-rights enforcement body investigates discrimination complaints and can grant relief; bias-crime enhancements and legal-aid guidance exist for in-state issues.",
+    "interaction": "A visitor can seek state relief for in-state service denial or discrimination, but has no equivalent remedy at the federal border or in federal detention.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A entails denial of entry and invasive review but no detention or imprisonment. This case adds documented risk of federal detention with severe abuse and a potential lifetime fraud finding, so the border exposure is worse, but the state's strong in-country protections lift everyday safety above 0.35-A's likely environment."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves a temporary delay, a permit, and no detention. This case has a more severe border chain (refusal, detention, custody abuse) and unremedied federal facility exclusion, placing it materially below 0.55-B despite protective state law."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has working care protections with minor friction. This state similarly protects care and public accommodations, but the federal border, federal facilities, and federal custody create severe traveler-facing exposures that 0.75-C lacks, so this case sits well below."
+   }
+  ],
+  "synthesis": "The operative regime is bifurcated by sovereign authority. In-state, the division's anti-discrimination law, hate-crime enhancements, open ID markers, care sanctuary, and protective legal institutions make everyday life comparatively safe for a transgender visitor. But the border, federal facilities, and federal custody remain under a hostile national framework: document discrepancies can trigger refusal, lifetime fraud findings, detention, and documented abuse. State remedies do not reach these federal actors, and the federal policies, though contested in court, are in effect. The traveller therefore passes through a severe chokepoint at entry and carries residual exposure in any federal facility or detention setting, while the state's protective layer mitigates the in-country phase. The result is an elevated overall risk, materially below the state's protective tier but above uniformly hostile destinations."
+ },
+ "parse_error": null
+}

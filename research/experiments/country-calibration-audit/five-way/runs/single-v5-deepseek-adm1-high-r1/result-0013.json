@@ -1,0 +1,78 @@
+{
+ "cell": 13,
+ "region": "66186276B31593004124297:Utah",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0024603552",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined national-plus-state regime creates traveller-facing exposure at entry and in custody. National passport and visa rules reject marker discrepancies, can refuse entry, and raise lifetime fraud ineligibility; immigration detention and federal corrections carry documented abuse. State law adds bathroom and locker exclusion in government buildings and schools, enforced by complaints, with a documentary defence a visitor cannot generally meet; private businesses are outside it. Partial hate-crime and nondiscrimination protections do not operate as visitor remedies. Minors face care bans and school threat-framing. Courts have blocked some measures, so present exposure is contested, but restrictive operative rules are documented. High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar self-selected markers, halted new X markers, require sex assigned at birth, and direct refusal where documents cast doubt; fraud finding can yield lifetime ineligibility. Travellers report confiscated or blocked passports.",
+    "protection": "Existing X-marker passports remain valid until expiry; litigation challenges the policy; some court orders have constrained related measures.",
+    "interaction": "A marker mismatch can trigger secondary inspection, refusal, or a fraud referral, and then custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse; federal corrections adopted practices amounting to conversion therapy, including hormone removal and birth-sex placement.",
+    "protection": "No documented visitor-facing remedy or oversight that changes custody outcomes; national prison LGBTQ policy was rescinded.",
+    "interaction": "Border document discrepancy can move a traveller into immigration detention, where documented harms apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities matching identity. State law bans restroom and locker use by sex assigned at birth in public schools and government buildings, with a complaint form.",
+    "protection": "State law does not reach private businesses; new government buildings must include single-occupant facilities. The documentary defence exists on paper.",
+    "interaction": "The defence requires birth certificate and surgery proof and has no stated route for foreign documents, so a visitor cannot reliably use it.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for minors; national policy frames such care as mutilation, restricts funding and proposes insurance exclusions. Adult visitor emergency care access is not documented.",
+    "protection": "State care ban allows some existing treatment to continue and clinicians may treat under-25 patients with retroactive disaffirmance risk; not a visitor protection.",
+    "interaction": "An adult travelling with a trans minor faces care-ban and documentation risks in medical or school contexts.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises groups described as radically pro-transgender; justice department guidance creates rewards and references radical gender ideology. Executive orders target school support for trans minors.",
+    "protection": "National hate-crime statute covers gender identity; employment discrimination ruling remains formally in place; courts have enjoined several orders.",
+    "interaction": "Threat framing raises the chance that advocacy, documents or online content attract scrutiny, but ordinary visitors are not directly criminalised for identity.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans gender-affirming care for minors. National order directs investigation and prosecution of teachers who use preferred names or facilitate social transition, and describes minor care as mutilation.",
+    "protection": "Some national orders are blocked or enjoined; state care ban grandfathers treatment already under way in January 2023.",
+    "interaction": "An adult travelling with a trans minor may face added scrutiny around care, school records or documents; consequences for a guardian are not clearly bounded.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific data on violence against transgender people is provided; national hate-crime coverage is partial, with only 23 states covering gender identity in bias-crime statutes.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime law covers gender identity and requires statistics.",
+    "interaction": "No documented visitor-specific violence pattern or police-response record is available, so this axis is uncertain rather than reassuring.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "The state facilities defence is tied to records a visitor will not carry, with no alternative route for out-of-state documents. Complaint outcomes and visitor use of the mechanism are undocumented.",
+    "protection": "Civil-liberties litigation challenges passport rules; a legal-aid FAQ exists; courts have blocked some national measures.",
+    "interaction": "Unresolved litigation and absent complaint-outcome data leave no reliable pre-travel assurance for a visitor.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A involves coercive custody, extortion and threats, but no broad state document regime. This dossier has less street-level extortion documented but adds national entry refusal, fraud ineligibility and documented detention abuse, so it is comparable or slightly worse."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has invasive secondary review and denial of entry but no detention. This dossier is worse because national rules can produce refusal plus detention, and custody conditions include documented abuse."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has document mismatch, delay and eventual clearance, with no detention. This dossier is materially worse: refusal and lifetime ineligibility are available outcomes, facilities exclusion is codified, and custody harm is documented."
+   }
+  ],
+  "synthesis": "The visitor's main exposure is not ordinary street crime but state document and facility systems. A passport marker mismatch can trigger secondary inspection, refusal, or a fraud finding; if detained, placement and care practices are documented harms. State bathroom rules reach government buildings and schools, not hotels or gyms, but the complaint mechanism and unmeetable documentary defence create outing risk. National protective statutes exist on paper, yet litigation and patchy enforcement leave no reliable remedy. Minors travelling with an adult face added care-ban and school-related threat framing. The score sits in the High Risk band."
+ },
+ "parse_error": null
+}

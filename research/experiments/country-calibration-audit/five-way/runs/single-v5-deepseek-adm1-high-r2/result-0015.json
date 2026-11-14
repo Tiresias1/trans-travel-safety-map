@@ -1,0 +1,78 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.005787778",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The division is locally protective: codified gender-identity nondiscrimination, explicit hate-crime coverage, conversion-therapy and panic-defence bans, and low-risk mapping. Those protections govern state/local venues, hotels, police recourse and daily life. They do not govern the federal border, federal facilities, immigration detention or federal custody. The operative regime therefore turns on the federal gate: a trans visitor with a foreign X or mismatched marker can be outed, refused entry, tagged for fraud review or detained, and federal immigration custody has documented severe abuse. Local protections cannot pre-empt that. An adult alone faces this border/custody exposure; an adult with a trans minor faces additional federal care/school uncertainty. The combined regime is High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary-sex document policy: foreign X or mismatched markers can trigger secondary screening, refusal, case-note tagging, and possible material-misrepresentation/lifetime-ineligibility finding; trans-athlete entry ban.",
+    "protection": "Existing national X passports valid until expiry and legal challenges pending; no documented border protection for foreign visitors; state nondiscrimination does not reach federal border.",
+    "interaction": "Federal border officer applies cable before state protections; refusal or detention occurs before traveller enters the protective division.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of trans detainees; suspected document fraud can lead to detention; federal corrections policies remove hormones and impose conversion practices.",
+    "protection": "State civil-rights and hate-crime law do not reach federal immigration or corrections custody; no visitor-specific federal remedy documented.",
+    "interaction": "A border document discrepancy can move the traveller into federal detention/custody, bypassing state protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars trans people from government-funded single-sex facilities matching identity; federal custody uses birth sex; some states criminalize bathroom use, though not this division.",
+    "protection": "Division civil-rights act and low-risk map indicate state/local public accommodations are protected; no state bathroom ban documented.",
+    "interaction": "State protections govern state/local venues; federal buildings, airports and national facilities remain under hostile federal rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders target gender-affirming care for minors, public insurance and school support; proposed national rule bars reimbursement under 18; no documented adult visitor emergency-care denial.",
+    "protection": "Division bans conversion therapy and bars insurance gender-identity discrimination; low-risk map notes healthcare-equity shortfall; no visitor-specific care protection documented.",
+    "interaction": "Adult routine care is not clearly restricted; a trans minor with guardian faces federal care/school uncertainty, only partly mitigated by state law.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups; justice guidance uses 'radical gender ideology'; official hostility raises risk if traveller is perceived as activist.",
+    "protection": "Division hate-crime law explicitly covers gender identity, nondiscrimination is codified, panic defence abolished, low-risk map; federal hate-crime statute covers gender identity.",
+    "interaction": "Federal framing can trigger investigation even in a protective state; local police may be more protective, but federal authority can intervene.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive order frames gender-affirming care for minors as mutilation and directs investigation/prosecution of teachers facilitating social transition; care bans in 27 states; proposed insurance bar under 18.",
+    "protection": "Division bans conversion therapy and covers insurance nondiscrimination; no state youth-care ban documented; local protections may apply.",
+    "interaction": "A trans minor travelling with a guardian may face border outing and care uncertainty; state protections do not reach federal border or immigration custody.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence data; national climate includes majority support for document/sports restrictions; general street risk is not shown to be trans-specific.",
+    "protection": "Division low-risk map, explicit gender-identity hate-crime coverage, nondiscrimination, panic-defence repeal; local police recourse theoretically available.",
+    "interaction": "Local protections and hate-crime enforcement lower street-level risk; federal threat framing may embolden hostility, but no division pattern is documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport/visa rules remain in litigation; fraud finding can carry lifetime ineligibility; no clear remedy for border refusal or immigration-custody abuse.",
+    "protection": "Legal-aid FAQ and civil-liberties suit exist; division civil-rights enforcement and hate-crime law provide local recourse.",
+    "interaction": "Traveller may have state-level recourse for discrimination but not for federal border/custody decisions; outcomes depend on which national measures are in force.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has border mismatch, invasive review and denial of entry without detention. This dossier adds documented federal immigration-custody abuse and federal facility exclusion, so it sits below 0.35-A despite stronger state-level protections."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has actual coercive custody and extortion with no local protections. This dossier has a comparable border/custody tail risk, but the division's codified nondiscrimination, hate-crime law and low-risk map make daily life safer; rating is slightly higher."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows local protections functioning with delay and no detention. This dossier's local protections are strong, but the federal border and immigration custody are hostile and can override them, so it is materially lower than 0.55-B."
+   }
+  ],
+  "synthesis": "The division is genuinely protective: codified gender-identity nondiscrimination, explicit hate-crime coverage, conversion-therapy and panic-defence bans, and marker-change procedures. Those protections govern hotels, state facilities, police recourse and daily life. They do not govern the federal border, federal facilities, immigration detention or federal custody. The operative regime therefore turns on the federal gate: a trans visitor with a foreign X or mismatched marker can be outed, refused entry, tagged for fraud review or detained, and federal immigration custody has documented severe abuse. Local protections cannot pre-empt that. An adult alone faces this border/custody exposure; an adult with a trans minor faces additional federal care/school uncertainty. The combined regime is High Risk."
+ },
+ "parse_error": null
+}

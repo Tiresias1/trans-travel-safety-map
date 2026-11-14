@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0023058816",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The dominant traveller-facing exposure is the national document and entry regime: sex redefined at birth for passports and visas, X markers halted, and screening guidance to refuse cases with document discrepancy and to consider a lifetime fraud finding for misrepresented sex. Multiple allied governments issued advisories after detentions of foreign citizens over visa issues. Custody is the severe tail: national correctional 'conversion'-style practices, and immigration detention with documented beatings, forced labour and sexual abuse. This division adds no visitor-facing bathroom criminalisation and no documented anti-trans street violence, but denies gender-identity non-discrimination protection, retains only a hate-crime statute as recourse, and bans gender-affirming care for minors and inmates. No criminalisation of trans identity itself, and courts have partly blocked some orders, keeps this well above imprisonment-tier states but below jurisdictions with operative border protections.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National order requires documents to reflect sex assigned at birth; X markers stopped; officers instructed to refuse cases with discrepancies and to weigh lifetime fraud ineligibility; passports confiscated, travellers stranded; allied governments issued advisories and citizens were detained over visa issues.",
+    "protection": "Existing X-marker passports valid until expiry; litigation by civil-liberties union ongoing; some orders enjoined; legal-aid FAQ exists.",
+    "interaction": "Passport mismatch at a port of entry moves directly into secondary inspection, refusal, or an immigration fraud adjudication; the division's own ID surgery rule is irrelevant to a visitor's home-issued passport.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau adopted policies cutting hair, removing hormones and substituting psychiatric drugs for trans inmates; immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse.",
+    "protection": "Not documented.",
+    "interaction": "A border refusal or fraud allegation routes the traveller into immigration custody, where the documented harms apply regardless of the division's local protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities matching identity; facility bans exist in a growing number of provinces, in some criminalised as trespass with a documented arrest.",
+    "protection": "No facility ban documented for this division; national hate-crime statute covers gender identity.",
+    "interaction": "Facility exposure for a visitor arises chiefly in nationally funded buildings and in other provinces; the division itself documents no bathroom statute.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for under-18s and bars public coverage at any age; prison care barred with no taper; proposals would bar national insurance reimbursement for under-18s.",
+    "protection": "Patients already in treatment may continue under the SAFE Act; litigation pursued and lost through the highest court.",
+    "interaction": "A visitor needing a refill or emergency care is not shown to be refused, but a travelling minor cannot obtain care locally, and national subpoenas of hospital records chill disclosure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'neutralisation' of groups described as radically pro-transgender; a reward memorandum references 'radical gender ideology'; schools face investigation and prosecution over a minor's social transition.",
+    "protection": "The same documents state counterterrorism powers are not for targeting mere disagreement; courts have enjoined several orders.",
+    "interaction": "Framing elevates the salience of gender nonconformity to law enforcement and raises the chance that an incidental encounter is escalated rather than handled administratively.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bars hormones, blockers and surgery for under-18s; national orders direct investigation of schools and criminal prosecution of teachers who affirm a trans minor, and hospital-record subpoenas for patients under 19.",
+    "protection": "Existing patients may continue treatment; no visitor-specific child-welfare rule documented.",
+    "interaction": "A guardian travelling with a trans minor faces care unavailability locally and possible scrutiny if the minor's status surfaces to medical or official actors.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated trans-specific violent incident in this division with a known outcome; national hate-crime reporting exists.",
+    "protection": "Division hate-crime statute expressly covers gender identity; national hate-crimes statute covers gender identity.",
+    "interaction": "Recourse exists in principle through hate-crime provisions even though the division has no gender-identity non-discrimination law in housing, employment or public accommodations.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border discretion and the fraud ground are decided officer-by-officer; advisories indicate travellers have been detained and stranded.",
+    "protection": "Ongoing litigation, enjoined orders, legal-aid guidance, sanctuary declarations in two cities.",
+    "interaction": "Relief is available only after the fact and inconsistently; the operative rule at the border desk is the restrictive one actually in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor ends in refused entry with no detention risk and papers retained administratively. Here the same document discrepancy can trigger a fraud adjudication with lifetime ineligibility and documented detentions of foreign nationals, so this jurisdiction sits slightly below it."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "That anchor has no detention and only non-binding oversight, with an unresolved flag. Here the exposure is sharper: an explicit refusal instruction, a permanent-ineligibility ground, and a documented custody regime whose harms exceed a retained manifest copy."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "That anchor has an operative charter requiring acceptance of self-declared markers, breached only by an individual inspector. Here no such traveller-facing protection exists at the border, so the outcome depends on officer discretion rather than on an enforceable right."
+   }
+  ],
+  "synthesis": "The combined regime the traveller actually meets is national: passports and visas anchored to birth sex, screening discretion to refuse and to consider lifetime fraud, and a custody apparatus with documented conversion-style and abusive practices. The division contributes resident-facing harm (care bans for minors and inmates, surgical ID requirement, no non-discrimination law) but no bathroom criminalisation and no recorded anti-trans violence, and its hate-crime statute offers the only real recourse. Courts have blocked some orders but allowed the passport restrictions, so institutional functioning does not offset the border exposure. The rating sits in the high-risk band: serious, sometimes severe, but short of criminalisation of trans identity itself."
+ },
+ "parse_error": null
+}

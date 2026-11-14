@@ -1,0 +1,82 @@
+{
+ "cell": 46,
+ "region": "66186276B97229519707655:Oregon",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.003870828",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The division is genuinely protective: statewide gender-identity anti-discrimination in public accommodations and services, hate-crime enhancements, a 2023 shield law for gender-affirming care, accessible state X markers, and no bathroom ban. But the visitor's first and most consequential encounter is federal. National rules require passports/visas to reflect sex assigned at birth, have stopped new X markers, and direct officers to refuse cases with document discrepancies and consider lifetime fraud ineligibility for suspected misrepresentation. Reports document confiscated/blocked passports and stranded travellers; immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse. State protections do not pre-empt federal border screening, federal facilities, or federal custody. The result is a safe daily environment once admitted, but a serious, unavoidable entry-stage exposure. Courts have blocked some national measures, leaving uncertainty, but the documented border practice remains the operative risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require sex assigned at birth; new X markers stopped; discrepancy can trigger refusal and possible lifetime fraud ineligibility; reports of confiscated/blocked passports.",
+    "protection": "State issues X markers on licences/IDs and has anti-discrimination law, but visitor uses home passport; no documented federal border remedy.",
+    "interaction": "Federal screening at entry overrides state protections; existing X passports valid until expiry but new issues restricted.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies include conversion-therapy-style practices; bathroom arrest held in men's ward.",
+    "protection": "State hate-crime and anti-discrimination laws do not reach federal custody; no documented consular or legal remedy for detained trans visitors.",
+    "interaction": "A border document discrepancy can escalate to federal detention, where state protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; some states criminalise bathroom use, though not this division.",
+    "protection": "Division has no bathroom ban; statewide public-accommodations law covers gender identity; Most Protective tier.",
+    "interaction": "State facilities are protective, but federal buildings/airports remain under hostile national facility rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding restrictions and proposed insurance rules threaten care; federal emergency-care discrimination not documented.",
+    "protection": "State shield law protects patients/providers from out-of-state bans; public insurance covers gender-affirming care; conversion therapy ban; anti-discrimination.",
+    "interaction": "Visitor from a banning state can use shield law, but federal funding rules may affect some providers.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; DOJ reward guidance and 'radical gender ideology' rhetoric; executive orders target school support.",
+    "protection": "State anti-discrimination and hate-crime laws; no state threat-framing documented.",
+    "interaction": "Federal rhetoric raises investigative risk, but state law enforcement has no documented targeting of trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs prosecution of teachers facilitating social transition and describes minor care as mutilation; entry screening applies to minors.",
+    "protection": "State shield law and anti-discrimination protect care; no state youth-care ban documented; conversion-therapy ban.",
+    "interaction": "A parent and trans minor face the same federal border exposure; once admitted, state care protections are stronger than national policy.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific data on police stops, searches, or violence against trans visitors; national climate hostile.",
+    "protection": "State hate-crime enhancements for gender identity, anti-discrimination in public accommodations, panic-defence ban.",
+    "interaction": "State law provides recourse, but enforcement statistics are not documented; federal rhetoric may affect climate.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Lifetime ineligibility waiver possibilities limited; border refusal remedies unclear; national policies contested.",
+    "protection": "Civil-liberties suit against passport policy; legal-aid FAQ; state anti-discrimination and shield law.",
+    "interaction": "Litigation may change federal rules, but current operative practice remains; state remedies do not reach federal border.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is a pure border denial after a passport mismatch, with no detention. This jurisdiction has a worse border: possible detention, federal custody abuse and lifetime ineligibility. Its documented state anti-discrimination, hate-crime and shield law make daily life safer than the anchor's unspecified interior. Net somewhat above 0.35-A."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A involves administrative flagging and exclusion without detention. This jurisdiction's border exposure is more severe because refusal can escalate to federal custody and a possible permanent fraud finding. State protections are stronger than the anchor's. Net slightly below 0.45-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves delay and a temporary permit, with no detention. This jurisdiction's federal border can refuse entry and detain, and federal custody has documented abuse. Strong state protections do not reach those federal actors, so it rates materially below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C is a care-access mismatch resolved by a state directive, with no hostile federal border. This jurisdiction has comparable state care protections but adds a federal entry and custody regime that 0.75-C lacks, so it rates materially lower."
+   }
+  ],
+  "synthesis": "The division's protective statutes are real and would rate highly on their own: anti-discrimination, hate-crime, shield law, no bathroom ban. But the combined regime is dominated at the threshold by federal entry and custody rules. A trans visitor whose passport marker or presentation triggers secondary screening faces refusal, possible lifetime fraud ineligibility, and, if detained, federal immigration custody with documented abuse. State law cannot pre-empt those federal actors. Once admitted, daily life in the division is comparatively safe; care is shielded and public accommodations are protected. The rating therefore sits in Elevated Risk: not because the division is hostile, but because the federal gate is a universal-exposure choke point with severe downstream consequences and no documented working remedy."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 44,
+ "region": "66186276B91272823970344:Wisconsin",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004257942",
+ "parsed": {
+  "rating": 0.4,
+  "explanation": "The state is comparatively protective—no bathroom ban, no sex-defining law, vetoes of youth-care and sports bans, and a broad state nondiscrimination order—so everyday street and service risk is relatively low. But the national regime remains operative: passport/visa screening can out a trans visitor, refuse entry, or consider a lifetime fraud finding; national rules restrict gender-congruent facilities in government-funded settings; and immigration custody has documented severe abuse. State protections cannot cancel national border, facility, or custody exposures. The combined regime therefore sits in the Elevated Risk band, driven by traveller-facing national chokepoints rather than local hostility.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas, eliminate new X markers, and direct border officers to refuse cases with sex discrepancy or reasonable doubt, with possible permanent fraud ineligibility; detentions and allied advisories are documented.",
+    "protection": "Existing X passports remain valid until expiry; fraud findings are never automatic and require all elements; passport policy is under legal challenge; the state has no border role.",
+    "interaction": "A foreign visitor is screened at national entry, so state-level protections do not govern border questioning, refusal, or fraud findings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of transgender men; national corrections policies impose conversion-style practices on trans inmates.",
+    "protection": "State prisons must provide hormone therapy; national policies are contested in court; detention is not automatic for document discrepancy.",
+    "interaction": "If border screening escalates to national immigration detention, state prison protections do not reach the visitor; custody risk is national.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The national executive order bars transgender people from government-funded single-sex facilities congruent with gender identity; some states criminalise facility use, though not this state.",
+    "protection": "This state has no bathroom ban, no law defining sex to exclude trans people, and a state executive order protects state employment, contracting and services.",
+    "interaction": "State government facilities are locally protected, but national funding conditions may still affect some federally funded facilities a visitor uses.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding pressure caused two hospital systems to pause youth gender-affirming pharmacologic care in January 2026; national orders hostile to gender-affirming care remain in litigation.",
+    "protection": "The state has no ban on gender-affirming care, the governor vetoed youth-care and sports bans, and state insurance protections exist; adult visitor care is not shown restricted.",
+    "interaction": "Minor care access contracted through national funding pressure rather than state law; adult emergency or routine care is not documented as denied.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language names 'radically pro-transgender' groups, and national orders direct scrutiny of schools and gender ideology.",
+    "protection": "The state's 2019 executive order bars discrimination in state services; the state has no drag restriction and is rated low-risk for targeting trans adults.",
+    "interaction": "National threat framing creates climate risk, but the dossier does not document it being applied to visitors in this state.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target teachers who facilitate a minor's social transition and press hospitals on youth care; the January 2026 hospital pause creates care uncertainty for minors.",
+    "protection": "The state vetoed youth-care and sports bans and has no state ban on best-practice care; the governor publicly opposed exclusionary bills.",
+    "interaction": "A travelling minor faces national care-pressure uncertainty, but documented state criminal exposure for parents or guardians is absent.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented pattern of trans-specific street violence or police targeting in this state; the state hate-crime law omits gender identity, though perceived sexual orientation is sometimes used.",
+    "protection": "National hate-crime law covers gender identity; state executive order protects services; one city police department stopped listing victim gender; the July 2026 assessment places the state in its low-risk group.",
+    "interaction": "Local everyday risk appears comparatively low, but national climate and incomplete state hate-crime coverage leave recourse uneven.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport restrictions are in effect after court action; border enforcement discretion and possible fraud findings remain unresolved; facility and custody rules are contested.",
+    "protection": "Legal-aid guidance, ongoing litigation, and the state attorney general's coalition challenge provide some recourse, but no working border remedy is documented.",
+    "interaction": "Practical exposure depends on which national measures are enforced at the moment of travel; the state cannot shield a visitor at national entry or in national custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar border document mismatch and invasive review leading to possible exclusion. This dossier adds national facility exclusion and severe immigration-custody risk, but also a state with no bathroom ban and fraud findings that are not automatic. The combined result is near that anchor, slightly above only because local protections are documented."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a functioning protection resolving a document mismatch after delay, with no detention. Here the border remedy is not shown to work reliably, national facilities are restricted, and custody harm is documented. This dossier is therefore less safe."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a clinic privacy directive that promptly protects care access. This state also has care protections and vetoes, but national funding pressure, border screening, facility rules and custody exposure remain operative. It falls materially below that anchor."
+   }
+  ],
+  "synthesis": "The state layer is comparatively protective: no bathroom ban, no sex-defining exclusion, vetoes of youth-care and sports bans, a broad state nondiscrimination order, and a low-risk comparative assessment. Those protections reduce everyday exposure in the state. They do not cancel the national entry regime, which can out a trans visitor, refuse entry, or consider a lifetime fraud finding, nor national facility restrictions or severe immigration-custody harms. A visitor travelling alone faces the border as the main chokepoint; a visitor with a minor faces added care-access uncertainty from national funding pressure. The combined regime is Elevated Risk, not High Risk, because local facilities and services are comparatively open and no trans-specific criminalisation operates in this state."
+ },
+ "parse_error": null
+}

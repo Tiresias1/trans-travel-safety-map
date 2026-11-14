@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004348176",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime imposes real traveller-facing exposure: national border officers may refuse or investigate document/sex discrepancies, with possible lifetime fraud ineligibility, while the state/province bans gender-congruent restroom and changing-room use in government buildings including airports and parks, enforced by on-site orders and criminal trespass if refused. One arrest and a men's-ward hold are documented; immigration custody and care restrictions add severe downstream risk. Protections exist—litigation, national hate-crime coverage, local ordinances, private-business exemption—but are partial and unresolved. This is worse than administrative-exclusion anchors but below routine multi-year imprisonment or execution anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National border policy treats sex as birth-assigned; X markers are not processed, and officers may refuse cases with document discrepancy or consider lifetime fraud ineligibility. Trans travellers report passport confiscation or blocking.",
+    "protection": "Fraud findings are not automatic and require four elements; existing national X passports remain valid until expiry; litigation challenges the passport policy; legal-aid FAQ exists.",
+    "interaction": "Airport inspection can escalate from discrepancy to secondary screening, refusal, detention, or fraud inquiry; the state facility law also covers airports.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse; national corrections adopted conversion-style practices; the state bathroom arrest was held in a men's ward.",
+    "protection": "National hate-crime law covers gender identity; some executive orders are enjoined; no visitor-specific custody protocol is documented.",
+    "interaction": "A border fraud inquiry or state trespass arrest can lead to custody where birth-sex placement and documented abuse risks compound.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law bars restroom/changing use consistent with gender identity in government-owned or leased buildings including airports, schools, parks, beaches and prisons; an authority figure may order departure, with criminal trespass for refusal. One arrest is documented.",
+    "protection": "Private businesses are outside the statute; emergency and assistance exemptions exist; the sole prosecution was dismissed on standing, and no later arrest is documented.",
+    "interaction": "A visitor at an airport or public site faces an on-site authority decision; national facility restrictions add a second layer.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law restricts adult gender-affirming care, bars insurance coverage, allows conscience refusal and limits providers; minors' care is banned. National orders target minor social transition and insurance coverage.",
+    "protection": "Court injunctions blocked some care bans; local protections exist; emergency care is not expressly barred in this record.",
+    "interaction": "A visitor needing HRT or emergency care may face refusal or scrutiny; a minor travelling with a guardian faces care and school-transition hostility.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice-department guidance invokes 'radical gender ideology'. State hate-crime law excludes gender identity and statewide nondiscrimination is absent.",
+    "protection": "National hate-crime statute covers gender identity; local ordinances cover about 55% of the population; the state human-relations commission enforces employment claims.",
+    "interaction": "Official threat language raises police-suspicion risk; state bias-crime coverage is absent, so local patchwork determines response.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State law bans puberty blockers, hormones and surgery for minors; national order directs prosecution of teachers facilitating social transition; facility law covers schools; custody rules can be modified over gender-affirming care.",
+    "protection": "Some court injunctions apply; local sanctuary policies exist; no visitor-specific protection for travelling minors is documented.",
+    "interaction": "A trans minor with a guardian faces restricted care, facility enforcement and hostile school-related policy in public settings.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State data record 3.7 trans women murdered per 100k per year and a 'Do Not Travel' flag; national advisories warn trans travellers. State hate-crime law excludes gender identity.",
+    "protection": "National hate-crime statute covers gender identity; local nondiscrimination ordinances exist; police protection for trans visitors is not documented.",
+    "interaction": "Violence risk combines with thin state recourse; police may enforce facility rules rather than protect a targeted visitor.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation, care appeals and the facility statute's constitutional status remain unresolved; the bathroom law was never substantively tested; travel advisories are dated 2023.",
+    "protection": "Courts have enjoined some national orders; legal-aid guidance exists; national hate-crime law and local ordinances provide partial recourse.",
+    "interaction": "Protection depends on venue and timing; national and state rules can shift, and no reliable remedy is documented at the point of encounter.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Higher than 0.15-A: this regime does not show routine multi-year imprisonment for trans identity or a credible capital pathway. But border fraud/refusal, state criminal trespass and abusive custody keep it far below safety."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Lower than 0.25-A: that anchor ends in administrative denial and document confiscation without criminal charge. Here the state facility statute can produce arrest and birth-sex custody, and national border screening can trigger fraud ineligibility."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower than 0.35-A: that anchor is invasive administrative exclusion without detention. This dossier documents an arrest, a men's-ward hold, and severe immigration-custody abuse, plus a criminal trespass mechanism."
+   }
+  ],
+  "synthesis": "The operative regime is national border document enforcement layered onto a state public-facilities ban. A passport discrepancy can move from airport inspection to refusal, fraud inquiry or detention; a restroom or changing-room encounter in a government building can move from an authority order to criminal trespass and birth-sex custody. Care restrictions and hostile official threat language heighten risk for adults and travelling minors. Private businesses and some local ordinances reduce exposure, and litigation has checked parts of the national programme, but no working remedy is documented for the facility statute or border fraud process. The result is High Risk, not the extreme imprisonment/execution tier."
+ },
+ "parse_error": null
+}

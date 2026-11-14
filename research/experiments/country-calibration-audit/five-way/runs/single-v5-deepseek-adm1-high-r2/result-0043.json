@@ -1,0 +1,78 @@
+{
+ "cell": 43,
+ "region": "66186276B89395128410123:Arizona",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00149433144",
+ "parsed": {
+  "rating": 0.31,
+  "explanation": "The traveller meets a hostile national border and federal-facility layer first, and the division's comparatively protective posture cannot pre-empt it. National policy restricts sex markers, instructs officers to refuse cases where documents cast doubt on sex and to consider lifetime fraud ineligibility for suspected misrepresentation, and excludes trans people from federally funded single-sex facilities congruent with identity; allied governments have issued advisories and detentions of neighbouring citizens over visa issues are recorded. Immigration custody shows documented beatings, forced labour and sexual abuse, and the counterterrorism strategy names 'radically pro-transgender' groups. Against that, the division is in the low-risk group, the governor vetoed bathroom and pronoun bills, gender-identity discrimination is barred in state employment by executive order, municipal ordinances cover nine cities, a national hate-crimes statute covers gender identity, and courts have enjoined several orders. The national layer dominates for a short-stay visitor; the division layer lifts street-level exposure only.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules bar self-selected markers and new X markers; officers must refuse where documents or records cast doubt on sex and consider lifetime fraud ineligibility for suspected misrepresentation of sex or purpose of travel; allied governments issued advisories after detentions of neighbouring citizens.",
+    "protection": "Existing X-marker passports remain valid until expiry; a fraud finding requires all four elements and is never automatic, with limited waivers; the policy is under live legal challenge and a legal-aid FAQ exists.",
+    "interaction": "Border screening precedes all else and is federal; division law cannot pre-empt it, and a discrepancy can escalate into refusal, secondary inspection or an immigration-fraud track.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented as abusive for trans men: forced labour, beatings, solitary confinement, severe sexual abuse; federal corrections policies adopted from 2026 impose haircuts, hormone removal and psychiatric substitution on trans inmates.",
+    "protection": "Fraud finding is not automatic and requires four elements; several executive actions are enjoined; the corrections bureau stopped reporting trans prisoner numbers, weakening oversight.",
+    "interaction": "A document discrepancy at the border can route a traveller into the custody system where the documented harms sit; the division has no authority over federal detention.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "The January 2025 order bars trans people from federally funded single-sex facilities congruent with identity, reaching federal buildings nationwide regardless of division law.",
+    "protection": "The division's governor vetoed bathroom and pronoun bills; no state-level facility ban applies here, and nine cities bar gender-identity discrimination in public accommodations.",
+    "interaction": "State-level restraint governs private and municipal venues but not federal premises; the traveller meets the harshest operative rule at federal sites.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No visitor-facing care denial is documented in this division; a 1982 Medicaid surgery exclusion and a 2022 ban on minors' surgery are resident-facing.",
+    "protection": "Not documented for visitors; the 2023 executive order covers only state employees over 21.",
+    "interaction": "Care exposure for a visitor is unresolved rather than shown; emergency or pharmacy encounters are not documented either way.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "The May 2026 counterterrorism strategy names 'radically pro-transgender' groups among priorities for neutralisation; a December 2025 justice memorandum uses 'radical gender ideology' language, though not as a reward criterion.",
+    "protection": "The strategy states counterterrorism powers will not target mere disagreement; courts have enjoined several related orders.",
+    "interaction": "Rhetoric raises the temperature around visible advocacy and can colour police encounters, but no enforcement against trans visitors is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A national order directs investigation of schools and prosecution of teachers facilitating a minor's social transition; the division bans surgery and sports participation for trans minors and runs a school-reporting hotline.",
+    "protection": "The governor vetoed bathroom, pronoun and safe-space bills; national injunctions apply to some measures.",
+    "interaction": "A guardian travelling with a trans minor faces document-discrepancy risk at the border plus a division school climate that penalises visible transition support.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence, arrest or detention is documented in this division; a gay/trans panic defence remains available at division level, and Pride organising collapsed in the second city in 2026 citing a hostile environment.",
+    "protection": "The national hate-crimes statute covers gender identity; the division statute does not.",
+    "interaction": "Absence of recorded incidents here is not evidence of safety; response capacity is split between a protective federal statute and a division statute that omits gender identity.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Recourse is a patchwork: division hate-crime law omits gender identity, panic defence survives, and exemptions riddle municipal ordinances.",
+    "protection": "Title VII rulings, a 2023 gubernatorial order on state employment and contracts, a 2023 justice-department interpretation, nine municipal ordinances, and active litigation with injunctions granted.",
+    "interaction": "Remedies operate after the fact and mostly for residents; they do not reach a border refusal or a federal facility exclusion.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor had a statutory shield against detention for document mismatches, with denial of entry and confiscated papers as the worst outcome. Here there is no such shield, and refusal can escalate into a fraud-ineligibility track and abusive custody, so this jurisdiction sits slightly below it."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor's several-hour administrative hold ended with an ombudsman securing release and a logged discrepancy. Here the national border rules explicitly contemplate refusal and lifetime ineligibility, and federal facility exclusion applies nationwide, so this sits below."
+   },
+   {
+    "anchor_id": "0.65-B",
+    "comparison": "That anchor had a binding privacy directive that ultimately protected care access with only a rude clerk. Here protections exist at division level but do not govern the border or federal facilities, so it is materially below."
+   }
+  ],
+  "synthesis": "The operative regime splits by stage. At the border the traveller faces federal document rules with refusal and permanent-ineligibility pathways, and allied governments have advised their trans citizens accordingly. Inside the country, federal facilities apply birth-sex exclusion, and federal custody is documented as abusive. The division layer is genuinely better: no state bathroom ban, vetoed pronoun bills, non-discrimination orders, municipal ordinances and a low-risk ranking, with courts actively enjoining national measures. Because a short-stay visitor's sharpest exposures are federal, the combined regime sits in the high-risk band rather than the reduced-risk band the division's own posture would suggest."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 41,
+ "region": "66186276B86295910312663:Arkansas",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0023071608",
+ "parsed": {
+  "rating": 0.31,
+  "explanation": "The combined regime layers a restrictive national border/document posture onto a state with its own bathroom, care and facility restrictions. A trans adult travelling alone faces the sharpest documented exposure at entry if documents or presentation raise a sex discrepancy: secondary screening, refusal, additional evidence demands and possible—though non-automatic—fraud ineligibility. In-state, Act 619 creates a narrow misdemeanour for trans public-facility use where a minor is present and sexual intent is shown, and the state lacks gender-identity hate-crime or anti-discrimination protection. Travelling with a minor raises facility and care exposure because the state bans gender-affirming care for minors and restricts school facilities. Detention is not routine, but national immigration custody carries documented severe abuse. Protections are partial and often litigated rather than operative.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document policy; no new X markers; visa posts instructed to refuse or seek evidence where sex is doubted; possible lifetime fraud ineligibility for material misrepresentation; trans-athlete entry ban.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding requires four elements and is never automatic; waiver possibilities exist; policy is litigated.",
+    "interaction": "Foreign passport/visa checked at border; discrepancy can trigger secondary screening, refusal or removal exposure; state has no entry role.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections conversion practices including hormone removal.",
+    "protection": "Fraud finding not automatic; some national measures enjoined; legal-aid FAQ exists. No documented visitor-specific custody safeguard.",
+    "interaction": "Document discrepancy can escalate from border questioning to immigration detention, where placement and treatment are severe.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State Act 619 makes trans use of public bathrooms, locker rooms or changing facilities a misdemeanour where a minor is present and sexual intent is shown; K-12 facility ban extended in 2025; national facility restrictions exist.",
+    "protection": "Act 619 requires both minor presence and sexual intent; state statute lists exemptions including accompanying a child under 12 and emergencies; no general adult public-facility ban is documented beyond that provision.",
+    "interaction": "Adult alone faces lower facility risk than an adult accompanied by a minor, where complaint or police involvement is more plausible.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law lets medical practitioners cite religious beliefs to deny LGBT healthcare; state bans gender-affirming care for minors, with litigation ongoing; national measures threaten providers and funding.",
+    "protection": "National Bostock ruling covers employment only; care-ban litigation has produced injunctions at times; national hate-crime law covers gender identity.",
+    "interaction": "Adult visitors may face refusal in routine care; a trans minor travelling with a guardian faces unavailable or contested care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' violent groups as a priority; justice guidance references 'radical gender ideology'; state has no gender-identity hate-crime enhancement.",
+    "protection": "National hate-crime statute covers gender identity since 2009; guidance says counterterrorism will not target mere disagreement; courts have blocked some orders.",
+    "interaction": "Threat framing mainly raises risk for visibly activist visitors; state-level police recourse for anti-trans bias is weak.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans gender-affirming care for minors and restricts school facilities and sports; national order threatens prosecution of teachers who affirm trans minors; bathroom law applies where a minor is present.",
+    "protection": "Care-ban litigation continues and has produced injunctions; Act 619 requires sexual intent; national hate-crime law covers gender identity.",
+    "interaction": "A trans minor travelling with a guardian faces care-access and facility risks; a guardian accompanying a minor may face complaint risk under the bathroom provision.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State has no gender-identity hate-crime penalty enhancement and its civil remedy excludes gender identity; public opinion supports restrictive document and sports laws; no state trans-specific violence pattern is documented.",
+    "protection": "National hate-crime statute covers gender identity; some municipalities bar gender-identity discrimination in public employment; no documented organised targeting of trans visitors.",
+    "interaction": "Local police may not treat anti-trans bias as aggravated; national recourse exists but is distant and uncertain.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "State anti-discrimination and hate-crime protection is absent; Act 619 enforcement record is not documented; care-ban enforceability is unresolved; national rules are in litigation.",
+    "protection": "National civil-liberties litigation, legal-aid guidance and court injunctions provide partial checks; national hate-crime coverage exists.",
+    "interaction": "Remedies are slow and uncertain and do not prevent initial border, facility or care harm.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar border/document mismatch exposure with invasive review and possible denial, but this regime adds a state criminal bathroom provision and documented severe immigration-custody abuse, so it sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B had on-site supervisor intervention, a temporary permit and no detention. Here remedies are weaker, state facility law is criminal in narrow circumstances, and national custody exposure is severe, so it is materially lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C showed a working privacy directive and staff correction. This jurisdiction instead has religious-denial healthcare law, no state gender-identity protection and a bathroom misdemeanour, so it is far below."
+   }
+  ],
+  "synthesis": "The operative regime is not a blanket criminalisation of trans identity, but it combines national border-document scrutiny with state-level facility and care restrictions. An adult alone is most exposed if documents or presentation prompt a sex discrepancy at entry; in daily life, risk rises in public facilities where minors are present and in healthcare settings. An adult travelling with a minor faces additional facility and care-access exposure. Severe custody harm is documented but conditional on detention. Partial national hate-crime coverage and litigation do not reliably prevent the initial harms. The result is high risk, below the administrative-friction anchors but above coercive-extortion anchors."
+ },
+ "parse_error": null
+}

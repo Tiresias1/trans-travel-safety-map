@@ -1,0 +1,78 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0031259952",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The division has strong local protections, but the visitor's entry, airport screening, federal facilities and any immigration custody are governed by the national regime, which state law does not offset. Document mismatch can trigger refusal, invasive secondary screening, a possible lifetime fraud finding, and detention with documented abuse of trans people in immigration custody. In-state hotels, public accommodations and hate-crime recourse are safer, but a traveller cannot avoid federal checkpoints or federal custody. The combined regime is therefore Elevated Risk: local protection lowers everyday exposure, while national universal-exposure and custody harms keep it well below Reduced Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document rules, no new X markers, refusal where sex is doubted, possible lifetime fraud finding; reports of blocked or confiscated passports and stranded travellers.",
+    "protection": "Existing X passports remain valid until expiry; litigation challenges the policy; division issues X markers, but these do not bind national border officers.",
+    "interaction": "A foreign or division document that does not satisfy the national officer can escalate from secondary inspection to refusal or fraud processing.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody includes reported forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies include hormone removal and conversion-style practices.",
+    "protection": "Some national orders are enjoined; legal-aid guidance exists; division nondiscrimination and shield laws do not reach national detention.",
+    "interaction": "A border document discrepancy can move the traveller into national immigration detention and birth-sex custody, where state protections do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; some states criminalise bathroom use; a bathroom arrest is documented.",
+    "protection": "Division has no facility ban, has public-accommodations protections, and allows gender-neutral single-occupancy toilets; these do not cover national facilities.",
+    "interaction": "National buildings and airports follow national rules; division hotels and state-regulated venues are safer, but federal spaces remain a universal exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National restrictions target minors' gender-affirming care, public insurance, and records subpoenas; a visitor's medication or emergency care could face disclosure or refusal.",
+    "protection": "Division bars healthcare discrimination and has shield-law listings; the shield's visitor scope and ability to block national action are unresolved.",
+    "interaction": "State shield law may protect local care, but national health rules and investigations can still reach the encounter.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language names 'radically pro-transgender' groups; official guidance uses 'radical gender ideology'; this raises discovery severity.",
+    "protection": "The strategy says it will not target mere disagreement; national hate-crime law and division hate-crime enhancements exist.",
+    "interaction": "Hostile national framing can shape border, custody and investigative responses; division recourse does not control national actors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order threatens prosecution of teachers who affirm a minor's transition; care restrictions and border document checks apply to minors and guardians.",
+    "protection": "Division anti-bullying law, conversion-therapy ban and shield laws protect local settings; they do not govern national border or custody.",
+    "interaction": "A parent and minor face national entry and custody rules at the border, while in-state school and care settings are more protective.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No anti-trans violence incident or prevalence figure for the division is documented; absence of evidence is not safety.",
+    "protection": "Division has gender-identity hate-crime enhancements, repealed panic defence, and public-accommodations protections; enforcement data are absent.",
+    "interaction": "Local recourse exists on paper, but no documented outcomes show how it works for a visitor; national hate-crime coverage is partial.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions are in effect; fraud findings can be lifelong; shield-law scope and state-national document interaction are unresolved.",
+    "protection": "Litigation, injunctions, legal-aid FAQs, and division statutes provide partial remedies.",
+    "interaction": "Remedies may help locally or after the fact but do not reliably prevent border refusal, federal facility exclusion, or custody harm.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor has detention, extortion and no formal protection. This jurisdiction adds strong division protections and no trans-specific criminal statute, but national entry refusal, fraud exposure and documented immigration-custody abuse are comparable or worse in severity, so it sits above 0.25 but still in the risk bands."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "That anchor has denial of boarding, registry flagging, no detention and weak recourse. Here division law is much stronger locally, but documented national custody harm and universal federal facility exclusion make the combined border-and-custody interaction somewhat worse, placing this slightly below 0.45."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "That anchor has a formal protection that works after public scrutiny at the checkpoint. Here the division protection does not govern the national border, federal facilities or custody, and no working remedy is documented at those stages, so this jurisdiction is materially lower."
+   }
+  ],
+  "synthesis": "The division's nondiscrimination, hate-crime, healthcare and shield provisions make in-state private and state-regulated settings comparatively safe. But the visitor's journey passes through national entry screening, airports, federal buildings and possible immigration custody, where the dossier documents binary-sex document rules, refusal or fraud exposure, facility exclusion and serious custody abuse. State law neither pre-empts nor reliably remedies those national actors. The result is a split regime: low everyday exposure locally, but severe and universal exposure at the border and in federal custody."
+ },
+ "parse_error": null
+}

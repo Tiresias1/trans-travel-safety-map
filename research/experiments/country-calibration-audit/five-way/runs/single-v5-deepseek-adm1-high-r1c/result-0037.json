@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004889336",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime: national border/document rules are the dominant traveller exposure—sex-binary passport/visa policy, refusal where records cast doubt, possible material-misrepresentation/lifetime ineligibility, reports of stranded trans travellers, and documented abuse in immigration custody. The division’s courts repeatedly enjoin state facilities, marker, and minors’ care restrictions, and its facilities ban is under a temporary restraint, so in-state facilities and care are comparatively protected. But those state remedies do not reach national entry screening, immigration detention, federal facilities, or national funding/insurance rules. Street violence is undocumented, not safe. Net: documented severe national exposures with partial state protection; high risk, above a pure denial-of-entry case but below jurisdictions with functioning traveller-facing safeguards.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-binary document regime; visa/entry screening may refuse where records cast doubt; suspected wilful misrepresentation can support permanent lifetime ineligibility; trans travellers report passports confiscated or blocked and some stranded; multiple governments issued advisories.",
+    "protection": "Existing X-marker passports remain valid until expiry; national civil-liberties litigation and legal-aid FAQ exist, but no visitor-facing guarantee.",
+    "interaction": "Documents are checked at every national entry point; division court protections do not bind border officers or visa adjudication.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement, and severe sexual abuse of transgender men; fraud investigation can escalate document discrepancy into detention and lifetime ineligibility.",
+    "protection": "Fraud finding requires all elements and is not automatic; limited waiver possibilities exist; no documented visitor-specific custody safeguard.",
+    "interaction": "A border discrepancy can move the traveller from screening into national immigration custody, beyond the division’s court injunctions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with identity; division’s 2025 facilities law is enjoined, but national funding/facility rules remain.",
+    "protection": "Division court temporary restraint against the facilities law; prior bathroom proposals failed; state constitutional injunctions protect state facilities.",
+    "interaction": "National facility restrictions and funding conditions can override or reach beyond state protection; permanence of the TRO is unresolved.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding freeze, proposed under-18 insurance reimbursement bar, and hostile executive order on minors’ care; national rules can affect care access regardless of state law.",
+    "protection": "Division minors’ care ban permanently struck down; state courts applied equal-protection and privacy grounds; care for minors not prohibited in the division.",
+    "interaction": "State care protection operates inside the division, but national insurance/funding rules and border-stage document scrutiny remain outside it.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names “radically pro-transgender” groups among priorities; justice department memo references “radical gender ideology”; division flag ban and religious-exemption law signal official hostility.",
+    "protection": "National hate-crimes statute covers gender identity; division courts repeatedly block anti-trans laws; no direct visitor-targeting pattern documented.",
+    "interaction": "National threat rhetoric can raise police suspicion at entry or investigation stages, where division courts have no reach.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order threatens prosecution over a minor’s social transition; passport/visa screening scrutinises document discrepancies; national facility and care-funding restrictions apply.",
+    "protection": "Division care ban struck down and facilities law enjoined; state courts protect minors’ care inside the division.",
+    "interaction": "An adult travelling with a minor first meets national border/doc rules; state protection begins only after entry and cannot cure border refusal or custody exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans violence count or incident appears; state hate-crime statute omits gender identity; national climate is hostile.",
+    "protection": "National hate-crimes statute covers gender identity; no documented pattern of police targeting trans visitors in the division.",
+    "interaction": "Physical risk cannot be assessed from this record; absence of incidents is not evidence of safety.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "2026 definitions bill challenge unresolved; facilities TRO permanence unknown; national passport-marker suit unresolved; religious-exemption law may permit service refusal.",
+    "protection": "Division courts repeatedly enjoin anti-trans laws; national civil-liberties litigation and legal-aid guidance exist.",
+    "interaction": "Remedies work in the division’s state sphere but do not reach national border, immigration custody, or federal facility rules.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has coercive custody, extortion and no protection at the point of contact. This case shares severe custody risk in national immigration detention and possible lifetime fraud, but adds state court injunctions and national hate-crime recourse. It sits slightly above 0.25-A, though national border and custody exposures remain unremedied."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is denial of entry without detention, with invasive administrative review. This case is worse because national screening can escalate to immigration custody with documented abuse and permanent ineligibility, although in-state facilities and care are more protected. It sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a protection functioning at the point of contact, yielding a temporary permit and release. Here state courts function only inside the division and do not bind national border officers, immigration custody, or federal facilities. It is materially below 0.55-B."
+   }
+  ],
+  "synthesis": "The operative system splits. Inside the division, injunctions preserve facilities, marker-change litigation and minors’ care, and state courts have applied equal-protection and dignity guarantees. At the national layer, entry screening, passport/visa adjudication, federal facilities, immigration custody and funding rules remain hostile and unremedied by those state decisions. A traveller first meets the national layer, so state protection cannot prevent refusal, fraud findings, detention, or facility exclusion in federal settings. The division’s court record lowers in-country risk but cannot offset border and custody exposure; no violence data means physical risk is unassessed, not safe."
+ },
+ "parse_error": null
+}

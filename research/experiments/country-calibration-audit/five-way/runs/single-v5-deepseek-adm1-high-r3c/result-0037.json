@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01095715",
+ "parsed": {
+  "rating": 0.35,
+  "explanation": "National entry screening and document rules are the main exposure: mismatched markers can trigger refusal, invasive secondary screening, possible fraud-based lifetime ineligibility, and immigration detention with documented abuse. The state/province is a protective enclave: courts have enjoined facilities, care, and marker restrictions, and its facilities ban is not in force. Those remedies do not reach the national border or immigration custody. Inside the state, an outed adult faces limited legal exposure but thin anti-discrimination coverage; minors have court-protected care while national rhetoric is hostile. No state-specific violence data. Overall High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/entry screening refuses cases with sex-document discrepancy; possible fraud-based lifetime ineligibility; new national X markers stopped.",
+    "protection": "Existing X passports valid until expiry; policy challenged in court; fraud finding not automatic.",
+    "interaction": "Visitor uses home passport; state court protections do not reach the national border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody: trans men report forced labour, beatings, solitary confinement, sexual abuse; border fraud suspicion can lead to detention.",
+    "protection": "Fraud finding requires four elements and is not automatic; legal-aid FAQ exists.",
+    "interaction": "Border screening feeds national immigration custody; state courts do not reach it.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; many states/provinces have bans.",
+    "protection": "State facilities ban is enjoined/not in force; state constitution dignity guarantees applied by courts.",
+    "interaction": "National order may reach federal facilities; state public facilities are protected by injunction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders hostile to gender-affirming care; proposed insurance exclusion; no visitor-specific denial documented.",
+    "protection": "State court permanently struck down minor care ban; state permits care.",
+    "interaction": "Visitor care in state likely protected; national funding rules may affect residents.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy lists 'radically pro-transgender' groups; justice memo invokes 'radical gender ideology'.",
+    "protection": "No direct enforcement against trans travelers documented; state courts block anti-trans laws.",
+    "interaction": "Climate signal; may chill advocacy but not a direct visitor custody rule.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target schools and social transition; no visitor-minor-specific evidence.",
+    "protection": "State courts enjoined minor care ban; state permits care.",
+    "interaction": "Adult with trans minor may face border/document scrutiny; state school rules not relevant to short visit.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "No state-specific violence data; national hate-crime statute covers gender identity but state statutes do not.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Litigation unresolved on 2026 bill, facilities injunction, passport policy; marker changes blocked pending trial.",
+    "protection": "Functioning courts, injunctions, legal-aid FAQ; state constitution dignity.",
+    "interaction": "Remedies work in-state but not at national border; outcome uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Comparable border denial and invasive review. Our national regime adds possible fraud-based lifetime ineligibility and documented immigration-custody abuse, but the state's courts enjoin facilities and care bans. Net similar to 0.35-A, with border risk slightly worse and in-state risk better."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has functioning transit guidelines and no detention. Here national border rules are harsher and custody abuse is documented; state protections do not reach the border. Lower than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has operative care protection and no custody threat. Our state has similar court protection for care and facilities, but national border screening and custody remain. Much lower than 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime is split. At the national border, trans visitors with mismatched documents face secondary screening, refusal, possible fraud-based lifetime ineligibility, and immigration detention with documented abuse; state court remedies do not reach these stages. Inside the state/province, courts have enjoined facilities, care, and marker restrictions, and the facilities ban is not in force, so an outed adult faces limited legal exposure but thin anti-discrimination coverage. National rhetoric frames pro-trans groups as extremist, raising climate risk. No state-specific violence data leaves physical risk unassessed. The border exposure dominates the rating."
+ },
+ "parse_error": null
+}

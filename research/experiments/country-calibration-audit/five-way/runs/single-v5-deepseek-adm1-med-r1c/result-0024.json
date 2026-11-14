@@ -1,0 +1,82 @@
+{
+ "cell": 24,
+ "region": "66186276B63937528568220:Iowa",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00940338",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is driven by national document and border rules: passports/visas are processed on a birth-sex binary, X markers are discontinued for new issues, and border officers may refuse cases with sex discrepancies and consider a material misrepresentation finding carrying lifetime ineligibility. Reports document confiscated or blocked passports and stranded travellers. In this state/province, gender-identity anti-discrimination was repealed and localities are barred from stronger protections; the school facilities rule binds visitors on school grounds. Custody exposure is severe, with documented abuse in immigration detention and conversion-style practices in national corrections. National hate-crime coverage and litigation exist but are partial and do not reliably remedy service denial or border harm. The result is worse than administrative-only denial but below systematic imprisonment or execution.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary sex-marker policy; X markers discontinued for new issues; border officers may refuse cases with sex discrepancies and consider material misrepresentation carrying lifetime inadmissibility; reports of confiscated or blocked passports and stranded travellers.",
+    "protection": "Existing X-marker passports remain valid until expiry; policy is under court challenge; legal-aid FAQ exists.",
+    "interaction": "Home-country passport meets destination visa/border screening; state/province protections cannot override national border or fraud findings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Document discrepancy can lead to secondary inspection, refusal, detention, or fraud inquiry. Immigration custody documents forced labour, beatings, solitary confinement and sexual abuse of transgender men; national corrections use conversion-style practices.",
+    "protection": "Fraud finding is not automatic and requires four elements with limited waivers; litigation challenges some policies.",
+    "interaction": "A border query can escalate into immigration custody; national custody rules apply regardless of state/province law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National binary-sex rules restrict facilities in many state/provinces; four make certain transgender bathroom use criminal trespass, with one documented arrest. This state/province's school rule requires birth-certificate-matched restrooms for everyone on school grounds, including visitors.",
+    "protection": "Some states/provinces have no mapped facility ban; statutory exemptions and single-person facilities exist in limited school contexts.",
+    "interaction": "State/province school rule operates alongside national facility policy; no documented statewide adult public-restroom ban outside schools.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy hostility to gender-affirming care, care bans for minors and proposed insurance restrictions; hospital records subpoenas create chill. Visitor-specific denial of emergency or routine care is not documented.",
+    "protection": "Some court injunctions block measures; state/province court preserved adult surgery coverage for residents.",
+    "interaction": "Resident-facing care rules and national funding policy may affect facilities, but traveller-facing care denial is not established.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; official 'gender ideology' rhetoric and reward guidance create hostile climate. No documented police targeting of transgender visitors as such.",
+    "protection": "National hate-crime statute covers gender identity; guidance says counterterrorism powers will not target mere disagreement.",
+    "interaction": "Hostile national framing can raise suspicion and reporting risk, while state/province anti-discrimination protection has been repealed.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State/province school facilities rule binds everyone on school grounds, including visiting adults and minors; single-person alternative is a student accommodation requiring guardian consent. National care bans and school-transition directives increase family exposure.",
+    "protection": "Some national orders are enjoined; no visitor-specific guardian protection documented.",
+    "interaction": "An adult travelling with a transgender minor faces school-event facility rules plus national care and school policies.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state/province-specific homicide or violence figures are provided; monitoring data are described as undercounts. State/province gender-identity anti-discrimination was repealed, leaving no remedy for service refusal.",
+    "protection": "National gender-identity hate-crime coverage exists, but state/province bias-crime coverage is partial.",
+    "interaction": "Without state/province civil-rights protection, police and service responses are uncertain and uneven.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "State/province removed gender-identity protections from employment, housing and public accommodations and barred stronger local ordinances; a refused visitor has no state-law remedy. Border fraud findings and detention carry uncertain but severe consequences.",
+    "protection": "National civil-liberties litigation, legal-aid guidance and some injunctions exist; national hate-crime law remains.",
+    "interaction": "National litigation may alter documents policy, but no reliable operational remedy protects an outed visitor at the border or in facilities.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B has coercive custody, extortion and an uncertain warrant, but no systematic national document-refusal regime. This dossier adds documented national refusal/inadmissibility risk and severe immigration-custody abuse, so consequences are comparable or somewhat more severe."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has administrative denial and document confiscation but an explicit bar on detention for marker mismatch. Here no such traveller safeguard is documented, and border refusal can interact with fraud findings, so this regime sits lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B reaches a temporary permit after supervisory intervention and cites operating guidelines. This dossier documents national passport restriction, possible lifetime inadmissibility and no comparable working visitor remedy, so it rates materially below."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows a privacy directive operating to correct records and issue care. Here state/province anti-discrimination has been repealed, facilities rules bind visitors in schools, and national border/custody exposures remain, so it is far below."
+   }
+  ],
+  "synthesis": "The operative exposure is layered: national border and document rules are the primary traveller-facing hazard, with possible refusal, detention, fraud-based lifetime inadmissibility and documented custody abuse. The state/province adds a hostile civil-rights environment and a school facilities rule that reaches visitors, but no documented statewide adult public-restroom ban outside schools. National hate-crime law and litigation are partial mitigants, not reliable remedies. An adult alone faces mainly border/document and service-denial risk; an adult with a minor also faces school-facility and care-policy exposure. The score reflects severe but not execution-level consequences, with substantial uncertainty at the border."
+ },
+ "parse_error": null
+}

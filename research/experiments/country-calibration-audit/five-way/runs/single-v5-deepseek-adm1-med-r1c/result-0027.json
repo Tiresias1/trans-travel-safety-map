@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.001947504",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined operative regime: national document rules (M/F only, X eliminated for new issues, refusal where sex is doubted, possible lifetime inadmissibility for material misrepresentation) plus a state facilities statute reaching government-owned airports, universities, parks and schools with criminal trespass on refusal, and state care restrictions covering adults. These are universal-exposure, traveller-facing measures; the state adds no gender-identity anti-discrimination or hate-crime coverage. Aggravating: documented immigration-custody harm (forced labour, beatings, sexual abuse) reachable via a border discrepancy, and national prison practices targeting trans inmates. Mitigating: misrepresentation findings are not automatic, several orders are enjoined, care bans were blocked, the single facilities prosecution was dismissed, and private businesses are outside the statute. Net: a step below administrative-exclusion-only jurisdictions, well above imprisonment-as-standard ones.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rule requires M/F markers matching sex assigned at birth; X marker no longer issued; posts instructed to refuse where documents cast doubt on sex, with possible lifetime inadmissibility for material misrepresentation; state DMV treats differing markers as fraud.",
+    "protection": "Existing X-marked passports valid until expiry; fraud finding requires all four elements, waivers exist, and is never automatic; litigation on the passport policy pending.",
+    "interaction": "A visitor's home-issued passport with a changed marker or X meets a regime that does not issue such markers, pushing the encounter toward secondary inspection and possible refusal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Border discrepancy can escalate to immigration custody where trans men report forced labour, beatings, solitary confinement and severe sexual abuse; national prisons apply conversion-style practices including hormone removal and forced haircuts.",
+    "protection": "Some executive orders enjoined; the fraud ground is discretionary and requires four elements; national hate-crime statute covers gender identity.",
+    "interaction": "Document mismatch at the border is the gateway into a detention system with documented anti-trans harm, so a paperwork problem becomes a custody risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State 2023 statute bars restroom/changing use consistent with identity in state/local government buildings, airports, parks, beaches, state universities and all schools public or private; refusal to depart is criminal trespass; one arrest, handcuffed, held in men's ward.",
+    "protection": "Private businesses out of scope; enumerated exemptions; site authority must first order departure; the sole charge was dismissed 20 June 2025.",
+    "interaction": "The statute reaches facilities a visitor routinely enters (airports, government buildings, campuses), and enforcement rests with on-site officials rather than courts.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bans minors' gender-affirming care, imposes adult barriers (physicians-only, insurance exclusion), and permits conscience-based refusal; national orders target transition-related care and providers.",
+    "protection": "A national judge permanently blocked the minor and adult care bans (appellate status undocumented); emergency-care access not documented.",
+    "interaction": "A visitor needing a prescription refill or emergency care meets a state that permits refusal and has narrowed adult provision, with national policy hostile.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for prioritised neutralisation; executive orders direct investigation and prosecution of teachers affirming trans minors.",
+    "protection": "The strategy states powers will not target mere disagreement; the reward memorandum's 'gender ideology' phrase is not a criterion; several orders enjoined.",
+    "interaction": "State threat-framing raises the chance that an official encounter is read through a security lens, though no traveller-specific targeting is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Accompanying a trans minor into a covered government building or school can trigger the trespass mechanism against the adult; minors' social transition is discouraged and teachers face prosecution risk.",
+    "protection": "Care bans blocked in national court; private premises outside the statute; exemptions for chaperoning young children.",
+    "interaction": "A guardian's exposure is derivative: the parent bears the trespass and care-provision risk, the minor bears the facilities and school-climate risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Reported 3.7 trans women murdered per 100k/yr and a 'Do Not Travel' label; state hate-crime law omits gender identity; no state anti-discrimination statute.",
+    "protection": "National hate-crime statute covers gender identity; localities covering ~55% of population prohibit discrimination; courts dismissed the sole facilities prosecution.",
+    "interaction": "Background violence is not shown to be state-directed, but thin state recourse means a victim has limited local remedy.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "State lacks gender-identity anti-discrimination and hate-crime coverage; facility statute never substantively tested; 2023 travel advisories never withdrawn; airport application undocumented.",
+    "protection": "Functioning courts (dismissal, injunctions, permanent block of care bans), a civil-liberties know-your-rights guide, and national hate-crime coverage.",
+    "interaction": "Courts mitigate but have not removed the facilities statute or the border document regime the traveller actually meets.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "That anchor involves discretionary corruption — extortion, an unlogged passport number, release for cash — with no statutory bar. Here the exposure is institutionalised: a facilities statute with a criminal penalty covering airports and government buildings, a national document regime, and documented custody harm. Systemic enforcement places this lower than 0.25-A."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "That anchor has explicit protection against detention for marker discrepancy and ends in entry denial. Here entry refusal is similarly available, but the traveller also faces a criminal facilities statute, state care restrictions and no state-level gender-identity recourse — harsher, so below 0.35."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "That anchor treats multi-year imprisonment for identity misrepresentation as the standard outcome. Here misrepresentation findings are discretionary, require four elements, and the facilities offence is a 60-day misdemeanour with the only charge dismissed — materially safer than 0.15, but not by a full band."
+   }
+  ],
+  "synthesis": "The traveller meets one combined system: a national document regime that doubts foreign markers and can route a discrepancy into immigration custody with documented anti-trans abuse, layered under a state facilities statute enforced by on-site officials in the buildings a visitor actually uses, plus state care restrictions reaching adults. Nothing at state level specifically protects a trans visitor, and the single prosecution shows the statute is operable even though it went untested. Offsets are real but partial: courts have blocked care bans, dismissed the one charge, and enjoined several national orders; private businesses are out of scope; misrepresentation findings are not automatic. Universal-exposure measures, not scattered incidents, drive the rating."
+ },
+ "parse_error": null
+}

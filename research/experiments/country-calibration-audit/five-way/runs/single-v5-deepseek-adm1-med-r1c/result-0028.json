@@ -1,0 +1,82 @@
+{
+ "cell": 28,
+ "region": "66186276B6628180846672:Pennsylvania",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002128575",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime is dominated by the parent national framework at the border, in federal facilities and in custody, where sex-assigned-at-birth document rules, refusal authority, possible lifetime fraud findings, facility exclusion and documented abuse in immigration custody create severe exposure if a trans visitor is outed. The division is comparatively protective: low-risk grading, explicit gender-identity discrimination protection, X markers on local IDs, adult gender-affirming care lawful, and a city sanctuary policy. But those local protections do not cancel federal entry screening, federal facilities, federal custody or national threat-framing. The result is materially safer than a uniformly hostile jurisdiction, but still high risk because the operative border and custody layer remains hostile and remedies are uncertain.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas, stop new X markers, and direct refusal where documents or records cast doubt on sex; suspected misrepresentation can support permanent fraud ineligibility.",
+    "protection": "Division offers X markers on local IDs and relatively open marker-change rules, but a visitor uses home-country travel documents and does not obtain local documents.",
+    "interaction": "Federal border screening governs entry; local document openness does not override national passport/visa rules or border-officer refusal authority.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of transgender men; national corrections policies include conversion-therapy-type practices and denial of care.",
+    "protection": "A city sanctuary order limits local resources and deprioritises local enforcement of outside gender-affirming-care restrictions.",
+    "interaction": "The sanctuary order cannot bind federal immigration or corrections custody, which remains the operative detention layer for a visitor.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with gender identity; many states also ban facility use by gender identity.",
+    "protection": "The division is graded low-risk and has local anti-discrimination rules and a city requirement for gender-neutral bathrooms in public buildings.",
+    "interaction": "Federal facilities and federally funded settings follow national rules; local facility protections do not neutralise the federal exclusion.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy restricts gender-affirming care for minors, threatens funding and investigates providers; national health rules proposed in 2025 would bar public reimbursement for under-18 care.",
+    "protection": "Adult gender-affirming care is lawful in the division, and the largest city declares itself a sanctuary for gender-affirming care.",
+    "interaction": "Local care access is relatively protected, but a travelling minor or care-seeking family can still encounter national funding, insurance and investigative exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities, and national justice guidance uses 'radical gender ideology' in extremism language.",
+    "protection": "The division's human relations commission investigates gender-identity discrimination and can award remedies; local sanctuary policy limits some local enforcement.",
+    "interaction": "National law-enforcement and counterterrorism framing sits above local protections and can escalate scrutiny of advocacy, travel or care networks.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation of schools facilitating a minor's social transition and prosecution of teachers; national care restrictions and passport/visa rules also affect minors.",
+    "protection": "Division and city policies protect trans, nonbinary and gender-nonconforming youth in local services and schools, and adult care is lawful locally.",
+    "interaction": "A parent travelling with a trans minor faces local protection but national border, care-funding and school-related enforcement exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division has no statewide hate-crime law reaching anti-LGBTQ violence; a prior LGBTQ hate-crime law was struck down and reinstatement bills have not advanced.",
+    "protection": "Gender-identity discrimination is explicitly prohibited and investigated by the state human relations commission; local ordinances add protections.",
+    "interaction": "Discrimination complaints have a local remedy, but violent bias crime lacks a statewide hate-crime statute, leaving recourse uneven.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport-marker policy, executive orders and health rules remain contested; enforcement can vary by moment of travel and by officer.",
+    "protection": "Legal-aid guidance exists, local commissions investigate discrimination, and courts have blocked some national measures.",
+    "interaction": "Remedies are partial and uncertain at the federal border and custody stage, where local protections do not reliably operate.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A involves actual detention, extortion and no formal protection. This case has documented national entry refusal and custody-abuse exposure, but also substantial local anti-discrimination protection and a sanctuary city, so it is somewhat safer than 0.25-A, though not by a full tier."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves invasive administrative review and denied entry but no imprisonment. This case is lower because national rules permit refusal plus possible lifetime fraud ineligibility, and federal custody carries documented severe abuse, while local protections do not reach the border."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a protection that works after delay, with no detention. This case is lower because the operative federal entry and custody regime is hostile and the local protections do not override it; remedies remain uncertain."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows local care and privacy protections functioning with only residual uncertainty. This case has comparable local care protection but a much harsher national border, facilities and custody layer, so it sits materially below 0.75-C."
+   }
+  ],
+  "synthesis": "The division's low-risk grading, anti-discrimination enforcement, local ID options, lawful adult care and city sanctuary policy make everyday life in the division relatively safer. But the visitor's journey is governed at the decisive points by the parent national regime: passport and visa sex-marker rules, border refusal authority, possible fraud ineligibility, federal facility exclusion, and documented abuse in immigration custody. Local protections do not cancel those federal exposures. The combined regime therefore remains high risk if the visitor is outed at entry or taken into national custody, though it is not the absolute extreme because the division itself is protective and some national measures are contested."
+ },
+ "parse_error": null
+}

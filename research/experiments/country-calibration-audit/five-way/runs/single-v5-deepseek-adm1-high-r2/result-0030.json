@@ -1,0 +1,78 @@
+{
+ "cell": 30,
+ "region": "66186276B69138566591314:Mississippi",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00068160296",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "The combined regime is dominated by national border and document rules: a trans visitor whose passport marker or appearance triggers a discrepancy faces secondary screening, refusal of entry, possible passport confiscation, and a discretionary lifetime fraud finding. Federal facilities are restricted, and state law adds school bathroom restrictions, a driver's-licence marker ban, a care ban for minors, religious refusal, and no state gender-identity protections. National hate-crime law and one old prosecution exist, and street violence is near baseline rather than organised targeting. Detention or immigration custody carries documented severe abuse, but is conditional on escalation. No criminalisation of trans identity or general arrest of visitors is documented. This sits below administrative-exclusion anchors because of the national hard policy and above imprisonment regimes.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport rules require birth-sex markers; X markers are not processed; discrepancies can cause refusal, passport confiscation, or lifetime fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiry; litigation and legal-aid FAQ exist but no operative border remedy is documented.",
+    "interaction": "A state birth certificate may list prior and updated information, and state licence markers no longer reflect gender identity, compounding document mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has reports of forced labour, beatings, solitary confinement, and sexual abuse; state custody bars name changes and national corrections practices include conversion-like treatment.",
+    "protection": "National hate-crime prosecution exists, but no custody protection for trans detainees is documented.",
+    "interaction": "A border document discrepancy can escalate into fraud investigation and detention, moving the visitor into the custody regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; state law restricts school bathrooms by birth sex and tabulates broader facility bans.",
+    "protection": "Some municipalities have gender-identity protections, but not facility-access guarantees.",
+    "interaction": "Federal facilities and state public-school facilities both impose birth-sex access rules; criminal bathroom trespass is not documented in this state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care under 18 and closed its adolescent gender clinic; national rules threaten reimbursement and promote religious refusal.",
+    "protection": "Adult emergency care is not documented as denied, but no trans-specific service protection is shown.",
+    "interaction": "A travelling minor needing care faces the state ban; a guardian may find only one LGBTQ+-specialising clinic.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; school-transition prosecution directive and justice-department reward guidance create hostile enforcement climate.",
+    "protection": "National gender-identity hate-crime statute remains available, and the strategy states simple disagreement is not targeted.",
+    "interaction": "Hostile framing raises risk around advocacy, minor social transition, and official contacts, but not a general visitor arrest power.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State court denied a trans teen's name change; care ban, school bathroom rule, dress code, and sports verification requirements target minors.",
+    "protection": "Parental consent did not secure the name change; no state protection for trans minors is documented.",
+    "interaction": "A guardian travelling with a trans minor faces school/facility rules and care restrictions; national directives add school-prosecution risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State hate-crime law omits gender identity; national analysis cites 6.6 trans-woman killings per 100k versus 6.0 general homicide, near baseline. No post-2017 state trans killing is documented.",
+    "protection": "National hate-crime statute applies, and a 2017 bias murder drew a 49-year national sentence; four municipalities have local protections.",
+    "interaction": "Thin state recourse leaves victims dependent on national prosecution; documented response exists but is dated.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state gender-identity nondiscrimination law; religious-refusal statute; passport and executive-order litigation unresolved, so rules vary by enforcement moment.",
+    "protection": "National civil-liberties litigation, legal-aid guidance, national hate-crime law, and some municipal ordinances exist.",
+    "interaction": "Remedies are partial and uncertain; a visitor cannot rely on state protections and must navigate national rules that are contested but operative.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Similar administrative denial and document confiscation without documented criminal imprisonment, but this regime adds national passport-marker policy, possible lifetime fraud ineligibility, federal facility exclusion, and severe custody abuse, so it is somewhat worse."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor has an ombudsman securing release and a charter barring prolonged holds. Here national entry rules are hostile and no operative border remedy is shown; litigation and legal aid do not reliably release a visitor, so this rates below."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "That anchor involves service denial and uncertainty but no national document regime or facility exclusion. This jurisdiction has universal border/document exposure, federal facility restrictions, and documented custody harm, placing it materially lower."
+   }
+  ],
+  "synthesis": "The visitor encounters a national document and border regime that makes outing at entry a continuous exposure, with refusal, confiscation, and discretionary lifetime ineligibility as the main documented harms. State law adds school bathroom restrictions, a licence-marker ban, care restrictions for minors, religious refusal, and no state gender-identity protections. National hate-crime law and one old prosecution are real but partial mitigations. Street violence is near baseline rather than organised targeting, and no general criminalisation of trans identity is documented. Detention or custody would be severe, but ordinary tourist contact is more likely to produce exclusion and humiliation than imprisonment."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 51,
+ "region": "66186276B99594608635082:Hawaii",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002313859",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The destination state/province is strongly protective: public-accommodations and hate-crime law cover gender identity, no local bathroom ban applies, a healthcare shield operates, and panic defences are abolished. But the combined regime is dominated at the national layer: passport markers are restricted to birth sex, border officers may refuse cases or pursue lifetime fraud findings, federal single-sex facilities exclude trans people, and national immigration/corrections custody carries documented severe abuse. A visitor therefore faces a protective local environment inside a hostile national entry, facilities and custody system. The result is lower-end Elevated Risk, not Reduced Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport policy requires birth-sex markers, has stopped new X markers, and border officers may refuse discrepant cases or consider lifetime fraud ineligibility; passports have been confiscated or blocked, stranding travellers.",
+    "protection": "No visitor-facing border protection is documented; state/province protections do not reach national entry screening.",
+    "interaction": "National border authority applies regardless of the protective destination state/province.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented forced labour, beatings, solitary confinement and sexual abuse of transgender detainees; national corrections policies include coercive practices against trans inmates.",
+    "protection": "No documented custody protection for trans visitors; local shield law does not govern national detention.",
+    "interaction": "A border document discrepancy can move a traveller into national immigration detention, where state/province protections do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with gender identity; federal facilities in the state/province remain covered.",
+    "protection": "The state/province has no bathroom ban and prohibits gender-identity discrimination in public accommodations; its own facilities are not listed among restrictive jurisdictions.",
+    "interaction": "State/province facilities are protective, but national facilities inside the state/province remain subject to the federal exclusion.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy is hostile to gender-affirming care, including youth-care restrictions and proposed insurance limits; national facilities may not be safe for trans care.",
+    "protection": "State/province healthcare shield law protects patients and providers where care is lawful locally; state insurance coverage, nondiscrimination and conversion-therapy ban apply.",
+    "interaction": "A visitor may access shielded care in the state/province, but national rules and federal facilities can still create exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism rhetoric names 'radically pro-transgender' groups, and national justice guidance creates reward mechanisms and school-prosecution threats; this raises official hostility.",
+    "protection": "State/province hate-crime law covers gender identity, panic defences are abolished, and public-accommodations discrimination is prohibited.",
+    "interaction": "Local law enforcement and prosecutors are constrained by protective state law, but national law-enforcement and prosecutorial authority can still reach visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target social transition in schools and gender-affirming care for minors; a family travelling with a trans minor faces document and care-related exposure.",
+    "protection": "State/province anti-bullying and education-equity rules cover gender identity, and the healthcare shield may protect lawful local care.",
+    "interaction": "The state/province is protective for minors in local institutions, but national border, care and school-prosecution policies still apply.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state/province-specific anti-trans violence figures are provided; national climate is hostile, but local hate-crime and nondiscrimination protections exist.",
+    "protection": "State/province hate-crime statute covers gender identity, panic defences are abolished, and public-accommodations discrimination is prohibited.",
+    "interaction": "Local recourse is documented on paper, but enforcement intensity cannot be assessed from the dossier.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and entry policies remain in litigation; enforcement may vary, and a fraud finding can carry lifetime ineligibility.",
+    "protection": "State/province shield law and civil-rights protections are documented, but how a visitor invokes the shield and whether local X markers remain practical are unresolved.",
+    "interaction": "Protective local remedies do not reliably reach national border, facilities or custody decisions.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "This case is worse than 0.35-A: that anchor involves invasive review and denial of entry without detention, while here national border policy can lead to immigration detention, passport confiscation and possible lifetime fraud ineligibility, plus federal facilities exclusion."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "This case is worse than 0.55-B: that anchor shows a functioning local protection resolving a document discrepancy without detention, whereas here the national border and custody regime can override the protective state/province and produce severe detention outcomes."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "This case is materially worse than 0.75-C: that anchor has a working local privacy directive and no custody exposure, while here strong state/province protections coexist with hostile national entry screening, federal facilities exclusion and documented abuse in national custody."
+   }
+  ],
+  "synthesis": "The state/province is one of the most protective subnational jurisdictions in the dossier, with public-accommodations and hate-crime coverage, no local bathroom ban, a healthcare shield and abolished panic defences. Those protections matter for daily life inside the state/province. They do not neutralise the national layer: passport sex-marker rules, border refusal and fraud findings, federal single-sex facility exclusion, and documented abuse in national immigration and corrections custody all remain operative. A trans visitor is therefore safest once inside the protective local environment, but the journey itself and any encounter with national institutions carry serious, documented exposure."
+ },
+ "parse_error": null
+}

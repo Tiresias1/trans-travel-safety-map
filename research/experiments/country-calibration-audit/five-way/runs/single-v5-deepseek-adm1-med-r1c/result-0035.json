@@ -1,0 +1,78 @@
+{
+ "cell": 35,
+ "region": "66186276B78821008370123:Maine",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004941128",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is split. National border/document rules and federal facility/custody policies are hostile and traveller-facing: a mismatch can trigger refusal, invasive questioning, or detention with documented abuse, and federal single-sex facility rules exclude trans people. The state layer is strongly protective—anti-discrimination, hate-crime enhancement, no facility ban, care protections, and a low-risk assessment. But state law cannot pre-empt federal entry screening, federal facilities, or immigration custody. The visitor must pass the national gate, and federal exposure persists inside the state. Strong interior protections materially reduce daily risk but do not cancel the federal exposure, placing the combined regime at the lower end of Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth; X markers not processed; discrepancy can trigger refusal, added evidence, case-note tag, possible permanent fraud ineligibility; reports of confiscated/blocked passports.",
+    "protection": "Existing X passports remain valid until expiry; litigation challenges the policy; legal-aid FAQ exists; state anti-discrimination law does not reach federal border screening.",
+    "interaction": "Federal officers apply national rules before state protections attach; visa/border stage can strand the traveller.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented forced labour, beatings, solitary confinement and sexual abuse; national corrections conversion practices and hormone removal; national custody placement by birth sex.",
+    "protection": "State corrections places by gender identity; state law protections; but federal immigration custody is outside state control.",
+    "interaction": "Document discrepancy can lead to federal detention; state remedies do not reach federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; many states ban facilities; federal buildings and airports are covered.",
+    "protection": "This state has no facility ban; its high court ruled for bathroom access; state anti-discrimination covers public accommodations.",
+    "interaction": "State protections do not pre-empt federal facility rules; the visitor may encounter both regimes.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National executive order is hostile to gender-affirming care for minors; proposed national health rules bar reimbursement; national funding restrictions apply.",
+    "protection": "State law protects gender-affirming healthcare; 16-17 hormone therapy allowed; conversion therapy ban for minors; marker changes without medical certification.",
+    "interaction": "National funding/insurance rules may affect care; state protections operate for licensed providers; a visitor's home insurance may not cover treatment.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes 'radically pro-transgender' groups; DOJ reward memo mentions 'radical gender ideology'; official hostility is documented.",
+    "protection": "State hate-crime enhancement covers gender identity; panic defence abolished; state anti-discrimination law; national hate-crimes statute covers gender identity.",
+    "interaction": "Federal rhetoric can embolden hostility; state/local police enforce state protections; federal law enforcement may use national-security pretexts.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs prosecution of teachers facilitating social transition; national care bans for minors in 27 states; proposed rules; a trans minor traveller faces document/facility issues.",
+    "protection": "State allows 16-17 hormone therapy; protects gender-affirming care; anti-discrimination in education; parental consent required for X birth certificate.",
+    "interaction": "National rules may conflict with state protections; federal funding pressure caused university sports capitulation; a parent should carry documentation.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific violence figures are documented; national climate is hostile; some risk of harassment or bias incidents remains.",
+    "protection": "State hate-crime enhancement, anti-discrimination law, panic defence abolished, low-risk assessment; local police likely responsive.",
+    "interaction": "Local police enforce state protections; federal officers may not; national rhetoric may embolden hostility.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National policies are contested; state protections survived referenda but face federal funding pressure; university capitulated on sports; open questions on federal facility enforcement and visa processing.",
+    "protection": "State human rights act, courts, legal-aid FAQ, national civil-liberties suit; state low-risk assessment.",
+    "interaction": "State remedies work for state/local matters; federal border and custody are outside state reach; national litigation may change rules.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has a document mismatch at port, public outing, denial of entry, no detention, and no local protections. This case shares border flagging but adds potential federal detention with documented abuse; however, the protective state layer is far stronger. Net: worse at the border, better inside, so slightly above 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has a rail ID check, administrative delay, temporary permit, no detention, and no protective state law. This case has a more hostile national entry/facility regime and detention risk, but much stronger state anti-discrimination, hate-crime and care protections. The federal exposure pulls it below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a clinic refusal, director intervention, state directive working, no detention, and minor uncertainty. State care protections here are comparable, but national border, federal facilities and custody exposures are far worse and not reachable by state remedy. Materially below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime is split. At the national gate, documents, visa/border screening and federal facilities/custody are hostile and can out a traveller; a discrepancy may lead to refusal, invasive questioning, or detention with documented abuse. Inside the state, anti-discrimination, hate-crime, facility-access and care protections operate, and a 2026 risk assessment rates it low-risk. But the state cannot pre-empt federal border, facility or custody rules, and federal funding pressure has already forced one capitulation. The traveller therefore faces a severe national entry/federal exposure that the state's strong interior protections only partly offset. This places the combined regime at the lower end of Elevated Risk."
+ },
+ "parse_error": null
+}

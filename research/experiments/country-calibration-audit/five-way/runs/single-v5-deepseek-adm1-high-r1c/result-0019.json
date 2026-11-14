@@ -1,0 +1,78 @@
+{
+ "cell": 19,
+ "region": "66186276B43575054209436:New York",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0109577",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The combined regime is split: the state/province is one of the most protective for trans people once inside, with public-accommodations law, hate-crimes coverage, gender-neutral bathrooms, care shields and self-ID documents. But the national border and federal custody regime govern entry and nationally controlled settings and are not offset by state law. Document discrepancies can trigger refusal, invasive review, possible lifetime fraud ineligibility, and immigration detention where abuse is documented. State protections reduce in-country risk but cannot reach the border, federal facilities, or federal custody, so the operative traveller experience remains high risk at the chokepoint.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas; X markers not processed; discrepancy triggers refusal or additional evidence; possible lifetime fraud ineligibility; reports of passports blocked/confiscated and travellers stranded; trans-athlete entry ban.",
+    "protection": "State self-ID and X markers operate only domestically and do not bind federal border officers; court challenges and legal-aid FAQ exist but are unresolved.",
+    "interaction": "State protective documents do not reach federal visa/passport screening; a mismatch at the border can escalate to refusal or fraud finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and sexual abuse of transgender detainees; federal corrections policies impose conversion-therapy-like measures and deny care.",
+    "protection": "State shield law bars cooperation with out-of-state gender-affirming-care proceedings, but does not govern federal immigration or federal criminal custody.",
+    "interaction": "A border document discrepancy can lead to federal detention, where state protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars transgender people from government-funded single-sex facilities congruent with identity; federal buildings follow this rule.",
+    "protection": "State law mandates gender-neutral bathrooms, public-accommodations protections and a 2024 constitutional amendment covering gender identity.",
+    "interaction": "State facilities are relatively safe; federal buildings, national parks and federal custody follow the restrictive national rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding restrictions, proposed insurance exclusions for under-18 care, and federal hostility create access risk; a visitor from a ban jurisdiction may face home prosecution after return.",
+    "protection": "State shield law protects patients and providers from out-of-state bans; gender-affirming care is legal; conversion therapy on minors banned; anti-discrimination law covers care settings.",
+    "interaction": "Shield protects in-state care, but federal funding rules and home-jurisdiction enforcement remain outside state control.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups among priorities; DOJ reward guidance references 'radical gender ideology'; federal investigative authority reaches into states.",
+    "protection": "State hate-crimes law covers gender identity; anti-discrimination protections and local police reforms exist; large urban trans community.",
+    "interaction": "Federal threat framing can embolden hostility and federal investigations, which state law cannot block.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive order directs investigation and prosecution of teachers who affirm trans minors; proposed national insurance bar for under-18 care; a parent travelling with a trans minor may face document scrutiny at entry.",
+    "protection": "State shield law, anti-bullying law covering gender identity, conversion-therapy ban, and care access protections operate within the state.",
+    "interaction": "State protections cover schools and care, but federal border and federal enforcement remain operative against the family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence magnitude is documented for this state/province; national climate may elevate hostility, but dossier gives no rate.",
+    "protection": "State Hate Crimes Act covers gender identity since 2019; GENDA covers public accommodations; repealed loitering law used against trans people; large trans population.",
+    "interaction": "Local police and hate-crimes recourse are relatively strong, but federal threat framing and national polarization may affect reporting and safety.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport-marker restrictions and executive orders are challenged but remain partly in force; lifetime fraud findings are discretionary and hard to appeal; shield-law interaction with federal funding is unresolved.",
+    "protection": "Civil-liberties litigation, legal-aid FAQ, state shield and anti-discrimination enforcement provide partial recourse.",
+    "interaction": "Remedies depend on timing and venue; state remedies do not control federal border outcomes.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has invasive border review and denial of entry but no detention risk. This dossier adds federal immigration-custody abuse and possible lifetime fraud findings, offset partly by strong in-state protections. The worst border outcome is more severe than 0.35-A, but the in-country environment is far more protective, yielding a similar-to-slightly-higher rating."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has an administrative delay resolved through a supervisor and no detention. Here the federal border regime can refuse entry or detain, with documented custody abuse, and state law cannot intervene. That is materially worse than 0.55-B despite the state's strong domestic protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows care access protected after minor friction, with no entry or custody exposure. This dossier's state care shield is comparable locally, but the federal border and federal custody regime create a traveller-facing exposure absent from 0.75-C, so it rates well below."
+   }
+  ],
+  "synthesis": "Inside the state/province, a trans visitor benefits from unusually strong protections: public-accommodations law, hate-crimes coverage, gender-neutral bathrooms, care shields and self-ID documents. But the traveller must first pass a federal border regime that requires sex assigned at birth on documents, treats discrepancy as possible misrepresentation, can refuse entry or impose lifetime inadmissibility, and can place people in immigration custody where abuse is documented. Federal facilities and federal custody follow the restrictive national rules, and state law does not bind them. The combined operative regime is therefore polarized: low risk in-state, high risk at the border and in federal detention."
+ },
+ "parse_error": null
+}

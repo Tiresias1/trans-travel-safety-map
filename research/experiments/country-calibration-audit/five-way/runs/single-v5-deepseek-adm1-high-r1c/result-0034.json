@@ -1,0 +1,78 @@
+{
+ "cell": 34,
+ "region": "66186276B76680759932915:Ohio",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002999256",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is high risk because the sharpest exposure is at entry: national rules treat sex as binary, stop X markers for new documents, tag discrepancy cases, and allow refusal plus a possible permanent fraud finding for misrepresented sex. Unlike a denial-only regime, detention is documented and immigration custody has reported severe abuse of trans detainees. The division adds an education-facility law requiring birth-certificate matching in schools and colleges, but it has no enforcement mechanism or criminal penalty, and it is not a general public-bathroom ban. National hate-crime coverage, marriage recognition, court injunctions and some local protections are real but do not operate at the border or in custody. A trans adult travelling alone faces the entry/custody exposure; an adult with a trans minor faces additional unresolved care and school-facility risks.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document policy, X-marker processing stopped, discrepancy case-note tag, refusal where sex is doubted, possible permanent fraud ineligibility; trans-athlete entry ban; advisories and reported detentions over visa issues.",
+    "protection": "Existing X passports remain valid until expiry; passport-marker policy is challenged in court; no documented visitor-facing recognition of foreign X markers or binding border protection.",
+    "interaction": "A foreign passport mismatch can trigger secondary screening, refusal, or a fraud finding; division MVA exact-match rules add local document friction but visitors use home passports.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies impose conversion-style practices; passports confiscated or blocked, leaving travellers stranded.",
+    "protection": "Some national orders are enjoined; no documented custody protocol protecting trans immigration detainees; consular access not documented for this scenario.",
+    "interaction": "Border discrepancy can move from secondary inspection to immigration detention, where birth-sex placement and abuse are documented; division facility law carries no arrest penalty.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National map shows facility bans in many states/provinces, with four criminalising certain bathroom use; division law requires K-12 schools and colleges, public and private, to designate facilities by birth certificate and requires students to use matching facilities.",
+    "protection": "Division facility law has no enforcement mechanism or criminal penalty and exempts single-occupancy restrooms; some other states/provinces have no mapped ban.",
+    "interaction": "For an adult tourist the division law is mainly relevant on school/college campuses; for a travelling minor it could affect campus or school access, but no arrest or citation under the division law is documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures frame gender-affirming care for minors as mutilation, bar public insurance reimbursement under proposed rules, and many states/provinces ban care; division care ban was enacted but enjoined, with appeal pending.",
+    "protection": "Division care ban is under injunction; adult-care rules were withdrawn; no direct denial of emergency care to a trans visitor is documented.",
+    "interaction": "An adult visitor's routine or emergency care exposure is not documented; an adult with a trans minor faces unresolved care-ban enforceability and national funding/insurance restrictions.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy lists 'radically pro-transgender' groups among priorities; justice department reward guidance and school-investigation orders use hostile 'gender ideology' framing; national agencies removed trans materials.",
+    "protection": "Strategy states counterterrorism powers will not target mere disagreement; several orders are enjoined; national hate-crime statute covers gender identity.",
+    "interaction": "Threat framing raises the social temperature and outing severity but no direct arrest of a trans tourist for identity is documented; it interacts with school and advocacy settings more than ordinary tourism.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division school law requires birth-certificate facility matching; school staff must out LGBTQ students to parents under a 2025 law; national orders target teachers who affirm trans minors; care ban for under-18s is enacted but enjoined.",
+    "protection": "Care ban is enjoined; marriage recognition is secure; some local ordinances protect gender identity; no visitor-specific protection for a travelling trans minor is documented.",
+    "interaction": "A trans minor travelling with a guardian is not enrolled in division schools, so facility and outing laws are indirect; care access and parental affirmation could become contested if local services are involved.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence rate or visitor-targeted street violence is documented in the dossier; national threat framing and partial state bias statutes may weaken confidence in protection.",
+    "protection": "National hate-crime statute covers gender identity; 23 states/provinces have bias statutes; 33 local ordinances bar gender-identity discrimination; no documented police refusal to protect a trans visitor.",
+    "interaction": "A visitor attacked in the division could invoke national hate-crime law, but local coverage is patchy and police response to trans victims is not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Possible lifetime fraud ineligibility has limited waiver; border refusal remedies are weak; division MVA marker rules are announced but final text and challenges are unsourced; care and sports enforceability is unresolved.",
+    "protection": "Civil-liberties litigation, injunctions, legal-aid FAQ, marriage recognition, national employment ruling and hate-crime law provide partial recourse.",
+    "interaction": "Court relief may block national measures prospectively, but it does not document an operative remedy at the border or in immigration custody; unresolved division rules should be checked before travel.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar document-mismatch denial at a port, but that anchor has a statutory bar on detention and only administrative exclusion. Here national rules allow refusal plus a possible permanent fraud finding, and immigration custody abuse is documented. This case is lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "That anchor has functioning transit guidelines and a supervisor who prevents detention. Here court injunctions exist but no operative border protection is documented; discretion, fraud exposure and custody abuse remain. This case is materially lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "That anchor has a clinic director invoking a privacy directive and care delivered after friction. Here care for minors is legally contested, adult visitor care is undocumented, and national entry/custody exposures dominate. This case is far lower."
+   }
+  ],
+  "synthesis": "The operative regime combines a hostile national entry and custody system with a division-level education-facility law that is institutionally restrictive but not criminal and not aimed at ordinary adult tourists. The most severe documented exposures are at the border and in immigration detention; the division adds school/college facility rules and a contested care ban. National hate-crime coverage, marriage recognition and court injunctions are genuine protections, but they do not cancel border discretion, possible lifetime fraud ineligibility, or documented abuse in custody. The result is high risk, not catastrophic: trans identity is not itself criminalised, but an outed visitor can be refused, stranded, or placed in a dangerous detention system."
+ },
+ "parse_error": null
+}

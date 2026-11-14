@@ -1,0 +1,78 @@
+{
+ "cell": 18,
+ "region": "66186276B43071933723331:California",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004638628",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is dominated by national exposure: sex-marker restrictions, entry screening that can refuse cases and consider lifetime fraud ineligibility, national facility restrictions, and documented abuse in immigration custody. The division is genuinely protective—sanctuary care law for travelling minors, identity-based prison housing, and a top-tier protective-law rating—but these operate after admission and do not neutralise border screening or national custody. A visitor with a document mismatch faces refusal or stranding; if detained, national custody is severe. Street-level violence is documented but lacks per-capita context. The score reflects High Risk: meaningful state-level protection inside a hostile national framework.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require M/F markers matching sex assigned at birth; visa/entry cable directs refusal where documents or records create reasonable doubt on sex, and possible permanent fraud ineligibility for wilful misrepresentation; trans athletes banned from women's sports entry.",
+    "protection": "Existing X-marker passports remain valid until expiry; policy is under court challenge; legal-aid FAQ exists. No documented visitor ombudsman at the border.",
+    "interaction": "A foreign passport with X or mismatch can trigger secondary screening, refusal and stranding; a fraud finding, if applied, bars future travel. Division protections do not reach the border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of trans men; corrections bureau adopted conversion-therapy-like policies (hair cutting, hormone removal). Passports confiscated or blocked, leaving some stranded.",
+    "protection": "Division prison system houses by gender identity within the general population and funds gender-affirming surgery (documented 2015/2021); national immigration custody is not covered.",
+    "interaction": "A visitor detained on an entry or document issue enters national immigration custody, not division prisons; state protections do not follow. The division prison policy is unconfirmed after 2021.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; many states ban facilities, four criminalise certain restroom use; a documented arrest of a trans student, held in a men's ward.",
+    "protection": "Division is in a top-tier protective-law band; no division facility ban is documented. The national order still applies to national facilities.",
+    "interaction": "The harshest operative rule governs: national facilities are restricted; state protections may cover division facilities but do not cancel the national rule absent documented pre-emption.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders call minor gender-affirming care mutilation; DOJ subpoenaed hospital records of patients under 19; proposed rules bar public insurance for under-18 care; funding freeze.",
+    "protection": "Division sanctuary law lets travelling youth obtain hormones and blockers and shields families from child-abuse investigation or prosecution; first state to fund prison surgeries.",
+    "interaction": "A family travelling for care gets the state shield but remains exposed to national subpoenas and insurance rules; adult visitor care access is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' groups; DOJ reward memo references 'radical gender ideology'; executive orders direct investigation of schools and prosecution of teachers.",
+    "protection": "National hate-crime statute covers gender identity; 22 states plus the capital outlaw gender-identity discrimination; division is in a protective-law band.",
+    "interaction": "National threat framing raises surveillance or investigation risk for activists and visible visitors; hate-crime recourse exists but state coverage is uneven.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive orders target minor transition, direct prosecution of teachers using preferred names, and subpoena under-19 hospital records; 27 states ban care for minors.",
+    "protection": "Division sanctuary law protects families travelling for care from child-abuse investigation and prosecution.",
+    "interaction": "A parent travelling with a trans minor to this division can access care under the state shield, but national data demands and proposed insurance rules create residual risk; other states' bans apply if the itinerary crosses them.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division recorded 198 anti-LGBTQ incidents in 2025, the highest raw count; its largest city saw a rise in hate-crime reports. No per-capita denominator, so the rate is unclear.",
+    "protection": "National hate-crime statute covers gender identity; a July 2026 analysis places the division in the safest-laws band with a low recorded-incident count; police response is not specifically documented.",
+    "interaction": "The raw count and low-incident analysis conflict; without a denominator, elevated individual risk cannot be inferred. Recourse exists but state hate-crime coverage is partial.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border refusal and fraud finding lack a documented visitor remedy; division prison policy unconfirmed after 2021; division facility access not documented; per-capita violence rate unknown.",
+    "protection": "Civil-liberties lawsuit challenges passport policy; legal-aid FAQ; state sanctuary law and hate-crime statute are operative protections.",
+    "interaction": "Litigation may change rules mid-travel; a visitor cannot rely on unresolved challenges at the border. State protections are real but do not reach national custody or entry.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Similar denial-of-entry scenario with invasive review and no detention. Here the border exposure is harsher—possible permanent fraud ineligibility—and national facility/custody rules add risk, though the division's sanctuary and prison policies are more protective than 0.25-A's no-protection setting. Overall comparable, slightly above 0.25-A but below 0.35-A."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has an ombudsman who secures release and no detention. This dossier documents no equivalent border remedy; refusal and lifetime ineligibility are live, and national custody harm is severe. Division protections operate after admission, so the case sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is delayed rail travel with a supervisor-issued temporary permit and no detention. Here entry can be refused outright, with possible permanent fraud finding, and custody is documented as abusive. Even with the division's protective law band, the combined regime is materially below 0.55-B."
+   }
+  ],
+  "synthesis": "The national framework is the dominant operative regime: document rules, entry screening, facility restrictions, threat framing and immigration custody are hostile and traveller-facing. The division adds genuine protections—sanctuary care for travelling minors, identity-based prison housing, a top-tier protective-law rating—but these do not reach the border, national facilities or national immigration custody. A visitor with a document mismatch faces refusal and possible permanent ineligibility; if detained, national custody is dangerous. Recorded anti-LGBTQ incidents in the division are high in raw count but lack per-capita context. The result is High Risk, with state-level protection inside a hostile national system."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.001878062",
+ "parsed": {
+  "rating": 0.62,
+  "explanation": "The combined regime is split. Inside this state/province, documented protections are strong: nondiscrimination, hate-crime coverage, shield law, X markers on state IDs, custody rules consistent with gender identity, and no local bathroom ban. But the national border and immigration system remain a real traveler-facing exposure: X markers are not processed, document discrepancies can trigger refusal or a fraud finding, and national facilities/custody carry documented harm. The state layer materially improves everyday safety once inside, but it cannot cancel national entry screening or national detention. The result is reduced risk relative to the national framework alone, but not low risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa screening does not process X markers; discrepancies can lead to secondary screening, refusal, or a material-misrepresentation finding.",
+    "protection": "State IDs offer M/F/X and state law is protective, but state document rules do not govern national border screening.",
+    "interaction": "A visitor first passes through the national border regime; state protections begin after entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has reports of forced labour, beatings, solitary confinement and sexual abuse; national corrections policies include harmful practices.",
+    "protection": "State custody policy since 2018 requires treatment consistent with gender identity, including strip searches and housing.",
+    "interaction": "State custody protections do not automatically govern national immigration detention or national facilities.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order restricts transgender access to government-funded single-sex facilities congruent with identity.",
+    "protection": "This state/province has no mapped bathroom ban and has public-accommodations protections covering gender identity.",
+    "interaction": "State-protected spaces are safer, but national buildings and federally funded facilities may follow the national restriction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policies threaten youth gender-affirming care and related funding; national health rules proposed in 2025 would restrict reimbursement for minors.",
+    "protection": "State shield law protects patients and providers; state discrimination law covers goods and services; conversion therapy on minors is banned.",
+    "interaction": "A visitor receiving lawful care in this state is shielded from home-state bans, but national funding and policy pressure remain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language names 'radically pro-transgender' violent groups; national executive orders target school support for trans minors.",
+    "protection": "State hate-crime law covers gender identity and was strengthened in 2026; state nondiscrimination law covers public places and services.",
+    "interaction": "National rhetoric raises climate risk, while state law enforcement and hate-crime remedies are comparatively protective.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation and prosecution of teachers who affirm trans minors; national youth-care restrictions apply in many states.",
+    "protection": "This state/province has anti-bullying coverage, a conversion-therapy ban, shield-law care protection, and intact trans athlete eligibility.",
+    "interaction": "A minor travelling with a guardian is safer in this state, but national border and national policy exposure remain.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence count is provided, so local prevalence cannot be compared with the general homicide rate.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime law covers gender identity and was consolidated in 2026.",
+    "interaction": "Documented legal recourse exists, but the dossier does not establish how consistently it operates in practice.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and executive-order measures remain contested in court, so the operative rules can shift by travel date.",
+    "protection": "State shield law, state nondiscrimination law, and legal-aid guidance provide meaningful recourse once inside the state.",
+    "interaction": "The visitor faces national uncertainty at entry but stronger state-level remedies after arrival.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A involves denial of entry and document confiscation without detention. This dossier has comparable national entry-document exposure, but the destination state/province adds strong nondiscrimination, hate-crime, shield-law and custody protections, so it rates higher."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B shows a delay resolved by a supervisor citing guidelines. Here the state-level protections are stronger and more institutionalised, but the national border and immigration custody exposures are more severe than the administrative delay in 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a functioning care protection with a residual database mismatch. This dossier has similarly strong state care and service protections, but national entry screening and national custody harm are documented and unavoidable, so it sits below 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime is layered. The state/province is among the most protective documented: it bans gender-identity discrimination, covers gender identity in hate-crime law, shields lawful care, offers X markers on state documents, and requires custody treatment consistent with gender identity. Those protections materially reduce everyday risk once the visitor is inside. The national layer, however, controls entry documents, visa screening, national facilities and immigration custody, and it carries documented refusal risk, fraud-ineligibility risk, facility restrictions and severe detention harm. Because the visitor must pass through the national border and remains exposed to national custody, the combined regime cannot be rated as low risk despite the strong state protections."
+ },
+ "parse_error": null
+}
