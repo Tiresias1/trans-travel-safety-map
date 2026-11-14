@@ -1,0 +1,82 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007140924",
+ "parsed": {
+  "rating": 0.26,
+  "explanation": "The combined national/division regime creates traveler-facing exposure at the border and in public facilities. National rules can refuse or flag sex-marker discrepancies and consider lifetime fraud ineligibility; the division's facility statute bars restroom/changing use consistent with identity in government buildings including airports, with criminal trespass for refusal. One arrest was held in a men's ward, and national immigration custody has documented severe abuse. State care and ID rules are restrictive, state hate-crime/anti-discrimination coverage is thin, and official threat-framing heightens risk. National hate-crime law, some court injunctions, and local protections are partial offsets. No execution or near-certain imprisonment for identity alone is documented, so this sits above the 0.15 tier but below the 0.35 exclusion-only anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-binary order; X markers not processed; cable directs refusal where sex is doubted and possible permanent fraud ineligibility; trans travelers report confiscated or blocked passports; athlete entry ban; multiple government advisories.",
+    "protection": "Existing X passports remain valid until expiry, but not clearly for visitors; litigation pending; legal-aid FAQ. No documented working border remedy.",
+    "interaction": "Foreign passport or visa mismatch can trigger secondary screening, refusal, or a fraud finding, which can escalate into detention and custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary confinement and sexual abuse of trans men; facility arrest can lead to men's-ward detention; corrections conversion practices documented; trans prisoner count no longer reported.",
+    "protection": "National hate-crime statute and some court injunctions exist, but no documented immigration-custody protection for trans visitors.",
+    "interaction": "Entry-fraud suspicion or restroom trespass can escalate to custody, where placement and abuse risk is documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Division statute bars restroom/changing use consistent with identity in state/local government buildings, including airports, parks, prisons, schools; refusal can be criminal trespass; one arrest, held in men's ward; national bans in many states.",
+    "protection": "Private businesses are outside the statute; some exemptions apply; local protections exist in parts of the division; national hate-crime law applies; the prosecution was dismissed on standing, not merits.",
+    "interaction": "A visitor at an airport or government building may be ordered to leave; refusal escalates to arrest and custody, with no state gender-identity hate-crime coverage.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division restricts gender-affirming care for minors and imposes adult barriers including insurance limits, physician-only rules and conscience refusal; national funding restrictions and care-related executive orders add exposure.",
+    "protection": "National courts have blocked some care bans; national hate-crime law exists; state gender-identity protections are thin and local protections patchy.",
+    "interaction": "A visitor needing HRT or emergency care may face refusal or disclosure; a trans minor traveling with a guardian faces care bans and facility exclusion.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice memo references 'radical gender ideology'; official orders target trans speech and school support; state hate-crime law omits gender identity; travel advisories exist.",
+    "protection": "National hate-crime statute covers gender identity; some local commissions enforce the national employment ruling; courts have enjoined some orders.",
+    "interaction": "Official hostility can deter police help and heighten scrutiny, while state law enforcement is not clearly protective for trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bans gender-affirming care for minors; national executive order threatens prosecution of teachers facilitating social transition; division custody rules target gender-affirming care; facility law covers schools and requires birth-sex facility use.",
+    "protection": "Some court injunctions and national hate-crime law exist, but no documented visitor-specific protection for a trans minor or guardian.",
+    "interaction": "An adult traveling with a trans minor faces facility exclusion and care restrictions; seeking care could expose the guardian to family-law or official scrutiny.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Recorded rate of 3.7 trans women murdered per 100k/year, near top of anti-trans law scale and labeled 'Do Not Travel'; state hate-crime law omits gender identity; travel advisory and official hostility.",
+    "protection": "National hate-crime statute applies; some local protections exist; no state bias statute for gender identity and police response is not documented as reliable.",
+    "interaction": "Violence risk is independent of law severity; a visitor has thin local recourse and police may not treat bias as a hate crime.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Division lacks gender-identity anti-discrimination and hate-crime coverage; facility case dismissed on standing so statute is untested; passport and care litigation unresolved; advisories' current status unresolved.",
+    "protection": "National hate-crime and employment rulings; 22 states/provinces plus capital district outlaw gender-identity discrimination; courts have blocked some orders; legal-aid FAQ exists.",
+    "interaction": "Remedies are partial and slow; national protections coexist with state exclusions, and border/airport-facility outcomes remain discretionary and uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is border exclusion and humiliation without arrest. This dossier adds possible permanent fraud ineligibility, criminal facility trespass at airports, and documented wrong-sex custody, so it sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C combines birth-sex custody, cross-dressing criminal exposure and slow remedies. This dossier is close, with broader airport/government-building facility reach and entry-fraud risk, partly offset by national hate-crime law and court blocks."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is discretionary secondary screening and refused admission with administrative penalties and an appeal desk. This dossier has criminal facility exposure, lifetime entry-ban risk and abusive immigration custody, so it is materially below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, brief detention and working remedies. This dossier lacks a reliable border remedy and imposes facility exclusion and custody risk, so it is far below 0.75-C."
+   }
+  ],
+  "synthesis": "The national document regime and the division's facility statute operate together: a passport or visa mismatch can trigger refusal or a fraud finding, and an airport restroom can trigger an order to leave, arrest and wrong-sex custody. Immigration custody abuse and official threat-framing raise severity. National hate-crime coverage, some court injunctions and local protections are real but do not remedy the facility ban, border discretion, or state care and ID restrictions. No capital punishment for trans identity is documented, so this is not the 0.05-0.15 tier; universal facility exposure, entry-document risk and documented custody harm place it in High Risk."
+ },
+ "parse_error": null
+}

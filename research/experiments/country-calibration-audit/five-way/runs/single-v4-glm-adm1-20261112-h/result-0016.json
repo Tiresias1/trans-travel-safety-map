@@ -1,0 +1,78 @@
+{
+ "cell": 16,
+ "region": "66186276B38006515706420:South Dakota",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.002685688",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "Combined regime: a hostile national framework (passport sex-marker restrictions, visa officers instructed to refuse cases with document/sex doubt and consider lifetime fraud findings, trans-athlete entry refusals, reported detentions of foreign citizens) intersects with a state that bans facility use congruent with identity in state-run buildings and schools, bars under-18 care, closed birth-certificate markers, and offers no state GI anti-discrimination or hate-crime coverage. The state facility ban is a universal-exposure measure for any visitor entering schools or government buildings; the federal screening/fraud cable raises outing probability at entry with severe (lifetime bar) worst case. No documented local targeting of visitors, arrests, or custody placement in this state; national court backstops (employment ruling, hate-crime statute) remain partially operative. Sits below 0.55 anchors due to universal-exposure measures with thin remedy, but well above 0.35 anchors: exclusion, denial, and bureaucratic exposure, not routine detention or state-directed sweeps of visitors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport binary/assigned-sex rule; visa cable directs refusal where sex is doubted and considers lifetime fraud ineligibility; foreign governments issued trans travel advisories after detentions of visitors over visa issues.",
+    "protection": "X-marker passports issued before Feb 2025 remain valid; fraud finding requires four elements and waivers exist; passport policy still challenged in court.",
+    "interaction": "Entry screening feeds onward exposure: an adverse fraud suspicion can strand a visitor; state facility encounters can re-surface document mismatches.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Reported detentions of foreign citizens over visa/sex-document issues nationally; immigration custody abuse of trans men documented nationally; state law's accommodation clause debate flagged solitary confinement for incarcerated trans people.",
+    "protection": "Not documented for this state's facilities; no state-level detention of trans visitors documented.",
+    "interaction": "Any entry refusal or document dispute routes a visitor into the national custody system, where documented harm occurs.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Universal-exposure state ban: trans visitors cannot use bathrooms/locker rooms congruent with identity in schools, colleges and state-owned buildings, effective 1 July 2025; comparable trespass arrests elsewhere show criminal escalation is possible.",
+    "protection": "The state statute is a facility-use restriction, not automatic arrest; exemptions exist (chaperoning, emergencies); no state criminal offence documented here.",
+    "interaction": "Federal order bars congruent facility use in government-funded single-sex facilities nationwide, so no jurisdiction in the country offers relief.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State ban on gender-affirming care for under-18s (2023, wind-down completed); state terminated a trans health contract; federal orders and proposed rules narrow care; HRT continuity for adults not documented as restricted in-state.",
+    "protection": "Settlement apology and $300,000 payment after the contract termination affirmed equal-treatment duty; adult care access not documented as barred.",
+    "interaction": "A travelling minor needing care faces denial; adult visitors' prescription continuity is an open question, not a documented bar.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National executive orders frame trans identities/care as 'mutilation' and 'gender ideology'; counterterrorism strategy targets 'radically pro-transgender' groups; state allows religious refusal of goods/services; no state GI discrimination or hate-crime coverage.",
+    "protection": "National employment-discrimination ruling and 2009 hate-crime statute still operate as backstop; some orders enjoined.",
+    "interaction": "Threat framing raises outing severity in any police or official encounter; state law offers no local recourse.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling with a trans minor: state care ban; national order directs prosecution of teachers facilitating social transition (names/pronouns) and investigation of schools; facility bans apply in schools including off-campus activities; federal subpoenas of minors' hospital records.",
+    "protection": "Several orders blocked or enjoined; criminal-prosecution order not shown enforced against visitors.",
+    "interaction": "A minor's school or campus presence triggers both state facility law and federal 'gender ideology' enforcement exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for this state; national bias-crime statistics show sexual-orientation incidents but no trans-specific violence pattern is documented here.",
+    "protection": "National hate-crime statute covers gender identity; 2020 employment ruling; municipal ordinances provide limited local protections.",
+    "interaction": "Police response would run through state law without GI coverage, with national statute as the only bias-crime backstop.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state GI anti-discrimination or hate-crime law; birth-certificate marker change closed by March 2026 court ruling; licence procedure after that ruling unconfirmed; bathroom-map notes other sex-defining laws may reach beyond mapped bans.",
+    "protection": "National courts partially check federal policy (passport suit pending); settlement precedent shows some state accountability; legal-aid documentation FAQs exist.",
+    "interaction": "Whether licence marker changes remain operative is uncertain, affecting document coherence during the visit.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "Closest match: Aldermere-style delegated enforcement with denied services for minors and adults, disciplinary (not custodial) penalties, and weak remedies. This jurisdiction adds a stricter federal entry/document layer but lacks Aldermere's registry-driven expulsion machinery, placing it similar, marginally below on entry exposure."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "Below North Sefra/Valdoria-tier checkpoint friction: here the exposure is not discretionary holds but codified universal-exposure measures (state facility ban, federal assigned-sex documents, fraud-ineligibility threat) with thin state remedy, warranting a lower score than 0.55."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "Clearly above Branthol-tier universal hostile registration/eviction systems: visitors here face denial and exclusion risk, not near-certain eviction, fines, or monitored status; no documented pattern of state enforcement against visitors in this state, and national courts partially restrain the regime."
+   }
+  ],
+  "synthesis": "The traveller encounters two interacting layers: a national regime that raises outing probability at every entry (assigned-sex passports, a visa cable inviting refusal and lifetime fraud findings, documented visitor detentions triggering foreign advisories) and a state layer that removes congruent facility access in schools and state buildings, bans care for accompanying minors, and provides no state-level anti-discrimination or hate-crime recourse. Neither layer criminalises being trans outright, and no visitor-directed arrests, sweeps, or custody harm are documented in this state specifically; national courts remain partially functional against the worst federal measures. The operative worst case is entry refusal or fraud bar, plus everyday facility denial — universal-exposure exposure without working state remedy. This places the jurisdiction in the Elevated Risk band: materially above routine-friction 0.55 anchors and above custodial 0.35 anchors, near the 0.45 line."
+ },
+ "parse_error": null
+}

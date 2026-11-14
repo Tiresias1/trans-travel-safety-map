@@ -1,0 +1,78 @@
+{
+ "cell": 38,
+ "region": "66186276B82803899326534:Indiana",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059525",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime: the traveller's home passport governs entry. Federal rules stop issuing X markers and block sex-marker mismatches, and the dossier documents passport confiscations and strandings. A mismatch can mean refusal, with a possible lifetime fraud ineligibility finding. Documented federal immigration custody harms include forced labour, beatings, solitary confinement and sexual abuse, and federal corrections policy is documented as denying care. Federal and state facility rules add universal-exposure risk where they apply. The state layer is comparatively protective: no current state restroom restriction, local ordinances, a national hate-crimes statute, and decriminalisation. The state ID ban and pending facility bill mainly affect residents, and the bill is not law. The state's aggravator-only hate-crimes law and the lack of a state anti-discrimination statute are weak mitigations. Net: elevated, driven by border and custody exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport sex-marker restriction is in force after the November 2025 Supreme Court order. X markers are no longer issued for new applications. Mismatches can lead to refusal, and the entry cable directs refusal for discrepancies with possible lifetime fraud ineligibility. Passports have been confiscated or blocked, leaving some travellers stranded.",
+    "protection": "Existing X-marker passports remain valid until expiry. Litigation by a civil-liberties union is pending, and the policy is contested in court.",
+    "interaction": "The home passport is the primary trigger. A mismatch at entry moves the traveller into refusal and secondary processing, and the state layer adds nothing to this.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Visitors who are refused may be detained. The corrections bureau has adopted policies documented as conversion-type measures for trans inmates and stopped reporting trans prisoner numbers.",
+    "protection": "Court challenges to some orders are documented as blocked or enjoined. No documented remedy changing custody outcomes is recorded.",
+    "interaction": "Border refusal or fraud allegation can lead into immigration custody. Federal custody practice applies regardless of the state's favourable facility position.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive orders bar gender-congruent use of government-funded single-sex facilities. Four states criminalise bathroom use in some circumstances, and nine plus one state bar use in all government buildings. Six states extend bans to some private settings. This state currently has no restroom restriction, and two cities protect restroom use by ordinance.",
+    "protection": "No current state-level facility ban. Restroom protection operates in two cities. The facility bill passed the upper chamber but has not been enacted.",
+    "interaction": "Federal facility rules apply in federal buildings and funded facilities. The state's permissive rule does not override them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for under-18s is banned in the state, so a trans minor cannot obtain it there. Federal proposals would bar public reimbursement for under-18s, and hospital records of minors were subpoenaed. Adult care availability is not sourced.",
+    "protection": "Adult care is not documented as restricted in this state. No documented protection for minors.",
+    "interaction": "A minor needing care cannot obtain it locally, and federal records demands add visibility for patients.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal documents frame gender identity as a counterterrorism concern, and an executive order directs investigation of schools. Official hostility is documented in federal rhetoric.",
+    "protection": "State law does not criminalise trans identity or presentation. Sodomy was decriminalised in 1977, and the state's hate-crimes law adds an aggravator.",
+    "interaction": "Federal framing can reach visitors through border and enforcement practice, while state-level framing is more limited.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor cannot obtain gender-affirming care in the state. Schools must notify parents of name changes. A federal order threatens teachers facilitating social transition. Minors travelling with guardians face border document issues as well.",
+    "protection": "State facility rules for minors do not currently restrict bathroom use; the pending bill is not law.",
+    "interaction": "A minor's documents follow the parent's regime at the border, and the guardian carries exposure at entry.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-level documented anti-trans violence pattern is recorded in the dossier. Bias against sexual orientation is a large share of hate incidents, but gender-identity-specific counts are not sourced.",
+    "protection": "A national hate-crimes statute covers gender identity. The state hate-crimes law adds sentencing aggravation. Enforcement data is not recorded.",
+    "interaction": "Recourse exists in principle; no data shows how it operates for visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state anti-discrimination statute covering gender identity; protections depend on local ordinances. Enforcement data for the aggravator is absent. The motor-vehicle ban challenge and the passport litigation are pending.",
+    "protection": "Local ordinances in several counties and cities. Courts have enjoined some federal orders.",
+    "interaction": "Local protections are unlikely to reach a border or federal custody encounter.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Anchor 0.35-A has a universal border register that refuses visibly trans travellers, with no effective appeal. The dossier here has a documented mismatch-based refusal and fraud exposure, but it is not a universal register, and state-level protection is present. This case is somewhat higher."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Anchor 0.45-D has universal registration of visitors with database sharing and confidential ombuds review. The dossier here lacks a state registry and has the state's own facility rules open. Immigration custody abuse is more severe than anything in 0.45-D, so the case is similar to slightly lower."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Anchor 0.25-C has birth-sex prison housing with documented assaults, plus a criminal cross-dressing statute. This dossier documents federal custody abuse, which is comparable, but it lacks a state cross-dressing offence and state prison housing rules are not documented here. The case is somewhat higher."
+   }
+  ],
+  "synthesis": "The traveller's exposure is driven by the home passport meeting federal entry screening, where mismatches can lead to refusal and fraud-ineligibility findings. Documented immigration custody abuse adds severe consequence. The state's facility, prison-funding and bathroom layers are comparatively open and protective, and the state's ID ban mainly affects residents. The state's own minor-care ban and the federal documentation regime keep the overall score in the elevated band rather than reduced."
+ },
+ "parse_error": null
+}

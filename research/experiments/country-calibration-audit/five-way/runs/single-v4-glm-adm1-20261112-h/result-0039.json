@@ -1,0 +1,82 @@
+{
+ "cell": 39,
+ "region": "66186276B83300161667341:Oklahoma",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00343254",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "The combined operative regime is a restrictive national framework (passport markers forced to sex assigned at birth, X markers halted, entry-refusal and fraud-ineligibility instructions for document discrepancies, transgender athlete entry ban, custody abuses) plus a state layer among the most restrictive: facility bans in state-owned settings, closed birth-certificate markers, criminal misdemeanor for facility trespass after refusal to depart, and a documented arrest precedent elsewhere under an identical law. Courts partially contest national measures but the state court has extended restriction retroactively. No state-specific traveler violence is documented, and imprisonment is not the typical outcome; severity is moderate-to-major, frequency high via universal document/facility exposure. Care access for adults exists only privately. This sits in the Elevated band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/sex-marker regime, entry-refusal and fraud-ineligibility instructions for discrepancies, trans athlete ban; passport confiscations reported nationally.",
+    "protection": "Litigation ongoing; fraud finding requires four elements and is never automatic; existing X passports remain valid until expiration.",
+    "interaction": "State document rules compound the national regime for any internal ID checks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies described as conversion therapy; immigration custody forced labour, beatings, sexual abuse of trans men; trespass arrest precedent (24h men's ward holding) in a neighbouring state.",
+    "protection": "National hate-crime statute; some orders enjoined.",
+    "interaction": "A bathroom encounter can escalate from a request to leave to arrest and jail within state-owned buildings.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State facility bans (K-12 and state-owned settings via executive order covering shelters, crisis centres, incarceration); misdemeanor trespass with documented arrest under a similar statute in another state.",
+    "protection": "Trespass trigger requires refusal to depart when asked; exemptions exist.",
+    "interaction": "State definitions override identity for all state agency purposes, including incarceration placement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bars public funds/facilities and Medicaid for gender-affirming care for minors and adults (criminal misdemeanor for employees); care only via private facilities at private cost; minor travelling with guardian cannot access affirming care in public settings.",
+    "protection": "Exemptions for emergency treatment to prevent death or major impairment, complications, and mental-health counseling.",
+    "interaction": "Federal rules proposed to bar public insurance reimbursement for minors compound the state ban.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State executive order defines sex biologically for all state purposes; national counterterrorism language targets 'radically pro-transgender' groups; state hate-crime law excludes gender identity; no state discrimination protection.",
+    "protection": "National 2020 employment ruling and national hate-crime statute remain on paper and were formally ordered 'corrected' by the 2025 executive order, weakening them as recourse.",
+    "interaction": "Hostile official framing licenses social and administrative hostility.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Total ban on affirming care for minors statewide; K-12 facility bans; school outing/prosecution dynamics from national orders; a trans minor resident died after a school bathroom assault.",
+    "protection": "Emergency-care exemption; one city's local anti-discrimination ordinance.",
+    "interaction": "A travelling parent risks investigation exposure if a minor's transition becomes known to schools or officials.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented resident-level hostility: death threats to a 12-year-old (2018), Nex Benedict beating/death (2024); police response not shown protective; no state traveler-violence incident documented.",
+    "protection": "National hate-crime prosecution available in federal court.",
+    "interaction": "Police interaction risks outing via ID checks; state law offers no bias recourse.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "State supreme court retroactively voided even cisgender marker corrections; no state legal gender recognition; driver's licence marker status unknown; pending HB 1225 would harden closure.",
+    "protection": "Active national litigation and legal-aid FAQ; several federal orders enjoined; state tracker maps help travellers plan.",
+    "interaction": "Remedies are slow, contested, and state-level relief is effectively absent.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A is a universal state registration/exclusion regime with near-certain enforcement. Here the sharpest universal measure (passport sex markers, entry-refusal instructions) is comparable in exposure breadth, but enforcement is contested in court, fraud findings are not automatic, and no systematic border exclusion of trans visitors is documented; hence materially above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is discretionary secondary screening with administrative outcomes. This jurisdiction's border regime is more adversarial (fraud-ineligibility instructions, athlete entry ban), and the state adds facility criminalisation and care denial, so it sits below 0.55-B; but outcomes are likewise mostly administrative and courts partly function."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C features trained officers, tribunal appeals, and brief-detention norms. This jurisdiction lacks state anti-discrimination law, has a documented trespass arrest precedent, closed state document corrections, and a state supreme court extending restriction — well below 0.75-C."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D is durable universal exposure via registration/database with harassment and eviction as typical harms and no credible lethality. This regime is similar: universal document/facility exposure, typical harms of exclusion, arrest possibility, care denial — but with some contested courts and no state targeting sweeps, placing it around 0.45-D, slightly below its midpoint toward the lower 40s."
+   }
+  ],
+  "synthesis": "The operative regime couples a hostile national document and entry framework — passport markers fixed at birth sex, X markers halted, entry-referral and fraud instructions, custody abuses — with a state layer among the most restrictive: universal biologically-defined sex for state purposes, facility bans, criminal misdemeanor facility trespass with a documented arrest elsewhere under identical law, closed gender-marker changes retroactively, and near-total public care bans for minors and adults. Courts partially check the national layer, and no state-specific violence against visitors is documented, keeping this above the 0.35 exclusion tier. But the exposures are universal (every ID check, every state-owned facility, any care need), remedies within the state are absent, and the state adds its own hostile layer to the parent — so the score sits in the Elevated band, below the 0.55 midpoint."
+ },
+ "parse_error": null
+}

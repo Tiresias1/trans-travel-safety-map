@@ -1,0 +1,82 @@
+{
+ "cell": 10,
+ "region": "66186276B2592965416524:New Mexico",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01383348",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined regime is sharply bifurcated. In the protective state, public-accommodation law, gender-neutral single-occupancy restrooms, hate-crime coverage, self-ID X markers and a 2023 shield law make everyday life comparatively safe for an adult visitor, including a care traveller. But federal entry and custody rules dominate the traveller-facing exposure: birth-sex document rules, refusal or permanent fraud ineligibility for discrepancies, and documented forced labour, beatings, solitary confinement and sexual abuse in immigration custody. State protections do not bind federal border officers or federal detention. Federal facility restrictions and counterterror rhetoric add further exposure. This places the visitor in Elevated Risk: strong local protections, but severe federal consequences if outed at entry or detained.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules require birth-sex markers, stop X processing, and direct refusal or additional evidence for document discrepancies; suspected misrepresentation can support permanent fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiry; state X IDs and shield law do not govern federal visa or border decisions.",
+    "interaction": "A foreign passport or visa is checked by federal officers before any state protection applies; a discrepancy can strand or bar the traveller.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody has documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender detainees; federal corrections policies include conversion-style practices.",
+    "protection": "Some executive orders are enjoined; fraud findings are not automatic and limited waivers exist, but no working remedy in immigration custody is documented.",
+    "interaction": "A border document problem can transfer the traveller into federal detention, where state anti-discrimination and shield law do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A federal executive order bars government-funded single-sex facilities consistent with gender identity; other states impose bathroom bans, though not this one.",
+    "protection": "This state has no bathroom ban, requires single-occupancy restrooms to be gender-neutral, and covers public accommodations under gender-identity law.",
+    "interaction": "Private and state venues are protective; federal buildings and airport spaces follow federal rules that state law cannot override.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal policy frames minor gender-affirming care as mutilation, subpoenas hospital records and proposes insurance exclusion.",
+    "protection": "State 2023 law protects adult gender-affirming care and a shield law protects visitors from home-jurisdiction bans; Medicaid coverage is maintained.",
+    "interaction": "Adult care in-state is protected; access for a visiting minor under the 'on request' standard is unspecified, and federal subpoenas create uncertainty.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups among violent secular targets; DOJ reward guidance invokes 'radical gender ideology'.",
+    "protection": "Guidance says counterterrorism powers are not for mere disagreement; courts blocked some orders; state hate-crime law covers gender identity.",
+    "interaction": "Federal rhetoric raises risk for visible advocacy; state and local law enforcement are protective, but federal authority operates independently.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive orders frame minor transition as mutilation and direct investigation or prosecution of teachers; federal record subpoenas reach minors.",
+    "protection": "State shield law and 2023 care statute protect care; anti-bullying law covers gender identity; no state statute bans trans girls' sports.",
+    "interaction": "A parent or guardian travelling for care may rely on the state shield, but federal investigation and non-resident minor eligibility remain unresolved.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incidents or police-abuse counts for this state are documented; the national climate is hostile.",
+    "protection": "State hate-crime law covers gender identity, the panic defence is repealed, and public-accommodation enforcement is documented.",
+    "interaction": "Everyday street and police risk appears lower in-state, but absence of incident data is not proof of safety.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal document and custody rules are challenged but largely operative; no documented remedy for immigration-detention abuse; fraud waivers are limited.",
+    "protection": "State courts uphold non-discrimination; the shield law operates; legal-aid guidance exists; some federal orders are enjoined.",
+    "interaction": "State remedies work for accommodations and care but cannot compel federal border release or protect a person in federal custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has routine exclusion and humiliation at the border but no imprisonment or lethal custody. Here entry refusal is similarly possible, but federal detention carries documented beatings and sexual abuse, and state everyday protections are much stronger. The severe custody pathway makes this only modestly above 0.35-A, not a safe destination overall."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves extended secondary screening, refusal and administrative return without criminal prosecution. This case shares that border friction and adds possible permanent fraud ineligibility and abusive federal custody, offset by robust state public-accommodation and care protections. The combined regime is comparable to 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C allows entry on markers matching presentation, provides training, and treats detention as brief with working remedies. This case has strong state protections but no comparable federal border protection, and federal custody harm is documented. It therefore sits materially below 0.75-C."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "0.65-A has national equality protection, brief detention, court-ordered release and compensation. Here state equality law is strong, but federal border and custody rules are hostile and state remedies cannot reach them. The absence of a working federal remedy places this below 0.65-A."
+   }
+  ],
+  "synthesis": "The protective state supplies real, operative protections for ordinary daily life: public accommodations, gender-neutral single-occupancy restrooms, hate-crime coverage, self-ID X markers and a care shield. Those matter for a visitor staying in-state. But the traveller first passes through a hostile federal document and border regime, where mismatches can trigger refusal, permanent fraud ineligibility, or federal immigration detention with documented forced labour, beatings, solitary confinement and sexual abuse. Federal facility rules and counterterror rhetoric add friction. State law cannot bind federal officers or custody. The operative result is a comparatively safe local stay shadowed by severe federal exposure at entry and detention, yielding an Elevated Risk rating rather than a Reduced Risk one."
+ },
+ "parse_error": null
+}

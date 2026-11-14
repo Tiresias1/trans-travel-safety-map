@@ -1,0 +1,82 @@
+{
+ "cell": 33,
+ "region": "66186276B75419826371250:Georgia",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00350895",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime couples a hostile national entry apparatus with a state/province whose own record is mixed. Traveller-facing exposures: universal visa/adjudication screening that flags document-sex discrepancies, refuses cases, and can trigger a lifetime fraud finding; reported detentions of foreign citizens over visa issues and allied-government travel advisories; a state/province ban on transition care for minors (visiting minors cannot receive care); cancellation of adult gender-affirming surgery in one documented city; and police-documented 'epidemic-level' violence against transgender women in the major city, with an undercount-floor 4.8/100k rate. If detained, the national custody regime (immigration-custody abuse, corrections-bureau policies) is a documented tier-1 exposure. No local bathroom ban is documented for this division, and the state health-plan settlement is a partial protective operating regime. This sits between the 0.45 anchors and 0.35 anchors: no criminalisation of presentation, functioning courts, but heavy universal-exposure entry screening, documented custody harm, and care restrictions.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Universal-exposure: visa adjudication cable instructs officers to refuse cases on document-sex discrepancy and consider lifetime fraud ineligibility; reported passport confiscations/blocks and detentions of neighbouring-jurisdiction citizens; allied governments issued trans-specific travel advisories.",
+    "protection": "Fraud finding requires all four elements and is never automatic; limited waiver possibilities; passport policy remains challenged in national courts.",
+    "interaction": "Document mismatch at any entry or adjudication point can cascade into investigation, refusal, or detention; foreign passports with X markers may be scrutinised.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented national custody harm: immigration-custody forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; corrections bureau policies including hormone withdrawal and reporting stopped.",
+    "protection": "Not documented at division level; national courts have enjoined some orders.",
+    "interaction": "Any entry/document investigation can route a visitor into national custody where the documented abuse regime applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No division-specific bathroom ban is documented; the parent maps 4 criminalising state/provinces elsewhere, but this division's own facility rule is not documented.",
+    "protection": "Not documented.",
+    "interaction": "National executive order bars transgender people from government-funded single-sex facilities congruent with identity, reaching federal facilities in the division; the map notes other state laws may still affect access.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "State/province law bans transition care for under-18s (travelling minors cannot receive care; clinicians face licence revocation); a coastal city hospital cancelled all gender-affirming surgeries in Feb 2025, including an adult procedure.",
+    "protection": "Public-employee health plan settlement requires payment for medically necessary gender-affirming care; the settlement is a partial operating protective regime.",
+    "interaction": "National funding orders interact with state law to narrow adult surgical capacity; the settlement's practical application is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' groups; 'gender ideology' removal orders; state/province minor-care ban frames provision as harm, though not criminalising visitors.",
+    "protection": "National gender-identity hate-crimes statute remains in force; employment discrimination prohibited nationally.",
+    "interaction": "Official hostility raises scrutiny and severity of police encounters; the division itself is not documented as a 'Do Not Travel' flagged state.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A travelling minor cannot receive transition care in the division; national executive order criminalises facilitation of a minor's social transition by teachers, which could reach guardian or provider conduct.",
+    "protection": "Health-plan settlement can pay for minors' care obtained outside the state/province; guardians travelling through face exposure but not automatic criminalisation of the child.",
+    "interaction": "Parent travelling with a minor on HRT may face scrutiny of medication; state/province ban applies to licensed clinicians, not to the family itself.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented: police in a major city investigated three violent crimes against transgender women in 2023 (two fatal shootings a week apart); department called violence against Black and Brown trans women 'epidemic-level'; 4.8/100k killing rate, an undercount floor.",
+    "protection": "Police actively investigating is a partial positive; national hate-crimes statute exists.",
+    "interaction": "Without a general-homicide denominator the rate cannot be confirmed as above background; the department's own 'epidemic' framing is the strongest local signal.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Not documented.",
+    "protection": "National courts have enjoined several orders; civil-liberties union suit on passport markers unresolved; legal-aid FAQ on passport rules exists.",
+    "interaction": "Court outcomes unresolved; a traveller's practical exposure depends on which measures are operative at the time of travel; facilities access in the division uncertain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to 0.35-A's entry-screening regime: a discretionary, publication-based entry system with documented refusals and no effective remedy. Here the visa fraud route and detentions of foreign citizens are comparable in kind, but the division has no local ban on the traveller's own presence, and courts remain partially functional, so the exposure is somewhat lighter than a full exclusionary register."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "The 0.55-B anchor's secondary screening with discretionary refusal and no reliable real-time remedy closely parallels the entry exposure here. The division adds a more severe layer (fraud finding, custody harm) than 0.55-B, but also lacks the anchor's arbitrary-ejection risk, and the 0.55-B travel experience was mostly administrative friction."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C's trained border officers, brief detention, and working remedies are higher than this division's record. The parent's national custody regime is far worse than 0.75-C's, the entry screen targets trans people explicitly, and the division's own violence record is worse than 0.75-C's, so 0.75-C is too high for this case."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "0.45-B's care-limitation regime with licence revocation matches the division's minor-care ban and hospital cancellation, with no custodial punishment for the visitor. The division's entry exposure is heavier than 0.45-B, but its violence is documented rather than 0.45-B's nil, so this case sits between 0.45 and 0.35 anchors."
+   }
+  ],
+  "synthesis": "The combined operative regime pairs a hostile national entry-and-custody layer with a state/province whose own exposure is mixed. Entry screening is a universal-exposure measure: every trans visitor carries a document mismatch risk, and the visa cable explicitly contemplates refusal and lifetime fraud ineligibility. If detained, national custody practices are the heaviest documented exposure. The division's own facilities rules are not documented; the minor-care ban is a concrete traveller-facing restriction for families; the coastal hospital's surgical cancellation shows adult care access is fragile. The major-city violence record is documented but lacks a denominator to confirm above-background risk. No local bathroom ban is documented, so this case is not the tier-1 facility-exclusion pattern of the worst states; it sits between the 0.45 and 0.35 anchors because the entry screening is severe and the custody regime is severe, but the division itself is not a full criminalising jurisdiction and the courts remain partially available. The rating is 0.42."
+ },
+ "parse_error": null
+}

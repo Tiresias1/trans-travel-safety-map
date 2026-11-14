@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0010765027",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined operative regime pairs one of the most documented hostile national frameworks with a strongly protective state layer. Every visitor crosses the national border: passport/visa sex is confined to a birth-sex binary, 'X' markers are no longer issued, officers are instructed to refuse cases with sex discrepancies and to weigh lifetime fraud ineligibility, and multiple foreign governments now advise trans citizens about travel here. That is a universal, state-imposed document exposure whose documented consequences include confiscation, stranding and refusal — tier-1 exposure, but with remedies in litigation and no credible imprisonment-for-identity pathway. Inside the state/province, sanctuary law, public-accommodation protections, facility access and care continuity operate in the visitor's favour. Custody abuse (immigration detention, national prisons) is documented but is not the ordinary visitor path. Net: administrative refusal/outing exposure, not custody or lethal exposure, softened by a genuinely protective local regime — mid-scale, near 0.55.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Universal: national passports restricted to birth-sex binary; X markers discontinued; existing X passports valid but flagged; visa officers instructed to refuse cases with sex discrepancies and consider lifetime fraud ineligibility; reported passport confiscation and stranding; foreign-government travel advisories issued.",
+    "protection": "Pre-existing M/F passports remain valid; civil-liberties litigation pending; a legal-aid FAQ helps travellers navigate the rules; no documented refusal purely for a matching M/F passport.",
+    "interaction": "Entry screening is national and overrides all state protections; a discrepancy found at entry can route toward secondary inspection or fraud findings before state sanctuary law ever applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented national custody harms: immigration detention forced labour, beatings, solitary and sexual abuse of trans men; national prison policies stripping hormones; corrections bureau stopped reporting trans prisoner counts.",
+    "protection": "Not documented for visitors specifically; the fraud finding requires all four elements and waiver is possible, so escalation is not automatic.",
+    "interaction": "Any document dispute can escalate into investigation and detention governed by national, not state, rules; state sanctuary law does not reach federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facility bans by birth sex in government buildings in 21+ state/provinces, criminal exposure in 4, one documented arrest of a trans woman in a women's restroom (24 hours in men's ward); federal facility rules exclude trans access.",
+    "protection": "In this state/province, 2014 public-accommodation law, court-protected student facility access, and county/city gender-neutral ordinances operate; no state/province facility ban documented here.",
+    "interaction": "State protections govern state and local facilities only; federal buildings and any travel outside the state revert to hostile or restrictive rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal care-hostility climate; insurance and funding pressure nationally; minor-related federal orders and hospital record subpoenas raise scrutiny around travelling minors.",
+    "protection": "State sanctuary law, 2023 executive order protecting care access, most transgender-friendly insurance law nationally, public coverage of gender-affirming treatment; continuity of care documented as protected locally.",
+    "interaction": "Care obtained in-state is shielded; national insurance/funding rules and litigation create residual uncertainty, especially for minors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official 'radical gender ideology' framing; counterterrorism strategy targeting 'radically pro-transgender' groups; enforcement directed at schools facilitating minor transitions; nationwide chilling climate.",
+    "protection": "National hate-crime statute covers gender identity; 2020 employment ruling stands; the state's own law-enforcement and commissions are protective.",
+    "interaction": "Federal threat-framing raises outing probability nationally (tagging, case notes); state police operate under protective law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Care for minors banned in 27 state/provinces; federal orders framing minor care as 'mutilation'; prosecution threats against teachers facilitating social transition; hospital record subpoenas cover under-19s; a guardian travelling with a trans minor faces heightened scrutiny at entry.",
+    "protection": "In-state: conversion-therapy ban, sanctuary law, insurance coverage, school facility access per identity; state laws shield care within the state/province.",
+    "interaction": "A travelling minor's exposure is dominated by federal document/screening rules; state sanctuary law protects once inside but cannot pre-empt federal prosecution threats.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two Black trans women shot dead in the state's largest city within ten weeks, perpetrator at large; raw figure without denominator, so background rate unknown.",
+    "protection": "State hate-crime penalty enhancements, panic-defence abolition, LGBTIQ+ commission, protective county ordinances; July 2026 analysis places this state among the safest by law score and incident count.",
+    "interaction": "Violence is societal; local response machinery is protective but does not eliminate risk; federal climate may embolden hostility elsewhere in the country.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Open questions: whether the sanctuary law extends to non-resident visitors is unsourced; state custody placement of trans people undocumented; passport litigation unresolved; per-capita violence denominators unavailable.",
+    "protection": "Active litigation, legal-aid FAQ, state commissions and enforcement records show recourse operates at state level.",
+    "interaction": "Unresolved federal litigation means the operative national regime could tighten or loosen without notice; state remedies cannot reach federal borders or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A excludes trans visitors at the border with no remedy, universally. Here the border regime is also hostile and universal (binary markers, sex-doubt refusals, fraud lever), but consequences documented are refusal, confiscation and stranding rather than routine exclusion of all trans visitors, and matching M/F passports still function. Slightly above 0.35-A, but the fraud-ineligibility lever keeps it well clear of 0.65."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B features discretionary secondary screening, refused entry and humiliation at borders with weak remedies — closely analogous to this regime's visa refusals, case-note tagging and passport friction, though here the exposure is codified policy rather than officer discretion, and domestic custody harms are more severe. Comparable, marginally harsher at entry but far more protective inside the destination state."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has brief detention with working appeals and trained officers. This jurisdiction is materially below: border hostility is policy, not inconsistency; custody abuse is documented; but it is above 0.45-tier anchors because in-state the visitor enjoys sanctuary law, facility access, care protection and hate-crime recourse that actually operate."
+   }
+  ],
+  "synthesis": "The traveller experiences two regimes in sequence. At the border, national rules create an unavoidable document exposure: sex confined to birth assignment, X markers ended, officers instructed to refuse doubtful cases and to weigh lifetime fraud bars, with documented confiscation, stranding and foreign-government advisories — a tier-1 universal exposure whose documented worst outcomes are refusal, detention and the documented custody abuses if detention occurs, not imprisonment-for-identity. Inside the state/province, the operative regime flips: sanctuary status, public-accommodation and facility protections, care continuity and hate-crime recourse are documented as functioning. The binding constraint is the border and any federal encounter; the state softens daily life substantially. Netting a codified, litigated but presently operative hostile national regime against a genuinely protective local one yields the middle of the scale: about 0.55."
+ },
+ "parse_error": null
+}

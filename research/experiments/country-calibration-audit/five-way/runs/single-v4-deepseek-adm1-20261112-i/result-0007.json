@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0031163034",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The combined regime is split. The state's nondiscrimination, hate-crime, sanctuary and facilities law protect a trans visitor in hotels, venues, clinics and state buildings. But national government controls entry, federal facilities, immigration detention and national custody, where the dossier documents sex-marker refusal, possible lifetime fraud findings, forced labour, beatings, sexual abuse and hormone removal. A visitor whose documents or presentation diverge is exposed at the border and in federal custody; state sanctuary is not shown to reach those. In-state daily life is comparatively safe, though two recent killings lack a denominator. Minors face additional federal care and school directives. Rating 0.44: elevated, not severe, because routine in-state life is protected and no execution or organised targeting is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport policy treats sex as birth-assigned, stops X markers, may refuse cases with sex discrepancy, and considers lifetime fraud ineligibility; trans athletes are barred. Foreign visitors' home passports can trigger scrutiny if marker and presentation diverge.",
+    "protection": "State IDs allow X on driver's licences and voter registration, and birth-certificate changes without surgery, but these do not control national visa/entry decisions. Litigation against national passport rules is pending, with restrictions in effect.",
+    "interaction": "State documents and sanctuary law do not bind national border officers; a discrepancy can move a visitor from inspection into federal refusal or fraud proceedings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents abuse of trans men through forced labour, beatings, solitary confinement and sexual abuse; national corrections uses conversion practices including hormone removal. Detained visitors fall under federal authority.",
+    "protection": "National litigation has blocked some executive orders, and the state sanctuary law may limit state cooperation, but it is not shown to reach federal immigration custody or dictate placement.",
+    "interaction": "A border document problem can lead to federal detention, where state nondiscrimination and sanctuary protections do not reliably follow the visitor.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "A national executive order bars trans people from government-funded single-sex facilities matching identity, reaching federal buildings, airports and parks. Federal facility rules apply regardless of state law.",
+    "protection": "State public-accommodations law, a state-court student facilities ruling, county gender-neutral bathroom rules and the sanctuary law protect state and many private settings; they do not displace federal facility rules.",
+    "interaction": "A visitor is protected in state and private venues but exposed in federal facilities; the same split applies to a minor accompanying an adult.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules bar public insurance reimbursement for trans care under 18, and federal funding and records actions chill providers; visitor access to ongoing or emergency care is not documented. State coverage is resident-facing.",
+    "protection": "State insurance law and health-equity measures cover residents, and state public-accommodations law may reach clinics; the dossier does not show these extend to nonresident visitors or override national rules for minors.",
+    "interaction": "A visitor's care depends on provider, insurance and nationality; national rules affect minors, while state protections operate mainly for residents.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' violent groups, and a justice reward memo references 'radical gender ideology'. This is official threat framing, though not a general ban on trans visitors.",
+    "protection": "National hate-crime law covers gender identity; the state has a hate-crime statute, abolished the panic defence, and maintains an LGBTIQ+ commission. Enforcement is partial but operative for local crimes.",
+    "interaction": "Federal threat framing can affect border and custody discretion and protest activity; state recourse exists for street crimes and discrimination after entry.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor's passport/visa marker and appearance can trigger border scrutiny; national executive orders target school transition support and minor care, and federal facility rules apply. A guardian may face questioning or refusal.",
+    "protection": "State public-accommodations and sanctuary law protect state and private venues, and a state-court ruling protects student facilities access; the dossier does not show these reach nonresident minors at the border or in federal custody.",
+    "interaction": "National border and custody rules govern the journey; state protections begin only in state-regulated settings, and minor care access remains uncertain.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two Black trans women were shot in one city within ten weeks, with a perpetrator at large; the count lacks a per-capita denominator, so elevation over background is not established. State-wide recorded anti-trans incidents are low.",
+    "protection": "State hate-crime and nondiscrimination law, sanctuary status, and functioning local police/courts provide recourse; the state ranks among the safest by law score and recorded incidents.",
+    "interaction": "Street violence is handled by state and local police where protections operate; federal threat framing does not directly govern routine local policing.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and fraud rules are in effect; immigration custody abuse is documented; the state sanctuary law's reach to nonresident visitors is unsourced; no state prison-placement rule or per-capita violence data appears.",
+    "protection": "National civil-liberties litigation has won some injunctions; state law supplies discrimination and hate-crime remedies, and legal-aid guidance exists for document problems.",
+    "interaction": "Border decisions are fast and discretionary, and state remedies cannot undo federal refusal or detention; remaining unknowns are material at the border and in custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra routinely bars visibly noncompliant trans visitors at the border with no effective remedy. This jurisdiction has no blanket visitor ban and gives strong state-level daily protections, so it is safer overall; but its federal border can impose lifetime fraud ineligibility and its immigration custody abuse is more severe than Vellandra's exclusion, keeping it close to, not far above, 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and administrative refusal; remedies are slow, but there is no documented federal custody abuse or lifetime fraud finding. This jurisdiction's state law is more protective, yet its national border and immigration custody exposure is harsher, placing it below 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, brief detention, appeal rights and compensation. This jurisdiction's national entry and custody regime is far harsher, and state protection is not shown to reach federal border or detention, so it sits well below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime is layered, not averaged. The state's public-accommodations law, hate-crime amendment, sanctuary statute and state-court facilities ruling protect a visitor in hotels, venues, clinics and state buildings. But national government controls the journey's chokepoints: passport/visa sex-marker policy, border refusal and fraud findings, federal single-sex facilities, immigration detention and national custody. Because the dossier does not show state sanctuary reaching federal custody or nonresident minors, the protective local layer cannot cancel the federal exposure. The result is a generally safe in-state stay for a visitor whose documents pass, with a severe tail at the border and in federal detention; recent local homicides are a documented but unquantified background signal."
+ },
+ "parse_error": null
+}

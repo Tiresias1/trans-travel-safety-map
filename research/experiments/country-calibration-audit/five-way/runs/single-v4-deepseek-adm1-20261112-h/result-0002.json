@@ -1,0 +1,78 @@
+{
+ "cell": 2,
+ "region": "66186276B10933057601622:Wyoming",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00577722",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "National sex-binary document and entry rules create refusal, stranding and possible fraud findings for mismatched or X-marked travel documents; the state facilities law bars birth-sex-mismatched use of public restrooms, changing and sleeping areas and offers no state public-accommodations protection. National immigration custody carries documented beatings, forced labour and sexual abuse for trans detainees, and facility bans are universal exposures in public buildings. Counterterrorism rhetoric adds hostile state framing. Some national hate-crime and employment recourse and pending passport litigation exist, and fraud is not automatic, but remedies do not reach facilities or custody. No routine arrest for presentation or capital risk is documented, so this sits above 0.15 but below border-exclusion-only 0.35.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National executive order defines sex as birth binary; X markers no longer processed for new issues; entry cable requires refusal where documents or records raise doubt and possible permanent fraud finding; advisories and blocked or stranded passports reported.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and requires four elements; passport litigation pending; some orders enjoined.",
+    "interaction": "Foreign-visitor passport or visa check can trigger secondary inspection or refusal; state law does not offset national border authority.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men; corrections conversion practices for inmates; document discrepancy can lead to detention.",
+    "protection": "National courts and a legal-aid FAQ exist; fraud finding is not automatic; no documented effective custody remedy for trans visitors.",
+    "interaction": "Border discrepancy can lead into national immigration custody, where national conditions apply regardless of state protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law effective 1 July 2025 reserves public multi-occupancy restrooms, changing and sleeping areas by biological sex, bars mismatched entry and creates a cause of action; school birth-sex rule also applies.",
+    "protection": "Local ordinances in three cities; national hate-crime and employment recourse only; no state public-accommodations protection.",
+    "interaction": "Facilities and courts enforce the state rule; a visitor using an identity-matched facility in a public building is exposed.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for minors and trans sports participation; national funding, insurance and executive-order restrictions target minor care.",
+    "protection": "National employment-discrimination recourse; local ordinances; some national orders enjoined.",
+    "interaction": "Adult visitor routine care is not documented; a travelling minor needing affirming care faces state and national restrictions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes 'radically pro-transgender' violent groups; executive orders and agency rhetoric frame gender ideology as a threat; state has no hate-crime statute.",
+    "protection": "National 2009 hate-crimes statute covers gender identity; courts have enjoined several orders.",
+    "interaction": "Hostile national framing raises reporting and police risk, but no visitor-targeted prosecution is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State school law requires birth-sex restrooms; minor care ban; national orders target social transition and care.",
+    "protection": "Reasonable accommodation for students not using multi-occupancy facilities; national litigation pending.",
+    "interaction": "A visitor minor in public facilities is covered by the state birth-sex rule; enrolled-school accommodation is inapplicable.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state hate-crime statute or state public-accommodations, housing or employment protection; 2025 poll shows majority support for birth-sex document and sports rules.",
+    "protection": "National hate-crimes statute covers gender identity; national employment protection; three city ordinances; no state-specific trans violence pattern documented.",
+    "interaction": "Thin state recourse may deter reporting; national statute provides theoretical recourse only.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state public-accommodations remedy; facilities law cause of action runs against facilities, not for the trans visitor; immigration-custody abuses lack documented remedy.",
+    "protection": "National courts, pending passport suit, legal-aid FAQ, existing X passports valid until expiry, some injunctions.",
+    "interaction": "National litigation may delay but does not reliably prevent border, facility or custody harms during a visit.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's routine border exclusion without arrest is similar to this dossier's entry-refusal risk, but Vellandra lacks a universal state facilities ban and documented immigration-custody sexual abuse. Those added exposures place this jurisdiction below 0.35-A."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia's birth-sex prison housing and cross-dressing arrests are more severe in custody and criminalisation than this dossier's visitor-facing rules; here facilities exclusion is civil and no presentation arrest is documented, but immigration custody abuse remains comparable, so the score is near and slightly above 0.25-C."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles has discretionary secondary screening and refusal but no universal facilities exclusion or documented abusive immigration custody; this dossier is materially worse, well below 0.55-B."
+   }
+  ],
+  "synthesis": "The operative regime combines national document and border screening with a state facilities law and national custody practices. A trans visitor with a document mismatch or X marker faces refusal, secondary inspection or possible fraud findings at entry; inside public buildings the state may bar birth-sex-mismatched restroom, changing or sleeping access and offers no state public-accommodations remedy. If entry screening escalates to immigration custody, documented beatings, forced labour and sexual abuse apply under national authority and are not offset by state or local protections. National hate-crime and employment recourse, pending litigation and injunctions are real but do not reach facilities or custody. The result is a high-risk but not catastrophic regime: exclusion and custodial harm are documented, while routine arrest for presentation and execution are not."
+ },
+ "parse_error": null
+}

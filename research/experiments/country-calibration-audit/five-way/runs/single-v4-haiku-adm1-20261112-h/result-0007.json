@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059896",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "The combined regime is split. Federal entry screening is the heaviest traveller-facing exposure: discrepant documents lead to refusal, and suspected misrepresentation can trigger a lifetime-ineligibility finding. Federal immigration custody has documented forced labour, beatings and sexual abuse, and federal custody follows a conversion-therapy model. Federal passport restrictions, hospital subpoenas and counterterrorism framing add hostility. The state layer is strongly protective (nondiscrimination, hate-crime coverage, sanctuary law, no state facilities ban, marker changes, marriage) and appears to operate, but it does not reach federal entry, detention or custody. Two recent killings lack a denominator. Net: Elevated Risk, with the state protections materially offsetting only the local sphere.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal cable refuses cases with document discrepancies or doubt about sex, requests more evidence, and may pursue a permanent fraud-ground ineligibility finding. Passport sex markers are restricted nationally; passports have been confiscated or blocked, leaving travellers stranded.",
+    "protection": "Ineligibility requires all four elements, waivers exist in limited form, and the finding is never automatic. The civil-liberties suit is unresolved.",
+    "interaction": "Home-passport mismatch leads to entry questioning that can escalate to refusal and a fraud finding, a federal-level pathway that the state's protections cannot touch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections adopted conversion-style policies (hair cutting, hormone removal) and stopped reporting trans prisoner counts.",
+    "protection": "Not documented at federal level. No state custody rule or dedicated unit is documented in this state.",
+    "interaction": "A discrepancy-triggered detention moves the traveller into federal custody, where the documented harms apply regardless of the state's protective law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars identity-congruent access to government-funded single-sex facilities. Federal buildings and immigration facilities are covered.",
+    "protection": "The state has no facilities ban in the mapped categories and documents facilities access in favour of trans people, with gender-neutral requirements in some localities. The state map notes other sex-defining rules may still apply.",
+    "interaction": "State-level access does not govern federal buildings or federal custody. A traveller can move from a permissive state setting into a federal one.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal proposed rules would bar public insurance reimbursement for under-18 care. Hospital records of patients under 19 were subpoenaed. Federal funding restrictions apply.",
+    "protection": "State public programme covers gender-affirming treatment for adults, the health-equity extension was passed in part, and the state banned conversion therapy for minors. The upper chamber outcome is unknown.",
+    "interaction": "State care coverage is for residents over 18. A visitor, or a minor with a guardian, may face federal records exposure and unresolved reimbursement rules.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal framing treats 'radically pro-transgender' groups as a counterterrorism priority; a reward system targets leadership. Federal orders direct investigation and prosecution of teachers who facilitate social transition.",
+    "protection": "The strategy disclaims targeting people who merely disagree; several orders are enjoined.",
+    "interaction": "Official hostility is federal, while the state's law enforcement and hate-crime machinery are protective. The federal threat frame reaches the traveller through entry and custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A minor travelling with a guardian faces federal care restrictions, records subpoenas, school-facing prosecution orders, and possible birth-sex document friction at entry.",
+    "protection": "State conversion-therapy ban covers licensed practitioners on minors. The state sanctuary law's extension to non-resident minors is unsourced.",
+    "interaction": "The guardian's exposure at entry and the minor's care-access exposure combine, with state protections not clearly reaching non-residents.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two Black trans women shot dead in one city within ten weeks, one perpetrator at large. No denominator or homicide baseline, so magnitude is not assessed.",
+    "protection": "Gender-identity hate-crime penalties and nondiscrimination apply. Sanctuary law and a 2021 defence-abolition law operate. The state ranks among the safest by recorded incidents.",
+    "interaction": "Local police response and state hate-crime law are protective in this sphere. Federal hostility does not directly change street-level police practice.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal remedies are unreliable: passport and detention challenges are unresolved, and oversight has not stopped custody harms. The status of federal orders changes with court rulings.",
+    "protection": "State nondiscrimination, hate-crime and sanctuary protections are documented as in force. A state ombudsman-style commission exists.",
+    "interaction": "State remedies apply to state actors and private conduct; federal entry and custody remedies are slow or absent. Visitor coverage of state protections is unsourced.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Both involve durable federal registration-style exposure that follows the traveller. Here the exposure is entry refusal and a fraud finding rather than ongoing registration, and the state layer is far stronger than Drellia's, so this case sits somewhat higher."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Both involve document-driven, state-imposed exposure with partial denial, but this case adds documented custody sexual abuse and a fraud ineligibility pathway. Those push it lower than 0.55-C, offset by a much stronger local protection layer."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "Both show a protective local layer, but 0.65-E has working federal remedies and barred detention. Here federal entry refusal and custody harms are documented and unremedied, so this case sits materially lower."
+   }
+  ],
+  "synthesis": "Federal entry-document refusal, the fraud-ground ineligibility pathway and federal custody harms are the operative exposures, and the state's protections do not reach them. The state's strong nondiscrimination, hate-crime, facilities and sanctuary layer documents real protection in the local sphere and offsets the street-level exposure. Under the combined regime, the traveller's worst credible pathway runs through federal documents and detention, which the state cannot remedy. The result is an Elevated Risk rating, held up by the state layer and pulled down by the federal layer."
+ },
+ "parse_error": null
+}

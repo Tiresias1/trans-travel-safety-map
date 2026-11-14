@@ -1,0 +1,82 @@
+{
+ "cell": 24,
+ "region": "66186276B63937528568220:Iowa",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0172614",
+ "parsed": {
+  "rating": 0.33,
+  "explanation": "The combined national and division regime is hostile but not a blanket criminalisation of trans identity. The sharpest visitor exposures are border/document mismatch, which can lead to refusal or a possible permanent fraud ineligibility finding, and abusive national immigration custody if detained. The division removed gender-identity civil-rights protections and its school-facilities rule reaches adult visitors on school grounds. No division-wide adult public-restroom ban or documented visitor violence pattern appears; national hate-crime law and court challenges provide partial, uncertain recourse. This sits in High Risk: above execution/imprisonment regimes, below the 0.35 blanket-border-exclusion anchor because entry exclusion is conditional, while custody abuse and the absence of state civil remedies keep it materially below jurisdictions where remedies operate.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document rules; X markers not newly processed; border cable permits refusal where documents/records conflict or sex is doubted, and possible permanent fraud ineligibility for wilful misrepresentation. A foreign passport mismatch can trigger secondary inspection or refusal.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic, requires four elements and limited waiver; passport policy is litigated; a legal-aid FAQ exists.",
+    "interaction": "Border discrepancy can escalate to secondary inspection, refusal, or immigration detention; division offers no local document remedy.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody has documented abuse of transgender men: forced labour, beatings, solitary confinement, sexual abuse; corrections policies include conversion-like measures. Entry refusal or fraud suspicion can lead to detention.",
+    "protection": "National hate-crime statute covers gender identity; some executive orders enjoined; no documented custody protection for trans immigration detainees.",
+    "interaction": "Border document discrepancy can lead to detention and abusive custody under national authority; division law does not mitigate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Division school rule requires everyone on school grounds, including visitors, to use multiperson restrooms/changing rooms matching birth certificate; single-person alternative is a student accommodation requiring guardian consent. No division-wide adult public-restroom ban outside schools is documented.",
+    "protection": "No documented general adult facilities restriction in division outside school grounds; national facilities bans vary by state and are not shown to apply division-wide.",
+    "interaction": "Adult visitor attending a school event or campus is exposed; ordinary tourist facilities are not documented restricted.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care under 18; national rules threaten insurance coverage for under-18 care. State gender-identity civil-rights removal leaves no state remedy for service refusal. Adult visitor care denial is not documented.",
+    "protection": "Division high court preserved adult surgery coverage; national orders partly enjoined; no documented traveler emergency-care denial.",
+    "interaction": "Travelling with a trans minor exposes the family to care ban and school/medical documentation; adult routine care remains undocumented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as hostile; justice memo uses 'radical gender ideology'; executive orders target school gender ideology and teachers. Division removed gender-identity civil rights.",
+    "protection": "Strategy says counterterrorism powers not used for mere disagreement; courts enjoined several orders; national hate-crime law exists.",
+    "interaction": "Chilling for advocacy and families with minors; ordinary tourist less directly targeted, but official framing raises risk if detained or reported.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bans gender-affirming care under 18; school bathroom rule requires birth-certificate sex and makes single-person facilities a guardian-consented student accommodation; K-6 instruction ban; national order threatens teachers facilitating social transition.",
+    "protection": "Single-person facilities available to students with guardian consent; some national orders enjoined; adult care coverage preserved by state court.",
+    "interaction": "A trans minor travelling with a guardian faces care denial and school-facility outing; border document mismatch can expose the family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific homicide/violence figures are documented; monitoring says counts are undercount floors and legal-risk grades do not measure private violence. State civil-rights removal leaves no state remedy for discrimination.",
+    "protection": "National hate-crime statute covers gender identity; some states/cities have protections, but the division's are removed; police response to trans victims is not documented.",
+    "interaction": "If assaulted or refused service, a national hate-crime route may exist but state civil remedy is absent; data gap prevents rate estimate.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Division removed gender-identity protections from civil-rights law and preempted stronger local ordinances; visitor refused service/housing/job has no state remedy. Border fraud finding can yield permanent ineligibility.",
+    "protection": "National hate-crime statute; court challenges to passport and executive orders; legal-aid FAQ; some injunctions; state high court adult care ruling.",
+    "interaction": "National litigation may shift rules, but local remedies are barred and enforcement against adult school visitors is undocumented.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra has a routine border register barring trans visitors, with exclusion and no effective remedy. Here entry exclusion is conditional on document discrepancy or fraud suspicion, not a blanket bar, but national immigration custody abuse and the division's removal of civil-rights remedies add severe harm. The case sits slightly below 0.35-A, not above."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and discretionary refusal, usually administrative, with a slow appeal desk. This jurisdiction has similar border/document friction but adds documented abusive immigration custody and no state civil-rights remedy; it lacks Kestrel's limited appeal mechanism. Clearly below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, tribunal appeals, brief detention, and compensation. Here border refusal or fraud findings, abusive custody, and no state civil-rights remedy mean remedies do not work for trans visitors. Far below 0.75-C."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia assigns custody by birth sex and criminalizes cross-dressing in administrative buildings, with slow remedies. This division lacks a documented general adult bathroom or cross-dressing ban, but national immigration custody abuse and the school-facility rule create comparable severe exposure; ordinary visitor risk is somewhat lower, so slightly above 0.25-C."
+   }
+  ],
+  "synthesis": "The operative regime is national entry and document control layered onto a division that has stripped gender-identity civil-rights protection and imposed a school-facilities birth-certificate rule. A trans visitor whose documents or presentation prompt suspicion can be refused, face a fraud ineligibility finding, or enter immigration custody where abuse is documented. Outside school grounds and custody, no division-wide adult public-restroom ban or documented visitor violence pattern appears; national hate-crime law and litigation offer partial recourse. The combined effect is High Risk, not the extreme 0.15 tier, but well below jurisdictions where remedies operate."
+ },
+ "parse_error": null
+}

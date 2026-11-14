@@ -1,0 +1,78 @@
+{
+ "cell": 38,
+ "region": "66186276B82803899326534:Indiana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007196816",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "Combined national entry screening, document mismatch, national custody abuse and minor-care denial dominate. State has no bathroom ban and two city ordinances, which reduce everyday facility friction but do not override national screening, facilities or detention. Adult-alone exposure is concentrated at entry, government-funded settings and custody; adult-with-minor exposure is higher because minors cannot obtain gender-affirming care and school notification can force outing. Litigation and guidance are partial; unknown violence is uncertainty, not safety.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visitor passports and visas are screened against sex assigned at birth; mismatched markers, limited X-marker acceptance, record doubt, or suspected misrepresentation can trigger refusal, delay, stranding and permanent fraud bars.",
+    "protection": "Existing X passports remain valid until expiry; legal challenges and travel guidance exist, but neither is documented as reliably restoring entry or accuracy during a visit.",
+    "interaction": "State licence and birth-certificate rules mainly bind residents, but national passport and visa screening applies to every visitor and to families with minors.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National custody reports include forced labour, beatings, solitary confinement, severe sexual abuse, hormone removal and conversion-therapy-style controls; document mismatch can escalate from screening into detention.",
+    "protection": "Habeas and litigation may exist, but no operational visitor immunity or reliable release recourse is documented.",
+    "interaction": "An entry or facility encounter can move into national custody; local ordinances do not control national detention placement or care denial.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive policy bars gender-identity-congruent use of government-funded single-sex facilities; other jurisdictional maps show school and government-building bans, and national rules can reach public settings.",
+    "protection": "In this state/province no bathroom-restriction law is in force, and two cities protect restroom use; criminal facility bills failed to become law.",
+    "interaction": "Local no-ban reduces everyday street facility risk but does not override national-funded facility restrictions or school and checkpoint contexts.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor visitors are barred from gender-affirming care including blockers, hormones and surgery; adult continuity care is not documented. National custody policies may deny hormone medication.",
+    "protection": "No operative care guarantee for visitors is documented; emergency care practice is unknown.",
+    "interaction": "A guardian seeking treatment for a trans minor may be refused and drawn into medical or school document checks.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism documents name radical pro-transgender agendas; polls show majority support for birth-sex documents; legal risk assessments label this state/province harsh, and official hostility may license stops and service denial.",
+    "protection": "National hate-crime sentencing enhancement covers gender identity, but enforcement is undocumented; city and county nondiscrimination ordinances provide limited local protection.",
+    "interaction": "National threat framing can shape screening and detention even where the state/province has no restroom restriction law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors face entry document mismatch, denial of gender-affirming care, school notification of preferred names or pronouns, and possible facility exclusion in government-funded settings; guardians may be drawn into disclosure disputes.",
+    "protection": "City ordinances protect restroom use, and the state/province has no bathroom-restriction law; marriage and employment rulings are climate, not care protection.",
+    "interaction": "Care or school denial can turn a family trip into bureaucratic scrutiny and forced outing to parents, clinicians or authorities.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific raids or visitor attacks; public opinion and official hostility suggest harassment or service-denial risk, but violence frequency is unassessed.",
+    "protection": "The state/province has no bathroom ban and two city ordinances protect restroom use; local employment ordinances exist but enforcement is undocumented.",
+    "interaction": "Street exposure may be lower than in ban jurisdictions, yet any police interaction can lead to identity questioning or national custody.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Policy status shifts through litigation and administrative rules; travellers cannot reliably know which passport, facility, care or custody rules are operative on arrival.",
+    "protection": "Civil-liberties suits, guidance and local ordinances exist, but none is documented as reliably effective during short stays.",
+    "interaction": "Uncertainty compounds entry, care and custody risk; a single document mismatch can trigger escalation rather than correction.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Matches universal entry denial and humiliation without routine imprisonment, but this dossier adds national custody abuse and minor-care denial while local no-ban rules prevent a lower score."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Shares severe custody abuse and birth-sex logic, but no routine raids, cross-dressing arrests or shelter admissions are documented; visitor street exposure is less systematic, so slightly higher."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "Comparable to a place where nonresident care is constrained and education or facility scrutiny exists; here adult care is unknown and local city protections apply, but minor-care denial lowers it."
+   }
+  ],
+  "synthesis": "The operative risk is national: passport, visa and document screening create refusal, stranding and permanent-fraud exposure if a trans visitor is outed. National facility and custody policies add humiliation, care denial and severe abuse if interaction escalates. State and city mitigations reduce everyday restroom and service risk, especially for adults, but cannot displace entry screening or custody. For an adult alone, risk sits near the exclusion-and-humiliation band because no local arrest regime is documented. For an adult with a minor, care denial and school notification lower safety. Thin violence data is uncertainty, not protection."
+ },
+ "parse_error": null
+}

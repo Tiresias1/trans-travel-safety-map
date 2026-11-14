@@ -1,0 +1,78 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004203684",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "The combined regime is high risk: national entry screening can refuse or flag permanent fraud for document/sex discrepancy, facility bans are widespread, and the division's school/college bathroom rule adds a hostile facilities layer. Detention exposes trans people to documented abuse and hormone denial. Official rhetoric frames 'radically pro-transgender' activity as a security concern. Protections are real but partial: courts have enjoined some measures, national hate-crime law covers gender identity, and there is no general criminalisation of trans identity or execution pathway. This sits above the 0.15 anchors (no routine arrest/imprisonment for presentation) but below 0.35 entry-exclusion-only anchors because custody, facilities and official hostility are more severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National screening may refuse or flag lifetime fraud where documents or appearance raise doubt about sex; X markers are not processed; reported passport confiscation and travel advisories.",
+    "protection": "Foreign-issued documents are generally used; fraud finding is not automatic and requires four elements; court challenges and a legal-aid FAQ exist.",
+    "interaction": "Risk rises at border if marker, name or presentation mismatch; secondary inspection can lead to refusal, stranding or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; national prisons adopt conversion-style practices, hormone removal and care denial; bathroom arrest led to men's-ward holding.",
+    "protection": "National hate-crime statute covers gender identity; courts can review some detentions; some executive orders are enjoined.",
+    "interaction": "Document discrepancy can trigger secondary inspection and custody, where birth-sex placement and abuse risks compound; remedies are slow.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Many states ban gender-congruent facilities in government buildings; the division bans students in public schools, colleges and universities from using restrooms matching identity; four states criminalise certain bathroom use.",
+    "protection": "No division criminal trespass provision is documented; a court order protects one student plaintiff; most private settings are not covered.",
+    "interaction": "Adult visitors face exclusion in some government buildings; travelling minors in school/college settings face the division rule; criminal risk is concentrated in four states.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy is hostile to gender-affirming care for minors, with proposed insurance bars and custody hormone denial; 27 states ban care for children.",
+    "protection": "Several measures are enjoined or in litigation; adult emergency care is not documented as restricted for visitors.",
+    "interaction": "Adult visitor routine care is not clearly barred; a travelling trans minor or family faces a hostile care climate and possible custody denial.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterror strategy names 'radically pro-transgender' groups; a justice-department reward memo references 'radical gender ideology'; executive orders direct investigations of schools and teachers.",
+    "protection": "The rhetoric is not a stated reward criterion; courts have blocked some orders; national hate-crime law exists; no general trans criminalisation.",
+    "interaction": "This raises detection and retaliation risk for visible advocacy or trans families, but direct visitor enforcement is not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division school/college bathroom rule; national order threatens prosecution of teachers using preferred names; child care bans and hostile school climate.",
+    "protection": "A court order protects one student; some executive orders are enjoined; no blanket visitor-school enforcement is documented.",
+    "interaction": "An adult with a trans minor should avoid school/college facilities and care settings; parent may face scrutiny if the minor's identity is disclosed.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific visitor violence incidents are documented; safety varies; the division has no hate-crime statute and the sodomy provision is unrepealed.",
+    "protection": "National hate-crime law covers gender identity; police are not documented targeting trans visitors; some local employment protections exist.",
+    "interaction": "Recourse is uneven and weaker in the division; absence of reported incidents is not evidence of safety.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and entry rules are challenged but in effect; the division lacks a hate-crime statute; bathroom-law enforcement is unsettled; remedies are slow and venue-dependent.",
+    "protection": "National civil-liberties litigation, injunctions, an appellate order and a legal-aid FAQ provide some recourse; national hate-crime coverage applies.",
+    "interaction": "Courts sometimes protect individual plaintiffs but cannot reliably prevent border or facility harm; outcomes depend on timing and jurisdiction.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia has routine arrests, months in pretrial custody, beatings, coerced confessions and a latent capital provision. This dossier has no general arrest or imprisonment for presentation and no execution pathway, so it is materially safer than 0.15-A, though border fraud flags and custody abuse remain severe."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra uses entry denial and humiliation without arrest. Here entry refusal and permanent-fraud risk are joined by facility bans, documented custody abuse and official threat rhetoric, so this jurisdiction sits below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles mainly produces administrative secondary screening, refused admission and return transport. This dossier adds facility exclusion, custody harm and hostile state framing, so it is materially below 0.55-B."
+   }
+  ],
+  "synthesis": "The operative regime is layered and high risk. National border screening can strand or permanently bar a trans visitor whose documents or presentation raise sex doubt; facility bans are widespread, and the division's school/college bathroom rule reaches campuses. Detention carries documented abuse, forced labour and hormone denial. Counterterror rhetoric heightens official threat framing. Protections are real but partial: courts enjoin some orders, national hate-crime law covers gender identity, and there is no general trans criminalisation or execution pathway. The division adds a hostile facilities layer without documented visitor criminal enforcement; remedy depends on venue and timing."
+ },
+ "parse_error": null
+}

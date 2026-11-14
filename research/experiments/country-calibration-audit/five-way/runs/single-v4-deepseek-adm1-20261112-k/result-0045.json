@@ -1,0 +1,78 @@
+{
+ "cell": 45,
+ "region": "66186276B94082813086253:District of Columbia",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0093122",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The jurisdiction is a thin, anonymised dossier with no visitor-specific evidence, so the rating is extrapolated from structural signals: the parent regime's restrictive passport/visa rules, border screening, facility bans, and documented immigration-custody harms. The local division is low-risk on a legal assessment and has no local bathroom ban, but its protections are overridable by the national legislature and national executive. The documented national regime is a tier-1 universal exposure (passport/visa mismatch and facilities) with no documented working remedy for travellers, so the score sits in the High Risk band, not a neutral midpoint.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "care_services": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "minors_guardians": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Not documented.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "not_documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "This dossier is more severe than 0.35-A because the parent regime documents immigration-custody harm and passport/visa restrictions, not only border exclusion; but the local division's low-risk legal assessment and no local bathroom ban keep it above the worst tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "This dossier is more severe than 0.55-B because the parent regime documents detention harms and passport/visa barriers, while 0.55-B's screening outcomes are administrative and non-custodial; the local low-risk assessment is a mitigating factor but not a working remedy."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "This dossier is lower than 0.75-C because no traveller-facing remedy, tribunal, or care access is documented; the local legal-risk placement is a legal-assessment signal, not a working protection against the parent regime's passport, border, and custody exposures."
+   }
+  ],
+  "synthesis": "The combined regime is driven by the parent's passport/visa, border, facilities, and custody rules, while the local division contributes a low-risk legal-assessment signal and no local bathroom ban. Because the parent's measures can override local protections and no documented traveller remedy operates, the visitor's exposure is a high-risk universal exposure rather than a moderate or protected one."
+ },
+ "parse_error": null
+}

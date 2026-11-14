@@ -1,0 +1,78 @@
+{
+ "cell": 28,
+ "region": "66186276B6628180846672:Pennsylvania",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006351518",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Parent national rules impose severe traveller-facing entry restrictions: passport X removal, M/F-only passports/visas, secondary screening for sex doubt, denial, confiscation, stranding, possible permanent fraud inadmissibility. Federal immigration custody has documented forced labour, beatings, solitary and sexual abuse; national facility executive order and other-state bathroom arrests create tier-1/3 exposure. The division is comparatively protective: nondiscrimination, X licences, no adult facility/care bans, and largest-city sanctuary shielding care and public accommodations from outside enforcement. These local rules do not erase federal border, detention or government-funded facility exposure. For adult travellers and families inside the sanctuary, everyday friction is lower; risk rises sharply at entry, in federal custody, or outside protected jurisdictions.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passports/visas reject X and require M/F; officers screen sex-doubt, request evidence, may deny or refer to advisory opinion; reports of passport confiscation, blocked processing, stranding, and fraud/lifetime inadmissibility.",
+    "protection": "Court challenges, legal-aid FAQ, no documented automatic criminal refusal for mere mismatch; division sanctuary does not cover entry; visitor carries home documents.",
+    "interaction": "Federal entry applies before local protections; mismatch can cascade to secondary screening, denial, or detention despite city nondiscrimination.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced-labour threats, beatings, solitary, severe sexual abuse; other-state arrest held 24h in men's ward; national correction facility hostility.",
+    "protection": "No documented border/custody remedy; local sanctuary and civil remedies may help only for care/public accommodation, not detention.",
+    "interaction": "Entry discrepancy escalates to custody where placement and abuse risk dominate; state/city shields do not bind federal detention.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-congruent government-funded single-sex facilities; some states criminalise restroom, with capitol arrest, trespass charge, 60-day jail risk.",
+    "protection": "Division has no mapped adult facility ban; largest city requires gender-neutral public bathrooms and fair-practice protection.",
+    "interaction": "Local facilities safer, but federal buildings/transport, funding-linked spaces, and trips outside city retain exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal hostility to minor gender-affirming care, school investigations, subpoenas and funding freezes; adult care lawful but customs/device checks not documented.",
+    "protection": "State adult care lawful; city sanctuary shields travellers seeking care and bars city enforcement; local nondiscrimination.",
+    "interaction": "Adult/minor care in city relatively safe; outside sanctuary or emergency involving federal/immigration actors less certain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' violent groups; national orders frame gender ideology as threat; chill reporting and increase discretion.",
+    "protection": "Division commission interprets sex as gender identity and awards remedies; municipalities bar discrimination; no documented anti-trans adult enforcement.",
+    "interaction": "Local law-enforcement climate is better, but federal rhetoric may shape border, airport, and custody officers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor documents/school/care could trigger national criminalisation of social transition or funding probes; guardians not explicitly criminalised but chilling.",
+    "protection": "City sanctuary, school X option, youth-serving anti-discrimination, governor veto of sports bans reduce family exposure.",
+    "interaction": "Family stays safer inside city; entry screening, federal school probes, or leaving sanctuary raises risk.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current trans-specific visitor violence or harassment pattern documented in division; statewide hate-crime coverage absent could leave remedy gap.",
+    "protection": "Commission/municipal non-discrimination and sanctuary support local reporting; national hate-crime law exists but access unclear.",
+    "interaction": "Everyday safety likely local-protection dependent; hostile federal climate and missing bias statute may weaken deterrence.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved litigation, shifting enforcement, unknown device searches, ward placement, minor care, outside-sanctuary exposure; no data on consular access.",
+    "protection": "ACLU suit, legal FAQ, commission orders/damages, city sanctuary provide partial redress.",
+    "interaction": "Local/civil remedies help discrimination/care disputes; uncertain against federal entry/detention or emergency outside city.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Parent border denial/stranding and marker-only passports resemble Visitor Conduct Register, but this case adds severe immigration custody abuse and local sanctuary, so it sits between 0.35 exclusion and 0.55 friction rather than pure 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Compared with extended secondary screening/refusal, this parent is worse because markers are restricted and custody abuse documented; local facilities/care protections reduce post-entry exposure, yielding a mid-0.40s score."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Border officer training and reliable release/appeal are absent; passport X removal, entry denial and federal custody make this materially below 0.75 despite local nondiscrimination."
+   }
+  ],
+  "synthesis": "The combined regime is federal entry/immigration restriction plus local civil protections. A visitor whose presentation or records mismatch faces border screening, refusal and possible permanent inadmissibility; if held, immigration detention can include forced labour and sexual violence. Inside the division, especially the largest city, adult facility, lodging, and care exposure is reduced by nondiscrimination, X licences, gender-neutral facilities, and sanctuary orders. Minor travellers benefit locally but national school/care criminalisation creates uncertainty if federal enforcement reaches them. Street-violence data are absent, and recourse depends on local agencies that may not neutralize federal actors."
+ },
+ "parse_error": null
+}

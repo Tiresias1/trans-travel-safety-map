@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00289443",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined operative regime pairs a hostile national framework with an actively hostile state layer. Visitor-facing exposures: visa fraud grounds with permanent ineligibility findings for suspected sex misrepresentation, documented detentions of foreign citizens over visa issues, and scanner/secondary-screening outing risk; at state level, a criminal trespass offence (up to 60 days jail, men's-ward holding documented) for facility use, a care ban for minors that reaches a travelling family, and document practices requiring surgery proof. Severity is arrest, custody, and care loss — not execution or systematic imprisonment — and protections exist (national hate-crime statute covering gender identity, sanctuary cities, courts). The state sits in the 0.45 band: universal-exposure measures without criminalisation, with partial recourse.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa cable instructs officers to refuse cases with document/sex discrepancy and consider lifetime fraud ineligibility; foreign citizens have been detained over visa issues; trans athletes banned from entering; passport confiscation/stranding reported for some travellers.",
+    "protection": "X-marker passports remain valid until expiration; fraud finding requires all four elements and is never automatic; litigation ongoing.",
+    "interaction": "Document mismatch at entry can escalate into investigation, fraud allegation, and detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented detention of foreign citizens over visa issues; national immigration custody shows forced labour, beatings, sexual abuse of trans men; state corrections law bars transition care in custody with no taper plan.",
+    "protection": "National courts have blocked comparable measures in two other states; habeas/courts formally function.",
+    "interaction": "An entry discrepancy investigation can route a visitor into immigration custody with documented abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "This state criminalises use of facilities designated for the opposite sex in public buildings (trespass, up to 60 days jail); a trans woman was arrested in a women's restroom at the state capitol, handcuffed, and held 24 hours in a men's ward; many other states ban facility use.",
+    "protection": "Offence requires willful entry plus refusal to depart when asked, with exemptions; hate-crime statute covers gender identity.",
+    "interaction": "Facility use is a universal-exposure measure; state arrest can trigger national-level attention.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "SAFE Act bars all gender-affirming care for anyone under 18 in the state; Medicaid barred for all ages; prison/jail care barred; provider licence and 15-year lawsuit exposure.",
+    "protection": "Those already in treatment may continue; highest court unanimously upheld the ban, so no judicial relief; two cities declare sanctuary.",
+    "interaction": "A minor travelling with a guardian loses access to care in this state; adult refills are not explicitly barred but the hostile national health rules loom.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as neutralisation targets; state tipline for anonymous reporting of 'gender transition intervention'; national justice department instructed law enforcement to establish rewards for information.",
+    "protection": "Courts have enjoined several orders; the counterterrorism document says it will not target people who merely disagree.",
+    "interaction": "State tipline and national framing raise the risk of official attention to a trans visitor.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "SAFE Act bars all gender-affirming care for minors; a travelling parent with a trans minor faces care denial or possible investigation; national executive order criminalises facilitating a trans minor's social transition.",
+    "protection": "Those already in treatment may continue; sanctuary cities offer informal support but no documented legal shield for visitors.",
+    "interaction": "Minor's care ban interacts with national framing of care as 'mutilation'; exposure reaches a travelling family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated incidents of violence against a trans person in this state documented; no documented police targeting of trans visitors beyond the restroom arrest.",
+    "protection": "Gender-identity hate-crime statute covers bias-motivated violence; 66% of residents support birth-sex document rules, but attitudes are not hostile-framing.",
+    "interaction": "No documented pattern of violence; police response depends on general law enforcement.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport policy challenged but in effect; 2026 ballot initiative seeks indefinite care ban; legislative direction is toward permanence, not sunset.",
+    "protection": "Civil-liberties litigation, national hate-crime statute, and two sanctuary cities provide partial recourse; legal-aid FAQ exists for travellers.",
+    "interaction": "Remedies are uneven and contested; several orders are blocked or enjoined, so practical exposure depends on which measures are in effect at the moment of travel.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "This state's universal-exposure facility law plus criminal trespass and arrest are comparable to that anchor's exclusionary regime, but severity here is higher (arrest, 60-day jail exposure, men's-ward holding) than the exclusion-only regime, so it sits above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar to that anchor's border screening friction and discretionary denial, but this state adds a criminal facility offence and a documented minor-care ban — heavier than 0.55-B's administrative-only penalties."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Weaker than that anchor: Meridia has no criminal facility offence and no documented care ban; this state's documented arrest and custody-care restriction sit materially below 0.75-C."
+   }
+  ],
+  "synthesis": "The combined operative regime is dominated by the state's criminal facility law — a universal-exposure measure reaching every trans visitor who uses a public restroom — and a care ban for minors that reaches a travelling family. The national framework adds visa fraud grounds, entry refusals, and documented detention of foreign citizens over visa issues, with immigration custody abuse documented. These are tier-1 exposures with no working local remedy. The national hate-crime statute and two sanctuary cities are partial mitigations, but they do not offset the facility law or the care ban. The state sits in the 0.45 band: universal-exposure measures without criminalisation, with partial recourse and no documented violence pattern."
+ },
+ "parse_error": null
+}

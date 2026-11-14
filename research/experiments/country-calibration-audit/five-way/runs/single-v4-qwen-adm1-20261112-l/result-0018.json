@@ -1,0 +1,78 @@
+{
+ "cell": 18,
+ "region": "66186276B43071933723331:California",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.0037984",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is restrictive at federal entry, documents, facilities, and custody: birth-sex passport/visa rules, discrepancy-driven refusals, permanent ineligibility risk, facility bans, trespass arrests, and documented immigration/corrections abuse create high severity if a traveler is outed. The state/province sanctuary for youth care and identity-based prison guidance materially reduce risk for an adult traveling with a trans minor seeking care, but do not neutralize federal border screening or national custody rules. Functioning courts, hate-crime law, legal aid, and partial state protections prevent extreme criminalization from dominating, placing it above imprisonment-as-norm but below safer reduced-risk tiers.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport/visa rules require sex assigned at birth, eliminate new X markers, and can refuse cases over document discrepancies; suspected misrepresentation may trigger permanent lifetime ineligibility, and travelers report passport confiscation or blocked processing leaving them stranded.",
+    "protection": "Litigation challenges marker policy; some rules are contested or enjoined; legal-aid guidance exists; existing X passports remain valid; mismatch alone is not a blanket criminal offense.",
+    "interaction": "State document tightening reinforces birth-sex records; federal screening precedes state sanctuary protections, so entry discrepancies can escalate into investigation or fraud allegations.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, guard harassment, beatings, solitary confinement, and severe sexual abuse; federal corrections adopts conversion-style rules, hair cutting, and hormone removal; one facility arrest involved a 24-hour men’s ward hold.",
+    "protection": "State prison guidance documented identity-based housing within general population as of 2021, though unresolved; national and some state hate-crime laws exist; some executive orders are enjoined; courts and advocates remain partially operative.",
+    "interaction": "Federal custody regime can override more protective state prison policy for detained travelers; border/document screening can move a traveler into immigration custody where birth-sex placement and abuse are documented risks.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars gender-congruent access to government-funded single-sex facilities; state bans cover many government buildings and some private venues; four states criminalize certain opposite-sex facility use as trespass, with one reported arrest and handcuffing.",
+    "protection": "Not all states impose mapped facility bans; 22 states plus the capital have gender-identity anti-discrimination law; litigation continues; many spaces may fall outside listed restrictions.",
+    "interaction": "Visitors encounter federal definition of sex plus state enforcement; variation does not erase exposure in government-owned or federally funded facilities.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility frames youth gender care as harm, threatens schools and providers, revokes funding, subpoenas medical records, and proposes public-insurance barriers for minors.",
+    "protection": "State sanctuary law allows outside youth to obtain hormones and puberty blockers and shields families from child-abuse investigation or prosecution for traveling to receive care; state-funded prison gender care is documented.",
+    "interaction": "The care shield helps planned treatment travel for a minor, but does not preempt federal border screening, immigration custody, or facility restrictions for ordinary travel.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Government materials remove trans terminology, rescind name/pronoun rules, mention “radical gender ideology” in enforcement guidance, and a counterterrorism strategy prioritizes identification and neutralization of “radically pro-transgender” groups; polls show majority support for binary documents and sports restrictions.",
+    "protection": "Hate-crime statute covers gender identity; some states have bias laws; marriage equality is recognized; legal aid, civil-liberties litigation, and media oversight persist.",
+    "interaction": "State threat framing raises police and public severity, while rule-of-law channels may produce partial remedies; protective state law does not cancel national institutional hostility.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor can be outed during border or facility checks; guardian shares entry and possible detention exposure; national rhetoric increases fear of investigation, separation, or service denial for family care purposes.",
+    "protection": "State sanctuary law protects minor access to hormones and puberty blockers and shields guardian/family from child-abuse or criminal prosecution for seeking care outside the state.",
+    "interaction": "Care protection is meaningful once in state, but does not override federal screening, national custody rules, or broader family-document risks.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division recorded the highest raw national anti-LGBT incident count in 2025 and rising hate-crime reports in its largest city; no population denominator is supplied, so trans-specific visitor incidence is unclear.",
+    "protection": "National hate-crime law and some state bias statutes exist; incident reporting infrastructure is documented; anti-discrimination protections operate in multiple jurisdictions.",
+    "interaction": "Raw counts may reflect population size and reporting capacity rather than individual traveler risk; police response depends on state, federal framing, and whether reporting is trusted.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved issues include current force of contested orders, continued state identity-based prison housing, applicability to transit/private lodging, state-specific document/facility rules, and per-capita violence rates.",
+    "protection": "Courts, lawsuits, legal-aid FAQs, ombuds/complaint pathways, civil-liberties organizations, and state protections offer possible remedies; some federal actions have been enjoined.",
+    "interaction": "Legal remedies may delay or narrow harms but do not reliably reverse entry refusals, fraud findings, or custody placement; combined federal/state exposure requires verification at each journey stage.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "Slightly safer than 0.15-B: no capital or routine months-long presentation prosecution is documented, and courts/advocacy remain partly functional. But visa refusal, permanent ineligibility risk, and severe immigration custody abuse keep it near the bottom."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar to 0.25-C, perhaps worse for detained travelers: birth-sex custody, forced labour, and sexual abuse are documented. State sanctuary care and prison identity-based housing provide partial mitigation, so it remains near 0.3 rather than below."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Below 0.35-B: consequences exceed short stops, passport seizure, fines, and unofficial files because facility arrest, conversion-style custody, sexual abuse in immigration detention, and permanent entry bars are credible. No execution risk keeps it above the 0.15 tier."
+   }
+  ],
+  "synthesis": "In practice, an adult alone faces nationally enforced document, facility, and custody exposures with partial legal remedies. An adult with a trans minor has a materially safer care pathway in the state sanctuary jurisdiction, but that protection does not neutralize federal border screening or national hostility. The combined regime sits at high risk rather than severe-but-certain imprisonment because protections exist, yet federal entry rules and custody abuses carry severe consequences for an outed traveler."
+ },
+ "parse_error": null
+}

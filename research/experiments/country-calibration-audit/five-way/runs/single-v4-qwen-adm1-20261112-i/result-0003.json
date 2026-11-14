@@ -1,0 +1,82 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007233706",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "For an adult travelling alone, the sharpest risk is border/airport screening: passport/visa marker rules can force disclosure, refusal, stranding or referral to federal custody with reported abuse; federal government-funded single-sex facility restrictions remain universal. For an adult travelling with a minor, local shield law, school protections and public-accommodation law reduce care and facility risk in the division, but federal anti-minor-care orders and subpoena/funding threats create uncertain preemption exposure. The combined score reflects high severity at federal stages partly offset by operative local protections, yielding Elevated Risk rather than Reduced or High.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented. Passports/visas require binary birth-sex marker; mismatches trigger refusal, additional evidence and possible permanent fraud ineligibility; reports of confiscated/blocked passports and stranded travellers; existing X still valid but not protected in this division.",
+    "protection": "Not documented. Division law does not control passports, visas, ports of entry; local X/state IDs do not offset federal document screening.",
+    "interaction": "Border stage is federal. It occurs before division protections can apply; refusal or fraud finding creates departure/stranding or referral to immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented severe harm if detained: immigration custody reports forced labour, beatings, solitary and sexual abuse; corrections policies remove hormones/force conversion therapy; data on transgender prisoners stopped.",
+    "protection": "Not documented as operative for visitors. National courts and injunctions contest orders but do not show release, consular access, or immunity in custody.",
+    "interaction": "A document mismatch or fraud suspicion can escalate entry review into immigration detention where local public accommodations and shield laws cannot prevent federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Documented federal order bars government-funded single-sex facilities matching identity; airport screening guide warns pat-downs; many parent states criminalise or ban facilities. Federal spaces remain restricted even in division.",
+    "protection": "Documented locally: public-accommodation and gender-neutral restroom rules, largest-city all-gender schools, no local bathroom ban; but local law is not shown to pre-empt or nullify federal facilities.",
+    "interaction": "Exposure varies by funding/ownership; non-federal local spaces safer, federal buildings, ports, transit security and federally funded sites carry birth-sex restriction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Documented federal hostility to trans care, minors-care bans, funding threats, hospital subpoenas and reimbursement proposals; local federal funding rules may still bite.",
+    "protection": "Documented division shield law protects care within it, including patients/providers travelling from banned jurisdictions, and conversion-therapy ban; local clinics/hospitals are likely safer if shield applies.",
+    "interaction": "Care in division can be protected locally, but federal investigators/subpoenas may reach providers/records; shield strength against federal action is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented state threat framing: binary-sex order, removal of pronoun policies, military ban, counterterrorism prioritises radical pro-transgender groups, and support for assigned-sex documents among public.",
+    "protection": "Documented local protections: gender-identity hate-crime penalties, anti-discrimination law since 2006, panic-defence repeal; national hate-crime statute exists. These protect against local bias but not federal identity law.",
+    "interaction": "Federal framing raises risk at checkpoints/federal venues; division enforcement treats gender identity as protected in local public/private services, reducing street-level hostility if local actors comply.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Documented federal executive orders attack minors care/social transition, threaten prosecution of teachers using chosen names/pronouns and funding; polls support sports/binary records; guardian may be investigated only if federal rules reach schools.",
+    "protection": "Documented local shield law covers minors travelling for care; school bullying/privacy rules, all-gender bathrooms in largest city, public-accommodation law. Conversion-therapy ban supports youth.",
+    "interaction": "A parent bringing a minor for care or schooling encounters federal hostile law at document/border/funding stages but local protective law for care and facilities; federal preemption/subpoena risk uncertain.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented visitor-specific anti-trans violence or police targeting in this division; federal document checks can still out travellers. General polls show social pressure, not incident counts.",
+    "protection": "Documented local anti-discrimination, hate-crime penalties and city/school ordinances likely prompt police response in local venues; national hate-crime law covers gender identity.",
+    "interaction": "Street exposure lower in division non-federal venues, but airports, federal buildings and immigration custody remain where national policy overrides local policing.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Documented weak remedy at federal document stage: Supreme Court allowed passport restrictions, suit pending, foreign advisories, no reporting of immigration/transgender custody counts; shield law durability not sourced.",
+    "protection": "Documented division equality law, complaints/ordinances, legal-aid FAQ, advocacy and courts contesting orders; local non-federal remedies likely work for public accommodation/care claims.",
+    "interaction": "Remedies diverge by actor: local venues and care seekers have operative protection; border, federal facilities, custody and federal school investigations are unremedied or pending.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "Similar border/document exposure: state gender examination, registry, travel denial. Here federal visa screening and fraud permanent ineligibility are comparable, but local shield/public-accommodation protections reduce non-federal facility and care exposure; immigration-custody abuse makes severe stages worse."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Comparable registration/database exposure. Parent passport/visa screening plus federal facilities is harsher, but division public-accommodation law, gender-neutral single-occupancy restrooms and care shield protect local daily life and travelling families, placing combined regime slightly above pure 0.45 registration risk."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Local health/public accommodation protections are stronger than 0.55-C ward mismatch with advocate remedies. But entry screening can refuse/fraud and immigration custody abuse lacks reliable remedy; that unremedied federal tier1 exposure keeps score below 0.55-C."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, appeals, compensation. This jurisdiction has hostile federal passport/visa rules and documented custody abuse; protective local layer cannot cancel those. Score sits materially below 0.75-C despite local equality law."
+   }
+  ],
+  "synthesis": "Combined regime is split by sovereign level. Entry and federal stages are tier-one exposure: binary passport/visa rules, document discrepancy investigations, possible permanent fraud ineligibility, government-funded facility restrictions, and documented severe immigration/corrections custody harm. These are not neutralised by the division. Within the division, strong public-accommodation law, gender-neutral single-occupancy restrooms, city school policies, hate-crime penalties and a shield law materially lower everyday and minor-care risk, especially for families travelling locally for lawful care. The result is Elevated Risk: safer than a wholly hostile national profile once inside non-federal settings, but still unremedied federal document/custody/facility exposure at the worst stages."
+ },
+ "parse_error": null
+}

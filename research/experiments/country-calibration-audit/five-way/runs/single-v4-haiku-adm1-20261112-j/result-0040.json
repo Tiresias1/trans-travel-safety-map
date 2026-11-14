@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0055684",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "The combined regime is split. The state layer is strongly protective: gender-identity discrimination bans in public accommodations and services, enhanced hate-crime penalties (effective 1 Oct 2026), custody placement by gender identity, a 2022 shield law, and no bathroom criminalisation. The national layer is restrictive and reaches every visitor: passport sex-marker restrictions upheld by the Supreme Court, refusal and possible lifetime fraud ineligibility at entry for marker discrepancies, and documented passport confiscation and stranding. Federal and immigration custody carries documented beatings, forced labour and sexual abuse of trans detainees, which remains an enforced exposure regardless of state law. Federal facility rules and hospital-record subpoenas add exposure. Most of the traveller's risk sits at entry and in federal custody, which the state layer cannot offset. Rated Elevated, toward the upper end.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport marker must match sex at birth; new applications processed only as M or F. Discrepancy triggers refusal, document blocking and confiscation, with reported stranding. Fraud ground may support permanent ineligibility.",
+    "protection": "Existing X passports valid to expiry; a national civil-liberties suit is pending and the policy is contested.",
+    "interaction": "Home passport and entry cable interact: a mismatch at federal entry can lead to refusal, and the state's marker rules do not reach the border.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections adopted conversion-style policies from 2026; trans prisoner counts no longer reported.",
+    "protection": "State custody places by gender identity and applies 2018 strip-search and housing rules, but this does not govern federal custody.",
+    "interaction": "A visitor detained federally at entry or in the interior is outside the state's protections; a state-custody arrest would fall under the protective state regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars facilities congruent with gender identity in federally funded single-sex settings. Trespass-based bathroom offences exist in other states, not this one.",
+    "protection": "This state bans discrimination in public places and government services and has no bathroom criminalisation.",
+    "interaction": "Federal rules govern federal buildings within this state; the state's public-accommodation law operates alongside them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas of hospital records for under-19 patients; proposed rules to bar public insurance reimbursement for under-18 care; federal youth-service shutdowns.",
+    "protection": "The 2022 shield law protects patients and providers from charges where care is banned at home; this state's care access is not documented as restricted.",
+    "interaction": "A visitor from a restricting state can rely on the shield, but federal records demands and reimbursement rules may still reach the care episode.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal orders frame gender-identity advocacy and 'radically pro-transgender' groups as counterterrorism targets; criminal prosecution threats for teachers; 'gender ideology' investigations.",
+    "protection": "Counterterrorism powers are stated not to target people who merely disagree; several orders are enjoined.",
+    "interaction": "State law does not restrict federal law-enforcement framing; the visitor's exposure rises only if they engage in targeted advocacy.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling with a minor: federal gender-care restrictions, school-related prosecution threats, and hospital-record demands affect a minor's care. Minors' passports are subject to the same marker rules.",
+    "protection": "State shield law and anti-bullying law covering all school premises apply within the state.",
+    "interaction": "A family arriving with a minor faces federal entry and marker exposure, while care and school protections depend on state operation.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific trans killing or violence count is in the inventory; a hate-crime statute covers gender identity at the national level.",
+    "protection": "State hate-crime law covers gender identity and expression with enhanced penalties from 1 Oct 2026; police custody is gender-consistent.",
+    "interaction": "Strong state recourse for street violence, with the federal hate-crimes statute as backup.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal remedies are partial and contested; the passport suit is unresolved; federal custody complaints have not produced documented relief.",
+    "protection": "State anti-discrimination enforcement, shield law and the 2015 document procedure operate in state records; the ranking is a rubric, not an enforcement record.",
+    "interaction": "Remedies work at state level for state-sphere harms but do not reach federal entry or custody exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Both have universal marker-mismatch exposure and detention for verification. This case has stronger state protection, but its federal layer includes documented custody abuse, so it sits above 0.45-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both involve border denial and secondary screening. This case adds documented federal custody abuse and possible lifetime ineligibility, so it sits lower, though a strong state layer lifts it toward 0.55-B."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "Both have documented federal-style document friction with appeal routes that succeed. This case lacks an operative federal remedy and has documented custody abuse, so it sits below 0.65-E."
+   }
+  ],
+  "synthesis": "A visitor's exposure is split across two sovereigns. At entry, a home-passport marker mismatch can lead to refusal, confiscation and possible permanent ineligibility under federal rules, with no working remedy yet. Federal or immigration custody carries documented abuse that the state's protective custody rules do not reach. Once in the state, the visitor is covered by gender-identity discrimination bans, enhanced hate-crime penalties, gender-consistent custody and a shield law, and there is no bathroom criminalisation. The state layer raises the score materially above the national floor, but it cannot offset federal entry and custody exposures, so the rating stays in the Elevated band."
+ },
+ "parse_error": null
+}

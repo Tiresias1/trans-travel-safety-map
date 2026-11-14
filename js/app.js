@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261112b",
-    admin1: "data/admin1.json?v=20261112b",
+    countries: "data/countries.json?v=20261114a",
+    admin1: "data/admin1.json?v=20261114a",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -408,6 +408,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     loadedBoundaries.add(modeKey);
     await ensureData(modeKey);
     if (modeKey === "countries") await ensureData("admin1"); // for parent names/inherit
+    if (modeKey === "admin1") applyModelComposite();
     layers[modeKey] = buildLayer(modeKey, geo);
     setLoading(null);
   }
@@ -424,6 +425,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
       await ensureBoundary(nextMode);
     }
     mode = nextMode;
+    document.getElementById("modelPanel").hidden = nextMode !== "admin1";
     for (const k of Object.keys(layers)) {
       if (map.hasLayer(layers[k])) map.removeLayer(layers[k]);
     }
@@ -440,6 +442,30 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
 
   document.getElementById("btnCountries").addEventListener("click", () => setMode("countries"));
   document.getElementById("btnAdmin1").addEventListener("click", () => setMode("admin1"));
+
+  /* Temporary state-model composer: average selected model scores at display time. */
+  function selectedModels() {
+    return [...document.querySelectorAll(".modelBox:checked")].map(el => el.value);
+  }
+  function applyModelComposite() {
+    if (!loadedData.has("admin1")) return;
+    const sel = selectedModels();
+    for (const rec of Object.values(admin1Data)) {
+      if (rec && rec.modelScores) {
+        const vals = sel.map(k => rec.modelScores[k]).filter(v => typeof v === "number");
+        if (vals.length) {
+          rec.score = vals.reduce((a, b) => a + b, 0) / vals.length;
+          rec.band = bandLabel(rec.score);
+        }
+      }
+    }
+    if (layers.admin1) {
+      layers.admin1.setStyle(styleFeature);
+      updateDots();
+    }
+  }
+  document.querySelectorAll(".modelBox").forEach(el =>
+    el.addEventListener("change", applyModelComposite));
 
   /* ---------- legend ---------- */
   function drawLegendBar() {

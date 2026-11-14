@@ -1,0 +1,78 @@
+{
+ "cell": 11,
+ "region": "66186276B29106115751815:Texas",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01157775",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime: national passport/entry rules force sex-assigned-at-birth markers and allow refusal or fraud findings for document discrepancies; division law mandates birth-certificate sex in covered restrooms and was enforced by ID checks, with trespass arrest elsewhere. Facilities exclusion is a universal state-imposed exposure in covered government buildings, and custody records show conversion practices and abuse. National hate-crime coverage and litigation/injunctions are partial protections, but no working remedy is documented for a visitor stopped at a covered facility or border. Street-violence data are too ambiguous to establish a trans-specific rate. Baseline outed-adult risk is high but not catastrophic: no execution and imprisonment is not routine unless detained. Minors face care bans and school-hostile rules.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas; X markers halted; cable allows refusal where documents cast doubt on sex and possible lifetime fraud ineligibility.",
+    "protection": "Existing X passports valid until expiry; litigation ongoing; legal-aid FAQ. No visitor-facing guarantee against refusal.",
+    "interaction": "A foreign passport with X or mismatch can trigger secondary screening or refusal, then immigration detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans men; corrections practices include conversion therapy, hormone removal and denial of care.",
+    "protection": "National hate-crime statute and some court injunctions; no documented effective custody remedy for visitors.",
+    "interaction": "A document discrepancy at the border can lead to immigration custody, where documented abuse applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Division statute requires restrooms match birth-certificate sex in public schools, universities, prisons and state buildings; fines; ID checks; criminal trespass in some states; national order bars congruent federal facilities.",
+    "protection": "Some private venues not covered; courts have enjoined some national measures; state ID checks admitted women with female markers.",
+    "interaction": "A visitor in a covered building may be ID-checked; refusal to leave can become trespass; national facilities policy adds federal buildings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for minors; national rules restrict funding/public insurance and describe minor care as mutilation; adult visitor continuity is not specified.",
+    "protection": "Injunctions block some national measures; emergency care is not shown denied to adult visitors.",
+    "interaction": "Travelling with a trans minor raises care-denial and school/legal exposure; adult visitor medication continuity is uncertain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes 'radically pro-transgender' groups; justice reward guidance references 'radical gender ideology'; division parental-rights law mandates deadnaming in schools.",
+    "protection": "Strategy says powers will not target mere disagreement; courts have blocked several orders.",
+    "interaction": "Visitor activism or visible advocacy could attract scrutiny; ordinary tourism is less directly targeted.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bans care for trans minors; schools must deadname and misgender; parental-rights statute bars discussion; national order threatens prosecution of teachers facilitating social transition.",
+    "protection": "Some injunctions and local policies; no visitor-specific protection documented.",
+    "interaction": "An adult travelling with a trans minor faces facility rules, care denial and school/legal hostility; a guardian may be investigated.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Division hate-crime law excludes gender identity; no statewide nondiscrimination; LGB visibility rolled back; trans-specific violence rate for the division is not established.",
+    "protection": "National hate-crime statute covers gender identity; local ordinances exist in some cities; police enforced bathroom law rather than protecting.",
+    "interaction": "An outed visitor reporting assault may face uneven local recourse; no documented pattern of police protection for trans victims.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Visitor has no clear remedy against border refusal, facility arrest or custody abuse; state definition act bars marker changes.",
+    "protection": "National litigation, injunctions, legal-aid FAQ and some court rulings; not shown to reverse visitor harms in practice.",
+    "interaction": "Remedies are slow and post-hoc; border and facility decisions happen before effective relief.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar entry-exclusion and stranding risk, but this dossier adds enforced facility exclusion and documented custody abuse; hence lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is administrative secondary screening and refusal without routine facility criminal enforcement. Here ID checks, trespass exposure and custody harm make it materially lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, tribunal appeals and working remedies. Here litigation is partial and facilities/entry rules operate before relief; much lower."
+   }
+  ],
+  "synthesis": "The operative regime combines a restrictive national document/entry posture with a division facilities law enforced by ID checks and criminal trespass. The heaviest exposures are universal in covered government buildings and at the border; custody abuse is severe but conditional on detention. Legal challenges and national hate-crime coverage are real but do not provide a working remedy at the point of encounter. Street violence remains too ambiguously documented to drive the score. Compared with anchors, this sits below administrative-friction states and above catastrophic-execution states. Minors and guardians face additional care and school-related exposure."
+ },
+ "parse_error": null
+}

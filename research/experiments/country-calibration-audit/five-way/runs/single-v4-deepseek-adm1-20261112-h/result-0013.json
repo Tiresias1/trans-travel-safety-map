@@ -1,0 +1,82 @@
+{
+ "cell": 13,
+ "region": "66186276B31593004124297:Utah",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004158362",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "Combined regime is High Risk. The national layer makes documents and facilities traveller-facing: passports/visas only M/F assigned at birth, border refusal/fraud exposure for discrepancies, federal single-sex facilities exclusion, and documented abuse in immigration custody. The division adds a complaint-enforced bathroom/locker ban in government buildings and schools with a documentary defense a visitor cannot meet, plus a minor care ban and flag ban. Private hotels/gyms are outside the division facilities law, and hate-crime/nondiscrimination protections exist, but they do not reach public accommodations and no remedy is shown working for visitors. No execution or general imprisonment for trans identity is documented; severity is driven by entry refusal/stranding, forced outing, facilities exclusion and conditional custody harm.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules recognize only M/F assigned at birth and stopped new X markers; border officers may refuse cases with document/presentation discrepancy and consider fraud/lifetime ineligibility; trans-athlete entry ban.",
+    "protection": "Existing X passports valid until expiry; fraud finding is not automatic and requires four elements with limited waivers; passport rule challenged in court; legal-aid FAQ exists.",
+    "interaction": "Visitor's home passport controls entry; division marker-change rules do not help. Airport screening and secondary inspection can force outing before any division-law protection applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: trans men report forced labour, beatings, solitary confinement and severe sexual abuse. National prisons adopted hair/hormone removal and psychiatric substitution; reporting on trans prisoner numbers stopped.",
+    "protection": "Some national orders enjoined; no documented visitor-specific custody safeguard or consular-access guarantee in dossier.",
+    "interaction": "Document discrepancy can lead from border secondary screening into immigration detention, where placement and treatment create severe risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities matching identity. Division law restricts restrooms/locker rooms in public schools and government buildings, with complaint form; defense needs birth certificate and proof of surgery if marker changed.",
+    "protection": "Division law does not reach private businesses, hotels or gyms; new government buildings must include single-occupant facilities; enforcement is complaint-based, not automatic arrest.",
+    "interaction": "Federal buildings/airports and division government buildings are covered; a visitor generally lacks the documentary defense, and complaint investigation can out them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for minors; national orders/funding rules hostile to trans care, proposed insurance bar for under-18s, hospital records subpoenas.",
+    "protection": "Care begun before the division ban could continue; some national orders blocked; no documented visitor-specific care protection or public-accommodations coverage.",
+    "interaction": "A trans minor visitor cannot rely on division care; adult routine care is not documented as protected for visitors, and disclosure in care settings can out.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' violent groups as priority; justice memo references 'radical gender ideology'; division bans pride flags and leads anti-LGBT legislation.",
+    "protection": "Memo does not make gender ideology a reward criterion; strategy says simple disagreement is not targeted; national and division hate-crime laws cover gender identity.",
+    "interaction": "Framing chills advocacy and may affect police response, but no documented direct arrest of trans visitors for identity; hate-crime recourse exists on paper.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bans gender-affirming care for minors; national order directs investigation/prosecution of teachers facilitating social transition; passport/visa mismatch risk applies to minors; proposed insurance bar.",
+    "protection": "Pre-existing care may continue; courts blocked some national orders; no visitor-facing minor-specific protection documented.",
+    "interaction": "An adult travelling with a trans minor faces border document scrutiny and care exclusion; school rules apply to residents, not tourists, but signal hostility.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans violence data in dossier; national risk assessment flags some divisions 'Do Not Travel' and notes degrading climate; public opinion polarized.",
+    "protection": "National hate-crime statute covers gender identity; division hate-crime law covers gender identity and requires statistics; partial employment/housing nondiscrimination; no sodomy law.",
+    "interaction": "If assaulted, hate-crime recourse exists but public-accommodations protection is absent and no outcome data shows it operating for visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation pending; division complaint defense has no documented route for out-of-state documents; no data on complaints/outcomes; interaction of division marker rules with national passport rules unresolved.",
+    "protection": "Courts have enjoined several national orders; civil-liberties suit and legal-aid FAQ exist; division highest court requires marker changes when clinical requirements met.",
+    "interaction": "Remedies are slow and uncertain; visitor cannot rely on them at the border or in a facilities complaint.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Ours is lower: 0.35-A has entry denial/exclusion but no universal federal facilities ban, no fraud/lifetime ineligibility pathway, and no documented immigration-custody sexual abuse. Ours adds those traveller-facing exposures, though both lack execution and general imprisonment for identity."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is higher: secondary screening/refusal is administrative and humiliating, with an appeal desk, and no facilities exclusion or custody abuse. Ours has broader universal facilities exposure and severe conditional detention harm, so it sits materially below."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C is much higher: border detention is brief, remedies and compensation operate, and rights are enforced. Ours has pending litigation and paper hate-crime laws, but no documented working visitor remedy; facilities exclusion and custody abuse remain operative."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C is roughly comparable or lower: prison housing by birth sex, cross-dressing law in administrative buildings, raids and extortion. Ours lacks routine police extortion and a presentation criminal statute, but has federal facilities exclusion and border fraud exposure."
+   }
+  ],
+  "synthesis": "National entry and custody rules dominate: a visitor whose passport marker or presentation diverges is exposed at border screening to refusal, invasive questioning, and possibly fraud/lifetime ineligibility; if detained, immigration custody has documented severe abuse. Federal facilities exclusion is universal. The division's bathroom law is narrower—government buildings and schools, complaint-driven—but its defense depends on records visitors lack, so a complaint can out and penalize them. Private businesses are outside that law, and division hate-crime and partial nondiscrimination protections exist, but public accommodations are not covered and no complaint outcomes are documented. Courts have blocked some national orders, yet no working visitor remedy appears at the border or in facilities."
+ },
+ "parse_error": null
+}

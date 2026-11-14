@@ -1,0 +1,82 @@
+{
+ "cell": 47,
+ "region": "66186276B98021244841737:Alabama",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.001785168",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime stacks federal and state exposures. Universally: Feb 2025 cable directs visa refusal on any sex discrepancy, with possible fraud/lifetime ineligibility; X markers barred; federal order bars trans people from government-funded single-sex facilities. State layer adds 2022/2024 facility bans reaching schools and colleges, a trespass offence with one documented arrest (24h held in a men's ward), a surgery-based ID rule upheld by the appeals court, no statewide nondiscrimination, and state hate-crime law excluding gender identity. Worst documented features are tier-1 facility/custody exclusion plus tier-2 immigration-custody abuse (forced labour, beatings, sexual abuse). No execution or likely imprisonment for visitors; remedies are thin and hostile institutions enforce efficiently. Violence against trans visitors is undocumented; the undercount-floor figure is not evidence.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 cable instructs refusal where documents cast doubt on sex, plus possible fraud/lifetime-ineligibility finding; X markers no longer issued; Nov 2025 court let passport restrictions take effect; eight-plus governments issued travel advisories after detentions of trans citizens over visa issues.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding is never automatic and has limited waivers; litigation pending in national courts.",
+    "interaction": "Document discrepancy can escalate into fraud allegation and immigration custody, where documented abuse of trans detainees occurs.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented March 2025 restroom arrest of a trans woman, held 24 hours in the men's ward; immigration custody reports of forced labour, beatings, solitary confinement and severe sexual abuse of trans detainees; federal corrections adopted conversion-therapy-style policies for trans inmates.",
+    "protection": "Pretrial release granted in the documented arrest; national hate-crime statute; pending civil-rights litigation.",
+    "interaction": "Entry-document scrutiny or overstay converts a visitor into an immigration detainee placed by birth sex.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities; state bans (2022, 2024) cover bathrooms in schools and, per 2026 assessment, colleges; SB79 declares binary gender; four states criminalise certain facility use, and this state documented an arrest.",
+    "protection": "Trespass offence requires refusal to leave when asked, not automatic arrest; two municipalities offer limited local protections.",
+    "interaction": "A visitor using restrooms in public buildings, parks or campuses faces exclusion with arrest exposure where employees ask them to leave.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "No statewide nondiscrimination means denial of care is unremedied, including for accompanying minors; providers face a Class C felony (10 years) for care to under-19s; no ban on insurance exclusions; DOJ subpoenaed under-19 hospital records.",
+    "protection": "National employment-discrimination ruling and national hate-crime statute exist; emergency care denial not documented.",
+    "interaction": "An adult travelling with a trans minor can be refused care and have the minor's records exposed; adult HRT continuity unprotected by state law.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "SB79 declares gender an immutable binary; state placed in a July 2026 'legislatively erasing' grouping; federal counterterrorism strategy targets groups 'radically pro-transgender'; official orders use 'mutilation' language and direct investigations into 'gender ideology'.",
+    "protection": "The cash-reward memo lists gender ideology only among descriptive viewpoints, not as a criterion; strategy disclaims targeting mere dissent; several orders enjoined.",
+    "interaction": "Official framing raises outing probability and lowers likely sympathy from officers at every encounter.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Gender-affirming care for minors criminalised (10-year provider penalty, enforceable since 2023); school facility bans by birth-certificate sex; executive order directing criminal investigation of teachers facilitating social transition; hospital-record subpoenas of under-19s; proposed federal insurance bar for under-18 care.",
+    "protection": "Litigation and a legal-aid FAQ on document rules; one challenge withdrawn, others pending.",
+    "interaction": "A visiting parent with a trans minor faces care refusal, facility exclusion and record exposure with no state recourse.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No statewide public-accommodations or housing protection; state hate-crime law (1994) excludes gender identity; statewide polling among lowest for trans-inclusive policies; sources note ID incongruence exposes holders to harassment in ID checks.",
+    "protection": "National hate-crime statute covers gender-identity offences; no specific incident of anti-trans violence is documented in the state; the 3.8/100k figure is an undercount floor and is treated as no evidence.",
+    "interaction": "Police called over a facility dispute enforce a hostile state rule rather than protect the visitor.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No statewide nondiscrimination recourse; appellate court upheld refusal of accurate licences and reversed the surgery-requirement invalidation; oversight has not changed hostile practices; safety varies sharply by state/province.",
+    "protection": "Functioning courts, pending federal challenges, national civil-liberties litigation, legal-aid FAQ, two municipalities with local protections.",
+    "interaction": "Courts efficiently enforce the hostile facility and ID rules, so institutional function is exposure, not mitigation.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's register bars entry with humiliation but no arrest. This dossier documents an actual restroom arrest with 24 hours in a men's ward, plus immigration-custody abuse, so it sits below 0.35-A despite lacking Vellandra's universal register."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia features birth-sex prison placement, cross-dressing arrests in administrative buildings, slow remedies and no execution. Comparable tier-1 custody/facility exposure and thin recourse; this jurisdiction is slightly higher because facility offending requires refusal to leave, no execution-adjacent clause exists, and no recurring raid pattern is documented."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Drellia's nightly hotel registration and police interview power produce universal exposure with uncommon criminal charges. This jurisdiction has a documented criminal charge, birth-sex custody placement and state-tolerated custody abuse - heavier than Drellia's administrative harms, so it rates lower."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Vellmaris shows brief detention corrected by national equality law, an apology and compensation. Here the state lacks any nondiscrimination remedy, courts upheld hostile ID rules, and custody placement by birth sex was actually imposed - materially worse than 0.65-A."
+   }
+  ],
+  "synthesis": "Federal and state layers reinforce each other: document scrutiny at entry can escalate into fraud allegations and immigration custody, where abuse of trans detainees is documented; facility exclusion operates federally in funded buildings and state-wide in schools, colleges and public buildings, with one arrest and birth-sex ward placement already recorded. Recourse is thin - no statewide nondiscrimination, a state hate-crime law excluding gender identity, and appellate courts upholding surgery-based ID rules - so functioning institutions enforce rather than remedy the hostility. For an adult alone, worst realistic outcomes are arrest, ID-related harassment and administrative exclusion, not imprisonment. Adding a trans minor sharpens exposure: care is criminalised for providers, records are subpoenaable, and facilities are birth-sex assigned. No execution risk; violence in the state is undocumented."
+ },
+ "parse_error": null
+}

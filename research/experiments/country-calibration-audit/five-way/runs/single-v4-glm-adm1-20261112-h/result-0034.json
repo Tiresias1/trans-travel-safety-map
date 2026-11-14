@@ -1,0 +1,82 @@
+{
+ "cell": 34,
+ "region": "66186276B76680759932915:Ohio",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00200607",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The combined regime imposes universal-exposure measures at the national level: passports and visas must reflect sex assigned at birth, entry officers are instructed to refuse applications with any doubt about sex and to consider lifetime fraud findings, and foreign governments issue trans-specific travel advisories. National custody conditions are documented as abusive. The state/province adds a birth-certificate-based facility designation regime for schools and colleges (no enforcement mechanism, no documented arrests) and a contested minors' care ban. No criminal bathroom statute here, marriage recognised, patchy municipal protections. Worst feature is tier-1/2 national universal exposure with contested remedies; the sub-state layer is milder than the highest-tier states. This sits between the 0.45 registry-exposure anchors and the 0.55 administrative-friction anchors, near the lower edge.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: national sex-marker policy per birth sex; X markers halted; cable directs refusal on any doubt and consideration of permanent fraud inadmissibility; stranded travellers and confiscations reported; foreign advisories issued.",
+    "protection": "X passports valid until expiry; litigation unresolved; legal-aid FAQ guidance exists.",
+    "interaction": "Document mismatch can feed fraud findings, secondary screening, detention and custody placement.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented national custody harms: conversion-style prison policies, hormone withdrawal, forced labour, beatings, sexual abuse of trans men in immigration custody; stopped reporting of trans prisoner counts.",
+    "protection": "Some orders enjoined; hate-crime statute nationally; consular access presumed but not documented.",
+    "interaction": "Entry doubt can escalate to detention under this custody regime.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law mandates birth-certificate-based bathrooms/locker rooms/overnight accommodation at all K-12 and college facilities, public and private; national orders bar congruent facilities in federally funded settings; 4 states criminalise in some circumstances.",
+    "protection": "This state's statute has no enforcement mechanism and no documented arrests; single-occupancy exempt.",
+    "interaction": "Visiting parent with a college-age student, or campus events, exposes facility mismatch.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors' care ban enacted via override, later re-enjoined; adult-care rules proposed then dropped; national proposed insurance bars; hospital record subpoenas nationally.",
+    "protection": "Appeals court re-enjoined the care ban March 2025; operative status uncertain; adult care not restricted in this state.",
+    "interaction": "National health policy fights may reach visiting families seeking care.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National framing of 'gender ideology' as extremist; counterterrorism strategy targets 'radically pro-transgender' groups; DOJ reward memo; school-outing mandate; 190+ anti-trans bills.",
+    "protection": "Federal court blocks on several orders; state employment-discrimination protections via executive order and 33 local ordinances.",
+    "interaction": "Hostile federal framing legitimises local enforcement and social hostility.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces school facility designation, staff-outing law, care ban (contested), sports ban; teacher facilitation of transition criminally prosecutable nationally.",
+    "protection": "Care ban re-enjoined; marriage and some local nondiscrimination protections; unresolved litigation.",
+    "interaction": "Travelling parent risks school-driven outing to staff and investigations.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "First documented bathroom-law arrest (March 2025) occurred in a different tier-1 state, not this one; bias-crime coverage patchy (37 states lacking statutes as of 2019); social hostility measurable (66-69% support restrictive laws).",
+    "protection": "National hate-crime statute; local ordinances in 33 cities/counties.",
+    "interaction": "Police response to a trans visitor reporting crime is uncertain locally.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Facility law's practical application unsourced; DMV marker restriction is an untested announcement; county refusals of birth-certificate corrections continuing; tier methodology opaque; care-ban status unresolved.",
+    "protection": "Active litigation track record shows courts sometimes intervene; 2018-2021 state-level relief on birth certificates shows recourse possible.",
+    "interaction": "Remedies are slow, partial, and cannot be relied on mid-trip.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similar weight: both impose durable registry/document exposure reaching every trans visitor regardless of discretion. Here the exposure is sharper at entry (refusal instructions, fraud findings) but this state lacks the local police interview/eviction layer, roughly balancing at the 0.45 level."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Higher than 0.55-C: that anchor's worst feature is hospital-ward placement with advocates; here the operative regime adds entry-screening fraud exposure, documented abusive custody nationally, and state threat-framing, pulling materially below."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Not as low as 0.35-A: that anchor features consistent, discretionary exclusion with no remedy. Here entry exposure is real but contested in court, X passports still function, and this state's facility law has no enforcement mechanism, with documented local protections — materially better than systematic exclusion."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Higher than 0.25-C: that anchor features birth-sex custody placement with routine assaults as the operative experience. Here custody harms are documented but are national-side and less certain to reach a short-stay visitor; no arrest or criminalisation attaches in this state."
+   }
+  ],
+  "synthesis": "The dominant exposure is the national entry-and-documents regime: every trans visitor passes through a system that records birth sex, instructs officers to refuse doubtful cases, and can attach lifetime fraud findings — a universal-exposure measure rated above the state's own softer layer. Should that exposure escalate to detention, documented national custody conditions (hormone withdrawal, forced labour, sexual abuse) supply severe severity. The state/province adds institutional facility exclusion at schools and colleges without criminal teeth, an enjoined minors' care ban, and a staff-outing mandate harming travelling families. Partial protections — enjoined orders, local nondiscrimination ordinances, national hate-crime law, marriage recognition — exist but are slow and unproven mid-trip. Net: between the 0.45 registry-exposure tier and the 0.25 custody- abuse tier, resolving to 0.44."
+ },
+ "parse_error": null
+}

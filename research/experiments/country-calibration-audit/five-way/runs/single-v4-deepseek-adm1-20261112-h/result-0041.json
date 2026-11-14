@@ -1,0 +1,78 @@
+{
+ "cell": 41,
+ "region": "66186276B86295910312663:Arkansas",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002815894",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime presents documented traveller-facing exposures: binary-sex document rules, border/visa refusal where sex is doubted, possible lifetime fraud ineligibility, federal facility exclusion by birth sex, a state misdemeanour for trans bathroom use where a minor is present, K-12 facility bans, and abusive immigration/custody conditions. Mitigants are real but partial: existing X passports remain valid until expiry, fraud findings are not automatic, national hate-crime law covers gender identity, and courts have blocked some orders. No documented organised street violence against trans visitors appears. This is worse than administrative-friction anchors but below the routine-arrest and lethal-custody tier, hence 0.30.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National policy rejects X markers for new documents and treats sex as binary; border/visa officers may refuse where documents cast doubt on sex, and suspected misrepresentation can support permanent lifetime ineligibility. Travellers report passports confiscated or blocked, stranding some abroad.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud findings require four elements, are not automatic, and have limited waiver possibilities; passport policy is in litigation; legal-aid guidance exists.",
+    "interaction": "A foreign passport or visa file that diverges from appearance or records can trigger secondary screening, refusal, or a fraud note; port-level remedy is not documented as effective.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reportedly includes forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies impose conversion-like treatment, hormone removal and denial of care. A bathroom misdemeanour can carry jail time.",
+    "protection": "National hate-crime law covers gender identity, but no visitor-specific custody protection or effective port remedy is documented; fraud waivers are limited.",
+    "interaction": "A document discrepancy can move a traveller into immigration detention, where the documented custody harms become operative; state bathroom arrest could similarly lead to birth-sex custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities matching identity. State Act 619 makes trans use of public bathrooms, locker rooms or changing facilities a misdemeanour where a minor is present and sexual intent is established; K-12 facility ban extended in 2025.",
+    "protection": "Act 619 is narrow and not automatic; some states have no ban, but this state/province does. No documented visitor-facing exemption or effective challenge is shown.",
+    "interaction": "Federal buildings exclude by birth sex; state public facilities add criminal risk in the minor-present circumstance; a traveller with a minor faces both layers.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law lets medical practitioners cite religious beliefs to deny LGBT care; the state bans gender-affirming care for minors, with litigation unresolved; national rules threaten insurance coverage for under-18 care.",
+    "protection": "National litigation has sometimes enjoined the care ban, but the current operative position is unresolved; no documented protection for adult visitor care access is shown.",
+    "interaction": "An adult visitor may face refusal at a religiously objecting provider; a travelling minor may face care denial and state-level documentation barriers.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises neutralising violent secular groups described as 'radically pro-transgender'; justice guidance invokes 'radical gender ideology'; an executive order directs investigation of schools supporting social transition.",
+    "protection": "The counterterrorism document says powers will not target mere disagreement; some executive orders are blocked or enjoined; national hate-crime law covers gender identity.",
+    "interaction": "Official threat-framing can chill advocacy and raise police interest in visibly trans or activist visitors, though no visitor prosecution pattern is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans gender-affirming care for minors and restricts K-12 facilities and sports to birth sex; national order threatens prosecution of teachers using preferred names or pronouns for trans minors.",
+    "protection": "Care-ban litigation continues and has produced injunctions at times; but no stable visitor-facing protection is documented.",
+    "interaction": "An adult travelling with a trans minor faces facility restrictions, care denial, and possible school-related official scrutiny; the parent/guardian carries the practical risk of seeking care.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented pattern of anti-trans violence specifically against visitors appears; state hate-crime law excludes gender identity, and the state civil remedy excludes it, leaving uneven recourse.",
+    "protection": "National hate-crime statute covers gender identity; some states and cities have protections. Police response to trans visitors is not otherwise documented.",
+    "interaction": "A violent incident in this state/province may lack state hate-crime enhancement, though national law could apply; recourse is uneven and not documented as reliable for visitors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Entry refusal and lifetime fraud ineligibility have limited waiver options; state Act 619 enforcement is undocumented; state law provides no gender-identity hate-crime or civil remedy; care-ban litigation is unresolved.",
+    "protection": "National civil-liberties litigation challenges passport policy; courts have blocked some orders; national hate-crime and employment protections exist; legal-aid guidance is available.",
+    "interaction": "National remedies may help residents or long-litigated cases but do not reliably reach a visitor refused at the border, excluded from a facility, or harmed in custody.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra denies entry and humiliates without arrest; this regime adds possible lifetime fraud ineligibility, federal facility exclusion and state bathroom criminal exposure, plus documented custody abuse. It is worse than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and administrative refusal; this regime couples border refusal with permanent ineligibility and facilities/custody harms. It is materially below 0.55-B despite some litigation and valid-existing-document protection."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, tribunal appeals and brief detention; this regime has no documented effective port remedy for fraud/refusal, plus state facility criminal exposure and abusive custody. It is far below 0.75-C."
+   }
+  ],
+  "synthesis": "The operative system combines a hostile national document and entry regime with a state/province layer that criminalises some trans bathroom use, bans K-12 facilities matching identity, restricts minors' care, and lacks state gender-identity hate-crime or civil remedy. The heaviest exposures are entry refusal/lifetime fraud ineligibility and custody harms; federal facility exclusion and Act 619 add universal or near-universal risk. Litigation, valid existing X passports, national hate-crime coverage and the non-automatic fraud finding reduce certainty but do not neutralise the documented exposures. No organised street-violence campaign against visitors is documented, so the rating stays above the routine-arrest/lethal-custody tier."
+ },
+ "parse_error": null
+}

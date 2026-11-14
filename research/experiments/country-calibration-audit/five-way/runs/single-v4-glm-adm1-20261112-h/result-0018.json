@@ -1,0 +1,82 @@
+{
+ "cell": 18,
+ "region": "66186276B43071933723331:California",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00225626",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined operative regime pairs a hostile federal layer with a protective subnational layer. Federally, every trans visitor faces universal-exposure measures: passports must show sex assigned at birth, 'X' markers are discontinued, entry officers are instructed to refuse or investigate document/presentation discrepancies with a potential lifetime fraud bar, and foreign governments now issue trans-specific travel advisories after documented detentions of foreign citizens. Federal immigration and prison custody show documented severe abuse. Within this state/province, the traveller meets the opposite: a sanctuary statute protecting travelling families seeking care, identity-based prison housing, and top-tier protective laws — but also the country's highest raw count of anti-LGBTQ incidents (no denominator) and a rising hate-crime reporting trend. Entry and any custody encounter are the binding exposures; in-state daily life is comparatively safe. Net: clearly above national-floor jurisdictions with no protections, but capped below acceptance-tier jurisdictions by the unavoidable federal document/screening regime.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport marker restricted to birth sex; X markers discontinued; cable instructs refusal where documents cast doubt on sex, with potential permanent fraud ineligibility; trans travellers report confiscated/blocked passports and detention of foreign citizens; allied governments issue advisories.",
+    "protection": "Litigation ongoing; limited waiver possibilities for fraud finding; legal-aid FAQ exists.",
+    "interaction": "Federal screening precedes any contact with the protective state; discrepancy can cascade into investigation, detention, removal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections policies strip hormones and impose forced 'therapy'; immigration custody shows forced labour, beatings, solitary, sexual abuse of trans men.",
+    "protection": "This state houses transgender inmates by gender identity and funds surgery — but only if custody occurs under state jurisdiction.",
+    "interaction": "A visa/fraud issue routes a visitor into federal custody, not the protective state system; state protections do not reach federal detention.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent facility access in federally funded single-sex facilities; bathroom bans in 21+ other states/provinces, criminalised in 4; an arrest under a trespass bathroom law is documented.",
+    "protection": "This state/province has no documented facility ban and sits in the top protective-law band.",
+    "interaction": "Facility access depends on itinerary; federal buildings nationwide remain restricted.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders framing youth care as 'mutilation'; hospital-record subpoenas; national insurance reimbursement rule proposed; 27 states ban youth care.",
+    "protection": "Sanctuary statute shields travelling families from investigation/prosecution and enables hormones/puberty blockers for visiting minors — operative, documented, includes travellers.",
+    "interaction": "A travelling family seeking care here is protected locally but retains federal border/document exposure on arrival.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Executive orders and counterterrorism strategy frame 'radical gender ideology' and 'radically pro-transgender' groups as security targets; state governor platforms anti-trans figures amid rising hate reports.",
+    "protection": "Not documented.",
+    "interaction": "Federal threat-framing licenses social hostility, contributing to the state's high incident count despite protective law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order criminalises facilitating a minor's social transition; schools investigated; youth-care records subpoenaed.",
+    "protection": "Sanctuary law explicitly protects travelling minors' care and their guardians from prosecution or child-abuse investigation.",
+    "interaction": "A parent travelling here for care is shielded in-state; exposure concentrates at federal entry and in other states.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "198 documented anti-LGBTQ incidents in this state in 2025 — highest raw count nationally — with a documented rise in hate-crime reports in the largest city; no denominator, per-capita weight uncertain.",
+    "protection": "National hate-crime statute covers gender identity; top-tier protective state law band per July 2026 analysis.",
+    "interaction": "Protective law coexists with recorded hostility; recourse machinery exists but remedy strength is not shown.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key federal measures unresolved in court; whether state prison-housing policy remains in force post-2021 is unknown; whether this state has facility/document restrictions beyond the map is not documented.",
+    "protection": "Enjoined federal orders, ongoing litigation, and sanctuary statute reduce present exposure where they operate.",
+    "interaction": "A traveller's exposure varies with court rulings and with any excursion beyond this state.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A's register bars entry with exclusion and humiliation but no custody. Here the federal regime adds a potential lifetime fraud bar and documented abusive custody if discrepancies escalate, making this jurisdiction materially worse on severity; the protective state layer is what keeps it out of lower bands."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B features extended secondary screening and discretionary refusal — administrative, humiliating, non-custodial. The federal entry regime here matches that exposure but adds documented detention of foreign citizens over visa issues and abusive federal custody, so this jurisdiction sits below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, working tribunal appeals, and brief detention ending in release. Here the passport regime is reversed by policy, officers are instructed to refuse discrepancies, and custody abuse is documented; despite strong in-state protections, the entry-stage reality is materially worse than 0.75-C."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D's universal registration/database exposure and hotel reporting resemble the universal document exposure here, but 0.45-D lacks both the sanctuary care shield and identity-based custody placement; the protective in-state machinery is what lifts this jurisdiction modestly above 0.45-D."
+   }
+  ],
+  "synthesis": "The traveller's operative regime is bifurcated by stage of journey. At entry, the federal layer imposes universal exposure: birth-sex passport markers, instructed refusal of discrepant cases, a latent lifetime fraud bar, and a custody system with documented abuse — severity 3–4 outcomes that follow any outed or discrepant traveller regardless of destination state. Inside this state/province, the operative regime flips protective: sanctuary care law actively shields travelling families, prison placement is identity-based, and the law sits in the top protective band, which substantially lowers everyday in-state severity; the 198-incident count without a denominator is a real but unquantified hostility signal, and platformed official hostility interacts with it. The binding constraint is the border: documented detention of foreign citizens and stranded travellers makes the harshest operative rule the federal screening regime. Net position: above jurisdictions with only hostile law and no protection, below any jurisdiction whose entry machinery does not itself target trans travellers — approximately mid-band elevated risk."
+ },
+ "parse_error": null
+}

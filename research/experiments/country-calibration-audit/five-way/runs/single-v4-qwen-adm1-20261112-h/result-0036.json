@@ -1,0 +1,82 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00588742",
+ "parsed": {
+  "rating": 0.18,
+  "explanation": "Combined national/state regime creates traveler-facing exposure: passports/visas keyed to assigned sex; refusals/confiscation/stranding/fraud; government and state facility bans including documented arrest; severe immigration/corrections practices; counterterrorism framing of trans advocacy. Partial court relief, state protections and hate-crime law mitigate but do not cancel enforced border/facility/custody risks. Adult and minor travellers face heightened harm if documents or presentation differ.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require M/F sex assigned at birth, bar X for new issues, and refuse or delay cases where presentation/records cast doubt on sex. Documented trans/nonbinary travelers report passports confiscated or blocked and being stranded; material misrepresentation may trigger permanent fraud ineligibility.",
+    "protection": "Existing X passports remain valid until expiration; civil-liberties lawsuits and legal-aid FAQs contest document rules; some executive-order provisions have been blocked or enjoined.",
+    "interaction": "Entry document discrepancy routes into visa/advisory review, fraud consideration, and possible detention/removal, which can then encounter immigration/corrections custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, guard abuse, beatings, solitary and severe sexual abuse of trans men. Corrections bureau adopts policies removing hormones, cutting hair and forced psychiatric conversion. No visitor-specific cell-placement rule is documented, but investigation/fraud can lead to custody.",
+    "protection": "Some federal orders are enjoined; legal-aid groups provide passport/document guidance; courts occasionally pause facility enforcement in specific litigation.",
+    "interaction": "Document mismatch -> visa fraud/investigation -> immigration detention -> placement/treatment risk; state facility arrests can also create detention exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal policy restricts government single-sex facilities to assigned birth sex and removes pronoun/name policies. Many state/provinces bar trans facility use in K-12, colleges, government buildings and some private settings; 4 criminalize certain use. Documented bathroom arrest held trans woman 24 hours in men's ward.",
+    "protection": "Many state/provinces lack mapped bans, several protect gender identity in public accommodations, and one school-bathroom law was temporarily unenforceable pending appellate litigation.",
+    "interaction": "Federal facility restrictions can apply across jurisdictions while state bans vary by locality; short stays in schools, camps, transit, hospitals or government buildings raise mismatch.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal/health actions freeze funding, restrict youth gender-affirming care and criminalize teachers facilitating social transition; prison policies remove hormone care. Visitor emergency or continuity care may involve records, markers and birth-sex definitions, especially for minors.",
+    "protection": "No traveler-facing care guarantee is documented; some related federal rules are litigated or blocked, making continuity-care access uncertain.",
+    "interaction": "A parent seeking minor care or school activity, or an adult needing refill/emergency care, can trigger document and facility review.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritizes identification/neutralization of groups described as radically pro-transgender and anarchist; domestic-terror memo associates radical gender ideology with violent viewpoints. State laws criminalize social-transition facilitation. This is state threat-framing.",
+    "protection": "Memo claims not to target people who merely disagree; national hate-crime and employment-discrimination law remain; many states have some protections.",
+    "interaction": "Hostile framing can shape police, prosecutors, border officials and public attitudes, discouraging reporting and expanding discretion at encounters.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor travellers face school/camp/college facility bans, sports restrictions, youth-care narrowing and teachers' exposure if social transition is used. Trans guardians risk passport/visa mismatch, facility arrest and custody placement if detained.",
+    "protection": "Local municipal employment protections and court exceptions exist, but not documented as traveler-facing for minor visits.",
+    "interaction": "Family travel increases interactions with schools, clinics, camps and document checks; guardian's status and child's records can both trigger review.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented traveler-specific street hate-violence rate in dossier; polling supports restrictions and state laws authorize arrest. Police response can produce handcuffing, men's-ward holding and hostile custody.",
+    "protection": "National hate-crime law and some state bias statutes/protections may aid reporting; several courts block or enjoin extreme policies.",
+    "interaction": "Calling police may reveal documents or trigger facility/investigation routes; protection is uneven across states and federal actors.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Policy remains contested, orders vary by litigation, and federal/prison reporting of trans inmates stopped. State enforcement is uneven; foreign advisories signal uncertainty for trans travelers.",
+    "protection": "Civil-liberties litigation, legal-aid FAQs, court review and appellate pauses offer limited recourse, but outcomes are slow and partial.",
+    "interaction": "Short visits may not permit litigation before harm; enforcement changes by jurisdiction and stage of journey.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has discretionary admission denial and exclusion without credible custody. Here entry restrictions include passport confiscation/stranding, visa-fraud review and severe immigration/corrections custody, so materially below 0.35-A."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C combines birth-sex custody placement and frequent assault. Dossier lacks traveler cell-placement, but adds federal border/fraud controls, prison conversion therapy and immigration abuse; net score is slightly below 0.25-C."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A involves routine arrest, months pretrial and capital uncertainty. Here criminalization is narrower, remedies partly function and no capital is documented, so slightly safer than 0.15-A but still severe."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D is universal registration/harassment with low criminal escalation. This dossier adds facility arrests, passport/fraud consequences, hostile custody and counterterrorism framing, so clearly below 0.45-D."
+   }
+  ],
+  "synthesis": "A border mismatch can cascade into visa denial or fraud review, then detention, where documented abuse is severe. If an adult uses facilities in restricted jurisdictions, arrest and men's-ward holding are possible. A parent with a minor also encounters school/camp/care rules. Positive state protections and litigation change odds but not the operative risk of outed travellers."
+ },
+ "parse_error": null
+}

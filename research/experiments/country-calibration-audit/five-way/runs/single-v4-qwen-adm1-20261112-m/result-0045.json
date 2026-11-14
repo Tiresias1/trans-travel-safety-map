@@ -1,0 +1,82 @@
+{
+ "cell": 45,
+ "region": "66186276B94082813086253:District of Columbia",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006499688",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime is high-risk. National passport and visa rules make document-appearance mismatch an engineered discovery event: officers may refuse applications, demand evidence, and consider fraud-based ineligibility. The capital division lacks its own ban, but a nationally attached facilities restriction and national sex definition operate there. A visitor outed through facilities, protest, school or care requests may face removal, trespass-style arrest, men’s-ward custody, and immigration or corrections abuse; trans minors face care bans and school scrutiny. Local low-risk status is fragile because national override is possible. Some administrative remedies and existing X passports soften document harms, but protections are partial and courts have not reliably offset custody or facility exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Sex-marker restrictions eliminate new X passports; visa officers may refuse cases where appearance or records create sex doubt, request evidence, and consider permanent fraud ineligibility. Existing X passports remain valid until expiry.",
+    "protection": "Existing X passports accepted until expiry; four-element fraud standard is not automatic; civil-liberties suit, legal-aid FAQ, and some court challenges remain.",
+    "interaction": "Document mismatch triggers entry screening and can escalate into facility disputes, refusal, detention, or a misrepresentation finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If detained or arrested, visitors face birth-sex custody risk; immigration custody reports forced labour, beatings, solitary, and severe sexual abuse; corrections adopts conversion therapy; a facility arrest involved men’s-ward placement.",
+    "protection": "No documented custody safeguard. Some executive orders were blocked, but passport and facility policies remain operative; courts do not show reliable trans custody relief.",
+    "interaction": "Facility trespass allegations, protest arrests, or entry refusal can feed into investigative or immigration custody where abuse occurs.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive bars transgender use of government-funded single-sex facilities; capital has no local ban but a national attached restriction is in force. Some state laws criminalize refusal to leave public-building facilities.",
+    "protection": "Capital local law did not ban facilities, and some jurisdictions lack bans, but local protections are subordinate to national override.",
+    "interaction": "Identity-document mismatch or presentation in restrooms or changing facilities may lead to challenge, removal, trespass arrest, or custody.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Minors’ gender-affirming care is banned in many jurisdictions and reimbursement blocked; youth crisis services ended. Adult visitor hormone continuity, emergency care, and documentation are not documented but may be denied.",
+    "protection": "No documented visitor-facing care guarantee; some jurisdictions protect adults, but national orders and funding changes narrow access.",
+    "interaction": "Seeking treatment, emergency care, or school enrollment can expose identity and trigger administrative refusal or scrutiny.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Executive orders direct police to investigate gender ideology; counterterrorism documents name radically pro-trans groups; protests at the legislature led to arrests.",
+    "protection": "Counterterrorism memorandum does not define radical trans ideology as a reward criterion; some orders are enjoined or contested.",
+    "interaction": "Hostile framing increases screening, document challenges, and police response to facility, school, or care disputes.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors visiting with guardians face facility exclusion, denied care, school scrutiny, and possible forced outing; guardian legal risk is not sourced.",
+    "protection": "No documented guardian protection or visitor care continuity. Parental facilitation may intersect with social-transition criminalization, but this is not documented.",
+    "interaction": "Age-dependent laws can turn school or care requests into investigations; adult guardian may accompany minor into high-exposure settings.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific street violence against visitors; police involvement is known through facility and protest arrests, not general patrol data.",
+    "protection": "National hate-crime statute exists; only some jurisdictions cover gender identity; enforcement for visitors is not documented.",
+    "interaction": "Reporting public harassment may trigger document checks or hostile policing; response varies by officer.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Capital low-risk ranking is fragile because national legislature and executive can override; scope and visitor reach of attached facility ban are unknown; courts allowed passport restrictions.",
+    "protection": "Civil-liberties lawsuit, legal-aid FAQ, partial injunctions, and existing X passports mitigate some document harms.",
+    "interaction": "Slow or partial remedies reduce administrative uncertainty but do not change facility, custody, or counterterrorism exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Near 0.25-A: both use birth-sex documents to expose travellers, but this jurisdiction adds visa misrepresentation, facility enforcement, and severe immigration/corrections custody, while lacking documented weekly support-centre raids."
+   },
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "Lower than 0.35-D: beyond examination and denial, it includes birth-sex custody risk, facility arrest, and severe immigration-custody abuse, so the operative consequence is more coercive than administrative gender screening."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Far below 0.55-B: that anchor keeps consequences administrative with appeals and no credible detention pathway; here document screening can interact with facility enforcement and custody abuse."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Above 0.15-A: no automatic months-long pretrial custody or credible capital threat; men’s-ward placement and immigration/corrections abuse still keep it near the severe/high-risk boundary."
+   }
+  ],
+  "synthesis": "The operative exposure runs from border documents through facilities, school or care requests, and custody. National rules engineer discovery via marker mismatch; local capital protection can be overridden. Outing may produce refusal, arrest, removal, misgendered custody, and documented abuse. Administrative remedies exist but are partial, slow, and unreliable against facility and custody harms."
+ },
+ "parse_error": null
+}

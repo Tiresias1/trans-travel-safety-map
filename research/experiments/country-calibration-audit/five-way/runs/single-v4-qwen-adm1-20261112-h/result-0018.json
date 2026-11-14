@@ -1,0 +1,78 @@
+{
+ "cell": 18,
+ "region": "66186276B43071933723331:California",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00719459",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined federal and division regime is restrictive but does not criminalise identity. Federal visa/passport rules can out travelers at entry and support refusal or fraud-based lifetime bars; federal custody and immigration detention are severe. Division sanctuary law shields travelling families/minors from state care prosecution and may provide identity-based local housing, raising safety for care itineraries. Facility bans and trespass arrests exist elsewhere but are not documented in this division; courts and legal aid offer partial recourse. Overall elevated border and custody risk is moderated by protective division care law and contested implementation.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National M/F and passport-marker rules, plus visa discrepancy or evidence-doubt triggers, can force disclosure, demand extra evidence, support refusal, and invite fraud or lifetime-bar scrutiny; travelers report passports blocked or confiscated and stranded.",
+    "protection": "Existing X passports remain valid; fraud bar requires all elements and has limited waivers; courts review the policy; legal-aid FAQs help document preparation.",
+    "interaction": "Federal entry screening precedes state protections; marker restrictions are nationwide and are not cancelled by division sanctuary law, including for care travellers.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections adopts conversion-like treatment: forced haircuts, hormone removal, denial of care. Immigration custody reports forced labour, beatings, solitary, sexual abuse; a facility trespass arrest was held in a men's ward.",
+    "protection": "Division prison coding allowed identity-based general-population housing in 2021; courts sometimes intervene; no capital punishment is documented for status alone.",
+    "interaction": "Federal or immigration custody can override state identity-based housing; if local custody occurs, current practice remains unresolved and venue-dependent.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts congruent use of government-funded facilities; many divisions ban school or public-building access, some reach private settings, and trespass arrests are documented.",
+    "protection": "Division is placed in a protective-law band; no division-specific facility ban is documented; some jurisdictions bar discrimination, and courts have blocked some orders.",
+    "interaction": "Federal spaces, travel to restrictive divisions, and state-funded exemptions keep exposure possible; local protective rules may work inside the division but not nationwide.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility to gender-affirming care, minor-care restrictions, funding freezes, subpoenas, and proposed reimbursement limits create chilling effects; adult HRT continuity is not specifically documented.",
+    "protection": "Division sanctuary law explicitly protects youth hormones and blockers and shields travelling families from state child-abuse or criminal prosecution for seeking care.",
+    "interaction": "Care may be legally protected once lawful entry succeeds, but federal screening, records, insurance, and possible federal enforcement remain open questions.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism language frames radically pro-transgender ideology as a threat; orders direct school investigations and prosecutions; material removal and governor platforming raise profiling and outing pressure.",
+    "protection": "Some orders are blocked or enjoined; national hate-crime and employment-discrimination frameworks remain cited; officials say powers will not target mere disagreement.",
+    "interaction": "Threat-framing increases chilling and scrutiny around advocacy or care, but direct arrest of ordinary non-activist visitors is not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor, guardian, or mismatched family documents can face entry refusal, evidence demands, or fraud scrutiny; national rules portray minor care as harmful and may chill clinics.",
+    "protection": "Division sanctuary shields parent or guardian travelling for youth care from state child-abuse investigation or criminal prosecution.",
+    "interaction": "If lawful entry succeeds, care itineraries are materially safer inside the division; federal border and possible health-data exposure are not shown immune to state protection.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Statewide anti-LGBTQ incident counts are highest nationally, and the largest city shows a hate-crime rise; social support for binary-document rules suggests possible confrontation after misgendering.",
+    "protection": "Division sits in protective-law band; national hate-crime remedy exists; incident data lacks population denominator and trans-traveller-specific pattern.",
+    "interaction": "Raw counts and political hostility colour atmosphere but are weak evidence of ordinary traveller violence; response varies by city, venue, and whether a report is taken seriously.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement varies by entry point, arrest venue, state rule, and litigation status; whether identity-based prison housing continues, division facility rules, and federal override of sanctuary are unresolved.",
+    "protection": "Ongoing suits, legal-aid guidance, injunctions, limited fraud waivers, and complaint avenues exist; sanctuary law is explicit for care-seeking families.",
+    "interaction": "Practical risk hinges on whether federal or state actors control the encounter; unresolved legal interactions keep uncertainty material rather than neutral.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similarity: federal entry screening can refuse travel based on document mismatch. Difference: the regime is not categorical exclusion, existing X passports remain valid, fraud bars are non-automatic, courts review, and division care protections exist, so it sits near but above a pure 0.35 exclusion model."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Similarity: everyday systems expose documents and identity information. Difference: this dossier adds severe federal custody, immigration abuse, and marker-restriction policies, while protective sanctuary care raises family itineraries. Overall it is close to 0.45 but pulled down by custody exposure and up by care protections."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similarity: secondary screening and discretionary refusal are core exposures. Difference: here the national rule is formal and litigated, allied governments issued advisories, and if detention or fraud escalation occurs the harm exceeds administrative refusal. Therefore the combined regime is meaningfully below 0.55."
+   }
+  ],
+  "synthesis": "Federal entry rules are the common choke point: marker discrepancies can force disclosure, demand evidence, support refusal, or trigger fraud-based lifetime-bar scrutiny, and immigration or national custody can out and harm a traveller regardless of state law. Inside the protective division, care-seeking families and minors receive a shield from state child-abuse or criminal prosecution, and local facilities or housing may be congruent, materially lowering routine exposure for lawful care visits. That shield does not erase federal screening, federal custody, or travel to restrictive divisions. Enforcement is uneven and contested, so the operative regime is elevated-to-high: severe if border, detention, or federal interaction occurs, but safer when lawful entry succeeds and the itinerary stays within protective care and facility settings."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 41,
+ "region": "66186276B86295910312663:Arkansas",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0055387",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined regime is High Risk. The strongest traveller-facing exposure is national: passport sex markers now follow birth sex with the Supreme Court allowing restrictions, so mismatched documents trigger entry refusal, and a cable directs refusal on any discrepancy with a possible lifetime fraud ineligibility. Documented immigration-custody abuse of trans men (forced labour, beatings, sexual abuse) and a federal corrections policy adopted from 2026 are severe custody exposures. The state layer adds a minor-present bathroom misdemeanour, a K-12 facility ban, no state gender-identity protection, and a minors' care ban whose enforceability is unresolved. Mitigators are national hate-crime coverage, national employment protection, and some court blocks. No trans-specific street violence rate is documented for this state.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport markers restricted to M/F by birth sex; mismatch can trigger refusal or confiscation; cable directs refusal on discrepancy; possible lifetime fraud ineligibility. Universal for any mismatched traveller.",
+    "protection": "Existing X passports valid to expiry; litigation pending; some court blocks on related orders.",
+    "interaction": "National document rule applies at every border; state layer adds nothing at entry. Document mismatch can escalate to fraud finding and detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections adopted conversion-style policies from 2026; transgender prisoner counts no longer reported.",
+    "protection": "Not documented for custody placement or care in detention.",
+    "interaction": "Border mismatch leads into federal immigration custody; the custody harm is national, not state-based. State bathroom misdemeanour adds possible arrest for minor-present cases.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State K-12 facility ban; Act 619 misdemeanour for trans bathroom use with a minor present and intent. State restriction on adult public facilities beyond minor-present cases is not stated.",
+    "protection": "Documented adult-facility scope is not stated; the record does not show general adult public bathroom bans in this state.",
+    "interaction": "National policies reach the state's facilities; the state's K-12 ban and minor-present offence operate alongside them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State ban on gender-affirming care for minors, enforceable after appeals reversal (status to be checked). Religious-objection bill permits denial of care to LGBT patients. Proposed national rule would bar public reimbursement for under-18 care.",
+    "protection": "Not documented for adult visitors' care access.",
+    "interaction": "Care denial risk is mainly for minors and for adults facing religious refusal; national funding moves may extend it.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism framing names 'radically pro-transgender' groups; subpoenas of hospitals for minors' records; directive to prosecute teachers facilitating social transition.",
+    "protection": "Counterterrorism statement says powers won't target those who merely disagree; several orders enjoined.",
+    "interaction": "National state-threat framing affects advocacy and care settings a visitor may enter; state law reinforces it for minors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor in K-12 faces facility restriction and athletics ban. A parent or guardian travelling with a minor risks Act 619 exposure if a minor is present in a public restroom with intent. Minors' care restricted; records subpoenaed.",
+    "protection": "Not documented for travelling minors.",
+    "interaction": "Border mismatch involving a minor's documents or care may escalate to investigation and custody.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "One documented arrest for trans bathroom use (in another state, April 2025; this state's arrest not documented). No trans-specific violence rate documented for this state.",
+    "protection": "National hate-crime statute covers gender identity; state hate-crime law excludes it.",
+    "interaction": "Police response for street violence against a visitor is not documented; national statute provides a federal route.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state gender-identity discrimination protection; state civil remedy excludes gender identity; state hate-crime law excludes it; unclear enforcement record for Act 619; state care ban status unresolved.",
+    "protection": "National employment protection; national hate-crime statute; some litigation wins and injunctions; 2015 marriage ruling.",
+    "interaction": "Recourse is mostly national and slow; state-level remedies are absent for gender identity.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Both show birth-sex custody placement with documented assaults and limited remedy, which anchors this case near 0.25. Here the custody harm is documented in federal immigration custody rather than a state facility, and no state housing-by-birth-sex rule is shown, so this case is slightly higher."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Both feature a border-level exclusion tied to documents or presentation with no effective appeal. This case adds documented custody abuse and possible lifetime fraud ineligibility, so it sits lower than 0.35-A, but the consequence is less purely exclusionary than custody-based anchors."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both show document-mismatch secondary screening and delays. The present case adds federal custody abuse and a fraud-ineligibility path that 0.55-B lacks, so it is clearly lower."
+   }
+  ],
+  "synthesis": "The national document regime is the dominant, universal exposure: a passport mismatch at any border can trigger refusal, confiscation or a fraud finding, and mismatch can lead into immigration custody where abuse is documented. State law adds a minor-present bathroom misdemeanour, a K-12 facility ban and an unresolved minors' care ban, but adult public-facility scope is not documented, so the state layer mostly intensifies exposure for travelling minors and their guardians. Protections are national (hate-crime and employment law, some injunctions), while state-level remedies for gender identity are absent. Street-violence data for this state is not documented, so that axis is not assessed."
+ },
+ "parse_error": null
+}

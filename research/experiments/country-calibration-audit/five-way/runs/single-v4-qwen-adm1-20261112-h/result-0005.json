@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005339866",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "Combined operative regime: federal border/document rules and federal/funded facility and custody practices dominate traveler exposure: binary passports, visa discrepancy investigations, permanent-fraud threats, immigration custody abuse, and government-funded single-sex facility restrictions. Division-level protections are strong for adult visitors inside the state: public accommodation, housing/employment, self-ID, hate-crime enforcement, and care shield reduce local service and medical exposure. But these do not cancel federal entry screening, federal facilities, federal prosecution, immigration/corrections custody, or national anti-minor investigative authority. For an adult alone, local stay is moderately safer than a national-only profile, while any crossing or federal encounter remains high risk. For a trans minor with guardian, care may be available locally but school/health/funding investigations create substantial uncertainty.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules impose binary passports/visas, eliminate new X markers, and treat mismatched documents as additional-evidence or fraud risks; trans/nonbinary travellers reported passports confiscated or blocked. This applies at entry before state protections matter.",
+    "protection": "No documented border mitigation; state self-declared markers do not govern federal entry. Court challenge ongoing but passport restrictions upheld.",
+    "interaction": "A document mismatch can escalate into secondary screening, visa refusal, permanent ineligibility, and federal custody rather than a state-level issue.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody is documented with forced labour, severe sexual abuse, beatings, and solitary; national corrections policies require conversion-therapy-like treatment of trans inmates.",
+    "protection": "Not documented for federal/national custody; state-level protections do not bind federal immigration or corrections.",
+    "interaction": "Border document discovery or alleged fraud can place a visitor in federal custody where birth-sex placement and abuse occur.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National policy bars trans people from government-funded single-sex facilities congruent with identity; federal facilities may apply exclusion, while many states elsewhere criminalise bathroom use.",
+    "protection": "The division protects public accommodation, employment, housing; no bathroom ban; Most Protective tier; voters retained protections.",
+    "interaction": "Private/local state services can be safe, but federal or government-funded facilities remain a separate national exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict minor care, threaten school/clinician liability, freeze funding, and subpoena hospital records for under-19 patients; federal care restrictions may apply.",
+    "protection": "Division shield law, codified gender-affirming care, conversion-therapy ban, self-ID, and Most Protective status support adult and minor local care.",
+    "interaction": "Local care is relatively safe; federally funded programs, records, or minor-school exposure can shift into hostile national jurisdiction.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal orders frame gender ideology as harmful, restrict sports/military, direct school investigations, counterterrorism language, and archaic sodomy provisions remain unrepealed though unenforced as private conduct.",
+    "protection": "State has gender-identity hate-crime statute, reporting unit, task force, and enforcement of public accommodation.",
+    "interaction": "Federal agents may enforce hostile policy; state/local response inside the division is more protective.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor can face binary passports, national youth-care restrictions, and investigations/prosecution of adults facilitating social transition; guardians may be exposed via records/funding.",
+    "protection": "State shield protects local care providers/patients, codifies affirming care, bans conversion therapy, and supports self-ID.",
+    "interaction": "A family may receive care in the state, but school/federal investigative reach creates legal uncertainty for parents and clinicians.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific anti-trans visitor violence reported; national hostility and allied advisories may increase risk outside protective settings.",
+    "protection": "State hate-crime law, public vote, reporting system, task force, and anti-discrimination enforcement point to protective local response.",
+    "interaction": "Incidents in state public spaces have local remedies; federal facilities, travel, or neighbouring jurisdictions are not covered.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved litigation, discretionary border officers, unclear federal facility scope, and lack of operative federal custody remedy create uncertainty.",
+    "protection": "National lawsuit, legal-aid FAQ, and state complaints/tribunals provide some recourse in limited areas.",
+    "interaction": "Recourse depends on whether the encounter is state-local or federal; state protections cannot be relied on to defeat federal screening or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to the border-refusal vignette: a mismatched document at national screening can produce additional evidence, denial, stranding, and a fraud finding, while division protections do not reach the border. It is above that anchor only because local services in the protective division are much safer; it is below the most extreme 0.35 cases in part due credible severe federal custody if fraud is alleged."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Compared with birth-sex prison placement and criminal cross-dressing: this case has no documented state-level arrest for presentation, strong local facility/care protections, and no capital threat. But federal custody and government-funded facility exclusion are severe. It sits somewhat above the 0.25 vignette because the protective division materially reduces everyday local exposure, not because federal border/custody risk is absent."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "A protective state could approach this vignette if it controlled entry and custody, but it does not. The national regime rejects marker matching, restricts government-funded facilities, and creates immigration-custody abuse, so the traveller’s final operative exposure is far below a jurisdiction with respectful border screening and reliable release remedies."
+   }
+  ],
+  "synthesis": "A visitor’s risk splits by actor. Inside the protective division, hotels, clinics, and state services should generally be affirming, especially for adults; shield law makes local care safer than in hostile home jurisdictions. At the border, in federal spaces, or after any document discrepancy, national policy takes over: questioning, refusal, stranding, or custody with severe abuse. For families with minors, local pediatric/adolescent care is protected, but national directives against social transition and school investigations create residual risk for guardians and clinicians. The score is high-risk, not severe-risk, because the state layer materially raises safety from purely hostile national exposure."
+ },
+ "parse_error": null
+}

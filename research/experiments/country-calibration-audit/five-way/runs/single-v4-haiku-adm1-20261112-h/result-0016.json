@@ -1,0 +1,82 @@
+{
+ "cell": 16,
+ "region": "66186276B38006515706420:South Dakota",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0058403",
+ "parsed": {
+  "rating": 0.28,
+  "explanation": "Combined regime is High Risk. Entry exposure is documented: passport markers not matching birth sex are refused or blocked, so some travellers are stranded, and officers may refuse cases and consider lifetime fraud ineligibility. Custody exposure is documented at several levels. A visitor arrested under the state's facilities law (trespass, 2025, handcuffed) was held 24 hours in a men's ward. Federal immigration custody reports forced labour, beatings and sexual abuse. Federal corrections policy adopted from 2026 reports denial of care. Facilities bans apply to government buildings, including K-12 schools. Mitigations are real but partial: national employment and hate-crime protections, and a pending passport suit. No sodomy law or execution pathway is documented. State-level protections are absent. Document-change procedures for the state are unconfirmed.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports with markers not matching birth sex are refused or blocked; some travellers were stranded abroad. Cable directs refusal on discrepancy and raises a lifetime fraud-ineligibility finding for suspected misrepresentation.",
+    "protection": "Passport suit by civil-liberties union pending; policy still challenged in courts. Not operative for travellers at present.",
+    "interaction": "Document discrepancy at entry can move into secondary screening and refusal, and possibly into state-level facilities exposure once inside.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "State trespass arrest of a trans woman in a capitol restroom (March 2025), handcuffed and held 24 hours in a men's ward. Immigration custody reports forced labour, beatings, solitary and severe sexual abuse of trans men.",
+    "protection": "Release on pretrial release after 24 hours; the state equality organisation publicly condemned the arrest.",
+    "interaction": "Facilities trespass (willful entry plus refusal to leave when asked) leads to arrest and birth-sex custody placement. Federal immigration detention applies independently to entrants.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facilities bans cover state/provincial government buildings and K-12 schools; criminal trespass applies in certain circumstances. Federal corrections policy from 2026 mandates conversion-style measures for trans inmates, and the bureau stopped reporting trans prisoner counts.",
+    "protection": "Exemptions exist (chaperoning, emergencies, out-of-order facilities). Private accommodation is not restricted under the state's bans as documented.",
+    "interaction": "Federal rules govern federal custody and immigration custody regardless of state law, so a state exemption does not reach them.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoenas for minors' hospital records; proposed federal rule to bar public insurance reimbursement for under-18 care; state ban on gender-affirming care for under-18s; federal corrections care denial.",
+    "protection": "Care for adults is not documented as banned. Proposed rules are unresolved.",
+    "interaction": "Denial of care in custody combines with facilities exposure; a minor seeking care can be investigated.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal orders frame gender-affirming care as mutilation; a counterterror strategy names 'radically pro-transgender' groups as targets; a cash reward for information on leaders of 'violent' groups includes the term 'radical gender ideology'; state officials treat trans presence in facilities as a threat.",
+    "protection": "The counterterror strategy states powers will not target people who simply disagree; several orders are enjoined.",
+    "interaction": "Threat framing reaches advocacy and organisations more than individual visitors, but it shapes enforcement climate at the border and in custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Facilities bans cover K-12 schools, including off-campus activities. Under-18 care is banned in state. A federal directive would prosecute teachers for using preferred names. A minor travelling with a family may be in a facilities-restricted setting.",
+    "protection": "No documented shield for travelling families. Exemption for chaperoning children under 12 applies only to adults assisting in the opposite-sex facility.",
+    "interaction": "A parent who accompanies a minor to a government building may face trespass exposure; minors' care access is curtailed in the state.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented pattern of trans-specific street violence against visitors in the dossier. The state hate-crime law does not cover gender identity; the federal hate-crime statute does.",
+    "protection": "Federal hate-crime prosecution is available. The state's bias-crime law does not cover gender identity. Other street-level exposure is not documented.",
+    "interaction": "Recourse depends on federal prosecution, which the record does not show operating for visitors.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state employment, housing or public-accommodation protections. Birth-certificate marker change closed by March 2026 ruling. Enforcement of the 'reasonable accommodation' clause and custody placement is unresolved. Driver's licence change procedure is unsourced.",
+    "protection": "National employment protection and national hate-crime statute; municipal protections in a few localities; a 2024 settlement with a community health organisation.",
+    "interaction": "Local remedies are thin, and national remedies are partly enjoined or pending, so recourse is uncertain for a visitor who is outed.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest analogue. Both have birth-sex custody placement, arrests for facilities or cross-dressing, and no capital exposure. This case adds federal immigration custody abuse and passport-based entry refusal, so it sits similar or slightly lower."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Exclusion and refusal of entry, with no imprisonment. This case is lower: it adds documented arrests and birth-sex custody placement, and detention abuse in federal custody is documented."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Pretrial custody with beatings and capital provisions. This case is higher: no documented custodial beatings for visitors in state custody, and no capital pathway."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Universal registration exposure with mostly harassment and eviction harms. This case is lower because it adds criminal trespass arrests and custody placement by birth sex."
+   }
+  ],
+  "synthesis": "Documented exposures stack across sovereigns. A passport marker mismatch at entry can lead to refusal or stranding, and a state facilities violation can lead to arrest and placement in a men's ward. Federal immigration custody and federal corrections policy add documented abuse and care denial. These run through the state's bans on government buildings and schools, which apply to minors and to travelling families. Protections are thin at state level and partly enjoined or pending at national level. No execution or sodomy-law pathway is documented, so the rating stays in the High Risk band rather than the severe tier."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.003209175",
+ "parsed": {
+  "rating": 0.63,
+  "explanation": "Combined regime: federal entry layer imposes universal-exposure exposures — binary sex-marker policy, case-note tag, refusal where documents cast 'reasonable doubt' on sex, possible lifetime fraud ineligibility — and documented hostile custody (hormone removal, forced labour, sexual abuse) if detention occurs. This state/province layer is protective: codified gender-identity non-discrimination (2023), hate-crime coverage, conversion-therapy ban, marker changes available, no facility ban or arrest statute, low-risk tier per a 2026 assessment. The traveller's worst documented feature is tier-1 federal document/screening exposure plus hostile custody, mitigated in-state but not offset at entry. No execution or imprisonment pathway is documented for a visitor. Elevated Risk band, upper end.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex policy; 24 Feb 2025 cable instructs refusal where documents cast doubt on sex; possible lifetime fraud finding; reported passport confiscations/stranding of travellers; foreign advisories issued.",
+    "protection": "Fraud finding requires four elements, never automatic; limited waiver; litigation ongoing; existing X passports valid until expiry.",
+    "interaction": "Federal border/adjudication regime governs arrival regardless of state protections; discrepancy can route to secondary scrutiny or refusal before state law applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections bureau 2026 policies: hormone removal, conversion-style regime, stopped reporting trans prisoner counts; immigration custody forced labour, beatings, sexual abuse of trans men.",
+    "protection": "Some orders enjoined; state hate-crime and non-discrimination law; no documented state custody policy harming trans people here.",
+    "interaction": "Any federal arrest or immigration detention places traveller under documented abusive national custody regardless of state location.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars congruent facility access in federally funded single-sex facilities; 20+ states/provinces have bans, 4 criminal; federal scanner screening risks outing.",
+    "protection": "This state/province has no documented facility ban, no criminal trigger, and codified public-accommodation protection from 2023.",
+    "interaction": "State protections govern in-state public buildings; federal facilities and transport screening remain under the federal regime.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders restricting care and insurance for minors; hospital record subpoenas for under-19 patients; state risk map flags healthcare-equity shortfall without detail.",
+    "protection": "No state-specific care restriction documented; conversion therapy banned statewide; discrimination barred.",
+    "interaction": "A travelling minor's care access sits under contested federal rules; state law does not clearly shield nonresidents.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal rhetoric: 'radical gender ideology' in extremist lists; counterterrorism strategy targets 'radically pro-transgender' groups; 190+ anti-trans bills in 2023; 66% support assigned-sex documents.",
+    "protection": "State codified non-discrimination, explicit hate-crime law (2025), panic-defence ban; courts have enjoined several federal orders.",
+    "interaction": "Federal enforcement framing raises discovery stakes; state institutions and courts operate protectively within their remit.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal EO prosecuting teachers facilitating minors' transition; 27 states ban youth care; records subpoenas; Oct 2025 insurance rule; state resolution urging exclusion of trans athletes from girls' sports.",
+    "protection": "Resolution is advisory; state non-discrimination statute stands; no state youth-care ban documented here.",
+    "interaction": "A travelling minor faces federal school/care exposure signals; state protection is residual, not a shield against federal action.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Arrest of a trans student under another state's bathroom law (Mar 2025) shows criminal enforcement exists nationally; hate-crime statutes absent in 37 states as of 2019; no state-specific violence data.",
+    "protection": "State hate-crime law covers gender identity; non-discrimination enforceable; highest court pronoun decision for judges; 2026 low-risk tier rating.",
+    "interaction": "In-state police response likely governed by protective state law; documented harms occur elsewhere in the federation.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Outcome of passport litigation unresolved; X-marker licence status unconfirmed; incarcerated-trans protection shortfall stated without detail; unenforced sodomy statute unrepealed.",
+    "protection": "Legal-aid passport FAQ; state remedies codified and operating; national hate-crimes statute; equality maps for planning.",
+    "interaction": "Remedies are strongest inside the state and weakest at federal entry/custody stages; uncertain markers are open questions, not exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor documents a universal visitor register with routine denial, eviction and no remedy. Here entry screening friction and possible refusal are documented but denials are discretionary, fraud findings are not automatic, litigation is live, and the destination state offers working protections — materially less exposure than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles features secondary screening, discretionary refusal and slow appeals without custody or criminal exposure. The federal layer here is comparable or somewhat harsher (fraud findings, custody abuse), but the state layer adds documented protective law Kestrel lacks, pushing the destination above that anchor."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia allows congruent markers, trained border officers and working tribunals with only brief-detention risk. Here the federal document regime is actively hostile and custody abuse is documented, so the destination sits below Meridia; the protective state layer keeps it above mid-band, supporting ~0.63."
+   }
+  ],
+  "synthesis": "The operative regime is split: at entry, a universal federal document/screening exposure (binary markers, doubt-based refusal, fraud lever) applies to every trans traveller and is compounded by documented federal custody harms if detention occurs — tier-1 features no state protection can erase. Once inside this state/province, documented protections actually operate: codified gender-identity non-discrimination (2023), explicit hate-crime coverage (2025), conversion-therapy ban, marker-change procedures, no facility ban or arrest statute, and a 2026 low-risk assessment. No pathway to imprisonment or lethal outcome for an outed visitor is documented; the realistic worst case is refusal of entry, secondary scrutiny, or federal detention. That places the destination in the upper Elevated Risk band, above no-protection federal-exposure regimes but clearly below protective-regime jurisdictions."
+ },
+ "parse_error": null
+}

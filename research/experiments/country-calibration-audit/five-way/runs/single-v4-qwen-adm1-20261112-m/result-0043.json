@@ -1,0 +1,78 @@
+{
+ "cell": 43,
+ "region": "66186276B89395128410123:Arizona",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00338365",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined operative regime is national-border/federal plus state layer. Federal passport/visa sex-marker policy creates documented traveller-facing friction: mismatched documents, X-marker denial, refusals, possible permanent fraud finding, confiscation. National single-sex facility ban applies regardless of local protections. Immigration custody harm is severe if encountered. State/provincial low-risk for adults and local ordinances mitigate employment/housing but do not offset federal screening/facilities. Adult-with-minor travel is materially worse due to minor care, school reporting, sports and document restrictions. Street violence not documented, but absence is not safety; gay/trans panic and missing state hate crime leave gaps.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "New passports require M/F per birth documents; X stopped; discrepancy/reasonable doubt triggers secondary checks, refusal, requests, confiscation/block, possible permanent fraud if wilful misrepresentation material.",
+    "protection": "Existing X passports valid until expiry; courts/legal-aid FAQ; no trans-specific criminal statute.",
+    "interaction": "Federal screening overrides state/municipal anti-discrimination; mismatch can turn entry delay into refusal or immigration examination.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary, sexual abuse; entry refusal/fraud could escalate to detention. Corrections conversion policies show hostile custody practice.",
+    "protection": "Not documented for traveller custody; formal legal process and courts exist but effectiveness uncertain.",
+    "interaction": "Document mismatch can become investigation; custody exposure dominates paper protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars government-funded single-sex facilities congruent with identity; federal buildings apply; some states ban including private; arrest example under state trespass.",
+    "protection": "State has no mapped bathroom ban; governor vetoed bills; municipal ordinances; federal employment/hate-crime protections.",
+    "interaction": "State/local protections do not cancel federal facility rule; enforcement depends on venue.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Adult continuity care uncertain; minor restrictions are severe: surgery ban, Medicaid exclusion, school hotline, funding freeze, criminalising social transition; public insurance bar proposed.",
+    "protection": "State employee coverage order; emergency care? not documented; clinics may function.",
+    "interaction": "Care-seeking by minor/guardian can trigger outing and investigation.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National EO frames gender ideology hostile; counterterrorism mentions radically pro-transgender; rewards; 66% support binary documents; state panic defence and no state GI hate crime.",
+    "protection": "No trans-specific crime; national hate-crime and Title VII; DOJ/state EO/municipal protections; courts contest orders.",
+    "interaction": "Hostile federal policy plus local protections creates patchwork enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces barred female sports, care refusal, school reporting, document mismatch, risk of forced outing to guardians/staff; guardians may be pressured/prosecuted for facilitating care.",
+    "protection": "Not documented for visitor minors; resident birth-cert order unrelated.",
+    "interaction": "Guardian care request can become investigation; family travel increases scrutiny.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans-directed violence documented; state hate statute lacks GI; panic defence may reduce culpability; traveler identifiable stranger.",
+    "protection": "National hate-crime GI, municipal ordinances, police enforce laws; advocacy guides.",
+    "interaction": "Absence is not safety; federal hostility may embolden some, local protections may deter.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved litigation, changing orders, inconsistent ports/venues, private databases, officer discretion, unclear minor care interactions.",
+    "protection": "Legal-aid FAQ, courts, complaint mechanisms, advocacy guides, some enforcement.",
+    "interaction": "Remedies may be slow and require outing; no effective remedy for permanent fraud.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar secondary screening/administrative refusal, but dossier adds federal facility bans, passport confiscation, immigration custody abuse and minor criminalisation; lower."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Closest: universal document/sex-marker exposure and administrative refusal. Slightly lower because custody harm and minor-care restrictions are severe; local protections prevent descent into 0.35."
+   },
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "No mandatory gender examination/registry blocking transit, but federal entry/facility/care hostility and possible custody keep this above pure bureaucratic gender exams."
+   }
+  ],
+  "synthesis": "Adult alone faces high but not catastrophic risk: federal passport/visa mismatch can lead to secondary screening, refusal, stranding, or possible fraud; federal facility bans can exclude, while local employment/housing protections help. Custody abuse is documented but conditional. Adult with minor faces materially higher risk: care, school, sports and documents can force outing and investigation. Remedies exist but are patchwork, slow, and may themselves require disclosure."
+ },
+ "parse_error": null
+}

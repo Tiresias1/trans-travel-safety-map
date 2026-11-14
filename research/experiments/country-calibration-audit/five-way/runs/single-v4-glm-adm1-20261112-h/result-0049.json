@@ -1,0 +1,78 @@
+{
+ "cell": 49,
+ "region": "66186276B98555229882405:Washington",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.001811456",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined operative regime pairs a protective subnational layer (top-tier shield laws, court-ordered prison healthcare, refuge provisions) with a hostile national layer that every visitor crosses: enforced binary sex-marker rules on passports/visas, visa adjudication instructions inviting fraud-based lifetime ineligibility findings on 'reasonable doubt' about sex, foreign governments issuing trans-specific travel advisories after detentions, and documented abusive treatment of trans people in national custody. Within the state, everyday exposure is low and remedies exist; at the border and in any federal facility, exposure is universal, state remedies do not reach it. Worst tier-1/2 feature sits at entry and federal custody, mitigated only partly by functioning state protections — an elevated-risk middle, not reduced risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Enforced binary marker rules; visa cable directs refusal where 'reasonable doubt' on sex exists and considers lifetime fraud ineligibility for 'wilful misrepresentation'; travellers report passport confiscation and stranding; allied states issued trans travel advisories after detentions.",
+    "protection": "Fraud finding requires four elements, waiver possible, never automatic; passport policy under active court challenge; legal-aid documentation FAQ exists.",
+    "interaction": "Border/federal layer applies before state protections can operate; a document mismatch can escalate to investigation and detention before any shield law is reachable.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies mandate conversion-style regime for trans inmates (hair, hormones, psychiatric drugs); immigration custody shows forced labour, beatings, solitary, severe sexual abuse of trans men; reporting ceased.",
+    "protection": "Some orders enjoined; oversight litigation ongoing; state prisons under court order provide affirming care within this state.",
+    "interaction": "Any federal detention (immigration, arrest) routes the visitor into the abusive national custody regime the state cannot shield.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-identity-congruent access in federally funded single-sex facilities; 20+ state/provinces have facility bans, 4 criminalise in circumstances; documented arrest of trans woman in women's restroom (24h men's-ward holding).",
+    "protection": "This state/province is in the most-protective group; no state facility ban documented here; 60-day misdemeanour trigger requires refusal to depart, not automatic arrest.",
+    "interaction": "Facility risk is location-dependent: state facilities protected here, federal and other-state facilities exposed.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders describe minor care as 'mutilation', funding freezes, subpoenaed hospitals for minors' records; proposed insurance bans under 18.",
+    "protection": "State shield laws enforceable against outside action; comprehensive insurance coverage mandate; refuge protections; court-ordered prison healthcare (with documented 2024 birth-sex housing as punishment).",
+    "interaction": "State care protections coexist with federal investigative reach; travelling with a minor for care creates documented federal subpoena/investigation exposure the shield may not fully block.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State-actor threat-framing: 'radical gender ideology' in justice guidance, counterterrorism strategy targeting 'radically pro-transgender' groups, criminal-prosecution directive for teachers facilitating transition, 66% public support for birth-sex documents.",
+    "protection": "Several orders blocked or enjoined; 2020 employment ruling and national hate-crime statute remain on the books; 22+ state/provinces with protections.",
+    "interaction": "Federal framing legitimises local hostility even inside protective states; enforcement is contested and uneven.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Directive to prosecute teachers facilitating a minor's social transition; hospital record subpoenas covering under-19s; 27 state/provinces ban minor care; lifeline youth services cut; state ballot initiatives targeting trans residents pending.",
+    "protection": "This state maintains shield measures and insurance coverage relevant to travelling families; care remains lawful here.",
+    "interaction": "A guardian seeking care for a trans minor here is protected by state shield but exposed to documented federal record demands and investigation posture.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented police arrest of trans woman in women's restroom, handcuffed, 24h men's ward; airport screening described as outing-risk; no trans-specific violence-rate data provided here.",
+    "protection": "In this state/province, remedies, hate-crime statute, and protective institutions operate; arrest trigger requires refusal to depart.",
+    "interaction": "Police response quality flips across state lines; federal screening exposure applies at every airport regardless.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Ballot initiatives could reverse the protective posture; whether birth-sex housing sanctions continued after 2024 unknown; shield-law enforcement record unstated; litigation outcomes unresolved.",
+    "protection": "Active litigation, legal-aid infrastructure, national trackers, and state refuge provisions provide partial recourse; courts have granted relief on some measures.",
+    "interaction": "Unresolved court cases mean the operative regime can tighten or loosen between booking and travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "That anchor features universal, routine denial/processing of trans visitors with no effective remedy. Here, the visa cable and document regime create a comparable universal entry exposure, but fraud findings are discretionary, waivers exist, litigation is active, and inside this protective state the visitor encounters functioning shield laws and protective institutions — materially less exposure than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is discretionary secondary screening with administrative (not criminal) consequences and some remedy. This jurisdiction is harsher at the border (fraud ineligibility theory, documented detentions prompting foreign advisories, abusive custody records) but more protective on the ground within the state, netting to a similar band."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C offers respectful trained border officers and functioning appeal with brief detention. This jurisdiction's national layer is deliberately hostile (threat-framing, custody abuse, marker enforcement), well below 0.75-C at entry; state-internal conditions approach that anchor but cannot offset the border and custody exposure enough to reach 0.75."
+   }
+  ],
+  "synthesis": "The traveller's experience is bifurcated. Once inside this state/province, documented protections — shield laws against outside action, comprehensive care coverage, court-ordered prison healthcare, refuge status — place everyday exposure near the 0.75 anchor band, with a documented single correctional reversal (birth-sex housing as punishment) as a blot. But the visitor must first pass a national gate that is itself an exposure: enforced binary documents, adjudication guidance inviting fraud findings on appearance-based doubt, documented detention of foreign trans citizens, and national custody with severe documented abuse. State protection does not pre-empt federal entry, facilities, or custody. The record's documented state-actor threat-framing and the pending ballot initiatives add trajectory risk. Universal entry exposure plus severe-if-triggered federal custody, discounted by strong in-state protections and functioning litigation, lands at elevated risk: 0.55."
+ },
+ "parse_error": null
+}

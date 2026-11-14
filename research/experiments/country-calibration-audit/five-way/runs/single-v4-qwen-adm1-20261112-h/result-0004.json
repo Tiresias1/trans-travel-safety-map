@@ -1,0 +1,78 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005354656",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "The combined regime imposes universal entry-document and facility exposures: visa/passport screening enforces an M/F binary, can trigger denial, additional evidence, confiscation, stranding, and permanent fraud ineligibility. Many jurisdictions ban facilities congruent with identity; four criminalize use via trespass, with a documented capitol arrest. Immigration and national custody abuse, including sexual abuse, forced labour, conversion-style care denial and birth-sex placement, make discovery severe. Travelers with minors face care bans, sports restrictions and school investigations. Courts, hate-crime law, and some sanctuaries mitigate, but functioning institutions often enforce hostile rules. No execution or broad criminalization of presentation keeps this above severe band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal visa/passport screening enforces M/F binary and rejects X; document/appearance discrepancies can require additional evidence, denial, confiscation, stranding, or permanent fraud ineligibility if misrepresentation is found.",
+    "protection": "No blanket visitor entry ban; existing X passports remain valid until expiry; litigation and legal FAQ continue; Supreme Court left some process available but restrictions are operative.",
+    "interaction": "Border screening is first gate; refusal or secondary review can escalate to detention; later state/province facility and ID rules multiply exposure. Minor's documents and care records may reveal status.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary, severe sexual abuse; national corrections uses conversion-style hair/med removal; arrests can yield birth-sex placement, e.g. 24h in men's ward.",
+    "protection": "Hate-crime statute and some court injunctions exist; consular or legal recourse is not documented as effective in federal/state custody.",
+    "interaction": "Border denial, facility refusal, or fraud review can become custody; state arrest feeds federal/immigration placement; custody can out traveler to staff and other detainees.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal bar on government-funded facilities; many state/provinces restrict bathrooms/lockers in public or some private buildings; four make use criminal trespass; state law invalidates non-birth markers for facilities.",
+    "protection": "Some states/cities have no mapped ban; 22 plus capital district protect gender identity; two sanctuary cities; courts may intervene.",
+    "interaction": "Visitor uses venues under state/local authority and federal sites; refusal can trigger trespass arrest, eviction, or police contact, especially with mismatched ID.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State/province bans minors' hormones/p blockers/surgery; bars public funds for any age and inmates, no taper; school investigations and provider penalties; adult visitor may face public-insurance/provider chill.",
+    "protection": "Adult private continuity not documented; existing minors allowed if already in treatment under state law; sanctuary cities and advocacy resources limited.",
+    "interaction": "Traveling family seeking HRT/emergency care can force outing, refusal, or records subpoena; care denial compounds border/document and facility risk.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism prioritizes 'radically pro-transgender' groups; executive orders target schools and teachers for preferred names/pronouns; official rhetoric treats gender identity as ideology/security threat.",
+    "protection": "Strategy says counterterrorism is not for mere disagreement; no general criminalization of trans presentation; many orders are enjoined; independent courts partly contest.",
+    "interaction": "Activists, minors, or visibly trans travelers may be subjected to scrutiny, questioning, or referral; law-enforcement hostility can worsen stops and border checks.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces care ban, sports ban, school investigations, public facilities restrictions, document mismatch; guardian may be forced into outing when seeking continuity or entering school/clinic.",
+    "protection": "No adoption discrimination statute; city sanctuary; some existing minors allowed; national hate-crime recourse is not documented as operating for visitors.",
+    "interaction": "Guardian's search for care triggers refusal or reporting; minor's school/clinic status may draw state/federal inquiries; adult and child share facility/border exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Hostile public opinion, state nondiscrimination gaps, and facility bans create harassment/service-denial risk; police may enforce restrictions; no documented mass trans killings or militia sweeps.",
+    "protection": "National hate-crime law covers some violence; 23 states cover bias; 22 plus capital protect; courts can award relief, but enforcement is uneven.",
+    "interaction": "Calling police can out documents or lead detention; in restrictive jurisdictions enforcement may side against traveler; in protective jurisdictions police may mitigate street friction.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Which federal/state orders remain enjoined, how far private bans reach, officer discretion, and fraud determinations are uncertain; custody data gaps; traveler may not know local rules before crossing.",
+    "protection": "Ongoing litigation, legal FAQ, ombuds/courts, some sanctuaries; court-ordered release possible in protective jurisdictions.",
+    "interaction": "Protective state/city rules do not cancel federal border/custody or hostile state care/facility regimes; unknown enforcement can escalate discovery consequences.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra's border exclusion is humiliation/denial without custody or facility criminalization. Here, federal screening can strand/deny and escalate to permanent fraud bars, state facility bans, and abusive custody, so materially lower."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex prison placement and brief arrests, but no national care/sports/criminalization or immigration abuse. Our immigration custody sexual abuse, minor care bans, and counterterrorism framing are more severe."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia routinely criminalizes presentation, months of beatings, capital uncertainty. Our adult visitor may face refusal/detention but not broad criminalization of presentation or capital pathway, and recourse exists, so higher."
+   }
+  ],
+  "synthesis": "Documented federal entry/fraud screening, state facility bans, and custody abuse form a single traveler-facing system. Protective states, hate-crime law, and courts cannot prevent federal border denial, birth-sex placement, or care refusal. A minor intensifies exposure: public funding bans, sports restrictions, school investigations, and document mismatches make care and facilities dangerous. Street hostility is elevated but not campaign-like; severity is institutional and universal enough to sit in high risk, above lethal imprisonment anchors."
+ },
+ "parse_error": null
+}

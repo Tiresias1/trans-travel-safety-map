@@ -1,0 +1,13 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "glm",
+ "system_sha256": "8fb182a488259cd6e8e09d21cf3a1e5b16668287aa02077cde6a2984f57ea093",
+ "user_sha256": "bb83e348ebe21da9844bb6f0b5661668f6623f4bdcb9c78f6163c4999b07c1a3",
+ "usage": {
+  "cost_usd": "0",
+  "input_tokens": 30299,
+  "output_tokens": 108
+ },
+ "raw_response": "\n         \n{\"id\":\"gen-1794611330-K3fRMvIbushCwfrf3yJL\",\"object\":\"chat.completion\",\"created\":1794611330,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"OpenInference\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"error\",\"native_finish_reason\":null,\"error\":{\"code\":502,\"message\":\"Upstream error from OpenInference: Upstream returned HTTP 429\",\"metadata\":{\"error_type\":\"provider_unavailable\"}},\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"reasoning\":\"Here's a thinking process to arrive at the risk assessment:\\n\\n1.  **Analyze the Request and Constraints:**\\n    *   **Goal:** Rate the safety for a transgender visitor (adult alone and adult with a minor).\\n    *   **Basis:** Strictly use the provided dossier.\\n    *   **Format:** Use the specific rating scale/rubric (implied 0.00-1.00, higher is safer).\\n    *   **Output Constraints:**\\n        *   Anchor comparisons $\\\\le\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"Here's a thinking process to arrive at the risk assessment:\\n\\n1.  **Analyze the Request and Constraints:**\\n    *   **Goal:** Rate the safety for a transgender visitor (adult alone and adult with a minor).\\n    *   **Basis:** Strictly use the provided dossier.\\n    *   **Format:** Use the specific rating scale/rubric (implied 0.00-1.00, higher is safer).\\n    *   **Output Constraints:**\\n        *   Anchor comparisons $\\\\le\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":30299,\"completion_tokens\":108,\"total_tokens\":30407,\"cost\":0,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00185034,\"upstream_inference_prompt_cost\":0.00181794,\"upstream_inference_completions_cost\":0.0000324},\"completion_tokens_details\":{\"reasoning_tokens\":108,\"image_tokens\":0,\"audio_tokens\":0}}}"
+}

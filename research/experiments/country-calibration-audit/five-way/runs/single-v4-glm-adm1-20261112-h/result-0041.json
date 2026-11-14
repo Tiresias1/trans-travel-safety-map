@@ -1,0 +1,78 @@
+{
+ "cell": 41,
+ "region": "66186276B86295910312663:Arkansas",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0028386",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "The combined regime imposes tier-1 universal exposures: entry officers are instructed to refuse visa cases where records cast 'reasonable doubt' on sex and to weigh a permanent fraud bar, and the national passport policy issues only birth-sex markers — documented strands and detentions of foreign nationals follow. If detention occurs, documented immigration-custody harms (forced labour, beatings, sexual abuse) and corrections-bureau care denial are severe. The state adds a 'Worst Policies In Effect' profile: K-12 facility ban, a misdemeanour for trans facility use where a minor is present, religious healthcare refusal, and no state hate-crime or discrimination protection. No pathway to imprisonment-highly-likely or execution exists; most exposures resolve as refusal, humiliation, or short custody, but recourse is partial and litigation unresolved. Elevated Risk band, low end.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: officers instructed to refuse applications where documents or records cast reasonable doubt on sex, with possible lifetime fraud ineligibility; passports confiscated or blocked, foreign travellers stranded; state-issued licences cannot bear X descriptors.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding requires all four elements and is never automatic; policy challenged in national courts.",
+    "interaction": "Document discrepancy at entry can cascade into secondary inspection, immigration custody, and the national detention regime.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented severe custody harms: transgender men in immigration custody report forced labour, beatings, solitary confinement and sexual abuse; corrections bureau policies mandate hair-cutting, hormone removal, and psychiatric substitution; reporting on trans prisoners ceased.",
+    "protection": "Some executive orders enjoined; habeas and consular access presumed under rule-of-law institutions, though the dossier does not document relief for detained visitors.",
+    "interaction": "Entry refusal or facility accusation can route a traveller into immigration or criminal custody where these practices operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State bans trans students from K-12 facilities; Act 619 makes trans use of public bathrooms/locker rooms where a minor is present a misdemeanour (intent element); national facility ban bars congruent use in federally funded single-sex facilities; arrest under a sibling state's law documented.",
+    "protection": "29 states plus the capital have no mapped ban; Act 619 requires willful conduct plus intent, and no arrests under it are documented in this state.",
+    "interaction": "A travelling adult with a minor faces the misdemeanour exposure whenever sharing facilities; a trans minor faces school-facility exclusion.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State permits practitioners to refuse care on religious grounds; minor care ban enforced after August 2025 appellate reversal; national proposed rules would bar public-insurance reimbursement for under-18 care; hospitals subpoenaed for youth patient records.",
+    "protection": "National employment-discrimination ruling nominally reaches services; emergency care for an adult visitor not documented as denied.",
+    "interaction": "A visitor minor needing care, or records of prior care surfacing during entry scrutiny, could trigger investigation or refusal.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State-level hostility documented: state placed in worst legal-risk tier, 'first in country' to ban minor care, no state hate-crime coverage for gender identity, 190+ anti-trans bills nationally in one session; national counterterrorism framing names 'radically pro-transgender' groups.",
+    "protection": "Courts enjoined several orders; national hate-crime statute covers gender identity; same-sex marriage recognised; 22+ states have non-discrimination law.",
+    "interaction": "Threat framing raises outing consequences via officers and screening, but the 'radically pro-transgender' language targets activists, not ordinary visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling guardian shares facility-misdemeanour exposure when a minor is present; trans minor faces K-12 facility ban and care-ban jurisdiction; executive order directs prosecution of facilitators of minor social transition in schools.",
+    "protection": "Act 619 requires a specific intent element; care ban still litigated with an injunction for 'irreparable harm' in one instance; minor care needs are usually avoidable on a short visit.",
+    "interaction": "A minor's presence converts ordinary facility use into a criminal-exposure scenario; school enrolment would activate the state's full regime.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for this state specifically; no recorded anti-trans killings or assault pattern; public opinion strongly favours birth-sex documentation (66%) and sports restrictions (69%).",
+    "protection": "National hate-crime statute covers gender identity since 2009, though the state provides no penalty enhancement and its civil remedy excludes gender identity.",
+    "interaction": "Absence of documented street violence in a well-documented jurisdiction is a weak-to-moderately-positive signal, not proof of safety.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and entry policies remain operative pending litigation; several orders blocked but unresolved; state care-ban enforceability flagged as unsettled; Act 619 enforcement record undocumented.",
+    "protection": "Active civil-liberties litigation, running legal-aid FAQ, national equality maps, and functioning courts provide partial, slow recourse; fraud finding has waiver paths.",
+    "interaction": "A traveller's operative exposure depends on measures in force at the moment of travel and on which actor — federal officer or state facility — is encountered.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Closest match: routine universal document exposure with prosecutions uncommon, detention and humiliation documented, inconsistent enforcement. Here the entry regime is sharper (instructed refusals, lifetime fraud bar) but custody is entered only after escalation, and state misdemeanour enforcement is undocumented. Comparable, slightly harsher on documents."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "That anchor's durable registration/database exposure parallels the passport and entry-record regime creating lasting officer-visible data. Both rate harassment and eviction as typical harms with imprisonment uncommon. This dossier adds documented custody abuse, placing it somewhat below 0.45-D."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C features birth-sex custody placement with frequent assault — a documented, recurring custody harm. This dossier documents comparable immigration-custody abuse, but it is contingent on detention rather than automatic, and day-to-day exposure is lower; it cannot rate as low as 0.25-C overall."
+   }
+  ],
+  "synthesis": "The operative regime a visitor encounters is the union of federal entry screening and state law. The federal layer is the heavier: a documented universal-exposure document regime (birth-sex-only passports, 'reasonable doubt' refusals, fraud-bar consideration) plus documented custody abuse means that any discrepancy-triggered detention escalates to tier-1/2 harm. The state layer ('Worst Policies In Effect') adds facility restrictions — one with a criminal intent element aimed at minors-present scenarios — religious care refusal, and no state recourse for gender-identity bias. Mitigations are real but partial: courts have enjoined several measures, existing X passports remain valid, the fraud finding is discretionary, and no execution or imprisonment-on-discovery pathway is documented. Net: firmly in the Elevated band, low end — materially below acceptance-with-protections jurisdictions, above the felony-ban 'Do Not Travel' tier the state sits one rung beneath."
+ },
+ "parse_error": null
+}

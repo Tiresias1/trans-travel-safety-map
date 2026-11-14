@@ -1,0 +1,78 @@
+{
+ "cell": 10,
+ "region": "66186276B2592965416524:New Mexico",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005475324",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "Combined federal and state regime: federal entry screening, birth-marker documents, government-funded facility exclusion, hostile immigration/correctional custody and minor-related care/school orders are documented traveler-facing exposures. The protective state's public-accommodation law, shield for adult care, gender-neutral single-occupancy restrooms, M/F/X IDs and no criminal bathroom ban reduce local friction. These protections do not offset federal border, fraud, immigration custody or federal/facility authority. For adult alone, risk is moderate-to-high; adult travelling with minor is worse due to unresolved care and school/social-transition hostility. Absence of local violence evidence does not prove safety.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport/visa rules use birth-sex markers, stop X markers, and allow refusal when documents or evidence create sex doubt; suspected wilful misrepresentation can trigger immigration-fraud and permanent lifetime ineligibility, plus reports of stranded travelers and foreign advisories.",
+    "protection": "State recognizes M/F/X domestic IDs and bars public-accommodation discrimination; legal-aid FAQ exists. This aids local ID consistency but does not create a federal entry exemption or require federal officers to honor nonmatching markers.",
+    "interaction": "Protective state documents may ease hotel, transport and care presentation; federal entry adjudication still controls admission, fraud findings, and data checks.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal corrections mandates conversion-therapy practices and HRT removal for transgender inmates; immigration custody reports forced labour, beatings, solitary and severe sexual abuse; federal health records subpoenas can investigate minors' care.",
+    "protection": "State hate-crime law covers gender identity, civil liberties union and courts challenge some orders, but no documented state immunity from federal custody or immigration detention.",
+    "interaction": "If entry, facility, fraud or care disputes escalate to federal custody, protective state law stops at local services and does not prevent detention conditions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars government-funded single-sex facilities congruent with identity; other states criminalize bathroom use, including arrest. Visitors face possible federal-facility, detention, school or healthcare setting exclusion by birth sex.",
+    "protection": "Protective state has no mapped bathroom ban, single-occupancy restrooms must be gender-neutral, public-accommodation law covers hotels, restaurants, shops and local government agencies, and city ordinance aligns.",
+    "interaction": "State protections govern much local accommodation and public services; federal facilities or federally funded settings can still impose birth-sex placement absent documented local refusal.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal rules treat minor gender-affirming care as abusive, block reimbursement, target schools and health records, and remove gender identity language; emergency or public care may expose minors and families.",
+    "protection": "State shield law protects providers/patients seeking adult care from other jurisdictions' bans; state keeps care legal and Medicaid funds; adult visitors can likely access care with reduced local refusal.",
+    "interaction": "For adult alone, shield is traveler-facing mitigation. For minors, shield applicability to nonresident youth and federal health/school enforcement are unresolved.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders and counterterrorism language frame radical gender ideology/pro-transgender politics as extremism, while directing school investigations, teacher prosecution for social transition, athlete exclusions, and data removal; this legitimizes profiling and official scrutiny.",
+    "protection": "State has long anti-discrimination statute, no criminal bathroom ban, public-accommodation enforcement extension, hate-crime coverage, gay-friendly city culture, and civil-society tracking.",
+    "interaction": "Local protective enforcement may reduce street and service hostility, but federal immigration, health, schools and law-enforcement authorities remain aligned with hostile framing.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Adult guardians seeking care, school accommodation, markers or social support for a trans minor may face federal care-restriction, reimbursement, records-subpoena, school-investigation and possible criminal exposure; minors can be subject to birth-sex facility or custody placement if detained.",
+    "protection": "State protects adult care, school bullying policy, recognizes same-sex families, public accommodations, no sports ban, and M/F/X IDs; local agencies extended under anti-discrimination law.",
+    "interaction": "Shield for adults may not cover nonresident minors or federal health/school actions; parent-child travel can be treated as care or fraud investigation rather than simple tourism.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current documented trans-specific violent attacks or police profiling in this state, but absence is not safety; national climate and other-state bathroom arrests show escalation can happen through facility or fraud disputes.",
+    "protection": "State anti-discrimination and hate-crime laws, civil liberties union, gay-friendly city, and public-accommodation enforcement suggest recourse, but enforcement outcomes for visitors are not documented.",
+    "interaction": "Street friction likely low in protective city, yet a stranger or border dispute can route the traveller to federal custody where local protections do not apply.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Legal remedies are uncertain because court challenges are unresolved, passport and facility rules vary by moment, federal immigration authority is not documented as constrained, and nonresident minor care is unspecified.",
+    "protection": "Civil-liberties union litigation, legal-aid FAQ, complaint avenues, hate-crime recourse and shield statutes are documented, but no evidence they prevent federal refusal, fraud finding or detention.",
+    "interaction": "Protective state remedies may resolve local service disputes quickly; federal entry, custody and minor-care questions remain outside reliable local remedy.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Like routine border exclusion and humiliation, but this dossier adds possible immigration-fraud lifetime ineligibility and severe custody harm; protective state public-accommodation and adult care shield partly offset, keeping it near upper 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Worse than 0.55-B because federal fraud, government-funded facility exclusion, immigration-custody abuse, and minor-care/school hostility are documented. State protections make local services safer, but do not neutralize federal exposure."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "Far below 0.75-A: protective state care/public accommodation exist, yet federal entry, birth-marker, custody and minor-related hostility remain operative, preventing Reduced-Risk treatment."
+   }
+  ],
+  "synthesis": "The combined regime is uneven. Inside the protective state, an adult traveller has meaningful local shelter: anti-discrimination public accommodation, adult care shield, no criminal bathroom law, and gender-marker flexibility. Federal authority still dominates border admission, document scrutiny, fraud findings, government-funded facilities, health records, and immigration/correctional custody, where severe harm is documented. For adults, this creates elevated but not extreme exposure if travel passes entry smoothly; for minors, unresolved care and school/social-transition hostility raises serious guardian-facing uncertainty. Strong local protections therefore lift the score above comparable hostile-border states, but the absence of pre-emption or immunity for federal screening and custody keeps it below Reduced Risk."
+ },
+ "parse_error": null
+}

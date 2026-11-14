@@ -1,0 +1,78 @@
+{
+ "cell": 31,
+ "region": "66186276B73402293045483:Nebraska",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0092708",
+ "parsed": {
+  "rating": 0.25,
+  "explanation": "The combined regime is a hostile parent framework layered on a state that defines sex by birth and backs single-sex spaces. For a visitor, the sharpest exposures are visa/entry screening with document mismatch, refusal and possible permanent fraud ineligibility; government facility exclusion; under-19 care denial; and documented custody harm if detained. The state's own prison practice houses by birth sex and a court dismissed a trans woman's assault and care claims. National hate-crime and employment protections exist, but the state lacks gender-identity hate-crime or discrimination statutes, and court challenges are unresolved. No explicit criminalization of trans identity is documented, but tier-1 facility/custody exposures and care denial put the case below the 0.35 exclusion-only anchors and near the 0.25 prison/facility anchors. Minors face additional care denial.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport sex-marker restrictions, visa case-note tag, refusal where sex doubt, possible permanent fraud ineligibility; state documents require surgery but not directly for foreign passports.",
+    "protection": "Existing X-marker passports remain valid; national court challenges; legal-aid FAQ.",
+    "interaction": "Visa/entry screening can refuse or strand; foreign passport is not directly governed by state document rules.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labor, beatings, solitary confinement, sexual abuse; prison conversion practices and care denial; state prison places by birth sex, with documented assault.",
+    "protection": "National hate-crime statute covers gender identity; court challenges exist, but no effective remedy in custody.",
+    "interaction": "Detention or arrest can lead to severe custody harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National bar on trans people in government-funded single-sex facilities matching identity; state backs single-sex bathrooms and changing rooms; some states criminalize such use.",
+    "protection": "No documented enforcement remedy in this division; state law is not shown to criminalize bathroom use.",
+    "interaction": "Facility use in government buildings risks exclusion; criminal exposure only if in a covered state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care under 19; national rules bar reimbursement for under-18; a visitor cannot obtain care for a minor in their care.",
+    "protection": "No documented protection; national court challenges exist.",
+    "interaction": "Adult care is not clearly restricted; minor care is denied.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes 'radically pro-transgender' groups; executive orders call care 'mutilation'; state order defines sex by birth.",
+    "protection": "Some orders are enjoined; courts are contested.",
+    "interaction": "Raises risk of official scrutiny and hostile enforcement.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-19 care ban; parent cannot obtain care for a minor; national orders target teachers using preferred names; facility restrictions.",
+    "protection": "Not documented.",
+    "interaction": "Travelling with a trans minor carries care denial and legal risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence statistics in the state; a bathroom trespass arrest is documented nationally; state hate-crime law is silent on gender identity.",
+    "protection": "National hate-crime statute covers gender identity; the state 1997 law does not.",
+    "interaction": "Police response may be uneven; national charges are possible.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport policy and executive orders are in litigation; custody case dismissed; no state-wide gender-identity discrimination statute.",
+    "protection": "National courts, civil-liberties suit, and legal aid; some protections exist.",
+    "interaction": "Remedies exist but are slow and uncertain; state-level gaps remain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar: state prison housing by birth sex, documented assault, and failed court remedy. This dossier adds national facility exclusion and visa/entry restrictions, but lacks that anchor's explicit cross-dressing criminal statute; overall comparable to 0.25."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "More severe than 0.35-B: police stops and fines without imprisonment versus documented custody sexual abuse and forced labor, plus facility exclusion and care denial. This case should sit below 0.35."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "More severe than 0.45-A: routine document checks with detention and denial but no documented severe custody harm. This dossier has prison/immigration custody harm and a care ban, so it is below 0.45."
+   }
+  ],
+  "synthesis": "The operative regime combines national document and entry restrictions, government facility exclusion, custody harm, and care denial for minors with a state framework that defines sex by birth and backs single-sex spaces. National protections exist but are partial, contested, and do not remedy the state's custody or facility exposures. For a visitor, the highest risk is entry refusal or custody if detained; the adult alone may avoid some exposures, but the tier-1 facility and custody features make the destination materially unsafe for a trans traveller."
+ },
+ "parse_error": null
+}

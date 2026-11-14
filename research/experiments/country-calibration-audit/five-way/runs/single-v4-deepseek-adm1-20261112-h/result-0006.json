@@ -1,0 +1,78 @@
+{
+ "cell": 6,
+ "region": "66186276B17406925856308:Vermont",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.002496503",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The combined regime is bifurcated: state law is strongly protective (public accommodations, hate-crime, shield laws, gender-neutral single-user bathrooms, self-ID), but federal entry, facilities, custody and threat-framing rules are hostile and are not pre-empted. A visitor's sharpest exposure is at the federal border and in federal custody/facilities, where document mismatch can trigger refusal, fraud findings, or detention with documented abuse. State protections lower everyday risk in hotels, venues and care, but cannot cancel federal exposure. Legal challenges create uncertainty, not operative safety at the border. Net: Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require binary sex; new X markers stopped, existing X valid until expiry. Border officers may refuse or request evidence on discrepancy, with possible fraud/lifetime ineligibility. Travel advisories exist.",
+    "protection": "State offers self-ID and X markers on state documents, but visitors use home passports. State shield laws do not govern federal border screening.",
+    "interaction": "Federal border controls entry regardless of state protections; document mismatch can escalate to federal refusal or fraud inquiry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and sexual abuse of trans men; national corrections policies include conversion-therapy-like practices and denial of care.",
+    "protection": "State public-accommodation and hate-crime laws do not reach federal custody. Federal policies are challenged in court but remain operative in part.",
+    "interaction": "A border document discrepancy can lead to federal detention, where state protections do not apply and documented harm is severe.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Executive order bars trans people from government-funded single-sex facilities congruent with identity, affecting federal buildings, airports and national sites.",
+    "protection": "State has no bathroom ban, requires gender-neutral single-user bathrooms, and bans discrimination in public accommodations.",
+    "interaction": "State protections do not pre-empt federal facility rules; visitors encounter both regimes depending on the building.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures restrict gender-affirming care for minors and propose insurance bars; federal hostility creates uncertainty for trans patients.",
+    "protection": "State shield laws protect gender-affirming care travellers, insurers cover trans care, and conversion therapy on minors is banned.",
+    "interaction": "State shield laws are enforceable against out-of-state action, but federal funding and policy pressure create friction.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' groups; justice department guidance references 'radical gender ideology' in extremism context.",
+    "protection": "State hate-crime law covers gender identity and panic defence is abolished; no state-specific enforcement data is provided.",
+    "interaction": "Federal rhetoric may embolden hostility, while state law enforcement operates under protective statutes; practical effect is uncertain.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal executive order directs investigation of schools promoting 'gender ideology' and prosecution of teachers facilitating social transition; national care bans affect minors in many states.",
+    "protection": "State bans conversion therapy on minors, has anti-bullying protections and a school policy protecting trans students.",
+    "interaction": "Federal pressure on schools conflicts with state protective policy; a visiting minor with a guardian faces federal border/facility exposure plus state-level protection.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National hate-crime statute covers gender identity, but only 23 states have bias-crime coverage; national polling shows substantial support for binary document rules.",
+    "protection": "State hate-crime law covers gender identity, public accommodations are protected, and panic defence is abolished. No state enforcement data is provided.",
+    "interaction": "State legal protections are strong on paper, but practical police response to anti-trans violence is not documented.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport and border policies are in litigation; fraud findings carry limited waiver and possible lifetime ineligibility. Remedies at the border are slow and uncertain.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, state public-accommodation complaints and shield laws provide some recourse.",
+    "interaction": "State remedies operate for in-state services, but federal border and custody decisions remain outside their reach.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has routine border exclusion with no effective remedy. This case has serious federal border exposure but not a blanket bar, and the state layer offers strong everyday protections, so it rates above 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves extended secondary screening and discretionary denial with slow remedies. This case shares border friction but adds documented federal custody harm and federal facility restrictions, offset partly by unusually strong state protections; it sits slightly below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has a protective state, trained border officers and working remedies after brief detention. This case lacks border training and faces hostile federal entry, facilities and custody rules, so it rates materially below 0.75-C."
+   }
+  ],
+  "synthesis": "The state's protective statutes meaningfully reduce everyday risk in hotels, venues, care settings and schools, and its shield laws are a real positive. But the visitor must first pass federal border screening, and federal facilities and custody operate under a hostile national regime that state law does not pre-empt. The documented possibility of refusal, fraud findings, detention and abuse in federal custody keeps the combined regime in the Elevated Risk band despite strong local protections."
+ },
+ "parse_error": null
+}

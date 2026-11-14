@@ -1,0 +1,82 @@
+{
+ "cell": 17,
+ "region": "66186276B41335105066757:Louisiana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005899306",
+ "parsed": {
+  "rating": 0.12,
+  "explanation": "Combined national-state regime severely endangers trans visitors. Travel documents create universal exposure: M/F-only passports, visa discrepancy checks and fraud-based permanent bans can strand travelers. Facilities are criminalized in many jurisdictions; refusal to leave assigned-sex spaces supports trespass arrest, and one arrest was followed by 24 hours in a men's ward and male search despite a female marker. Custody adds documented sexual abuse, forced labor, conversion-style treatment and denial of care. For adults with trans minors, care bans and criminalization of social transition raise family exposure. Public hostility is reinforced by official threat framing and victim-charging police practice. Contesting courts do not offset enforcement; rule of law here amplifies rather than mitigates harm. Rating is severe risk, below administrative-exclusion anchors because arrest/custody harms are credible.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports/visas limited to sex assigned at birth; X-marker processing stopped. Officers may refuse where discrepancy or doubt on sex, and consider material misrepresentation as lifetime ineligibility.",
+    "protection": "Pending litigation and a legal-aid FAQ show practical guidance and some judicial contest; not operative protection.",
+    "interaction": "Document mismatch at entry can escalate into refusal, return, or fraud investigation; foreign advisories evidence traveler impact.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary and sexual abuse. National corrections adopt birth-sex/conversion-style policies; local arrest incident shows men's jail and male search despite female marker.",
+    "protection": "Not documented.",
+    "interaction": "Entry or facility encounter can move into custody where marker recognition fails and abuse follows.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National single-sex facilities follow sex assigned at birth; multiple states ban identity-congruent use, some criminalize it; arrest occurred for restroom entry/refusal. Municipality passed severe ordinance.",
+    "protection": "Some jurisdictions elsewhere protect gender identity, but this division lacks statewide facilities protection.",
+    "interaction": "Federal and state rules combine; building exposure varies locally, while passport and federal facilities remain universal.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Public insurance and state laws restrict gender-affirming care; minors are banned, crisis services narrowed, and records scrutiny increased. A visitor needing emergency or routine care can face refusal or marker disclosure.",
+    "protection": "Not documented for visitors; employment/hate-crime statutes do not restore care.",
+    "interaction": "Medication, school, or illness can trigger document checks and denied services.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Official orders frame gender identity as prohibited; police charged restroom-attack victims, attackers were not arrested, and counterterrorism language names radically pro-transgender groups.",
+    "protection": "National employment-discrimination and hate-crime law exist; some municipal ordinances elsewhere protect gender identity.",
+    "interaction": "Official hostility supplies justification that can intensify local enforcement and reduce complaint outcomes.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor care is banned; social transition can be investigated or prosecuted; school records and markers expose students. Guardians may face fraud questions if documents or purpose are doubted.",
+    "protection": "Not documented for visiting minors; marriage recognition does not protect identity exposure.",
+    "interaction": "An adult travelling with a trans minor combines border scrutiny, facility bans, and care denial.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Mob restroom attack injured victims, who were charged while attackers were not arrested; one homicide is recorded. Per-capita killing figures are undercount floors, so they do not drive the score.",
+    "protection": "National hate-crime recourse exists, but the division statute omits gender identity and local response was punitive.",
+    "interaction": "Reporting street victimization can lead to custody and birth-sex placement rather than attacker prosecution.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement varies by port, building and date; contested policies can change. The dossier does not establish a functioning visitor-facing remedy at the moment of travel.",
+    "protection": "Legal-aid FAQ, litigation, and partial state protections may help in some settings but are unreliable for visitors.",
+    "interaction": "Uncertainty compounds exposure where federal, state, and local authorities each hold operative control.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.05-A",
+    "comparison": "Compared to the 0.05 anchor's documented lethal custody and capital prosecution, this dossier lacks credible death-penalty or execution pathway. That raises it above 0.05, but severe non-lethal harms remain close to the lower end of severe risk."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "This resembles the 0.15 anchor: document-mismatch arrest, hostile custody, weak protection, no capital punishment used. It is slightly more severe because national policy links entry fraud, facilities, and custody abuse; slightly less because months of pretrial beatings are not documented for visitors. Near 0.12."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The 0.35 anchor is administrative exclusion: denied entry without credible imprisonment. Here refusal can lead to permanent fraud ineligibility, plus arrestable facilities and sexual abuse in custody, so it sits materially below 0.35."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "The 0.25 anchor has raids, fines, short jail, no credible imprisonment or death. Here national executive order, criminalized facilities, birth-sex custody, and immigration sexual abuse are worse; rating is below the high-risk band."
+   }
+  ],
+  "synthesis": "For an adult trans visitor, the combined regime operates at entry, in public buildings, and in custody. M/F-only travel documents make routine crossing a possible refusal or fraud case; facility bans make restroom use a routine outing and arrest trigger; custody then follows assigned sex and exposes abuse. For a parent with a trans minor, the same document scrutiny is coupled with denied care and school criminalization. Formal courts and partial hate-crime laws cannot offset institutions enforcing hostility, so uncertainty compounds severity."
+ },
+ "parse_error": null
+}

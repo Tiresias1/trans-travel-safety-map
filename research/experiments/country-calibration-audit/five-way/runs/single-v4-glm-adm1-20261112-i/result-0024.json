@@ -1,0 +1,82 @@
+{
+ "cell": 24,
+ "region": "66186276B63937528568220:Iowa",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0041682",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The combined operative regime pairs a hostile national framework — binary sex redefined for passports, visa refusal where officers doubt an applicant's sex, lifetime fraud ineligibility possible, documented abusive custody, and expanding facility bans — with a division that is the country's first to withdraw gender-identity anti-discrimination protection, pre-empts stronger local ordinances, and binds everyone on school grounds to birth-sex facilities. Exposures are universal-exposure tier: document mismatch at entry/screening and facility exclusion with an arrest precedent. Some national orders are enjoined and litigation is live; remedies are thin (no state recourse; national hate-crime statute exists). Outcomes are typically exclusion, humiliation, or short detention rather than severe imprisonment or lethal targeting. This sits near anchor 0.45-A/D, slightly above pure exclusion regimes, below protective-regime anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport sex must match assigned sex; X markers no longer processed; officers instructed to refuse cases with document discrepancy and consider lifetime fraud finding; documented stranded travellers; foreign advisories issued.",
+    "protection": "X passports already issued remain valid; fraud finding requires all four elements, limited waivers; policy challenged in national court.",
+    "interaction": "National consular policy governs visa and entry; airline and border checks interact with document mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections mandates conversion-style policies for trans inmates; immigration custody forced labour, beatings, sexual abuse reported; documented arrest under a bathroom trespass law with 24h men's-ward holding.",
+    "protection": "Not documented.",
+    "interaction": "Minor facility-fraud encounter can escalate into national custody exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facility bans congruent with gender identity in 21+ state/provinces including government buildings and schools; division binds all persons on school grounds, including visitors, to birth-sex restrooms; 4 state/provinces criminalise in circumstances.",
+    "protection": "Single-person facilities available on written guardian consent (written for students); most state/provinces unmapped or no ban.",
+    "interaction": "State bans sit alongside national binary-sex order; state cannot exceed state floor after 2026 pre-emption law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for minors banned in 27 state/provinces including this one (under-18 ban, 2023); national care described by the government as mutilation; visitor minor cannot obtain care here.",
+    "protection": "Division's highest court once ordered surgery coverage for trans adults; adult care access not documented as restricted for visitors.",
+    "interaction": "National proposed insurance rules and state minor ban jointly limit travelling minors.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National 'radical gender ideology' framing, counterterrorism prioritisation of 'radically pro-transgender' groups, bathroom law defended as safety; division repealed equality protections as state policy.",
+    "protection": "National gender-identity hate-crime statute; several orders enjoined in court.",
+    "interaction": "Official framing licenses lower-level enforcement discretion; enforcement varies by state/province.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling trans minor faces birth-sex school facilities rule on any campus visit, no minor care access, teacher prosecution order for facilitating transition; parent may face scrutiny.",
+    "protection": "Single-person facilities conditional on guardian consent; parentage/adoption framework comparatively developed for couples read as same-sex.",
+    "interaction": "Guardian consent mechanisms route through schools, not visitors.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for the division specifically; killings data noted as undercounts and violence position not established.",
+    "protection": "Hate-crime statute nationally; 22 state/provinces retain anti-discrimination laws, though not this division.",
+    "interaction": "Legal-risk grading predicts law posture, not private-violence rates.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Division visitor refused service or housing has no state remedy; 2026 pre-emption bars stronger city ordinances; classification of the division's facilities law unresolved.",
+    "protection": "Active litigation, legal-aid FAQ, national suit over passport rules; several national orders blocked.",
+    "interaction": "Remedy depends on national courts, not state law.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Both feature universal document/record mismatch exposure with discretionary enforcement and denied care. The dossier adds documented custody harm and facility criminalisation in some state/provinces, slightly worse; similar tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is border-only administrative friction with functioning appeal desks. Here entry friction is joined by state-tolerated targeting (protection withdrawal, facility bans, arrest precedent) and documented custody abuse, so this rates below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has respectful-trained border officers, working tribunals, brief detention. This regime lacks division remedies, has an official threat-framing layer and hostile facility law, so it sits materially below."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C centres on birth-sex prison placement and cross-dressing arrests. This dossier has comparable custody harms and facility exposure but stronger litigation climate, enjoined orders, and no documented imprisonment of visitors as typical; it sits above 0.25-C."
+   }
+  ],
+  "synthesis": "The traveller encounters a single combined regime: national binary-sex document rules, suspicion-based visa refusal with potential lifetime fraud findings, and documented abusive national custody, layered over a division that withdrew anti-discrimination protection, pre-empts local protections, and extends a birth-sex facilities rule to visitors on school grounds with a documented arrest precedent. Consequences of discovery are typically exclusion, humiliation, short detention, or stranded travel — severe but not the organised lethal targeting of the 0.15/0.25 tier; no trans-specific violence rate is documented. Partial judicial pushback and a national hate-crime statute are real but unproven for this traveller's journey. Net: elevated-to-high risk, around the 0.45 anchor tier."
+ },
+ "parse_error": null
+}

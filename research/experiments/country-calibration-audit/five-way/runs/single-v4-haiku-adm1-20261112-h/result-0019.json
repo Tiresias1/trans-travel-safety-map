@@ -1,0 +1,78 @@
+{
+ "cell": 19,
+ "region": "66186276B43575054209436:New York",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.006033",
+ "parsed": {
+  "rating": 0.41,
+  "explanation": "Combined regime, with national and state layers interacting. National entry and custody rules are documented and hostile: passport sex-marker restrictions in force after November 2025, passports confiscated or blocked, entry refusal with a possible lifetime fraud finding, and documented beatings, solitary confinement, forced labour and sexual abuse in immigration custody. The state adds strong operative protection: statewide gender-identity coverage, a 2024 constitutional ban, a hate-crimes statute, repeal of the arrest-for-presentation law, a shield law for out-of-state care, and no documented state trans-bathroom arrests. State protections do not cancel national entry, federal-facility or immigration-custody exposure. A county sports ban and unresolved litigation are minor local offsets. Violence baseline and trans-specific incident data are not documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport marker restricted to M/F by sex at birth; new applications processed on supporting documents; passports confiscated or blocked, leaving some stranded. Cable directs refusal on discrepancy and raises possible lifetime fraud ineligibility. Universal for any visitor with a mismatched marker.",
+    "protection": "Existing X passports valid to expiry. Civil-liberties suit pending. State protections do not operate at the border.",
+    "interaction": "Document discrepancy at national entry precedes state-level protection; the state shield does not reach the border desk.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Federal corrections adopted conversion-style policies for trans inmates; the bureau stopped reporting trans prisoner numbers.",
+    "protection": "Not documented as operative for trans detainees.",
+    "interaction": "Entry refusal or document mismatch can lead into federal custody, which runs under national rules regardless of state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National government-funded facilities are restricted by sex; national policy bars gender-identity-consistent use. Federal buildings follow national rules, not state protections.",
+    "protection": "State public-accommodation and anti-discrimination law covers state facilities and private settings. No state trans-bathroom criminal offence documented here.",
+    "interaction": "State protection covers state-controlled settings only; federal settings in the state keep national rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoena of hospital records for under-19 patients; proposed federal rules to bar public insurance for under-18 care; federal youth-care restrictions.",
+    "protection": "State shield law (2023) and city executive order protect patients and providers from out-of-state charges for care legal here. Shield does not protect return to ban states.",
+    "interaction": "Care-seeking visitors from ban states are protected in this state, but national funding and records pressure can still reach them.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism framing names 'radically pro-transgender' groups as targets; a cash reward for leadership identification; national orders target teachers and schools supporting social transition.",
+    "protection": "State gender-identity hate-crime and anti-discrimination law; repealed 240.37 presentation-arrest statute.",
+    "interaction": "Federal threat-framing is national and operates regardless of state protection, but its direct effect on visitors is unclear.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor's records subpoenaed; teachers and guardians may face prosecution for supporting social transition; guardians at national entry face the same marker rules as the minor.",
+    "protection": "State parental-consent rule for minors' marker changes; shield law covers care here, and the 2023 custody-removal bar protects families from out-of-state custody orders.",
+    "interaction": "Family travel with a minor combines national entry and record exposure with state protection once in-state.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incident documented in this state. Single 2025 arrest of a trans woman for restroom use occurred in a different unit, not here.",
+    "protection": "Hate-crime coverage since 2019; anti-bullying coverage; repealed presentation-arrest statute; state police recourse operative in documented shield and anti-discrimination context.",
+    "interaction": "Recourse within the state is credible; national police and federal investigations are not covered by the state framework.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and facility litigation unresolved; county sports ban pending; IVF lawsuit outcome not documented; state shield interaction with national funding pressure not addressed.",
+    "protection": "State ombudsman and anti-discrimination enforcement; state shield functioning as a protective operating regime.",
+    "interaction": "Unresolved national litigation means the rule in force at travel is uncertain; state remedies do not reach national custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Both have durable national registration-style exposure and documented misuse, but 0.45-D has no custodial abuse and milder harms. This case adds documented beatings and sexual abuse in immigration custody and a possible lifetime bar, pushing it lower. It also has a stronger state shield and anti-discrimination regime, which keeps it above a high-risk tier."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex housing in custody and a presentation-arrest statute, which are state-imposed and enforced. This case has documented custody abuse and forced labour, but no state housing-by-birth-sex or presentation-arrest statute here, and its state protections operate. It rates higher than 0.25-C on the state layer and similar on national custody harm."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has discretionary secondary screening and administrative refusal with limited violence, and no documented custodial abuse. This case has documented custodial abuse and possible lifetime exclusion, which places it lower. Its strong state protections and shield law place it above 0.55-B's bureaucratic-friction profile on the state side only."
+   }
+  ],
+  "synthesis": "A visitor's exposure is set mainly at national entry and in national custody, where the record documents document-mismatch refusals, stranded travellers, possible lifetime fraud ineligibility, and abuse of trans men in immigration detention. State protections (shield law, statewide anti-discrimination coverage, hate-crime statute, repealed presentation-arrest law, and no documented state trans-bathroom arrests) operate inside the state and reduce in-state exposure. They do not cancel national passport, federal facility or custody rules, which apply to every traveller who passes through a national checkpoint. Documented harms outweigh the state's protective machinery, so the combined regime sits in the elevated band, toward its lower end."
+ },
+ "parse_error": null
+}

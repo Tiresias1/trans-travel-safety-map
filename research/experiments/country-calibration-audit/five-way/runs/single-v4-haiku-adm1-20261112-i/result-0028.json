@@ -1,0 +1,78 @@
+{
+ "cell": 28,
+ "region": "66186276B6628180846672:Pennsylvania",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.00572",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "Combined regime: federal entry and custody exposure dominates. The foreign-ministry cable refuses cases on any document discrepancy and allows lifetime-fraud findings, and federal immigration custody has documented abuse. The state layer is comparatively protective: X markers on driver's licences, commission-enforced gender-identity discrimination protection, a sanctuary order shielding travellers from out-of-jurisdiction enforcement, and a low-risk tier. It cannot cancel federal screening or custody. Gaps remain: no statewide anti-LGBTQ hate-crime provision, uncertain state facilities status, and pending youth-sports bills that do not reach adults.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passport markers limited to M/F by national policy; the 24 Feb 2025 cable refuses discrepancy cases and allows lifetime fraud findings. Universal for mismatched visitors.",
+    "protection": "State-issued IDs offer X, but these do not govern federal entry.",
+    "interaction": "Federal entry screening overrides state document openness; a visitor's home passport is checked at the border regardless of destination state rules.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse of trans men; detention follows document refusal.",
+    "protection": "Not documented as operative for visitors.",
+    "interaction": "Federal custody continues regardless of state sanctuary order, which covers only state and local resources.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National facility restrictions apply in federally funded settings; state facilities restriction status is not stated for this state.",
+    "protection": "State layer documents no statewide facilities ban in the mapped categories for this state; the map notes other sex-definition laws may still apply.",
+    "interaction": "Federal funding rules and state-level status run in parallel; the visitor cannot rely on the state position alone for federal buildings.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal proposals would bar reimbursement for under-18s; subpoenas of hospital records for under-19s; federal custody denies care.",
+    "protection": "Adult gender-affirming care is lawful in the state, and the city sanctuary order shields care-seekers from out-of-jurisdiction enforcement.",
+    "interaction": "Care protection is local; federal records demands and custody denial can still reach a visitor who enters federal custody.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism framing names 'radically pro-transgender' groups as targets; official hostility extends to advocacy.",
+    "protection": "State and commission posture is protective; the state has rejected anti-trans measures for adults.",
+    "interaction": "Federal threat-framing sits above state protection; a visitor's exposure to federal law enforcement is not reduced by state policy.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Youth sports bills pending; federal school-prosecution directive; care restrictions for under-18s; travelling minors face the entry cable and birth-sex record checks.",
+    "protection": "Conversion therapy for minors is banned by municipal ordinance in several cities; the state has no enacted youth-sports ban.",
+    "interaction": "A minor's documents face the same federal entry checks; a guardian's exposure is through federal custody and records, not state school rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No statewide hate-crime provision reaches anti-LGBTQ violence; no trans-specific street violence data for this state.",
+    "protection": "Commission-enforced discrimination protection with stop orders and damages; municipal bans in several cities.",
+    "interaction": "Recourse exists for discrimination, not for bias-motivated violence; the national hate-crime statute applies only in federal matters.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Gender-identity protection rests on commission interpretation and regulation, not statute; the statute awaits an upper-chamber vote. Federal litigation unresolved.",
+    "protection": "Commission remedies and sanctuary order are operating; statewide anti-discrimination coverage is explicit.",
+    "interaction": "Federal rules in litigation may change mid-visit; the state's protections could be rolled back by statute if the bill fails.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Both have a universal entry-document exposure with detention and discretionary verification. This case adds a state-level protective layer and a commission remedy absent in 0.45-A, but federal custody abuse is more documented. Rating sits at the same level."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Both have secondary screening and denial for document discrepancy. The state layer here is stronger, with explicit discrimination remedies and a sanctuary order, while 0.55-B has only an appeal desk. Federal custody abuse here is more severe, so this case sits slightly lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained, respectful border inspection and brief detention with remedies. This case has documented federal custody abuse, a lifetime-fraud entry cable and no statewide hate-crime provision, so it sits well below 0.75-C."
+   }
+  ],
+  "synthesis": "Federal entry screening, federal custody abuse and national counterterrorism framing are the operative exposures a visitor meets. The state's protective layer (commission enforcement, X markers, sanctuary order, adult care access) operates only within state reach and cannot offset these. Residual gaps are the absence of a statewide hate-crime provision and pending youth-sports bills, which do not reach adults. Overall the combined regime is elevated risk, with the state layer lifting it above the national baseline."
+ },
+ "parse_error": null
+}

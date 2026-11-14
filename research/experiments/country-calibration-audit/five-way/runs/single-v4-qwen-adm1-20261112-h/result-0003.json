@@ -1,0 +1,78 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005320818",
+ "parsed": {
+  "rating": 0.54,
+  "explanation": "Combined regime: this division is locally protective—anti-discrimination law, single-user gender-neutral facilities, school protections, hate-crime recourse, and a care shield—but federal entry, passport/visa screening, federal facilities, and national custody remain restrictive. Document or marker mismatch can trigger refusal, stranding, fraud-based permanent ineligibility, or national secondary screening; immigration and corrections custody reports are severe. An adult alone faces lower local friction but serious border/custody exposure. An adult with a minor gains state care/school protection but still encounters federal minor-care hostility and entry screening. No credible execution, but tier-1 federal exposures keep the score below 0.65; local protections lift it above 0.45.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules bar X/mismatched markers, instruct visa refusals where sex is doubted, and allow fraud-based permanent ineligibility. Airport screening can out travellers; passports were reported blocked or confiscated.",
+    "protection": "Division documents allow X/self-attestation and anti-discrimination, but do not govern national passports/visas. Existing X passports remain valid until expiry; legal-aid guidance and litigation exist.",
+    "interaction": "Local ID and service protections stop at state transactions; a passport-marker mismatch at a port still routes the traveller through federal refusal/screening rules.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National custody reports include immigration detention with forced labour, beatings, solitary confinement, and sexual abuse; corrections adopted coercive trans-inmate practices and reduced reporting.",
+    "protection": "Division hate-crime and equality laws offer victim recourse, and some national orders are litigated; no documented custody-placement safeguard for trans detainees.",
+    "interaction": "Entry denial, arrest, or fraud allegations can move a traveller into federal custody, where division protections do not control placement or treatment.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order restricts gender-congruent use of government-funded single-sex facilities; other divisions have bans and one recorded a restroom arrest. Division multi-user facilities rule remains unresolved.",
+    "protection": "Division bans public-accommodation discrimination, designated single-occupancy restrooms gender-neutral, and requires all-gender school bathrooms in the largest city.",
+    "interaction": "State and private public-accommodation protections may help locally, but federal buildings and funding regimes are not shown to be pre-empted by state equality law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National hostility to youth care, funding freezes, proposed reimbursement restrictions, and hospital-records subpoenas create risk for minors and care seekers; climate may expose records.",
+    "protection": "Division shield law protects patients and providers for lawful care sought from outside; youth conversion therapy is banned and care coverage exists.",
+    "interaction": "Adults and travelling families can use care within the division, but federal prosecution or subpoena reach over the shield remains unresolved.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language names “radically pro-transgender” groups among violent threats and a reward memorandum mentions gender ideology; cable permits visa doubt on sex.",
+    "protection": "Division has hate-crime enhancements, repealed panic defence, jury-selection protections, and broad anti-discrimination law; national hate-crime law also exists.",
+    "interaction": "National threat framing can chill reporting or embolden harassment, while division law provides a remedy only if frontline enforcement actually follows it.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target schools and minor care, criminalize facilitation of social transition, and restrict funding; minors face entry screening, and guardians risk refusal/fraud claims over markers.",
+    "protection": "Division shield law protects lawful care, school task-force rules cover names/pronouns/dress, anti-bullying applies, and conversion therapy on minors is prohibited.",
+    "interaction": "A guardian travelling for care gains state protection, but federal port screening and national minor-care directives are outside state pre-emption absent documentation.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans street-violence rate is documented; national surveys show significant support for sex-based documents, and hostile national framing may raise reporting risk.",
+    "protection": "Division hate-crime law, public-accommodation bans, large-city school and ordinance protections, and national hate-crime recourse are documented.",
+    "interaction": "Police protection may operate locally where laws are enforced, but absence of enforcement data and federal hostility keep street risk uncertain rather than safe.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport/visa rules are contested but courts allowed marker restrictions; multi-user facility status is unresolved; shield-law resistance to federal subpoenas is unknown; enforcement data are absent.",
+    "protection": "Civil-liberties litigation, legal-aid FAQs, some injunctions, and division complaint mechanisms exist, though not shown to fully govern federal stages.",
+    "interaction": "Travel outcome depends on timing, port, and federal-state interaction; local remedies can reduce harm after arrival but not during national screening or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Vellmaris had national equality protection after a document mismatch and reliable judicial release. Here local equality exists but national passport/visa policy is restrictive, permits permanent ineligibility, and custody harm is documented, so the combined regime is lower."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles has extended screening and administrative denial with slow appeals. Entry exposure here is similar or worse because of fraud-based ineligibility and national custody reports, though division care/facility protections reduce everyday risk."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia accepts matching markers, trains border officers, and brief lawful detention is remedied. This jurisdiction blocks X/mismatched markers, exposes travellers to national screening and custody, and local documents cannot offset ports, so it is materially lower."
+   }
+  ],
+  "synthesis": "Division protections materially improve adult and family access to care, schools, public accommodations, and reporting recourse, but federal port screening, passport markers, visa fraud, national facilities, and custody are separate operative components. For an adult alone, danger concentrates at entry/security and any detention; once in the division, everyday risk is lower. For a guardian with a trans minor, shield law protects lawful care travel, while national anti-minor directives and federal records inquiries remain uncertain. The rating reflects a combined regime: a protective local layer above the national line, but not enough to cancel federal exposures."
+ },
+ "parse_error": null
+}

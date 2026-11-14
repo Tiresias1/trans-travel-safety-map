@@ -1,0 +1,78 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00335226",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The combined operative regime is dominated by a hostile national layer: passport/visa sex-marker rules force document mismatches on every trans visitor, with documented confiscations/stranding, a fraud-ineligibility lever at adjudication, and multiple foreign governments issuing trans-specific travel advisories. Airport screening outing is documented. The state/province layer is milder — its bathroom law was repealed, no facility ban or criminalisation currently operates — but minors' care is banned, no statewide hate-crime or non-discrimination protection exists, and the 2025 bathroom-bill revival keeps facility policy unsettled. Consequences after outing run to detention, exclusion, care denial and harassment rather than systematic imprisonment; but universal federal document exposure, thin recourse and contested-state rule of law place this squarely in the Elevated band, worse than pure-friction anchors and below protective ones.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport rules restrict markers to M/F per birth sex; X processing halted; documented confiscations and stranding; a 2025 cable directs officers to refuse cases with document/sex discrepancy and to weigh permanent fraud ineligibility for suspected misrepresentation — a universal, universal-exposure lever.",
+    "protection": "Passport policy remains litigated; civil-liberties suit pending; foreign advisories warn travellers in advance.",
+    "interaction": "Entry adjudication feeds into detention and removal pathways; discrepancy can cascade into investigation and custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau mandates conversion-style policies for trans inmates (hair cutting, hormone removal); immigration custody documented with forced labour, beatings, sexual abuse of trans men; bureau stopped reporting trans prisoner counts.",
+    "protection": "Fraud finding requires four elements, waivers exist, never automatic; some orders enjoined.",
+    "interaction": "A document discrepancy at entry or a state/province custody hold routes a visitor into national custody regimes where harm is documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars congruent facility use in federally funded single-sex facilities; four state/provinces criminalise certain use (one arrest documented); this state/province repealed its 2016 bathroom law, and no statute now bars facility use or criminalises it — but a 2025 bill keeps the question live.",
+    "protection": "Statewide: repealed birth-certificate bathroom rule; no current ban in mapped categories.",
+    "interaction": "Federal facility rules still apply inside the state; future state legislation could re-impose restrictions within a term.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Care for minors banned statewide since 2023 (blockers, HRT, surgery); state funds barred for transition care for minors and prisoners; a trans minor visitor cannot obtain care; national insurance rulemaking proposes barring care under 18.",
+    "protection": "Not documented.",
+    "interaction": "A travelling trans minor or guardian faces closed care locally; federal funding rules interact with any national-system contact.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders frame gender-affirming care as 'mutilation', direct criminal investigation of transition facilitation, and counterterrorism strategy targets 'radically pro-transgender' groups; state hate-crime statute excludes gender identity; no statewide non-discrimination protection outside public employment.",
+    "protection": "State public-employment protections and ~30% local ordinance coverage; several hostile orders enjoined.",
+    "interaction": "Official threat-framing licenses street and institutional hostility; absence of state bias-crime recourse means violence may not be charged as bias.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A travelling trans minor faces banned care, sports restriction, school notification/disclosure rules if enrolled, and national framing of transition facilitation as criminal; guardians risk scrutiny for supporting a minor's presentation.",
+    "protection": "University-system and some municipal protections exist but are thin for visitors.",
+    "interaction": "Care ban plus school-order criminalisation interact: a minor's social transition could draw investigation of adults.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Killing floor of 3.0 per 100k trans women (acknowledged undercount) with no established comparison to general homicide; one documented arrest of a trans woman under another unit's bathroom law, held 24h in men's ward; no state bias-crime coverage.",
+    "protection": "Local ordinances in largest city/one county cover gender identity; hate-crime statute national but not state-level here.",
+    "interaction": "Thin recourse means bias violence may be prosecuted only as ordinary crime, if at all.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unanswered: how amended certificates' displayed original sex affects licences locally, any enforcement practice at facilities, 2025 bill's text/status; state litigation outcomes unresolved, so operative rules shift travel to travel.",
+    "protection": "Legal-aid FAQ and running trackers exist; courts have blocked some national orders.",
+    "interaction": "A visitor's exposure depends on which measures are in force at the moment of travel and on city/county of presence.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The national discrepancy-refusal cable with fraud-ineligibility findings approaches the Vellandra register's universal visitor screening, but refusals are not routinised, fraud findings require four elements and are litigated, and exclusion is not the consistent documented outcome. Milder than 0.35-A on border mechanics, but with harsher underlying custody exposure."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Like the Kestrel Isles secondary-screening regime, the traveller faces discretionary, universal document-mismatch friction with slow, imperfect appeal. This jurisdiction is materially worse: documented custody abuse at the national layer, care ban for minors, and threat-framing from the state itself, not just bureaucratic delay."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C documents trained officers, functioning tribunal relief and compensation. Here the documented custody record (conversion-style prison policy, immigration-custody abuse) and the absence of state hate-crime recourse show institutions not working for trans people, so the liability clause applies; the state layer's repealed bathroom law keeps it above 0.35 but well below 0.75."
+   }
+  ],
+  "synthesis": "The combined regime is a hostile national document and custody framework layered over a state/province that has repealed its own bathroom ban but offers no protections. The traveller's unavoidable exposure is the passport/visa regime: every crossing carries marker mismatch, secondary scrutiny, possible refusal and a fraud lever — a tier-1-style universal exposure engineered at the border, corroborated by stranding reports and foreign travel advisories. Should outing escalate to custody, national detention is documented as abusive, and state custody provides no transition care. The state layer's positives — repealed facility ban, municipal ordinances, unenforceable-in-practice sodomy statute — are real but thin and partial, with no bias-crime coverage and a live legislative threat of re-restriction. A trans minor fares worse still: care banned, facilitation criminalised federally, sports excluded. Net: consequences are detention, exclusion, care denial and harassment rather than near-certain imprisonment, but exposure is universal, recourse unreliable, and state direction hostile — Elevated Risk, 0.45."
+ },
+ "parse_error": null
+}

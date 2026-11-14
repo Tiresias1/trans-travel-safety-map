@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0059255",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined regime is a high-exposure system. Nationally, passport sex-marker restrictions now apply at processing, with documented confiscation and stranding. Entry refusal on documentary doubt is possible, and a lifetime fraud ineligibility finding is available, though not automatic. Custody carries documented harm: birth-sex-linked corrections policies, reported denial of care, and reported forced labour and sexual abuse in immigration custody. The state adds universal facility exclusion in public buildings, airports and detention sites, with criminal trespass on refusal to leave, and a state licence-fraud regime. Its one arrest was dismissed on standing grounds. Protections are partial and mostly local. Murder data (3.7 per 100k trans women per year) lacks a background denominator, so it is weighted cautiously. Severity reaches custody abuse and jail exposure, but not execution.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Passports with markers not matching birth sex are no longer issued; trans travellers report passports confiscated or blocked. Refusal on documentary doubt and possible lifetime fraud ineligibility apply at entry.",
+    "protection": "Existing X-marker passports remain valid until expiry. A civil-liberties suit is pending, and the Supreme Court has allowed the restrictions to take effect.",
+    "interaction": "Document mismatch at entry can trigger questioning, refusal, and stranding abroad, and can lead into fraud findings and national custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. State trespass arrest: handcuffing and 24-hour hold documented.",
+    "protection": "No documented operative protective protocol for detained trans visitors. The single state prosecution was dismissed on standing grounds.",
+    "interaction": "Document or facility discrepancy can route a visitor from state facility trespass or entry refusal into federal immigration custody, where documented abuse occurred.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State statute bars trans use of restrooms and changing rooms in state and local public buildings, including courthouses, airports, parks, toll plazas, prisons and jails. Refusal to leave is criminal trespass. Federal executive order restricts government-funded single-sex facilities.",
+    "protection": "Private businesses are outside the state statute's scope. The statute's operation in airports is not documented.",
+    "interaction": "Facility exclusion applies at the same public nodes where document checks occur, so an identity discrepancy at one can compound at the other.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans on gender-affirming care for minors, with adult barriers including a physician-only rule and insurance bar. Conscience refusals are permitted. Federal subpoenas of hospital records for under-19 patients and proposed rules barring public insurance for minors are documented.",
+    "protection": "A permanent injunction blocked some provisions in June 2024. Appellate status is unresolved.",
+    "interaction": "Care disruption for a traveller is possible. Records requests and documents can expose a visitor's history to state scrutiny.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National framing treats 'radical gender ideology' as linked to violent extremism. Counterterrorism priorities name 'radically pro-transgender' groups, and cash rewards target leadership of such groups. Advocates describe the actions as early-stage genocide.",
+    "protection": "The strategy states counterterrorism powers will not target people who merely disagree, and several orders are enjoined.",
+    "interaction": "Official threat-framing raises the likelihood that trans visitors are read as suspects, mainly in security and enforcement contexts.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minors face birth-sex facility and document rules and state care bans. Federal orders direct investigation and prosecution of teachers facilitating social transition. Custody modification can follow gender-affirming care. Trans children have been detained at protests.",
+    "protection": "Some federal orders are blocked in court. No documented protective machinery for travelling minors.",
+    "interaction": "A minor travelling with a guardian meets the same document and facility rules. Care-related custody and records exposure may follow the family.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State trans murder figure of 3.7 per 100k per year, with no general homicide denominator. Public-facility arrests are documented. Local hostility is noted; the advisory reports events and conferences cancelling.",
+    "protection": "Hate-crime coverage for gender identity is partial: 23 states cover it, and 22 states plus the capital district prohibit discrimination. Some counties and cities protect locally.",
+    "interaction": "Protective local ordinances do not reach the state facility regime, which governs public buildings at which a visitor is most likely to be checked.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Recourse is thin. State law lacks gender-identity protection in employment, housing and hospitals. Oversight of the state facility statute at ports is not documented. Advisories from 2023 are unresolved, and the appellate status of care rules is unknown.",
+    "protection": "Partial local ordinances. An enforcement pathway via the state human-relations commission, though its operation is not documented as producing outcomes for visitors.",
+    "interaction": "Remedies are local, but the most exposed points (entry, custody, state facilities) sit under federal or state-mandated rules that local protections do not reach.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest analogue: birth-sex housing and a cross-dressing arrest statute, with no executions. This dossier is similar in custody and facility harm and adds documented immigration-custody sexual abuse plus a national entry and fraud regime. It sits at or slightly below 0.25-C given the additional custody and entry layers."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Exclusion without arrest at entry, with routine refusals. This dossier adds criminal trespass arrests, custody harm and state fraud findings. It sits below 0.35-A on severity, though it lacks 0.35-A's register-based universality."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "Friction, holding rooms and partial denial of movement with no documented custody abuse. This dossier documents sexual abuse and forced labour in custody and birth-sex custody harm, which 0.55-A does not. It therefore sits well below 0.55-A."
+   }
+  ],
+  "synthesis": "The traveller meets exposure at successive points: entry documents, then questioning, then detention or facility exclusion, and then custody. Passport mismatches can lead to refusal, fraud findings and immigration custody, where abuse is documented. State facility rules apply in public buildings, with criminal trespass on refusal to leave, and these points can compound document discrepancies. Protections are local and partial, and do not reach the national or state layers. The combined regime is therefore High Risk, placed near the 0.25-0.35 band, with severity reaching custody abuse but not execution."
+ },
+ "parse_error": null
+}

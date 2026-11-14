@@ -1,0 +1,78 @@
+{
+ "cell": 8,
+ "region": "66186276B22881275445497:North Dakota",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006236672",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined national and state regime imposes traveler-facing exposures. Passports/visas must match birth sex; the X marker is closed; discrepancies can trigger refusal, additional evidence, or fraud-based permanent ineligibility, and some travelers report confiscation, blockage, stranding, and detention advisories. Facility rules exclude identity-congruent use, with documented arrest, men's ward, and custody abuse reports. State laws also block birth-marker changes and minor care. Adult and minor travelers face forced disclosure. Litigation, employment/hate-crime recourse, and absence of execution or certain long imprisonment keep the score above severe anchors but below moderate-risk ones.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Binary birth-sex passport/visa rule; X marker closed. Discrepancies can force refusal, additional evidence, fraud/lifetime ineligibility. Travelers report passports confiscated/blocked and stranded; foreign advisories and visa detentions.",
+    "protection": "Existing X passports remain valid until expiry; courts challenge policy; limited fraud waivers; legal-aid guidance exists. Not a traveler-facing guarantee.",
+    "interaction": "State birth-marker closure and negative-law status feed national doubt; presentation mismatch can trigger screening, refusal, or facility/criminal escalation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Entry fraud or facility charges can lead to secondary questioning, immigration detention, or criminal custody; reports include beatings, solitary, forced labour, severe sexual abuse, and men's-ward placement after arrest.",
+    "protection": "Pretrial release in a bathroom case; national habeas, employment, and hate-crime machinery exist, but no documented visitor-detention remedy.",
+    "interaction": "Border document mismatch or bathroom enforcement can escalate into custody, where birth-sex placement and abuse risk operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National government-funded single-sex spaces are keyed to assigned sex; state allows/restricts bathroom use in state-run facilities; some jurisdictions criminalize use; documented arrest, handcuffs, 60-day trespass, 24-hour men's ward.",
+    "protection": "Not this state. The national map shows some jurisdictions without mapped bans; statutory exemptions require departure when asked and do not protect identity-congruent access.",
+    "interaction": "Facility encounters combine with birth-sex documents and custody placement; refusal to leave can become criminal processing and men's-ward detention.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor gender-affirming care is banned; national orders and proposed rules threaten youth services/funding and punish care facilitation. Adult care continuity, clinic acceptance, and emergency ward placement are not documented but remain open risks.",
+    "protection": "No documented traveler-facing care protection in this state; national employment and hate-crime laws are not care guarantees.",
+    "interaction": "Care-seeking or medication possession can create document/data exposure during entry, school, or medical encounters.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State and national laws plus counterterrorism strategy frame radical pro-transgender groups as threats; party platform accused trans people of preying on women; law enforcement is tasked with investigating schools and prosecuting teachers.",
+    "protection": "The reward memo did not use gender ideology as a criterion; courts, national employment and hate-crime protections exist; the governor opposed a discriminatory platform.",
+    "interaction": "Threat framing increases border and police willingness to question, refuse, or escalate ordinary public-space encounters into enforcement events.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor traveler faces care denial, school/pronoun disclosure, sports bans, student-group discrimination, and possible guardian questioning. If documents mismatch, child and parent may trigger entry screening.",
+    "protection": "No documented minor-care protection; city protections are narrow. Family status does not avoid the national document and facility regime.",
+    "interaction": "A guardian seeking care or using pronoun-related school services can collide with state bans and federal entry screening.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated visitor street-violence incident is documented; risk is mainly legal and encounter-based. National polls support birth-sex documents; state platform hostility could normalize confrontations.",
+    "protection": "National hate-crime law covers gender identity; one city has protections; police may enforce trespass against trans people rather than reliably protect them.",
+    "interaction": "Police or border response can convert misgendering, staring, or service friction into document checks, refusal, or arrest.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Enforcement frequency, officer discretion, private-facility application, visitor detention conditions, and emergency-care response remain unclear; remedies are slow and uncertain.",
+    "protection": "Litigation continues, limited waivers exist, and complaint/legal-aid channels are available; some national orders were enjoined, although key passport restrictions were allowed.",
+    "interaction": "Partial rule-of-law recourse moderates worst outcomes but does not offset universal document and facility exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A features border exclusion without arrest. This regime also denies or refuses entry, but adds birth-marker custody risk, facility arrest, and possible fraud ineligibility, placing it slightly below 0.35."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C includes birth-sex custody placement and presentation-based arrest with short sentences. Similarities are clear; this case is somewhat safer due to functioning courts, hate-crime and employment recourse, but remains near that lower tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves humiliating secondary screening and refused admission. Here facility arrest, custody abuse, and permanent immigration risk are worse, so the score is lower than that bureaucratic-friction anchor."
+   }
+  ],
+  "synthesis": "The combined regime layers national entry and facility rules with state birth-marker closure, bathroom restrictions, and minor-care bans. Outing through mismatched documents is probable at borders, public facilities, and care encounters; consequences include refusal, permanent ineligibility, arrest, men's ward, custody abuse, and care denial. Partial courts, hate-crime, and employment recourse plus absent execution or certain long imprisonment keep it above severe anchors but below reduced-risk jurisdictions. Adult travelers face the same national exposure; trans minors additionally face care denial and forced disclosure."
+ },
+ "parse_error": null
+}

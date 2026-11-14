@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005975116",
+ "parsed": {
+  "rating": 0.22,
+  "explanation": "Combined regime: federal entry screening and custody are severe visitor-facing exposures. Visa/passport sex-marker discrepancies can trigger refusal, additional evidence requests, possible permanent fraud ineligibility, and immigration detention with forced labour, beatings, solitary, and sexual abuse. National single-sex facility/care hostility persists. The state courts block local facility bans, minor-care ban, and document-marker restrictions, materially reducing everyday exposure after entry. These protections do not cancel border/federal custody. Adult with minor benefits from local care/sports injunctions but still faces entry screening and federal hostility. Thus high-risk lower edge, not severe.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Executive order limits visa/passport sex markers to assigned sex; mismatch or doubt triggers refusal, additional evidence, possible permanent fraud bar; foreign advisories follow detentions; existing X passports remain valid.",
+    "protection": "Civil-liberties suit and legal-aid guidance exist; fraud finding requires elements and waiver is possible; no documented routine arrest solely for presentation in this state.",
+    "interaction": "State marker protections do not alter federal entry; home-passport mismatch can still trigger screening and refusal.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Trans men report forced labour, beatings, solitary, and severe sexual abuse in immigration custody; federal corrections enforce hair cuts, hormone removal, care denial, and stopped reporting prisoner counts.",
+    "protection": "State courts enjoin local facilities and marker laws; national hate-crime and employment law remain; some federal orders are enjoined; local arrests not documented here.",
+    "interaction": "If entry investigation leads to detention, federal custody overrides state-local protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National rule bars gender-congruent use of government-funded single-sex facilities; elsewhere bans/criminal trespass with arrest and men’s-ward detention.",
+    "protection": "State facilities bill is enjoined/not in force; local bathroom proposal rejected; no state criminalisation documented.",
+    "interaction": "Federal rule can reach public sites; state injunctions reduce local exposure but not federal enforcement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules frame minor care as mutilation, freeze funding, propose public-insurance bar, and remove crisis services; adult continuity risks not documented.",
+    "protection": "State permanently struck minor-care ban; athlete ban struck; local minors retain care/private services.",
+    "interaction": "Minor visitors may access care locally, but federal funding hostility and entry/custody remain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Policies erase trans identities, remove names/pronoun protections, threaten funding, subpoena records, use pro-transgender counterterrorism framing, and ban Pride flags.",
+    "protection": "State constitution repeatedly blocks discriminatory laws; courts find animus; national employment and hate-crime law remain.",
+    "interaction": "Local courts mitigate street enforcement; federal rhetoric increases profiling at border and custody stages.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal directives threaten schools and teachers over social transition, funding, insurance; entry screening can apply to minors with mismatched documents.",
+    "protection": "State courts block minor-care and athlete bans, and injunctions protect privacy; no local criminalisation documented.",
+    "interaction": "Guardian/minor in this state is safer locally than many parent jurisdictions, but border and federal custody still risk.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific trans violence rate or incidents documented; national hostility may embolden harassment, but no pattern shown.",
+    "protection": "National hate-crime statute, local ordinances, and drag-law TRO block disproportionate enforcement against trans/GNC people.",
+    "interaction": "Local police response is constrained by courts; federal border/custody risk remains separate.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Status of facility TRO, document injunction, and 2026 bill unresolved; immigration bar/waiver opaque; oversight reporting stopped; outcomes vary.",
+    "protection": "Active lawsuits, courts have enforced injunctions, legal-aid tracker, foreign consular advisories.",
+    "interaction": "State remedies work locally but may not remedy entry refusal, fraud finding, or federal detention.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar discretionary border refusal from sex-marker mismatch, but more severe here: immigration custody with forced labour, sexual abuse and permanent fraud risk. The local court-protected regime is absent from the anchor."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Federal immigration/correction custody resembles birth-sex placement harm, but this state’s local facility criminalisation and bathroom bans are blocked. Recourse is stronger after entry, yet federal detention remains less mediated."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "Below 0.15 because no routine arrest solely for presentation and no documented execution; however border detention, abuse, and lifetime bars approach 0.15 severity, partially offset by state court protections and legal aid."
+   }
+  ],
+  "synthesis": "The operative regime is split: federal entry/document and immigration custody form a high-severity funnel; mismatch can trigger interrogation, refusal, possible permanent bar, and detention with abuse. Inside the state, courts have blocked the worst local laws, reducing bathroom, minor-care, sports, and ID exposure after entry. This local shield lifts the jurisdiction above parent-level severe risk but cannot cancel border/federal custody. An adult with a minor is relatively safer locally than in many parent jurisdictions, yet entry screening and federal hostility keep the combined rating at the high-risk floor."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 7,
+ "region": "66186276B21291522594454:Maryland",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005573012",
+ "parsed": {
+  "rating": 0.4,
+  "explanation": "The combined regime is elevated risk. National entry rules restrict passport/visa markers, allow refusal or fraud/lifetime-ineligibility findings when presentation and records diverge, and reports document blocked or confiscated travel. If an encounter escalates to federal immigration or corrections custody, documented forced labour, beatings, sexual abuse, solitary, and conversion-style care denial are severe. The state/province has robust nondiscrimination, facility, care, and sanctuary policies that materially lower domestic exposure after entry, especially for adults, but do not override federal screening, federal facilities, immigration custody, or age-based national rules. An adult alone faces high entry/immigration consequences; an adult with a minor faces additional uncertainty about visitor care, school/funding interactions, and guardian exposure. Score reflects severe federal exposure tempered by strong state protection.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules restrict X passports/visas, require birth-sex markers, and allow refusal or fraud/lifetime-ineligibility review when presentation and records diverge; reports include blocked or confiscated passports.",
+    "protection": "No documented traveler-facing protection at entry; state marker changes and sanctuary laws are not sourced to cover foreign travel documents or federal screening.",
+    "interaction": "State protections cannot pre-empt federal visa/entry screening; a mismatch can route into additional evidence, refusal, removal, or fraud investigation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody has documented forced labour, beatings, solitary, sexual abuse, and care denial; federal corrections adopted birth-sex/conversion-style rules, so discovery can lead to custody harm.",
+    "protection": "No documented state custody rule, protective immigration unit, or named visitor remedy; state sanctuary applicability to federal custody is not sourced.",
+    "interaction": "Entry document discrepancy can become fraud/investigation and detention; state nondiscrimination does not place a traveler out of federal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts congruent facility use in government-funded single-sex spaces; other state/provinces criminalize or ban access, and the state/province remains within that national framework.",
+    "protection": "State/province nondiscrimination, 2018 court ruling, county ordinances, and 2024 sanctuary law protect public accommodations and school facilities inside the state/province.",
+    "interaction": "State law reduces local facility risk but not federal buildings, federal funds, or immigration-detention placement; exposure depends where and who operates the space.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders target minor gender-affirming care, funding, and insurance; visitor coverage is not documented, and health records may expose status in emergencies.",
+    "protection": "State/province executive order and health law protect gender-affirming care and insurance coverage for eligible people, described as most friendly nationally.",
+    "interaction": "Adults may access care in-state, but minors face age rules and unclear visitor eligibility; state protections do not establish federal care authority.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal fraud and counterterrorism rhetoric frame gender identity and pro-trans politics as security concerns, increasing suspicion at entry, investigations, or federal spaces.",
+    "protection": "State/province hate-crime and nondiscrimination laws, panic defense repeal, and protective-law ranking suggest supportive local enforcement against transphobic attacks.",
+    "interaction": "State protection offsets local street policing, but federal document/fraud framing can still trigger removal or custody anywhere in the nation.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Age-dependent national rules criminalize facilitating social transition and restrict minor care; a minor’s marker mismatch can trigger entry review, and guardian exposure is not fully sourced.",
+    "protection": "State/province public accommodations, court rulings, and sanctuary law protect students and families inside the state, but visitor/minor coverage is not documented.",
+    "interaction": "If the minor or parent enters federal screening, immigration custody, or federally funded schooling, state protections may not prevent national consequences.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Two recent trans-woman shootings were reported in the largest city within ten weeks, suspect at large; no denominator, so it is a concerning but not quantified pattern.",
+    "protection": "State/province hate-crime law, protective incidents analysis, and local ordinances indicate institutions may respond more seriously than in hostile jurisdictions.",
+    "interaction": "Street violence exists but is not shown to be state-directed or above background; federal entry/custody remain more score-moving than this axis.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions were allowed by the highest court; fraud waivers are limited, sanctuary scope for visitors is unclear, and immigration-custody remedy is not documented.",
+    "protection": "ACLU lawsuit, state courts, commissions, legal-aid FAQ, and state nondiscrimination provide partial recourse once inside the state/province.",
+    "interaction": "Recourse is strong locally but weak at the federal border/custody stage; travelers may face unresolved timing and escalation risks.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar to discretionary entry denial, but higher severity because mismatch can trigger fraud/permanent-ineligibility review and federal immigration custody; offset by protective state law after entry."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Compared with routine document registration, this dossier has severe federal custody harms and visa refusal, but protective state facilities/care lift it above the same federal-only exposure."
+   },
+   {
+    "anchor_id": "0.65-A",
+    "comparison": "Lower because 0.65-A has national equality protection and reliable remedies; here highest court allowed federal marker restrictions and immigration-custody abuse remains documented."
+   }
+  ],
+  "synthesis": "The operative regime is split: strong state/province protections make domestic stay relatively safe for adults, but federal entry, document screening, immigration/corrections custody, and age-based rules remain severe and unpre-empted. A mismatched passport can escalate to refusal, permanent-ineligibility fraud review, or detention where abuse is documented. Minors add uncertainty about care and guardian exposure. Therefore the rating sits in elevated risk rather than reduced: local protective law materially mitigates street and service risk, yet the combined federal-local system imposes a serious discovery consequence at border and custody checkpoints."
+ },
+ "parse_error": null
+}

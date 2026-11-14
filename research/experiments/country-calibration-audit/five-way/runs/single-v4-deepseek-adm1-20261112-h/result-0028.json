@@ -1,0 +1,78 @@
+{
+ "cell": 28,
+ "region": "66186276B6628180846672:Pennsylvania",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0022984584",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is split. The division is comparatively protective: gender-identity discrimination coverage, open state ID rules, a sanctuary-city care order, no state bathroom ban, and a low-risk assessment. But the national layer controls passports, visas, entry screening, federally funded facilities, national custody and federal investigative authority. An outed traveller at the border faces secondary screening, refusal, possible fraud ineligibility, and documented abuse if detained; federal single-sex facility rules also follow the visitor. Division protections do not pre-empt those federal exposures. Ordinary daily life is safer, but the border and federal custody carry severe risk, placing the combined regime in the elevated band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on passports/visas, stop new X markers, and direct refusal where documents cast doubt on sex, with possible permanent fraud ineligibility; travellers report confiscated passports and stranding.",
+    "protection": "Existing X-marker passports remain valid until expiry; court challenges and injunctions are pending; legal-aid guidance exists. Division ID rules are open but do not govern federal entry.",
+    "interaction": "Federal border screening overrides division protections. A document mismatch can escalate from secondary inspection to refusal or immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of transgender men; national corrections policies impose conversion-therapy-like practices and deny care.",
+    "protection": "National hate-crime law covers gender identity, and some executive orders are enjoined, but no effective custody remedy is documented for immigration detainees.",
+    "interaction": "A border document discrepancy can move the traveller into federal detention, where division sanctuary and local anti-discrimination rules do not reach.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities matching identity; many states ban facilities access and one arrest occurred under a bathroom law.",
+    "protection": "The division has no bathroom ban, local ordinances require gender-neutral bathrooms, and anti-discrimination coverage exists. These do not bind federal facilities.",
+    "interaction": "Federal buildings and federally funded settings follow the national exclusion; division and municipal facilities are more protective.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National measures target gender-affirming care, funding, insurance and minors’ care; custody denies hormones and care. Travellers may face care disruption if detained or using federal programmes.",
+    "protection": "Adult gender-affirming care is lawful in the division; the largest city is a sanctuary for such care, and discrimination complaints can be brought to the human relations commission.",
+    "interaction": "Local care is comparatively protected, but federal funding, insurance rules, border custody and federal facilities can override or interrupt it.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names “radically pro-transgender” groups, and national rhetoric frames “gender ideology” as extremist; this raises risk for visible activism and federal investigation.",
+    "protection": "The reward memo does not make gender ideology a criterion; courts have enjoined several orders; national hate-crime law covers gender identity.",
+    "interaction": "Routine tourists are less directly targeted, but visible trans advocacy or online content can attract federal attention; division protections do not limit federal investigative authority.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders hostile to minors’ transition, school social transition and gender-affirming care create risk for a travelling trans minor; federal facilities follow birth sex.",
+    "protection": "Division anti-discrimination law, local youth-serving ordinances and sanctuary-city care protections apply locally; some national orders are enjoined.",
+    "interaction": "A guardian and minor face federal border and facility rules first; division protections operate only after entry and outside federal settings.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division has no statewide hate-crime law reaching anti-LGBTQ violence, and national rhetoric may chill reporting. A bathroom arrest elsewhere shows enforcement risk.",
+    "protection": "National hate-crime law covers gender identity; the division human relations commission investigates discrimination and awards remedies; local sanctuary policies exist.",
+    "interaction": "Local police and commissions can act protectively within the division, but federal framing and the state hate-crime gap leave uneven recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Border fraud findings carry limited waiver and possible lifetime ineligibility; immigration custody abuse lacks documented remedy; passport litigation is unresolved.",
+    "protection": "Court challenges, injunctions, legal-aid guidance, division commission remedies and sanctuary policies provide partial recourse.",
+    "interaction": "Remedies work better for local discrimination than for federal border, custody or facility decisions; outcomes depend on which national measures are in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has routine border exclusion of visibly transgender visitors with no effective remedy. This case is similar at the federal border, but unlike 0.35-A the division has strong local protections and no blanket visitor ban, so it sits somewhat higher, while federal custody abuse adds severity."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B involves extended secondary screening and administrative refusal, but no documented immigration-custody abuse or permanent fraud exposure. This case has worse federal border and custody consequences, though a more protective local division, so it rates below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, brief detention, release and working remedies. This case lacks those federal protections and adds sex-assigned-at-birth document rules, federal facility exclusion and documented custody harm, so it is materially lower."
+   }
+  ],
+  "synthesis": "The division’s protective layer is real: anti-discrimination coverage, open state ID rules, local gender-neutral facilities, sanctuary care policies and a low-risk assessment. But the visitor first meets the national regime at the border, where sex-assigned-at-birth document rules, discrepancy screening, possible fraud ineligibility and immigration custody abuse operate. Federal facility exclusion and national custody practices also follow the traveller into the division. Division law does not pre-empt federal border, detention, facility or investigative authority. Daily life in the division is comparatively safe, but an outed traveller at entry or in federal custody faces severe consequences, producing an elevated-risk combined regime."
+ },
+ "parse_error": null
+}

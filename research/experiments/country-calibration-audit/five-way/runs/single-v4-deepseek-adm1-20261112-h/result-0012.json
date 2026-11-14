@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0128487",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "The combined regime is split: this state/province is comparatively protective — no bathroom ban, 2013 gender-identity anti-discrimination coverage, hate-crime enhancement, conversion-therapy ban, and a low-risk national classification. But national rules govern the traveller's border, documents, federal facilities and federal custody. A trans visitor whose documents or presentation raise discrepancy can be refused entry, questioned, detained, or found permanently ineligible for alleged misrepresentation; federal custody exposes trans detainees to documented abuse. Federal facilities are restricted by executive order, while the state's public-accommodations protections do not pre-empt federal buildings. There is no criminalisation of trans identity and no death penalty, but the border and custody exposures are serious and unavoidable where they attach. The rating is Elevated Risk, not High Risk, because the state-level daily environment remains protective and severe custody outcomes are conditional.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National executive order imposes binary sex markers; visa/border officers may refuse cases with document discrepancy and consider permanent lifetime ineligibility for material misrepresentation of sex. Airport screening can out trans travellers.",
+    "protection": "Existing X-marker passports remain valid until expiry; litigation challenges passport policy; legal-aid FAQ exists. State protections do not reach federal border officers.",
+    "interaction": "Every visitor crosses federal entry screening; a state's anti-discrimination law cannot constrain border adjudication or visa fraud findings.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans detainees; federal corrections policies restrict hormones and impose therapeutic substitutions.",
+    "protection": "National hate-crime statute covers gender identity, but no documented custody protection reaches immigration detention. State has no custody policy in the dossier.",
+    "interaction": "A border discrepancy can move a traveller into federal detention, where state-level protections do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; many states criminalise bathroom use, though not this one.",
+    "protection": "This state/province has no bathroom/facility ban and prohibits gender-identity discrimination in public accommodations.",
+    "interaction": "State-law protection covers state and private settings, but federal buildings and federally funded facilities remain governed by the national order.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy frames gender-affirming care for minors as mutilation; proposed rules would bar public insurance reimbursement for under-18 care. Federal facilities/custody restrict care.",
+    "protection": "State bans conversion therapy for minors, prohibits gender-identity discrimination in insurance, and covers public accommodations.",
+    "interaction": "State insurance and licensing rules protect some care, but federal funding, federal custody and national minors' policy remain operative.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; DOJ reward guidance references 'radical gender ideology'.",
+    "protection": "State has anti-discrimination law, hate-crime enhancement and an LGBTQ+ commission; national assessment places it in a low-risk group.",
+    "interaction": "Federal threat framing can influence policing and immigration scrutiny; state institutions are comparatively protective but cannot control federal agencies.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation/prosecution of teachers who facilitate a minor's social transition; federal care and facilities restrictions apply to minors.",
+    "protection": "State conversion-therapy ban and anti-discrimination law protect minors in state-regulated settings; no state bathroom ban.",
+    "interaction": "A visiting family with a trans minor faces federal border/care/facility rules; state protections apply in state-regulated everyday settings but not federal custody or entry.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence data are supplied; national hate-crime coverage is uneven across states.",
+    "protection": "State has gender-identity hate-crime enhancement since 2013 and public-accommodations anti-discrimination coverage.",
+    "interaction": "State recourse exists if a crime is reported, but federal climate and incomplete national bias-crime coverage may affect reporting and response.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport restrictions and executive orders remain contested; some measures are in force while others are enjoined. State 2023 panic-defence bill status is unresolved.",
+    "protection": "Courts have blocked some national orders; legal-aid guidance and state anti-discrimination remedies exist.",
+    "interaction": "Remedies may work in state courts or via federal litigation, but not reliably at the border or in federal custody at the moment of exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Unlike Vellandra's blanket visitor register, this jurisdiction has no general bar on trans visitors, and its state-level anti-discrimination and no-bathroom-ban rules are protective. But national entry can still refuse or permanently bar a traveller for document discrepancy, and federal custody abuse is documented, so the case sits above 0.35-A but not by a wide margin."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and administrative refusal/return; this jurisdiction has similar border questioning but adds possible lifetime ineligibility for misrepresentation and documented abuse in federal immigration custody. State protections offset some of that, so the combined regime is somewhat below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, tribunal review and brief detention. Here national policy actively restricts markers and treats discrepancy as potential fraud, with no equivalent traveller-facing border protection. State-level protections do not reach the federal checkpoint, so this case is materially below 0.75-C."
+   }
+  ],
+  "synthesis": "The traveller experiences two layers. In-state daily life is comparatively safer: no bathroom ban, public-accommodations anti-discrimination, hate-crime enhancement, conversion-therapy ban and a low-risk classification. But the operative national layer controls entry, visas, federal facilities and federal custody. A trans visitor outed at the border can face refusal, detention or a permanent fraud-based ineligibility finding; federal facilities exclude by birth sex under executive order; federal custody has documented abuse. State protections cannot pre-empt those federal actors. There is no criminalisation of trans identity or execution risk, so the result is Elevated Risk rather than High or Severe Risk."
+ },
+ "parse_error": null
+}

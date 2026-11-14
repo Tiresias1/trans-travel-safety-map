@@ -1,0 +1,82 @@
+{
+ "cell": 19,
+ "region": "66186276B43575054209436:New York",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0010645932",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "The destination state/province is a documented protective operating regime — GENDA, a 2024 constitutional amendment, hate-crimes coverage, gender-neutral bathrooms, X markers and a shield law — so once inside, a trans visitor's everyday exposure is comparatively low. But the combined regime is governed at the chokepoints by the national framework: binary-sex passport/visa policy, refusal and fraud/lifetime-ineligibility risk for document discrepancy, travel advisories, and national immigration/corrections custody with reported abuse. State law cannot cancel federal entry screening or federal custody. Daily-life protection raises the score materially above the national line, but border/detention exposure keeps it in elevated risk rather than reduced risk. Minors face additional national care and school-directed hostility, partly offset by state shield and anti-bullying protections.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex passport/visa policy; X processing stopped (existing X valid until expiry); document discrepancy can trigger refusal and possible fraud/lifetime ineligibility; travel advisories and reported confiscation.",
+    "protection": "Fraud finding is not automatic, requires four elements and limited waiver; existing X passports remain valid to expiry; state shield does not reach the border.",
+    "interaction": "Federal border controls apply to every international arrival regardless of the protective state law at destination.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody reports forced labour, beatings, solitary confinement and severe sexual abuse; national corrections conversion practices and care denial; trans-prisoner count no longer reported.",
+    "protection": "National fraud finding requires elements; state legal aid and shield laws are not shown to reach federal immigration custody.",
+    "interaction": "A border document discrepancy can escalate into national detention, where state protections do not govern placement or care.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from federally funded single-sex facilities congruent with identity; one county sports ban remains; some other states criminalize bathroom use, though not this one.",
+    "protection": "State GENDA covers public accommodations; 2024 constitutional amendment bans gender-identity discrimination; gender-neutral bathrooms mandated; state facilities generally inclusive.",
+    "interaction": "State and private facilities are protected, but federal buildings and federally funded settings follow the national rule.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules restrict gender-affirming care funding and minor care, describe minor care as mutilation, and propose insurance exclusion under 18; national custody denies care.",
+    "protection": "State shield law protects patients and providers from out-of-state bans for care legal here; conversion therapy on minors banned; care legal in-state.",
+    "interaction": "Shield helps care travellers from ban jurisdictions, but cannot override national funding restrictions or border screening.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; justice reward memo uses 'radical gender ideology'; school social-transition prosecution order.",
+    "protection": "State hate-crimes law covers gender identity; state anti-discrimination law is strong; no documented state/local police targeting of trans people in this state.",
+    "interaction": "National rhetoric raises chilling and outing risk; state/local enforcement operates under protective statutes, but federal actors remain outside them.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National orders target minor transition care, school names/pronouns and insurance; border and federal custody risks apply to an accompanying minor.",
+    "protection": "State shield law, anti-bullying coverage, conversion-therapy ban and parental-consent self-affirmation; public accommodations protect minors.",
+    "interaction": "A visitor minor is not in local schools, but national care/funding and border rules still attach; state shield only partly offsets.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incident or rate documented for this state/province; national climate hostile; trans-specific public opinion not isolated from LGBTQ-general polling.",
+    "protection": "State hate-crimes coverage since 2019, GENDA, repealed loitering law and large trans population; no documented police targeting in this state.",
+    "interaction": "State recourse likely works for street violence, but national rhetoric may affect reporting and federal immigration police interactions.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport suit and executive-order challenges pending; some orders enjoined; border discretion and federal custody remedies are weak; shield/national funding interaction unresolved.",
+    "protection": "State civil-rights agencies, hate-crimes law, shield statutes, courts and legal-aid FAQ provide real in-state remedies.",
+    "interaction": "Remedies exist in the state system but cannot reliably reach federal border or detention decisions, leaving material uncertainty.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Karthovia's police routinely stop trans visitors, confiscate documents, detain and fine them, with courts deferring to police. This state/province has strong in-state protections and no documented routine street stops; its main exposure is at the federal border and in federal custody. The destination is safer than 0.35-B for daily life, but national chokepoint risk prevents a high score."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses extended secondary screening and discretionary refusal for document divergence, with administrative rather than criminal penalties. This case is comparable at the border but worse in possible fraud/lifetime ineligibility and federal custody abuse; however, its protective state law and shield regime materially improve in-state daily life. The combined result sits near this band rather than clearly above it."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia permits marker-matching passports, trains border officers, provides tribunal appeal and compensation for unlawful detention. This destination lacks that traveller-facing border protection and instead applies a hostile national document/screening regime, so it scores below 0.75-C despite strong state-level anti-discrimination and facilities protections."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Vesskar exposes visitors through linked biometric records, public-order statutes and lengthy verification, with detention and humiliation but uncommon prosecution. This state/province has stronger in-state legal protection and no documented biometric checkpoint regime, but its federal border fraud/custody exposure is more severe. The two land in overlapping elevated-risk territory."
+   }
+  ],
+  "synthesis": "The visit is split between a strongly protective in-state sphere and a hostile national border/custody sphere. Inside the state/province, GENDA, the constitutional amendment, hate-crimes coverage, gender-neutral bathrooms and the care shield give a trans visitor real recourse and comparatively low everyday exposure. At entry and in federal custody, however, national binary-sex document rules, fraud/lifetime-ineligibility risk, advisories and reported abuse in immigration detention operate independently of state law. For an adult travelling alone, the main residual danger is concentrated at the border and any federal detention; for an adult with a minor, national care and school-directed hostility add exposure, partly offset by state shield and anti-bullying rules. Pending litigation and enforcement discretion remain unresolved."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 39,
+ "region": "66186276B83300161667341:Oklahoma",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00354584",
+ "parsed": {
+  "rating": 0.31,
+  "explanation": "The combined regime is hostile at both levels. Nationally, the passport/visa regime is a universal-exposure measure: X markers eliminated, sex-at-birth policy, and a foreign-ministry cable directing officers to refuse applications on document 'reasonable doubt' and consider lifetime fraud findings — reaching every trans visitor at entry. Four foreign governments' advisories and documented detentions of visitors over visas corroborate real friction. Nationally-run custody is documented as abusive (birth-sex placement practices, forced labour, sexual abuse of trans detainees). The division adds its own layer: facility bans in state-owned buildings, a statewide birth-sex executive order covering shelters and incarceration, total closure of marker changes, care restrictions, no state protections. No execution pathway; sentences are short misdemeanours and several orders are enjoined. Sits above the 0.15 tier (no imprisonment-as-default) but below the 0.45 tier due to universal border exposure plus state-level facility/custody policy.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: passport X markers barred, sex-at-birth rule, cable instructing refusal on 'reasonable doubt' about sex and possible lifetime fraud ineligibility; visitors report confiscated/blocked passports and detention over visas; foreign advisories issued.",
+    "protection": "Ongoing court challenge; some orders enjoined; fraud finding requires four elements, waiver possible, not automatic.",
+    "interaction": "Entry screening is national; state cannot mitigate it and state marker hostility feeds federal suspicion.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National custody documented abusive for trans people (forced labour, beatings, solitary, sexual abuse in immigration custody; corrections policies cutting hair, removing hormones). State custody placed a trans person in men's ward for 24 hours.",
+    "protection": "National hate-crime statute; habeas/rule-of-law framework exists; several orders enjoined.",
+    "interaction": "A state arrest flows into national standards; the immigration path can strand visitors.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State executive order defines sex by birth for all state-owned facilities including shelters, rape crisis centres, incarceration; school facility ban; 4 state-level criminal-exposure statutes nationally.",
+    "protection": "Trespass statute requires willful entry plus refusal to depart; exemptions (chaperoning, emergencies); one arrest only, not a documented pattern here.",
+    "interaction": "State facility rules govern inside the state; federal facility rules govern federal buildings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State SB 904 bars public funds, Medicaid and state facilities for gender-affirming care (adults and minors); minors' care banned; employee violations criminalised; federal records subpoenas of hospitals.",
+    "protection": "Emergency treatment and complication care exempt; private facilities with private payment remain available.",
+    "interaction": "Medicaid exclusion is a resident-focused measure; visitors need private facilities, increasing cost and friction.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' ideology as a priority category; state defines sex by birth for all legal purposes; 66% public support for birth-sex documents.",
+    "protection": "Guidance states counterterrorism powers will not target mere disagreement; hate-crime statute covers gender identity nationally.",
+    "interaction": "State-run law enforcement under governor's executive order; national agencies share data with state officers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling with a trans minor: state bans minors' gender-affirming care entirely; federal executive order frames care as 'mutilation' and directs prosecution of facilitators; schools investigated for 'gender ideology'; sports exclusion.",
+    "protection": "Judge declined to block state ban (none); federal orders partially enjoined; parents are not themselves criminalised in the state statute.",
+    "interaction": "A minor's exposure compounds entry-document and facility regimes; guardian discretion constrained.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "2018 death threats against a trans child; 2024 Nex Benedict death after school bathroom beating under this state's facility law; state hate-crime law excludes gender identity.",
+    "protection": "National hate-crime statute allows federal prosecution; one city has local non-discrimination ordinance.",
+    "interaction": "School incidents are local-sphere but the facility law underpinning them reaches visitors to state buildings.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state anti-discrimination protection; at-will employment; supreme court ruled marker changes were never legal; no documented state-specific visitor incident or screening data.",
+    "protection": "Active litigation (passport suit, state-ban challenges); legal-aid FAQ and tracking maps operate; driver's licence route status unknown.",
+    "interaction": "Remedies are national-level and contested; state-level recourse is essentially absent.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "0.15-B features routine detention of trans visitors with custodial assault and failed recourse. Here border friction is documented but detention-with-harm is not the default for visitors; courts are partially resisting, so this case sits clearly above that tier."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C centres birth-sex custody placement with assaults. This dossier documents comparable custody policies nationally plus a state birth-sex executive order covering incarceration, but adds universal entry-document exposure rather than an isolated arrest statute — slightly worse than 0.25-C on reach."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D is registration-based universal exposure with harassment/eviction but no lethal or custodial threat. This jurisdiction's exposure is similarly universal (documents, facilities) and non-lethal, but state hostility, custody-abuse documentation and care denial sit somewhat below 0.45-D's level."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A's register-based exclusion is universal and remedy-free. This case's passport/visa regime resembles it (confiscations, refusals, possible lifetime fraud bar) but with partial judicial pushback and no automatic denial mechanism — marginally above, near 0.35."
+   }
+  ],
+  "synthesis": "The operative regime combines a national universal-exposure document regime (X-marker elimination, sex-at-birth passports, 'reasonable doubt' visa refusals with lifetime fraud risk) with a state layer that is among the most restrictive: a statewide birth-sex executive order covering facilities, shelters and incarceration; closed marker changes; and care bans for minors and publicly funded adult care. No visitor is documented imprisoned or killed for being trans, and several national measures are enjoined, keeping this out of the severe tier. But the exposures are universal rather than incidental, custody abuse is documented in national systems, no state remedy exists, and the state's policy direction is hostile. Entry friction plus facility/custody policy places the jurisdiction in the High Risk band, near the lower 0.35 anchors but above the 0.25 custody-only pattern."
+ },
+ "parse_error": null
+}

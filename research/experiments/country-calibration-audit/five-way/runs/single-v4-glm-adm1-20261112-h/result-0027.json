@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00183025",
+ "parsed": {
+  "rating": 0.47,
+  "explanation": "The combined regime imposes universal-exposure measures at every stage: the national passport/sex-marker rules, the fraud-adjudication cable creating possible lifetime inadmissibility, and the state's 2023 facility statute exposing every trans visitor to criminal trespass in government buildings, schools, and airports, with one documented arrest and a dismissal that never tested the statute. Care access for minors is banned and adult care is obstructed. Consequences are denial of entry, stranding, misdemeanor custody, and care denial — severe but short of imprisonment-likely or lethal tiers. Violence data sit near background homicide rates. This is an Elevated Risk case: universal state-enforced exposures without fully working remedies, below the 0.55 band only because criminalisation is narrow and contested.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-marker binary on passports/visas; X markers stopped; cable directs refusal where documents cast doubt on sex; wilful-misrepresentation finding risks permanent inadmissibility; travellers report confiscated passports and stranding; eight foreign governments issued advisories.",
+    "protection": "Existing X passports valid until expiry; litigation unresolved; legal-aid FAQ exists.",
+    "interaction": "Document discrepancy can cascade into fraud finding, refusal, or detention; state licence rules do not govern entry but can compound mismatch.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau adopts conversion-style policies for trans inmates; immigration custody shows forced labour, beatings, sexual abuse of trans men. State trespass arrest (misdemeanor, up to 60 days) with 24h held in men's ward.",
+    "protection": "Trespass case dismissed on standing grounds; several national orders enjoined.",
+    "interaction": "Facility encounter → police call → arrest → birth-sex holding documented; visa fraud path can lead to removal custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Universal: state statute bans congruent facility use in all state/local government buildings, schools, universities, parks, airports; criminal trespass on refusal to depart; colleges fire employees; 4 national 'Do Not Travel' units; criminal facility laws in 4 units.",
+    "protection": "Private businesses outside scope; only one documented arrest; no later arrests recorded.",
+    "interaction": "Airport and detention-facility coverage links to national screening and immigration custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans minor care entirely (codified); adult barriers — physician-only provision disrupted ~80% of clinic patients, insurance bar, conscience refusal, 24-hour surgery wait; hospitals subpoenaed nationally; youth crisis services shut.",
+    "protection": "June 2024 national injunction blocking minor/adult bans partially, appellate status unresolved.",
+    "interaction": "Visitor needing refills or emergency care faces refusal; conscience clause permits blanket denial.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State actors framed as deceivers; national counterterrorism strategy targets 'radically pro-transgender' groups; justice-department reward memo references 'radical gender ideology'; teachers face prosecution for facilitating minor's transition.",
+    "protection": "National hate-crime statute covers gender identity; 2020 employment ruling enforced by state commission.",
+    "interaction": "Threat-framing licenses facility enforcement and school surveillance reaching travelling minors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling minor cannot access any gender-affirming care in-state; schools must verify legal sex; sports exclusion; national orders describe minor care as 'mutilation'; records subpoenas reach under-19s; custody-modification laws risk family separation.",
+    "protection": "Court injunctions partly block care bans; cities offer some protections.",
+    "interaction": "Parent travelling with a trans minor risks care denial, records exposure, and investigation pathways.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "3.7 trans women murdered per 100k/yr — near background homicide rate, elevated but not a campaign; state hate-crime law excludes gender identity; police alerted in advance to the capitol arrest.",
+    "protection": "National hate-crime statute; ~55% of population covered by local non-discrimination ordinances; sanctuary town.",
+    "interaction": "Victims outside covered counties lack state recourse; police response inconsistent.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Facility statute never substantively tested; injunction scope and licence/birth-certificate rules unlitigated here; travel advisories from 2023 of unresolved currency; oversight bodies have not remedied facility exposure.",
+    "protection": "Ongoing litigation, commission enforcement of employment claims, local ordinances, advocacy infrastructure.",
+    "interaction": "Uncertainty over which measures operate at travel time; recourse exists but is slow and unproven for the facility law.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar universal-exposure architecture (registration-like document checks, exclusion rules), but here consequences are misdemeanor custody and refusal rather than systematic exclusion-with-no-remedy; litigation and partial injunctions give more recourse than 0.35-A's agency-controlled appeals. Sits above it."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Comparable secondary-screening friction at entry, but this regime adds enforced state criminal facility bans, a documented arrest, minor care bans, and documented custodial abuse in national systems — heavier than 0.55-B's administrative-only outcomes. Sits below it."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Below 0.75-C: that anchor's worst case is brief humiliating detention with working remedies; here the state enforces a universal facility ban with criminal exposure, care is barred for minors, and remedies for the facility law remain untested."
+   }
+  ],
+  "synthesis": "The operative regime the visitor meets is national document/fraud screening plus a state layer criminalising congruent facility use in nearly all public settings, including airports. These are universal exposures — they reach every trans traveller regardless of discretion — with the documented arrest showing enforcement is real but rare, and the dismissal showing the statute untested. Custodial abuse is documented in national systems a facility or visa encounter can feed into. Care access is barred or obstructed, sharply so for minors. Countervailing protections — hate-crime statute, partial injunctions, local ordinances, civil-liberties litigation — are real but do not yet remedy the facility exposure. Elevated Risk, around 0.47."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 26,
+ "region": "66186276B64762166704956:West Virginia",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.003608",
+ "parsed": {
+  "rating": 0.4,
+  "explanation": "The combined regime imposes tier-1, universal exposures: passport sex fixed at birth and X markers discontinued, visa adjudication instructing fraud findings for suspected 'misrepresentation of sex', and this state's March 2025 statute excluding trans people from bathrooms, shelters, dormitories and prisons by birth sex — enforced by state institutions with no documented remedy. Documented custody harms (immigration detention abuse, national prison policies) mean an outed visitor risks severe detention conditions. Mitigation is partial and contested: courts have enjoined some orders, litigation is live, and 15 cities retain local protections — but state law is in the worst tier nationally, neighbouring states are 'Do Not Travel', and allied governments issue advisories. This sits between the 0.35 administrative-hostility anchors and the 0.55 friction anchors, at the top of the High Risk band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National documents reflect assigned sex; X markers ended; visa cable instructs refusals on document discrepancy and possible lifetime fraud ineligibility; reported passport confiscations stranding travellers; case-note tagging of trans applicants.",
+    "protection": "Litigation against the passport policy ongoing; existing X passports valid until expiry.",
+    "interaction": "Document mismatch feeds visa refusal → possible detention → birth-sex custody; every crossing discloses.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "State statute places detainees in facilities (prisons) by birth sex; national corrections policies described as conversion therapy; immigration custody documented with forced labour, beatings, sexual abuse of trans men.",
+    "protection": "Some orders enjoined; habeas/courts formally function but not documented securing trans relief.",
+    "interaction": "Any minor infraction (trespass charge) routes into birth-sex holding, e.g. the capitol arrest: 24h men's ward.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Tier-1: state facilities statute covers bathrooms, locker rooms, shelters, dormitories, prisons; willful entry + refusal to depart = trespass (misdemeanour, up to 60 days). No statewide anti-discrimination protection; religious-refusal statute permits service denial with immunity.",
+    "protection": "Fifteen city ordinances bar gender-identity discrimination; nullification bill not yet law.",
+    "interaction": "State statute does not pre-empt national entry screening; both apply simultaneously.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor care banned state-wide (severe-dysphoria exception); adult public-insurance exclusion upheld on appeal 2026; a travelling minor cannot access continuity of care.",
+    "protection": "Pending challenge to adult exclusion unresolved.",
+    "interaction": "Minors travelling with parents face care denial; national insurance rules proposed to bar under-18 care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy targets 'radically pro-transgender' groups; state governor frames spaces as needing protection from trans people; 2026 assessment: 'Worst Policies In Effect'.",
+    "protection": "Documents state powers not used against mere disagreement.",
+    "interaction": "Official threat-framing licenses police and public hostility toward outed visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Student-outing bill passed both houses (status unresolved); national directive to prosecute teachers facilitating social transition; state minor-care ban in force; a trans minor is exposed at school-adjacent and care touchpoints.",
+    "protection": "Not documented.",
+    "interaction": "Parent travelling with a trans minor risks forced outing and care denial.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented arrest of trans woman under state-tier bathroom law (handcuffed, men's ward); police response aligned against trans facility use; hate-crime statute covers gender identity nationally but most states lack bias statutes.",
+    "protection": "National hate-crime statute; city-level anti-discrimination ordinances.",
+    "interaction": "Police act as enforcers of the facility statute, not protectors.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented enforcement pattern under the state facilities statute; several provisions provisional; shelter/dormitory access unresolved for visitors.",
+    "protection": "Active litigation at multiple levels; legal-aid FAQ for document rules; courts have enjoined several national orders.",
+    "interaction": "Recourse is contested and slow; a short-stay visitor cannot rely on it in real time.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar tier: universal, remedy-poor administrative exposure at entry (document binary, fraud-refusal instructions) resembles the Visitor Conduct Register. Less exclusionary than Vellandra's routine boarding refusal, but custody harm here is more severe, balancing to roughly comparable or slightly above."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles' worst case is administrative denial and humiliation with working appeal desks. Here the facilities statute plus documented custody abuse exceeds that severity materially, so this jurisdiction sits clearly below 0.55."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Vesskar's registry-linked everyday exposure parallels the document regime, but this dossier adds tier-1 facility/custody exclusion by birth sex and official threat-framing, placing it below 0.45 — about 0.40."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia's birth-sex prison placement mirrors the state statute, but this jurisdiction retains working courts, enjoinable orders, and city protections, keeping it above the 0.25 band."
+   }
+  ],
+  "synthesis": "The operative regime combines a national universal-exposure document system (binary passports, fraud-refusal cable, tagged visa files) with a state-level tier-1 facilities statute reaching bathrooms, shelters, dormitories and prisons, backed by a religious-refusal statute and no statewide discrimination protection. Discovery is engineered at entry rather than incidental. Consequences on discovery range from service denial and trespass arrest (documented, men's-ward holding) to birth-sex custody with documented abuse at national level. Partial mitigation — enjoinments, city ordinances, hate-crime statute — is real but slow and contested, and the state sits in the worst-law tier with neighbouring 'Do Not Travel' jurisdictions. Result: High Risk, top of band, ~0.40."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00588725",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime: national exec order redefines sex binary, bars X/mismatched passports, entry cable denies visas and can impose permanent fraud bars; immigration/corrections custody documented forced labour, sexual abuse, birth-sex placement. Division courts repeatedly enjoin state facility bans, minor-care ban, flag/drag restrictions, and marker-change blocks, making local after-entry exposure lower than other divisions. But state protections do not cancel federal entry, federally funded facilities, custody, or national counterterrorism/care-funding hostility. Adults face document mismatch risk and severe custody if detained; trans minors may find care in state but national provider criminalization, records subpoenas, funding threats raise fear. Overall elevated.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: visa screening flags discrepancies/marker mismatch, demands proof, can deny entry, and fraud bar possible; X passports no new issue; foreign advisories follow visa detentions.",
+    "protection": "Not operative for visitors: home-country X remains valid until expiry; legal-aid FAQ; ACU suit not shown to change border practice.",
+    "interaction": "Document mismatch or X marker at entry raises outing probability, feeds fraud review, secondary screening, possible immigration detention and birth-sex custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented national immigration custody: forced labour, beatings, solitary, severe sexual abuse for trans men; corrections adopts birth-sex/conversion practices, hormone removal.",
+    "protection": "State courts do not control federal custody; some national orders enjoined but not custody policy; habeas/legal aid not documented for detained visitors.",
+    "interaction": "Entry screening can initiate detention; custody abuse follows from discovery/immigration enforcement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars gender-congruent use in government-funded single-sex spaces; some other divisions criminalize, but this division's facilities ban is enjoined.",
+    "protection": "Division courts blocked 2025 facilities bill and sex-segregation laws; state constitution equal-protection claims repeatedly succeed.",
+    "interaction": "Local restroom exposure lower, but federal-funded facilities and national exec still create risk; no preemption documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National anti-minor-care orders, funding freezes, teacher criminalization, hospital-record subpoenas; no documented adult visitor care denial.",
+    "protection": "Division enjoined minor-care ban and keeps providers lawful; no state prohibition on minors care; adult care status uncertain.",
+    "interaction": "A trans minor visitor/guardian can face provider chill and records exposure; state protection mitigates but not federal hostility.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism lists 'radically pro-transgender' as hostile; executive orders call care mutilation; 66% poll supports document restrictions.",
+    "protection": "National employment/hate-crime statutes; state courts block some laws; local ordinances; several orders enjoined; officials say not targeting mere disagreement.",
+    "interaction": "Official framing legitimizes scrutiny and may increase police response; not documented as direct border sweep.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific trans violence incidents; national bias-statistics only orientation; no documented routine targeting of visitors.",
+    "protection": "Division courts protect equal protection; municipal/county ordinances; national hate-crime recourse.",
+    "interaction": "Absence of evidence not safety; local tolerance uncertain, but legal protections may deter violence and improve police response.",
+    "status": "uncertain"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor visitor/guardian faces document mismatch and national provider criminalization/records subpoenas; teachers/facilitators prosecuted; parent punishment unclear.",
+    "protection": "Division courts enjoined minor-care ban, keeping state providers able; same-sex marriage/adoption recognition, but no traveler shield.",
+    "interaction": "A child's care access is protected locally but federal funding/investigation can force disclosure or denial.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unresolved court cases, shifting policies, unknown conversion of TROs; federal rules may apply without local remedy; border refusals hard to appeal.",
+    "protection": "State courts reliably blocked laws; national suits/FAQ/civil liberties may intervene but not documented as border relief.",
+    "interaction": "Remedies work locally, weak at border/custody; uncertainty raises risk during short trips.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has routine visitor exclusion without custody. Here entry exclusions plus permanent fraud bars and severe immigration-custody abuse are worse, though local division courts reduce post-entry facility and care exposure."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D has registration/database exposure and slow ombuds. Here no universal lodging registration in division, state courts protect facilities/minors care, but entry screening, federal facilities order, and custody abuse are more severe."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is administrative secondary screening/refusal with remedies. Here border screening can escalate to permanent bars and documented abuse in custody, and national executive hostility persists; state protections help but do not make it safer than 0.55."
+   }
+  ],
+  "synthesis": "For an adult entering alone, the highest risk is the border/federal layer: marker discrepancies or X passports trigger visa refusal, additional proof demands, possible permanent fraud bars, and if detained, severe immigration-custody harm. After entry in this division, court injunctions remove most state-level facilities and minor-care bans, lowering everyday exposure, so the state is safer than other divisions. For an adult traveling with a trans minor, local care providers are not barred, but national funding freezes, record subpoenas, teacher criminalization and document checks can still out the minor or make guardians avoid care. State remedies do not offset federal entry screening, federal facilities, or custody. The combined regime is therefore elevated risk, not high severe, and not reduced risk."
+ },
+ "parse_error": null
+}

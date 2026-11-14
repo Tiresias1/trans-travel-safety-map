@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00523989",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined-regime risk is dominated by national entry screening, document mismatch, possible fraud referral, federal/national corrections, and immigration-custody harm. State anti-discrimination law and the absence of a local bathroom ban reduce some public-accommodation friction, but do not pre-empt federal facilities, border rules, custody, or minor-care investigations. If a visitor is outed, consequences can range from refusal and delay to detention with hormone removal, coercive psychiatric practices, forced labor, solitary, and sexual abuse. Minors and guardians face added scrutiny through care and school-related national rules.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visa and passport adjudication instruct officers to deny admission when documents or records create reasonable doubt about sex; suspected fraud can trigger permanent ineligibility claims. Reporting documents passports confiscated or blocked, stranding travelers.",
+    "protection": "National lawsuits challenge passport rules, and existing X markers may remain valid, but no documented operative state preemption or reliable visitor exemption exists for foreign travelers.",
+    "interaction": "State marker-change and anti-discrimination laws are resident-facing and do not cancel national visa screening, fraud referral pathways, or border secondary inspection.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Border mismatches can become fraud investigations. National corrections adopted conversion-therapy practices in prisons, including hormone removal, coercive psychiatric treatment, and birth-sex placement; immigration custody reports forced labor, beatings, solitary, and severe sexual abuse.",
+    "protection": "No state-specific custody protocol overrides federal or national placement practices. Court challenges may enjoin some orders, but none documented as preventing abuse or safe placement for an outed visitor.",
+    "interaction": "Entry screening and custody interact: denial, secondary review, or fraud referral can move a traveler into immigration or federal detention, where the documented abuse environment operates.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive policy bars transgender people from government-funded single-sex facilities matching identity. Some other jurisdictions criminalize bathroom use; this one is not documented as criminalizing it.",
+    "protection": "State has no documented bathroom ban; equality mapping records no restriction. The 2013 anti-discrimination law covers public accommodations, including places visitors may enter.",
+    "interaction": "State protections mitigate private/state accommodations but do not pre-empt federal government-funded facilities, national agency buildings, or immigration/federal custody settings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy stigmatizes minor gender care, threatens school and funding enforcement, proposes public-insurance restrictions, and removes hormones in corrections. Care-seeking can become investigated, especially for minors.",
+    "protection": "State bans conversion therapy for minors, protects gender identity in insurance, and prohibits public-accommodation discrimination. No documented visitor-specific guarantee of uninterrupted care.",
+    "interaction": "A minor or parent accessing school, clinic, or emergency care may trigger national/federal scrutiny or funding-related denial despite local state protections.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy singles out radically pro-transgender groups as hostile, and orders direct enforcement against schools or staff facilitating minor social transition, raising state-institutional hostility.",
+    "protection": "State has gender-identity bias-crime penalties, a 2013 public-accommodations law, and an LGBTQ+ commission. These are local protections, not federal exemptions.",
+    "interaction": "Local enforcement may address private violence or service denial but cannot block national investigations, federal counterterrorism framing, or facility rules imposed from above.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling with a trans minor compounds visa mismatch, school, facility, and care exposure. National orders treat social transition and care as abuse, and records can be subpoenaed.",
+    "protection": "State prohibits conversion therapy for minors and insurance discrimination; guardian or teacher support may be protected locally, but no documented immunity from federal/facility scrutiny exists.",
+    "interaction": "A guardian’s care or enrollment steps can move a family from state-protected settings into national/federal review, where minor-specific hostility operates.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National demonization can embolden harassment, extortion, or service denial; no state-specific violence counts or enforcement records are documented for visitors.",
+    "protection": "State law penalizes gender-identity bias crimes and bans public-accommodation discrimination, so local victims or travelers may have a statutory complaint path.",
+    "interaction": "State policing can help after local incidents, but federal, immigration, or national-facility encounters remain governed by parent exposure rather than state protection.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Several national orders are enjoined or challenged; passport, facilities, custody, and care rules can shift. The state’s panic-defense bill and custody-placement details are unresolved or undocumented.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, state commissions, and complaint mechanisms exist. None is documented as delivering reliable, pre-emptive visitor-specific remedy.",
+    "interaction": "Unresolved legal status creates uncertainty about which actor and which rule controls a traveler’s encounter at borders, facilities, care, detention, and public spaces.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Lower: similar border denial/delay logic, but adds national custody abuse, hormone removal, fraud ineligibility, minor-care criminalization, and counterterrorism framing; state public-accommodation protections do not reach federal entry or detention."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Mixed: state has no raids or bathroom ban and public-accommodation protections, but national border screening, immigration custody abuse, and federal corrections practices are more severe than routine detention and fines."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Far lower: that anchor has respectful entry, short release, and reliable remedies. Here, entry screening can refuse or escalate, and outed visitors may face national custody or minor-care investigation despite local state law."
+   }
+  ],
+  "synthesis": "For adults, the sharpest exposure is national visa/document screening and federal or immigration custody, not local bathrooms. State anti-discrimination and lack of ban reduce everyday service friction, but they do not override entry, corrections, facilities, or care rules. With minors, national criminalization of social transition and care restrictions add risk. The combined regime is high risk because protective local law mitigates some street encounters while leaving border, detention, federal-facility, and minor-care pathways exposed."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 1,
+ "region": "66186276B10610315112087:Minnesota",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.01034119",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The combined regime is split. Federal passport/visa screening, entry refusals, material-fraud lifetime bans, airport checks, federal facilities and immigration/correctional custody are severe traveller-facing exposures and are not neutralised by state protections. The state's public-accommodation antidiscrimination, hate-crime, care-shield, conversion-therapy ban and most-protective rating materially reduce local service, hospital, facility and family-care risk after entry. For an adult alone, the main harm is entry denial/stranding and possible detention if scrutiny escalates. With a minor or guardian, federal minor-care and school-investigation hostility adds risk, while the state's shield for families travelling for care offsets interstate removal and local service denial. Overall elevated, not severe, because the state floor is high but the federal ceiling remains hostile.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules require binary M/F passports/visas, bar X/new mismatch markers, and treat document/record discrepancies as grounds for refusal or additional evidence; suspected wilful misrepresentation can trigger material-fraud lifetime ineligibility. Reports describe confiscated/blocked passports and travellers stranded abroad.",
+    "protection": "Existing X passports remain valid until expiry; waivers for fraud are possible; ongoing court challenge and legal-aid guidance. State protections do not pre-empt federal entry screening.",
+    "interaction": "A mismatch at entry can route a visitor into secondary screening, refusal, return travel, and potentially immigration enforcement where state anti-discrimination protections are inapplicable.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody shows forced labour, beatings, solitary and sexual abuse against trans men; national corrections adopts conversion-therapy-style measures and care denial. State custody precedent placed a trans woman in men's facilities and she was assaulted.",
+    "protection": "State hate-crime penalties and a convicted attacker provide some accountability; national hate-crime law exists. No documented current state enforcement data for visitor detention.",
+    "interaction": "Federal border denial or fraud allegations can escalate into custody; state prison/placement history indicates birth-sex risk persists even in a protective state.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities congruent with gender identity. Airport and federal-checkpoint screening can out travellers. State-level bathroom ban is not documented; the state is rated protective, leaving applicability uncertain.",
+    "protection": "State public-accommodation anti-discrimination since 1993 covers goods and services, and July 2026 mapping places it in most-protective tier, suggesting local facilities and services are safer.",
+    "interaction": "Local private/state facilities may be safer, but federal buildings, transport security, immigration offices and federally funded spaces remain governed by parent restrictions.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal policies frame minor care as abuse, pursue school and hospital investigations, cut youth crisis services, and may block public-insurance reimbursement; government-funded care can be restricted. State enforcement of these federal rules is not documented.",
+    "protection": "State law protects gender-affirming care, requires insurers to cover it, bans conversion therapy, and shields families travelling for care from out-of-state subpoenas, warrants and custody removal.",
+    "interaction": "A visitor or guardian seeking local state care has strong protection, but any federal emergency facility, interstate records, or federal enforcement layer can still trigger exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism prioritizes 'radically pro-transgender' violent groups; executive orders direct investigations of schools and criminal prosecution of staff supporting minors' social transition, and visa fraud language can treat identity evidence as deception.",
+    "protection": "State hate-crime law adds penalties for gender identity, abolishes trans-panic defence, and provides antidiscrimination remedies; national employment/hate-crime protections exist as climate signals.",
+    "interaction": "Federal threat framing can turn documents, records or advocacy content into suspicion at entry or detention, while state protections mainly operate in local policing and civil remedies.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors and guardians can be questioned over markers, care records or school-transition support; federal orders criminalise staff who facilitate a minor's transition and target medical records. A guardian's mismatched documents can cause refusal and stranding for the child.",
+    "protection": "State shields families travelling for gender-affirming care from out-of-state removal and conversion therapy; anti-discrimination, public accommodations, and hospital visitation protections support guardians and minors.",
+    "interaction": "State protections materially help care-seeking families locally, but federal entry screening, health investigations and federally funded services still operate above state shield law.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current state-specific anti-trans violence rate or police profiling record is documented; national support for assigned-sex documents suggests social pressure. Only the dated 2012 custody assault and bathroom-arrest elsewhere are noted.",
+    "protection": "State has long-standing public-accommodation and hate-crime law, plus most-protective tier ranking. Courts and advocacy infrastructure exist, but complaint and enforcement outcomes are not documented.",
+    "interaction": "Local police may respond under protective state law, but federal security, immigration, or federal property encounters are governed by the parent regime.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key gaps: untested shield-law application, no enforcement statistics for state nondiscrimination or hate-crime provisions, unresolved high-school athlete policy, and no current state violence figures. Federal court challenges remain undecided.",
+    "protection": "Legal-aid travel FAQs, ongoing civil-liberties litigation, state tribunals/ombud mechanisms implied by law, and active courts suggest some recourse; practical speed and reliability are not documented.",
+    "interaction": "Uncertainty concentrates at federal borders and custody; state remedies can reduce service-sector risk but do not resolve entry or detention exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Comparable only in exclusionary border friction. It lacks routine custody/stranding plus immigration custody abuse and federal facility restrictions present here; but state care/facility protections make it somewhat safer than pure exclusion systems."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Shares universal document-checking exposure and possible detention, but here everyday state services are protected and no criminalised presentation law at state level, making local service risk lower; federal border/custody keep it at similar or slightly above 0.45."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "More protective than typical entry-training issues: state shield/care/facility protections are strong. Still below 0.75 because federal entry, correctional custody, and minor-focused enforcement remain documented and not offset."
+   }
+  ],
+  "synthesis": "Border and federal custody define the worst outcome: a mismatched marker can become refusal, stranding, fraud ineligibility, or immigration detention with abuse. Once inside the state, protective law makes everyday accommodation, health care, facilities and family-travel scenarios much safer, and courts/advocacy may help locally. But those remedies do not pre-empt federal entry screening, federally funded facilities, immigration enforcement, or federal investigations affecting minors. The risk profile therefore depends on journey stage: low local friction after successful entry, high exposure at crossing/federal contact. Adult-alone and adult-with-minor scores are close; minors get state care shields but face federal care threat framing."
+ },
+ "parse_error": null
+}

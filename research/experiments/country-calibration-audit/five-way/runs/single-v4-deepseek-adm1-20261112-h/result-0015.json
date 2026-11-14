@@ -1,0 +1,78 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0070716",
+ "parsed": {
+  "rating": 0.55,
+  "explanation": "The combined regime is a protective state/province inside a restrictive parent/national framework. Local non-discrimination, hate-crime, conversion-therapy, and marker-change protections are documented, and the local risk map places it in the low-risk tier. But the parent passport/visa marker regime, border document-discrepancy screening, potential lifetime fraud ineligibility, and documented immigration-custody harm are traveler-facing and are not cancelled by local protections. The result is elevated risk: everyday outings in the local state are relatively protected, but border and detention exposure can be severe. No local facility ban, criminalization, or care restriction is documented; the parent border and custody rules are the main operative exposures.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent rules stop new X markers and require M/F based on supporting documents; visa applicants with discrepancies can be refused, asked for extra evidence, or found permanently ineligible for fraud.",
+    "protection": "Local state has non-discrimination and marker-change protections, but no documented border protection. Legal-aid FAQ exists but does not bind border officers.",
+    "interaction": "A visitor uses their home passport; border checks can trigger parent document scrutiny. Local state protections do not cancel parent entry screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Parent immigration custody documents forced labor, beatings, solitary confinement, and sexual abuse against trans detainees; parent corrections also adopt conversion-style policies. No local custody policy is documented.",
+    "protection": "Local state has no documented custody-protection policy for trans visitors; its low-risk rating and non-discrimination law do not cover parent immigration custody.",
+    "interaction": "A document discrepancy at the border can move the visitor into parent immigration detention, where local protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Parent national framework bars trans people from government-funded single-sex facilities congruent with identity and restricts facilities in many states/provinces. Local state has no mapped facilities ban.",
+    "protection": "Local state non-discrimination protections and no mapped facilities ban; but parent-funded facilities may still follow parent rules.",
+    "interaction": "Local public facilities are relatively safer; parent-funded buildings and national custody remain parent-governed.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Parent rules target gender-affirming care for minors and propose insurance restrictions; no state/province-specific care restriction is documented for adults. Immigration custody may deny care.",
+    "protection": "Local state bans conversion therapy and has non-discrimination protections; no documented visitor-specific care access guarantee.",
+    "interaction": "Adult visitors may use local services; minors face parent rules and possible custody-care denial.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Parent counterterrorism strategy lists 'radically pro-transgender' groups among hostile ideologies, and a reward system for information on listed domestic terrorist organizations. No local targeting is documented.",
+    "protection": "Local state has non-discrimination, hate-crime, and panic-defense protections; local enforcement is not documented as hostile.",
+    "interaction": "Parent law-enforcement framing may affect advocacy and border screening; local state protections are more protective.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Parent executive order frames gender-affirming care for minors as mutilation and directs investigation of teachers who facilitate social transition. Local state has no documented care restriction.",
+    "protection": "Local state non-discrimination and conversion-therapy ban; no documented visitor-specific minor protection.",
+    "interaction": "A parent travelling with a trans minor may face parent border and care rules, while local everyday protections remain stronger.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state/province-specific anti-trans violence or enforcement data is identified. Parent threat framing is documented but not a local street-policing pattern.",
+    "protection": "Local state has explicit hate-crime coverage, panic-defense ban, and non-discrimination law; no documented enforcement statistics.",
+    "interaction": "Local remedies are available on paper, but actual police response to anti-trans violence is not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Parent passport and visa policies are challenged but remain partly operative; border and immigration-custody harms are not remedied by local state law. No local facility or custody enforcement incident is documented.",
+    "protection": "Local civil-rights act, hate-crime law, conversion-therapy ban, and marker-change rules; national legal challenges and legal-aid FAQ.",
+    "interaction": "Local remedies can address local discrimination, but not parent border, visa, or immigration-custody decisions.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "0.35-A has routine border exclusion and no effective remedy. This case has documented parent border refusal and possible fraud, but the local state has robust non-discrimination protections, legal challenges, and no local facility ban, so it is safer than 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has extended secondary screening, discretionary refusal, and administrative penalties. This case has similar parent border scrutiny, plus documented immigration-custody harm, but local state protections are stronger; it is close to 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has border training, brief detention, and appeals, with low severity. This case has stronger local protections but weaker parent border treatment and documented custody harm, so it is below 0.75-C."
+   }
+  ],
+  "synthesis": "Local state protections are real and documented: non-discrimination, hate-crime coverage, conversion-therapy ban, marker-change rules, and no local facilities ban. Those reduce everyday risk in the state/province. The parent framework is the operative constraint: passport and visa marker restrictions, border document-discrepancy screening, potential lifetime fraud ineligibility, and immigration-custody harm. Local protections cannot cancel parent border or custody decisions. The traveller therefore faces a mixed regime: moderate local safety, but severe border and detention exposure if documents are questioned. The absence of local enforcement incidents is not proof of safety, and the parent's legal challenges leave the present operative rules uncertain."
+ },
+ "parse_error": null
+}

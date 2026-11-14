@@ -75,6 +75,28 @@ h1 { font-size: 1.6rem; margin: 0 0 2px; }
 .linkBtn:hover { color: var(--text); }
 .muted { color: var(--muted); font-size: 0.85rem; }
 
+#modelPanel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+#modelPanel .modelLabel {
+  font-weight: 600;
+  color: var(--text);
+}
+#modelPanel label {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+#modelPanel input {
+  margin: 0;
+}
+
 #map { flex: 1 1 auto; min-height: 300px; background: #0b0c0f; }
 
 #legend {

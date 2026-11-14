@@ -1,0 +1,78 @@
+{
+ "cell": 10,
+ "region": "66186276B2592965416524:New Mexico",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004592195",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "Combined regime is split: the state/province is strongly protective—public-accommodations law covers hotels and restaurants, no bathroom ban, gender-neutral single-occupancy restrooms, hate-crime coverage, panic-defence repeal, care shield, X markers—but national entry, facilities and custody rules remain hostile and are not cancelled by state law. An out trans visitor with a marker/presentation mismatch faces border refusal, invasive secondary screening and possible fraud/lifetime-ineligibility findings; federal single-sex facilities exclude identity-congruent use; immigration custody has documented beatings, forced labour and sexual abuse. Daily life inside the state is comparatively safe, and care-seeking adults from ban jurisdictions have shield protection. Minors face unresolved national care and school-transition threat framing. Net: elevated risk, not severe, because local protections are real but cannot reach federal border, facility and custody exposures.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require sex assigned at birth on documents, stopped new X markers, and instruct officers to refuse cases with sex discrepancies or consider fraud/lifetime ineligibility for wilful misrepresentation.",
+    "protection": "State/province issues X markers and protects gender identity, but state law cannot bind national border officers.",
+    "interaction": "A visitor's foreign passport and national visa screening control entry; state protections begin after admission.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documents forced labour, beatings, solitary confinement and sexual abuse of transgender men; national corrections use conversion-style practices and stopped reporting transgender prisoner counts.",
+    "protection": "State/province shield law protects care providers/patients, not federal immigration custody; no documented custody protection for visitors.",
+    "interaction": "Document discrepancy at entry can lead to detention and federal custody, where state protections do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars transgender people from government-funded single-sex facilities congruent with identity; some states criminalise bathroom use, but this state/province has no such ban.",
+    "protection": "State public-accommodations law covers gender identity in restaurants, hotels and shops; single-occupancy restrooms must be gender-neutral; no state bathroom ban.",
+    "interaction": "Federal buildings and federally funded facilities follow the hostile national rule; private and state-regulated venues follow protective state law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National policy frames minors' gender-affirming care as mutilation, restricts insurance, subpoenas hospital records, and threatens schools/providers; national care access is contested.",
+    "protection": "State law protects adult gender-affirming care, including interstate travellers, and a shield law protects patients/providers where care is legal locally; Medicaid coverage maintained.",
+    "interaction": "Adults seeking care in the state/province have strong local protection; minors' access and non-resident minor documentation are unresolved and national enforcement can still reach providers.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among priorities; justice department memo invokes 'radical gender ideology'; schools face investigation for social transition support.",
+    "protection": "State hate-crime law covers gender identity, panic defence is repealed, and public-accommodations discrimination is prohibited.",
+    "interaction": "National rhetoric and investigative authority can chill advocacy and care, while state and local police/courts operate under protective law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive orders threaten prosecution of teachers who use preferred names/pronouns, restrict insurance for minors' care, and investigate hospitals; care for non-resident minors is unspecified.",
+    "protection": "State anti-bullying law covers gender identity, and the 2023 care statute protects gender-affirming care for adults; shield law's application to non-resident minors is unclear.",
+    "interaction": "A parent travelling with a trans minor faces unresolved national care/school-transition exposure despite protective state school and care policy.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence incidents or enforcement outcomes for this state/province are documented; absence is not proof of safety.",
+    "protection": "State hate-crime law covers gender identity, public accommodations are protected, and police/courts operate under state non-discrimination law.",
+    "interaction": "Local street-level risk is mitigated by protective law and hate-crime coverage, but national climate may affect reporting and official response.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport and entry policies are challenged but still operative; fraud findings carry limited waiver; border officer discretion creates refusal and detention risk.",
+    "protection": "State courts, civil-liberties litigation, care shield, public-accommodations enforcement and hate-crime law provide real local remedies.",
+    "interaction": "Remedies work inside the state/province but generally cannot prevent or promptly reverse federal border, facility or custody action.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Karthovia has police stops, passport confiscation, compelled interviews and fines but no credible imprisonment; this jurisdiction has stronger local protections and no routine street targeting, yet its national border and custody exposures are more severe, so it sits above 0.35-B."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles has discretionary border secondary screening, refused admission and slow remedies; this jurisdiction adds documented federal facility exclusion and severe immigration-custody harms, but offsets them with strong state public-accommodations and care protections, making it broadly comparable to 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has trained border officers, brief detention and a functioning civil-liberties tribunal; this jurisdiction has hostile national entry rules, facility exclusion and documented custody abuse, so it sits materially below 0.75-C despite protective state law."
+   }
+  ],
+  "synthesis": "The operative regime is a protective state/province embedded in a hostile national framework. Inside the state, an out trans adult can use hotels, restaurants, shops and gender-neutral single-occupancy restrooms under enforceable public-accommodations law; hate-crime coverage and care-shield rules are real local mitigations, and adults from ban jurisdictions can access protected care. Those protections do not reach the national border, federal facilities or immigration custody. Entry screening can refuse a mismatched case or raise fraud/lifetime ineligibility; federal single-sex facility rules exclude identity-congruent use; detention carries documented severe harm. A travelling family with a trans minor faces additional unresolved national care and school-transition threats. The combined result is elevated, not severe, risk."
+ },
+ "parse_error": null
+}

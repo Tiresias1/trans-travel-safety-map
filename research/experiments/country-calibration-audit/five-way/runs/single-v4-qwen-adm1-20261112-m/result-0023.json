@@ -1,0 +1,78 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005658198",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "Combined operative regime is elevated-to-high risk. Federal executive orders impose binary birth-sex documents and screening: passports/visa marker mismatches can trigger refusal, additional evidence and fraud findings; reports include passports blocked/confiscated and visa detentions. Federal and multiple state facility exclusions create unavoidable bathroom/changing exposure; one documented arrest for restroom refusal led to 24 hours in men's ward. Immigration-custody reports add severe abuse and birth-sex placement. A moderate division has no statewide adult facility ban and some municipal protections, but they do not override federal entry, facilities, or custody chains. Youth restrictions and official threat-framing worsen climate for minors. Legal remedies are contested and not documented to stop frontline harm. Absence of violence data is not safety.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal birth-sex document rules: passports/visa markers restricted; mismatch triggers refusal, extra evidence, possible fraud lifetime ineligibility. Reports: passports blocked/confiscated, visa detentions, travelers stranded.",
+    "protection": "Existing X passports valid; courts/legal aid track policy; federal employment anti-discrimination only climate signal.",
+    "interaction": "Document mismatch at entry can move to secondary screening, visa denial, and detention/fraud investigation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "If detained, immigration custody reports forced labor, beatings, solitary and severe sexual abuse; facility arrest case involved men's ward and handcuffs.",
+    "protection": "No documented traveler-facing custody protocol; courts can review but not shown to prevent frontline abuse.",
+    "interaction": "Passport/visa discrepancy plus facility trespass can generate detention, then birth-sex placement/abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars congruent access to government-funded single-sex facilities; many states ban schools/public buildings, 6 include private, 4 criminalize in circumstances; documented restroom arrest and 60-day charge.",
+    "protection": "Division has no statewide adult facility ban; municipal public-accommodation ordinances in ~46% of population, but enforcement not documented.",
+    "interaction": "Federal facilities and state bans coexist; municipal protections do not cancel federal or state restroom/criminal exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National minors-care and funding restrictions; school records subpoenaed; proposed insurance blocks. Adult care access for visitors not documented.",
+    "protection": "Division: no statewide adult care ban; medical board youth restriction still draft. These do not prove traveler care continuity.",
+    "interaction": "A trans minor seeking care or documents may encounter provider scrutiny; national youth rules can affect guardians.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Executive orders direct investigations/prosecutions over gender-identity policy; counterterrorism language includes radically pro-transgender groups, creating official threat-framing and surveillance risk.",
+    "protection": "Federal hate-crime and employment coverage remain climate signals; not documented as visitor-facing protection against officials.",
+    "interaction": "Threat framing can raise risk of questioning, device scrutiny, and harsh treatment when outed.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minors face sports bans, school bathroom policies in districts, and proposed youth-care restrictions; guardians may be drawn into scrutiny over care/records.",
+    "protection": "Municipal nondiscrimination and no statewide adult facility/care ban are partial but not sourced to operate for visiting minors.",
+    "interaction": "National facility rules plus state board/school policies multiply restrictions for minors; guardians can become investigated subjects.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence count or homicide baseline in dossier; state hate-crime law omits gender identity and many states lack recourse.",
+    "protection": "Not documented. Federal hate-crime statute exists but is not shown to protect visitors from street violence.",
+    "interaction": "Absence of evidence is not safety; hostile climate and weak local recourse may reduce willingness to report.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Complaints, appeals and litigation are slow; municipal enforcement undocumented; frontline officials retain discretion.",
+    "protection": "Courts/lawsuits provide partial check; legal aid FAQ, some state/municipal protections, but they do not document relief for traveler-facing screening or custody.",
+    "interaction": "Remedies may come after missed travel/detention; risk remains during border/facility encounters.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Like 0.45-A, documents create routine exposure at clinics, banks, transport checks. But here the exposure is worse: national facility exclusions, a documented restroom arrest with men's ward, and immigration-custody sexual-abuse reports make consequences more severe than administrative humiliation."
+   },
+   {
+    "anchor_id": "0.35-D",
+    "comparison": "Comparable to mandatory gender-document examination at transit: visa/passport rules can deny onward travel. Lower safety than 0.35-D because screening may lead to fraud findings, detention, and custody placement/abuse, not merely delay and humiliation."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Closer to extended secondary border screening than 0.55-B. Both have discretionary holds and missed connections, but this regime adds a credible path from document mismatch to detention and severe custody abuse, and lacks reliable traveler remedies."
+   }
+  ],
+  "synthesis": "The operative system is federal border/document screening combined with federal and multi-state facility exclusions. Passport-marker rules and visa discrepancy checks create universal outing risk, denial of entry, stranded travel, and possible fraud investigation. The next stage is not harmless: visa detentions are reported, and if outed in facilities the traveller can face trespass arrest, men's ward placement, and abusive immigration custody. Division-level protections--no statewide adult facility ban, municipal ordinances, no adult-care ban--soften street-level exposure locally but are not documented to work for visitors and cannot cancel federal screening or federal facilities. Youth restrictions and counterterrorism rhetoric further endanger minors and increase state threat-framing. Remedies are partial and slow; therefore high/elevated risk."
+ },
+ "parse_error": null
+}

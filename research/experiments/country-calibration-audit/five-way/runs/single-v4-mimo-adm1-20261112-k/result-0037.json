@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.001593004",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The combined regime pairs a hostile federal layer with an unusually protective state court record. Traveller-facing exposures are national: entry screening where any document discrepancy or 'reasonable doubt' on sex triggers refusal and possible lifetime fraud ineligibility (eight governments issued travel advisories), an executive-order ban on trans people in federally funded single-sex facilities (tier-1 universal exposure, litigation unresolved), and documented abuse in immigration custody for those detained. No criminalisation of trans identity applies, hate-crime and employment protections exist nationally, and the state's courts have repeatedly enjoined its enacted restrictions — the only state whose 2026 standing improved. That mitigation is real but operates only on the state layer; it does not neutralise enforced federal entry, facility or custody rules.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 cable: document discrepancy or 'reasonable doubt' on sex → refuse and demand evidence; suspected misrepresentation considered for permanent lifetime fraud ineligibility. X markers discontinued; eight governments issued travel advisories. Documented: trans travellers report passports blocked/stranded abroad.",
+    "protection": "Fraud finding requires all four elements, is never automatic, and limited waivers exist; suit pending. Visitor's home passport is unaffected by the domestic marker rule.",
+    "interaction": "Document friction at entry can escalate into fraud allegation, then detention, where federal custody practices apply.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "In immigration custody, trans men reported forced labour, beatings, solitary confinement and severe sexual abuse; guards used demeaning gendered justification. Corrections bureau adopted conversion-therapy-style policies (hair cutting, hormone removal) for federal inmates from 2026.",
+    "protection": "No documented detention of visitors for trans status itself; ordinary visitors face refusal of entry rather than custody.",
+    "interaction": "Entry refusal or document dispute is the gateway into the custody system where documented abuse occurs.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities; growing state-level bans (9+1 units all government buildings, 6 units reaching private settings), 4 states criminalise in some circumstances. In this state the 2025 facilities bill is under a temporary restraint of uncertain status.",
+    "protection": "State courts enjoined the state facilities bill citing animus; a 2024 ban referendum failed; state house voted down a bathroom ban. However federal facility rules apply independently within the state.",
+    "interaction": "State injunction cannot pre-empt the federal facility ban; the traveller meets both regimes in the same buildings.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal order defunds gender-identity policies; Oct 2025 proposed rule would bar public-insurance reimbursement for under-18 care; DOJ subpoenaed hospital patient records in 2025; LGBTQ youth services removed from national crisis line.",
+    "protection": "In this state the minors' care ban was permanently struck down (May 2025) and remains unenforced; adult emergency care is not documented as refused.",
+    "interaction": "State permission does not restore federally defunded or federally insured care pathways for a visiting minor.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "May 2026 counterterrorism strategy prioritises neutralising groups 'radically pro-transgender'; Dec 2025 reward memo pairs 'radical gender ideology' with violent extremism; flag ban and drag-performance restrictions on the books; 66% public support for birth-sex document rules.",
+    "protection": "Reward criteria never use gender ideology as a trigger; the drag law is restrained as vague; counterterrorism memo states it will not target mere disagreement. National hate-crime statute covers gender identity.",
+    "interaction": "Federal framing amplifies state-level social friction, but neither has produced documented enforcement against ordinary trans visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal order criminalises teachers facilitating a minor's social transition and subpoenas children's health records; federal facility bans reach schools a visiting minor may enter; proposed insurance rule targets under-18 care.",
+    "protection": "State courts permanently struck the state's minors' care ban; no state criminalisation applies to a travelling family; a parent's foreign documents are not altered by the domestic regime.",
+    "interaction": "A travelling minor's exposure runs through federal facility and care-funding rules, not the state's blocked statutes.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific incidents or rates are documented. National statistics show sexual-orientation bias at one-seventh to one-fifth of single-bias hate incidents; a trans student was arrested and held 24 hours in a men's ward under another state's bathroom law (Mar 2025).",
+    "protection": "National hate-crime statute covers gender identity; 23 states cover it in bias statutes; municipal public-accommodation ordinances exist in this state. State records show courts and civil society active.",
+    "interaction": "Absence of state violence data is a documentation gap, not safety; the neighbouring-state arrest shows how facility laws elsewhere produce custodial harm.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport and order challenges unresolved; several orders blocked but in flux; state's 2026 definitions bill status after April 2026 motion unknown; facility-tr restraint permanence unknown; hate-crime statutes here omit gender identity, leaving recourse to federal prosecution.",
+    "protection": "State constitutional litigation works repeatedly for trans people — injunctions granted, affirmed by the state supreme court April 2026, care ban permanently struck; the only state improving in the July 2026 assessment. Legal-aid FAQ and civil-liberties suits operate.",
+    "interaction": "State courts are effective counterweights on state law but cannot grant relief against federal entry, facility or custody rules.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Higher than 0.35-A: there is no register barring trans visitors from admission as a class, no agency mechanically excluding them, and no confiscation of return tickets. Entry refusals require individualized document doubt, are never automatic, and a functioning independent judiciary grants relief on state measures. Exclusion here is patchier and partially remedied, not systematic and remedy-less."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than 0.55-B: that anchor's harm stops at secondary screening, administrative refusal and slow appeals. Here the same entry friction coexists with a possible permanent lifetime fraud bar, an enforced federal facility exclusion, and documented beating and sexual abuse in immigration custody — outcomes the 0.55 anchor never reaches. State-court remedies do not cover these federal layers."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Materially lower than 0.75-C: that anchor shows trained officers, a tribunal ordering release with compensation, and recognised trans passport markers. Here markers are restricted by Supreme Court order, no traveller-specific remedy is documented at the border, eight governments warn their trans citizens away, and federal facility and custody rules operate against trans people."
+   }
+  ],
+  "synthesis": "Two systems interact rather than offset. The federal layer supplies the operative traveller-facing exposures: entry screening where sex-discrepancy doubt means refusal plus a possible lifetime fraud bar, an enforced ban on trans use of federally funded single-sex facilities, hostile document policy upheld by the Supreme Court, and documented abuse inside immigration custody. The state layer supplies genuinely working protection — repeated constitutional injunctions, an appellate affirmance in April 2026, a permanently struck care ban — which is why its 2026 standing improved. But those remedies bind only state law; they cannot pre-empt federal entry, facility or custody authority, and the dossier documents no traveller-facing remedy at the border. For an outed adult, consequences run from refusal and exclusion to, if detained, severe custodial harm; for a travelling family, the same federal facility and care-funding rules reach the minor while state courts continue to shield them from state measures."
+ },
+ "parse_error": null
+}

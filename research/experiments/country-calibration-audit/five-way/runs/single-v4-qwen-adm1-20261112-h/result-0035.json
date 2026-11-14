@@ -1,0 +1,82 @@
+{
+ "cell": 35,
+ "region": "66186276B78821008370123:Maine",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.00578214",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "Combined regime: national border, document, federal-facility, immigration-custody and counterterrorism rules are traveler-facing hostile; the division has explicit anti-discrimination, facility-access, marker-change and healthcare protections. For an adult alone, local exposure is lower, but a passport/marker mismatch at entry can trigger denial, investigation, fraud/permanent-ineligibility, or abusive federal custody. A minor/guardian raises exposure because federal anti-youth-care and school-enforcement signals may interact with locally lawful care. State protections mitigate ordinary service and facility risk but do not pre-empt federal screening, federal facilities, detention or funding authority. Overall elevated risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal visa policy treats document/record mismatches or evidence casting doubt on sex as grounds for refusal, additional evidence, and fraud; reports include confiscated/blocked passports and stranded travelers; advisories cite detentions.",
+    "protection": "Existing X markers remain valid until expiration; active lawsuits and a legal-aid FAQ advise travelers; no documented blanket ban beyond visa/athlete screening and fraud discretion.",
+    "interaction": "Mismatch at entry can trigger secondary screening, investigation, denial, or custody; division marker changes or home-document comfort do not remove federal screening exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented immigration custody abuse of trans detainees: forced labor, beatings, solitary confinement, severe sexual abuse; federal corrections policy imposes conversion-like conditions and care denial.",
+    "protection": "Court challenges may enjoin some orders, but dossier does not document a reliable visitor remedy once detained by federal or immigration authorities.",
+    "interaction": "Border discrepancy or advocacy/minor-care discovery can escalate into federal custody where placement and conditions are birth-sex or hostile; local custody protections are not documented as offset.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order restricts gender-congruent access in government-funded facilities; several state/provinces ban or criminalize facility use, with one arrest and men’s-ward detention reported.",
+    "protection": "Division has no facility ban, a school bathroom ruling supporting identity-aligned use, public-accommodation law, and low-risk national assessment.",
+    "interaction": "Division protections apply locally, not to federal or federally funded encounters; in-state facilities lower exposure, but federal facility rules remain operative.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal policies label trans care for minors as abuse, investigate schools, threaten funding, subpoena youth medical records, and restrict reimbursement; sports/funding rules chill access.",
+    "protection": "Division protects gender-affirming healthcare, allows minor hormone therapy at 16-17, permits marker changes with consent, and bans conversion therapy for minors.",
+    "interaction": "Care-seeking or school enrollment in protective division may be lawful locally, but federal funding, records, and enforcement authority can turn care into investigation.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism prioritizes identification/neutralization of radically pro-transgender groups; DOJ guidance and public opinion frame trans advocacy as radical or deceptive.",
+    "protection": "National hate-crime statute and division anti-discrimination/hate-crime enhancements, plus panic-defence abolition, signal institutional protection in ordinary local settings.",
+    "interaction": "Hostile federal framing can chill speech, advocacy, and family care interactions; local police may protect trans visitors, but federal actors are not mitigated.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal orders and law-enforcement directives target schools and caregivers facilitating social transition or minor care, potentially criminalizing names/pronouns; document/marker mismatch affects family entry.",
+    "protection": "Division explicitly safeguards minor healthcare and school facilities access, permits minor markers/birth certificates, and bans conversion therapy.",
+    "interaction": "A guardian using or facilitating care may become an investigated subject; protective local care is vulnerable to federal funding, records, and enforcement interactions.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division violence figures or enforcement statistics for hate-crime enhancements; national incident patterns do not establish visitor street-risk rate.",
+    "protection": "Division public-accommodation law, hate-crime penalties, and abolished panic defence may support reporting and civil remedies for local street or service hostility.",
+    "interaction": "Local police response likely safer in the protective division, but federal immigration detention and facility encounters remain outside that protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Visitor-facing outcomes depend on officer discretion, database mismatch, active litigation, and whether federal orders are enjoined; enforcement data and sanctuary-bill status are unclear.",
+    "protection": "Litigation, legal-aid FAQs, courts, and state human-rights mechanisms provide some remedy; division protections are retained after referenda and court rulings.",
+    "interaction": "Remedies can mitigate service and local discrimination but not border refusal, permanent ineligibility, or federal custody abuse; uncertainty is material.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Higher anchors permit marker-matching entry, trained officers, and brief detention with counsel. Here federal screening can deny visas, seize passports, and lead to abusive federal/immigration custody; division safety is local only, so rating lower."
+   },
+   {
+    "anchor_id": "0.65-E",
+    "comparison": "0.65 cases involve outdated officer practice corrected by advocates with low detention risk. Here entry rules explicitly target sex markers and include fraud/permanent-ineligibility exposure; protective state offsets daily friction but not federal custody."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar to administrative secondary screening and return, but more severe due to documented immigration-custody abuse, hostile federal facility/care rules, and minor/caregiver investigation pathways. Balanced by strong division protections, so near mid-elevated."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Above 0.45 because the division has no facility ban, operative public-accommodation and healthcare protections, and local remedy mechanisms. Still below protective high bands because federal entry/federal custody exposure is mandatory and unremedied."
+   }
+  ],
+  "synthesis": "The traveler experiences two layers. Locally, the protective division reduces ordinary service, facility, and care exposure; state law is explicit and court-backed. Nationally, border and document rules make sex-marker mismatch a direct visa/fraud issue, and federal/immigration custody has documented severe abuse. For an adult alone, the likely local stay can be relatively safe, but discovery at entry or in federal custody creates major harm. With a minor, local lawful care can interact with federal anti-youth-care investigations, worsening caregiver exposure. No local shield pre-empts federal screening, facilities, or detention."
+ },
+ "parse_error": null
+}

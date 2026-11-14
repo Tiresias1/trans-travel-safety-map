@@ -1,0 +1,78 @@
+{
+ "cell": 46,
+ "region": "66186276B97229519707655:Oregon",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0058426",
+ "parsed": {
+  "rating": 0.62,
+  "explanation": "Combined regime: a strongly protective state layer (statewide gender-identity anti-discrimination in public accommodation, services and education; enhanced hate-crime penalties; panic defences abolished; X markers; shield law for care) sits on top of an active federal layer. The federal layer documents passport sex-marker restrictions in effect, a 2025 entry cable requiring refusal on document discrepancy with a possible lifetime fraud bar, federal-facility bans, documented harm in federal immigration and prison custody, and subpoenas of minors' hospital records. Those federal exposures are real but are not state-enforced at the visitor's point of arrest. The state layer lifts the score well above the national line. Enforcement of state protections against visitors is not documented, and the state's own facilities status is not explicitly stated.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal entry cable: document discrepancy triggers refusal and evidence requests; suspected wilful misrepresentation can trigger lifetime ineligibility; passports blocked or confiscated for some trans travellers.",
+    "protection": "Refusal requires a discrepancy or doubt; the fraud bar requires four elements and is not automatic; limited waivers exist.",
+    "interaction": "Federal entry screening applies irrespective of the state's protective law; a refusal at entry precedes any state-level protection.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody: documented forced labour, beatings, solitary and sexual abuse of trans men. National prison policy from 2026 mandates conversion-type measures; the bureau stopped reporting trans prisoner counts.",
+    "protection": "No state-level custody rule for this state is documented; state trespass-type arrests are documented only for a different state.",
+    "interaction": "A visitor who passes into federal custody after an entry or document problem faces the federal regime, not the state's protections.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal executive order bars gender-identity access to government-funded single-sex facilities. The state's facilities status is not explicitly documented as restricted; the map lists it among states without a ban, with a caveat that other sex-defining laws may still apply.",
+    "protection": "State public-accommodation law covers facilities access in state settings.",
+    "interaction": "Federal buildings and national facilities apply regardless of state law; state facilities protection does not reach them.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Proposed federal rules would bar public insurance reimbursement for under-18 care. Federal subpoenas sought full records of under-19 patients from over 20 hospitals. Federal funding restrictions affect youth services.",
+    "protection": "State shield law protects patients and providers from civil or criminal liability for care legal here but banned at home. Public coverage of gender-affirming care is documented for residents.",
+    "interaction": "A visitor seeking care here is shielded from home-state prosecution, but federal records demands can reach hospital records of minors treated in state.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as priority targets; a cash-reward scheme follows; the national justice department directs prosecution of teachers facilitating trans minors' transition.",
+    "protection": "The state's protective law and the 'Most Protective' tier ranking reflect enacted protections; the national memo disclaims targeting ordinary disagreement.",
+    "interaction": "Federal threat-framing is national and not state-applied, but it can reach a visitor who is involved with advocacy or youth care.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A travelling minor's care may be exposed to federal subpoenas and proposed insurance bars. Threatened prosecution of school staff for facilitating social transition. A guardian's exposure is through records and federal threat-framing.",
+    "protection": "State shield law and anti-discrimination coverage of public schools; the state's anti-bullying law covers public schools; the adoption ruling is recognised.",
+    "interaction": "Minors face the most federal-layer exposure, and the state's protections do not cover federal records demands or federal school enforcement.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific data on police stops, searches or custody treatment of trans visitors. National hate-crime data show bias against sexual orientation as a meaningful share of incidents; gender-identity-specific figures for the state are not found.",
+    "protection": "Enhanced hate-crime penalties for gender-identity bias; trans and gay panic defences abolished in murder, manslaughter and hate-crime cases; public accommodation protections.",
+    "interaction": "Protective penalties are documented in law, but prosecution outcomes are not documented; the response record is therefore uncertain.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation is unresolved; the practical effect of the 2025 adoption ruling is not documented; effective remedies for federal entry or custody harms are not shown.",
+    "protection": "State anti-discrimination law applies uniformly and is not locality-dependent; X markers are available on state IDs and birth certificates; the shield law operates in statute.",
+    "interaction": "Traveller remedies for federal exposures run through federal courts, where several orders are enjoined; the state layer does not reach them.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "The Vellandra register bars trans visitors outright and refusals are routine with no effective appeal. Here the state layer is strongly protective and state law does not bar visitors. Federal entry refusal is conditional on document discrepancy and is not universal, so this case sits well above 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles documents secondary screening, humiliation and denial of entry, with remedies slow but present. The federal entry cable here carries similar screening and refusal risk, and federal custody harm is documented, which is heavier than the Kestrel penalties. The state's protections are stronger than anything in that anchor, so this case sits modestly above 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia has respectful border screening, brief detention, and effective remedies for unlawful holding. Here federal custody harm and lifetime-fraud exposure are documented and the national posture is hostile. Strong state law places this above Meridia's entry exposure but below its national-layer clarity, so it sits below 0.75."
+   }
+  ],
+  "synthesis": "The state's statutory layer is strongly protective: anti-discrimination coverage, enhanced hate-crime penalties, panic defences abolished, X markers, and a shield law for visitors from banned states. The federal layer imposes documented, traveller-facing exposure: refusal on entry for document discrepancy with a possible lifetime bar, documented harm in federal custody, federal facility bans, and federal records demands that can reach minors' care. Federal exposures are conditional on entry discrepancy, custody or care encounters, and are not universal arrest risks. The rating therefore sits in the reduced-risk band, held down by the federal layer and by undocumented state enforcement against visitors."
+ },
+ "parse_error": null
+}

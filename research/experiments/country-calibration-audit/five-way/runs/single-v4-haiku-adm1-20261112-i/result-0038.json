@@ -1,0 +1,78 @@
+{
+ "cell": 38,
+ "region": "66186276B82803899326534:Indiana",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.00593",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "Combined regime is Elevated Risk. Federal exposures dominate: visa and entry screening refuses applicants with any document or record discrepancy and can invoke a permanent fraud ground; passport sex-marker restrictions are in force; federal immigration custody has documented forced labour, beatings and sexual abuse; federal corrections policy has documented care denial; and national counterterrorism framing names pro-transgender groups. The state layer is comparatively protective for visitors: no restroom restriction is currently in force, local ordinances protect restroom use, the facility bill is not law, and sodomy has been decriminalised since 1977. Minor care is banned, and the state hate-crime aggravator is documented but unevidenced in enforcement. Visitors' documents are issued at home, so the state ID ban is a resident gap, not a visitor exposure. The trespass arrest is documented in the national record but its jurisdiction is not identified here, so it is not attributed to this state.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Consular cable refuses applicants with document/record discrepancies or doubt about sex; possible lifetime fraud ineligibility; passports blocked or confiscated for trans travellers; allied advisories issued.",
+    "protection": "Fraud finding requires all four elements and is not automatic; limited waiver available; passport restriction under national court challenge.",
+    "interaction": "Home-country passport mismatch triggers federal consular refusal before the traveller reaches the state; state ID rules do not apply to visitors.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of transgender men; federal corrections conversion-style policies and care denial; reporting halted.",
+    "protection": "Custody-specific protections not documented as operative; federal LGBTQ prison order rescinded.",
+    "interaction": "Federal custody harms apply regardless of state law; a visitor detained at federal entry reaches federal facilities, not state ones.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars facilities congruent with identity in government-funded settings. State restroom law: no restriction in force; facility bill passed upper chamber only, not law. The 4-state criminal trespass map and the arrest are documented for a unit not identified here.",
+    "protection": "No state restroom restriction for trans people; two cities protect restroom use by ordinance.",
+    "interaction": "Federal funded-facility rules and any state bill would apply on top of the current permissive state restroom position if enacted; pending status is unresolved.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for under-18s banned in state; federal subpoenas for minors' records; proposed federal rules barring reimbursement for under-18 care; federal crisis-line LGBTQ youth services shut down.",
+    "protection": "Adult access to care not documented in the dossier.",
+    "interaction": "A visitor under 18 cannot obtain the banned care here; federal records demands may reach care providers and families.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups for priority neutralisation; memorandum lists 'radical gender ideology' among violence-linked agendas; conversion-therapy practice legal at state level.",
+    "protection": "Strategy states powers will not target people who simply disagree; no state-level threat framing documented.",
+    "interaction": "National security framing could reach visitors who engage in advocacy; state law itself does not target visitors.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor visitor cannot obtain gender-affirming care; school-related federal prosecution threats against teachers using preferred names; state parental-notification law on name/pronoun requests for minors; minor's birth certificate cannot be amended.",
+    "protection": "No documented protective guardian provision for visiting minors.",
+    "interaction": "Minor with a guardian faces both care denial and identity-document mismatch at entry; the guardian bears legal risk for supporting social transition in schools.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific street-violence rate documented; hate-crime aggravator exists, enforcement data absent; local friction documented only at resident level.",
+    "protection": "Hate-crime aggravating circumstance including gender identity; local employment and public-accommodation ordinances in several counties and cities.",
+    "interaction": "Local protections are city-level and may not reach every area a visitor enters.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and marker remedies are pending in court; state ID ban challenge unresolved; facility-bill prospects unsourced; no state anti-discrimination statute for gender identity.",
+    "protection": "Federal hate-crimes statute covers gender identity; federal employment protection exists; state-level remedies remain partial.",
+    "interaction": "Federal court relief could change entry and custody practice; state-level remedies are uneven.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Anchor 0.35-A has a universal border register with routine refusal and no effective appeal. This dossier shows entry refusal for document discrepancy and documented federal custody harm, which is comparable. It is less severe because the state layer has no restroom ban and no state register, and the fraud ground is not automatic, so the case sits slightly higher."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Anchor 0.55-B has extended secondary screening and discretionary denial with administrative penalties. This dossier's entry exposure is similar in kind, but it adds documented federal custody abuse and a possible lifetime fraud finding, which moves it lower. The state's absence of a restroom ban keeps it near this level rather than below."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Anchor 0.75-C allows trans passports, respectful inspection and brief detention with remedies. This dossier lacks those entry protections, documents passport blocking and stranding, and has documented custody harm. It is clearly lower than 0.75-C, though the state's current restroom permission and local ordinances keep it above the 0.35 band."
+   }
+  ],
+  "synthesis": "The traveller's main exposures are federal: consular refusal of document discrepancies, a possible lifetime fraud finding, documented abuse and care denial in federal immigration and corrections custody, and national framing of pro-transgender groups. The state layer partly offsets these for everyday life: no current restroom restriction, local ordinances, and a federal hate-crimes statute. The state's ban on minor care, pending facility bill, and aggravator-only hate-crime law add moderate exposure. The combined regime is Elevated Risk, with severity concentrated in custody and entry rather than street life."
+ },
+ "parse_error": null
+}
