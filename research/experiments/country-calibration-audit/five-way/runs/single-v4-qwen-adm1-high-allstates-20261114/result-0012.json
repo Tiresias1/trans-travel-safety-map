@@ -1,0 +1,78 @@
+{
+ "cell": 12,
+ "region": "66186276B31549545599635:Delaware",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007553352",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined operative regime: federal entry/document rules override local protections. Adult visitors face passport/visa marker checks, secondary screening, possible denial/stranding, and fraud-based lifetime ineligibility if misrepresentation is suspected. Federal facilities and immigration/prison custody carry documented exclusion and abuse; local anti-discrimination, no bathroom ban, hate-crime enhancement and marker-change practice lower daily risk, but cannot cancel border, federal facilities or custody exposure. Trans adults likely safer on-site than hostile states, yet discovery can trigger severe federal consequences. For minors/guardians, national care/school hostility and insurance-reimbursement threats create uncertainty and possible denial or family scrutiny, partly mitigated by state protections. Score reflects elevated risk: protective locally, hostile at the federal gate.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passports/visas use birth-sex M/F; discrepancy or reasonable doubt can trigger refusal/extra evidence; suspected wilful misrepresentation may support permanent ineligibility. Reports include confiscated/blocked passports, stranding, and foreign advisories.",
+    "protection": "Existing X passports remain valid until expiry; limited fraud waivers; state public-accommodation law does not alter federal entry.",
+    "interaction": "Border screening precedes state protections; if documents/appearance mismatch, federal rules govern.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies adopted conversion-therapy-like inmate measures; immigration detention reports forced labour, beatings, solitary, and sexual abuse; entry discrepancy could escalate to custody.",
+    "protection": "No documented trans-specific custody protocol, visitor notification remedy, or state placement policy.",
+    "interaction": "State protections do not shield a visitor if immigration or federal custody follows a border encounter.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities matching identity and directs binary-sex use; federal facility checks are not pre-empted.",
+    "protection": "This state has no bathroom ban and prohibits discrimination in public accommodations/state facilities; local marker-change practice signals institutional respect.",
+    "interaction": "Local venues are safer, but federal buildings or programs remain subject to national rule; in-state application is undocumented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal hostility to gender-affirming care, minor-reimbursement proposals and funding freezes create possible denial; visitor-specific emergency or continuity-care rules are not documented.",
+    "protection": "State anti-discrimination insurance/public-accommodation law; no state ban; local marker-change practice; minor conversion-therapy ban.",
+    "interaction": "Adult/local care may be protected, but federal funding, facilities, or minor-care pathways can still impose document checks.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders define sex binary, remove gender terminology, target schools/transition facilitation, and counterterrorism language labels radical gender ideology hostile.",
+    "protection": "State hate-crime enhancement, anti-discrimination act, LGBTQ+ commission; national hate-crime and employment protections remain.",
+    "interaction": "State police may respond protectively, while federal agents or immigration/federal custody can enforce the hostile national posture.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor with mismatched documents faces entry scrutiny; national orders frame care/social transition as abuse/crime for staff and threaten reimbursement, potentially denying care or inviting inquiry.",
+    "protection": "State protects minors from conversion therapy, bans discrimination in insurance/public spaces, and allows marker affidavits; no state minor ban documented.",
+    "interaction": "Guardian protections are strongest in state settings, but federal border, facilities, funding, or care-seeking can still override.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented traveler-specific street violence, arrests, or police targeting in this state; national hostility leaves uncertainty about incidents.",
+    "protection": "State anti-discrimination/hate-crime law, no facility ban, and commission; protective legal infrastructure suggests lower everyday risk.",
+    "interaction": "Local response can assist for assaults, but federal immigration custody if a victim is detained remains a separate risk.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport/visa litigation is unresolved; several national orders are enjoined, so status can change; no reliable visitor remedy is documented for federal entry, custody, or federal facility exclusion.",
+    "protection": "State civil-rights complaint avenues, legal FAQ, lawsuit pressure, and commission; limited waivers; national hate-crime recourse.",
+    "interaction": "Remedies are strongest locally and after arrival, but unreliable at border or federal custody where national authority dominates.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has local prison birth-sex placement and cross-dressing arrests. This jurisdiction avoids local bathroom arrests and has protective laws, but shares federal entry scrutiny and severe immigration/prison custody harms. Rating sits slightly above 0.25-C because local targeting is not documented, yet federal custody exposure keeps it low."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A has biometric card universal exposure, routine questioning, and denial of care with custody unlikely. Here documents/entry friction is narrower but potential federal custody and national facility hostility are more severe; local protections offset only after arrival. Rating sits near this anchor."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C allows entry with presentation-matching passports, trained officers, brief detention with remedies. Here national rules require birth-sex markers, can refuse or strand travelers, and federal custody carries documented abuse; state protections cannot cure that gate, so this is lower."
+   }
+  ],
+  "synthesis": "The combined regime is dual-track: local state law is comparatively protective, but federal entry/documents, visa adjudication, federal facilities, and immigration/prison custody remain hostile. For an adult travelling alone, ordinary presence in the state may be safe under public-accommodation and hate-crime rules, but any border check, federal facility, or detention can expose them to birth-sex matching demands, denial, stranding, and documented abuse. For a minor or guardian, national hostility to care and social transition adds uncertainty, potentially denying services or inviting scrutiny, though state protections mitigate. The score therefore reflects elevated risk: better than targeted-border/custody-only jurisdictions due local protections, but not reduced risk because federal restrictions cannot be cancelled by state law and remedies are unresolved."
+ },
+ "parse_error": null
+}

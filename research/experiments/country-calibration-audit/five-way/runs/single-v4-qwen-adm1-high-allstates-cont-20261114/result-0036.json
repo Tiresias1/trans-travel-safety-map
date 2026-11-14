@@ -1,0 +1,82 @@
+{
+ "cell": 36,
+ "region": "66186276B79689460185872:South Carolina",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.004895872",
+ "parsed": {
+  "rating": 0.24,
+  "explanation": "Combined national and division regime: federal orders binary passports and visa screening, refusal/fraud risk, federal single-sex facility exclusions; division bans extend to campuses. Outing can mean denied entry, detention, forced birth-sex custody, care denial, abuse, or short-term jail; no execution or routine months imprisonment. Remedies exist but are partial and slow, and do not cancel federal custody/screening. Minors and school/athlete travel add exposure. Below 0.35 anchors because criminal facility enforcement and custody harms are documented; above 0.15 anchors because severe harm is not universal and courts sometimes block enforcement.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal sex-by-birth rule, X marker eliminated, visa discrepancy can be refused or sent for evidence, suspected fraud can support permanent ineligibility; trans athletes entry ban; traveler reports passports confiscated or blocked.",
+    "protection": "Existing X passports remain valid until expiry; pending litigation, legal-aid passport FAQ, and some enjoined federal policies.",
+    "interaction": "Home passport mismatch can feed secondary screening, refusal, delay, and possible detention; state document rules worsen verification expectations.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary, severe sexual abuse; corrections adopts hormone removal, short hair, psychiatric substitution; trans woman held 24 hours in mens ward after trespass arrest.",
+    "protection": "Not documented for visitors; some appeals, habeas relief, and court injunctions exist but are not shown to prevent custody harm.",
+    "interaction": "Entry discrepancy or facility enforcement can cascade into criminal or immigration custody and birth-sex placement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal bars government-funded single-sex facilities congruent with identity; multiple units ban such use, some reach private settings, four criminalise bathroom use; division expanded to public schools, colleges, universities.",
+    "protection": "Some units lack mapped bans; limited equality protections exist elsewhere but do not offset federal rules or criminal enforcement.",
+    "interaction": "Visitor encounters combined federal and division facility gatekeeping; protective local law cannot pre-empt federal screening or custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal orders restrict youth care, funding, and LGBTQ youth services; custody removes hormones and denies care; proposed insurance limits can make treatment denial more likely.",
+    "protection": "Not documented as operative traveler-facing protection; some care-related orders are enjoined but no reliable access guarantee.",
+    "interaction": "Emergency illness, detention, or school trip can turn care mismatch into denial, forced outing, or criminal scrutiny.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Bathroom trespass arrests and state laws treat trans presence as unlawful; official counterterrorism language associates radical gender ideology or pro-trans groups with domestic terror threats.",
+    "protection": "National hate-crime statute and some unit anti-discrimination laws; memo rewards violent conduct, not identity; courts blocked or enjoining some orders.",
+    "interaction": "Protective law coexists with hostile enforcement; rule-of-law relief is uneven and may not reach detained or foreign travelers quickly.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division school and university bathroom mandate, youth care funding limits, sports entry screening, and teacher prosecution orders create family exposure when minors travel for schooling, sport, or care.",
+    "protection": "Not documented as operative traveler mitigation for minors; some litigation protects individual students.",
+    "interaction": "A minor mismatch can trigger refusal, facility removal, or adult guardian scrutiny in school, sports, or medical settings.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific street violence campaign, raids, or police profiling of visitors is documented; violence risk is mostly institutional, with documented arrest and custody harm.",
+    "protection": "Hate-crime and anti-discrimination laws exist; victim response and enforcement for travelers remain uncertain.",
+    "interaction": "Police may enforce facility laws rather than protect trans visitors; private and local protections vary widely.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and facility enforcement is upheld or active; custody reporting opacity; pending bills; which injunctions apply to a traveler is unknown.",
+    "protection": "Civil-liberties litigation, passport FAQ, appellate school-bathroom order, and some enjoined federal orders provide partial recourse.",
+    "interaction": "Remedies can reduce severity if accessible, but litigation is slow and not a reliable traveler guarantee.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Less severe than 0.15-A: no general presentation criminalisation, no routine months of visitor pretrial custody, no credible capital pathway. Still severe because entry screening, facility arrest, and immigration custody abuse are documented."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Close to 0.25-C: birth-sex custody, arrest for expression, no execution. This case is broader because federal passport and facility orders reach travelers; partially better because no systematic raids and some court remedies operate."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Below 0.45-D: 0.45-D has registration/database friction without custody. This dossier adds criminal trespass enforcement, birth-sex custody, forced-labour and sexual abuse reports, and conversion-therapy practices."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much safer in 0.75-C: congruent passports, trained officers, appeals, brief detention with remedies. This jurisdiction restricts markers and facilities and documents custody harm, so it sits materially below that level."
+   }
+  ],
+  "synthesis": "The operative combined regime is high risk: federal border and document rules make outing consequential, while division criminalisation and custody practices add direct harm. Remedies exist but are partial, slow, and do not pre-empt federal custody or screening. An adult traveler can face entry refusal, facility ejection or arrest, and custodial abuse; a minor adds school, care, and sports exposure. Not severe-band because no execution or routine long imprisonment, and courts sometimes block, but below elevated because state-imposed universal exposures are documented."
+ },
+ "parse_error": null
+}

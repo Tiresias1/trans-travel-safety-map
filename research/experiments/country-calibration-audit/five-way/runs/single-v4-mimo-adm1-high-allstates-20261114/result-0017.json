@@ -1,0 +1,82 @@
+{
+ "cell": 17,
+ "region": "66186276B41335105066757:Louisiana",
+ "model": "mimo",
+ "status": "ok",
+ "cost_usd": "0.002044028",
+ "parsed": {
+  "rating": 0.32,
+  "explanation": "The combined regime pairs a hostile national document/entry regime with documented division-level custody and care failures. Exposures: X-marker and mismatched passports refused; discrepancy-triggered visa refusal with fraud/lifetime-ineligibility exposure; facility bans across ~21 states (criminal in 4); documented 2026 birth-sex custody placement (men's jail, male-guard search despite female marker) and immigration-detention abuse; hospital care denied to an attack victim; a mob beating with no arrests while victims were charged; no state GI discrimination or hate-crime coverage; minors' care banned. Protections: functioning federal courts enjoining several orders, national hate-crime statute, pending passport litigation, active civil society. Recurring tier-1 state-imposed exposures without working remedy place this below administrative-exclusion anchors, well above criminalisation anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Feb 2025 bar on X/mismatched markers (M or F only per supporting documents); cable orders refusal where document discrepancy casts doubt on sex and directs officers to weigh fraud-based lifetime ineligibility; passports reported confiscated/blocked; Supreme Court let the restriction take effect Nov 2025; 8+ foreign governments issued travel advisories for trans entrants.",
+    "protection": "Existing X-marker passports valid to expiry; fraud finding requires all four elements, is never automatic, limited waivers exist; civil-liberties suit pending in national courts; legal-aid FAQ on document rules.",
+    "interaction": "Document/presentation mismatch → secondary screening → refusal or fraud referral → lifetime ineligibility; mismatch also feeds facility and custody exposures downstream.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "2025 restroom arrest with 24h in men's ward; 2026 mob-attack victim jailed in a men's facility and searched by a male guard despite a female licence marker; immigration custody reports of beatings, solitary and sexual abuse of trans men; corrections bureau conversion-therapy-style policy from 2026 and stopped reporting trans prisoner counts.",
+    "protection": "Pretrial release granted in the restroom case; national hate-crime statute; pending litigation; documented media and civil-society scrutiny.",
+    "interaction": "Any arrest or medical emergency triggers birth-sex placement regardless of documents; state facility ordinances feed directly into custody exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Facility bans in ~21 states in mapped categories, criminal in 4 states, all-government-building bans in 9+1; division's municipality passed one of the country's most severe anti-trans restroom ordinances; a Feb 2026 law elsewhere invalidates mismatched documents as a template; private-setting bans in 6 states.",
+    "protection": "29 states plus capital district have no mapped ban; trespass offence requires willful entry plus refusal to leave, with listed exemptions; sources do not establish a statewide statute in this division.",
+    "interaction": "Facility exclusion → trespass charge → birth-sex jail placement and male-guard search.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "One attack victim denied hospital care and taken to a men's jail; gender-affirming care for minors banned in the division since 1 Jan 2024 and in 27 states; Oct 2025 proposed federal rule barring public-insurance reimbursement for under-18s; transition care excluded from state insurance; LGBTQ youth crisis line shut down.",
+    "protection": "National employment-discrimination ruling; legal-aid FAQ; several orders blocked or enjoined in court.",
+    "interaction": "Emergency care denial converts a violent attack into custody; a travelling trans minor faces care denial in this and 26 other states.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "DOJ reward memo citing 'radical gender ideology' among violent-extremist viewpoints; May 2026 counterterrorism strategy targeting groups 'radically pro-transgender'; EO on 'gender ideology' in schools; 2025 restroom arrest described as deliberate cruelty; state hate-crime statute omits gender identity; 66% public support for binary document listing.",
+    "protection": "Memo states the reward is not based on that phrase; national hate-crime statute covers GI; broad press and advocacy condemnation.",
+    "interaction": "Official framing plausibly shapes police response to anti-trans incidents and lowers reporting confidence.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division bans blockers, hormones and surgery for minors (veto overridden 2023); EO directs investigation and criminal prosecution of teachers facilitating a trans minor's social transition; trans-girl sports ban; school/college facility bans; proposed federal insurance rule; Jan 2025 funding freeze.",
+    "protection": "Several related orders enjoined or blocked; marriage and adoption equality recognised; national employment protection.",
+    "interaction": "A travelling family may be denied care for a trans child, and guardians risk state inquiry where facilitation is criminalised.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Aug 2026 mob beat a trans couple over restroom use; both victims charged with disturbing the peace, no attacker arrested, plea unsigned; one victim denied care and jailed. Killing rate reported at 24.7 per 100k trans women/yr, but flagged as an undercount floor with the 'safest' state at 23.5, so no trans-specific elevation is established.",
+    "protection": "National hate-crime statute enables federal prosecution; incident widely reported and condemned; sheriff's office recorded the event.",
+    "interaction": "Police response converts public violence into state harm: charges, wrong-sex custody, denied treatment.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Custody placement, care denial and victim-charging recur without documented remedy; state has no GI discrimination law and no GI hate-crime coverage; equality index places the division in its lowest band; DOJ subpoenaed under-19 patient records; outcome of the pending plea and passport litigation unresolved.",
+    "protection": "Federal courts have enjoined several executive orders; pending passport suit; legal-aid FAQ; functioning, if contested, institutions.",
+    "interaction": "Paper national protections operate unevenly; hostile state practice is enforced by institutions that otherwise function.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Higher than 0.15-A: that anchor has routine arrest on presentation, months of pretrial custody, coerced confessions and near-illusory remedies. Here no offence targets identity itself, courts function and have enjoined measures, remedies sometimes work, and no custodial or capital pathway for visitors is credible."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Somewhat lower than 0.35-A: Vellandra's harm is exclusion and humiliation without custody. This dossier adds documented birth-sex jail placement with male-guard search, denial of hospital care to an attack victim, victims charged while attackers go free, and immigration-detention abuse — tier-1/tier-2 exposures beyond administrative exclusion."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than 0.55-B: that anchor's exposure is discretionary secondary screening, refused admission and slow appeals with no criminal or custody harm. Here entry refusal coexists with documented custody abuse, care denial, state-tolerated street violence and criminal facility exposure in some states."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Substantially lower than 0.75-C: trained border staff, respectful inspection, working tribunal, brief detention with counsel and compensation. This jurisdiction's entry regime invites refusal on document discrepancy with fraud exposure, and downstream custody and care practice is documented as hostile."
+   }
+  ],
+  "synthesis": "The operative regime is one system: a national binary-sex executive order and passport/visa regime (X markers stopped, M/F only per supporting documents, discrepancy-triggered refusal with fraud/lifetime-ineligibility exposure) interacts with state and municipal facility bans (criminal trespass in 4 states, a severe municipal ordinance here) to move a trans visitor from document check → exclusion or charge → birth-sex custody. Documented 2026 practice shows the custody end: men's jail, male-guard search despite a female marker, and hospital care denied to an attack victim, while victims were charged and no attacker arrested. State law omits GI discrimination and hate-crime coverage. Offsetting this, federal courts have enjoined several orders, a national hate-crime statute applies, litigation on passports continues, and civil society is highly active — but recurring unremedied institutional practices, not paper protections, govern what happens after discovery."
+ },
+ "parse_error": null
+}

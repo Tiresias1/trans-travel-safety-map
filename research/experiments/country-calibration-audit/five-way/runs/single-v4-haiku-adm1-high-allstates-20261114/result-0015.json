@@ -1,0 +1,82 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0074176",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined regime: the national gate is the binding exposure. Passport sex-marker restrictions are in force, and visa or entry cases with document discrepancies must be refused, with a possible lifetime fraud finding. Immigration custody has documented forced labour, beatings and sexual abuse. National directives target minors' care and school social transition, and national threat framing names 'radically pro-transgender' groups. The state layer is comparatively protective: gender identity is covered by non-discrimination law and hate-crime law (operative from 2025), the gay and trans panic defence is abolished, and no state facility ban, care restriction or enforcement incident is documented. State protections do not pre-empt federal entry screening or federal custody, so the worst documented feature is tier 1 (documents that cannot be matched, custody harm), placing the case in Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Foreign ministry bars sex-marker changes; discrepant applications must be refused and may trigger a lifetime fraud ineligibility finding. Passports reportedly confiscated or blocked, leaving some travellers stranded. Visitor-facing and universal for mismatched documents.",
+    "protection": "Existing X-marker passports remain valid to expiry. Litigation pending; the 2025 Supreme Court order allowed restrictions to take effect. No documented operative waiver beyond limited waiver possibilities.",
+    "interaction": "National entry screening applies before any state law. State non-discrimination protections do not affect visa refusal or entry denial at the national gate.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented detentions of citizens of a neighbouring jurisdiction over visa issues prompted foreign advisories. Immigration custody reports include forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Corrections bureau stopped counting transgender prisoners from 2025.",
+    "protection": "Not documented as operative for visitors. Pretrial release and counsel access are not described for federal custody.",
+    "interaction": "A document discrepancy at entry can escalate to investigation and detention under the national framework. Custody is federal, so state protections do not reach it.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-identity access to government-funded single-sex facilities. Federal buildings and federal custody apply regardless of state law. No state-level facility ban for this state is documented on the map.",
+    "protection": "No state facility restriction documented. State non-discrimination law covers public accommodations under the civil-rights act.",
+    "interaction": "Federal facility rules apply within the state's government buildings. The state's absence of a ban does not cancel federal restrictions there.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal subpoena of over 20 hospitals for records of patients under 19. Proposed national rule would bar public insurance reimbursement for under-18 care. Shortfalls in healthcare equity are recorded. No state care ban is documented.",
+    "protection": "Conversion-therapy ban in force. No state-specific care restriction in the inventory. Care access for visitors is not documented in detail.",
+    "interaction": "A visitor seeking care through a federally funded provider may face federal records demands. Care for travelling minors carries national exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises neutralising groups described as 'radically pro-transgender'. A cash-reward system targets leadership of violent groups, and the same memo lists 'radical gender ideology' among violent extremist agendas. Official threat framing is national.",
+    "protection": "Strategy states powers will not target people who merely disagree. No state-level threat framing is documented.",
+    "interaction": "Federal threat framing can shape federal investigation of advocacy or organised groups. Visitors are not documented as targets.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs law enforcement to investigate schools and prosecute teachers who facilitate social transition, including use of preferred names. Care records for minors are subpoenaed. Travelling with a minor whose documents mismatch creates entry refusal risk. Non-binding state sports resolution urges exclusion.",
+    "protection": "Non-binding resolution does not change state law or non-discrimination protections. Several national orders are blocked or enjoined.",
+    "interaction": "A parent travelling with a trans minor faces entry refusal and possible records inquiry at the national gate. State school policy does not appear to exclude minors from facilities.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific anti-trans violence data or enforcement incident is documented. Hate-crime data collection includes sexual orientation since 1992.",
+    "protection": "Gender-identity hate-crime coverage operative from 2025 after signature in January 2025. Gay and trans panic defence abolished July 2024. Non-discrimination enforced by the civil-rights commission.",
+    "interaction": "Street-level protection is state law, but federal documents and entry screening still determine how a visitor is identified.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal remedies are slow and contested. The 2025 passport suit is unresolved. Whether a visitor's home-country documents are believed at entry is not documented.",
+    "protection": "State commission and court remedies operate for discrimination. Statutory non-discrimination is in force. Hate-crime law now explicitly covers gender identity.",
+    "interaction": "State recourse does not reach federal entry refusal or federal custody; the state layer and federal layer operate separately.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "The 0.25-C case has birth-sex housing with frequent assaults, a cross-dressing arrest statute and no confirmed remedy. This case has documented federal custody sexual abuse and entry risk, but no state arrest statute and operative state hate-crime coverage. It is therefore somewhat higher than 0.25-C."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "The 0.45-A case has universal document checks, detention, humiliation and denial of care with no custodial sentences. This case has a comparable entry and document exposure, plus documented federal custody sexual abuse and national minors directives. It is roughly similar in documents but lower because of custody harm, and higher because the state layer adds working protections."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "The 0.55-B case has secondary screening and discretionary denial with administrative penalties only. This case has the same entry gate, but custody harm is documented and the national framework adds threat framing. It is therefore lower than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-D",
+    "comparison": "The 0.75-D case has equality statute enforcement, police review and protective orders, with no documented national exposure. This case has a comparable state layer, but federal entry refusal, custody harm and national minors directives sit above it. It would need federal document reform and custody protection to reach 0.75."
+   }
+  ],
+  "synthesis": "The traveller meets the national gate first: mismatched documents can lead to visa refusal, stranding or a lifetime fraud finding. Federal immigration custody carries documented forced labour and sexual abuse, which state law cannot reach. State protections are real: non-discrimination, hate-crime coverage from 2025, and no documented facility ban, care restriction or enforcement incident. These protections operate on street-level exposure and discrimination, but they do not offset federal entry or custody exposure. The worst documented feature is tier 1 (documents that cannot be matched, custody harm), placing the combined regime in Elevated Risk."
+ },
+ "parse_error": null
+}

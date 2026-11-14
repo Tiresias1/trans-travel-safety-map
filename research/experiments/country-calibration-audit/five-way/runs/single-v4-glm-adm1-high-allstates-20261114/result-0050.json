@@ -1,0 +1,82 @@
+{
+ "cell": 50,
+ "region": "66186276B98615608994420:Nevada",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00376554",
+ "parsed": {
+  "rating": 0.58,
+  "explanation": "The combined operative regime splits sharply. Within this state/province the traveller meets documented, operating protections: gender-identity anti-discrimination law, hate-crime coverage, X state documents, insurance-mandated care, correctional protections, constitutional equal-protection coverage, and a low-risk band rating — with no documented state violence or facility ban, though the facilities-map entry is unresolved. The national layer, however, governs the entry gate and custody: binary-only passport/visa sex adjudication, officer instructions to refuse cases on 'reasonable doubt' about sex with potential lifetime fraud ineligibility, a trans-athlete entry ban, documented detentions of foreign nationals, allied-government travel advisories, outing-prone airport screening, and documented severe abuse in immigration and federal custody. Every trans visitor passes the national document/screening gate; state protections do not pre-empt federal screening or custody. Worst features: universal document exposure (tier 1-2) plus severe conditional custody harm, against a genuinely protective interior.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Universal: binary-only national sex adjudication; officers instructed to refuse on document discrepancy or 'reasonable doubt' about sex; possible lifetime fraud ineligibility; documented passport confiscations/stranding; foreign-national detentions; allied advisories; trans-athlete entry ban.",
+    "protection": "Limited-waiver path on fraud findings; litigation pending; civil-liberties suit; legal-aid documentation FAQ.",
+    "interaction": "Visa refusal or fraud finding at the national gate can terminate travel before state protections ever apply; discrepancy → refusal → possible detention chain runs entirely at national level.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau policies imposing conversion-style treatment on trans inmates; immigration custody forced labour, beatings, solitary confinement, sexual abuse of trans men; reporting transparency ended.",
+    "protection": "State correctional protection statute (2023) applies only in state/province facilities; federal custody untouched.",
+    "interaction": "Any visa overstay, fraud allegation or federal matter placing the traveller in national custody bypasses state protections entirely.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; facility bans in many other states; criminalised bathroom use in 4 states.",
+    "protection": "No facility ban documented for this state/province (map entry unresolved, not_documented either way); state anti-discrimination covers public accommodation.",
+    "interaction": "Traveller's in-state facility access rests on state law; crossing into other states or federal facilities changes the operative rule.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National: proposed ban on public-insurance reimbursement for under-18 care; hospitals subpoenaed for minors' records; youth crisis services shut down; care bans in 27 other states.",
+    "protection": "State insurance discrimination ban; mandated coverage of all medically necessary gender-affirming care from 2024, including public programme; non-surgery document changes.",
+    "interaction": "In-state care access is protected by statute; the same provider network sits under national investigative authority, especially for minors' records.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal documents frame 'radically pro-transgender' ideology as a counterterrorism priority; 'gender ideology' removals; reward memo context; airport screening documented as outing-prone.",
+    "protection": "Counterterrorism strategy disclaims targeting mere disagreement; state hate-crime hotline and statute operate.",
+    "interaction": "Federal threat-framing raises scrutiny of advocacy and speech nationwide; state police operate under the state's protective framework.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs prosecution of facilitators of minors' social transition; records subpoenas; proposed under-18 care funding bar; this state's school sports now birth-sex based.",
+    "protection": "State conversion-therapy ban, school anti-bullying protection, insurance coverage mandate for minors' care in-state.",
+    "interaction": "A travelling minor seeking care is protected by state insurance mandates but their provider and records remain exposed to national investigative authority; guardian faces no in-state penalised act.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for this state/province; no dated state-level incident appears; national hate-crime coverage exists but state bias-statute landscape is patchy nationally.",
+    "protection": "State hate-crime statute covers gender identity/expression (2013) with reporting hotline (2025); anti-discrimination law enforceable in state courts.",
+    "interaction": "State police response governed by protective state law; silence of the record is a thin-data gap, not established safety.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Facilities-map status of this state unresolved; healthcare-equity and incarcerated-protection shortfalls qualitative and unquantified; litigation outcomes pending; screening data absent.",
+    "protection": "Working state courts, enforceable anti-discrimination and hate-crime statutes, ombuds-style insurance mandates, low-risk band assessment (July 2026).",
+    "interaction": "State remedies operate for in-state harms but cannot reach national screening, custody or visa decisions.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "Below that anchor: here document discrepancy triggers refusal, fraud findings and detention risk, but no documented arrest-and-imprisonment pipeline for visitors, no torture in routine custody of travellers, and the destination state runs protective institutions. What would push toward 0.15: documented visitor imprisonment for document mismatch or state-level targeting."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Closest anchor: discretionary secondary screening, refusals on document grounds, administrative humiliation, slow remedies. This dossier adds a documented fraud-ineligibility mechanism, foreign-national detentions, and severe federal-custody abuse, placing it somewhat below; the protective interior places it above."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "That anchor assumes trained border officers and functioning appeal with brief detention only; here the national gate applies binary sex adjudication with lifetime-fraud exposure and allied governments issue advisories, so this jurisdiction sits materially below 0.75 despite comparable in-state protections."
+   },
+   {
+    "anchor_id": "0.85-D",
+    "comparison": "Far above this jurisdiction: 0.85-D has universal equality enforcement with no entry-gate exposure; here the universal national document/screening exposure and custody record prevent any rating in that band."
+   }
+  ],
+  "synthesis": "The operative regime is a protective state embedded in a hostile national gate. Every traveller — adult or family — must pass national entry screening under binary sex adjudication, an officer instruction to refuse on 'reasonable doubt', and possible lifetime fraud findings; the state's anti-discrimination, hate-crime, document and care protections operate robustly only after entry, and do not reach federal custody, federal facilities or federal investigation. Within the state, daily exposure is low and remedies work. The custody record (immigration-detention abuse, corrections policies) is severe but conditional on entering federal custody. Net: above the 0.55 screening-friction anchors because the interior is genuinely protective, well below the 0.75 band because the universal national exposure and custody severity are documented, not hypothetical — 0.58."
+ },
+ "parse_error": null
+}

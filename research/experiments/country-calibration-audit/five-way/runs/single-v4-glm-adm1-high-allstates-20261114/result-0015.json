@@ -1,0 +1,86 @@
+{
+ "cell": 15,
+ "region": "66186276B37442548568489:Michigan",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00528845",
+ "parsed": {
+  "rating": 0.62,
+  "explanation": "The combined regime pairs a genuinely protective division with a hostile national gate. Within the state/province, gender-identity non-discrimination is codified and enforced, hate-crime coverage exists, no facility, care or sports ban is operative, and no enforcement incident is documented; on its own this layer would sit near 0.85. But every visitor first passes the national entry regime: a visa/entry cable instructing refusal where documents cast doubt on sex, case-note tagging, possible lifetime fraud findings, a trans-athlete entry ban, documented detentions prompting allied governments' advisories, scanner-based outing risk, and an abusive federal immigration-custody record if escalation occurs. These are universal-exposure, state-directed measures whose worst credible consequences are refusal, humiliation and custody abuse rather than imprisonment. The protective state law mitigates the in-jurisdiction stay but cannot reach the federal gate, netting to Reduced Risk near the band's lower edge.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: national cable instructs officers to refuse visa cases where documents cast 'reasonable doubt' on sex, tag cases, and consider lifetime fraud ineligibility; passports confiscated or travellers stranded; foreign advisories issued after detentions of neighbouring citizens.",
+    "protection": "Fraud finding requires four elements and is 'never automatic'; limited waivers exist; passport-marker policy is under active court challenge; existing X passports remain valid until expiry.",
+    "interaction": "Document discrepancy can escalate from refusal into investigation, immigration custody and the documented abusive federal detention system; state protective law has no purchase at the federal gate.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody documented as abusive for trans people: forced labour, beatings, solitary confinement, severe sexual abuse; corrections-bureau policies described as conversion practices; reporting on trans prisoners stopped.",
+    "protection": "Not documented at division level; national litigation ongoing; some orders enjoined.",
+    "interaction": "Reached via the entry/fraud pathway — a visa dispute can convert a visitor into an immigration detainee under the hostile national regime; state custody protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from federally funded single-sex facilities congruent with identity — a universal exposure in federal buildings and airports; airport screening itself risks outing (secondary screening, pat-downs).",
+    "protection": "The division has no facility ban: 29+ units without bans include this one; the mapped trespass-criminalising units are elsewhere; state civil-rights act covers public accommodations.",
+    "interaction": "State protections govern state and most public settings; federal facilities carve out an island where the parent rule operates even inside a protective division.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding freeze, proposed rules barring public-insurance reimbursement for youth care, and hospital-record subpoenas target minors' care nationally; risk map notes division shortfalls on healthcare equity.",
+    "protection": "No division care ban documented; division conversion-therapy ban in force; discrimination in insurance and corporations barred by 2023 law.",
+    "interaction": "A travelling minor needing care in this division is not subject to any division ban; federal rules reach mainly publicly funded settings and are partly enjoined or proposed.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented national threat-framing: 'radical gender ideology' in justice-department memoranda; counterterrorism strategy prioritising 'radically pro-transgender' groups; executive orders framing youth care as 'mutilation'; 2026 assessment says national policy is driving degradation.",
+    "protection": "Division law enforcement operates under codified gender-identity non-discrimination, a hate-crime statute covering gender identity, and an abolished panic defence; no division police hostility documented.",
+    "interaction": "National framing raises outing probability and legitimises hostility nationally; within the division, protective statutes and a low-risk assessment indicate functioning, non-hostile local institutions.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National order directs criminal prosecution of teachers facilitating a minor's social transition and subpoenas minors' hospital records; 27 units ban youth care; national sports order excludes trans athletes — relevant to a travelling minor in school or sports settings.",
+    "protection": "No division youth-care, facility or sports ban is operative (only an advisory, non-binding athletic resolution); division conversion-therapy ban and non-discrimination codification protect a travelling minor locally.",
+    "interaction": "A guardian travelling with a minor faces federal-level exposure mainly if the minor enters federally regulated sports or care settings; ordinary division-level stays are covered by protective law.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific anti-trans violence data identified; national hate-crime statistics show sexual-orientation bias at one-seventh to one-fifth of incidents; documented arrests under other units' bathroom laws, not here.",
+    "protection": "Division hate-crime statute covers gender identity (explicitly since 2025), panic defence abolished, discrimination unlawful — recourse machinery documented as operating.",
+    "interaction": "Any street incident in the division falls under protective division law and courts; national hostility does not direct division police in this unit per the record.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Open questions: whether division IDs carry an X marker unconfirmed; healthcare-equity and incarcerated-trans shortfall detail unstated; division sodomy statute unrepealed though unenforced and facially neutral; national litigation outcomes unresolved.",
+    "protection": "Civil-liberties litigation against passport policy ongoing; legal-aid FAQ exists; several federal orders enjoined; division remedies (civil-rights act, hate-crime law, courts) documented as codified and in force.",
+    "interaction": "Practical exposure depends on which national measures are operative at travel time; state remedies cannot override federal entry screening or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "Far safer than Oskara: no morality sweeps, no coerced detention, no credible capital exposure, and the division's protective institutions actually operate. The national gate's refuse instructions and custody abuses are real but consequence-wise sit at exclusion and humiliation, not beatings-in-custody as routine outcome."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Safer than Drellia: no registration database, no nightly hotel transmission, no division facility bans, and codified non-discrimination plus hate-crime recourse. Drellia's universal surveillance registry is heavier than this jurisdiction's entry-stage scrutiny, which is discretionary and litigated."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Materially harsher than Kestrel Isles at the border: Kestrel's secondary screening is discretionary and administrative, whereas here refusal instructions are written policy, case-note tagging is systematic, fraud findings can impose lifetime ineligibility, and federal immigration custody is documented as abusive — but safer than 0.45 because in-jurisdiction life is protective."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Below Meridia: Meridia's border friction ends in brief detention with compensation; this regime adds explicit refusal guidance, an entry ban for trans athletes, stranded travellers, allied-government advisories, and a hostile national custody record, offsetting Meridia-level state protections with a harsher federal gate."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "The division layer resembles Vessalia — codified equality law, hate-crime coverage, low-risk assessment, no local bans — but the combined regime sits below it because the national entry screening and custody exposures are unavoidable and state-remedy-proof, which Vessalia's unified protective framework lacks."
+   }
+  ],
+  "synthesis": "The operative regime is two-layered. The division layer is protective and functioning: codified gender-identity non-discrimination (2023), hate-crime coverage, conversion-therapy and panic-defence bans, marker-change procedures, no facility, care or sports ban, and no documented enforcement incident or local police hostility — alone this approaches the 0.85 anchor band. The national layer is the traveller's unavoidable first encounter: written refusal instructions for document-sex discrepancies, systematic case tagging, potential lifetime fraud findings, an entry ban on trans athletes, scanner-based outing risk, allied governments' travel advisories issued after detentions, and documented severe abuse in federal immigration custody should escalation occur. These are universal-exposure, state-directed measures; their typical consequence is refusal, delay and humiliation (severity 2–3) with a custody pathway reaching severity 4–5 only via escalation. State remedies cannot reach the federal gate. The combination nets below the protective-state anchor but clearly above the thin-recourse 0.45–0.55 band: approximately 0.62."
+ },
+ "parse_error": null
+}

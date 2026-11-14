@@ -1,0 +1,82 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00258428",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "The combined operative regime splits sharply by journey stage. At the national border the visitor faces universal exposure: sex-marker policy that ignores identity, a visa cable inviting refusal and possible lifetime fraud findings where 'reasonable doubt' about sex exists, an entry ban targeting trans athletes, and documented detentions and passport confiscations of foreign trans travellers. If detained, national custody shows severe documented abuse. Inside the state, however, courts actively and repeatedly enjoin the legislature's anti-trans statutes — facilities ban, minor-care ban, marker bans — providing working protective machinery, though hostile statutes remain enacted, state hate-crime law omits gender identity, and a religious-exemption licence stands. This sits between the border-heavy mid-band anchors and the in-state protection tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/marker policy and visa cable expose every trans visitor: refusal on 'reasonable doubt' about sex, possible permanent fraud ineligibility, trans-athlete entry ban; passports confiscated and foreign nationals detained over visa issues documented.",
+    "protection": "X-marker passports remain valid until expiry; policy under ongoing national litigation; legal-aid FAQ exists.",
+    "interaction": "Document discrepancy at entry can escalate to fraud allegation, refusal or detention before any state-level protection applies.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau policies mandate hair-cutting, hormone removal and 'psychiatric therapy' for trans inmates; immigration custody documented with forced labour, beatings, solitary confinement and severe sexual abuse of trans men.",
+    "protection": "Hate-crime statute and employment ruling offer paper recourse; national litigation ongoing.",
+    "interaction": "Any visa dispute or entry refusal can route a visitor into this hostile national custody system.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-identity-congruent use of government-funded single-sex facilities; 4 state/provinces criminalise certain facility use; this state's own facilities ban was enacted but enjoined, its status beyond the TRO unsourced.",
+    "protection": "State courts enjoined the facilities bill as animus-motivated; the predecessor ballot initiative failed and a repeal vote occurred.",
+    "interaction": "National facility rules still reach federally funded settings in the state regardless of the state injunction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders frame minor care as 'mutilation', freeze funding, and proposed rules bar public-insurance reimbursement; hospital-records subpoenas threaten disclosure.",
+    "protection": "State minor-care ban permanently struck down (May 2025); highest court kept injunction; state-employment anti-discrimination orders in force since 2016.",
+    "interaction": "A travelling minor can access care in-state, but federal funding, insurance and investigation exposure intersects.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy targets 'radically pro-transgender' groups; 'gender ideology' framing across orders; state flag ban and drag restrictions (partially enjoined) signal hostility; state RFRA-style licence to discriminate enacted 2021.",
+    "protection": "Drag ban enjoined as vague/overbroad; a drag-definition bill defeated with majority-party defections.",
+    "interaction": "Threat-framing at national level raises discovery stakes for visitors flagged at entry; state speech rules affect visible visitors modestly.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal orders direct prosecution of teachers facilitating minor social transition and subpoena minors' hospital records; proposed insurance ban for under-18 care.",
+    "protection": "State minor-care ban permanently enjoined; state courts treat transgender status toward suspect-class protection; school sports ban struck down.",
+    "interaction": "A guardian travelling with a minor faces federal inquiry exposure but in-state care and schooling remain protected by working courts.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "One documented state arrest of a trans woman under a bathroom-trespass law, handcuffed and held 24 hours in the men's ward — but that law belongs to another state/province; no state/province-specific violence counts appear.",
+    "protection": "State courts demonstrate willingness to enjoin hostile enforcement; national hate-crime statute applies.",
+    "interaction": "Police response quality in-state is undocumented; recourse would run through the national statute.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Status of the 2025 facilities TRO, the 2026 binary bill challenge and marker-change litigation unresolved; permanent injunctions not documented; no state violence data.",
+    "protection": "State court record is the strongest documented protection in the dossier — repeated injunctions upheld on appeal (April 2026).",
+    "interaction": "Unresolved litigation means protections rest on injunctions that could lapse, while national measures keep the baseline exposure fixed.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D's universal registration/database exposure with weak remedies resembles the national document/visa regime here, but 0.45-D lacks this dossier's documented custody abuse and fraud-bar threat; the in-state court protections here exceed anything in 0.45-D. Net: harsher border tier, stronger in-state tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B models discretionary secondary screening with refusal but administrative-only penalties. This regime matches or exceeds that border exposure (detentions, fraud findings, confiscations) and adds hostile custody if detained, pushing materially below 0.55-B overall."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C shows trained border officers, brief detention, working tribunals and compensation. The in-state picture here (courts enjoining hostile laws, functioning appeals) is comparable, but the national entry layer is far harsher than 0.75-C's border, so the combined regime cannot reach 0.75."
+   },
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "0.25-B features routine police extortion and overnight detention of trans travellers. Ordinary street-level conduct of that character is not documented here; documented custody abuse arises only within national detention systems, keeping this jurisdiction above the 0.25 band."
+   }
+  ],
+  "synthesis": "The operative regime is two-layered. The national layer imposes universal, unavoidable exposure at the exact point every visitor must pass: documents read against a birth-sex binary, visa adjudication primed to treat discrepancy as fraud with lifetime consequences, an entry ban on one trans category, and documented detentions of foreign trans nationals — with national custody showing severity-4/5 abuse should detention occur. The state layer is comparatively protective: its enacted restrictions (facility segregation, minor-care ban, marker bans) have been repeatedly enjoined by state courts whose rulings were upheld on appeal, and minor care remains lawful — genuine working protection. But those protections are injunctions over still-enacted statutes, state hate-crime law omits gender identity, and a religious-exemption licence stands. The visitor's worst moment is the border, before state protections can operate; hence a mid-band score between border-hostile and court-protective tiers."
+ },
+ "parse_error": null
+}

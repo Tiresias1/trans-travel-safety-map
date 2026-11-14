@@ -1,0 +1,86 @@
+{
+ "cell": 47,
+ "region": "66186276B98021244841737:Alabama",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.007262798",
+ "parsed": {
+  "rating": 0.36,
+  "explanation": "Rating 0.36. The combined regime imposes several tier-1 traveller-facing exposures: national binary-sex document screening with possible refusal or lifetime fraud finding, division bathroom bans in government/school/college settings, and a felony minor-care ban. National custody practices—conversion-style treatment in prisons and abuse in immigration detention—make any detention severe. Protections are partial: existing X passports remain valid, fraud findings are not automatic, national hate-crime law covers gender identity, and courts have enjoined some orders. But the division lacks statewide nondiscrimination and GI hate-crime coverage, private service denial is largely unremedied, and the passport policy remains contested. No usable trans-specific violence rate is documented; the 3.8/100k figure is an undercount floor. Families with a trans minor face the sharpest exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex order; X-marker processing stopped for national passports; visa/entry officers may refuse where documents or records create doubt about sex and consider a material misrepresentation finding carrying lifetime ineligibility; trans-athlete entry ban; allied advisories.",
+    "protection": "Existing X-marker passports remain valid until expiry; fraud finding is never automatic and requires four elements; litigation challenges the passport policy; legal-aid FAQ exists.",
+    "interaction": "A foreign visitor's home passport meets national screening; a marker/presentation discrepancy can trigger secondary inspection, refusal, or fraud inquiry; division ID rules do not control the border but signal hostility.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National prisons adopted conversion-style practices (hair cutting, hormone removal, psychiatric substitution); immigration custody reports forced labour, beatings, solitary confinement and sexual abuse; trans prisoner count no longer reported.",
+    "protection": "Some national orders are enjoined; national hate-crime statute covers gender identity; no documented working custody remedy for trans detainees.",
+    "interaction": "Border refusal or a division bathroom-trespass arrest can move a visitor into national custody, where these practices apply; state law does not control custody conditions.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Division bans school bathrooms by birth certificate (HB322), extends to college campuses per July 2026 assessment; SB79 declares immutable binary and allows separate spaces; no statewide public-accommodations protection. Division not documented among criminal-bathroom states.",
+    "protection": "Private settings are mostly not covered by division bans; some municipal ordinances; national hate-crime law covers gender identity.",
+    "interaction": "Visitor in government buildings, schools or colleges faces exclusion/outing; private venues may deny service without state recourse; national facility order adds a separate federal restriction.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division makes it a Class C felony, up to 10 years, for a provider to give puberty blockers, hormones or surgery to anyone under 19; national orders stigmatise minor care, freeze funding and propose insurance exclusion under 18.",
+    "protection": "Adult care is not criminalised by the division; some national orders are enjoined; no documented working remedy for minor care.",
+    "interaction": "A family with a trans minor faces provider refusal and denial of care; an adult alone faces a hostile climate but no division adult-care ban.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritises 'radically pro-transgender' violent groups; DOJ reward guidance uses 'radical gender ideology'; executive order directs investigation of schools and prosecution of teachers facilitating social transition.",
+    "protection": "Strategy says counterterrorism will not target mere disagreement; courts have blocked some orders; national hate-crime law covers gender identity.",
+    "interaction": "Raises risk for visible advocacy and families with a trans minor; ordinary tourist is less directly targeted, but official framing worsens police and service-provider caution.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor in division cannot receive gender-affirming care without provider felony; school bathroom and sports rules force birth-sex treatment; national school order can out minor and expose teachers; proposed insurance ban under 18.",
+    "protection": "Some national orders enjoined; adult care not banned; no division-wide protection for trans students.",
+    "interaction": "Parent travelling with a trans minor faces denial of care, school/facility exclusion and forced outing; parent is not the defendant, but provider liability makes care unavailable.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No usable trans-specific violence rate or incident is documented; the 3.8/100k figure is an undercount floor and is not used. Division hate-crime law excludes gender identity; no statewide nondiscrimination; low public support.",
+    "protection": "National hate-crime statute covers gender identity; some municipal ordinances; national employment ruling covers gender identity.",
+    "interaction": "If outed, police response is undocumented; absence of state hate-crime and accommodations coverage weakens recourse, while national law exists but enforcement is unknown.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No statewide public-accommodations recourse; circuit courts upheld surgery requirement for state ID and refusal of accurate licences; passport policy contested; border fraud finding possible; minor-care ban enforced.",
+    "protection": "National civil-liberties litigation, injunctions, legal-aid FAQ, national hate-crime statute; some local ordinances.",
+    "interaction": "National remedies are slow and contested; division-level remedies are largely absent, so practical exposure depends on which national measures are in effect and on local discretion.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Far worse: 0.15-A documents routine arrests for gender presentation, months of pretrial custody, beatings, compelled confessions and a capital provision. This dossier has no general criminalisation of adult trans identity, no routine presentation arrests, and no capital penalty; its arrest paths are narrower and conditional."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Close but not identical: 0.35-A imposes a routine, universal border-register bar on visibly trans visitors. Here entry is not automatically barred; refusal turns on document discrepancy or doubt. After entry, however, the division's facility and minor-care bans and national custody abuse add severity, so the overall risk sits near this anchor."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "Below 0.45-A: that anchor has routine biometric/ID checks and public-order detention, but no felony minor-care ban or documented custody conversion practices. This dossier's statutory burden is heavier, though its everyday biometric exposure is less continuous, so it rates somewhat lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much safer: 0.75-C has trained border officers, tribunal appeals, brief detention and working remedies. Here border refusal/fraud findings, facility exclusion and the minor-care felony are operative, and state-level recourse is absent."
+   },
+   {
+    "anchor_id": "0.95-A",
+    "comparison": "Not comparable: 0.95-A has enforceable equality protections, independent audit and no credible detention for trans status. This dossier has binary-sex document rules, facility bans, a minor-care felony and documented custody harm."
+   }
+  ],
+  "synthesis": "A foreign trans visitor first meets national document screening; a marker/presentation discrepancy can trigger refusal or a fraud inquiry, and detention then falls under national custody rules with documented conversion practices and abuse. The division adds facility exclusion in public buildings and schools/colleges and a felony minor-care ban, with no statewide public-accommodations or gender-identity hate-crime recourse. Private venues are not universally banned, and national hate-crime law plus some injunctions give partial protection, but the state-level remedy gap and hostile official framing leave the traveller to absorb denial, outing and custody risk. An adult alone faces lower but material border and facilities risk; a family with a trans minor faces the sharpest legal exposure."
+ },
+ "parse_error": null
+}

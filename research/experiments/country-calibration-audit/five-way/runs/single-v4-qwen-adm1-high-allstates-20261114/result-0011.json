@@ -1,0 +1,78 @@
+{
+ "cell": 11,
+ "region": "66186276B29106115751815:Texas",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007167722",
+ "parsed": {
+  "rating": 0.23,
+  "explanation": "Combined regime: federal passport/entry screening turns document-presentation mismatch into secondary refusal, possible permanent fraud bar, and possible detention; federal/state facility rules exclude trans travellers from birth-mismatched single-sex spaces, with state ID checks and enforcement. If detained, immigration/federal custody has documented forced labour, sexual abuse, solitary, hormone denial, and conversion therapy, making border friction more than administrative. A trans minor or travelling family faces severe care bans, school records exposure, and guardian investigation. Adult routine care and violence magnitude are uncertain, and some court challenges/local protections remain. But absence of trans-identity criminalisation and capital punishment prevents the lowest band; universal border/facility exposure plus severe custody and minor-criminalisation places it at the lower end of High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport rules require birth-sex markers, eliminate new X, and allow secondary refusal when documents/presentation raise doubt; suspected wilful sex misrepresentation can support permanent immigration ineligibility. Travel advisories note detentions/stranding.",
+    "protection": "Existing X passports remain valid until expiration; courts challenge the policy and legal-aid guidance exists, but does not stop frontline refusals.",
+    "interaction": "State birth-certificate/licence mismatch compounds border screening: home-country documents cannot be reconciled locally, so mismatch triggers questioning, delay, exclusion, or fraud bar.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal and immigration custody documented severe abuse: forced labour, beatings, solitary, sexual abuse; federal corrections adopted conversion therapy, hormone denial, non-reporting; prison placement/facility rules by birth sex.",
+    "protection": "National employment ruling and hate-crime statute exist, but not documented as preventing detention abuse or giving a traveller reliable release/recourse.",
+    "interaction": "Entry discrepancy or facility enforcement can lead to detention; if held, federal/state custody becomes the severe consequence, so border friction is not merely administrative.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent government-funded single-sex facilities; state law requires restrooms match birth certificate, reaches schools/prisons/state buildings, fines, early enforcement ID checks, school-district investigation.",
+    "protection": "National equality map shows many other divisions lack bans and some city ordinances/capital council actions, but these do not operate in the rated division or override active facility rules.",
+    "interaction": "Federal funding/rules and state enforcement form combined exclusion: even if a city protects, state law and federal facilities can still deny access or invite police records demands.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Adult emergency/HRT continuity not documented. Minors care banned, federal reimbursement block proposed, funding freezes; prison care denial documented; records subpoenas can expose youth care.",
+    "protection": "Not documented for this division; national litigation/injunctions only partially and uncertainly restrain some orders.",
+    "interaction": "For a trans minor traveller, ordinary medical/school care needs can trigger investigation or denial; adult care risk is uncertain rather than safe.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Hostile official framing: gender terms removed, prison LGBTQ policy rescinded, counterterrorism names radically pro-transgender; state police enforce ID checks; majority polls support birth-sex documents/sports.",
+    "protection": "National employment and marriage recognition, some city ordinances, and court challenges signal residual protections; not shown to protect visitors during enforcement.",
+    "interaction": "Institutions enforcing exclusion reduce recourse; public hostility and official threat framing can make encounters escalate and discourage reporting.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor care ban since 2023; parent failure-to-report and family investigations; federal directive prosecutes teachers over social transition; parental-rights mandates deadnaming; hospital records demand.",
+    "protection": "Some city nondiscrimination and court injunctions, but no statewide GI protection and active family-facing restrictions remain.",
+    "interaction": "An adult travelling with a trans minor can face care denial, missed schooling, records exposure, or guardian inquiry; the guardian may become investigated even if not the actor.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "State hate-crime law lacks GI and prosecutions rare; recorded killings of trans women are national worst in absolute terms, but no background denominator, so violence magnitude uncertain; police may enforce facility exclusion.",
+    "protection": "National GI hate-crime statute and some city ordinances exist; courts and civil-rights groups intervene, but state enforcement posture can worsen encounters.",
+    "interaction": "Thin local bias remedies plus hostile enforcement mean harassment/assault may have weak recourse; violence data should not dominate absent background rates.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Pending litigation, unclear guidelines, unknown criminal arrest thresholds, unknown outcome of school investigation, unknown renewal of old documents, enforcement varies; no assurance any complaint changes an encounter.",
+    "protection": "ACLU suit, legal-aid FAQ, some court blocks/injunctions, national equality laws, local advocacy; can reduce but not cancel active federal/state restrictions.",
+    "interaction": "A successful challenge elsewhere does not pre-empt border screening, facility enforcement, or custody rules; remedies are partial, slow, and uneven.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Compared to 0.15-A, this case lacks criminalisation of gender identity/presentation and execution/imprisonment-highly-likely, and some court relief exists. However, border refusal/fraud bars and severe immigration/federal custody abuse create a comparable state-coerced exposure, placing it just above 0.15 rather than at it."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Close to 0.25-A. That anchor has raids, detentions, fines, and scarce legal aid. This jurisdiction adds federal passport screening, permanent immigration bars, and severe custody sexual abuse, while also retaining existing X passports and active litigation. Those partial protections keep it near, not far below, 0.25."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Far below 0.85-A. That anchor assumes enforced equality protections, respectful border checks, and reliable complaints. Here border and facility rules are expressly birth-sex based, state enforcement is hostile, and recourse is uncertain; social/poll support and state law gaps make ordinary travel unsafe."
+   }
+  ],
+  "synthesis": "Exposures compound: passport/visa screening can out a traveller; document mismatch triggers refusal or fraud bar; refusal or enforcement can lead to immigration/federal custody where abuse is documented. State facility law gives visible, routine occasions for exclusion, and its enforcement interacts with federal birth-sex facility rules. Protections are real but partial: court challenges, X passports, national employment/hate-crime law, and some city ordinances. They do not operate to cancel border screening, state bathroom enforcement, prison/custody placement, or minor care bans. For an adult alone, consequences likely include humiliating delay, denial, or exclusion, with severe custody if detained. For a family, minor care exposure can escalate to records scrutiny or guardianship investigation."
+ },
+ "parse_error": null
+}

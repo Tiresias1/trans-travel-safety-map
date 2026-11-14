@@ -1,0 +1,82 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0043161",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "Combined regime pairs national passport and entry-document enforcement with a state facility ban backed by criminal trespass and birth-sex custody. A discrepancy can lead to refusal, further evidence, and, if wilful misrepresentation is found, permanent fraud ineligibility, though that finding is not automatic. The applicable state bans gender-identity-consistent facilities in government buildings including airports and schools; one documented arrest produced 60-day-maximum trespass exposure and 24 hours in a men's ward. National custody reports include hormone removal and conversion practices, plus immigration-custody forced labour, beatings, solitary and sexual abuse. Care is banned for minors and restricted for adults. Imprisonment is possible but not highly likely, and execution is not credibly documented. Functioning courts, pending litigation, private-business exemption and national hate-crime/employment protections mitigate only partly because hostile rules are institutionally enforced and state anti-discrimination and hate-crime coverage for gender identity is absent.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "X passports stopped for new issue; M/F only by supporting documents; passports confiscated/blocked and travellers stranded; cable directs refusal for document discrepancy and consideration of permanent fraud ineligibility if wilful misrepresentation, though never automatic.",
+    "protection": "Existing X passports remain valid until expiration; fraud finding requires all four elements with limited waivers; civil-liberties litigation over passport policy remains pending after Supreme Court allowed restrictions.",
+    "interaction": "Document mismatch at entry can become refusal and additional-evidence demand, then a material-misrepresentation inquiry affecting future entry.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Refusal to leave a prohibited facility can be criminal trespass up to 60 days; one arrestee held 24 hours in men's ward. Corrections policy includes hair cutting, hormone removal and psychiatric substitution; immigration custody reports include forced labour, beatings, solitary and severe sexual abuse.",
+    "protection": "The single trespass case was dismissed on standing, but the statute was never substantively tested; several national orders have been enjoined, without a documented remedy for custody practices.",
+    "interaction": "Facility enforcement can lead to arrest and birth-sex placement, where documented abuse and care denial increase severity.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law since 2023 bars identity-consistent restrooms/changing facilities in government-owned or leased buildings including airports, parks, schools, colleges, offices and jails; authority can order departure, with trespass liability.",
+    "protection": "Private businesses are outside the state statute; the broader map shows 29 states and the capital district without these mapped bans, which does not remove this state's operative ban.",
+    "interaction": "Travellers cannot avoid birth-sex facilities in public transport, airports and government sites; refusal after an order triggers criminal exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors are barred from puberty blockers, hormones and confirming surgeries; adults face insurance-coverage bar, physician-only requirements, 24-hour surgical waiting period and conscience refusals, with major reported care disruption.",
+    "protection": "A national judge permanently blocked some care-ban provisions in June 2024, but later appellate status is not documented; emergency-care access for visitors is not documented.",
+    "interaction": "A travelling minor faces denial of ongoing care; an adult may face delay, substitution of provider or loss of coverage during travel.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National executive order defines sex as binary at birth and restricts facilities, passports and sports entry; counterterrorism strategy prioritises groups described as radically pro-transgender; justice guidance mentions radical gender ideology without making it a reward criterion.",
+    "protection": "National hate-crime statute covers gender identity and the 2020 employment ruling remains nationally applicable; counterterrorism document states powers will not target mere disagreement.",
+    "interaction": "Official threat and deception framing increases officer discretion at borders, facilities and schools, even where prosecutions are rare.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Travelling minors face care bans, school and sports exclusion, facility restrictions, and national direction to investigate or prosecute facilitation of social transition including names/pronouns; school funding and provider penalties create denial pressure.",
+    "protection": "Not documented. No traveller-facing family shield or specific guardian protection is documented; litigation over care provisions remains unresolved on appeal.",
+    "interaction": "A parent travelling with a minor may encounter care denial, school or sports exclusion and provider reluctance, even if the parent is not the direct defendant.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "A 3.7 per 100k per year figure for trans women murdered is presented alongside a finding that law severity does not correlate with killing rates; therefore it does not establish exceptional trans-specific violence. No documented police sweep or extortion pattern for visitors is provided.",
+    "protection": "National hate-crime law covers gender identity; state human-relations commission enforces national employment, housing and public-accommodations claims, and local ordinances cover about 55% of population.",
+    "interaction": "State hate-crime law itself excludes gender identity, so local recourse is uneven despite national coverage.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "State law lacks gender-identity employment, housing and public-accommodations protections and its hate-crime law excludes gender identity; passport litigation, facility constitutionality and care-ban appeals are unresolved.",
+    "protection": "Courts have dismissed the sole facility prosecution on standing and enjoined several national orders; advocacy travel advisories warn travellers, and local protections operate in some jurisdictions.",
+    "interaction": "A short-stay traveller may leave before slow appeals, injunctions or complaints can change document, facility or care outcomes.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar in birth-sex custody with assault risk and short jail exposure, but this case lacks documented weekly raids, extortion sweeps or frequent imprisonment, placing it above 0.25."
+   },
+   {
+    "anchor_id": "0.35-B",
+    "comparison": "Similar discretionary stops, detention and administrative penalties without routine imprisonment, but criminal trespass, possible permanent entry ineligibility and documented custody abuse push this case slightly below 0.35."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Far below this anchor: there, matching passports are accepted and detention is brief with counsel and compensation, whereas here passport refusal and universal government-facility exclusion are operative."
+   },
+   {
+    "anchor_id": "0.85-B",
+    "comparison": "Far below this high anchor because nonbinary/trans passports and respectful entry are not recognised nationally, facilities are restricted by birth sex, and custody abuse is documented rather than merely possible embarrassment."
+   }
+  ],
+  "synthesis": "The final operative interaction is document or facility mismatch leading to refusal, trespass arrest or birth-sex custody, with care denial for minors and adults. Mitigations are real but limited: private businesses are exempt, fraud ineligibility is not automatic, one prosecution was dismissed, some orders were enjoined, and national hate-crime and employment protections exist. Those protections do not cancel enforced entry, facility and custody exposures. The absence of execution, organised sweeps or highly likely imprisonment keeps the rating above the 0.25 tier, while compounding universal exposures keep it in the high-risk 0.34 range."
+ },
+ "parse_error": null
+}

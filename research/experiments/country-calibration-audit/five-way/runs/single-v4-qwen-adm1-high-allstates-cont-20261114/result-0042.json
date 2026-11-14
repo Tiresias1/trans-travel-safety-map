@@ -1,0 +1,78 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006913772",
+ "parsed": {
+  "rating": 0.44,
+  "explanation": "The combined federal-state regime is elevated. Federal passport and visa rules create traveler-facing gate risks: marker mismatches can trigger refusal, permanent-fraud inquiry, and immigration custody where abuse is documented. Once admitted, this division’s enforceable anti-discrimination, hate-crime, and health-care protections materially reduce ordinary community risk for an adult alone. Those state protections do not override federal facilities or border screening. Adults traveling with trans minors face age-dependent care bans, provider liability and lawsuits, school or teacher scrutiny, and sports verification, which can out the child and expose the guardian. Net: above severe-risk anchors, below protective-border anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "New passports and visas are limited to M or F; X-marker processing is stopped. Entry instructions say document or record discrepancies, or reasonable doubt about sex, lead to refusal and added proof. Suspected misrepresentation can support permanent fraud ineligibility; trans athletes are barred from women’s sports entry.",
+    "protection": "Existing X passports remain valid until expiry. Litigation and legal-aid guidance contest marker policy; some federal orders are enjoined or challenged.",
+    "interaction": "Passport or visa discrepancy can escalate from secondary screening to refusal, stranded abroad, investigation, and immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labor, beatings, solitary confinement, and severe sexual abuse. National corrections adopted conversion-style rules: hair cutting, hormone removal, psychiatric therapy; transgender prisoner counts stopped. Entry mismatch can feed into federal custody.",
+    "protection": "State courts enforce civil-rights claims against private violence. No documented state protocol protects visitors once federal immigration or corrections takes custody.",
+    "interaction": "Local protections reduce community detention risk but do not offset federal custody practices.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars gender-congruent access to government-funded single-sex facilities. Some jurisdictions criminalize facility trespass; no division-level bathroom ban is documented, but federal sites and records may still apply.",
+    "protection": "Division protects gender identity in public accommodations, health care, and schools; the highest court protected student privacy and stayed a sports ban.",
+    "interaction": "Private and local venues are more protective than federal facilities; the traveler’s exposure depends on which system controls the building.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming puberty blockers, hormones, chest surgery, and surgery for minors, with provider discipline and private right to sue. National youth crisis services were cut and minors’ hospital records were subpoenaed.",
+    "protection": "State anti-discrimination law covers health care. Adult transition care is not documented as banned; public insurance coverage of transition surgery was lifted.",
+    "interaction": "Adult emergency care may be protected locally, but family or minor care-seeking can trigger denial, provider liability, or state scrutiny.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal counterterrorism language prioritizes “radically pro-transgender” violent groups; DOJ rhetoric links radical gender ideology to violence. Orders direct investigation or prosecution of teachers facilitating minors’ social transition.",
+    "protection": "The same strategy says powers will not target people merely disagreeing. State hate-crime enhancements and abolition of panic defenses operate.",
+    "interaction": "Federal framing heightens border and school scrutiny; state enforcement can reduce community police risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor may be denied needed care, face sports eligibility rules tied to birth certificate, and expose a provider or guardian to suits or discipline. Teachers face prosecution for pronoun use.",
+    "protection": "Student privacy protection, a sports-ban stay, anti-bullying law, and conversion-therapy ban remain. No guardian arrest is documented.",
+    "interaction": "An adult alone is not exposed to age-dependent rules; with a minor, care, school, and athletics become outing pathways.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "2025 incident census recorded 72 anti-LGBTQ incidents, but without a denominator; this is weak evidence of current per-capita risk.",
+    "protection": "Public support is high, hate crimes are enhanced, panic defense is abolished, and a court recently enforced the civil-rights statute after a transgender woman was struck.",
+    "interaction": "State police likely protect adult visitors; federal agents and immigration custody remain a separate, harsher threat.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal passport, visa, and custody remedies are uncertain; permanent ineligibility risk remains. Care and sports restrictions may be enjoined; local protection depends on venue authority.",
+    "protection": "Lawsuits, legal aid, state civil-rights remedies, hate-crime enhancements, and some court injunctions offer recourse.",
+    "interaction": "Outcome depends on timing, venue level, and whether the traveler is admitted, detained, or seeking care for a minor.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar to 0.25-C, federal custody and birth-sex practices pose severe risk. It sits above the anchor because ordinary adult visitors in this division receive enforceable anti-discrimination and hate-crime protection, with no routine local arrest for presentation."
+   },
+   {
+    "anchor_id": "0.45-B",
+    "comparison": "Compared with 0.45-B, adult local services are better protected, but the regime is worse on entry fraud, immigration custody, and minor-care provider liability. Family travelers are closer to 0.45-B or lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Far below 0.75-C. That anchor assumes mismatched documents do not create fraud risk or abusive custody; here federal visa and passport rules can impose permanent ineligibility, and immigration custody reports severe abuse."
+   }
+  ],
+  "synthesis": "Federal gate and federal custody dominate: document mismatch can lead to refusal, fraud inquiry, or immigration detention with reported abuse. The division layer counters private harassment with civil-rights enforcement, public-accommodation protections, and hate-crime law, raising adult-alone safety. For minors, care bans, sports verification, provider suits, and school scrutiny create separate outing and legal exposure; court stays make some operative status uncertain but not absent. The result is locally protective but federally restrictive, especially for families."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 29,
+ "region": "66186276B6801956407400:North Carolina",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0025080675",
+ "parsed": {
+  "rating": 0.34,
+  "explanation": "The combined operative regime is dominated by national universal-exposure measures: entry adjudication under a 'reasonable doubt' sex rule with a possible lifetime fraud bar, a case-note tag for suspected trans applicants, documented detentions of foreign nationals over visa issues, banned congruent facility use in government-funded buildings, and hostile national custody (hormone removal, conversion-style policies, immigration-custody abuse). The state layer is comparatively milder: its 2016 bathroom law was repealed, no statute criminalises facility use, and courts have enjoined several national orders — real but partial checks. Severity escalators for the traveller are custody abuse if detained, minor care bans for families, and no state bias-crime coverage. This sits in High Risk, near the universal-exposure anchor tier.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National 'reasonable doubt' refusal regime for visa applicants with document/record discrepancies; case-note tag; possible lifetime fraud ineligibility; trans athlete entry ban; foreign governments issued advisories after documented detentions of foreign citizens; travellers reported passports blocked and stranding.",
+    "protection": "Fraud finding requires all four elements, is never automatic, and waivers exist; passport-marker policy remains in litigation.",
+    "interaction": "Home passport or visa record mismatch triggers secondary scrutiny, refusal, or detention at the national border before any state-level question arises.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies mandate hair cutting, hormone removal and conversion-style therapy for trans inmates; immigration custody documented with forced labour, beatings, solitary and sexual abuse; state custody provides no transition care at public expense.",
+    "protection": "Several national orders blocked or enjoined; courts remain partially independent.",
+    "interaction": "An entry refusal or minor offence can move a visitor into national or state custody where the documented abusive regime applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent facility use in government-funded single-sex facilities nationwide; bathroom bills revived in the 2025 state session.",
+    "protection": "No current state statute bars or criminalises facility use per gender identity; the 2016 birth-certificate bathroom law was repealed in 2017.",
+    "interaction": "National facilities inside the state remain restrictive even where state law is silent; local practice is not documented.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Statewide ban on puberty blockers, HRT and surgery for under-18s; state funds barred for prisoner transition care; national funding freeze, proposed under-18 insurance bar, and subpoenas for hospitals' minors' records.",
+    "protection": "Adult transition care in-state is not documented as restricted; national equality law still nominally protects employment.",
+    "interaction": "A travelling trans minor loses care continuity; a guardian cannot lawfully obtain prescriptions in-state.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy targets 'radically pro-transgender' groups; reward memo references 'radical gender ideology'; state hate-crime statute excludes gender identity; no statewide private-sector non-discrimination.",
+    "protection": "National hate-crime statute covers gender identity; local ordinances cover roughly 30% of the population; 2021 ruling extended protective orders.",
+    "interaction": "Assault on a trans visitor proceeds under general criminal law without state bias enhancement; outcomes vary by city or county.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor care banned; school sports restriction applies to visiting athletes; national order directs prosecution of facilitators of minors' social transition; state funds barred for minor and prisoner care.",
+    "protection": "Not documented beyond pending litigation.",
+    "interaction": "A trans guardian travelling with a trans minor faces care denial, records scrutiny and national investigation directives as a family exposure.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Recorded 3.0 killings per 100k trans women, expressly an acknowledged undercount with no usable denominator; no police-targeting pattern documented in-state.",
+    "protection": "Not documented.",
+    "interaction": "Not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "2025 bathroom bill pending; application of the amended-certificate original-marker display uncertain; state sodomy statute unrepealed though unenforceable for private adult conduct.",
+    "protection": "Civil-liberties litigation, a legal-aid document FAQ, and court injunctions of several orders show partially functioning remedies.",
+    "interaction": "Live litigation means operative rules can shift within a legislative term or court term.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similar universal entry-document exposure: discretionary refusal and exclusion mechanics at the border with weak remedy. This jurisdiction adds documented severity beyond it (custody abuse, foreign-national detentions, lifetime fraud bar), but retains partially working courts, pushing it to the same band's floor rather than above it."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B's secondary screening ends in administrative refusal with working appeal desks. Here the entry regime is harsher (documented detentions, fraud bar, custody abuse, threat framing), so this jurisdiction sits materially below that anchor despite its milder state layer."
+   },
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A features routine arrest, months of pretrial custody and near-illusory remedies. Here imprisonment is not the typical entry outcome, the fraud bar is discretionary with waivers, and courts enjoined several measures — clearly above that tier."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, functioning tribunals and no credible detention risk. This jurisdiction lacks any documented protective machinery for visitors and carries documented custody harm and care bans, so it falls far short of that anchor."
+   }
+  ],
+  "synthesis": "The operative regime couples a hostile national layer — universal document scrutiny at entry with fraud-bar and detention precedent, national facility exclusion, abusive custody, and state threat-framing of trans-affirming activity — with a state layer that is comparatively permissive on facilities (repealed law, no criminal provision) but closes minor care, lacks bias-crime coverage, and faces a revived bathroom bill. Courts partially check the national layer, which keeps outcomes short of systematic imprisonment, but the documented detentions of foreign nationals and custody abuses make discovery consequences severe. Families with trans minors face compounded, care-denial-driven exposure. Net: solidly High Risk, at the more severe edge of the universal-exposure band."
+ },
+ "parse_error": null
+}

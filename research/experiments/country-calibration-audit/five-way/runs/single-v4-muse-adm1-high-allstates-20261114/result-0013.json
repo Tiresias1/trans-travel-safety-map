@@ -1,0 +1,78 @@
+{
+ "cell": 13,
+ "region": "66186276B31593004124297:Utah",
+ "model": "muse",
+ "status": "ok",
+ "cost_usd": "0.0042993",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "Combined federal binary-document, entry-screening and government-facility rules with this state's complaint-based bathroom ban create universal exposure at borders, government buildings, schools, dorms and sports, plus a minor care ban. Documented arrest and men's-ward detention, and severe abuse if immigration/prison custody follows, raise severity. Mitigations include no private-business ban in the state, single-occupant new buildings, trespass requiring refusal to depart, active litigation and injunctions, and hate-crime law. No execution or routine imprisonment is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal binary sex definition; X passports not newly issued; November 2025 Supreme Court allowed restrictions. Document discrepancy can cause refusal, extra evidence demands, and possible permanent fraud ineligibility. Passports reportedly confiscated/blocked, stranding travellers.",
+    "protection": "Existing X passports remain valid until expiry. Passport policy is being litigated and some other executive orders have been enjoined, but the passport restriction itself was allowed to take effect.",
+    "interaction": "Document discrepancy can trigger secondary screening, refusal, investigation for misrepresentation, and subsequent detention or custody placement.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented trespass arrest in a women's restroom, handcuffing and 24 hours in the men's ward. Immigration custody reports include forced labour, beatings, solitary confinement and severe sexual abuse. Federal corrections adopted conversion-style policies and hormone denial.",
+    "protection": "The facilities trespass offence requires willful entry and refusal to depart when asked, not automatic arrest on entry. Courts have blocked or enjoined several federal measures.",
+    "interaction": "A passport, fraud, trespass or immigration allegation can move a visitor from screening or complaint into birth-sex custody, where documented abuse and care denial increase severity.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National government-funded single-sex facilities must follow sex assigned at birth. The state bans restroom/locker use inconsistent with birth sex in schools and government buildings, enforced through complaints and an anonymous reporting form. Its documentary defence requires birth-certificate and surgery proof generally unavailable to visitors.",
+    "protection": "The state law does not reach private businesses, hotels or gyms. New government buildings must include single-occupant facilities, and the facilities statute lists exemptions.",
+    "interaction": "Federal and state bans overlap in public buildings and schools; a complaint can produce investigation, outing, arrest for trespass after refusal to leave, or exclusion from services.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minors' gender-affirming care is banned in the state with retroactive disaffirmation suits possible to age 25. Federal proposals would restrict public-insurance coverage for under-18 care. Custody hormone denial is documented.",
+    "protection": "Treatment already under way in January 2023 could continue. Emergency or adult visitor care access is not documented. Not documented.",
+    "interaction": "A travelling minor may face denial of continuing care, compelled disclosure through records, and separation from prior providers; parents or guardians may face investigation or liability exposure through providers and schools.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal guidance invokes 'radical gender ideology'; the May 2026 counterterrorism strategy prioritizes violent groups described as 'radically pro-transgender.' Federal orders direct investigation of schools and criminal prosecution related to social transition. The state also bans LGBTQ pride flags in public buildings/schools with $500 daily fines.",
+    "protection": "National and state hate-crime laws cover gender identity, and some federal orders have been blocked. The counterterrorism document says it will not target people merely for disagreement.",
+    "interaction": "Official threat-framing increases police, school and agency willingness to treat gender expression as suspicious, reinforcing document, facility and investigation exposures.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State sports law bars trans athletes; dormitory rules bar housing matching gender identity. The minor care ban and federal school investigations can affect enrolment, records, names/pronouns and parental/provider exposure during travel or temporary study.",
+    "protection": "A judge allowed case-by-case consideration for girls' sports in 2022-2023, but later sports and dormitory restrictions are documented. Conversion therapy for minors is prohibited in the state.",
+    "interaction": "A guardian travelling with a minor cannot obtain banned care locally or use identity-matching facilities, dormitories or sports; a school response can create inquiry, outing or prosecution risk for adults.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The complaint system may invite discriminatory enforcement. Reported arrest involved handcuffing and humiliation. No state-specific trans-violence rate or complaint outcome data is documented.",
+    "protection": "State hate-crime law amended in 2019 covers gender identity with enhanced penalties and statistical collection. A 2024 federal investigation found state corrections discrimination in hormone denial.",
+    "interaction": "A complaint or public confrontation can become a police investigation; hate-crime recourse exists on paper but visitor-specific effectiveness and outcomes are not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport litigation remains unresolved; several orders were blocked but others, including the passport restriction, are operative. Complaint counts, outcomes and visitor use of the documentary defence are not documented.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, hate-crime statutes and courts that have enjoined some measures provide partial recourse.",
+    "interaction": "Remedies may arrive after refusal, stranding, arrest or care denial and may not restore travel, medication, schooling or safety during a short visit.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Higher than 0.25: birth-sex custody and facility criminalisation exist, but there is no documented routine prison placement of trans visitors, no organised sweeps, and imprisonment is not the usual visitor outcome."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Lower than 0.55: discretionary secondary screening and refusal resemble the anchor, but federal plus state facility bans, a complaint-reporting system, arrest and men's-ward detention, minor care/sports/dorm bans and severe custody reports compound the exposure."
+   },
+   {
+    "anchor_id": "0.85-B",
+    "comparison": "Much lower than 0.85: unlike that anchor, nonbinary passports are not newly recognised, border discrepancy can lead to refusal or fraud exposure, facilities are restricted by birth sex, and no operative specialist border or custody safeguards are documented."
+   }
+  ],
+  "synthesis": "The operative regime is not merely unfriendly attitudes: federal and state rules jointly require birth-sex documents and facility use, make discrepancy a basis for refusal or investigation, and give residents a complaint channel that visitors cannot readily answer with required records. Minors face additional care, sports and dormitory exclusions. Courts, injunctions, private-sector exemption, single-occupant facilities and hate-crime law prevent a lower score, but they do not remove the universal border and public-facility exposure or the severe custody consequences if detention follows."
+ },
+ "parse_error": null
+}

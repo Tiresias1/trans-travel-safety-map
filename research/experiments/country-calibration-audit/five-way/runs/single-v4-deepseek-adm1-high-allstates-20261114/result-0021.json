@@ -1,0 +1,82 @@
+{
+ "cell": 21,
+ "region": "66186276B52324970173776:Tennessee",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01451983",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "Combined national and state regime is harsh: national passport/visa screening can refuse or flag trans travellers, and the state enforces birth-sex facilities, a criminal bathroom/indecent-exposure law, prison placement by birth sex, care bans for minors and inmates, and a drag-performance ban. The 2025 bathroom arrest and men's-ward detention show enforcement. National hate-crime coverage and court challenges exist, but the state lacks gender-identity protections and police response to anti-LGBTQ violence is weak. The trans-violence figure is an undercount floor and not usable. Multiple tier-1 universal exposures without working remedy place this below 0.25 anchors but above capital-punishment 0.15 anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport sex-marker restrictions and visa cable require refusal or extra evidence where sex is doubted; possible lifetime fraud ineligibility; detentions over visa issues reported.",
+    "protection": "Passport policy is challenged in national courts; legal-aid FAQ; some orders enjoined.",
+    "interaction": "Border screening can move from document discrepancy to refusal, secondary inspection, or immigration custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "State 2026 law places trans inmates by birth sex; national corrections bureau conversion practices; immigration custody reports forced labour, beatings, sexual abuse.",
+    "protection": "National hate-crime statute covers gender identity; courts available but not shown to remedy custody harms.",
+    "interaction": "Arrest for bathroom use or border fraud can lead to birth-sex custody and documented abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State mandates birth-sex facilities, bars trans women from shelters, and has a 2019 indecent-exposure definition; 2025 bathroom arrest held in men's ward. Parent framework has facility bans in many states.",
+    "protection": "Some states/provinces have no ban; national courts have not enjoined this state's facility law.",
+    "interaction": "Using a public restroom matching identity can trigger trespass or indecent-exposure enforcement and custody.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for minors and inmates; parent executive order and funding freeze target trans care; proposed national insurance bar for under-18.",
+    "protection": "Some national orders enjoined; national employment and court rulings do not restore care access; state care ban upheld.",
+    "interaction": "A trans minor or inmate cannot obtain care; an adult visitor's emergency or ward placement may conflict with birth-sex rules.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Parent counterterrorism strategy lists 'radically pro-transgender' groups; justice reward guidance; state drag ban and bathroom criminal law; police turn blind eye to anti-LGBTQ assaults; panic defence.",
+    "protection": "National hate-crime statute covers gender identity; a state prosecutor opinion allows gender-based enhancement, but the state statute omits gender identity.",
+    "interaction": "Official threat framing and weak state hate-crime coverage can deter reporting and reduce protection.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans care for under-18, authorises regret suits against parents/guardians and providers, and civil penalties for assisting; school outing and sports restrictions; parent order targets teachers.",
+    "protection": "Some national orders enjoined; national supreme court upheld the state care ban; no state protection for trans minors.",
+    "interaction": "A parent travelling with a trans minor faces care denial and potential civil or legal exposure if seeking care.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented discrimination, refused service, beatings; police and legal officials turn a blind eye; panic defence available; state hate-crime statute lacks gender identity. The 7.8/100k figure is an undercount floor and not usable.",
+    "protection": "National hate-crime statute covers gender identity; 2019 prosecutor opinion permits enhancement; recorded incident counts are low but raw.",
+    "interaction": "Victims may not report or may face inadequate police response; the national statute offers limited recourse.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key laws are in force: passport policy, bathroom/indecent-exposure, care ban, drag ban, prison and shelter rules. Enforcement of the 2026 act and licence-suit outcomes are not sourced.",
+    "protection": "Civil-liberties litigation, national courts, legal aid, and some injunctions; but no working remedy for facility or custody exposures.",
+    "interaction": "Remedies are partial and slow; travellers cannot rely on them at the point of arrest or border refusal.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Our case is safer than 0.15-A: no capital provision for gender identity and no documented routine transit arrests or months-long pretrial custody. But it still has bathroom criminalisation, birth-sex custody, and border refusal or possible lifetime ineligibility, so it sits above 0.15-A but not by much."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Our case is less safe than 0.25-C: both have birth-sex prison placement and bathroom criminalisation, but ours adds national border screening, a drag ban, a minor care ban, shelter exclusion, and a documented bathroom arrest. Multiple tier-1 exposures without remedy push it below 0.25."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Our case is much less safe than 0.55-B: 0.55-B is administrative secondary screening and refused admission without criminal facility law. Ours has enforced bathroom or indecent-exposure criminal law, birth-sex custody, and care bans, so it sits far below."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Our case is far below 0.75-C: 0.75-C has border training and tribunal remedies with brief detention. Ours has criminal facility enforcement, no state gender-identity protections, and custody harm; protections are contested or absent."
+   }
+  ],
+  "synthesis": "National border screening and the state's facility and custody regime interact: a document discrepancy can lead to refusal or immigration custody, while bathroom use in a public building can lead to arrest and birth-sex custody. National hate-crime law and litigation offer partial recourse, but they do not enjoin the state's bathroom, prison, shelter or care rules. The state's own hate-crime statute omits gender identity, and police inaction plus panic defences weaken street protection. For a family, the minor care ban and guardian liability add exposure. The combined regime is therefore severe but not at the absolute lethal or capital extreme."
+ },
+ "parse_error": null
+}

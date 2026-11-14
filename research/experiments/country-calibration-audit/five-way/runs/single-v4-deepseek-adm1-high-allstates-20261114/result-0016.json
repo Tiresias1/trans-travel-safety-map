@@ -1,0 +1,86 @@
+{
+ "cell": 16,
+ "region": "66186276B38006515706420:South Dakota",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.004836898",
+ "parsed": {
+  "rating": 0.27,
+  "explanation": "The combined regime is driven by national entry-document restrictions that can refuse, tag or permanently bar trans travellers, and by documented immigration-custody abuse including forced labour, beatings, solitary confinement and sexual abuse. The division state adds a 2025 facilities ban in schools and state-owned buildings, an under-18 care ban, and no state gender-identity anti-discrimination or hate-crime coverage. National hate-crime and employment protections are real but do not reach border screening, facilities or custody. Courts have blocked some orders but allowed passport restrictions. This is worse than the 0.35 exclusion/humiliation anchors and close to the 0.25 custody/facilities anchors; it is above the 0.15 anchors because routine arrest for mere presentation and capital exposure are not documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National rules require M/F markers matching assigned sex; X processing stopped; discrepancy or doubt can trigger refusal, additional evidence, a case-note tag, and possible lifetime fraud ineligibility; reports of confiscated or blocked passports and stranded travellers.",
+    "protection": "Existing X passports remain valid until expiry; a fraud finding requires four elements and is not automatic; litigation is pending; foreign governments have issued advisories.",
+    "interaction": "Border screening can escalate into immigration detention and custody; the entry decision is national, not state-controlled.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: trans men report forced labour, beatings, solitary confinement and severe sexual abuse; national corrections policies remove hormones, cut hair and substitute psychiatric treatment; a bathroom arrest was held in a men's ward.",
+    "protection": "A national hate-crime statute and some court injunctions exist, but no operative remedy for the documented custody abuse is shown.",
+    "interaction": "A document discrepancy at entry can lead to detention and birth-sex placement; the state facilities law's accommodation clause may push incarcerated trans people toward solitary confinement.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National ban on trans access to government-funded single-sex facilities; the division state's 2025 law bars bathrooms, locker rooms and changing areas matching identity in public schools and state-owned buildings; four states criminalize certain bathroom use; a trespass arrest is documented.",
+    "protection": "The division law has exemptions (accompanying a child, emergency, etc.) and a reasonable-accommodation clause; many states have no mapped facilities ban.",
+    "interaction": "State law covers state-run and off-campus facilities; national policy covers federal facilities; the criminal trespass trigger requires refusal to depart.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "The division state bans gender-affirming care under 18; a national executive order frames minor care as mutilation; proposed national insurance rules would bar reimbursement for under-18 care; custody denies hormones; the state terminated a trans health contract.",
+    "protection": "The state settled a discrimination suit with an apology and $300,000; some national orders are enjoined; adult visitor care access is not documented.",
+    "interaction": "A travelling family with a trans minor faces denial and provider or parental exposure; adult care continuity is uncertain.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy prioritizes 'radically pro-transgender' violent groups; a DOJ reward memo mentions 'radical gender ideology'; an executive order directs investigation and prosecution of teachers facilitating social transition; official hostility is documented.",
+    "protection": "The memo says gender ideology is not a reward criterion; the strategy says mere disagreement is not targeted; some orders are enjoined; a national hate-crime statute covers gender identity.",
+    "interaction": "This raises official suspicion around advocacy and schools; it is not documented as direct visitor arrest, but it compounds border and custody risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-18 care ban; executive order prosecution of teachers using preferred names or pronouns; school facilities and sports restrictions; possible state inquiry, missed schooling, and separation of care from the child.",
+    "protection": "Some national orders are enjoined; no division-specific protection for trans minors is documented.",
+    "interaction": "A parent or guardian travelling with a trans minor can face provider refusal, school disclosure and legal exposure even when the adult is not the defendant.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "The division hate-crime law excludes gender identity; there is no state anti-discrimination law for employment, housing or public accommodations; public opinion is conservative on documents and sports; a travel guide advises checking violence reports.",
+    "protection": "A national hate-crime statute covers gender identity; the 2020 national employment ruling applies; 23 states cover gender identity in bias-crime statutes; local ordinances are patchy.",
+    "interaction": "The national backstop is largely theoretical for visitors; state recourse is thin; no trans-specific visitor violence rate is documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "The passport-marker suit is pending; the Supreme Court allowed restrictions; facilities enforcement in custody is unresolved; driver's licence and ID procedure is unconfirmed; the legal-risk ranking is advocacy; custody abuses remain unremedied.",
+    "protection": "Civil-liberties litigation, some enjoined executive orders, a state discrimination settlement, and national hate-crime and employment protections exist.",
+    "interaction": "Courts have not restored border access or custody safeguards; remedies are slow and do not reach the documented harms.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia criminalizes gender presentation and routinely arrests visitors at transit checks, with months of pretrial custody, beatings and a capital provision. The present dossier lacks routine presentation arrests and capital exposure, but has severe entry-document and custody harm. It sits above 0.15-A because the baseline criminalization is less sweeping, though not by a wide margin."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Ostravia places detainees by birth sex, criminalizes cross-dressing in administrative buildings, and documents assaults and solitary confinement. The present dossier is comparable in facilities and custody severity but adds national entry-fraud and lifetime-ineligibility exposure; it lacks routine cross-dressing prosecutions. It is close to 0.25-C, slightly above because no general presentation ban is documented."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra excludes trans visitors at the border, seizes tickets and returns them, but without arrest or imprisonment. The present dossier is worse: refusal can escalate to detention and documented custody abuse, and facilities bans carry criminal trespass in some states. Hence it is below 0.35-A."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses secondary screening and administrative refusal, with no criminal prosecution or custody harm. The present dossier documents custody abuse and facilities criminalization, so it is materially below 0.55-B."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Vessalia has explicit gender-identity equality, working oversight and remedies. The present dossier has national entry restrictions, facilities bans and documented custody harm with no operative remedy, so it is far below 0.85-A."
+   }
+  ],
+  "synthesis": "The operative regime combines a national entry-document system that can refuse, tag or permanently bar trans travellers with a division state that bans gender-congruent facilities in state buildings and under-18 care, and lacks state gender-identity anti-discrimination and hate-crime coverage. National hate-crime and employment protections are real but do not reach border screening, facilities or custody. The most severe documented exposures are state-imposed: birth-sex facilities and custody placement, immigration custody abuse, and fraud-based lifetime ineligibility. Courts have blocked some orders but allowed passport restrictions. This places the jurisdiction below the 0.35 exclusion/humiliation anchors and near the 0.25 custody/facilities anchors; it is above the 0.15 anchors because routine arrest for mere presentation and capital exposure are not documented."
+ },
+ "parse_error": null
+}

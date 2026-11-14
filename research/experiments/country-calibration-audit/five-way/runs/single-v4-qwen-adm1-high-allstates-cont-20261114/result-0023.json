@@ -1,0 +1,78 @@
+{
+ "cell": 23,
+ "region": "66186276B62688952876525:Alaska",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006663162",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "For adults alone, the sharpest exposures are federal travel-document mismatch, visa refusal or fraud-based lifetime ineligibility, and government-funded single-sex facility exclusion; the division lacks statewide adult facility or adult care bans and has municipal protections. Severe harms follow if an encounter becomes immigration or national custody: sexual abuse, forced labour, solitary, and conversion-therapy-like care. Youth school, sports, and care scrutiny raise risk for travelling families. Court remedies, local ordinances, and some protective states mediate but are uneven; no routine imprisonment or execution is documented.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules restrict X and new markers to sex assigned at birth; mismatched presentation can trigger secondary review, refusal, stranding, or fraud-based lifetime ineligibility; reports of blocked/confiscated passports.",
+    "protection": "Existing X passports remain valid until expiry; courts have enjoined or blocked some national orders; legal-aid guidance and litigation exist.",
+    "interaction": "Border or document discrepancy can start investigations, visa denial, or immigration custody; if custody follows, abuse risk is amplified.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced labour, beatings, solitary, severe sexual abuse; national corrections adopted conversion-therapy-like policies and stopped reporting counts; federal custody can follow document or care disputes.",
+    "protection": "Some national orders blocked; courts may review detention; no documented safe custody protocol for outed visitors.",
+    "interaction": "Investigative encounters can escalate to custody where birth-sex/official hostility determines placement and care, worsening consequences after outing.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National EO bars transgender people from government-funded single-sex facilities congruent with identity; many states ban facilities; one state criminal trespass arrest included men’s-ward detention. Division has no statewide adult ban but school/sport rules affect minors.",
+    "protection": "Division lacks statewide adult public-facility ban; four municipalities protect public accommodations, though enforcement is undocumented.",
+    "interaction": "Federal/funded facilities and school settings can override local adult tolerance; private settings vary by municipality.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules attack youth care, funding, records, and sports; proposed public-insurance bar; division medical board draft could discipline providers for under-18 care. Adult care is not statewide banned.",
+    "protection": "No documented operative division ban on adult care; board rule is draft/pending; adult continuity may be possible.",
+    "interaction": "For minors or care-seeking travellers, provider discipline or records pressure can force denial and state scrutiny.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism prioritizes radical pro-transgender groups; DOJ ties gender ideology to domestic-terror warnings; national directives push school/teacher investigations.",
+    "protection": "National hate-crime statute, employment-discrimination ruling, some state/local protections; courts contest policies.",
+    "interaction": "Threat framing can expand police discretion, making border, facility, or school contacts more punitive despite legal checks.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Youth-care restrictions in many states, national school investigations, division sports rule, one district school bathroom policy, and draft provider discipline; guardians seeking care/school may face scrutiny or denial.",
+    "protection": "Division adult care ban not operative; municipal protections and marriage recognition; legal remedies exist but untested for visitors.",
+    "interaction": "Family care/school/sport encounters can become state inquiry, forced disclosure, or provider refusal, raising risk beyond adult-alone travel.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No violence denominator or enforcement count is documented; state hate-crime gap and thin recourse outside municipalities leave harassment/denial remediable only unevenly; police may enforce federal/state facility rules.",
+    "protection": "National bias-crime law, municipal ordinances in about 46% population, and some public-accommodation protections; no documented trans-visitor enforcement.",
+    "interaction": "Absence of evidence is not safety; response depends on local officers and whether complaints are treated as hate crimes or nuisance.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Operative rules shift through litigation, boards, and comment periods; municipal ordinance enforcement, violence rates, and board draft status unknown; travel advisories and detentions show real risk.",
+    "protection": "Civil-liberties suits, legal-aid FAQs, ombuds/complaint routes, and courts provide recourse where they act.",
+    "interaction": "Remedies reduce exposure only when invoked promptly and enforced; unknown outcomes keep practical risk elevated.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Higher than 0.15-A: the dossier does not show routine arrest of visitors merely for presentation, months of pretrial custody for being trans, or credible capital exposure. However, federal document/facility hostility and immigration-custody abuse keep it far from low-risk."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Comparable to universal-database/registration exposure, but lower: federal travel-document refusal/permanent fraud risk, government-funded facility exclusion, and documented immigration-custody sexual abuse add severity; youth school/sports/care scrutiny increases family risk. Court remedies and municipal ordinances provide partial mitigation absent in 0.45-D."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Materially below 0.75-C: entry does not recognize matching markers or guarantee respectful screening; documents can trigger refusal, stranding, and fraud bars; federal custody and facility exclusion are documented. Unlike 0.75-C, protections are contested and uneven, especially for minors."
+   }
+  ],
+  "synthesis": "The combined regime is one federal traveler-facing restriction plus uneven division mitigation. Federal passport/visa screening makes discovery consequential: refusal, stranding, possible permanent ineligibility, and if custody follows, abusive treatment. Federal facility exclusion can occur even in a division with no adult bathroom ban. Local protections are strongest for adults in four municipalities and weakest for youth/care encounters, where school/sport rules and draft medical-board pressure add scrutiny. Absence of trans-specific violence data is an open question, not safety; documented hostile framing and custody abuse lower the score below moderate-risk."
+ },
+ "parse_error": null
+}

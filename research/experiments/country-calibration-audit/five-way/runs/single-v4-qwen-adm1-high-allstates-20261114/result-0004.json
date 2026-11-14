@@ -1,0 +1,82 @@
+{
+ "cell": 4,
+ "region": "66186276B13694661525286:Missouri",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006238372",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "The combined regime is severe: national passport/visa rules make document mismatch a screening/fraud exposure, with refusals and possible permanent bars; national facility and custody policies add birth-sex placement, hormone removal, and documented immigration custody abuse. The division denies gender-affirming care to minors, exposes providers, bars public funding, restricts prison/jail care, and has surgical document rules; local anti-discrimination is absent while court challenges are partial. For an adult visitor, discovery can lead to exclusion, detention, abuse, or criminal facility friction rather than merely social prejudice. For a minor or family, care access and provider liability compound the risk. Absent credible execution or universal imprisonment, it sits near the bottom of High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National sex-marker rules allow refusal, additional evidence, and fraud-based permanent ineligibility for mismatched documents or records; border screening guides warn of outing and invasive secondary inspection.",
+    "protection": "Existing X passports remain valid until expiry; litigation and a document FAQ exist, but they do not guarantee entry or prevent fraud findings.",
+    "interaction": "Home-passport mismatch at national entry can escalate into refusal, possible lifetime bar, and further investigation.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Visa fraud or screening referrals can lead to immigration custody; forced labour, beatings, solitary, severe sexual abuse, and hormone-removal corrections policies are documented.",
+    "protection": "Some orders are contested, but no operative traveller-facing immunity or reliable remedy is documented.",
+    "interaction": "Entry or document trouble can lead into federal or state custody, where birth-sex policies and care denial worsen exposure.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National bars on gender-identity congruent government-funded single-sex facilities; state bans exist across the country, including criminal trespass in some, with one arrest and men’s ward hold.",
+    "protection": "Some state/provinces lack mapped bans, and two local sanctuary cities are noted, but they do not neutralise federal facility policy.",
+    "interaction": "Local refusal-to-depart rules, staff demands, and national facility restrictions can combine to create arrest and misplacement.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State law bars new gender-affirming care and surgery for minors, exposes providers to licence loss and suits, and bars public coverage for any age; prison/jail care funding is prohibited.",
+    "protection": "Existing minor treatment is allowed; sanctuary cities exist; adult private care is not directly documented as banned, but availability is uncertain.",
+    "interaction": "A travelling minor needing new care or medication continuity faces refusal or risk to any provider willing to help.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism language treats radically pro-transgender groups as hostile violent actors; official documents, public support, and facility arrests show state threat-framing.",
+    "protection": "National hate-crime and employment rules exist, and state hate-crime law covers gender identity; courts sometimes restrain orders.",
+    "interaction": "Threat-framing raises police and institutional willingness to expose or detain trans travellers, weakening reported protections.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor faces denied new care, provider liability, sports exclusion, and document barriers; a guardian’s care request can become a legal or medical refusal.",
+    "protection": "Existing treatment is allowed; no adoption restriction is documented; two sanctuary cities offer limited local support.",
+    "interaction": "Family care-seeking, schooling, or facility use can expose the minor through state bans and national screening/custody rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Police arrest and birth-sex ward detention are documented for a facility dispute; no current local trans-street-violence rate is documented, but absence is not safety.",
+    "protection": "State hate-crime statute covers gender identity; two sanctuary cities; some public services may respond protectively.",
+    "interaction": "Calling police may worsen exposure if the encounter moves into facility trespass, detention, or immigration/federal custody.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Local airport/entry rules are not documented separately; custody counts, future permanence, and actual care access for visitors remain unknown.",
+    "protection": "Courts, an advocacy FAQ, hate-crime law, employment rulings, and sanctuary cities offer partial recourse.",
+    "interaction": "Litigation exists, but passport/care restrictions have been upheld or allowed, limiting remedy reliability for short-term travellers.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A also criminalises document mismatch and detentions, but mostly fines/local raids; here federal entry screening can refuse visas and consider permanent fraud bars, national custody causes abuse, and local care/provider rules extend harm to families, so the combined regime is materially worse."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex custody and presentation arrests; here the custody abuse is severe (forced labour, sexual abuse, hormone denial) and minor-care denial adds family exposure, but no routine cross-dressing arrest is documented; still lower overall."
+   },
+   {
+    "anchor_id": "0.15-B",
+    "comparison": "0.15-B involves entry detention, cells, withheld care and abuse. This dossier resembles that but lacks credible capital punishment and has some contested court/FAQ structures, though visa/permanent-bar and custody abuse remain severe; it sits just above 0.15."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "0.75-A protects routine care with enforceable complaints. Here providers face licence loss, public coverage is barred, federal facilities/custody are hostile, and border screening can out travellers, making the regime far less safe than 0.75."
+   }
+  ],
+  "synthesis": "Federal gatekeeping interacts with local denial: a home passport or visa discrepancy can trigger secondary screening, refusal, or fraud proceedings, then immigration custody where hormone denial and abuse are documented. If the traveller or child uses a facility, local/state rules may force refusal-to-depart trespass arrest and birth-sex holding. For families, the division’s care bans and provider liability convert a medical need into a legal risk: new treatment is unavailable, public coverage denied, and providers may refuse continuity care. Hate-crime and employment rules exist, but courts have allowed key passport/care restrictions, so they do not offset universal federal-state exposure."
+ },
+ "parse_error": null
+}

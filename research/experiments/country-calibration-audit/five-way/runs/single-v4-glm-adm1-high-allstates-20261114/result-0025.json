@@ -1,0 +1,82 @@
+{
+ "cell": 25,
+ "region": "66186276B64014601259366:Kansas",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00569125",
+ "parsed": {
+  "rating": 0.4,
+  "explanation": "The combined regime imposes tier-1 universal exposures: the parent state requires birth-sex markers on passports, eliminated X markers, and directs officers to refuse documents casting 'reasonable doubt' on sex, with a possible lifetime fraud ineligibility; the division confines trans people to birth-sex facilities in public buildings including airports, adds criminal fines and a private bounty suit mechanism, and invalidates non-matching IDs. Enforcement is documented (an arrest, men's-ward holding, entry detentions of foreigners, abusive custody), though not shown to be routine, and the division retains a 2020 gender-identity anti-discrimination law, a hate-crime statute nationally, and active litigation. Not at the 0.15 tier (no imprisonment-likely or lethal pathway), but below 0.55 dossiers whose worst feature is friction without penalties.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Birth-sex passport rule, X-marker elimination, case-note tagging, refusal for document 'discrepancy', possible lifetime fraud bar for suspected sex misrepresentation; foreign citizens reportedly detained over visa issues; passports confiscated/stranding travellers.",
+    "protection": "Fraud finding requires four elements and is never automatic; X passports remain valid until expiry; policy challenged in national courts; legal-aid FAQ exists.",
+    "interaction": "Entry mismatch can feed federal fraud adjudication and, if detention follows, custody exposure; eight foreign governments issued trans-specific travel advisories.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: trans woman jailed 24h in men's ward; national corrections policies described as conversion-therapy-like (hair cutting, hormone removal); immigration-custody forced labour, beatings, solitary and severe sexual abuse of trans men.",
+    "protection": "Not documented.",
+    "interaction": "A facility or visa discrepancy can convert into custody; custody placement follows birth sex, and prison-rescission of protective rules removes internal recourse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Division law confines trans people to birth-sex facilities in public buildings including airports, with criminal fines up to $1,000 and bounty suits by any private person; bans cover 9+9+3 divisions nationally, criminalised in 4.",
+    "protection": "Division anti-discrimination law (2020) covers public accommodations; trespass trigger requires refusal to leave, with statutory exemptions; nationwide ~29+ divisions lack mapped bans.",
+    "interaction": "Airport transit exposes every visitor; a bounty suit or employee challenge can escalate to police, arrest and birth-sex holding.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for minors (Feb 2025 override); parent-level national order framing care as mutilation; hospital-record subpoenas for under-19 patients.",
+    "protection": "May 2026 injunction blocks the division care ban; national employment-discrimination ruling stands; adult visitor care not documented as restricted here.",
+    "interaction": "A travelling minor's care access depends on the injunction's survival; records demands could out a minor to the parent state.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "State framing of trans presence as actionable ('wrong-sex facility' bounty), first known arrest described as 'cruelty and humiliation'; national counterterrorism language targeting 'radically pro-transgender' ideology; lawmakers' hostility recorded.",
+    "protection": "National hate-crime statute covers gender identity; division hate-crime law does not; courts have repeatedly enjoined or reversed hostile measures.",
+    "interaction": "Private bounty enforcement bypasses prosecutorial discretion; police response to a facility complaint is the escalation pathway.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Trans minor faces facility exclusion at schools/public buildings and bounty suits; parent could face suit or inquiry; federal orders criminalise facilitating a minor's transition; care ban (enjoined).",
+    "protection": "Injunction on the care ban; municipal conversion-therapy bans; adoption/IVF recognition irrelevant to visitors.",
+    "interaction": "A parent accompanying a trans minor shares bounty and inquiry exposure; a minor's document mismatch compounds entry screening.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented as elevated: no trans-specific violence pattern, counts or background-rate data provided; one arrest incident documented.",
+    "protection": "National hate-crime statute (2009) covers gender identity; bias statistics reported but not trans-specific.",
+    "interaction": "Police response to a facility complaint is documented (arrest, handcuffing, men's ward) rather than protective.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Open questions: bounty-suit frequency, enforcement data and licence-invalidation counts unrecorded; hate-crime charging practice undocumented; outcome of the facility/ID lawsuit unresolved.",
+    "protection": "Active litigation, unanimous appellate reversal in 2025, working courts granting injunctions; legal-aid and advocacy infrastructure operating.",
+    "interaction": "Recourse exists but has not yet reached the new law; oversight has not produced documented relief against the operative exposures.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C's worst features are birth-sex custody placement with assaults and an arrest-enabling statute. This jurisdiction documents analogous custody harms (men's ward, immigration-custody abuse) and a facility statute with penalties, but adds stronger mitigations: a gender-identity anti-discrimination law, national hate-crime coverage, and courts actively enjoining hostile measures. It sits above 0.25-C."
+   },
+   {
+    "anchor_id": "0.35-C",
+    "comparison": "0.35-C applies eviction and fines consistently, without custody threat. This regime's universal exposures (airport-inclusive facility ban, bounty suits, entry fraud bar) are comparable in breadth, but documented custody abuse and entry detentions of foreign trans citizens push severity beyond 0.35-C; it sits slightly below it, near the band floor."
+   },
+   {
+    "anchor_id": "0.55-A",
+    "comparison": "0.55-A's outcomes are friction, delay and occasional holding without formal charge. This jurisdiction adds real legal penalties (criminal misdemeanour with possible 60-day jail, bounty liability, lifetime ineligibility risk at entry) and hostile custody, so its consequences-if-outed are materially worse than 0.55-A."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, functioning tribunals and brief release-oriented detention. Here the border itself is the exposure source (birth-sex rule, fraud cable), custody is documented as abusive, and the division adds punitive private enforcement, so it is far below 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime is a stacked federal-plus-division system whose harshest rule governs the visit. A trans visitor's documents cannot reliably match presentation (birth-sex passports, X-marker elimination), and entry officers are instructed to treat doubt about sex as grounds for refusal and possible lifetime fraud ineligibility — a universal, inescapable exposure at every crossing. Inside the division, every public building including airports enforces birth-sex facility exclusion, enforced not only by state penalty but by any private person's bounty suit, so discovery probability is deliberately engineered and consequences include criminal charge, men's-ward holding (documented) and civil liability. If custody follows, the parent's documented custody regime is abusive toward trans people. Mitigations — the 2020 anti-discrimination law, national hate-crime statute, injunctions and pending litigation — are real but have not yet reached or remedied the operative exposures. The result is an Elevated Risk rating at the lower boundary: well above execution-pathway jurisdictions, materially below friction-only ones, with a travelling trans minor facing the same facility and bounty exposure plus an enjoined care ban."
+ },
+ "parse_error": null
+}

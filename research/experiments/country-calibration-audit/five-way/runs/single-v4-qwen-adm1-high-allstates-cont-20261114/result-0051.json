@@ -1,0 +1,78 @@
+{
+ "cell": 51,
+ "region": "66186276B99594608635082:Hawaii",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.004470532",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "National regime creates traveller-facing exposure at borders: binary passports, secondary screening, visa refusals, fraud/permanent ineligibility, and severe immigration/correction custody harms. In this state, however, local operative layer is strongly protective: no listed bathroom ban, public-accommodation/employment/housing/insurance non-discrimination, hate-crime coverage, shield law for lawful care, and no surgery marker restrictions. Adult alone faces lower day-to-day risk locally than hostile states, but if outed in federal settings or detained, harms remain severe. Adult with minor is worse: national youth-care restrictions and law-enforcement directives against schools/teachers may deter or investigate care, though shield law could help if invoked; invocation undocumented. Overall elevated risk: safer than a hostile parent state, below jurisdictions where entry and care protections operate nationally.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport/visa rules require binary assigned-sex markers, restrict X, allow secondary screening, refusal, and permanent ineligibility for fraud if mismatch or wilful misrepresentation is found.",
+    "protection": "Existing X passports remain valid; litigation and legal-aid guidance exist; state documents allow marker changes, but these do not bind foreign entry screening.",
+    "interaction": "Document mismatch at border can escalate into detention, visa denial, or later federal custody regardless of local state protections.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal custody exposure includes immigration-detention reports of forced labour, beatings, solitary and severe sexual abuse, plus corrections policies cutting hair, removing hormones and substituting psychiatric treatment.",
+    "protection": "State anti-discrimination, hate-crime and shield laws are local; not documented as controlling federal detention or correction decisions.",
+    "interaction": "If a traveller is detained, local protective law may not prevent federal placement, interrogation, or abusive custody practice.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent access in government-funded single-sex facilities; several states criminalise bathroom use and arrests occurred elsewhere; federal buildings or funded spaces remain exposed.",
+    "protection": "This state is not listed among facility bans and prohibits gender-identity discrimination in housing/public accommodations; no documented state bathroom criminalisation.",
+    "interaction": "Private/state facilities may be protected locally, while federal facilities or funded spaces could follow the binary national rule.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National rules restrict youth care, investigate schools/providers, freeze or withdraw funding, and label care harmful; provider liability and pressure can deter travel care.",
+    "protection": "State shield law protects patients/providers from state charges when care lawful here was banned in home state; insurance coverage and non-surgery marker rules exist.",
+    "interaction": "A travelling adult or minor may find care more available locally, but federal directives and border checks create residual uncertainty; shield invocation undocumented.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism and law-enforcement language frames radical pro-transgender activity as hostile; orders direct police investigation of schools and teachers and rescind pronoun or name protections.",
+    "protection": "State has hate-crime coverage, abolition of panic defenses, equality commission, and non-discrimination laws; national hate-crime statute also exists.",
+    "interaction": "Local policing may be protective, but federal enforcement posture can bias border, school, and custody encounters toward suspicion.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "For a family, national youth-care restrictions, school or provider criminalisation directives, and document mismatch risks could lead to denial, inquiry, separation, or stranding.",
+    "protection": "State shield law and public-school or non-discrimination rules may permit lawful care and reduce local service denial; guardian may avoid some state charges.",
+    "interaction": "Federal screening, custody and national orders remain layered over state shield; effectiveness for a visiting family is not documented.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current state-specific trans violence count is documented; general crime and regional safety vary; absence of data is not evidence of safety.",
+    "protection": "State bias-crime statute covers gender identity/expression, panic defenses abolished, and public-accommodation law offers recourse.",
+    "interaction": "Local police response could help for street hate incidents, but federal immigration or custody contact and national counterterrorism framing can worsen outcomes.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Present applicability of passport/care orders is uncertain due to litigation or injunctions; travellers cannot reliably predict border, facility, or custody remedy; shield invocation unknown.",
+    "protection": "Courts have blocked some orders, advocacy FAQ exists, and state complaint or commission structures may address local discrimination.",
+    "interaction": "Legal remedies work more locally than nationally; federal entry and custody processes dominate high-severity encounters.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-B",
+    "comparison": "Compared with Meridia's routine transport shakedowns and short jail, this state has far stronger local anti-discrimination and shield law, and no documented local extortion. But the federal layer is worse: immigration/correction custody abuse and lifetime visa fraud grounds can follow a mismatch. Net above 0.25-B because local exposures are mitigated, but not near safety."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "Compared with Ossara's universal checkpoint/database exposure, this dossier has a similar or worse entry/custody threat, including visa refusal, abuse, and national counterterrorism language, but a much safer local sphere with no bathroom ban and shield protections. Slightly lower because federal custody and youth directives are documented."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Compared with Meridia's trained border recognition and release remedies, this jurisdiction's national passport binary, possible visa refusals, and abusive federal custody are much worse. State protections cannot offset federal screening or custody, so this sits well below 0.75-C."
+   }
+  ],
+  "synthesis": "The state is locally shielded: no listed bathroom ban, strong anti-discrimination/hate-crime rules, and a care shield. The national layer, however, controls passport/visa screening, federal facilities and custody, and uses hostile language around youth care. Adult-alone risk is elevated but mitigated locally; family risk is higher because national youth-care directives can deter or investigate care, while the shield law’s practical operation is unproven. The combined regime therefore rates below protective-border states, but above jurisdictions with routine local extortion or arrest."
+ },
+ "parse_error": null
+}

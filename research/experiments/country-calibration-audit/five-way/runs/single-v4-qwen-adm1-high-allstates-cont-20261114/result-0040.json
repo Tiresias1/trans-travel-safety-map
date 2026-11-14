@@ -1,0 +1,78 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006236912",
+ "parsed": {
+  "rating": 0.41,
+  "explanation": "Combined regime: national entry screening, passport policy, federal single-sex facilities, federal corrections and immigration-custody abuse dominate; state shield/public-accommodation/hate-custody protections reduce local facilities, state custody, and care risk but cannot pre-empt federal gates or documented enforcement. Adult alone faces moderate border/visa discovery risk with possible refusal/bar and severe if federal detention; adult+minor faces additional federal school/care-record exposure. Hostile federal threat-framing and major social support for binary docs raise severity. Absence of local violence data is not safety.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal entry screening may refuse where document/record sex discrepancies or doubts arise; trans athletes barred; suspected misrepresentation can support lifetime fraud ineligibility; X passports banned; confiscation/blocking reported.",
+    "protection": "Existing X passports remain valid; state offers open ID markers and non-discrimination, but these do not change federal entry document screening.",
+    "interaction": "Home-document mismatch can trigger secondary inspection, refusal, or detention; state recognition is local climate, not federal admission relief.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: forced labour, beatings, solitary, severe sexual abuse; federal corrections: conversion therapy, hair/hormone removal, denied care.",
+    "protection": "State custody policy treats detainees consistent with gender identity, including strip searches and housing; applies to local custody, not federal.",
+    "interaction": "If placed in federal/immigration custody, state protections do not operate; if held in state custody, protective rules may limit harm.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal rules bar congruent use of government-funded single-sex facilities; airport security can force outing via pat-downs/secondary; other jurisdictions have criminal facility bans.",
+    "protection": "State bans gender-identity/expression discrimination in public places, government services, goods/services; local facilities appear protective.",
+    "interaction": "Federal facilities and security apply nationally; state public-accommodation law cannot override federal single-sex rules.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal anti-minor-care orders, hospital-record subpoenas, insurance proposals, and funding threats expose care seekers; federal facility/care pressures remain.",
+    "protection": "State shield law protects patients/providers for care lawful here despite home-state bans; state non-discrimination and conversion-therapy ban apply.",
+    "interaction": "Shield may block state charges but not federal record investigations; family care can still become investigated.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism prioritizes radically pro-transgender groups; national language uses radical gender ideology; schools, sports, and visas investigated; polls favor binary docs.",
+    "protection": "State hate-crime law covers gender identity; gay-panic defence repealed; public-accommodation recourse exists.",
+    "interaction": "Federal framing can legitimize screening and private hostility; state protections may reduce but not erase that threat.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal directives can investigate schools and prosecute staff facilitating transition; records subpoenas threaten minors/guardians; national minor-care hostility persists.",
+    "protection": "State shield law protects lawful minor care from home-state bans; anti-bullying and conversion ban apply locally.",
+    "interaction": "Federal school/records inquiries can still reach guardians despite state shield; protections operate mainly at state level.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented for this state; no trans-specific violence or homicide count supplied. Absence is not safety.",
+    "protection": "Hate-crime statute covers identity; public-accommodation and anti-bullying laws create formal channels.",
+    "interaction": "National hostility may increase harassment risk; state protections are real but enforcement is not documented.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Court challenges and enjoined orders leave operative rules shifting; state ranking measures law text, not enforcement; violence baseline unknown.",
+    "protection": "Civil-liberties litigation, legal-aid guidance, and state complaint avenues exist but effectiveness is not measured.",
+    "interaction": "Remedies may reduce friction, yet cannot reliably undo federal entry, custody, or investigation exposure.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Federal immigration custody abuse and conversion resemble tier-one custody harm, worse than many 0.25 anchors. Higher: state non-discrimination, protective custody policy, shield law, and no documented local criminal facility ban distinguish it, so it sits above pure 0.25 custody exposure."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Entry screening is comparable: discretionary secondary review, refusal, humiliation, cost. Lower: federal custody can involve beatings and sexual abuse, and national facilities restrict congruent care. Higher than 0.55? No: state shield/facility protections help locally, but federal gates remain severe."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Much lower. Entry documents are hostile, not marker-respecting; federal detention/immigration custody can be abusive; no documented pre-emption. Strong state protections reduce local exposure but cannot match a 0.75 border regime with respectful screening and reliable remedies."
+   }
+  ],
+  "synthesis": "The operative system is a protective state layer inside a hostile national regime. State shield, public-accommodation, hate-crime, custody, and minor-protection laws materially reduce local facilities, care, and state custody risk. Federal gates remain controlling: entry screening, document refusal, federal facilities, immigration custody, corrections, school/care-record investigations, and threat-framing carry documented severe harm. For an adult, the local environment may be comparatively workable; for families with a minor, federal care and school exposure adds risk. Enforcement gaps and absent violence denominators prevent a higher score."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 17,
+ "region": "66186276B41335105066757:Louisiana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007492252",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "Combined federal and state/local rules create a severe high-risk regime. Federal passport/visa screening ties sex to assigned marker, permits refusal or fraud/lifetime-inadmissibility review when records or presentation raise doubt, and travellers report blocked or confiscated documents. State facility bans and a municipal restroom ordinance make bathroom encounters arrestable and custody-prone; documented cases include men's placement, male searches, and care denial despite a female licence marker. Immigration and corrections custody show severe abuse, hormone removal, and coerced treatment. Minor-care bans and school/records investigations add family exposure. Hostile response to violence—mob victims charged, attackers not arrested—corroborates risk. Litigation and legal aid exist, but operative enforcement and birth-sex placement dominate.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal passport/visa rules define sex by assigned binary, restrict markers, allow refusal/additional evidence when presentation or records raise doubt, and permit fraud/lifetime-inadmissibility review; trans travellers report blocked or confiscated passports and stranding.",
+    "protection": "Existing X passports remain valid; fraud requires multiple elements and may be waivable; court suits and legal-aid FAQs contest documents, but traveller-specific relief is not shown as prompt.",
+    "interaction": "Federal screening interacts with state surgical-marker rules and appearance-document mismatch; one encounter can route into refusal, evidence demands, fraud review, or detention.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody shows forced labour, beatings, solitary, and sexual abuse; corrections shows conversion-style therapy and hormone removal; a restroom arrest led to men's ward and male search despite a female licence marker.",
+    "protection": "National hate-crime and equality law, ongoing litigation, and advocacy may provide some recourse; no documented protective custody placement or reliable complaint remedy for visitors.",
+    "interaction": "Document doubt or public-facility contact can escalate into investigation, fraud review, and birth-sex custody; federal detention and local jail practices compound.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars congruent access to government single-sex facilities; many state/province maps show bans in schools/government buildings and some private settings; four states criminalize under conditions; a capitol restroom arrest is documented.",
+    "protection": "Several states have no mapped ban and anti-discrimination protections; some court injunctions and facility exemptions exist; maps are non-exhaustive and enforcement varies.",
+    "interaction": "Federal immigration detention and state/local buildings/schools intersect; bathroom access risk depends on setting, officer discretion, and refusal-to-leave elements.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Minor gender-affirming care is banned in the division and many states; federal orders criminalize school transition support and propose insurance denial; hospitals were subpoenaed for youth records; emergency care access is uncertain.",
+    "protection": "Some state/local protections and court challenges remain; private providers and out-of-state care may exist, but state bans, funding threats, and records exposure limit reliability.",
+    "interaction": "Care seeking, especially for a trans minor, can become a record/investigation event; federal funding rules and state care bans interact with guardian travel.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Border guidance treats sex doubt as refusal/fraud; local restroom enforcement produced arrest; mob victims were charged while attackers were not arrested; counterterrorism language invokes radically pro-transgender actors; polls favour binary documents.",
+    "protection": "National employment and hate-crime law, state protections in some jurisdictions, court injunctions, legal aid, and no trans-identity criminal statute or capital provision mitigate but do not neutralise enforcement.",
+    "interaction": "Law-enforcement framing follows document or facility encounters, turning ordinary questioning, bathroom use, or care disputes into arrest, custody, or fraud risk.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A travelling trans minor faces denied care, sports/school exclusion, staff investigations, record subpoenas, and surgical-proof marker rules; a guardian may be pulled into inquiry or separated from needed care.",
+    "protection": "Some public-accommodation ordinances, marriage recognition, and legal FAQs help; no documented guardian immunity, family shelter, or emergency-care pathway for trans minors.",
+    "interaction": "The child's status creates parent-facing scrutiny; care bans and school rules can convert a family trip into disclosure, refusal of service, or state intervention.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "A reported high trans-woman kill rate is an undercount floor and is not treated as a campaign; but a mob restroom beating led to victim charges, no attacker arrest, care denial, and male-custody abuse.",
+    "protection": "National hate-crime law and some state bias statutes exist; advocacy reports and ongoing legal scrutiny can record abuse; visitor-specific protection is not documented.",
+    "interaction": "Police response can transform victimisation into arrest/custody exposure; facility ordinances and public-restroom conflict increase escalation.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unknowns include frequency of visitor passport refusals, actual detention, emergency care, guardian scrutiny, private-facility enforcement, and which contested federal orders remain operative.",
+    "protection": "Active litigation, legal-aid guidance, consular advisories, existing X validity, and some court relief may reduce harm but are slow and uncertain during travel.",
+    "interaction": "Remedies may exist after exposure, while border screening, custody, facilities, and minor-care rules operate first; absence of evidence is not safety.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "0.15-D involves years’ imprisonment and torture after document-fraud referral. Here fraud/refusal and immigration custody abuse are documented, but long prison or execution is not shown as likely; it is below that extreme yet still severe."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex prison placement, frequent assaults, and arrest for presentation. This jurisdiction adds federal entry refusal/fraud, passport blocking, immigration sexual abuse, minor-care bans, and mob-victim charging, making it lower."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has accepted markers, respectful screening, brief detention with release, and appeals. Here marker doubt can trigger refusal, fraud review, birth-sex custody, care denial, and violence-response failures, so it is far below."
+   }
+  ],
+  "synthesis": "The operative regime is combined federal and state/local. Federal entry/document screening can convert sex-marker doubt into refusal, evidence demands, or fraud/ineligibility review. State facility bans, municipal ordinances, and custody practices then turn bathroom or police contact into arrest, men's placement, searches, abuse, or care denial. Minor-care bans and school/records investigations add family exposure. Hostile response is corroborated by the restroom arrest and mob victims being charged. Legal challenges, hate-crime law, and legal aid create partial recourse, but enforcement is active and remedies are uncertain, so protection does not offset the exposure."
+ },
+ "parse_error": null
+}

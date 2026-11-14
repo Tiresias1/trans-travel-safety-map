@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00542578",
+ "parsed": {
+  "rating": 0.45,
+  "explanation": "The combined regime is split. In this state/province, gender-identity anti-discrimination, public-accommodation coverage, hate-crime reporting, self-ID documents, care shield and conversion-therapy ban make hotels, clinics and ordinary public life comparatively protective. But national entry screening, passport/visa sex rules, federal single-sex facility exclusion, immigration custody with documented abuse, and hostile counterterrorism rhetoric are not displaced by state law. A traveller with mismatched or X documents can be routed to secondary screening, refusal, a fraud finding, or federal detention before state protections apply. Local remedies improve daily safety but cannot reach the border or federal custody. The result is elevated risk: better than a uniformly hostile jurisdiction, materially below one with functioning national border and custody protections.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National visa/passport rules require M/F, stop new X markers, and cable officers to refuse where documents or sex are discrepant, with possible lifetime fraud finding; advisories and detentions documented.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding requires four elements and is not automatic; state self-ID rules do not govern national entry.",
+    "interaction": "State cannot override border adjudication; a home passport/visa mismatch can move traveller into secondary screening or refusal before state protections begin.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of trans men; corrections adopted conversion-therapy-like policies, hormones removed, hair cut.",
+    "protection": "National hate-crime statute and court challenges exist; no documented state override of federal immigration custody.",
+    "interaction": "Border discrepancy/fraud suspicion can lead to federal detention, where state anti-discrimination and shield law do not operate.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities matching identity; federal buildings/airports remain covered. No state facility ban is documented here.",
+    "protection": "This state's public-accommodations law covers gender identity in places open to the public; no state facility ban is documented; state is Most Protective.",
+    "interaction": "State protections cover hotels, restaurants, transport and many public venues, but not federal facilities or federally funded single-sex spaces.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders attack gender-affirming care for minors, proposed insurance bar under 18, and official rhetoric; national rules may affect federal programs.",
+    "protection": "State shield law (2022) protects patients/providers where care lawful here was banned at home; state codified gender-affirming care protections; conversion therapy ban for minors.",
+    "interaction": "A visitor seeking care in this state is protected from home-jurisdiction bans, but national insurance/federal rules remain outside state control.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups as priority; DOJ reward guidance and school-prosecution EO create hostile official framing.",
+    "protection": "State hate-crime law covers gender identity with reporting/task force; state anti-discrimination enforcement; national hate-crime statute exists.",
+    "interaction": "National rhetoric raises risk of investigation or referral, while state police/prosecutors are bound by local protections; pre-emption not documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National EO frames minor gender-affirming care as mutilation, directs probes of schools/teachers over social transition, and proposed rules bar insurance for under-18 care; 27 states ban care.",
+    "protection": "This state bans conversion therapy for minors, protects gender-affirming care, and its shield law covers visitors from ban states; public accommodations protect family.",
+    "interaction": "A family travelling with a trans minor gets state care protections but still faces national border/document screening and possible federal detention; national school/care threats do not directly govern this state's providers.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National climate hostile; trans-specific violence rate not documented; advisories warn of identity-document and data rules. No state-specific violence pattern documented.",
+    "protection": "State hate-crime statute includes gender identity, mandatory reporting and task force; public-accommodations and anti-discrimination coverage; Most Protective ranking.",
+    "interaction": "Local police/prosecutors have hate-crime tools; a visitor attacked in this state has better recourse than in most states, but federal immigration status can deter reporting.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "National passport/fraud decisions and immigration custody have limited effective remedies; some measures in litigation; border officer discretion and which rules are in force are unresolved.",
+    "protection": "National civil-liberties suit challenges passport policy; some orders enjoined; state courts, anti-discrimination enforcement, shield law and hate-crime reporting provide local remedies.",
+    "interaction": "Local remedies work for state-covered settings; they do not compel border release or reach federal custody. Outcome depends on documents and port.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C has birth-sex prison housing, a cross-dressing statute, and no execution. This dossier has no state cross-dressing ban and strong local protections, but national immigration custody abuse and border fraud exposure are comparable severe custodial risks; local daily life is safer, so rated above 0.25-C but not by a full tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B is extended secondary screening, refusal and administrative penalties without criminal prosecution or custody abuse. This dossier's border screening can escalate to fraud/lifetime ineligibility and documented abusive immigration custody, which is worse; strong state protections offset only after entry, so rated slightly below 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C accepts markers matching presentation, trains border officers, and provides brief detention with counsel and compensation. This dossier has no such national border protection, stops new X markers, permits refusal on discrepancy, and documents federal facility exclusion and custody abuse, so it is materially below 0.75-C."
+   }
+  ],
+  "synthesis": "State protections are real and operate in public accommodations, care, hate-crime response and document self-identification within the state. They do not govern national entry, federal facilities, federal immigration custody or national identity documents. The operative journey therefore has a high-severity federal chokepoint and a comparatively safe local environment. Adult alone and adult with a minor share the border/federal custody exposure; the family additionally faces national hostility to minor transition care, partly shielded by state care protections. The rating reflects strong local mitigation but unresolved, documented federal exposures."
+ },
+ "parse_error": null
+}

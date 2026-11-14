@@ -1,0 +1,78 @@
+{
+ "cell": 46,
+ "region": "66186276B97229519707655:Oregon",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006597992",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "Combined regime: federal document, entry, facility and custody restrictions dominate adult-alone risk, while the division’s public-accommodation, hate-crime and shield-law framework lowers everyday local exposure. Adult alone faces elevated risk from passport-marker mismatch, secondary screening, possible visa refusal and federal custody; minor/guardian risk rises due federal care, school and records investigations, although the shield law and state anti-discrimination protections provide partial refuge. The state’s protective tier does not offset federal border, facilities, detention, or investigation authority. Rating sits in Elevated Risk: serious if outed and detained, but not routine imprisonment/torture solely for visiting in this division.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Parent redefines sex binary, restricts passports/visa markers, eliminates new X markers, screens discrepancies, athlete-visa ban, fraud/lifetime ineligibility possible. Reports include passport confiscation, blocked processing, detentions, and stranding.",
+    "protection": "No division-level border protection. State X markers and document accessibility do not alter federal entry; litigation, advisories, and FAQs are partial countervailing context.",
+    "interaction": "Federal document and screening rules apply regardless of local protections; mismatch can escalate to secondary inspection, refusal, or immigration handling.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody reports forced labour, beatings, solitary confinement and severe sexual abuse; national corrections adopted punitive conversion-style policies. Records subpoenas target minors and care institutions.",
+    "protection": "Division public-accommodation, hate-crime and shield laws are not documented as reaching federal immigration or corrections custody.",
+    "interaction": "Border document friction can feed federal investigation or detention; state protective rules do not offset custody placement, interrogation, or abuse risk.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Parent bars transgender use of government-funded single-sex facilities; other parent jurisdictions have criminal bathroom rules, and federal spaces retain binary placement. Division-specific ban/criminalization is not documented, but federal facilities remain exposure.",
+    "protection": "Division public-accommodation law covers gender identity; most protective tier; hate-crime enhancements and anti-bias coverage support local access; no documented local facility ban.",
+    "interaction": "State/local protections reduce private and municipal venue risk, but federal buildings, federally funded facilities, and interstate movement into non-protective jurisdictions are unshielded.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Parent declares youth care mutilation, investigates schools/providers, funds/student-loan retaliation, possible federal criminal exposure, records subpoenas for minors; public insurance restrictions proposed. Provider/school scrutiny can interrupt care.",
+    "protection": "Division shield law protects patients/providers from civil/criminal charges/investigation for care legal here but banned elsewhere; public-coverage and conversion-ban are resident-facing climate.",
+    "interaction": "Shield may cover state/interstate care but not federal investigations, funding actions, passport delays, or interstate custody disputes; minors face unresolved legal ambiguity.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Parent order removes gender recognition, bans gender-identity language, and counterterrorism text frames 'radically pro-transgender' as threat; teacher/facilitator prosecution chills schools and providers.",
+    "protection": "Division anti-discrimination and hate-crime laws, panic-defense repeal, court litigation, and legal-aid FAQs create local countervailing rules.",
+    "interaction": "National framing can guide federal agencies despite state law; local police/courts may protect visitors, but federal enforcement can override local venues and custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal care, school, records-subpoena, funding and social-transition criminalization create family scrutiny; guardian or provider may become investigative subject if chosen names/markers mismatch.",
+    "protection": "Shield law, public-accommodation/education non-discrimination, X marker availability, non-surgery document rules, and recognized partnerships reduce family legal barriers locally.",
+    "interaction": "Federal investigations may bypass state shields; minor outing at border/school/provider can escalate into inquiry, denial of care, or interstate custody complications.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No division-specific police stop/search, violence, or public-accommodation enforcement data; parent public hostility is documented and bias-statute coverage is uneven across jurisdictions.",
+    "protection": "Division hate-crime enhancement and public-accommodation law cover gender identity; national hate-crime law exists but is partial across jurisdictions.",
+    "interaction": "Local reporting could invoke state protections, but airport, federal facility, or interstate encounters may bypass them; unknown enforcement limits confidence.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport/visa, facility, care-investigation, and counterterrorism orders remain contested; shield scope, provider immunity, and local enforcement for visitors are unresolved, so practical remedies lag.",
+    "protection": "Litigation, civil-liberties suits, legal-aid FAQs, and some court blocks show institutional countervailing pressure, not guaranteed traveler remedy.",
+    "interaction": "Relief depends on jurisdictional stage: federal immigration courts and national enforcement are less responsive than state/local venues; minors' exposure amplifies uncertainty.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Lower than 0.15-A: no documented routine arrests, months pretrial custody, beatings, or capital threat for mere presentation/entry in the division. Yet federal immigration custody and care investigations create a severe tail, so it is not a safe 0.85 state."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar to 0.55-B for adult-alone border screening: discretionary secondary checks, refusals, humiliation, delay. Higher friction because federal passport binary, athlete ban, and custody risk; partly offset by division public-accommodation and shield-law protections, but enforcement is undocumented."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Lower than 0.85-A: equality and police-training climate is strong locally, but the national passport/entry regime, government-funded facility restrictions, counterterrorism framing, and severe custody reports are not cancelled by state law. The state’s protections are partial, not nationwide low-risk."
+   }
+  ],
+  "synthesis": "The operative regime is dual-speed. Federal rules make document mismatch, airport/visa screening, government-funded single-sex spaces, immigration custody and provider investigations a continuous risk for outed travelers; a minor can turn care, school or records requests into family scrutiny and federal legal jeopardy. Division laws counter that by banning gender-identity discrimination in accommodation/services/education, enhancing hate-crime penalties, protecting providers/patients under a shield law, and recognizing X markers. These protections appear to cover adult visitors locally, but they do not cancel federal entry, detention, funding, investigation or interstate facility rules, and their enforcement is undocumented. Net result: adult-alone Elevated Risk; family/minor somewhat lower, captured by one combined score."
+ },
+ "parse_error": null
+}

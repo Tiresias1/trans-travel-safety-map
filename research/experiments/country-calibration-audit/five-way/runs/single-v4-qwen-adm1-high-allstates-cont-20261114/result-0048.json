@@ -1,0 +1,78 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005296852",
+ "parsed": {
+  "rating": 0.24,
+  "explanation": "Combined regime is national exclusionary policy plus a protective state. State nondiscrimination, healthcare, shield-law, and marker rules may ease adult private-state encounters, but no enforcement data and they do not bind federal entry screening, federal facilities, immigration custody, or national corrections. An outed visitor faces secondary questioning, visa refusal or fraud/lifetime-ineligibility risk, and documented custody harm including forced labour, beatings, solitary and sexual abuse. Facility rules can produce arrest or men's-ward placement in some settings. Minors/guardians add care bans, school/social-transition criminalization, and funding/research exposure. This sits below 0.35 because custody consequences are severe, but above 0.15 because presentation is not routinely criminalized with long imprisonment and state protections exist. Adult-alone risk is less severe than minor/family risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Visa/admission screening: discrepancy or doubt about sex triggers refusal and requests; trans-athlete ban; suspected wilful misrepresentation can support fraud/permanent lifetime ineligibility; foreign advisories and detentions documented.",
+    "protection": "Existing X passports remain valid; fraud not automatic and limited waivers possible; litigation pending; state self-ID may aid private documents but does not bind federal entry.",
+    "interaction": "Federal border gate controls visitor exposure; protective state document practice cannot neutralise passport/visa screening.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections policies cut hair, remove hormones, coerce psychiatric care; immigration custody reports forced labour, beatings, solitary, severe sexual abuse; state arrest held men's ward.",
+    "protection": "Hate-crime and non-discrimination statutes exist, but no enforcement record; custody practices are state-run and no operating remedy documented.",
+    "interaction": "Federal/custodial hostility overrides local protections once visitor is detained or removed.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars gender-identity congruent government-funded single-sex facilities; some provinces criminal trespass bathroom laws; arrest documented. State has neutral toilets and protections.",
+    "protection": "State non-discrimination public accommodations and healthcare since 2023; single-occupancy gender-neutral; shield laws for care, though visitor-facing scope unresolved.",
+    "interaction": "State law may reduce private-state friction, but federal and government-funded settings remain restrictive; enforcement not documented.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "National orders treat minors’ care as mutilation, freeze funding, block insurance/loans, subpoena hospital records; adults may lose continuity where federal care applies.",
+    "protection": "State healthcare nondiscrimination and shield laws listed, but visitor-facing operation unresolved; adult continuity may be state-protected if outside federal custody.",
+    "interaction": "Care for minors/families collides with federal criminalization; adult care is uneven and depends on federal-state locus.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal executive orders remove gender recognition and pronoun policies; counterterrorism language names radical pro-transgender as hostile extremism; correctional policies enforce conversion.",
+    "protection": "2020 employment ruling and hate-crime statute remain; state panic defense repealed; several orders enjoined but litigation unresolved.",
+    "interaction": "Federal threat framing legitimises local hostility and weakens complaint-taking; state protections are partial and unproven.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "A trans minor travelling with guardian risks care denial, school inquiry, criminal investigation of teachers/social transition, funding actions; sports policy defers to law.",
+    "protection": "State anti-bullying, conversion-therapy ban, and school-nondiscrimination climate exist; shield laws may protect care but application to visitors not documented.",
+    "interaction": "Minor exposure is higher than adult-alone: care, schooling, sports and document checks can trigger state/federal investigation.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No documented trans-specific violence or visitor police targeting in this state; national bias-incidence data insufficient; official hostility may raise friction.",
+    "protection": "State hate-crime enhancements and panic-defense repeal; no incident rates or enforcement outcomes recorded.",
+    "interaction": "Street risk is uncertain; any violence response depends on federal-state jurisdiction and untested protections.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Litigation pending but no operational relief documented for entry, custody, facilities, care; shield-law scope and private venues unknown.",
+    "protection": "Civil-liberties suit, courts blocked some orders, legal FAQ, complaint boards exist; outcomes not shown to protect visitors.",
+    "interaction": "Remedy uncertainty means combined regime cannot be scored above its documented federal severity.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "That anchor has routine criminal arrest, months of pretrial custody, beatings, capital ambiguity, and consular denial. Here border fraud and custody abuse are severe, but no documented routine presentation prosecution or credible execution; protective state statutes reduce private-state encounters. Lower severity than 0.15-A."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similar tier-1 exposure: birth-sex custody, cross-presentation arrest, and state enforcement. Here national immigration abuse and minor criminalization push lower, while protective state public accommodations and self-ID push higher; net near the 0.25 band."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "That anchor has marker-respecting border policy, trained officers, brief detention with release, and functioning remedies. Here national policy rejects self-selected markers, treats discrepancies as possible fraud/lifetime bar, and custody hostility is documented; far lower."
+   }
+  ],
+  "synthesis": "Federal gates set the operative floor: documents, border screening, detention, and federal facilities. State law raises the ceiling for adult private and state-locus encounters, but because enforcement and shield-law application are undocumented, it cannot cancel federal entry, custody, facility, or minor-care exposure. The combined regime therefore remains high risk, with severe non-fatal consequences and worse sub-band exposure for minors and families."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 9,
+ "region": "66186276B22971435435932:Kentucky",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00516785",
+ "parsed": {
+  "rating": 0.46,
+  "explanation": "The combined operative regime imposes tier-1 universal exposures at the border: passports must record sex assigned at birth, X markers are eliminated for new issues, secondary screening and pat-downs routinely out travellers, and suspected sex 'misrepresentation' can trigger refusal or a lifetime fraud ineligibility finding, with documented cases of confiscated passports and stranding. If detained, national custody regimes document conversion-style policies, forced labour, beatings and sexual abuse. State threat-framing ('radically pro-transgender' extremism lists) raises outing severity. The division adds a minors' care ban in force with no phase-out — a travelling family exposure — and a hate-crime statute excluding gender identity, but no adult facility or presentation criminalisation, and national employment/hate-crime recourse partly operates. Contested courts and municipal protections prevent a lower score; universal exposures prevent a higher one.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Universal: passports restricted to birth-assigned sex, X markers stopped Feb 2025; visa cable directs refusal where documents 'cast reasonable doubt' on sex and possible lifetime fraud finding; documented passport confiscations and stranded travellers; secondary screening and pat-downs risk outing.",
+    "protection": "Passport policy challenged in national courts (Nov 2025 allowed restrictions to take effect); a legal-aid FAQ helps with documentation; limited fraud waivers exist but are never automatic.",
+    "interaction": "Document mismatch at entry can cascade into fraud investigation, refusal, or immigration custody under the national regime; airline/consular checks compound disclosure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections bureau policies from 2026 mandate haircutting, hormone removal, 'conversion' psychiatric therapy for trans inmates; immigration custody shows forced labour ('If you wanna be a man'), beatings, solitary, sexual abuse; a state arrest saw a trans woman held 24h in a men's ward.",
+    "protection": "Prior rescinded national prison LGBTQ order was withdrawn (removing protection); some orders enjoined in court — remedies unresolved.",
+    "interaction": "Any entry dispute, fraud allegation or minor offence can route a visitor into national custody with documented birth-sex placement and abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "No division-wide adult facility ban documented; the 2023 statute restricts public-school student bathrooms by birth sex. Division law on adult use not documented — national map notes other sex-defining laws may affect access.",
+    "protection": "The division's facility restriction is student-scoped; no adult criminal facility offence is documented here, unlike 4 other state/provinces.",
+    "interaction": "A travelling minor faces school-facility birth-sex assignment; an adult visitor's exposure in this division is by contrast uncertain rather than criminalised.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Division minors' care ban in force since July 2023 with no phase-out — a trans minor traveller cannot continue blockers/HRT; guardians face care denial. National proposed rules would bar public insurance for under-18 care.",
+    "protection": "Not documented for adult visitors; no division restriction on adult gender-affirming care is documented.",
+    "interaction": "A travelling family's minor is denied medication continuity; national subpoenaing of hospitals for minors' records raises data exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy (May 2026) prioritises 'radically pro-transgender' groups; 'gender ideology' framing pervades orders; state transgender student arrested under another state's bathroom law. Division hate-crime statute excludes gender identity.",
+    "protection": "National hate-crime statute covers gender identity; 2020 employment ruling protects nationally; some orders blocked in court; document states counterterrorism powers will not target mere disagreement.",
+    "interaction": "State framing delegitimises trans advocacy and normalises official suspicion; division police lack hate-crime enhancement for anti-trans violence.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor travellers face care ban (no phase-out), sports exclusion (trans girls barred), school bathroom birth-sex assignment, and teacher-facilitation prosecution threats; guardians could face state inquiry over facilitating transition.",
+    "protection": "Conversion therapy on minors banned state-wide (Sept 2024); municipal ordinances in 19 cities; national appeals allowed ban to remain but litigation continues.",
+    "interaction": "A guardian seeking continued care for a minor intersects a criminalised provider environment; national rules compound.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented trans-specific for this division; national hate-crime statistics show sexual-orientation bias at 1/7–1/5 of single-bias incidents. Police response not documented as hostile toward visitors here.",
+    "protection": "Division hate-crime statute (sexual orientation) was used successfully in a 2011 beating case with arrests and guilty pleas — recourse machinery exists but omits gender identity.",
+    "interaction": "A trans victim cannot invoke the state hate-crime enhancement, but ordinary assault law and national statute remain available.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Appellate status of the care ban since 2023 unresolved; scope of national employment protection after later litigation unresolved; religious-freedom statute's application to trans service refusals unsourced; adult facility rules here uncertain.",
+    "protection": "19 municipal non-discrimination ordinances; national hate-crime statute; civil-liberties litigation ongoing against passport rules.",
+    "interaction": "Unknowns are open questions, not exposures, but fall on the risk side of contested, shifting rules; enforcement varies district by district.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C mandates birth-sex prison placement and criminalises cross-dressing in administrative buildings. Here adult presentation is not criminalised and the division lacks an adult facility statute, so lower frequency of arrest — but documented custody abuse (forced labour, sexual abuse, conversion policies) is comparably severe, and universal document exposure is broader. Sits materially above 0.25-C."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C lets travellers enter on passports matching presentation with trained officers, brief detention and compensation. Here the opposite: passports must show birth sex, X markers eliminated, secondary screening outs travellers, fraud findings loom, and custody abuse is documented — every universal-exposure feature 0.75-C lacks. Materially below."
+   },
+   {
+    "anchor_id": "0.45-A",
+    "comparison": "0.45-A's biometric registry and deceptive-presentation statute create universal bureaucratic exposure. Here the universal exposure is document-based (passport regime, visa cable) rather than registry-based, with similar outing frequency, but residual protections (national hate-crime statute, employment ruling, enjoined orders, municipal ordinances) are stronger than 0.45-A's. Slightly above, same tier."
+   },
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "0.15-D treats document mismatch as fraud with arrest, beatings, extortion and years of prison. Here fraud findings are possible but waivers exist, litigation is active, and no execution pathway is documented; rule of law retains working courts and injunctions. Well above 0.15-D; the passport regime alone does not reach that tier."
+   }
+  ],
+  "synthesis": "The traveller's worst exposure is universal and state-engineered: the national document regime forces birth-sex markers on passports, entry officers are instructed to refuse or fraud-flag doubtful cases, and screening itself outs — so discovery probability is high and state-implicated. If discovery leads to detention, documented national custody practices (birth-sex placement, hormone removal, abuse) make consequences severe. The division layer is middling: no adult criminalisation, real but partial recourse (municipal ordinances, national hate-crime and employment law), yet a minors' care ban, sports exclusion, student facility restriction and a hate-crime gap directly hit travelling families, and a religious-freedom statute offers a lawful route to service refusal. Courts contesting the national regime cut both ways — some relief operating, some exposure confirmed. Net: elevated risk, above the 0.25 tier, below protective-regime jurisdictions."
+ },
+ "parse_error": null
+}

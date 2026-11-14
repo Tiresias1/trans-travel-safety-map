@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261114e",
-    admin1: "data/admin1.json?v=20261114e",
+    countries: "data/countries.json?v=20261115a",
+    admin1: "data/admin1.json?v=20261115a",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -426,6 +426,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     }
     mode = nextMode;
     document.getElementById("modelPanel").hidden = nextMode !== "admin1";
+    document.getElementById("thoughtPanel").hidden = nextMode !== "admin1";
     for (const k of Object.keys(layers)) {
       if (map.hasLayer(layers[k])) map.removeLayer(layers[k]);
     }
@@ -447,11 +448,30 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
   function selectedModels() {
     return [...document.querySelectorAll(".modelBox:checked")].map(el => el.value);
   }
+  function selectedThoughts() {
+    return [...document.querySelectorAll(".thoughtBox:checked")].map(el => el.value);
+  }
   function applyModelComposite() {
     if (!loadedData.has("admin1")) return;
     const sel = selectedModels();
+    const thoughts = selectedThoughts();
     for (const rec of Object.values(admin1Data)) {
-      if (rec && rec.modelScores) {
+      if (rec && rec.thoughtScores) {
+        const vals = [];
+        for (const t of thoughts) {
+          const byThought = rec.thoughtScores[t];
+          if (byThought) {
+            for (const k of sel) {
+              const v = byThought[k];
+              if (typeof v === "number") vals.push(v);
+            }
+          }
+        }
+        if (vals.length) {
+          rec.score = vals.reduce((a, b) => a + b, 0) / vals.length;
+          rec.band = bandLabel(rec.score);
+        }
+      } else if (rec && rec.modelScores) {
         const vals = sel.map(k => rec.modelScores[k]).filter(v => typeof v === "number");
         if (vals.length) {
           rec.score = vals.reduce((a, b) => a + b, 0) / vals.length;
@@ -465,6 +485,8 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     }
   }
   document.querySelectorAll(".modelBox").forEach(el =>
+    el.addEventListener("change", applyModelComposite));
+  document.querySelectorAll(".thoughtBox").forEach(el =>
     el.addEventListener("change", applyModelComposite));
 
 

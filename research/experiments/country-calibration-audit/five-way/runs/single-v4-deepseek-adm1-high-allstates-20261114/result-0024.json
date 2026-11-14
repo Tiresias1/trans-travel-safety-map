@@ -1,0 +1,82 @@
+{
+ "cell": 24,
+ "region": "66186276B63937528568220:Iowa",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.01443247",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "The combined national and state regime is hostile: binary-sex entry rules, visa refusal for document discrepancy, possible lifetime fraud ineligibility, national facilities exclusion, a state school bathroom rule, and removed state anti-discrimination remedies. Immigration custody and national prison policies document severe abuse. Protections are partial: a national hate-crime statute, some court injunctions, legal-aid guidance, and a state Supreme Court care ruling. The state sits in the worst legal-risk group. The traveller's worst realistic outcomes are border refusal or stranding, facility exclusion, no state remedy for discrimination, and abuse if detained; execution or routine imprisonment for trans status is not documented. Net: High Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex visa and passport rules; X markers not processed; cable refuses cases with document discrepancy and considers permanent ineligibility for sex misrepresentation; trans athlete entry ban.",
+    "protection": "Passport policy challenged in court; legal-aid FAQ; existing X passports valid until expiry.",
+    "interaction": "Border encounter can escalate to fraud investigation, refusal, or lifetime ban.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement, sexual abuse; national corrections conversion-therapy policies; trans prisoner count no longer reported.",
+    "protection": "Some executive orders enjoined; national hate-crime law; legal challenges.",
+    "interaction": "Document discrepancy can lead to detention and birth-sex custody with documented abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars gender-congruent use of government-funded single-sex facilities; state school rule requires birth-certificate restrooms for everyone on school grounds, including visitors; 2023 student bathroom restriction.",
+    "protection": "No documented working remedy; some states lack bans, but this state has a school rule.",
+    "interaction": "Federal facilities and school events expose or exclude; state anti-discrimination remedy is absent.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State 2023 law bars gender-affirming care under 18; proposed national insurance ban for under 18; state removed gender identity from civil rights, limiting remedy for denial; hospital subpoenas.",
+    "protection": "State Supreme Court 2019 protected adult surgery coverage; court injunctions; adult care not universally banned.",
+    "interaction": "Minor denied care; adult may face refusal with no state remedy.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National orders frame care as mutilation; direct investigation and prosecution of teachers facilitating social transition; counterterrorism strategy names 'radically pro-transgender' groups; justice reward rhetoric.",
+    "protection": "Some orders enjoined; national hate-crime statute; legal challenges.",
+    "interaction": "Hostile framing may embolden state and local enforcement and service refusal.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State care ban for under 18; school bathroom rule for students and visitors; national order targets teachers using preferred names or pronouns; insurance ban proposed.",
+    "protection": "Some injunctions; state parentage laws positive but not protective for trans minors.",
+    "interaction": "Parent with trans minor faces care denial, school restroom restriction, possible inquiry.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific violence figures; legal-risk grade predicts state behaviour, not resident behaviour; violence counts are undercounts; state removed anti-discrimination.",
+    "protection": "National hate-crime statute covers gender identity; some state court protections.",
+    "interaction": "If violence, national hate-crime recourse exists; police response is not documented; no state remedy for discrimination.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "State no anti-discrimination remedy; 2026 law bars stronger local protections; national passport and border rules challenged but unresolved; enforcement varies.",
+    "protection": "Legal-aid FAQ; national hate-crime law; court injunctions; state Supreme Court care ruling.",
+    "interaction": "Remedies are slow and unpredictable; legal aid exists but is not guaranteed.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "0.15-A has criminalisation of gender presentation and routine arrests with lethal risk. Our dossier lacks that; border and facility harms are severe but no routine imprisonment or execution for trans status is documented. Safer than 0.15-A."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A has police raids, extortion, and document-match clinic rules. Our dossier lacks documented raids but adds national border refusal, lifetime ineligibility, facilities exclusion, and no state anti-discrimination. Similar or slightly lower, though legal challenges provide some mitigation."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has administrative border screening, refusal, and appeals. Our dossier has worse consequences: potential permanent ineligibility, immigration custody abuse, facilities bans, and no state remedy. Lower than 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has trained border officers, brief detention, and working remedies. Our dossier has hostile document rules, facility exclusion, no state anti-discrimination, and custody abuse. Much lower than 0.75-C."
+   }
+  ],
+  "synthesis": "The operative regime combines national binary-sex border screening and facilities exclusion with a state that has removed gender-identity anti-discrimination and imposes a school restroom rule. A trans visitor with a document mismatch can be refused entry or face lifetime ineligibility; if detained, immigration custody abuse is documented. In daily life, federal facilities and school grounds carry exclusion; private refusal lacks a state remedy. National hate-crime law and court injunctions provide partial recourse, but the state is in the worst legal-risk group. The result is High Risk: serious, recurring exposure without reliable remedy, though not routine imprisonment or execution."
+ },
+ "parse_error": null
+}

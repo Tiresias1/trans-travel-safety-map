@@ -1,0 +1,78 @@
+{
+ "cell": 5,
+ "region": "66186276B15934532614691:Massachusetts",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006481612",
+ "parsed": {
+  "rating": 0.58,
+  "explanation": "Combined regime is a highly protective state/province embedded in a hostile national system. For an adult travelling alone, daily accommodation, restaurants, transport, hate-crime recourse and adult care access are strong local positives; unrepealed sodomy provisions are unenforced and secondary. But national entry screening, passport/visa marker rules, federal facility exclusion, and documented federal/immigration custody abuse remain traveller-facing and are not cancelled by state law. With a minor, youth-care restrictions, crisis-service shutdowns and school/criminalisation threats add uncertainty, although the state shield and healthcare codification reduce provider risk. The balance sits in Elevated Risk rather than High: severe federal consequences if detained or refused at the border, offset by robust local protections for routine visits.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal order treats sex as birth binary; passport/visa self-selection barred. Officers must refuse cases with document/evidence discrepancy about sex and consider immigration fraud/lifetime ineligibility. Foreign advisories and stranded travellers are documented.",
+    "protection": "State issues self-declared X/birth/name documents, genderless marriage forms and confidential name changes; existing X passports remain valid. These do not control national entry screening.",
+    "interaction": "State protections help after entry but not at visa/passport checks. Mismatched home passport or presentation can trigger federal refusal or fraud review.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections and immigration custody documented forced labour, beatings, solitary confinement, severe sexual abuse, and hormone removal/conversion-style policies for transgender inmates.",
+    "protection": "State anti-discrimination, hate-crime and public-accommodation law; no documented local trans-specific arrest or detention practice in this state.",
+    "interaction": "Federal/immigration custody can apply if a traveller is detained at border or charged, despite local protective state law.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars transgender people from government-funded single-sex facilities congruent with identity; federal buildings/land risk mismatch. Other jurisdictions have bathroom crimes, not this state.",
+    "protection": "State public-accommodation law covers hotels, restaurants, shops and transport; anti-discrimination applies to state contractors; no documented state facility ban.",
+    "interaction": "Federal facilities/funded services remain under national rule; state law protects many local/private facilities but not federal ones.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National youth-care hostile: executive order calls care mutilation, directs law enforcement at schools, threatens teachers, closes youth crisis services, proposed insurance bars for under-18; litigation unsettled.",
+    "protection": "State shield protects providers/patients from home-jurisdiction charges; codified gender-affirming healthcare and conversion-therapy ban make adult access protective.",
+    "interaction": "Shield helps local care, but federal funding and youth directives create uncertainty; adult care safer than minor care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism prioritises “radically pro-transgender” violent groups; DOJ reward memo associates radical gender ideology; hostile rhetoric raises chilling risk.",
+    "protection": "State hate-crime covers gender identity, with reporting unit/task force and public-accommodation enforcement; no local terrorism framing enforcement documented.",
+    "interaction": "National framing may chill advocacy or protests; local law-enforcement recourse in state is stronger than national posture.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor faces entry marker doubt; guardian exposure may arise if schooling or youth care triggers federal directives; service shutdowns and proposed insurance barriers threaten continuity.",
+    "protection": "State bans conversion therapy, codifies care, has school bullying procedures, confidential names and public-accommodation protections; shield supports travelling families.",
+    "interaction": "Short tourist minor risk lower; school/clinic use triggers federal-state conflict. Guardian prosecution not documented, risk uncertain.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No current state-specific trans street-violence rate or incident documented. National hostility and majority support for birth-marker documents may embolden some actors.",
+    "protection": "State hate-crime statute, reporting, task force, public-accommodation law and Most Protective ranking; local police likely take complaints.",
+    "interaction": "Local police protect visitors; violence in other jurisdictions or federal custody does not define this state’s street risk.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Litigation over passport/executive orders and youth rules is unresolved; courts allowed passport restrictions; federal/local enforcement varies and can change.",
+    "protection": "Civil-liberties litigation, legal FAQ, state hate-crime reporting/boards, shield law and codified care provide local remedies.",
+    "interaction": "State remedies operate locally; federal entry/custody remedies are uncertain and slower; combined regime not fully predictable.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similarity: federal birth-sex/custody harms and hostile document regime. Difference: local state law is sanctuary-like, with public accommodation, hate-crime recourse, care shield and no routine arrest for presentation. Thus above 0.25-C because daily exposure is much lower unless border/federal custody intervenes."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Comparable for secondary border screening and administrative denial. Lower because federal fraud/lifetime ineligibility and documented immigration custody abuse make detention consequences worse. Higher on local services due strong state protections. Overall near this anchor, slightly below its safer end."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Much lower: 0.85 assumes national equality law, protective border conduct, effective remedies and no credible detention risk. This regime has active federal entry hostility, facility/custody exposure and contested youth care, even though state/local protections are strong."
+   }
+  ],
+  "synthesis": "The operative exposure is split by level: federal gates create continuous document/entry risk and, if detention follows, severe custody harm; state/provincial law creates sanctuary-like service, hate-crime, accommodation and care protections. Adult-alone risk is moderate because routine local travel is protected, while federal facilities and border screening raise risk. Minor/guardian risk is slightly worse where schooling or youth care triggers federal directives, though the shield mitigates local provider risk. Unresolved litigation means the combined regime remains variable."
+ },
+ "parse_error": null
+}

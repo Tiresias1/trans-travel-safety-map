@@ -1,0 +1,82 @@
+{
+ "cell": 21,
+ "region": "66186276B52324970173776:Tennessee",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0079424",
+ "parsed": {
+  "rating": 0.26,
+  "explanation": "Combined regime for a visitor to this state is High Risk. Tier-1 universal exposures compound: a 2026 statute mandates birth-sex facility use and birth-sex prison placement and bars trans women from shelters; a 2019 statute defines trans bathroom use as indecent exposure; national passport sex-marker restrictions and fraud-based lifetime ineligibility apply at entry; and national immigration custody shows documented abuse. The state adds an enforceable criminal presentation statute (felony on repeat) and minors' care bans reaching guardians. Partial mitigation: the national hate-crimes statute and national employment case law apply, and a state appellate ruling is not documented as a trans-specific arrest. The 7.8/100k killing rate is excluded as an undercount floor. Enforcement against visiting trans people is not documented; statutory burden drives the rating.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport regime blocks or confiscates non-matching sex markers; foreign ministry cable directs refusal on any documentary discrepancy; fraud ground can yield lifetime ineligibility; stranding abroad documented; athlete entry ban; multiple foreign advisories.",
+    "protection": "Not documented. Civil-liberties suit pending; X-marker passports valid until expiry.",
+    "interaction": "Home passport governs; a mismatch triggers national refusal before any state law applies, so state exposure stacks on top of border refusal for the same traveller.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Capitol trespass arrest of a trans student (handcuffed, 24 hours in men's ward) under a state facilities law; 2019 indecent-exposure definition; national immigration custody with forced labour, beatings, solitary and sexual abuse reported; national corrections policy of forced conversion-style treatment for trans inmates.",
+    "protection": "Pretrial release was available in the capitol case; no state-level custody protection documented.",
+    "interaction": "Facility-law arrest leads into birth-sex holding; national immigration detention carries national abuse documentation; the chain runs from state trespass to national custody.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State statute requires trans people to use facilities matching birth sex; trans women barred from women's shelters; trans inmates placed by birth sex; state trespass offence applies to public building restrooms in the state; national facility restrictions reach government buildings.",
+    "protection": "A 2021 small-business sign mandate was struck down and is not in force; no operative facility protection documented.",
+    "interaction": "Universal exposure: any trans visitor using a sex-segregated facility is exposed, with state and national rules reinforcing each other and custody placement following birth sex.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Gender-affirming care for under-18s banned, including out-of-state telehealth; provider suits by the chief prosecutor up to $25,000; civil penalties for adults assisting minors; care banned for inmates since 2024; national proposed rules would bar public reimbursement for under-18s.",
+    "protection": "Not documented for trans-specific care access for visitors.",
+    "interaction": "A family travelling with a minor cannot obtain in-state care, and guardians face regret suits; a prisoner's care is denied under state law.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Adult-entertainment statute criminalises male or female impersonation where a child could see it (felony on repeat), upheld on appeal and at the top court's refusal; no state-level hate-crime coverage of gender identity; national counterterrorism strategy names 'radically pro-transgender' groups; 2021 reporting of police turning a blind eye and a gay/trans panic defence.",
+    "protection": "A 2019 AG opinion treats selection of a transgender victim as a gender-based sentencing enhancement; enforcement against visitors not documented.",
+    "interaction": "State statute and national threat framing reinforce each other; the presentation statute's application to everyday visitor presentation is unresolved.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Teachers must report pronoun or name requests to parents; school sports restricted by birth sex; school bathroom ban in litigation; care ban with guardian regret suits and adult-assistance penalties; risk of guardian investigation for a travelling child seeking care.",
+    "protection": "Not documented. Litigation on school bathrooms and sports unresolved.",
+    "interaction": "A minor's school, care and sports access can be disrupted, and the guardian travelling with them becomes a potential defendant.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Reports of LGBTQ people refused service and beaten (undated); police and officials reportedly ignoring assaults (April 2021 reporting); gay and trans panic defence available. The 7.8/100k killing figure is excluded as an undercount floor; the 0/1/2 incident counts are raw and undenominated.",
+    "protection": "National hate-crimes statute covers gender identity; 2019 AG opinion supports sentencing enhancement; trans-specific violence prosecutions not documented.",
+    "interaction": "Recourse exists nationally but local police response is documented as poor, so a visitor's complaint may not produce protection.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No state statutory protection in employment, housing or public accommodation; local ordinances preempted; state among the lowest-ranked for LGBTQ rights; the licence-marker suit outcome and status of the 2026 Act's challenges are unknown.",
+    "protection": "National employment law (2020 ruling) and national hate-crimes statute apply; a state appellate ruling is not a protection.",
+    "interaction": "Recourse is largely national and narrow, so state-level refusals and facility enforcement have no clear state remedy.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-E",
+    "comparison": "Lower bound: Tamirra arrests visitors for impersonation, assaults in jails go unpunished, and prisoner complaints are punished. This state has no documented arrests of visitors under its presentation law, no documented state-prison violence, and no capital exposure, so it sits above 0.15 but shares the same birth-sex custody and presentation-law exposure."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest analogue: birth-sex prison housing, a cross-dressing statute, and solitary as protection. This state adds a 2026 shelter bar, a 2019 indecent-exposure definition, minors' care criminal provisions and guardian suits, and national passport refusal and immigration custody abuse, but lacks Oskara's documented arrests or prison violence, so it sits similar, slightly lower."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Higher-tier comparator: Vellandra excludes visitors via a universal register and discretionary refusal, with no arrest or criminal charge. This state has enacted criminal exposure (felony presentation law, trespass arrest, indecent exposure), birth-sex custody, and minors' care felonies, so it is materially lower than 0.35."
+   },
+   {
+    "anchor_id": "0.75-A",
+    "comparison": "Upper-tier comparator: Vesperia bars refusal of gender-related care and has a working remedy with reimbursement. This state bans minors' care, bars care for inmates, and lacks statewide non-discrimination and remedies, so it is far below 0.75. Reaching 0.75 would require removing the facility, custody and presentation statutes and a working statewide protection regime."
+   }
+  ],
+  "synthesis": "The visitor-facing regime is a compounding stack. The national passport and border refusal operate first, then the state's birth-sex facility and custody rules and its presentation statute apply, and the minors' care bans reach guardians. The 2021 small-business sign mandate is not in force and the 2026 Act's enforcement is undocumented, so those exposures are rated on enacted text only. The dossier documents no visitor-specific arrests under the presentation law and no state-prison violence, which keeps the rating above the lethal-custody anchors. Violence is excluded from scoring as an undercount floor, and state police and remedy records are dated or thin. The result is a High Risk rating, not Severe, because outcomes documented are detention, humiliation and denial rather than execution or imprisonment-as-likely."
+ },
+ "parse_error": null
+}

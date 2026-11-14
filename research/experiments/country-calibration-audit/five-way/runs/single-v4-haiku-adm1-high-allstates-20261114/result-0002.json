@@ -1,0 +1,86 @@
+{
+ "cell": 2,
+ "region": "66186276B10933057601622:Wyoming",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0089652",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined operative regime sits in the High Risk band. Documented visitor-facing exposures compound: national entry screening refuses on document discrepancy and allows a suspected-misrepresentation lifetime-ineligibility finding; national immigration custody reports forced labour, beatings and severe sexual abuse of trans men; corrections policy reportedly denies care. The division bars trans people from birth-mismatched public restrooms and sleeping quarters, creates a cause of action against others' use, and bans youth gender-affirming care and sports. It has no state nondiscrimination or hate-crime statute. A trespass-based criminal route with one documented arrest exists in a comparable state; its application to this division is uncertain. No lethal pathway is documented. Protections are resident-facing, pending in court, or not shown operating for visitors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Document-sex discrepancy requires refusal and evidence requests; suspected wilful misrepresentation may support a lifetime fraud ineligibility finding, though never automatic. Advisories from allied governments and detentions of neighbouring citizens over visa issues are documented.",
+    "protection": "Ineligibility needs all four elements and limited waivers exist. Passport marker restrictions are being litigated.",
+    "interaction": "An entry refusal or document flag can route a visitor into secondary screening and detention, linking to the custody exposure.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody: reported forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Corrections: adopted conversion-style policies (hair cut, hormone removal), reported denial of care, and reporting on transgender prisoner numbers stopped from 2025.",
+    "protection": "Not documented as operating; related policies are in litigation.",
+    "interaction": "Document flags at entry or a facility-use arrest can lead to custody where these harms are documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National policy bars identity-congruent access to government-funded single-sex facilities. Division law requires birth-sex restrooms, changing areas and sleeping quarters in public facilities. Nine states plus one ban facility use in all government buildings including schools; six reach some private settings.",
+    "protection": "Exemptions cover chaperoning, emergencies, custodial and out-of-order cases, but none is documented as a general accommodation for visitors.",
+    "interaction": "Division cause of action lets others sue over opposite-sex encounters. In comparable criminalising states, wilful entry plus refusal to leave is trespass.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division bans gender-affirming care for children and surgery for minors. National hospital subpoenas sought records of under-19 patients, including names and SSNs. Proposed rules would bar public reimbursement under 18. Adult care restrictions in the division are not documented.",
+    "protection": "No care protection for visitors is documented.",
+    "interaction": "A travelling minor cannot obtain such care locally, and records demands raise discovery risk for families seeking it.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names radically pro-transgender groups as a neutralisation priority; a cash reward scheme targets leadership; the national posture frames trans people as a policy problem, and the division sports law reinforces this.",
+    "protection": "The strategy disclaims targeting people who merely disagree; several orders are enjoined.",
+    "interaction": "Indirect for ordinary visitors, but visible advocacy could draw state attention.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Division school law requires pre-kindergarten to secondary students to use birth-sex restrooms; accommodation is available on request. Youth care is banned. Teachers face prosecution for facilitating social transition, including preferred names.",
+    "protection": "Reasonable accommodation for students who do not wish to use birth-sex facilities.",
+    "interaction": "A travelling child may face segregated facilities or lack of care; guardians face inquiry risk through school and care channels.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No trans-specific violence rate is documented. Bias data cover sexual orientation, not gender identity. The division lacks a state hate statute; 37 states lacked gender-identity anti-bias statutes as of 2019. One trespass arrest is documented (handcuffed, 24 hours in men's ward).",
+    "protection": "A national hate-crimes statute covers gender identity; three city ordinances exist. Neither is documented as operating for visitors.",
+    "interaction": "Police response in the restroom context is enforcement, not protection.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Whether the division's facility law has been challenged or enforced is not sourced. Visitor exposure depends on which measures are in effect at travel.",
+    "protection": "National employment recourse and national courts are available; passport litigation is pending.",
+    "interaction": "The policy is in flux, so present exposure may differ from the dated record.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-E",
+    "comparison": "Ours sits above. 0.15-E has impersonation arrests, jail assaults and an ambiguous capital provision. Ours documents custody sexual abuse and denial of care, but no sweeps for presentation, no capital exposure, and only one trespass arrest. Ours would need systematic presentation arrests and capital exposure to match it."
+   },
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Closest analogue. 0.25-C has birth-sex prison housing, presentation-based arrests and violence in custody. Ours has documented custody abuse and facility bans, but no documented presentation-arrest pattern or birth-sex housing for visitors. Ours is similar, slightly higher."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Ours sits below. 0.35-A is a discretionary entry exclusion without custody abuse. Ours adds documented sexual abuse in immigration custody, universal facility exposure and a possible trespass route. Ours has no universal entry bar."
+   },
+   {
+    "anchor_id": "0.75-D",
+    "comparison": "Ours is far lower. 0.75-D has an equality statute, operating protective orders and police accountability. Ours has no state nondiscrimination or hate law, facility bans and a youth care ban, and no documented working remedy for visitors."
+   },
+   {
+    "anchor_id": "0.95-A",
+    "comparison": "Ours is far lower. 0.95-A has operating equality enforcement, trained border officers and no custody harm. Nothing comparable is documented here."
+   }
+  ],
+  "synthesis": "Exposures chain across sovereigns. A document discrepancy at entry can lead to refusal, secondary screening and detention, where custody harms are documented. Facility use is universal exposure: the division bars birth-mismatched restrooms and sleeping quarters, and the cause of action allows third-party complaints, while trespass criminalises refusal to leave in some states. A travelling minor meets the school restroom rule, the youth care ban and records demands. Remedies are pending in court or resident-facing, and the national hate statute and city ordinances are not documented as working for visitors. Protective machinery does not offset the documented state-imposed constraints, so the rating stays in the High Risk band."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,82 @@
+{
+ "cell": 33,
+ "region": "66186276B75419826371250:Georgia",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.0049685",
+ "parsed": {
+  "rating": 0.43,
+  "explanation": "The combined regime imposes universal, traveller-facing exposures at the national layer: visa adjudication instructions refuse or investigate applicants whose documents cast doubt on sex, with a lifetime fraud-ineligibility pathway; passport-marker rules strand travellers; foreign governments have issued entry advisories after detentions. Immigration custody shows documented forced labour, beatings and sexual abuse of trans detainees — state-directed severe harm, though not a routine outcome for a compliant visitor. The division adds a minors' care ban, a coastal-city collapse of adult surgical access, and epidemic-level violence against trans women in its major city (counts without denominator). Mitigations are partial and operating: courts enjoin orders, a settlement secures employee-plan coverage, hate-crime statute exists. No execution or near-certain imprisonment pathway is documented. This sits between the systematic-exclusion 0.35 anchors and the bureaucratic-exposure 0.45 anchors.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented universal exposure: visa officers instructed to refuse cases on sex discrepancies and to consider lifetime fraud ineligibility for wilful misrepresentation; passport-marker restrictions; trans travellers report confiscation and stranding; foreign advisories issued after detentions.",
+    "protection": "Fraud finding requires four elements, is never automatic, with limited waiver; litigation against passport rules unresolved; legal-aid FAQ exists.",
+    "interaction": "Document discrepancy can escalate to fraud allegation, refusal, or detention at entry; interacts with federal custody regime downstream.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: trans detainees in immigration custody subjected to forced labour, beatings, solitary confinement and severe sexual abuse; corrections bureau adopted policies described as conversion therapy for trans inmates and stopped reporting trans prisoner counts.",
+    "protection": "Not documented for visitors; earlier prison LGBTQ policy rescinded by executive order.",
+    "interaction": "Any entry dispute or alleged misrepresentation can route a visitor into federal immigration custody where documented abuse occurs.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars congruent facility use in federally funded single-sex facilities; many state/provinces ban facility use per identity, four criminalise in circumstances; this division's own facility law is not documented.",
+    "protection": "Most mapped states and the capital district have no ban in mapped categories; criminal trigger in one documented statute requires refusal to depart.",
+    "interaction": "Visitor exposure varies by state/province; federal facilities restriction applies nationwide regardless of local law.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Division statute bans transition care for under-18s (licence revocation penalty); coastal-city hospital cancelled all gender-affirming surgeries in 2025 including an adult's pre-approved procedure; national funding directives narrow provision.",
+    "protection": "Employee health-plan settlement requires coverage of medically necessary care including minors' care obtained outside the division; grandfathering for minors on HRT pre-2023.",
+    "interaction": "A travelling family cannot lawfully obtain minors' transition care in the division despite plan coverage; adult surgical access depends on funding decisions elsewhere.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented state threat-framing: counterterrorism strategy prioritises neutralising 'radically pro-transgender' groups; law-enforcement reward memo references 'radical gender ideology'; schools order directs prosecution of teachers facilitating social transition; records subpoenas of hospitals treating under-19s.",
+    "protection": "Language does not name gender ideology as reward criterion; orders partly enjoined; the strategy disclaims targeting mere disagreement.",
+    "interaction": "Raises outing probability and chills associational and care-seeking behaviour; primarily aimed at residents and advocates but envelops visitors' data and providers.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Under-18s cannot lawfully receive transition hormones or surgery from division-licensed clinicians; hospital subpoena programme targeting under-19 patient records; national proposed rules would bar public insurance reimbursement; teacher-prosecution order chills school presence.",
+    "protection": "Settlement can require plan payment for minors' care obtained outside the division; grandfathered HRT continues.",
+    "interaction": "A guardian travelling with a trans minor faces care denial in-jurisdiction, potential record exposure via hospital subpoenas, and no lawful local provider despite coverage.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Documented fatal shootings of Black trans women in the division's major city, described by police as epidemic-level; raw counts lack denominators, so elevation above background is not established; 4.8/100k rate is an acknowledged undercount floor.",
+    "protection": "Police actively investigated the 2023 attacks; national gender-identity hate-crime statute provides recourse, though coverage is patchy across states.",
+    "interaction": "Police framing as epidemic coexists with active investigation; outcomes of investigations unrecorded.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Key questions unresolved: enforceability of the 2023 care ban pending litigation, permanence of surgical suspension, facility-law status in this division, and which measures operate at travel time.",
+    "protection": "Courts have enjoined several orders; settlements and hate-crime statute operate; equality protections exist in 22 state/provinces plus capital district.",
+    "interaction": "Litigation volatility means the operative regime can tighten or loosen between booking and arrival; undocumented is not safe.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Worse than this case. 0.25-A documents repeated raids, fines, informal payments and recurring custody of visitors, plus proposed harsher amendments. Here no division-level raid pattern is documented; custody abuse is documented but in immigration detention rather than routine street policing, and courts actively enjoin parts of the regime."
+   },
+   {
+    "anchor_id": "0.45-C",
+    "comparison": "Closest match. Both feature universal gatekeeper-verification exposure (visa sex-discrepancy refusals, document screening), exposure throughout daily life rather than only at borders, custody uncommon, no lethal pathway, and remedies that exist but are slow and partial. The detention-abuse record here is more severe than 0.45-C's, offsetting its weaker custody frequency."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "Similar care axis. 0.55-C's ward assignment by document marker parallels this jurisdiction's funded-facility exclusion and care cancellations, with remedies uneven. This case is pulled below 0.55-C by the lifetime fraud-ineligibility pathway, immigration-custody abuse, and state threat-framing of pro-trans ideology."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Materially worse than this anchor. 0.75-C shows trained respectful border officers, working tribunal remedies, and brief detention only. Here border policy is itself the exposure (refusal instructions, athlete-entry ban, stranded travellers), and protective machinery is contested rather than settled."
+   }
+  ],
+  "synthesis": "The operative regime is a two-layer system in tension. The national layer imposes universal traveller-facing exposures — sex-discrepancy visa screening with a lifetime fraud bar, passport-marker restrictions, federally funded facility exclusion, and threat-framing of pro-trans ideology — and documents severe abuse in immigration custody, the destination a discrepant traveller can be routed into. The division layer adds a minors' care ban, collapsing adult surgical capacity in one city, and epidemic-level (though denominator-less) violence against trans women, while offering partial protections: a health-plan settlement covering care, grandfathered treatment, police investigating attacks, and courts enjoining national orders. Severity is high but short of imprisonment-as-default: exclusion, fraud ineligibility, detention abuse, care denial. With remedies only partially operating and key rules volatile, the case sits between the 0.35 exclusion anchors and the 0.45 bureaucratic-exposure anchors, near 0.43."
+ },
+ "parse_error": null
+}

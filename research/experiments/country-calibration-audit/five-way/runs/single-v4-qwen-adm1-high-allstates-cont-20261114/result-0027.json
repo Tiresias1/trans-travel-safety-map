@@ -1,0 +1,78 @@
+{
+ "cell": 27,
+ "region": "66186276B65591139260314:Florida",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.007166382",
+ "parsed": {
+  "rating": 0.2,
+  "explanation": "Combined regime is high risk: federal document and entry restrictions apply to all trans travelers; mismatches can refuse visas, strand people, or trigger fraud findings. Federal and subnational facility bans, including this division’s criminal-trespass arrest, create universal on-the-ground exposure. Immigration custody and corrections report severe abuse, and official counterterrorism language frames trans advocacy as threat. Some subnational protections exist but are uneven or resident-facing. A trans minor with a guardian faces additional care/school scrutiny. Violence counts lack a background, but the combined exposure and severity put the score near the 0.20 boundary.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal executive order limits passports/visas to male/female assigned sex, eliminated X, and allows refusal where documents/presentation or doubt mismatch sex. Suspected sex misrepresentation can support fraud grounds and permanent ineligibility; travelers report confiscation, blocked processing, stranding.",
+    "protection": "Existing X passports remain valid; litigation and legal-aid FAQs contest some practices; protective subnational or foreign-marker acceptance does not offset federal entry screening.",
+    "interaction": "Document mismatch can escalate from secondary review to visa refusal, departure/stranding, or fraud finding; emergency/identity checks can reveal marker.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports trans men forced labour, beatings, solitary and severe sexual abuse. National corrections adopted conversion-style rules and denied care; stopped reporting trans prisoners. Facility arrest could lead to custody with birth-sex risk.",
+    "protection": "No documented operative visitor safeguard; court challenges partially blocked some policies but not custody abuse or detention placement protections.",
+    "interaction": "Discovery at border, school, facility, hospital, or police stop can route a visitor into interrogation/immigration detention where severe harms are documented.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars gender-congruent use of government-funded single-sex spaces; many state/provinces ban public buildings, schools, sometimes private. This division criminalizes non-departure from opposite-sex facilities as trespass, covering airports, parks, beaches, courts, jails.",
+    "protection": "Some jurisdictions lack mapped bans; private businesses outside state statute; but no traveler-facing protection against federal/state exclusion or criminal exposure.",
+    "interaction": "Continuous universal exposure if visitor uses public or school-adjacent facilities; refusal or inability to explain can result in order to leave, arrest, detention.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal/state policies restrict gender-affirming care, especially minors; adult insurance, physician, waiting/conscience barriers; youth crisis services defunded. A visitor seeking emergency or continuity care may face provider refusal and disclosure.",
+    "protection": "Court stays/injunctions and varied state rules partially check care bans; no documented operative guarantee for visitors or minors.",
+    "interaction": "Medical needs can intersect with facilities, documents, school/parent scrutiny, or fraud suspicion, especially for family travel.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Officials treat trans rights as radical ideology and counterterrorism targets pro-transgender groups; justice department purges materials; this division has no gender-identity hate-crime coverage and one bathroom arrest.",
+    "protection": "National employment/hate-crime law cover gender identity; local/state protections exist elsewhere; courts contest some orders, but are not traveler safeguards.",
+    "interaction": "Threat framing legitimizes stops, investigations and refusals; uneven local protections do not neutralize federal hostility or state criminal facility law.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Minor care bans, funding freeze, custody modification and prosecution of adults facilitating social transition create risk for travelling families; gendered school/facility rules may expose a minor and guardian.",
+    "protection": "No documented visitor-specific minor protection; national/local anti-discrimination or marriage rules do not guarantee family care or schooling access.",
+    "interaction": "A guardian seeking care, school activity, or using facilities with a minor may trigger inquiries, refusals, or scrutiny.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Reported high trans-woman homicide rate and Do-Not-Travel labels, but no background rate; police enforce facility trespass, and state protections lack gender-identity coverage.",
+    "protection": "National hate-crime law and some city/state protections; no documented reliable protection of trans visitors from public or police hostility.",
+    "interaction": "Street risk must be weighted cautiously absent denominators, but hostile facility enforcement and official framing raise encounter risk.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Visa/fraud consequences are discretionary; facility statute constitutionality untested; airport practice and care status unresolved; litigation effects unpredictable; short stays and fear of retaliation impede redress.",
+    "protection": "ACLU suit, legal-aid FAQ, court challenges and ombuds-like mechanisms exist; effectiveness for travelers unproven.",
+    "interaction": "Partial remedies lower predictability; a traveler may not know operative rules until screened, detained, refused, or arrested.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "0.25-A is similar: document/facility hostility with short jail and no capital. The dossier is lower because federal passport/visa rules can block entry, fraud findings can create lifetime ineligibility, immigration custody reports severe sexual abuse, and the division's facility law creates criminal arrest exposure; it is above 0.15 because long pretrial/capital punishment is not documented."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "0.55-B has extended immigration screening but penalties stay administrative, appeals/consular notification exist, and custody is barred by policy. This regime is materially riskier: federal document rules, fraud/permanent ban consideration, custody abuse, criminal facility trespass, and threat framing make detention and serious consequences credible."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A features gender-identity equality law, chosen-name documents, trained police, oversight and compensation. This regime is opposite: federal documents require assigned-sex markers, facilities are restricted and criminalized, immigration/prison custody harms are documented, and official counterterrorism language frames trans advocacy as threat, so far lower."
+   }
+  ],
+  "synthesis": "The operative regime compounds federal document control with subnational facility criminalization. For a trans visitor, mismatch or presentation can lead to entry denial, stranding, fraud scrutiny, or arrest for refusing to leave a gendered public space. Immigration and corrections custody reports make detention outcomes severe, while counterterrorism rhetoric normalizes investigation. Local protections exist but are resident-facing or uneven and do not offset federal rules. The violence count lacks background, so weight comes primarily from universal facility, entry, and custody exposures. Family travel adds care/school scrutiny. This yields High/Severe risk near 0.20."
+ },
+ "parse_error": null
+}

@@ -1,0 +1,78 @@
+{
+ "cell": 6,
+ "region": "66186276B17406925856308:Vermont",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006741662",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "Combined national–state regime: federal document rules create border mismatch exposure—refusal, evidence demands, possible fraud bar. Federal facilities exclude trans people from government-funded single-sex spaces; custody practices include birth-sex placement, conversion measures, immigration abuse, and a restroom arrest; no execution is documented. Counterterrorism language frames pro-trans advocacy as hostile. Protective state adds public-accommodations nondiscrimination, hate-crime coverage, shield laws, gender-neutral single-user facilities, and school/care protections, lowering local risk and partly protecting care-seeking families. They do not pre-empt federal screening, facilities, custody, subpoenas, or investigative authority. Adult-alone risk is lower in protected venues; with minor, care investigation and border/custody raise exposure. Lower Elevated.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal EO bars X/new markers per assigned sex; Feb cable refuses discrepancies, suspects fraud -> lifetime ineligibility; reports passports confiscated/blocked.",
+    "protection": "X passports remain valid; court suits and legal guidance challenge/clarify.",
+    "interaction": "Federal border gate is not offset by state accommodations; mismatch at entry can end the trip before protections apply.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "National corrections adopt birth-sex/conversion policies, remove hormones; immigration custody forced labour, beatings, solitary, sexual abuse; capitol arrest placed men's ward.",
+    "protection": "Some orders enjoined; state shield laws exist but no enforcement data.",
+    "interaction": "Any federal/local arrest or immigration detention exposes severe custody; state protections do not neutralize federal custody rules.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal EO excludes trans from government-funded single-sex facilities; multiple state/province bans and four criminal provisions; protective state has public-accommodations and gender-neutral single-user.",
+    "protection": "State public accommodations protect hotels, restaurants, shops; single-user bathrooms gender-neutral.",
+    "interaction": "Local facilities protected, but federal buildings, courts, agencies remain excluded; crossing a jurisdiction can change exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National orders frame youth care as abuse, block funding/reimbursement, subpoena hospital records; many states ban.",
+    "protection": "Protective state covers insurance, bans conversion, shield laws protect out-of-state care seekers.",
+    "interaction": "In-state care safer, but federal investigative/funding exposure persists for families and providers.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritizes neutralizing radically pro-transgender groups; justice reward memo mentions radical gender ideology, though not criterion.",
+    "protection": "Protective state nondiscrimination/hate-crime laws and panic defence repeal.",
+    "interaction": "Advocacy or visibility raises federal threat; local policing is not documented as a safe federal remedy.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National rules investigate schools, prosecute teachers, restrict minors' care; guardians may face inquiries when seeking care.",
+    "protection": "State anti-bullying, school protections, shield laws; insurers cover care.",
+    "interaction": "Travelling with minor can convert care access into federal record/investigation risk; protections may not stop border/custody.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Public opinion hostile nationally; foreign advisories after detentions; no documented visitor-specific street violence or local police harassment in protective state.",
+    "protection": "State hate-crime enhancement, panic defence repeal, public accommodations.",
+    "interaction": "Absence of incident data is not safety, especially outside protected venues or in federal spaces.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Passport and EO litigation ongoing; some orders enjoined; state enforcement data absent; shield law provisions not itemised.",
+    "protection": "Legal aid FAQ, civil-liberties suit, courts/tribunals.",
+    "interaction": "Practical safety depends on crossing, facility, and which order is operative; uncertain outcomes remain.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Similarity: birth-sex custody and facility criminal exposure can produce arrest/harm; immigration custody is worse. But protective state public accommodations, hate-crime/panic repeal, and healthcare shields, plus no routine raids, make visitor-local exposure less severe than 0.25-C; federal border remains aggravating."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Similarity: federal screening can deny entry, humiliate, strand without execution; unlike routine register, only discrepancies trigger. Protective state lowers post-entry accommodation risk, but federal facility/custody and fraud lifetime bar add severity; net roughly comparable but slightly above."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C assumes matching/nonbinary-friendly border and trained officers with release remedies. Here X is unavailable and mismatch may cause refusal, evidence demands, or fraud finding; federal facilities exclude and counterterrorism framing. State public accommodations and shields are not enough to reach that level."
+   }
+  ],
+  "synthesis": "State shield and nondiscrimination laws can function once the traveller is admitted and uses hotels, shops, or clinics, and for families they may enable lawful care in the state. But the operative border and federal agency layer remains hostile: documents may mismatch, federal facilities exclude, federal custody may be birth-sex or abusive, and national rules can subpoena care records or restrict funding. The protective local layer therefore mitigates street-level and accommodation exposure without neutralizing universal federal entry, facility, or custody risks; enforcement gaps keep the score in lower Elevated."
+ },
+ "parse_error": null
+}

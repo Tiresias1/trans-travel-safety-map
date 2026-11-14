@@ -1,0 +1,86 @@
+{
+ "cell": 42,
+ "region": "66186276B86627915353587:New Hampshire",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.00629162",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime is a protective state layered under a hostile national border and custody system. In-state daily life is comparatively safe: public-accommodations and hate-crime protections are enforced, and a 2026 court ruling shows recourse. But entry screening can refuse or flag trans travellers whose documents or appearance raise 'reasonable doubt,' with possible lifetime fraud findings; national facilities rules exclude trans people from congruent single-sex federal facilities; and immigration/corrections custody carries documented forced labour, beatings, solitary confinement and sexual abuse. A travelling family faces added exposure because the state bans gender-affirming care for minors with provider liability, while national rules restrict insurance and school support. State protections do not reach federal border, facilities or custody. The result is Elevated Risk, low end: safe in much of the state, but serious traveller-facing exposure at national chokepoints.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National cable directs refusal where documents/records diverge or sex is doubted; suspected misrepresentation can support permanent fraud ineligibility; other governments issued trans-travel advisories after detentions.",
+    "protection": "No categorical ban on trans visitors; existing X-marked foreign passports remain valid; some national measures are enjoined or under litigation.",
+    "interaction": "State anti-discrimination does not bind federal border officers; a mismatch can escalate from secondary screening to refusal or a fraud finding.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of trans detainees; corrections policies impose conversion-style practices and birth-sex custody.",
+    "protection": "Not documented for federal immigration custody; some national orders are in litigation.",
+    "interaction": "Border discrepancy → secondary inspection → detention → federal custody, where state protections do not apply.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity; federal buildings and airports are covered. Four states criminalise some bathroom use, though this state is not shown among them.",
+    "protection": "State public-accommodations law covers gender identity and no state bathroom ban is documented; state protections do not override federal facilities.",
+    "interaction": "Visitor may be safe in private state venues but exposed in federal facilities; state law cannot pre-empt national order.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming medicine and surgery for minors, with provider discipline and a right to sue; national rules bar public insurance for under-18 and threaten funding. Adult care is not banned but national climate may deter providers.",
+    "protection": "State anti-discrimination covers health care; conversion therapy ban for minors; adult care remains legal; state court protected trans students.",
+    "interaction": "A family seeking care for a trans minor faces denial and provider liability in-state, compounded by national insurance and funding restrictions; adult care is less restricted.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups; DOJ reward memo references 'radical gender ideology'; national EO directs investigation/prosecution of teachers supporting social transition.",
+    "protection": "State hate-crime law covers gender identity, panic defence abolished, civil-rights statute enforced in 2026; national hate-crime statute covers gender identity.",
+    "interaction": "Federal threat framing can embolden hostility and shape border/custody conduct, while state law enforcement and courts provide recourse for in-state violence.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State bans puberty blockers, hormones and chest surgery for under-18; sports ban (stayed); schools may opt out; providers face discipline and civil suit. National EO targets teachers using preferred names/pronouns.",
+    "protection": "State anti-bullying law covers gender identity; state high court protected trans students; conversion-therapy ban; grandfather clause for existing care.",
+    "interaction": "A parent travelling with a trans minor may face care denial, school/sports exclusion and provider liability; national and state rules compound, though state courts have checked some school measures.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "2025 census records 72 anti-LGBTQ incidents, second-highest raw count, but no per-capita denominator; one encyclopedia calls the state least safe for trans residents, attributed not measured.",
+    "protection": "State civil-rights statute enforced (2026 court finding for trans woman struck); hate-crime enhancements since 2019; panic defence abolished; 88% poll support discrimination protections.",
+    "interaction": "Raw count cannot establish elevated rate; strong state recourse and hate-crime law mitigate, but national climate may increase hostility.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "No working remedy documented for federal border refusal, facilities exclusion or immigration custody abuse; fraud finding has limited waiver; passport and EO litigation unresolved.",
+    "protection": "National courts have enjoined some orders; state civil-rights enforcement works for in-state violence; legal-aid FAQ exists.",
+    "interaction": "State remedies protect daily life and street violence but stop at federal border, facilities and custody; national litigation outcomes uncertain.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "The Varnalia-style dossier has weekly raids, extortion, detention and fines, but no imprisonment or execution. This case lacks local raids and has strong state anti-discrimination, but national border screening, federal facility exclusion and documented immigration-custody abuse are graver traveller-facing features. It sits above 0.25 but not by much."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra denies entry to visibly trans visitors with no effective remedy, but no imprisonment. This case has similar border refusal/fraud exposure plus federal facility exclusion and severe custody harm, partially offset by protective state law. Entry screening is not categorical here, so it sits slightly above 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles uses extended secondary screening and discretionary refusal, administrative and humiliating, with appeal rarely revised. This case adds facility exclusion and severe custody abuse, so it is lower than 0.55 despite strong state-level protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia permits matching-marker passports, trained border officers, brief detention with counsel and compensation. This case has hostile national screening, facility bans and abusive custody, so it is far below 0.75."
+   },
+   {
+    "anchor_id": "0.95-A",
+    "comparison": "Vellmar has trained border officers, enforced equality and no credible custody or execution risk. This case documents federal custody abuse and facility exclusion, so it is far below 0.95."
+   }
+  ],
+  "synthesis": "Strong state-level protections and a documented civil-rights enforcement record make in-state daily life relatively safe, but the national border, federal facilities and immigration custody form the operative exposure. A trans adult alone risks secondary screening, refusal or a fraud finding at entry, and if detained faces documented abuse. A family with a trans minor also faces the state's care ban and provider liability. Because the protective state layer cannot reach federal actors, the combined regime sits at the low end of Elevated Risk."
+ },
+ "parse_error": null
+}

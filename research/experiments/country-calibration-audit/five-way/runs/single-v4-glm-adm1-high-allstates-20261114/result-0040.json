@@ -1,0 +1,82 @@
+{
+ "cell": 40,
+ "region": "66186276B83663796884405:Connecticut",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00565295",
+ "parsed": {
+  "rating": 0.63,
+  "explanation": "The visitor's journey splits between a federal gate and a protective state. At entry, documented exposures are universal and traveler-facing: officers instructed to refuse cases where documents cast doubt on sex, a possible lifetime fraud/misrepresentation finding (never automatic, waivers exist), documented detentions of foreign trans nationals, scanner/pat-down outing risk, and travel advisories from at least eight governments. Federal facilities exclude trans people from congruent single-sex spaces; federal custody shows documented severe abuse. The state layer is the opposite: 'Most Protective' tier, shield law, public-accommodation and hate-crime coverage, custody treated by gender identity, no facility ban, no criminalisation. Courts have enjoined several federal orders but let passport restrictions stand. Imprisonment or lethal outcomes are not documented for a visitor in this state; refusals, detention risk, and fraud findings are. Combined regime sits in Reduced Risk, well below a protective-state-only reading.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal cable directs officers to refuse cases where documents cast 'reasonable doubt' on sex; wilful misrepresentation can trigger lifetime fraud ineligibility. Trans travellers report passport confiscation/stranding; foreign trans nationals detained over visa issues; eight governments issued advisories. Universal at every crossing.",
+    "protection": "Fraud finding requires all four elements and is never automatic, with limited waivers; existing X passports remain valid until expiry; ACLU suit pending; several orders enjoined.",
+    "interaction": "Entry is wholly federal and precedes any contact with the protective state; TSA screening adds independent outing risk at the same gate.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal immigration custody: documented forced labour, beatings, solitary confinement and severe sexual abuse of trans men. Federal corrections bureau adopted conversion-therapy-style policies from 2026 and stopped reporting trans prisoner counts.",
+    "protection": "State custody policy (2018) treats people by gender identity including housing and strip searches — but does not reach federal detention.",
+    "interaction": "A visitor detained at the border enters federal custody, not the protective state system; the state's protective custody rule cannot offset this stage.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Federal order bars trans people from government-funded single-sex facilities congruent with identity — universal exposure in federal buildings nationwide.",
+    "protection": "This state has no facilities ban (in the no-ban mapped group); its anti-discrimination law covers public places and services by gender identity.",
+    "interaction": "Facility exposure depends on which level governs the building; the traveller passes through both layers in one trip.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National funding freeze; proposed rule barring public-insurance reimbursement for under-18 care; DOJ subpoenas of hospitals for under-19 patient records.",
+    "protection": "2022 shield law protects patients and providers from out-of-state criminal or civil liability; care access in-state is open; 'Most Protective' tier ranking.",
+    "interaction": "A visitor's care is lawful and shielded in-state, but federal records demands and funding threats attach to providers, creating residual exposure.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism strategy prioritises 'radically pro-transgender' groups; 'radical gender ideology' framing in DOJ guidance; EO directs prosecution of teachers facilitating minors' social transition; national removal of trans-related materials.",
+    "protection": "National hate-crime statute covers gender identity; courts have enjoined several orders; the strategy disclaims targeting mere disagreement.",
+    "interaction": "Federal threat-framing raises the stakes of any outing and empowers federal investigation, partially checked by litigation.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal EO frames youth care as 'mutilation'; prosecution threat for facilitators; hospital-records subpoenas; 27 states ban youth care (not this one).",
+    "protection": "No youth-care ban here; shield law covers travelling families; anti-bullying law covers gender identity on all school premises; 2021 ruling preserved trans athletes' school-sport eligibility.",
+    "interaction": "A minor's care and schooling are protected locally, but federal investigation of providers and schools creates exposure the state cannot fully neutralise.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented. No state-specific anti-trans violence count or denominator exists; national hate-crime statistics are LGBT-wide and carry no state weighting.",
+    "protection": "State hate-crime law covers gender identity and expression, strengthened effective 1 October 2026; police conduct toward trans visitors specifically is not documented.",
+    "interaction": "Enforcement of assaults falls to state and local police under protective statutes; quality of response is an open question, not a documented exposure.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "The Supreme Court let passport-marker restrictions take effect in November 2025; operative measures shift with litigation outcomes; no state-level enforcement or incident record to verify protections in practice.",
+    "protection": "ACLU litigation ongoing; courts have enjoined multiple orders; legal-aid FAQ maintained for document rules; functioning courts partially checking federal policy.",
+    "interaction": "Remedies work unevenly: relief is granted at some levels while the harshest operative rule (entry screening, facilities) continues in force.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "Worse only at the federal custody stage: immigration-custody abuse documented here resembles the anchor's birth-sex custody harms. But the operative local regime is far above it — state custody follows gender identity, no cross-dressing or bathroom-criminalisation statute applies, and no arrest pathway for a visitor in this state is documented. Clearly above 0.25."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "The federal gate matches or exceeds this anchor: secondary scrutiny driven by document/sex doubt, refusals, documented detentions of foreign trans nationals, and a fraud-ban threat the anchor lacks. Unlike the anchor, the destination inside the border is strongly protective, which lifts the combined regime above 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "The state layer resembles or exceeds this anchor — respectful statutes, functioning remedies, custody by identity. But the federal entry regime is harsher than the anchor's discretionary-but-benign border (cable-mandated refusals, detentions, fraud findings), pulling the combined score below 0.75."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "The state's protections mirror 0.85-A (anti-discrimination coverage, hate-crime law, custody respect). The combined rating cannot reach 0.85 because universal federal exposures — entry screening, federal facilities, custody — follow every traveller regardless of the state visited."
+   }
+  ],
+  "synthesis": "The operative regime is a protective state embedded in a hostile federal gate. Every journey begins with documented universal federal exposure: sex-doubt refusals at visa adjudication, scanner outing, federal facility exclusion, and — if detention occurs — custody with documented forced labour, beating and sexual abuse. The fraud-ineligibility mechanism is severe but gated behind a four-element finding and waivers, so it is a hovering threat rather than an expected outcome. Inside the state, the traveller encounters near-anchor-0.85 conditions: shield law, public-accommodation and hate-crime protections, identity-congruent custody, and care access including for a travelling minor, though federal provider subpoenas and school-investigation orders leave residual family exposure. Courts enjoin some federal measures but have allowed the harshest document rule to stand. Net: meaningful, inescapable federal exposures at the journey's edges with strong local protection in between — Reduced Risk, around 0.63, materially below the state's standalone merits."
+ },
+ "parse_error": null
+}

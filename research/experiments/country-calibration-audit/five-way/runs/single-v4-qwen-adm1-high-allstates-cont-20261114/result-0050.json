@@ -1,0 +1,78 @@
+{
+ "cell": 50,
+ "region": "66186276B98615608994420:Nevada",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.005588682",
+ "parsed": {
+  "rating": 0.38,
+  "explanation": "The combined regime is high risk because federal entry screening, sex-marker document rules, federal single-sex facility policy, and immigration/federal custody carry severe visitor-facing harm. State/province protections reduce local daily exposure: non-discrimination, public accommodation, corrected IDs, insurer care mandates, hate-crime recourse, and state custody protections. No local violence pattern is documented. Families with trans minors add national child-care and school enforcement hostility, though state law shields care. The gate remains federal, so local remedies cannot assure safety if outed at border or federal site.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal sex-marker policy requires M/F, blocks nonmatching passports/visas; officers may refuse when records mismatch and consider permanent ineligibility if fraud. Travelers report passports blocked/confiscated and stranded; allied advisories document visitor exposure.",
+    "protection": "Existing nonmatching passports remain valid; national litigation and legal-aid guidance exist; state IDs and anti-discrimination may ease local services but do not change federal entry.",
+    "interaction": "State document protections cannot offset border screening; any mismatch may trigger federal review rather than local correction.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Federal/immigration custody reports forced labour, beatings, solitary, severe sexual abuse; national corrections adopted conversion-therapy policies; birth-sex placement is plausible.",
+    "protection": "State law protects incarcerated transgender people in state custody, but not immigration/federal facilities.",
+    "interaction": "Document or visa suspicion can escalate into federal custody; state custody protections do not apply there.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars transgender people from government-funded single-sex facilities by identity; federal facilities impose birth-sex constraints; some states criminalize use.",
+    "protection": "State public accommodation anti-discrimination and no documented state ban; private/state facilities likely less exposed if local law is enforced.",
+    "interaction": "Federally controlled or funded facilities can override state protections during airport, immigration, and federal-building encounters.",
+    "status": "uncertain"
+   },
+   "care_services": {
+    "exposure": "Federal hostility to gender-affirming care, especially minors, includes reimbursement blocks, funding threats, records subpoenas, and youth-care restrictions upheld.",
+    "protection": "State insurers and public programme mandated to cover medically necessary care; insurer discrimination prohibited; state provider protections exist.",
+    "interaction": "Adult private/local care is safer; minors and guardians are more exposed where federal rules or public insurance touch care.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Federal executive and counterterrorism language frames radical pro-transgender ideology, directs school enforcement, and rewards investigations tied to law violations; increases profiling and hostile discretion.",
+    "protection": "National hate-crime law and state constitutional equality/hate-crime reporting provide recourse; some federal orders are blocked or enjoined.",
+    "interaction": "State protections reduce local harassment, but federal officers can still enforce hostile national policy at gates and federal sites.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "For guardians travelling with a trans minor, federal orders criminalize facilitating social transition, target schools/care, restrict youth care, and records checks can out the child.",
+    "protection": "State anti-bullying law, school sports policy reversal, insurer coverage mandates, and care/custody statutes support minors.",
+    "interaction": "Guardians may need state insurers and local settings to avoid federal exposure; family status does not prevent federal screening.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No dated state/province incident pattern is documented; national bias violence is possible and advisories say check reports. Absence of evidence is not safety.",
+    "protection": "State non-discrimination, hate-crime reporting, constitutional equality, and low-risk assessment; local police likely responsive under state law.",
+    "interaction": "Street friction handled locally may be mitigated; federal encounters may be handled under hostile national policy.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal litigation over passports and orders is unresolved; facility map lacks this state entry; healthcare-equity and incarcerated-protection gaps are qualitative; enforcement varies by officer and facility.",
+    "protection": "Civil-liberties suit, legal-aid FAQ, courts, state complaint mechanisms, and hate-crime hotline offer partial recourse.",
+    "interaction": "Remedies may soften local harms but cannot assure safe federal gate handling; uncertainty keeps risk elevated.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-D",
+    "comparison": "Similarity: federal document discrepancy can trigger investigation and custody harms can be severe. Difference: this protective division lacks routine arrest for presentation, has state non-discrimination/care/custody law, and courts/legal aid intervene; higher than 0.15-D."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Both impose visitor-facing border denial or stranding from gender-marker mismatch. This case is less arbitrary locally because state protections apply, but possible federal immigration custody and child-care hostility keep it near or slightly above 0.35-A."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has respectful border treatment, marker recognition, brief detention, and reliable remedies. This case lacks federal recognition and includes birth-sex custody and care hostility, so it is materially lower despite strong state protections."
+   }
+  ],
+  "synthesis": "Operationally, a visitor is screened by national binary-document and birth-sex facility rules before state protections matter. If documents match presentation enough and the traveller remains in state/private settings, local anti-discrimination, care mandates, and state custody law can be significant shields. The danger concentrates at borders, federal sites, immigration custody, and minor/guardian care disputes. Unresolved litigation and inconsistent enforcement prevent recovery to Reduced Risk."
+ },
+ "parse_error": null
+}

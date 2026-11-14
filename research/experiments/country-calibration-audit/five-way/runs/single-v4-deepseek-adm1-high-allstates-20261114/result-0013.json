@@ -1,0 +1,82 @@
+{
+ "cell": 13,
+ "region": "66186276B31593004124297:Utah",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.0055931064",
+ "parsed": {
+  "rating": 0.3,
+  "explanation": "Combined national and state regime creates multiple traveller-facing exposures: binary-sex document and visa screening with refusal/fraud risk, a state bathroom/locker ban in public buildings enforced by public complaints with no documented visitor defence, and severe harm documented in immigration custody. A family with a trans minor also faces the state care ban and provider liability. Protections are partial: hate-crime and employment/housing law, some enjoined national orders, and court challenges, but no working remedy is shown for visitor facility or entry cases. The rating sits below administrative-exclusion anchors because universal facility exposure and custody risk compound, but above 0.15 anchors because ordinary gender presentation is not generally criminalised and some recourse exists.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex document policy; X markers not issued; visa/passport mismatch can trigger refusal, case-note tagging, demands for extra evidence, and possible permanent fraud ineligibility; trans-athlete entry ban.",
+    "protection": "Existing X passports remain valid until expiry; fraud finding is not automatic and has limited waiver; passport policy is in litigation.",
+    "interaction": "Border officer discretion can turn a foreign passport mismatch into secondary screening, refusal, or a fraud tag; refusal can strand the traveller.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody reports forced labour, beatings, solitary confinement and sexual abuse of trans detainees; national corrections adopts conversion-style practices and denies care.",
+    "protection": "Some national orders are enjoined; no visitor-specific consular or legal-aid access is documented.",
+    "interaction": "Document discrepancy can lead to secondary inspection, detention, and birth-sex custody/abuse.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "State law bars restroom/locker use by birth sex in public schools and government buildings; a complaint form allows reports; defence needs birth certificate and surgery proof, with no route for out-of-state documents.",
+    "protection": "Private businesses are outside the law; new government buildings need single-occupant facilities; state ID change is possible for residents.",
+    "interaction": "A visitor using a government building can be reported and has no documented visitor defence; enforcement is complaint-based in this state.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "State bans gender-affirming care for minors; clinicians treating under-25s face retroactive consent disaffirmance and suit; national policy frames minor care as mutilation and restricts funding.",
+    "protection": "Care begun before the 2023 ban could continue; adult care is not banned by the state; some national orders are enjoined.",
+    "interaction": "A family with a trans minor faces denial and provider liability; adult visitor care continuity is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy lists 'radically pro-transgender' groups among hostile ideologies to neutralise; DOJ reward memo mentions 'radical gender ideology'; EO directs investigation/prosecution of teachers using preferred names or pronouns.",
+    "protection": "Strategy says mere disagreement is not targeted; courts have enjoined several orders; national and state hate-crime laws cover gender identity.",
+    "interaction": "Raises climate fear and police attention to activists and families; no ordinary tourist arrest for identity is documented.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "State care ban, provider liability, school bathroom/locker restrictions, sports and dorm bans; national EO threatens teachers who facilitate social transition.",
+    "protection": "Pre-2023 care could continue; state anti-bullying and conversion-therapy ban; some national orders blocked.",
+    "interaction": "A travelling family with a trans minor faces care denial, school/sports exclusion and potential state inquiry; an adult alone is less exposed.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "No state-specific trans violence data; public reporting form encourages surveillance; national risk assessment flags four 'Do Not Travel' states, not expressly this one.",
+    "protection": "National and state hate-crime statutes cover gender identity and require statistics; police targeting of trans visitors is not documented.",
+    "interaction": "No documented pattern of violence or police abuse; absence of data is not safety.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "No documented remedy for bathroom complaints; visitor cannot meet documentary defence; no complaint outcomes; passport policy litigation unresolved; fraud finding can be lifetime.",
+    "protection": "Courts have enjoined some orders; legal-aid FAQ; state ID change by court order; employment/housing and hate-crime protections.",
+    "interaction": "Paper remedies exist but are not shown working for visitor entry or facility cases; foreign-document treatment is unresolved.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Varnalia 0.25-A has weekly raids, detention, fines and extortion; this dossier lacks routine police raids but adds a state-facilitated bathroom-reporting regime, border document refusal and severe immigration-custody abuse. The tier is close; I place it slightly above 0.25 because ordinary presentation is not criminalised and some courts/hate-crime protections operate."
+   },
+   {
+    "anchor_id": "0.35-A",
+    "comparison": "Vellandra 0.35-A is routine border denial and humiliation with no arrest. Here entry refusal is document-triggered and discretionary, but the state facility ban with anonymous reporting and no visitor defence adds a universal domestic exposure. The combination is somewhat worse, so the rating sits below 0.35."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel 0.55-B has secondary screening, possible denial and humiliation, with slow appeals. This dossier is worse because it documents facility exclusion by birth sex in public buildings without a visitor defence, plus severe immigration-custody harm and a minor care ban; it cannot reach 0.55."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Meridia 0.75-C has trained border officers, tribunal review, brief detention and low severity. Here border discretion, facility complaints and custody abuse are documented, and remedies for visitors are not shown working; far below 0.75."
+   }
+  ],
+  "synthesis": "The operative regime layers a national binary-sex document and screening system onto a state bathroom/locker ban enforced through public complaints, with no documented visitor defence for out-of-state documents. A trans adult alone faces border document refusal or tagging and facility complaints; a family with a trans minor also faces the care ban and provider liability. Severe immigration-custody abuse is documented if detention occurs. Counterterrorism and school-prosecution rhetoric raise the climate, while hate-crime, employment/housing and some court protections are partial. No complaint or violence data exists, so the rating reflects documented universal exposures and severe custody risk rather than proven routine street violence."
+ },
+ "parse_error": null
+}

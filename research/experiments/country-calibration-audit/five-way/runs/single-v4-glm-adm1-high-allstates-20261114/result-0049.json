@@ -1,0 +1,82 @@
+{
+ "cell": 49,
+ "region": "66186276B98555229882405:Washington",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00324975",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "The combined operative regime is a hostile national layer (passports, entry screening, national facilities, national custody) under which every traveller must pass, plus a protective state layer (shield laws, care access, no facility ban) that softens within-state life but cannot touch the border. The entry regime is a universal exposure: passports issued at birth sex, X markers eliminated, confiscations and stranding documented, and a screening directive to refuse mismatched cases and consider fraud findings carrying lifetime ineligibility. Foreign citizens have been detained over visa issues, and eight foreign governments issued advisories. National custody abuse is documented. No execution or imprisonment for mere presence is credible; the state's protective layer, functioning courts partially enjoining orders, and protected care access lift the score above hostile-tier anchors, but the unavoidable national border exposure and documented custody abuse keep it in the Elevated band.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National passport regime: sex at birth on new issues, X markers eliminated, Supreme Court allowed restrictions Nov 2025; passports confiscated or blocked, travellers stranded abroad. Entry screening directive to refuse mismatched cases and consider fraud findings with lifetime ineligibility; visa case-note tag applied to trans cases.",
+    "protection": "ACLU suit pending against passport agency; courts enjoined several other orders; legal-aid FAQ exists for travellers.",
+    "interaction": "Every visitor to this state crosses the national border; the state's shield laws cannot alter passport or entry rules, so exposure is universal and unavoidable.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented national immigration custody abuse: forced labour of trans men, beatings, solitary confinement, severe sexual abuse. National corrections bureau adopting conversion-therapy-style policies for trans prisoners. Foreign citizens detained over visa issues. State prisons: birth-sex housing used as disciplinary punishment (July 2024).",
+    "protection": "Not documented.",
+    "interaction": "A visa discrepancy or fraud investigation can move a visitor from the border into immigration custody, where the documented abuse regime applies.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National order bars trans people from government-funded single-sex facilities congruent with identity — applies to federal buildings, airports and national facilities inside this state. National facilities remain the operative rule regardless of the state's own law.",
+    "protection": "This state has no facility ban in the mapped categories; it is among the most protective jurisdictions.",
+    "interaction": "State-level protection does not pre-empt national facility rules; the traveller faces the national ban in any federal/national facility.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National justice department subpoenaed 20+ hospitals for full records of patients under 19; proposed national rules would bar public insurance reimbursement for trans patients under 18. Visitor seeking care here could have records subpoenaed nationally.",
+    "protection": "State shield laws (2023–2024 batch) enforceable against outside-jurisdiction action reaching care provided here; comprehensive insurance coverage; refuge protections for people fleeing hostile states; court-ordered prison healthcare since Oct 2023.",
+    "interaction": "Shield laws protect care provided within the state, but cannot shield national records or national insurance rules that apply to anyone present.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy (May 2026) prioritises 'radically pro-transgender' groups among targets; cash-reward memo references 'radical gender ideology'; executive order criminalises teachers facilitating a minor's social transition. State threat framing is present in national rhetoric.",
+    "protection": "Not documented.",
+    "interaction": "Threat framing raises the probability of scrutiny and lowers recourse for anyone who is outed.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National EO criminalises teachers facilitating a minor's social transition; national hospital subpoenas target minors' records; care bans in 27 states (not this state, but nearby). A travelling parent with a trans minor faces risk that care received here triggers national inquiry.",
+    "protection": "This state's shield laws and insurance coverage protect care provided to minors here; not among the 27 care-ban states.",
+    "interaction": "A parent receiving care for a minor in this state is protected by state law but exposed to national records-scrutiny and national insurance rules.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Only 23 state/provinces cover gender identity in bias-motivated violence statutes; 37 lacked them (2019). 2025 poll: 66% support birth-sex documents, 69% support sports bans. 2026 legislative season continued to degrade rights.",
+    "protection": "National hate-crime statute covers gender identity; national employment discrimination prohibited (2020 ruling).",
+    "interaction": "Social hostility is documented in polling and legislative trend; no trans-specific violence rate is documented for this state specifically.",
+    "status": "uncertain"
+   },
+   "remedies_unknowns": {
+    "exposure": "Courts partially enjoined some orders but the Supreme Court allowed passport restrictions to take effect; ballot initiatives due Nov 2026 could reverse the state's protective posture; whether birth-sex housing as discipline continued after July 2024 is not sourced.",
+    "protection": "Courts functioning, injunctions granted on several orders, ACLU suit ongoing.",
+    "interaction": "The protective posture is contingent on unresolved litigation and an upcoming vote; the traveller's exposure depends on which measures are in effect at the moment of travel.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Worse than this case. The 0.15 anchor has routine arrest for document mismatch, months of pretrial custody, beatings by guards, and capital-provision ambiguity. This jurisdiction has no execution or imprisonment for mere presence, and its courts partially enjoin hostile orders. What would be required to reach 0.15: documented imprisonment of visitors for presenting, and a capital pathway applied to gender-identity cases."
+   },
+   {
+    "anchor_id": "0.25-A",
+    "comparison": "Also worse than this case. The 0.25 anchor has raids on a support centre, fines, informal settlements, no imprisonment or execution. This jurisdiction has more severe documented consequences (passport confiscation, stranding, fraud findings with lifetime ineligibility, custody abuse), but the state's protective layer and functioning courts distinguish it above the 0.25 tier."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Similar tier. The 0.55 anchor has border secondary screening, refusal of entry, administrative penalties, no imprisonment. This jurisdiction matches that severity at the border (mismatch questioning, refusal, fraud investigation) but adds documented passport confiscation/stranding and custody abuse, which the 0.55 anchor lacks. Its protective state layer pushes it above 0.55-B."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "Above this case. The 0.75 anchor has border questioning, brief detention, counsel, compensation, and no fraud finding. This jurisdiction has more severe documented outcomes (passport confiscation, stranding, lifetime ineligibility findings, immigration custody abuse) and no equivalent national protection; the state's protective layer does not compensate for the harsher national border regime."
+   }
+  ],
+  "synthesis": "The combined operative regime forces every traveller through a hostile national border before reaching the state's protective layer. The entry regime is a universal exposure: passport markers are fixed to birth sex, X markers are eliminated, confiscations and stranding are documented, and screening officers are directed to refuse mismatched cases and consider fraud findings that carry lifetime ineligibility. Foreign citizens have been detained over visa issues and eight foreign governments have issued advisories. National immigration custody abuse and national corrections-bureau policies are documented, and the state's own prisons have used birth-sex housing as disciplinary punishment. Within the state, shield laws protect care access, no facility ban exists, and courts partially enjoin national orders — but these cannot touch the border, national facilities, or national custody. The state's protective layer lifts the score above hostile-tier anchors, while the unavoidable national exposure and documented custody abuse keep it in the Elevated band. The state's protective posture is itself contingent on an unresolved November 2026 vote."
+ },
+ "parse_error": null
+}

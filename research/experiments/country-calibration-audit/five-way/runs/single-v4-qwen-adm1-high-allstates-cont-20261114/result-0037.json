@@ -1,0 +1,78 @@
+{
+ "cell": 37,
+ "region": "66186276B80192890672447:Montana",
+ "model": "qwen",
+ "status": "ok",
+ "cost_usd": "0.006574012",
+ "parsed": {
+  "rating": 0.5,
+  "explanation": "Combined regime is elevated: national executive orders create traveller-facing exposure at entry (marker rules, refusal for sex doubt, athlete ban, fraud/eligibility risk) and federal facilities/custody (government-funded facility exclusion, documented immigration-custody abuse). The state courts materially protect adults and minors locally by blocking facilities bans, youth-care/sports restrictions and document rules, preserving safer everyday access. But state relief does not cancel federal border screening, federal funding/facilities, or immigration custody. Severity if outed is major to severe, not execution or near-certain imprisonment; probability of state-level violence is undocumented and local remedies work. Thus above 0.35, near 0.55, below 0.65.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Federal rules bar self-selected markers/X, treat sex as binary at birth, and instruct visa refusals where documents, records, presentation, or reasonable doubt conflict. Trans athletes are barred; misrepresentation can support permanent immigration ineligibility; foreign advisories reflect detentions.",
+    "protection": "Existing X passports valid until expiry; fraud finding requires four elements and is not automatic; visitor documents may avoid marker changes; legal-aid FAQ.",
+    "interaction": "Home-passport mismatch can escalate to secondary screening, denial, investigation, and detention; state court protections do not override federal entry adjudication.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Visa detentions reported; immigration custody includes forced labor, beatings, solitary and severe sexual abuse; federal corrections conversion policies remove hormones and cut hair; facility refusal can lead trespass/arrest elsewhere.",
+    "protection": "State courts apply dignity/equal-protection to block restrictive local custody/facility enforcement; national employment and hate-crime laws provide some recourse.",
+    "interaction": "Document discrepancy or border out can move traveller into federal custody where abuse is documented; local injunctions do not shield immigration detention.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars government-funded single-sex facilities for people not congruent with birth sex; airports/courts/other federal buildings may create exclusion; local trespass risk where bans operate.",
+    "protection": "State facilities statute not in force; April 2025 court found animus and temporarily restrained ban; proposals failed; anti-discrimination ordinances cover some accommodations.",
+    "interaction": "Everyday state facilities are safer, but federal-funded facilities remain under national rule, so a traveller can be denied despite state protections.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Federal rhetoric treats youth care as mutilation, restricts funding, investigates schools, subpoenas records, and proposes public-insurance exclusions; provider chill and interstate care uncertainty.",
+    "protection": "State minor care ban permanently enjoined/struck; sports ban struck; state health providers not barred; anti-discrimination/state employment rules.",
+    "interaction": "Adult continuity and family care can be accessed locally, yet federal funding/records directives can create refusal, questioning, or care interruption.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Counterterrorism prioritizes neutralizing radical pro-transgender groups; official removal of gender-identity materials; prison LGBTQ order rescinded; drag/flag laws signal hostility.",
+    "protection": "Drag story-hours ban enjoined; 2025 drag-as-sexual bill defeated; state constitution dignity; municipality flag loophole; courts protect expression.",
+    "interaction": "Framing may chill speech/visibility and support investigation, but it is not documented as ordinary visitor targeting; it worsens federal custody/facility climate.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal directives criminalize teachers facilitating social transition, block youth care funding, and subject minors to records scrutiny; guardians may face school/care inquiry; entry screening applies to children.",
+    "protection": "State courts block youth care, sports, and school transition restrictions; guardians can seek services/adoption-related protections; anti-discrimination ordinances.",
+    "interaction": "Local schooling/care can be safer than federal climate, but federal school/provider rules and interstate documents may still trigger denial or inquiry.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented. No state-level count, rate, or specific trans-visiting violence incidents appear in sources; national hate-crime coverage uneven.",
+    "protection": "State courts enforce dignity; ordinances and national employment/hate-crime laws may support police response, though state bias laws omit gender identity.",
+    "interaction": "Absence of data is uncertainty, not safety; if harm occurs, state institutions may respond more reliably than local statutes suggest.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Litigation continues; post-2025 facility restraint and 2026 challenge unresolved; federal passport/facility/care rules shifting; visitor entry outcomes discretionary; no local violence record.",
+    "protection": "Repeated state-court victories, permanent injunctions, appellate affirmances, ACLU/ACLU suit, legal-aid guidance, and national complaint/employment avenues exist.",
+    "interaction": "Local remedies can correct state actions quickly, but federal entry/custody remedies are slower and may not restore admission or prevent abuse.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Much safer: no execution or imprisonment highly likely merely after discovery, and no routine presentation arrests. However, severe immigration custody and federal facility hostility keep this above but closer to lower anchors than to safe jurisdictions."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Close, but slightly lower: like Kestrel, entry screening can mean delay/refusal; here policy explicitly treats trans markers/suspected sex discrepancy as adverse and adds fraud/permanent ineligibility risk plus federal custody harms."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Clearly below: national equality is contested and federal rules actively restrict markers, facilities, custody, and youth care rhetoric, while state courts protect locally but cannot cancel federal border/facility enforcement."
+   }
+  ],
+  "synthesis": "The operative regime is bifurcated. At the federal layer, discovery can mean passport/visa friction, refusal, fraud findings, exclusion from government-funded single-sex spaces, and if detained, abusive custody. At the state layer, courts have repeatedly blocked bathroom, care, sports and identity-document restrictions, so an adult or child travelling there usually encounters much less local exposure, and anti-discrimination ordinances can cover services. Interaction matters: state injunctions cannot protect against federal border/facility/custody enforcement, and a child’s school/care access may still be chilled by federal directives and records subpoenas. Absence of local violence data does not prove safety; it mainly leaves street risk uncertain while documented federal harms dominate the score."
+ },
+ "parse_error": null
+}

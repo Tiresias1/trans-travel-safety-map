@@ -21,6 +21,7 @@ Changes from the earlier single-rating runs:
 from __future__ import annotations
 
 import argparse
+import os
 import hashlib
 import json
 import re
@@ -92,6 +93,47 @@ and never treat absence as safety.
 Use the anchors as diagnostic comparisons, not labels. Compare the operative
 features to at least three synthetic-anchor levels and explain what makes the
 case lower, similar to, or higher than each chosen anchor.
+
+## Scoring discipline: statutory burden, violence denominators, minors
+
+This instruction also supersedes any parent-baseline wording that would make
+punitive subnational law look like mere variation under a common federal gate.
+Absence of evidence is never evidence of absence and must never be used as
+mitigation. Mark it `not_documented` or `uncertain`; do not treat the absence of
+a recorded arrest, prosecution, riot, or trans-specific violence rate as safety.
+An undocumented action is missing information about risk, not a protective fact.
+
+Weight the statutory burden carried by the dossier even when a particular
+arrest is not documented. Count visitor-facing punitive provisions as exposures
+when they are enacted and operative: facility exclusion or criminalisation,
+care bans and provider liability, surgery requirements for identity documents,
+sports bans, binary-sex declarations, and the absence of statewide anti-
+discrimination and hate-crime coverage. Do not collapse many distinct punitive
+provisions into a single generic ‘exclusion’ penalty merely because they stop
+short of adult imprisonment. If the dossier documents several such provisions,
+they must compound against the generic federal tier.
+
+Apply strict violence discipline. Raw incident counts do not establish elevated
+risk without a denominator or an explicit finding that the risk is measurably
+above the relevant background rate. If the dossier warns that this caveat applies,
+do not use the count as evidence of exceptional trans-specific violence. Police
+hostility, victim charging, denied care after an attack, or an operative directive
+to police a class of venues are documented exposures; mere co-occurrence with a
+high general homicide rate is not.
+
+Travellers include adults, minors, and parents or guardians travelling with
+them. A law affecting minors, providers, parents, or guardians is traveller-
+facing legal exposure for a family, even when the adult visitor alone does not
+commit the penalised act. A provider felony, school or sports exclusion, document
+requirement, or mandated outing can force denial of care, missed schooling, state
+inquiry, guardian investigation, or separation of care from the travelling child.
+Do not net this away by saying that the parent is not the defendant.
+
+Anchor selection must test the full scale, not a local cluster. Include at least
+one anchor comparison at or below 0.25 and at least one at or above 0.75. This
+forces the rater to explain what would be required for the jurisdiction to be
+worse than the low end and what would have to be true for it to be safe enough
+for the high end.
 """
 
 QUESTION = ("Rate the safety for a transgender visitor — including an adult "
@@ -343,7 +385,8 @@ def run(run_id: str, model_key: str, region_set: str, call_subset=None) -> int:
             print(f"STOP local guard at cell {idx}: {total}")
             return 3
         try:
-            res = PM.call_v4(model_key, c["_system"], c["_user"])
+            res = PM.call_v5(model_key, c["_system"], c["_user"],
+                             effort=os.environ.get("RATE_EFFORT", "medium"))
         except Exception as e:
             (run_dir / f"result-{idx:04d}.json").write_text(json.dumps(
                 {"cell": idx, "region": c["region"], "status": "stopped",

@@ -1,0 +1,78 @@
+{
+ "cell": 3,
+ "region": "66186276B11383391196245:Illinois",
+ "model": "haiku",
+ "status": "ok",
+ "cost_usd": "0.0089376",
+ "parsed": {
+  "rating": 0.42,
+  "explanation": "The combined regime pairs a strongly protective state layer with a documented hostile national layer. State protections are operative: a 2023 shield law covers in-state care for out-of-state patients, public-accommodation and hate-crime coverage exist, and facilities are gender-neutral. These do not reach national entry screening, federal custody, federal records subpoenas or federal facility rules. Entry refusal for document discrepancy, a fraud-ground pathway, and reported immigration-custody abuse of trans men are documented traveller-facing exposures. The state's trespass arrest belongs to a different state and is not attributed here. Net: Elevated Risk.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: the cable instructs refusal where documents or records show discrepancy or reasonable doubt about sex, and permits lifetime fraud ineligibility for wilful misrepresentation. An athlete entry ban applies. Foreign detentions over visa issues are reported.",
+    "protection": "Not documented. State law does not govern entry screening.",
+    "interaction": "Document discrepancy can lead to refusal, then fraud allegation, then federal detention. State protections do not intercept this chain.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented in immigration custody: reported forced labour, beatings, solitary confinement and severe sexual abuse of transgender men, with refusers punished. Visitor-specific detention outcomes are not documented.",
+    "protection": "Not documented for visitors.",
+    "interaction": "Federal custody sits outside the state shield. The escalation path from entry discrepancy into custody is open.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Documented: a federal order bars gender-congruent use of government-funded single-sex facilities. Federal prisons adopted conversion-therapy-style measures from 2026 (hair cutting, hormone removal), reported denial of care, and stopped reporting trans prisoner counts.",
+    "protection": "State-run facilities are gender-neutral (single-occupancy restrooms; all-gender school restrooms in the largest city). No state facilities restriction is documented. The multi-occupancy bill is unresolved and not counted.",
+    "interaction": "State openness does not extend to federal buildings or federal custody. Reach of the federal order into state-run facilities is unclear.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Documented: federal subpoenas to over 20 hospitals for under-19 records including names, SSNs and notes. A federal youth lifeline service was shut. Proposed federal rules to bar public insurance for under-18 care are not in force.",
+    "protection": "Documented: a 2023 shield law protects patients and providers from civil or criminal charges for care lawful in-state, including for out-of-state travellers.",
+    "interaction": "The shield protects in-state care but its resistance to outside federal subpoenas is not sourced, so records exposure remains.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented national framing: executive orders calling minors' care mutilation and directing investigation of schools and prosecution of teachers for social transition. A counterterrorism strategy names radically pro-transgender groups for neutralisation; a reward scheme is tied to related conspiracies.",
+    "protection": "Documented state framing: gender-identity hate crimes since 2016, repeal of the panic defence, public-accommodation ban since 2006, and student name and pronoun procedures.",
+    "interaction": "State framing is protective, while federal framing is hostile and is encountered at entry and in federal custody.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Federal records subpoenas and proposed care limits reach families. Minors' entry under the discrepancy rule is not documented. Federal school-investigation orders create exposure for educators, not directly for visiting families.",
+    "protection": "Documented state protections: in-state minor care is shielded, conversion therapy for minors by mental health providers is banned, and anti-bullying and school-privacy rules apply.",
+    "interaction": "The family's main choke point is the federal border. State protection of care applies only once care is reached.",
+    "status": "uncertain"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented: no trans-specific violence rate, police targeting or sweeps are recorded for this state. National bias figures concern sexual orientation generally and are not trans-specific.",
+    "protection": "Documented: gender identity is covered by state hate-crime enhancement and the national hate statute. The gender-neutral domestic-violence act applies. Hate-crime prosecution data is not sourced.",
+    "interaction": "Protection is strongest in-state. Federal police exposure is not covered by these statutes.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal orders are largely unresolved or enjoined. The passport suit is pending. Whether the state shield withstands outside subpoenas is unsourced.",
+    "protection": "Documented: state remedies for public-accommodation and employment discrimination operate, with the employer threshold removed and sexual-orientation jury-selection protections.",
+    "interaction": "Federal remedies are slow and contested. State remedies do not cover federal entry or custody.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-C",
+    "comparison": "The 0.15-C anchor features plainclothes morality sweeps, presentation arrests, capital clauses and violence in custody. This case has no documented state sweeps, presentation arrests or capital exposure, so it sits well above 0.15-C. Its federal custody abuse is serious but is not an organised targeting regime, which keeps it from the lower tier."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "The 0.45-D anchor has universal registration and shared databases that make trans visitors durably exposed. This case has no documented state registration, and its strongest protections are in-state. The federal entry refusal and custody abuse are comparable in severity, so the case sits near 0.45-D, slightly higher for the state layer."
+   },
+   {
+    "anchor_id": "0.75-B",
+    "comparison": "The 0.75-B anchor has working employment protections, enforcement and limited exposure. This case matches on state protections but adds documented federal entry refusal, fraud exposure, custody abuse and federal records subpoenas that 0.75-B lacks. It sits materially below 0.75-B. Reaching 0.75 would need federal entry and custody protections in operation."
+   }
+  ],
+  "synthesis": "The state layer is strongly protective and operative within its borders: shield law, facilities, hate-crime coverage and public-accommodation protections. None of it touches the national entry, custody and records regime, which the dossier documents as active. A traveller whose documents or records raise doubt meets a refusal path that can extend to a fraud finding and then federal immigration detention, where abuse is reported. Federal subpoenas can reach care records, including for minors, and state shield protection does not clearly reach them. Federal rhetoric is hostile. The dossier's serious exposures are federal and operate regardless of state protections. The combined result is Elevated Risk: protected in-state life, but a documented, operative national choke point that carries severe consequences."
+ },
+ "parse_error": null
+}

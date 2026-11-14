@@ -1,0 +1,86 @@
+{
+ "cell": 48,
+ "region": "66186276B98073251815399:Rhode Island",
+ "model": "glm",
+ "status": "ok",
+ "cost_usd": "0.00392868",
+ "parsed": {
+  "rating": 0.52,
+  "explanation": "The combined regime pairs a hostile national layer with a genuinely protective state layer. National exposures are universal and traveller-facing: passport/visa sex determination per assigned birth sex, entry officers instructed to refuse on 'reasonable doubt' about sex and to consider lifetime fraud findings, a ban on trans athletes entering, federal facility exclusion, documented abusive immigration custody (forced labour, beatings, sexual abuse), and state threat-framing ('radical gender ideology', 'radically pro-transgender' counterterrorism prioritisation). These match the 0.45–0.55 tier. The protective state — nondiscrimination law, hate-crime enhancements, self-declaration documents, shield laws — lowers everyday exposure inside the state but cannot reach federal border, custody, or airport chokepoints. Contestation in courts mitigates but does not remedy. A travelling trans minor adds care-continuity and records-subpoena exposure.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "Documented: passports/visas processed only as M/F per assigned sex; cable instructs refusal where 'reasonable doubt' about sex exists; lifetime fraud-ineligibility finding possible; travellers report confiscated/blocked passports and stranding; foreign governments issued trans travel advisories after detentions of neighbouring citizens.",
+    "protection": "Fraud finding requires all four elements and is never automatic; limited waivers; passport-marker policy contested in national courts with prior policy enjoined at times.",
+    "interaction": "Entry screening is a federal chokepoint the protective state cannot alter; document mismatch can escalate to refusal, secondary inspection, or custody.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Documented: immigration custody of trans men involved forced labour, beatings, solitary confinement and severe sexual abuse; national corrections policies modelled on conversion-therapy practices (hair cutting, hormone removal); trans prisoner counts no longer reported.",
+    "protection": "Some executive orders blocked or enjoined; habeas and consular access not documented either way.",
+    "interaction": "A border or visa dispute can move a visitor from screening into federal custody where documented abuse occurs; state protections do not operate there.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "Documented: national order bars trans people from government-funded single-sex facilities congruent with identity; facility bans in many state/provinces, criminal exposure in 4; first known arrest (Mar 2025) with 24 hours held in men's ward before release.",
+    "protection": "The rated state has no facility ban, bans discrimination in public accommodations since 2001, and permits gender-neutral single-occupancy toilets; 29+ state/provinces have no mapped ban.",
+    "interaction": "State protection governs state and most public settings in-state, but federal buildings and travel through other states reintroduce exclusion or criminal trespass exposure.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "Documented nationally: care for minors framed as 'mutilation'; justice department subpoenaed 20+ hospitals for minors' records; proposed rules barring public insurance reimbursement for under-18 care; 27 state/provinces ban minor care.",
+    "protection": "State shields patient care in nondiscrimination statute (June 2023) and appears on healthcare shield-law map with out-of-state enforceability; adult care access not restricted in-state.",
+    "interaction": "Shield-law scope for a visiting minor's care is explicitly unresolved; seeking care could generate records exposure via national subpoenas; crossing state lines voids protection.",
+    "status": "uncertain"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "Documented: national agencies use 'radical gender ideology'; May 2026 counterterrorism strategy prioritises 'radically pro-transgender' groups; schools/teachers facilitating minors' social transition face investigation and prosecution threats; athletes' entry ban.",
+    "protection": "Guidance states counterterrorism powers will not target mere disagreement; national hate-crime statute covers gender identity; several measures enjoined.",
+    "interaction": "Threat-framing raises discovery severity and licenses officer suspicion at every federal touchpoint; rhetoric is not itself an arrest criterion.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "Documented: national orders target minors' care, school social transition (teachers face criminal prosecution), and school sports; hospital-record subpoenas reach under-19s; a trans student was arrested and held in men's ward. A travelling parent faces care denial, records exposure, and sporting/school exclusion for the minor.",
+    "protection": "State bans conversion therapy on minors (2017), covers healthcare nondiscrimination, and anti-bullying law protects public-school students; sports participation continues under revised compliance rule.",
+    "interaction": "State protections apply in-state; national funding, records and prosecution levers reach schools and providers regardless; March 2025 sports policy shifts compliance burden to schools.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "Not documented: no dated incident of anti-trans violence in the state and no state prevalence figure; national bias-crime statistics cover sexual orientation, not a trans-specific denominator.",
+    "protection": "State hate-crime enhancements cover gender identity; panic defence repealed 2018; national hate-crime statute covers gender identity.",
+    "interaction": "Police response quality for a visitor reporting assault is not documented; the one documented police interaction (restroom arrest) was hostile.",
+    "status": "not_documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Unknowns: how state credentials interact with national entry rules; facility access in private venues; shield-law application to visitors; whether visa-waiver travellers face the same cable scrutiny; practical enforcement of nondiscrimination statutes against visitors (no complaint/outcome data).",
+    "protection": "Civil-liberties litigation against the passport policy is live; legal-aid FAQ guides travellers; some orders enjoined; state statutes long-standing with documented amendment history.",
+    "interaction": "Unresolved litigation means the operative rules can shift between booking and arrival; remedies at federal level are contested, at state level undocumented in operation.",
+    "status": "uncertain"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.25-C",
+    "comparison": "0.25-C's birth-sex custody placement with routine assault inside prisons resembles the documented immigration-custody abuse here (forced labour, beatings, sexual abuse), but that anchor's whole jurisdiction criminalises cross-dressing and lacks remedy. Here criminalisation is absent, the rated state is protective, and courts actively contest federal measures — materially safer than 0.25-C, so this case sits well above it."
+   },
+   {
+    "anchor_id": "0.45-D",
+    "comparison": "0.45-D's registration database durably exposes every trans visitor to officials and gatekeepers. The national document regime here (M/F-only issuance, 'reasonable doubt' refusals, fraud findings, stranded travellers, foreign advisories) is a comparable universal, inescapable exposure at the federal chokepoint, though the fraud finding is discretionary and contested. The protective state layer, absent in 0.45-D, lifts everyday in-state life above that anchor."
+   },
+   {
+    "anchor_id": "0.55-C",
+    "comparison": "0.55-C rates ward assignment by document marker with partial denial and uneven remedies. The national facility restrictions and documented restroom arrest here are harsher, but the rated state's own facility and care protections are stronger than 0.55-C's improvisation, and no state-level denial is documented. Net: similar band, modestly above 0.55-C for the state's documented statutory protections."
+   },
+   {
+    "anchor_id": "0.75-C",
+    "comparison": "0.75-C has respectful border training, brief detention, counsel access and compensation for unlawful holding. This jurisdiction's federal border is measurably worse: mandatory sex determination, refusal instructions, fraud findings, documented stranding and abusive custody. Its state protections partially compensate but never at the border — so it rates clearly below 0.75-C."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "0.85-A combines protective law with working oversight and only isolated officer friction. Reaching 0.85 here would require the federal document, facility and custody regimes to be withdrawn or enjoined across the whole journey, plus evidence the state's statutes operate for visitors. The documented national hostility and custody abuse keep this jurisdiction materially below 0.85-A."
+   }
+  ],
+  "synthesis": "The operative regime is split-level. At every federal touchpoint — passport/visa adjudication, entry inspection, federal facilities, airport screening, immigration and corrections custody — the documented rules and practices impose universal trans-specific exposure: forced birth-sex documentation, refusal and fraud-finding levers, facility exclusion, and custody abuse of a severity (sexual violence, forced labour) approaching tier 1. The rated state layers real, long-standing protections — nondiscrimination in care and accommodations, hate-crime enhancements, self-declaration documents, shield laws — which make in-state daily life low-exposure for an adult visitor. But the state cannot reach the border or custody, the July 2026 assessment itself says its top tier is no longer most protective nationwide, several federal measures are in flux through litigation, and a travelling trans minor inherits care-continuity and records-subpoena risk that the state's unresolved shield-law scope only partly answers. Net: mid Elevated Risk — materially safer than national-tier-only anchors, well below protective-regime anchors."
+ },
+ "parse_error": null
+}

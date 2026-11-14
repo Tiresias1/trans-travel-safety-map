@@ -1,0 +1,78 @@
+{
+ "cell": 32,
+ "region": "66186276B73434888205604:New Jersey",
+ "model": "deepseek",
+ "status": "ok",
+ "cost_usd": "0.009250356",
+ "parsed": {
+  "rating": 0.48,
+  "explanation": "The division's own law is strongly protective: public-accommodation, housing and employment discrimination based on gender identity are barred and enforced; local ID markers are open; care is shielded; hate-crime enhancements exist; recorded trans-homicide rates are low. A visitor's daily life in the division is therefore comparatively safe. But the national regime governs the border and federal custody: binary sex rules, discrepancy-based visa refusals, possible fraud ineligibility, a federal facilities ban, and documented abuse in immigration detention. Local protections do not reach those federal actors. The result is Elevated Risk: materially safer than blanket-bar or criminalisation jurisdictions, but well below a jurisdiction whose national entry and custody systems are also protective.",
+  "summary_key_used": "explanation",
+  "factor_matrix": {
+   "entry_documents": {
+    "exposure": "National binary-sex visa/passport policy; discrepancy or reasonable doubt about sex can lead to refusal or demands for evidence; suspected misrepresentation can support permanent fraud ineligibility. Foreign X markers or marker/presentation mismatch may trigger scrutiny.",
+    "protection": "Local ID rules (X, M/F, no medical note) govern state documents only; national court challenges to passport rules are unresolved. No documented federal entry protection for trans visitors.",
+    "interaction": "State document openness does not control federal visa/passport screening; the border is a separate sovereign gate.",
+    "status": "documented"
+   },
+   "investigation_detention_custody": {
+    "exposure": "Immigration custody documented abuse of trans detainees: forced labour, beatings, solitary confinement, sexual abuse. National corrections policies impose conversion-therapy-like treatment on trans inmates. Fraud suspicion can lead to detention.",
+    "protection": "No documented working remedy for trans visitors in federal immigration custody; local anti-discrimination does not reach federal detention.",
+    "interaction": "A border document discrepancy can escalate into federal detention, where local protections are unavailable.",
+    "status": "documented"
+   },
+   "federal_state_facilities": {
+    "exposure": "National executive order bars trans people from government-funded single-sex facilities congruent with identity; federal buildings and airports are covered. Federal facilities ban is a universal-exposure measure.",
+    "protection": "State anti-discrimination law covers facilities and public accommodations; state has no bathroom ban and is mapped as protective; local facilities access is protected.",
+    "interaction": "Local law protects state/private facilities, but federal order governs federal facilities unless pre-emption or immunity is documented; none is.",
+    "status": "documented"
+   },
+   "care_services": {
+    "exposure": "National rules bar public insurance reimbursement for under-18 gender-affirming care; DOJ has subpoenaed hospital records for patients under 19; national rhetoric frames minor care as mutilation. Adult care is not directly banned nationally.",
+    "protection": "State executive order shields gender-affirming care within the state, including travelers; local anti-discrimination covers services.",
+    "interaction": "Local shield protects in-state providers, but federal subpoenas and insurance rules may reach; effect on cross-jurisdictional subpoenas is not documented.",
+    "status": "documented"
+   },
+   "threat_framing_law_enforcement": {
+    "exposure": "National counterterrorism strategy names 'radically pro-transgender' groups among hostile ideologies; DOJ reward guidance for domestic terrorist leadership. Memo says mere disagreement is not targeted.",
+    "protection": "Local police record gender X, have gender-identity protections, and hate-crime enhancements; local legal-risk ranking is most protective.",
+    "interaction": "Federal threat framing may chill activism or border device scrutiny; ordinary tourists are not directly targeted, but the climate raises risk for visible advocacy.",
+    "status": "documented"
+   },
+   "minors_guardians": {
+    "exposure": "National executive order directs investigation/prosecution of teachers for social transition; national insurance rule targets under-18 care; DOJ subpoenas hospital records for under-19 patients. A traveling family seeking care faces provider/state inquiry risk.",
+    "protection": "State shield protects gender-affirming care, school guidance supports trans students, and anti-discrimination covers services.",
+    "interaction": "Local shield may not block federal subpoenas or insurance rules; a minor traveling for care could trigger federal investigative exposure despite state protection.",
+    "status": "documented"
+   },
+   "street_violence_police_response": {
+    "exposure": "National climate is hostile, but no division-specific pattern of anti-trans violence is documented; recorded trans-homicide rate is among the safest per capita.",
+    "protection": "State hate-crime enhancements, anti-discrimination enforcement, police gender-X data, and low recorded violence support a protective local response.",
+    "interaction": "Local police and courts are likely to respond to anti-trans violence; federal custody and border abuse are separate from street-level protection.",
+    "status": "documented"
+   },
+   "remedies_unknowns": {
+    "exposure": "Federal border refusal, fraud ineligibility, and immigration custody abuse have no documented working remedy for visitors; waiver possibilities are limited.",
+    "protection": "State civil-rights enforcement body investigates service/lodging denials and can grant relief; national civil-liberties litigation is ongoing but unresolved.",
+    "interaction": "Local remedies work for in-state services; they do not reach federal border or custody decisions.",
+    "status": "documented"
+   }
+  },
+  "anchor_checks": [
+   {
+    "anchor_id": "0.15-A",
+    "comparison": "Varnalia criminalises gender presentation, arrests visitors routinely, and imposes months of abusive pretrial custody with a latent capital clause. This division has no such criminalisation, strong local anti-discrimination, and low recorded trans violence; its federal border/custody exposure is serious but not routine arrest for presentation. Far safer than 0.15."
+   },
+   {
+    "anchor_id": "0.55-B",
+    "comparison": "Kestrel Isles has secondary screening, refused admission, and administrative humiliation, but no documented abusive immigration custody. This division's border friction is comparable, while federal detention carries documented abuse; strong local protections improve daily life. Net slightly below 0.55 due to custody severity, but well above blanket-bar cases."
+   },
+   {
+    "anchor_id": "0.85-A",
+    "comparison": "Vessalia combines national equality law, police training, and working remedies. This division's local law resembles that model, but the national border and federal custody regime remain hostile and are not cancelled by local protections. That federal overlay keeps it well below 0.85."
+   }
+  ],
+  "synthesis": "The division is a protective enclave inside a hostile national regime. Once inside, a trans visitor benefits from enforced anti-discrimination, open state ID rules, care shielding, hate-crime enhancements, and low recorded violence. But entry and federal custody are governed by national binary-sex rules, discrepancy-based refusals, possible fraud ineligibility, a federal facilities ban, and documented immigration-detention abuse. Local remedies do not reach those federal actors. The combined regime is therefore Elevated Risk: safe in ordinary daily life, but with a serious, unavoidable border and custody exposure that prevents a Reduced Risk rating."
+ },
+ "parse_error": null
+}
