@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261115d",
-    admin1: "data/admin1.json?v=20261115d",
+    countries: "data/countries.json?v=20261115e",
+    admin1: "data/admin1.json?v=20261115e",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -425,7 +425,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
       await ensureBoundary(nextMode);
     }
     mode = nextMode;
-    document.getElementById("thoughtPanel").hidden = nextMode !== "admin1";
+
     for (const k of Object.keys(layers)) {
       if (map.hasLayer(layers[k])) map.removeLayer(layers[k]);
     }
@@ -450,15 +450,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     return ["MM", "DS", "QW", "GL", "HK", "LU", "MU"];
   }
   function selectedThoughts() {
-    const sel = document.querySelectorAll(".thoughtBox:checked");
-    if (!sel.length) {
-      const fallback = document.querySelector(".thoughtBox[value='M']");
-      if (fallback) {
-        fallback.checked = true;
-        return [fallback.value];
-      }
-    }
-    return [...sel].map(el => el.value);
+    return ["M"];
   }
   function applyModelComposite() {
     if (!loadedData.has("admin1")) return;
@@ -495,8 +487,7 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
   }
   document.querySelectorAll(".modelBox").forEach(el =>
     el.addEventListener("change", applyModelComposite));
-  document.querySelectorAll(".thoughtBox").forEach(el =>
-    el.addEventListener("change", applyModelComposite));
+
 
 
   /* ---------- legend ---------- */
