@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261115b",
-    admin1: "data/admin1.json?v=20261115b",
+    countries: "data/countries.json?v=20261115c",
+    admin1: "data/admin1.json?v=20261115c",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -450,6 +450,13 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
   }
   function selectedThoughts() {
     const sel = document.querySelectorAll(".thoughtBox:checked");
+    if (!sel.length) {
+      const fallback = document.querySelector(".thoughtBox[value='M']");
+      if (fallback) {
+        fallback.checked = true;
+        return [fallback.value];
+      }
+    }
     return [...sel].map(el => el.value);
   }
   function applyModelComposite() {
