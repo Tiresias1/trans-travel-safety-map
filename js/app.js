@@ -15,8 +15,8 @@ const TERRITORY_PARENT_NAMES = {"ASM":"the United States","GUM":"the United Stat
     admin1: "boundaries/admin1.geojson?v=20261107a",
   };
   const DATA_FILES = {
-    countries: "data/countries.json?v=20261115e",
-    admin1: "data/admin1.json?v=20261115e",
+    countries: "data/countries.json?v=20261115f",
+    admin1: "data/admin1.json?v=20261115f",
   };
   const META_FILE = "data/meta.json?v=20261107a";
 
@@ -457,6 +457,11 @@ const SMALL2 = 120 * zFactor;      // px²-squared-diagonal threshold (~11px dia
     const sel = selectedModels();
     const thoughts = selectedThoughts();
     for (const rec of Object.values(admin1Data)) {
+      if (rec && typeof rec.iterativeScore === "number") {
+        rec.score = rec.iterativeScore;
+        rec.band = bandLabel(rec.score);
+        continue;
+      }
       if (rec && rec.thoughtScores) {
         const vals = [];
         for (const t of thoughts) {
