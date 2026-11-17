@@ -10,15 +10,11 @@ individual trip.
 
 ## The scale
 
-- **Exactly 0.00** means a discovered trans visitor faces imprisonment highly likely after discovery, with the potential for execution.
-- **No other point on the scale has a defined precise consequence.** A score of
-  0.55 corresponds to no specified outcome, and a small gap between two scores
-  is not a measured difference in what would happen to anyone.
+- **Exactly 0.00** means a discovered trans visitor faces imprisonment highly likely after discovery, with the real potential for execution.
 - **1.00** is the top of the index. No place is claimed to have reached full
   legal and social acceptance.
 - **The colour bands** (Severe Risk, High Risk, Elevated Risk, Reduced Risk,
-  Low Risk) are display groupings for reading the gradient, not calibrated
-  thresholds. Two places inside one band can differ materially in what their
+  Low Risk) are display groupings for reading the gradient. Two places inside one band can differ materially in what their
   sources describe.
 
 ## The reference traveller
@@ -140,12 +136,9 @@ Western Sahara polygon from Natural Earth (public domain).
 
 Research notes live in [`research/`](research/).
 
-## Using the map
+## Scores and calibration
 
-This map is **informational research, not personalised travel advice**. Risk
-depends on the individual — presentation, documentation, itinerary,
-companions — and conditions change; verify against current official travel
-advisories before travelling.
+Scores are obtained by passing this [ratings rubric](research/experiments/country-calibration-audit/five-way/single_rate_v4.py) and the [synthetic anchors](research/experiments/country-calibration-audit/anchors/synthetic_anchors_v4.md) to a panel of judge models alongside blinded research dossiers. Initial ratings are then refined by iterative pairwise comparison: regions are repeatedly paired against their closest-score local counterparts and rerated in a combined A/B prompt, and both running scores are updated with a decaying running-average weight. Model selection is balanced per region so that no single judge dominates any one region's comparisons.
 
 The map, its scores and project data are dedicated to the **public domain
 (CC0 1.0)**; boundary data retain their upstream licences.
