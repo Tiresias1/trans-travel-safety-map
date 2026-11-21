@@ -1,0 +1,166 @@
+{
+ "iteration": 22,
+ "model": "luna",
+ "model_id": "openai/gpt-6-luna",
+ "status": "ok",
+ "cost_usd": "0.003031095",
+ "usage": {
+  "cost_usd": "0.003031095",
+  "input_tokens": 23522,
+  "output_tokens": 4389
+ },
+ "labels": {
+  "A": "14850775B70667807354554:Sevastopol",
+  "B": "28173009B80457268982215:Altai Krai"
+ },
+ "A_region": "14850775B70667807354554:Sevastopol",
+ "B_region": "28173009B80457268982215:Altai Krai",
+ "A_rating": 0.07,
+ "B_rating": 0.16,
+ "difference_B_minus_A": 0.09,
+ "parsed": {
+  "A": {
+   "rating": 0.07,
+   "explanation": "The combined regime is exceptionally dangerous: the national framework criminalizes or restricts LGBT-related expression and activity, while the occupied city adds pervasive document checks, arbitrary detention without access to lawyers or family, documented torture, and acute risk of sexual violence for LGBTQ people in detention. These are operative state exposures, not merely resident-facing recognition gaps. No local protective layer or effective remedy is documented. A is materially more dangerous than B because its dossier documents this additional, direct detention exposure; neither dossier's silence about some visitor-specific outcomes establishes safety.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Pervasive checkpoints and document checks are documented. Visitors' foreign documents remain as issued; the city treats residents without the occupying state's passport as stateless.",
+     "protection": "No protection for foreign documents or trans visitors at checkpoints is documented.",
+     "interaction": "Checks can expose a mismatch amid severe movement restrictions; refusal or treatment of a visitor's foreign papers is not specified.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Authorities arbitrarily detain civilians in unofficial sites without lawyer or family access; torture and ill-treatment are documented. UN reporting identifies acute sexual-violence risk for LGBTQ people in occupation detention.",
+     "protection": "No local protective institution, monitor, or remedy operates.",
+     "interaction": "Checkpoint scrutiny and national extremist enforcement operate alongside detention practices; the dossier does not establish a specific visitor detention pathway.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "The occupying state's full regime applies, including the gender-affirming-care ban and extremist designation. Specific bathroom or public-facility access rules are not documented.",
+     "protection": "No local mitigating layer or operating facility protection is documented.",
+     "interaction": "National rules and occupation administration combine; detention exposure is described separately.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "The national 2023 ban on gender-affirming care applies in the city; the dossier documents no local exception.",
+     "protection": "No visitor-facing care protection or remedy is documented.",
+     "interaction": "A care seeker may encounter the same hostile national framework and local authorities; a specific visitor case is not documented.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The national LGBT-movement extremist designation and expression restrictions apply; the occupying regime states participation can bring up to 12 years. National arrests and venue raids are documented.",
+     "protection": "No protective enforcement or effective local recourse is documented.",
+     "interaction": "The occupation regime adds to national criminal exposure; no local mitigation is documented.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National expression restrictions include material concerning minors and gender transition; care restrictions apply. No guardian-specific penalty is documented.",
+     "protection": "No visitor-facing protection for travelling families or minors is documented.",
+     "interaction": "A minor's care needs or a guardian's discussion of transition could encounter the national restrictions; a specific family enforcement pathway is not documented.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Occupation detention includes documented torture and ill-treatment; UN reporting finds LGBTQ people at acute risk of sexual violence there. No visitor-specific street-violence rate is documented.",
+     "protection": "No local protective police response or remedy operates.",
+     "interaction": "Police and detention authorities are part of the documented exposure, not a demonstrated source of recourse.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Detention without access to lawyers or family is documented; the city has no operating local remedy.",
+     "protection": "No local monitor, protective institution, or remedy operates.",
+     "interaction": "National and occupying authorities form the operative regime; foreign visitors' precise access to consular help is not documented.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-A",
+     "comparison": "Less extreme than this anchor: the dossier documents torture and acute sexual-violence risk in detention, but no execution or capital prosecution. It is nevertheless exceptionally dangerous because checkpoints and unremedied arbitrary detention make state custody a serious documented exposure."
+    },
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "More dangerous on the documented custody environment: this dossier adds pervasive checks, arbitrary detention, torture, and acute sexual-violence risk, with no local remedy. The visitor-specific pathway is less explicit than the anchor's routine arrests for document mismatch, so the comparison is not exact."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Far more dangerous: unlike the anchor's recognized documents, counsel, review tribunal, and generally brief detention, this dossier documents no local remedy and severe state detention harms."
+    }
+   ],
+   "synthesis": "National extremist and expression restrictions remain operative in the occupied city, but the decisive added exposure is the local system of pervasive checkpoints and arbitrary detention, where torture and acute sexual-violence risk for LGBTQ detainees are documented. No protective local institution mitigates these practices. A foreign visitor's precise document treatment and likelihood of detention are uncertain; those unknowns do not neutralize the known, severe state exposure. The record gives no basis to infer that a travelling minor or guardian is protected."
+  },
+  "B": {
+   "rating": 0.16,
+   "explanation": "The national regime applies throughout this division: gender-affirming care and marker changes are banned, broad expression restrictions are actively enforced, and the LGBT movement is designated extremist. Convictions, criminal charges, prison sentences, venue raids, and a death in pretrial detention document serious state hostility and custody risk. The dossier does not establish routine targeting of trans visitors at borders or in this particular division, but its regional silence is not evidence of safety or a remedy. B is materially less dangerous than A because A additionally documents pervasive checkpoints, arbitrary detention, torture, and acute detention-related sexual-violence risk.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "The national law bars local marker changes; visitors' passports and identity papers remain as issued. No division-specific border or foreign-document refusal practice is documented.",
+     "protection": "No explicit visitor-facing border protection is documented.",
+     "interaction": "Foreign-document treatment and the effect of any mismatch at entry are not described; national hostile enforcement remains operative after entry.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "National extremism enforcement includes criminal charges and prison sentences; one person arrested on extremism-related charges was found dead in pretrial detention. The dossier does not document a division-specific case.",
+     "protection": "No effective visitor-facing custody safeguard or remedy is documented.",
+     "interaction": "National enforcement applies in the division; regional non-reporting does not establish reduced risk.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No facility-access or custody-placement rule for trans visitors is documented in the division or national framework.",
+     "protection": "No visitor-facing facility protection is documented.",
+     "interaction": "National expression and extremism rules apply, but a separate facility restriction is not established.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "The national 2023 law effectively bans gender-affirming care; it applies in this division. No local exception is documented.",
+     "protection": "No visitor-facing care protection or remedy is documented.",
+     "interaction": "A trans visitor seeking such care encounters the national ban; a specific visitor denial is not documented.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The LGBT movement is designated extremist; broad propaganda restrictions are enforced. National evidence includes 101 extremism-related convictions, criminal charges, and venue raids.",
+     "protection": "No effective protection from these laws or enforcement is documented.",
+     "interaction": "The national regime applies in full. No division-specific case is reported, but the sources do not disaggregate enforcement by region.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National restrictions cover material concerning minors and gender transition; care is banned. No guardian-specific prosecution is documented.",
+     "protection": "No visitor-facing safeguard for travelling families or minors is documented.",
+     "interaction": "A minor's care needs or a guardian's discussion of transition could encounter the national restrictions; the dossier gives no specific family case.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "National venue raids and arrests are documented; a death in pretrial detention is reported. No division-specific street-violence pattern or response is documented.",
+     "protection": "No effective trans-specific police protection or remedy is documented.",
+     "interaction": "National enforcement applies, while local incident and response data are not disaggregated; silence is not mitigation.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination protection or hate-crime aggravation is documented nationally; the country left the regional human-rights court. No division-specific remedy is identified.",
+     "protection": "No operating visitor-facing remedy is documented.",
+     "interaction": "Regional silence cannot counter the documented national enforcement; local outcomes and complaint processes remain unknown.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-A",
+     "comparison": "Less dangerous than this anchor: the dossier documents serious enforcement and a custody death, but no execution or capital prosecution for trans identity or expression. It still documents real imprisonment risk under extremist provisions."
+    },
+    {
+     "anchor_id": "0.15-A",
+     "comparison": " broadly comparable, though somewhat less severe on the evidence provided: both show active state criminal enforcement and serious custody risk. This dossier lacks the anchor's explicit routine arrest of visitors for presentation and documented recurrent custodial abuse; regional silence is not a safety signal."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Far more dangerous: this dossier documents hostile expression and extremist laws, convictions and prison sentences, whereas the anchor has trained officers, counsel, appeals, and compensation for unlawful detention."
+    }
+   ],
+   "synthesis": "B is governed by the same national regime, not by a separate protective regional system. Active expression and extremist enforcement, including criminal charges and prison sentences, makes the risk materially greater than a merely hostile social climate or an unenforced statute. Care is also restricted by national law. No division-specific cases are documented, but reporting is not regionally disaggregated; that absence cannot offset national evidence. Compared with A, B lacks the dossier's additional documented checkpoints, arbitrary occupation detention, torture, and acute sexual-violence risk in custody. A travelling family receives no documented exemption."
+  },
+  "difference_ri_minus_nh": 0.09
+ },
+ "parse_error": null,
+ "attempts": 1
+}

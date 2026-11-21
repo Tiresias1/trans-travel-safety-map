@@ -1,0 +1,166 @@
+{
+ "iteration": 16,
+ "model": "mimo",
+ "model_id": "xiaomi/mimo-v2.6-flash",
+ "status": "ok",
+ "cost_usd": "0.00421456",
+ "usage": {
+  "cost_usd": "0.00421456",
+  "input_tokens": 23684,
+  "output_tokens": 3210
+ },
+ "labels": {
+  "A": "14850775B70667807354554:Sevastopol",
+  "B": "28173009B25497318303482:Samara Oblast"
+ },
+ "A_region": "14850775B70667807354554:Sevastopol",
+ "B_region": "28173009B25497318303482:Samara Oblast",
+ "A_rating": 0.1,
+ "B_rating": 0.17,
+ "difference_B_minus_A": 0.07,
+ "parsed": {
+  "A": {
+   "rating": 0.1,
+   "explanation": "The occupied federal city inherits the parent's full regime — 2023 transition ban, no legal recognition, LGBT movement designated extremist (up to 12 years), all-audiences propaganda law, raids, and a documented death in custody — and adds its own tier-1 layer: pervasive checkpoints and document checks that make discovery near-universal, arbitrary detention in unofficial sites without counsel, documented torture, and UN findings of acute sexual-violence risk to LGBTQ detainees. No local protective institution, monitor or remedy exists. A trans visitor, alone or with a minor, faces universal exposure and state-toleratedcustodial violence with zero recourse, placing this at the extreme low end.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No legal gender recognition; visitor's passport/visa remain as issued with no local alignment route. Pervasive checkpoints and document checks throughout the federal city make mismatch discovery a routine, universal exposure for any visibly trans traveller.",
+     "protection": "Not documented.",
+     "interaction": "Document mismatch at a checkpoint feeds directly into arbitrary detention in unofficial sites with no lawyer or family access.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism charges carry up to 12 years; a pretrial detainee died in custody in Dec 2024. Occupation authorities detain civilians arbitrarily in unofficial sites with documented torture and ill-treatment; UN reporting finds LGBTQ persons at acute sexual-violence risk in occupation detention.",
+     "protection": "Not documented.",
+     "interaction": "A checkpoint stop can escalate into unofficial detention where the parent's extremism charges and the occupation's torture record converge.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "The occupying state's federal regime applies in full with no local mitigating layer; heavily militarised environment with pervasive security screening. No city-specific facility protections documented.",
+     "protection": "Not documented.",
+     "interaction": "Federal extremism enforcement and occupation security apparatus operate simultaneously through the same checkpoints.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "2023 law bans gender-affirming care and marker changes; emergency care after discovery would occur under a regime with no anti-discrimination protection.",
+     "protection": "Not documented.",
+     "interaction": "Injury or illness in detention or at a checkpoint risks disclosure with no care-refusal remedy.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State threat-framing: LGBT movement designated extremist, 101 convictions, rainbow symbols criminalised, propaganda law reaches all audiences, 74% social hostility. Occupation authorities treat civilians as security threats.",
+     "protection": "Not documented.",
+     "interaction": "Extremism framing means discovery can be characterised as criminal participation rather than mere identity.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law specifically prohibits material giving minors a 'desise to change their sex'; a guardian travelling with a trans child or openly trans faces heightened exposure at checkpoints and in the militarised environment.",
+     "protection": "Not documented.",
+     "interaction": "Child presence can trigger additional scrutiny under the minors-focused propaganda provision during document checks.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Documented pattern of bar raids with mass searches and photographing; hostile public attitudes; detention lethal risk documented; torture in occupation custody documented. No hate-crime recording or aggravating-factor provisions.",
+     "protection": "Not documented.",
+     "interaction": "Police are the primary threat actor; no monitor or remedy operates in the city.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No local protective institution, monitor or remedy; country left the regional human rights court in 2022; no anti-discrimination law; no hate-crime recording. Arbitrary detention has no access to lawyers.",
+     "protection": "Not documented.",
+     "interaction": "Absence of any remedy converts every other exposure into an unmitigated one.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Below: Varnalia has routine arrest with months in pretrial custody and beatings, but courts formally accept appeals and capital provision is unused. Here, detention is in unofficial sites with documented torture and sexual-violence risk, universal checkpoint discovery, and no remedy at all — worse than 0.15-A."
+    },
+    {
+     "anchor_id": "0.25-A",
+     "comparison": "Below: Ostravia has raids and fines with courts overturning some convictions and legal aid available. This dossier documents torture in custody, no legal aid, no monitor, and universal document checks — a state-tolerated violence tier above 0.25-A's shakedown model."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Far below: Meridia offers trained border staff, tribunal appeal, brief detention and release with compensation. Nothing comparable exists here — no trained officers, no tribunal, no release remedy. The gap spans the entire scale."
+    }
+   ],
+   "synthesis": "The parent regime alone is severe: extremism designation with twelve-year exposure, expression crimes, hostile society, no protections, custody death. The occupied city compounds it rather than mitigating it. Checkpoints and document checks make discovery near-inevitable rather than probabilistic; arbitrary detention in unofficial sites without counsel, documented torture, and UN-recorded sexual-violence risk against LGBTQ detainees supply the tier-1 state exposure; absence of any local monitor or remedy removes recourse. For an adult alone or with a minor, outing at a checkpoint can plausibly end in unofficial custody with violence and no exit. This sits below every anchor whose worst feature is mere arrest or bureaucratic friction."
+  },
+  "B": {
+   "rating": 0.17,
+   "explanation": "This division inherits the parent's full operative regime with no local mitigation or aggravation documented: no legal gender recognition, transition care and marker changes banned since 2023, LGBT movement designated extremist with participation punishable up to twelve years, all-audiences propaganda law, mass bar raids, 101 extremism convictions, and a death in pretrial custody. The UK policy note assesses trans people as likely to face treatment amounting to persecution. Society is hostile (74% disapproval), no anti-discrimination or hate-crime protection exists, and the country left the regional human-rights court. A trans visitor faces criminal exposure for expression, custodial risk, and no remedy — severe, but without checkpoint-driven universal discovery or documented torture in this division.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No legal gender recognition; 2023 law bars marker changes, so passport/visa mismatches persist. Hotel checks, ID spot-checks and any document scrutiny risk outing. No division-specific border or document practice documented.",
+     "protection": "Not documented.",
+     "interaction": "Document mismatch can feed the extremism or propaganda enforcement apparatus at any police encounter.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "101 extremism convictions (98 administrative, 3 criminal); at least 20 criminal charges Jan 2024–Jun 2025, publishing-house staff face up to 12 years; repeated banned-symbol display up to 4 years. A pretrial detainee died in custody in Dec 2024.",
+     "protection": "Not documented.",
+     "interaction": "Discovery of trans status or expression can be reframed as extremism participation, converting identity exposure into custodial exposure.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National framework applies unqualified; no division-level protective policy, facility rule or enforcement divergence documented. Venue raids reached ~100 patrons with mass searching and photographing.",
+     "protection": "Not documented.",
+     "interaction": "Federal raids and enforcement statistics carry over without regional variation; unknown whether enforcement rate differs here.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Trans-specific healthcare effectively banned since 2023; no discrimination protection for refusal of care. A minor's transition-related needs would be outright impermissible.",
+     "protection": "Not documented.",
+     "interaction": "Emergency care after an incident risks disclosure under a regime that both bans transition care and offers no refusal remedy.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State threat-framing: LGBT movement designated extremist, symbols criminalised, propaganda law reaches expression and minors, rainbow-flag arrests, mass venue raids. 74% public disapproval; no hate-crime recording.",
+     "protection": "Not documented.",
+     "interaction": "Extremism framing means a routine police encounter after discovery can escalate to criminal rather than administrative handling.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law bans material giving minors a 'desire to change their sex'; a guardian travelling with an openly trans child faces exposure through schools, services and any documented interaction. Adoption restrictions are resident-facing.",
+     "protection": "Not documented.",
+     "interaction": "The minors-focused provision plus the general extremist framework means family visibility raises both social and legal exposure.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Documented pattern of raids and arrests defining LGBT life through 2025; hostile public attitudes; custody death; no official hate-crime recording or victim-support framework. Survey-measured societal hostility is high.",
+     "protection": "Not documented.",
+     "interaction": "Police are documented as the enforcing hostile actor; societal hostility compounds street-level risk with no protective response documented.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no hate-crime aggravation or recording, country left the regional human rights court in 2022, no division-level remedy documented. Enforcement rate in this division unresolved.",
+     "protection": "Not documented.",
+     "interaction": "Absence of remedies makes all other exposures unmitigated; division-level enforcement uncertainty is unresolved, not safety.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Similar tier: Varnalia features routine document-mismatch arrest with months of pretrial custody and beatings but formal appeals and an unused capital clause. This dossier's extremism regime with twelve-year sentences, custody death and no effective remedy matches 0.15-A's severity profile, though mass per-stop torture is less documented here."
+    },
+    {
+     "anchor_id": "0.25-A",
+     "comparison": "Below: Ostravia's raids and fines coexist with courts overturning convictions and functioning legal aid. Here, 3 criminal extremism convictions with up to 12 years, a custody death, no legal-aid or protective record, and no documented court relief place this below 0.25-A."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Far below: Meridia documents trained border staff, tribunal appeal, release with compensation, and no criminalisation. This regime criminalises expression, criminalises advocacy, and offers no documented remedy — an entire tier gap, not a variation in enforcement quality."
+    }
+   ],
+   "synthesis": "The division adds nothing and subtracts nothing: the parent's regime is the operative regime, and enforcement-rate uncertainty here is unknown, not safety. The exposure stack is expression criminalisation (propaganda, extremism symbols), a twelve-year ceiling for participation, documented raids with mass searches, one custody death, banned transition care, no recognition, no anti-discrimination or hate-crime framework, departed human-rights jurisdiction, and 74% societal disapproval. A trans visitor outed at a hotel, stop or venue risks criminal framing rather than mere friction, with no documented remedy. It sits below A only because A adds checkpoint-driven universal discovery, unofficial detention and documented torture."
+  },
+  "difference_ri_minus_nh": 0.07
+ },
+ "parse_error": null,
+ "attempts": 1
+}

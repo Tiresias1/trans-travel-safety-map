@@ -1,0 +1,174 @@
+{
+ "iteration": 9,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0063851",
+ "usage": {
+  "cost_usd": "0.0063851",
+  "input_tokens": 38201,
+  "output_tokens": 5130
+ },
+ "labels": {
+  "A": "14850775B15615817748403:Donetsk Oblast",
+  "B": "28173009B40138449315491:Kaliningrad"
+ },
+ "A_region": "14850775B15615817748403:Donetsk Oblast",
+ "B_region": "28173009B40138449315491:Kaliningrad",
+ "A_rating": 0.07,
+ "B_rating": 0.17,
+ "difference_B_minus_A": 0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.07,
+   "explanation": "The combined regime is the national framework plus an occupied-region layer. The national regime has no gender-marker change, a propaganda law reaching expression, an extremism designation producing venue raids and 101 convictions, and a pretrial death. The occupied-region layer adds occupying-authority enforcement, documented killing and burial of a gay man at a checkpoint, an informal detention site for ransom and forced labour, and military searches for LGBTIQ+ people with 81 known victims. Document-appearance mismatch blocks exit through checkpoints, and no monitor or remedy operates. Trans visitors face documented lethal and custodial exposure with no working recourse, which places this well below the national line.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Home-issued documents stay unchanged and the national law bars marker change. In the occupied areas, appearance-document mismatch prevents leaving through checkpoints, which traps trans people.",
+     "protection": "Not documented.",
+     "interaction": "Checkpoint document checks compound the national marker freeze, so a mismatched traveller can be held in the territory and cannot exit.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Pretrial death in custody on extremism charges. UN reporting documents acute risk of sexual violence in detention for LGBTQ+ people. Informal detention site used for intimidation and ransom.",
+     "protection": "No monitor or remedy operates in occupied areas.",
+     "interaction": "Detention on extremism or propaganda charges is the primary route to lethal custody, and the occupying authorities run it without oversight.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National extremism and propaganda statutes are enforced in occupied areas under occupying-state law. Venue raids reached LGBT-friendly bars in the capital.",
+     "protection": "Not documented.",
+     "interaction": "Occupying-state federal law is applied through appointed authorities with no rule of law, so no federal-level check exists.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "No documented transition-related care. Discrimination blocks services and housing for trans people in the occupied areas.",
+     "protection": "Not documented.",
+     "interaction": "Denied services in occupied areas leave a trans traveller without a route to care if the situation turns acute.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Authorities treat LGBT identity as extremist. Military and occupation officials search for LGBTIQ+ people, and the self-proclaimed entity's constitution once criminalised same-sex unions.",
+     "protection": "Not documented.",
+     "interaction": "State threat framing combines with wartime arbitrariness, so being identified leads directly to threats and violence.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law covers material giving minors a desire to change sex. A conversion-therapy captivity case involved a trans woman lured by relatives. Adoption bans apply to residents.",
+     "protection": "Not documented.",
+     "interaction": "A minor or guardian faces exposure through the propaganda and transition-ban rules, and the occupied areas offer no protective route.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "A gay man was shot and buried behind a checkpoint. Insults, violence, extortion and threats to life are documented when occupying forces learn of someone's LGBT status.",
+     "protection": "Not documented.",
+     "interaction": "Police and military are the source of the violence, so reporting an attack is not a realistic option.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No monitor, remedy or protective institution operates. Almost all openly LGBT residents have fled.",
+     "protection": "Not documented.",
+     "interaction": "The absence of remedy compounds every documented exposure above.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-B",
+     "comparison": "Dossier A is similar in lethal custody and state-agent killing with no working remedy. It is less severe because it has no documented capital charging of trans-linked cases, so it sits slightly above 0.05."
+    },
+    {
+     "anchor_id": "0.15-D",
+     "comparison": "Dossier A is similar in document-mismatch detention and custody violence with no monitoring. It is lower because it adds documented killings and checkpoint exit traps, placing it below 0.15."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Dossier A is well below 0.35. The 0.35 anchor has discretionary exclusion without arrest or killings, while Dossier A has documented lethal and custodial harm."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Dossier A is far below 0.75. A 0.75 jurisdiction has enforced clinic and employment protections and no custody or killing exposure."
+    }
+   ],
+   "synthesis": "Documented national extremism and propaganda enforcement, including a pretrial death, sits under occupied-region rule with killings, checkpoint document traps and military searches for LGBTIQ+ people. No monitor or remedy operates, and the record shows no route for a trans visitor to exit safely if identified. The state-agent exposures are universal and lethal in the territory, so the rating is near the floor."
+  },
+  "B": {
+   "rating": 0.17,
+   "explanation": "The combined regime is the national framework only, with no division-specific layer documented. Nationally, legal gender recognition and marker change are banned, so a visitor's home-issued documents stay fixed. Propaganda law reaches expression, and the extremism designation has produced 101 convictions, venue raids, and a pretrial death in custody. There is no anti-discrimination or hate-crime recognition, and public attitudes are hostile. Same-sex activity is not criminalised. The exposure is state-directed and enforced, which is serious, but it is not documented as trans-specific custody or killing in this dossier, and no occupied-region layer applies. The rating is low but above the occupied-region dossier.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Visitor documents stay as issued and marker change is barred. Border handling of a document-appearance mismatch is not documented for visitors.",
+     "protection": "Not documented.",
+     "interaction": "A mismatch at entry could be read under the extremism or propaganda framework, but no such case is documented.",
+     "status": "not_documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "A man arrested on extremism charges over an LGBT travel business died in pretrial detention. Arrests and club raids are documented, although trans-specific custody practice is not.",
+     "protection": "Not documented.",
+     "interaction": "Detention on extremism or propaganda charges is a documented route to lethal custody for LGBT-linked people.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National propaganda and extremism statutes are enforced nationally, and no state or provincial variation is documented.",
+     "protection": "Not documented.",
+     "interaction": "The national framework applies unchanged, so there is no local layer to offset it.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Transition-related care is not documented for visitors. The 2023 law bans surgery and marker change.",
+     "protection": "Not documented.",
+     "interaction": "Care access for a visitor is undocumented, so the gap is not evidence of availability.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Official framing treats LGBT expression as extremist. Asylum guidance treats trans people and open activists as facing heightened risk.",
+     "protection": "Not documented.",
+     "interaction": "Official framing raises the chance that any identification leads to enforcement.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law covers material giving minors a desire to change sex. A conversion-therapy captivity case is documented. Adoption bans apply to residents.",
+     "protection": "Not documented.",
+     "interaction": "A minor travelling with a guardian faces exposure through propaganda enforcement and relatives' conversion-therapy risk.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Trans-specific street violence rates are not documented. Hostile attitudes are documented at 74 percent.",
+     "protection": "Not documented.",
+     "interaction": "Hostile attitudes plus police enforcement of extremism laws reduce the chance that a visitor's complaint is taken seriously.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination protection and no hate-crime aggravation. Official hate-crime data is not recorded.",
+     "protection": "Not documented.",
+     "interaction": "Without recourse, any harm a visitor suffers goes unremedied.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-D",
+     "comparison": "Dossier B is above 0.15 because it has no documented trans-specific custody torture, capital charging or document-based detention. It is similar in lethal custody risk and in an enforced statute that reaches expression."
+    },
+    {
+     "anchor_id": "0.25-D",
+     "comparison": "Dossier B is similar to 0.25-D in undercover-style enforcement and recourse failure. It is lower because the national extremism enforcement is broader and documents custody death."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Dossier B is below 0.35. The 0.35 anchor has discretionary exclusion without custody death, while B has a documented custodial death and venue raids."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Dossier B is far below 0.75. Reaching 0.75 would require documented border and care protections, anti-discrimination enforcement, and no extremism enforcement against LGBT expression."
+    }
+   ],
+   "synthesis": "The national extremism and propaganda regime is enforced through venue raids, arrests and pretrial detention, with one documented death in custody. Trans-specific exposure runs through fixed documents, hostile attitudes and the absence of any recourse, but this dossier does not document trans-specific custody or border harm. No local layer is documented, so the national regime alone sets the rating. The risk is serious and enforced, yet it is not documented as the occupied-region dossier's lethal, checkpoint-trapping regime."
+  },
+  "difference_ri_minus_nh": 0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}

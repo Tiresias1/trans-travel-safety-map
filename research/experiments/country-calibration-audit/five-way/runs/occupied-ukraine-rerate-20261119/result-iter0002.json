@@ -1,0 +1,166 @@
+{
+ "iteration": 2,
+ "model": "deepseek",
+ "model_id": "deepseek/deepseek-v4.1-flash-1017",
+ "status": "ok",
+ "cost_usd": "0.00238408",
+ "usage": {
+  "cost_usd": "0.00238408",
+  "input_tokens": 23404,
+  "output_tokens": 6954
+ },
+ "labels": {
+  "A": "14850775B70667807354554:Sevastopol",
+  "B": "28173009B70218250039968:Murmansk Oblast"
+ },
+ "A_region": "14850775B70667807354554:Sevastopol",
+ "B_region": "28173009B70218250039968:Murmansk Oblast",
+ "A_rating": 0.1,
+ "B_rating": 0.18,
+ "difference_B_minus_A": 0.08,
+ "parsed": {
+  "A": {
+   "rating": 0.1,
+   "explanation": "Dossier A combines the parent regime—no gender-marker recognition, a 2023 care ban, an 'extremist' designation of the LGBT movement, 101 convictions, bar raids and a custody death—with occupied-city administration, pervasive checkpoints, stateless treatment of non-passport holders, arbitrary detention without lawyers, documented torture, and UN-reported acute sexual-violence risk for LGBTQ+ detainees. No local protective institution or remedy exists; courts enforce the hostile federal rules. A trans visitor outed at a checkpoint, venue raid, hospital or detention faces severe state-imposed risk, including abusive custody. Lethal custody is documented, though an execution pathway for gender presentation is not. This sits below the 0.15 anchors and above 0.05 because no capital application is documented.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No route to align markers; pervasive militarised checkpoints and document checks; non-occupying-passport holders treated as stateless with severely restricted movement.",
+     "protection": "Not documented.",
+     "interaction": "A document mismatch can escalate at a checkpoint into occupation or federal detention.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Arbitrary detention in unofficial sites without lawyers or family; documented torture and ill-treatment; UN finds LGBTQ+ persons at acute risk of sexual violence in occupation detention; federal extremism charges carry up to 12 years.",
+     "protection": "Not documented.",
+     "interaction": "Checkpoint or venue exposure can feed into abusive custody with no independent oversight.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "The city is administered as a federal city, so the full federal propaganda, care-ban and extremism regime applies with no local mitigating layer.",
+     "protection": "Not documented.",
+     "interaction": "No local institution can soften federal enforcement or detention practice.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "The 2023 law bans gender-affirming care and legal transition; visitors needing care face denial, and hospitals are not safe disclosure points.",
+     "protection": "No anti-discrimination protection or care-access safeguard documented.",
+     "interaction": "Emergency or routine care can expose a trans visitor to hostile staff or officials.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The state designates the LGBT movement as extremist; 101 convictions, bar raids, arrests for symbols, and up to 12 years' imprisonment are documented.",
+     "protection": "Not documented.",
+     "interaction": "Visible trans expression or venue attendance can trigger extremism or propaganda framing.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law targets material giving minors a desire to change sex; adoption restrictions are resident-facing but signal hostility to trans families.",
+     "protection": "Not documented.",
+     "interaction": "A parent travelling with a trans minor could face investigation or outing, though visitor-specific practice is not documented.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "Public hostility is high; police raid LGBT venues, record no hate crimes, and offer no anti-discrimination recourse; occupation detention carries sexual-violence risk.",
+     "protection": "Not documented.",
+     "interaction": "Reporting an attack risks exposing the victim to police who are themselves a documented threat.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No local monitor, protective institution or effective remedy operates; the country left the regional court and courts enforce hostile law.",
+     "protection": "Not documented.",
+     "interaction": "Appeals and complaints cannot be expected to reverse detention, care denial or exclusion.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "Saruth documents border moral-conduct bars, detainee assaults and illusory habeas. A shares the abusive custody and no-remedy profile but adds occupation checkpoints, stateless treatment and UN-reported sexual-violence risk, making A worse and below 0.15."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra's visitor register produces exclusion and humiliation without criminal charge. A adds extremism prosecution, venue raids, torture and lethal custody, so A is materially worse."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Qorinda's extortion is remedied through courts and police, with imprisonment implausible. A has no working remedy and state-imposed detention abuse, so it is far below this tier."
+    }
+   ],
+   "synthesis": "The parent regime already imposes a hostile legal climate, care denial and documented venue enforcement. Occupation administration removes any local mitigation and adds checkpoints, stateless treatment, arbitrary detention and documented torture, with UN-reported sexual-violence risk in custody. The combined operative effect is that a trans visitor outed at a checkpoint, venue, hospital or detention site faces state-imposed abuse with no working remedy. The absence of a documented execution pathway for gender presentation keeps A above the 0.05 tier, but the documented lethal-risk custody and occupation practices place it below the 0.15 anchors."
+  },
+  "B": {
+   "rating": 0.18,
+   "explanation": "Dossier B applies the parent regime without any documented state-specific mitigation or aggravation. A trans visitor faces no marker-alignment route, a care ban, propaganda laws reaching all ages, an 'extremist' designation of the LGBT movement carrying up to 12 years, 101 convictions, documented bar raids and a custody death. Public hostility is high, hate crimes are not recorded, anti-discrimination protection is absent and the country has left the regional court. The state-specific record is silent, but national enforcement and venue raids are documented. Outed at an LGBT venue or charged under extremism rules, a trans visitor faces arrest and abusive detention. It sits slightly above the explicit-presentation-offence anchors because mere trans status is not expressly criminalised.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No route to align markers; a passport mismatch could invite secondary scrutiny, and propaganda/extremism rules can reach symbols.",
+     "protection": "No documented border safeguard for trans visitors.",
+     "interaction": "Border questioning can expose identity, but trans-specific refusal or referral is not documented.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism charges carry up to 12 years; 101 convictions are documented; a man arrested over an LGBT travel agency died in pretrial detention.",
+     "protection": "Not documented.",
+     "interaction": "Venue raids or expression-based charges can lead to detention with documented lethal risk.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "The national propaganda, care-ban and extremism regime applies; no state-specific protective facility or practice is documented.",
+     "protection": "Not documented.",
+     "interaction": "The state stands under the national framework with no documented local variation.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "The 2023 law bans gender-affirming care and legal transition; visitors needing care face denial and disclosure risk.",
+     "protection": "No anti-discrimination protection or care-access safeguard documented.",
+     "interaction": "Care-seeking can expose a trans visitor to hostile staff or officials.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The state designates the LGBT movement as extremist; raids, arrests for symbols and 101 convictions are documented.",
+     "protection": "Not documented.",
+     "interaction": "Visible trans expression or venue attendance can trigger extremism or propaganda enforcement.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law targets material giving minors a desire to change sex; adoption restrictions and care bans signal hostility to trans families.",
+     "protection": "Not documented.",
+     "interaction": "A parent travelling with a trans minor could face investigation or outing; state-specific practice is not documented.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "74% say homosexuality should not be accepted; hate crimes are not recorded; police raid LGBT venues and offer no anti-discrimination recourse.",
+     "protection": "Not documented.",
+     "interaction": "Reporting violence risks exposure to police who enforce the hostile national regime.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no hate-crime recording; the country left the regional court; no effective remedy is documented.",
+     "protection": "Not documented.",
+     "interaction": "Complaints and appeals cannot be expected to reverse exclusion, care denial or detention.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "Saruth documents explicit border moral-conduct bars and routine abusive detention. B has extremism prosecutions, venue raids and a custody death, but no express presentation or border offence, placing B slightly above 0.15."
+    },
+    {
+     "anchor_id": "0.35-B",
+     "comparison": "Karthovia's police stops, confiscation and short detentions lack a 12-year extremism regime and documented custody death. B is therefore worse than this 0.35 anchor."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia's border detention is brief, appealable and remedied. B has no working remedy, a hostile national regime and documented lethal-risk custody, so it is far below this tier."
+    }
+   ],
+   "synthesis": "The national framework supplies the operative exposure: no marker alignment, a care ban, all-ages propaganda restrictions, an extremism designation carrying up to 12 years, documented venue raids, 101 convictions and a custody death. The state-specific record is silent, so no local mitigation can be credited. Public hostility is high and police response is not protective. A trans visitor outed at an LGBT venue, in care, or during an expression-related investigation faces arrest and abusive detention, but mere trans status is not expressly criminalised and no execution pathway is documented. This places B above the 0.15 explicit-presentation anchors but far below any reduced-risk tier."
+  },
+  "difference_ri_minus_nh": 0.08
+ },
+ "parse_error": null,
+ "attempts": 1
+}

@@ -1,0 +1,166 @@
+{
+ "iteration": 24,
+ "model": "qwen",
+ "model_id": "qwen/qwen3.8-flash",
+ "status": "ok",
+ "cost_usd": "0.007871154",
+ "usage": {
+  "cost_usd": "0.007871154",
+  "input_tokens": 23989,
+  "output_tokens": 15222
+ },
+ "labels": {
+  "A": "14850775B70667807354554:Sevastopol",
+  "B": "28173009B51962491984110:Jewish Autonomous Oblast"
+ },
+ "A_region": "14850775B70667807354554:Sevastopol",
+ "B_region": "28173009B51962491984110:Jewish Autonomous Oblast",
+ "A_rating": 0.08,
+ "B_rating": 0.16,
+ "difference_B_minus_A": 0.08,
+ "parsed": {
+  "A": {
+   "rating": 0.08,
+   "explanation": "The operative regime combines a federal extremist designation of the LGBT movement, a gender-marker ban, propaganda enforcement and venue raids with occupation practices: pervasive checkpoints, routine document checks, arbitrary detention in unofficial sites, torture and UN-documented acute sexual violence against LGBTQ+ detainees. For an outed adult or guardian with minor, discovery can escalate into criminal extremism suspicion, disappearance, violent custody or death. No local monitoring, protective institution or effective remedy exists, so rule of law functions as the exposure rather than mitigation.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Occupation checkpoints and movement controls create recurring opportunities for name or marker presentation to attract scrutiny; foreign or ambiguous documents are treated as security anomalies.",
+     "protection": "No visitor-facing document acceptance, secondary-screening privacy or gender-marker protocol documented.",
+     "interaction": "A routine check can funnel into interrogation, confiscation, detention and custody exposure.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Arbitrary detention in unofficial occupation sites without lawyer or family access; torture and ill-treatment; UN reporting finds LGBTQ+ detainees at acute sexual-violence risk; federal extremism custody already has a documented death.",
+     "protection": "No protective custody standard, independent monitor, complaint route or effective legal aid documented.",
+     "interaction": "LGBT association, symbols, venue attendance or gender presentation discovered during custody becomes a reason for violent interrogation.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal law denies gender-marker alignment and frames LGBT participation as extremist; no documented visitor facility protections, and occupation controls make document mismatch relevant in transit and custody spaces.",
+     "protection": "None documented.",
+     "interaction": "National hostile law and occupation enforcement operate together without a local mitigating layer.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-related care is banned and marker change unavailable; visitor-facing refusal of routine, emergency or continuity care is not documented, but discovery of medication or care needs can increase scrutiny.",
+     "protection": "No clinic privacy, interpreter, advocacy or care-access safeguard documented.",
+     "interaction": "Care-seeking may intersect with checkpoints or detention; no operative protection exists.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Supreme court designated the LGBT movement extremist, participation punishable up to 12 years; propaganda cases multiplied, venues raided and patrons searched or photographed; occupation forces enforce through arbitrary stops.",
+     "protection": "No independent enforcement review, hate-crime recognition or anti-discrimination shield documented.",
+     "interaction": "Law enforcement is the perpetrator, converting visibility into criminal and security suspicion.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "A guardian travelling with a trans or gender-nonconforming minor faces no recognition, no lawful care pathway, anti-minor propaganda liability, and occupation custody where arbitrary detention and sexual violence are documented.",
+     "protection": "No child-protection, family-mediation or minor privacy mechanism documented.",
+     "interaction": "Family travel increases exposure because care, schooling or documents can trigger state inquiry and checkpoint scrutiny.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No protective street-policing documented; police raid venues and detain arbitrarily, while hate crimes are unrecorded and public hostility is high. Private attacks are not documented, but absence is not safety.",
+     "protection": "No community safeguard, victim-assistance line or impartial police response documented.",
+     "interaction": "Reporting or asking for help may place the traveller with occupation or federal forces rather than away from harm.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No local protective institution, monitor, ombudsman, tribunal or appeal route operates; regional remedies were left or void, and occupation detention lacks lawful review.",
+     "protection": "None documented.",
+     "interaction": "Seeking remedy can require further disclosure at checkpoints or with officers, increasing exposure.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-C",
+     "comparison": "Similar in lethal custody and sexual violence, but A lacks the 0.05-C capital verdict or execution record. That uncertainty makes A slightly safer than a documented execution regime while still severe-risk due arbitrary torture and sexual violence."
+    },
+    {
+     "anchor_id": "0.15-C",
+     "comparison": "A is lower than 0.15-C because 0.15-C retains courts, lawyers and capital doubt, while A adds occupation checkpoints, unofficial detention, torture and UN-documented acute sexual violence without remedy."
+    },
+    {
+     "anchor_id": "0.75-B",
+     "comparison": "A is far below 0.75-B; 0.75-B has protected care and remedies, while A has hostile checkpoints, arbitrary detention and sexual violence, with no recourse."
+    }
+   ],
+   "synthesis": "The occupation layer is decisive: it turns the federal hostile framework into continuous traveller-facing discovery through checkpoints and arbitrary detention, while the LGBT movement designation makes that discovery criminal. Because custody institutions themselves are the threat, legal infrastructure does not mitigate. For an outed adult or family, the most likely consequences are search, detention, torture, sexual violence or disappearance, with no practical remedy."
+  },
+  "B": {
+   "rating": 0.16,
+   "explanation": "The combined regime is national only: no gender-marker recognition, a ban on gender-related surgery, an extremist designation of the LGBT movement, propaganda enforcement, venue raids, fines or detention and a documented death in extremism custody. Public hostility is high, anti-discrimination and hate-crime recourse are absent, and the court route that once checked violations was lost. No local protective or aggravating layer is documented; for an outed adult or guardian with minor, exposure is severe through criminalised association and non-recognition, but less certain than the checkpoint torture and sexual-violence layer in A.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No documented border refusal, checkpoint check or rejection of home passports; however home documents remain as issued and a mismatching marker may encounter bureaucratic uncertainty.",
+     "protection": "No visitor-facing acceptance protocol or privacy assurance documented.",
+     "interaction": "Document uncertainty is not documented as an active traveller restriction, but it feeds institutional non-recognition.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism convictions, venue raids, searched or photographed patrons and a documented death in pretrial detention show custody risk; propaganda enforcement can impose detention and fines.",
+     "protection": "No anti-discrimination law, hate-crime recognition, legal-aid safeguard or reliable release standard documented.",
+     "interaction": "Association with LGBT venues, symbols or advocacy can convert an ID check into criminal custody exposure.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No local facility bans documented, but no gender-marker alignment exists and public hostility may produce service friction, exclusion or misgendering without recourse.",
+     "protection": "None documented.",
+     "interaction": "National recognition gap interacts with enforcement climate; no protective venue or hospital rule is known.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming care and marker change are banned; visitor continuity, emergency or minor care denial is not documented, but no legal pathway exists if needed.",
+     "protection": "No clinic safeguard, privacy rule or complaint mechanism documented.",
+     "interaction": "Care needs could force disclosure of trans status or medication; no operative protection prevents denial.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The supreme court designates the LGBT movement extremist; propaganda cases expanded to all ages; 101 extremism convictions, 257 penalties and venue raids are documented.",
+     "protection": "No independent enforcement review or protected assembly mechanism documented.",
+     "interaction": "State framing makes ordinary visibility, association or materials a potential criminal pretext.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "The propaganda law specifically reaches material encouraging minors to change sex; no minor recognition or care exists. A guardian may face inquiry, denial or forced outing around schooling or health needs.",
+     "protection": "No family-mediation, school accommodation or minor privacy protection documented.",
+     "interaction": "Minor status increases state interest and may bring family into propaganda enforcement if care or expression is involved.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Police raids and venue searches are documented; public attitudes are hostile and hate crimes are not officially recorded. No private-street attack pattern is documented, but protection is absent.",
+     "protection": "No police protection, victim reporting route or hate-crime response documented.",
+     "interaction": "Reporting incidents may expose the traveller to police rather than remedy.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination or hate-crime remedy, regional court route unavailable, and no local protective institution documented; enforcement variation across the division is unknown.",
+     "protection": "None documented.",
+     "interaction": "Absence of remedy means even modest friction can escalate if officers apply extremism or propaganda rules.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Similar but slightly safer: 0.15-A documents routine arrest for mismatched transit documents and months of beatings; B documents raids, extremism charges and custody death but less direct visitor checkpoint arrest."
+    },
+    {
+     "anchor_id": "0.25-A",
+     "comparison": "B is worse than 0.25-A because 0.25-A has short fines and some overturned convictions; B has up to 12-year extremism sentences, increased enforcement and a custody death."
+    },
+    {
+     "anchor_id": "0.75-B",
+     "comparison": "B is far below 0.75-B because 0.75-B provides entry training, appeals and detention safeguards; B has criminalised LGBT association, hostile public climate and no protective recourse."
+    }
+   ],
+   "synthesis": "B sits under the federal regime with no local protective or aggravating layer. The main exposure is not documented routine detention for identity alone, but the state treats LGBT movement as extremist and enforces propaganda through raids, fines and convictions. Because anti-discrimination and hate-crime recourse are absent, any checkpoint, venue visit, care need, school matter or symbol can turn into criminal scrutiny. For a trans minor or guardian, the non-recognition laws heighten family exposure without offsetting protections."
+  },
+  "difference_ri_minus_nh": 0.08
+ },
+ "parse_error": null,
+ "attempts": 1
+}

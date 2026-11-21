@@ -1,0 +1,166 @@
+{
+ "iteration": 26,
+ "model": "qwen",
+ "model_id": "qwen/qwen3.8-flash",
+ "status": "ok",
+ "cost_usd": "0.005733266",
+ "usage": {
+  "cost_usd": "0.005733266",
+  "input_tokens": 24172,
+  "output_tokens": 10031
+ },
+ "labels": {
+  "A": "14850775B24260608407062:Autonomous Republic of Crimea",
+  "B": "28173009B55503329301013:Omsk Oblast"
+ },
+ "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+ "B_region": "28173009B55503329301013:Omsk Oblast",
+ "A_rating": 0.07,
+ "B_rating": 0.15,
+ "difference_B_minus_A": 0.08,
+ "parsed": {
+  "A": {
+   "rating": 0.07,
+   "explanation": "Combined occupation and national regime is severely hostile. No legal gender recognition, transition care ban, and extremist designation enable fines, detention, raids, and up to 12 years for association or symbols. Documented bar searches, custody death, occupation militia threats, and foreigner assault with no recourse raise severity. A travelling minor faces care or school denial; a guardian may face inquiry for facilitating. Division silence is not safety here because occupation law adds targeted violence and closed monitoring, putting this below the national floor.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Visitor papers cannot be aligned with gender under occupation law; mismatch can invite questioning, secondary screening, or referral under extremist and propaganda rules.",
+     "protection": "None.",
+     "interaction": "Document mismatch plus visible presentation, symbols, venue contact, or app contact can move screening into investigation or detention.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism charges carry up to 12 years; bars were raided, patrons searched and photographed; a man arrested over an LGBT travel business died in pretrial custody.",
+     "protection": "None.",
+     "interaction": "Custody is a credible outcome after discovery, and occupation monitoring is closed to international scrutiny.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No gender recognition or aligned records; local courts enforce the occupying state's care and recognition bans, so ward, service, or detention placement can follow birth-sex records.",
+     "protection": "None.",
+     "interaction": "Need for facilities or care can expose a document mismatch and trigger refusal or official intervention.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender transition and gender-affirming medical care are banned; no anti-discrimination protection exists for visitors or residents.",
+     "protection": "None.",
+     "interaction": "Emergency or continuity care needs can create provider contact, refusal, record mismatch, or state reporting.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State courts label LGBT movement extremist; propaganda law reaches expression; occupation leaders promise police or militia reaction to LGBT presence.",
+     "protection": "None.",
+     "interaction": "Police, militia, and occupation authorities are aligned as threats rather than protectors.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda provisions and care bans apply to minors; a travelling guardian could face school or health scrutiny for supporting transition.",
+     "protection": "None.",
+     "interaction": "Family travel increases contact with schools, clinics, and local officials under hostile rules.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "A foreigner was lured via fake dating profile, beaten, stripped, filmed, and published; monitors report violent attacks on LGBT people with no recourse.",
+     "protection": "None.",
+     "interaction": "Non-state predation is tolerated by closed occupation authorities and hostile policing.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No effective remedy documented; local courts fine, monitors barred, militia threats unchecked, and occupation relief absent.",
+     "protection": "Not documented.",
+     "interaction": "Unremedied exposure makes every stop, report, or emergency a potential escalation.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "0.15-A criminalises presentation and abuses custody but retains formal remedies. A is worse because extremist charges reach association and symbols, occupation militia adds predation, monitors are barred, and a visitor assault with no recourse is documented."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A is border exclusion without credible imprisonment. A is far below because raids, 12-year extremism exposure, custody death, militia threats, and violent visitor assault are credible post-discovery outcomes."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C offers trained checks, appeals, and routine release. A has hostile enforcement, no effective remedy, and lethal custody risk, so it sits far below that protection tier."
+    }
+   ],
+   "synthesis": "National law plus occupation practice create one inescapable hostile system. Extremist framing makes symbols, association, venues, care-seeking, and document mismatch potential investigations; closed monitoring removes external remedy; militia threats and a documented visitor torture show tolerated predation. The consequence of discovery is severe detention, violence, or death risk with no recourse."
+  },
+  "B": {
+   "rating": 0.15,
+   "explanation": "The operative regime is the national hostile framework: no legal gender recognition, transition care ban, extremist designation, propaganda enforcement, bar raids, and custody death. Division-level sources contain no additional mitigation, and absence of local incidents is not safety. Discovery through presentation, association, symbols, venues, or care need can lead to fines, detention, investigation, or criminal prosecution. A travelling minor or guardian faces added service and family-state contact. Risk remains severe, slightly below A because no occupation militia or documented visitor-specific assault is given.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No procedure aligns gender with local records; visitor documents remain mismatched, which may invite questioning if combined with presentation, symbols, or official contact.",
+     "protection": "Not documented.",
+     "interaction": "The dossier does not document border rejection, so entry exposure is an open question but not safety.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism convictions and propaganda enforcement can produce fines, administrative detention, raids, and charges up to 12 years; one arrestee died in pretrial custody.",
+     "protection": "None.",
+     "interaction": "National custody and enforcement practice applies; division enforcement frequency is unresolved, which does not reduce exposure.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No legal gender recognition and care bans can produce facility, ward, or service refusal based on recorded sex or presentation mismatch.",
+     "protection": "Not documented.",
+     "interaction": "Local division facilities inherit national rules; no operative protective protocol is recorded.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Transition-related healthcare is effectively banned; provider refusal, record mismatch, or referral could follow a visitor seeking continuity or emergency care.",
+     "protection": "Not documented.",
+     "interaction": "Healthcare contact can become official scrutiny under extremist and propaganda rules.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Supreme court calls LGBT movement extremist; propaganda law reaches expression; bars were raided; public hostility and no hate-crime recognition are documented.",
+     "protection": "None.",
+     "interaction": "State threat framing empowers police, courts, and likely private actors to treat trans visibility as offence.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Minor-related propaganda and transition ban can deny school or health support; a guardian may face inquiry for facilitating care or expression.",
+     "protection": "Not documented.",
+     "interaction": "Family travel increases contact with state institutions that may classify support as prohibited.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No division-specific visitor assault is documented, but national raids, fear, and weak victim protection suggest police may not safeguard trans victims.",
+     "protection": "Not documented.",
+     "interaction": "Absence of local incident data is not mitigation; national enforcement climate operates.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination, hate-crime aggravation, or effective remedy is documented; local enforcement rates are unresolved.",
+     "protection": "Not documented.",
+     "interaction": "Unresolved division practice cannot offset the national baseline of detention, fines, and custody death.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "0.15-A is a close comparison: both involve criminalised visibility, abusive custody, and illusory protection. B sits near that tier, but the dossier lacks an explicit foreigner-specific visit pathway, making A the lower risk due occupation militia and documented visitor assault."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A is exclusion without credible imprisonment. B is below it because propaganda and extremism enforcement can bring detention, prosecution up to 12 years, and a documented custody death."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has trained checks, appeal mechanisms, and routine release. B lacks protection, recognition, and care access, and has custody and raid exposure, so it is far below."
+    }
+   ],
+   "synthesis": "National law is operative through the division; local silence is not mitigation. Hostile criminalisation, care denial, extremist framing, and custody risk dominate the consequence of discovery. The absence of division-specific incidents creates uncertainty about frequency, not safety. A is lower because occupation adds militia predation and a documented visitor assault."
+  },
+  "difference_ri_minus_nh": 0.08
+ },
+ "parse_error": null,
+ "attempts": 1
+}

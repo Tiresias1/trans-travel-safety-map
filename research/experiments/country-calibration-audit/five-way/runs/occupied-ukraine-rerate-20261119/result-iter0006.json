@@ -1,0 +1,166 @@
+{
+ "iteration": 6,
+ "model": "glm",
+ "model_id": "z-ai/glm-5.3-flash",
+ "status": "ok",
+ "cost_usd": "0.0031670565",
+ "usage": {
+  "cost_usd": "0.0031670565",
+  "input_tokens": 23413,
+  "output_tokens": 2430
+ },
+ "labels": {
+  "A": "14850775B31033086218351:Luhansk Oblast",
+  "B": "28173009B61240048498251:Mari El"
+ },
+ "A_region": "14850775B31033086218351:Luhansk Oblast",
+ "B_region": "28173009B61240048498251:Mari El",
+ "A_rating": 0.07,
+ "B_rating": 0.17,
+ "difference_B_minus_A": 0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.07,
+   "explanation": "Occupied territory under an occupying state's regime that designates the LGBT movement extremist (up to 12 years), compounded by documented targeted hunting of LGBT people by occupying forces (81 known victims), informal detention with ransom, forced labour, sexual violence in detention, and total impunity with no monitor or remedy. Discovery brings insults, extortion, restriction of freedom and threats to life. Appearance-document mismatch blocks checkpoint passage and exit — a universal-exposure measure leaving no escape route. This exceeds anchor 0.05-C's pattern: organised targeting, state-directed, lethal, with zero recourse.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Appearance-document mismatch blocks checkpoint passage and exit; no LGR exists, so documents cannot align with presentation and discovery is likely at every checkpoint.",
+     "protection": "None documented.",
+     "interaction": "Checkpoint discovery feeds directly into military/occupation-administration violence; exit itself is obstructed, trapping the traveller.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Informal detention in unofficial sites without lawyers, family access, or registration; detention for ransom and forced labour; UN finds acute risk of sexual violence in detention.",
+     "protection": "None documented.",
+     "interaction": "Occupation arbitrariness plus extremism law (12 years) means discovery can convert directly into prolonged unlawful custody.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Occupying authorities apply the parent's transition ban, propaganda law, and extremist designation; wartime arbitrariness governs all institutions.",
+     "protection": "None documented.",
+     "interaction": "Parent-state law is enforced locally by occupation administrations; no local offset exists.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Parent 2023 law bans transition care and marker change; discrimination in services documented for trans residents.",
+     "protection": "None documented.",
+     "interaction": "A visitor needing emergency care risks disclosure; no care infrastructure remains.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Occupying forces specifically searched for LGBTIQ+ people (81 known victims); discovery by military or administration brings violence, extortion, threats to life; total impunity.",
+     "protection": "None documented.",
+     "interaction": "State-directed targeting is the operative regime, not incidental enforcement.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Not documented for travellers with minors; the general targeting and checkpoint regime would reach any traveller regardless of party composition.",
+     "protection": "None documented.",
+     "interaction": "Not documented.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Hunting of gay people, violence with total impunity, threats to life documented by displaced residents and a 2022 assessment.",
+     "protection": "None documented; almost all openly LGBT residents have fled, and no monitor operates.",
+     "interaction": "Violence is state-tolerated and sometimes state-directed; reporting is impossible.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No monitor or remedy operates anywhere in the occupied areas; exit is blocked by document mismatch.",
+     "protection": "None documented.",
+     "interaction": "No consular, judicial, or NGO recourse is available; uncertainty resolves toward maximum severity.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-C",
+     "comparison": "A matches or exceeds 0.05-C: temple-police lethal custody becomes occupation forces hunting LGBT people with documented sexual violence in detention and threats to life. A lacks even Sahrun's formal detention structure; recourse is entirely absent."
+    },
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "A is materially worse: 0.15-A has arrests and months of custody; A has organised state-directed hunting, ransom detention, and exit blocked, with no court system at all operating for the victim."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A's worst case is exclusion and humiliation. A's documented worst cases are violence, sexual assault, ransom, and threats to life with impunity — a different tier entirely."
+    }
+   ],
+   "synthesis": "The operative regime is an occupation authority enforcing the parent state's extremist designation and transition ban with wartime arbitrariness, layered on documented targeted hunting of LGBT people by occupying forces, informal detention for ransom and forced labour, and sexual violence in detention. Discovery is near-inevitable for anyone whose documents mismatch presentation, since checkpoints verify against documents and block exit. No monitor, court, or remedy functions; impunity is total. For an adult alone or with a minor, the combined regime resolves toward the 0.05 tier: lethal, state-directed, universal exposure with no escape route."
+  },
+  "B": {
+   "rating": 0.17,
+   "explanation": "The republic stands entirely under the parent's national framework, which the dossier documents as actively enforced: extremism designation of the LGBT movement (up to 12 years), 101+ convictions, all-audience propaganda statutes with 180+ cases in 2023, raids on venues within 48 hours of designation, a death in pretrial custody, no LGR, no anti-discrimination law, and no hate-crime recording. Enforcement targets expression and association rather than mere trans presence, and no republic-specific layer adds to or subtracts from the national regime. This sits between 0.15-A/C and 0.25-D: documented state enforcement with a lethal custody outcome, but not organised street sweeps targeting presentation.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No LGR or marker change exists; passport and papers remain as issued, so document-presentation mismatch is likely at any identity check, and mismatch invites scrutiny in an extremism-designated climate.",
+     "protection": "None documented.",
+     "interaction": "Document discovery can feed the propaganda/extremism enforcement chain documented nationwide.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism prosecutions carry up to 12 years; administrative detention up to 15 days; a man arrested over an LGBT travel agency was found dead in pretrial detention (Dec 2024); raids involve searching and photographing patrons.",
+     "protection": "None documented.",
+     "interaction": "Administrative case escalation to criminal prosecution is documented for repeat offences; custody is lethal-risk.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Parent federal law (transition ban, propaganda statutes, extremist designation) applies fully in this republic; prison placement by birth sex is implicit in the absence of any recognition regime.",
+     "protection": "None documented.",
+     "interaction": "No republic-specific rule modifies the national framework in either direction.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "2023 law bans transition healthcare and marker change nationally; a trans visitor needing refills or emergency care faces denial and possible disclosure.",
+     "protection": "None documented.",
+     "interaction": "Care-seeking is itself an exposure in a state where transition material is prosecutable propaganda.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State threat-framing is total: the LGBT movement is designated extremist, venues are raided by masked police, patrons photographed, expression criminalised for all audiences, 101 convictions documented through 2025.",
+     "protection": "None documented.",
+     "interaction": "Police are the enforcement arm of the hostile framework; contact with police equals outing with prosecutorial risk.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda statute originally targeted material concerning minors; a guardian whose presentation or online content is read as 'promoting' transition risks administrative detention up to 15 days and criminal escalation, affecting the travelling child.",
+     "protection": "None documented.",
+     "interaction": "Parent-of-minor status does not create a distinct charge but raises scrutiny of any trans-identifying adult with a child.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "74% of the public says homosexuality should not be accepted; no hate-crime recording; police act as enforcers of the hostile framework, so victims cannot call on them safely.",
+     "protection": "None documented.",
+     "interaction": "Societal hostility plus unrecorded hate crimes means street violence carries impunity.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination protection, no aggravating-factor recognition, no partner recognition; the country left the regional human-rights court that had found violations.",
+     "protection": "None documented.",
+     "interaction": "Judicial recourse against extremism or propaganda enforcement is not documented anywhere in the record.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-C",
+     "comparison": "0.15-C features morality-sweep arrests of visitors with coerced statements and custodial violence. B's enforcement is against expression and association, with one documented custody death; severity is comparable but sweeps targeting presentation are not documented in B — B sits slightly above."
+    },
+    {
+     "anchor_id": "0.25-D",
+     "comparison": "0.25-D's selective morality prosecutions with annulled appeals and short terms are lighter than B's 12-year extremism charges, mass convictions, venue raids, and a custody death. B is materially worse than 0.25-D."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A's worst outcome is exclusion without imprisonment. B documents criminal prosecutions up to 12 years and a custodial death, so B must sit well below 0.35-A."
+    }
+   ],
+   "synthesis": "This republic adds nothing of its own; the combined operative regime is the parent nation's, which the dossier documents as actively and punitively enforced: an extremist designation carrying 12-year prosecutions, propaganda statutes enforced 180+ times per year, raids on venues with searching and photographing of patrons, and a pretrial custody death. A trans visitor's documents cannot align with presentation, so any police, hotel, or checkpoint contact risks discovery, and discovery in this climate can feed the extremism/prosecution chain. No remedy, anti-discrimination law, or hate-crime recording exists. The regime is between the 0.15 and 0.25 tiers: severe, documented, lethal in custody, but enforcement centres on expression rather than systematic sweeps of presentation."
+  },
+  "difference_ri_minus_nh": 0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}

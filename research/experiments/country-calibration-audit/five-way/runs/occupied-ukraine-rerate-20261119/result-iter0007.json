@@ -1,0 +1,166 @@
+{
+ "iteration": 7,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.0036152",
+ "usage": {
+  "cost_usd": "0.0036152",
+  "input_tokens": 23587,
+  "output_tokens": 2513
+ },
+ "labels": {
+  "A": "14850775B15615817748403:Donetsk Oblast",
+  "B": "28173009B61240048498251:Mari El"
+ },
+ "A_region": "14850775B15615817748403:Donetsk Oblast",
+ "B_region": "28173009B61240048498251:Mari El",
+ "A_rating": 0.1,
+ "B_rating": 0.19,
+ "difference_B_minus_A": 0.09,
+ "parsed": {
+  "A": {
+   "rating": 0.1,
+   "explanation": "Parent regime bans transition/marker change, designates LGBT movement extremist (101 convictions, up to criminal liability), enforces propaganda laws with raids/fines/detention, and provides no anti-discrimination recourse. Division adds occupied wartime administration with no rule of law, military searches/detentions of 81 victims, shooting, sexual violence, ransom/forced labour, and checkpoint trapping of trans people via document mismatch. Outed visitor faces organised state targeting with lethal detention risk and no remedy.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Document-appearance mismatch traps trans people at checkpoints, preventing departure; no local marker change possible.",
+     "protection": "Not documented.",
+     "interaction": "Checkpoint mismatch leads to detention by occupying military with no exit.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Informal detention, intimidation, ransom, forced labour, sexual violence; man found dead in pretrial custody on extremism charges.",
+     "protection": "No monitor, remedy or protective institution operates.",
+     "interaction": "Arrest for extremism/propaganda escalates into unchecked custody abuse.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No documented facility protection; birth/document mismatch governs access.",
+     "protection": "Not documented.",
+     "interaction": "Document regime interacts with checkpoint and service denial.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Transition surgery banned nationally; discrimination blocks work, services and housing locally.",
+     "protection": "Not documented.",
+     "interaction": "Care denial compounds detention and checkpoint exposure.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Extremist designation, propaganda enforcement, masked bar raids, searches/photography; military specifically searches for LGBT people.",
+     "protection": "Not documented.",
+     "interaction": "State threat-framing licenses police/military targeting of visibly trans people.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law extended to all ages, prohibits material giving minors desire to change sex; enforcement >180 cases in 2023.",
+     "protection": "Not documented.",
+     "interaction": "Travelling minor increases expression/propaganda exposure for guardian and child.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Insults, violence, extortion, threats to life when identity known; gay man shot and buried; hostile 74% non-acceptance.",
+     "protection": "No hate-crime aggravation recognised; government does not record LGBT hate crimes.",
+     "interaction": "Police/military are perpetrators, not protection.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No remedy, monitor or rule of law in division; national recourse absent for gender identity.",
+     "protection": "Not documented.",
+     "interaction": "Absence of remedy makes every other exposure unredressable.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-A",
+     "comparison": "Above 0.05 because no execution for trans presentation is documented, whereas 0.05 has capital prosecution and execution; lethal custody/shooting keeps A near bottom."
+    },
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Similar to 0.15 on arrest, illusory remedies and custody abuse, but lower due to wartime no-rule-of-law, shooting and checkpoint trapping adding severity."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Far below 0.85: no equality law, document recognition, police accountability or working remedies; opposite institutional posture."
+    }
+   ],
+   "synthesis": "Combined regime is parent extremism/propaganda enforcement plus local military persecution with no law to restrain it. Document mismatch at checkpoints engineers outing, detention carries documented lethal/sexual-violence risk, and no institution protects or remedies. For minors, propaganda law adds secondary exposure. This is organised targeting, not friction."
+  },
+  "B": {
+   "rating": 0.19,
+   "explanation": "Same severe national regime as A applies with no additional local signal: transition/marker ban, extremist designation with 101 convictions and criminal penalties up to 12 years for extremism, propaganda fines/detention up to 15 days and up to 4 years for repeat offences, club raids, no anti-discrimination or hate-crime protection, death in custody on extremism charges, hostile public attitudes and highest-level do-not-travel advisory. Visitor-facing risk is state-directed imprisonment/detention with illusory recourse.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No route to align documents; visitor papers remain foreign-issued with no local procedure, creating mismatch exposure.",
+     "protection": "Not documented.",
+     "interaction": "Mismatch can trigger propaganda/extremism scrutiny during police checks.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Detention for propaganda/extremism; pretrial death documented for LGBT-agency extremism arrestee.",
+     "protection": "Not documented.",
+     "interaction": "Administrative detention can escalate to criminal extremism prosecution.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No documented facility protection; no anti-discrimination law by gender identity.",
+     "protection": "Not documented.",
+     "interaction": "Facility use risks outing to staff/police under hostile enforcement climate.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Gender reassignment surgery prohibited; trans-specific healthcare effectively banned in 2023.",
+     "protection": "Not documented.",
+     "interaction": "Care denial and medication scrutiny increase exposure during treatment attempts.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State designates LGBT movement extremist, raids bars, photographs/searches patrons, prosecutes symbols/rainbow display.",
+     "protection": "Not documented.",
+     "interaction": "Threat-framing by law and police makes trans presence a security target.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law prohibits promoting non-traditional relations to all ages and material giving minors desire to change sex.",
+     "protection": "Not documented.",
+     "interaction": "Adult travelling with minor faces heightened propaganda enforcement and family scrutiny.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Hostile attitudes (74% non-acceptance), community living in fear, raids and arrests define LGBT life.",
+     "protection": "No hate-crime aggravation; government does not record LGBT hate crimes.",
+     "interaction": "Police act as enforcers of hostile policy, not protectors.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination protection, no recorded hate crimes, no local remedy identified; enforcement at national level only.",
+     "protection": "Not documented.",
+     "interaction": "Absence of recourse leaves detention and discrimination unredressable.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Close to 0.15: routine arrest/detention for presentation/symbols, custody death risk and illusory remedies, but no documented systematic beatings or months-long pretrial pattern as in anchor."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Below 0.35 because consequences exceed exclusion/humiliation: criminal extremism penalties up to 12 years and lethal custody risk are documented."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Far below 0.85: no equality protections, document recognition, police accountability or functioning complaints system; institutional posture is hostile."
+    }
+   ],
+   "synthesis": "National law is the operative regime; no subnational mitigation is documented. Extremist/propaganda enforcement, raids, detention and care/transition bans combine with hostile society and zero recourse. A visitor outed by documents or presentation faces arrest, biased custody and possible imprisonment, with lethal risk in detention exceptionally documented. Minors increase propaganda exposure."
+  },
+  "difference_ri_minus_nh": 0.09
+ },
+ "parse_error": null,
+ "attempts": 1
+}

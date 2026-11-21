@@ -1,0 +1,371 @@
+{
+ "run_id": "occupied-ukraine-rerate-20261119",
+ "created": "2026-11-21T21:13:07+00:00",
+ "instrument": "single-rating-anchored-v4-structured (combined A/B, iterative pairwise)",
+ "effort": "medium",
+ "attempts_per_pairing": 1,
+ "seed": 20261119,
+ "occupied_regions": [
+  "14850775B24260608407062:Autonomous Republic of Crimea",
+  "14850775B70667807354554:Sevastopol",
+  "14850775B15615817748403:Donetsk Oblast",
+  "14850775B31033086218351:Luhansk Oblast"
+ ],
+ "operative_parent": "RUS",
+ "seed_score_rus_country": 0.168481,
+ "candidate_rule": "nearest 3 frozen RUS partners by focal running score, tie-break region id",
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_balancing": "per-focal least-used across the seven models; ties by seeded shuffle",
+ "system_sha256": "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "dossier_parity": {
+  "rus_framework_sha256": "21ef8951ce056ecfabf73a5d988cc283f4a811630844d84c69372bc586f99966",
+  "n_rus_dossiers_checked": 83,
+  "all_rus_framework_blocks_identical": true,
+  "occupied_framework_parity": true,
+  "rus_content_checks": {
+   "propaganda_law": true,
+   "extremism_designation": true,
+   "transition_ban": true
+  },
+  "local_checks": {
+   "14850775B24260608407062:Autonomous Republic of Crimea": {
+    "local_words": 231,
+    "occupation_evidence": true,
+    "local_differentiator": true,
+    "identity_leaks": [],
+    "framework_sha256": "21ef8951ce056ecfabf73a5d988cc283f4a811630844d84c69372bc586f99966"
+   },
+   "14850775B70667807354554:Sevastopol": {
+    "local_words": 152,
+    "occupation_evidence": true,
+    "local_differentiator": true,
+    "identity_leaks": [],
+    "framework_sha256": "21ef8951ce056ecfabf73a5d988cc283f4a811630844d84c69372bc586f99966"
+   },
+   "14850775B15615817748403:Donetsk Oblast": {
+    "local_words": 206,
+    "occupation_evidence": true,
+    "local_differentiator": true,
+    "identity_leaks": [],
+    "framework_sha256": "21ef8951ce056ecfabf73a5d988cc283f4a811630844d84c69372bc586f99966"
+   },
+   "14850775B31033086218351:Luhansk Oblast": {
+    "local_words": 194,
+    "occupation_evidence": true,
+    "local_differentiator": true,
+    "identity_leaks": [],
+    "framework_sha256": "21ef8951ce056ecfabf73a5d988cc283f4a811630844d84c69372bc586f99966"
+   }
+  },
+  "dossier_rule": "RUS parent-framework block (render_admin1_dossier, identical across all RUS dossiers) + neutralized blindSummary local occupation evidence"
+ },
+ "n_pairings_planned": 32,
+ "n_pairings": 32,
+ "n_ok": 30,
+ "n_rejected": 2,
+ "status_by_model": {
+  "muse": {
+   "ok": 4
+  },
+  "deepseek": {
+   "ok": 3,
+   "rejected": 1
+  },
+  "glm": {
+   "ok": 4
+  },
+  "mimo": {
+   "rejected": 1,
+   "ok": 4
+  },
+  "haiku": {
+   "ok": 4
+  },
+  "qwen": {
+   "ok": 7
+  },
+  "luna": {
+   "ok": 4
+  }
+ },
+ "cost_by_model_usd": {
+  "muse": "0.011374884",
+  "deepseek": "0.018221746",
+  "glm": "0.0146666275",
+  "mimo": "0.017072428",
+  "haiku": "0.0263544",
+  "qwen": "0.049755422",
+  "luna": "0.011897505"
+ },
+ "total_usd": "0.1493430125",
+ "update_schedule": {
+  "updates_1_8": "0.80*old+0.20*new (occupied region only)"
+ },
+ "summary": [
+  {
+   "iteration": 1,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B61240048498251:Mari El",
+   "cost_usd": "0.001914492"
+  },
+  {
+   "iteration": 2,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B70218250039968:Murmansk Oblast",
+   "cost_usd": "0.00238408"
+  },
+  {
+   "iteration": 3,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B40138449315491:Kaliningrad",
+   "cost_usd": "0.002079692"
+  },
+  {
+   "iteration": 4,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B42697300509311:Ulyanovsk Oblast",
+   "cost_usd": "0.003344975"
+  },
+  {
+   "iteration": 5,
+   "model": "mimo",
+   "status": "rejected",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B11091203162490:Chukotka Autonomous Okrug",
+   "cost_usd": "0.00478366"
+  },
+  {
+   "iteration": 6,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B61240048498251:Mari El",
+   "cost_usd": "0.0031670565"
+  },
+  {
+   "iteration": 7,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B61240048498251:Mari El",
+   "cost_usd": "0.0036152"
+  },
+  {
+   "iteration": 8,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B11091203162490:Chukotka Autonomous Okrug",
+   "cost_usd": "0.0064859"
+  },
+  {
+   "iteration": 9,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B40138449315491:Kaliningrad",
+   "cost_usd": "0.0063851"
+  },
+  {
+   "iteration": 10,
+   "model": "deepseek",
+   "status": "rejected",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B34434912986355:Udmurtia",
+   "cost_usd": "0.00314262"
+  },
+  {
+   "iteration": 11,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B731487536241:Khanty-Mansiysk Autonomous Okrug – Ugra",
+   "cost_usd": "0.0037655"
+  },
+  {
+   "iteration": 12,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B59972517059449:Penza Oblast",
+   "cost_usd": "0.00722913"
+  },
+  {
+   "iteration": 13,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B90810482533567:Leningrad oblast",
+   "cost_usd": "0.001692384"
+  },
+  {
+   "iteration": 14,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B2687808218031:Voronezh Oblast",
+   "cost_usd": "0.0062968"
+  },
+  {
+   "iteration": 15,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B96976580001980:Republic of Karelia",
+   "cost_usd": "0.0071866"
+  },
+  {
+   "iteration": 16,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B25497318303482:Samara Oblast",
+   "cost_usd": "0.00421456"
+  },
+  {
+   "iteration": 17,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B59972517059449:Penza Oblast",
+   "cost_usd": "0.01010254"
+  },
+  {
+   "iteration": 18,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B68474107072963:Astrakhan Oblast",
+   "cost_usd": "0.00464548"
+  },
+  {
+   "iteration": 19,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B59972517059449:Penza Oblast",
+   "cost_usd": "0.00301572"
+  },
+  {
+   "iteration": 20,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B69714658607289:Ryazan Oblast",
+   "cost_usd": "0.00284622"
+  },
+  {
+   "iteration": 21,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B90356867269748:Volgograd Oblast",
+   "cost_usd": "0.006824122"
+  },
+  {
+   "iteration": 22,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B80457268982215:Altai Krai",
+   "cost_usd": "0.003031095"
+  },
+  {
+   "iteration": 23,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B9124867987859:Bryansk Oblast",
+   "cost_usd": "0.003390486"
+  },
+  {
+   "iteration": 24,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B70667807354554:Sevastopol",
+   "B_region": "28173009B51962491984110:Jewish Autonomous Oblast",
+   "cost_usd": "0.007871154"
+  },
+  {
+   "iteration": 25,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B65133456612022:Krasnoyarsk Krai",
+   "cost_usd": "0.00476411"
+  },
+  {
+   "iteration": 26,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+   "B_region": "28173009B55503329301013:Omsk Oblast",
+   "cost_usd": "0.005733266"
+  },
+  {
+   "iteration": 27,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B96664025860642:Vologda Oblast",
+   "cost_usd": "0.007539836"
+  },
+  {
+   "iteration": 28,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B65133456612022:Krasnoyarsk Krai",
+   "cost_usd": "0.00603887"
+  },
+  {
+   "iteration": 29,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B25497318303482:Samara Oblast",
+   "cost_usd": "0.00300447"
+  },
+  {
+   "iteration": 30,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B30250450380208:Bashkortostan",
+   "cost_usd": "0.005465916"
+  },
+  {
+   "iteration": 31,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "14850775B15615817748403:Donetsk Oblast",
+   "B_region": "28173009B7235812138525:North Ossetia–Alania",
+   "cost_usd": "0.001736344"
+  },
+  {
+   "iteration": 32,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "14850775B31033086218351:Luhansk Oblast",
+   "B_region": "28173009B74836580104791:Moscow Oblast",
+   "cost_usd": "0.005645634"
+  }
+ ]
+}

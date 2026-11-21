@@ -1,0 +1,174 @@
+{
+ "iteration": 15,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0071866",
+ "usage": {
+  "cost_usd": "0.0071866",
+  "input_tokens": 38346,
+  "output_tokens": 6704
+ },
+ "labels": {
+  "A": "14850775B31033086218351:Luhansk Oblast",
+  "B": "28173009B96976580001980:Republic of Karelia"
+ },
+ "A_region": "14850775B31033086218351:Luhansk Oblast",
+ "B_region": "28173009B96976580001980:Republic of Karelia",
+ "A_rating": 0.12,
+ "B_rating": 0.15,
+ "difference_B_minus_A": 0.03,
+ "parsed": {
+  "A": {
+   "rating": 0.12,
+   "explanation": "The shared national regime is the operative system: passports stay as issued with no marker-change route, a 2023 transition ban applies, and the LGBT movement is designated extremist. Extremism and propaganda enforcement is documented at scale (101 convictions, eighteenfold growth in propaganda cases, venue raids with patrons searched and photographed). A man held on extremism charges died in pretrial custody in December 2024. The division adds documented occupation-area exposures: document mismatch blocking checkpoint passage and exit, informal detention for ransom, UN-documented sexual-violence risk in detention, and impunity. No remedy operates, and no anti-discrimination or hate-crime protection exists. No execution of a trans person is documented, so this sits above the capital-custody anchors but near the arrest-and-custody tier.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Passport and visa remain as issued with no marker-change route; in occupied areas, appearance-document mismatch documented to block checkpoint passage and exit.",
+     "protection": "Not documented.",
+     "interaction": "A mismatch at a checkpoint can escalate to detention, as the occupied-area record shows.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism-charge detention documented; a man held over an LGBT business died in pretrial custody (Dec 2024). Occupied areas show informal detention without lawyers or family access and UN-documented sexual-violence risk in detention.",
+     "protection": "Not documented.",
+     "interaction": "Custody risk attaches to any discovery that leads to extremism or propaganda charges.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National propaganda, extremism and 2023 transition-ban statutes apply in the division by occupying-state law, applied with wartime arbitrariness. No trans-specific facility-placement rule is documented.",
+     "protection": "Not documented.",
+     "interaction": "Federal statutes operate through both administrative and criminal codes, so exposure does not depend on local tolerance.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-reassignment surgery is prohibited and trans-specific healthcare is effectively banned; a trans woman was held for nine months in a conversion-therapy centre.",
+     "protection": "Not documented.",
+     "interaction": "A medical emergency for a discovered trans visitor carries the same ban and possible reporting.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The state designates the LGBT movement extremist; police raid venues, order patrons to face walls, and search and photograph them. Occupation forces actively searched for LGBTIQ+ people (81 known victims).",
+     "protection": "Not documented.",
+     "interaction": "Police hostility is state-directed and applies to visible gender-nonconforming people, so it reaches visitors.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law bars material giving minors a desire to change sex; the 2024 adoption ban on citizens of transition-permitting countries is resident-facing. A trans minor or accompanying guardian faces propaganda and extremism exposure.",
+     "protection": "Not documented.",
+     "interaction": "A guardian can be drawn into enforcement through a minor's documents or conduct.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Violence with total impunity is documented in occupied areas; discovery by military or occupation administration brings insults, violence, extortion and threats to life. The state does not record anti-LGBT hate crimes.",
+     "protection": "No sexual-orientation or gender-identity aggravation in sentencing.",
+     "interaction": "Reporting leads to no state response, so a victim has no route to recourse.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Pride permits are refused; the country left the regional human-rights court; no monitor or remedy operates in occupied areas.",
+     "protection": "Asylum policy note treats LGBT+ people as a particular social group; this is an asylum route, not traveller protection.",
+     "interaction": "Visitor-level border enforcement and detention access are not documented and remain uncertain.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "A has similar arrest, custody-death and impunity exposure, but no documented capital application or months-long pretrial abuse of trans visitors, so it sits at about the same tier. The division's ransom detention and checkpoint exit blocking are additional exposures."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "A is lower than the exclusion anchor because it documents criminal charges, lethal custody and unremedied violence, not only refusal and removal."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is far below: it has no protective entry regime, no working recourse, criminal exposure and documented custody deaths. Reaching 0.75 would require ending the propaganda and extremism enforcement and restoring document and care access."
+    },
+    {
+     "anchor_id": "0.05-D",
+     "comparison": "A is above the capital-custody anchor because no execution is documented, but its custody deaths and occupation-area violence are the same kind of lethal exposure."
+    }
+   ],
+   "synthesis": "The national framework supplies a continuous exposure: visitors' documents stay as issued, the LGBT movement is criminalised through extremism charges, and propaganda law reaches expression and venues. Enforcement is documented, not hypothetical, and detention has produced a death. The division adds occupation-area arbitrariness, ransom detention, checkpoint exit blocking and impunity. No protective machinery operates. Discovery therefore leads to detention and lethal-custody risk with no effective remedy."
+  },
+  "B": {
+   "rating": 0.15,
+   "explanation": "The division stands under the national framework unchanged, and no division-specific instrument, enforcement, incident or institution is documented. The operative regime is therefore the national one: passports remain as issued, the 2023 transition ban applies, the LGBT movement is extremist, propaganda law reaches expression, and venue raids, extremism convictions (101, including criminal charges with prison terms) and a custody death are documented. No anti-discrimination protection or hate-crime recording exists. The absence of local records is not mitigation. Without the occupation-area layer that A documents, B sits slightly higher than A, but the national regime keeps it in the severe tier.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Passport, visa and identity papers remain as issued with no marker-change route, so a visitor's gender presentation can diverge from documents at entry under national rules.",
+     "protection": "Not documented.",
+     "interaction": "Division-level entry practice is not documented; the national regime is the only operative rule.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "National extremism and propaganda charges carry up to 12 years and four years for symbol display; at least 20 people faced criminal charges Jan 2024 to Jun 2025; a custody death occurred (Dec 2024).",
+     "protection": "Not documented.",
+     "interaction": "Detention risk follows any discovery that leads to extremism or propaganda charges; division-level custody practice is not documented.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "The national framework applies unchanged. No division-specific facility, placement or detention rule is documented.",
+     "protection": "Not documented.",
+     "interaction": "The absence of division records does not establish local variation in the application of national statutes.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Trans-specific healthcare is effectively banned since 2023 and gender-reassignment surgery is prohibited nationally.",
+     "protection": "Not documented.",
+     "interaction": "Division-level care practice is not documented; the national ban is the operative rule.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National police raids on LGBT venues and extremism charges define public life; the national policy note assesses trans people and public advocates as likely facing persecution.",
+     "protection": "Not documented.",
+     "interaction": "Enforcement is national and state-directed; no division-specific instrument limits it.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law bars material that gives minors a desire to change sex; a trans minor or guardian faces propaganda exposure under the national statute.",
+     "protection": "Not documented.",
+     "interaction": "A guardian can be drawn into enforcement through a minor's conduct or materials.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No anti-LGBT hate-crime recording or sentencing aggravation exists; the national climate is hostile (74% say homosexuality should not be accepted).",
+     "protection": "Not documented.",
+     "interaction": "Reporting violence yields no documented recourse for LGBT victims.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Pride permits have not been approved; the country left the regional human-rights court; no division-level remedy, monitor or instrument on gender identity or assembly is documented.",
+     "protection": "Not documented. The asylum policy note is not a traveller protection.",
+     "interaction": "Whether division authorities apply national provisions with local variation is unresolved on the source set.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "B is close to this anchor: both show arrest and custody risk with documented deaths and no effective remedy. B lacks documented beatings or capital charging of trans visitors, which keeps it slightly above."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "B is lower than the exclusion anchor because it documents criminal charges, prison terms and a custody death rather than only refusal and removal."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is far below: no protective entry regime, no operating recourse, and documented criminal exposure. Reaching 0.75 would require ending the national propaganda and extremism enforcement and restoring document and care access."
+    },
+    {
+     "anchor_id": "0.05-B",
+     "comparison": "B is above the capital-prosecution anchor because no execution of a trans person is documented, but it shares the custody-death and no-remedy pattern."
+    }
+   ],
+   "synthesis": "The division has no documented local layer, so its operative regime is the national framework unchanged. Documents stay as issued, propaganda and extremism statutes are enforced through venue raids and criminal charges, care is banned, and a custody death is on record. There is no anti-discrimination or hate-crime protection and no division-level remedy. The missing local record is not mitigation. B is rated slightly above A only because A adds occupation-area exposures absent here."
+  },
+  "difference_ri_minus_nh": 0.03
+ },
+ "parse_error": null,
+ "attempts": 1
+}

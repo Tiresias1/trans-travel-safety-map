@@ -1,0 +1,166 @@
+{
+ "iteration": 32,
+ "model": "qwen",
+ "model_id": "qwen/qwen3.8-flash",
+ "status": "ok",
+ "cost_usd": "0.005645634",
+ "usage": {
+  "cost_usd": "0.005645634",
+  "input_tokens": 24117,
+  "output_tokens": 10446
+ },
+ "labels": {
+  "A": "14850775B31033086218351:Luhansk Oblast",
+  "B": "28173009B74836580104791:Moscow Oblast"
+ },
+ "A_region": "14850775B31033086218351:Luhansk Oblast",
+ "B_region": "28173009B74836580104791:Moscow Oblast",
+ "A_rating": 0.06,
+ "B_rating": 0.16,
+ "difference_B_minus_A": 0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.06,
+   "explanation": "A's combined regime adds occupation and military controls to hostile national law. Trans visitors are exposed at checkpoints when presentation conflicts with documents; occupying authorities specifically search for LGBTQ+ people, with documented targeted hunting, extortion, forced labour, sexual violence in detention, threats to life, and total impunity. The national framework denies marker alignment, bans transition care, and criminalizes LGBT expression or association as extremism up to twelve years. No remedy or monitoring operates. This is state-directed targeting, materially below ordinary high-risk jurisdictions because discovery can lead to disappearance or lethal abuse.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Occupation and military checkpoints and exit controls; trans presentation-document mismatch blocks passage and traps travellers. National law offers no marker alignment, so foreign documents can be viewed as inconsistent.",
+     "protection": "Not documented.",
+     "interaction": "A checkpoint mismatch can escalate into questioning, extortion, informal detention, or being searched by forces targeting LGBTQ+ people; families with minors may be stranded.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Arbitrary detention in unofficial sites without lawyers or family access; documented hunting, ransom, forced labour, insults, threats to life, and acute sexual violence in detention.",
+     "protection": "Not documented.",
+     "interaction": "Custody placement is unsafe regardless of documents; occupation impunity prevents grievance, and deaths or disappearances are plausible.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No documented safe facility access; public expression is impossible, venues are controlled, and checkpoint or service spaces expose mismatched documents or presentation.",
+     "protection": "Not documented.",
+     "interaction": "Ordinary movement through occupied public spaces can force outing or refusal because occupation rules and hostile national law apply together.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming transition care is banned; emergency or travel care can require documents and presentation that conflict, in a conflict zone with collapsed oversight.",
+     "protection": "Not documented.",
+     "interaction": "Loss of medication or injury can create forced disclosure to clinicians or guards, while care denial may become life-threatening.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "LGBT movement designated extremist; participation or symbols prosecuted up to twelve years. Occupation forces specifically search for LGBTQ+ people and act with total impunity.",
+     "protection": "Not documented.",
+     "interaction": "Law, military and occupation enforcement, and local targeting interact: discovery is engineered by checkpoints and can meet no legal consequence for perpetrators.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "A guardian travelling with a trans minor faces checkpoint blockage, no gender-affirming care, and propaganda-law exposure if minor-related materials or presentation are interpreted as prohibited.",
+     "protection": "Not documented.",
+     "interaction": "Family travel can turn document mismatch into forced outing, detention, or stranded passage; parents may be investigated or coerced.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "Documented targeted violence, extortion, and sexual violence by occupation or military actors; police and detention authorities are perpetrators, not protectors.",
+     "protection": "Not documented.",
+     "interaction": "Calling police or entering a station can increase risk; venue raids show enforcement against people seen as LGBTQ+.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no hate-crime recording, no monitor, and no remedy in occupied area; complaints have no credible protective channel.",
+     "protection": "Not documented.",
+     "interaction": "Absence of remedy converts every checkpoint stop or accusation into possible detention, violence, or disappearance without independent record.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.05-A",
+     "comparison": "A is near 0.05-A: lethal custody, targeted violence, threats to life, and illusory remedies are documented. It lacks a verified execution or capital charge, but occupation forces specifically search for LGBTQ+ people, so score remains around the lowest severe band."
+    },
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "A is worse than 0.15-A: 0.15 has routine presentation arrests, but A adds wartime arbitrariness, unofficial detention, sexual violence, ransom, forced labour, and checkpoint trapping with total impunity."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is far below 0.75-C. That anchor has trained border checks, brief detention, counsel, and remedies. A has hostile occupation enforcement, no lawful protection, and discovery can lead to disappearance or abuse."
+    }
+   ],
+   "synthesis": "The operative risk is not merely paper law: occupation checkpoints create discovery, and the same forces use violence and detention. National anti-LGBT extremism law provides a criminal frame, while local practice removes any chance of relief. For a solitary adult or family, being outed can lead to extortion, sexual violence, forced labour, or disappearance rather than a predictable administrative process. This places A near the extreme do-not-travel end."
+  },
+  "B": {
+   "rating": 0.16,
+   "explanation": "B's combined regime is the national framework without documented local aggravation, but the national law is itself hostile: no marker change, banned transition care, LGBT expression designated extremist, propaganda prosecutions, and documented custody death. For an outed trans visitor, consequences can include administrative detention, criminal extremism or propaganda prosecution up to twelve years, loss of care, and exposure to hostile police or venue raids. There is no documented anti-discrimination recourse. This is severe risk, but less certain than A because the dossier does not document routine arrest for presentation alone or checkpoint trapping.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Foreign documents cannot be aligned with gender presentation; a mismatch may invite scrutiny, but the dossier does not document border or checkpoint refusal specifically targeting trans visitors.",
+     "protection": "Not documented.",
+     "interaction": "If a document check occurs, the absence of legal recognition and hostile climate make resolution discretionary and possibly punitive; no marker procedure exists.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Public expression can draw fines or up to fifteen days detention; extremism or propaganda cases can carry criminal prosecution and up to twelve years; one LGBT-related detainee died in pretrial custody.",
+     "protection": "Not documented.",
+     "interaction": "A trans-related incident can be recharacterized as extremism or expression, moving from brief detention to long-term custody with uncertain placement.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No documented safe facilities access; venue raids and lack of anti-discrimination law create exposure in hotels, transit, clinics, or restrooms if outed, but specific facility bans are not recorded.",
+     "protection": "Not documented.",
+     "interaction": "Service refusal or staff reporting can trigger police contact; facility rules are left to hostile discretion because no protections operate.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Gender reassignment surgery and marker change are banned; trans-specific healthcare is effectively banned. Continuity care or emergency disclosure may be obstructed.",
+     "protection": "Not documented.",
+     "interaction": "Loss of hormones or a medical emergency can expose status to officials without lawful care protections, increasing vulnerability to discrimination.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State courts designate LGBT expression as extremist; propaganda cases, raids, and convictions are documented. Police and prosecutors are agents of hostility, not neutral protectors.",
+     "protection": "Not documented.",
+     "interaction": "Discovery may be treated as participation in extremism or promotion, amplifying severity beyond ordinary public-order contact.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law targets content giving minors a desire to change sex; a trans minor travelling with a guardian could face denial of care, forced outing, or legal exposure if expression occurs.",
+     "protection": "Not documented.",
+     "interaction": "A guardian may be investigated or fined for protecting or facilitating the child's identity, especially in schools, clinics, or public spaces.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "Survey hostility is high and authorities do not record hate crimes; venue raids show police targeting. No documented pattern of trans-specific street attacks in this division is available.",
+     "protection": "Not documented.",
+     "interaction": "Reporting assault to police may worsen exposure if officers view the victim as LGBT or extremist; private violence has little deterrent.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no identity-based sentencing enhancement, no regional variation, and no documented relief. Recourse is absent by design.",
+     "protection": "Not documented.",
+     "interaction": "Absence of local statistics does not indicate lower enforcement; the national framework applies uniformly, leaving visitors without predictable remedy.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "B is close to 0.15-A but slightly less direct: that anchor criminalizes presentation itself and predicts routine arrest, while B criminalizes expression and association. The severe extremist penalties and custody death keep B near this level."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "B is materially worse than 0.35-A. That anchor excludes or humiliates visitors without imprisonment; B allows criminal prosecution up to twelve years, detention for expression, and documented lethal custody risk."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is far below 0.75-C. That anchor has trained border officers, lawful recognition, and functioning remedies. B has hostile law, no marker alignment, and police as potential persecutors."
+    }
+   ],
+   "synthesis": "The national regime is uniformly hostile and can operate at every journey stage: documents may mismatch, care is banned, expression or symbols can lead to detention, and association can be treated as extremism. Without local protection, discovery risks severe legal consequences and no reliable remedy. It scores below 0.2, but above A because the dossier does not document occupation-style checkpoint targeting, sexual violence, ransom, or total impunity in this specific division."
+  },
+  "difference_ri_minus_nh": 0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}

@@ -1,0 +1,166 @@
+{
+ "iteration": 1,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.001914492",
+ "usage": {
+  "cost_usd": "0.001914492",
+  "input_tokens": 23606,
+  "output_tokens": 2669
+ },
+ "labels": {
+  "A": "14850775B24260608407062:Autonomous Republic of Crimea",
+  "B": "28173009B61240048498251:Mari El"
+ },
+ "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+ "B_region": "28173009B61240048498251:Mari El",
+ "A_rating": 0.13,
+ "B_rating": 0.23,
+ "difference_B_minus_A": 0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.13,
+   "explanation": "Parent regime bans gender transition and marker changes, designates LGBT movement extremist (up to 12 years), enforces propaganda laws with 101 extremism convictions, bar raids and a death in pretrial detention, with no anti-discrimination or hate-crime protection and 74% non-acceptance. Occupied division adds leadership threats, militia threats, barred monitors, violent attacks, and a documented dating-app ambush and filmed beating of a foreigner with no police recourse. If outed, a visitor faces arrest, detention and extrajudicial violence, not merely exclusion.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "2023 ban on marker changes and transition; foreign passport remains as issued with no alignment procedure, risking mismatch questioning.",
+     "protection": "Not documented.",
+     "interaction": "Document mismatch can trigger propaganda/extremism investigation and detention under combined regime.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism participation punishable up to 12 years; 101 convictions; bar raids with search/photography; man arrested over LGBT travel agency found dead in pretrial detention.",
+     "protection": "Not documented.",
+     "interaction": "Arrest for expression or presence can lead to pretrial detention with lethal risk and no effective recourse.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Not documented.",
+     "protection": "Not documented.",
+     "interaction": "Uncertain; facility placement if detained not documented, but birth-sex documents govern identity.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "2023 law prohibits gender reassignment surgery and gender-affirming medical care; medication continuity for visitors not documented as protected.",
+     "protection": "Not documented.",
+     "interaction": "Care-seeking can expose trans status to authorities in a regime criminalising related expression.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Extremist designation, propaganda fines exceeding local wages, >180 cases in 2023, 18-fold growth, occupation leaders promising police/militia reaction to gay presence.",
+     "protection": "Not documented.",
+     "interaction": "State threat-framing licenses police and militia action; courts fine for books, images and posts.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law extended to all ages, prohibiting material giving minors a 'desire to change their sex'; repeated offences risk criminal prosecution.",
+     "protection": "Not documented.",
+     "interaction": "A travelling minor or parent could face fines, detention or investigation for expression, media or device contents.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Foreigner lured via fake dating profile, stripped, beaten, filmed and published; 2025 violent attacks on perceived LGBT people; militia 'pack and post' threat.",
+     "protection": "Not documented.",
+     "interaction": "Predation pattern with no police recourse; monitors barred, residents fled or hide identity.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination protection, gender-identity bias not aggravating, hate crimes not officially recorded, no partner recognition.",
+     "protection": "Not documented.",
+     "interaction": "Absence of recourse compounds detention and violence; exact border practice for visitors is uncertain.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Similar or slightly lower: both involve routine arrest, custodial abuse risk and illusory remedies; A adds occupation threats and a filmed visitor ambush, but execution is not documented for presentation, so not 0.05."
+    },
+    {
+     "anchor_id": "0.35-B",
+     "comparison": "Materially lower than 0.35: 0.35-B has stops, confiscation and fines without imprisonment or lethal custody; A has up to 12 years, death in detention and violent predation."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Far below 0.85: that anchor has explicit equality law, functioning oversight and compensation; A has extremist designation, no protections and state-tolerated threats."
+    }
+   ],
+   "synthesis": "Combined parent-plus-occupation regime is operative at streets, venues, courts and detention. Outing risks investigation under extremism/propaganda law, fines, detention with documented lethal outcome, and militia or dating-app violence without recourse. No documented traveler-facing protection offsets this; the division's extra threats and barred monitors push A below the national regime alone."
+  },
+  "B": {
+   "rating": 0.23,
+   "explanation": "Same parent regime as A: transition and marker-change ban, extremist designation with up to 12 years, 101 extremism convictions, propaganda fines/detention and up to 4 years for repeats, masked bar raids, death in pretrial detention, and no anti-discrimination or hate-crime protection. Division evidence adds no local law, enforcement or incident, so no occupation threats, militia or visitor ambush are documented here. Risk remains severe because the state itself enforces hostile law, but without A's additional local layer it sits above A.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No marker-change procedure; visitor papers remain home-issued, with no documented guarantee foreign X or mismatched markers are accepted.",
+     "protection": "Not documented.",
+     "interaction": "Mismatch could prompt secondary questioning under extremism/propaganda enforcement, but specific border practice is uncertain.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "101 extremism convictions, administrative and criminal charges for symbols, bar raids searching/photographing ~100 patrons, man found dead in pretrial detention after extremism arrest.",
+     "protection": "Not documented.",
+     "interaction": "Expression, association or venue presence can escalate to detention where lethal risk is documented.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Not documented.",
+     "protection": "Not documented.",
+     "interaction": "Facility and custody placement for foreign trans visitors not documented; cannot assume safety.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "2023 ban on gender reassignment surgery and effective ban on trans-specific healthcare; visitor hormone continuity not documented as protected.",
+     "protection": "Not documented.",
+     "interaction": "Seeking care risks disclosure in a hostile legal climate; emergency care practice not documented.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Supreme court extremist designation Nov 2023, propaganda_cases 18-fold growth, fines >60m rubles, >180 cases in 2023, arrests for rainbow flag/colours.",
+     "protection": "Not documented.",
+     "interaction": "State frames LGBT activity as extremist, licensing raids and prosecutions against visitors and venues.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law applies to all ages; material promoting non-traditional relationships or desire to change sex punishable, repeats up to 4 years.",
+     "protection": "Not documented.",
+     "interaction": "Travelling with a minor increases expression/device-content exposure for parent and child.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Hostile public attitudes (74% say homosexuality should not be accepted, 2022); raids and fear/self-censorship documented nationally.",
+     "protection": "Not documented.",
+     "interaction": "No documented division-level ambush or militia campaign, unlike A; police are enforcers of hostile law, not protectors.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, bias motive not aggravating, hate crimes not recorded, highest do-not-travel advisory with LGBT warnings.",
+     "protection": "Not documented.",
+     "interaction": "No local signal alters national assessment; volume of enforcement inside this division is not disaggregated.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Higher than 0.15: 0.15 involves routine months-long pretrial beatings and near-certain imprisonment for presentation; B documents extremism up to 12 years and one custodial death but not routine visitor beatings or highly likely imprisonment for mere presence."
+    },
+    {
+     "anchor_id": "0.35-B",
+     "comparison": "Lower than 0.35: 0.35-B custodial outcomes are hours, fines and release; B has criminal extremism prosecutions, 101 convictions and lethal detention risk."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Far below 0.85: that anchor has equality law, oversight, apologies and compensation; B has the opposite legal framing and no documented remedy."
+    }
+   ],
+   "synthesis": "National regime alone drives risk: state threat-framing, criminal extremism exposure, raids, propaganda penalties and custody death, amplified by hostile attitudes and absent recourse. No division-specific mitigation or additional targeting is documented, so B is severe but materially above A's occupied division with its extra threats and visitor predation."
+  },
+  "difference_ri_minus_nh": 0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}

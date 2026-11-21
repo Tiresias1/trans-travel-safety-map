@@ -1,0 +1,166 @@
+{
+ "iteration": 13,
+ "model": "mimo",
+ "model_id": "xiaomi/mimo-v2.6-flash",
+ "status": "ok",
+ "cost_usd": "0.001692384",
+ "usage": {
+  "cost_usd": "0.001692384",
+  "input_tokens": 23734,
+  "output_tokens": 3321
+ },
+ "labels": {
+  "A": "14850775B24260608407062:Autonomous Republic of Crimea",
+  "B": "28173009B90810482533567:Leningrad oblast"
+ },
+ "A_region": "14850775B24260608407062:Autonomous Republic of Crimea",
+ "B_region": "28173009B90810482533567:Leningrad oblast",
+ "A_rating": 0.11,
+ "B_rating": 0.17,
+ "difference_B_minus_A": 0.06,
+ "parsed": {
+  "A": {
+   "rating": 0.11,
+   "explanation": "Parent regime: no legal gender recognition; 2023 transition ban; 'LGBT movement' extremism designation enabling criminal charges up to 12 years; 101+ convictions; propaganda law reaching expression (criminal on repeat); venue raids with mass searches/photographs; one documented pretrial death; zero anti-discrimination protection; hostile public attitudes; top-level do-not-travel advisory. The division adds a worse layer: occupation authorities' militia publicly threaten LGBT presence, documented visitor-facing predation (luring, beating, filming) with no police recourse, violent attacks on perceived-LGBT people, international monitors barred. Combined regime is state-tolerated targeting plus operational lawlessness for visitors, with no remedy.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No in-country route to align documents; transition and marker change banned by 2023 law, so mismatch persists at every check. Propaganda/extremism law reaches trans-related phone or social content discoverable at screening.",
+     "protection": "Not documented.",
+     "interaction": "Document mismatch feeds inspection scrutiny; screening content checks can convert expression into extremism or propaganda charges.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism designation carries up to 12 years; 101 convictions; propaganda offences reach detention up to 15 days then criminal prosecution. A detainee on LGBT-related extremism charges died in pretrial custody (Dec 2024).",
+     "protection": "Formal legal rights exist on paper only; no documented independent safeguard.",
+     "interaction": "Any outing during a stop can escalate into extremism charging with custody treated as high-risk.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Division authorities threaten that 'self-defense forces and police will react' to LGBT street presence; militia threatened to 'pack and post' LGBT people out; no public LGBT event since 2014.",
+     "protection": "Not documented; international monitors barred from the division.",
+     "interaction": "Occupation regime layers militia threat-framing over the parent extremism regime, removing any external observation.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming care and marker change banned nationally since 2023; division makes even nominally available procedures unusable.",
+     "protection": "Not documented.",
+     "interaction": "A visitor needing emergency or routine care risks disclosure of trans status with no protective protocol.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State frames LGBT identity as extremism; masked police raided venues ordering ~100 patrons to face walls, searched and photographed; arrests for rainbow flag display; occupation leadership openly hostile.",
+     "protection": "None documented.",
+     "interaction": "Police are the perpetrator, not protector; a visitor present at or near any queer venue is treated as a suspect.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law bans material giving minors a 'desire to change their sex'; a parent/guardian travelling with a trans child or trans material faces exposure. Adoption bans are resident-facing only.",
+     "protection": "Not documented.",
+     "interaction": "Family travelling together can be framed under the minors limb of the propaganda statute at any content check.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Division: documented pattern of a foreigner lured via fake dating profile, stripped, beaten, humiliated, filmed and published — no police recourse; 2025 assessment reports violent attacks on perceived-LGBT people; almost all openly LGBT residents fled.",
+     "protection": "None documented.",
+     "interaction": "Predation targets foreigners specifically; state withdrawal of protection makes recourse illusory.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no hate-crime aggravation, no official hate-crime recording; country left the regional human-rights court; pride permits never granted; monitors barred from division.",
+     "protection": "Only external asylum frameworks (2025-26 country-policy note treating LGBT+ as particular social group) exist outside the country.",
+     "interaction": "The only functioning remedy is flight, confirming domestic recourse failure.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-D",
+     "comparison": "0.15-D features arrest under a fraud framing, remote custody with abuse and dismissed complaints. A matches that tier: extremism framing with lethal custody precedent, mass searches, and no remedy — while lacking its documented years-long sentences for the specific visitor, so slightly above."
+    },
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C has birth-sex prison placement and cross-dressing arrest but functioning-ish courts and no execution. A is materially lower: documented state threat-framing, militia action against LGBT presence, visitor predation without recourse, and extremism charges reaching 12 years."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has trained border staff, a working tribunal, brief detention ending in release. A is far below: every documented institution here is the perpetrator, with no tribunal, no oversight, and a documented death in custody."
+    }
+   ],
+   "synthesis": "The combined regime pairs a national extremism/propaganda apparatus — criminal exposure up to 12 years, venue raids, custody death, zero legal protection — with an occupation layer that adds militia threat statements, documented visitor-targeted predation with no police response, and barred monitoring. The parent's already-illusory remedies become fully absent locally. For an outed visitor the operative outcome is detention risk under extremist framing plus street predation the state will not investigate; the only documented safe path is emigration."
+  },
+  "B": {
+   "rating": 0.17,
+   "explanation": "Parent regime only: no legal gender recognition; 2023 law banning gender reassignment surgery and marker change; supreme-court 'extremism' designation (Nov 2023) with 101+ convictions and criminal exposure up to 12 years; propaganda statutes reaching all ages including material about changing sex, with 180+ cases in 2023, detention up to 15 days then up to 4 years' imprisonment on repeat; bar raids with mass searches and photographs; a death in pretrial custody; no anti-discrimination protection, no hate-crime recording; hostile public attitudes (74% non-acceptance); top-level do-not-travel advisory. No division-specific mitigation or aggravation documented — the national regime applies unchanged.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "2023 law bans marker change, so a trans visitor's passport/visa remain mismatched; no in-country alignment procedure. Propaganda law covers material promoting sex change, exposed at any content or identity check.",
+     "protection": "Not documented.",
+     "interaction": "Document mismatch plus content screening makes discovery plausible at routine inspections, feeding extremism/propaganda charging.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Extremism convictions: 101 by June 2025, criminal cases up to 12 years. Propaganda: detention up to 15 days, criminal prosecution up to 4 years on repeat. A man held on LGBT-related extremism charges died in pretrial custody (Dec 2024).",
+     "protection": "Formal appeal rights exist but no documented relief for LGBT-related cases.",
+     "interaction": "An outed or outable visitor can move from screening to extremism custody where outcomes are documented as lethal.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No division-specific facility rule documented; national regime applies without modification, including no LGR and no anti-discrimination cover in any public facility.",
+     "protection": "Not documented.",
+     "interaction": "Facility placement and service access default to national practice with no local protective overlay.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "Trans-specific healthcare effectively banned in 2023; surgery and marker change prohibited; a visitor's trans-related medication or records can prompt disclosure.",
+     "protection": "Not documented.",
+     "interaction": "Emergency care could out the traveller with no protective protocol and no domestic recognition machinery.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "State designates a non-existent 'international LGBT movement' as extremist; arrests for rainbow flag display; masked police raided capital bars within 48 hours, ordering ~100 patrons to face walls, searched and photographed; nine organisations outlawed in 2026.",
+     "protection": "None documented.",
+     "interaction": "Law enforcement treats LGBT presence as security threat; the visitor is framed as suspect rather than protected person.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Propaganda law explicitly bans material giving minors a 'desire to change their sex'; a family travelling with a trans child or carrying such content faces exposure. Adoption restrictions are resident-facing only.",
+     "protection": "Not documented.",
+     "interaction": "The minors limb raises charging risk for a travelling parent/guardian at any content check.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "74% surveyed say homosexuality should not be accepted; LGBT community described as living in fear, pushed into silence and self-censorship; venue raids define public LGBT life; official hate-crime recording absent.",
+     "protection": "Not documented; no hate-crime aggravation for SO/GI motivation.",
+     "interaction": "Hostile society plus non-recording means assaults on an outed visitor would be under-investigated; but no organised street campaign against visitors is documented.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No anti-discrimination law, no SO/GI aggravating factor, no official hate-crime data; country left the regional human-rights court in 2022; pride permits never approved.",
+     "protection": "External only: allied governments' 2025-26 country-policy notes treat LGBT+ people as a particular social group for asylum, and one government's top-level advisory warns LGBT travellers.",
+     "interaction": "Every documented remedy is external; domestic channels show no record of relief for LGBT-related cases.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "0.15-A combines a presentation statute, months of pretrial custody with beatings, and illusory remedies. B matches its core: routine enforcement reaching detention, a custody death, no effective remedy — but without its documented months-long pretrial abuse pattern, so slightly higher."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A is exclusion and humiliation at the border without arrest or criminal charge. B is worse: criminal prosecution (up to 4 and 12 years), mass police raids, extremism convictions, and a death in custody — beyond administrative refusal."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has trained officers, working tribunal, brief detention ending in release with compensation. B is far lower: no documented trained staff, no functioning tribunal for LGBT claims, custody with lethal precedent, and hostile law aligned with hostile society."
+    }
+   ],
+   "synthesis": "B is the parent regime without any division-specific layer: a documented criminal-adjacent apparatus (extremism designation with 12-year exposure, propaganda charges reaching imprisonment) applied through raids, mass searches and photographing, alongside zero legal protection, no hate-crime recording, and a hostile society. Remedies exist only outside the country. The absence of division-specific evidence neither mitigates nor aggravates — the national regime operates unchanged, so severity after discovery remains criminal custody risk with a documented lethal precedent, but without A's added militia threat and documented visitor predation."
+  },
+  "difference_ri_minus_nh": 0.06
+ },
+ "parse_error": null,
+ "attempts": 1
+}
