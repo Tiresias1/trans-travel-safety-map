@@ -1,0 +1,158 @@
+{
+ "run_id": "ury-florida-reseed-20261119",
+ "created": "2026-11-21T20:15:06+00:00",
+ "instrument": "single-rating-anchored-v4-structured (combined A/B, seeded reseed recalibration)",
+ "effort": "medium",
+ "attempts_per_pairing": 1,
+ "seed": 20261119,
+ "florida_region": "27058087B4606463382645:Florida",
+ "florida_sid": "27058087B4606463382645",
+ "seed_value": 0.7453893632000002,
+ "seed_rule": "median of the other 18 URY ADM1 final_running_scores in analysis/global_adm1_iterative.json",
+ "provenance": {
+  "source_aggregate": "analysis/global_adm1_iterative.json",
+  "source_created": "2026-11-21T09:29:16+00:00",
+  "source_run_id": "global-adm1-iterative-20261117",
+  "florida_pre_global_run_score": 0.4,
+  "florida_global_run_final_score": 0.5112000000000001,
+  "florida_global_run_update_count": 2
+ },
+ "sibling_finals_frozen": {
+  "27058087B10223787783888:Lavalleja": 0.7266062080000001,
+  "27058087B19329078127106:Canelones": 0.805559,
+  "27058087B22084813565519:Artigas": 0.6956484214374401,
+  "27058087B438131503863:Maldonado": 0.785559,
+  "27058087B51474914010310:Salto": 0.7813983784960004,
+  "27058087B51576366641273:Río Negro": 0.7606751784960002,
+  "27058087B52084370772895:Rivera": 0.7409009664000001,
+  "27058087B55390925666910:Rocha": 0.7424529664000001,
+  "27058087B55907822213987:Paysandú": 0.7664472,
+  "27058087B64628270573025:Flores": 0.7377009664,
+  "27058087B69444591785940:Soriano": 0.7432209664000001,
+  "27058087B72518212949854:Cerro Largo": 0.7216230184960002,
+  "27058087B78128732832923:Tacuarembó": 0.7475577600000002,
+  "27058087B79494286721501:Colonia": 0.7731174184960002,
+  "27058087B85503990233673:Treinta y Tres": 0.7236167731200002,
+  "27058087B97113143242340:Montevideo": 0.8094472,
+  "27058087B9919519605551:San José": 0.7545036627968003,
+  "27058087B99783771080652:Durazno": 0.6984471999999999
+ },
+ "candidate_rule": "nearest max(int(0.10*n_iso3),3) capped at n_iso3-1 siblings within the global-run URY pairing group by current running score (siblings frozen), tie-break region id",
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_balancing": "least-used model for this reseed run so far; ties by seeded shuffle",
+ "system_sha256": "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "n_pairings_planned": 8,
+ "n_pairings": 8,
+ "n_ok": 8,
+ "n_rejected": 0,
+ "status_by_model": {
+  "muse": {
+   "ok": 1
+  },
+  "deepseek": {
+   "ok": 1
+  },
+  "mimo": {
+   "ok": 2
+  },
+  "luna": {
+   "ok": 1
+  },
+  "haiku": {
+   "ok": 1
+  },
+  "qwen": {
+   "ok": 1
+  },
+  "glm": {
+   "ok": 1
+  }
+ },
+ "cost_by_model_usd": {
+  "muse": "0.0038563",
+  "deepseek": "0.00228515",
+  "mimo": "0.01071904",
+  "luna": "0.00508705",
+  "haiku": "0.0064279",
+  "qwen": "0.0103382",
+  "glm": "0.00484289"
+ },
+ "total_usd": "0.04355653",
+ "update_schedule": "Florida only, per-update number: updates 1-20 0.80*old+0.20*new (all 8 here); siblings frozen",
+ "final_score": 0.7368704187050887,
+ "summary": [
+  {
+   "iteration": 1,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B78128732832923:Tacuarembó",
+   "cost_usd": "0.0038563"
+  },
+  {
+   "iteration": 2,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "cost_usd": "0.00228515"
+  },
+  {
+   "iteration": 3,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B64628270573025:Flores",
+   "cost_usd": "0.00468804"
+  },
+  {
+   "iteration": 4,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "cost_usd": "0.00508705"
+  },
+  {
+   "iteration": 5,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B78128732832923:Tacuarembó",
+   "cost_usd": "0.0064279"
+  },
+  {
+   "iteration": 6,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B55907822213987:Paysandú",
+   "cost_usd": "0.0103382"
+  },
+  {
+   "iteration": 7,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B85503990233673:Treinta y Tres",
+   "cost_usd": "0.00484289"
+  },
+  {
+   "iteration": 8,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "cost_usd": "0.006031"
+  }
+ ]
+}

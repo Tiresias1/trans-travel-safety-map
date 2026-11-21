@@ -1,0 +1,174 @@
+{
+ "iteration": 2,
+ "model": "deepseek",
+ "model_id": "deepseek/deepseek-v4.1-flash-1017",
+ "status": "ok",
+ "cost_usd": "0.00228515",
+ "usage": {
+  "cost_usd": "0.00228515",
+  "input_tokens": 24091,
+  "output_tokens": 3602
+ },
+ "labels": {
+  "A": "27058087B4606463382645:Florida",
+  "B": "27058087B52084370772895:Rivera"
+ },
+ "A_region": "27058087B4606463382645:Florida",
+ "B_region": "27058087B52084370772895:Rivera",
+ "A_rating": 0.76,
+ "B_rating": 0.74,
+ "difference_B_minus_A": -0.02,
+ "parsed": {
+  "A": {
+   "rating": 0.76,
+   "explanation": "National regime is statutory and protective: self-declared legal gender recognition, anti-discrimination and hate-crime coverage including gender identity, a bar on denying health services, and a documented policy letting a trans prisoner choose placement. No trans-specific criminal offence, no facility-access ban, no documented border or document screening targeting trans visitors. The strongest negative evidence is uneven enforcement: a hospital discrimination complaint pending, a bank case where a prosecutor compelled evidence but the complainant says she was dismissed, and one prosecuted 2025 murder. Resident-facing outcomes (violence prevalence, life expectancy, school expulsion) are severe but are domestic-sphere signals, not visitor exposures. The interior division is described as conservative with no additional documented traveller-facing rule, so it reads as social friction and uneven official practice rather than a distinct exposure.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No documented visitor-facing screening, marker-disclosure mandate or refusal practice aimed at trans travellers.",
+     "protection": "National anti-discrimination and hate-crime law covers gender identity; foreign documents are the traveller's own and no rejection is documented.",
+     "interaction": "Border officials operate under national law, but the division's conservatism leaves officer discretion untested.",
+     "status": "not_documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "No documented pattern of trans-specific stops, extortion or identity-based detention of visitors.",
+     "protection": "Stated policy grants a trans prisoner the right to choose men's or women's placement; trans women currently held in female prisons.",
+     "interaction": "Custody rules are national and protective, but the rehabilitation director concedes mentality and infrastructure lag.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No bathroom, ward or facility-exclusion rule documented; a planned trans prison sector signals recognition of vulnerability rather than exclusion.",
+     "protection": "Health law bars denial of services; prison policy follows self-identity rather than birth sex.",
+     "interaction": "Facility practice in the conservative interior is undocumented and may diverge from national standards.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "A 2024 hospital mistreatment and discrimination complaint is pending; enforcement against discrimination is described as uneven.",
+     "protection": "2018 law bars denial of health services and requires respectful treatment; a criminal complaint was accepted and an administrative investigation pledged.",
+     "interaction": "National guarantee meets local staff discretion; the interior division's conservatism may slow remediation.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "No law frames trans identity as a threat; a 2019 repeal referendum failed and the law remains in force.",
+     "protection": "Comprehensive trans law, mental-health law barring identity-based diagnosis, and hate-crime enhancement are in force.",
+     "interaction": "Religious and political opposition exists but has not captured state institutions.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "No traveller-facing exposure documented for a minor travelling with a guardian.",
+     "protection": "Minors may obtain legal gender change with parental consent under the 2018 law.",
+     "interaction": "Not documented how interior-division officials would treat a trans minor or accompanying parent.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "One 2025 murder of a trans woman in the capital; survey-cited violence prevalence lacks period and denominator and is not usable as a traveller rate.",
+     "protection": "A suspect was convicted and sentenced to seven years, showing the killing was treated as a crime.",
+     "interaction": "Prosecution demonstrates functioning recourse, though the interior division's social climate is described as more conservative.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Remedies are slow: a bank complainant says she was dismissed after publicising her case; hospital complaint still pending.",
+     "protection": "A prosecutor compelled the bank to produce withheld footage; courts and complaint bodies exist and function.",
+     "interaction": "Recourse works but is costly and uneven, so an outed visitor has real but imperfect remedy.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra denies entry to trans visitors by administrative order with no effective appeal. Here no exclusion regime or entry bar is documented and national law forbids discrimination, so this case sits far above that anchor."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles documents routine secondary screening, luggage searches and discretionary refusal for document divergence. Nothing comparable is documented here; exposure is unspecified rather than an operative screening practice, so this case is higher."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia has trained border officers, brief detention, counsel and compensation, with residual officer discretion. This case has stronger substantive law and a prosecuted trans murder but no documented entry practice either way, placing it close to or slightly above that anchor."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Vessalia documents equality law plus enforced oversight, apologies and compensation, with only isolated friction. Here enforcement is described as uneven and remedies slow, so this case sits below that anchor."
+    }
+   ],
+   "synthesis": "A trans visitor to this interior division enters a state with strong statutory protection, identity-based hate-crime coverage, service-denial bans and a supportive custody-placement policy, and no documented criminalisation, facility exclusion or border targeting. The countervailing evidence is implementation: pending hospital discrimination, a bank complainant who says she was dismissed, and official acknowledgement that mentality and infrastructure lag the law. The capital murder was prosecuted, which is positive evidence of functioning recourse, while resident-only outcome data (violence prevalence, life expectancy, schooling) describe the domestic sphere the visitor does not enter. The conservative division adds undocumented but plausible friction and uneven local practice rather than any new operative restriction."
+  },
+  "B": {
+   "rating": 0.74,
+   "explanation": "Same protective national framework: statutory trans rights, self-declared legal gender recognition, gender-identity hate-crime and anti-discrimination coverage, a service-denial ban, and a documented right for a trans prisoner to choose placement. No criminalisation, no facility ban, no documented entry screening targeting trans visitors. Negatives are implementation-level: pending hospital discrimination, uneven enforcement, slow remedies, and one prosecuted 2025 murder. Resident outcomes are severe but domestic-sphere. The northern border division is described as conservative, and a border location implies more checkpoints and document handling, which ordinary travel logic suggests could raise outing probability; that inference is not documented in the dossier, so it is treated as uncertainty rather than proven exposure.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No documented refusal, secondary-screening or marker-disclosure practice aimed at trans travellers at this division's crossings.",
+     "protection": "National law protects gender identity and bars discriminatory treatment by authorities; traveller carries home-issued documents.",
+     "interaction": "A border division implies repeated document handling, but no practice of rejecting or doubting foreign markers is recorded.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "No documented trans-specific stops, extortion or identity-based detention.",
+     "protection": "National custody policy lets the trans prisoner choose men's or women's placement; trans women held in female prisons.",
+     "interaction": "Protective national rule, but local border-area officials' practice is undocumented.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No bathroom, ward or facility exclusion documented.",
+     "protection": "Health law bars denial of services; prison sector for trans inmates planned.",
+     "interaction": "Facility practice in a conservative border region is undocumented and may vary.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Documented 2024 hospital mistreatment complaint; enforcement described as uneven.",
+     "protection": "Statutory bar on denying health services; complaint accepted with investigation pledged.",
+     "interaction": "Border-area facilities are not separately documented; national guarantee may meet local discretion.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "No state framing of trans identity as a threat; repeal referendum failed in 2019.",
+     "protection": "Comprehensive trans law, hate-crime enhancement and mental-health protections in force.",
+     "interaction": "Organised political and religious opposition exists without institutional capture.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "No documented exposure specific to a minor travelling with a guardian.",
+     "protection": "Minors may change legal gender with parental consent under national law.",
+     "interaction": "Not documented how border-division officials treat a trans minor or accompanying parent.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "One 2025 murder of a trans woman in the capital; survey prevalence figures lack period and denominator and are unusable for traveller risk.",
+     "protection": "Conviction and seven-year sentence for the murderer show the justice system treats such killings as crimes.",
+     "interaction": "Positive recourse signal; the conservative border climate's street-level response is undocumented.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Slow, uneven remediation; a complainant reports dismissal after publicising her bank case.",
+     "protection": "Prosecutor compelled production of withheld evidence; courts and complaint bodies function.",
+     "interaction": "Recourse is real but costly; a short-stay visitor at a border crossing may not have time to use it.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra bars trans visitors by unpublished register criteria with no effective remedy. No entry bar or exclusion regime is documented here, so this case sits far above that anchor."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles documents routine secondary screening, searches and discretionary refusal at ports. This dossier records no such practice even for a border division, so the exposure here is unproven rather than operative, placing it higher."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia documents trained officers, brief detention, counsel and compensation, with officer discretion at remote crossings. This case has comparable or stronger substantive law, no documented entry practice, and uneven domestic enforcement, making it roughly comparable to that anchor."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Vessalia shows equality law plus enforced oversight, apologies and compensation. Enforcement here is documented as uneven and remedies slow, so this case sits below that anchor."
+    }
+   ],
+   "synthesis": "The visitor enters the same protective national system: statutory trans rights, self-declared legal gender recognition, hate-crime and anti-discrimination coverage, a service-denial ban and a self-identity custody-placement policy, with no criminalisation or facility exclusion and no documented border targeting of trans travellers. The negatives are operational: pending hospital discrimination, an uneven enforcement record, a bank complainant who says she was dismissed, and official acknowledgement that mentality and infrastructure lag the law. The single capital murder was prosecuted, a positive recourse signal. Resident-only outcome data describes the domestic sphere, not the traveller's. The conservative border division raises plausible friction and more document handling, but the dossier documents no practice, so that risk is treated as uncertainty rather than a demonstrated exposure."
+  },
+  "difference_ri_minus_nh": -0.02
+ },
+ "parse_error": null,
+ "attempts": 1
+}

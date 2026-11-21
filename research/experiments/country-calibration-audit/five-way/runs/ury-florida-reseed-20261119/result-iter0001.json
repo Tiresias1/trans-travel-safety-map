@@ -1,0 +1,166 @@
+{
+ "iteration": 1,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.0038563",
+ "usage": {
+  "cost_usd": "0.0038563",
+  "input_tokens": 24073,
+  "output_tokens": 2898
+ },
+ "labels": {
+  "A": "27058087B4606463382645:Florida",
+  "B": "27058087B78128732832923:Tacuarembó"
+ },
+ "A_region": "27058087B4606463382645:Florida",
+ "B_region": "27058087B78128732832923:Tacuarembó",
+ "A_rating": 0.68,
+ "B_rating": 0.68,
+ "difference_B_minus_A": 0.0,
+ "parsed": {
+  "A": {
+   "rating": 0.68,
+   "explanation": "Combined national framework is strongly protective: comprehensive trans law, self-declared legal gender, hate-crime enhancement, health-care non-denial, and choice of prison placement with trans women held in female prisons. No criminalisation, border restriction, facility ban, or state targeting is documented. Counterweight is documented street-level violence: a 2025 trans woman murdered with a 7-year sentence, survey reporting about two-thirds of trans people experienced physical violence, and uneven enforcement in hospital and bank cases. Interior conservative division adds social friction but no documented additional legal exposure, so rating sits in Reduced Risk, below the 0.85 anchors.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No third marker; documents only female/male, which may affect non-binary visitors. No documented border rejection of foreign passports.",
+     "protection": "Self-declared gender recognition since 2018 is a climate signal of document acceptance; no surgery or diagnosis required domestically.",
+     "interaction": "Visitor uses home passport, so domestic recognition does not directly operate; absence of documented border friction means mismatch risk remains uncertain.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Authorities note laws advanced but mentality and infrastructure not aligned; trans prisoners described as very vulnerable.",
+     "protection": "Trans person may choose men's or women's prison placement; trans women currently held in female prisons, with planned dedicated sectors.",
+     "interaction": "Custody choice mitigates birth-sex placement, but infrastructure gap leaves implementation risk if a visitor were detained on another matter.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Not documented. No bathroom, locker-room or ward ban is documented in the dossier.",
+     "protection": "Anti-discrimination and respectful-treatment duties under 2018 law cover public services generally.",
+     "interaction": "No documented facility exclusion interacts with border or custody; absence is not treated as proven safe practice.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "May 2024 hospital mistreatment/discrimination complaint pending; investigation deferred until judicial stage ends.",
+     "protection": "2018 law bars denial of health services; health rights are statutorily guaranteed.",
+     "interaction": "Paper protection coexists with a pending complaint, indicating remedy may be slow rather than unavailable.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Political opposition and repeal pre-referendum failed in 2019; no current state threat-framing documented.",
+     "protection": "Incitement prohibited since 2003, hate-crime enhanced penalties, anti-discrimination commission covering sexual identity.",
+     "interaction": "Law is protective, not a lever for outing; opposition is political climate, not operative enforcement against visitors.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Not documented. No visitor-facing restriction on travelling with a trans minor is documented.",
+     "protection": "Minors may change name/gender with parental consent domestically, a climate signal only for visitors.",
+     "interaction": "Resident minor procedure does not govern a visitor's documents; no documented guardian investigation or care ban for travelling families.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "About two-thirds of trans people report physical violence; life expectancy about 45 vs 77; 2025 fatal shooting in capital.",
+     "protection": "2025 murder prosecuted to a 7-year sentence; prosecutor compelled bank to produce withheld footage in discrimination case.",
+     "interaction": "High resident prevalence suggests elevated street risk, while prosecution shows courts/police can act; visitor not in resident sex-work/employment sphere but not insulated.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Enforcement uneven; bank complainant alleges dismissal after publicising case, hospital case pending.",
+     "protection": "Anti-discrimination commission, criminal complaints, courts and prosecutor action documented as operating, albeit slowly.",
+     "interaction": "Remedies exist and partly work, but delay and retaliation risk reduce their mitigating value, especially in a conservative interior division.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Far higher than 0.15: no decency criminalisation, no routine arrest, beatings in custody, or illusory courts; here murder was prosecuted and custody placement is by choice."
+    },
+    {
+     "anchor_id": "0.65-B",
+     "comparison": "Similar to 0.65: remedies documented but uneven, with friction and delays, yet harder than 0.65 because no routine detention occurs and statutory protection is comprehensive."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Lower than 0.85: 0.85 has prompt apologies, discipline and compensation with only isolated questioning, whereas here two-thirds report violence and current complaints remain pending."
+    }
+   ],
+   "synthesis": "State is protector on paper and in custody placement, not perpetrator; the operative risk is societal violence and slow, uneven remedy in a conservative interior division, not imprisonment, entry denial or facility exclusion. That combination places the case in Reduced Risk, materially above organised-targeting anchors and below near-ideal protection anchors."
+  },
+  "B": {
+   "rating": 0.68,
+   "explanation": "Identical national combined regime to A and used as calibration reference: statutory self-identification, hate-crime enhancement, health-care non-denial, and choice of prison placement including female prisons for trans women. No criminalisation, border, facility or care ban documented for visitors. Risk arises from documented resident violence, including the prosecuted 2025 murder and about two-thirds reporting physical violence, plus uneven hospital/bank enforcement. Northern interior conservative character adds social friction without documented extra legal exposure, yielding Reduced Risk below 0.85 anchors.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Only female/male markers; no third marker. No documented refusal of foreign documents at entry.",
+     "protection": "Self-declaration model without surgery/diagnosis since 2018 signals institutional acceptance of gender identity.",
+     "interaction": "Visitor's home passport governs entry; domestic marker system is climate only, and border practice is undocumented.",
+     "status": "uncertain"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Prison leadership states mentality/infrastructure lag the law; trans population described as vulnerable.",
+     "protection": "Right to choose men's/women's placement; trans women held in female prisons; planned trans sector.",
+     "interaction": "Choice mitigates birth-sex custody, but lagging infrastructure means protection may be inconsistent in practice.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Not documented. No facility-access restriction or birth-sex rule is documented.",
+     "protection": "National respectful-treatment and anti-discrimination duties apply to public services.",
+     "interaction": "No documented interaction with entry, custody or care that would create universal exposure.",
+     "status": "not_documented"
+    },
+    "care_services": {
+     "exposure": "2024 hospital discrimination complaint pending, administrative review deferred.",
+     "protection": "Health services cannot be denied on trans grounds under 2018 law.",
+     "interaction": "Protection is operative in law but remedy is slow, so a visitor needing care may face delay rather than denial.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "No state threat-framing or criminalisation of presentation documented; repeal attempt failed.",
+     "protection": "Hate-crime penalties, incitement ban, anti-discrimination commission, Free 96/100 general rights context.",
+     "interaction": "Legal framework aligns with protection; conservative regional character does not change operative law.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Not documented for visitors travelling with minors.",
+     "protection": "Parental-consent minor recognition exists domestically as climate signal only.",
+     "interaction": "No documented school, care or guardian exposure for a travelling family; visitor documents remain home-issued.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Survey: about two-thirds report physical violence; 2025 trans woman shot dead; severe marginalisation indicators.",
+     "protection": "Murder suspect sentenced to 7 years; prosecutor compelled evidence in bank discrimination suit.",
+     "interaction": "Prevalence signals real street risk if outed, while prosecution shows state response is not impunity; conservative interior may heighten friction.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Uneven enforcement, pending cases, alleged retaliation/dismissal after publicising bank case.",
+     "protection": "Courts, prosecutor, anti-discrimination commission and hospital investigation mechanisms documented.",
+     "interaction": "Recourse functions partially and slowly; it discounts but does not erase documented violence prevalence.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Far higher than 0.25: no birth-sex prison housing, no cross-dressing arrests, and trans women are placed in female prisons by choice, not male blocks."
+    },
+    {
+     "anchor_id": "0.55-C",
+     "comparison": "Higher than 0.55: no ward assignment by document marker or systematic care denial; statutory non-denial and choice-based placement are stronger, though violence prevalence persists."
+    },
+    {
+     "anchor_id": "0.85-C",
+     "comparison": "Lower than 0.85: 0.85 shows reversed bans, retraining and published findings within weeks, whereas here a 2024 hospital complaint is still pending and violence prevalence is high."
+    }
+   ],
+   "synthesis": "As in A, the combined regime is protective in law and custody, with risk concentrated in societal violence and slow, uneven remedies in a conservative interior. No traveller-facing universal exposure or state targeting is documented, so the rating remains Reduced Risk and consistent with A on identical operative facts."
+  },
+  "difference_ri_minus_nh": 0.0
+ },
+ "parse_error": null,
+ "attempts": 1
+}

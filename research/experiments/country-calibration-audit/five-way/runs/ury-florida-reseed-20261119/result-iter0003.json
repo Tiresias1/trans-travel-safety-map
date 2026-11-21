@@ -1,0 +1,166 @@
+{
+ "iteration": 3,
+ "model": "mimo",
+ "model_id": "xiaomi/mimo-v2.6-flash",
+ "status": "ok",
+ "cost_usd": "0.00468804",
+ "usage": {
+  "cost_usd": "0.00468804",
+  "input_tokens": 24416,
+  "output_tokens": 4535
+ },
+ "labels": {
+  "A": "27058087B4606463382645:Florida",
+  "B": "27058087B64628270573025:Flores"
+ },
+ "A_region": "27058087B4606463382645:Florida",
+ "B_region": "27058087B64628270573025:Flores",
+ "A_rating": 0.73,
+ "B_rating": 0.73,
+ "difference_B_minus_A": 0.0,
+ "parsed": {
+  "A": {
+   "rating": 0.73,
+   "explanation": "The combined regime is national self-ID gender recognition, statutory anti-discrimination and hate-crime coverage, and a strong rule-of-law state (Free 96/100) in which a 2025 killing of a trans woman produced a seven-year sentence and complaints against a hospital and bank are moving through prosecutors. No border, document, facility or custody exposure is documented; trans detainees choose placement and trans women are held in women's prisons. Resident-sphere harms (two-thirds report violence, life expectancy 45) signal real social hostility but reach visitors only partially. The division's 'conservative character' carries no specific documented restriction — an open question, not an exposure. Worst documented feature: service discrimination tier 3 with working recourse.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "No border friction, secondary screening or document-mismatch practice is recorded. Official documents carry only F/M markers (no third marker), a resident-side gap that does not touch a foreign passport holder.",
+     "protection": "No trans-specific entry restriction documented; national equality law and hate-crime rules nominally cover visitors in public services.",
+     "interaction": "A document or presentation mismatch during routine checks would fall under national anti-discrimination and respectful-treatment duties, but the dossier does not document how front-line officers actually behave at entry.",
+     "status": "not_documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "No documented arrest, detention or custody harm targeting a trans person; a prosecutor did have to compel a bank to produce withheld footage, showing institutional resistance in places.",
+     "protection": "National authorities state trans people choose men's or women's placement; trans women are held in women's prisons; trans-specific prison sector planned.",
+     "interaction": "Detention risk is remote for a visitor; if it occurred, the documented placement choice would govern, moderated by the acknowledged gap between advanced laws and staff 'mentality and infrastructure'.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Division described only as interior and conservative with a more conservative regional profile; no specific facility, service or policing restriction is stated for it.",
+     "protection": "National statutes apply in full throughout the division; no documented local carve-out from the 2018 or anti-discrimination laws.",
+     "interaction": "Combined regime = national protections plus an unquantified local climate shift; social friction may rise in the division, but no operative rule differs.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "May 2024: a trans health-service user denounced hospital mistreatment and discrimination; criminal complaint pending, administrative investigation deferred until after the judicial stage.",
+     "protection": "Law 19684 bars denial of health services; 2017 Mental Health Law bars diagnosis on identity alone; local officials pressing for health-system updates.",
+     "interaction": "Care refusal is prohibited yet documented in practice; a visitor needing emergency care could face friction, but the complaint route is visibly operating rather than decorative.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Political and religious opposition to the 2018 law exists (69,360 repeal signatures; senior cleric's criticism) but has not prevailed; no official threat-framing of trans people documented.",
+     "protection": "Hate-incitement prohibited since 2003; enhanced penalties for identity-motivated crime; national anti-discrimination commission; repeal referendum failed.",
+     "interaction": "The state frames trans identity as protected, not threatening; opposition lives in civil society without institutional backing, limiting its traveller-facing weight.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "No documented exposure for a travelling minor or guardian; resident minors' access to legal gender change requires parental consent (resident-side).",
+     "protection": "Conversion-therapy ban, equal age of consent, anti-discrimination and hate-crime coverage extend to minors; schools-related provisions are resident-facing climate signals.",
+     "interaction": "A travelling family would encounter the same national protections as an adult alone; no school, sports or care rule targeting a visiting child is documented.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "2025 fatal shooting of a trans woman in the capital (single incident); resident surveys record two-thirds victimised by physical violence and life expectancy 45 vs 77 — resident-sphere signals of social hostility.",
+     "protection": "Suspect sentenced to seven years; hate-crime enhancement available; robust civil society and pride infrastructure.",
+     "interaction": "Violence is documented but not organised or state-directed, and the state's response was prosecution; resident prevalence lowers confidence in street safety without establishing traveller-targeted risk.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Enforcement uneven: bank alleged to withhold key footage, dismissed whistleblower, slow administrative investigation; division-specific practice undocumented.",
+     "protection": "Functioning prosecutors and courts (complaint compelled evidence, murder conviction); 96/100 democracy score; anti-discrimination commission; civil society able to litigate.",
+     "interaction": "Recourse demonstrably operates for trans complainants, reducing the weight of documented discrimination; division-level enforcement and entry-stage behaviour remain genuine unknowns.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C features birth-sex facility mandates and a cross-dressing statute enabling arrests. Jurisdiction A has none of that: no criminalisation, no facility exclusion, custody placement by choice, and working prosecution. Its worst feature is service discrimination with an active complaint — far below 0.25-C's tier-1/tier-2 exposures."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "0.55-B rests on routine discretionary border secondary screening, refusals of admission and slow, rarely revised appeals. A documents no border or document exposure at all and adds statutory equality protections with functioning courts — a step above 0.55-B's universal screening exposure."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has trained border staff, a tribunal for detained visitors and only brief detention risk — very similar in kind to A's profile. A sits just below it because documented service discrimination and resident violence prevalence persist, while its custody protections are arguably stronger; near-equivalent tiers."
+    }
+   ],
+   "synthesis": "National protections (self-ID recognition, anti-discrimination and hate-crime law, bar on care refusal) are operative and backed by a high-functioning state: prosecutors compelled evidence and secured a murder conviction, and custody placement favours the trans person. Exposure concentrates in street/service friction — one prosecuted killing, a hospital complaint, a bank dispute — all tier 3 with visible, if uneven, recourse. The conservative division adds climate friction but no documented rule change. For an adult alone or with a minor, the operative regime is acceptance on paper with imperfect enforcement; residual uncertainty sits at entry screening and local division practice, not at any stated restriction."
+  },
+  "B": {
+   "rating": 0.73,
+   "explanation": "B shares the identical national operative regime: self-ID legal gender recognition, statutory anti-discrimination and hate-crime coverage, barred denial of health services, and a Free 96/100 rights state that prosecuted a 2025 killing of a trans woman to a seven-year sentence and is advancing a prosecutor-compelled case against a bank. No entry, document, facility or custody exposure is documented; trans detainees choose placement. Resident-sphere indicators (two-thirds report physical violence, life expectancy 45) show deep social hostility but are only partly visitor-reaching. The division is characterised as interior and conservative without any specific restriction — an open question, not a documented exposure. Worst feature: tier-3 service discrimination with working remedies.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Not documented. No border screening, marker-mismatch handling or registration requirement for trans visitors appears; documents carry only F/M markers, a resident-side limitation.",
+     "protection": "No trans-specific entry restriction; national equality law, hate-crime rules and respectful-treatment duties apply at all official encounters.",
+     "interaction": "Any document-presentation mismatch would be adjudicated under national protections; the dossier is silent on actual front-line entry practice, leaving this an open question rather than a hazard.",
+     "status": "not_documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "No documented detention of a trans visitor; institutional resistance appears in the bank's alleged withholding of camera footage until a prosecutor compelled production.",
+     "protection": "Trans person decides men's or women's placement; trans women held in women's prisons; dedicated trans sector planned; national institute concedes mentalities lag laws.",
+     "interaction": "If a visitor were detained, the placement rule would operate, but staff 'mentality and infrastructure' gaps mean treatment quality is less certain than the rule itself.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Division described as interior and conservative, representing a more conservative part of the country; no concrete facility, service or policing rule specific to it is stated.",
+     "protection": "Full national statutory framework applies in the division; no documented local derogation.",
+     "interaction": "Combined regime is unchanged in law; only social climate plausibly shifts, making division-specific exposure uncertain rather than established.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "May 2024 hospital mistreatment and discrimination complaint against a trans patient — criminal case pending, administrative inquiry deferred; uneven enforcement of care duties.",
+     "protection": "Law 19684 bars denial of health services and obliges respectful treatment; Mental Health Law bars identity-based diagnosis; officials pressing for health-system reform.",
+     "interaction": "A visitor needing care carries a documented, if minority, risk of friction; the criminal-complaint route shows denial is treated as actionable, not normalised.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Repeal campaign (69,360 signatures) and clerical criticism of LGBT policy document organised social opposition, though it failed at the 2019 pre-referendum.",
+     "protection": "Incitement criminal since 2003; enhanced penalties for identity-motivated offences; anti-discrimination commission with sexual-identity mandate.",
+     "interaction": "Opposition remains outside the state; institutions themselves frame trans identity protectively, so hostility does not convert into official threat-framing against a visitor.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "No documented exposure for a visiting minor or accompanying guardian; resident minor gender change requires parental consent (resident-facing).",
+     "protection": "Conversion-therapy ban, equal age of consent, hate-crime and discrimination coverage extend to minors; 2018 law mandates scholarship access for trans students (resident-side climate).",
+     "interaction": "A travelling family's exposure equals the adult-alone regime; no documented rule differentiates a visiting child at schools, clinics or facilities.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "One 2025 fatal shooting of a trans woman in the capital (single case); resident statistics: two-thirds victimised by physical violence, life expectancy 45 vs 77 — indicating pervasive social hostility in the local sphere.",
+     "protection": "Conviction with a seven-year sentence; available hate-crime enhancement; strong civil society, pride infrastructure and registered LGBTI organisations.",
+     "interaction": "Violence is not organised or state-directed and drew prosecution; resident prevalence cautions on street safety but does not establish traveller-targeted patterned violence.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Uneven enforcement: alleged footage withholding by a bank, deferred administrative investigation, alleged dismissal of a complainant; division-level practice undocumented.",
+     "protection": "Working prosecutors and courts, 96/100 democracy score, anti-discrimination commission, repeatable litigation by trans claimants.",
+     "interaction": "Demonstrated remedies lower the weight of documented discrimination; the conservative division's actual enforcement behaviour and entry-stage practice remain genuinely unknown.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C combines birth-sex housing rules, a cross-dressing offence enabling arrests, and slow remedies. B has no criminalising or exclusionary statute, no facility mandate, and prompt prosecution of anti-trans violence — categorically above 0.25-C; its residual exposure is scattered discrimination with active recourse."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "0.55-B's core is routine discretionary secondary screening, admission refusals and appeals that rarely revise outcomes. B documents no entry-stage exposure whatsoever and pairs it with statutory protections and functioning courts — materially above 0.55-B despite sharing the same 'administrative friction possible' uncertainty class."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has trained border officers, a detention-appeal tribunal and brief, humiliation-level holds. B is close in kind: strong formal protections, no documented entry harm, but persistent service discrimination and heavy resident violence prevalence keep it marginally below 0.75-C's tier."
+    }
+   ],
+   "synthesis": "The operative system is one strong national framework with a mildly cooler local climate: self-ID recognition, anti-discrimination and hate-crime law, barred care refusal, and trans-chosen custody placement, all enforced by institutions that demonstrably act (murder conviction, prosecutor-compelled evidence, 96/100 rights score). Documented exposures are tier 3 — a hospital complaint, a bank dispute — with visible but uneven remedies; resident violence statistics signal social hostility whose traveller reach is partial. The interior conservative division contributes no stated rule change, only uncertain climate. For solo adults and families alike, consequences of being outed are friction and discrimination rather than custody, prosecution or state hostility."
+  },
+  "difference_ri_minus_nh": 0.0
+ },
+ "parse_error": null,
+ "attempts": 1
+}

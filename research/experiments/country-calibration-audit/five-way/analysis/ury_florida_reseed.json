@@ -1,0 +1,433 @@
+{
+ "run_id": "ury-florida-reseed-20261119",
+ "created": "2026-11-21T20:15:06+00:00",
+ "instrument": "single-rating-anchored-v4-structured (combined A/B, seeded reseed recalibration)",
+ "effort": "medium",
+ "seed": 20261119,
+ "florida_region": "27058087B4606463382645:Florida",
+ "florida_sid": "27058087B4606463382645",
+ "seed_value": 0.7453893632000002,
+ "seed_rule": "median of the other 18 URY ADM1 final_running_scores in analysis/global_adm1_iterative.json",
+ "provenance": {
+  "source_aggregate": "analysis/global_adm1_iterative.json",
+  "source_created": "2026-11-21T09:29:16+00:00",
+  "source_run_id": "global-adm1-iterative-20261117",
+  "florida_pre_global_run_score": 0.4,
+  "florida_global_run_final_score": 0.5112000000000001,
+  "florida_global_run_update_count": 2
+ },
+ "sibling_finals_frozen": {
+  "27058087B10223787783888:Lavalleja": 0.7266062080000001,
+  "27058087B19329078127106:Canelones": 0.805559,
+  "27058087B22084813565519:Artigas": 0.6956484214374401,
+  "27058087B438131503863:Maldonado": 0.785559,
+  "27058087B51474914010310:Salto": 0.7813983784960004,
+  "27058087B51576366641273:Río Negro": 0.7606751784960002,
+  "27058087B52084370772895:Rivera": 0.7409009664000001,
+  "27058087B55390925666910:Rocha": 0.7424529664000001,
+  "27058087B55907822213987:Paysandú": 0.7664472,
+  "27058087B64628270573025:Flores": 0.7377009664,
+  "27058087B69444591785940:Soriano": 0.7432209664000001,
+  "27058087B72518212949854:Cerro Largo": 0.7216230184960002,
+  "27058087B78128732832923:Tacuarembó": 0.7475577600000002,
+  "27058087B79494286721501:Colonia": 0.7731174184960002,
+  "27058087B85503990233673:Treinta y Tres": 0.7236167731200002,
+  "27058087B97113143242340:Montevideo": 0.8094472,
+  "27058087B9919519605551:San José": 0.7545036627968003,
+  "27058087B99783771080652:Durazno": 0.6984471999999999
+ },
+ "candidate_rule": "nearest max(int(0.10*n_iso3),3) capped at n_iso3-1 siblings within the global-run URY pairing group by current running score (siblings frozen), tie-break region id",
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_balancing": "least-used model for this reseed run so far; ties by seeded shuffle",
+ "model_usage": {
+  "mimo": 2,
+  "deepseek": 1,
+  "qwen": 1,
+  "glm": 1,
+  "haiku": 1,
+  "luna": 1,
+  "muse": 1
+ },
+ "system_sha256": "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "n_pairings": 8,
+ "n_ok": 8,
+ "n_rejected": 0,
+ "status_by_model": {
+  "muse": {
+   "ok": 1
+  },
+  "deepseek": {
+   "ok": 1
+  },
+  "mimo": {
+   "ok": 2
+  },
+  "luna": {
+   "ok": 1
+  },
+  "haiku": {
+   "ok": 1
+  },
+  "qwen": {
+   "ok": 1
+  },
+  "glm": {
+   "ok": 1
+  }
+ },
+ "florida_ratings_by_model": {
+  "muse": [
+   0.68
+  ],
+  "deepseek": [
+   0.76
+  ],
+  "mimo": [
+   0.73,
+   0.73
+  ],
+  "luna": [
+   0.82
+  ],
+  "haiku": [
+   0.78
+  ],
+  "qwen": [
+   0.62
+  ],
+  "glm": [
+   0.77
+  ]
+ },
+ "cost_by_model_usd": {
+  "muse": "0.0038563",
+  "deepseek": "0.00228515",
+  "mimo": "0.01071904",
+  "luna": "0.00508705",
+  "haiku": "0.0064279",
+  "qwen": "0.0103382",
+  "glm": "0.00484289"
+ },
+ "total_usd": "0.04355653",
+ "update_schedule": "Florida only, per-update number: updates 1-20 0.80*old+0.20*new (all 8 here); siblings frozen",
+ "update_count": 8,
+ "update_history": [
+  {
+   "iteration": 1,
+   "partner_region": "27058087B78128732832923:Tacuarembó",
+   "partner_name": "Tacuarembó",
+   "model": "muse",
+   "rating": 0.68,
+   "alpha": 0.2,
+   "old_score": 0.7453893632000002,
+   "new_score": 0.7323114905600001,
+   "update_number": 1
+  },
+  {
+   "iteration": 2,
+   "partner_region": "27058087B52084370772895:Rivera",
+   "partner_name": "Rivera",
+   "model": "deepseek",
+   "rating": 0.76,
+   "alpha": 0.2,
+   "old_score": 0.7323114905600001,
+   "new_score": 0.7378491924480002,
+   "update_number": 2
+  },
+  {
+   "iteration": 3,
+   "partner_region": "27058087B64628270573025:Flores",
+   "partner_name": "Flores",
+   "model": "mimo",
+   "rating": 0.73,
+   "alpha": 0.2,
+   "old_score": 0.7378491924480002,
+   "new_score": 0.7362793539584002,
+   "update_number": 3
+  },
+  {
+   "iteration": 4,
+   "partner_region": "27058087B52084370772895:Rivera",
+   "partner_name": "Rivera",
+   "model": "luna",
+   "rating": 0.82,
+   "alpha": 0.2,
+   "old_score": 0.7362793539584002,
+   "new_score": 0.7530234831667202,
+   "update_number": 4
+  },
+  {
+   "iteration": 5,
+   "partner_region": "27058087B78128732832923:Tacuarembó",
+   "partner_name": "Tacuarembó",
+   "model": "haiku",
+   "rating": 0.78,
+   "alpha": 0.2,
+   "old_score": 0.7530234831667202,
+   "new_score": 0.7584187865333762,
+   "update_number": 5
+  },
+  {
+   "iteration": 6,
+   "partner_region": "27058087B55907822213987:Paysandú",
+   "partner_name": "Paysandú",
+   "model": "qwen",
+   "rating": 0.62,
+   "alpha": 0.2,
+   "old_score": 0.7584187865333762,
+   "new_score": 0.7307350292267011,
+   "update_number": 6
+  },
+  {
+   "iteration": 7,
+   "partner_region": "27058087B85503990233673:Treinta y Tres",
+   "partner_name": "Treinta y Tres",
+   "model": "glm",
+   "rating": 0.77,
+   "alpha": 0.2,
+   "old_score": 0.7307350292267011,
+   "new_score": 0.7385880233813609,
+   "update_number": 7
+  },
+  {
+   "iteration": 8,
+   "partner_region": "27058087B52084370772895:Rivera",
+   "partner_name": "Rivera",
+   "model": "mimo",
+   "rating": 0.73,
+   "alpha": 0.2,
+   "old_score": 0.7385880233813609,
+   "new_score": 0.7368704187050887,
+   "update_number": 8
+  }
+ ],
+ "final_score": 0.7368704187050887,
+ "drift_final_minus_seed": -0.008518944494911418,
+ "pair_history": [
+  {
+   "iteration": 1,
+   "model": "muse",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B78128732832923:Tacuarembó",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Tacuarembó",
+   "B_frozen_score": 0.7475577600000002,
+   "status": "ok",
+   "combined_user_sha256": "64eafae114673517fcc63510658a555714f027d129850704e29e218fec45568a",
+   "cost_usd": "0.0038563",
+   "A_rating": 0.68,
+   "B_rating": 0.68,
+   "difference_B_minus_A": 0.0,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 1,
+    "alpha": 0.2,
+    "rating": 0.68,
+    "old_score": 0.7453893632000002,
+    "new_score": 0.7323114905600001
+   }
+  },
+  {
+   "iteration": 2,
+   "model": "deepseek",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Rivera",
+   "B_frozen_score": 0.7409009664000001,
+   "status": "ok",
+   "combined_user_sha256": "ee9580ae5801cc7257a99603c44521b631c908f279e19cac67b9d132b953847c",
+   "cost_usd": "0.00228515",
+   "A_rating": 0.76,
+   "B_rating": 0.74,
+   "difference_B_minus_A": -0.02,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 2,
+    "alpha": 0.2,
+    "rating": 0.76,
+    "old_score": 0.7323114905600001,
+    "new_score": 0.7378491924480002
+   }
+  },
+  {
+   "iteration": 3,
+   "model": "mimo",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B64628270573025:Flores",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Flores",
+   "B_frozen_score": 0.7377009664,
+   "status": "ok",
+   "combined_user_sha256": "8180d6c0b19dcbc3c736aa02cd03738d0805118bb7d329bbb97ae88ee3ec1575",
+   "cost_usd": "0.00468804",
+   "A_rating": 0.73,
+   "B_rating": 0.73,
+   "difference_B_minus_A": 0.0,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 3,
+    "alpha": 0.2,
+    "rating": 0.73,
+    "old_score": 0.7378491924480002,
+    "new_score": 0.7362793539584002
+   }
+  },
+  {
+   "iteration": 4,
+   "model": "luna",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Rivera",
+   "B_frozen_score": 0.7409009664000001,
+   "status": "ok",
+   "combined_user_sha256": "ee9580ae5801cc7257a99603c44521b631c908f279e19cac67b9d132b953847c",
+   "cost_usd": "0.00508705",
+   "A_rating": 0.82,
+   "B_rating": 0.82,
+   "difference_B_minus_A": 0.0,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 4,
+    "alpha": 0.2,
+    "rating": 0.82,
+    "old_score": 0.7362793539584002,
+    "new_score": 0.7530234831667202
+   }
+  },
+  {
+   "iteration": 5,
+   "model": "haiku",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B78128732832923:Tacuarembó",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Tacuarembó",
+   "B_frozen_score": 0.7475577600000002,
+   "status": "ok",
+   "combined_user_sha256": "64eafae114673517fcc63510658a555714f027d129850704e29e218fec45568a",
+   "cost_usd": "0.0064279",
+   "A_rating": 0.78,
+   "B_rating": 0.78,
+   "difference_B_minus_A": 0.0,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 5,
+    "alpha": 0.2,
+    "rating": 0.78,
+    "old_score": 0.7530234831667202,
+    "new_score": 0.7584187865333762
+   }
+  },
+  {
+   "iteration": 6,
+   "model": "qwen",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B55907822213987:Paysandú",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Paysandú",
+   "B_frozen_score": 0.7664472,
+   "status": "ok",
+   "combined_user_sha256": "68ae165184d2544c726d61bc954516f9c5cd9c0f306ee7eca3b8c95e2270a77b",
+   "cost_usd": "0.0103382",
+   "A_rating": 0.62,
+   "B_rating": 0.74,
+   "difference_B_minus_A": 0.12,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 6,
+    "alpha": 0.2,
+    "rating": 0.62,
+    "old_score": 0.7584187865333762,
+    "new_score": 0.7307350292267011
+   }
+  },
+  {
+   "iteration": 7,
+   "model": "glm",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B85503990233673:Treinta y Tres",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Treinta y Tres",
+   "B_frozen_score": 0.7236167731200002,
+   "status": "ok",
+   "combined_user_sha256": "f2662a8e4e41619d3a6daf4926ded80327a9bcceab620faa85378df3ac8c0110",
+   "cost_usd": "0.00484289",
+   "A_rating": 0.77,
+   "B_rating": 0.78,
+   "difference_B_minus_A": 0.01,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 7,
+    "alpha": 0.2,
+    "rating": 0.77,
+    "old_score": 0.7307350292267011,
+    "new_score": 0.7385880233813609
+   }
+  },
+  {
+   "iteration": 8,
+   "model": "mimo",
+   "A_region": "27058087B4606463382645:Florida",
+   "B_region": "27058087B52084370772895:Rivera",
+   "A_iso3": "URY",
+   "B_iso3": "URY",
+   "A_name": "Florida",
+   "B_name": "Rivera",
+   "B_frozen_score": 0.7409009664000001,
+   "status": "ok",
+   "combined_user_sha256": "ee9580ae5801cc7257a99603c44521b631c908f279e19cac67b9d132b953847c",
+   "cost_usd": "0.006031",
+   "A_rating": 0.73,
+   "B_rating": 0.72,
+   "difference_B_minus_A": -0.01,
+   "update": {
+    "region": "27058087B4606463382645:Florida",
+    "name": "Florida",
+    "iso3": "URY",
+    "update_number": 8,
+    "alpha": 0.2,
+    "rating": 0.73,
+    "old_score": 0.7385880233813609,
+    "new_score": 0.7368704187050887
+   }
+  }
+ ]
+}
