@@ -1,0 +1,174 @@
+{
+ "iteration": 42,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0080292",
+ "usage": {
+  "cost_usd": "0.0080292",
+  "input_tokens": 47342,
+  "output_tokens": 6590
+ },
+ "labels": {
+  "A": "VIR",
+  "B": "66186276B43071933723331:California"
+ },
+ "A_region": "VIR",
+ "B_region": "66186276B43071933723331:California",
+ "A_rating": 0.32,
+ "B_rating": 0.45,
+ "difference_B_minus_A": 0.13,
+ "parsed": {
+  "A": {
+   "rating": 0.32,
+   "explanation": "Combined regime: the parent's operative exposures apply to every visitor. Passport sex markers are restricted, X markers are not issued, and documents can be confiscated or blocked. Entry can be refused on document discrepancy, and a lifetime fraud ineligibility is possible. Immigration custody has documented forced labour, beatings and sexual abuse of trans men. Federal hospital subpoenas reach records of patients under 19. Officials frame trans-supportive groups as counterterror targets. The territory adds a human-rights statute covering gender identity, a 2017 interpretation extending it to students, and settled marriage. These are real but un-enforced on the record, and they do not override federal entry and custody exposures. The territory's own facility and care rules are not documented.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Passport sex markers restricted to birth sex; X markers not issued; passports confiscated or blocked, some travellers stranded; refusal where documents discrepant; possible lifetime fraud ineligibility; athlete entry ban.",
+     "protection": "Not documented for visitors; territory follows federal entry rules.",
+     "interaction": "Territory statute cannot override federal screening, so mismatched documents trigger federal refusal.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Documented harm in immigration custody (forced labour, beatings, solitary, sexual abuse of trans men); federal corrections conversion-style policy from 2026; state trespass arrest (handcuffed, held 24h).",
+     "protection": "Not documented.",
+     "interaction": "Federal custody harm applies regardless of territorial protections.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal restriction on government-funded single-sex facilities; state facility bans in some states; territory facility rules not documented.",
+     "protection": "Not documented for the territory.",
+     "interaction": "Federal facility policy is the parent exposure; the territory's position is unknown.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Federal subpoenas of hospital records for patients under 19; proposed federal insurance bar for under-18s; 27 states ban minors' care.",
+     "protection": "Territory care access not documented.",
+     "interaction": "Federal records demands can reach visitors receiving care in the territory.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National memo and counterterror strategy name 'radically pro-transgender' groups; directive to prosecute teachers facilitating social transition.",
+     "protection": "Strategy states powers won't target mere disagreement; unverified in operation.",
+     "interaction": "Official framing raises the stakes of visible advocacy or outing.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Teacher-prosecution directive; minors' care bans; subpoenas of minors' records; school-based social transition risks guardian investigation.",
+     "protection": "Not documented for the territory.",
+     "interaction": "A travelling minor's care and schooling can be interrupted by federal inquiry.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Anti-LGBTQ bias incidents nationally; bias-crime statute coverage partial (23 states); no territory violence or enforcement data.",
+     "protection": "Territory human-rights statute covers gender identity; national hate-crime statute applies.",
+     "interaction": "Protection exists on paper, with no record of operation.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Federal litigation unresolved; several orders enjoined.",
+     "protection": "Territory human-rights statute; 2017 student interpretation (office position, not a court holding); marriage recognition since 2015.",
+     "interaction": "Territorial protections are operative only as far as the record shows; no enforcement outcomes documented.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-D",
+     "comparison": "Lower than 0.15-D. Dossier A has no documented custody with lethal harm, no capital exposure and no document-fraud detention pipeline to execution. Its custody harms are serious but not at the Belvane level."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Close to 0.35-A. Both have universal document-based exclusion and no effective remedy. A is worse on documented custody abuse and official threat framing. The territory's statute adds a small mitigation that does not reach 0.35-A's level of exclusion."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Lower than 0.55-B. That anchor's exposure is administrative, with refused admission and no documented custody abuse. Dossier A has documented custody harm and federal records subpoenas."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Well below 0.75-C. The anchor's entry screening is respectful, detention brief and remedies working. Dossier A has a documented mismatch-based refusal regime and no operative remedy record."
+    }
+   ],
+   "synthesis": "The parent's universal document and entry exposures apply to every visitor. Mismatched documents can lead to refusal, a possible lifetime bar, and custody or interrogation where abuse is documented. The territory's protective statute and marriage recognition are real but have no enforcement record and cannot offset federal screening or custody. A traveller with matching documents, no minor and no care need faces lower practical exposure. A travelling minor, or anyone who is outed at entry, faces the harsher operative regime."
+  },
+  "B": {
+   "rating": 0.45,
+   "explanation": "Combined regime: the same federal entry, document and custody exposures as the national framework apply to every visitor. The sub-unit adds documented operative protections: a sanctuary shield for families travelling for gender-affirming care, protection from child-abuse investigation and prosecution, and identity-based prison housing with funded surgery, though the housing is documented only to January 2021. Its 198 raw incidents in 2025 lack a denominator and are not evidence of elevated risk on their own. The reported rise in largest-city hate-crime reports and a July 2026 low-incident band are mixed. The federal hospital subpoenas can reach care records, which sits in tension with the shield.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal passport sex-marker restriction; X markers not issued; passports confiscated or blocked; entry refusal on discrepancy; possible lifetime fraud ineligibility.",
+     "protection": "Sub-unit does not alter federal passports or entry screening.",
+     "interaction": "Sub-unit protections do not reach the border; federal screening governs entry.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody harm documented; federal corrections conversion-style policy from 2026; a national trespass-arrest case elsewhere.",
+     "protection": "Sub-unit prison housing by gender identity documented only to January 2021; not confirmed as current.",
+     "interaction": "If a visitor enters this sub-unit's prisons, identity-based housing applies only if still in force; federal custody is separate.",
+     "status": "uncertain"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal restriction on government-funded single-sex facilities; sub-unit facility and bathroom rules not documented here.",
+     "protection": "Sub-unit facility status not documented.",
+     "interaction": "Federal facility restriction may apply in federally funded settings; sub-unit status unknown.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Federal subpoenas of hospital records for patients under 19; proposed federal insurance bar; minors' care bans in 27 states.",
+     "protection": "Sanctuary law lets youth from other states obtain hormones and puberty blockers; shields families from child-abuse investigation and prosecution for care, including out-of-state families.",
+     "interaction": "The state shield conflicts with federal records demands, which can reach providers and families in this sub-unit.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal memo and counterterror strategy target 'radically pro-transgender' groups; reported rise in largest-city anti-LGBTQ hate-crime reports.",
+     "protection": "Sub-unit statute provides care shield; counterterror strategy disclaims targeting mere disagreement.",
+     "interaction": "Federal framing and state protection pull in opposite directions.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal teacher-prosecution directive; federal records subpoenas for minors; federal minors' care restrictions.",
+     "protection": "Sanctuary shield protects travelling families seeking care from child-abuse investigation and prosecution.",
+     "interaction": "Shield covers care here; federal subpoenas and school directives still reach the family.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "198 of 1,000+ 2025 national incidents (raw count, no denominator); rise in largest-city reports; July 2026 analysis notes recorded hostility persists despite protective law.",
+     "protection": "July 2026 analysis places the sub-unit in a top-tier protective-law band with a low recorded-incident count.",
+     "interaction": "Recorded hostility is not normalised by count; protective law is not a guarantee.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Identity-based housing status after 2021 undocumented; facility status unknown; federal litigation unresolved.",
+     "protection": "Sanctuary statute and funded prison surgery documented; sub-unit protective-law rating.",
+     "interaction": "Sub-unit remedies are real for care but the record does not confirm them for custody or facilities.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-D",
+     "comparison": "Much higher than 0.15-D. The anchor involves document-fraud custody with lethal harm and capital exposure; dossier B documents none of that for this sub-unit, only federal custody harms."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Higher than 0.35-A. The anchor's exclusion regime has no effective remedy; dossier B has an operative care shield for families and a documented identity-based housing posture, though dated."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Close to 0.55-B on entry, but dossier B adds a documented care shield that the anchor lacks. Federal custody harms and records subpoenas keep it below 0.55-B's administrative-only profile."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Lower than 0.75-C. That anchor has respectful screening, working remedies and no documented federal custody abuse. Dossier B carries federal passport refusals and custody harms that the anchor lacks."
+    }
+   ],
+   "synthesis": "Federal document, entry and custody exposures apply to all visitors and are the dominant constraint. The sub-unit's documented care shield materially protects families seeking gender-affirming care, which lifts the rating, but federal subpoena power can reach the same records. Identity-based prison housing is documented only to 2021 and cannot be treated as current. Raw incident counts lack denominators and do not show higher visitor risk. A visitor avoiding care and custody faces the parent's regime; a family seeking care gains a documented shield."
+  },
+  "difference_ri_minus_nh": 0.13
+ },
+ "parse_error": null,
+ "attempts": 1
+}

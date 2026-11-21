@@ -1,0 +1,174 @@
+{
+ "iteration": 46,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0081049",
+ "usage": {
+  "cost_usd": "0.0081049",
+  "input_tokens": 49304,
+  "output_tokens": 6349
+ },
+ "labels": {
+  "A": "MNP",
+  "B": "66186276B31593004124297:Utah"
+ },
+ "A_region": "MNP",
+ "B_region": "66186276B31593004124297:Utah",
+ "A_rating": 0.36,
+ "B_rating": 0.26,
+ "difference_B_minus_A": -0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.36,
+   "explanation": "The combined regime is the parent national regime, which the territory inherits for entry, documents and immigration custody. Documented exposures include passport sex-marker restrictions in force since November 2025, a lifetime fraud-ground risk at entry, documented abuse in immigration custody, and federal hostility toward gender-diverse advocacy. Territory-specific layers are mixed: consensual same-sex conduct is legal, marriage has been recognised since 2015, and a 2023 hate-crime enhancement covers gender identity, but there is no local nondiscrimination law beyond government employment and no record of the enhancement being applied. Legal gender change requires an undefined medical process. Net: high-to-elevated risk, with the parent's documented custody and document harms governing.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Passports show birth sex; X markers no longer issued; discrepancies lead to refusal, requests for evidence, and confiscation or blocking of documents, leaving some stranded. Lifetime fraud-ground ineligibility is possible.",
+     "protection": "Passport restrictions are partly challenged in court; the territory has no separate document protection for visitors.",
+     "interaction": "The parent passport and entry regime applies in the territory, so home-country documents mismatched with presentation face the same screening.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Immigration custody reports include forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Federal prison policy adopted from 2026 mandates conversion-style treatment and removes hormones.",
+     "protection": "Not documented.",
+     "interaction": "Detention entered through territory entry points falls under the parent's custody regime; the territory adds no separate custody rules that mitigate it.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal facilities policy bars gender-congruent use of government-funded single-sex facilities. State bathroom trespass arrests exist elsewhere in the parent country but do not clearly reach the territory.",
+     "protection": "Not documented for the territory.",
+     "interaction": "The parent facilities rules are not documented as applying in the territory; the territory's own facilities regime is not documented.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Federal subpoenas of hospital records for under-19 patients; proposed rules barring public insurance for minors; federal crisis-line LGBTQ youth services ended. Territory legal gender change requires an undefined medical process.",
+     "protection": "Same-sex marriage recognised; no territory-level care protection is documented.",
+     "interaction": "Care-seeking visitors face federal record-access and funding exposure whenever care is administered under federal programmes.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "A federal memorandum establishes rewards for information on leadership of groups that include 'radically pro-transgender' ones; the counterterrorism strategy names such groups for neutralisation.",
+     "protection": "The strategy states powers will not target people who merely disagree.",
+     "interaction": "Advocacy visitors could be drawn into this framing. The territory has no documented counter-measure.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal orders target schools and teachers who facilitate social transition, and federal care restrictions apply to minors. A minor's documents will mismatch presentation at entry.",
+     "protection": "Several federal orders are enjoined.",
+     "interaction": "A parent travelling with a minor faces entry-document scrutiny and the risk of school or care disruption under federal rules.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No territory-specific street-violence record is documented; the territory's first Pride drew about 60 people.",
+     "protection": "The 2023 hate-crime enhancement covers gender identity; its use has not been documented.",
+     "interaction": "Recourse through the federal hate-crime statute is available in principle, with limited territory-level backing.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Nondiscrimination coverage is limited to government employees in the territory. Federal complaint channels are the only recourse, and several federal orders are contested.",
+     "protection": "Enhanced hate-crime sentencing and marriage recognition are documented.",
+     "interaction": "Remedies are thin and contested, so the protections are weakly operative for visitors.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "A is higher than 0.25-C: there is no documented birth-sex prison housing for visitors, no cross-dressing arrest statute, and no documented custody deaths. A is similar in the documented immigration-custody abuse and passport-driven entry exposure."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "A is similar to 0.35-A: both involve entry-level document refusal and removal with weak remedies. A is somewhat higher because it lacks a dedicated exclusion register and includes a hate-crime enhancement."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "A is lower than 0.55-B: 0.55-B shows administrative holds without the documented custody abuse and forced-labour pattern that A's parent regime records."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is far below 0.75-C: 0.75-C has a national border with respectful screening, a functioning detention remedy and no federal targeting, while A has documented custody abuse and federal hostility."
+    }
+   ],
+   "synthesis": "The parent's passport refusal and immigration custody abuse are the operative exposures, and the territory inherits them. The territory's protections (marriage, hate-crime enhancement) are real but have no documented operation for visitors, and nondiscrimination coverage is thin. Federal oversight is contested and unresolved, so the risk is elevated but not at the lethal end."
+  },
+  "B": {
+   "rating": 0.26,
+   "explanation": "The combined regime is the parent national framework plus a state layer. The parent passport, entry and custody exposures apply. The state adds a bathroom and locker-room ban in public schools and government buildings, enforced by complaint and a public reporting form on trans people in privacy spaces, with a documented first arrest (trespass). A visitor's documentary defence depends on records they will not carry, with no alternative route. A minors' care ban, sports ban, dormitory ban and flag ban apply. Mitigations: sodomy law repealed, marriage equality, a gender-identity hate-crime statute with enhanced penalties, and a court route to marker change without surgery. Nondiscrimination covers employment and housing only. Net: high risk.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Parent passport rules show birth sex; mismatched documents lead to refusal or blocking. The state's marker-change ban on birth certificates and licences shows documents are not reconciled locally.",
+     "protection": "The state allows court-ordered marker change for residents, which does not reach visitors' home documents.",
+     "interaction": "Parent entry rules and state document rules both apply; a visitor's home documents are not corrected by the state process.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "A documented first arrest for a trans woman in a women's restroom (trespass, handcuffed, held 24 hours in men's ward). The state's corrections policy has a documented DOJ finding of denied hormones.",
+     "protection": "The trespass offence requires willful entry and refusal to leave, not automatic arrest.",
+     "interaction": "Detention in a public building for facility use can move into male housing and care denial; the parent custody regime also applies.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Restroom and locker-room use in public schools and government buildings is restricted by birth sex. A complaint form allows reporting trans people in privacy spaces. Dormitories are restricted. Private businesses are excluded.",
+     "protection": "Private businesses are outside the facilities law; new government buildings must have single-occupant facilities.",
+     "interaction": "Public-building visits carry facility exposure; the complaint form makes exposure a matter of third-party reporting, not only enforcement.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming care for minors is banned, with retroactive disaffirmation rights for patients under 25. The parent's hospital subpoenas and insurance rule proposals also apply.",
+     "protection": "Adult care is not restricted by the state ban.",
+     "interaction": "A visitor needing care is not clearly excluded at adult age, but state providers and parent federal record requests may expose the visit.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "The state ban on pride flags carries $500 daily fines. The state's legislature has dismissed a systematic review of care. An official describes the state as leading the nation in anti-LGBTQ legislation.",
+     "protection": "A city adopted a pride flag as an official flag; counter-measures exist in the region.",
+     "interaction": "State threat-framing is documented in statute and in the complaint channel, which the parent's counterterrorism framing reinforces.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "A minor travelling with a parent faces school bathroom and sports bans, dormitory-style restrictions, and the minors' care ban. Parent-minor complaints can be filed through the reporting form.",
+     "protection": "Mid-treatment minors may continue under the 2023 ban's grandfathering.",
+     "interaction": "A minor in a state school or public building can be reported; a parent cannot offset this by documents the minor does not carry.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No state-specific violence data on trans people is documented; complaint mechanisms invite third-party reporting.",
+     "protection": "The 2019 hate-crime statute covers gender identity with enhanced penalties and statistics collection.",
+     "interaction": "Recourse exists in principle, but no gender-identity statistics were located, so the protection's operation is uncertain.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Public accommodations are not covered by nondiscrimination law. Sports rulings are partly reversed by case-by-case decisions. The complaint outcomes under the facilities law are not sourced.",
+     "protection": "Employment and housing protection exists; the state's marriage equality and sodomy repeal are documented.",
+     "interaction": "Recourse for a visitor in a public building is limited, and the documentary defence cannot be met by visitors holding out-of-state documents.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "B is similar to 0.25-C in its bathroom-based criminal exposure and public-building arrests, but B lacks documented birth-sex prison housing and does not criminalise cross-dressing in general. B is somewhat higher."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "B is similar to 0.35-A in document-driven exclusion, but B has no entry exclusion register of its own; the parent's passport regime is the comparable exposure. B is comparable or slightly higher."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "B is lower than 0.55-B: 0.55-B has an administrative-only penalty for visitors, while B has a documented criminal arrest, a complaint-reporting channel and a non-reachable documentary defence."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is far below 0.75-C: 0.75-C has respectful screening, legal detention remedies and no state facilities ban; B has documented restrictions and arrest."
+    }
+   ],
+   "synthesis": "The parent's document and custody exposures combine with the state's facilities ban, complaint-based reporting and the documented trespass arrest. The defence requires records visitors do not carry, so discovery leads to arrest risk in public buildings. Mitigations (marriage, sodomy repeal, hate-crime enhancement, adult marker route) do not cover public-building or minors' exposures, so the rating sits in the high-risk band."
+  },
+  "difference_ri_minus_nh": -0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}

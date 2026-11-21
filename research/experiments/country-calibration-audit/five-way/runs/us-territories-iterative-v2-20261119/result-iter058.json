@@ -1,0 +1,174 @@
+{
+ "iteration": 58,
+ "model": "mimo",
+ "model_id": "xiaomi/mimo-v2.6-flash",
+ "status": "ok",
+ "cost_usd": "0.0075159",
+ "usage": {
+  "cost_usd": "0.0075159",
+  "input_tokens": 29027,
+  "output_tokens": 12329
+ },
+ "labels": {
+  "A": "MNP",
+  "B": "66186276B98555229882405:Washington"
+ },
+ "A_region": "MNP",
+ "B_region": "66186276B98555229882405:Washington",
+ "A_rating": 0.44,
+ "B_rating": 0.55,
+ "difference_B_minus_A": 0.11,
+ "parsed": {
+  "A": {
+   "rating": 0.44,
+   "explanation": "A is the parent's combined regime with a thin local overlay. Universal federal exposures dominate: X-marker ban and Supreme Court-upheld passport restrictions, a Feb 2025 cable ordering refusal on sex doubt with possible lifetime fraud findings, federal facility exclusion, documented immigration-custody abuse, and counterterrorism framing of 'radically pro-transgender' ideology. Mitigation is real but partial: functioning courts enjoining several orders, an ACLU suit, a national hate-crime statute and employment protection. The territory adds a 2023 hate-sentencing enhancement and no local ban, but no comprehensive nondiscrimination. No identity criminalisation, no documented local violence; one documented bathroom arrest elsewhere. Worst case is entry refusal/stranding, exclusion or conditional custody abuse — not imprisonment likely, no execution.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal Feb 2025 X-marker ban; Nov 2025 Supreme Court let marker restrictions take effect; Feb 2025 cable orders refusal on sex discrepancy and allows lifetime fraud findings; reports of passports confiscated or blocked; eight-plus foreign travel advisories; airport screening pat-downs out travellers. Territory follows federal rules with no local override.",
+     "protection": "Existing X-marker passports valid to expiration; ACLU suit pending; legal-aid FAQ; no local criminalisation; national employment and hate-crime protections.",
+     "interaction": "The visitor's home passport is checked at the federal border; territory law cannot soften entry or document rules.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody: forced labour, beatings, solitary confinement and severe sexual abuse reported by trans detainees. From 2026 federal corrections adopt conversion-therapy-style policy (hair cut, hormones removed) and stopped counting trans prisoners. Elsewhere a bathroom-trespass arrest with a 24-hour men's-ward hold.",
+     "protection": "National hate-crime statute; active federal litigation blocking several orders; no documented local custody abuse in the territory.",
+     "interaction": "Document discrepancy → refusal or fraud inquiry → federal custody regime applies regardless of territory law.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars trans people from government-funded single-sex facilities; mapping shows 9+1 units with all-government-building bans, 21 with partial bans, 4 criminalising use in some circumstances, 6 extending to private settings, one arrest documented. Territory has no comprehensive nondiscrimination statute beyond government employees.",
+     "protection": "Territory enacted no local ban; 2023 hate-motivated-crime sentencing enhancement; marriage and adoption recognition.",
+     "interaction": "Federal facility rule reaches federally funded buildings in the territory; travel through banning units risks trespass arrest.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Oct 2025 federal proposal barring public-insurance reimbursement for under-18 care; 27 units ban minor care; DOJ subpoenaed over-20 hospitals for under-19 records; LGBTQ youth lifeline shut down.",
+     "protection": "No local care refusal documented; adult visitors may seek private care; litigation pending.",
+     "interaction": "A travelling family's minor could be denied care in banning units; a guardian may face state inquiry or separation of care.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "DOJ reward memo and May 2026 counterterrorism strategy prioritising 'radically pro-transgender' ideology; forbidden-terms purge; 'chemical and surgical mutilation' framing; 66% public support for birth-sex document rules.",
+     "protection": "Memo says the reward never uses the phrase as a criterion; strategy disclaims targeting mere disagreement; several orders enjoined; national hate-crime statute.",
+     "interaction": "Federal threat-framing sets the climate the territory's small community and officials operate within.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Jan 2025 order directing criminal investigation and prosecution of teachers facilitating a trans minor's social transition; 27-unit care bans; hospital-record subpoenas; school funding revocation.",
+     "protection": "Several orders enjoined; territory documents no analogous local rule; marriage and adoption recognition.",
+     "interaction": "A parent travelling with a trans minor faces care-denial and mandated-outing exposure at schools and clinics in many units.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific killing rate documented; only 23 units cover gender identity in bias statutes, 37 lacked anti-bias coverage (2019); travel guide advises checking local violence reports; four units flagged 'Do Not Travel' for trans people (territory not among them).",
+     "protection": "National hate-crime statute covers gender identity; 22 units plus DC ban gender-identity discrimination; territory's 2023 enhanced-sentencing law.",
+     "interaction": "Recourse quality depends on the unit visited; the territory adds hate-crime enhancement with no enforcement record.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Passport policy in force while other orders are enjoined, making outcomes time-dependent; territory lacks comprehensive nondiscrimination beyond government employees; no record of the 2023 enhancement being applied; thin local data (first Pride, ~60 attendees).",
+     "protection": "Functioning federal courts issuing injunctions; ACLU suit; legal-aid FAQ; federal complaint channels remain open.",
+     "interaction": "Visitors depend on degraded federal complaint channels for anything outside the hate-crime statute; absence of local incidents is not safety in a thin-data territory.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "0.15-B involves routine border detention with assaults, withheld medical care, months-long delayed habeas and likely retaliation against complainants. A shows no routine detention of trans visitors; custody abuse is conditional on immigration detention, litigation is active, and no capital provision exists. A is materially safer than 0.15-B."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A is a blanket, routinely enforced entry register barring any transgender visitor, with appeals that essentially never succeed. A's federal cable refuses only on documented sex discrepancy or suspected fraud, requires four fraud elements, is discretionary and actively litigated; no trans-specific entry ban exists. A sits above 0.35-A despite harsher custody conditions."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "0.55-B is discretionary secondary screening ending in administrative refusal, with written reasons, an appeal desk and consular notification. A's exposure is broader and heavier: national marker bans, federal facility exclusion, a documented custody-abuse record and official threat-framing exceed screening friction, so A sits below 0.55-B."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C permits entry on markers matching presentation, trained respectful officers, counsel access and compensation for unlawful holding. A's Supreme Court-upheld marker regime, refusal-on-discrepancy cable, facility bans and foreign travel advisories fall well short; A is materially below 0.75-C."
+    }
+   ],
+   "synthesis": "A's operative regime is the parent's, layered on a small territory that adds almost nothing — a 2023 hate-sentencing enhancement and no local facility ban, but also no comprehensive nondiscrimination, so visitors lean on federal complaint channels the administration is actively reshaping. The heaviest inputs are universal: document and entry screening that can refuse a trans traveller on sex doubt, federal facility exclusion, official threat-framing, and severe but conditional immigration-custody abuse. Offsetting them, courts function and have enjoined several orders, litigation continues, and identity is not criminalised. No execution or likely-imprisonment pathway is documented; the realistic worst cases are entry refusal/stranding, facility exclusion, an exceptional arrest, or harm if detained — placing A in the Elevated Risk band with partial remedy."
+  },
+  "B": {
+   "rating": 0.55,
+   "explanation": "B faces the identical federal tier — marker restrictions, refusal-on-discrepancy entry cable, federal facility exclusion, immigration-custody abuse, official threat-framing — none of which the state can displace at the border or in federal buildings. Its own layer is the most protective documented: shield laws insulating care from out-of-state reach, comprehensive gender-affirming insurance, refuge protections, court-ordered prison gender-affirming care. Offsetting exposures: birth-sex housing used punitively in July 2024, two pending anti-trans ballot initiatives, undocumented shield enforcement, and no state violence record either way. Federal universal exposure keeps B out of the 0.65+ tier; documented local protection lifts it a clear step above A. Worst credible outcomes: entry refusal, service exclusion, conditional custody harm — no imprisonment likely, no execution.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal Feb 2025 X-marker ban; Nov 2025 Supreme Court upheld marker restrictions; Feb 2025 cable orders refusal on sex discrepancy and permits lifetime fraud findings; passports reportedly confiscated or blocked; multiple foreign travel advisories; screening pat-downs out travellers.",
+     "protection": "None documented at state level for entry; existing X-marker passports valid to expiration; pending federal litigation and legal-aid FAQ.",
+     "interaction": "The state's protective status does not reach the airport — border officers apply the federal cable; a document discrepancy can escalate into fraud investigation and federal custody.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration-custody abuse (forced labour, beatings, solitary confinement, sexual abuse) and the 2026 federal corrections conversion-therapy policy apply. State prisons documented birth-sex housing used as discipline: a trans woman transferred back to a men's prison in July 2024 as punishment.",
+     "protection": "State prisons court-ordered since Oct 2023 to provide gender-affirming healthcare and surgery; state ranked among the most protective.",
+     "interaction": "Document discrepancy routes to federal custody; a state arrest routes to state custody where birth-sex placement has been used punitively.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal facility-exclusion order applies statewide, including federally funded buildings; two state ballot initiatives targeting trans residents are due November 2026; the state's own facility-access rule is not expressly itemised.",
+     "protection": "State ranked most protective in a July 2026 assessment; no state-level ban documented; shield laws insulate state-authorised services.",
+     "interaction": "The federal ban overrides the protective state posture inside federal buildings; pending initiatives could add a state restriction layer on top.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal October 2025 proposed insurance rule, 27-unit minor-care bans and DOJ under-19 record subpoenas still apply wherever the traveller goes outside this state.",
+     "protection": "Shield laws/executive orders insulate care provided there from out-of-state reach — directly relevant to a visitor seeking care; comprehensive insurance covering facial-hair removal and expanded gender-affirming procedures; refuge protections.",
+     "interaction": "Local protection improves care access but does not touch passport, entry or federal-facility rules; shield's enforcement record is undocumented.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Same federal hostility: counterterrorism strategy naming 'radically pro-transgender' ideology, forbidden-terms purge, 'chemical and surgical mutilation' framing, 66% public support for birth-sex document rules.",
+     "protection": "State's most-protective ranking, shield regime and refuge posture counter locally; state courts have ordered gender-affirming care in prisons.",
+     "interaction": "Federal threat-framing governs airports, federal agencies and national media; the state posture governs local services and state officials.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal orders directing criminal investigation of teachers facilitating a trans minor's social transition, the 'mutilation' framing, hospital-record subpoenas and 27-unit care bans apply nationally; two pending state initiatives target trans residents.",
+     "protection": "State among the most protective with comprehensive insurance covering gender-affirming procedures; several federal orders enjoined.",
+     "interaction": "A guardian retains state-authorised care access but faces federal document scrutiny, school-investigation exposure and care denial when transiting banning units.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No state-specific trans violence record documented; national bias statistics are sexual-orientation-weighted; only 23 units cover gender identity in bias statutes; four units flagged 'Do Not Travel' (this state not among them).",
+     "protection": "National hate-crime statute; state ranked most protective, implying stronger local recourse though not expressly itemised.",
+     "interaction": "Violence response depends on local police conduct; absence of a state incident record is not evidence of safety.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Two ballot initiatives' text and status unknown; shield's legal form and enforcement record undocumented; whether birth-sex prison placement continued after 2024 is unsourced; federal passport litigation unresolved.",
+     "protection": "Functioning federal courts issuing injunctions; shield measures listed on a national tracker; July 2026 assessment ranking the state among the most protective.",
+     "interaction": "State remedies cannot repair a federal entry or document refusal; uncertainty concentrates at the initiative and shield-enforcement edges.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "0.15-B features routine border detention with assaults, withheld care and delayed habeas in a hostile state. B shows no routine detention of trans visitors, active federal litigation and no capital provision; custody abuse is conditional on detention. B is far above 0.15-B."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A is a blanket, effectively unappealable entry register excluding every trans visitor. B has no trans-specific entry ban — refusal only on sex discrepancy or suspected fraud, with four fraud elements required and litigation pending. B sits clearly above 0.35-A, though marker restrictions and foreign advisories come closest to it."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "0.55-B is discretionary secondary screening ending in administrative refusal with written reasons and appeal desks. B's federal screening exposure is comparable, but B additionally carries facility exclusion and a custody-abuse record, while its documented shield and care protections exceed 0.55-B's thin remedies — putting B roughly level with this anchor."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C permits entry on markers matching presentation, trained officers, counsel and compensation for detention. B's Supreme Court-upheld marker regime, refusal-on-discrepancy cable and facility exclusion put it well below 0.75-C despite strong state-level care protections."
+    }
+   ],
+   "synthesis": "B is one combined system with two divergent layers. The federal layer — marker restrictions, refusal-on-discrepancy entry cable, facility exclusion, custody abuse, threat-framing — applies at the border and in federal buildings regardless of state posture, so universal exposures are unchanged from A. The state layer is the most protective documented anywhere in the parent: shield laws that reach a visitor seeking care, comprehensive gender-affirming insurance, refuge protections, and court-ordered prison care — real operative mitigation, though the shield's enforcement record is undocumented and two anti-trans ballot initiatives loom. Against that sit a documented punitive birth-sex prison transfer and the same federal custody regime. Net: documented protection lifts B a full step above A, while federal universal exposure caps it mid-Elevated Risk."
+  },
+  "difference_ri_minus_nh": 0.11
+ },
+ "parse_error": null,
+ "attempts": 1
+}

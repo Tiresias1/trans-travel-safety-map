@@ -1,0 +1,166 @@
+{
+ "iteration": 21,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.0047206",
+ "usage": {
+  "cost_usd": "0.0047206",
+  "input_tokens": 30051,
+  "output_tokens": 3431
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B82803899326534:Indiana"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B82803899326534:Indiana",
+ "A_rating": 0.52,
+ "B_rating": 0.44,
+ "difference_B_minus_A": -0.08,
+ "parsed": {
+  "A": {
+   "rating": 0.52,
+   "explanation": "A inherits the full federal operative regime: no new X/mismatched passport markers, entry refusal on document discrepancy with possible fraud consideration, bans on trans use of government-funded facilities congruent with identity, and documented federal/immigration custody abuse and hormone removal. That is tier-1 universal exposure, but it is administrative exclusion and custody risk, not criminalisation of trans identity or execution. Locally there is no documented bathroom, minor-care or marker ban for visitors, decriminalisation since 1978, marriage and employment protections, and documented general tolerance with visible scene and Pride, though trans-specific violence data is not documented. Courts remain a working brake, with suits and injunctions. This sits between 0.45 (routine exposure, detention unlikely) and 0.65 (remedy reliably works).",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federally, X/mismatched markers no longer issued; entry cable directs refusal on discrepancy/doubt and consideration of lifetime fraud ineligibility for wilful misrepresentation. Foreign advisories and detentions documented.",
+     "protection": "Existing X passports remain valid until expiry; fraud finding requires four elements, never automatic, limited waivers possible; ACLU suit pending.",
+     "interaction": "Visitor uses home passport, so local surgery-based birth-certificate/driver-licence regime does not govern entry; federal document rule governs at border and then state/federal ID checks.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections adopted conversion-style policies: hair cutting, hormone removal, psychiatric substitution; immigration custody reports of forced labour, beatings, solitary and severe sexual abuse of trans men.",
+     "protection": "No documented visitor custody outcome or remedy; courts and advocacy exist nationally.",
+     "interaction": "Document discrepancy can lead to refusal rather than detention; if detained, birth-sex placement and care denial increase severity.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Executive order bars trans people from government-funded single-sex facilities congruent with identity; many states ban such use in government buildings, 4 make it criminal in some circumstances with one documented arrest and 24h men's ward.",
+     "protection": "No territory-specific facility ban documented; local tolerance does not cancel federal facility rule.",
+     "interaction": "Federal buildings/airports follow federal rule regardless of island tolerance; private venues not documented as restricted locally.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal funding restrictions and proposed bar on public insurance for under-18 care; no territory-specific adult care ban documented.",
+     "protection": "Not documented for visitors; local employment/marriage protections are not care protections.",
+     "interaction": "Hormone continuity risk mainly in custody or if medication confiscated, not documented as routine clinic denial on island.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal strategy prioritises 'radically pro-transgender' groups; reward guidance lists 'radical gender ideology'; poll shows 66% support birth-sex on IDs.",
+     "protection": "Federal hate-crime statute covers gender identity; local employment anti-discrimination law passed unanimously 2015.",
+     "interaction": "State threat-framing raises outing and enforcement discretion, but no documented island police targeting of trans visitors.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Not documented locally: no island minor-care ban, school facility ban or guardian-investigation rule in dossier.",
+     "protection": "Not documented.",
+     "interaction": "Federal sports/entry and proposed insurance rules could affect a travelling minor, but operative local exposure is not documented; do not infer state bans from parent map.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence, hate-crime enforcement or policing data identified; societal material is general LGBTQ.",
+     "protection": "Documented general tolerance, visible scene since 1990s, Pride since 2017, few reported discrimination/harassment in general LGBTQ findings.",
+     "interaction": "Tolerance mitigates street friction but federal custody/facility exposures remain operative despite it.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Passport suit and challenges to executive orders unresolved; several orders blocked/enjoined, so operative position can shift.",
+     "protection": "Functioning courts, civil-liberties litigation, other governments' advisories and legal-aid FAQ indicate recourse exists, though not shown to reverse entry refusal promptly.",
+     "interaction": "Remedies are mainly for residents/future policy, not a guaranteed traveller remedy at the border.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "Lower than 0.15: no documented routine arrest, beating custody, or imprisonment for presentation; exclusion is mainly administrative and custody abuse is federal/immigration-specific, not a documented island campaign."
+    },
+    {
+     "anchor_id": "0.45-A",
+     "comparison": "Similar to 0.45: routine document/facility exposure and humiliation, detention possible but imprisonment/execution not credible; A is slightly above because no local punitive facility/minor-care law is documented and local tolerance is documented."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Well below 0.85: federal passport, entry, facility and custody regimes are active tier-1 exposures, unlike 0.85 where remedies and document recognition reliably work."
+    }
+   ],
+   "synthesis": "Combined regime: island tolerance and local protections operate in private/social sphere, but federal border, document, facility and custody rules govern the traveller's compulsory encounters. The harshest operative rule - birth-sex facility/document enforcement federally - governs, preventing a Reduced-Risk rating, while absence of local criminalisation, working courts and documented tolerance keep it above High-Risk territory."
+  },
+  "B": {
+   "rating": 0.44,
+   "explanation": "B shares the same federal tier-1 exposures as A, plus an operative state layer: 2026 ban on gender-marker changes on licences/IDs, no birth-certificate amendment route, and an upheld ban on gender-transition care for under-18s, with the state flagged among the harshest and a 2026 bill that would add school/university facility and prison birth-sex rules (passed upper chamber only, not law). Counterweights are material: as of April 2026 no state restriction on restroom use matching identity, two cities protect it, proposals have died, federal courts enjoined school limits, and a hate-crime aggravator covers gender identity. No imprisonment for trans identity or execution is documented. Compounding state punitive provisions for minors/documents place B below A and below the 0.45 routine-exposure anchor.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal X/mismatch bar and entry cable as in A; plus state 2026 licence/ID marker ban and governor order defining sex by birth, forcibly outing residents whose IDs no longer match presentation.",
+     "protection": "Existing X passports valid to expiry; fraud finding never automatic; civil-liberties challenge to state marker ban pending.",
+     "interaction": "Visitor's home passport governs entry, but state ID regime affects any state ID interaction and signals document mismatch will be treated as birth-sex; federal refusal can precede state encounters.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections conversion-style policies and immigration custody abuse as in A; state bill would confine prison housing by birth sex but is not law.",
+     "protection": "Not documented for visitors; national courts have enjoined some measures.",
+     "interaction": "If detained federally or by state, birth-sex placement risk is compounded by documented hormone removal/abuse federally.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal government-facility ban applies; state has no current restroom restriction as of April 2026, so state facility exposure is not operative.",
+     "protection": "State law places no restriction on restrooms matching gender identity; two cities protect use by ordinance; 2023 preliminary injunction barred school limits; criminalisation proposals died since 2021.",
+     "interaction": "Federal facilities remain restricted even though state/private facilities are not; 2026 bill, if enacted, would reverse this protection in schools/universities.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State 2023 law bans transition procedures, blockers and hormones for under-18s, upheld Nov 2024; a trans visitor under 18 cannot obtain that care here. Adult care availability not documented.",
+     "protection": "Phase-out for existing patients at enactment; no adult protection documented.",
+     "interaction": "Minor traveller becomes the affected person even though parent is not defendant; care denial interacts with federal proposed insurance bar.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Governor order defines sex by birth; 2026 senate bill frames birth-sex facilities as protecting women's spaces and would allow injured-party suits encouraging enforcement; federal threat-framing as in A.",
+     "protection": "State hate-crime law (2019) adds sentencing aggravation for gender-identity-motivated offences; no enforcement data documented.",
+     "interaction": "Threat-framing is operative in document and minor-care law, but not in current restroom enforcement, which remains protective.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Under-18 care ban is operative and upheld; state law requires schools to notify parents if minor asks to be called different name/pronoun/title; 2026 bill would bar trans students from matching facilities.",
+     "protection": "2023 injunction protected a trans student's bathroom use in litigation; bill received no lower-chamber hearing and is not law.",
+     "interaction": "Family travelling with minor faces care denial and potential school outing/notification, plus federal sports/document rules.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence or policing data documented for the state; general bias-crime statistics are national and sexual-orientation-heavy.",
+     "protection": "Local ordinances in several counties/cities protect gender-identity employment; restroom ordinances in two cities indicate some local protection.",
+     "interaction": "Street risk is undocumented, not proven safe; document/minor-care exposures dominate over street evidence.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Marker-ban challenge pending with unknown outcome; 2026 bill prospects unsourced; several federal orders blocked/enjoined leaving shifting operative law.",
+     "protection": "Working state/federal courts, hate-crime aggravator, and documented injunction show recourse can operate.",
+     "interaction": "Recourse has not reversed the operative licence or minor-care bans, so it does not cancel them.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Above 0.15: no documented sweeps, routine arrest for presentation, beatings in state custody, or capital provision; state restroom use is currently lawful."
+    },
+    {
+     "anchor_id": "0.45-B",
+     "comparison": "Similar to/below 0.45: B compounds federal exposure with state document and minor-care bans, but current restroom protection and no imprisonment keep it near 0.45 rather than 0.35 exclusion-only cases."
+    },
+    {
+     "anchor_id": "0.85-C",
+     "comparison": "Well below 0.85: unlike 0.85, remedies do not reliably restore care or documents; minor-care ban is upheld and licence ban is operative."
+    }
+   ],
+   "synthesis": "Combined regime: federal border/facility/custody exposures plus state document and minor-care bans are the operative traveller burdens, especially for a family with a minor. Current state restroom protection, city ordinances and court injunctions prevent a score in the 0.30s, but they do not offset the compounding operative bans. B therefore rates below A, where no equivalent state minor-care/document layer is documented."
+  },
+  "difference_ri_minus_nh": -0.08
+ },
+ "parse_error": null,
+ "attempts": 1
+}

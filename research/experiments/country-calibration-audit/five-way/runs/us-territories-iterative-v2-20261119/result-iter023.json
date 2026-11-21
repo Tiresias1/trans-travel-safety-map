@@ -1,0 +1,166 @@
+{
+ "iteration": 23,
+ "model": "luna",
+ "model_id": "openai/gpt-6-luna",
+ "status": "ok",
+ "cost_usd": "0.00424072",
+ "usage": {
+  "cost_usd": "0.00424072",
+  "input_tokens": 29319,
+  "output_tokens": 5359
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B86627915353587:New Hampshire"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B86627915353587:New Hampshire",
+ "A_rating": 0.4,
+ "B_rating": 0.41,
+ "difference_B_minus_A": 0.01,
+ "parsed": {
+  "A": {
+   "rating": 0.4,
+   "explanation": "The combined regime has substantial visitor-facing exposure: national entry rules can trigger refusal and potentially a lifetime fraud finding, government-funded facilities are restricted, and severe abuse of transgender people in immigration custody is documented. The national passport issuance rule concerns documents issued by that government; it does not itself change a visitor’s home passport. The island’s surgery rule is resident-facing, while its reported tolerance and employment law do not neutralize national restrictions. No local facility rule or trans-specific violence pattern is documented. Relative to B, A lacks B’s documented operative local public-service protections but has a reported island-wide tolerant climate; the difference is modest because the national risks are shared.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "National visa screening directs refusal and additional evidence where records conflict or sex is doubted; suspected material misrepresentation may support permanent ineligibility, but is not automatic. Screening can out visitors.",
+     "protection": "Visitors carry home-issued documents; the destination’s passport-issuance rule does not itself alter them. A legal-aid FAQ exists, but no effective visitor remedy is documented.",
+     "interaction": "A discrepancy may lead from screening to refusal or a fraud inquiry. The island’s local recognition rule governs its own documents, not a visitor’s home passport.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Transgender men in national immigration custody reportedly faced forced labour, beatings, solitary confinement and severe sexual abuse. National corrections policies also describe forced haircuts and medication removal for transgender inmates.",
+     "protection": "Not documented.",
+     "interaction": "The custody harms concern people already detained; the dossier does not document that trans visitors are routinely detained solely for identity. Entry scrutiny creates a possible route into custody, with severe consequences if detention occurs.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National policy bars transgender people from government-funded single-sex facilities congruent with their identity. The national map documents additional state/province bans, but does not identify a local island ban.",
+     "protection": "Not documented for national facilities. The island’s local employment protections do not establish facilities access.",
+     "interaction": "National rules govern national facilities on the island; the dossier does not establish the island’s specific exposure to mapped state/province bans.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "National measures target gender-affirming care for minors; some are blocked or proposed, and their application on the island is not specified. Adult visitor care access is not described.",
+     "protection": "Not documented for visitor care. Local employment anti-discrimination law is resident-facing and does not establish healthcare access.",
+     "interaction": "National funding and policy measures may affect services, but the dossier does not establish which local providers or visitor care are affected.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National documents frame gender identity as a policy target; counterterrorism materials refer to radically pro-transgender groups, not trans identity itself as a reward criterion. Public opinion records substantial support for restrictive policies.",
+     "protection": "National gender-identity hate-crime law applies; the island has a local employment protection. Neither is shown to remedy hostile national screening or facility policy.",
+     "interaction": "Hostile official policy increases exposure at national touchpoints; local employment law does not pre-empt national rules.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National orders target care for minors and direct investigation or prosecution of some school support for trans students; several measures are blocked or challenged. Island-specific application is not established.",
+     "protection": "Not documented for travelling families on the island.",
+     "interaction": "A parent accompanying a minor may encounter service denial or investigation if national measures apply; the dossier does not establish the local scope or current status.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific island violence or policing data is documented. The island’s reported tolerant climate is based on general LGBTQ material, not visitor-specific trans evidence.",
+     "protection": "The island is described as broadly tolerant, with few reports of societal discrimination or harassment; this is a limited social-climate signal, not proof of safety.",
+     "interaction": "Local climate may reduce social hostility, but cannot offset national rules at federal facilities, borders, or custody.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "National passport and executive-order challenges remain unresolved; no successful remedy for a trans visitor is documented. Local surgery requirements do not provide visitor recourse.",
+     "protection": "A legal-aid FAQ and national litigation are documented; local employment protections operate for employment discrimination, not the main travel exposures.",
+     "interaction": "Contested national rules may change, but the visitor must face the operative rules at each journey stage; the island’s positive signals do not displace them.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "A is materially safer: routine arrests for presentation, prolonged pretrial custody and frequent custodial abuse are not documented here. Nevertheless, severe abuse in immigration custody means the worst-case consequences are not merely administrative."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "A is somewhat safer than routine visitor registration and consistent entry refusals in 0.35-A: no equivalent routine reporting or denial pattern is documented. It is still far below protected jurisdictions because entry discretion, facility restrictions and custody harms are operative."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is substantially less safe: unlike 0.75-C, it lacks documented visitor document recognition, reliable release remedies and compensation, and has operative national facility restrictions and serious custody reports."
+    }
+   ],
+   "synthesis": "National rules are the dominant operative layer: entry screening can expose a visitor to refusal or fraud proceedings, and a detention pathway carries documented severe abuse. The national passport rule is not treated as changing foreign-issued passports, and the island’s surgery-based recognition system is not a direct visitor restriction. The island’s reported tolerant social climate is a modest positive, while its employment law does not protect visitors against border, facility or custody exposure. Compared with B, A has no documented local care ban for minors or operative visitor-facing public-service protections; its social-climate evidence is more favorable but less specific. These differences do not outweigh the shared national risks."
+  },
+  "B": {
+   "rating": 0.41,
+   "explanation": "The national regime creates the same serious entry, facility and custody exposures as in A. B adds operative state protections for housing, health care, public accommodations and schools, with documented enforcement and a recent civil-rights judgment. But enacted restrictions on gender-affirming care for minors, provider penalties and a right to sue create direct exposure for travelling families; the care laws’ current status is uncertain, as is the sports-ban stay. The raw incident count has no denominator and does not establish an elevated rate. Compared with A, B offers stronger documented local remedies and protections for adults, but is more concerning for a family travelling with a minor.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "National visa screening directs refusal and additional evidence where records conflict or sex is doubted; suspected material misrepresentation may support permanent ineligibility, but is not automatic. Screening can out visitors.",
+     "protection": "Visitors carry home-issued documents; the national passport-issuance rule does not itself change them. A legal-aid FAQ exists, but no effective visitor remedy is documented.",
+     "interaction": "National entry and screening rules apply before the state’s protections are reached; a discrepancy may lead to refusal or a fraud inquiry.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Transgender men in national immigration custody reportedly faced forced labour, beatings, solitary confinement and severe sexual abuse. National corrections policies describe forced haircuts and medication removal for transgender inmates.",
+     "protection": "Not documented.",
+     "interaction": "State civil-rights protections do not govern national detention. The dossier does not document routine detention of trans visitors solely for identity, but consequences in custody can be severe.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National policy bars transgender people from government-funded single-sex facilities congruent with their identity. No specific state facility ban is identified for this state; the national map is not locally attributed.",
+     "protection": "State public-accommodation and school protections cover gender identity; a state high-court ruling protected student privacy and autonomy. Their interaction with national facilities rules is not established.",
+     "interaction": "National rules remain operative in national facilities; state protections do not establish immunity from those rules. The dossier does not document a specific state bathroom ban.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State laws ban specified gender-affirming medicines and surgery for minors, with provider discipline and private suits. Whether these restrictions are enjoined or currently operative is uncertain. Adult visitor care restrictions are not documented.",
+     "protection": "State civil-rights protections cover healthcare; enforcement is documented generally. The record does not establish that they override specific minor-care bans.",
+     "interaction": "For a travelling minor, specific care prohibitions may constrain a provider despite general nondiscrimination law; national care measures add uncertainty.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National policy and rhetoric target transgender-related issues; state restrictions target minor care and sports participation. No state directive targeting trans visitors or policing their identity is documented.",
+     "protection": "State civil-rights law, hate-crime enhancements and abolition of the gay/trans panic defence are documented; the state court has protected students’ privacy and autonomy.",
+     "interaction": "State protections offer a meaningful local counterweight in covered settings, but do not cancel national screening, detention or facility rules, nor specific care restrictions.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "State laws restrict gender-affirming medicines and surgery for minors, with provider discipline and a right to sue. A girls’ sports ban is documented, but its stay and current status are unresolved. National school and care measures also target minors.",
+     "protection": "A state high-court ruling protected transgender students on privacy and autonomy grounds; a temporary stay of the sports ban was granted. Current scope and effectiveness are not fully documented.",
+     "interaction": "A travelling parent may be unable to obtain specified care for a minor and providers may face penalties; court protection and uncertain injunction status complicate the operative position.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "The 72 anti-LGBTQ incidents are raw counts without a population denominator and do not establish an elevated rate. A 2026 court found an assailant violated the civil-rights statute by striking a trans woman.",
+     "protection": "The court judgment documents an operative civil remedy; state hate-crime enhancements and broad public protections are also documented.",
+     "interaction": "The judgment is positive evidence of remedy, but does not establish incident frequency or guarantee police response for visitors. The raw count is not used as a rate.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "National passport and executive-order litigation remains unresolved. The status of state minor-care restrictions and sports-ban proceedings is not established by the dossier.",
+     "protection": "State civil-rights protections have documented enforcement, including a 2026 judgment; the high court has also protected students’ privacy and autonomy.",
+     "interaction": "State remedies can operate in covered local settings, but do not pre-empt national entry, facilities or custody rules; specific state care laws may limit the protections available to minors.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "B is materially safer: routine arrests for gender presentation and prolonged custody with common abuse are not documented. National immigration-custody abuse is serious, but no systematic visitor arrest pathway of the anchor’s kind is established."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "B is safer than the routine visitor reporting and near-consistent entry denials in 0.35-A. It has conditional national screening risks and state protections, though national facility and custody exposures and state minor-care restrictions remain substantial."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is substantially less safe than 0.75-C: it lacks reliably protective border practice and has documented national custody harms, national facility restrictions and state care restrictions for minors. State remedies are real but do not neutralize these exposures."
+    }
+   ],
+   "synthesis": "The federal-national layer carries the same border, facility and custody risks as A, while the state layer creates a mixed regime. Its operative nondiscrimination protections, court ruling and documented civil-rights judgment are meaningful positives for adult visitors and covered services. Conversely, enacted minor-care restrictions, provider liability and the uncertain sports-ban proceedings are compounded exposure for travelling families; general protections do not establish that specific restrictions are displaced. The incident count supplies no rate evidence. Thus B is marginally better for an adult travelling alone than A because local visitor-facing protections and remedies are documented, but not clearly safer overall once the minor-specific restrictions are included."
+  },
+  "difference_ri_minus_nh": 0.01
+ },
+ "parse_error": null,
+ "attempts": 1
+}

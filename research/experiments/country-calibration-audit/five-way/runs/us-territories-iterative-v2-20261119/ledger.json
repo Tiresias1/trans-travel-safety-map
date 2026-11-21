@@ -1,0 +1,640 @@
+{
+ "run_id": "us-territories-iterative-v2-20261119",
+ "created": "2026-11-21T21:37:44+00:00",
+ "instrument": "single-rating-anchored-v4-structured (combined A/B, iterative pairwise)",
+ "effort": "medium",
+ "attempts_per_pairing": 1,
+ "seed": 20261119,
+ "candidate_k": 3,
+ "candidate_rule": "nearest 3 frozen CURRENT US state scores (data/admin1.json, iterativeScore else score) to territory current running score, tie-break region",
+ "alpha": 0.2,
+ "update_schedule": "updates 1-15 (all updates in this run): 0.80*old + 0.20*new",
+ "prior_USA_score": 0.379039,
+ "prior_source": "data/countries.json USA current score (iterativeScore else score)",
+ "partner_pool_source": "data/admin1.json USA state current scores (iterativeScore else score), post global-adm1 sync (frozen, partners not updated)",
+ "dossier_rule": "shared US parent-framework block extracted from frozen v4 admin1_USA state cells (identical across 51 states) + territory local dossier from its v4 countries cell under '### TERRITORY LOCAL EVIDENCE', federal-deferral sentence replaced (ASM, MNP)",
+ "dossier_parity": {
+  "keywords": [
+   "executive order",
+   "passport",
+   "visa",
+   "binary",
+   "custody",
+   "federal"
+  ],
+  "framework_block": {
+   "executive order": 11,
+   "passport": 13,
+   "visa": 2,
+   "binary": 5,
+   "custody": 4,
+   "federal": 0
+  },
+  "state_min": {
+   "executive order": 11,
+   "passport": 13,
+   "visa": 2,
+   "binary": 5,
+   "custody": 4,
+   "federal": 0
+  },
+  "state_max": {
+   "executive order": 21,
+   "passport": 16,
+   "visa": 3,
+   "binary": 8,
+   "custody": 10,
+   "federal": 0
+  },
+  "territories": {
+   "ASM": {
+    "executive order": 12,
+    "passport": 14,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 6
+   },
+   "GUM": {
+    "executive order": 12,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 5
+   },
+   "VIR": {
+    "executive order": 11,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 3
+   },
+   "MNP": {
+    "executive order": 11,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 4
+   }
+  },
+  "deferral_replaced": {
+   "ASM": true,
+   "GUM": false,
+   "VIR": false,
+   "MNP": true
+  }
+ },
+ "framework_sha256": "a370285d5f72bf98170d6520e0de6a0d809efa91b30d3219ff70c5a4c00190f3",
+ "territory_dossier_sha256": {
+  "ASM": "c92e5c525f4f940085a9b6fff6cf7dd2f041ab2ae5178ed9891f6c9853ecc174",
+  "GUM": "4df950b4caf4dc10f93b25b1893480deb1c7f5ebc0db3a1df95862f403cc4bd6",
+  "VIR": "c7e5f8266f455c83fe19b8dd534f56c65c17d7da949ed8d7fe574fd9ac8e9a31",
+  "MNP": "ef88f0dd75167c577f069026d605ec9472a41fc21629dbe412297c89ba7060b4"
+ },
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_selection": "globally least-used model; ties by seeded shuffle (model RNG seed+1)",
+ "model_usage": {
+  "mimo": 9,
+  "deepseek": 8,
+  "qwen": 9,
+  "glm": 8,
+  "haiku": 8,
+  "luna": 9,
+  "muse": 9
+ },
+ "system_sha256": "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "n_pairings_planned": 60,
+ "n_pairings": 60,
+ "n_ok": 48,
+ "n_rejected": 12,
+ "status_by_model": {
+  "qwen": {
+   "rejected": 4,
+   "ok": 5
+  },
+  "glm": {
+   "rejected": 4,
+   "ok": 4
+  },
+  "haiku": {
+   "ok": 8
+  },
+  "mimo": {
+   "ok": 5,
+   "rejected": 4
+  },
+  "muse": {
+   "ok": 9
+  },
+  "luna": {
+   "ok": 9
+  },
+  "deepseek": {
+   "ok": 8
+  }
+ },
+ "cost_by_model_usd": {
+  "qwen": "0.088304844",
+  "glm": "0.03905030",
+  "haiku": "0.0653506",
+  "mimo": "0.066268988",
+  "muse": "0.031103420",
+  "luna": "0.036607985",
+  "deepseek": "0.05913862156"
+ },
+ "total_usd": "0.38582475856",
+ "summary": [
+  {
+   "iteration": 1,
+   "model": "qwen",
+   "status": "rejected",
+   "A_region": "ASM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.008468262"
+  },
+  {
+   "iteration": 2,
+   "model": "glm",
+   "status": "rejected",
+   "A_region": "ASM",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.00346255"
+  },
+  {
+   "iteration": 3,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.0084212"
+  },
+  {
+   "iteration": 4,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "cost_usd": "0.0083692"
+  },
+  {
+   "iteration": 5,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.003426488"
+  },
+  {
+   "iteration": 6,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B98615608994420:Nevada",
+   "cost_usd": "0.00425522"
+  },
+  {
+   "iteration": 7,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B78821008370123:Maine",
+   "cost_usd": "0.0065506"
+  },
+  {
+   "iteration": 8,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B91272823970344:Wisconsin",
+   "cost_usd": "0.0079616"
+  },
+  {
+   "iteration": 9,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B43071933723331:California",
+   "cost_usd": "0.00712446"
+  },
+  {
+   "iteration": 10,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B78821008370123:Maine",
+   "cost_usd": "0.01178514"
+  },
+  {
+   "iteration": 11,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "cost_usd": "0.003382988"
+  },
+  {
+   "iteration": 12,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "cost_usd": "0.004355095"
+  },
+  {
+   "iteration": 13,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.00886395"
+  },
+  {
+   "iteration": 14,
+   "model": "glm",
+   "status": "rejected",
+   "A_region": "ASM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "cost_usd": "0.0084527"
+  },
+  {
+   "iteration": 15,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "ASM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "cost_usd": "0.00290685"
+  },
+  {
+   "iteration": 16,
+   "model": "mimo",
+   "status": "rejected",
+   "A_region": "GUM",
+   "B_region": "66186276B31593004124297:Utah",
+   "cost_usd": "0.0088004"
+  },
+  {
+   "iteration": 17,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.0060929"
+  },
+  {
+   "iteration": 18,
+   "model": "qwen",
+   "status": "rejected",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "cost_usd": "0.01194485"
+  },
+  {
+   "iteration": 19,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "cost_usd": "0.0079994"
+  },
+  {
+   "iteration": 20,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "cost_usd": "0.007501078"
+  },
+  {
+   "iteration": 21,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.0047206"
+  },
+  {
+   "iteration": 22,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B43071933723331:California",
+   "cost_usd": "0.004443905"
+  },
+  {
+   "iteration": 23,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "cost_usd": "0.00424072"
+  },
+  {
+   "iteration": 24,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "cost_usd": "0.007675"
+  },
+  {
+   "iteration": 25,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.00492088"
+  },
+  {
+   "iteration": 26,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "cost_usd": "0.0048096"
+  },
+  {
+   "iteration": 27,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B78821008370123:Maine",
+   "cost_usd": "0.004121524"
+  },
+  {
+   "iteration": 28,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B6628180846672:Pennsylvania",
+   "cost_usd": "0.008948092"
+  },
+  {
+   "iteration": 29,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "cost_usd": "0.009271318"
+  },
+  {
+   "iteration": 30,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.00931405"
+  },
+  {
+   "iteration": 31,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.004222595"
+  },
+  {
+   "iteration": 32,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.005368644"
+  },
+  {
+   "iteration": 33,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.00469688"
+  },
+  {
+   "iteration": 34,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.0091499"
+  },
+  {
+   "iteration": 35,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "cost_usd": "0.0048207"
+  },
+  {
+   "iteration": 36,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "cost_usd": "0.01036962"
+  },
+  {
+   "iteration": 37,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B62688952876525:Alaska",
+   "cost_usd": "0.00441547"
+  },
+  {
+   "iteration": 38,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.002745072"
+  },
+  {
+   "iteration": 39,
+   "model": "mimo",
+   "status": "rejected",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "cost_usd": "0.0075318"
+  },
+  {
+   "iteration": 40,
+   "model": "qwen",
+   "status": "rejected",
+   "A_region": "VIR",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "cost_usd": "0.009541262"
+  },
+  {
+   "iteration": 41,
+   "model": "glm",
+   "status": "rejected",
+   "A_region": "VIR",
+   "B_region": "66186276B62688952876525:Alaska",
+   "cost_usd": "0.00219718"
+  },
+  {
+   "iteration": 42,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "cost_usd": "0.0080292"
+  },
+  {
+   "iteration": 43,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "cost_usd": "0.004574595"
+  },
+  {
+   "iteration": 44,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "cost_usd": "0.008748782"
+  },
+  {
+   "iteration": 45,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.006738618"
+  },
+  {
+   "iteration": 46,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B31593004124297:Utah",
+   "cost_usd": "0.0081049"
+  },
+  {
+   "iteration": 47,
+   "model": "glm",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.00308626"
+  },
+  {
+   "iteration": 48,
+   "model": "mimo",
+   "status": "rejected",
+   "A_region": "MNP",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "cost_usd": "0.0085309"
+  },
+  {
+   "iteration": 49,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.002793052"
+  },
+  {
+   "iteration": 50,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "cost_usd": "0.003748595"
+  },
+  {
+   "iteration": 51,
+   "model": "mimo",
+   "status": "rejected",
+   "A_region": "MNP",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "cost_usd": "0.00890616"
+  },
+  {
+   "iteration": 52,
+   "model": "haiku",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "cost_usd": "0.0080094"
+  },
+  {
+   "iteration": 53,
+   "model": "glm",
+   "status": "rejected",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.00614095"
+  },
+  {
+   "iteration": 54,
+   "model": "qwen",
+   "status": "rejected",
+   "A_region": "MNP",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "cost_usd": "0.009749648"
+  },
+  {
+   "iteration": 55,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "cost_usd": "0.002303236"
+  },
+  {
+   "iteration": 56,
+   "model": "deepseek",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "cost_usd": "0.00539953256"
+  },
+  {
+   "iteration": 57,
+   "model": "muse",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B31593004124297:Utah",
+   "cost_usd": "0.002101684"
+  },
+  {
+   "iteration": 58,
+   "model": "mimo",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B98555229882405:Washington",
+   "cost_usd": "0.0075159"
+  },
+  {
+   "iteration": 59,
+   "model": "qwen",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "cost_usd": "0.009804758"
+  },
+  {
+   "iteration": 60,
+   "model": "luna",
+   "status": "ok",
+   "A_region": "MNP",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "cost_usd": "0.003888845"
+  }
+ ]
+}

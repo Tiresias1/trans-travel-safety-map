@@ -1,0 +1,166 @@
+{
+ "iteration": 52,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0080094",
+ "usage": {
+  "cost_usd": "0.0080094",
+  "input_tokens": 48199,
+  "output_tokens": 6379
+ },
+ "labels": {
+  "A": "MNP",
+  "B": "66186276B38006515706420:South Dakota"
+ },
+ "A_region": "MNP",
+ "B_region": "66186276B38006515706420:South Dakota",
+ "A_rating": 0.33,
+ "B_rating": 0.22,
+ "difference_B_minus_A": -0.11,
+ "parsed": {
+  "A": {
+   "rating": 0.33,
+   "explanation": "The combined regime is the national framework applied to a self-governing commonwealth. Parent-regime exposures dominate: passport sex-marker restrictions with stranding reports, entry refusal under the 24 Feb 2025 cable and a lifetime fraud finding, documented forced labour, beatings and sexual abuse of trans detainees in immigration custody, and a federal instruction to investigate trans-supportive teachers. Commonwealth additions are mixed. Same-sex marriage, no criminalisation, and a 2023 hate-crime enhancement covering gender identity are mitigating on paper, but the enhancement has no recorded enforcement and gender-marker change requires a medical process. Coverage is limited to government employees, and a visitor's documents are issued from home. Parent exposures are not offset by territory-level protections.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Foreign passport sex-marker restrictions and refusal or blocking of passports reported; entry refusal with fraud-ground exposure under the cable; mismatch triggers refusal and document requests.",
+     "protection": "Not documented. Existing X passports valid until expiry; the passport policy is challenged in court.",
+     "interaction": "Document discrepancy leads to refusal and possible lifetime-ineligibility finding; the commonwealth has no layer over national entry rules.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Documented harm in immigration custody: forced labour, beatings, solitary confinement and severe sexual abuse of transgender men. Trans prisoners subject to one state's policies, including denial of hormones.",
+     "protection": "Not documented.",
+     "interaction": "Custody harm is national and applies to a commonwealth visitor detained under national immigration authority.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Parent facilities bans and criminal trespass provisions exist in some states; the commonwealth's facility rules are not documented.",
+     "protection": "Not documented for the commonwealth.",
+     "interaction": "Parent facility rules apply to visitors in parent-governed buildings; no commonwealth facility rule is in the dossier.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Parent proposals would bar public reimbursement for under-18 care; subpoenas of hospital records for patients under 19; youth crisis services shut.",
+     "protection": "Commonwealth legal gender change available after a medical process.",
+     "interaction": "Medical process requirement is a territory-level hurdle; federal record demands raise outing risk for minors.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National counterterrorism strategy names radically pro-transgender groups for neutralisation; December 2025 reward memo uses 'radical gender ideology'.",
+     "protection": "Strategy states powers will not target people who merely disagree.",
+     "interaction": "Threat framing is national; the commonwealth has no documented counter-layer.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Teachers may face criminal prosecution for facilitating social transition; minor care restrictions and records subpoenas apply to families.",
+     "protection": "Not documented for minors in the commonwealth.",
+     "interaction": "A travelling minor's care could be disrupted by national measures and provider exposure.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Not documented for trans-specific violence in the commonwealth; a national travel guide advises checking violence reports.",
+     "protection": "Commonwealth 2023 hate-crime enhancement covers gender identity; no record of its use.",
+     "interaction": "Enhancement is paper protection without enforcement evidence and depends on federal channels for recourse.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "No comprehensive commonwealth nondiscrimination law; recourse beyond federal channels limited; parent measures litigated and partly enjoined.",
+     "protection": "Same-sex marriage since 2015; no criminalisation of same-sex conduct; adoption since 2015.",
+     "interaction": "Marriage and no-criminalisation are secondary sexuality signals; they do not offset the parent's document and custody exposures.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "The 0.25-C case has housing by birth sex and cross-dressing arrests in administrative buildings. A has no documented birth-sex housing rule in the commonwealth and no criminal cross-dressing statute, so A sits above it. A's national immigration custody harm and entry refusal are still comparable in severity, which keeps A near the low band."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A has a register-based entry bar and routine exclusion without arrest. A has a comparable documented entry-refusal and document-mismatch regime, plus documented custody abuse, which is more severe. A has territory-level hate-crime and marriage protections that 0.35-A lacks, so A is roughly similar and slightly lower."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has health access without gender-identity refusal, a working investigator, and border screening that is respectful. A lacks documented operative passport, custody and entry protection; its protections are paper only. A is well below, since reaching 0.75 would require removal of parent entry and custody exposures."
+    }
+   ],
+   "synthesis": "The commonwealth adds paper-level protections, including marriage recognition, no criminalisation and a hate-crime enhancement, but none is documented as operative for trans visitors. The national entry, passport and custody exposures apply in full and are documented with harm. The result is an elevated-to-high risk band, weighted down by custody abuse and entry refusal, with protections insufficient to offset them."
+  },
+  "B": {
+   "rating": 0.22,
+   "explanation": "The combined regime is the same national framework plus a division layer. The division adds enacted, operative exposures: bathroom and changing-room restriction in state-owned buildings and public schools, with a reasonable-accommodation clause that raised solitary-confinement prospects. It has no statewide gender-identity nondiscrimination or hate-crime coverage. It bans under-18 gender-affirming care, lets businesses refuse LGBTQ service on religious grounds, and its birth-certificate marker change is closed by a 2026 ruling. Marriage is recognised and tribal and municipal protections are partial. Parent exposures plus these layered division restrictions place B below A.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Parent passport restrictions and entry refusal apply. The division's birth certificate is closed to marker change, and driver's licence change requires surgery affidavit or court order.",
+     "protection": "Not documented.",
+     "interaction": "Visitors carry home documents, but a division document layer does not offset national mismatch exposure.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Parent immigration custody harms documented. Division facilities law's reasonable-accommodation clause raised possible solitary placement for incarcerated trans people; enforcement not specified.",
+     "protection": "Not documented.",
+     "interaction": "A visitor detained in state custody could face the same unspecified accommodation; the outcome is undetermined.",
+     "status": "uncertain"
+    },
+    "federal_state_facilities": {
+     "exposure": "2025 division law restricts bathrooms, locker rooms and changing areas by birth sex in state-owned buildings and public schools, including off-campus activities; applies to visitors using those facilities. Parent bans also apply.",
+     "protection": "Not documented.",
+     "interaction": "Universal exposure in state buildings: visitors cannot avoid it at courthouses, colleges or schools.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming care for under-18s banned by 2023 law; state contract for trans health work terminated in 2022, later settled. Parent care-reimbursement proposals also apply.",
+     "protection": "Adult care not documented as restricted under the division's statute.",
+     "interaction": "A travelling minor cannot access the banned care; parent proposals compound this.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Division policy framed around 'biological sex' and facility restriction; parent counterterrorism framing applies.",
+     "protection": "Division-level hate-crime law does not cover gender identity; national hate-crime statute applies.",
+     "interaction": "Enacted state-level framing reinforces national hostility; the national hate-crime statute provides only backstop recourse.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Under-18 gender-affirming care ban; parent measures against family and schools; school facility restriction covers K-12 settings.",
+     "protection": "Not documented.",
+     "interaction": "A travelling minor faces school and care restrictions; a parent may face provider or guardian constraints.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Not documented for trans-specific violence. Business service refusal permitted on religious grounds since 2021.",
+     "protection": "National hate-crime statute and national employment law as backstop only.",
+     "interaction": "Service refusal is lawful; recourse for gender-identity hate crime at division level is absent.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No statewide nondiscrimination statute for gender identity in employment, housing or public accommodations. 2017 law allows foster agencies to refuse LGBT parents.",
+     "protection": "Marriage recognised since 2015; some municipal and tribal protections. Settlement of 2022 contract discrimination lawsuit.",
+     "interaction": "Recourse depends on national backstops; local protections are patchy and do not reach visitors in the division.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C has birth-sex housing and criminal cross-dressing arrests. B has no documented criminal cross-dressing or birth-sex prison housing, so B sits above it. B's documented state-building facility restriction, under-18 care ban and absent gender-identity coverage place it near the low band."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "0.35-A has a register-based entry bar with routine exclusion and no effective remedy. B has universal facility exposure and enacted care and service restrictions but no documented entry register. B is similar in band; its exposures are more layered and its recourse is thinner."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has respectful border screening, health access without gender-identity refusal, and working investigators. B has none of these: facility restriction, care ban and religious service refusal are documented. Reaching 0.75 would need removal of these restrictions and operative state-level protections."
+    }
+   ],
+   "synthesis": "The division layers enacted facility restriction in state buildings, an under-18 care ban, religious-based service refusal, and no statewide gender-identity coverage on top of the national document, custody and threat-framing regime. Marriage recognition and municipal protections do not reach visitors in state buildings. The documented exposures compound, placing B in the high-to-elevated band below A."
+  },
+  "difference_ri_minus_nh": -0.11
+ },
+ "parse_error": null,
+ "attempts": 1
+}

@@ -1,0 +1,166 @@
+{
+ "iteration": 29,
+ "model": "deepseek",
+ "model_id": "deepseek/deepseek-v4.1-flash-1017",
+ "status": "ok",
+ "cost_usd": "0.009271318",
+ "usage": {
+  "cost_usd": "0.009271318",
+  "input_tokens": 30113,
+  "output_tokens": 10542
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B62688952876525:Alaska"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B62688952876525:Alaska",
+ "A_rating": 0.38,
+ "B_rating": 0.33,
+ "difference_B_minus_A": -0.05,
+ "parsed": {
+  "A": {
+   "rating": 0.38,
+   "explanation": "The parent national regime imposes hostile border and document screening, federal facility exclusion, and abusive immigration custody; the territory adds a tolerant local LGBTQ scene, employment protections, and same-sex marriage, but its own surgery-based legal gender recognition is resident-facing and does not protect visitors. Border screening and federal custody are the operative gate, and local tolerance cannot offset them. Legal challenges and existing X-marker passports offer partial, uncertain relief. For an adult alone or with a minor, document mismatch can trigger refusal, secondary screening, or a fraud finding; if detained, documented abuse follows. Street-level risk is lower because of local acceptance, but trans-specific violence data is absent.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Parent rules restrict passport/visa sex markers, stop processing X markers, and direct border officers to refuse cases with document discrepancies and consider lifetime fraud findings.",
+     "protection": "Existing X-marker passports remain valid until expiry; passport policy is challenged in court; legal-aid FAQ exists.",
+     "interaction": "Federal border rules apply on the island; local tolerance does not affect border screening.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse against trans men; national corrections adopt conversion-style policies.",
+     "protection": "Some executive orders are enjoined or challenged; no territory-specific custody protection is documented.",
+     "interaction": "Border screening can lead to federal immigration detention; local law does not govern custody.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Parent executive order bars trans people from government-funded single-sex facilities congruent with identity; airport screening follows federal rules.",
+     "protection": "Local LGBTQ scene and private venues are tolerant; no territory-specific facility protection is documented.",
+     "interaction": "Federal facilities and screening apply; local private venues may be more accepting.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Parent national measures restrict gender-affirming care and youth care; territory-specific care access is not documented.",
+     "protection": "No territory-specific care protection is documented; some national measures are enjoined.",
+     "interaction": "Visitor care access is uncertain; federal rules may affect covered facilities.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Parent counterterrorism strategy prioritizes groups described as radically pro-transgender; justice department reward system and anti-trans executive orders create hostile framing.",
+     "protection": "Courts have blocked some orders; local island society is described as tolerant.",
+     "interaction": "National threat framing may affect policing and official treatment; local culture is more accepting.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Parent executive order directs investigation and prosecution of teachers who affirm trans minors; youth care bans and school restrictions apply nationally.",
+     "protection": "Some orders are enjoined or under challenge; no territory-specific protection is documented.",
+     "interaction": "A guardian travelling with a trans minor faces federal school/care rules; local school practice is not documented.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence, hate-crime enforcement, or policing data for the island was identified.",
+     "protection": "Local LGBTQ acceptance is documented, with a visible scene since the 1990s and annual Pride; employment discrimination is banned locally.",
+     "interaction": "Local society appears safe for everyday LGBTQ presence, but absence of trans-specific data prevents a firm assessment.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Border discretion, passport policy, and custody conditions remain unresolved; local legal gender recognition requires surgery but is resident-facing.",
+     "protection": "Civil-liberties litigation, legal-aid guidance, and local employment protections exist; outcomes are slow or uncertain.",
+     "interaction": "Remedies may help after harm but cannot reliably prevent border refusal or custody abuse.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-A",
+     "comparison": "A is safer than 0.25-A because it documents no local police raids, extortion, or routine street detention; however, its parent border and immigration custody exposures are severe and partially resemble 0.25-A's custodial harms."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "A is worse than 0.55-B: 0.55-B involves discretionary secondary screening and refusal, while A adds passport-marker restrictions, potential lifetime fraud findings, federal facility exclusion, and documented abusive immigration custody."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is much worse than 0.75-C: 0.75-C has trained border officers and tribunal remedies; A has a hostile parent border regime, unresolved legal challenges, and federal custody harms that local tolerance cannot offset."
+    }
+   ],
+   "synthesis": "The territory's local society is tolerant and locally protective in employment and marriage, but the visitor's operative gate is the parent national border and federal custody system. Document mismatch can trigger refusal, secondary screening, or a fraud finding, and detention carries documented abuse. Local acceptance reduces everyday street-level risk but does not neutralize the border or federal facility regime. Legal challenges and existing X-marker passports provide partial, uncertain relief."
+  },
+  "B": {
+   "rating": 0.33,
+   "explanation": "The parent national regime imposes the same hostile border, document, federal facility, and custody exposures as in A. The state/province is Moderate-Risk: no statewide adult bathroom or adult care ban, but no statewide gender-identity nondiscrimination, a hate-crime gap, youth-care regulatory threats, a school-district bathroom policy, and only four municipal protections. Local tolerance and protection are less documented than in A. Border and federal custody remain the harshest operative rules. Draft youth-care rules and legal challenges create uncertainty. For an adult alone or with a minor, document mismatch at the border can lead to refusal or detention, and in-state recourse is thin outside the four municipalities.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Parent rules restrict passport/visa sex markers, stop processing X markers, and direct border officers to refuse discrepancies and consider lifetime fraud findings.",
+     "protection": "Existing X-marker passports remain valid until expiry; passport policy is challenged; state document changes are available but leave a record.",
+     "interaction": "Federal border rules apply; state document practices do not affect border screening.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse; national corrections adopt conversion-style policies.",
+     "protection": "Some national orders are enjoined or challenged; no state-specific custody protection is documented.",
+     "interaction": "Border screening can lead to federal immigration detention; state law does not govern custody.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Parent executive order bars trans people from government-funded single-sex facilities; one school district requires birth-sex bathrooms or private alternatives.",
+     "protection": "No statewide adult bathroom ban; four municipalities have gender-identity protections; state law does not cover public accommodations statewide.",
+     "interaction": "Federal facilities apply; state and local variation leaves adult visitors without consistent recourse outside protected municipalities.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Parent national measures restrict gender-affirming care; the state medical board approved a draft classifying gender-transition care for under-18s as unprofessional conduct.",
+     "protection": "No statewide adult care ban; the youth-care draft is not yet operative and requires review and comment; some national orders are enjoined.",
+     "interaction": "Adult visitor care is not statutorily banned but regulatory pressure and national rules create uncertainty; minors face greater risk.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Parent counterterrorism strategy prioritizes groups described as radically pro-transgender; justice department reward system and anti-trans executive orders create hostile framing.",
+     "protection": "Courts have blocked some orders; state hate-crime law does not cover gender identity.",
+     "interaction": "National threat framing may affect policing; state-level recourse for bias violence is absent.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Parent executive order targets teachers affirming trans minors; state medical board draft restricts youth care; school sports and one district bathroom policy affect trans students.",
+     "protection": "The youth-care draft is not final; some national orders are enjoined; municipal protections exist in four cities.",
+     "interaction": "A guardian travelling with a trans minor faces layered federal, state, and district rules; recourse varies by locality.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence or policing data for the state/province was identified; the hate-crime statute lacks gender identity.",
+     "protection": "Four municipalities prohibit gender-identity discrimination; no enforcement data for those ordinances is provided.",
+     "interaction": "Outside the four municipalities, a trans visitor has no state or local discrimination recourse in hotels, restaurants, or workplaces.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "State nondiscrimination coverage is absent, hate-crime coverage is missing, and enforcement of municipal ordinances is undocumented.",
+     "protection": "Municipal ordinances and national legal challenges exist; the youth-care draft remains non-operative.",
+     "interaction": "Remedies are geographically uneven and cannot reliably address border or federal custody harms.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-A",
+     "comparison": "B is somewhat safer than 0.25-A because it documents no local police raids or routine extortion, but its parent border, potential lifetime fraud finding, and abusive federal custody resemble 0.25-A's custodial severity."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "B is worse than 0.55-B: 0.55-B has discretionary border screening and refusal, while B adds passport-marker restrictions, potential lifetime fraud findings, federal facility exclusion, and documented abusive immigration custody."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is much worse than 0.75-C: 0.75-C has trained border officers and tribunal remedies; B has a hostile parent border regime, thin state recourse, and federal custody harms."
+    }
+   ],
+   "synthesis": "The state/province avoids a statewide adult bathroom or care ban, but the visitor's operative gate is the parent national border and federal custody system. Document mismatch can trigger refusal, secondary screening, or a fraud finding, and detention carries documented abuse. Statewide nondiscrimination and hate-crime coverage are absent, with protections limited to four municipalities. Local tolerance is not well documented. National legal challenges and non-operative draft rules create uncertainty, but they do not neutralize the border or federal custody exposure."
+  },
+  "difference_ri_minus_nh": -0.05
+ },
+ "parse_error": null,
+ "attempts": 1
+}

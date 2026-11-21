@@ -1,0 +1,174 @@
+{
+ "iteration": 55,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.002303236",
+ "usage": {
+  "cost_usd": "0.002303236",
+  "input_tokens": 29842,
+  "output_tokens": 3723
+ },
+ "labels": {
+  "A": "MNP",
+  "B": "66186276B22971435435932:Kentucky"
+ },
+ "A_region": "MNP",
+ "B_region": "66186276B22971435435932:Kentucky",
+ "A_rating": 0.4,
+ "B_rating": 0.35,
+ "difference_B_minus_A": -0.05,
+ "parsed": {
+  "A": {
+   "rating": 0.4,
+   "explanation": "Combined regime is dominated by federal exposures: binary passport policy in force after Nov 2025, entry discrepancy leading to refusal and possible lifetime fraud ineligibility, federal facilities bar, and documented immigration/prison custody abuse. Territory adds no documented adult facilities, care or sports ban, and has 2023 hate-crime enhancement, but no comprehensive nondiscrimination coverage beyond government employees and no documented use of enhancement. Protections are partial and contested in litigation, not operative offsets to tier-1 exposures.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "X markers stopped, new passports only M/F per birth documents; existing X valid to expiry; documented confiscation/stranding; entry cable: discrepancy can cause refusal, suspected misrepresentation can support lifetime fraud ineligibility (4 elements, never automatic).",
+     "protection": "Existing X passports remain valid; fraud finding not automatic; ACLU suit pending; several orders enjoined.",
+     "interaction": "Document discrepancy at entry interacts with fraud ground, detention and custody exposure.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Immigration custody: trans men reported forced labour, beatings, solitary, severe sexual abuse. Federal prisons from 2026: hormone removal, hair cutting, psychiatric substitution described as conversion therapy.",
+     "protection": "Not documented. No visitor-specific custody protocol documented.",
+     "interaction": "Entry fraud/detention can lead to immigration custody where abuse documented.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal EO bars trans people from government-funded single-sex facilities congruent with identity. 21 states/provinces have bans in various scopes; 4 criminalise in certain circumstances; documented 2025 capitol arrest, handcuffed, 24h in men's ward, trespass up to 60 days. Territory-specific adult facilities rule not documented.",
+     "protection": "29 states/provinces plus capital district have no ban in mapped categories; territory local ban not documented; trespass requires willful entry plus refusal to depart.",
+     "interaction": "Federal facilities law applies regardless of local tolerance; state bans compound in many destinations.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal EO on minor care; proposed rule would bar public insurance under 18; DOJ subpoenaed hospitals for minor records. Territory-specific visitor care access not documented.",
+     "protection": "Several federal orders blocked/enjoined; status contested.",
+     "interaction": "Record subpoenas and funding threats can chill care even where not finally in force.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "2025 EO defines sex as binary at birth, mandates sex not gender, removes gender-ideology materials; 2026 counterterrorism strategy prioritises 'radically pro-transgender' groups; 8+ governments issued travel advisories.",
+     "protection": "National hate-crime statute covers gender identity; 2020 employment ruling; courts enjoining some orders; suits pending.",
+     "interaction": "State threat-framing raises outing and enforcement discretion at borders, facilities and checkpoints.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal directives to investigate/prosecute teachers facilitating social transition; child care banned in 27 states/provinces nationally; sports entry ban. Territory-specific minor care/school rule not documented.",
+     "protection": "Not documented for territory; some orders enjoined nationally.",
+     "interaction": "Travelling minor faces federal/national climate plus uncertain local school/care rules; guardian/provider liability is traveller-facing exposure.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "No territory-specific trans violence rate, police targeting or prosecution record documented. Airport screening can be invasive and outing.",
+     "protection": "2023 commonwealth law provides enhanced sentencing for hate crimes motivated by gender identity, but application/prosecutions not documented; federal hate-crime law exists.",
+     "interaction": "Thin local recourse beyond government employees and federal channels leaves remedy uncertain if assault occurs.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Passport, EO and health rules all in litigation; hate-crime enhancement use not documented; medical requirement for local legal gender change not detailed (resident-facing).",
+     "protection": "Federal courts, ACLU suit, and 2023 enhancement are documented on paper; operative effectiveness for visitors not documented.",
+     "interaction": "Uncertainty does not mitigate documented entry/facilities/custody exposures.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Lower than 0.85: unlike anchor with working protection, this has state-imposed facilities exclusion, birth-sex custody harm and entry fraud risk. Higher than 0.25: no routine police raids/extortion or birth-sex prison housing as universal practice, execution not credible, courts enjoin some measures."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Similar to 0.35: exclusion, humiliation and discretionary refusal rather than likely imprisonment/execution; appeals exist but slow/ineffective for entry/facilities decisions. Custody abuse pushes slightly toward 0.25, injunctions and valid X passports push up."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Below 0.55: 0.55 is mainly delay/secondary screening with working remedies; here discrepancy can cause refusal and possible lifetime ineligibility, facilities bans are criminal in some states, custody abuse documented."
+    },
+    {
+     "anchor_id": "0.85-B",
+     "comparison": "Far below 0.85: 0.85 has recognised documents, training, counsel and tribunal remedy. Here no recognised X for new passports, no visitor facilities protection federally, and no documented operative local remedy."
+    }
+   ],
+   "synthesis": "Territory tolerance and 2023 hate enhancement do not cancel federal entry, facilities and custody exposures that every visitor passes through. Adult alone faces universal document/facilities exposure with contested remedies and severe custody risk if detained; travelling with a minor adds uncertain but nationally hostile care/school context. No execution or routine imprisonment for identity, so above 0.25, but tier-1 exposures keep it in Elevated Risk."
+  },
+  "B": {
+   "rating": 0.35,
+   "explanation": "Same federal tier-1 regime as A, plus documented state/province hostile layers: 2023 school bathroom restriction and minor care ban in force since July 2023, 2022 school sports ban, hate-crime statute expressly excluding gender identity, and RFRA route around local ordinances. 19 municipalities offer some public-accommodations protection and employment rests on appellate/executive sources, but these do not offset federal entry/facilities/custody exposure or state minor bans. Adult alone similar to A; with minor, materially worse.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Same federal regime: X stopped, M/F per birth documents, confiscation/stranding reported, entry cable refusal on discrepancy and possible lifetime fraud ineligibility for wilful misrepresentation.",
+     "protection": "Existing X valid to expiry; fraud requires 4 elements, never automatic; litigation pending.",
+     "interaction": "Federal entry exposure is unaffected by state employment or municipal protections.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody forced labour, beatings, solitary and sexual abuse reported; federal prison conversion-therapy model from 2026 with hormone removal. Documented trespass arrest held 24h in men's ward (in another state/province example in parent framework).",
+     "protection": "Not documented for visitor custody placement.",
+     "interaction": "Entry investigation or facilities trespass can lead to birth-sex custody exposure.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal facilities bar plus state 2023 K-12 school bathroom restriction for trans students, implemented by districts with April 2023 caution guidance. No state-wide adult bathroom rule documented in this state/province. Nationally 21 states/provinces have varied bans, 4 criminal.",
+     "protection": "19 municipalities have local nondiscrimination ordinances including public accommodations; district guidance urges caution; no adult state ban documented.",
+     "interaction": "Adult visitor mainly faces federal/municipal layer; minor student faces state school restriction regardless of municipal protection.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State care ban for minors (blockers/hormones) effective 14 July 2023, remained in force on appeal Sep 2023, no phase-out for existing patients. Federal minor-care EO and proposed insurance bar compound.",
+     "protection": "Challenges pending; appellate status after Sep 2023 not documented; adult visitor care not documented as banned.",
+     "interaction": "Travelling trans minor cannot obtain banned care in state; guardian/provider exposure even if adult visitor is not defendant.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal binary-sex EO, gender-ideology removal, 2026 counterterrorism prioritisation of 'radically pro-transgender' groups; state sports ban 2022 and care/school bans enacted over vetoes show hostile state framing.",
+     "protection": "National employment appellate ruling 2018 and 2008 executive order for state employees; conversion therapy on minors barred by 2024 executive order.",
+     "interaction": "Hostile framing increases discretion at entry, schools and facilities; efficient state enforcement aggravates, not mitigates, exposure.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "School bathrooms by birth sex, sports closed to trans girls, minor care ban without phase-out, federal directive to prosecute teachers facilitating social transition. Birth-certificate amendment requires post-operative surgery letter (resident-facing, climate signal only).",
+     "protection": "Seven families sued care ban; district caution guidance; no documented exemption for visiting minors.",
+     "interaction": "Family travel exposes minor to school exclusion, care denial, forced outing to administrators, and guardian/provider investigation risk.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "State hate-crime statute covers sexual orientation but expressly excludes gender identity, so trans bias violence lacks enhancement. No trans-specific violence statistics documented; do not infer rate.",
+     "protection": "National hate-crime law covers gender identity; 2011 sexual-orientation beating led to arrests/guilty pleas with federal/state police.",
+     "interaction": "Gap in state enhancement plus RFRA (2013) undermining local ordinances thins recourse, though federal law remains.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Care ban appellate status after Sep 2023, enforcement frequency of school ban, scope of national employment protection after later litigation, and RFRA application to trans service refusals all not documented.",
+     "protection": "Courts enjoin some federal orders; municipal ordinances in 19 places; national appellate employment holding. Operative visitor remedy not documented.",
+     "interaction": "Patchwork remedies do not cancel documented state and federal bans; unknowns are not safety.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Below 0.55 and near 0.35: state-imposed school facilities/care restrictions and federal entry/custody exposures are tier-1, but no routine raids, extortion, or birth-sex prison housing as documented universal practice and execution not credible, so above 0.25."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Similar to 0.35: discretionary exclusion, detention risk and ineffective/slow remedies rather than likely imprisonment. Extra state minor care/school/sports bans and hate-crime exclusion compound, keeping at low end of this tier."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Below 0.55: 0.55 is administrative delay with appeal desk; here refusal can be permanent fraud ineligibility, facilities use can be trespass, minor care is banned in force, and custody abuse is documented."
+    },
+    {
+     "anchor_id": "0.85-B",
+     "comparison": "Far below 0.85: no recognised nonbinary documents, no facilities equality, no state hate-crime cover for gender identity, and state enacts hostile minor laws over vetoes despite municipal pockets of protection."
+    }
+   ],
+   "synthesis": "State protections are patchwork and subordinate: municipal ordinances and appellate employment law do not pre-empt federal entry/facilities/custody or state school/care/sports bans. For an adult alone the regime mirrors A; for a family with a minor, in-force care denial, school bathroom restriction and sports exclusion are universal, traveller-facing exposures. That interaction, plus federal custody abuse if detained, places B below A in Elevated Risk, above Severe Risk because imprisonment/execution for identity is not documented as likely."
+  },
+  "difference_ri_minus_nh": -0.05
+ },
+ "parse_error": null,
+ "attempts": 1
+}

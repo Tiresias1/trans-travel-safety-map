@@ -1,0 +1,166 @@
+{
+ "iteration": 38,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.002745072",
+ "usage": {
+  "cost_usd": "0.002745072",
+  "input_tokens": 29790,
+  "output_tokens": 3462
+ },
+ "labels": {
+  "A": "VIR",
+  "B": "66186276B82803899326534:Indiana"
+ },
+ "A_region": "VIR",
+ "B_region": "66186276B82803899326534:Indiana",
+ "A_rating": 0.49,
+ "B_rating": 0.41,
+ "difference_B_minus_A": -0.08,
+ "parsed": {
+  "A": {
+   "rating": 0.49,
+   "explanation": "Federal entry, document, facility and custody rules apply in full: discrepancy can lead to refusal and consideration of lifetime fraud ineligibility, federal single-sex facilities are restricted by birth sex, and immigration custody abuse is documented. The territory adds a human-rights ban including gender identity, extension to students, marriage recognition and no sodomy law, with no local facility ban documented. That local protection improves everyday life but does not cancel federal border, facility or custody exposure; local enforcement and violence are undocumented, so not treated as safety.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal cable requires refusal where documents cast reasonable doubt on sex and consideration of permanent fraud ineligibility for wilful misrepresentation; X/mismatched markers no longer issued.",
+     "protection": "Territory follows federal entry rules; no territory-specific entry protection documented. Existing X passports remain valid to expiry.",
+     "interaction": "A passport-presentation discrepancy at the border can become refusal, delay or a fraud inquiry regardless of territorial human-rights law.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Immigration custody reports forced labour, beatings, solitary and severe sexual abuse of trans men; national corrections adopt hair-cutting, hormone removal and psychiatric substitution from 2026.",
+     "protection": "No territory custody protocol or independent oversight documented.",
+     "interaction": "Any arrest, e.g. facilities trespass elsewhere or immigration detention, can move a visitor into birth-sex / hostile custody with severe harm.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars trans people from government-funded single-sex facilities congruent with identity; many states ban such use, with some criminal trespass exposure.",
+     "protection": "Territorial human-rights law prohibits gender-identity discrimination and a 2017 interpretation extends it to students; no territorial facility ban is documented.",
+     "interaction": "Territorial protection may govern local services, but federal buildings and any state facility rules encountered outside the territory remain birth-sex based.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal orders and 27 state bans target gender-affirming care for minors; national corrections remove hormone medication for inmates.",
+     "protection": "No territorial care denial documented; not documented is not evidence care is available to visitors.",
+     "interaction": "Emergency or custodial care can become birth-sex placement or medication denial after outing.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism strategy prioritises groups described as radically pro-transgender; cash-reward guidance lists radical gender ideology among extremist viewpoints.",
+     "protection": "Hate crimes punishable nationally; territorial law prohibits gender-identity discrimination. No sodomy law in force.",
+     "interaction": "Official threat framing raises police scrutiny, while territorial law provides a local, untested basis to challenge discrimination.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal measures investigate schools and teachers facilitating social transition; proposed rules would bar public insurance for under-18 care.",
+     "protection": "2017 territorial interpretation explicitly covers transgender students under anti-discrimination law.",
+     "interaction": "A travelling minor is protected locally in education under that interpretation, but federal investigative and funding pressure and out-of-territory bans remain.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No territorial trans-specific violence, police targeting or dating-app pattern documented.",
+     "protection": "No territorial enforcement outcomes documented; absence is not safety.",
+     "interaction": "Outside the territory, national hostility and uneven state protections could shape police response.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Several federal orders are enjoined or in litigation, creating uncertainty; territorial enforcement actions, complaints and outcomes are not documented.",
+     "protection": "Marriage recognition and territorial human-rights statute are documented protections, but their visitor-facing operation is not shown.",
+     "interaction": "Courts and the territorial statute may help locally, yet they do not pre-empt federal entry, facilities or custody decisions.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Lower than 0.25-C: no documented birth-sex prison placement or cross-dressing arrest regime in the territory, and visitor imprisonment is not shown as likely, though federal custody abuse is severe if detention occurs."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Similar to 0.55-B in administrative border friction and possible refusal, but higher risk than that anchor because federal facility exclusion and documented custody abuse add state-imposed exposures beyond delay."
+    },
+    {
+     "anchor_id": "0.85-B",
+     "comparison": "Well below 0.85-B: that anchor has recognised diverse passports, training, body cameras and working tribunal release; here federal birth-sex document and facility rules are operative and remedies are contested."
+    }
+   ],
+   "synthesis": "The combined regime is hostile at federal level and protective on paper locally. Entry and federal facilities are the unavoidable exposures; custody harm is severe but conditional on detention. Territorial anti-discrimination, student coverage and marriage recognition reduce everyday local risk, yet without enforcement data they cannot offset federal screening, facility and custody rules."
+  },
+  "B": {
+   "rating": 0.41,
+   "explanation": "The same federal document, facility, counterterrorism and custody regime applies, plus a state layer assessed among the harshest: 2026 licence-marker ban forcibly outing residents, no statewide gender-identity anti-discrimination statute, and an operative under-18 care ban affecting travelling minors. Mitigations are real but limited: as of April 2026 no state restroom restriction, two city ordinances, an appellate school-bathroom injunction, and a 2019 hate-crime sentencing enhancement. State protections do not cancel federal entry, facility or custody exposure.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal refusal for sex-document discrepancy and possible lifetime fraud consideration; state 2026 ban ends licence/ID marker changes and will forcibly out people whose documents no longer match presentation.",
+     "protection": "Existing X passports valid to expiry; ACLU challenge to state marker ban pending, outcome not documented.",
+     "interaction": "Federal border discrepancy can lead to refusal, while state ID rules can compound outing at everyday checks in the state.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody forced labour, beatings, solitary and sexual abuse; national corrections mandate hair-cutting and hormone removal. Proposed state bill would confine prison housing to birth sex but is not law.",
+     "protection": "No state custody protection for visitors documented.",
+     "interaction": "Detention for immigration, fraud inquiry or facilities trespass can place a visitor in hostile birth-sex custody nationally.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal facilities restricted by birth sex; state senate-passed bill would impose birth-sex school/university facilities and birth-certificate bar, but received no lower-chamber hearing and is not law.",
+     "protection": "As of April 2026 state law places no restriction on restrooms matching gender identity; two cities protect use by ordinance and a 2023 appellate injunction covers a trans student.",
+     "interaction": "State law is currently more permissive, but federal buildings, other states and the pending bill's trajectory create exposure during travel.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State 2023 law, upheld Nov 2024, bars transition procedures under 18 including surgery, blockers and hormones; federal and 27-state minor-care bans add pressure.",
+     "protection": "No documented adult visitor care denial in this state; adult availability is not documented.",
+     "interaction": "A travelling minor cannot obtain covered care here; an adult's emergency or custodial care may still be disrupted after outing.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism prioritises radically pro-transgender groups; state governor defines sex by birth and directs health agency to stop marker updates.",
+     "protection": "2019 state hate-crime law adds sentencing aggravation for gender-identity motivation; no visitor enforcement data documented.",
+     "interaction": "Threat framing plus birth-sex state definitions increase scrutiny, while the hate-crime enhancement is a potential but unproven remedy after an attack.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Under-18 care ban, 2023 school pronoun/name notification law, and federal prosecution direction for teachers facilitating transition create family and school exposure.",
+     "protection": "Appellate injunction bars schools limiting a trans student's bathroom use while litigation continues; city ordinances may protect restroom use.",
+     "interaction": "A minor traveller may be protected for bathroom access in one school context yet denied care, required outing at school, or investigated via providers/guardians.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence rate, police targeting pattern or visitor incident documented for this state.",
+     "protection": "Hate-crime aggravation exists since 2019; frequency of charging it is not documented, so protection is unproven.",
+     "interaction": "If attacked, recourse depends on police charging the enhancement; if outed to police, federal/state hostility may worsen the encounter.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "State marker challenge pending; facility bill prospects not sourced; federal orders partly enjoined, leaving operative rules uncertain.",
+     "protection": "Courts have issued injunctions and the state supreme court history shows contested birth-certificate rights, but no visitor remedy outcome is documented.",
+     "interaction": "Litigation may restrain some measures, yet the traveller must travel under whichever rules are in effect at that moment.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Above 0.25-C because the state's birth-sex prison and school-facility bill is not law and no state bathroom criminalisation is in force, but federal custody abuse keeps severity high if detained."
+    },
+    {
+     "anchor_id": "0.45-A",
+     "comparison": "Similar to 0.45-A: routine document mismatch, detention/humiliation and denial of care are documented, custodial sentences for visitors are unlikely, and remedies are slow or scarce."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Well below 0.85-A: there is no statewide equality protection, self-ID visitor documents or independent oversight; instead birth-sex federal and state definitions, a marker ban and a minor-care ban are operative."
+    }
+   ],
+   "synthesis": "State law currently avoids a bathroom ban and offers two city ordinances, an injunction and a hate-crime enhancement, but the state also bans marker changes and under-18 care and lacks statewide anti-discrimination law. Combined with federal border, facility and custody exposures, the final operative interaction is more restrictive than A, especially for minors and for anyone whose documents are checked."
+  },
+  "difference_ri_minus_nh": -0.08
+ },
+ "parse_error": null,
+ "attempts": 1
+}

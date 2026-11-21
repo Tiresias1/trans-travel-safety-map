@@ -1,0 +1,174 @@
+{
+ "iteration": 36,
+ "model": "deepseek",
+ "model_id": "deepseek/deepseek-v4.1-flash-1017",
+ "status": "ok",
+ "cost_usd": "0.01036962",
+ "usage": {
+  "cost_usd": "0.01036962",
+  "input_tokens": 29213,
+  "output_tokens": 7099
+ },
+ "labels": {
+  "A": "VIR",
+  "B": "66186276B43071933723331:California"
+ },
+ "A_region": "VIR",
+ "B_region": "66186276B43071933723331:California",
+ "A_rating": 0.38,
+ "B_rating": 0.41,
+ "difference_B_minus_A": 0.03,
+ "parsed": {
+  "A": {
+   "rating": 0.38,
+   "explanation": "A trans visitor to the territory meets the parent regime at the border: markers restricted to M/F, officers instructed to refuse cases where documents cast doubt on sex, possible lifetime fraud ineligibility, and reported confiscation/stranding. Federal facility exclusion is a universal, inescapable exposure, and immigration custody has documented beatings, forced labour and sexual abuse of trans detainees. The territory adds only a human-rights statute and a 2017 chief-legal-officer interpretation covering trans students — real but never shown to operate, with no enforcement actions, complaints or violence data recorded. Courts still enjoin some national orders and a hate-crime statute covers gender identity, but no remedy is documented as reversing the travel-document or facility exposure. Net: tier-1 state exposure plus severe custody risk, unmitigated locally.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Parent rules govern the territory's airports: M/F markers only, refusal where documents cast doubt on sex, possible lifetime fraud ineligibility; travellers report passports blocked or confiscated.",
+     "protection": "Existing X-marker passports remain valid until expiry; national litigation and a legal-aid FAQ persist, but no territorial entry protection is documented.",
+     "interaction": "A visitor's foreign passport with an X or mismatched marker meets officer discretion at the territory's federal screening; refusal is administrative, ineligibility is durable.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody records forced labour, beatings, solitary confinement and severe sexual abuse of trans men; federal corrections adopt conversion-therapy-style policies.",
+     "protection": "None documented at territorial level; custody is federal.",
+     "interaction": "Any border refusal escalates into federal detention, where the territory has no separate authority or oversight to intervene.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Executive order bars trans people from government-funded single-sex facilities congruent with identity; enforcement reaches federal buildings in the territory.",
+     "protection": "Territorial human-rights statute bars gender-identity discrimination, but no documented facility-access enforcement or outcome.",
+     "interaction": "Federal facility rule governs federal premises; the local statute may reach private premises only, and no case shows it doing so.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal orders target gender-affirming care for minors, subpoena hospital records of under-19 patients, and propose insurance exclusions.",
+     "protection": "Territorial anti-discrimination statute names gender identity; the 2017 interpretation extends it to trans students.",
+     "interaction": "Local statute protects against service discrimination but cannot shield clinical records from federal subpoena or override federal health rules.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Counterterrorism strategy names 'radically pro-transgender' groups for 'rapid neutralisation'; a DOJ reward memo invokes 'radical gender ideology'.",
+     "protection": "National hate-crime statute covers gender identity; courts have enjoined several orders.",
+     "interaction": "Framing elevates investigation risk for visible activism rather than ordinary tourism, but colours official disposition in any encounter.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Executive order directs investigation of schools and prosecution of teachers who use a trans minor's chosen name; care bans in 27 states; hospital record subpoenas.",
+     "protection": "The 2017 chief legal officer's interpretation applies the territory's anti-discrimination law to transgender students in education.",
+     "interaction": "A family travelling with a trans minor gets a real education-side protection locally while remaining exposed to federal care and records action.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No territorial trans-specific violence data is recorded; national anti-trans incidents are logged but without a denominator.",
+     "protection": "Territorial and national hate-crime coverage on gender identity; no documented enforcement outcome.",
+     "interaction": "No evidence either way on how police handling of an attack on a trans visitor would go in the territory.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "No record of any complaint, enforcement action or outcome under the territory's anti-discrimination law; fraud ineligibility has limited waiver.",
+     "protection": "Statute in force, 2015 superior-court marriage ruling, repealed sodomy statute, ongoing national civil-liberties litigation.",
+     "interaction": "Paper remedies exist but the record shows none operating against the travel-document or facility exposures.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Varnalia criminalises presentation, arrests routinely and imposes months of abusive pretrial custody with a capital provision. A has no criminalisation of identity, no imprisonment for being trans and no capital pathway, so it sits far above that tier."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra's border agency refuses visibly trans visitors with no effective remedy. A's border exposure is comparable, and adds federal facility exclusion and documented custody abuse, so A is roughly at that level or slightly below."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles imposes extended screening and administrative refusal with an appeal desk and no criminal or custodial exposure. A is below: it adds universal facility exclusion and documented violence in custody that Kestrel's screening friction does not carry."
+    },
+    {
+     "anchor_id": "0.85-B",
+     "comparison": "Norathia recognises nonbinary passports, trains officers and provides legal aid and tribunal relief. A has none of those border accommodations and an active refusal discretion, so it is far below."
+    }
+   ],
+   "synthesis": "The territory's own layer is thin and benign on paper: a human-rights statute, a 2017 interpretation protecting trans students, settled marriage, a repealed sodomy law. But nothing in the record shows any of it operating, and it does not touch the layers that actually govern a visitor — federal entry screening, federal facility exclusion and federal custody. The parent regime supplies the tier-1 universal exposure and the documented severity behind it; the territory supplies no documented traveller-facing remedy against either."
+  },
+  "B": {
+   "rating": 0.41,
+   "explanation": "The division operates under the same federal entry, facility and custody regime — M/F markers, refusal on document doubt, possible lifetime ineligibility, government-building facility exclusion, and documented abuse in immigration custody. What the division adds is a genuine operating protection: a sanctuary law in force since 2022 shielding families, including those who travel in, from child-abuse investigation or prosecution for seeking gender-affirming care, plus identity-based prison housing and funded inmate surgery. Against that it records 198 anti-LGBTQ incidents in 2025, the highest raw count, and rising hate-crime reports in its largest city — but with no denominator the dossier itself says that count carries no per-capita magnitude, and a July 2026 analysis places it in the top protective band with low recorded incidence.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal screening governs: M/F markers only, refusal where documents cast doubt on sex, possible lifetime fraud ineligibility; travellers report passports blocked abroad.",
+     "protection": "No division-level entry or document protection is documented; the dossier places these layers in the national record.",
+     "interaction": "A visitor's foreign marker reaches federal officers at this division's ports with the same discretion as anywhere else in the country.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody documents forced labour, beatings, solitary and sexual abuse of trans detainees; federal corrections impose conversion-therapy-style policies.",
+     "protection": "Division prison system houses inmates by gender identity (documented as of Jan 2021) and funds gender-affirming surgery, but this covers state inmates, not federal immigration detainees.",
+     "interaction": "A detained visitor passes into federal custody where the division's protective housing policy does not reach.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars trans people from government-funded single-sex facilities congruent with identity; facility bans exist in other divisions and reach federal premises here.",
+     "protection": "July 2026 analysis places this division in the safest-laws band; no division facility ban is documented.",
+     "interaction": "Federal premises remain excluded regardless of the division's protective posture; the division's law does not documented-pre-empt the federal rule.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal orders target minors' care, subpoena under-19 hospital records and propose insurance exclusion.",
+     "protection": "Sanctuary law signed September 2022, first in the country: out-of-division youth may obtain hormones and blockers here, and families are shielded from investigation or prosecution.",
+     "interaction": "A family travelling with a trans minor gains a real, in-force operative protection at this division's clinics; federal subpoena and insurance rules remain an unresolved overlay.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups; the division governor has platformed anti-trans figures during a documented rise in local hate-crime reports.",
+     "protection": "National gender-identity hate-crime coverage; division rated in the top protective-law band.",
+     "interaction": "Rhetoric raises the temperature around visible trans presence without a documented arrest pathway for ordinary visitors.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order directs prosecution of teachers who use a trans minor's chosen name; care bans elsewhere; hospital record subpoenas create family exposure.",
+     "protection": "Sanctuary law expressly shields travelling families from child-abuse investigation or criminal prosecution for seeking care here.",
+     "interaction": "Care-seeking families get the strongest documented protection in either dossier; a guardian's exposure is sharply reduced once inside the division, though federal process still applies to records.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "198 anti-LGBTQ incidents in 2025, the highest raw count of any division, with a dramatic rise in hate-crime reports in the largest city.",
+     "protection": "Hate-crime statute coverage and a top protective-law band with low recorded incidence per the July 2026 analysis; no per-capita denominator is supplied.",
+     "interaction": "Raw count without denominator cannot establish per-visitor risk; the dossier itself flags the ranking as unadjusted and partly contradicts it.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Whether identity-based prison housing persists after January 2021 is unresolved; incident counts lack denominators; facility and document layers are undocumented at division level.",
+     "protection": "Sanctuary law in force and documented to operate; funded inmate surgery; protective-law band rating.",
+     "interaction": "The operative protection that is shown working covers care-seeking families; it does not reach federal border, facility or immigration-custody exposure.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Ostravia houses detainees by birth sex in assault-prone blocks and criminalises cross-dressing in administrative buildings. B is above: its state custody is identity-based with funded surgery, and no presentation offence exists, though federal immigration custody carries comparable harm."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra refuses trans visitors at the border with no remedy and no local counterweight. B shares the federal border exposure but adds a documented operating sanctuary law and protective-law band, so B sits somewhat above."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles confines harm to screening, refusal and an appeal desk. B carries more: universal federal facility exclusion and documented abuse in federal custody, which exceed administrative friction, so B sits materially below."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia offers presentation-matching markers, trained border officers and tribunal remedies for brief detention. B has none of that border accommodation and an active refusal discretion, so it is materially below."
+    }
+   ],
+   "synthesis": "The division's protective machinery is real where it operates: a sanctuary law that shields travelling families at actual clinics, identity-based state custody, funded surgeries, and a top protective-law band. But it stops at the federal line. Entry screening, facility exclusion and immigration custody are federal, unremedied, and carry the dossier's documented harms; the 198-incident count is unadjusted and partly contradicted by the same record. A care-seeking family fares better here than a solo adult, whose exposure is essentially the national regime with a friendlier street climate."
+  },
+  "difference_ri_minus_nh": 0.03
+ },
+ "parse_error": null,
+ "attempts": 1
+}

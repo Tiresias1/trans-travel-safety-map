@@ -1,0 +1,166 @@
+{
+ "iteration": 44,
+ "model": "qwen",
+ "model_id": "qwen/qwen3.8-flash",
+ "status": "ok",
+ "cost_usd": "0.008748782",
+ "usage": {
+  "cost_usd": "0.008748782",
+  "input_tokens": 29950,
+  "output_tokens": 14311
+ },
+ "labels": {
+  "A": "VIR",
+  "B": "66186276B6801956407400:North Carolina"
+ },
+ "A_region": "VIR",
+ "B_region": "66186276B6801956407400:North Carolina",
+ "A_rating": 0.3,
+ "B_rating": 0.21,
+ "difference_B_minus_A": -0.09,
+ "parsed": {
+  "A": {
+   "rating": 0.3,
+   "explanation": "Dossier A is a territory under a hostile parent: federal documents, visa refusal, birth-sex screening, government-facility exclusion, and custody conversion/abuse dominate. Territory anti-discrimination and student/marriage protections provide paper mitigation but no documented enforcement, so they do not cancel federal exposure. An adult can usually avoid private conflicts but cannot avoid passport/secondary screening or federal facilities; detention if triggered carries severe harm. Minors face national care hostility with only untested local school protection. High risk, below mid-band.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal order ties passports/visas to birth sex, blocks X/mismatch markers, permits visa refusal and possible lifetime fraud finding when records doubt sex; screening can strand applicants.",
+     "protection": "Territory human-rights law prohibits gender-identity discrimination, but it does not alter federal passport/visa screening.",
+     "interaction": "Home passport mismatch meets federal secondary/visa checks before territorial protections can operate.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections apply birth-sex conversion-style controls; immigration custody reports forced labour, beatings, solitary and severe sexual abuse; facility trespass can lead to birth-sex custody.",
+     "protection": "National hate-crime law and territorial anti-discrimination statute may be invoked, but no documented visitor relief or enforcement.",
+     "interaction": "An entry or facility encounter escalating to detention makes hostile custody practices operative.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal government-funded single-sex facilities exclude trans people; equality map shows many state bans and criminal provisions; territory has no local ban documented.",
+     "protection": "Territory anti-discrimination law and student interpretation oppose territorial facility exclusion, but enforcement absent and federal rules override.",
+     "interaction": "Visitor may avoid private settings, yet federal buildings, transit and government-funded sites remain exclusionary.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "National funding freeze, gender-idea purge and minor-care hostility can disrupt continuity and emergency sensitivity.",
+     "protection": "Territorial human-rights law may support service access, but no documented care protections or outcomes.",
+     "interaction": "Medication or clinic records could trigger administrative suspicion, linking care to document/fraud exposure.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Counterterrorism rhetoric names radical gender ideology/pro-transgender hostility as security threats; agencies purge gender language and official posture encourages suspicion.",
+     "protection": "Civil-liberties litigation, court challenges and legal FAQ; territorial statute offers formal recourse.",
+     "interaction": "Rhetoric widens discretionary stops and verification, increasing severity after encounter.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National measures criminalize staff facilitating social transition and restrict minor care/funding; family travel can attract scrutiny over names/records.",
+     "protection": "Territory human-rights statute and student interpretation support inclusive schooling, but enforcement not documented.",
+     "interaction": "A guardian seeking school or clinic services may meet untested local protection against national hostility.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "No territory trans-violence data; national/state bias coverage uneven, so safety is not established.",
+     "protection": "National hate-crime statute and territorial law may provide recourse, but no documented visitor enforcement.",
+     "interaction": "Police/border discretion and hostile climate can worsen incidents.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Litigation leaves passport/facility scope unsettled; territorial statute untested; enforcement depends on orders in effect.",
+     "protection": "Active suits and legal aid FAQ may correct some rules, but outcomes are unpredictable.",
+     "interaction": "Remedy uncertainty forces travellers into document checks without reliable protection.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "0.15-A has routine presentation arrests and long custody; A has entry, facility and custody risk but no documented routine visitor arrest or capital charging, so A sits above it."
+    },
+    {
+     "anchor_id": "0.35-C",
+     "comparison": "0.35-C centers lodging reporting, eviction and fines; A adds federal entry fraud risk, facility exclusion and custody abuse, so A should rate below it."
+    },
+    {
+     "anchor_id": "0.85-E",
+     "comparison": "0.85-E has enforceable equality protections and modest friction; A relies on untested territorial statute under hostile federal orders, so A is far below."
+    }
+   ],
+   "synthesis": "Parent enforcement and territorial law operate simultaneously: federal document screening/facility exclusion sets the floor; territorial protections may be invoked but have no recorded effect, leaving remedies speculative. Hostile national rhetoric and custody practices raise severity after any encounter. The territory's relative advantage over B is absence of a local care/document/hostile layer, not functioning protections."
+  },
+  "B": {
+   "rating": 0.21,
+   "explanation": "Same federal passport/visa/facility/custody regime; state adds care bans, original-marker documents, custody care denial, hate-crime gap, active bathroom bill. Local ordinances and public-university protections are uneven and mostly resident-facing. Adult alone faces federal screening and patchwork facilities; with minor, care/school laws operationalize denial or disclosure. Violence data is undercount but not established above baseline. Score slightly above severe threshold due absence of current criminal facility statute, but hostile local care/document/recourse layer keeps it low.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal order ties passports/visas to birth sex, blocks mismatch markers, permits visa refusal and possible fraud findings when records cast doubt on sex.",
+     "protection": "No state-specific entry protection; city/county ordinances cannot override federal visa screening.",
+     "interaction": "Federal passport/visa mismatch is the dominant border exposure; state document rules add friction only where local IDs are needed.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal custody applies birth-sex conversion-style controls; immigration custody reports forced labour and sexual abuse; state custody bars public-funded transition care.",
+     "protection": "National hate-crime law and some local ordinances exist, but no state bias coverage and no documented visitor relief.",
+     "interaction": "Federal detention plus state care denial compounds harm after discovery.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal exclusion remains; state has no current bathroom statute, but a 2025 bill makes facility policy unstable.",
+     "protection": "City/county gender-identity ordinances cover part of population; university and public-employee policies exist.",
+     "interaction": "Access depends on federal site versus city/county setting; protection is patchwork and enforcement unknown.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "State bans minor puberty/hormone/surgery care, bars state funds for minors/inmates, and imposes sports exclusion.",
+     "protection": "Designated-visitor hospital right; local ordinances; no statewide care protection.",
+     "interaction": "Minor family seeking care may be forced to emergency or private routes, with denial possibly exposing records.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Parent counterterrorism rhetoric plus state hate-crime statute excludes gender identity and sexual orientation, limiting bias enforcement.",
+     "protection": "Public-employment and university non-discrimination orders; local ordinances; national law.",
+     "interaction": "Hostile framing and statutory gaps can make police treat incidents as ordinary crimes or ignore bias.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "State care bans, school parental-notification rule, sports exclusions; parent criminalizes teachers facilitating transition.",
+     "protection": "Some city/county ordinances and university policies, but no statewide family protection.",
+     "interaction": "A travelling minor seeking school or care can face mandated disclosure or service denial.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Reported trans-killing rate 3.0 per 100k with over three victims, undercount; no baseline comparison, not proven campaign.",
+     "protection": "National hate-crime law possible, but state bias statute excludes gender identity.",
+     "interaction": "Undercount plus limited state recourse creates uncertainty without elevated violence finding.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Bathroom bill unresolved; birth-certificate original-marker practice unknown; local ordinance coverage uneven.",
+     "protection": "Litigation history over 2016 law and domestic-violence orders may help, but current facility/care scope uncertain.",
+     "interaction": "Travellers cannot reliably know which city/county protections apply or whether legislative reversal occurs.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-B",
+     "comparison": "0.15-B has routine border detention in abusive cells; B has severe federal custody and visa refusal but no documented routine visitor arrest or capital charging, so B should sit above it."
+    },
+    {
+     "anchor_id": "0.45-D",
+     "comparison": "0.45-D universal registration/fines with rare custody; B adds birth-sex passport/facility exclusion, minor care bans and custody harm, so below it."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C respectful passport entry and brief administrative delays; B's federal screening, facility exclusion and state care gaps are far more severe, so much below."
+    }
+   ],
+   "synthesis": "Federal hostility is the common floor; state layer worsens care/document/recourse while providing patchwork city protections. Repealed bathroom ban limits current criminal exposure, but active legislation and hate-crime gaps leave remedies uncertain. For families, minor care and school rules can force service denial or parental exposure."
+  },
+  "difference_ri_minus_nh": -0.09
+ },
+ "parse_error": null,
+ "attempts": 1
+}

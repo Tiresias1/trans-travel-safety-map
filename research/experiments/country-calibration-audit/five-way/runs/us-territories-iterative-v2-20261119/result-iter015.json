@@ -1,0 +1,166 @@
+{
+ "iteration": 15,
+ "model": "luna",
+ "model_id": "openai/gpt-6-luna",
+ "status": "ok",
+ "cost_usd": "0.00290685",
+ "usage": {
+  "cost_usd": "0.00290685",
+  "input_tokens": 31158,
+  "output_tokens": 5190
+ },
+ "labels": {
+  "A": "ASM",
+  "B": "66186276B62688952876525:Alaska"
+ },
+ "A_region": "ASM",
+ "B_region": "66186276B62688952876525:Alaska",
+ "A_rating": 0.4,
+ "B_rating": 0.37,
+ "difference_B_minus_A": -0.03,
+ "parsed": {
+  "A": {
+   "rating": 0.4,
+   "explanation": "The national framework creates substantial visitor-facing exposure: entry officers are instructed to scrutinize sex discrepancies, government-funded facilities are restricted, and trans people in immigration custody have reported severe abuse. Lifetime immigration ineligibility is possible only if specific fraud elements are met, not automatic. The territory adds no documented trans-specific criminal offence or local facilities ban, and its fa'afafine tradition is a positive cultural signal; conservative social norms and a 2023 abuse charge temper that signal. Compared with B, A has stronger documented local recognition and fewer documented restrictions affecting travelling minors, but the shared national regime remains decisive. This is materially safer than routine identity-based arrest and torture, but not a low-risk setting.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "National officers are instructed to refuse cases with sex discrepancies or request evidence; suspected material misrepresentation may prompt consideration of lifetime ineligibility. Trans visitors have reported invasive screening and outing.",
+     "protection": "Fraud ineligibility is not automatic and requires four elements; limited waivers exist. A legal-aid FAQ addresses documentation.",
+     "interaction": "The national passport-marker rule governs national documents, not a visitor's home-issued passport, but visa and entry screening can still expose discrepancies.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Trans people in national immigration custody have reported forced labour, beatings, solitary confinement and severe sexual abuse. National prison policies include hormone removal and other coercive measures.",
+     "protection": "Not documented.",
+     "interaction": "A visitor subjected to entry investigation could encounter the documented national custody regime; the frequency for trans visitors is not established.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National policy bars trans people from government-funded single-sex facilities congruent with their identity. Mapped state/province bans add exposure in covered jurisdictions; no territory-specific ban is documented.",
+     "protection": "No territory-specific facilities protection is documented. Some national orders have been enjoined, but the operative scope varies.",
+     "interaction": "The national restriction remains relevant in the territory; local cultural recognition does not displace it. The dossier does not specify every facility covered in practice.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Care for minors is restricted in 27 state/provinces, with further national funding and rule measures described as proposed or contested. Territory-specific visitor care access is not documented.",
+     "protection": "Not documented.",
+     "interaction": "A travelling minor may encounter national or destination-level restrictions depending on location and which contested measures are operative; adult visitor care rules are not specified.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National orders and strategy use hostile anti-trans framing, including describing pro-trans groups as targets for counterterrorism prioritisation. The reward directive does not use trans identity as its criterion.",
+     "protection": "National gender-identity hate-crime law applies; a federal settlement addressed harassment of a territorial employee.",
+     "interaction": "The national rhetoric is a concerning signal but does not itself establish a directive to arrest trans visitors. Territory records show conservative attitudes alongside cultural recognition.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National measures direct investigations of schools and potential prosecution of those facilitating minors' social transition; care bans affect minors in 27 state/provinces. Territory-specific rules are not documented.",
+     "protection": "Not documented.",
+     "interaction": "A travelling family may face care or school-related constraints under national or destination rules; the dossier does not establish the precise territorial application.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "A 2023 sexual-abuse charge involving a trans teenager is the latest documented territorial case; its outcome is unstated. No territorial prevalence rate is available.",
+     "protection": "The national hate-crime statute covers gender identity; the territorial government settled an employment-harassment case, not a street-violence case.",
+     "interaction": "The single dated charge establishes a past event, not current frequency. National custody reports describe institutional abuse but do not establish street-violence rates in the territory.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "National passport litigation remains unresolved despite the Supreme Court allowing restrictions to take effect. No territorial visitor remedy for discrimination is documented.",
+     "protection": "Some national orders have been blocked or enjoined; national hate-crime protections and a territorial employment-case settlement are documented.",
+     "interaction": "Court challenges may alter current rules, but do not establish reliable relief for a visitor at screening or in custody. Territorial recognition and practical remedies for visitors remain unclear.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "A is materially safer: the dossier does not document routine visitor arrests for gender presentation, months-long pretrial detention or common custodial beatings. Severe custody abuse is documented in national immigration detention, but not as a routine pathway for trans visitors."
+    },
+    {
+     "anchor_id": "0.45-A",
+     "comparison": "A shares serious document and facilities exposure, but lacks the anchor's universal biometric checks and public-order detention mechanism. Conversely, A documents severe national custody abuse, making the consequences of escalation more serious."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "A is substantially less safe: entry scrutiny and facilities restrictions are operative national exposures, while custody abuse is documented. It lacks the anchor's reliably enforced protections, effective remedies and low-severity screening outcomes."
+    }
+   ],
+   "synthesis": "The operative regime is national and territorial together. Home-issued documents are not subject to the national passport-issuance rule, but entry screening can still scrutinize discrepancies and facilities restrictions reach government-funded settings. If an encounter escalates to national immigration custody, reported abuse is severe; the likelihood for an individual visitor is not established. The territory contributes a meaningful but limited positive signal through fa'afafine cultural recognition and no documented local adult facilities restriction, while conservative norms and a dated abuse case prevent treating silence as safety. Relative to B, A has fewer documented local constraints on travelling minors and stronger evidence of gender-diversity recognition; that does not offset the shared national exposures."
+  },
+  "B": {
+   "rating": 0.37,
+   "explanation": "B shares A's national entry, facilities, political and custody exposures. Locally, no statewide adult restroom ban or adult-care ban is documented, but discrimination protections are absent statewide and the state hate-crime statute omits gender identity. A school district requires birth-sex restroom use, statewide sports rules restrict transgender girls, and the medical-board care restriction remains a draft rather than an operative rule. These measures weigh most for families travelling with minors; they do not establish an adult-wide facility ban. Compared with A, B has less documented local cultural acceptance and more specific minor-facing restrictions, so it rates somewhat lower. The evidence does not support equating it with routine identity-based arrest or torture, nor with jurisdictions where protections reliably work.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "National officers are instructed to refuse cases with sex discrepancies or request evidence; suspected material misrepresentation may prompt consideration of lifetime ineligibility. Trans visitors have reported invasive screening and outing.",
+     "protection": "Fraud ineligibility is not automatic and requires four elements; limited waivers exist. A legal-aid FAQ addresses documentation.",
+     "interaction": "The national passport-marker rule governs national documents, not a visitor's home-issued passport, but visa and entry screening can still expose discrepancies.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Trans people in national immigration custody have reported forced labour, beatings, solitary confinement and severe sexual abuse. National prison policies include hormone removal and other coercive measures.",
+     "protection": "Not documented.",
+     "interaction": "A visitor subjected to entry investigation could encounter the documented national custody regime; the frequency for trans visitors is not established.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "National policy bars trans people from government-funded single-sex facilities congruent with their identity. One district requires trans students to use birth-sex facilities or a private option; no statewide adult restroom ban is documented.",
+     "protection": "No statewide adult facilities protection is documented. The district rule is limited to that district; it does not establish an adult-wide ban.",
+     "interaction": "National restrictions remain operative alongside local rules. A travelling minor attending school in the named district may face its policy; local rules do not displace national restrictions.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "No statewide adult-care ban is documented. The medical board approved a draft restricting care under 18, but it still requires review and public comment; national youth-care measures also apply or remain contested.",
+     "protection": "The draft is not yet an operative rule; no broader visitor-care protection is documented.",
+     "interaction": "A travelling minor's care access may be affected by national restrictions or later adoption of the state draft. Adult access is not shown to be prohibited by the division.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National orders and strategy use hostile anti-trans framing, including describing pro-trans groups as targets for counterterrorism prioritisation. Statewide nondiscrimination and gender-identity hate-crime coverage are absent.",
+     "protection": "Four municipalities have gender-identity nondiscrimination ordinances; the national gender-identity hate-crime statute applies.",
+     "interaction": "Municipal protections do not cover the whole division, and their enforcement is undocumented. The national reward directive does not make trans identity its criterion.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Statewide sports rules restrict transgender girls; one district mandates birth-sex facilities. A draft care restriction could expose providers to discipline if adopted. National school investigations and youth-care restrictions add exposure.",
+     "protection": "The earlier governor-backed facilities proposal failed; the medical-board draft is not yet operative.",
+     "interaction": "A visiting minor and guardian may face school, sports or care constraints; the local policies are not equivalent to a statewide adult facilities ban.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "The division's hate-crime statute omits gender identity. Trans-specific violence counts, a general homicide rate and police handling guidance are not documented.",
+     "protection": "National gender-identity hate-crime protections apply; four municipalities have nondiscrimination ordinances, with operation in practice not documented.",
+     "interaction": "The state-level penalty-enhancement gap may limit recourse after bias violence; the dossier does not establish local violence frequency or police hostility.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Outside four municipalities, visitors have no state/province or municipal recourse against discrimination in hotels, restaurants or workplaces. Practical enforcement of local ordinances is undocumented.",
+     "protection": "Four municipal ordinances cover gender identity; national court challenges have blocked or contested some measures.",
+     "interaction": "Local protections are geographically limited and cannot cancel national entry, facilities or custody exposures. The draft care rule's final status is unresolved.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "B is materially safer: no routine arrest of visitors for gender presentation, prolonged pretrial custody or common custodial beatings is documented in the division. National custody abuse is documented, but a routine visitor pathway to it is not."
+    },
+    {
+     "anchor_id": "0.45-A",
+     "comparison": "B has serious shared national exposures but lacks the anchor's universal biometric checks and public-order detention mechanism. Its documented minor-specific state rules and thin local remedies add exposure, without establishing routine adult detention."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "B is substantially less safe than a jurisdiction with trained border officers, effective appeals and compensation. Here, national entry restrictions and custody abuse are documented, and local protections are partial or geographically limited."
+    }
+   ],
+   "synthesis": "The national framework is the shared core: entry scrutiny can expose discrepancies, government-funded facilities are restricted, and severe abuse is reported in national immigration custody. B adds a school-district facilities rule and statewide sports restrictions affecting minors, while the care rule remains a draft and no statewide adult facilities or adult-care ban is documented. Statewide discrimination and hate-crime gaps leave visitors with limited local recourse; municipal ordinances cover only part of the population and their enforcement is unknown. Compared with A, B has more documented minor-facing local constraints and less evidence of cultural recognition, so it is somewhat less safe. Neither division-specific silence nor the absence of a trans-violence rate establishes safety."
+  },
+  "difference_ri_minus_nh": -0.03
+ },
+ "parse_error": null,
+ "attempts": 1
+}

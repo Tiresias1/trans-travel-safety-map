@@ -1,0 +1,174 @@
+{
+ "iteration": 9,
+ "model": "mimo",
+ "model_id": "xiaomi/mimo-v2.6-flash",
+ "status": "ok",
+ "cost_usd": "0.00712446",
+ "usage": {
+  "cost_usd": "0.00712446",
+  "input_tokens": 31125,
+  "output_tokens": 9882
+ },
+ "labels": {
+  "A": "ASM",
+  "B": "66186276B43071933723331:California"
+ },
+ "A_region": "ASM",
+ "B_region": "66186276B43071933723331:California",
+ "A_rating": 0.56,
+ "B_rating": 0.52,
+ "difference_B_minus_A": -0.04,
+ "parsed": {
+  "A": {
+   "rating": 0.56,
+   "explanation": "Both regimes share an identical federal layer: a 2025 sex-binary executive order, suspension of X/mismatched passport markers, a consular cable permitting refusal where documents cast 'reasonable doubt' on sex and inviting lifetime fraud findings, exclusion from federally funded single-sex facilities, conversion-therapy-style federal prison policy, and documented immigration-custody abuse — universal exposures for an outed visitor, still contested in court. A's territory adds no hostile layer: no sodomy offence, a documented culturally embedded fa'afafine tradition, Pride events, locally changeable markers, and only one dated 2023 abuse charge with no pattern. Religious conservatism produces friction, not threat. B's state adds a working sanctuary shield and identity-based prison housing, but also the nation's highest raw incident count and rising hate-crime reports.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal cable instructs refusal where documents cast 'reasonable doubt' on sex and invites lifetime fraud-ineligibility analysis; X and mismatched markers stopped Feb 2025; reports of passports blocked/confiscated; foreign governments now issue travel advisories about this country.",
+     "protection": "Existing X-marker passports valid to expiry; no documented refusal regime specific to this territory; local civil records office changes name and gender markers with medical documentation (climate signal only for a visitor).",
+     "interaction": "Border officers apply the federal cable at the territory's port of entry; local tolerance cannot offset federal screening, and document mismatch can escalate into fraud findings.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections bureau applies conversion-therapy-style policy to trans inmates from 2026 (hair cut, hormones removed); immigration custody reports forced labour, beatings, solitary and sexual abuse; a documented bathroom arrest elsewhere ended with 24 hours in a men's ward.",
+     "protection": "No documented trans custody mistreatment in the territory; federal employment/hate-crime remedies exist; several federal orders blocked or enjoined.",
+     "interaction": "A visitor arrested locally can be transferred into federal or immigration custody where the hostile federal policies apply; territory tolerance does not follow.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars trans people from government-funded single-sex facilities nationwide; nationally 21+ states restrict facilities, 4 criminalise in circumstances, with one documented arrest; public opinion supports birth-sex rules (66%).",
+     "protection": "No facility ban documented in the territory; the mapped state bans do not list it; culturally normalised gender diversity reduces social risk in ordinary venues.",
+     "interaction": "Federal facility exclusion reaches territory federal buildings and offices; territory custom governs private life but not federal premises.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Youth gender care banned in 27 states; Jan 2025 federal order framing care as 'mutilation'; DOJ hospital record subpoenas for under-19s; crisis-lifeline LGBTQ services shut; proposed federal insurance bar for under-18s.",
+     "protection": "Territory documents no care restriction, no refusal of care to visitors, and a clinical pathway implied by marker-change documentation requirements.",
+     "interaction": "A family seeking care could trigger federal scrutiny or record demands not shielded anywhere in the territory's own record.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism strategy prioritises 'radically pro-transgender' groups; DOJ reward memo; order directing investigation of 'gender ideology' in schools; majority public support for birth-sex document rules.",
+     "protection": "No territory-level threat framing documented; legislature defeated a same-sex marriage ban in 2003 with preserved fa'afafine testimony; officials disclaim targeting individuals who merely disagree.",
+     "interaction": "Federal framing sets the tone and could reach the territory through federal agents, but no local adoption of it is documented.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order directs criminal investigation/prosecution over facilitating a trans minor's social transition; hospital subpoenas for under-19s; care bans in 27 states — a parent travelling with a trans minor risks document-based refusal and record exposure.",
+     "protection": "No territory-specific punitive rule on minors, transition or guardians documented; no local enforcement record.",
+     "interaction": "Entry screening applies to the whole family: a child's document mismatch can escalate the family's entry case under the federal cable.",
+     "status": "not_documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "One dated 2023 charge of sexual abuse against a 16-year-old trans teen, no stated outcome; highly religious society where conservative gender attitudes dominate — friction level, no pattern documented.",
+     "protection": "No documented pattern of anti-trans violence; fa'afafine treated as integral to traditional culture with community organisations, Pride since 2016 and family-supported pageants; federal hate-crime statute applies.",
+     "interaction": "Small population means a single case carries weight, but the inventory records only one and no state involvement or impunity.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "No territory anti-discrimination statute or trans-specific recourse documented; marriage status unresolved and untested; thin data on violence prevalence; federal rules change with pending litigation.",
+     "protection": "Federal employment and hate-crime protections reach the territory; 2023 federal settlement with the territorial government shows a remedy operating; ACLU passport suit pending; legal-aid FAQ maintained.",
+     "interaction": "Federal remedies partially fill local gaps, but the volatility of federal litigation means the operative rule may change during the visit.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Varnalia criminalises mismatched presentation and routinely arrests visitors into months of pretrial custody with coerced confessions. Here no federal or territorial offence targets presentation; the federal document/entry regime produces refusal or fraud exposure, not routine arrest and long custody. Far above this anchor."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra runs a universal entry register excluding trans visitors with no remedy. A's federal cable allows refusal on sex doubt but is discretionary, contested in court and not a standing exclusion register; the territory adds no entry, facility or custody layer and documents cultural acceptance. Above 0.35."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel-style secondary screening, discretionary refusal and slow appeals closely match A's federal entry exposure. A sits slightly above because the territory documents cultural acceptance, no local hostility, no criminalisation and a working federal employment remedy, rather than border friction alone."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia trains border officers, guarantees respectful inspection and offers tribunal compensation for detention. A lacks that regime: officers act under a hostile cable, foreign governments issue travel advisories, and federal facility and custody policies are adverse. Below 0.75."
+    }
+   ],
+   "synthesis": "The traveller's operative regime is the federal layer plus the territory. Federal exposure dominates: sex-binary documents, a consular cable enabling refusal and lifetime fraud findings, exclusion from federally funded single-sex facilities, hostile federal custody policies, and external travel advisories — all universal or near-universal for an outed visitor, though contested in court. The territory contributes no hostile layer: no criminalisation, a documented tradition of gender diversity, no violence pattern, and working federal remedies. Religious conservatism yields friction rather than threat-framing. For a family, federal minor-care and record-subpoena policies apply with no local shield, keeping the score mid-scale despite the tolerant local society."
+  },
+  "B": {
+   "rating": 0.52,
+   "explanation": "The federal layer is identical to A's: binary-sex executive order, X/mismatched passport markers suspended, a consular cable permitting refusal on 'reasonable doubt' about sex with possible lifetime fraud findings, exclusion from federally funded single-sex facilities, conversion-therapy-style federal prison policy, immigration-custody abuse, and foreign travel advisories — universal exposures under active litigation. B's state adds genuine protective machinery: a sanctuary law shielding families travelling for youth care from abuse investigations and prosecution, identity-based prison housing with funded surgery, and a top-tier protective-law rating. Against that, the state records the nation's highest raw anti-LGBTQ incident count (198, no denominator), a documented rise in hate-crime reports in its largest city, and a governor platforming anti-trans figures — documented hostility with recourse in place.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal cable instructs refusal where documents cast 'reasonable doubt' on sex and invites lifetime fraud-ineligibility analysis; X/mismatched markers stopped Feb 2025; passports reportedly blocked; foreign governments issue travel advisories about this country.",
+     "protection": "No state-level entry layer documented; the state's protective-law band does not alter federal border screening; existing X-marker passports remain valid to expiry.",
+     "interaction": "State equality law never reaches the border desk: document mismatch at entry is governed solely by the federal cable, then may escalate into fraud findings.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections bureau applies conversion-therapy-style policy to trans inmates from 2026; immigration custody reports forced labour, beatings, solitary and sexual abuse; a documented bathroom arrest elsewhere ended with 24 hours in a men's ward.",
+     "protection": "State prisons house trans inmates by gender identity within general population and fund gender-affirming surgery (documented 2015, coding as of Jan 2021, unconfirmed later); federal hate-crime statute applies.",
+     "interaction": "State protections operate only in state custody; federal or immigration detention bypasses them entirely and activates the hostile federal policies.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars trans people from government-funded single-sex facilities nationwide; nationally 21+ states restrict facilities and 4 criminalise in circumstances, with one documented arrest; 66% public support for birth-sex document rules.",
+     "protection": "State placed in a top-tier 'safest laws' protective band (July 2026); no state facility ban is documented, though the inventory explicitly does not cover state facility or bathroom rules.",
+     "interaction": "Federal premises inside the state remain governed by the federal exclusion; private venues likely covered by state equality law, but this is inferred, not documented.",
+     "status": "uncertain"
+    },
+    "care_services": {
+     "exposure": "Federal order framing youth care as 'mutilation'; care bans in 27 states; proposed federal insurance bar for under-18s; DOJ hospital record subpoenas for under-19s; crisis-lifeline LGBTQ services shut.",
+     "protection": "State sanctuary law (Sept 2022) lets out-of-state youth obtain hormones/blockers and shields families travelling for care from child-abuse investigations and criminal prosecution — explicitly traveller-facing.",
+     "interaction": "State shield protects against state action only; federal subpoenas, funding threats and investigation powers are not displaced by it.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterstrategy prioritising 'radically pro-transgender' groups and DOJ reward memo; state governor documented platforming anti-trans figures alongside a documented rise in hate-crime reports in the largest city.",
+     "protection": "State in top-tier protective-law band (July 2026); federal statements disclaim targeting people who merely disagree; federal employment and hate-crime protections operative.",
+     "interaction": "Official platforming at state level normalises hostility that federal framing amplifies, but documented protective statutes give the visitor a remedy path.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order directs criminal investigation/prosecution over facilitating a trans minor's social transition; hospital subpoenas for under-19s; care bans in 27 states; a family's document mismatch can escalate entry screening under the federal cable.",
+     "protection": "State sanctuary law shields a parent or guardian travelling with a trans minor for care from abuse investigations and prosecution; no state punitive rule on minors documented.",
+     "interaction": "The shield is state-level; a family still faces federal document screening, federal record demands and federal funding threats that the state cannot block.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "198 anti-LGBTQ incidents in 2025 — the nation's highest raw count, but no population denominator, so magnitude is unresolved; law-enforcement data show a 'dramatic increase' in anti-LGBTQ hate-crime reports in the largest city over the same period.",
+     "protection": "State protective-law band with low recorded-incident rating in a July 2026 analysis; federal hate-crime statute; no documented trans-specific killing pattern or police impunity.",
+     "interaction": "Documented hostility is societal and rising, but recourse exists and no state actor is documented as a perpetrator — tier-3 hostility, not state targeting.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Incident counts lack denominators and are not trans-specific; the 2021 prison housing practice is unconfirmed since; state facility, ID and entry rules are explicitly not covered by the inventory.",
+     "protection": "Federal employment and hate-crime protections, state equality laws rated top-tier, an enforceable sanctuary statute, and pending federal litigation (ACLU passport suit) with several orders already enjoined.",
+     "interaction": "Remedies are real but partial: they operate against state/private actors and only weakly against federal border, custody and facility policy.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Varnalia criminalises mismatched presentation with routine arrests and months in pretrial custody, coerced confessions and no working remedy. B has no offence targeting presentation, no custody pattern against visitors, and active protective statutes — categorically above this anchor despite federal hostility."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra bars trans visitors via a standing register with no remedy. B's federal cable permits discretionary, litigation-challenged refusal rather than a universal exclusion register, and B's state adds a sanctuary shield and top-tier equality laws. Above 0.35."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel-style secondary screening, discretionary refusal and slow appeals match B's federal entry exposure closely. B sits around this level: it adds documented state protective machinery and a care shield, but also the nation's highest raw incident count, rising hate-crime reports and official anti-trans platforming."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia offers trained, respectful border inspection with tribunal appeals and compensation. B's federal screening runs under a hostile cable with fraud exposure, external travel advisories, and documented local hostility despite protective laws. Materially below 0.75."
+    }
+   ],
+   "synthesis": "B's operative regime is federal exposure plus a state that both protects and hosts hostility. Universal federal exposures — document/entry cable with fraud exposure, federally funded facility exclusion, hostile federal custody policies, minor-care and record demands — cannot be overridden by state law. The state's sanctuary shield is genuinely traveller-facing for families, its prison housing and equality statutes provide recourse, and its protective-law rating is documented. Against that sit the nation's highest raw anti-LGBTQ incident count (unddenominated), rising hate-crime reports, and official anti-trans platforming — documented societal hostility with functioning remedies. For an adult alone, the federal entry and facility regime plus street hostility dominate; for a family, the sanctuary shield partly offsets federal minor-care risk."
+  },
+  "difference_ri_minus_nh": -0.04
+ },
+ "parse_error": null,
+ "attempts": 1
+}

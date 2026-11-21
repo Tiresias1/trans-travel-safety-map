@@ -1,0 +1,2135 @@
+{
+ "run_id": "us-territories-iterative-v2-20261119",
+ "created": "2026-11-21T21:37:44+00:00",
+ "instrument": "single-rating-anchored-v4-structured (combined A/B, iterative pairwise)",
+ "effort": "medium",
+ "attempts_per_pairing": 1,
+ "seed": 20261119,
+ "candidate_k": 3,
+ "candidate_rule": "nearest 3 frozen CURRENT US state scores (data/admin1.json, iterativeScore else score) to territory current running score, tie-break region",
+ "alpha": 0.2,
+ "update_schedule": "updates 1-15 (all updates in this run): 0.80*old + 0.20*new",
+ "prior_USA_score": 0.379039,
+ "prior_source": "data/countries.json USA current score (iterativeScore else score)",
+ "partner_pool_source": "data/admin1.json USA state current scores (iterativeScore else score), post global-adm1 sync (frozen, partners not updated)",
+ "dossier_rule": "shared US parent-framework block extracted from frozen v4 admin1_USA state cells (identical across 51 states) + territory local dossier from its v4 countries cell under '### TERRITORY LOCAL EVIDENCE', federal-deferral sentence replaced (ASM, MNP)",
+ "dossier_parity": {
+  "keywords": [
+   "executive order",
+   "passport",
+   "visa",
+   "binary",
+   "custody",
+   "federal"
+  ],
+  "framework_block": {
+   "executive order": 11,
+   "passport": 13,
+   "visa": 2,
+   "binary": 5,
+   "custody": 4,
+   "federal": 0
+  },
+  "state_min": {
+   "executive order": 11,
+   "passport": 13,
+   "visa": 2,
+   "binary": 5,
+   "custody": 4,
+   "federal": 0
+  },
+  "state_max": {
+   "executive order": 21,
+   "passport": 16,
+   "visa": 3,
+   "binary": 8,
+   "custody": 10,
+   "federal": 0
+  },
+  "territories": {
+   "ASM": {
+    "executive order": 12,
+    "passport": 14,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 6
+   },
+   "GUM": {
+    "executive order": 12,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 5
+   },
+   "VIR": {
+    "executive order": 11,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 3
+   },
+   "MNP": {
+    "executive order": 11,
+    "passport": 13,
+    "visa": 2,
+    "binary": 5,
+    "custody": 4,
+    "federal": 4
+   }
+  },
+  "deferral_replaced": {
+   "ASM": true,
+   "GUM": false,
+   "VIR": false,
+   "MNP": true
+  }
+ },
+ "framework_sha256": "a370285d5f72bf98170d6520e0de6a0d809efa91b30d3219ff70c5a4c00190f3",
+ "territory_dossier_sha256": {
+  "ASM": "c92e5c525f4f940085a9b6fff6cf7dd2f041ab2ae5178ed9891f6c9853ecc174",
+  "GUM": "4df950b4caf4dc10f93b25b1893480deb1c7f5ebc0db3a1df95862f403cc4bd6",
+  "VIR": "c7e5f8266f455c83fe19b8dd534f56c65c17d7da949ed8d7fe574fd9ac8e9a31",
+  "MNP": "ef88f0dd75167c577f069026d605ec9472a41fc21629dbe412297c89ba7060b4"
+ },
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_selection": "globally least-used model; ties by seeded shuffle (model RNG seed+1)",
+ "model_usage": {
+  "mimo": 9,
+  "deepseek": 8,
+  "qwen": 9,
+  "glm": 8,
+  "haiku": 8,
+  "luna": 9,
+  "muse": 9
+ },
+ "system_sha256": "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "n_pairings_planned": 60,
+ "n_pairings": 60,
+ "n_ok": 48,
+ "n_rejected": 12,
+ "status_by_model": {
+  "qwen": {
+   "rejected": 4,
+   "ok": 5
+  },
+  "glm": {
+   "rejected": 4,
+   "ok": 4
+  },
+  "haiku": {
+   "ok": 8
+  },
+  "mimo": {
+   "ok": 5,
+   "rejected": 4
+  },
+  "muse": {
+   "ok": 9
+  },
+  "luna": {
+   "ok": 9
+  },
+  "deepseek": {
+   "ok": 8
+  }
+ },
+ "cost_by_model_usd": {
+  "qwen": "0.088304844",
+  "glm": "0.03905030",
+  "haiku": "0.0653506",
+  "mimo": "0.066268988",
+  "muse": "0.031103420",
+  "luna": "0.036607985",
+  "deepseek": "0.05913862156"
+ },
+ "total_usd": "0.38582475856",
+ "initial_scores": {
+  "ASM": 0.379039,
+  "GUM": 0.379039,
+  "VIR": 0.379039,
+  "MNP": 0.379039
+ },
+ "final_running_scores": {
+  "ASM": 0.4166858107102169,
+  "GUM": 0.4071059419313735,
+  "VIR": 0.37041412438189686,
+  "MNP": 0.407331725390971
+ },
+ "update_counts": {
+  "ASM": 12,
+  "GUM": 13,
+  "VIR": 12,
+  "MNP": 11
+ },
+ "drift_summary": {
+  "mean_drift": 0.021345400603614548,
+  "mean_abs_drift": 0.025657838412666126,
+  "max_abs_drift": 0.03764681071021686,
+  "min_drift": -0.008624875618103156,
+  "max_drift": 0.03764681071021686
+ },
+ "territories": {
+  "ASM": {
+   "name": "American Samoa",
+   "region": "ASM",
+   "initial_score": 0.379039,
+   "final_score": 0.4166858107102169,
+   "drift_final_minus_initial": 0.03764681071021686,
+   "update_count": 12,
+   "update_history": [
+    {
+     "iteration": 3,
+     "partner_region": "66186276B73402293045483:Nebraska",
+     "partner_name": "Nebraska",
+     "partner_frozen_score": 0.383675,
+     "model": "haiku",
+     "rating": 0.42,
+     "alpha": 0.2,
+     "old_score": 0.379039,
+     "new_score": 0.38723120000000005,
+     "update_number": 1
+    },
+    {
+     "iteration": 4,
+     "partner_region": "66186276B94082813086253:District of Columbia",
+     "partner_name": "District of Columbia",
+     "partner_frozen_score": 0.399584,
+     "model": "mimo",
+     "rating": 0.58,
+     "alpha": 0.2,
+     "old_score": 0.38723120000000005,
+     "new_score": 0.42578496000000005,
+     "update_number": 2
+    },
+    {
+     "iteration": 5,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "muse",
+     "rating": 0.57,
+     "alpha": 0.2,
+     "old_score": 0.42578496000000005,
+     "new_score": 0.45462796800000005,
+     "update_number": 3
+    },
+    {
+     "iteration": 6,
+     "partner_region": "66186276B98615608994420:Nevada",
+     "partner_name": "Nevada",
+     "partner_frozen_score": 0.463097,
+     "model": "luna",
+     "rating": 0.43,
+     "alpha": 0.2,
+     "old_score": 0.45462796800000005,
+     "new_score": 0.4497023744000001,
+     "update_number": 4
+    },
+    {
+     "iteration": 7,
+     "partner_region": "66186276B78821008370123:Maine",
+     "partner_name": "Maine",
+     "partner_frozen_score": 0.457308,
+     "model": "deepseek",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.4497023744000001,
+     "new_score": 0.4397618995200001,
+     "update_number": 5
+    },
+    {
+     "iteration": 8,
+     "partner_region": "66186276B91272823970344:Wisconsin",
+     "partner_name": "Wisconsin",
+     "partner_frozen_score": 0.451209,
+     "model": "haiku",
+     "rating": 0.42,
+     "alpha": 0.2,
+     "old_score": 0.4397618995200001,
+     "new_score": 0.4358095196160001,
+     "update_number": 6
+    },
+    {
+     "iteration": 9,
+     "partner_region": "66186276B43071933723331:California",
+     "partner_name": "California",
+     "partner_frozen_score": 0.437858,
+     "model": "mimo",
+     "rating": 0.56,
+     "alpha": 0.2,
+     "old_score": 0.4358095196160001,
+     "new_score": 0.4606476156928001,
+     "update_number": 7
+    },
+    {
+     "iteration": 10,
+     "partner_region": "66186276B78821008370123:Maine",
+     "partner_name": "Maine",
+     "partner_frozen_score": 0.457308,
+     "model": "qwen",
+     "rating": 0.24,
+     "alpha": 0.2,
+     "old_score": 0.4606476156928001,
+     "new_score": 0.4165180925542401,
+     "update_number": 8
+    },
+    {
+     "iteration": 11,
+     "partner_region": "66186276B86627915353587:New Hampshire",
+     "partner_name": "New Hampshire",
+     "partner_frozen_score": 0.420498,
+     "model": "muse",
+     "rating": 0.45,
+     "alpha": 0.2,
+     "old_score": 0.4165180925542401,
+     "new_score": 0.42321447404339213,
+     "update_number": 9
+    },
+    {
+     "iteration": 12,
+     "partner_region": "66186276B62688952876525:Alaska",
+     "partner_name": "Alaska",
+     "partner_frozen_score": 0.420574,
+     "model": "luna",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.42321447404339213,
+     "new_score": 0.4185715792347137,
+     "update_number": 10
+    },
+    {
+     "iteration": 13,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "deepseek",
+     "rating": 0.43,
+     "alpha": 0.2,
+     "old_score": 0.4185715792347137,
+     "new_score": 0.420857263387771,
+     "update_number": 11
+    },
+    {
+     "iteration": 15,
+     "partner_region": "66186276B62688952876525:Alaska",
+     "partner_name": "Alaska",
+     "partner_frozen_score": 0.420574,
+     "model": "luna",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.420857263387771,
+     "new_score": 0.4166858107102169,
+     "update_number": 12
+    }
+   ]
+  },
+  "GUM": {
+   "name": "Guam",
+   "region": "GUM",
+   "initial_score": 0.379039,
+   "final_score": 0.4071059419313735,
+   "drift_final_minus_initial": 0.02806694193137349,
+   "update_count": 13,
+   "update_history": [
+    {
+     "iteration": 17,
+     "partner_region": "66186276B73402293045483:Nebraska",
+     "partner_name": "Nebraska",
+     "partner_frozen_score": 0.383675,
+     "model": "glm",
+     "rating": 0.52,
+     "alpha": 0.2,
+     "old_score": 0.379039,
+     "new_score": 0.4072312,
+     "update_number": 1
+    },
+    {
+     "iteration": 19,
+     "partner_region": "66186276B6801956407400:North Carolina",
+     "partner_name": "North Carolina",
+     "partner_frozen_score": 0.404397,
+     "model": "haiku",
+     "rating": 0.45,
+     "alpha": 0.2,
+     "old_score": 0.4072312,
+     "new_score": 0.41578496000000004,
+     "update_number": 2
+    },
+    {
+     "iteration": 20,
+     "partner_region": "66186276B98555229882405:Washington",
+     "partner_name": "Washington",
+     "partner_frozen_score": 0.41363,
+     "model": "deepseek",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.41578496000000004,
+     "new_score": 0.41262796800000007,
+     "update_number": 3
+    },
+    {
+     "iteration": 21,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "muse",
+     "rating": 0.52,
+     "alpha": 0.2,
+     "old_score": 0.41262796800000007,
+     "new_score": 0.4341023744000001,
+     "update_number": 4
+    },
+    {
+     "iteration": 22,
+     "partner_region": "66186276B43071933723331:California",
+     "partner_name": "California",
+     "partner_frozen_score": 0.437858,
+     "model": "deepseek",
+     "rating": 0.36,
+     "alpha": 0.2,
+     "old_score": 0.4341023744000001,
+     "new_score": 0.4192818995200001,
+     "update_number": 5
+    },
+    {
+     "iteration": 23,
+     "partner_region": "66186276B86627915353587:New Hampshire",
+     "partner_name": "New Hampshire",
+     "partner_frozen_score": 0.420498,
+     "model": "luna",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.4192818995200001,
+     "new_score": 0.4154255196160001,
+     "update_number": 6
+    },
+    {
+     "iteration": 24,
+     "partner_region": "66186276B98555229882405:Washington",
+     "partner_name": "Washington",
+     "partner_frozen_score": 0.41363,
+     "model": "haiku",
+     "rating": 0.42,
+     "alpha": 0.2,
+     "old_score": 0.4154255196160001,
+     "new_score": 0.4163404156928001,
+     "update_number": 7
+    },
+    {
+     "iteration": 25,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "glm",
+     "rating": 0.45,
+     "alpha": 0.2,
+     "old_score": 0.4163404156928001,
+     "new_score": 0.42307233255424015,
+     "update_number": 8
+    },
+    {
+     "iteration": 26,
+     "partner_region": "66186276B86627915353587:New Hampshire",
+     "partner_name": "New Hampshire",
+     "partner_frozen_score": 0.420498,
+     "model": "muse",
+     "rating": 0.58,
+     "alpha": 0.2,
+     "old_score": 0.42307233255424015,
+     "new_score": 0.4544578660433921,
+     "update_number": 9
+    },
+    {
+     "iteration": 27,
+     "partner_region": "66186276B78821008370123:Maine",
+     "partner_name": "Maine",
+     "partner_frozen_score": 0.457308,
+     "model": "mimo",
+     "rating": 0.55,
+     "alpha": 0.2,
+     "old_score": 0.4544578660433921,
+     "new_score": 0.47356629283471374,
+     "update_number": 10
+    },
+    {
+     "iteration": 28,
+     "partner_region": "66186276B6628180846672:Pennsylvania",
+     "partner_name": "Pennsylvania",
+     "partner_frozen_score": 0.474378,
+     "model": "qwen",
+     "rating": 0.28,
+     "alpha": 0.2,
+     "old_score": 0.47356629283471374,
+     "new_score": 0.434853034267771,
+     "update_number": 11
+    },
+    {
+     "iteration": 29,
+     "partner_region": "66186276B62688952876525:Alaska",
+     "partner_name": "Alaska",
+     "partner_frozen_score": 0.420574,
+     "model": "deepseek",
+     "rating": 0.38,
+     "alpha": 0.2,
+     "old_score": 0.434853034267771,
+     "new_score": 0.42388242741421683,
+     "update_number": 12
+    },
+    {
+     "iteration": 30,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "qwen",
+     "rating": 0.34,
+     "alpha": 0.2,
+     "old_score": 0.42388242741421683,
+     "new_score": 0.4071059419313735,
+     "update_number": 13
+    }
+   ]
+  },
+  "VIR": {
+   "name": "US Virgin Islands",
+   "region": "VIR",
+   "initial_score": 0.379039,
+   "final_score": 0.37041412438189686,
+   "drift_final_minus_initial": -0.008624875618103156,
+   "update_count": 12,
+   "update_history": [
+    {
+     "iteration": 31,
+     "partner_region": "66186276B22971435435932:Kentucky",
+     "partner_name": "Kentucky",
+     "partner_frozen_score": 0.382122,
+     "model": "luna",
+     "rating": 0.39,
+     "alpha": 0.2,
+     "old_score": 0.379039,
+     "new_score": 0.38123120000000005,
+     "update_number": 1
+    },
+    {
+     "iteration": 32,
+     "partner_region": "66186276B73402293045483:Nebraska",
+     "partner_name": "Nebraska",
+     "partner_frozen_score": 0.383675,
+     "model": "mimo",
+     "rating": 0.42,
+     "alpha": 0.2,
+     "old_score": 0.38123120000000005,
+     "new_score": 0.3889849600000001,
+     "update_number": 2
+    },
+    {
+     "iteration": 33,
+     "partner_region": "66186276B22971435435932:Kentucky",
+     "partner_name": "Kentucky",
+     "partner_frozen_score": 0.382122,
+     "model": "glm",
+     "rating": 0.56,
+     "alpha": 0.2,
+     "old_score": 0.3889849600000001,
+     "new_score": 0.42318796800000014,
+     "update_number": 3
+    },
+    {
+     "iteration": 34,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "haiku",
+     "rating": 0.35,
+     "alpha": 0.2,
+     "old_score": 0.42318796800000014,
+     "new_score": 0.40855037440000014,
+     "update_number": 4
+    },
+    {
+     "iteration": 35,
+     "partner_region": "66186276B6801956407400:North Carolina",
+     "partner_name": "North Carolina",
+     "partner_frozen_score": 0.404397,
+     "model": "muse",
+     "rating": 0.54,
+     "alpha": 0.2,
+     "old_score": 0.40855037440000014,
+     "new_score": 0.43484029952000014,
+     "update_number": 5
+    },
+    {
+     "iteration": 36,
+     "partner_region": "66186276B43071933723331:California",
+     "partner_name": "California",
+     "partner_frozen_score": 0.437858,
+     "model": "deepseek",
+     "rating": 0.38,
+     "alpha": 0.2,
+     "old_score": 0.43484029952000014,
+     "new_score": 0.4238722396160001,
+     "update_number": 6
+    },
+    {
+     "iteration": 37,
+     "partner_region": "66186276B62688952876525:Alaska",
+     "partner_name": "Alaska",
+     "partner_frozen_score": 0.420574,
+     "model": "luna",
+     "rating": 0.41,
+     "alpha": 0.2,
+     "old_score": 0.4238722396160001,
+     "new_score": 0.42109779169280015,
+     "update_number": 7
+    },
+    {
+     "iteration": 38,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "muse",
+     "rating": 0.49,
+     "alpha": 0.2,
+     "old_score": 0.42109779169280015,
+     "new_score": 0.43487823335424014,
+     "update_number": 8
+    },
+    {
+     "iteration": 42,
+     "partner_region": "66186276B43071933723331:California",
+     "partner_name": "California",
+     "partner_frozen_score": 0.437858,
+     "model": "haiku",
+     "rating": 0.32,
+     "alpha": 0.2,
+     "old_score": 0.43487823335424014,
+     "new_score": 0.41190258668339214,
+     "update_number": 9
+    },
+    {
+     "iteration": 43,
+     "partner_region": "66186276B82803899326534:Indiana",
+     "partner_name": "Indiana",
+     "partner_frozen_score": 0.41724,
+     "model": "luna",
+     "rating": 0.34,
+     "alpha": 0.2,
+     "old_score": 0.41190258668339214,
+     "new_score": 0.39752206934671375,
+     "update_number": 10
+    },
+    {
+     "iteration": 44,
+     "partner_region": "66186276B6801956407400:North Carolina",
+     "partner_name": "North Carolina",
+     "partner_frozen_score": 0.404397,
+     "model": "qwen",
+     "rating": 0.3,
+     "alpha": 0.2,
+     "old_score": 0.39752206934671375,
+     "new_score": 0.37801765547737104,
+     "update_number": 11
+    },
+    {
+     "iteration": 45,
+     "partner_region": "66186276B22971435435932:Kentucky",
+     "partner_name": "Kentucky",
+     "partner_frozen_score": 0.382122,
+     "model": "deepseek",
+     "rating": 0.34,
+     "alpha": 0.2,
+     "old_score": 0.37801765547737104,
+     "new_score": 0.37041412438189686,
+     "update_number": 12
+    }
+   ]
+  },
+  "MNP": {
+   "name": "Northern Mariana Islands",
+   "region": "MNP",
+   "initial_score": 0.379039,
+   "final_score": 0.407331725390971,
+   "drift_final_minus_initial": 0.028292725390970996,
+   "update_count": 11,
+   "update_history": [
+    {
+     "iteration": 46,
+     "partner_region": "66186276B31593004124297:Utah",
+     "partner_name": "Utah",
+     "partner_frozen_score": 0.370547,
+     "model": "haiku",
+     "rating": 0.36,
+     "alpha": 0.2,
+     "old_score": 0.379039,
+     "new_score": 0.37523120000000004,
+     "update_number": 1
+    },
+    {
+     "iteration": 47,
+     "partner_region": "66186276B22971435435932:Kentucky",
+     "partner_name": "Kentucky",
+     "partner_frozen_score": 0.382122,
+     "model": "glm",
+     "rating": 0.45,
+     "alpha": 0.2,
+     "old_score": 0.37523120000000004,
+     "new_score": 0.3901849600000001,
+     "update_number": 2
+    },
+    {
+     "iteration": 49,
+     "partner_region": "66186276B73402293045483:Nebraska",
+     "partner_name": "Nebraska",
+     "partner_frozen_score": 0.383675,
+     "model": "muse",
+     "rating": 0.48,
+     "alpha": 0.2,
+     "old_score": 0.3901849600000001,
+     "new_score": 0.4081479680000001,
+     "update_number": 3
+    },
+    {
+     "iteration": 50,
+     "partner_region": "66186276B38006515706420:South Dakota",
+     "partner_name": "South Dakota",
+     "partner_frozen_score": 0.407784,
+     "model": "luna",
+     "rating": 0.38,
+     "alpha": 0.2,
+     "old_score": 0.4081479680000001,
+     "new_score": 0.4025183744000001,
+     "update_number": 4
+    },
+    {
+     "iteration": 52,
+     "partner_region": "66186276B38006515706420:South Dakota",
+     "partner_name": "South Dakota",
+     "partner_frozen_score": 0.407784,
+     "model": "haiku",
+     "rating": 0.33,
+     "alpha": 0.2,
+     "old_score": 0.4025183744000001,
+     "new_score": 0.3880146995200001,
+     "update_number": 5
+    },
+    {
+     "iteration": 55,
+     "partner_region": "66186276B22971435435932:Kentucky",
+     "partner_name": "Kentucky",
+     "partner_frozen_score": 0.382122,
+     "model": "muse",
+     "rating": 0.4,
+     "alpha": 0.2,
+     "old_score": 0.3880146995200001,
+     "new_score": 0.3904117596160001,
+     "update_number": 6
+    },
+    {
+     "iteration": 56,
+     "partner_region": "66186276B73402293045483:Nebraska",
+     "partner_name": "Nebraska",
+     "partner_frozen_score": 0.383675,
+     "model": "deepseek",
+     "rating": 0.33,
+     "alpha": 0.2,
+     "old_score": 0.3904117596160001,
+     "new_score": 0.3783294076928001,
+     "update_number": 7
+    },
+    {
+     "iteration": 57,
+     "partner_region": "66186276B31593004124297:Utah",
+     "partner_name": "Utah",
+     "partner_frozen_score": 0.370547,
+     "model": "muse",
+     "rating": 0.52,
+     "alpha": 0.2,
+     "old_score": 0.3783294076928001,
+     "new_score": 0.40666352615424006,
+     "update_number": 8
+    },
+    {
+     "iteration": 58,
+     "partner_region": "66186276B98555229882405:Washington",
+     "partner_name": "Washington",
+     "partner_frozen_score": 0.41363,
+     "model": "mimo",
+     "rating": 0.44,
+     "alpha": 0.2,
+     "old_score": 0.40666352615424006,
+     "new_score": 0.4133308209233921,
+     "update_number": 9
+    },
+    {
+     "iteration": 59,
+     "partner_region": "66186276B38006515706420:South Dakota",
+     "partner_name": "South Dakota",
+     "partner_frozen_score": 0.407784,
+     "model": "qwen",
+     "rating": 0.38,
+     "alpha": 0.2,
+     "old_score": 0.4133308209233921,
+     "new_score": 0.4066646567387137,
+     "update_number": 10
+    },
+    {
+     "iteration": 60,
+     "partner_region": "66186276B6801956407400:North Carolina",
+     "partner_name": "North Carolina",
+     "partner_frozen_score": 0.404397,
+     "model": "luna",
+     "rating": 0.41,
+     "alpha": 0.2,
+     "old_score": 0.4066646567387137,
+     "new_score": 0.407331725390971,
+     "update_number": 11
+    }
+   ]
+  }
+ },
+ "pair_history": [
+  {
+   "iteration": 1,
+   "model": "qwen",
+   "A_region": "ASM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "American Samoa",
+   "B_name": "Nebraska",
+   "status": "rejected",
+   "combined_user_sha256": "9a1660e29ac7490ccda4e5501227b90ee3406935d2fd8a991ab35c78a65f8f0f",
+   "cost_usd": "0.008468262"
+  },
+  {
+   "iteration": 2,
+   "model": "glm",
+   "A_region": "ASM",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "American Samoa",
+   "B_name": "Kentucky",
+   "status": "rejected",
+   "combined_user_sha256": "8c604593776fa4032ead689f0febd8b32bc75716aacac76bb087e1398c061f39",
+   "cost_usd": "0.00346255"
+  },
+  {
+   "iteration": 3,
+   "model": "haiku",
+   "A_region": "ASM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "American Samoa",
+   "B_name": "Nebraska",
+   "status": "ok",
+   "combined_user_sha256": "9a1660e29ac7490ccda4e5501227b90ee3406935d2fd8a991ab35c78a65f8f0f",
+   "cost_usd": "0.0084212",
+   "A_rating": 0.42,
+   "B_rating": 0.3,
+   "difference_B_minus_A": -0.12,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.379039,
+     "new_score": 0.38723120000000005
+    }
+   ]
+  },
+  {
+   "iteration": 4,
+   "model": "mimo",
+   "A_region": "ASM",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "A_name": "American Samoa",
+   "B_name": "District of Columbia",
+   "status": "ok",
+   "combined_user_sha256": "5342fcd38ed5e3708be3cb07c256e7fe926db03b2229dcc4f5794a11ad59e3bc",
+   "cost_usd": "0.0083692",
+   "A_rating": 0.58,
+   "B_rating": 0.45,
+   "difference_B_minus_A": -0.13,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.58,
+     "old_score": 0.38723120000000005,
+     "new_score": 0.42578496000000005
+    }
+   ]
+  },
+  {
+   "iteration": 5,
+   "model": "muse",
+   "A_region": "ASM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "American Samoa",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "e401eb6f793e95bf3dba9c8f48362e350f66a0706ed969cc9ea2caf5159ccfec",
+   "cost_usd": "0.003426488",
+   "A_rating": 0.57,
+   "B_rating": 0.46,
+   "difference_B_minus_A": -0.11,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.57,
+     "old_score": 0.42578496000000005,
+     "new_score": 0.45462796800000005
+    }
+   ]
+  },
+  {
+   "iteration": 6,
+   "model": "luna",
+   "A_region": "ASM",
+   "B_region": "66186276B98615608994420:Nevada",
+   "A_name": "American Samoa",
+   "B_name": "Nevada",
+   "status": "ok",
+   "combined_user_sha256": "f01d50c232caaa4494a159f996e3ddbc398717dc86d3e240dde62361cf444fb6",
+   "cost_usd": "0.00425522",
+   "A_rating": 0.43,
+   "B_rating": 0.55,
+   "difference_B_minus_A": 0.12,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.43,
+     "old_score": 0.45462796800000005,
+     "new_score": 0.4497023744000001
+    }
+   ]
+  },
+  {
+   "iteration": 7,
+   "model": "deepseek",
+   "A_region": "ASM",
+   "B_region": "66186276B78821008370123:Maine",
+   "A_name": "American Samoa",
+   "B_name": "Maine",
+   "status": "ok",
+   "combined_user_sha256": "d897e81537773c02c77a3c0bad7608885882bd73af92ade1781d663921d5b284",
+   "cost_usd": "0.0065506",
+   "A_rating": 0.4,
+   "B_rating": 0.63,
+   "difference_B_minus_A": 0.23,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.4497023744000001,
+     "new_score": 0.4397618995200001
+    }
+   ]
+  },
+  {
+   "iteration": 8,
+   "model": "haiku",
+   "A_region": "ASM",
+   "B_region": "66186276B91272823970344:Wisconsin",
+   "A_name": "American Samoa",
+   "B_name": "Wisconsin",
+   "status": "ok",
+   "combined_user_sha256": "b77706a8ab2493a28a72c6c142e10257b7255b0264f9445c2dd9dcddb85c33fc",
+   "cost_usd": "0.0079616",
+   "A_rating": 0.42,
+   "B_rating": 0.6,
+   "difference_B_minus_A": 0.18,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.4397618995200001,
+     "new_score": 0.4358095196160001
+    }
+   ]
+  },
+  {
+   "iteration": 9,
+   "model": "mimo",
+   "A_region": "ASM",
+   "B_region": "66186276B43071933723331:California",
+   "A_name": "American Samoa",
+   "B_name": "California",
+   "status": "ok",
+   "combined_user_sha256": "e22c69f811ed79e99ae8d6aad67856b82a3bca33a9604353000f0f9d075498d3",
+   "cost_usd": "0.00712446",
+   "A_rating": 0.56,
+   "B_rating": 0.52,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.56,
+     "old_score": 0.4358095196160001,
+     "new_score": 0.4606476156928001
+    }
+   ]
+  },
+  {
+   "iteration": 10,
+   "model": "qwen",
+   "A_region": "ASM",
+   "B_region": "66186276B78821008370123:Maine",
+   "A_name": "American Samoa",
+   "B_name": "Maine",
+   "status": "ok",
+   "combined_user_sha256": "d897e81537773c02c77a3c0bad7608885882bd73af92ade1781d663921d5b284",
+   "cost_usd": "0.01178514",
+   "A_rating": 0.24,
+   "B_rating": 0.58,
+   "difference_B_minus_A": 0.34,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.24,
+     "old_score": 0.4606476156928001,
+     "new_score": 0.4165180925542401
+    }
+   ]
+  },
+  {
+   "iteration": 11,
+   "model": "muse",
+   "A_region": "ASM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "A_name": "American Samoa",
+   "B_name": "New Hampshire",
+   "status": "ok",
+   "combined_user_sha256": "d1b2a21f357f8d4aff982e70756d71312943c6e2c9364b339e696afc9079ea5d",
+   "cost_usd": "0.003382988",
+   "A_rating": 0.45,
+   "B_rating": 0.55,
+   "difference_B_minus_A": 0.1,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 9,
+     "alpha": 0.2,
+     "rating": 0.45,
+     "old_score": 0.4165180925542401,
+     "new_score": 0.42321447404339213
+    }
+   ]
+  },
+  {
+   "iteration": 12,
+   "model": "luna",
+   "A_region": "ASM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "A_name": "American Samoa",
+   "B_name": "Alaska",
+   "status": "ok",
+   "combined_user_sha256": "1c4b6806dbcb8740c743e7566ca3508fd714ade4e2ff5cd776d2b9b744094dfc",
+   "cost_usd": "0.004355095",
+   "A_rating": 0.4,
+   "B_rating": 0.37,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 10,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.42321447404339213,
+     "new_score": 0.4185715792347137
+    }
+   ]
+  },
+  {
+   "iteration": 13,
+   "model": "deepseek",
+   "A_region": "ASM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "American Samoa",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "e401eb6f793e95bf3dba9c8f48362e350f66a0706ed969cc9ea2caf5159ccfec",
+   "cost_usd": "0.00886395",
+   "A_rating": 0.43,
+   "B_rating": 0.39,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 11,
+     "alpha": 0.2,
+     "rating": 0.43,
+     "old_score": 0.4185715792347137,
+     "new_score": 0.420857263387771
+    }
+   ]
+  },
+  {
+   "iteration": 14,
+   "model": "glm",
+   "A_region": "ASM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "A_name": "American Samoa",
+   "B_name": "New Hampshire",
+   "status": "rejected",
+   "combined_user_sha256": "d1b2a21f357f8d4aff982e70756d71312943c6e2c9364b339e696afc9079ea5d",
+   "cost_usd": "0.0084527"
+  },
+  {
+   "iteration": 15,
+   "model": "luna",
+   "A_region": "ASM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "A_name": "American Samoa",
+   "B_name": "Alaska",
+   "status": "ok",
+   "combined_user_sha256": "1c4b6806dbcb8740c743e7566ca3508fd714ade4e2ff5cd776d2b9b744094dfc",
+   "cost_usd": "0.00290685",
+   "A_rating": 0.4,
+   "B_rating": 0.37,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "ASM",
+     "name": "American Samoa",
+     "update_number": 12,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.420857263387771,
+     "new_score": 0.4166858107102169
+    }
+   ]
+  },
+  {
+   "iteration": 16,
+   "model": "mimo",
+   "A_region": "GUM",
+   "B_region": "66186276B31593004124297:Utah",
+   "A_name": "Guam",
+   "B_name": "Utah",
+   "status": "rejected",
+   "combined_user_sha256": "682d5975242d1a04ce5f36701a4870a9c5e48c5298830062cf9fd836ca4d1d97",
+   "cost_usd": "0.0088004"
+  },
+  {
+   "iteration": 17,
+   "model": "glm",
+   "A_region": "GUM",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "Guam",
+   "B_name": "Nebraska",
+   "status": "ok",
+   "combined_user_sha256": "4a393e60dbb9afda1c432462c787c1f52731e8575bee1b8040e0b4d62117ab9c",
+   "cost_usd": "0.0060929",
+   "A_rating": 0.52,
+   "B_rating": 0.3,
+   "difference_B_minus_A": -0.22,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.52,
+     "old_score": 0.379039,
+     "new_score": 0.4072312
+    }
+   ]
+  },
+  {
+   "iteration": 18,
+   "model": "qwen",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "A_name": "Guam",
+   "B_name": "Washington",
+   "status": "rejected",
+   "combined_user_sha256": "ef807635fe9685c6036f08563455299a31e3173236d7c5930e2065a7a5bfd07a",
+   "cost_usd": "0.01194485"
+  },
+  {
+   "iteration": 19,
+   "model": "haiku",
+   "A_region": "GUM",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "A_name": "Guam",
+   "B_name": "North Carolina",
+   "status": "ok",
+   "combined_user_sha256": "f1678ae121429d2943f708b308c91e44d4d77c2a83dcc2ed1e44c7d114592291",
+   "cost_usd": "0.0079994",
+   "A_rating": 0.45,
+   "B_rating": 0.38,
+   "difference_B_minus_A": -0.07,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.45,
+     "old_score": 0.4072312,
+     "new_score": 0.41578496000000004
+    }
+   ]
+  },
+  {
+   "iteration": 20,
+   "model": "deepseek",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "A_name": "Guam",
+   "B_name": "Washington",
+   "status": "ok",
+   "combined_user_sha256": "ef807635fe9685c6036f08563455299a31e3173236d7c5930e2065a7a5bfd07a",
+   "cost_usd": "0.007501078",
+   "A_rating": 0.4,
+   "B_rating": 0.45,
+   "difference_B_minus_A": 0.05,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.41578496000000004,
+     "new_score": 0.41262796800000007
+    }
+   ]
+  },
+  {
+   "iteration": 21,
+   "model": "muse",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "Guam",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "016fa09fdc90eed3286dfeaeabfb467a0cd72d25f508ab819b2c33d4820a38ae",
+   "cost_usd": "0.0047206",
+   "A_rating": 0.52,
+   "B_rating": 0.44,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.52,
+     "old_score": 0.41262796800000007,
+     "new_score": 0.4341023744000001
+    }
+   ]
+  },
+  {
+   "iteration": 22,
+   "model": "deepseek",
+   "A_region": "GUM",
+   "B_region": "66186276B43071933723331:California",
+   "A_name": "Guam",
+   "B_name": "California",
+   "status": "ok",
+   "combined_user_sha256": "5e297776b276acc4aefb08c0a9e1e0c5532f7c639682fe409c919a1ca0507a7e",
+   "cost_usd": "0.004443905",
+   "A_rating": 0.36,
+   "B_rating": 0.43,
+   "difference_B_minus_A": 0.07,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.36,
+     "old_score": 0.4341023744000001,
+     "new_score": 0.4192818995200001
+    }
+   ]
+  },
+  {
+   "iteration": 23,
+   "model": "luna",
+   "A_region": "GUM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "A_name": "Guam",
+   "B_name": "New Hampshire",
+   "status": "ok",
+   "combined_user_sha256": "8d96585a24412069352cfa42604e60571800b96958b3357f696a764343da9680",
+   "cost_usd": "0.00424072",
+   "A_rating": 0.4,
+   "B_rating": 0.41,
+   "difference_B_minus_A": 0.01,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.4192818995200001,
+     "new_score": 0.4154255196160001
+    }
+   ]
+  },
+  {
+   "iteration": 24,
+   "model": "haiku",
+   "A_region": "GUM",
+   "B_region": "66186276B98555229882405:Washington",
+   "A_name": "Guam",
+   "B_name": "Washington",
+   "status": "ok",
+   "combined_user_sha256": "ef807635fe9685c6036f08563455299a31e3173236d7c5930e2065a7a5bfd07a",
+   "cost_usd": "0.007675",
+   "A_rating": 0.42,
+   "B_rating": 0.55,
+   "difference_B_minus_A": 0.13,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.4154255196160001,
+     "new_score": 0.4163404156928001
+    }
+   ]
+  },
+  {
+   "iteration": 25,
+   "model": "glm",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "Guam",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "016fa09fdc90eed3286dfeaeabfb467a0cd72d25f508ab819b2c33d4820a38ae",
+   "cost_usd": "0.00492088",
+   "A_rating": 0.45,
+   "B_rating": 0.4,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.45,
+     "old_score": 0.4163404156928001,
+     "new_score": 0.42307233255424015
+    }
+   ]
+  },
+  {
+   "iteration": 26,
+   "model": "muse",
+   "A_region": "GUM",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "A_name": "Guam",
+   "B_name": "New Hampshire",
+   "status": "ok",
+   "combined_user_sha256": "8d96585a24412069352cfa42604e60571800b96958b3357f696a764343da9680",
+   "cost_usd": "0.0048096",
+   "A_rating": 0.58,
+   "B_rating": 0.47,
+   "difference_B_minus_A": -0.11,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 9,
+     "alpha": 0.2,
+     "rating": 0.58,
+     "old_score": 0.42307233255424015,
+     "new_score": 0.4544578660433921
+    }
+   ]
+  },
+  {
+   "iteration": 27,
+   "model": "mimo",
+   "A_region": "GUM",
+   "B_region": "66186276B78821008370123:Maine",
+   "A_name": "Guam",
+   "B_name": "Maine",
+   "status": "ok",
+   "combined_user_sha256": "1faeb13c8355d63d32e3a9e80074bf0c1ff9ad7c2a5df4b5cd6e7f8493fbbea9",
+   "cost_usd": "0.004121524",
+   "A_rating": 0.55,
+   "B_rating": 0.63,
+   "difference_B_minus_A": 0.08,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 10,
+     "alpha": 0.2,
+     "rating": 0.55,
+     "old_score": 0.4544578660433921,
+     "new_score": 0.47356629283471374
+    }
+   ]
+  },
+  {
+   "iteration": 28,
+   "model": "qwen",
+   "A_region": "GUM",
+   "B_region": "66186276B6628180846672:Pennsylvania",
+   "A_name": "Guam",
+   "B_name": "Pennsylvania",
+   "status": "ok",
+   "combined_user_sha256": "2b19b637ae16842502cb95edda6db55f70421f0d7a5261c1a25fd2108b7e43bc",
+   "cost_usd": "0.008948092",
+   "A_rating": 0.28,
+   "B_rating": 0.4,
+   "difference_B_minus_A": 0.12,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 11,
+     "alpha": 0.2,
+     "rating": 0.28,
+     "old_score": 0.47356629283471374,
+     "new_score": 0.434853034267771
+    }
+   ]
+  },
+  {
+   "iteration": 29,
+   "model": "deepseek",
+   "A_region": "GUM",
+   "B_region": "66186276B62688952876525:Alaska",
+   "A_name": "Guam",
+   "B_name": "Alaska",
+   "status": "ok",
+   "combined_user_sha256": "64777b64b621c2c62a40cf93fdb14b6818ab7d1a1d82fa1edb85252aa2950168",
+   "cost_usd": "0.009271318",
+   "A_rating": 0.38,
+   "B_rating": 0.33,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 12,
+     "alpha": 0.2,
+     "rating": 0.38,
+     "old_score": 0.434853034267771,
+     "new_score": 0.42388242741421683
+    }
+   ]
+  },
+  {
+   "iteration": 30,
+   "model": "qwen",
+   "A_region": "GUM",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "Guam",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "016fa09fdc90eed3286dfeaeabfb467a0cd72d25f508ab819b2c33d4820a38ae",
+   "cost_usd": "0.00931405",
+   "A_rating": 0.34,
+   "B_rating": 0.29,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "GUM",
+     "name": "Guam",
+     "update_number": 13,
+     "alpha": 0.2,
+     "rating": 0.34,
+     "old_score": 0.42388242741421683,
+     "new_score": 0.4071059419313735
+    }
+   ]
+  },
+  {
+   "iteration": 31,
+   "model": "luna",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "US Virgin Islands",
+   "B_name": "Kentucky",
+   "status": "ok",
+   "combined_user_sha256": "c9df87bd4959688ed852dafebeae093a1df0ff2a13a147048b825e8b19000f0a",
+   "cost_usd": "0.004222595",
+   "A_rating": 0.39,
+   "B_rating": 0.35,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.39,
+     "old_score": 0.379039,
+     "new_score": 0.38123120000000005
+    }
+   ]
+  },
+  {
+   "iteration": 32,
+   "model": "mimo",
+   "A_region": "VIR",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "US Virgin Islands",
+   "B_name": "Nebraska",
+   "status": "ok",
+   "combined_user_sha256": "97685679f33b9cea35bf06a8c352e56472a6fa6c27cf817fc7715657af125848",
+   "cost_usd": "0.005368644",
+   "A_rating": 0.42,
+   "B_rating": 0.34,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.38123120000000005,
+     "new_score": 0.3889849600000001
+    }
+   ]
+  },
+  {
+   "iteration": 33,
+   "model": "glm",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "US Virgin Islands",
+   "B_name": "Kentucky",
+   "status": "ok",
+   "combined_user_sha256": "c9df87bd4959688ed852dafebeae093a1df0ff2a13a147048b825e8b19000f0a",
+   "cost_usd": "0.00469688",
+   "A_rating": 0.56,
+   "B_rating": 0.45,
+   "difference_B_minus_A": -0.11,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.56,
+     "old_score": 0.3889849600000001,
+     "new_score": 0.42318796800000014
+    }
+   ]
+  },
+  {
+   "iteration": 34,
+   "model": "haiku",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "US Virgin Islands",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "7fc73f26cfb20ca3b5a08c3735f1261f7eada6dfbbb14f0949a38bed8d3ea6b9",
+   "cost_usd": "0.0091499",
+   "A_rating": 0.35,
+   "B_rating": 0.31,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.35,
+     "old_score": 0.42318796800000014,
+     "new_score": 0.40855037440000014
+    }
+   ]
+  },
+  {
+   "iteration": 35,
+   "model": "muse",
+   "A_region": "VIR",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "A_name": "US Virgin Islands",
+   "B_name": "North Carolina",
+   "status": "ok",
+   "combined_user_sha256": "7975a8b1b33d25ba2a94bcf3d3c7dc0fa50413cbce366b4bc546d9856a664b30",
+   "cost_usd": "0.0048207",
+   "A_rating": 0.54,
+   "B_rating": 0.47,
+   "difference_B_minus_A": -0.07,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.54,
+     "old_score": 0.40855037440000014,
+     "new_score": 0.43484029952000014
+    }
+   ]
+  },
+  {
+   "iteration": 36,
+   "model": "deepseek",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "A_name": "US Virgin Islands",
+   "B_name": "California",
+   "status": "ok",
+   "combined_user_sha256": "725965f072f8709204dec68ae95c3f296c6008dc699a9da0c9475996ec614d48",
+   "cost_usd": "0.01036962",
+   "A_rating": 0.38,
+   "B_rating": 0.41,
+   "difference_B_minus_A": 0.03,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.38,
+     "old_score": 0.43484029952000014,
+     "new_score": 0.4238722396160001
+    }
+   ]
+  },
+  {
+   "iteration": 37,
+   "model": "luna",
+   "A_region": "VIR",
+   "B_region": "66186276B62688952876525:Alaska",
+   "A_name": "US Virgin Islands",
+   "B_name": "Alaska",
+   "status": "ok",
+   "combined_user_sha256": "d47b335a11ebf7d519eb0c79e168a6a42d061c1fff7baf5957a00bbd401c2436",
+   "cost_usd": "0.00441547",
+   "A_rating": 0.41,
+   "B_rating": 0.37,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.41,
+     "old_score": 0.4238722396160001,
+     "new_score": 0.42109779169280015
+    }
+   ]
+  },
+  {
+   "iteration": 38,
+   "model": "muse",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "US Virgin Islands",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "7fc73f26cfb20ca3b5a08c3735f1261f7eada6dfbbb14f0949a38bed8d3ea6b9",
+   "cost_usd": "0.002745072",
+   "A_rating": 0.49,
+   "B_rating": 0.41,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.49,
+     "old_score": 0.42109779169280015,
+     "new_score": 0.43487823335424014
+    }
+   ]
+  },
+  {
+   "iteration": 39,
+   "model": "mimo",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "A_name": "US Virgin Islands",
+   "B_name": "California",
+   "status": "rejected",
+   "combined_user_sha256": "725965f072f8709204dec68ae95c3f296c6008dc699a9da0c9475996ec614d48",
+   "cost_usd": "0.0075318"
+  },
+  {
+   "iteration": 40,
+   "model": "qwen",
+   "A_region": "VIR",
+   "B_region": "66186276B86627915353587:New Hampshire",
+   "A_name": "US Virgin Islands",
+   "B_name": "New Hampshire",
+   "status": "rejected",
+   "combined_user_sha256": "cf188abf78c98432ce5449f15bf8eeef52ec166af232ccf82ea49f1d26f2e48d",
+   "cost_usd": "0.009541262"
+  },
+  {
+   "iteration": 41,
+   "model": "glm",
+   "A_region": "VIR",
+   "B_region": "66186276B62688952876525:Alaska",
+   "A_name": "US Virgin Islands",
+   "B_name": "Alaska",
+   "status": "rejected",
+   "combined_user_sha256": "d47b335a11ebf7d519eb0c79e168a6a42d061c1fff7baf5957a00bbd401c2436",
+   "cost_usd": "0.00219718"
+  },
+  {
+   "iteration": 42,
+   "model": "haiku",
+   "A_region": "VIR",
+   "B_region": "66186276B43071933723331:California",
+   "A_name": "US Virgin Islands",
+   "B_name": "California",
+   "status": "ok",
+   "combined_user_sha256": "725965f072f8709204dec68ae95c3f296c6008dc699a9da0c9475996ec614d48",
+   "cost_usd": "0.0080292",
+   "A_rating": 0.32,
+   "B_rating": 0.45,
+   "difference_B_minus_A": 0.13,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 9,
+     "alpha": 0.2,
+     "rating": 0.32,
+     "old_score": 0.43487823335424014,
+     "new_score": 0.41190258668339214
+    }
+   ]
+  },
+  {
+   "iteration": 43,
+   "model": "luna",
+   "A_region": "VIR",
+   "B_region": "66186276B82803899326534:Indiana",
+   "A_name": "US Virgin Islands",
+   "B_name": "Indiana",
+   "status": "ok",
+   "combined_user_sha256": "7fc73f26cfb20ca3b5a08c3735f1261f7eada6dfbbb14f0949a38bed8d3ea6b9",
+   "cost_usd": "0.004574595",
+   "A_rating": 0.34,
+   "B_rating": 0.3,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 10,
+     "alpha": 0.2,
+     "rating": 0.34,
+     "old_score": 0.41190258668339214,
+     "new_score": 0.39752206934671375
+    }
+   ]
+  },
+  {
+   "iteration": 44,
+   "model": "qwen",
+   "A_region": "VIR",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "A_name": "US Virgin Islands",
+   "B_name": "North Carolina",
+   "status": "ok",
+   "combined_user_sha256": "7975a8b1b33d25ba2a94bcf3d3c7dc0fa50413cbce366b4bc546d9856a664b30",
+   "cost_usd": "0.008748782",
+   "A_rating": 0.3,
+   "B_rating": 0.21,
+   "difference_B_minus_A": -0.09,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 11,
+     "alpha": 0.2,
+     "rating": 0.3,
+     "old_score": 0.39752206934671375,
+     "new_score": 0.37801765547737104
+    }
+   ]
+  },
+  {
+   "iteration": 45,
+   "model": "deepseek",
+   "A_region": "VIR",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "US Virgin Islands",
+   "B_name": "Kentucky",
+   "status": "ok",
+   "combined_user_sha256": "c9df87bd4959688ed852dafebeae093a1df0ff2a13a147048b825e8b19000f0a",
+   "cost_usd": "0.006738618",
+   "A_rating": 0.34,
+   "B_rating": 0.27,
+   "difference_B_minus_A": -0.07,
+   "updates": [
+    {
+     "region": "VIR",
+     "name": "US Virgin Islands",
+     "update_number": 12,
+     "alpha": 0.2,
+     "rating": 0.34,
+     "old_score": 0.37801765547737104,
+     "new_score": 0.37041412438189686
+    }
+   ]
+  },
+  {
+   "iteration": 46,
+   "model": "haiku",
+   "A_region": "MNP",
+   "B_region": "66186276B31593004124297:Utah",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Utah",
+   "status": "ok",
+   "combined_user_sha256": "b4c5235177e6b599a7fc85729bfcb82dda7ecf876d3ce9a040768be7d59d404e",
+   "cost_usd": "0.0081049",
+   "A_rating": 0.36,
+   "B_rating": 0.26,
+   "difference_B_minus_A": -0.1,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.36,
+     "old_score": 0.379039,
+     "new_score": 0.37523120000000004
+    }
+   ]
+  },
+  {
+   "iteration": 47,
+   "model": "glm",
+   "A_region": "MNP",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Kentucky",
+   "status": "ok",
+   "combined_user_sha256": "69ce4415e2e982eb685e6a4aff001cb1baee9908f94f6db81edd4c74b4dbdd8a",
+   "cost_usd": "0.00308626",
+   "A_rating": 0.45,
+   "B_rating": 0.42,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.45,
+     "old_score": 0.37523120000000004,
+     "new_score": 0.3901849600000001
+    }
+   ]
+  },
+  {
+   "iteration": 48,
+   "model": "mimo",
+   "A_region": "MNP",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "District of Columbia",
+   "status": "rejected",
+   "combined_user_sha256": "926a0286ea68faff6846be28034d3e3d0ccde5445cab3d5ae398d87f7106ea33",
+   "cost_usd": "0.0085309"
+  },
+  {
+   "iteration": 49,
+   "model": "muse",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Nebraska",
+   "status": "ok",
+   "combined_user_sha256": "183b5f4df850c3b68f8ada3cd22c3ae96ce1925fec160b95a34c204434e7047a",
+   "cost_usd": "0.002793052",
+   "A_rating": 0.48,
+   "B_rating": 0.39,
+   "difference_B_minus_A": -0.09,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.48,
+     "old_score": 0.3901849600000001,
+     "new_score": 0.4081479680000001
+    }
+   ]
+  },
+  {
+   "iteration": 50,
+   "model": "luna",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "South Dakota",
+   "status": "ok",
+   "combined_user_sha256": "f4ab76564433e1e3a28912f267171fff65465cb7a7a5be342694836bce19639b",
+   "cost_usd": "0.003748595",
+   "A_rating": 0.38,
+   "B_rating": 0.29,
+   "difference_B_minus_A": -0.09,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.38,
+     "old_score": 0.4081479680000001,
+     "new_score": 0.4025183744000001
+    }
+   ]
+  },
+  {
+   "iteration": 51,
+   "model": "mimo",
+   "A_region": "MNP",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "North Carolina",
+   "status": "rejected",
+   "combined_user_sha256": "3a34690158634a66c1130699ccc3a6ce21003661599967cbce53f56a082e44d3",
+   "cost_usd": "0.00890616"
+  },
+  {
+   "iteration": 52,
+   "model": "haiku",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "South Dakota",
+   "status": "ok",
+   "combined_user_sha256": "f4ab76564433e1e3a28912f267171fff65465cb7a7a5be342694836bce19639b",
+   "cost_usd": "0.0080094",
+   "A_rating": 0.33,
+   "B_rating": 0.22,
+   "difference_B_minus_A": -0.11,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.33,
+     "old_score": 0.4025183744000001,
+     "new_score": 0.3880146995200001
+    }
+   ]
+  },
+  {
+   "iteration": 53,
+   "model": "glm",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Nebraska",
+   "status": "rejected",
+   "combined_user_sha256": "183b5f4df850c3b68f8ada3cd22c3ae96ce1925fec160b95a34c204434e7047a",
+   "cost_usd": "0.00614095"
+  },
+  {
+   "iteration": 54,
+   "model": "qwen",
+   "A_region": "MNP",
+   "B_region": "66186276B94082813086253:District of Columbia",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "District of Columbia",
+   "status": "rejected",
+   "combined_user_sha256": "926a0286ea68faff6846be28034d3e3d0ccde5445cab3d5ae398d87f7106ea33",
+   "cost_usd": "0.009749648"
+  },
+  {
+   "iteration": 55,
+   "model": "muse",
+   "A_region": "MNP",
+   "B_region": "66186276B22971435435932:Kentucky",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Kentucky",
+   "status": "ok",
+   "combined_user_sha256": "69ce4415e2e982eb685e6a4aff001cb1baee9908f94f6db81edd4c74b4dbdd8a",
+   "cost_usd": "0.002303236",
+   "A_rating": 0.4,
+   "B_rating": 0.35,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.3880146995200001,
+     "new_score": 0.3904117596160001
+    }
+   ]
+  },
+  {
+   "iteration": 56,
+   "model": "deepseek",
+   "A_region": "MNP",
+   "B_region": "66186276B73402293045483:Nebraska",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Nebraska",
+   "status": "ok",
+   "combined_user_sha256": "183b5f4df850c3b68f8ada3cd22c3ae96ce1925fec160b95a34c204434e7047a",
+   "cost_usd": "0.00539953256",
+   "A_rating": 0.33,
+   "B_rating": 0.25,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.33,
+     "old_score": 0.3904117596160001,
+     "new_score": 0.3783294076928001
+    }
+   ]
+  },
+  {
+   "iteration": 57,
+   "model": "muse",
+   "A_region": "MNP",
+   "B_region": "66186276B31593004124297:Utah",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Utah",
+   "status": "ok",
+   "combined_user_sha256": "b4c5235177e6b599a7fc85729bfcb82dda7ecf876d3ce9a040768be7d59d404e",
+   "cost_usd": "0.002101684",
+   "A_rating": 0.52,
+   "B_rating": 0.41,
+   "difference_B_minus_A": -0.11,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.52,
+     "old_score": 0.3783294076928001,
+     "new_score": 0.40666352615424006
+    }
+   ]
+  },
+  {
+   "iteration": 58,
+   "model": "mimo",
+   "A_region": "MNP",
+   "B_region": "66186276B98555229882405:Washington",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "Washington",
+   "status": "ok",
+   "combined_user_sha256": "63ac79d70724db6c2059a689572866aee18f592662dc17eff50a507391ea5bd8",
+   "cost_usd": "0.0075159",
+   "A_rating": 0.44,
+   "B_rating": 0.55,
+   "difference_B_minus_A": 0.11,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 9,
+     "alpha": 0.2,
+     "rating": 0.44,
+     "old_score": 0.40666352615424006,
+     "new_score": 0.4133308209233921
+    }
+   ]
+  },
+  {
+   "iteration": 59,
+   "model": "qwen",
+   "A_region": "MNP",
+   "B_region": "66186276B38006515706420:South Dakota",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "South Dakota",
+   "status": "ok",
+   "combined_user_sha256": "f4ab76564433e1e3a28912f267171fff65465cb7a7a5be342694836bce19639b",
+   "cost_usd": "0.009804758",
+   "A_rating": 0.38,
+   "B_rating": 0.3,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 10,
+     "alpha": 0.2,
+     "rating": 0.38,
+     "old_score": 0.4133308209233921,
+     "new_score": 0.4066646567387137
+    }
+   ]
+  },
+  {
+   "iteration": 60,
+   "model": "luna",
+   "A_region": "MNP",
+   "B_region": "66186276B6801956407400:North Carolina",
+   "A_name": "Northern Mariana Islands",
+   "B_name": "North Carolina",
+   "status": "ok",
+   "combined_user_sha256": "3a34690158634a66c1130699ccc3a6ce21003661599967cbce53f56a082e44d3",
+   "cost_usd": "0.003888845",
+   "A_rating": 0.41,
+   "B_rating": 0.36,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "MNP",
+     "name": "Northern Mariana Islands",
+     "update_number": 11,
+     "alpha": 0.2,
+     "rating": 0.41,
+     "old_score": 0.4066646567387137,
+     "new_score": 0.407331725390971
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+  "A": {
+    "rating": 0.34,
+    "explanation": "The territory’s own human-rights statute protects gender identity and its 2017 interpretation extends coverage to transgender students, but entry, border screening, federal facilities, and immigration custody follow the parent national regime. That parent regime documents passport/visa marker restrictions, possible fraud-based lifetime ineligibility, federal facility exclusion, and severe abuse in immigration custody. Local protections are real but lack documented enforcement outcomes and do not reach the border or federal custody. The combined regime therefore sits in the High Risk band, near but slightly below the 0.35 exclusion-focused anchor because custody and document harms are more severe than simple refusal.",
+    "factor_matrix": {
+      "entry_documents": {
+        "exposure": "Parent rules restrict X markers and markers not matching birth sex; border officers may refuse cases with discrepancies and consider permanent fraud-based ineligibility.",
+        "protection": "No territory-specific border protection; local human-rights statute does not govern parent entry screening.",
+        "interaction": "Territory entry and airport screening follow parent federal rules, so local anti-discrimination law does not reach the border.",
+        "status": "documented"
+      },
+      "investigation_detention_custody": {
+        "exposure": "Parent immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse against transgender detainees; federal prison policies include coercive practices.",
+        "protection": "No documented territory-specific custody protection; local statute does not control federal detention.",
+        "interaction": "A document discrepancy at the border can lead into parent immigration detention, where local protections are unavailable.",
+        "status": "documented"
+      },
+      "federal_state_facilities": {
+        "exposure": "Parent executive order bars transgender people from government-funded single-sex facilities congruent with identity; many states/provinces also ban facilities.",
+        "protection": "Territory human-rights statute prohibits gender-identity discrimination, but no documented facility-access enforcement or outcome.",
+        "interaction": "Federal facility exclusion applies in parent-funded settings; local statute may protect territory services but is not shown to override federal facilities.",
+        "status": "uncertain"
+      },
+      "care_services": {
+        "exposure": "Parent measures threaten funding and describe minor care as mutilation; custody care denial is documented. No territory-specific care ban is documented.",
+        "protection": "Territory human-rights statute covers gender identity, but no documented health-care enforcement or trans-specific service outcome.",
+        "interaction": "Local anti-discrimination may assist in territory services, but parent funding rules and custody practices create exposure.",
+        "status": "uncertain"
+      },
+      "threat_framing_law_enforcement": {
+        "exposure": "Parent justice guidance and counterterrorism strategy use threat framing around “radical gender ideology” and “radically pro-transgender” groups.",
+        "protection": "Courts have enjoined some parent orders; legal-aid FAQ exists. No territory-specific enforcement record.",
+        "interaction": "Threat framing is parent-level and may affect advocacy and policing climate, while local statute offers only civil anti-discrimination recourse.",
+        "status": "documented"
+      },
+      "minors_guardians": {
+        "exposure": "Parent orders target teachers who affirm trans minors and frame minor care as mutilation; some measures are enjoined. No territory-specific school or care ban is documented.",
+        "protection": "Territory’s 2017 chief-legal-officer interpretation applies anti-discrimination law to transgender students.",
+        "interaction": "Local student protection is positive, but parent-level prosecution threats and funding conditions create uncertainty for families.",
+        "status": "documented"
+      },
+      "street_violence_police_response": {
+        "exposure": "No territory-specific trans violence data; parent hate-crime statute covers gender identity nationally, but state/province coverage is patchy.",
+        "protection": "Territory human-rights statute and national hate-crime coverage provide formal recourse; no enforcement outcomes are documented.",
+        "interaction": "Formal protections exist, but absent local enforcement records the practical police response to anti-trans violence is uncertain.",
+        "status": "uncertain"
+      },
+      "remedies_unknowns": {
+        "exposure": "Parent passport and entry rules remain contested; reports of confiscated or blocked passports and stranded travellers; local enforcement outcomes absent.",
+        "protection": "National courts, injunctions, legal-aid FAQ, and territory human-rights statute provide potential remedies.",
+        "interaction": "Remedies are real but slow and do not reliably prevent border refusal, detention, or facility exclusion at the point of exposure.",
+        "status": "uncertain"
+      }
+    },
+    "anchor_checks": [
+      {
+        "anchor_id": "0.35-A",
+        "comparison": "A is close to 0.35-A in border refusal and exclusion, but parent rules add passport-marker restrictions, possible lifetime ineligibility, and documented immigration-custody abuse. Territory anti-discrimination law partially mitigates local services but not the border, so A sits slightly below 0.35."
+      },
+      {
+        "anchor_id": "0.55-B",
+        "comparison": "A is worse than 0.55-B: parent border screening is not merely secondary questioning but can produce refusal, fraud findings, and abusive detention, while territory protections do not reach those stages."
+      },
+      {
+        "anchor_id": "0.75-C",
+        "comparison": "A is much worse than 0.75-C: 0.75-C has trained border officers and tribunal remedies; A faces parent document restrictions, federal facility exclusion, and immigration custody harms with no documented border remedy."
+      }
+    ],
+    "synthesis": "The territory’s human-rights statute and student interpretation are genuine local protections, but the operative journey is dominated by parent federal border, facility, and custody rules. A trans visitor is exposed to document scrutiny and possible refusal or fraud findings at entry, federal facility exclusion, and severe custody conditions if detained. Local anti-discrimination recourse may help in territory services, but no enforcement outcomes are documented, and it does not reach border or federal custody. The combined regime is High Risk."
+  },
+  "B": {
+    "rating": 0.27,
+    "explanation": "B shares the parent national regime’s severe border, federal facility, and immigration-custody exposures. Its state/province adds a 2023 public-school bathroom restriction, a minors’ gender-affirming-care ban, a birth-certificate surgery requirement, a school-sports ban, and a hate-crime statute that excludes gender identity. Municipal non-discrimination ordinances and a national appellate employment ruling provide partial protection, but coverage is patchwork and religious-exemption law cuts against it. For an adult alone, the added state laws are less direct than for a family with a trans minor; for that family they compound sharply. The combined regime sits below A and in the High Risk band.",
+    "factor_matrix": {
+      "entry_documents": {
+        "exposure": "Parent rules restrict X markers and markers not matching birth sex; border officers may refuse cases with discrepancies and consider permanent fraud-based ineligibility.",
+        "protection": "No state/province-specific border protection; local ordinances do not govern federal entry screening.",
+        "interaction": "Entry and airport screening follow parent federal rules, so state/province anti-discrimination and municipal protections do not reach the border.",
+        "status": "documented"
+      },
+      "investigation_detention_custody": {
+        "exposure": "Parent immigration custody documents forced labour, beatings, solitary confinement, and sexual abuse against transgender detainees; federal prison policies include coercive practices.",
+        "protection": "No documented state/province-specific custody protection; local ordinances do not control federal detention.",
+        "interaction": "A document discrepancy at the border can lead into parent immigration detention, where state/province protections are unavailable.",
+        "status": "documented"
+      },
+      "federal_state_facilities": {
+        "exposure": "Parent executive order bars transgender people from government-funded single-sex facilities congruent with identity. The state/province’s 2023 law restricts public-school students to birth-assigned facilities.",
+        "protection": "Nineteen municipalities have local non-discrimination ordinances covering gender identity in public accommodations; no state/province-wide adult facility protection.",
+        "interaction": "Federal facility exclusion applies broadly; the state school restriction reaches minors. Municipal protections are patchwork and do not override parent facilities rules.",
+        "status": "documented"
+      },
+      "care_services": {
+        "exposure": "State/province law bans gender-affirming care for minors with no phase-out; birth-certificate amendment requires surgery. Parent funding rules and custody care denial add exposure.",
+        "protection": "Conversion therapy on minors is banned state/province-wide; national appellate employment ruling protects some workers. No documented general care-access protection for trans visitors.",
+        "interaction": "Adults may face provider caution and document mismatches; minors face a direct statutory care ban and related family legal exposure.",
+        "status": "documented"
+      },
+      "threat_framing_law_enforcement": {
+        "exposure": "Parent justice guidance and counterterrorism strategy use threat framing around “radical gender ideology” and “radically pro-transgender” groups. State hate-crime law excludes gender identity.",
+        "protection": "National appellate employment ruling and some municipal ordinances; courts have enjoined some parent orders.",
+        "interaction": "Threat framing is parent-level and state hate-crime omission reduces recourse for bias violence; local protections are partial.",
+        "status": "documented"
+      },
+      "minors_guardians": {
+        "exposure": "State/province bans gender-affirming care for minors, restricts public-school bathroom use, and bars transgender girls from school sports. Parent orders target teachers who affirm trans minors.",
+        "protection": "Conversion therapy ban for minors; local ordinances in some municipalities; national appellate employment ruling does not address care or schools.",
+        "interaction": "A family travelling with a trans minor faces direct statutory care denial, school facility exclusion, and sports exclusion, plus parent-level threats to affirming educators.",
+        "status": "documented"
+      },
+      "street_violence_police_response": {
+        "exposure": "State/province hate-crime statute covers sexual orientation but expressly excludes gender identity; no trans-specific violence data are documented.",
+        "protection": "National hate-crime statute covers gender identity; local non-discrimination ordinances exist in 19 municipalities; a 2011 beating prosecution shows some police response.",
+        "interaction": "Formal national recourse exists, but state hate-crime omission and absent trans-specific data make practical protection for anti-trans violence uncertain.",
+        "status": "uncertain"
+      },
+      "remedies_unknowns": {
+        "exposure": "Legal challenges to parent rules remain unresolved; state/province religious-exemption law can cut against local ordinances; enforcement of school facility and care bans is not quantified.",
+        "protection": "National courts, injunctions, municipal ordinances, and legal-aid resources provide potential remedies.",
+        "interaction": "Remedies are patchwork and slow; they do not reliably prevent border refusal, custody harm, or the state/province’s minor-specific bans.",
+        "status": "uncertain"
+      }
+    },
+    "anchor_checks": [
+      {
+        "anchor_id": "0.35-A",
+        "comparison": "B is worse than 0.35-A: parent border refusal and custody abuse are compounded by state/province care and school-facility bans affecting minors, plus a hate-crime statute excluding gender identity. Municipal protections are patchwork and do not reach the border."
+      },
+      {
+        "anchor_id": "0.55-B",
+        "comparison": "B is worse than 0.55-B: 0.55-B involves discretionary secondary screening and administrative refusal; B adds parent custody harms and direct state/province bans on minor care and school facilities."
+      },
+      {
+        "anchor_id": "0.75-C",
+        "comparison": "B is much worse than 0.75-C: 0.75-C has trained border officers and tribunal remedies; B faces parent document restrictions, federal facility exclusion, custody harms, and state/province bans with only patchwork local recourse."
+      }
+    ],
+    "synthesis": "The operative regime combines parent federal border, facility, and custody exposures with state/province-specific hostile rules for minors. An adult trans visitor faces document scrutiny at entry, possible refusal or fraud findings, federal facility exclusion, and severe custody risk if detained. Local municipal ordinances and a national appellate employment ruling offer partial protection but are patchwork and do not reach the border. A family with a trans minor additionally faces a direct care ban, public-school bathroom restriction, and sports exclusion. The combined regime is High Risk and lower than A."
+  }
+}

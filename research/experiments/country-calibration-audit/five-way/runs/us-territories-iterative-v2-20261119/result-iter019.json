@@ -1,0 +1,174 @@
+{
+ "iteration": 19,
+ "model": "haiku",
+ "model_id": "anthropic/claude-haiku-5.5",
+ "status": "ok",
+ "cost_usd": "0.0079994",
+ "usage": {
+  "cost_usd": "0.0079994",
+  "input_tokens": 48139,
+  "output_tokens": 6371
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B6801956407400:North Carolina"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B6801956407400:North Carolina",
+ "A_rating": 0.45,
+ "B_rating": 0.38,
+ "difference_B_minus_A": -0.07,
+ "parsed": {
+  "A": {
+   "rating": 0.45,
+   "explanation": "Combined regime is dominated by federal exposures that reach every traveller: passport sex-marker restrictions (now in effect after the November 2025 ruling), entry refusal on documentary discrepancy, and a fraud-ground lifetime-ineligibility pathway. Federal custody harms are documented (forced labour, abuse in immigration custody), and federal counterterrorism language names 'radically pro-transgender' groups as targets. The territory adds its own exposure: surgery is required to amend birth certificates and licences, and the governing state's military policy applies on the island. Protections are real but thinner: unanimous territorial employment protection, same-sex marriage, decriminalised private conduct since 1978, and a tolerant, island-wide culture. No trans-specific violence or enforcement data exists, so the violence axis is undocumented rather than safe. Overall: elevated risk, driven by universal document and entry exposure.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Passports show birth sex; X markers stopped; discrepancies can trigger refusal, document confiscation and possible lifetime ineligibility on fraud grounds. Entry screening follows federal cable rules.",
+     "protection": "Not documented for visitors. Territory's own gender-marker rules do not govern a visitor's home-issued documents.",
+     "interaction": "Home-passport marker meets federal entry screening on arrival, so the exposure is universal for trans visitors whose documents do not match presentation.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody documented for forced labour, beatings, solitary and sexual abuse of transgender men. Federal corrections conversion-style policies adopted from 2026. Trans prisoner counts no longer reported.",
+     "protection": "Not documented for the territory. No territory-specific custody protocol recorded.",
+     "interaction": "A document discrepancy that leads to federal detention carries these custody harms; the territory does not alter them.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order limits facilities to birth sex in government-funded settings. Military policy bars trans service members and applies on the island.",
+     "protection": "Territory-level facility rules not documented as restrictive; no territory bathroom ban recorded.",
+     "interaction": "Federal facility rules apply to federally funded sites on the island; the absence of a local ban does not offset them.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Territory requires surgery for legal gender change on documents. Federal proposed rules would bar public insurance for under-18 care; subpoenas of hospitals for minors' records documented.",
+     "protection": "Not documented beyond general healthcare access. Territory's tolerant climate not tested for trans care.",
+     "interaction": "Care access for a visitor depends on local clinics; federal subpoenas and rules reach records and funding across sovereigns.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal December 2025 reward memo and May 2026 strategy frame 'radically pro-transgender' groups as targets for neutralisation; federal executive orders describe trans care as mutilation.",
+     "protection": "Federal disclaimer that counterterrorism will not target mere disagreement; territory's tolerance is general LGBTQ evidence, not trans-specific.",
+     "interaction": "Official threat framing operates federally; local acceptance does not neutralise it for an activist visitor.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal executive order targets teachers and schools for supporting trans minors' social transition; care for minors restricted federally. A minor's documents and records could be subpoenaed.",
+     "protection": "Not documented for travelling minors specifically.",
+     "interaction": "A parent travelling with a minor faces document mismatch risk and records exposure; school-related exposure applies to residents more than to visitors.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No trans-specific violence or enforcement data for the territory. Federal hate-crime statute covers gender identity; 23 states cover it in state law, which does not apply here.",
+     "protection": "Federal hate-crimes statute applies; territory employment law protects gender identity. Police response not documented.",
+     "interaction": "Recourse runs through federal channels and local policing, neither documented for trans victims.",
+     "status": "not_documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Federal passport and custody rules are contested and partly enjoined; outcome at point of travel uncertain. Territory's birth-certificate amendment bill failed by one vote.",
+     "protection": "Territory employment protection is in force; same-sex marriage recognised; private adult conduct lawful since 1978.",
+     "interaction": "Protections are resident-facing or general-LGBTQ; they do not offset federal document and custody exposure for a visitor.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "A's documented federal passport refusal, entry screening and fraud-ground pathway is a universal exposure similar to the 0.35-A register and border exclusion. A is higher because refusal is not documented as routine enforced exclusion from a whole class, and custody harms are not a routine pattern in the parent record. However, the federal custody record is more serious than 0.35-A."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Extended secondary screening and discretionary denial of entry at the border is close to A's documented entry-screening exposure. A is similar on documents but lower on custody because the immigration custody abuses are documented, pushing A toward the lower end of the band."
+    },
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C combines birth-sex custody placement, criminalised cross-dressing and documented violence in custody. A has documented custody harm and birth-sex facility rules but no documented criminal presentation statute operating against visitors, and no documented execution pathway, so A is higher than 0.25-C."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has marker-friendly entry, officer training and functioning appeals. A lacks marker-friendly entry, has documented custody abuse and federal threat framing, so A sits well below 0.75. Reaching 0.75 would require marker acceptance at entry and a working remedy for custody and document refusals."
+    }
+   ],
+   "synthesis": "The dominant operative exposure is federal and universal: passports showing birth sex, entry refusal on discrepancy, and documented custody abuse in immigration detention. Federal threat framing adds state-level hostility that tolerant territorial culture does not offset. Territorial protections (employment law, marriage, decriminalisation) are real but resident-facing or general-LGBTQ and do not neutralise document or custody exposure. Violence and police response are undocumented for trans people, and that gap is not treated as safety. Net: elevated risk."
+  },
+  "B": {
+   "rating": 0.38,
+   "explanation": "The state layer sits under the same federal framework (passport marker restrictions, entry screening, federal custody harms, federal threat framing), so federal universal exposures apply here as in A. State-specific additions move the score down: the birth-certificate and licence law keeps the original sex displayed, care for minors and state-funded transition for prisoners are barred, the sports restriction applies, and the state hate-crime statute omits gender identity. No statewide anti-discrimination coverage exists outside public employment; municipal ordinances cover only some cities. Partial offsets: no current statewide facility ban or criminalisation (2016 law repealed), though a 2025 bathroom bill is pending. The 3.0 per 100k figure is an acknowledged undercount and is not used.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal passports show birth sex; discrepancies can trigger refusal and fraud-ground review. State-issued documents keep the original sex displayed after amendment, which matters for residents more than visitors.",
+     "protection": "Not documented for visitors. The 2022 court removal of the surgery requirement is a resident-facing positive.",
+     "interaction": "A visitor's home passport meets federal entry screening; the state's document rules do not directly reach the visitor's entry.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody harms documented. State custody denies publicly funded transition care to people in prison.",
+     "protection": "Not documented for state custody beyond the care denial.",
+     "interaction": "A visitor detained in state custody would be denied transition care at public expense, on top of federal custody risks.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "No current statewide bathroom ban and no criminal offence; a 2025 bathroom bill is pending. Federal funded-facility rules apply.",
+     "protection": "No state bathroom ban currently in force; 2016 birth-certificate bathroom rule repealed in 2017.",
+     "interaction": "Federal facility rules operate alongside an open state legislative question that could change within a term.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Gender-affirming care barred for under-18s; state funds barred for minors and prisoners. Federal subpoenas and proposed insurance rules documented.",
+     "protection": "Adult care access not documented as restricted at state level for visitors.",
+     "interaction": "A visitor needing minor care or care in custody is refused; adult visitors face federal records and funding exposure.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism framing of 'radically pro-transgender' groups applies. State parents' rights law restricts instruction and notification for residents.",
+     "protection": "State employment protection for LGBT public employees; federal disclaimer on not targeting disagreement.",
+     "interaction": "Federal threat framing operates regardless of state protections.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Minor care banned in state; sports ban for trans athletes; a parent travelling with a minor may face care refusal and federal records exposure.",
+     "protection": "Not documented for visiting minors.",
+     "interaction": "A travelling child cannot access state-based transition care or compete in sports; the parent cannot secure that care locally.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "State hate-crime statute excludes gender identity, so bias-motivated assault may not be charged as bias crime. Trans-specific violence rate not established (undercount floor).",
+     "protection": "Municipal ordinances in the largest city and one county cover gender identity; coverage depends on location.",
+     "interaction": "A visitor in an uncovered area has no state bias-crime recourse; in covered cities recourse exists but is local.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "No statewide protection in private employment, housing or public accommodations. Enforcement of local ordinances unknown. County application of the marker-display rule unknown.",
+     "protection": "Municipal ordinances in some jurisdictions; no criminal sodomy enforcement against private adult conduct.",
+     "interaction": "Recourse depends on which city a visitor is in, a question the dossier does not resolve.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "B has no documented register or border exclusion specific to the state, unlike 0.35-A. Federal passport and entry exposures are similar, so B is similar to 0.35-A on entry and higher on state exclusion. B's lack of statewide protection and minor-care ban keep it near the lower band."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Federal entry screening matches 0.55-B's extended secondary screening. B is lower than 0.55-B because state custody denies transition care and the hate-crime statute excludes gender identity, whereas 0.55-B has working remedies documented."
+    },
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "0.25-C has criminalised presentation and birth-sex custody with violence. B has no current state criminal presentation offence and no documented custody violence at state level, so B is above 0.25-C."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "0.75-C has marker-friendly entry and functioning appeals. B lacks statewide anti-discrimination coverage, has a minor-care ban and federal document exposure, so B is well below 0.75. To reach 0.75, B would need statewide protections, bias-crime coverage and marker-friendly documents."
+    }
+   ],
+   "synthesis": "Federal passport, entry and custody exposures are shared with A and are universal for visitors. The state adds further exposure: minor care and sports restrictions bind travelling children, state custody denies transition care, the hate-crime statute omits gender identity, and there is no statewide anti-discrimination coverage. Offsets are the absence of a current statewide facility ban and criminalisation, plus municipal ordinances in some cities. The pending bathroom bill keeps facility exposure open. The violence figure is an undercount floor and is not used. Net: elevated risk, somewhat below A."
+  },
+  "difference_ri_minus_nh": -0.07
+ },
+ "parse_error": null,
+ "attempts": 1
+}

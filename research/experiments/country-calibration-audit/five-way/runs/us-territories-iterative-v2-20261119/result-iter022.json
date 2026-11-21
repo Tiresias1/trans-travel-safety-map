@@ -1,0 +1,174 @@
+{
+ "iteration": 22,
+ "model": "deepseek",
+ "model_id": "deepseek/deepseek-v4.1-flash-1017",
+ "status": "ok",
+ "cost_usd": "0.004443905",
+ "usage": {
+  "cost_usd": "0.004443905",
+  "input_tokens": 29467,
+  "output_tokens": 7858
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B43071933723331:California"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B43071933723331:California",
+ "A_rating": 0.36,
+ "B_rating": 0.43,
+ "difference_B_minus_A": 0.07,
+ "parsed": {
+  "A": {
+   "rating": 0.36,
+   "explanation": "A trans visitor to A meets the parent regime first: passports and visas are processed only as M/F per birth documents, posts are told to refuse cases with any documentary discrepancy and to consider a lifetime fraud ineligibility, trans athletes are barred, and federal single-sex facility rules exclude trans people from congruent facilities in federally funded buildings. Entry friction can escalate into immigration custody where trans men have documented forced labour, beatings and sexual abuse. Against this, the island's own record is benign but thin: a locally tolerant society, a visible LGBTQ scene, LGBTQ tourism marketing, and local employment protections — the dossier itself says this general-LGBTQ material does not establish trans-specific conditions, and no trans-specific violence, policing or hate-crime enforcement data exists. The island's surgery-based gender-recognition law signals a moderately trans-aware but not strongly trans-protective local institutional culture. Neither layer provides a working visitor-facing remedy.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal rules: X markers no longer processed, new passports M/F only per supporting documents; posts instructed to refuse cases with any discrepancy and to weigh lifetime fraud ineligibility; trans athletes barred from women's sport entry.",
+     "protection": "Existing X-marker passports valid until expiry; fraud finding never automatic and requires four elements with limited waiver; ongoing civil-liberties litigation; legal-aid FAQ on document rules.",
+     "interaction": "Island visitors pass through federal entry screening regardless of local law; the island's own surgery-based recognition regime does not touch a visitor's foreign passport.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Document discrepancy can route a traveller to secondary inspection and immigration custody, where transgender men reported forced labour, beatings, solitary confinement and severe sexual abuse; federal prisons apply hair-cutting, hormone removal and psychiatric substitution.",
+     "protection": "Courts have enjoined several orders; consular notification and litigation exist on paper. No local shield for detainees is documented.",
+     "interaction": "The federal custody layer is the operative one; island law neither adds nor subtracts from it.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal executive order bars transgender people from government-funded single-sex facilities congruent with identity, a universal exposure in federally operated and funded buildings.",
+     "protection": "Local employment anti-discrimination covering gender identity; no local facility ban documented in the mapped categories.",
+     "interaction": "Federal facility rules apply on the island irrespective of local tolerance; local law cannot waive them.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal hostility to gender-affirming care, including rules treating minors' care as mutilation, proposed insurance exclusions, and subpoenas of hospital records for patients under 19.",
+     "protection": "Not documented for this territory; no local care shield appears in the record.",
+     "interaction": "Federal funding and prosecutorial posture reach island providers; no local counter-shield is recorded.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Counterterrorism strategy prioritises neutralising groups described as 'radically pro-transgender'; justice-department guidance invokes 'radical gender ideology'; agency language on gender was purged.",
+     "protection": "Same strategy states powers will not target mere disagreement; courts have blocked several measures.",
+     "interaction": "Framing targets advocacy rather than ordinary visitors, but raises the risk that visible trans public presence is read as security-relevant.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order directs investigation of schools facilitating a minor's social transition and prosecution of teachers; hospital records for under-19 patients subpoenaed; care banned in many states.",
+     "protection": "Not documented. No island sanctuary or shield law appears in the record.",
+     "interaction": "A family travelling with a trans minor faces the federal layer with no documented local buffer.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No transgender-specific violence, hate-crime enforcement or policing data for the island; the record notes only general-LGBTQ tolerance.",
+     "protection": "Federal hate-crime statute covers gender identity; local employment protections; documented socially tolerant culture and LGBTQ tourism.",
+     "interaction": "Tolerance is described as island-wide, but the dossier itself says general-LGBTQ findings do not establish trans-visitor conditions.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Policy shifts with litigation; travellers report passports confiscated or blocked and some stranded abroad; no local remedy for federal measures.",
+     "protection": "National civil-liberties litigation, injunctions, a legal-aid FAQ, and federal hate-crime coverage.",
+     "interaction": "Remedies operate slowly and after the fact; a short-stay visitor cannot realistically use them during a trip.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Ostravia's birth-sex prison housing, frequent assaults and a cross-dressing statute in administrative buildings describe routine custodial and criminal exposure for ordinary presence. A has no cross-dressing offence and no documented routine custody targeting; its custodial abuse sits inside immigration detention reached through document discrepancy. A is materially better than this anchor."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Vellandra's border register bars trans visitors outright with routine denial and no remedy. A has no entry bar keyed to being trans, but it does have a universal federal facility exclusion and a fraud-ineligibility pathway. Comparable severity, somewhat less systematically targeted; A sits at roughly the same level."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles offers only secondary screening, private interview, refused admission and an appeal desk. A adds universal facility exclusion by birth sex, documented custodial abuse and lifetime ineligibility risk — more than friction and delay. A is clearly below this anchor."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia recognises markers matching presentation, trains border officers, and releases detainees with written reasons and compensation. A has none of those visitor-facing protections and a punitive document regime. A is far below."
+    }
+   ],
+   "synthesis": "The operative regime a visitor actually meets is federal: birth-sex document processing, discrepancy-driven refusal and potential lifetime ineligibility, exclusion from congruent single-sex facilities in federally funded buildings, and a custody system with documented abuse of transgender detainees. The island's contribution is a genuinely tolerant everyday society, local employment protections and LGBTQ tourism infrastructure, but no trans-specific violence or policing data and no visitor-facing remedy for any federal measure. Tolerance lowers the probability of hostile street encounters; it does not touch the document, facility or custody layers, which follow the traveller through the airport and any institutional contact."
+  },
+  "B": {
+   "rating": 0.43,
+   "explanation": "B carries the same federal entry, facility and custody exposures as A: M/F-only document processing, refusal and possible lifetime fraud ineligibility on discrepancy, exclusion from congruent federally funded single-sex facilities, and documented abuse of transgender people in immigration custody. B's own division adds a genuine protective operating regime: a 2022 sanctuary law shielding families who travel in for a minor's gender-affirming care from state child-abuse investigation or prosecution, identity-based prison housing within the general population, and state-funded surgeries for inmates. Recorded hostility is real — 198 logged anti-LGBTQ incidents in 2025, the highest raw count, and a documented rise in hate-crime reports in its largest city — but with no denominator it does not establish elevated per-visitor risk, and a 2026 analysis places the division in the safest-laws band with a low recorded-incident count.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal rules apply unchanged at B's ports: X markers no longer processed, new passports M/F only, refusal on documentary discrepancy, and possible permanent fraud ineligibility; trans athletes barred.",
+     "protection": "Existing X passports valid until expiry; fraud finding requires four elements and is never automatic; litigation pending; legal-aid FAQ available.",
+     "interaction": "The division's protective statutes cannot alter federal border screening; entry is the federal layer's alone.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal immigration custody documented forced labour, beatings, solitary confinement and sexual abuse of transgender men; federal prisons impose hair-cutting and hormone removal.",
+     "protection": "Division prisons house inmates by gender identity within general population (documented to January 2021) and fund gender-affirming surgery; federal injunctions pending.",
+     "interaction": "The division's identity-based placement covers state custody only; immigration detention is federal and the shield does not reach it.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order excludes transgender people from congruent single-sex facilities in federally funded buildings — a universal exposure reaching every visitor.",
+     "protection": "Division rated in the safest-laws band; no division bathroom ban documented in this inventory.",
+     "interaction": "Division statute cannot displace the federal facility rule; the harsher operative rule governs what the traveller experiences.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal hostility to gender-affirming care, proposed insurance exclusions, and justice-department subpoenas of hospital records for patients under 19 reach division providers.",
+     "protection": "2022 sanctuary law: out-of-division youth may obtain hormones and blockers, and families travelling in are shielded from child-abuse investigation and prosecution.",
+     "interaction": "The shield is real and operating but is a state shield; federal subpoenas and federal funding conditions are not pre-empted by it.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism strategy names 'radically pro-transgender' groups; the division's governor has platformed anti-trans figures alongside rising local hate-crime reports.",
+     "protection": "Federal guidance disclaims targeting mere disagreement; courts have enjoined several measures; division statutory floors remain in force.",
+     "interaction": "Official framing raises the salience of visible trans presence, particularly at public events and advocacy gatherings.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order authorises investigating schools and prosecuting teachers who affirm a minor's transition; under-19 hospital records subpoenaed; care banned in many states.",
+     "protection": "Division sanctuary law expressly protects travelling families from state child-abuse investigation or criminal prosecution for seeking care.",
+     "interaction": "A family travelling to B for a minor's care gets a documented state buffer, but remains exposed to the federal investigative and records layer.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "198 anti-LGBTQ incidents logged in 2025, the highest raw count of any division, with a documented rise in hate-crime reports in the largest city.",
+     "protection": "No per-capita denominator supplied; a July 2026 analysis places the division in the safest-laws band with a low recorded-incident count; federal hate-crime statute covers gender identity.",
+     "interaction": "Raw counts track population size; without a denominator they do not establish elevated risk for an individual visitor.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Whether identity-based prison housing persists after January 2021 is unresolved; incident data lacks denominators; federal measures remain in litigation and shift with court rulings.",
+     "protection": "Division statutory floors, sanctuary law, funded inmate care, and active federal litigation with injunctions granted.",
+     "interaction": "Division remedies work for state-level harms; for federal harms the visitor has only slow, uncertain national litigation.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Ostravia assigns custody by birth sex into blocks where assaults are frequent and criminalises cross-dressing in administrative buildings. B houses state inmates by identity, funds their care, and has no presentation offence. B is materially safer than this anchor, though the federal custody layer partly reintroduces the same hazard."
+    },
+    {
+     "anchor_id": "0.45-A",
+     "comparison": "Vesskar exposes visitors through linked biometric cards, with detention and denial of care documented and prosecutions uncommon. B has no universal domestic credential exposure for visitors and a documented care shield, but shares a punitive document regime at the border. B sits slightly below or near this anchor overall."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Kestrel Isles limits harm to secondary screening, interview and refused admission with an appeal desk. B's federal facility exclusion and documented custodial abuse go beyond friction and delay, so B is below this anchor despite stronger statutory protection."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Meridia recognises presentation-matching markers, trains border officers, and provides counsel, written reasons and compensation on detention. B offers no comparable visitor-facing border protection; its protections are care, custody and anti-discrimination floors. B is well below this anchor."
+    }
+   ],
+   "synthesis": "The traveller meets two layers that do not cancel. Federally: birth-sex document processing, discrepancy-driven refusal and possible lifetime ineligibility, exclusion from congruent single-sex facilities in federally funded buildings, and a custody system with documented abuse — none of which division law reaches. Locally: a working sanctuary statute that protects families travelling in for a minor's care, identity-based state prison housing, funded inmate care, and a safest-laws rating. Recorded anti-LGBTQ incidents are high in raw count but carry no denominator, so they establish hostility's presence, not elevated per-visitor risk. The protective layer is genuine but bounded to state actors; the federal layer follows the traveller through the airport and any federal custody."
+  },
+  "difference_ri_minus_nh": 0.07
+ },
+ "parse_error": null,
+ "attempts": 1
+}

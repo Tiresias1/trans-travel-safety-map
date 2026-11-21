@@ -1,0 +1,166 @@
+{
+ "iteration": 30,
+ "model": "qwen",
+ "model_id": "qwen/qwen3.8-flash",
+ "status": "ok",
+ "cost_usd": "0.00931405",
+ "usage": {
+  "cost_usd": "0.00931405",
+  "input_tokens": 30660,
+  "output_tokens": 15871
+ },
+ "labels": {
+  "A": "GUM",
+  "B": "66186276B82803899326534:Indiana"
+ },
+ "A_region": "GUM",
+ "B_region": "66186276B82803899326534:Indiana",
+ "A_rating": 0.34,
+ "B_rating": 0.29,
+ "difference_B_minus_A": -0.05,
+ "parsed": {
+  "A": {
+   "rating": 0.34,
+   "explanation": "A combines severe federal exposure with comparatively tolerant local climate. Federal passport/visa rules create universal entry risk: mismatched or X documents can be refused, evidence demanded, or treated as fraud; airport screening may out. If an encounter leads to custody, federal birth-sex/conversion practices and documented immigration-custody abuse apply. The island adds no criminal facility rule and has visible LGBTQ acceptance, but that climate signal does not offset federal entry, facilities, or custody. Adult street risk is reduced; family exposure remains uncertain because youth-care hostility is national and local care rules are not documented.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal X/marker restrictions, visa refusals where sex is doubted, passport confiscation/blocking, airport secondary screening, and possible lifetime immigration fraud findings.",
+     "protection": "Existing X passports remain valid; litigation and legal-aid FAQ; no local island entry criminalisation documented.",
+     "interaction": "Federal border rules supersede local tolerance and apply to island arrivals and federal facilities.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections mandate birth-sex/conversion practices; immigration custody reports forced labour, beatings, solitary confinement, and sexual abuse; detention can follow border or facility encounters.",
+     "protection": "No documented island custody exception or functioning traveler complaint remedy.",
+     "interaction": "Federal custody exposure follows any local arrest or border hold; local courts cannot offset federal practice.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars government-funded single-sex facilities; national map records bans and criminal trespass in some jurisdictions, with documented men’s-ward arrest.",
+     "protection": "Island local evidence documents no criminal facility ban, visible acceptance, Pride, and employment protection.",
+     "interaction": "Local tolerance helps non-federal settings, but federal facility restrictions apply; resident surgery-based recognition does not offset visitor documents.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "National hostility to youth care includes school investigations, funding freeze, and reimbursement proposals; island adult/minor care availability not documented.",
+     "protection": "No documented island care access or traveler health remedy; employment protections are not care-specific.",
+     "interaction": "A guardian seeking youth care could meet federal/national restrictions, but island applicability is unresolved.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "National counterterrorism language brands radically pro-transgender ideology; polls show majority support for birth-sex documents; federal agencies erase gender-identity materials.",
+     "protection": "National hate-crime statute and island employment protection; tolerant local culture.",
+     "interaction": "Hostile federal framing coexists with courts that allowed passport restrictions; local policing climate is unknown.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "National orders direct school investigations and criminal pressure over preferred names and youth-care hostility; island-specific care or school rules not documented.",
+     "protection": "No documented protective island rule for visiting minors; general LGBTQ visibility is not minor-care protection.",
+     "interaction": "Family visits could trigger care denial, outing, or institutional contact if national rules reach the island; status unresolved.",
+     "status": "uncertain"
+    },
+    "street_violence_police_response": {
+     "exposure": "No island-specific trans violence or police targeting documented; national statistics are not traveler-specific.",
+     "protection": "Island described as tolerant, with few societal discrimination or harassment reports and visible LGBTQ scene.",
+     "interaction": "Local acceptance reduces everyday friction but cannot change federal entry or custody encounters.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Active litigation and injunctions leave scope unclear; legal-aid FAQ is not enforcement proof; no effective island traveler remedy documented.",
+     "protection": "Local employment law, marriage rulings, and tolerant climate; court challenges remain pending.",
+     "interaction": "Partial rule of law may mitigate some federal orders but does not erase border or custody harm.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Unlike 0.15-A, no capital or long-presentation prosecution is documented, and the island lacks local criminal facility rule. But federal fraud/entry refusal and severe custody if detained remain, and courts allowed passport restrictions. A is safer than 0.15-A but still materially worse than mid-band anchors."
+    },
+    {
+     "anchor_id": "0.35-A",
+     "comparison": "Compared with border-exclusion-only 0.35-A, A adds documented federal custody abuse and lifetime fraud possibility, while local tolerance reduces street exposure. Net placement is near but slightly below 0.35 because the post-outcome state custody/facility consequences are severe."
+    },
+    {
+     "anchor_id": "0.85-A",
+     "comparison": "Far below 0.85-A: active traveler-facing federal restrictions exist at entry, facilities, and custody; there is no reliable protective border regime or non-discrimination guarantee for trans visitors despite local social tolerance."
+    }
+   ],
+   "synthesis": "The operative regime is federal restriction plus local tolerance. Entry is dominant: mismatched markers or doubted sex can trigger refusal, evidence demands, stranding, or fraud findings. Outed custody carries documented abusive and conversion practices, and national facility rules can reach government-funded services. Island acceptance and employment law lower street friction and non-federal facility risk but do not offset federal screening, custody, or youth-care hostility. Adult risk concentrates at border/institutional contact; family risk remains uncertain enough to prevent a safe score."
+  },
+  "B": {
+   "rating": 0.29,
+   "explanation": "B combines the same federal border/custody regime with a state layer that blocks minors’ gender-affirming care and ends state identification marker updates. The state does not currently criminalise facility use and has local ordinances protecting access, so adult non-federal facility risk is lower than in many mapped jurisdictions. However, family exposure is materially worse: provider bans and parental notification can deny care and force outing. Federal entry screening, possible fraud findings, immigration custody abuse, and national corrections conversion remain operative and dominate local mitigations.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal X/marker restrictions, visa refusals where sex is doubted, passport confiscation, possible lifetime fraud, airport screening; state DMV marker ban ends local identification matching.",
+     "protection": "Existing X valid; litigation and legal-aid FAQ; no local entry criminalisation documented; state has no current facility criminal ban.",
+     "interaction": "Federal border rules and state document hostility combine; DMV ban may raise suspicion in local identity interactions but visitor home passports are governed federally.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections conversion and immigration custody abuse are documented; state bars incarcerated transition funding; prison housing bill is not law.",
+     "protection": "No documented traveler custody remedy; prior school injunction is not custody placement protection.",
+     "interaction": "Border or facility arrest can flow into federal/state custody; hostile state documents can amplify suspicion but federal custody dominates.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars government-funded single-sex facilities; national map records bans elsewhere; state pending facility bill is not law.",
+     "protection": "State law no bathroom ban, two city ordinances protect use, and school injunction precedent exists.",
+     "interaction": "Local protection reduces non-federal facility exposure; federal restrictions remain operative for government-funded settings.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State bans gender-affirming care for minors with provider penalty and phase-out; school notification/name rules; national youth-care hostility; adult care unknown.",
+     "protection": "No documented minor care access; no adult traveler care guarantee.",
+     "interaction": "A travelling guardian seeking care can face denial, forced outing, or provider refusal; federal border/care encounters may compound.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism language brands radically pro-transgender ideology; state governor order defines sex by birth; agency ended marker updates; risk assessment flags restrictive documents.",
+     "protection": "State hate-crime enhancement; local ordinances; no state facility criminalisation.",
+     "interaction": "Hostile federal-state document regime coexists with partial local protections; courts allowed federal passport restriction.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "State care ban, K-3 curriculum and name-pronoun notification, and federal school investigation framing can trigger outing or care denial for a minor.",
+     "protection": "No documented guardian care access; local facility ordinances do not cover care.",
+     "interaction": "Family exposure is higher than adult-alone exposure because provider bans and notification operate and may meet federal hostility.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "No state-specific trans violence data; national statistics are not traveler-specific; DMV warning concerns forced outing, not violence.",
+     "protection": "City ordinances, some local employment protections, and hate-crime enhancement on paper.",
+     "interaction": "Everyday friction may be mitigated locally, but hostile state document rules and federal policing climate remain.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "DMV challenge pending; facility bill un-heard; hate-crime enforcement unknown; religious clarification unresolved; adult care unknown.",
+     "protection": "Local ordinances, prior school injunction, civil-liberties litigation, hate-crime statute.",
+     "interaction": "Remedies are partial and slow; pending litigation does not offset documented federal border/custody harm.",
+     "status": "uncertain"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.15-A",
+     "comparison": "Unlike 0.15-A, B lacks local criminal presentation statute and execution, and state protects non-federal facility use. But federal fraud/entry risk, severe custody if detained, and minor-care denial keep it far from safe; B is above 0.15 but still high risk."
+    },
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Compared with 0.25-C prison birth-sex housing, B has no enacted prison facility law and adult local protection, but federal custody/conversion and state minor-care ban apply. B is adjacent to 0.25-C: safer for adult alone, worse for families."
+    },
+    {
+     "anchor_id": "0.75-D",
+     "comparison": "Far below 0.75-D: active federal entry/custody restrictions and state minor-care ban exist. Local ordinances and hate-crime statute are partial and do not prevent document refusal, fraud findings, or youth-care denial."
+    }
+   ],
+   "synthesis": "The adult visitor faces the same federal border/fraud risk, but state/local facilities are not criminalised and ordinances can protect non-federal access. Family visitors face distinct provider-ban and notification exposure, forcing care denial or outing. Federal custody and counterterrorism rhetoric make institutional contact severe, while courts allowed passport restrictions and state challenges are unresolved. The combined regime is unsafe despite partial local protections, especially for travelling minors."
+  },
+  "difference_ri_minus_nh": -0.05
+ },
+ "parse_error": null,
+ "attempts": 1
+}

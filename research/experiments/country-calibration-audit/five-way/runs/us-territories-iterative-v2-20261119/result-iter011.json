@@ -1,0 +1,166 @@
+{
+ "iteration": 11,
+ "model": "muse",
+ "model_id": "meta/muse-ember",
+ "status": "ok",
+ "cost_usd": "0.003382988",
+ "usage": {
+  "cost_usd": "0.003382988",
+  "input_tokens": 30952,
+  "output_tokens": 3719
+ },
+ "labels": {
+  "A": "ASM",
+  "B": "66186276B86627915353587:New Hampshire"
+ },
+ "A_region": "ASM",
+ "B_region": "66186276B86627915353587:New Hampshire",
+ "A_rating": 0.45,
+ "B_rating": 0.55,
+ "difference_B_minus_A": 0.1,
+ "parsed": {
+  "A": {
+   "rating": 0.45,
+   "explanation": "Combined regime is dominated by documented federal exposures: binary passport/visa rules, entry discrepancy and possible fraud ineligibility, ban on gender-identity use of government single-sex facilities, and severe federal custody harms. Local territory adds fa'afafine cultural recognition and no sodomy law, but no documented local anti-discrimination, hate-crime or facilities protection, in a highly religious conservative society. Federal employment recourse exists but does not cancel entry, federal-facility or custody exposure. No imprisonment or execution for being trans is documented, yet universal federal exposure is inescapable.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal X-marker processing stopped; discrepancy or doubt triggers refusal, extra evidence, and possible consideration of permanent fraud ineligibility. Visitor passport remains home-issued but US entry screening applies.",
+     "protection": "Existing X passports valid until expiry; fraud finding requires four elements, is never automatic, some waivers exist.",
+     "interaction": "Document discrepancy at entry can escalate to refusal, added evidence, or fraud inquiry before any local protection is reached.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections policy mandates hair cutting, hormone removal and psychiatric substitution; immigration custody reports forced labour, beatings, solitary and severe sexual abuse.",
+     "protection": "Not documented. Civil-liberties suit on passports is unresolved; no documented custody remedy for visitors.",
+     "interaction": "Detention after entry or other encounter exposes traveller to birth-sex placement and documented abuse; local recourse is not documented.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal order bars gender-identity use of government-funded single-sex facilities; many states ban it, 4 criminalise in circumstances, with a 2025 capitol restroom arrest and 24h men's-ward hold.",
+     "protection": "No territory-level facilities protection documented; some federal orders enjoined, status varies.",
+     "interaction": "Local absence of a documented ban does not cancel federal government-facility rule or state bans encountered elsewhere in the country.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "Federal orders and proposed rules restrict minor care and funding, subpoenas of minor records; adult visitor care access in territory is not documented.",
+     "protection": "Not documented for adult visitors. No documented local care protection.",
+     "interaction": "Emergency or continuity care could require disclosure; federal minor-care measures affect travelling families even if adult is not the patient.",
+     "status": "uncertain"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism strategy prioritises 'radically pro-transgender' groups; justice guidance links 'radical gender ideology' to violent extremism; 66% poll support for birth-sex documents.",
+     "protection": "National hate-crime law covers gender identity; some orders blocked/enjoined; territory has no sodomy law.",
+     "interaction": "Official threat-framing increases outing and enforcement discretion, while hate-crime coverage is only partial at state level nationally.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "Federal order directs investigation and possible criminal prosecution of teachers facilitating social transition; 27 states ban child care; sports/entry rules restrict trans athletes.",
+     "protection": "Not documented locally for travelling minors or guardians; several orders are in litigation.",
+     "interaction": "A travelling minor faces school, care, sports and record exposure; guardian/provider liability can force denial or outing.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "Highly religious conservative society dominates attitudes; open displays may offend. Only documented trans violence is a Feb 2023 sexual-abuse charge of a 16-year-old, outcome unstated.",
+     "protection": "Fa'afafine are integral to traditional culture, community organisation and Pride since 2016; federal settlement resolved trans-employee harassment.",
+     "interaction": "Cultural recognition may reduce street hostility, but absence of later documented incidents is not evidence of safety and federal police/custody exposure remains.",
+     "status": "uncertain"
+    },
+    "remedies_unknowns": {
+     "exposure": "Passport suit and executive-order challenges unresolved; local marriage applicability untested; no local anti-discrimination or hate-crime statute documented.",
+     "protection": "Federal courts, civil-liberties litigation, hate-crime statute, and 2023 federal employment settlement show some recourse in principle.",
+     "interaction": "Remedies do not document operative pre-emption of federal entry, facilities or custody rules for a visitor on a short stay.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Lower than 0.25 anchor: no birth-sex prison housing documented as routine for visitors, no organised sweeps, and execution/imprisonment for presentation not credible, though federal custody abuse is severe if detained."
+    },
+    {
+     "anchor_id": "0.55-B",
+     "comparison": "Lower than 0.55 anchor: federal exposures are broader than discretionary secondary screening, including binary documents, facilities ban and custody harms, with weaker documented local recourse than the anchor's appeal desk."
+    },
+    {
+     "anchor_id": "0.85-B",
+     "comparison": "Far below 0.85: no recognised X entry, no trained-document regime, and federal facilities/custody rules contradict the anchor's audited, remedied equality regime. Higher only because local cultural acceptance and no sodomy law avoid a criminalisation regime."
+    }
+   ],
+   "synthesis": "Federal entry, document, facilities and custody exposures form the operative regime for every visitor; territory protections are cultural and resident-employment based, not visitor-facing and not shown to pre-empt federal action. Fa'afafine recognition likely lowers street-level threat versus a purely hostile locale, but conservative religion, thin local recourse and severe custody findings keep the case at the universal-exposure tier without a working remedy."
+  },
+  "B": {
+   "rating": 0.55,
+   "explanation": "Same federal tier-1 exposures as A govern entry, passports, federal facilities and custody, and cannot be cancelled by state law. This state layer adds documented operative protections: gender-identity coverage in housing, employment, public accommodations, health care and schools since 2018-2020, hate-crime enhancements, abolition of trans-panic defence, and a 2026 court finding for striking a trans woman. Those protections materially improve everyday and remedy prospects, but state minor-care bans, sports rules, surgical birth-certificate requirement and federal custody harms remain.",
+   "summary_key_used": "explanation",
+   "factor_matrix": {
+    "entry_documents": {
+     "exposure": "Federal binary passport rule, X-marker stop, entry cable on discrepancy/doubt, refusal and possible permanent fraud-ineligibility consideration apply identically.",
+     "protection": "Existing X passports valid to expiry; fraud test requires four elements and is never automatic; passport policy is litigated.",
+     "interaction": "State driver's-licence X marker since 2020 does not control federal entry documents; a mismatch can trigger federal screening before state protections operate.",
+     "status": "documented"
+    },
+    "investigation_detention_custody": {
+     "exposure": "Federal corrections conversion-type policies, hormone removal, and immigration-custody forced labour, beatings, solitary and severe sexual abuse are documented nationally.",
+     "protection": "Not documented as operative for federal custody; state hate-crime and civil-rights enforcement does not document federal custody relief.",
+     "interaction": "If detained federally, state anti-discrimination law does not cancel federal custody placement or care denial; this is the worst-case interaction.",
+     "status": "documented"
+    },
+    "federal_state_facilities": {
+     "exposure": "Federal government-funded single-sex facilities barred by gender identity; nationally 21 states have mapped bans and 4 criminalise some use, with documented 2025 arrest.",
+     "protection": "State public-accommodations protection covering gender identity since 2018, extended 2020; no state bathroom ban is documented for this state.",
+     "interaction": "State protection helps in state-regulated spaces but does not cancel federal facilities, schools or other federal premises rules.",
+     "status": "documented"
+    },
+    "care_services": {
+     "exposure": "State bans gender-affirming medicine/surgery for minors in 2024, and puberty blockers, hormones and chest surgery from Jan 2026 with provider discipline and private right to sue; grandfather clause only for treatment underway.",
+     "protection": "State coverage extended to health care in 2020 and public-insurance transition-surgery ban lifted 2017; adult visitor care not documented as banned.",
+     "interaction": "Adult continuity care is better protected than minor care; a travelling minor faces denial even if physician views care as necessary.",
+     "status": "documented"
+    },
+    "threat_framing_law_enforcement": {
+     "exposure": "Federal counterterrorism 'radically pro-transgender' prioritisation and 'radical gender ideology' extremism framing; national birth-sex document policy.",
+     "protection": "State hate-crime enhancements since 2019, trans-panic defence abolished 2024, anti-bullying covers gender identity, 2024 state high court protected trans students on privacy/autonomy.",
+     "interaction": "State protections and a working court finding mitigate street/state enforcement locally, but federal framing and screening remain.",
+     "status": "documented"
+    },
+    "minors_guardians": {
+     "exposure": "State bans cover under-18 blockers, hormones, chest surgery and earlier medicine/surgery; girls' sports grades 5-12 require birth certificate (temporary stay documented, outcome unresolved); federal school-investigation order.",
+     "protection": "Grandfather clause, vetoed broader adult-discrimination bill, court stay of sports ban pending appeals, and state school privacy ruling.",
+     "interaction": "Guardian/provider exposure can mean loss of care, school/sports exclusion, disclosure, or litigation risk travelling with a minor.",
+     "status": "documented"
+    },
+    "street_violence_police_response": {
+     "exposure": "72 raw anti-LGBTQ incidents in 2025 is documented without per-capita denominator, so it is not used as a rate; 88% support for protections in 2022 poll.",
+     "protection": "July 2026 county court found a man violated civil-rights statute by striking a trans woman, showing prosecution/recourse operating; hate-crime enhancements apply.",
+     "interaction": "Documented enforcement for street violence contrasts with federal custody harm; raw counts do not establish exceptional trans-specific violence.",
+     "status": "documented"
+    },
+    "remedies_unknowns": {
+     "exposure": "Sports-ban stay outcome, injunction status of 2025 minor-care laws, and federal passport litigation are unresolved; birth-certificate surgery/court-order requirement remains after 2019 veto.",
+     "protection": "State civil-rights statute, courts, legal remedies, hate-crime enhancements, 22-state equality map context, and federal challenges show functioning recourse in state sphere.",
+     "interaction": "State remedies work for state street/civil-rights harms but do not document pre-emption of federal entry, facilities or custody exposure.",
+     "status": "documented"
+    }
+   },
+   "anchor_checks": [
+    {
+     "anchor_id": "0.25-C",
+     "comparison": "Higher than 0.25 anchor: state anti-discrimination, hate-crime and school protections operate, a 2026 court enforced them, and no organised targeting or birth-sex custody for ordinary visitors is documented, though federal custody is severe if it occurs."
+    },
+    {
+     "anchor_id": "0.45-D",
+     "comparison": "Higher than 0.45 anchor: exposure is not durable registration of all visitors; state protections, X licence marker and enforced civil-rights remedy provide more everyday recourse, while federal entry/facilities exposure remains."
+    },
+    {
+     "anchor_id": "0.75-C",
+     "comparison": "Lower than 0.75 anchor: 0.75 requires respectful entry with recognised markers and working tribunal; here federal binary entry/fraud screening, facilities ban and custody harms persist, and state minor-care/sports restrictions compound exposure."
+    }
+   ],
+   "synthesis": "The state layer is genuinely protective for housing, employment, public accommodations, health-care access for adults, schools and street-violence recourse, and that operating recourse lifts the rating above A. It does not, however, cancel the shared federal regime: binary entry documents, fraud screening, federal facilities restrictions and documented federal custody abuse remain the ceiling. Minor-care bans are the main state-added exposure for travelling families."
+  },
+  "difference_ri_minus_nh": 0.1
+ },
+ "parse_error": null,
+ "attempts": 1
+}
