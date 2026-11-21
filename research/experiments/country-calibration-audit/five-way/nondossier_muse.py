@@ -14,7 +14,11 @@ scope.no_differentiator_regions, EXCLUDING the four US-territory dependency
 records (ASM/GUM/VIR/MNP) and the four occupied Ukrainian regions (handled
 by occupied_ukraine_rerate.py under the operative RUS regime). The scope
 list and every prompt hash are frozen to frozen/nondossier_muse_manifest.json
-before any provider call; `run` refuses on manifest drift.
+before any provider call; `run` refuses on manifest drift. Drift is checked
+on the region set and every prompt-bearing field (identity, parent name,
+parent score, system/user hashes); the estimated/no_differentiator scope
+flags are metadata that an external data sync may flip after freezing, so
+the frozen manifest's flags stay authoritative for the run's artifacts.
 
 Prompt (unblinded by design — the leak gate does not apply to this pass):
   1. the region's real name and country;
@@ -81,9 +85,12 @@ EXCLUDED_SIDS = frozenset({
 BASIS_MIN_WORDS = 45    # instructed 60-140; v4-style validation tolerance
 BASIS_MAX_WORDS = 175
 KNOWLEDGE_VALUES = frozenset({"region-specific", "parent-only"})
+# "prompt" only counts as rating-process meta when it refers to the prompt
+# itself; the adjective/verb ("prompt remedy", "can prompt curiosity") is
+# legitimate public-summary prose (three false rejections, 2026-11-21).
 BASIS_META_RE = re.compile(
-    r"\b(rating|rated|scores?|scored|rubric|anchors?|dossier|prompt)\b"
-    r"|\bthis record\b|\bthe model\b", re.I)
+    r"\b(rating|rated|scores?|scored|rubric|anchors?|dossier)\b"
+    r"|\bthis record\b|\bthe model\b|\b(?:the|this) prompt\b", re.I)
 BASIS_SCORE_NUM_RE = re.compile(r"\b[01]\.\d+\b")
 
 NONDOSSIER_OVERRIDE = """\
@@ -463,14 +470,19 @@ def run(run_id: str) -> int:
         return 2
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     cells, system, _ = build_cells()
-    frozen = manifest["regions"]
-    live = [{k: c[k] for k in ("region", "sid", "name", "iso3", "parent_name",
-                               "parent_score", "estimated", "no_differentiator",
-                               "system_sha256", "user_sha256")} for c in cells]
+    prompt_keys = ("region", "sid", "name", "iso3", "parent_name",
+                   "parent_score", "system_sha256", "user_sha256")
+    live = [{k: c[k] for k in prompt_keys} for c in cells]
+    frozen = [{k: r[k] for k in prompt_keys} for r in manifest["regions"]]
     if live != frozen or manifest["system_sha256"] != V4.sha(system):
         print("manifest drift: rebuilt cells differ from frozen manifest; "
               "refusing to run", flush=True)
         return 2
+    # Scope flags may be flipped by an external data sync after freezing;
+    # the frozen manifest remains authoritative for the run's metadata.
+    for c, r in zip(cells, manifest["regions"]):
+        c["estimated"] = r["estimated"]
+        c["no_differentiator"] = r["no_differentiator"]
     run_dir = HERE / "runs" / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
     total = Decimal("0")
