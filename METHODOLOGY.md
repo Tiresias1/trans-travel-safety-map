@@ -119,11 +119,24 @@ dossier shows it can reach the actor or stage that creates the risk. Evidence
 is weighed by the same rules above (scope, date, trigger, visitor
 applicability; local evidence never doubles as national evidence).
 
-Where no local signal exists, the region is assessed on the national regime
-visible in the record; uncertainty is stated rather than treated as a finding
-that conditions there match the country. Sub-national variation can be large:
-a national score cannot describe every local difference, and decimal differences
-and ranks should not be read as precise measurements of relative safety.
+Where a region has no researched dossier of its own, it inherits the parent
+regime and is assessed against it: a judge model with knowledge of the country
+reads the region's identity, the parent's full dossier and score, and the
+synthetic anchors, and rates how the region's local conditions (social
+conservatism, rule of law, urban/rural character, tourism, enforcement
+geography) combine with the inherited regime. The model writes a brief
+dossier-style justification of those local differences, which is shown in the
+popup. This is not arithmetic on the national score: a restrictive country's
+regions are not pushed toward the execution end of the scale by subtraction,
+and a tourist or lightly-enforced area can sit above the national baseline.
+Sub-national variation can be large: decimal differences and ranks should not
+be read as precise measurements of relative safety.
+
+Dependencies and territories are assessed as regions under their parent
+regime — with explicit attention to which parts of the parent regime actually
+reach them — not as independent countries. Where occupation displaces the de
+jure authority, the operative regime is assessed: the map keeps de jure
+boundaries for display but rates the regime a visitor actually encounters.
 
 ## Boundaries and sources
 
