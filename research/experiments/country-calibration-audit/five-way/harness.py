@@ -590,8 +590,15 @@ def render_country_dossier(iso3: str, countries: dict,
 LEAK_PATTERNS = (
     re.compile(r"\bnational score\b", re.I),
     re.compile(r"\bsub-?national score\b", re.I),
-    re.compile(r"\bscores?\b[^.]{0,40}\b\d+\.\d"),
-    re.compile(r"\b\d+\.\d+\b[^.]{0,30}\bscores?\b"),
+    # Exempt external-index values carrying an explicit denominator
+    # ("-8.75 out of 25"): external indices' own scores are facts, not
+    # the map's score (PIPELINE_INVARIANTS \u00a74); a map score never
+    # carries an "out of N" denominator.
+    re.compile(r"\bscores?\b[^.]{0,40}\b\d+\.\d+\b(?!\s+out of\s+\d+)"),
+    # Reversed form ("0.42 score"): restricted to the map-score range
+    # [0,1] — a decimal outside that range ("4.1 protective-law score",
+    # "1.9 incidents") is an external index/count, never the map score.
+    re.compile(r"\b[01]\.\d+\b(?!\s+out of\s+\d+)[^.]{0,30}\bscores?\b"),
     # bare two-decimal 0.xx-style values are score-shaped. Exempt: explicit
     # percentages and rate figures carrying a denominator ("per 100,000",
     # "per a small population") — the rubric REQUIRES denominators for rates.
@@ -696,13 +703,302 @@ def build_country_user(slot_map: dict, countries: dict,
     return user_text
 
 
+# --------------------------------------------------------------------------- #
+# Shared identity neutralizer (canonical home; global_adm1_iterative aliases
+# it). Regex replacement is ONLY a post-hoc failsafe: the primary blinding
+# mechanism is model-based rewriting (blind_rewrite.py). This neutralizer
+# guarantees that an unneutralized blind field can never reach a prompt
+# verbatim — render_admin1_dossier runs every blind field it renders
+# through it. Term lists are built programmatically from the record and
+# parent names plus the small manual exception tables below (demonyms and
+# institutions are irregular in English, so they cannot be derived by
+# suffix rules alone).
+# --------------------------------------------------------------------------- #
+
+# Generic admin-division words that are not distinctive name tokens.
+_NAME_STOP = frozenset({"province", "region", "district", "autonomous",
+                        "north", "south", "east", "west", "central", "new",
+                        "state", "city", "county", "prefecture", "governorate",
+                        "territory", "division", "proper", "island", "capital"})
+
+# Manual demonym/adjective exceptions: base name token -> adjective forms.
+# Keys are lower-cased name tokens; values are the forms that must never
+# survive blinding. Derived programmatically for all other names (see
+# division_identity_terms) and supplemented here for irregular cases.
+_DEMONYM_EXCEPTIONS = {
+    "scotland": ("Scottish", "Scots"),
+    "wales": ("Welsh",),
+    "england": ("English",),
+    "ireland": ("Irish",),
+    "kingdom": ("British",),
+    "britain": ("British",),
+    "united": ("British",),
+    "america": ("American",),
+    "states": ("American",),
+    "france": ("French",),
+    "spain": ("Spanish",),
+    "germany": ("German",),
+    "italy": ("Italian",),
+    "portugal": ("Portuguese",),
+    "netherlands": ("Dutch",),
+    "belgium": ("Belgian",),
+    "switzerland": ("Swiss",),
+    "austria": ("Austrian",),
+    "poland": ("Polish",),
+    "russia": ("Russian",),
+    "ukraine": ("Ukrainian",),
+    "turkey": ("Turkish",),
+    "turkiye": ("Turkish",),
+    "china": ("Chinese",),
+    "india": ("Indian",),
+    "pakistan": ("Pakistani",),
+    "bangladesh": ("Bangladeshi",),
+    "japan": ("Japanese",),
+    "korea": ("Korean",),
+    "thailand": ("Thai",),
+    "vietnam": ("Vietnamese",),
+    "indonesia": ("Indonesian",),
+    "malaysia": ("Malaysian",),
+    "singapore": ("Singaporean",),
+    "philippines": ("Filipino",),
+    "australia": ("Australian",),
+    "canada": ("Canadian",),
+    "mexico": ("Mexican",),
+    "brazil": ("Brazilian",),
+    "argentina": ("Argentine",),
+    "chile": ("Chilean",),
+    "peru": ("Peruvian",),
+    "colombia": ("Colombian",),
+    "egypt": ("Egyptian",),
+    "nigeria": ("Nigerian",),
+    "kenya": ("Kenyan",),
+    "ethiopia": ("Ethiopian",),
+    "south": ("South African",),
+    "africa": ("South African", "African"),
+    "israel": ("Israeli",),
+    "saudi": ("Saudi",),
+    "arabia": ("Saudi",),
+    "iran": ("Iranian",),
+    "iraq": ("Iraqi",),
+    "afghanistan": ("Afghan",),
+    "myanmar": ("Burmese",),
+    "burma": ("Burmese",),
+    "cambodia": ("Cambodian",),
+    "laos": ("Lao",),
+    "mongolia": ("Mongolian",),
+    "nepal": ("Nepali",),
+    "bhutan": ("Bhutanese",),
+    "sri": ("Sri Lankan",),
+    "lanka": ("Sri Lankan",),
+    "new": ("New Zealander",),
+    "zealand": ("New Zealander",),
+    "iceland": ("Icelandic",),
+    "denmark": ("Danish",),
+    "norway": ("Norwegian",),
+    "sweden": ("Swedish",),
+    "finland": ("Finnish",),
+    "greece": ("Greek",),
+    "romania": ("Romanian",),
+    "bulgaria": ("Bulgarian",),
+    "croatia": ("Croatian",),
+    "serbia": ("Serbian",),
+    "hungary": ("Hungarian",),
+    "czech": ("Czech",),
+    "slovakia": ("Slovak",),
+    "lithuania": ("Lithuanian",),
+    "latvia": ("Latvian",),
+    "estonia": ("Estonian",),
+}
+
+# Manual institution exceptions: exact phrases that identify a record or
+# its parent even when every name token alone is generic. Keys are the
+# record-name (lower-cased) or parent-name fragments they apply to.
+_INSTITUTION_EXCEPTIONS = {
+    "scotland": ("Scottish Parliament", "Court of Session", "Police Scotland",
+                 "Scottish Prison Service", "Scottish Government",
+                 "Crown Office and Procurator Fiscal Service",
+                 "NHS Scotland", "National Health Service Scotland"),
+    "wales": ("Welsh Parliament", "Senedd", "Welsh Government"),
+    "england": ("NHS England", "Health and Care Professions Council"),
+    "northern ireland": ("Northern Ireland Assembly", "Police Service of Northern Ireland"),
+    "united kingdom": ("Scottish Parliament", "Court of Session", "Police Scotland",
+                       "Scottish Prison Service", "Scottish Government",
+                       "Crown Office and Procurator Fiscal Service", "NHS Scotland",
+                       "Welsh Parliament", "Senedd", "Welsh Government",
+                       "NHS England", "British Transport Police",
+                       "Equality and Human Rights Commission"),
+    "united states": ("United States Congress", "Federal Bureau of Investigation"),
+}
+
+_GENERIC_INSTITUTION_SUFFIXES = ("Parliament", "Assembly", "Government",
+                                 "Police Service", "Prison Service",
+                                 "Court of Session", "High Court", "Supreme Court",
+                                 "National Health Service")
+
+
+def _name_tokens(name: str) -> list[str]:
+    """Distinctive >=4-letter tokens of a name, minus stopwords."""
+    out = []
+    for tok in re.findall(r"[A-Za-zÀ-ɿ]{4,}", str(name or "")):
+        if tok.lower() in _NAME_STOP:
+            continue
+        if tok not in out:
+            out.append(tok)
+    return out
+
+
+def _derived_demonyms(tokens) -> list[str]:
+    """Candidate adjective forms for tokens without a manual exception.
+
+    Deliberately over-generates (failsafe flagging may over-match); the
+    neutralizer only replaces tokens that actually appear in the text.
+    """
+    out = []
+    for tok in tokens:
+        low = tok.lower()
+        if low in _DEMONYM_EXCEPTIONS:
+            out.extend(_DEMONYM_EXCEPTIONS[low])
+            continue
+        base = tok.rstrip("y")
+        for cand in (tok + "n", tok + "an", tok + "ian", tok + "ese",
+                     base + "ian", base + "ese", base + "ite"):
+            if cand not in out:
+                out.append(cand)
+    return out
+
+
+def division_identity_terms(rec_name: str, parent_name: str = "",
+                            sibling_names=()) -> list[str]:
+    """Canonical identity terms for a division: full names, distinctive
+    tokens, demonym/adjective forms, and institution phrases. Longest
+    first so phrases are replaced before their component tokens."""
+    terms: set[str] = set()
+    names = [rec_name] + [str(s) for s in (sibling_names or ())]
+    for name in names:
+        if not name:
+            continue
+        terms.add(str(name))
+        tokens = _name_tokens(name)
+        terms.update(tokens)
+        terms.update(_derived_demonyms(tokens))
+        for suffix in _GENERIC_INSTITUTION_SUFFIXES:
+            terms.add(f"{name} {suffix}")
+        low_name = str(name).lower()
+        for key, insts in _INSTITUTION_EXCEPTIONS.items():
+            if key in low_name or key in str(parent_name or "").lower():
+                terms.update(insts)
+    # angle: parent demonyms also fingerprint divisions of that parent
+    # country (e.g. "Scottish" under United Kingdom) via the exceptions
+    # keyed on the parent name.
+    p_tokens = _name_tokens(parent_name or "")
+    terms.update(_derived_demonyms(p_tokens))
+    low_parent = str(parent_name or "").lower()
+    for key, insts in _INSTITUTION_EXCEPTIONS.items():
+        if key in low_parent:
+            terms.update(insts)
+    terms.discard("")
+    return sorted(terms, key=lambda t: (-len(t), t.lower()))
+
+
+def country_identity_terms(parent_name: str, iso3: str) -> list[str]:
+    """Canonical identity terms for the parent country."""
+    terms: set[str] = set()
+    if parent_name:
+        terms.add(str(parent_name))
+        tokens = _name_tokens(parent_name)
+        terms.update(tokens)
+        terms.update(_derived_demonyms(tokens))
+        for suffix in _GENERIC_INSTITUTION_SUFFIXES:
+            terms.add(f"{parent_name} {suffix}")
+    if iso3:
+        terms.add(str(iso3))
+    low_parent = str(parent_name or "").lower()
+    for key, insts in _INSTITUTION_EXCEPTIONS.items():
+        if key in low_parent:
+            terms.update(insts)
+    terms.discard("")
+    return sorted(terms, key=lambda t: (-len(t), t.lower()))
+
+
+def _replace_terms(text: str, terms, repl: str) -> str:
+    for term in terms:
+        if not term:
+            continue
+        text = re.sub(rf"\b{re.escape(term)}\b", repl, text, flags=re.I)
+    return text
+
+
+def neutralize(text: str, rec_name: str, iso3: str, parent_name: str,
+               score_values=(), sibling_names=(), division_repl: str = "this division") -> str:
+    """Shared name/score neutralizer (post-hoc failsafe, not the primary
+    blinding transform — see blind_rewrite.py for the model-based writer).
+
+    Replaces division identity terms (names, tokens, demonyms, institutions)
+    with `division_repl`, parent country terms / ISO3 with "this country",
+    removes score-like numbers and score-referencing phrases. HTML is
+    cleaned first. Canonical single-render rule: callers must render each
+    fact exactly once — blindSummary is a blinded rewrite of summary, not
+    additional evidence, so a dossier must not contain both.
+    """
+    t = clean(text)
+    if not t:
+        return ""
+    t = _replace_terms(t, division_identity_terms(rec_name, parent_name,
+                                                  sibling_names),
+                       division_repl)
+    t = _replace_terms(t, country_identity_terms(parent_name, iso3),
+                       "this country")
+    for v in score_values:
+        if v is not None:
+            t = re.sub(rf"\b{re.escape(str(v))}\b", "", t)
+    t = re.sub(r"\b[01]\.\d+\b", "", t)
+    t = re.sub(r"\bnational score\b", "national assessment", t, flags=re.I)
+    t = re.sub(r"\bnational level\b", "national assessment", t, flags=re.I)
+    t = re.sub(r"\bnational picture\b", "national assessment", t, flags=re.I)
+    t = re.sub(r"\(\s*\)", "", t)
+    t = re.sub(r"\s+", " ", t).strip(" .,;")
+    return t
+
+
+def find_identity_leaks(text: str, rec_name: str, parent_name: str,
+                        iso3: str, sibling_names=()) -> list[str]:
+    """Regex leak-gate failsafe: identity terms present in `text`.
+
+    Returns the sorted set of matched terms (empty when clean). The gate
+    is a flag, never a transform: residual hits are listed for a
+    model/manual pass, not regex-fixed away.
+    """
+    t = clean(text)
+    if not t:
+        return []
+    terms = (division_identity_terms(rec_name, parent_name, sibling_names)
+             + country_identity_terms(parent_name, iso3))
+    hits = set()
+    for term in terms:
+        if not term:
+            continue
+        m = re.search(rf"\b{re.escape(term)}\b", t, flags=re.I)
+        if m:
+            hits.add(m.group(0))
+    # matched surface forms may differ in case from the canonical term
+    return sorted(hits, key=str.lower)
+
+
 def render_admin1_dossier(record_id: str, parent_iso: str,
                           admin1: dict, countries: dict) -> str:
     """Blinded division dossier with the parent's blind national framework.
 
     The framework is exactly the four design-enumerated fields, sources capped
     at 8; the diversity paragraph, the parent's score/identity and the
-    division's own name/summary/modelContext never appear.
+    division's own name/summary/modelContext never appear. Every blind
+    field rendered here is passed through the shared neutralize() first,
+    so an unneutralized blind field can never reach a prompt verbatim
+    (failsafe; primary blinding is the model-based rewrite in
+    blind_rewrite.py). Canonical single-render rule: this dossier is the
+    ONE rendering of the division's facts (blindSummary is a blinded
+    rewrite of summary, not additional evidence) — callers must not
+    append summary-derived local evidence for records that have a
+    blindSummary; see global_adm1_iterative.build_context.
     """
     rec = admin1.get(record_id)
     if not isinstance(rec, dict) or rec.get("iso3") != parent_iso:
@@ -710,6 +1006,24 @@ def render_admin1_dossier(record_id: str, parent_iso: str,
     parent = countries.get(parent_iso)
     if not isinstance(parent, dict):
         raise HarnessError(f"no parent country record for {parent_iso}")
+    parent_name = str(parent.get("name") or "")
+    rec_name = str(rec.get("name") or "")
+    sibling_names = [str(r.get("name") or "") for r in admin1.values()
+                     if isinstance(r, dict) and r.get("iso3") == parent_iso
+                     and str(r.get("name") or "")]
+    score_vals = [rec.get("score"), rec.get("iterativeScore"),
+                  parent.get("score"), parent.get("iterativeScore")]
+
+    def _neut_division(value) -> str:
+        return neutralize(value, rec_name, parent_iso, parent_name,
+                          score_vals, sibling_names)
+
+    def _neut_parent(value) -> str:
+        # Parent framework mentions of any sibling division are replaced
+        # with a generic division reference, not "this division".
+        return neutralize(value, parent_name, parent_iso, parent_name,
+                          score_vals, sibling_names,
+                          division_repl="a division of this country")
 
     framework = []
     for field in PARENT_FRAMEWORK_FIELDS:
@@ -717,10 +1031,12 @@ def render_admin1_dossier(record_id: str, parent_iso: str,
             label = {"blindSummary": "ASSESSMENT",
                      "blindTangential": "SECONDARY / SITUATIONAL FACTORS",
                      "blindLocalsOnly": "AFFECTS RESIDENTS MORE THAN VISITORS"}[field]
-            framework.append(f"{label}\n{clean(parent.get(field))}")
+            framework.append(f"{label}\n{_neut_parent(parent.get(field))}")
     ss = parent.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
-        items = [clean(x) for x in ss[:PARENT_FRAMEWORK_SOURCES_CAP] if str(x).strip()]
+        items = [_neut_parent(x) for x in ss[:PARENT_FRAMEWORK_SOURCES_CAP]
+                 if str(x).strip()]
+        items = [x for x in items if x]
         if items:
             framework.append("SOURCE EVIDENCE (first "
                              f"{PARENT_FRAMEWORK_SOURCES_CAP})\n"
@@ -729,17 +1045,18 @@ def render_admin1_dossier(record_id: str, parent_iso: str,
     parts = ["### PARENT NATIONAL FRAMEWORK "
              "(shared context for every dossier — no score is given)\n\n"
              + "\n\n".join(framework)]
-    evidence = [f"### DIVISION EVIDENCE\n{clean(rec.get('blindSummary'))}"]
+    evidence = [f"### DIVISION EVIDENCE\n{_neut_division(rec.get('blindSummary'))}"]
     ss = rec.get("blindSourceSummaries")
     if isinstance(ss, list) and ss:
-        items = "\n".join(f"- {clean(x)}" for x in ss if str(x).strip())
-        if items:
+        items = "\n".join(f"- {_neut_division(x)}" for x in ss if str(x).strip())
+        items = "\n".join(line for line in items.splitlines() if line != "- ")
+        if items.strip("\n- "):
             evidence.append(f"### SOURCE EVIDENCE\n{items}")
     for field, label in (("blindTangential", "### SECONDARY / SITUATIONAL FACTORS"),
                          ("blindLocalsOnly", "### AFFECTS RESIDENTS MORE THAN VISITORS"),
                          ("blindOutOfScope", "### DELIBERATELY NOT COUNTED")):
         if _has_field(rec, field):
-            evidence.append(f"{label}\n{clean(rec.get(field))}")
+            evidence.append(f"{label}\n{_neut_division(rec.get(field))}")
     if rec.get("estimated"):
         evidence.append("### DATA STATUS\nThis division's assessment is a flagged "
                         "estimate from national-level knowledge of its distinct legal "

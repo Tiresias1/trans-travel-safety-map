@@ -1,0 +1,18 @@
+{
+ "run_id": "blind-rewrite-20261121",
+ "model": "mimo (provider_models.call_v4, medium effort)",
+ "attempts_per_record": 1,
+ "scope_rule": "dossier records with summary + existing blindSummary",
+ "n_scope": 598,
+ "n_rewritten_ok": 561,
+ "n_failed": 37,
+ "total_usd": "0.3775318682",
+ "backup": "analysis/blind_rewrite_backup.json",
+ "rewrites": "runs/blind-rewrite-20261121/rewrites.jsonl",
+ "leak_gate": {
+  "n_scanned": 598,
+  "n_residual_leaks": 0,
+  "offenders": []
+ },
+ "scores_changed": false
+}

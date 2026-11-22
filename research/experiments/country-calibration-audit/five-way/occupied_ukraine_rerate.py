@@ -19,7 +19,9 @@ the RUSSIAN one. This script reassesses each exactly once under:
 
 Mechanics (reusing global_adm1_iterative machinery):
   - system text: v4 system + bounded anti-absence-as-safety DIRECTIVE
-    (pinned sha256 3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56);
+    (pinned sha256 0b22fb93ab21b5219751c8739f51a4a3309eb275906a2eb66aea516cd8a8ea07,
+    incl. clause (5): parent-level instruments apply to every division unless
+    affirmative evidence shows they do not reach this division);
   - combined A/B format (nh_ri_comparison instructions), A = occupied
     region, B = Russian partner; partner dossiers are byte-identical to the
     global run's (parent framework + blind fields + neutralized
@@ -77,7 +79,7 @@ N_ITERATIONS = 32
 PAIRINGS_PER_REGION = 8
 ALPHA = 0.20  # updates 1-8 (all updates in this run)
 CANDIDATE_K = 3
-EXPECTED_SYSTEM_SHA = "3f6af3f8f757a108afe5d87362d576cf6cbe7308a9e4d4f97a8f6a29facc5e56"
+EXPECTED_SYSTEM_SHA = "0b22fb93ab21b5219751c8739f51a4a3309eb275906a2eb66aea516cd8a8ea07"
 OPERATIVE_PARENT = "RUS"
 
 # The four occupied UKR records, in fixed order (focal-order shuffle is seeded).

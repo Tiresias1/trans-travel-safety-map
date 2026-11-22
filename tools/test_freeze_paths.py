@@ -291,12 +291,20 @@ class LegacyBehaviourRemoved(unittest.TestCase):
         # thin local scores are never auto-replaced by the national score.
         in_c = load(ROOT / "data" / "countries.json")
         in_a = load(ROOT / "data" / "admin1.json")
-        kid = next(sid for sid, r in in_a.items()
-                   if r.get("estimated") and ROUTE3_TMPL in str(r.get("summary", "")))
+        kid = next((sid for sid, r in in_a.items()
+                    if r.get("estimated") and ROUTE3_TMPL in str(r.get("summary", ""))), None)
+        if kid is None:
+            # No live estimated record carries the legacy template anymore
+            # (knowledge-based passes replaced those summaries); synthesise
+            # a fixture so the behavioural guard stays covered.
+            kid = next(sid for sid, r in in_a.items() if r.get("estimated"))
+        fixture = kid is not None and ROUTE3_TMPL not in str(in_a[kid].get("summary", ""))
         parent_iso = in_a[kid].get("parentIso3") or in_a[kid]["iso3"]
         orig_local = in_a[kid]["score"]
 
         def mutate(c, a):
+            if fixture:
+                a[kid]["summary"] = ROUTE3_TMPL
             set_score(c[parent_iso], min(0.98, float(c[parent_iso]["score"]) + 0.03))
             return parent_iso
 

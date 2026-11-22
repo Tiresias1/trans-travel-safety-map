@@ -10,11 +10,16 @@ ADM1 regions compete with siblings in the same country.
 Starts from current per-record scores in data/admin1.json. Reuses the
 combined A/B anchored pairwise machinery (normal v4 rubric/system/anchors,
 A/B anonymised, rate both while keeping partner in mind; dossiers via
-harness.render_admin1_dossier (parent framework + blind division fields)
-PLUS local evidence built from the unblinded `summary` (plus `blindSummary`
-where present), run through the name/score neutralizer below for every
-record before rendering, so no record/country names, ISO3 codes or scores
-leak. Supervisor decision D+C hybrid (2026-11-17, after iterations 1-9
+harness.render_admin1_dossier (parent framework + blind division fields,
+each run through the shared harness.neutralize failsafe inside the
+renderer). CANONICAL SINGLE-RENDER RULE: blindSummary is a blinded rewrite
+of summary, not additional evidence, so each fact renders exactly once.
+For records WITH a blindSummary the harness dossier is the single
+rendering and NO local-evidence block is appended. For records WITHOUT a
+blindSummary, one local-evidence block (neutralize(summary) only) is
+appended so they still carry local evidence. (The pre-fix construction
+appended neutralize(summary + blindSummary), rendering blindSummary twice
+— once verbatim in DIVISION EVIDENCE and once inside LOCAL EVIDENCE.) Supervisor decision D+C hybrid (2026-11-17, after iterations 1-9
 showed parent-only dossiers are identical within ISO3 for estimated
 records): if a record's neutralized local evidence has no local
 differentiator vs the parent/generic frame (see has_local_differentiator),
@@ -31,7 +36,10 @@ operative signal and must be weighted as such; legal ambiguity does NOT
 create safety; de facto authorities count as operative regime;
 discovered/outs trans visitors cannot be assumed invulnerable because they
 deny same-sex conduct; absence of a documented exact pathway is not
-mitigating evidence.
+mitigating evidence; parent-level instruments apply to every division
+unless affirmative evidence shows they do not reach this division
+(absence of a division-level record is NOT evidence of non-application,
+and 'not inherited' reasoning is forbidden).
 
 Loops 4800 pairings (seeded, deterministic, seed 20261117):
   - pick a random focal ADM1 (seeded RNG) from focal-eligible records
@@ -95,48 +103,26 @@ N_ITERATIONS = 4800
 SEED = 20261117
 EXCLUDED_ISO3 = frozenset({"ASM", "GUM", "VIR", "MNP"})
 
-# Generic admin-division words that are not distinctive name tokens.
-_NAME_STOP = frozenset({"province", "region", "district", "autonomous",
-                        "north", "south", "east", "west", "central", "new",
-                        "state", "city", "county", "prefecture", "governorate",
-                        "territory", "division", "proper", "island", "capital"})
+# Canonical neutralizer lives in harness (shared with the renderer, so an
+# unneutralized blind field can never reach a prompt). This alias keeps
+# existing `global_adm1_iterative.neutralize` callers (e.g.
+# occupied_ukraine_rerate) working without a second implementation.
+_NAME_STOP = H._NAME_STOP
+neutralize = H.neutralize
 
 
-def neutralize(text: str, rec_name: str, iso3: str, parent_name: str,
-               score_values=()) -> str:
-    """Name/score neutralizer for summary-derived local evidence.
+def build_dossier(base: str, rendered_local: str, has_blind_summary: bool) -> str:
+    """Canonical dossier construction (single-render rule).
 
-    Replaces the record name and its distinctive tokens with
-    "this division", the parent country name / ISO3 with "this country",
-    removes score-like numbers (0.xx/1.0 and any explicit score values),
-    and strips score-referencing phrases. HTML is cleaned first.
+    Records with a blindSummary already have exactly one rendering of
+    their facts inside `base` (harness DIVISION EVIDENCE, neutralized);
+    appending local evidence would duplicate those facts. Records
+    without a blindSummary get exactly one appended rendering:
+    neutralize(summary) only (never summary + blindSummary).
     """
-    t = H.clean(text)
-    if not t:
-        return ""
-    for name, repl in ((rec_name, "this division"), (parent_name, "this country")):
-        if name:
-            t = re.sub(re.escape(name), repl, t, flags=re.I)
-    if iso3:
-        t = re.sub(rf"\b{re.escape(iso3)}\b", "this country", t, flags=re.I)
-    if rec_name:
-        for tok in re.findall(r"[A-Za-zÀ-ɿ]{4,}", rec_name):
-            low = tok.lower()
-            if low in _NAME_STOP:
-                continue
-            if parent_name and low in parent_name.lower():
-                continue
-            t = re.sub(rf"\b{re.escape(tok)}\b", "this division", t, flags=re.I)
-    for v in score_values:
-        if v is not None:
-            t = re.sub(rf"\b{re.escape(str(v))}\b", "", t)
-    t = re.sub(r"\b[01]\.\d+\b", "", t)
-    t = re.sub(r"\bnational score\b", "national assessment", t, flags=re.I)
-    t = re.sub(r"\bnational level\b", "national assessment", t, flags=re.I)
-    t = re.sub(r"\bnational picture\b", "national assessment", t, flags=re.I)
-    t = re.sub(r"\(\s*\)", "", t)
-    t = re.sub(r"\s+", " ", t).strip(" .,;")
-    return t
+    if has_blind_summary:
+        return base
+    return base + "\n\n### DIVISION LOCAL EVIDENCE\n" + rendered_local
 
 
 def has_local_differentiator(local_neutralized: str, parent_text: str) -> bool:
@@ -168,7 +154,11 @@ DIRECTIVE = (
     "treat its enforcement as the operative regime. "
     "(3) A trans person discovered/outs by a hostile actor cannot be assumed "
     "invulnerable because they deny same-sex conduct. "
-    "(4) Absence of a documented exact pathway is not mitigating evidence."
+    "(4) Absence of a documented exact pathway is not mitigating evidence. "
+    "(5) Parent-level instruments apply to every division unless affirmative "
+    "evidence shows they do not reach this division; absence of a "
+    "division-level record is NOT evidence of non-application, and "
+    "'not inherited' reasoning is forbidden."
 )
 
 
@@ -305,21 +295,34 @@ def build_context():
         parts.extend(str(x) for x in ss[:8])
         parent_text[iso] = " ".join(parts)
 
-    # Local evidence for every record: `summary` plus `blindSummary` where
-    # present, run through the name/score neutralizer before rendering.
+    # Canonical single-render local evidence: the ONE rendering of the
+    # record's facts that will reach the prompt. Records WITH a
+    # blindSummary: neutralize(blindSummary) — identical to what the
+    # harness renders as DIVISION EVIDENCE (it is NOT appended again).
+    # Records WITHOUT one: neutralize(summary) ONLY. Never
+    # neutralize(summary + blindSummary): blindSummary is a blinded
+    # rewrite of summary, not additional evidence.
+    sibling_names_by_iso: dict[str, list[str]] = {}
+    for _sid, _rec in admin1.items():
+        if isinstance(_rec, dict) and _rec.get("name"):
+            sibling_names_by_iso.setdefault(_rec.get("iso3"), []).append(
+                str(_rec["name"]))
     local_neutralized = {}
+    has_blind = {}
     differentiator = {}
     for region in regions:
         rec = admin1[sid_of[region]]
         iso = iso_of[region]
         parent_name = (countries.get(iso) or {}).get("name") or ""
-        raw_parts = [str(rec.get("summary") or ""), str(rec.get("blindSummary") or "")]
-        raw_parts = [p for p in raw_parts if H.clean(p)]
+        blind = str(rec.get("blindSummary") or "")
+        has_blind[region] = bool(H.clean(blind))
+        raw = blind if has_blind[region] else str(rec.get("summary") or "")
         score_vals = [rec.get("score"), rec.get("iterativeScore"),
                       (countries.get(iso) or {}).get("score"),
                       (countries.get(iso) or {}).get("iterativeScore")]
         local_neutralized[region] = neutralize(
-            " ".join(raw_parts), name_of[region], iso, parent_name, score_vals)
+            raw, name_of[region], iso, parent_name, score_vals,
+            sibling_names_by_iso.get(iso, []))
         differentiator[region] = has_local_differentiator(
             local_neutralized[region], parent_text.get(iso, ""))
 
@@ -338,8 +341,8 @@ def build_context():
     for region in regions:
         base = H.render_admin1_dossier(
             sid_of[region], iso_of[region], admin1, countries)
-        dossiers[region] = (base + "\n\n### DIVISION LOCAL EVIDENCE\n"
-                            + local_neutralized[region])
+        dossiers[region] = build_dossier(base, local_neutralized[region],
+                                         has_blind[region])
 
     scope = {
         "n_total_admin1_records": n_total,
@@ -352,10 +355,14 @@ def build_context():
         "n_focal_eligible": len(focal_pool),
         "n_singleton_iso3_records": len(diff_regions) - len(focal_pool),
         "excluded_iso3": sorted(EXCLUDED_ISO3),
-        "dossier_rule": "render_admin1_dossier (parent+blind) plus neutralized "
-                        "summary+blindSummary local evidence; differentiator "
-                        ">=20 words and <=90% parent word-set overlap; "
-                        "no-differentiator excluded from pairing from iter10",
+        "dossier_rule": "canonical single-render: render_admin1_dossier "
+                        "(parent+blind, neutralized in renderer) is the one "
+                        "rendering for records with blindSummary (no local "
+                        "block appended); records without blindSummary get "
+                        "one appended neutralize(summary)-only local block; "
+                        "differentiator >=20 words and <=90% parent "
+                        "word-set overlap; no-differentiator excluded from "
+                        "pairing from iter10",
     }
     return (system, base_system, regions, focal_pool, groups, iso_of,
             name_of, dossiers, initial_scores, models, manifest, scope)
@@ -713,11 +720,13 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                  f"focal-eligible: {scope['n_focal_eligible']}. US states included. "
                  f"Iterations 1-9 used parent-only dossiers (kept); neutralized-summary "
                  f"rule applies from iteration 10.")
-    lines.append(f"- Dossiers: parent framework + blind division fields via "
-                 f"`harness.render_admin1_dossier`, plus neutralized local evidence "
-                 f"(`summary` plus `blindSummary` where present) for every record "
-                 f"through `neutralize()` (record/country names and ISO3 -> "
-                 f"this division/this country; score-like numbers removed).")
+    lines.append(f"- Dossiers: canonical single-render — parent framework + blind "
+                 f"division fields via `harness.render_admin1_dossier` (neutralized "
+                 f"in the renderer) is the one rendering for records with a "
+                 f"blindSummary (no local block appended); records without a "
+                 f"blindSummary get one appended neutralize(summary)-only local "
+                 f"block. Demonyms/institutions replaced via the shared "
+                 f"harness.neutralize term lists; score-like numbers removed.")
     lines.append(f"- Planned pairings: {n_iterations}; completed: {len(iterations)}.")
     lines.append(f"- Seed: {seed}; focal ADM1 random; candidate partners: nearest "
                  f"max(10% of that country's ADM1 regions, 3) by current running score within ISO3 "
@@ -734,7 +743,10 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                  f"trans-specific data is absent; legal ambiguity does not create safety; de facto "
                  f"authorities count; discovered/outs visitors are not assumed invulnerable for "
                  f"denying same-sex conduct; absence of a documented exact pathway is not "
-                 f"mitigating evidence.")
+                 f"mitigating evidence; parent-level instruments apply to every division "
+                 f"unless affirmative evidence shows they do not reach it (absence of a "
+                 f"division-level record is not evidence of non-application; 'not "
+                 f"inherited' reasoning is forbidden).")
     lines.append(f"- Initial scores: `iterativeScore` if present, else `score`, per record from "
                  f"`data/admin1.json` (site data not overwritten).")
     lines.append(f"- Single-writer guard: `global_adm1_iterative.py` refuses to launch if another "
