@@ -1,0 +1,214 @@
+{
+ "run_id": "scotland-repair-20261125",
+ "notes": "Facts-only dossier repair; every added sentence sourced (verified: resolves, says what is claimed). Scores untouched.",
+ "before": {
+  "14339913B23556801435424": {
+   "summary_sents": 21,
+   "blindSummary_sents": 21,
+   "summary_chars": 3675,
+   "blindSummary_chars": 3702
+  },
+  "14339913B95766344400054": {
+   "summary_sents": 12,
+   "blindSummary_sents": 12,
+   "summary_chars": 2179,
+   "blindSummary_chars": 2354
+  },
+  "14339913B89763821047858": {
+   "summary_sents": 10,
+   "blindSummary_sents": 10,
+   "summary_chars": 1480,
+   "blindSummary_chars": 1633
+  },
+  "14339913B6930312138089": {
+   "summary_sents": 15,
+   "blindSummary_sents": 15,
+   "summary_chars": 2459,
+   "blindSummary_chars": 2476
+  }
+ },
+ "after": {
+  "14339913B23556801435424": {
+   "summary_sents": 16,
+   "blindSummary_sents": 16,
+   "summary_chars": 4954,
+   "blindSummary_chars": 5067
+  },
+  "14339913B95766344400054": {
+   "summary_sents": 15,
+   "blindSummary_sents": 15,
+   "summary_chars": 2984,
+   "blindSummary_chars": 3280
+  },
+  "14339913B89763821047858": {
+   "summary_sents": 13,
+   "blindSummary_sents": 13,
+   "summary_chars": 2251,
+   "blindSummary_chars": 2553
+  },
+  "14339913B6930312138089": {
+   "summary_sents": 15,
+   "blindSummary_sents": 15,
+   "summary_chars": 2459,
+   "blindSummary_chars": 2476
+  }
+ },
+ "scotland_vs_england_blindSummary_sentence_ratio": 1.0666666666666667,
+ "parity_target": "Scotland blindSummary sentences <= 1.3x England's",
+ "parity_met": true,
+ "reblinds": [
+  {
+   "sid": "14339913B23556801435424",
+   "src": "summary",
+   "blind": "blindSummary",
+   "src_len": 4954,
+   "new_len": 5067,
+   "cost_usd": "0.00094346"
+  },
+  {
+   "sid": "14339913B23556801435424",
+   "src": "outOfScopeNotes",
+   "blind": "blindOutOfScope",
+   "src_len": 1511,
+   "new_len": 1624,
+   "cost_usd": "0.000265496"
+  },
+  {
+   "sid": "14339913B95766344400054",
+   "src": "summary",
+   "blind": "blindSummary",
+   "src_len": 2984,
+   "new_len": 3280,
+   "cost_usd": "0.000342636"
+  },
+  {
+   "sid": "14339913B89763821047858",
+   "src": "summary",
+   "blind": "blindSummary",
+   "src_len": 2251,
+   "new_len": 2553,
+   "cost_usd": "0.0004410056"
+  }
+ ],
+ "leak_gate": {
+  "Scotland": {
+   "chars": 23309,
+   "leaks": [],
+   "has_out_of_scope": true
+  },
+  "England": {
+   "chars": 22211,
+   "leaks": [],
+   "has_out_of_scope": true
+  },
+  "Wales": {
+   "chars": 19356,
+   "leaks": [],
+   "has_out_of_scope": true
+  },
+  "Northern Ireland": {
+   "chars": 19159,
+   "leaks": [],
+   "has_out_of_scope": true
+  }
+ },
+ "changes": [
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary/outOfScopeNotes",
+   "change": "ADDED operative single-sex-services position: Equality Act 2010 forms part of law of Scotland; Supreme Court biological-sex holding; EHRC code reach (birth-certificate 'genuine concern', sport exclusion, women's-facilities bar); Holyrood toilet application.",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2010/15/section/217",
+   "quote": "This Act forms part of the law of England and Wales. / (2) This Act, apart from section 190 (improvements to let dwelling houses) and Part 15 (family property), forms part of the law of Scotland. [extent E+W+S]"
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary",
+   "change": "ADDED EHRC jurisdiction: body corporate with extent England, Wales, Scotland.",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2006/3/section/1",
+   "quote": "1 Establishment E+W+S / There shall be a body corporate known as the Commission for Equality and Human Rights."
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary",
+   "change": "ADDED EHRC operative provisions (code 20 May 2025; interim guidance toilet rule).",
+   "source_url": "https://www.bbc.co.uk/news/articles/c9wgg1kj97zo",
+   "quote": "Sports clubs and hospitals could ask for a person's birth certificate if there is \"genuine concern\" about their biological sex under an updated Equality and Human Rights Commission (EHRC) code of practice. / Other changes include guidance that trans people can be excluded from sport \"when necessary for reasons of safety or fair competition\". / That said trans women \"should not be permitted to use the women's facilities\" in workplaces or public-facing services like shops and hospitals"
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary",
+   "change": "ADDED Scotland-specific operative application: Holyrood toilets interpreted as biological sex; gender-neutral toilets open to anyone.",
+   "source_url": "https://www.bbc.co.uk/news/articles/cpw78jv2gk5o",
+   "quote": "Trans women will no longer be able to use the women's toilets in the Scottish Parliament building. Facilities designated as male or female-only would now be interpreted as meaning biological sex, the Scottish Parliamentary Corporate Body (SPCB) said. Holyrood is installing new gender neutral toilets which will be open to anyone following the UK Supreme Court's landmark ruling over the definition of a woman."
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary",
+   "change": "ADDED Supreme Court holding (unanimous; Equality Act applies across Britain incl. Scotland, England, Wales).",
+   "source_url": "https://www.bbc.co.uk/news/articles/cvg7pqzk47zo",
+   "quote": "The unanimous decision of this court is that the terms woman and sex in the Equality Act 2010 refer to a biological woman and biological sex. / interpretation of the 2010 Equality Act, which applies across Britain. / implications for how sex-based rights apply across Scotland, England and Wales."
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "summary",
+   "change": "TRIM (sentence-merging only, no sourced fact dropped): GRR 3->2, hate-crime-act 3->2, COPFS stats 3->1, police stats 3->1, prison 3->2, marriage 2->1; hate-crime-act divergence and NHS-blockers fix preserved. 21 -> 16 sentences (blind side re-measured after re-blind).",
+   "source_url": "n/a (editorial merge of existing sourced sentences)",
+   "quote": "n/a"
+  },
+  {
+   "record": "Scotland",
+   "sid": "14339913B23556801435424",
+   "field": "outOfScopeNotes",
+   "change": "REMOVED EHRC single-sex guidance from 'carried at parent level' export list (now in division evidence). NHS-blockers-own-record sentence preserved verbatim.",
+   "source_url": "n/a (de-duplication against new division-evidence paragraph; content now sourced above)",
+   "quote": "n/a"
+  },
+  {
+   "record": "England",
+   "sid": "14339913B95766344400054",
+   "field": "summary",
+   "change": "ADDED operative hate-crime framework: no transgender-specific aggravated-offence statute (CDA 1998 ss29-32) + Sentencing Act 2020 s66 sentencing uplift + police transgender-strand monitoring.",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2020/17/section/66",
+   "quote": "66 Hostility E+W (1) This section applies where a court is considering the seriousness of an offence which is aggravated by— (a) racial hostility, (b) religious hostility, (c) hostility related to disability, (d) hostility related to sexual orientation, or (e) hostility related to transgender identity. / (2) The court— (a) must treat the fact that the offence is aggravated by hostility of any of those types as an aggravating factor, and (b) must state in open court that the offence is so aggravated. / Commencement Information I1 S. 66 in force at 1.12.2020 by S.I. 2020/1236"
+  },
+  {
+   "record": "England",
+   "sid": "14339913B95766344400054",
+   "field": "summary",
+   "change": "ADDED: aggravated offences are racially/religiously aggravated only.",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1998/37/section/28",
+   "quote": "An offence is racially or religiously aggravated for the purposes of sections 29 to 32 below if— (a) at the time of committing the offence, or immediately before or after doing so, the offender demonstrates towards the victim of the offence hostility based on the victim's membership (or presumed membership) of a racial or religious group; or (b) the offence is motivated (wholly or partly) by hostility towards members of a racial or religious group"
+  },
+  {
+   "record": "Wales",
+   "sid": "14339913B89763821047858",
+   "field": "summary",
+   "change": "ADDED operative hate-crime framework (E&W law applies in Wales): no transgender aggravated-offence statute; Sentencing Act 2020 s66 uplift; Home Office E&W bulletin baseline (no Wales-specific count).",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2020/17/section/66",
+   "quote": "66 Hostility E+W (1) This section applies where a court is considering the seriousness of an offence which is aggravated by— ... (e) hostility related to transgender identity. / (2) The court— (a) must treat the fact that the offence is aggravated by hostility of any of those types as an aggravating factor, and (b) must state in open court that the offence is so aggravated. / S. 66 in force at 1.12.2020"
+  },
+  {
+   "record": "Wales",
+   "sid": "14339913B89763821047858",
+   "field": "summary",
+   "change": "ADDED: aggravated offences racially/religiously only; E&W bulletin monitors transgender strand (no Wales-specific count).",
+   "source_url": "https://www.gov.uk/government/statistics/hate-crime-england-and-wales-year-ending-march-2025/hate-crime-england-and-wales-year-ending-march-2025",
+   "quote": "There are 5 centrally monitored strands of hate crime: race or ethnicity religion sexual orientation disability transgender identity. In the process of recording a crime, the police can flag an offence as being motivated by one or more of these 5 monitored strands"
+  },
+  {
+   "record": "Northern Ireland",
+   "sid": "14339913B6930312138089",
+   "field": "all",
+   "change": "NO CHANGE: NI dossier untouched (blocked-inclusion negative counterpart and its unsupported position left as-is; outside this repair's task list).",
+   "source_url": "n/a",
+   "quote": "n/a"
+  }
+ ],
+ "blindSourceSummaries_note": "Additive blindSourceSummaries entries authored in blind phrasing; two initial drafts still carried nation names in the raw field (masked by renderer neutralize) and were rewritten to fully blind phrasing before the final leak gate; all four rendered dossiers pass with leaks=[]."
+}

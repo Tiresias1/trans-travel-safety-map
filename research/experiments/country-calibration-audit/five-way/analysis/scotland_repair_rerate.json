@@ -1,0 +1,1516 @@
+{
+ "run_id": "scotland-repair-rerate-20261125",
+ "created": "2026-11-25T22:36:06+00:00",
+ "seed": 20261125,
+ "repeats_per_pairing": 3,
+ "preflight": {
+  "14339913B95766344400054:England": {
+   "chars": 22211,
+   "identity_leaks": [],
+   "has_out_of_scope": true
+  },
+  "14339913B6930312138089:Northern Ireland": {
+   "chars": 19159,
+   "identity_leaks": [],
+   "has_out_of_scope": true
+  },
+  "14339913B23556801435424:Scotland": {
+   "chars": 23307,
+   "identity_leaks": [],
+   "has_out_of_scope": true
+  },
+  "14339913B89763821047858:Wales": {
+   "chars": 19397,
+   "identity_leaks": [],
+   "has_out_of_scope": true
+  },
+  "GBR:country": {
+   "chars": 17110,
+   "identity_leaks": [],
+   "has_out_of_scope": true
+  }
+ },
+ "parent_score": 0.437957,
+ "old_finals": {
+  "14339913B23556801435424:Scotland": 0.496951,
+  "14339913B6930312138089:Northern Ireland": 0.447064,
+  "14339913B89763821047858:Wales": 0.454966,
+  "14339913B95766344400054:England": 0.449133
+ },
+ "new_seeds": {
+  "14339913B95766344400054:England": 0.440751,
+  "14339913B6930312138089:Northern Ireland": 0.44023375,
+  "14339913B23556801435424:Scotland": 0.4527055,
+  "14339913B89763821047858:Wales": 0.44220925
+ },
+ "seed_rule": "0.75*parent + 0.25*old_final (mixing fraction 1/4 toward parent)",
+ "system_sha256": "0b22fb93ab21b5219751c8739f51a4a3309eb275906a2eb66aea516cd8a8ea07",
+ "base_system_sha256": "c5814409d66a4f21e4674fe9377ca4e21d875ff82c3643fbc03870db7d77e3a5",
+ "models": [
+  "mimo",
+  "deepseek",
+  "qwen",
+  "glm",
+  "haiku",
+  "luna",
+  "muse"
+ ],
+ "model_balancing": "least-used per focal nation (nation participations), ties by seeded shuffle; slot RNG independent of model RNG",
+ "n_calls_planned": 30,
+ "n_calls": 30,
+ "n_ok": 20,
+ "n_rejected": 10,
+ "total_usd": "0.175486141",
+ "max_usd": "5.00",
+ "final_scores": {
+  "14339913B95766344400054:England": 0.45585581063372815,
+  "14339913B6930312138089:Northern Ireland": 0.45803425034240014,
+  "14339913B23556801435424:Scotland": 0.4635693905920001,
+  "14339913B89763821047858:Wales": 0.46524078530560015
+ },
+ "final_minus_parent": {
+  "14339913B95766344400054:England": 0.01789881063372817,
+  "14339913B6930312138089:Northern Ireland": 0.020077250342400155,
+  "14339913B23556801435424:Scotland": 0.0256123905920001,
+  "14339913B89763821047858:Wales": 0.02728378530560016
+ },
+ "order_old_finals": [
+  "Scotland",
+  "Wales",
+  "England",
+  "Northern Ireland"
+ ],
+ "order_new_seeds": [
+  "Scotland",
+  "Wales",
+  "England",
+  "Northern Ireland"
+ ],
+ "order_finals": [
+  "Wales",
+  "Scotland",
+  "Northern Ireland",
+  "England"
+ ],
+ "relative_order_changed": true,
+ "draw_means": {
+  "nation_vs_nation": {
+   "n_calls": 10,
+   "n_ratings": 20,
+   "mean": 0.47050000000000003
+  },
+  "nation_vs_gbr": {
+   "n_calls": 10,
+   "mean_nation_rating": 0.47400000000000003,
+   "mean_gbr_reference_rating": 0.471,
+   "mean_nation_minus_gbr_same_call": 0.003000000000000014,
+   "mean_nation_minus_parent": 0.03604300000000005
+  }
+ },
+ "bias_persists_gt_0_05": false,
+ "per_model": {
+  "mimo": {
+   "n_calls": 2,
+   "n_nation_ratings": 3,
+   "mean_nation_rating": 0.5266666666666667,
+   "n_gbr_ratings": 1,
+   "mean_gbr_rating": 0.52,
+   "mean_nation_minus_gbr": 0.00666666666666671,
+   "cost_usd": "0.01092854"
+  },
+  "deepseek": {
+   "n_calls": 3,
+   "n_nation_ratings": 5,
+   "mean_nation_rating": 0.44800000000000006,
+   "n_gbr_ratings": 1,
+   "mean_gbr_rating": 0.39,
+   "mean_nation_minus_gbr": 0.05800000000000005,
+   "cost_usd": "0.01510726"
+  },
+  "qwen": {
+   "n_calls": 0,
+   "n_nation_ratings": 0,
+   "mean_nation_rating": null,
+   "n_gbr_ratings": 0,
+   "mean_gbr_rating": null,
+   "mean_nation_minus_gbr": null,
+   "cost_usd": "0"
+  },
+  "glm": {
+   "n_calls": 4,
+   "n_nation_ratings": 5,
+   "mean_nation_rating": 0.548,
+   "n_gbr_ratings": 3,
+   "mean_gbr_rating": 0.5399999999999999,
+   "mean_nation_minus_gbr": 0.008000000000000118,
+   "cost_usd": "0.01815143"
+  },
+  "haiku": {
+   "n_calls": 3,
+   "n_nation_ratings": 5,
+   "mean_nation_rating": 0.422,
+   "n_gbr_ratings": 1,
+   "mean_gbr_rating": 0.41,
+   "mean_nation_minus_gbr": 0.01200000000000001,
+   "cost_usd": "0.0227661"
+  },
+  "luna": {
+   "n_calls": 4,
+   "n_nation_ratings": 5,
+   "mean_nation_rating": 0.426,
+   "n_gbr_ratings": 3,
+   "mean_gbr_rating": 0.4166666666666667,
+   "mean_nation_minus_gbr": 0.009333333333333305,
+   "cost_usd": "0.018545405"
+  },
+  "muse": {
+   "n_calls": 4,
+   "n_nation_ratings": 7,
+   "mean_nation_rating": 0.4785714285714286,
+   "n_gbr_ratings": 1,
+   "mean_gbr_rating": 0.52,
+   "mean_nation_minus_gbr": -0.041428571428571426,
+   "cost_usd": "0.0180450"
+  }
+ },
+ "cost_by_pairing": {
+  "England vs Northern Ireland": {
+   "n_calls": 3,
+   "n_ok": 3,
+   "cost_usd": "0.0172448"
+  },
+  "England vs Scotland": {
+   "n_calls": 3,
+   "n_ok": 1,
+   "cost_usd": "0.01342134"
+  },
+  "England vs Wales": {
+   "n_calls": 3,
+   "n_ok": 2,
+   "cost_usd": "0.022340392"
+  },
+  "Northern Ireland vs Scotland": {
+   "n_calls": 3,
+   "n_ok": 2,
+   "cost_usd": "0.01552967"
+  },
+  "Northern Ireland vs Wales": {
+   "n_calls": 3,
+   "n_ok": 0,
+   "cost_usd": "0.021223048"
+  },
+  "Scotland vs Wales": {
+   "n_calls": 3,
+   "n_ok": 2,
+   "cost_usd": "0.021462017"
+  },
+  "England vs United Kingdom (country-format reference)": {
+   "n_calls": 3,
+   "n_ok": 3,
+   "cost_usd": "0.011280270"
+  },
+  "Northern Ireland vs United Kingdom (country-format reference)": {
+   "n_calls": 3,
+   "n_ok": 3,
+   "cost_usd": "0.01397851"
+  },
+  "Scotland vs United Kingdom (country-format reference)": {
+   "n_calls": 3,
+   "n_ok": 1,
+   "cost_usd": "0.022446044"
+  },
+  "Wales vs United Kingdom (country-format reference)": {
+   "n_calls": 3,
+   "n_ok": 3,
+   "cost_usd": "0.01656005"
+  }
+ },
+ "update_counts": {
+  "14339913B95766344400054:England": 9,
+  "14339913B6930312138089:Northern Ireland": 8,
+  "14339913B23556801435424:Scotland": 6,
+  "14339913B89763821047858:Wales": 7
+ },
+ "update_history": {
+  "14339913B95766344400054:England": [
+   {
+    "iteration": 1,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B6930312138089:Northern Ireland",
+    "partner_name": "Northern Ireland",
+    "model": "haiku",
+    "rating": 0.4,
+    "alpha": 0.2,
+    "old_score": 0.440751,
+    "new_score": 0.43260080000000006,
+    "update_number": 1
+   },
+   {
+    "iteration": 7,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "luna",
+    "rating": 0.4,
+    "alpha": 0.2,
+    "old_score": 0.43260080000000006,
+    "new_score": 0.42608064000000007,
+    "update_number": 2
+   },
+   {
+    "iteration": 11,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B6930312138089:Northern Ireland",
+    "partner_name": "Northern Ireland",
+    "model": "deepseek",
+    "rating": 0.48,
+    "alpha": 0.2,
+    "old_score": 0.42608064000000007,
+    "new_score": 0.4368645120000001,
+    "update_number": 3
+   },
+   {
+    "iteration": 13,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B89763821047858:Wales",
+    "partner_name": "Wales",
+    "model": "muse",
+    "rating": 0.5,
+    "alpha": 0.2,
+    "old_score": 0.4368645120000001,
+    "new_score": 0.4494916096000001,
+    "update_number": 4
+   },
+   {
+    "iteration": 17,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "glm",
+    "rating": 0.62,
+    "alpha": 0.2,
+    "old_score": 0.4494916096000001,
+    "new_score": 0.4835932876800001,
+    "update_number": 5
+   },
+   {
+    "iteration": 21,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B6930312138089:Northern Ireland",
+    "partner_name": "Northern Ireland",
+    "model": "muse",
+    "rating": 0.44,
+    "alpha": 0.2,
+    "old_score": 0.4835932876800001,
+    "new_score": 0.4748746301440001,
+    "update_number": 6
+   },
+   {
+    "iteration": 22,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B23556801435424:Scotland",
+    "partner_name": "Scotland",
+    "model": "mimo",
+    "rating": 0.49,
+    "alpha": 0.2,
+    "old_score": 0.4748746301440001,
+    "new_score": 0.4778997041152001,
+    "update_number": 7
+   },
+   {
+    "iteration": 23,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B89763821047858:Wales",
+    "partner_name": "Wales",
+    "model": "haiku",
+    "rating": 0.4,
+    "alpha": 0.2,
+    "old_score": 0.4778997041152001,
+    "new_score": 0.4623197632921601,
+    "update_number": 8
+   },
+   {
+    "iteration": 27,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "luna",
+    "rating": 0.43,
+    "alpha": 0.2,
+    "old_score": 0.4623197632921601,
+    "new_score": 0.45585581063372815,
+    "update_number": 9
+   }
+  ],
+  "14339913B6930312138089:Northern Ireland": [
+   {
+    "iteration": 1,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "haiku",
+    "rating": 0.48,
+    "alpha": 0.2,
+    "old_score": 0.44023375,
+    "new_score": 0.448187,
+    "update_number": 1
+   },
+   {
+    "iteration": 4,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B23556801435424:Scotland",
+    "partner_name": "Scotland",
+    "model": "glm",
+    "rating": 0.53,
+    "alpha": 0.2,
+    "old_score": 0.448187,
+    "new_score": 0.4645496,
+    "update_number": 2
+   },
+   {
+    "iteration": 8,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "luna",
+    "rating": 0.46,
+    "alpha": 0.2,
+    "old_score": 0.4645496,
+    "new_score": 0.46363968000000005,
+    "update_number": 3
+   },
+   {
+    "iteration": 11,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "deepseek",
+    "rating": 0.44,
+    "alpha": 0.2,
+    "old_score": 0.46363968000000005,
+    "new_score": 0.45891174400000007,
+    "update_number": 4
+   },
+   {
+    "iteration": 18,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "muse",
+    "rating": 0.46,
+    "alpha": 0.2,
+    "old_score": 0.45891174400000007,
+    "new_score": 0.4591293952000001,
+    "update_number": 5
+   },
+   {
+    "iteration": 21,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "muse",
+    "rating": 0.52,
+    "alpha": 0.2,
+    "old_score": 0.4591293952000001,
+    "new_score": 0.4713035161600001,
+    "update_number": 6
+   },
+   {
+    "iteration": 24,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B23556801435424:Scotland",
+    "partner_name": "Scotland",
+    "model": "deepseek",
+    "rating": 0.44,
+    "alpha": 0.2,
+    "old_score": 0.4713035161600001,
+    "new_score": 0.46504281292800015,
+    "update_number": 7
+   },
+   {
+    "iteration": 28,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "glm",
+    "rating": 0.43,
+    "alpha": 0.2,
+    "old_score": 0.46504281292800015,
+    "new_score": 0.45803425034240014,
+    "update_number": 8
+   }
+  ],
+  "14339913B23556801435424:Scotland": [
+   {
+    "iteration": 4,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B6930312138089:Northern Ireland",
+    "partner_name": "Northern Ireland",
+    "model": "glm",
+    "rating": 0.56,
+    "alpha": 0.2,
+    "old_score": 0.4527055,
+    "new_score": 0.47416440000000004,
+    "update_number": 1
+   },
+   {
+    "iteration": 6,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B89763821047858:Wales",
+    "partner_name": "Wales",
+    "model": "luna",
+    "rating": 0.41,
+    "alpha": 0.2,
+    "old_score": 0.47416440000000004,
+    "new_score": 0.46133152000000005,
+    "update_number": 2
+   },
+   {
+    "iteration": 19,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "haiku",
+    "rating": 0.37,
+    "alpha": 0.2,
+    "old_score": 0.46133152000000005,
+    "new_score": 0.4430652160000001,
+    "update_number": 3
+   },
+   {
+    "iteration": 22,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "mimo",
+    "rating": 0.54,
+    "alpha": 0.2,
+    "old_score": 0.4430652160000001,
+    "new_score": 0.46245217280000006,
+    "update_number": 4
+   },
+   {
+    "iteration": 24,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B6930312138089:Northern Ireland",
+    "partner_name": "Northern Ireland",
+    "model": "deepseek",
+    "rating": 0.46,
+    "alpha": 0.2,
+    "old_score": 0.46245217280000006,
+    "new_score": 0.4619617382400001,
+    "update_number": 5
+   },
+   {
+    "iteration": 26,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B89763821047858:Wales",
+    "partner_name": "Wales",
+    "model": "muse",
+    "rating": 0.47,
+    "alpha": 0.2,
+    "old_score": 0.4619617382400001,
+    "new_score": 0.4635693905920001,
+    "update_number": 6
+   }
+  ],
+  "14339913B89763821047858:Wales": [
+   {
+    "iteration": 6,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B23556801435424:Scotland",
+    "partner_name": "Scotland",
+    "model": "luna",
+    "rating": 0.43,
+    "alpha": 0.2,
+    "old_score": 0.44220925,
+    "new_score": 0.43976740000000003,
+    "update_number": 1
+   },
+   {
+    "iteration": 10,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "glm",
+    "rating": 0.6,
+    "alpha": 0.2,
+    "old_score": 0.43976740000000003,
+    "new_score": 0.47181392000000005,
+    "update_number": 2
+   },
+   {
+    "iteration": 13,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "muse",
+    "rating": 0.54,
+    "alpha": 0.2,
+    "old_score": 0.47181392000000005,
+    "new_score": 0.4854511360000001,
+    "update_number": 3
+   },
+   {
+    "iteration": 20,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "mimo",
+    "rating": 0.55,
+    "alpha": 0.2,
+    "old_score": 0.4854511360000001,
+    "new_score": 0.49836090880000017,
+    "update_number": 4
+   },
+   {
+    "iteration": 23,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B95766344400054:England",
+    "partner_name": "England",
+    "model": "haiku",
+    "rating": 0.46,
+    "alpha": 0.2,
+    "old_score": 0.49836090880000017,
+    "new_score": 0.49068872704000016,
+    "update_number": 5
+   },
+   {
+    "iteration": 26,
+    "arm": "nation_vs_nation",
+    "partner_region": "14339913B23556801435424:Scotland",
+    "partner_name": "Scotland",
+    "model": "muse",
+    "rating": 0.42,
+    "alpha": 0.2,
+    "old_score": 0.49068872704000016,
+    "new_score": 0.47655098163200016,
+    "update_number": 6
+   },
+   {
+    "iteration": 30,
+    "arm": "nation_vs_gbr",
+    "partner_region": "GBR:country",
+    "partner_name": "United Kingdom (country-format reference)",
+    "model": "deepseek",
+    "rating": 0.42,
+    "alpha": 0.2,
+    "old_score": 0.47655098163200016,
+    "new_score": 0.46524078530560015,
+    "update_number": 7
+   }
+  ]
+ },
+ "pair_history": [
+  {
+   "iteration": 1,
+   "repeat": 1,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B6930312138089:Northern Ireland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "haiku",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "14339913B6930312138089:Northern Ireland",
+   "A_name": "England",
+   "B_name": "Northern Ireland",
+   "status": "ok",
+   "combined_user_sha256": "b84126dfb82438867d06cb58c3a2b406b73ec4a2bbeefe3ac5dc053a3285693a",
+   "cost_usd": "0.0074847",
+   "A_rating": 0.4,
+   "B_rating": 0.48,
+   "difference_B_minus_A": 0.08,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.440751,
+     "new_score": 0.43260080000000006
+    },
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.48,
+     "old_score": 0.44023375,
+     "new_score": 0.448187
+    }
+   ]
+  },
+  {
+   "iteration": 2,
+   "repeat": 1,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "glm",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "Scotland",
+   "B_name": "England",
+   "status": "rejected",
+   "combined_user_sha256": "9b70ef8cde7d9e69faaf264ec060c9aa30ec246759a091f055bf26980540a050",
+   "cost_usd": "0.0014491"
+  },
+  {
+   "iteration": 3,
+   "repeat": 1,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "qwen",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "Wales",
+   "B_name": "England",
+   "status": "rejected",
+   "combined_user_sha256": "51ac3dbe9dc440fe3f7429f6b02f805c008ce0fe1bcc9b2a0e2ca532f68364f3",
+   "cost_usd": "0.010024392"
+  },
+  {
+   "iteration": 4,
+   "repeat": 1,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "glm",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B23556801435424:Scotland",
+   "A_name": "Northern Ireland",
+   "B_name": "Scotland",
+   "status": "ok",
+   "combined_user_sha256": "7455500125323a61dd4c9114267fe9e6bb9f382a43a18b7780edcd2b4d716165",
+   "cost_usd": "0.00336753",
+   "A_rating": 0.53,
+   "B_rating": 0.56,
+   "difference_B_minus_A": 0.03,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.53,
+     "old_score": 0.448187,
+     "new_score": 0.4645496
+    },
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.56,
+     "old_score": 0.4527055,
+     "new_score": 0.47416440000000004
+    }
+   ]
+  },
+  {
+   "iteration": 5,
+   "repeat": 1,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "qwen",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B89763821047858:Wales",
+   "A_name": "Northern Ireland",
+   "B_name": "Wales",
+   "status": "rejected",
+   "combined_user_sha256": "16bb81f4a7b64c8c7cfbbb8b15cd244c8b7446ccbe7539756846ba6bf11fefaf",
+   "cost_usd": "0.008831714"
+  },
+  {
+   "iteration": 6,
+   "repeat": 1,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "luna",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "14339913B23556801435424:Scotland",
+   "A_name": "Wales",
+   "B_name": "Scotland",
+   "status": "ok",
+   "combined_user_sha256": "c202f7f0cd6be07fedfed900615b9af1a98757992472dbc5701d92ef6c908fe8",
+   "cost_usd": "0.006936675",
+   "A_rating": 0.43,
+   "B_rating": 0.41,
+   "difference_B_minus_A": -0.02,
+   "updates": [
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 1,
+     "alpha": 0.2,
+     "rating": 0.43,
+     "old_score": 0.44220925,
+     "new_score": 0.43976740000000003
+    },
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.41,
+     "old_score": 0.47416440000000004,
+     "new_score": 0.46133152000000005
+    }
+   ]
+  },
+  {
+   "iteration": 7,
+   "repeat": 1,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B95766344400054:England",
+   "model": "luna",
+   "A_region": "GBR:country",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "United Kingdom (country-format reference)",
+   "B_name": "England",
+   "status": "ok",
+   "combined_user_sha256": "469334cc1190cbccb2c54e0dbcd511dd2591f0bf36c3e627c1713e0dc34881a7",
+   "cost_usd": "0.003638035",
+   "A_rating": 0.42,
+   "B_rating": 0.4,
+   "difference_B_minus_A": -0.02,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.43260080000000006,
+     "new_score": 0.42608064000000007
+    }
+   ]
+  },
+  {
+   "iteration": 8,
+   "repeat": 1,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "luna",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "GBR:country",
+   "A_name": "Northern Ireland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "e9a6a8e135d26cf15ae9c07f7e63868772ba6be65bb213f10bb8f9c8a37e825c",
+   "cost_usd": "0.00390066",
+   "A_rating": 0.46,
+   "B_rating": 0.42,
+   "difference_B_minus_A": -0.04,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.46,
+     "old_score": 0.4645496,
+     "new_score": 0.46363968000000005
+    }
+   ]
+  },
+  {
+   "iteration": 9,
+   "repeat": 1,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "deepseek",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "GBR:country",
+   "A_name": "Scotland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "rejected",
+   "combined_user_sha256": "61c33ff736546e7a1c00cd4d869ded1cf51f21fbf2a2f0fe030d83081e6de6cf",
+   "cost_usd": "0.00582848"
+  },
+  {
+   "iteration": 10,
+   "repeat": 1,
+   "pairing": [
+    "14339913B89763821047858:Wales",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B89763821047858:Wales",
+   "model": "glm",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "GBR:country",
+   "A_name": "Wales",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "da62448467131d54b76a3d53fa3827053519f4eb19510a2e473cf59a6c4bf37e",
+   "cost_usd": "0.00560355",
+   "A_rating": 0.6,
+   "B_rating": 0.57,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 2,
+     "alpha": 0.2,
+     "rating": 0.6,
+     "old_score": 0.43976740000000003,
+     "new_score": 0.47181392000000005
+    }
+   ]
+  },
+  {
+   "iteration": 11,
+   "repeat": 2,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B6930312138089:Northern Ireland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "deepseek",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "Northern Ireland",
+   "B_name": "England",
+   "status": "ok",
+   "combined_user_sha256": "cc156e2111c5b92c8baeee5faa4a8a0c17bb43ce0586c7dfd9b850a1ddd1cdf0",
+   "cost_usd": "0.0053526",
+   "A_rating": 0.44,
+   "B_rating": 0.48,
+   "difference_B_minus_A": 0.04,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.44,
+     "old_score": 0.46363968000000005,
+     "new_score": 0.45891174400000007
+    },
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.48,
+     "old_score": 0.42608064000000007,
+     "new_score": 0.4368645120000001
+    }
+   ]
+  },
+  {
+   "iteration": 12,
+   "repeat": 2,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "mimo",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "14339913B23556801435424:Scotland",
+   "A_name": "England",
+   "B_name": "Scotland",
+   "status": "rejected",
+   "combined_user_sha256": "37b993b72473f4dd3fb96e8d87f361c7dfc1f9ed62c3f7d23770a07dd0cb4239",
+   "cost_usd": "0.00591304"
+  },
+  {
+   "iteration": 13,
+   "repeat": 2,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "muse",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "14339913B89763821047858:Wales",
+   "A_name": "England",
+   "B_name": "Wales",
+   "status": "ok",
+   "combined_user_sha256": "b153523f4ff9a6ac1d57d69326dfa8af39e1d72643853db355c9446fe0bf1627",
+   "cost_usd": "0.00473",
+   "A_rating": 0.5,
+   "B_rating": 0.54,
+   "difference_B_minus_A": 0.04,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.5,
+     "old_score": 0.4368645120000001,
+     "new_score": 0.4494916096000001
+    },
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.54,
+     "old_score": 0.47181392000000005,
+     "new_score": 0.4854511360000001
+    }
+   ]
+  },
+  {
+   "iteration": 14,
+   "repeat": 2,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "mimo",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "14339913B6930312138089:Northern Ireland",
+   "A_name": "Scotland",
+   "B_name": "Northern Ireland",
+   "status": "rejected",
+   "combined_user_sha256": "b03ec84e03f272b06ee9fddb5000be8cffeadd19bbe3d765ffce6bc6abb0aabf",
+   "cost_usd": "0.00849464"
+  },
+  {
+   "iteration": 15,
+   "repeat": 2,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "muse",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "14339913B6930312138089:Northern Ireland",
+   "A_name": "Wales",
+   "B_name": "Northern Ireland",
+   "status": "rejected",
+   "combined_user_sha256": "b2ef799caf9f87bb19edd1ee059154981c87ec911aee99d9b81f6c2c73249ad2",
+   "cost_usd": "0.0042457"
+  },
+  {
+   "iteration": 16,
+   "repeat": 2,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "qwen",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "14339913B23556801435424:Scotland",
+   "A_name": "Wales",
+   "B_name": "Scotland",
+   "status": "rejected",
+   "combined_user_sha256": "c202f7f0cd6be07fedfed900615b9af1a98757992472dbc5701d92ef6c908fe8",
+   "cost_usd": "0.010087542"
+  },
+  {
+   "iteration": 17,
+   "repeat": 2,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B95766344400054:England",
+   "model": "glm",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "GBR:country",
+   "A_name": "England",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "891f0b3ea72e953543f4aef1d3efc49378ecfe7b2b2d77e1873f01ccd466aa53",
+   "cost_usd": "0.0035722",
+   "A_rating": 0.62,
+   "B_rating": 0.6,
+   "difference_B_minus_A": -0.02,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.62,
+     "old_score": 0.4494916096000001,
+     "new_score": 0.4835932876800001
+    }
+   ]
+  },
+  {
+   "iteration": 18,
+   "repeat": 2,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "muse",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "GBR:country",
+   "A_name": "Northern Ireland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "e9a6a8e135d26cf15ae9c07f7e63868772ba6be65bb213f10bb8f9c8a37e825c",
+   "cost_usd": "0.0044697",
+   "A_rating": 0.46,
+   "B_rating": 0.52,
+   "difference_B_minus_A": 0.06,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.46,
+     "old_score": 0.45891174400000007,
+     "new_score": 0.4591293952000001
+    }
+   ]
+  },
+  {
+   "iteration": 19,
+   "repeat": 2,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "haiku",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "GBR:country",
+   "A_name": "Scotland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "61c33ff736546e7a1c00cd4d869ded1cf51f21fbf2a2f0fe030d83081e6de6cf",
+   "cost_usd": "0.0076954",
+   "A_rating": 0.37,
+   "B_rating": 0.41,
+   "difference_B_minus_A": 0.04,
+   "updates": [
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 3,
+     "alpha": 0.2,
+     "rating": 0.37,
+     "old_score": 0.46133152000000005,
+     "new_score": 0.4430652160000001
+    }
+   ]
+  },
+  {
+   "iteration": 20,
+   "repeat": 2,
+   "pairing": [
+    "14339913B89763821047858:Wales",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B89763821047858:Wales",
+   "model": "mimo",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "GBR:country",
+   "A_name": "Wales",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "da62448467131d54b76a3d53fa3827053519f4eb19510a2e473cf59a6c4bf37e",
+   "cost_usd": "0.00486934",
+   "A_rating": 0.55,
+   "B_rating": 0.52,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.55,
+     "old_score": 0.4854511360000001,
+     "new_score": 0.49836090880000017
+    }
+   ]
+  },
+  {
+   "iteration": 21,
+   "repeat": 3,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B6930312138089:Northern Ireland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "muse",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "Northern Ireland",
+   "B_name": "England",
+   "status": "ok",
+   "combined_user_sha256": "cc156e2111c5b92c8baeee5faa4a8a0c17bb43ce0586c7dfd9b850a1ddd1cdf0",
+   "cost_usd": "0.0044075",
+   "A_rating": 0.52,
+   "B_rating": 0.44,
+   "difference_B_minus_A": -0.08,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.52,
+     "old_score": 0.4591293952000001,
+     "new_score": 0.4713035161600001
+    },
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.44,
+     "old_score": 0.4835932876800001,
+     "new_score": 0.4748746301440001
+    }
+   ]
+  },
+  {
+   "iteration": 22,
+   "repeat": 3,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "mimo",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "14339913B95766344400054:England",
+   "A_name": "Scotland",
+   "B_name": "England",
+   "status": "ok",
+   "combined_user_sha256": "9b70ef8cde7d9e69faaf264ec060c9aa30ec246759a091f055bf26980540a050",
+   "cost_usd": "0.0060592",
+   "A_rating": 0.54,
+   "B_rating": 0.49,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 4,
+     "alpha": 0.2,
+     "rating": 0.54,
+     "old_score": 0.4430652160000001,
+     "new_score": 0.46245217280000006
+    },
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.49,
+     "old_score": 0.4748746301440001,
+     "new_score": 0.4778997041152001
+    }
+   ]
+  },
+  {
+   "iteration": 23,
+   "repeat": 3,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B95766344400054:England",
+   "model": "haiku",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "14339913B89763821047858:Wales",
+   "A_name": "England",
+   "B_name": "Wales",
+   "status": "ok",
+   "combined_user_sha256": "b153523f4ff9a6ac1d57d69326dfa8af39e1d72643853db355c9446fe0bf1627",
+   "cost_usd": "0.007586",
+   "A_rating": 0.4,
+   "B_rating": 0.46,
+   "difference_B_minus_A": 0.06,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.4,
+     "old_score": 0.4778997041152001,
+     "new_score": 0.4623197632921601
+    },
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.46,
+     "old_score": 0.49836090880000017,
+     "new_score": 0.49068872704000016
+    }
+   ]
+  },
+  {
+   "iteration": 24,
+   "repeat": 3,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B23556801435424:Scotland"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "deepseek",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B23556801435424:Scotland",
+   "A_name": "Northern Ireland",
+   "B_name": "Scotland",
+   "status": "ok",
+   "combined_user_sha256": "7455500125323a61dd4c9114267fe9e6bb9f382a43a18b7780edcd2b4d716165",
+   "cost_usd": "0.0036675",
+   "A_rating": 0.44,
+   "B_rating": 0.46,
+   "difference_B_minus_A": 0.02,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.44,
+     "old_score": 0.4713035161600001,
+     "new_score": 0.46504281292800015
+    },
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 5,
+     "alpha": 0.2,
+     "rating": 0.46,
+     "old_score": 0.46245217280000006,
+     "new_score": 0.4619617382400001
+    }
+   ]
+  },
+  {
+   "iteration": 25,
+   "repeat": 3,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "qwen",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "14339913B89763821047858:Wales",
+   "A_name": "Northern Ireland",
+   "B_name": "Wales",
+   "status": "rejected",
+   "combined_user_sha256": "16bb81f4a7b64c8c7cfbbb8b15cd244c8b7446ccbe7539756846ba6bf11fefaf",
+   "cost_usd": "0.008145634"
+  },
+  {
+   "iteration": 26,
+   "repeat": 3,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "14339913B89763821047858:Wales"
+   ],
+   "arm": "nation_vs_nation",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "muse",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "14339913B89763821047858:Wales",
+   "A_name": "Scotland",
+   "B_name": "Wales",
+   "status": "ok",
+   "combined_user_sha256": "9cc38ec84feeef1eb196da7a51bc96d4ab3ad90b31a8ceb6e4b6c79daf0d1c86",
+   "cost_usd": "0.0044378",
+   "A_rating": 0.47,
+   "B_rating": 0.42,
+   "difference_B_minus_A": -0.05,
+   "updates": [
+    {
+     "region": "14339913B23556801435424:Scotland",
+     "name": "Scotland",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.47,
+     "old_score": 0.4619617382400001,
+     "new_score": 0.4635693905920001
+    },
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 6,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.49068872704000016,
+     "new_score": 0.47655098163200016
+    }
+   ]
+  },
+  {
+   "iteration": 27,
+   "repeat": 3,
+   "pairing": [
+    "14339913B95766344400054:England",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B95766344400054:England",
+   "model": "luna",
+   "A_region": "14339913B95766344400054:England",
+   "B_region": "GBR:country",
+   "A_name": "England",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "891f0b3ea72e953543f4aef1d3efc49378ecfe7b2b2d77e1873f01ccd466aa53",
+   "cost_usd": "0.004070035",
+   "A_rating": 0.43,
+   "B_rating": 0.41,
+   "difference_B_minus_A": -0.02,
+   "updates": [
+    {
+     "region": "14339913B95766344400054:England",
+     "name": "England",
+     "update_number": 9,
+     "alpha": 0.2,
+     "rating": 0.43,
+     "old_score": 0.4623197632921601,
+     "new_score": 0.45585581063372815
+    }
+   ]
+  },
+  {
+   "iteration": 28,
+   "repeat": 3,
+   "pairing": [
+    "14339913B6930312138089:Northern Ireland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B6930312138089:Northern Ireland",
+   "model": "glm",
+   "A_region": "14339913B6930312138089:Northern Ireland",
+   "B_region": "GBR:country",
+   "A_name": "Northern Ireland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "e9a6a8e135d26cf15ae9c07f7e63868772ba6be65bb213f10bb8f9c8a37e825c",
+   "cost_usd": "0.00560815",
+   "A_rating": 0.43,
+   "B_rating": 0.45,
+   "difference_B_minus_A": 0.02,
+   "updates": [
+    {
+     "region": "14339913B6930312138089:Northern Ireland",
+     "name": "Northern Ireland",
+     "update_number": 8,
+     "alpha": 0.2,
+     "rating": 0.43,
+     "old_score": 0.46504281292800015,
+     "new_score": 0.45803425034240014
+    }
+   ]
+  },
+  {
+   "iteration": 29,
+   "repeat": 3,
+   "pairing": [
+    "14339913B23556801435424:Scotland",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B23556801435424:Scotland",
+   "model": "qwen",
+   "A_region": "14339913B23556801435424:Scotland",
+   "B_region": "GBR:country",
+   "A_name": "Scotland",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "rejected",
+   "combined_user_sha256": "61c33ff736546e7a1c00cd4d869ded1cf51f21fbf2a2f0fe030d83081e6de6cf",
+   "cost_usd": "0.008922164"
+  },
+  {
+   "iteration": 30,
+   "repeat": 3,
+   "pairing": [
+    "14339913B89763821047858:Wales",
+    "GBR:country"
+   ],
+   "arm": "nation_vs_gbr",
+   "focal": "14339913B89763821047858:Wales",
+   "model": "deepseek",
+   "A_region": "14339913B89763821047858:Wales",
+   "B_region": "GBR:country",
+   "A_name": "Wales",
+   "B_name": "United Kingdom (country-format reference)",
+   "status": "ok",
+   "combined_user_sha256": "da62448467131d54b76a3d53fa3827053519f4eb19510a2e473cf59a6c4bf37e",
+   "cost_usd": "0.00608716",
+   "A_rating": 0.42,
+   "B_rating": 0.39,
+   "difference_B_minus_A": -0.03,
+   "updates": [
+    {
+     "region": "14339913B89763821047858:Wales",
+     "name": "Wales",
+     "update_number": 7,
+     "alpha": 0.2,
+     "rating": 0.42,
+     "old_score": 0.47655098163200016,
+     "new_score": 0.46524078530560015
+    }
+   ]
+  }
+ ]
+}
