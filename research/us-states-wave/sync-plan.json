@@ -1,0 +1,42 @@
+{
+ "tranche": 1,
+ "date": "2026-11-25",
+ "mode": "dry-run (no data written)",
+ "regions": [
+  {
+   "region": "USA/Idaho",
+   "shapeID": "66186276B48953429733047",
+   "baselineContentHash": "d19c97d5b12aa720",
+   "addSources": [
+    {
+     "url": "https://www.acluidaho.org/en/cases/jackson-edney-v-labrador",
+     "summary": "Federal court case page for Jackson-Edney v. Labrador. Records the June 16, 2026 preliminary injunction and provisional class-action status blocking most of HB 752, the July 16, 2026 state appeal with the injunction remaining in place, and the felony escalation for repeat offences."
+    }
+   ],
+   "appendSummaryFacts": [
+    "On June 16, 2026, a federal judge granted a preliminary injunction and provisional class-action status in Jackson-Edney v. Labrador. The injunction blocks the restroom portion of HB 752: a trans person may use public restrooms consistent with gender identity, except a multi-user restroom may still be enforced against when a single-user restroom is available on the same floor. The changing-room portion is not blocked.",
+    "The State of Idaho filed a notice of appeal on July 16, 2026; the injunction remains in place pending appeal.",
+    "HB 752 penalties escalate: first offence a misdemeanour (up to one year), second offence a felony (up to five years)."
+   ],
+   "cascade": "S2 cache+manifest -> S3 re-blind (model) -> S4 lead re-blind -> S5 check_blind -> S6 dossier render -> S7 consolidate -> S8 rerate (coordinator approval). S3+ require model/API access: NOT run in tranche 1; queued."
+  },
+  {
+   "region": "USA/Kansas",
+   "shapeID": "66186276B64014601259366",
+   "baselineContentHash": "2d6bd7a318a5c84d",
+   "addSources": [
+    {
+     "url": "https://www.aclukansas.org/en/cases/doe-v-state-of-kansas",
+     "summary": "Court case page for Doe v. State of Kansas. Records the March 10, 2026 denial of a temporary restraining order, the April 6, 2026 amended petition adding plaintiffs, and the September 29, 2026 evidentiary hearing on the preliminary-injunction motion."
+    }
+   ],
+   "appendSummaryFacts": [
+    "The Douglas County district court denied a temporary restraining order on March 10, 2026.",
+    "On April 6, 2026, plaintiffs filed an amended petition adding four plaintiffs (six total).",
+    "An evidentiary hearing on the motion for a preliminary injunction blocking enforcement of SB 244 was scheduled to begin September 29, 2026."
+   ],
+   "cascade": "S2 cache+manifest -> S3 re-blind (model) -> S4 lead re-blind -> S5 check_blind -> S6 dossier render -> S7 consolidate -> S8 rerate (coordinator approval). S3+ require model/API access: NOT run in tranche 1; queued."
+  }
+ ],
+ "promotionReviewQueue": []
+}

@@ -1,0 +1,418 @@
+{
+ "wave": "us-states-tranche-2",
+ "pairsPlanned": 20,
+ "pairsOk": 17,
+ "pairsFailed": 3,
+ "totalCostUsdThisProcess": "0.145000049",
+ "scoreUpdateRule": "running-average schedule alpha=0.20 per update (us_iterative_pairwise), recalibration draws numbered from 1; focal (A-side) rating only",
+ "scoreChanges": [
+  {
+   "region": "USA/Arizona",
+   "old": 0.469578,
+   "new": 0.43972992000000005,
+   "updates": 2
+  },
+  {
+   "region": "USA/California",
+   "old": 0.437858,
+   "new": 0.4330291200000001,
+   "updates": 2
+  },
+  {
+   "region": "USA/Colorado",
+   "old": 0.496006,
+   "new": 0.48144384000000007,
+   "updates": 2
+  },
+  {
+   "region": "USA/Idaho",
+   "old": 0.296343,
+   "new": 0.2970744,
+   "updates": 1
+  },
+  {
+   "region": "USA/Kansas",
+   "old": 0.303403,
+   "new": 0.2907224,
+   "updates": 1
+  },
+  {
+   "region": "USA/Missouri",
+   "old": 0.36682,
+   "new": 0.37476480000000006,
+   "updates": 2
+  },
+  {
+   "region": "USA/Nebraska",
+   "old": 0.383675,
+   "new": 0.370752,
+   "updates": 2
+  },
+  {
+   "region": "USA/Vermont",
+   "old": 0.543858,
+   "new": 0.54326912,
+   "updates": 2
+  },
+  {
+   "region": "USA/Virginia",
+   "old": 0.468103,
+   "new": 0.4824824,
+   "updates": 1
+  },
+  {
+   "region": "USA/Washington",
+   "old": 0.41363,
+   "new": 0.4183232,
+   "updates": 2
+  }
+ ],
+ "leakScan": {
+  "Arizona": [],
+  "California": [],
+  "Colorado": [],
+  "Idaho": [],
+  "Kansas": [],
+  "Missouri": [],
+  "Nebraska": [],
+  "Vermont": [],
+  "Virginia": [],
+  "Washington": []
+ },
+ "results": [
+  {
+   "focal": "Arizona",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "mimo",
+   "combined_user_sha256": "2b6299ac98ddd533c18f09f057fd03b231bc89f1b793fe48a97e37c7ae1a537b",
+   "usage": {
+    "cost_usd": "0.00618772",
+    "input_tokens": 30876,
+    "output_tokens": 6661
+   },
+   "cost_usd": "0.00618772",
+   "status": "ok",
+   "A_rating": 0.42,
+   "B_rating": 0.38,
+   "difference_B_minus_A": -0.04
+  },
+  {
+   "focal": "Arizona",
+   "partner": "Virginia",
+   "partner_kind": "nearest",
+   "model": "deepseek",
+   "combined_user_sha256": "b692251b14e98b504a7b13fb98de8a5f5d81cf563ed6f448bcc69bb71fb67acd",
+   "usage": {
+    "cost_usd": "0.00935655",
+    "input_tokens": 31313,
+    "output_tokens": 7766
+   },
+   "cost_usd": "0.00935655",
+   "status": "ok",
+   "A_rating": 0.36,
+   "B_rating": 0.44,
+   "difference_B_minus_A": 0.08
+  },
+  {
+   "focal": "California",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "qwen",
+   "combined_user_sha256": "7560014a96ffb568f74a9210b9cf6124cc5fbd9e4b3c67c4e941493d9b95db35",
+   "usage": {
+    "cost_usd": "0.009113562",
+    "input_tokens": 29847,
+    "output_tokens": 15120
+   },
+   "cost_usd": "0.009113562",
+   "status": "ok",
+   "A_rating": 0.38,
+   "B_rating": 0.31,
+   "difference_B_minus_A": -0.07
+  },
+  {
+   "focal": "California",
+   "partner": "Wisconsin",
+   "partner_kind": "nearest",
+   "model": "glm",
+   "combined_user_sha256": "b006bae5f238d20f4444fabffa2162732f25787fc62cc3e9c1081374188db2d6",
+   "usage": {
+    "cost_usd": "0.003704975",
+    "input_tokens": 30363,
+    "output_tokens": 4517
+   },
+   "cost_usd": "0.003704975",
+   "status": "ok",
+   "A_rating": 0.46,
+   "B_rating": 0.42,
+   "difference_B_minus_A": -0.04
+  },
+  {
+   "focal": "Colorado",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "haiku",
+   "combined_user_sha256": "45342760803c65e5bf7b41a13c86fa77e85ec872004dc6c8eae477d97b7a8618",
+   "usage": {
+    "cost_usd": "0.0089604",
+    "input_tokens": 49024,
+    "output_tokens": 8116
+   },
+   "cost_usd": "0.0089604",
+   "status": "ok",
+   "A_rating": 0.55,
+   "B_rating": 0.38,
+   "difference_B_minus_A": -0.17
+  },
+  {
+   "focal": "Colorado",
+   "partner": "Maryland",
+   "partner_kind": "nearest",
+   "model": "luna",
+   "combined_user_sha256": "f698acab4217658a91684f3272eb8f6837f530fd2c2c63074bae0e33124d2bec",
+   "usage": {
+    "cost_usd": "0.006729925",
+    "input_tokens": 30688,
+    "output_tokens": 5788
+   },
+   "cost_usd": "0.006729925",
+   "status": "ok",
+   "A_rating": 0.38,
+   "B_rating": 0.42,
+   "difference_B_minus_A": 0.04
+  },
+  {
+   "focal": "Idaho",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "muse",
+   "combined_user_sha256": "2dbf7c20cc496a356f4b843d0c3b23eb4da0ace11492a4a3d5e749e07f7ebc79",
+   "usage": {
+    "cost_usd": "0.0045812",
+    "input_tokens": 29232,
+    "output_tokens": 3316
+   },
+   "cost_usd": "0.0045812",
+   "status": "ok",
+   "A_rating": 0.3,
+   "B_rating": 0.4,
+   "difference_B_minus_A": 0.1
+  },
+  {
+   "focal": "Idaho",
+   "partner": "Florida",
+   "partner_kind": "nearest",
+   "model": "mimo",
+   "combined_user_sha256": "d106fe138c5822ad1a003b06315bb6f9c1cf867ec4c3bedfd18a8ec1e08b7a1d",
+   "usage": {
+    "cost_usd": "0.00888496",
+    "input_tokens": 31464,
+    "output_tokens": 16000
+   },
+   "cost_usd": "0.00888496",
+   "status": "rejected",
+   "reason": "JSONDecodeError: Expecting ',' delimiter: line 91 column 31 (char 12098)"
+  },
+  {
+   "focal": "Kansas",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "deepseek",
+   "combined_user_sha256": "64979857eee48bd9d3324b6ca2104a668afbe49bf72a79ea0e54473660ba0fc2",
+   "usage": {
+    "cost_usd": "0.015650115",
+    "input_tokens": 29581,
+    "output_tokens": 12669
+   },
+   "cost_usd": "0.015650115",
+   "status": "ok",
+   "A_rating": 0.24,
+   "B_rating": 0.33,
+   "difference_B_minus_A": 0.09
+  },
+  {
+   "focal": "Kansas",
+   "partner": "West Virginia",
+   "partner_kind": "nearest",
+   "model": "qwen",
+   "combined_user_sha256": "c1a0f1c06d46e46b433fcef19a241fa4d50a5e15e171aaea180f5cb18536170f",
+   "usage": {
+    "cost_usd": "0.01217735",
+    "input_tokens": 31049,
+    "output_tokens": 16000
+   },
+   "cost_usd": "0.01217735",
+   "status": "rejected",
+   "reason": "JSONDecodeError: Expecting property name enclosed in double quotes: line 29 column 9 (char 3489)"
+  },
+  {
+   "focal": "Missouri",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "glm",
+   "combined_user_sha256": "ddb84e3ffbbcc069fc2ed5c125be05d55c1595218eee45546cd594ddb16a6497",
+   "usage": {
+    "cost_usd": "0.003379725",
+    "input_tokens": 29663,
+    "output_tokens": 3878
+   },
+   "cost_usd": "0.003379725",
+   "status": "ok",
+   "A_rating": 0.45,
+   "B_rating": 0.52,
+   "difference_B_minus_A": 0.07
+  },
+  {
+   "focal": "Missouri",
+   "partner": "Georgia",
+   "partner_kind": "nearest",
+   "model": "haiku",
+   "combined_user_sha256": "33ac918b101ac7a79de19e50efda52cc282d683878ca755f5319e022f89010a9",
+   "usage": {
+    "cost_usd": "0.0087253",
+    "input_tokens": 49453,
+    "output_tokens": 7560
+   },
+   "cost_usd": "0.0087253",
+   "status": "ok",
+   "A_rating": 0.34,
+   "B_rating": 0.37,
+   "difference_B_minus_A": 0.03
+  },
+  {
+   "focal": "Nebraska",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "luna",
+   "combined_user_sha256": "f2cfc77b9dac18b2181e21b8497410df5206aaf4ef4d11c60bc117135c3ddd40",
+   "usage": {
+    "cost_usd": "0.00484219",
+    "input_tokens": 30421,
+    "output_tokens": 6257
+   },
+   "cost_usd": "0.00484219",
+   "status": "ok",
+   "A_rating": 0.32,
+   "B_rating": 0.4,
+   "difference_B_minus_A": 0.08
+  },
+  {
+   "focal": "Nebraska",
+   "partner": "Kentucky",
+   "partner_kind": "nearest",
+   "model": "muse",
+   "combined_user_sha256": "5136f14570eaa22f82c4fcd1ceb97aac772740e84c8ef34103bdcc3100d4ae52",
+   "usage": {
+    "cost_usd": "0.0049476",
+    "input_tokens": 31611,
+    "output_tokens": 3573
+   },
+   "cost_usd": "0.0049476",
+   "status": "ok",
+   "A_rating": 0.37,
+   "B_rating": 0.42,
+   "difference_B_minus_A": 0.05
+  },
+  {
+   "focal": "Vermont",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "mimo",
+   "combined_user_sha256": "6251321ce22e42342f2f26c5f31966da6c48cc39d2d961d3b44cf61d82790ffd",
+   "usage": {
+    "cost_usd": "0.0067536",
+    "input_tokens": 29570,
+    "output_tokens": 9335
+   },
+   "cost_usd": "0.0067536",
+   "status": "ok",
+   "A_rating": 0.62,
+   "B_rating": 0.46,
+   "difference_B_minus_A": -0.16
+  },
+  {
+   "focal": "Vermont",
+   "partner": "Oregon",
+   "partner_kind": "nearest",
+   "model": "deepseek",
+   "combined_user_sha256": "dfed879706bf9a80d5752929bfc8636b9ea90245498f171a47e56a8bf938c3aa",
+   "usage": {
+    "cost_usd": "0.00529155",
+    "input_tokens": 30019,
+    "output_tokens": 7194
+   },
+   "cost_usd": "0.00529155",
+   "status": "ok",
+   "A_rating": 0.48,
+   "B_rating": 0.47,
+   "difference_B_minus_A": -0.01
+  },
+  {
+   "focal": "Virginia",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "qwen",
+   "combined_user_sha256": "3fc8333f05e273304389111471b2cb2062600e97275c797ec750217d826389ea",
+   "usage": {
+    "cost_usd": "0.011154152",
+    "input_tokens": 30110,
+    "output_tokens": 17918
+   },
+   "cost_usd": "0.011154152",
+   "status": "ok",
+   "A_rating": 0.54,
+   "B_rating": 0.3,
+   "difference_B_minus_A": -0.24
+  },
+  {
+   "focal": "Virginia",
+   "partner": "Arizona",
+   "partner_kind": "nearest",
+   "model": "glm",
+   "combined_user_sha256": "0099884a16e67bfa348fd32c83c7369fa0890ec5b844f295bfbb027f1027f2e4",
+   "usage": {
+    "cost_usd": "0.002870035",
+    "input_tokens": 30995,
+    "output_tokens": 3564
+   },
+   "cost_usd": "0.002870035",
+   "status": "rejected",
+   "reason": "ValueError: output keys do not match the v4 schema"
+  },
+  {
+   "focal": "Washington",
+   "partner": "__USA__",
+   "partner_kind": "parent",
+   "model": "haiku",
+   "combined_user_sha256": "3b4fc48ab26f4777fcf9637fd8d30312878aceb886ee54d6ac33b8a826644914",
+   "usage": {
+    "cost_usd": "0.0075757",
+    "input_tokens": 46687,
+    "output_tokens": 5814
+   },
+   "cost_usd": "0.0075757",
+   "status": "ok",
+   "A_rating": 0.36,
+   "B_rating": 0.28,
+   "difference_B_minus_A": -0.08
+  },
+  {
+   "focal": "Washington",
+   "partner": "Indiana",
+   "partner_kind": "nearest",
+   "model": "luna",
+   "combined_user_sha256": "fe56f16802763b6b5a80e03e2b390ee9ec545c9cfe3ce2d972c258c7c8301a3a",
+   "usage": {
+    "cost_usd": "0.00411344",
+    "input_tokens": 29471,
+    "output_tokens": 5037
+   },
+   "cost_usd": "0.00411344",
+   "status": "ok",
+   "A_rating": 0.48,
+   "B_rating": 0.43,
+   "difference_B_minus_A": -0.05
+  }
+ ]
+}
