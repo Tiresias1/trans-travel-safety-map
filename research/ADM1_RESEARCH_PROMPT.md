@@ -3,6 +3,10 @@
 > **STYLE GATE — read `tools/STYLE_RULES.md` before generating.** All summary text must be
 > report-voice; never describe previous states of the record or the map ("the earlier
 > profile…", "has been deleted"). State the current fact.
+>
+> **This prompt implements `research/ADAPTIVE_RESEARCH_METHOD.md` (the research
+> contract).** Rounds, self-reflection, registry use and verification gates below are
+> that contract operationalized; in conflict, the method document wins.
 
 **How this is used:** the operator pastes everything below the line into the research
 model ONCE. The model works down the ranked country list autonomously — one output file
@@ -10,6 +14,49 @@ per country — until the stop rule fires. No per-country manual setup.
 
 Requirements for the model: a shell (to run `python3 tools/adm1_list.py` from the repo
 root `/home/meme/kóði/kort`), web search, and page fetching.
+
+---
+
+## Adaptive round structure (per region — mandatory)
+
+Every region is researched in **rounds, capped at 4** (`MAX_ROUNDS = 4`). Each round:
+
+1. **Search first, always.** Multiple *distinct* queries (rotate phrasing; never repeat
+   one string), multiple result pages. Prefer **DuckDuckGo** for broad sweeps; use
+   **Exa** (~150 queries/day, shared globally) only for agentic depth — long legal
+   texts, ballot-measure full text, sources DDG can't crack after ≥3 phrasings.
+   Minimum per round: 3 distinct DDG queries unless the first returns rich results.
+2. **Extract + locally cache every new source** under the existing cache layout
+   (`research/fetched/<sha16>.txt` via `tools/fetch_all_sources.py`) — never a second
+   cache. Roll the manifest with `tools/build_source_manifest.py`.
+3. **Verify every new source** (own verification pass before citation): URL resolves
+   and content matches; quote-level support for the claims attributed; facts-only
+   summary (no score/inclusion meta — PIPELINE_INVARIANTS rule 4). Failing sources
+   are **quarantined** (registry `status: quarantined`) and never enter dossiers.
+4. **Self-reflection step** — write this into the region's round log:
+
+   > "Did you discover something new that plausibly warrants deeper research (a
+   > promising dataset, a recurring cited source, a ballot measure whose full text
+   > you haven't read)? If yes, schedule it for the next round."
+
+   If yes: name the items and schedule targeted searches for them next round.
+   If no: say "no — stopping" with one line of justification.
+5. **Check the shared source registry** (`data/source_registry.json`) at the start of
+   every round. If a source is promoted `common` (fruitful in ≥3 regions +
+   coordinator review), queue its query for this round. Propose candidates by staging
+   an entry (`promotionDecision: null`); only the coordinator promotes. Registry
+   writes are locked (single-writer); never hold the registry across a round.
+
+**Stopping:** rich early exit (round 1 rich → may stop after 1 round, self-reflection
+still written) · no-change stop (a round finds nothing new → stop; no downstream
+stage runs for that region) · signal stop (only national-level material for 2 rounds
+→ stop) · hard stop at round 4, with unsatisfied leads recorded as known gaps.
+**Per-region round manifest** (`research/adaptive/<ISO3>/<region>.manifest.json`)
+records queries, new/verified sources, scheduled leads, self-reflection and
+`stopReason` — downstream stages read it; they do not re-derive it.
+
+**No new facts without a source.** A claim without a URL does not exist. Every
+sourced bullet carries its URL; "no sub-national signal found" is complete and useful.
 
 ---
 

@@ -137,3 +137,52 @@ from-scratch rerun.
   seeded RNG, independent of model assignment (the old A=focal rule
   correlated model with slot).
 
+## 9. Adaptive research (2026-11-25; contract: `research/ADAPTIVE_RESEARCH_METHOD.md`)
+
+The ADM1 researcher methodology is adaptive rounds over a shared source registry,
+with a verification gate in front of a hash-gated cascade. Binding rules:
+
+- **(a) Search first, budgeted.** Every round starts with web search: multiple
+  distinct queries, multiple pages. DuckDuckGo is the workhorse; Exa (~150
+  queries/day, global shared budget) is for agentic depth only (long legal text,
+  ballot-measure full text, DDG-resistant sources). Exa use is logged per region
+  manifest; the wave keeps a quota ledger checked at round start.
+- **(b) Rounds, capped at 4.** Each round: search → extract + cache every new
+  source (`research/fetched/` via `tools/fetch_all_sources.py`, manifest via
+  `tools/build_source_manifest.py`) → per-source verification → explicit
+  self-reflection ("Did you discover something new that plausibly warrants deeper
+  research…? If yes, schedule it for the next round.") → targeted searches next
+  round. Rich early exit, no-change stop, and signal stop are all legitimate;
+  round 4 ends research regardless, remaining leads recorded as known gaps.
+- **(c) Shared source registry** (`data/source_registry.json`, schema in the method
+  doc §4). A source retrieved + cited (verified) in **≥3 regions** is a candidate
+  common source; promotion to `common` requires **coordinator review** recorded in
+  `promotionDecision`. Promoted sources are queued for all regions in their next
+  round (registry re-read at round boundary). **Single-writer:** locked RMW
+  (existing `data/.apply.lock` pattern); agents stage proposals, only the
+  coordinator promotes.
+- **(d) Verification gate.** Every newly added source gets its own verification pass
+  (real / quote-level cited / facts-only per rule 4) appended to the registry.
+  FAIL → `quarantined`, never enters dossiers; re-admission needs a fresh pass.
+- **(e) Cascade, hash-gated.** source change → re-derive `blindSourceSummaries` →
+  (iff blind text changed) re-blind lead fields → `tools/check_blind.py` gate →
+  re-render dossiers (single-render rule, 7b) → summary from consolidated evidence →
+  RERATE affected regions only via the pairwise machinery (never manual, rule 6),
+  with rule-8 parent anchors and parent-current seeds. Every stage is a script with
+  input/output manifests and runs only if its input manifest changed (content-hash
+  gating, per region per stage). Coordinator approval gates the rerate batch.
+- **(f) Zero-change fast path.** If research finds nothing new for a region, no
+  stage downstream of research runs for that region — no reblinding, no re-render,
+  no rerating. This is the default for quiet regions.
+- **(g) Scope.** ADM1 regions only. The US federal country record is NOT
+  re-researched; parent-framework contradictions are flagged for the coordinator,
+  never silently rewritten. Rules 1–7 remain in force under this method: sync by
+  record id (1), territories as ADM1 under the parent regime with parent-layer
+  parity before any pairwise run (2), operative parent (3), facts-only source text
+  (4), rating discipline incl. anti-absence and LGB-signal-is-operative (5),
+  pairwise calibration (6), blinding (7b), drift discipline (8).
+- **(h) Per-region manifests** (`research/adaptive/<ISO3>/<region>.manifest.json`)
+  are the cascade's input contract: queries, new/verified sources, scheduled
+  leads, self-reflection, `stopReason`. Coordinator touchpoints (promotion review,
+  rerate approval) are manifest/registry-visible, never chat-only.
+
