@@ -1,0 +1,5039 @@
+{
+ "counts": {
+  "ok": 2886,
+  "billed_unparseable": 16,
+  "scope_error": 68,
+  "scale_error": 270,
+  "identity_error": 1
+ },
+ "errors": [
+  {
+   "sid": "36957248B39816127207897",
+   "name": "Zanzibar South & Central",
+   "iso3": "TZA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Zanzibar's autonomous government operates under a markedly more conservative religious governance than the mainland; LGBT prosecutions and social hostility are documented as more intense there.",
+   "explanation": "Text describes Zanzibar as a whole, the parent state, not the specific division Zanzibar South & Central; a parent unit is presented as the division.",
+   "usage": {
+    "cost_usd": "0.00012586",
+    "input_tokens": 423,
+    "output_tokens": 238
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "36957248B81638677744414",
+   "name": "Zanzibar North",
+   "iso3": "TZA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Zanzibar's autonomous government operates under a markedly more conservative religious governance than the mainland",
+   "explanation": "Text describes Zanzibar as a whole (its autonomous government vs mainland) rather than the specific Zanzibar North division in the record.",
+   "usage": {
+    "cost_usd": "0.00011382",
+    "input_tokens": 421,
+    "output_tokens": 196
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "36957248B66874645654546",
+   "name": "Zanzibar Urban/West",
+   "iso3": "TZA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Zanzibar's autonomous government operates under a markedly more conservative religious governance than the mainland; LGBT prosecutions and social hostility are documented as more intense there.",
+   "explanation": "",
+   "usage": {
+    "cost_usd": "0.000144084",
+    "input_tokens": 423,
+    "output_tokens": 444
+   },
+   "seconds": 3.3
+  },
+  {
+   "sid": "90741666B81100048725045",
+   "name": "Dohuk",
+   "iso3": "IRQ",
+   "verdict": "scope_error",
+   "quoted_evidence": "The Kurdistan Region is relatively more open than federal Iraq — a tolerated (underground) scene in Erbil",
+   "explanation": "The text presents the Kurdistan Region and its capital Erbil as if they were the division Dohuk, describing a larger/different unit's conditions, not Dohuk's.",
+   "usage": {
+    "cost_usd": "0.00022386",
+    "input_tokens": 465,
+    "output_tokens": 567
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "90741666B26956950402634",
+   "name": "Erbil",
+   "iso3": "IRQ",
+   "verdict": "scope_error",
+   "quoted_evidence": "The Kurdistan Region is relatively more open than federal Iraq — a tolerated (underground) scene in Erbil",
+   "explanation": "The record is Erbil governorate; the text describes the Kurdistan Region (a larger, different unit), presenting its conditions as the division's.",
+   "usage": {
+    "cost_usd": "0.00011802",
+    "input_tokens": 465,
+    "output_tokens": 189
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "90741666B75227633199275",
+   "name": "Al-Sulaimaniyah",
+   "iso3": "IRQ",
+   "verdict": "scope_error",
+   "quoted_evidence": "The Kurdistan Region is relatively more open than federal Iraq — a tolerated (underground) scene in Erbil",
+   "explanation": "Text describes the Kurdistan Region (its superordinate unit) and Erbil's scene, not the Al-Sulaimaniyah governorate itself.",
+   "usage": {
+    "cost_usd": "0.00015358",
+    "input_tokens": 469,
+    "output_tokens": 314
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "12653393B60423242182357",
+   "name": "Kabul",
+   "iso3": "AFG",
+   "verdict": "scale_error",
+   "quoted_evidence": "As the capital and the seat of Taliban central administration, including the ministry responsible for public morality, the city concentrates checkpoint presence, document and identity checks",
+   "explanation": "The Kabul division (a province-level unit) is equated with its capital throughout: 'the city', 'in the city' refer to the division itself, presenting urban capital conditions as the unit's scale.",
+   "usage": {
+    "cost_usd": "0.00065604",
+    "input_tokens": 632,
+    "output_tokens": 2027
+   },
+   "seconds": 32.7
+  },
+  {
+   "sid": "12653393B41529784753429",
+   "name": "Herat",
+   "iso3": "AFG",
+   "verdict": "scale_error",
+   "quoted_evidence": "Herat is a western provincial capital and a major gateway near the Iran border, with heavy checkpoint presence on approaches to the city.",
+   "explanation": "The record is Herat Province, but the text defines the division as a city/capital ('Herat is a western provincial capital') and frames conditions around 'the city', conflating province scale with city scale.",
+   "usage": {
+    "cost_usd": "0.00021056",
+    "input_tokens": 636,
+    "output_tokens": 434
+   },
+   "seconds": 9.8
+  },
+  {
+   "sid": "26408823B12021631761277",
+   "name": "Huambo",
+   "iso3": "AGO",
+   "verdict": "scale_error",
+   "quoted_evidence": "Huambo is a central highlands city in Angola. Assessed relative to the national picture in Angola, this division places a trans visitor in a highland urban setting within the country.",
+   "explanation": "Huambo is a province; the text calls it a city and treats the urban capital's setting as the whole division, confusing city scale with provincial scale.",
+   "usage": {
+    "cost_usd": "0.0000810264",
+    "input_tokens": 415,
+    "output_tokens": 223
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "26408823B17220104796328",
+   "name": "Luanda",
+   "iso3": "AGO",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital city of Angola",
+   "explanation": "Luanda is a province-level unit; the text equates the division itself with its capital city, confusing administrative scale.",
+   "usage": {
+    "cost_usd": "0.0002060464",
+    "input_tokens": 428,
+    "output_tokens": 663
+   },
+   "seconds": 10.4
+  },
+  {
+   "sid": "10019604B56812167051250",
+   "name": "Durrës",
+   "iso3": "ALB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Durrës is a division of Albania characterized as a port city",
+   "explanation": "The text names the unit as a division but then characterizes the whole division as a city, conflating Durrës County with the city of Durrës.",
+   "usage": {
+    "cost_usd": "0.0001302",
+    "input_tokens": 436,
+    "output_tokens": 247
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "86790563B99975224300185",
+   "name": "Abu Dhabi",
+   "iso3": "ARE",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital of United Arab Emirates ... it serves as the country's capital city.",
+   "explanation": "Abu Dhabi is an emirate (state) of the UAE; the text describes it as a city and equates the division with its capital city.",
+   "usage": {
+    "cost_usd": "0.00013902",
+    "input_tokens": 415,
+    "output_tokens": 289
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "74100532B54588500691901",
+   "name": "Saint John",
+   "iso3": "ATG",
+   "verdict": "scale_error",
+   "quoted_evidence": "Saint John, Antigua and Barbuda's capital and principal port",
+   "explanation": "The record is the parish of Saint John; the text equates this division with its capital city (the separate city of Saint John), describing the division itself as the national capital and principal port.",
+   "usage": {
+    "cost_usd": "0.000218284",
+    "input_tokens": 493,
+    "output_tokens": 674
+   },
+   "seconds": 6.4
+  },
+  {
+   "sid": "74100532B88993889644511",
+   "name": "Saint George",
+   "iso3": "ATG",
+   "verdict": "scope_error",
+   "quoted_evidence": "The parish contains St. John's, the cruise port and V.C. Bird International Airport, so it is where most visitors' first identity checks take place.",
+   "explanation": "St. John's, the cruise port and the international airport lie in St. John's parish, not Saint George; another unit's features are presented as the division's.",
+   "usage": {
+    "cost_usd": "0.00018466",
+    "input_tokens": 491,
+    "output_tokens": 414
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "87207978B95213924600823",
+   "name": "Gitega",
+   "iso3": "BDI",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small interior city with few international visitor services, so anonymity is limited",
+   "explanation": "The record is Gitega Province, but the text frames the whole unit as a city ('the city carries...', 'It is a small interior city'), equating the division with its capital.",
+   "usage": {
+    "cost_usd": "0.000428564",
+    "input_tokens": 611,
+    "output_tokens": 1366
+   },
+   "seconds": 15.6
+  },
+  {
+   "sid": "87207978B47636051590360",
+   "name": "Bujumbura Mairie",
+   "iso3": "BDI",
+   "verdict": "scale_error",
+   "quoted_evidence": "the commune concentrates police, checkpoints, immigration screening ... Recorded enforcement of sexuality provisions clusters in this commune",
+   "explanation": "Bujumbura Mairie is a province-level unit; the text repeatedly labels it 'commune' and treats it as a single city/capital, misstating its administrative scale.",
+   "usage": {
+    "cost_usd": "0.000176284",
+    "input_tokens": 631,
+    "output_tokens": 455
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "87207978B49849916836933",
+   "name": "Rumonge",
+   "iso3": "BDI",
+   "verdict": "scale_error",
+   "quoted_evidence": "Rumonge is a small, rural lakeside town on Lake Tanganyika with a tight social fabric and little visible LGBTQ infrastructure.",
+   "explanation": "The record's unit is a sub-national division (province) of Burundi, but the text describes it as 'a small, rural lakeside town' and later references 'a town with limited institutional presence,' equating the division with a town/city.",
+   "usage": {
+    "cost_usd": "0.000114124",
+    "input_tokens": 515,
+    "output_tokens": 291
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "32408957B94023193097291",
+   "name": "Chittagong",
+   "iso3": "BGD",
+   "verdict": "scale_error",
+   "quoted_evidence": "Chittagong is Bangladesh's second city, characterized by port cosmopolitanism.",
+   "explanation": "The record's unit is a division (region), but the text opens by defining it as a city, conflating the division with the urban scale, even though it later calls it a division.",
+   "usage": {
+    "cost_usd": "0.0001512",
+    "input_tokens": 426,
+    "output_tokens": 327
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "32408957B77718829177955",
+   "name": "Dhaka",
+   "iso3": "BGD",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital of Bangladesh, the only unit with an organised (underground) community",
+   "explanation": "Dhaka Division is a first-order region; the text equates it with Dhaka the capital city, treating the division itself as 'the capital'.",
+   "usage": {
+    "cost_usd": "0.000074084",
+    "input_tokens": 433,
+    "output_tokens": 189
+   },
+   "seconds": 2.8
+  },
+  {
+   "sid": "32408957B83626866084602",
+   "name": "Mymensingh",
+   "iso3": "BGD",
+   "verdict": "scope_error",
+   "quoted_evidence": "Mymensingh is a secondary, socially conservative city and divisional seat in north-central Bangladesh, a university and medical town",
+   "explanation": "The division is characterized by the conditions of its capital city (the city's visibility, profile, and services) as if they were the whole division's.",
+   "usage": {
+    "cost_usd": "0.00016422",
+    "input_tokens": 501,
+    "output_tokens": 336
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "32408957B31852228482374",
+   "name": "Barisal",
+   "iso3": "BGD",
+   "verdict": "scale_error",
+   "quoted_evidence": "Police discretion in a smaller, more traditional city can intensify rather than soften this exposure.",
+   "explanation": "The division Barisal is referred to as a 'smaller, more traditional city', conflating the province-level unit with a city scale.",
+   "usage": {
+    "cost_usd": "0.00015036",
+    "input_tokens": 650,
+    "output_tokens": 212
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "22928101B16069235588997",
+   "name": "Blagoevgrad",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterised as a university town. Assessed relative to the national picture in Bulgaria, its south-west position and university-town character are the reference points",
+   "explanation": "The oblast/region is described as a town ('university town'), equating the whole division with an urban settlement scale.",
+   "usage": {
+    "cost_usd": "0.0001212064",
+    "input_tokens": 438,
+    "output_tokens": 355
+   },
+   "seconds": 5.8
+  },
+  {
+   "sid": "22928101B44315306220510",
+   "name": "Burgas",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Burgas is a coastal city division of Bulgaria",
+   "explanation": "Burgas is an oblast/region, but the text frames it as a city ('coastal city division'), mischaracterizing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.0000670264",
+    "input_tokens": 421,
+    "output_tokens": 170
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "22928101B46852240648203",
+   "name": "Lovech",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "no further characterization of the city or region",
+   "explanation": "The division (Lovech Province) is referred to as 'the city', equating the sub-national unit with a city, before hedging with 'or region'.",
+   "usage": {
+    "cost_usd": "0.000112864",
+    "input_tokens": 458,
+    "output_tokens": 315
+   },
+   "seconds": 2.7
+  },
+  {
+   "sid": "22928101B63653503228719",
+   "name": "Plovdiv",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Plovdiv is Bulgaria's second city",
+   "explanation": "The record is a province/region, but the text describes it as a city ('Bulgaria's second city'), confusing the sub-national division's scale with its principal city.",
+   "usage": {
+    "cost_usd": "0.00016156",
+    "input_tokens": 422,
+    "output_tokens": 366
+   },
+   "seconds": 3.5
+  },
+  {
+   "sid": "22928101B77314555344177",
+   "name": "Ruse",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a mid-sized Danube port and university city on the northern border, with a tourism-oriented riverfront economy and regular cross-river traffic.",
+   "explanation": "Ruse (sid 22928101B77314555344177) is an oblast/region of Bulgaria, but the text equates it with its capital city of Ruse throughout ('university city', 'the city has far less community infrastructure', 'municipal measure').",
+   "usage": {
+    "cost_usd": "0.000184824",
+    "input_tokens": 586,
+    "output_tokens": 508
+   },
+   "seconds": 5.9
+  },
+  {
+   "sid": "22928101B66285988905372",
+   "name": "Smolyan",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Smolyan is a small provincial capital in the southern Rhodope Mountains ... In a town this size anonymity is low",
+   "explanation": "Smolyan (BGR) is a province/region; the text equates it with its capital city and treats it as a town, mischaracterizing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.00066724",
+    "input_tokens": 614,
+    "output_tokens": 2076
+   },
+   "seconds": 10.6
+  },
+  {
+   "sid": "22928101B59958785683132",
+   "name": "Varna",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Varna is a coastal city in Bulgaria (BGR)",
+   "explanation": "The record's unit is the Varna province/region, but the text characterizes it as a city, i.e. a smaller-scale settlement rather than the sub-national division.",
+   "usage": {
+    "cost_usd": "0.0000890064",
+    "input_tokens": 422,
+    "output_tokens": 248
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "22928101B33485564928872",
+   "name": "Veliko Tarnovo",
+   "iso3": "BGR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Veliko Tarnovo is a university city in Bulgaria. ... this division's standing is framed by that university-city character.",
+   "explanation": "The record is a province/region of Bulgaria, but the text directly equates the division with a city, describing its standing through a 'university-city' character.",
+   "usage": {
+    "cost_usd": "0.0001072064",
+    "input_tokens": 436,
+    "output_tokens": 306
+   },
+   "seconds": 4.4
+  },
+  {
+   "sid": "46075475B51781384290981",
+   "name": "Muharraq Governorate",
+   "iso3": "BHR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Muharraq Governorate is a division of BHR characterized as a conservative old city.",
+   "explanation": "The governorate (an island-wide administrative division) is described as 'a conservative old city', conflating the whole division with a city-scale unit.",
+   "usage": {
+    "cost_usd": "0.0000804664",
+    "input_tokens": 427,
+    "output_tokens": 215
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "57655419B62023626616016",
+   "name": "Black Point",
+   "iso3": "BHS",
+   "verdict": "scale_error",
+   "quoted_evidence": "Black Point is a small, remote Out Island settlement in the Exumas whose economy rests on boating and yacht visitors. Within a close-knit community of this size",
+   "explanation": "The sub-national division is equated with a single small settlement/community rather than being described as a regional-scale unit.",
+   "usage": {
+    "cost_usd": "0.000142684",
+    "input_tokens": 493,
+    "output_tokens": 404
+   },
+   "seconds": 10.6
+  },
+  {
+   "sid": "57655419B91019969534321",
+   "name": "Hope Town",
+   "iso3": "BHS",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, affluent settlement on Elbow Cay in the Abaco Islands ... Whether the town's tourist economy materially softens the national picture",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it directly as a small settlement/town, equating the division with the built-up place rather than the administrative unit.",
+   "usage": {
+    "cost_usd": "0.00020314",
+    "input_tokens": 587,
+    "output_tokens": 432
+   },
+   "seconds": 4.3
+  },
+  {
+   "sid": "57655419B49483307836090",
+   "name": "Mangrove Cay",
+   "iso3": "BHS",
+   "verdict": "scale_error",
+   "quoted_evidence": "This is a small, sparsely populated Out Island settlement on Andros",
+   "explanation": "The division (a Bahamian island district) is characterised as a single 'settlement', i.e. village/town scale, and later 'a settlement of this size', collapsing the whole unit into one small town.",
+   "usage": {
+    "cost_usd": "0.000197704",
+    "input_tokens": 672,
+    "output_tokens": 511
+   },
+   "seconds": 14.5
+  },
+  {
+   "sid": "57655419B38120742943128",
+   "name": "Moore's Island",
+   "iso3": "BHS",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, sparsely populated settlement in the Abaco chain",
+   "explanation": "The division is an island unit, but it is equated with a village-scale settlement/community, misstating its scale.",
+   "usage": {
+    "cost_usd": "0.0002576",
+    "input_tokens": 710,
+    "output_tokens": 565
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "57655419B1305095208594",
+   "name": "Spanish Wells",
+   "iso3": "BHS",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterizes it as a notoriously conservative religious town",
+   "explanation": "The sub-national division is characterized as a 'town', conflating the administrative unit with a settlement scale.",
+   "usage": {
+    "cost_usd": "0.00011424",
+    "input_tokens": 436,
+    "output_tokens": 190
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "54001226B17629474923252",
+   "name": "Federation of Bosnia and Herzegovina",
+   "iso3": "BIH",
+   "verdict": "scope_error",
+   "quoted_evidence": "Sarajevo's scene (first Pride 2019) offsets rural conservatism — nets baseline.",
+   "explanation": "Only the capital Sarajevo's conditions are presented as the baseline for the whole Federation entity, rather than describing the entity's own scope.",
+   "usage": {
+    "cost_usd": "0.000149544",
+    "input_tokens": 422,
+    "output_tokens": 464
+   },
+   "seconds": 6.3
+  },
+  {
+   "sid": "45462678B52111461583443",
+   "name": "Minsk",
+   "iso3": "BLR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a province",
+   "explanation": "Minsk is a city (Belarus's capital), not a province; describing it as a province mischaracterizes the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000103344",
+    "input_tokens": 414,
+    "output_tokens": 303
+   },
+   "seconds": 4.7
+  },
+  {
+   "sid": "66845921B83925222569127",
+   "name": "Trashiyangtse",
+   "iso3": "BTN",
+   "verdict": "scale_error",
+   "quoted_evidence": "The district is a small, remote town in far eastern Bhutan",
+   "explanation": "Trashiyangtse is a district (dzongkhag), but the text treats it as a single small town, calling it 'a tight-knit district town', conflating the division's scale with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.000154",
+    "input_tokens": 632,
+    "output_tokens": 234
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "66845921B85706545486898",
+   "name": "Mongar",
+   "iso3": "BTN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mongar is a small, remote eastern district town on the Lateral Road ... In a town this size a visibly gender-nonconforming foreigner draws attention quickly",
+   "explanation": "Mongar is a district (dzongkhag), but the text treats the whole unit as a town, calling it a 'district town' and sizing it with 'In a town this size'.",
+   "usage": {
+    "cost_usd": "0.0002625",
+    "input_tokens": 787,
+    "output_tokens": 544
+   },
+   "seconds": 5.8
+  },
+  {
+   "sid": "66845921B82067974050695",
+   "name": "Thimpu",
+   "iso3": "BTN",
+   "verdict": "scale_error",
+   "quoted_evidence": "As the capital and most urban centre, it concentrates immigration, hotel-registration, police and hospital contact",
+   "explanation": "The record is a sub-national division (region) of Bhutan, but the text treats it as the capital city itself, equating the division with its capital and its urban core throughout.",
+   "usage": {
+    "cost_usd": "0.00027538",
+    "input_tokens": 649,
+    "output_tokens": 659
+   },
+   "seconds": 16.1
+  },
+  {
+   "sid": "66845921B8526775626410",
+   "name": "Samtse",
+   "iso3": "BTN",
+   "verdict": "scale_error",
+   "quoted_evidence": "a visibly trans visitor would attract attention in a tight-knit town",
+   "explanation": "Samtse is a dzongkhag (district); describing its conditions as those of a 'tight-knit town' recasts the whole division as a town.",
+   "usage": {
+    "cost_usd": "0.000202604",
+    "input_tokens": 525,
+    "output_tokens": 602
+   },
+   "seconds": 6.6
+  },
+  {
+   "sid": "70761945B62987387977087",
+   "name": "Basel-Stadt",
+   "iso3": "CHE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Basel-Stadt is an urban border city in Switzerland. Assessed relative to the national picture in Switzerland, it presents as an urban border city.",
+   "explanation": "The record's unit is the canton of Basel-Stadt, but the text presents it as a city rather than a sub-national state/region, mixing up the administrative scale.",
+   "usage": {
+    "cost_usd": "0.00013804",
+    "input_tokens": 408,
+    "output_tokens": 289
+   },
+   "seconds": 4.3
+  },
+  {
+   "sid": "70761945B78940680080703",
+   "name": "Bern",
+   "iso3": "CHE",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a federal city.",
+   "explanation": "The record is a sub-national division (canton) of Switzerland, but the text describes it at city scale as 'a federal city', equating the whole unit with a city.",
+   "usage": {
+    "cost_usd": "0.000139624",
+    "input_tokens": 408,
+    "output_tokens": 344
+   },
+   "seconds": 6.6
+  },
+  {
+   "sid": "70761945B83881285484717",
+   "name": "Genève",
+   "iso3": "CHE",
+   "verdict": "scale_error",
+   "quoted_evidence": "international Geneva, a city whose character is defined by its international character",
+   "explanation": "The division (canton of Genève) is described as 'a city', conflating the sub-national unit with an urban settlement scale.",
+   "usage": {
+    "cost_usd": "0.00010304",
+    "input_tokens": 414,
+    "output_tokens": 161
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "70761945B4468941998498",
+   "name": "Zürich",
+   "iso3": "CHE",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the largest city in CHE and has a scene. ... a trans visitor can expect to find that scene in the country's largest city.",
+   "explanation": "The sub-national division (canton/region of Zürich) is equated with a city: 'this division is the largest city' and 'the country's largest city' describe a municipal scale rather than the regional unit.",
+   "usage": {
+    "cost_usd": "0.00014854",
+    "input_tokens": 415,
+    "output_tokens": 323
+   },
+   "seconds": 2.7
+  },
+  {
+   "sid": "43563684B97743196909507",
+   "name": "Chongqing Municipality",
+   "iso3": "CHN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Chongqing Municipality is a western mega-city within China",
+   "explanation": "The provincial-level division is characterized as a 'mega-city', describing it as a city rather than the sub-national division the record defines.",
+   "usage": {
+    "cost_usd": "0.0000999264",
+    "input_tokens": 420,
+    "output_tokens": 288
+   },
+   "seconds": 7.2
+  },
+  {
+   "sid": "43563684B14397599951889",
+   "name": "Sichuan Province",
+   "iso3": "CHN",
+   "verdict": "scope_error",
+   "quoted_evidence": "Chengdu: known as China's gay capital; most relaxed major inland city.",
+   "explanation": "Summary presents only capital city Chengdu's conditions as representing the whole of Sichuan Province, a different (sub-provincial) unit.",
+   "usage": {
+    "cost_usd": "0.00016884",
+    "input_tokens": 404,
+    "output_tokens": 401
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "43563684B17418114845297",
+   "name": "Beijing Municipality",
+   "iso3": "CHN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Beijing Municipality is the capital of China, a division whose character is defined by...",
+   "explanation": "The province-level division is equated with 'the capital of China', conflating the municipality unit with the capital city it contains.",
+   "usage": {
+    "cost_usd": "0.00016198",
+    "input_tokens": 437,
+    "output_tokens": 360
+   },
+   "seconds": 5.2
+  },
+  {
+   "sid": "83157122B76853064397847",
+   "name": "District Autonome D'Abidjan",
+   "iso3": "CIV",
+   "verdict": "scale_error",
+   "quoted_evidence": "District Autonome D'Abidjan is the economic capital of Côte d'Ivoire",
+   "explanation": "The first-order autonomous district is equated with the city of Abidjan ('is the economic capital'), a scale conflation; content otherwise concerns the correct unit.",
+   "usage": {
+    "cost_usd": "0.0001486464",
+    "input_tokens": 452,
+    "output_tokens": 446
+   },
+   "seconds": 4.2
+  },
+  {
+   "sid": "27767025B11866847137657",
+   "name": "Centre",
+   "iso3": "CMR",
+   "verdict": "scope_error",
+   "quoted_evidence": "The Centre Region is Cameroon's political capital: Yaoundé houses the presidency, the courts, the gendarmerie and police high commands...",
+   "explanation": "The dossier presents only Yaoundé's urban, capital-specific conditions (courts, Kondengui, diplomatic presence, 'the city') as the conditions of the whole Centre Region, with no characterization of the region beyond the capital.",
+   "usage": {
+    "cost_usd": "0.000373264",
+    "input_tokens": 678,
+    "output_tokens": 1135
+   },
+   "seconds": 35.9
+  },
+  {
+   "sid": "27767025B32580592296844",
+   "name": "Adamaoua",
+   "iso3": "CMR",
+   "verdict": "scope_error",
+   "quoted_evidence": "Adamaoua is a division of Cameroon characterized as the predominantly Muslim north. Assessed relative to the national picture in Cameroon, it represents the country's northern, Muslim-majority region.",
+   "explanation": "The text equates Adamaoua with Cameroon's entire north/Muslim-majority zone, describing a broader, different unit than the single Adamaoua Region.",
+   "usage": {
+    "cost_usd": "0.000260844",
+    "input_tokens": 417,
+    "output_tokens": 864
+   },
+   "seconds": 31.9
+  },
+  {
+   "sid": "28894549B67590087528803",
+   "name": "Kasai",
+   "iso3": "COD",
+   "verdict": "scope_error",
+   "quoted_evidence": "Centred on Kananga and Mbuji-Mayi ... left documented abuses by army forces and militias, mass graves and weakened state authority across Kasai-Oriental and Kasai-Central",
+   "explanation": "The record's Kasai is a single province; the text frames it via Kananga/Mbuji-Mayi and conditions in Kasai-Oriental and Kasai-Central, i.e. other/separate units presented as this division.",
+   "usage": {
+    "cost_usd": "0.0003398864",
+    "input_tokens": 676,
+    "output_tokens": 1017
+   },
+   "seconds": 12.9
+  },
+  {
+   "sid": "67827341B64489104323901",
+   "name": "Brazzaville",
+   "iso3": "COG",
+   "verdict": "scale_error",
+   "quoted_evidence": "Brazzaville is the capital of the Republic of the Congo (COG). ... its status as the capital shapes what a trans visitor can expect",
+   "explanation": "The record's division is equated with the capital city; text treats the whole unit solely as 'the capital' rather than a sub-national division.",
+   "usage": {
+    "cost_usd": "0.000146884",
+    "input_tokens": 432,
+    "output_tokens": 354
+   },
+   "seconds": 2.8
+  },
+  {
+   "sid": "67827341B24651927925898",
+   "name": "Pointe-Noire",
+   "iso3": "COG",
+   "verdict": "scale_error",
+   "quoted_evidence": "Pointe-Noire is the economic capital of the Republic of the Congo.",
+   "explanation": "The sub-national division (Pointe-Noire Department) is described as a capital city, conflating the division's scale with a city/place role.",
+   "usage": {
+    "cost_usd": "0.000145064",
+    "input_tokens": 416,
+    "output_tokens": 451
+   },
+   "seconds": 8.0
+  },
+  {
+   "sid": "35879248B27983455382142",
+   "name": "Tarrafal de São Nicolau",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "Tarrafal de São Nicolau is a small, remote fishing and modest eco-tourism settlement on São Nicolau island",
+   "explanation": "",
+   "usage": {
+    "cost_usd": "0.000273164",
+    "input_tokens": 625,
+    "output_tokens": 804
+   },
+   "seconds": 13.7
+  },
+  {
+   "sid": "35879248B16121613622578",
+   "name": "Porto Novo",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "Porto Novo is the main town of Santo Antão... a small ferry-port community centred on farming",
+   "explanation": "The record is the Porto Novo division (municipality) of Cabo Verde; the text reduces it to its main town, equating the unit with the town/community rather than the wider administrative division.",
+   "usage": {
+    "cost_usd": "0.000239704",
+    "input_tokens": 622,
+    "output_tokens": 686
+   },
+   "seconds": 10.5
+  },
+  {
+   "sid": "35879248B42709825939270",
+   "name": "São Filipe",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "São Filipe, the small capital of Fogo island ... It is a traditional, predominantly Catholic town ... the town has no dedicated support",
+   "explanation": "The division (a municipality/region) is repeatedly described as a town and equated with the capital city of Fogo, collapsing regional scale into settlement scale.",
+   "usage": {
+    "cost_usd": "0.0002044",
+    "input_tokens": 616,
+    "output_tokens": 422
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "35879248B2594883865860",
+   "name": "Tarrafal",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "The town's close-knit, rural and traditionally Catholic character ... while the town's thin services mean any remedy or specialist support would probably require travel to Praia",
+   "explanation": "The record is a municipality (sub-national division), but the text repeatedly refers to the whole unit as 'the town', equating the division with a settlement.",
+   "usage": {
+    "cost_usd": "0.00030842",
+    "input_tokens": 653,
+    "output_tokens": 775
+   },
+   "seconds": 5.9
+  },
+  {
+   "sid": "35879248B8506465148242",
+   "name": "São Salvador do Mundo",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as a tourism island envelope",
+   "explanation": "São Salvador do Mundo is a municipality/region, not an island; describing it as an island mischaracterizes the unit's scale/type.",
+   "usage": {
+    "cost_usd": "0.00020566",
+    "input_tokens": 431,
+    "output_tokens": 519
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "35879248B53857372811673",
+   "name": "Praia",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "Praia is the capital of Cabo Verde and the center of the scene. Assessed relative to the national picture in Cabo Verde, it represents the primary urban reference point for a trans visitor.",
+   "explanation": "The division (municipality of Praia) is equated with the city that is the national capital, describing it as an urban city-scale unit rather than the sub-national division.",
+   "usage": {
+    "cost_usd": "0.000124624",
+    "input_tokens": 418,
+    "output_tokens": 377
+   },
+   "seconds": 4.5
+  },
+  {
+   "sid": "35879248B5815864302343",
+   "name": "Ribeira Grande de Santiago",
+   "iso3": "CPV",
+   "verdict": "scale_error",
+   "quoted_evidence": "it is described both as having a tourism-facing, relatively cosmopolitan mix near the capital, and as a historic, tightly knit town with limited tourist infrastructure",
+   "explanation": "The division is a municipality (concelho), but the text directly describes 'it' — the whole unit — as 'a historic, tightly knit town', collapsing the regional scale into a settlement.",
+   "usage": {
+    "cost_usd": "0.0002695",
+    "input_tokens": 619,
+    "output_tokens": 653
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "62585838B17336275888454",
+   "name": "Cienfuegos",
+   "iso3": "CUB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Cienfuegos is a mid-sized provincial city on Cuba's southern coast",
+   "explanation": "The record is Cienfuegos Province, a sub-national division of Cuba, but the text treats it as a city ('mid-sized provincial city', 'in a smaller city'), conflating the province with its capital/municipality.",
+   "usage": {
+    "cost_usd": "0.00029036",
+    "input_tokens": 602,
+    "output_tokens": 736
+   },
+   "seconds": 4.5
+  },
+  {
+   "sid": "96831152B734989497708",
+   "name": "Larnaca",
+   "iso3": "CYP",
+   "verdict": "scale_error",
+   "quoted_evidence": "Larnaca is a division of Cyprus characterized as an airport and tourism city. Assessed relative to the national picture in Cyprus, this division's role as an airport and tourism city",
+   "explanation": "The sub-national division is repeatedly characterized as a city ('an airport and tourism city'), conflating the regional unit with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.0001155",
+    "input_tokens": 429,
+    "output_tokens": 198
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "96831152B93704515643255",
+   "name": "Limassol",
+   "iso3": "CYP",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is Limassol, described as the most cosmopolitan city ... it represents a comparatively more accepting urban environment",
+   "explanation": "The record is Limassol district (first-level division of Cyprus), but the text equates the division with Limassol city, its capital, calling it an urban environment.",
+   "usage": {
+    "cost_usd": "0.000320204",
+    "input_tokens": 421,
+    "output_tokens": 1074
+   },
+   "seconds": 22.7
+  },
+  {
+   "sid": "96831152B68245934251938",
+   "name": "Nicosia",
+   "iso3": "CYP",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a divided capital where the north half is under occupation",
+   "explanation": "The record's unit is the Nicosia division of Cyprus, but the text equates it with the city ('This division is a divided capital'), collapsing regional scale into municipal scale.",
+   "usage": {
+    "cost_usd": "0.000111409",
+    "input_tokens": 411,
+    "output_tokens": 257
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "25444519B34443348585704",
+   "name": "Djibouti",
+   "iso3": "DJI",
+   "verdict": "scope_error",
+   "quoted_evidence": "Djibouti City — the capital, the main port, and the place almost every visitor actually experiences — is subject to Djibouti's national law in full",
+   "explanation": "The division is the Djibouti region, but the text presents only the capital city's conditions ('the city' throughout) as the whole unit, a sub-area as the division.",
+   "usage": {
+    "cost_usd": "0.00019474",
+    "input_tokens": 603,
+    "output_tokens": 394
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "93820187B75937606305335",
+   "name": "Puerto Plata",
+   "iso3": "DOM",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a resort on the north coast of the Dominican Republic",
+   "explanation": "Puerto Plata is a province, but the text equates the division itself with a single resort, a much smaller town-scale unit, rather than describing the province.",
+   "usage": {
+    "cost_usd": "0.0001053864",
+    "input_tokens": 429,
+    "output_tokens": 303
+   },
+   "seconds": 8.9
+  },
+  {
+   "sid": "93820187B35454462701697",
+   "name": "La Romana",
+   "iso3": "DOM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Away from them the province is a small, socially conservative sugar-region town",
+   "explanation": "Correctly calls La Romana a province elsewhere, but then equates the whole province with a single small town, mischaracterizing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.0001419264",
+    "input_tokens": 684,
+    "output_tokens": 306
+   },
+   "seconds": 5.5
+  },
+  {
+   "sid": "93820187B63902544885096",
+   "name": "Santiago Rodríguez",
+   "iso3": "DOM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Santiago Rodríguez is a division of the Dominican Republic whose city is characterized as the second city. Assessed relative to the national picture in Dominican Republic, this places the division just below the country's top-ranking urban center in overall standing.",
+   "explanation": "The division (a province) is conflated with an urban center/city, ranking it as a 'second city' runner-up to another city, treating the whole province as a single city scale.",
+   "usage": {
+    "cost_usd": "0.000142544",
+    "input_tokens": 476,
+    "output_tokens": 412
+   },
+   "seconds": 16.1
+  },
+  {
+   "sid": "93820187B32752500382745",
+   "name": "Santiago",
+   "iso3": "DOM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Santiago is described as the second city of the Dominican Republic, giving it a prominent urban role within the country... its status as the second city suggests a trans visitor would encounter a major urban center",
+   "explanation": "The record is the Santiago province, but the text frames it as a city and equates it with its capital, describing visitor conditions of an urban center rather than the whole province.",
+   "usage": {
+    "cost_usd": "0.000483",
+    "input_tokens": 436,
+    "output_tokens": 1507
+   },
+   "seconds": 20.0
+  },
+  {
+   "sid": "43142294B54486011126442",
+   "name": "Constantine",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Constantine is a conservative eastern metropole within Algeria. ... this division presents a more conservative eastern urban character",
+   "explanation": "The record is a province/wilaya, but the text frames it as a city ('metropole', 'urban character'), conflating the division with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.00011942",
+    "input_tokens": 413,
+    "output_tokens": 220
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "43142294B83676700490594",
+   "name": "Ghardaia",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The town is small and close-knit, so an outsider — particularly a visibly gender-nonconforming or foreign visitor — attracts attention quickly",
+   "explanation": "The wilaya (region) of Ghardaia is referred to as 'the town', and earlier as one of the 'cities in the country', conflating the sub-national division with a municipality/city.",
+   "usage": {
+    "cost_usd": "0.000124904",
+    "input_tokens": 620,
+    "output_tokens": 277
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "43142294B57836115778835",
+   "name": "Algiers",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital city, home to the largest hidden scene",
+   "explanation": "The record is the Algiers sub-national division (wilaya); the text explicitly equates it with the capital city, mixing provincial and city scales.",
+   "usage": {
+    "cost_usd": "0.0002317",
+    "input_tokens": 427,
+    "output_tokens": 614
+   },
+   "seconds": 12.7
+  },
+  {
+   "sid": "43142294B58957670986273",
+   "name": "Bejaia",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The city sits on the Mediterranean coast in Kabylie ... no trans organisation, sanctuary practice, protective facility or known remedy operates in the city",
+   "explanation": "Bejaia is a wilaya (province/state); the text repeatedly calls it 'the city' and equates the division with its capital, a unit/scale confusion.",
+   "usage": {
+    "cost_usd": "0.0001045464",
+    "input_tokens": 617,
+    "output_tokens": 206
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "43142294B89431929839902",
+   "name": "Oran",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Oran is a division of Algeria characterized as the country's second city ... its standing as the second city ... set it apart from the national norm.",
+   "explanation": "The wilaya of Oran is equated with its capital city ('the country's second city'), describing a province-scale unit as a city rather than as a region.",
+   "usage": {
+    "cost_usd": "0.00033796",
+    "input_tokens": 438,
+    "output_tokens": 988
+   },
+   "seconds": 16.4
+  },
+  {
+   "sid": "43142294B62233719624556",
+   "name": "Annaba",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division of Algeria is a coastal city",
+   "explanation": "Annaba is a wilaya (province) of Algeria, but the text describes the whole division as 'a coastal city,' conflating the provincial unit with an urban scale.",
+   "usage": {
+    "cost_usd": "0.000076464",
+    "input_tokens": 426,
+    "output_tokens": 201
+   },
+   "seconds": 2.4
+  },
+  {
+   "sid": "43142294B98309179755088",
+   "name": "Tizi Ouzou",
+   "iso3": "DZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The city lies in Kabylie",
+   "explanation": "Tizi Ouzou is a wilaya (province) of Algeria, but the text refers to the division itself as 'The city', equating the sub-national unit with a city.",
+   "usage": {
+    "cost_usd": "0.00014042",
+    "input_tokens": 537,
+    "output_tokens": 233
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "780006B83348252159319",
+   "name": "Loja",
+   "iso3": "ECU",
+   "verdict": "scale_error",
+   "quoted_evidence": "Loja is a southern Andean city and province ... in a small city anonymity is limited, so being outed, visible discomfort, misgendering, questioning, possible refusal of service and family or neighbourhood pressure are more likely than in larger centres",
+   "explanation": "The provincial division is framed as a 'small city,' with capital-scale urban conditions presented as the experience of the whole unit, conflating city and province.",
+   "usage": {
+    "cost_usd": "0.000206944",
+    "input_tokens": 640,
+    "output_tokens": 560
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "46179711B99776351599397",
+   "name": "Alexandria Governorate",
+   "iso3": "EGY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Alexandria Governorate is Egypt's second city",
+   "explanation": "The governorate (a province-level unit) is directly equated with a city, and the 'second city' framing treats the whole division as an urban municipality.",
+   "usage": {
+    "cost_usd": "0.000097604",
+    "input_tokens": 429,
+    "output_tokens": 275
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "46179711B4202910882635",
+   "name": "Ismailia Governorate",
+   "iso3": "EGY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ismailia Governorate is a canal city division belonging to Egypt",
+   "explanation": "The record is a governorate (province), but the text frames it as a 'canal city,' i.e., describes the division as a city rather than a first-order administrative region.",
+   "usage": {
+    "cost_usd": "0.00012964",
+    "input_tokens": 434,
+    "output_tokens": 246
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "46179711B81451673929301",
+   "name": "Suez Governorate",
+   "iso3": "EGY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Suez Governorate is a canal city division of Egypt.",
+   "explanation": "The record is a governorate (province), but the text characterizes it as a city, conflating the sub-national division with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.0001797264",
+    "input_tokens": 424,
+    "output_tokens": 571
+   },
+   "seconds": 7.9
+  },
+  {
+   "sid": "46179711B71025405794943",
+   "name": "Port Said Governorate",
+   "iso3": "EGY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Port Said Governorate is a canal city division belonging to Egypt... this canal city serves as the reference point",
+   "explanation": "The governorate is repeatedly equated with a city ('canal city'), treating the provincial division as if it were the city itself.",
+   "usage": {
+    "cost_usd": "0.00011606",
+    "input_tokens": 423,
+    "output_tokens": 203
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "21999144B29728943841955",
+   "name": "Pärnu maakond",
+   "iso3": "EST",
+   "verdict": "scale_error",
+   "quoted_evidence": "This Estonian division is characterised as the summer capital",
+   "explanation": "'Summer capital' is Pärnu city's nickname; applying it to Pärnu maakond equates the county with its capital (city vs. county scale).",
+   "usage": {
+    "cost_usd": "0.0001402464",
+    "input_tokens": 424,
+    "output_tokens": 430
+   },
+   "seconds": 4.7
+  },
+  {
+   "sid": "21999144B18638129154840",
+   "name": "Tartu maakond",
+   "iso3": "EST",
+   "verdict": "scale_error",
+   "quoted_evidence": "Tartu maakond is a university city",
+   "explanation": "The county (maakond) is described as 'a university city', conflating a regional division with a city scale.",
+   "usage": {
+    "cost_usd": "0.00010458",
+    "input_tokens": 413,
+    "output_tokens": 167
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "69750345B94584643914501",
+   "name": "North East Region",
+   "iso3": "GHA",
+   "verdict": "scope_error",
+   "quoted_evidence": "described here as the conservative north of the country",
+   "explanation": "The region (a part of northern Ghana) is equated with the entire north of the country, attributing a broader area's character to this single division.",
+   "usage": {
+    "cost_usd": "0.00016254",
+    "input_tokens": 441,
+    "output_tokens": 360
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "385441B21537995001042",
+   "name": "Labe",
+   "iso3": "GIN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Labé is Guinea's second-largest city, set in the Fouta Djallon highlands... Anonymity is harder to hold in a mid-size highland city than in the capital",
+   "explanation": "Labé is a first-level region of Guinea, but the text describes it as a city and equates it with its capital's urban conditions, confusing regional scale with municipal scale.",
+   "usage": {
+    "cost_usd": "0.00030128",
+    "input_tokens": 602,
+    "output_tokens": 775
+   },
+   "seconds": 5.1
+  },
+  {
+   "sid": "31243875B74768451122912",
+   "name": "Basse",
+   "iso3": "GMB",
+   "verdict": "scope_error",
+   "quoted_evidence": "Basse (Basse Santa Su) is the small administrative, trading and transport hub of the inland Upper River Region ... It is a predominantly rural, tightly knit, Muslim-majority town",
+   "explanation": "The record is a sub-national division of Gambia; the text presents only the town of Basse (a sub-area within Upper River Region) and its town-scale conditions as the whole division.",
+   "usage": {
+    "cost_usd": "0.00037352",
+    "input_tokens": 630,
+    "output_tokens": 1019
+   },
+   "seconds": 2.8
+  },
+  {
+   "sid": "31243875B88426941804625",
+   "name": "Brikama",
+   "iso3": "GMB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Brikama is a large, densely settled Mandinka-majority market town in the West Coast Region",
+   "explanation": "The record is a sub-national division of Gambia, but the text characterizes it as a 'market town', equating the unit with a town/capital rather than the division.",
+   "usage": {
+    "cost_usd": "0.000147049",
+    "input_tokens": 653,
+    "output_tokens": 244
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "31243875B72482523363184",
+   "name": "Janjanbureh",
+   "iso3": "GMB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Janjanbureh is a small, comparatively remote riverain town on MacCarthy Island in the Gambia River | The town is small, rural and Muslim-majority | no local exception or protective practice distinguishes the town from the national picture",
+   "explanation": "The record's unit is a sub-national division, but the text repeatedly characterizes it as a single small town ('this town', 'the town is small'), conflating the division's scale with that of the town of Janjanbureh.",
+   "usage": {
+    "cost_usd": "0.00022456",
+    "input_tokens": 642,
+    "output_tokens": 481
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "31243875B21899311231896",
+   "name": "Kerewan",
+   "iso3": "GMB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kerewan is a small administrative and market centre on the North Bank, reached by ferry and surrounded by farmland rather than resorts ... being noticed in a close-knit town where gossip travels quickly",
+   "explanation": "The record is a sub-national region/LGA, but the text describes it as a small town or market centre, equating the division with a settlement and its town-scale conditions.",
+   "usage": {
+    "cost_usd": "0.00035308",
+    "input_tokens": 664,
+    "output_tokens": 929
+   },
+   "seconds": 7.1
+  },
+  {
+   "sid": "31243875B86283726287100",
+   "name": "Kuntaur",
+   "iso3": "GMB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kuntaur is a small river town and administrative centre in the inland Central River Region",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it as a small river town, conflating the division with its main settlement.",
+   "usage": {
+    "cost_usd": "0.0001681064",
+    "input_tokens": 617,
+    "output_tokens": 433
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "31243875B75097494588605",
+   "name": "Mansakonko",
+   "iso3": "GMB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mansakonko is a small inland administrative town in the Lower River Region",
+   "explanation": "The record's unit is a sub-national division of Gambia, but the text characterizes it as a town, and then describes that town's community as the whole unit.",
+   "usage": {
+    "cost_usd": "0.00029078",
+    "input_tokens": 705,
+    "output_tokens": 686
+   },
+   "seconds": 3.2
+  },
+  {
+   "sid": "76643164B96925829526723",
+   "name": "Bissau",
+   "iso3": "GNB",
+   "verdict": "scope_error",
+   "quoted_evidence": "conditions in the city should be read as those of Guinea-Bissau as a whole",
+   "explanation": "The text substitutes the parent country's national picture for the division itself, presenting Guinea-Bissau-wide conditions as Bissau's own instead of unit-specific evidence.",
+   "usage": {
+    "cost_usd": "0.000298189",
+    "input_tokens": 499,
+    "output_tokens": 779
+   },
+   "seconds": 8.5
+  },
+  {
+   "sid": "76643164B84174472060432",
+   "name": "Bafatá",
+   "iso3": "GNB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bafatá is an inland, largely rural and less urbanized department than the capital, a small-town setting where foreign visitors are conspicuous",
+   "explanation": "The record is a first-level region; the text characterizes the whole division as 'a small-town setting,' equating the region with a town.",
+   "usage": {
+    "cost_usd": "0.0001308664",
+    "input_tokens": 497,
+    "output_tokens": 360
+   },
+   "seconds": 7.0
+  },
+  {
+   "sid": "76643164B18917431809987",
+   "name": "Bolama",
+   "iso3": "GNB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bolama is a small, quiet island town and former colonial seat with minimal tourist infrastructure",
+   "explanation": "The record is the sub-national division (region) of Bolama, but the text describes it as a town, conflating the region with its capital settlement.",
+   "usage": {
+    "cost_usd": "0.000154444",
+    "input_tokens": 491,
+    "output_tokens": 447
+   },
+   "seconds": 41.2
+  },
+  {
+   "sid": "93993887B88980272284763",
+   "name": "Attica",
+   "iso3": "GRC",
+   "verdict": "scope_error",
+   "quoted_evidence": "Attica is the region containing Athens, whose Gazi scene, Athens Pride, and whole community reflect a visible and established local presence.",
+   "explanation": "Athens-specific conditions (Gazi, Pride) are presented as evidence for the whole of Attica, treating the capital's situation as the region's.",
+   "usage": {
+    "cost_usd": "0.000119304",
+    "input_tokens": 424,
+    "output_tokens": 355
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "42512837B15316814347491",
+   "name": "Northeast Greenland National Park",
+   "iso3": "GRL",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment). self-rule; Danish human-rights framework applies",
+   "explanation": "Parent-country (Greenland/Denmark) attributes — self-rule, Danish framework, country-level assessment — are presented as the national park division's own.",
+   "usage": {
+    "cost_usd": "0.000233544",
+    "input_tokens": 420,
+    "output_tokens": 765
+   },
+   "seconds": 6.5
+  },
+  {
+   "sid": "42512837B56880650870693",
+   "name": "Avannaata",
+   "iso3": "GRL",
+   "verdict": "scale_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment).",
+   "explanation": "Avannaata is a sub-national municipality of Greenland, but the text presents it as a country-level jurisdiction, misstating its scale.",
+   "usage": {
+    "cost_usd": "0.0002318064",
+    "input_tokens": 418,
+    "output_tokens": 760
+   },
+   "seconds": 10.7
+  },
+  {
+   "sid": "42512837B19798010135006",
+   "name": "Sermersooq",
+   "iso3": "GRL",
+   "verdict": "scale_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment).",
+   "explanation": "Sermersooq is a sub-national division (municipality/region) of Greenland, but the text frames it as a country-level jurisdiction, confusing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000115244",
+    "input_tokens": 419,
+    "output_tokens": 343
+   },
+   "seconds": 66.8
+  },
+  {
+   "sid": "42512837B89373787162082",
+   "name": "Qeqqata",
+   "iso3": "GRL",
+   "verdict": "scale_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level",
+   "explanation": "Qeqqata is a sub-national municipality/region of Greenland, but the text frames it as a country-level jurisdiction, mischaracterizing its scale.",
+   "usage": {
+    "cost_usd": "0.000095899",
+    "input_tokens": 419,
+    "output_tokens": 206
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "53557124B7049276162389",
+   "name": "Guatemala",
+   "iso3": "GTM",
+   "verdict": "scope_error",
+   "quoted_evidence": "the capital's scene frames what a trans visitor can expect from this division",
+   "explanation": "Text presents only the capital's conditions as representative of the entire division, substituting a sub-area for the whole unit.",
+   "usage": {
+    "cost_usd": "0.00014616",
+    "input_tokens": 422,
+    "output_tokens": 311
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "53557124B53470403358651",
+   "name": "Quetzaltenango",
+   "iso3": "GTM",
+   "verdict": "scale_error",
+   "quoted_evidence": "The city's size, tourist-facing character and relative anonymity warrant only a slight softening of everyday friction",
+   "explanation": "The record is a department, but the text frames it as its capital throughout, citing a ~200,000 city population and repeatedly equating the division with 'the city' and 'the city centre'.",
+   "usage": {
+    "cost_usd": "0.0005245464",
+    "input_tokens": 635,
+    "output_tokens": 1697
+   },
+   "seconds": 15.3
+  },
+  {
+   "sid": "27960609B77748153160451",
+   "name": "Varaždin",
+   "iso3": "HRV",
+   "verdict": "scale_error",
+   "quoted_evidence": "Varaždin is a smaller continental city in northern Croatia",
+   "explanation": "The record is a Croatian sub-national division (region/county), but the text repeatedly frames it as a city: 'is a smaller continental city', 'the city is historically Catholic-influenced', treating the division as equated with its city.",
+   "usage": {
+    "cost_usd": "0.00019278",
+    "input_tokens": 617,
+    "output_tokens": 380
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "27960609B11106490836175",
+   "name": "Primorje-Gorski Kotar",
+   "iso3": "HRV",
+   "verdict": "scope_error",
+   "quoted_evidence": "The Kvarner coast and its resort towns, including Opatija, Rovinj, Rab and Krk",
+   "explanation": "Rovinj lies in Istria County, not Primorje-Gorski Kotar, so a town outside the record's division is folded into this unit's scope.",
+   "usage": {
+    "cost_usd": "0.0004039",
+    "input_tokens": 667,
+    "output_tokens": 1109
+   },
+   "seconds": 7.5
+  },
+  {
+   "sid": "49955354B91988968603803",
+   "name": "Département de l'Ouest",
+   "iso3": "HTI",
+   "verdict": "scope_error",
+   "quoted_evidence": "Port-au-Prince: gang territorial control is most extreme here, but international presence also concentrates",
+   "explanation": "Text labels and describes only the capital city, presenting Port-au-Prince's conditions as those of the entire Ouest department.",
+   "usage": {
+    "cost_usd": "0.000281984",
+    "input_tokens": 416,
+    "output_tokens": 940
+   },
+   "seconds": 5.9
+  },
+  {
+   "sid": "17685810B90334917415902",
+   "name": "Kermanshah",
+   "iso3": "IRN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kermanshah, a Kurdish-majority province and city in western Iran",
+   "explanation": "The record's division is the province; the text conflates it with an urban settlement by calling it both a 'province and city', mixing administrative scales.",
+   "usage": {
+    "cost_usd": "0.000104184",
+    "input_tokens": 588,
+    "output_tokens": 219
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "17685810B20487167396081",
+   "name": "Isfahan",
+   "iso3": "IRN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Isfahan is a division of Iran characterized as a third city with relative anonymity.",
+   "explanation": "The provincial division is explicitly characterized as a 'third city,' equating the province with an urban settlement scale.",
+   "usage": {
+    "cost_usd": "0.0000993664",
+    "input_tokens": 426,
+    "output_tokens": 283
+   },
+   "seconds": 4.9
+  },
+  {
+   "sid": "17685810B1706611058442",
+   "name": "Qom",
+   "iso3": "IRN",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the clerical capital",
+   "explanation": "Qom is a province; calling the division itself 'the clerical capital' equates the province with its capital city Qom.",
+   "usage": {
+    "cost_usd": "0.00012852",
+    "input_tokens": 424,
+    "output_tokens": 247
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "17685810B18940918043543",
+   "name": "Yazd",
+   "iso3": "IRN",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a desert religious city.",
+   "explanation": "The record is Yazd, a province of Iran, but the text describes the division itself as a city rather than a provincial-scale unit.",
+   "usage": {
+    "cost_usd": "0.000052521",
+    "input_tokens": 409,
+    "output_tokens": 142
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "17685810B50760377364469",
+   "name": "Tehran",
+   "iso3": "IRN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Tehran is the capital of Iran, where an underground scene and anonymity exist only here.",
+   "explanation": "The provincial division is equated with its capital city, treating the whole unit as the city itself.",
+   "usage": {
+    "cost_usd": "0.0001211",
+    "input_tokens": 421,
+    "output_tokens": 222
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "90741666B6541054971840",
+   "name": "Karbala",
+   "iso3": "IRQ",
+   "verdict": "scale_error",
+   "quoted_evidence": "Karbala is a holy city in Iraq",
+   "explanation": "The record is a governorate-level division, but the text opens by defining it as a city ('holy city'), conflating the sub-national unit with a municipality; later 'this division' does not fix the unit framing.",
+   "usage": {
+    "cost_usd": "0.000089904",
+    "input_tokens": 424,
+    "output_tokens": 250
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "90741666B78865175105083",
+   "name": "Baghdad",
+   "iso3": "IRQ",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital city of Iraq",
+   "explanation": "The record is the Baghdad sub-national division; the text describes it as 'the capital city', equating the division with a city, a unit/scale mismatch.",
+   "usage": {
+    "cost_usd": "0.000078079",
+    "input_tokens": 415,
+    "output_tokens": 154
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "90741666B18027903150762",
+   "name": "Kirkuk",
+   "iso3": "IRQ",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is a disputed city that is securitised.",
+   "explanation": "Kirkuk is a governorate-level division of Iraq, but the text characterizes the division itself as a 'city,' conflating the regional unit with the urban centre it contains.",
+   "usage": {
+    "cost_usd": "0.00016184",
+    "input_tokens": 420,
+    "output_tokens": 368
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "53860390B85658391135359",
+   "name": "Southern Region",
+   "iso3": "ISL",
+   "verdict": "scope_error",
+   "quoted_evidence": "The region takes in the Reykjanes Peninsula, Keflavík and the country's main international airport, Reykjavík's suburbs",
+   "explanation": "The text folds the Southern Peninsula (Reykjanes, Keflavík, main airport) and capital-region suburbs into the Southern Region, attributing a different/overlapping unit's territory to this division.",
+   "usage": {
+    "cost_usd": "0.0008372",
+    "input_tokens": 758,
+    "output_tokens": 2611
+   },
+   "seconds": 12.3
+  },
+  {
+   "sid": "19161824B77983365125372",
+   "name": "Tel Aviv",
+   "iso3": "ISR",
+   "verdict": "scope_error",
+   "quoted_evidence": "This division is home to what the fragment describes as the Middle East's most LGBT-friendly city, characterized by Pride events, municipal protections, and a visible scene. Assessed relative to the national picture in Israel, it represents a comparatively favorable environment for a trans visitor.",
+   "explanation": "All cited evidence (municipal protections, Pride events, city scene) concerns the city of Tel Aviv, then that city's conditions are presented as the whole division's assessment.",
+   "usage": {
+    "cost_usd": "0.00041076",
+    "input_tokens": 428,
+    "output_tokens": 1253
+   },
+   "seconds": 5.4
+  },
+  {
+   "sid": "19161824B12012272353046",
+   "name": "Haifa",
+   "iso3": "ISR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division of ISR is a mixed secular city with a scene.",
+   "explanation": "Haifa is a sub-national division (district), but the text describes the division itself as a city, conflating the regional unit with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.00010444",
+    "input_tokens": 418,
+    "output_tokens": 164
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "11528761B95441286388390",
+   "name": "Kingston",
+   "iso3": "JAM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kingston is the capital and represents the national baseline of severe mob risk.",
+   "explanation": "The parish-level division is described as 'the capital', equating the whole unit with the city it contains, rather than treating it as a sub-national region.",
+   "usage": {
+    "cost_usd": "0.00026068",
+    "input_tokens": 416,
+    "output_tokens": 723
+   },
+   "seconds": 4.5
+  },
+  {
+   "sid": "50493656B40052368003294",
+   "name": "Madaba",
+   "iso3": "JOR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Madaba is a division of Jordan characterized as a mixed Christian/Muslim city",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it as a city, conflating the division's scale with that of its principal city.",
+   "usage": {
+    "cost_usd": "0.00017878",
+    "input_tokens": 439,
+    "output_tokens": 419
+   },
+   "seconds": 4.8
+  },
+  {
+   "sid": "50493656B53844896346683",
+   "name": "Amman",
+   "iso3": "JOR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital, where essentially all tolerated scene, services and anonymity exist.",
+   "explanation": "The record is the Amman governorate/region, but the text equates the division itself with the capital city ('This division is the capital'), conflating city scale with sub-national division.",
+   "usage": {
+    "cost_usd": "0.000111739",
+    "input_tokens": 411,
+    "output_tokens": 258
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "47310658B6129583352403",
+   "name": "Nara Prefecture",
+   "iso3": "JPN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Nara Prefecture is a conservative old capital in Japan.",
+   "explanation": "The prefecture is described as 'an old capital', equating the division with the city of Nara (its capital) rather than the whole prefecture.",
+   "usage": {
+    "cost_usd": "0.000074944",
+    "input_tokens": 414,
+    "output_tokens": 145
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "47310658B94014236912993",
+   "name": "Kyoto Prefecture",
+   "iso3": "JPN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kyoto Prefecture (JPN) is a division of Japan characterized as a student and international city ... this student and international city character shapes what a trans visitor can expect when visiting the division",
+   "explanation": "The prefecture (a province-level division) is described as 'a student and international city' and 'this ... city', equating the division itself with a city scale.",
+   "usage": {
+    "cost_usd": "0.000140119",
+    "input_tokens": 427,
+    "output_tokens": 336
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "47310658B14484689696833",
+   "name": "Okayama Prefecture",
+   "iso3": "JPN",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as a regional city division",
+   "explanation": "Okayama is a prefecture (sub-national state/province), not a city or city division; calling it a 'regional city division' misstates the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000052664",
+    "input_tokens": 416,
+    "output_tokens": 121
+   },
+   "seconds": 1.3
+  },
+  {
+   "sid": "32016919B62684442090944",
+   "name": "Isiolo",
+   "iso3": "KEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Isiolo is a northern Muslim-majority town in Kenya. ... this division's character as a northern Muslim-majority town",
+   "explanation": "Isiolo is a county/division, but the text explicitly calls it a 'town' and equates the division with the town.",
+   "usage": {
+    "cost_usd": "0.000083324",
+    "input_tokens": 425,
+    "output_tokens": 226
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "32016919B58088177642376",
+   "name": "Nakuru",
+   "iso3": "KEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Nakuru is a division in Kenya described as a large Rift city, giving it the character of a substantial urban center in the Rift region... a trans visitor is navigating a major Rift-area city",
+   "explanation": "The county/division Nakuru is characterized as a city rather than a sub-national region, equating the whole unit with an urban center.",
+   "usage": {
+    "cost_usd": "0.00013314",
+    "input_tokens": 435,
+    "output_tokens": 258
+   },
+   "seconds": 4.8
+  },
+  {
+   "sid": "32016919B35081513576883",
+   "name": "Kisumu",
+   "iso3": "KEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is Kenya's third city",
+   "explanation": "The record's unit is a sub-national division of Kenya, but the text equates it with a city, mischaracterizing its scale.",
+   "usage": {
+    "cost_usd": "0.0001011864",
+    "input_tokens": 423,
+    "output_tokens": 291
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "32016919B38538724963648",
+   "name": "Lamu",
+   "iso3": "KEN",
+   "verdict": "scope_error",
+   "quoted_evidence": "Al-Shabaab-linked insecurity in the wider county further thins ordinary state presence",
+   "explanation": "Record unit is Lamu County, yet the text casts Lamu as only a small island community and treats 'the wider county' as something broader, describing a sub-area as the division.",
+   "usage": {
+    "cost_usd": "0.00044548",
+    "input_tokens": 730,
+    "output_tokens": 1226
+   },
+   "seconds": 12.5
+  },
+  {
+   "sid": "37992800B83627159640807",
+   "name": "Phnom Penh",
+   "iso3": "KHM",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital of Cambodia ... it stands as the country's capital",
+   "explanation": "The record's provincial-level division is described as and equated with the capital city itself, conflating division scale with city/capital scale.",
+   "usage": {
+    "cost_usd": "0.00016884",
+    "input_tokens": 462,
+    "output_tokens": 372
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "37992800B68844415613683",
+   "name": "Kampot",
+   "iso3": "KHM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kampot is a division of Cambodia characterized as an expat/tourism town.",
+   "explanation": "The record is Kampot, a province-level division; the text labels the whole division as a 'town', misstating its scale (equating it with the town/capital).",
+   "usage": {
+    "cost_usd": "0.000366124",
+    "input_tokens": 427,
+    "output_tokens": 1235
+   },
+   "seconds": 9.2
+  },
+  {
+   "sid": "37992800B82526494497621",
+   "name": "Battambang",
+   "iso3": "KHM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Battambang is Cambodia's second city but conservative.",
+   "explanation": "The record is a province, but the text characterizes it as a city ('second city'), confusing the division's scale.",
+   "usage": {
+    "cost_usd": "0.00011522",
+    "input_tokens": 415,
+    "output_tokens": 204
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "52472329B96254136738283",
+   "name": "Saint Anne Sandy Point",
+   "iso3": "KNA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The parish is a small, quiet, mostly residential town on Saint Kitts's northwest peninsula",
+   "explanation": "The division is a parish, but the text equates it with a town, mischaracterizing its administrative scale.",
+   "usage": {
+    "cost_usd": "0.0001592864",
+    "input_tokens": 546,
+    "output_tokens": 437
+   },
+   "seconds": 3.3
+  },
+  {
+   "sid": "52472329B33869241417022",
+   "name": "Saint Paul Charlestown",
+   "iso3": "KNA",
+   "verdict": "scale_error",
+   "quoted_evidence": "but in a town of this size a trans visitor's visibility is higher",
+   "explanation": "Saint Paul Charlestown is a parish; the text treats it as the town itself, e.g. 'in a town of this size' and 'issued from this port', equating the division with its capital Charlestown.",
+   "usage": {
+    "cost_usd": "0.000261264",
+    "input_tokens": 656,
+    "output_tokens": 746
+   },
+   "seconds": 6.8
+  },
+  {
+   "sid": "60633882B84302154961664",
+   "name": "Ahmadi",
+   "iso3": "KWT",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as an oil town with a traditional character",
+   "explanation": "Ahmadi is a governorate-level division, but the text describes it as a town, conflating the division's scale with a settlement.",
+   "usage": {
+    "cost_usd": "0.00016394",
+    "input_tokens": 417,
+    "output_tokens": 377
+   },
+   "seconds": 4.2
+  },
+  {
+   "sid": "31783359B8337285946490",
+   "name": "Luang Prabang",
+   "iso3": "LAO",
+   "verdict": "scale_error",
+   "quoted_evidence": "Luang Prabang is a division of Laos characterized as a heritage-tourism city operating within an international envelope.",
+   "explanation": "The province-level division is characterized as a 'heritage-tourism city', conflating the sub-national division with an urban settlement/capital.",
+   "usage": {
+    "cost_usd": "0.000087804",
+    "input_tokens": 441,
+    "output_tokens": 234
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "68408151B13555465262434",
+   "name": "Beyrouth",
+   "iso3": "LBN",
+   "verdict": "scale_error",
+   "quoted_evidence": "The city's visibility cuts both ways — national crackdowns concentrate where the scene exists, and documented enforcement incidents, including raids and the 2012 cinema arrest operation, took place in the city itself.",
+   "explanation": "The division (Beyrouth governorate) is repeatedly referred to as 'the city', equating the sub-national unit with the urban municipality.",
+   "usage": {
+    "cost_usd": "0.0002226",
+    "input_tokens": 630,
+    "output_tokens": 480
+   },
+   "seconds": 3.9
+  },
+  {
+   "sid": "10800210B15874653580067",
+   "name": "Az Zawiyah",
+   "iso3": "LBY",
+   "verdict": "scale_error",
+   "quoted_evidence": "it presents a trans visitor with a locality defined by armed western factions and disorder around its refinery town",
+   "explanation": "The division (a state/region) is called 'a locality', framing the whole province as a single town/settlement rather than a sub-national division.",
+   "usage": {
+    "cost_usd": "0.00014448",
+    "input_tokens": 446,
+    "output_tokens": 293
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "10800210B39461050964926",
+   "name": "Mizdah",
+   "iso3": "LBY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mizdah is a division of Libya characterized in this estimate as a town under western militia sway.",
+   "explanation": "The record's division (a sub-national state/region) is described as 'a town,' conflating the regional scale with a settlement scale.",
+   "usage": {
+    "cost_usd": "0.00010934",
+    "input_tokens": 427,
+    "output_tokens": 177
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "63095687B63570319440385",
+   "name": "Vieux Fort",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The town lies on the island's southern coast",
+   "explanation": "The record is a sub-national division (quarter) of Saint Lucia, but the text repeatedly characterizes it as 'the town' / 'a smaller, close-knit southern community', equating the division with a town and judging it by that scale.",
+   "usage": {
+    "cost_usd": "0.00030394",
+    "input_tokens": 679,
+    "output_tokens": 746
+   },
+   "seconds": 7.8
+  },
+  {
+   "sid": "63095687B3915284984293",
+   "name": "Anse la Raya",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Anse la Raya is a small, close-knit west-coast fishing village ... the village's compact and familiar character ... the village offers no trans-specific support structure.",
+   "explanation": "The quarter-level division is equated with a single village (its capital town), mischaracterizing the unit's scale while elsewhere calling it a quarter.",
+   "usage": {
+    "cost_usd": "0.000149824",
+    "input_tokens": 550,
+    "output_tokens": 401
+   },
+   "seconds": 3.5
+  },
+  {
+   "sid": "63095687B33875357323526",
+   "name": "Castries",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital and is characterized by tourism. ... it represents the country's capital",
+   "explanation": "The district is equated with its capital city ('This division is the capital'), conflating the sub-national unit with the city it contains.",
+   "usage": {
+    "cost_usd": "0.000076604",
+    "input_tokens": 413,
+    "output_tokens": 208
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "63095687B97045845903589",
+   "name": "Dennery",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Dennery is a small, predominantly Creole-speaking fishing town on Saint Lucia's Atlantic east coast",
+   "explanation": "The record is a sub-national division (quarter) of Saint Lucia, but the text characterizes it as a town rather than the division itself.",
+   "usage": {
+    "cost_usd": "0.0001325464",
+    "input_tokens": 653,
+    "output_tokens": 288
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "63095687B12253142447206",
+   "name": "Micoud",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The town is a small, largely rural fishing community on the east coast ... No region-specific information was found distinguishing Micoud or its surrounding quarter",
+   "explanation": "Micoud is a sub-national quarter/district of Saint Lucia, but the text describes it as 'the town' and further separates 'Micoud' from 'its surrounding quarter', conflating the division with a settlement.",
+   "usage": {
+    "cost_usd": "0.00014476",
+    "input_tokens": 492,
+    "output_tokens": 271
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "63095687B42817258586373",
+   "name": "Laborie",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "No local rule, enforcement pattern or documented case of trans-targeted policing or violence distinguishes the town from the national picture",
+   "explanation": "The record is the Laborie district/quarter of Saint Lucia, but the text repeatedly refers to it as 'the town' ('the town itself is limited'), describing the division at settlement scale rather than as a sub-national division.",
+   "usage": {
+    "cost_usd": "0.0002346064",
+    "input_tokens": 668,
+    "output_tokens": 645
+   },
+   "seconds": 7.2
+  },
+  {
+   "sid": "63095687B90177859016877",
+   "name": "Canaries",
+   "iso3": "LCA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Canaries is a small, tight-knit west-coast fishing village between Soufrière and Anse La Raye ... The village's size and setting alone establish neither hostility nor reliable access to remedies.",
+   "explanation": "The record's unit is the sub-national division of Saint Lucia, but the text describes it as a village, equating the division with the same-named settlement.",
+   "usage": {
+    "cost_usd": "0.00016576",
+    "input_tokens": 508,
+    "output_tokens": 338
+   },
+   "seconds": 7.3
+  },
+  {
+   "sid": "41692755B18610673403937",
+   "name": "Triesenberg",
+   "iso3": "LIE",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a compact, predominantly Roman Catholic village ... the practical thing to weigh is how noticeable a trans visitor may be in a small resort village.",
+   "explanation": "The record's unit is the municipality of Triesenberg; the text repeatedly recasts it as a village/its main settlement rather than the sub-national division.",
+   "usage": {
+    "cost_usd": "0.0002079",
+    "input_tokens": 615,
+    "output_tokens": 435
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "41692755B33734108210637",
+   "name": "Ruggell",
+   "iso3": "LIE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ruggell is a small, quiet, predominantly Catholic Rhine-valley village in the far north of the country near the Swiss border",
+   "explanation": "The record's unit is the sub-national division (municipality) of Ruggell, but the text introduces it as a settlement: 'a ... Rhine-valley village', equating the division with a village rather than the regional unit.",
+   "usage": {
+    "cost_usd": "0.000318944",
+    "input_tokens": 524,
+    "output_tokens": 1018
+   },
+   "seconds": 11.9
+  },
+  {
+   "sid": "41692755B54479018835512",
+   "name": "Vaduz",
+   "iso3": "LIE",
+   "verdict": "scope_error",
+   "quoted_evidence": "Vaduz sits in a small, Catholic and socially conservative society",
+   "explanation": "Country-wide (Liechtenstein/principality) traits - national law, small conservative Catholic society, Schengen entry rules - are presented as Vaduz's own local conditions, i.e. the parent country standing in for the division.",
+   "usage": {
+    "cost_usd": "0.000214084",
+    "input_tokens": 659,
+    "output_tokens": 576
+   },
+   "seconds": 9.2
+  },
+  {
+   "sid": "63558799B83139219064193",
+   "name": "Maseru District",
+   "iso3": "LSO",
+   "verdict": "scale_error",
+   "quoted_evidence": "this division represents the country's capital",
+   "explanation": "The text equates Maseru District (a district containing the capital) with the capital city itself, conflating district scale with city scale.",
+   "usage": {
+    "cost_usd": "0.000106424",
+    "input_tokens": 432,
+    "output_tokens": 305
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "63558799B58245420334254",
+   "name": "Leribe District",
+   "iso3": "LSO",
+   "verdict": "scale_error",
+   "quoted_evidence": "it represents a step below the primary urban center while still ranking as a major settlement. For a trans visitor, that means the division offers a secondary-town experience",
+   "explanation": "Leribe is a district, but the text describes the division itself as a settlement/town ranking below the primary urban center.",
+   "usage": {
+    "cost_usd": "0.000133304",
+    "input_tokens": 456,
+    "output_tokens": 389
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "39236102B79521903246642",
+   "name": "Vilnius County",
+   "iso3": "LTU",
+   "verdict": "scale_error",
+   "quoted_evidence": "the host city of Baltic Pride",
+   "explanation": "The text equates Vilnius County with a city ('the host city of Baltic Pride'), describing the county as a city rather than a sub-national division.",
+   "usage": {
+    "cost_usd": "0.00010626",
+    "input_tokens": 455,
+    "output_tokens": 152
+   },
+   "seconds": 1.0
+  },
+  {
+   "sid": "39236102B54951608919811",
+   "name": "Kaunas County",
+   "iso3": "LTU",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as the country's second city and a university center",
+   "explanation": "Kaunas County (a county-scale division) is equated with the city of Kaunas, describing the county as 'the country's second city'.",
+   "usage": {
+    "cost_usd": "0.000046924",
+    "input_tokens": 423,
+    "output_tokens": 97
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "76397094B51041035930086",
+   "name": "Canton Vianden",
+   "iso3": "LUX",
+   "verdict": "scope_error",
+   "quoted_evidence": "centred on the historic town of Vianden, where a visitor's document mismatch, if noticed, would most plausibly be encountered by hospitality staff or local police.",
+   "explanation": "The canton's operative conditions are located in its capital town, and later as 'a small community', so only the town's circumstances stand in for the whole canton.",
+   "usage": {
+    "cost_usd": "0.00022596",
+    "input_tokens": 536,
+    "output_tokens": 539
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "71098776B26557032040822",
+   "name": "Salaspils novads",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "a commuter town with modest tourism ... this is a small suburb rather than the capital",
+   "explanation": "The record is a municipality (novads), yet the text re-labels the whole division as a single 'commuter town' and 'small suburb', equating the municipality with one settlement.",
+   "usage": {
+    "cost_usd": "0.0002646",
+    "input_tokens": 588,
+    "output_tokens": 651
+   },
+   "seconds": 3.5
+  },
+  {
+   "sid": "71098776B72876713406332",
+   "name": "Jelgavas",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Jelgavas is a student town",
+   "explanation": "The division (a municipality/region) is equated with a town, i.e. its urban centre, mischaracterizing its scale.",
+   "usage": {
+    "cost_usd": "0.000141004",
+    "input_tokens": 423,
+    "output_tokens": 433
+   },
+   "seconds": 13.6
+  },
+  {
+   "sid": "71098776B7836540053544",
+   "name": "Rēzeknes",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, economically depressed regional centre in Latgale in eastern Latvia ... The city sees few tourists ... no town-specific restrictions",
+   "explanation": "The record is a regional division of Latvia, but the text repeatedly characterizes it as the city/town itself ('the city sees few tourists', 'town-specific restrictions'), conflating the division with its urban centre.",
+   "usage": {
+    "cost_usd": "0.000298504",
+    "input_tokens": 658,
+    "output_tokens": 878
+   },
+   "seconds": 15.0
+  },
+  {
+   "sid": "71098776B34309626401644",
+   "name": "Jelgavas novads",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "whose role and regional character are described as a student town",
+   "explanation": "Jelgavas novads is a municipality/region of Latvia, but the text characterizes the whole division as a 'student town', a city-scale unit (likely conflating it with Jelgava city).",
+   "usage": {
+    "cost_usd": "0.0001539664",
+    "input_tokens": 466,
+    "output_tokens": 458
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "71098776B7317746382863",
+   "name": "Cēsu novads",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Cēsu novads is a tourism town in Latvia.",
+   "explanation": "Cēsu novads is a municipality (novads), not a town; calling it a 'tourism town' mischaracterizes the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000071974",
+    "input_tokens": 408,
+    "output_tokens": 139
+   },
+   "seconds": 1.3
+  },
+  {
+   "sid": "71098776B50948551270506",
+   "name": "Siguldas novads",
+   "iso3": "LVA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Siguldas novads is a tourism town in Latvia.",
+   "explanation": "The division (novads/municipality) is described as a 'tourish town', mischaracterizing its scale as a city/town rather than a sub-national division.",
+   "usage": {
+    "cost_usd": "0.00009786",
+    "input_tokens": 413,
+    "output_tokens": 143
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "70788906B33851053053385",
+   "name": "Casablanca-Settat",
+   "iso3": "MAR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Casablanca-Settat is the economic capital of Morocco",
+   "explanation": "The record is a multi-province region, not a city; calling it 'the economic capital' conflates the division with the city of Casablanca it contains.",
+   "usage": {
+    "cost_usd": "0.00015148",
+    "input_tokens": 432,
+    "output_tokens": 325
+   },
+   "seconds": 6.4
+  },
+  {
+   "sid": "70788906B15955360211262",
+   "name": "Rabat-Salé-Kenitra",
+   "iso3": "MAR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Rabat-Salé-Kenitra is an administrative capital with a diplomatic presence.",
+   "explanation": "The regional division is equated with a capital city ('is an administrative capital'), mischaracterizing the unit's scale rather than describing the region.",
+   "usage": {
+    "cost_usd": "0.000122384",
+    "input_tokens": 430,
+    "output_tokens": 363
+   },
+   "seconds": 5.2
+  },
+  {
+   "sid": "25212430B51059014460141",
+   "name": "Cahul",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Cahul is a small district centre in southern Moldova near the Romanian border ... The city has no Pride event, no trans support organisations",
+   "explanation": "The record's unit is Cahul district (raion) of Moldova, but the text calls it a 'small district centre' and 'The city', describing only urban locality conditions as the whole division.",
+   "usage": {
+    "cost_usd": "0.00020174",
+    "input_tokens": 625,
+    "output_tokens": 408
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "25212430B51243918943413",
+   "name": "Cimislia",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, rural, agricultural district town in southern Moldova, outside occupied Transnistria",
+   "explanation": "Cimislia is a raion (district) of Moldova, but the text repeatedly calls it a town ('this town'), equating the whole division with its capital.",
+   "usage": {
+    "cost_usd": "0.0002079",
+    "input_tokens": 601,
+    "output_tokens": 442
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "25212430B95154791539173",
+   "name": "Bender",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bender is a city under breakaway control, operating under the same regime as Transnistria... reflects a breakaway-controlled urban area",
+   "explanation": "The record's division (Bender, MDA) is explicitly characterized as a city/urban area rather than the sub-national division it is recorded as, conflating the unit's scale with a municipality/city.",
+   "usage": {
+    "cost_usd": "0.0003551464",
+    "input_tokens": 431,
+    "output_tokens": 1194
+   },
+   "seconds": 14.7
+  },
+  {
+   "sid": "25212430B31479954216778",
+   "name": "Causeni",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This is a small, largely rural district town in southeastern Moldova on the Dniester, economically modest and socially conservative",
+   "explanation": "Căușeni is a raion (district) of Moldova, but the text repeatedly treats it as a single small town ('district town', 'a close-knit town of a few tens of thousand residents'), conflating the division's scale with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.000125184",
+    "input_tokens": 662,
+    "output_tokens": 257
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "25212430B73317679220215",
+   "name": "Hincesti",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Hîncești is a small district town in central Moldova, roughly 70 km southwest of Chișinău",
+   "explanation": "The record is a district (raion) of Moldova, but the text characterizes it as a town and then contrasts 'the town' with 'the surrounding district', collapsing the division's scale.",
+   "usage": {
+    "cost_usd": "0.0002501464",
+    "input_tokens": 677,
+    "output_tokens": 696
+   },
+   "seconds": 15.0
+  },
+  {
+   "sid": "25212430B5738533784066",
+   "name": "Nisporeni",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Nisporeni is a small rural district centre with a strongly Orthodox, socially conservative population",
+   "explanation": "",
+   "usage": {
+    "cost_usd": "0.000099284",
+    "input_tokens": 523,
+    "output_tokens": 234
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "25212430B26910735221199",
+   "name": "Anenii Noi",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "The district is a small, largely agricultural town roughly half an hour east of Chișinău",
+   "explanation": "Anenii Noi here is a district (raion) of Moldova, but the text calls it a small town, conflating the sub-national division with a municipal settlement scale.",
+   "usage": {
+    "cost_usd": "0.00019936",
+    "input_tokens": 548,
+    "output_tokens": 438
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "25212430B9063126289167",
+   "name": "Straseni",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Strășeni is a small district town in central Moldova, roughly 30 km from Chișinău",
+   "explanation": "The record is the raion (district) of Strășeni, but the text describes it as a small district town, conflating the sub-national division with its urban centre/scale.",
+   "usage": {
+    "cost_usd": "0.0001925",
+    "input_tokens": 637,
+    "output_tokens": 369
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "25212430B23943377724140",
+   "name": "Ungheni",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ungheni is a small, socially conservative Orthodox town in Moldova's west",
+   "explanation": "The record is Ungheni District, a sub-national division of Moldova with many localities, but the text treats it as a single small town ('the town', 'a small population'), equating the division with its administrative centre.",
+   "usage": {
+    "cost_usd": "0.000577664",
+    "input_tokens": 642,
+    "output_tokens": 1883
+   },
+   "seconds": 31.8
+  },
+  {
+   "sid": "25212430B70495112373630",
+   "name": "Calarasi",
+   "iso3": "MDA",
+   "verdict": "scope_error",
+   "quoted_evidence": "in a compact town with little anonymity, an outed or visibly trans traveller can expect gossip, staring, hostile comments and refusal of service, with uncertain handling of any complaint.",
+   "explanation": "The record is Călărași district (raion). The assessment's key conditions — anonymity loss, face-to-face ID checks, gossip — are those of its seat town, presented as the whole district's.",
+   "usage": {
+    "cost_usd": "0.000439624",
+    "input_tokens": 654,
+    "output_tokens": 1384
+   },
+   "seconds": 22.7
+  },
+  {
+   "sid": "25212430B45328982281571",
+   "name": "Orhei",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Orhei is a small town and district in central Moldova",
+   "explanation": "The record is a sub-national division (district/raion) of Moldova, but the text repeatedly frames it at town scale ('small town', 'a small town where hotel, clinic and police staff...'), conflating the district with its town.",
+   "usage": {
+    "cost_usd": "0.00018088",
+    "input_tokens": 678,
+    "output_tokens": 307
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "25212430B37613660942888",
+   "name": "SIngerei",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Sîngerei is a small agricultural district centre in northern Moldova ... a visibly trans visitor is conspicuous in a town of this size",
+   "explanation": "Sîngerei is a raion (district); the text frames it as the district's town/centre and refers to 'a town of this size', describing the municipal unit instead of the whole division.",
+   "usage": {
+    "cost_usd": "0.00016828",
+    "input_tokens": 542,
+    "output_tokens": 330
+   },
+   "seconds": 3.6
+  },
+  {
+   "sid": "25212430B1615629371845",
+   "name": "RIscani",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This is a small district town in northern Moldova",
+   "explanation": "Rîșcani here is a raion (district), but the text characterizes it as a single small town, effectively equating the division with its capital settlement.",
+   "usage": {
+    "cost_usd": "0.0001342264",
+    "input_tokens": 681,
+    "output_tokens": 280
+   },
+   "seconds": 3.3
+  },
+  {
+   "sid": "25212430B52468939139965",
+   "name": "Soldanesti",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small agricultural district town in northern Moldova",
+   "explanation": "Soldanesti is a district (raion), but the text repeatedly describes it as a town ('a small agricultural district town', 'in a town of this size'), equating the division with a settlement.",
+   "usage": {
+    "cost_usd": "0.000087104",
+    "input_tokens": 558,
+    "output_tokens": 173
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "25212430B38040597710669",
+   "name": "Floresti",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Floresti is a small rural commune in the north rather than the capital",
+   "explanation": "The record's unit is a region-level division of Moldova, but the text characterizes it as a commune (a settlement-level unit) and refers to 'this district,' misstating the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000193784",
+    "input_tokens": 514,
+    "output_tokens": 576
+   },
+   "seconds": 7.4
+  },
+  {
+   "sid": "25212430B65458906379390",
+   "name": "Edinet",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Edineț, a small agrarian district centre in northern Moldova near the Ukrainian border ... so a foreign trans visitor in a small town would be highly visible",
+   "explanation": "Edineț is a district (raion); the text treats it as a town/city and equates the whole division with its municipal centre.",
+   "usage": {
+    "cost_usd": "0.0001809864",
+    "input_tokens": 787,
+    "output_tokens": 394
+   },
+   "seconds": 6.8
+  },
+  {
+   "sid": "25212430B46101437811477",
+   "name": "Briceni",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Briceni is a small, largely agrarian district centre in Moldova's far north",
+   "explanation": "The record's unit is Briceni district (raion), but the text describes it as a town/district centre rather than the wider sub-national division.",
+   "usage": {
+    "cost_usd": "0.0002267664",
+    "input_tokens": 500,
+    "output_tokens": 701
+   },
+   "seconds": 7.1
+  },
+  {
+   "sid": "25212430B70903588336793",
+   "name": "Soroca",
+   "iso3": "MDA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, socially conservative northern town on the Dniester, with tourism centred on its fortress and a large Roma community",
+   "explanation": "Soroca is a district (raion), but the text defines it as a town, repeatedly using 'the town' and its capital's institutions to stand for the whole division.",
+   "usage": {
+    "cost_usd": "0.00032116",
+    "input_tokens": 592,
+    "output_tokens": 851
+   },
+   "seconds": 7.7
+  },
+  {
+   "sid": "27540722B10144800929043",
+   "name": "Analamanga",
+   "iso3": "MDG",
+   "verdict": "scope_error",
+   "quoted_evidence": "For a trans visitor this density cuts both ways: the capital is markedly more anonymous than the rural highlands, and its coded community contacts and tourism-facing familiarity offer discretion and support that smaller towns lack.",
+   "explanation": "Conditions of Antananarivo city are presented as the whole region's; only the capital's urban/nightlife/police context is described, not Analamanga's broader territory.",
+   "usage": {
+    "cost_usd": "0.0001296064",
+    "input_tokens": 612,
+    "output_tokens": 298
+   },
+   "seconds": 4.2
+  },
+  {
+   "sid": "77969171B26181209823953",
+   "name": "Lib",
+   "iso3": "MHL",
+   "verdict": "scale_error",
+   "quoted_evidence": "Lib is a small, remote outer-island settlement",
+   "explanation": "Lib is presented as a single settlement rather than the sub-national division (atoll/region) of the Marshall Islands named in the record.",
+   "usage": {
+    "cost_usd": "0.00018816",
+    "input_tokens": 532,
+    "output_tokens": 406
+   },
+   "seconds": 2.7
+  },
+  {
+   "sid": "77969171B75968789186626",
+   "name": "Lae",
+   "iso3": "MHL",
+   "verdict": "scale_error",
+   "quoted_evidence": "Lae is a small, remote outer-atoll locality in Likiep Atoll, with a few hundred residents, no town of any size",
+   "explanation": "The record's division is described as a tiny settlement/locality rather than as the sub-national division (atoll/region) it is.",
+   "usage": {
+    "cost_usd": "0.0001968064",
+    "input_tokens": 684,
+    "output_tokens": 502
+   },
+   "seconds": 6.6
+  },
+  {
+   "sid": "77969171B5098285569707",
+   "name": "Majuro",
+   "iso3": "MHL",
+   "verdict": "scale_error",
+   "quoted_evidence": "Majuro, the Marshall Islands' capital and only substantial urban centre ... this is a very small, closely connected, predominantly Christian city",
+   "explanation": "The record is a sub-national division (Majuro atoll/district), but the text equates it with its capital city and describes the division itself as 'a city'.",
+   "usage": {
+    "cost_usd": "0.000315864",
+    "input_tokens": 702,
+    "output_tokens": 918
+   },
+   "seconds": 12.0
+  },
+  {
+   "sid": "19869673B29343041094723",
+   "name": "Skopje",
+   "iso3": "MKD",
+   "verdict": "scale_error",
+   "quoted_evidence": "Skopje is the capital of North Macedonia, described as the entire scene with an NGO base.",
+   "explanation": "The division (a sub-national unit) is described as a city/the national capital rather than as a region, framing the unit at city scale.",
+   "usage": {
+    "cost_usd": "0.0002934064",
+    "input_tokens": 430,
+    "output_tokens": 974
+   },
+   "seconds": 11.5
+  },
+  {
+   "sid": "92416918B70420899930674",
+   "name": "Bamako",
+   "iso3": "MLI",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division of Mali is the capital, marked by a diplomatic presence and by the only anonymity to be found.",
+   "explanation": "The sub-national division is described in city terms and equated with the capital, collapsing the region/city distinction.",
+   "usage": {
+    "cost_usd": "0.000228644",
+    "input_tokens": 431,
+    "output_tokens": 742
+   },
+   "seconds": 9.3
+  },
+  {
+   "sid": "83640313B32595760925513",
+   "name": "Ghajnsielem",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ghajnsielem is a small harbour village on Gozo, Malta's second island",
+   "explanation": "The record defines Ghajnsielem as a sub-national division, but the text repeatedly frames it as a 'small harbour village' with 'village streets' — a settlement-scale unit, contradicting the division-level classification.",
+   "usage": {
+    "cost_usd": "0.000213104",
+    "input_tokens": 622,
+    "output_tokens": 591
+   },
+   "seconds": 8.7
+  },
+  {
+   "sid": "83640313B37542325651352",
+   "name": "Saint Lawerence",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, traditional village in western Gozo where close-knit, socially conservative rural norms mean a visibly trans visitor may attract staring",
+   "explanation": "The record's division is characterized as a village (a smaller settlement unit) rather than the sub-national region it is defined as, despite later referring to 'this region'.",
+   "usage": {
+    "cost_usd": "0.0002442664",
+    "input_tokens": 535,
+    "output_tokens": 746
+   },
+   "seconds": 9.9
+  },
+  {
+   "sid": "83640313B82150771484023",
+   "name": "Kerċem",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kerċem is a small rural parish on Gozo ... the village is close-knit and traditionally Catholic",
+   "explanation": "The record's unit is a sub-national division of Malta, but the text reduces it to a settlement scale, calling it a parish and repeatedly 'the village' rather than a region/local division.",
+   "usage": {
+    "cost_usd": "0.0001849064",
+    "input_tokens": 643,
+    "output_tokens": 480
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "83640313B34539485231325",
+   "name": "Munxar",
+   "iso3": "MLT",
+   "verdict": "scope_error",
+   "quoted_evidence": "Policing, courts, the general hospital and the equality body operate island-wide under the same authorities as on Malta itself, with no documented gap in enforcement on Gozo",
+   "explanation": "The record's unit is the locality Munxar, but the substantive conditions presented (island-wide policing, hospital, courts, Gozo's tourism economy) describe the whole island of Gozo rather than the division itself.",
+   "usage": {
+    "cost_usd": "0.0004387264",
+    "input_tokens": 684,
+    "output_tokens": 1366
+   },
+   "seconds": 13.3
+  },
+  {
+   "sid": "83640313B46811785336007",
+   "name": "Marsaskala",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Marsaskala is a small coastal residential town on Malta's south-east coast",
+   "explanation": "The record's division is described as a town rather than the sub-national regional unit it is logged as, mischaracterizing its scale.",
+   "usage": {
+    "cost_usd": "0.0001331064",
+    "input_tokens": 505,
+    "output_tokens": 364
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "83640313B7434934757616",
+   "name": "Mellieħa",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mellieħa, a small northern coastal town built around beaches... Mellieħa is a traditional parish village... Small-town size also offers less anonymity than the capital area.",
+   "explanation": "The sub-national division is repeatedly characterized as a town/village ('small northern coastal town', 'traditional parish village', 'Small-town size'), i.e. a settlement scale rather than the division itself.",
+   "usage": {
+    "cost_usd": "0.000239564",
+    "input_tokens": 633,
+    "output_tokens": 680
+   },
+   "seconds": 9.0
+  },
+  {
+   "sid": "83640313B70016887726547",
+   "name": "Saint Paul's Bay",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "with the town not a queer-visibility hub in the way Valletta or Sliema is",
+   "explanation": "The division (a sub-national unit) is referred to as 'the town', equating the whole record unit with a single settlement rather than the broader locality.",
+   "usage": {
+    "cost_usd": "0.0001902264",
+    "input_tokens": 601,
+    "output_tokens": 520
+   },
+   "seconds": 5.1
+  },
+  {
+   "sid": "83640313B82456448658391",
+   "name": "Għargħur",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, traditional inland residential village in Malta's rural north",
+   "explanation": "The record's division is presented as a village rather than the sub-national regional unit it is recorded as.",
+   "usage": {
+    "cost_usd": "0.00015638",
+    "input_tokens": 509,
+    "output_tokens": 304
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "83640313B16668515866528",
+   "name": "Swieqi",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, affluent residential town immediately north of St Julian's and Paceville",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it as a small residential town, a different administrative scale.",
+   "usage": {
+    "cost_usd": "0.000140724",
+    "input_tokens": 559,
+    "output_tokens": 364
+   },
+   "seconds": 21.5
+  },
+  {
+   "sid": "83640313B63748346307845",
+   "name": "Iklin",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Iklin is a small, largely residential village in central Malta near Attard, Balzan and Lija",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it as a village/town, a lower administrative scale.",
+   "usage": {
+    "cost_usd": "0.0001812664",
+    "input_tokens": 517,
+    "output_tokens": 530
+   },
+   "seconds": 7.0
+  },
+  {
+   "sid": "83640313B52026072381253",
+   "name": "Floriana",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Floriana, a small fortified town immediately adjoining Valletta",
+   "explanation": "Record defines Floriana as a sub-national division; text frames it as a small fortified town (later inconsistently 'the region'), mischaracterizing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.0001473864",
+    "input_tokens": 487,
+    "output_tokens": 424
+   },
+   "seconds": 10.5
+  },
+  {
+   "sid": "83640313B26643895520377",
+   "name": "Ħamrun",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "densely populated, largely working-class residential town in the Greater Valletta conurbation ... the local picture rests on the town's social character",
+   "explanation": "The record is a sub-national division (region-level unit) of Malta, but the text repeatedly characterizes it as a town, conflating the division with a settlement.",
+   "usage": {
+    "cost_usd": "0.00031808",
+    "input_tokens": 630,
+    "output_tokens": 821
+   },
+   "seconds": 4.9
+  },
+  {
+   "sid": "83640313B18835650997044",
+   "name": "Mdina",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mdina is a compact fortified hilltop town",
+   "explanation": "The record's division is described at settlement scale as 'a compact fortified hilltop town' (and later 'the town'), rather than as the sub-national division it is listed as.",
+   "usage": {
+    "cost_usd": "0.0002975",
+    "input_tokens": 611,
+    "output_tokens": 757
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "83640313B93037213409403",
+   "name": "Attard",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Attard is an affluent, quiet inland residential town in central Malta ... small, close-knit and socially Catholic village character",
+   "explanation": "The record defines Attard as a sub-national division (region), but the text frames it as a town/village unit rather than the administrative region.",
+   "usage": {
+    "cost_usd": "0.000347224",
+    "input_tokens": 614,
+    "output_tokens": 1074
+   },
+   "seconds": 13.3
+  },
+  {
+   "sid": "83640313B14397888835877",
+   "name": "Birgu",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "A small fortified historic city in the Grand Harbour and part of the Cottonera (Three Cities) ... The town's social character differs more than its legal one",
+   "explanation": "The record defines Birgu as a sub-national division of Malta, yet the text characterises that same unit as a 'small fortified historic city' and 'the town', presenting a settlement-scale description instead of the division.",
+   "usage": {
+    "cost_usd": "0.000992904",
+    "input_tokens": 608,
+    "output_tokens": 3383
+   },
+   "seconds": 49.1
+  },
+  {
+   "sid": "83640313B87582987818287",
+   "name": "Żebbuġ Malta",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Żebbuġ is an inland central Maltese town of roughly 12,000 people",
+   "explanation": "The record unit is a sub-national division/region of Malta, but the text identifies it directly as a town, with subsequent 'small-town' framing applied to the whole division.",
+   "usage": {
+    "cost_usd": "0.0002273264",
+    "input_tokens": 642,
+    "output_tokens": 632
+   },
+   "seconds": 9.1
+  },
+  {
+   "sid": "83640313B83137316861428",
+   "name": "Siġġiewi",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Siġġiewi is a small inland town in southern Malta, built around parish and festa life",
+   "explanation": "The record is a sub-national division of Malta, but the text characterises it throughout as a town ('small inland town', 'The town is compact'), treating a municipal division as a settlement rather than a region/area.",
+   "usage": {
+    "cost_usd": "0.0003787",
+    "input_tokens": 643,
+    "output_tokens": 1031
+   },
+   "seconds": 4.7
+  },
+  {
+   "sid": "83640313B82959541944820",
+   "name": "Qrendi",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Qrendi is a small, traditionally Catholic village in Malta's rural south",
+   "explanation": "The record defines Qrendi as a sub-national division/region, but the text characterizes it as a village, conflating the division's scale with a settlement type.",
+   "usage": {
+    "cost_usd": "0.000109644",
+    "input_tokens": 503,
+    "output_tokens": 281
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "83640313B29119193634160",
+   "name": "Mqabba",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mqabba is a small traditional parish village in Malta's south",
+   "explanation": "Record defines Mqabba as a sub-national division; text characterizes it as a village/local settlement rather than a region-scale unit.",
+   "usage": {
+    "cost_usd": "0.00023842",
+    "input_tokens": 605,
+    "output_tokens": 549
+   },
+   "seconds": 2.5
+  },
+  {
+   "sid": "83640313B26470162845875",
+   "name": "Żurrieq",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, predominantly Catholic town in the south of the island... In a close-knit village setting... the small scale of village life",
+   "explanation": "The sub-national division is characterized throughout as a town/village unit; local conditions are framed at settlement scale rather than as a region.",
+   "usage": {
+    "cost_usd": "0.00023828",
+    "input_tokens": 634,
+    "output_tokens": 534
+   },
+   "seconds": 3.3
+  },
+  {
+   "sid": "83640313B27023824805393",
+   "name": "Paola",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a compact, largely working-class residential town in the Southern Harbour district",
+   "explanation": "The record defines Paola as a sub-national division (region-level unit) of Malta, but the text characterizes it as a 'residential town', i.e. a settlement scale rather than the division itself.",
+   "usage": {
+    "cost_usd": "0.000333924",
+    "input_tokens": 601,
+    "output_tokens": 1033
+   },
+   "seconds": 16.3
+  },
+  {
+   "sid": "83640313B77690414343492",
+   "name": "Saint Lucia's",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Saint Lucia's (Santa Luċija) is a small, largely residential town in southern Malta",
+   "explanation": "The record's unit is a sub-national division, but the text characterizes it as a town/village ('small, largely residential town', 'what sets the town apart'), a scale mismatch.",
+   "usage": {
+    "cost_usd": "0.00025074",
+    "input_tokens": 545,
+    "output_tokens": 623
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "83640313B20015641298084",
+   "name": "Żabbar",
+   "iso3": "MLT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Żabbar is a small, largely residential harbour town of roughly 15,000 people in Malta's south-east",
+   "explanation": "The record's unit is a sub-national division, but the text presents it as a town ('Żabbar is a ... harbour town', 'The town's...'), then inconsistently as 'the region', conflating town scale with division scope.",
+   "usage": {
+    "cost_usd": "0.000338264",
+    "input_tokens": 610,
+    "output_tokens": 1044
+   },
+   "seconds": 12.7
+  },
+  {
+   "sid": "20573499B45980987355836",
+   "name": "Mandalay",
+   "iso3": "MMR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mandalay is Myanmar's second city, characterized by relative anonymity. ... this division's profile as a secondary urban center",
+   "explanation": "The record is a sub-national division (Mandalay Region), but the text characterizes it as a city/urban center, equating the division with a city scale.",
+   "usage": {
+    "cost_usd": "0.0001074864",
+    "input_tokens": 426,
+    "output_tokens": 312
+   },
+   "seconds": 4.9
+  },
+  {
+   "sid": "20573499B24734669936209",
+   "name": "Yangon",
+   "iso3": "MMR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the largest city in Myanmar (MMR)",
+   "explanation": "The division (Yangon Region) is explicitly equated with a city rather than described as the sub-national division it is.",
+   "usage": {
+    "cost_usd": "0.00014938",
+    "input_tokens": 429,
+    "output_tokens": 319
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "59799669B88193558767116",
+   "name": "Rožaje Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "anonymity is close to nonexistent in a town this size",
+   "explanation": "The record is a municipality (~20k residents), but the text then refers to the whole unit as 'a town this size', conflating the municipal division with a town scale.",
+   "usage": {
+    "cost_usd": "0.000185664",
+    "input_tokens": 622,
+    "output_tokens": 493
+   },
+   "seconds": 4.9
+  },
+  {
+   "sid": "59799669B20319020653405",
+   "name": "Podgorica Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "this makes the capital the division where the country's named Pride and NGO activity is located",
+   "explanation": "The text equates the municipality-level division with the capital city itself, repeatedly calling the division 'the capital' rather than describing the larger administrative unit.",
+   "usage": {
+    "cost_usd": "0.00028966",
+    "input_tokens": 489,
+    "output_tokens": 790
+   },
+   "seconds": 5.0
+  },
+  {
+   "sid": "59799669B91583747266461",
+   "name": "Cetinje Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Cetinje Municipality is the old capital of Montenegro",
+   "explanation": "The municipality (which contains the city) is equated with the city of Cetinje, its capital, conflating the division with the urban unit.",
+   "usage": {
+    "cost_usd": "0.0001354864",
+    "input_tokens": 426,
+    "output_tokens": 412
+   },
+   "seconds": 7.0
+  },
+  {
+   "sid": "59799669B48420505719641",
+   "name": "Kolašin Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Overall the town sits slightly below the national climate",
+   "explanation": "The text repeatedly refers to the municipality as 'the town'/'small-town setting', equating the sub-national division with the town of Kolašin.",
+   "usage": {
+    "cost_usd": "0.0001202264",
+    "input_tokens": 705,
+    "output_tokens": 218
+   },
+   "seconds": 8.0
+  },
+  {
+   "sid": "59799669B66678983232609",
+   "name": "Nikšić Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Nikšić is Montenegro's second-largest urban centre: an inland industrial and university city in the socially conservative north ... The smaller-city environment also means less anonymity than in the capital",
+   "explanation": "The municipality (record unit) is repeatedly characterized as a city and equated with its urban seat, rather than as the larger municipal division containing rural hinterland.",
+   "usage": {
+    "cost_usd": "0.000348904",
+    "input_tokens": 650,
+    "output_tokens": 1062
+   },
+   "seconds": 9.0
+  },
+  {
+   "sid": "59799669B84579627936880",
+   "name": "Ulcinj Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "the town's hospitality economy is accustomed to international guests",
+   "explanation": "The record's unit is Ulcinj Municipality, but the text equates it with a single town, treating the municipality's whole scale as one settlement.",
+   "usage": {
+    "cost_usd": "0.000138764",
+    "input_tokens": 641,
+    "output_tokens": 316
+   },
+   "seconds": 4.1
+  },
+  {
+   "sid": "59799669B41052051546873",
+   "name": "Žabljak Municipality",
+   "iso3": "MNE",
+   "verdict": "scale_error",
+   "quoted_evidence": "The municipality is a small mountain town of roughly 6,000 residents in the northern highlands, built around Durmitor National Park",
+   "explanation": "The record is Žabljak Municipality, an administrative division containing the town and surrounding settlements; the text defines it as a town of ~6,000, conflating the division with its seat.",
+   "usage": {
+    "cost_usd": "0.000193364",
+    "input_tokens": 635,
+    "output_tokens": 514
+   },
+   "seconds": 5.5
+  },
+  {
+   "sid": "14279143B32551742065768",
+   "name": "Darkhan-Uul",
+   "iso3": "MNG",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as the country's second city. Assessed relative to the national picture in Mongolia, it holds a secondary urban prominence behind the primary city.",
+   "explanation": "The province Darkhan-Uul is equated with a city and characterized by urban rank rather than as a provincial division.",
+   "usage": {
+    "cost_usd": "0.00013664",
+    "input_tokens": 418,
+    "output_tokens": 279
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "64602211B48349945606013",
+   "name": "Tagant",
+   "iso3": "MRT",
+   "verdict": "scope_error",
+   "quoted_evidence": "Assessments variously place its centre in Kiffa or Tidjikja",
+   "explanation": "Kiffa is a town in Assaba region, not Tagant; presenting it as Tagant's centre conflates the record's unit with a different region's territory.",
+   "usage": {
+    "cost_usd": "0.00026376",
+    "input_tokens": 650,
+    "output_tokens": 617
+   },
+   "seconds": 7.6
+  },
+  {
+   "sid": "94367503B39053627120026",
+   "name": "Leon",
+   "iso3": "NIC",
+   "verdict": "scale_error",
+   "quoted_evidence": "León is a major university city and cultural and visitor hub with a busy café, guesthouse and expatriate scene",
+   "explanation": "The division is a department, but the text opens by equating it with León the city, presenting the city's café/expat scene as the unit itself (later partially distinguishing the department's rural areas).",
+   "usage": {
+    "cost_usd": "0.00017892",
+    "input_tokens": 686,
+    "output_tokens": 296
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "94367503B26829213243408",
+   "name": "Granada",
+   "iso3": "NIC",
+   "verdict": "scale_error",
+   "quoted_evidence": "Granada is a tourism city within Nicaragua (NIC). ... its character as a tourism city shapes what a trans visitor can expect when visiting this division.",
+   "explanation": "The department is characterized as a tourism city and equated with its capital, misdescribing the scale of the sub-national division.",
+   "usage": {
+    "cost_usd": "0.0001106",
+    "input_tokens": 416,
+    "output_tokens": 187
+   },
+   "seconds": 0.8
+  },
+  {
+   "sid": "93272968B4423412382248",
+   "name": "Hikutavake",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment). free association with NZ;",
+   "explanation": "The text attributes country-level status (country-level assessment, NZ free-association sovereignty) to Hikutavake, a sub-national division, presenting the parent country's scope as the division's.",
+   "usage": {
+    "cost_usd": "0.000233964",
+    "input_tokens": 413,
+    "output_tokens": 770
+   },
+   "seconds": 5.1
+  },
+  {
+   "sid": "93272968B22364225711306",
+   "name": "Toi",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment). free association with NZ",
+   "explanation": "Text presents the parent country Niue (a country in free association with NZ) as if it were the division Toi, rather than describing the sub-national unit itself.",
+   "usage": {
+    "cost_usd": "0.0000808864",
+    "input_tokens": 412,
+    "output_tokens": 224
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "93272968B97328284886537",
+   "name": "Mutalau",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level ... free association with NZ",
+   "explanation": "Mutalau is a village-level division of Niue; the text applies the parent country's country-level status and NZ free-association arrangement to it as if the division were the sovereign unit.",
+   "usage": {
+    "cost_usd": "0.000115524",
+    "input_tokens": 413,
+    "output_tokens": 347
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "93272968B74056989697157",
+   "name": "Hakupu",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment).",
+   "explanation": "Presents the parent country's assessment as if it were the division's own, i.e. the parent country (Niue) stands in for Hakupu; no separate division-level scope.",
+   "usage": {
+    "cost_usd": "0.00014784",
+    "input_tokens": 414,
+    "output_tokens": 321
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "93272968B84240109118138",
+   "name": "Vaiea",
+   "iso3": "NIU",
+   "verdict": "scale_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level",
+   "explanation": "Vaiea is a subnational division of Niue; describing it as a distinct jurisdiction at the country level conflates its scale with a sovereign/country-level unit.",
+   "usage": {
+    "cost_usd": "0.00020454",
+    "input_tokens": 413,
+    "output_tokens": 524
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "93272968B40499677561204",
+   "name": "Tamakautoga",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment). free association with NZ",
+   "explanation": "The text presents Niue's national-level assessment and country status (free association with NZ, national legal framework) as the profile of this sub-national division, i.e. the parent country substituted for the unit.",
+   "usage": {
+    "cost_usd": "0.0004256",
+    "input_tokens": 414,
+    "output_tokens": 1313
+   },
+   "seconds": 4.8
+  },
+  {
+   "sid": "93272968B84066650409930",
+   "name": "Alofi South",
+   "iso3": "NIU",
+   "verdict": "scale_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level",
+   "explanation": "Alofi South is a subnational division of Niue, but the text describes it as a country-level jurisdiction rather than a local division.",
+   "usage": {
+    "cost_usd": "0.00015414",
+    "input_tokens": 413,
+    "output_tokens": 344
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "93272968B57426624534658",
+   "name": "Alofi North",
+   "iso3": "NIU",
+   "verdict": "scope_error",
+   "quoted_evidence": "This unit is a distinct jurisdiction assessed at the country level (it has no separate region assessment). free association with NZ",
+   "explanation": "The text presents Niue's country-level status (free association with NZ) as Alofi North's, treating the parent country's assessment as the division's own.",
+   "usage": {
+    "cost_usd": "0.00014546",
+    "input_tokens": 413,
+    "output_tokens": 313
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "6811986B22599492826393",
+   "name": "Groningen",
+   "iso3": "NLD",
+   "verdict": "scale_error",
+   "quoted_evidence": "The city is a compact university centre with a strongly socially liberal, cosmopolitan reputation",
+   "explanation": "The record is the province of Groningen, but the text treats the division itself as 'the city' (its capital), contrasting it with 'the surrounding province'.",
+   "usage": {
+    "cost_usd": "0.0001627864",
+    "input_tokens": 577,
+    "output_tokens": 434
+   },
+   "seconds": 4.2
+  },
+  {
+   "sid": "6811986B73841275384957",
+   "name": "Utrecht",
+   "iso3": "NLD",
+   "verdict": "scale_error",
+   "quoted_evidence": "does not itself indicate how safe the city is",
+   "explanation": "Division-level safety (no Utrecht-specific violence rate) is framed as 'how safe the city is', equating the province with the city.",
+   "usage": {
+    "cost_usd": "0.0002355864",
+    "input_tokens": 617,
+    "output_tokens": 674
+   },
+   "seconds": 10.1
+  },
+  {
+   "sid": "40311993B93133537770676",
+   "name": "Nelson Region",
+   "iso3": "NZL",
+   "verdict": "scope_error",
+   "quoted_evidence": "Nelson and Tasman present a small, tourism- and arts-oriented centre ... in Nelson city and Motueka",
+   "explanation": "The record is Nelson Region alone, yet the text merges it with the separate Tasman Region, treating Motueka (outside Nelson Region) and 'Nelson and Tasman' as the division's own conditions.",
+   "usage": {
+    "cost_usd": "0.00040782",
+    "input_tokens": 619,
+    "output_tokens": 1147
+   },
+   "seconds": 5.9
+  },
+  {
+   "sid": "51375826B25708098730444",
+   "name": "Koror",
+   "iso3": "PLW",
+   "verdict": "scale_error",
+   "quoted_evidence": "Koror is Palau's capital, largest city and commercial hub",
+   "explanation": "The record is a sub-national division (state) of Palau, but the text describes it as a city and equates it with a capital, treating the division as an urban municipality.",
+   "usage": {
+    "cost_usd": "0.000157664",
+    "input_tokens": 634,
+    "output_tokens": 387
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "51375826B59587402164376",
+   "name": "Ngatpang",
+   "iso3": "PLW",
+   "verdict": "scale_error",
+   "quoted_evidence": "a small, rural, close-knit village state",
+   "explanation": "The record is a state-level division of Palau, but the text characterizes it primarily as a small village, conflating the unit's scale.",
+   "usage": {
+    "cost_usd": "0.00014924",
+    "input_tokens": 500,
+    "output_tokens": 283
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "24955722B60132865756536",
+   "name": "AVEIRO",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Aveiro is a compact coastal city and district in central Portugal built around a university population",
+   "explanation": "The record is a district-level division, but the text equates it with a 'compact coastal city' (its capital) while also calling it a district, mixing city and district scales.",
+   "usage": {
+    "cost_usd": "0.000254964",
+    "input_tokens": 607,
+    "output_tokens": 748
+   },
+   "seconds": 4.9
+  },
+  {
+   "sid": "24955722B56624562889325",
+   "name": "BRAGA",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Braga is a compact, mid-sized city in the northwest and a historic archdiocesan centre with strong Catholic institutions",
+   "explanation": "The sub-national division Braga (district/region of Portugal) is repeatedly treated as the municipality-sized city: 'a compact, mid-sized city', 'the city's smaller scale', 'less visible LGBT infrastructure'. Unit scale is misstated, though place identity is correct.",
+   "usage": {
+    "cost_usd": "0.0001807064",
+    "input_tokens": 637,
+    "output_tokens": 468
+   },
+   "seconds": 5.1
+  },
+  {
+   "sid": "24955722B78831183552196",
+   "name": "COIMBRA",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a mid-sized historic university city in central Portugal with a large student population",
+   "explanation": "The record is a sub-national division of Portugal, but the text treats it as the city itself ('this city', 'what distinguishes the city from the capital'), conflating the division's scale with its municipal seat.",
+   "usage": {
+    "cost_usd": "0.000122524",
+    "input_tokens": 619,
+    "output_tokens": 269
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "24955722B96057717933498",
+   "name": "ÃVORA",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Évora is a small UNESCO-listed university and tourism city in the interior Alentejo, serving a wider rural district",
+   "explanation": "The record is a sub-national division of Portugal, yet the text equates it with a city/town ('Évora is a small... city'; 'The city's economy'), treating the division as an urban settlement rather than the region it is.",
+   "usage": {
+    "cost_usd": "0.000242644",
+    "input_tokens": 641,
+    "output_tokens": 687
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "24955722B93513210668499",
+   "name": "FARO",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Faro, capital of the Algarve, is subject to Portuguese national law in full... Faro is an administrative capital and Algarve hub",
+   "explanation": "The record is Faro (district/division of Portugal), but the text presents it as the city/capital — 'Faro, capital of the Algarve' and 'an administrative capital and Algarve hub' — equating the division with its capital.",
+   "usage": {
+    "cost_usd": "0.000254404",
+    "input_tokens": 633,
+    "output_tokens": 733
+   },
+   "seconds": 5.5
+  },
+  {
+   "sid": "24955722B70468072404853",
+   "name": "LISBOA",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "As the capital and largest city, Lisbon is the country's most cosmopolitan and tourism-facing place",
+   "explanation": "The record is the LISBOA sub-national division of Portugal, but the text treats it as the municipality/city itself, equating the division with its capital.",
+   "usage": {
+    "cost_usd": "0.0001512",
+    "input_tokens": 638,
+    "output_tokens": 221
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "24955722B24387739047039",
+   "name": "PORTO",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "Portugal's second-largest city is a university, port and tourism centre with established queer nightlife",
+   "explanation": "The division Porto is described as a city ('this city', second-largest city), equating the regional unit with its urban core rather than the whole division.",
+   "usage": {
+    "cost_usd": "0.000139884",
+    "input_tokens": 659,
+    "output_tokens": 311
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "24955722B13525102878781",
+   "name": "VIANA DO CASTELO",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "This is a small coastal city in the Minho region of northern Portugal, close to the Spanish border, with a compact old town",
+   "explanation": "The record is Portugal's Viana do Castelo district (a regional division). The text opens by identifying the unit itself as 'a small coastal city', equating the district with its capital and its old town, and later refers to 'the surrounding northern district' as something separate.",
+   "usage": {
+    "cost_usd": "0.0019928664",
+    "input_tokens": 643,
+    "output_tokens": 6937
+   },
+   "seconds": 74.7
+  },
+  {
+   "sid": "24955722B72875804367268",
+   "name": "VILA REAL",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small inland city and district capital in Trás-os-Montes, serving a largely rural, older hinterland",
+   "explanation": "The record is the sub-national division of Vila Real; the text defines it as a small inland city and district capital, conflating the division with the town itself.",
+   "usage": {
+    "cost_usd": "0.0001252664",
+    "input_tokens": 631,
+    "output_tokens": 273
+   },
+   "seconds": 6.6
+  },
+  {
+   "sid": "24955722B86486174875848",
+   "name": "VISEU",
+   "iso3": "PRT",
+   "verdict": "scale_error",
+   "quoted_evidence": "The region itself is an inland district and university city in the Dão wine country",
+   "explanation": "The record is the district/region of Viseu; the text collapses it into 'an inland district and university city', treating the division as the town itself.",
+   "usage": {
+    "cost_usd": "0.00014868",
+    "input_tokens": 662,
+    "output_tokens": 200
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "63826900B42428386495226",
+   "name": "ASUNCION",
+   "iso3": "PRY",
+   "verdict": "scale_error",
+   "quoted_evidence": "Asuncion is the capital of Paraguay (PRY) and the only organised community noted in this division.",
+   "explanation": "The record's division is treated as the city itself: it is equated with the capital as a single community rather than described as the province-level unit containing it.",
+   "usage": {
+    "cost_usd": "0.000117764",
+    "input_tokens": 435,
+    "output_tokens": 344
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "59647477B65717711403998",
+   "name": "Al Khor and Al Thakhira",
+   "iso3": "QAT",
+   "verdict": "scale_error",
+   "quoted_evidence": "a division of QAT characterized as a northern town",
+   "explanation": "The record is a municipality/region of Qatar, but the text characterizes the whole division as 'a northern town,' conflating the unit with a town scale.",
+   "usage": {
+    "cost_usd": "0.0000729064",
+    "input_tokens": 439,
+    "output_tokens": 182
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "59647477B6455548774572",
+   "name": "Al Wakra",
+   "iso3": "QAT",
+   "verdict": "scale_error",
+   "quoted_evidence": "closer scrutiny of gender expression in a small traditional town",
+   "explanation": "The record is a sub-national division (municipality), but the text characterizes it as a 'small traditional town'.",
+   "usage": {
+    "cost_usd": "0.00017892",
+    "input_tokens": 650,
+    "output_tokens": 314
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "36066543B54316219236217",
+   "name": "ARAD",
+   "iso3": "ROU",
+   "verdict": "scale_error",
+   "quoted_evidence": "Arad is a western border city in Romania.",
+   "explanation": "Arad is a county/region, but the text describes it as a city, equating the division with its capital.",
+   "usage": {
+    "cost_usd": "0.00010794",
+    "input_tokens": 411,
+    "output_tokens": 180
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "36066543B58663638147212",
+   "name": "BACAU",
+   "iso3": "ROU",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bacău is a mid-sized city in eastern Romania's Moldavia region, and the local difference here is social rather than legal: the city is strongly Orthodox",
+   "explanation": "The record is Bacău (county-level division of Romania), but the text defines it as a city and repeatedly uses 'the city' for the unit, equating the division with its seat.",
+   "usage": {
+    "cost_usd": "0.000668944",
+    "input_tokens": 630,
+    "output_tokens": 2215
+   },
+   "seconds": 10.9
+  },
+  {
+   "sid": "36066543B7969361625805",
+   "name": "BRASOV",
+   "iso3": "ROU",
+   "verdict": "scope_error",
+   "quoted_evidence": "Brașov is a tourism-oriented university city in Transylvania, and local attitudes are mixed",
+   "explanation": "The record is a Romanian region; the text describes only the capital city (its laws, Pride events, 'the city has no region-specific protective measures') as if it were the whole division. Equally a scale issue, but precedence gives scope_error over scale_error.",
+   "usage": {
+    "cost_usd": "0.00060228",
+    "input_tokens": 618,
+    "output_tokens": 1842
+   },
+   "seconds": 13.3
+  },
+  {
+   "sid": "36066543B20641671386087",
+   "name": "CONSTANTA",
+   "iso3": "ROU",
+   "verdict": "scale_error",
+   "quoted_evidence": "Constanta is a port city with some diversity.",
+   "explanation": "The division (Constana County) is characterized as a city, equating the unit with a city/its port capital rather than the sub-national region.",
+   "usage": {
+    "cost_usd": "0.000110624",
+    "input_tokens": 414,
+    "output_tokens": 329
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "36066543B93424276500239",
+   "name": "GALATI",
+   "iso3": "ROU",
+   "verdict": "scale_error",
+   "quoted_evidence": "GALATI is an eastern industrial city in Romania.",
+   "explanation": "The division (Galați County) is characterized as a city, conflating the sub-national region with a municipality/urban settlement.",
+   "usage": {
+    "cost_usd": "0.00011032",
+    "input_tokens": 412,
+    "output_tokens": 188
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "36066543B68152190067022",
+   "name": "IASI",
+   "iso3": "ROU",
+   "verdict": "scope_error",
+   "quoted_evidence": "Iasi is a university city in Romania where the first Pride attempts took place.",
+   "explanation": "Record is Iași County, not the city. Text presents only the capital city and its Pride history as the whole division (also equating county with city).",
+   "usage": {
+    "cost_usd": "0.00021224",
+    "input_tokens": 418,
+    "output_tokens": 549
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "36066543B78296944586190",
+   "name": "SIBIU",
+   "iso3": "ROU",
+   "verdict": "scope_error",
+   "quoted_evidence": "the local picture is shaped by the city's character: a developed Transylvanian destination with universities, an international visitor economy, arts festivals and a busy old-town street life",
+   "explanation": "SIBIU is a county-level division, but the text presents only the municipal/city conditions (old-town life, tourist quarter, municipal obstruction) as the whole division's, distinguishing 'county officials' as separate.",
+   "usage": {
+    "cost_usd": "0.00047166",
+    "input_tokens": 671,
+    "output_tokens": 1349
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "71046170B16569890219484",
+   "name": "Dakar",
+   "iso3": "SEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Dakar is the capital of Senegal",
+   "explanation": "The record's division (Dakar region) is equated with the city that shares its name, i.e. treated as being the national capital itself.",
+   "usage": {
+    "cost_usd": "0.000068344",
+    "input_tokens": 432,
+    "output_tokens": 169
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "71046170B19471834738959",
+   "name": "Kaolack",
+   "iso3": "SEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kaolack is a major central city and a religiously conservative maraboutic hub ... was exhumed and burned in a street in the city",
+   "explanation": "The record is the sub-national division of Kaolack, but the text treats the whole division as an urban settlement ('Kaolack is a major central city', 'in the city'), equating the division with its capital/city.",
+   "usage": {
+    "cost_usd": "0.00080262",
+    "input_tokens": 591,
+    "output_tokens": 2571
+   },
+   "seconds": 13.8
+  },
+  {
+   "sid": "71046170B19178449543377",
+   "name": "Sedhiou",
+   "iso3": "SEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, rural, predominantly Muslim town where foreigners attract notice and community gossip travels quickly",
+   "explanation": "Sedhiou is a sub-national region of Senegal, but the text describes it as a 'small, rural, predominantly Muslim town', conflating the region with a settlement.",
+   "usage": {
+    "cost_usd": "0.00011788",
+    "input_tokens": 534,
+    "output_tokens": 154
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "71046170B89315153043645",
+   "name": "Thies",
+   "iso3": "SEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Thies is a division of Senegal characterized as a second city and coastal region.",
+   "explanation": "The division (a region) is characterized as 'a second city', equating it with the city of Thiès rather than the sub-national unit.",
+   "usage": {
+    "cost_usd": "0.000087944",
+    "input_tokens": 416,
+    "output_tokens": 247
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "71046170B26251724010642",
+   "name": "Ziguinchor",
+   "iso3": "SEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ziguinchor, capital of the Casamance region in southern Senegal... It is a close-knit regional capital rather than a large metropolis",
+   "explanation": "The record is the Ziguinchor region (division), but the text treats it as its capital city, equating the division with the town of Ziguinchor.",
+   "usage": {
+    "cost_usd": "0.0002737",
+    "input_tokens": 619,
+    "output_tokens": 668
+   },
+   "seconds": 4.7
+  },
+  {
+   "sid": "98794003B50968784291710",
+   "name": "Departamento de San Miguel",
+   "iso3": "SLV",
+   "verdict": "scope_error",
+   "quoted_evidence": "that the fragment characterizes in terms of a third city",
+   "explanation": "The department's standing is presented solely on the basis of a single city's data, treating that sub-area's conditions as representing the whole division.",
+   "usage": {
+    "cost_usd": "0.0001281",
+    "input_tokens": 443,
+    "output_tokens": 236
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "276375B27851101452101",
+   "name": "Domagnano",
+   "iso3": "SMR",
+   "verdict": "scale_error",
+   "quoted_evidence": "a quiet, residential hill town close to the Italian border, compact and closely knit",
+   "explanation": "Domagnano is a sub-national division (one of nine castelli), but the text describes the division itself as a single hill town, conflating the unit with its principal settlement.",
+   "usage": {
+    "cost_usd": "0.00021336",
+    "input_tokens": 496,
+    "output_tokens": 514
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "83879307B42572798770371",
+   "name": "Woqooyi Galbeed",
+   "iso3": "SOM",
+   "verdict": "scope_error",
+   "quoted_evidence": "Woqooyi Galbeed is the Hargeisa-centred core of Somaliland, a self-declared state that runs Hargeisa and Berbera with functioning police, courts and prisons",
+   "explanation": "The text treats de facto Somaliland (a multi-region entity larger than the division) as the unit, attributing its state apparatus, territory and stability to Woqooyi Galbeed.",
+   "usage": {
+    "cost_usd": "0.00032256",
+    "input_tokens": 702,
+    "output_tokens": 801
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "83879307B11376444747055",
+   "name": "Awdal",
+   "iso3": "SOM",
+   "verdict": "scope_error",
+   "quoted_evidence": "Somaliland administration: functioning government and police, no extremist control",
+   "explanation": "Text describes Somaliland (the larger territory containing Awdal) as if it were the division itself; no Awdal-specific content, so a different unit is presented.",
+   "usage": {
+    "cost_usd": "0.00019754",
+    "input_tokens": 407,
+    "output_tokens": 502
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "41074048B7823241267107",
+   "name": "Syrmia District",
+   "iso3": "SRB",
+   "verdict": "scope_error",
+   "quoted_evidence": "Novi Sad, the district's largest city, is a university, festival and tourism centre with a comparatively secular, multi-ethnic and open public sphere, and it held its first Pride rally on 17 May 2019",
+   "explanation": "Novi Sad is a separate territorial unit, not part of Syrmia District (largest city: Sremska Mitrovica). The text presents another unit's conditions and Pride event as the district's.",
+   "usage": {
+    "cost_usd": "0.0001962464",
+    "input_tokens": 634,
+    "output_tokens": 525
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "41074048B68944780204869",
+   "name": "Central Banat District",
+   "iso3": "SRB",
+   "verdict": "scope_error",
+   "quoted_evidence": "The district — centred on Zrenjanin and taking in Vršac and Kikinda",
+   "explanation": "Vršac (South Banat) and Kikinda (North Banat) are outside Central Banat District; the text assembles a wider multi-district area as if it were this unit.",
+   "usage": {
+    "cost_usd": "0.00024696",
+    "input_tokens": 622,
+    "output_tokens": 571
+   },
+   "seconds": 2.2
+  },
+  {
+   "sid": "41074048B42085876522793",
+   "name": "South Backa District",
+   "iso3": "SRB",
+   "verdict": "scope_error",
+   "quoted_evidence": "this makes it a comparatively open and urban point of reference for a trans visitor",
+   "explanation": "The text derives the district's character solely from the Novi Sad fragment, presenting the capital city's conditions as those of the whole South Backa District.",
+   "usage": {
+    "cost_usd": "0.0002583",
+    "input_tokens": 437,
+    "output_tokens": 704
+   },
+   "seconds": 2.8
+  },
+  {
+   "sid": "41074048B66445282038706",
+   "name": "Rasina District",
+   "iso3": "SRB",
+   "verdict": "scale_error",
+   "quoted_evidence": "In this small-town setting a visibly trans or openly LGBT visitor is likely to attract attention",
+   "explanation": "The Rasina District is a whole district containing the city of Kruševac, but is characterized as a 'small-town setting', misjudging the unit's scale.",
+   "usage": {
+    "cost_usd": "0.000097324",
+    "input_tokens": 635,
+    "output_tokens": 171
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "93550828B84160656428348",
+   "name": "Paramaribo",
+   "iso3": "SUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital city of Suriname (SUR)",
+   "explanation": "The sub-national division (Paramaribo district/region) is equated with the capital city rather than described as a province-level unit of Suriname.",
+   "usage": {
+    "cost_usd": "0.00019488",
+    "input_tokens": 438,
+    "output_tokens": 477
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "25762395B87770954339991",
+   "name": "Region of Trenčín",
+   "iso3": "SVK",
+   "verdict": "scale_error",
+   "quoted_evidence": "Trenčín is a mid-sized city and surrounding area in western Slovakia, a moderately urban, tourism-oriented region",
+   "explanation": "The record's unit is the Region of Trenčín, but the text glosses the division itself as a 'mid-sized city,' collapsing the region's scale to its capital plus surroundings.",
+   "usage": {
+    "cost_usd": "0.00049378",
+    "input_tokens": 663,
+    "output_tokens": 1432
+   },
+   "seconds": 4.5
+  },
+  {
+   "sid": "25762395B19733540227871",
+   "name": "Region of Žilina",
+   "iso3": "SVK",
+   "verdict": "scale_error",
+   "quoted_evidence": "Everyday visibility is high in a smaller city, and encounters at hotels, clinics, transit or police stations may involve more friction",
+   "explanation": "The record is a region, but the text repeatedly frames it as a city and equates it with Žilina city ('a smaller city'), ignoring the rest of the region.",
+   "usage": {
+    "cost_usd": "0.00025368",
+    "input_tokens": 670,
+    "output_tokens": 571
+   },
+   "seconds": 2.7
+  },
+  {
+   "sid": "4304713B33324691861484",
+   "name": "Anse Boile",
+   "iso3": "SYC",
+   "verdict": "scale_error",
+   "quoted_evidence": "The district is a small, close-knit residential settlement rather than a busy resort strip",
+   "explanation": "The record's unit is a district, but the text equates it with a small residential settlement, describing the division at a settlement/town scale.",
+   "usage": {
+    "cost_usd": "0.00018956",
+    "input_tokens": 498,
+    "output_tokens": 428
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "4304713B21107318630465",
+   "name": "Au Cap",
+   "iso3": "SYC",
+   "verdict": "scope_error",
+   "quoted_evidence": "The district encompasses Victoria on Mahé, making it the capital's commercial, administrative and tourist centre: hotels, services and officials there are accustomed to foreign visitors",
+   "explanation": "Au Cap does not include Victoria; the text presents the capital's conditions as the whole district's, a different unit than the record.",
+   "usage": {
+    "cost_usd": "0.00016114",
+    "input_tokens": 541,
+    "output_tokens": 305
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "8384693B67178658489877",
+   "name": "Aleppo",
+   "iso3": "SYR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Aleppo is a divided city undergoing contested reconstruction. Assessed relative to the national picture in Syria, this division's character as a divided city",
+   "explanation": "Aleppo is a governorate/province, but the text calls 'this division' a divided city, describing the division at city scale rather than as a region.",
+   "usage": {
+    "cost_usd": "0.00013328",
+    "input_tokens": 416,
+    "output_tokens": 268
+   },
+   "seconds": 1.0
+  },
+  {
+   "sid": "8384693B93490606690779",
+   "name": "Homs",
+   "iso3": "SYR",
+   "verdict": "scale_error",
+   "quoted_evidence": "the city is a war-damaged, socially conservative government-controlled urban centre",
+   "explanation": "The record is the Homs governorate/region; the text treats it as 'the city,' equating the division with its capital throughout.",
+   "usage": {
+    "cost_usd": "0.0001349264",
+    "input_tokens": 642,
+    "output_tokens": 302
+   },
+   "seconds": 3.4
+  },
+  {
+   "sid": "36821470B12194119812739",
+   "name": "Phayao Province",
+   "iso3": "THA",
+   "verdict": "scope_error",
+   "quoted_evidence": "described as the rural north of the country",
+   "explanation": "The single province Phayao is equated with the entire rural north of Thailand, presenting a broader regional/parent-country area as the division itself.",
+   "usage": {
+    "cost_usd": "0.0002359",
+    "input_tokens": 423,
+    "output_tokens": 631
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "36821470B82174860486434",
+   "name": "Khon Kaen Province",
+   "iso3": "THA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a mid-sized provincial capital in Isan (the northeast) ... The city has a visible, long-standing transgender presence",
+   "explanation": "The province is repeatedly labeled as a city/capital ('It is a mid-sized provincial capital', 'The city has...'), i.e. the division is equated with its capital rather than described as the whole province.",
+   "usage": {
+    "cost_usd": "0.000578644",
+    "input_tokens": 671,
+    "output_tokens": 1872
+   },
+   "seconds": 8.9
+  },
+  {
+   "sid": "36821470B89877881758540",
+   "name": "Phitsanulok Province",
+   "iso3": "THA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Compared with Bangkok or the major resorts, the city is more socially conservative, with thinner LGBTQ+ specialist services and less trans-competent care",
+   "explanation": "The record is Phitsanulok Province, but the assessment presents only capital-city conditions (\"the city\", a \"mid-sized provincial capital\") as the whole province's profile.",
+   "usage": {
+    "cost_usd": "0.0001834",
+    "input_tokens": 574,
+    "output_tokens": 368
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "36821470B31576844110237",
+   "name": "Udon Thani Province",
+   "iso3": "THA",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a mid-sized provincial capital in the northeast's Isan region",
+   "explanation": "The province is described as a mid-sized provincial capital (a city), conflating the province unit with an urban settlement scale.",
+   "usage": {
+    "cost_usd": "0.00013832",
+    "input_tokens": 638,
+    "output_tokens": 175
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "58719522B57750794760959",
+   "name": "Baucau",
+   "iso3": "TLS",
+   "verdict": "scale_error",
+   "quoted_evidence": "Baucau is Timor-Leste's second city on the north coast",
+   "explanation": "The record is Baucau, a municipality-level division of Timor-Leste, but the text describes it as a city, conflating the division's scale with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.00017486",
+    "input_tokens": 593,
+    "output_tokens": 328
+   },
+   "seconds": 1.0
+  },
+  {
+   "sid": "58719522B43373882655947",
+   "name": "Dili",
+   "iso3": "TLS",
+   "verdict": "scale_error",
+   "quoted_evidence": "As the capital, Dili has the most visible acceptance climate ... are concentrated in the city",
+   "explanation": "The text treats the whole division as the city/equates it with its capital ('the city', 'As the capital'), describing a municipal unit as an urban settlement.",
+   "usage": {
+    "cost_usd": "0.000125184",
+    "input_tokens": 610,
+    "output_tokens": 283
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "22272344B14939787061678",
+   "name": "Point Fortin",
+   "iso3": "TTO",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as an oil town",
+   "explanation": "The sub-national division is labeled a town ('an oil town'), equating the division with a town rather than a regional-level unit.",
+   "usage": {
+    "cost_usd": "0.000083464",
+    "input_tokens": 426,
+    "output_tokens": 226
+   },
+   "seconds": 1.3
+  },
+  {
+   "sid": "13205935B88806172084765",
+   "name": "Tunis",
+   "iso3": "TUN",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital of Tunisia",
+   "explanation": "The division (Tunis governorate) is equated with the city that is its capital, collapsing governorate and city scales.",
+   "usage": {
+    "cost_usd": "0.000072544",
+    "input_tokens": 446,
+    "output_tokens": 177
+   },
+   "seconds": 1.0
+  },
+  {
+   "sid": "13205935B27259873852948",
+   "name": "Sfax",
+   "iso3": "TUN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Sfax is a conservative business city in Tunisia.",
+   "explanation": "The division is a province/region of Tunisia, but the text characterizes it as a single city, confusing the regional unit with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.000091864",
+    "input_tokens": 400,
+    "output_tokens": 269
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "13205935B29646166511918",
+   "name": "Bizerte",
+   "iso3": "TUN",
+   "verdict": "scale_error",
+   "quoted_evidence": "this division's character as a northern port city shapes what a trans visitor can expect there",
+   "explanation": "The record is a governorate-level division, but the text describes 'this division' as a port city, conflating the division with a city.",
+   "usage": {
+    "cost_usd": "0.000105864",
+    "input_tokens": 414,
+    "output_tokens": 312
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "13205935B58390004509121",
+   "name": "Ariana",
+   "iso3": "TUN",
+   "verdict": "scope_error",
+   "quoted_evidence": "it represents the greater Tunis area.",
+   "explanation": "Ariana is one governorate within Greater Tunis; equating it with the whole greater Tunis area describes a different, larger unit than the record.",
+   "usage": {
+    "cost_usd": "0.0001148",
+    "input_tokens": 406,
+    "output_tokens": 207
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "17741764B42950471856320",
+   "name": "Funafuti",
+   "iso3": "TUV",
+   "verdict": "scale_error",
+   "quoted_evidence": "the town itself offers little anonymity",
+   "explanation": "The record is the sub-national division of Funafuti, but the text describes it as a town and equates it with the capital ('As the capital...'), i.e., a smaller urban unit rather than the regional division.",
+   "usage": {
+    "cost_usd": "0.0004413864",
+    "input_tokens": 653,
+    "output_tokens": 1391
+   },
+   "seconds": 15.5
+  },
+  {
+   "sid": "90331920B72000317509667",
+   "name": "Hsinchu County",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Hsinchu County is a division of Taiwan characterized as a tech city",
+   "explanation": "The record's unit is a county, but the text repeatedly frames it as a city ('a tech city', 'urban role'), mischaracterizing its scale.",
+   "usage": {
+    "cost_usd": "0.000139324",
+    "input_tokens": 437,
+    "output_tokens": 420
+   },
+   "seconds": 2.4
+  },
+  {
+   "sid": "90331920B2591759826755",
+   "name": "Chiayi County",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Chiayi County, a division of Taiwan, is characterized as a smaller city serving as a baseline reference point.",
+   "explanation": "Chiayi County is a county-level division, not a city; the text directly misidentifies the unit's scale as 'a smaller city'.",
+   "usage": {
+    "cost_usd": "0.000099704",
+    "input_tokens": 450,
+    "output_tokens": 272
+   },
+   "seconds": 2.8
+  },
+  {
+   "sid": "90331920B33809065648062",
+   "name": "Hsinchu",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Hsinchu is a tech city in Taiwan. ... this division is characterized by its identity as a tech city.",
+   "explanation": "The sub-national division Hsinchu is described as a city ('a tech city'), conflating the region's scale with an urban settlement.",
+   "usage": {
+    "cost_usd": "0.00021434",
+    "input_tokens": 409,
+    "output_tokens": 561
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "90331920B1111134318549",
+   "name": "Keelung",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "its character as a northern port city",
+   "explanation": "The record is a sub-national division of Taiwan, but the text frames the unit itself as 'a northern port city,' conflating the division's scale with a city.",
+   "usage": {
+    "cost_usd": "0.0002436",
+    "input_tokens": 420,
+    "output_tokens": 660
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "90331920B8812801353421",
+   "name": "Taoyuan",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Taoyuan is a northern metro and ordinance city in Taiwan.",
+   "explanation": "The sub-national division is characterized as a city rather than as the region/metro division itself, conflating the division's scale with its capital city.",
+   "usage": {
+    "cost_usd": "0.00014574",
+    "input_tokens": 409,
+    "output_tokens": 316
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "90331920B67413603294532",
+   "name": "Kaohsiung",
+   "iso3": "TWN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kaohsiung is a southern metro and ordinance city in Taiwan. ... this division represents a major southern metropolitan center",
+   "explanation": "The record is a province-level sub-national division, but the text frames it purely as a city/ metropolitan center, understating its administrative scale.",
+   "usage": {
+    "cost_usd": "0.00037478",
+    "input_tokens": 415,
+    "output_tokens": 1131
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "36957248B77241623821364",
+   "name": "Iringa",
+   "iso3": "TZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "public attention in a small town where faces are known",
+   "explanation": "The region-scale division is described as a 'small town'; 'region and town' also conflates the province with a settlement.",
+   "usage": {
+    "cost_usd": "0.000109504",
+    "input_tokens": 650,
+    "output_tokens": 207
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "36957248B2633782293100",
+   "name": "Dar es Salaam",
+   "iso3": "TZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the largest city in Tanzania",
+   "explanation": "The record's unit is the sub-national region of Dar es Salaam, but the text describes it as a city, conflating regional scale with urban/town scale.",
+   "usage": {
+    "cost_usd": "0.0001235864",
+    "input_tokens": 425,
+    "output_tokens": 370
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "36957248B94171853380228",
+   "name": "Dodoma",
+   "iso3": "TZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Dodoma is an administrative capital in Tanzania",
+   "explanation": "The record is Dodoma Region, a sub-national division; calling it 'an administrative capital' equates the division with its capital city rather than describing the region.",
+   "usage": {
+    "cost_usd": "0.000118044",
+    "input_tokens": 417,
+    "output_tokens": 354
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "36957248B13188202009922",
+   "name": "North Pemba",
+   "iso3": "TZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "official harassment or extortion is not uniformly documented for this district",
+   "explanation": "North Pemba is a Region, but the text labels the division itself 'this district', a lower administrative level; it is also called 'the island' as if equal to all of Pemba.",
+   "usage": {
+    "cost_usd": "0.000292484",
+    "input_tokens": 629,
+    "output_tokens": 871
+   },
+   "seconds": 6.0
+  },
+  {
+   "sid": "36957248B97200142584881",
+   "name": "Mwanza",
+   "iso3": "TZA",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mwanza is characterized as a second city. Assessed relative to the national picture in Tanzania, this division's role as a secondary urban center",
+   "explanation": "The record is a region of Tanzania; the text describes 'this division' as a city/secondary urban center, equating the region with its capital Mwanza.",
+   "usage": {
+    "cost_usd": "0.00012656",
+    "input_tokens": 420,
+    "output_tokens": 242
+   },
+   "seconds": 1.3
+  },
+  {
+   "sid": "14850775B15913324833724",
+   "name": "Kharkiv Oblast",
+   "iso3": "UKR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Kharkiv Oblast is a division of Ukraine characterized as a large city with active NGOs.",
+   "explanation": "The oblast (a region-level unit) is described as 'a large city', conflating the regional scale with a municipal one.",
+   "usage": {
+    "cost_usd": "0.00010136",
+    "input_tokens": 428,
+    "output_tokens": 148
+   },
+   "seconds": 0.8
+  },
+  {
+   "sid": "14850775B26941409899318",
+   "name": "Lviv Oblast",
+   "iso3": "UKR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Lviv Oblast is a western city",
+   "explanation": "The oblast (a region/province of Ukraine) is described as a city, mischaracterizing the unit's scale.",
+   "usage": {
+    "cost_usd": "0.00007952",
+    "input_tokens": 414,
+    "output_tokens": 77
+   },
+   "seconds": 0.5
+  },
+  {
+   "sid": "14850775B93300237551625",
+   "name": "Vinnytsia Oblast",
+   "iso3": "UKR",
+   "verdict": "scope_error",
+   "quoted_evidence": "Vinnytsia is a mid-sized central-western provincial centre with calmer wartime conditions than oblasts nearer the front, a functioning police and court presence... Local LGBTI infrastructure is thin: no Pride presence... and limited urban anonymity",
+   "explanation": "After correctly treating the oblast as a region, the text shifts to its capital city's urban conditions (police/courts, thin LGBTI scene, urban anonymity) and presents these as the whole oblast's picture for a visitor.",
+   "usage": {
+    "cost_usd": "0.000372564",
+    "input_tokens": 655,
+    "output_tokens": 1144
+   },
+   "seconds": 6.9
+  },
+  {
+   "sid": "14850775B41808765507575",
+   "name": "Dnipropetrovsk Oblast",
+   "iso3": "UKR",
+   "verdict": "scale_error",
+   "quoted_evidence": "this division represents a major urban centre with an established community presence",
+   "explanation": "The oblast (a region containing cities) is equated with a single major urban centre, conflating the regional unit with city scale.",
+   "usage": {
+    "cost_usd": "0.000133724",
+    "input_tokens": 429,
+    "output_tokens": 404
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "4885205B99988496879040",
+   "name": "Navoiy Region",
+   "iso3": "UZB",
+   "verdict": "scale_error",
+   "quoted_evidence": "Navoiy Region is a division of Uzbekistan characterized as a mining city",
+   "explanation": "The region is equated with a mining city; 'city' describes Navoiy Region itself rather than its capital, a scale mismatch.",
+   "usage": {
+    "cost_usd": "0.0001008",
+    "input_tokens": 430,
+    "output_tokens": 145
+   },
+   "seconds": 0.9
+  },
+  {
+   "sid": "4885205B91155372132343",
+   "name": "Tashkent",
+   "iso3": "UZB",
+   "verdict": "scale_error",
+   "quoted_evidence": "This division is the capital, where services and anonymity concentrate.",
+   "explanation": "The sub-national division is explicitly described as a capital city, conflating the region-level unit with a city/town scale.",
+   "usage": {
+    "cost_usd": "0.000144224",
+    "input_tokens": 424,
+    "output_tokens": 444
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "42786344B40280485548078",
+   "name": "Mérida",
+   "iso3": "VEN",
+   "verdict": "scale_error",
+   "quoted_evidence": "Mérida is a division of Venezuela characterized as a university city. Assessed relative to the national picture in Venezuela, it is presented as a student-oriented urban center",
+   "explanation": "The record is a state of Venezuela, but the text describes it as a city/urban center, conflating the state with its capital Mérida city.",
+   "usage": {
+    "cost_usd": "0.000078284",
+    "input_tokens": 421,
+    "output_tokens": 210
+   },
+   "seconds": 1.3
+  },
+  {
+   "sid": "42786344B77541452473448",
+   "name": "Dependencias Federales",
+   "iso3": "VEN",
+   "verdict": "scope_error",
+   "quoted_evidence": "Dependencias Federales pairs dense urban Caracas with sparsely populated federal islands and coastal dependencies",
+   "explanation": "Caracas is a separate unit (Distrito Capital), not part of Dependencias Federales; the capital's conditions are folded into the federal dependencies' profile.",
+   "usage": {
+    "cost_usd": "0.00017682",
+    "input_tokens": 665,
+    "output_tokens": 299
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "63759600B40382966221261",
+   "name": "Bắc Ninh",
+   "iso3": "VNM",
+   "verdict": "scale_error",
+   "quoted_evidence": "The province is a small, rapidly industrialising Red River Delta district adjoining Hanoi ... Small-city visibility means a visibly trans foreigner draws attention",
+   "explanation": "The unit is a province, yet it is characterised as a 'district' and as a small city whose visibility is urban-scale, confusing administrative scale.",
+   "usage": {
+    "cost_usd": "0.0001049664",
+    "input_tokens": 660,
+    "output_tokens": 186
+   },
+   "seconds": 2.0
+  },
+  {
+   "sid": "63759600B80663352659785",
+   "name": "Ho Chi Minh",
+   "iso3": "VNM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Ho Chi Minh is Vietnam's largest city",
+   "explanation": "The record is a province-level sub-national division, but the text characterizes it simply as a city, conflating the administrative unit with an urban settlement scale.",
+   "usage": {
+    "cost_usd": "0.00014896",
+    "input_tokens": 424,
+    "output_tokens": 320
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "2360587B11570115914955",
+   "name": "District of Mitrovica",
+   "iso3": "XKX",
+   "verdict": "scope_error",
+   "quoted_evidence": "District of Mitrovica is a divided city with a securitised, conservative north... it represents a distinct and more heavily controlled urban environment",
+   "explanation": "The record is a district containing rural areas; the text presents only the city of Mitrovica's conditions as those of the whole district.",
+   "usage": {
+    "cost_usd": "0.00018816",
+    "input_tokens": 426,
+    "output_tokens": 459
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "2360587B89959345704230",
+   "name": "District of Prizren",
+   "iso3": "XKX",
+   "verdict": "scale_error",
+   "quoted_evidence": "characterized as the second city",
+   "explanation": "The District of Prizren is a district-level division, but the text describes it as 'the second city', equating the whole district with a city.",
+   "usage": {
+    "cost_usd": "0.000077024",
+    "input_tokens": 416,
+    "output_tokens": 208
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "18629408B48104637123824",
+   "name": "Sanʿaʾ",
+   "iso3": "YEM",
+   "verdict": "scale_error",
+   "quoted_evidence": "Sanʿaʾ is the capital of Yemen",
+   "explanation": "The division is equated with its capital city; it then attributes city-level control conditions to the whole division while keeping a 'division' framing.",
+   "usage": {
+    "cost_usd": "0.000599084",
+    "input_tokens": 431,
+    "output_tokens": 2065
+   },
+   "seconds": 12.8
+  },
+  {
+   "sid": "88200057B51719638002761",
+   "name": "Bulawayo",
+   "iso3": "ZWE",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bulawayo is Zimbabwe's second city, historically more open.",
+   "explanation": "The record defines Bulawayo as a sub-national division, but the text characterizes it as a city rather than a province/division.",
+   "usage": {
+    "cost_usd": "0.00012824",
+    "input_tokens": 414,
+    "output_tokens": 251
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "88200057B87996012089813",
+   "name": "Harare",
+   "iso3": "ZWE",
+   "verdict": "scale_error",
+   "quoted_evidence": "As the capital, it is a large, comparatively diverse and cosmopolitan city with hotels, diplomatic missions and tourist infrastructure",
+   "explanation": "The record is a province-level division of Zimbabwe; the text describes it as 'a large, comparatively diverse and cosmopolitan city', i.e. a municipal scale unit.",
+   "usage": {
+    "cost_usd": "0.000231024",
+    "input_tokens": 660,
+    "output_tokens": 636
+   },
+   "seconds": 3.7
+  },
+  {
+   "sid": "SYN-AIA",
+   "name": "Anguilla",
+   "iso3": "AIA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Anguilla is a British Overseas Territory and the law that governs a visitor is local law; United Kingdom legislation reaches the island only where an Order in Council extends it",
+   "explanation": "The record's unit is a sub-national division of Anguilla, but the text describes the parent country/territory as a whole (its Constitution, Marriage Act, national LGBT scene), presenting the parent as the division.",
+   "usage": {
+    "cost_usd": "0.0003736264",
+    "input_tokens": 1487,
+    "output_tokens": 732
+   },
+   "seconds": 8.2
+  },
+  {
+   "sid": "SYN-SHN",
+   "name": "Saint Helena",
+   "iso3": "SHN",
+   "verdict": "scope_error",
+   "quoted_evidence": "Saint Helena is a British Overseas Territory. ... the age of consent is equalised at 16 across Saint Helena, Ascension Island and Tristan da Cunha.",
+   "explanation": "The record is the island division; the text treats it as the whole territory, presenting Ascension and Tristan da Cunha laws/marriage provisions as this division's.",
+   "usage": {
+    "cost_usd": "0.000305224",
+    "input_tokens": 1728,
+    "output_tokens": 367
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "SYN-VAT",
+   "name": "Holy See",
+   "iso3": "VAT",
+   "verdict": "scope_error",
+   "quoted_evidence": "No criminal provision in Vatican City law reaches consensual same-sex sexual activity between adults in private and non-commercial.",
+   "explanation": "The division is the Holy See; the text repeatedly attributes its laws, prisons and policies to 'Vatican City', the parent country, presenting that state as the unit itself.",
+   "usage": {
+    "cost_usd": "0.00033978",
+    "input_tokens": 1543,
+    "output_tokens": 442
+   },
+   "seconds": 1.8
+  },
+  {
+   "sid": "27671186B79778155682183",
+   "name": "Niger",
+   "iso3": "NGA",
+   "verdict": "identity_error",
+   "quoted_evidence": "Niger is an independent country with its own criminal law; the assessment below is national.",
+   "explanation": "Record is Niger State, Nigeria. Text describes the sovereign Republic of Niger (Refoundation Charter, CFA francs, Niamey, Maradi) - another place's conditions attributed to this division.",
+   "usage": {
+    "cost_usd": "0.000518724",
+    "input_tokens": 2165,
+    "output_tokens": 911
+   },
+   "seconds": 9.3
+  },
+  {
+   "sid": "19338628B22645672383103",
+   "name": "Île-de-France",
+   "iso3": "FRA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Paris holds France's densest LGBTQ infrastructure, including France's only officially organised gaybourhoods and the annual Paris Pride parade. As of 2004 the city had 140 LGBT bars, clubs, hotels, restaurants and shops.",
+   "explanation": "Substantial parts present only Paris city's venues, mayoral stabbing and infrastructure as Île-de-France's profile, conflating the capital city with the wider region.",
+   "usage": {
+    "cost_usd": "0.0002493064",
+    "input_tokens": 1331,
+    "output_tokens": 366
+   },
+   "seconds": 3.8
+  },
+  {
+   "sid": "28173009B89423349656391",
+   "name": "Stavropol Krai",
+   "iso3": "RUS",
+   "verdict": "scope_error",
+   "quoted_evidence": "The same note records systematic campaigns against LGBT+ people across this division between 2017 and 2024",
+   "explanation": "The blindSummary recasts the broader North Caucasus region (and a defender from it) as 'this division' Stavropol Krai, attributing regional conditions wholesale to the sub-unit.",
+   "usage": {
+    "cost_usd": "0.000260004",
+    "input_tokens": 899,
+    "output_tokens": 620
+   },
+   "seconds": 3.1
+  },
+  {
+   "sid": "10402087B20892132820961",
+   "name": "Berlin",
+   "iso3": "DEU",
+   "verdict": "scale_error",
+   "quoted_evidence": "recorded 723 LGBTIQ+-hostile incidents in the division's principal city in 2025",
+   "explanation": "Berlin is itself a city-state; phrasing it as a territory having a 'principal city' mischaracterizes its scale, implying incidents were limited to a capital within a larger region.",
+   "usage": {
+    "cost_usd": "0.00038024",
+    "input_tokens": 1038,
+    "output_tokens": 839
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "14911670B45290909693812",
+   "name": "Roraima",
+   "iso3": "BRA",
+   "verdict": "scope_error",
+   "quoted_evidence": "Two instruments specific to this state appear in the sources. State Ordinance No. 1,797/2023 addresses homophobia. On 9 August 2023 a law published in the Official Gazette of Boa Vista, approved by Mayor Genilson Costa of the Solidarity party, prohibited transgender athletes from competing in sports according to their gender identity.",
+   "explanation": "A municipal law of the capital city Boa Vista, enacted by its mayor, is presented as one of two instruments specific to the whole state of Roraima.",
+   "usage": {
+    "cost_usd": "0.000128964",
+    "input_tokens": 635,
+    "output_tokens": 284
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "28173009B90469334921421",
+   "name": "Perm Krai",
+   "iso3": "RUS",
+   "verdict": "scope_error",
+   "quoted_evidence": "The one region-specific finding is survey data showing that respondents in the Volga area were more closeted toward relatives than the whole-study sample, which speaks to the social climate in the region",
+   "explanation": "Survey data for the wider Volga area is labelled the region-specific finding and used to characterize Perm Krai's social climate, attributing a different (larger) unit's results to this Krai.",
+   "usage": {
+    "cost_usd": "0.00038752",
+    "input_tokens": 614,
+    "output_tokens": 1077
+   },
+   "seconds": 4.6
+  },
+  {
+   "sid": "28173009B68474107072963",
+   "name": "Astrakhan Oblast",
+   "iso3": "RUS",
+   "verdict": "scope_error",
+   "quoted_evidence": "Penalties applicable in Astrakhan Oblast are substantial. 'Gay propaganda' offences carry fines up to 400,000 roubles",
+   "explanation": "Nearly all evidence (national bans, Supreme Court rulings, Home Office/State Dept advisories) describes Russia as a whole, then attributes those country-wide conditions to the oblast as if division-specific.",
+   "usage": {
+    "cost_usd": "0.000322584",
+    "input_tokens": 1476,
+    "output_tokens": 555
+   },
+   "seconds": 3.0
+  },
+  {
+   "sid": "28173009B59972517059449",
+   "name": "Penza Oblast",
+   "iso3": "RUS",
+   "verdict": "scope_error",
+   "quoted_evidence": "the national assessment for the Russian Federation applies",
+   "explanation": "Text substitutes the parent country's national assessment for the division, presenting Russia's conditions as those of Penza Oblast.",
+   "usage": {
+    "cost_usd": "0.000070444",
+    "input_tokens": 427,
+    "output_tokens": 179
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "28173009B24080199016459",
+   "name": "Amur Oblast",
+   "iso3": "RUS",
+   "verdict": "scope_error",
+   "quoted_evidence": "The oblast stands under the national framework of Russia, and the national assessment applies.",
+   "explanation": "Text substitutes Russia's national assessment for Amur Oblast's own conditions, presenting the parent country's scope as the division's.",
+   "usage": {
+    "cost_usd": "0.00012894",
+    "input_tokens": 441,
+    "output_tokens": 240
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "36201628B90061603712355",
+   "name": "Davao Region",
+   "iso3": "PHL",
+   "verdict": "scope_error",
+   "quoted_evidence": "Custody practice specific to the region is documented. ... Placement of trans detainees in Davao thus takes the form of administrative segregation rather than gender-matched accommodation.",
+   "explanation": "Jail/custody measures documented only for Davao City are presented as conditions across the whole Davao Region, generalizing the capital's practices to the division.",
+   "usage": {
+    "cost_usd": "0.00021574",
+    "input_tokens": 771,
+    "output_tokens": 385
+   },
+   "seconds": 1.6
+  },
+  {
+   "sid": "47653553B71653813080592",
+   "name": "RegiÃ³n de Atacama",
+   "iso3": "CHL",
+   "verdict": "scale_error",
+   "quoted_evidence": "the Municipality of Atacama convened the commune's first Pride march",
+   "explanation": "A commune/municipality-level event is presented as the authority of the whole Región de Atacama; the blind version renders it 'the municipal authority of this division', equating the region with a municipality.",
+   "usage": {
+    "cost_usd": "0.00066864",
+    "input_tokens": 762,
+    "output_tokens": 2007
+   },
+   "seconds": 12.1
+  },
+  {
+   "sid": "1875124B58976419670313",
+   "name": "Tacna",
+   "iso3": "PER",
+   "verdict": "scale_error",
+   "quoted_evidence": "This city stands under this country's national framework; national law ... applies here as it does across the country and is set out under this country.",
+   "explanation": "Tacna is a region of Peru, not a city; both texts present it at city scale ('this city', 'in central Tacna'/'the city centre'), equating the division with its capital.",
+   "usage": {
+    "cost_usd": "0.000262384",
+    "input_tokens": 964,
+    "output_tokens": 596
+   },
+   "seconds": 3.5
+  },
+  {
+   "sid": "13589884B14692588923622",
+   "name": "Vichada",
+   "iso3": "COL",
+   "verdict": "scope_error",
+   "quoted_evidence": "the national assessment carried by the parent record applies",
+   "explanation": "The text substitutes the parent country's national assessment for Vichada's own, presenting Colombia's conditions as the division's.",
+   "usage": {
+    "cost_usd": "0.0000917",
+    "input_tokens": 449,
+    "output_tokens": 103
+   },
+   "seconds": 0.7
+  },
+  {
+   "sid": "1875124B5969368354394",
+   "name": "Huánuco",
+   "iso3": "PER",
+   "verdict": "scope_error",
+   "quoted_evidence": "the national assessment for Peru applies to visitors to the department",
+   "explanation": "Parent-country (Peru) national assessment is applied as if it described the department of Huánuco, substituting the country's conditions for the division's.",
+   "usage": {
+    "cost_usd": "0.0001645",
+    "input_tokens": 475,
+    "output_tokens": 350
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "25984515B679661827679",
+   "name": "Batman",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Batman is a small, socially conservative, Kurdish-majority provincial city in south-eastern Turkey",
+   "explanation": "The record is Batman Province; the text recasts the whole division as a single small city, equating the province with its capital.",
+   "usage": {
+    "cost_usd": "0.000177124",
+    "input_tokens": 623,
+    "output_tokens": 462
+   },
+   "seconds": 4.0
+  },
+  {
+   "sid": "25984515B96039700866385",
+   "name": "Bolu",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "an inland, socially conservative Anatolian province on the Istanbul–Ankara corridor and a university town",
+   "explanation": "The province is equated with a town (its capital Bolu), labelling the division at the wrong administrative scale despite otherwise provincial framing.",
+   "usage": {
+    "cost_usd": "0.00037002",
+    "input_tokens": 617,
+    "output_tokens": 1013
+   },
+   "seconds": 5.1
+  },
+  {
+   "sid": "25984515B5155931768473",
+   "name": "Bursa",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "Bursa is a large, socially conservative industrial and pilgrimage-tourism city",
+   "explanation": "The record is Bursa province (Turkey), but the text repeatedly characterizes the whole division as a city, equating it with its capital.",
+   "usage": {
+    "cost_usd": "0.000144224",
+    "input_tokens": 622,
+    "output_tokens": 345
+   },
+   "seconds": 3.2
+  },
+  {
+   "sid": "25984515B73855241915553",
+   "name": "Elazığ",
+   "iso3": "TUR",
+   "verdict": "scope_error",
+   "quoted_evidence": "The province's own documented signal is a state-facilitated anti-LGBT mobilisation staged in its central public space",
+   "explanation": "A single rally in the capital's square is presented as the whole province's documented condition; the province is characterised by its capital's event.",
+   "usage": {
+    "cost_usd": "0.00026502",
+    "input_tokens": 835,
+    "output_tokens": 529
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "25984515B40631498613339",
+   "name": "Kars",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "a visibly trans foreigner has little anonymity in a small city where word travels quickly ... the low volume of policing in a small town",
+   "explanation": "The text calls Kars a province, then twice characterizes the division itself as a small city/town, conflating provincial scale with urban scale rather than describing its capital separately.",
+   "usage": {
+    "cost_usd": "0.00062398",
+    "input_tokens": 651,
+    "output_tokens": 1903
+   },
+   "seconds": 17.4
+  },
+  {
+   "sid": "25984515B43172796860329",
+   "name": "Kayseri",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "A socially conservative, religiously and nationalist-leaning provincial capital in central Anatolia ... places the city slightly below the national baseline.",
+   "explanation": "The record is Kayseri province, but the text calls it 'provincial capital', 'this/the city' and 'for the city', equating the division with its capital rather than describing the whole province.",
+   "usage": {
+    "cost_usd": "0.000231724",
+    "input_tokens": 653,
+    "output_tokens": 642
+   },
+   "seconds": 5.7
+  },
+  {
+   "sid": "25984515B95251525471141",
+   "name": "Uşak",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "It is a small, conservative inland provincial center",
+   "explanation": "The record is a province (Uşak), but the text characterizes it as a small 'provincial center' — i.e., a town/city — equating the division with its urban center.",
+   "usage": {
+    "cost_usd": "0.00015834",
+    "input_tokens": 503,
+    "output_tokens": 314
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "25490228B43154843394848",
+   "name": "Comunidad de Madrid",
+   "iso3": "ESP",
+   "verdict": "scale_error",
+   "quoted_evidence": "This city stands under this country's national framework for legal gender recognition, with this division's own statute as a layer beneath it.",
+   "explanation": "Comunidad de Madrid is an autonomous community, not a city, yet the text calls it 'This city'/'Madrid' as an urban centre and cites the capital's city government, Chueca and COGAM as the division's own.",
+   "usage": {
+    "cost_usd": "0.000479524",
+    "input_tokens": 1145,
+    "output_tokens": 1281
+   },
+   "seconds": 4.7
+  },
+  {
+   "sid": "1875124B65618634887963",
+   "name": "Lima",
+   "iso3": "PER",
+   "verdict": "scale_error",
+   "quoted_evidence": "The capital city stands under the national framework of this country",
+   "explanation": "The record is a region/department-level division, but the blindSummary identifies it as 'the capital city' (and airport/capital framing), conflating the division with a city scale, while elsewhere calling it a department.",
+   "usage": {
+    "cost_usd": "0.000638844",
+    "input_tokens": 1369,
+    "output_tokens": 1738
+   },
+   "seconds": 11.5
+  },
+  {
+   "sid": "25984515B47806653651907",
+   "name": "Ankara",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "the sources record no Ankara-level law or municipal measure, and the city's distinct exposure is institutional",
+   "explanation": "The sub-national division is repeatedly described as 'the city'/'city-level', equating the Ankara division with its capital city rather than the province-level unit.",
+   "usage": {
+    "cost_usd": "0.000484844",
+    "input_tokens": 1253,
+    "output_tokens": 1246
+   },
+   "seconds": 7.0
+  },
+  {
+   "sid": "25984515B12971548112787",
+   "name": "Eskişehir",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "even in a university city, local authorities have suppressed the local Pride event. For a trans visitor, the documented exposure in Eskişehir is assembly and identity checks at LGBT-related gatherings rather than any city-level criminal provision.",
+   "explanation": "Eskişehir is a province; the text repeatedly frames the whole division as a city ('a university city', 'city-level criminal provision'), i.e., the wrong administrative scale.",
+   "usage": {
+    "cost_usd": "0.000157104",
+    "input_tokens": 704,
+    "output_tokens": 350
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "25984515B18786507826220",
+   "name": "İstanbul",
+   "iso3": "TUR",
+   "verdict": "scale_error",
+   "quoted_evidence": "This city sits under the national framework in force across this country; ... What is specific to the city is the assembly ban and the policing of trans women on its streets.",
+   "explanation": "The record's unit is the province-level division of İstanbul, but the text identifies it as 'this city'/'the city', equating the division with the municipality itself.",
+   "usage": {
+    "cost_usd": "0.000241664",
+    "input_tokens": 1132,
+    "output_tokens": 438
+   },
+   "seconds": 2.6
+  }
+ ],
+ "ok": [
+  {
+   "sid": "66186276B48953429733047",
+   "name": "Idaho",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Idaho as a U.S. state passing a state law, with state-level governor, ACLU of Idaho, and state plaintiffs.",
+   "usage": {
+    "cost_usd": "0.0001211",
+    "input_tokens": 719,
+    "output_tokens": 73
+   },
+   "seconds": 6.6
+  },
+  {
+   "sid": "66186276B41335105066757",
+   "name": "Louisiana",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Louisiana as a state; Benton/New Orleans incidents are flagged as local detail within it, not as the whole unit.",
+   "usage": {
+    "cost_usd": "0.00026278",
+    "input_tokens": 1589,
+    "output_tokens": 144
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "66186276B29106115751815",
+   "name": "Texas",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Texas as a state of the United States, with state-level statutes, agencies, and cities correctly attributed to that scale.",
+   "usage": {
+    "cost_usd": "0.00033404",
+    "input_tokens": 2178,
+    "output_tokens": 104
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "66186276B52324970173776",
+   "name": "Tennessee",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "The texts consistently describe Tennessee's state-level statutes, courts, and legislature as a U.S. state; no mischaracterization of unit or scale.",
+   "usage": {
+    "cost_usd": "0.00048118",
+    "input_tokens": 3155,
+    "output_tokens": 141
+   },
+   "seconds": 1.4
+  },
+  {
+   "sid": "66186276B64014601259366",
+   "name": "Kansas",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Kansas as a U.S. state with its own legislature, governor, courts, and agencies; no unit/scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.00025886",
+    "input_tokens": 1637,
+    "output_tokens": 106
+   },
+   "seconds": 6.3
+  },
+  {
+   "sid": "66186276B69138566591314",
+   "name": "Mississippi",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Mississippi as a state of the US; laws, courts, cities and state offices all correctly attributed to state scale.",
+   "usage": {
+    "cost_usd": "0.00032256",
+    "input_tokens": 2138,
+    "output_tokens": 83
+   },
+   "seconds": 0.8
+  },
+  {
+   "sid": "66186276B83300161667341",
+   "name": "Oklahoma",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "",
+   "usage": {
+    "cost_usd": "0.00051086",
+    "input_tokens": 3487,
+    "output_tokens": 81
+   },
+   "seconds": 5.2
+  },
+  {
+   "sid": "66186276B98021244841737",
+   "name": "Alabama",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Alabama as a US state, distinguishing state laws, counties, municipalities, and federal framework appropriately.",
+   "usage": {
+    "cost_usd": "0.00039452",
+    "input_tokens": 2634,
+    "output_tokens": 92
+   },
+   "seconds": 1.9
+  },
+  {
+   "sid": "66186276B82803899326534",
+   "name": "Indiana",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly identifies Indiana as a U.S. state and attributes state-level laws, agencies, and courts to it; city and federal references are properly nested within the state scope.",
+   "usage": {
+    "cost_usd": "0.0002670864",
+    "input_tokens": 1986,
+    "output_tokens": 102
+   },
+   "seconds": 1.7
+  },
+  {
+   "sid": "66186276B31593004124297",
+   "name": "Utah",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Utah as a state, with city-level detail (Salt Lake City flag) correctly framed as a sub-area, not the whole unit.",
+   "usage": {
+    "cost_usd": "0.00043106",
+    "input_tokens": 2861,
+    "output_tokens": 109
+   },
+   "seconds": 2.9
+  },
+  {
+   "sid": "66186276B22881275445497",
+   "name": "North Dakota",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Texts consistently treat North Dakota as a state within the US; sub-units (Grand Forks, tribal reservation) are explicitly labeled as such. No unit/scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.00034584",
+    "input_tokens": 1904,
+    "output_tokens": 96
+   },
+   "seconds": 2.6
+  },
+  {
+   "sid": "66186276B38006515706420",
+   "name": "South Dakota",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats South Dakota as a state: legislature, state courts, governor, and Sioux Falls correctly presented as a city within it. No unit/scale confusion.",
+   "usage": {
+    "cost_usd": "0.00027762",
+    "input_tokens": 1779,
+    "output_tokens": 102
+   },
+   "seconds": 2.1
+  },
+  {
+   "sid": "66186276B10933057601622",
+   "name": "Wyoming",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "The text consistently treats Wyoming as a state of the United States, with state legislation, state offices, and local cities correctly distinguished. No unit or scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.0003143",
+    "input_tokens": 2103,
+    "output_tokens": 71
+   },
+   "seconds": 0.8
+  },
+  {
+   "sid": "66186276B86295910312663",
+   "name": "Arkansas",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Arkansas as a U.S. state; sub-areas (Little Rock, Pulaski County, Fayetteville) are properly framed as within it, no unit/scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.0002985864",
+    "input_tokens": 2209,
+    "output_tokens": 103
+   },
+   "seconds": 10.4
+  },
+  {
+   "sid": "66186276B76680759932915",
+   "name": "Ohio",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly identifies Ohio as a US state and discusses its statutes, courts, and agencies at state level; no unit/scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.00027454",
+    "input_tokens": 1825,
+    "output_tokens": 68
+   },
+   "seconds": 1.0
+  },
+  {
+   "sid": "66186276B63937528568220",
+   "name": "Iowa",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Iowa as a U.S. state; capital and cities are referenced as sub-areas, not equated with the state.",
+   "usage": {
+    "cost_usd": "0.0000838264",
+    "input_tokens": 751,
+    "output_tokens": 65
+   },
+   "seconds": 2.3
+  },
+  {
+   "sid": "66186276B79689460185872",
+   "name": "South Carolina",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "",
+   "usage": {
+    "cost_usd": "0.0001183",
+    "input_tokens": 669,
+    "output_tokens": 88
+   },
+   "seconds": 1.1
+  },
+  {
+   "sid": "66186276B65591139260314",
+   "name": "Florida",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text consistently treats Florida as a U.S. state within the national framework; no city/district conflation, no sub-area or wrong unit presented as the whole.",
+   "usage": {
+    "cost_usd": "0.00044968",
+    "input_tokens": 3068,
+    "output_tokens": 72
+   },
+   "seconds": 1.5
+  },
+  {
+   "sid": "66186276B73402293045483",
+   "name": "Nebraska",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Nebraska as a state, referencing state agencies, legislature, state courts and municipal sub-areas without conflating unit or scale.",
+   "usage": {
+    "cost_usd": "0.0004711",
+    "input_tokens": 3167,
+    "output_tokens": 99
+   },
+   "seconds": 1.2
+  },
+  {
+   "sid": "66186276B22971435435932",
+   "name": "Kentucky",
+   "iso3": "USA",
+   "verdict": "ok",
+   "quoted_evidence": "",
+   "explanation": "Text correctly treats Kentucky as a state, citing state statutes, state agencies, and statewide scope throughout; no unit/scale mischaracterization.",
+   "usage": {
+    "cost_usd": "0.0003538864",
+    "input_tokens": 2626,
+    "output_tokens": 92
+   },
+   "seconds": 2.9
+  }
+ ]
+}
