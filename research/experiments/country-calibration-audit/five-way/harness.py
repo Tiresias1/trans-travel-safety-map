@@ -1066,6 +1066,72 @@ def render_admin1_dossier(record_id: str, parent_iso: str,
     return "\n\n".join(parts)
 
 
+def render_parent_anchor_dossier(parent_iso: str, admin1: dict, countries: dict) -> str:
+    """Parent-anchor dossier in the identical ADM1 template.
+
+    Used as the partner-only reference in parent-anchor pairings: the same
+    PARENT NATIONAL FRAMEWORK block as every division dossier, then the
+    parent's own blind evidence neutralized as the "division" evidence
+    (rec_name = parent name, so parent-local facts render exactly once and
+    no parent identity or score survives neutralize()). A division with no
+    local differentiator renders the same shape, so the pairing asks only
+    whether the focal division differs from the national regime. The
+    parent's score is never shown in the dossier and the anchor is never
+    updated by callers (partner-only).
+    """
+    parent = countries.get(parent_iso)
+    if not isinstance(parent, dict):
+        raise HarnessError(f"no parent country record for {parent_iso}")
+    parent_name = str(parent.get("name") or "")
+    sibling_names = [str(r.get("name") or "") for r in admin1.values()
+                     if isinstance(r, dict) and r.get("iso3") == parent_iso
+                     and str(r.get("name") or "")]
+    score_vals = [parent.get("score"), parent.get("iterativeScore")]
+
+    def _neut_parent(value) -> str:
+        return neutralize(value, parent_name, parent_iso, parent_name,
+                          score_vals, sibling_names,
+                          division_repl="a division of this country")
+
+    def _neut_evidence(value) -> str:
+        return neutralize(value, parent_name, parent_iso, parent_name,
+                          score_vals, sibling_names)
+
+    framework = []
+    for field in PARENT_FRAMEWORK_FIELDS:
+        if _has_field(parent, field):
+            label = {"blindSummary": "ASSESSMENT",
+                     "blindTangential": "SECONDARY / SITUATIONAL FACTORS",
+                     "blindLocalsOnly": "AFFECTS RESIDENTS MORE THAN VISITORS"}[field]
+            framework.append(f"{label}\n{_neut_parent(parent.get(field))}")
+    ss = parent.get("blindSourceSummaries")
+    if isinstance(ss, list) and ss:
+        items = [_neut_parent(x) for x in ss[:PARENT_FRAMEWORK_SOURCES_CAP]
+                 if str(x).strip()]
+        items = [x for x in items if x]
+        if items:
+            framework.append("SOURCE EVIDENCE (first "
+                             f"{PARENT_FRAMEWORK_SOURCES_CAP})\n"
+                             + "\n".join(f"- {x}" for x in items))
+    parts = ["### PARENT NATIONAL FRAMEWORK "
+             "(shared context for every dossier — no score is given)\n\n"
+             + "\n\n".join(framework)]
+    evidence = [f"### DIVISION EVIDENCE\n{_neut_evidence(parent.get('blindSummary'))}"]
+    ss = parent.get("blindSourceSummaries")
+    if isinstance(ss, list) and ss:
+        items = "\n".join(f"- {_neut_evidence(x)}" for x in ss if str(x).strip())
+        items = "\n".join(line for line in items.splitlines() if line != "- ")
+        if items.strip("\n- "):
+            evidence.append(f"### SOURCE EVIDENCE\n{items}")
+    for field, label in (("blindTangential", "### SECONDARY / SITUATIONAL FACTORS"),
+                         ("blindLocalsOnly", "### AFFECTS RESIDENTS MORE THAN VISITORS"),
+                         ("blindOutOfScope", "### DELIBERATELY NOT COUNTED")):
+        if _has_field(parent, field):
+            evidence.append(f"{label}\n{_neut_evidence(parent.get(field))}")
+    parts.extend(evidence)
+    return "\n\n".join(parts)
+
+
 def build_admin1_user(slot_map: dict, parent_iso: str,
                       admin1: dict, countries: dict,
                       parent_rating=None) -> str:

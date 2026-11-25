@@ -8,6 +8,7 @@ import json
 import re
 import sys
 import unittest
+import warnings
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,6 +132,71 @@ class TestBlindingInvariants(unittest.TestCase):
                 dossier, str(rec.get("name") or ""),
                 str(countries["GBR"].get("name") or ""), "GBR", siblings)
             self.assertEqual(leaks, [], f"{rec.get('name')}: {leaks}")
+
+
+class TestDriftMonitor(unittest.TestCase):
+    """check_drift: synthetic unit tests + report-only real-data gate."""
+
+    @staticmethod
+    def _synthetic():
+        countries = {"AAA": {"score": 0.44}, "BBB": {"score": 0.50}}
+        admin1 = {
+            # group 0.06 above its parent -> must flag
+            "a1": {"iso3": "AAA", "score": 0.50},
+            "a2": {"iso3": "AAA", "score": 0.50},
+            "a3": {"iso3": "AAA", "score": 0.50},
+            # group at its parent -> must not flag
+            "b1": {"iso3": "BBB", "score": 0.50},
+            "b2": {"iso3": "BBB", "score": 0.50},
+            "b3": {"iso3": "BBB", "score": 0.50},
+        }
+        return admin1, countries
+
+    def test_flags_group_above_parent(self):
+        import check_drift
+        admin1, countries = self._synthetic()
+        report = check_drift.compute_drift(admin1, countries, threshold=0.03)
+        self.assertEqual(report["flagged"], ["AAA"])
+        row = next(r for r in report["rows"] if r["iso3"] == "AAA")
+        self.assertAlmostEqual(row["median_deviation"], 0.06)
+        self.assertAlmostEqual(row["max_abs_deviation"], 0.06)
+
+    def test_does_not_flag_group_at_parent(self):
+        import check_drift
+        admin1, countries = self._synthetic()
+        report = check_drift.compute_drift(admin1, countries, threshold=0.03)
+        self.assertNotIn("BBB", report["flagged"])
+        row = next(r for r in report["rows"] if r["iso3"] == "BBB")
+        self.assertAlmostEqual(row["median_deviation"], 0.0)
+
+    def test_real_data_report_only(self):
+        # Manual/warning-level gate: historical data may flag; never fail.
+        import check_drift
+        report = check_drift.compute_drift(load("admin1.json"),
+                                           load("countries.json"))
+        self.assertTrue(report["rows"])
+        self.assertIn("median_deviation", report["rows"][0])
+        if report["flagged"]:
+            warnings.warn(f"drift check flags {len(report['flagged'])} ISO3 "
+                          f"groups: {','.join(report['flagged'][:10])}")
+
+    def test_parent_anchor_knobs(self):
+        import global_adm1_iterative as GA
+        self.assertEqual(GA.PARENT_ANCHOR_FRACTION, 0.0)  # legacy default
+        self.assertFalse(GA.SEED_ESTIMATED_AT_PARENT)
+        self.assertTrue(GA.is_anchor_iteration(5, 0.20))
+        self.assertFalse(GA.is_anchor_iteration(4, 0.20))
+        self.assertFalse(GA.is_anchor_iteration(5, 0.0))
+        self.assertTrue(GA.is_parent_region(GA.parent_region_for("GBR")))
+        # seed provenance covers every seeded record with source + parent
+        admin1, countries = self._synthetic()
+        prov = GA.build_seed_provenance(
+            {"a1": {"iso3": "AAA", "score": 0.50, "iterativeScore": 0.51, "estimated": True}},
+            countries, {"a1:Region": 0.50}, {"a1:Region": "AAA"},
+            seed_estimated_at_parent=True)
+        rec = prov["records"]["a1:Region"]
+        self.assertEqual(rec["seed"], 0.44)  # current parent, not shipped 0.51
+        self.assertEqual(rec["seed_source"], "parent_current_score")
 
 
 if __name__ == "__main__":

@@ -51,6 +51,17 @@ Loops 4800 pairings (seeded, deterministic, seed 20261117):
     minimum 3, capped at n_iso-1), tie-break region id;
   - pick uniformly among candidates (seeded RNG), excluding an immediate
     repeat of the same unordered pair unless there is no other candidate;
+  - PARENT-ANCHOR ARM (opt-in, PARENT_ANCHOR_FRACTION, default 0.0; new
+    from-scratch runs MUST set it > 0): every round(1/fraction)-th
+    pairing (e.g. fraction 0.20 -> every 5th) pairs the focal ADM1
+    against the PARENT COUNTRY dossier rendered in the identical ADM1
+    template (harness.render_parent_anchor_dossier: parent framework +
+    neutralized parent-local evidence). The parent's state is its current
+    country score but it is NEVER updated by these pairings (partner
+    only); only the focal ADM1 is updated. With fraction 0.0, no anchor
+    pairings occur and the loop is the legacy within-ISO3 loop.
+  - slot (A/B) assignment is by a dedicated seeded RNG, independent of
+    model assignment (the old A=focal rule correlated model with slot);
   - pick exactly ONE model per pairing with per-ADM1 model-balancing: for
     the focal ADM1, choose the least-used model for that record so far,
     where usage counts pairings in which the record participated in either
@@ -102,6 +113,82 @@ REPORT_PATH = HERE / "global-adm1-iterative-report.md"
 N_ITERATIONS = 4800
 SEED = 20261117
 EXCLUDED_ISO3 = frozenset({"ASM", "GUM", "VIR", "MNP"})
+# Anti-drift knobs (see research/PIPELINE_INVARIANTS.md \u00a78). Both default
+# to legacy behavior (0.0 / False); NEW from-scratch runs MUST set
+# PARENT_ANCHOR_FRACTION > 0 and SEED_ESTIMATED_AT_PARENT=True.
+PARENT_ANCHOR_FRACTION = 0.0
+SEED_ESTIMATED_AT_PARENT = False
+PARENT_REGION_SUFFIX = "__parent__"
+
+
+def parent_region_for(iso) -> str:
+    """Pseudo-region id for the partner-only parent anchor of one ISO3."""
+    return f"{iso}:{PARENT_REGION_SUFFIX}"
+
+
+def is_parent_region(region) -> bool:
+    return isinstance(region, str) and region.endswith(":" + PARENT_REGION_SUFFIX)
+
+
+def is_anchor_iteration(iteration: int, fraction: float) -> bool:
+    """True when `iteration` (1-indexed) is a parent-anchor pairing.
+
+    Deterministic cadence: every round(1/fraction)-th pairing, so
+    fraction 0.20 anchors iterations 5, 10, 15, ... Fraction 0.0 (or
+    any non-positive value) never anchors.
+    """
+    if not fraction or fraction <= 0:
+        return False
+    every = max(int(round(1.0 / fraction)), 1)
+    return iteration % every == 0
+
+
+def _current_score(rec):
+    """iterativeScore if numeric, else score; None when neither is numeric."""
+    for field in ("iterativeScore", "score"):
+        value = (rec or {}).get(field)
+        if not isinstance(value, bool) and isinstance(value, (int, float)):
+            return float(value)
+    return None
+
+
+def build_seed_provenance(admin1, countries, initial_scores, iso_of,
+                          seed_estimated_at_parent: bool = False) -> dict:
+    """Per-record seed manifest for run scope (seed discipline, \u00a78).
+
+    Each entry records the seed value actually used, which shipped field
+    it came from, the current parent score at build time, and whether the
+    record is an ESTIMATED (no local differentiator) record. Estimated
+    records are seeded at the current parent score only when
+    seed_estimated_at_parent is True; otherwise their shipped score is
+    used verbatim and the manifest says so (legacy behavior).
+    """
+    records = {}
+    for region in sorted(initial_scores):
+        sid = region.split(":", 1)[0]
+        rec = admin1.get(sid) or {}
+        iso = iso_of.get(region)
+        parent_score = _current_score(countries.get(iso))
+        estimated = bool(rec.get("estimated"))
+        if seed_estimated_at_parent and estimated and parent_score is not None:
+            seed_value, seed_source = parent_score, "parent_current_score"
+        elif rec.get("iterativeScore") is not None:
+            seed_value, seed_source = initial_scores[region], "data/admin1.json:iterativeScore"
+        else:
+            seed_value, seed_source = initial_scores[region], "data/admin1.json:score"
+        records[region] = {
+            "seed": seed_value, "seed_source": seed_source,
+            "sid": sid, "iso3": iso,
+            "estimated": estimated,
+            "parent_score": parent_score,
+            "parent_source": "data/countries.json:iterativeScore-or-score",
+        }
+    return {
+        "source_file": "data/admin1.json",
+        "source_run": "shipped data/admin1.json scores at build time (see per-record seed_source)",
+        "seed_estimated_at_parent": bool(seed_estimated_at_parent),
+        "records": records,
+    }
 
 # Canonical neutralizer lives in harness (shared with the renderer, so an
 # unneutralized blind field can never reach a prompt). This alias keeps
@@ -241,7 +328,8 @@ def pick_model_balanced(model_rng: random.Random, focal: str,
     return tied[0]
 
 
-def build_context():
+def build_context(parent_anchor_fraction: float = PARENT_ANCHOR_FRACTION,
+                  seed_estimated_at_parent: bool = SEED_ESTIMATED_AT_PARENT):
     manifest = json.loads(
         (HERE / "frozen" / "single_rate_v4_manifest.json").read_text(encoding="utf-8"))
     models = list(manifest["models"].keys())
@@ -284,7 +372,26 @@ def build_context():
         name_of[region] = rec.get("name")
         sid_of[region] = sid
 
+    if seed_estimated_at_parent:
+        # Seed discipline: ESTIMATED records (no local differentiator)
+        # start at the CURRENT parent score, never a historical scale.
+        for region in list(initial_scores):
+            rec = admin1[sid_of[region]]
+            if not rec.get("estimated"):
+                continue
+            parent_score = _current_score(countries.get(iso_of[region]))
+            if parent_score is not None:
+                initial_scores[region] = parent_score
+
     regions = sorted(initial_scores)
+    parent_scores = {}
+    for iso, prec in countries.items():
+        score = _current_score(prec)
+        if score is not None:
+            parent_scores[iso] = score
+    seed_provenance = build_seed_provenance(
+        admin1, countries, initial_scores, iso_of,
+        seed_estimated_at_parent=seed_estimated_at_parent)
     # Parent framework text per ISO3 (blind fields only), for the
     # differentiator overlap check.
     parent_text = {}
@@ -363,6 +470,16 @@ def build_context():
                         "differentiator >=20 words and <=90% parent "
                         "word-set overlap; no-differentiator excluded from "
                         "pairing from iter10",
+        "parent_anchor_fraction": parent_anchor_fraction,
+        "parent_anchor_rule": "every round(1/fraction)-th pairing pairs the "
+                              "focal ADM1 against the parent dossier in the "
+                              "identical ADM1 template (render_parent_anchor_"
+                              "dossier); the parent anchor is partner-only "
+                              "and never updated; fraction 0.0 = legacy "
+                              "within-ISO3 loop with no cross-scale pairings",
+        "seed_estimated_at_parent": seed_estimated_at_parent,
+        "seed_provenance": seed_provenance,
+        "parent_scores": parent_scores,
     }
     return (system, base_system, regions, focal_pool, groups, iso_of,
             name_of, dossiers, initial_scores, models, manifest, scope)
@@ -454,29 +571,53 @@ def _do_one(run_dir, iteration, model_key, a_region, b_region, system, user_text
 
 
 def run(run_id: str, dry_run: bool = False, seed: int = SEED,
-        n_iterations: int = N_ITERATIONS) -> int:
+        n_iterations: int = N_ITERATIONS,
+        parent_anchor_fraction: float = PARENT_ANCHOR_FRACTION,
+        seed_estimated_at_parent: bool = SEED_ESTIMATED_AT_PARENT) -> int:
     others = check_single_writer()
     if others:
         print(f"single-writer guard: global_adm1_iterative.py already running, PID(s)={others}; refusing to launch", flush=True)
         return 2
+    if not 0.0 <= parent_anchor_fraction <= 1.0:
+        raise SystemExit(f"parent_anchor_fraction must be in [0,1], got {parent_anchor_fraction}")
     (system, base_system, regions, focal_pool, groups, iso_of,
-     name_of, dossiers, initial_scores, models, manifest, scope) = build_context()
+     name_of, dossiers, initial_scores, models, manifest, scope) = build_context(
+         parent_anchor_fraction=parent_anchor_fraction,
+         seed_estimated_at_parent=seed_estimated_at_parent)
+    parent_scores = scope.get("parent_scores", {})
+    parent_dossiers = {}  # rendered lazily, only for ISO3s that anchor
     print(f"base_system_sha256={V4.sha(base_system)} system_sha256={V4.sha(system)} "
           f"included={scope['n_included']} differentiator={scope['n_with_local_differentiator']} "
           f"no_differentiator={scope['n_no_differentiator']} "
           f"focal_eligible={scope['n_focal_eligible']} "
           f"iso3={scope['n_iso3_included']} singletons={scope['n_singleton_iso3_records']} "
+          f"parent_anchor_fraction={parent_anchor_fraction} "
+          f"seed_estimated_at_parent={seed_estimated_at_parent} "
           f"models={models} seed={seed}", flush=True)
     if dry_run:
         rng = random.Random(seed)
+        slot_rng = random.Random(seed + 7)
         model_rng = random.Random(seed + 99)
         model_usage = {r: Counter() for r in regions}
         focal = rng.choice(focal_pool)
-        partner = pick_partner(rng, focal, initial_scores, groups, iso_of, None)
+        arm = "parent_anchor" if is_anchor_iteration(1, parent_anchor_fraction) else "within_iso3"
+        partner = (parent_region_for(iso_of[focal]) if arm == "parent_anchor"
+                   else pick_partner(rng, focal, initial_scores, groups, iso_of, None))
+        slots = [focal, partner]
+        slot_rng.shuffle(slots)
         model_key = pick_model_balanced(model_rng, focal, model_usage, models)
-        print(f"dry run: scope={scope}; first focal={focal} (iso={iso_of[focal]}, "
+        print(f"dry run: scope keys={sorted(scope)}; first focal={focal} (iso={iso_of[focal]}, "
               f"candidate_k={candidate_k_for(len(groups[iso_of[focal]]))}) "
-              f"partner={partner} model={model_key}; no provider calls made", flush=True)
+              f"arm={arm} A={slots[0]} B={slots[1]} partner={partner} model={model_key}; "
+              f"no provider calls made", flush=True)
+        # Lightweight anchor check (no full render): one dossier on demand.
+        if parent_anchor_fraction > 0:
+            admin1 = H.load_admin1()
+            countries = H.load_countries()
+            text = H.render_parent_anchor_dossier(iso_of[focal], admin1, countries)
+            H.assert_user_text_clean(text, "parent-anchor dossier")
+            print(f"dry run: parent-anchor dossier for {iso_of[focal]} rendered "
+                  f"({len(text)} chars, leak-gate clean)", flush=True)
         return 0
 
     run_dir = HERE / "runs" / run_id
@@ -490,17 +631,21 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
     iterations = []
     total = Decimal("0")
     rng = random.Random(seed)
+    slot_rng = random.Random(seed + 7)
     model_rng = random.Random(seed + 99)
 
     if pair_history_path.exists():
         hist = json.loads(pair_history_path.read_text(encoding="utf-8"))
         if hist.get("seed") != seed or hist.get("run_id") != run_id:
             raise SystemExit("existing pair-history.json does not match this run/seed; refusing to resume")
+        if hist.get("parent_anchor_fraction", 0.0) != parent_anchor_fraction:
+            raise SystemExit("existing pair-history.json parent_anchor_fraction differs; refusing to resume")
         iterations = hist["iterations"]
         scores = dict(hist["running_scores"])
         update_counts = dict(hist["update_counts"])
         per_region_history = hist["per_region_history"]
         rng = _rng_state_from_json(hist["rng_state"])
+        slot_rng = _rng_state_from_json(hist["slot_rng_state"]) if "slot_rng_state" in hist else random.Random(seed + 7)
         model_rng = _rng_state_from_json(hist["model_rng_state"])
         model_usage = {r: Counter(hist["model_usage"][r]) for r in regions}
         total = Decimal(hist.get("total_usd", "0"))
@@ -513,6 +658,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                         ("iteration", "model", "status", "A_region", "B_region")
                         if k in entry} | ({"cost_usd": entry["cost_usd"]} if "cost_usd" in entry else {}))
 
+    anchor_admin1 = anchor_countries = None
+    if parent_anchor_fraction > 0:
+        anchor_admin1, anchor_countries = H.load_admin1(), H.load_countries()
     completed = len(iterations)
     for iteration in range(completed + 1, n_iterations + 1):
         prev_pair = None
@@ -520,19 +668,36 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
             last = iterations[-1]
             prev_pair = frozenset((last["A_region"], last["B_region"]))
         focal = rng.choice(focal_pool)
-        partner = pick_partner(rng, focal, scores, groups, iso_of, prev_pair)
-        a_region, b_region = focal, partner  # A=focal, B=partner
+        arm = "parent_anchor" if is_anchor_iteration(iteration, parent_anchor_fraction) else "within_iso3"
+        if arm == "parent_anchor":
+            partner = parent_region_for(iso_of[focal])
+            if partner not in parent_dossiers:
+                parent_dossiers[partner] = H.render_parent_anchor_dossier(
+                    iso_of[focal], anchor_admin1, anchor_countries)
+        else:
+            partner = pick_partner(rng, focal, scores, groups, iso_of, prev_pair)
+        # Slot (A/B) assignment: dedicated RNG, independent of the model
+        # RNG (fixes the model x slot correlation of the old A=focal rule).
+        slots = [focal, partner]
+        slot_rng.shuffle(slots)
+        a_region, b_region = slots
         model_key = pick_model_balanced(model_rng, focal, model_usage, models)
         for r in (a_region, b_region):
-            model_usage[r][model_key] += 1
-        user_text = combined_user(dossiers, a_region, b_region)
+            if not is_parent_region(r):
+                model_usage[r][model_key] += 1
+        all_dossiers = dict(dossiers)
+        all_dossiers.update(parent_dossiers)
+        user_text = combined_user(all_dossiers, a_region, b_region)
         result = _do_one(run_dir, iteration, model_key, a_region, b_region,
                          system, user_text)
         entry = {
             "iteration": iteration, "model": model_key,
+            "arm": arm, "focal": focal,
             "A_region": a_region, "B_region": b_region,
-            "A_iso3": iso_of[a_region], "B_iso3": iso_of[b_region],
-            "A_name": name_of[a_region], "B_name": name_of[b_region],
+            "A_iso3": iso_of.get(a_region, a_region.split(":", 1)[0]),
+            "B_iso3": iso_of.get(b_region, b_region.split(":", 1)[0]),
+            "A_name": name_of.get(a_region, a_region),
+            "B_name": name_of.get(b_region, b_region),
             "status": result["status"],
             "combined_user_sha256": V4.sha(user_text),
         }
@@ -545,6 +710,8 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
             entry["difference_B_minus_A"] = result["difference_B_minus_A"]
             for region, rating in ((a_region, result["A_rating"]),
                                    (b_region, result["B_rating"])):
+                if is_parent_region(region):
+                    continue  # parent anchor: partner only, never updated
                 update_counts[region] += 1
                 alpha = alpha_for_update(update_counts[region])
                 old = scores[region]
@@ -555,9 +722,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                     "rating": rating, "old_score": old, "new_score": new,
                 })
                 per_region_history[region].append({
-                    "iteration": iteration,
+                    "iteration": iteration, "arm": arm,
                     "partner_region": b_region if region == a_region else a_region,
-                    "partner_name": name_of[b_region if region == a_region else a_region],
+                    "partner_name": name_of.get(b_region if region == a_region else a_region, b_region if region == a_region else a_region),
                     "model": model_key, "rating": rating, "alpha": alpha,
                     "old_score": old, "new_score": new,
                     "update_number": update_counts[region],
@@ -569,15 +736,20 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         pair_history_path.write_text(json.dumps({
             "run_id": run_id, "seed": seed,
             "n_iterations_planned": n_iterations,
+            "parent_anchor_fraction": parent_anchor_fraction,
+            "seed_estimated_at_parent": seed_estimated_at_parent,
+            "parent_scores": parent_scores,
             "scope": scope,
             "models": models,
             "model_balancing": "per-focal least-used (participations, either slot); ties by seeded shuffle",
+            "slot_assignment": "dedicated seeded slot RNG, independent of model RNG",
             "system_sha256": V4.sha(system),
             "base_system_sha256": V4.sha(base_system),
             "running_scores": scores, "update_counts": update_counts,
             "per_region_history": per_region_history,
             "model_usage": {r: dict(model_usage[r]) for r in regions},
             "rng_state": _rng_state_to_json(rng),
+            "slot_rng_state": _rng_state_to_json(slot_rng),
             "model_rng_state": _rng_state_to_json(model_rng),
             "total_usd": str(total),
             "iterations": iterations,
@@ -596,6 +768,7 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
             cost_by_model[e["model"]] = cost_by_model.get(e["model"], Decimal("0")) + Decimal(e["cost_usd"])
     model_usage_serial = {r: {m: int(model_usage[r].get(m, 0)) for m in models}
                           for r in regions}
+    n_anchor = sum(1 for e in iterations if e.get("arm") == "parent_anchor")
     ledger = {
         "run_id": run_id,
         "created": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -603,6 +776,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         "effort": "medium",
         "attempts_per_pairing": 1,
         "seed": seed,
+        "parent_anchor_fraction": parent_anchor_fraction,
+        "n_anchor_pairings": n_anchor,
+        "seed_estimated_at_parent": seed_estimated_at_parent,
         "scope": scope,
         "candidate_rule": "nearest max(int(0.10*n_iso3),3) capped at n_iso3-1 siblings within ISO3 by current running score, tie-break region id",
         "models": models,
@@ -675,6 +851,11 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         "instrument": "single-rating-anchored-v4-structured (combined A/B, iterative pairwise)",
         "effort": "medium",
         "seed": seed,
+        "parent_anchor_fraction": parent_anchor_fraction,
+        "n_anchor_pairings": n_anchor,
+        "seed_estimated_at_parent": seed_estimated_at_parent,
+        "parent_scores": parent_scores,
+        "slot_assignment": "dedicated seeded slot RNG, independent of model RNG",
         "scope": scope,
         "candidate_rule": "nearest max(int(0.10*n_iso3),3) capped at n_iso3-1 siblings within ISO3 by current running score, tie-break region id",
         "models": models,
@@ -748,7 +929,16 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                  f"division-level record is not evidence of non-application; 'not "
                  f"inherited' reasoning is forbidden).")
     lines.append(f"- Initial scores: `iterativeScore` if present, else `score`, per record from "
-                 f"`data/admin1.json` (site data not overwritten).")
+                 f"`data/admin1.json` (site data not overwritten). Per-record seed provenance "
+                 f"(seed value, source field, parent score, estimated flag) is in aggregate "
+                 f"`scope.seed_provenance.records`; ESTIMATED records were seeded at the current "
+                 f"parent score: {seed_estimated_at_parent}.")
+    lines.append(f"- Parent-anchor arm: fraction {parent_anchor_fraction} "
+                 f"({n_anchor} anchor pairings of {len(iterations)}; every "
+                 f"round(1/fraction)-th pairing vs the parent dossier in identical ADM1 "
+                 f"format, partner-only, never updated; fraction 0.0 = no cross-scale pairings).")
+    lines.append("- Slot (A/B) assignment: dedicated seeded RNG, independent of model "
+                 "assignment (no model x slot correlation).")
     lines.append(f"- Single-writer guard: `global_adm1_iterative.py` refuses to launch if another "
                  f"such process is running (reports PID).")
     lines.append("")
@@ -799,8 +989,13 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--seed", type=int, default=SEED)
     ap.add_argument("--n-iterations", type=int, default=N_ITERATIONS)
+    ap.add_argument("--parent-anchor-fraction", type=float, default=PARENT_ANCHOR_FRACTION)
+    ap.add_argument("--seed-estimated-at-parent", action="store_true",
+                    default=SEED_ESTIMATED_AT_PARENT)
     a = ap.parse_args()
-    return run(a.run_id, dry_run=a.dry_run, seed=a.seed, n_iterations=a.n_iterations)
+    return run(a.run_id, dry_run=a.dry_run, seed=a.seed, n_iterations=a.n_iterations,
+               parent_anchor_fraction=a.parent_anchor_fraction,
+               seed_estimated_at_parent=a.seed_estimated_at_parent)
 
 
 if __name__ == "__main__":

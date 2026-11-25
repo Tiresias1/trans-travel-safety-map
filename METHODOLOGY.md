@@ -149,6 +149,20 @@ Western Sahara polygon from Natural Earth (public domain).
 
 Research notes live in [`research/`](research/).
 
+### Cross-scale calibration
+
+Regional scores are calibrated against the national assessment as well as
+against sibling regions. In the pairwise refinement, most comparisons pair
+a region with its closest-score counterparts in the same country, but a
+fixed share of comparisons pair the region against the national assessment
+itself, presented in the same dossier format as a regional assessment
+(national framework plus the national assessment's own evidence, with no
+score shown). The national score is not moved by these comparisons; they
+test whether the region's assessment actually differs from the national
+one. Keeping a standing comparison against the country as a whole, rather
+than only against other regions, is what keeps regional scores tied to
+the scale the country assessment sits on.
+
 ## Scores and calibration
 
 Scores are obtained by passing this [ratings rubric](research/experiments/country-calibration-audit/five-way/single_rate_v4.py) and the [synthetic anchors](research/experiments/country-calibration-audit/anchors/synthetic_anchors_v4.md) to a panel of judge models alongside blinded research dossiers. Initial ratings are then refined by iterative pairwise comparison: regions are repeatedly paired against their closest-score local counterparts and rerated in a combined A/B prompt, and both running scores are updated with a decaying running-average weight. Model selection is balanced per region so that no single judge dominates any one region's comparisons.

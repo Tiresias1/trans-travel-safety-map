@@ -37,8 +37,15 @@ schedule (per-country update number, 1-indexed):
   updates 21-25: 0.92*old + 0.08*new
   updates 26+:   0.95*old + 0.05*new
 
-A is the focal country, B is the partner (mapping recorded only outside the
-prompt). Saves runs/countries-iterative-pairwise-v2-20261116/ artifacts
+Slot (A/B) assignment is by a dedicated seeded RNG, independent of model
+assignment (no model x slot correlation). There is no parent scale above
+countries, so no parent-anchor arm applies here (PARENT_ANCHOR_FRACTION
+is defined for parity with global_adm1_iterative.py and stays 0.0; cross-
+scale anchoring for ADM1 runs lives in global_adm1_iterative.py).
+Initial scores carry seed provenance in the run scope (source file +
+per-country seed value; see build_context).
+A/B slots are assigned by the dedicated slot RNG (mapping recorded only
+outside the prompt). Saves runs/countries-iterative-pairwise-v2-20261116/ artifacts
 (attempt/content/result per iteration, ledger, pair-history.json) and
 aggregate analysis/countries_iterative_pairwise_v2.json plus
 countries-iterative-pairwise-v2-report.md. Resume-safe: completed iterations
@@ -70,6 +77,8 @@ AGGREGATE_PATH = HERE / "analysis" / "countries_iterative_pairwise_v2.json"
 REPORT_PATH = HERE / "countries-iterative-pairwise-v2-report.md"
 N_ITERATIONS = 720
 SEED = 20261116
+# No parent scale above countries: the parent-anchor arm does not apply.
+PARENT_ANCHOR_FRACTION = 0.0
 N_COUNTRIES = 233
 CANDIDATE_K = max(int(0.10 * N_COUNTRIES), 5)  # = 23
 
@@ -157,11 +166,18 @@ def build_context():
     initial_scores = v1["final_running_scores"]
     if set(initial_scores) != set(regions):
         raise RuntimeError("v1 final_running_scores do not cover the 233 regions")
+    seed_provenance = {
+        "source_file": "analysis/countries_iterative_pairwise.json",
+        "source_run": "countries iterative pairwise v1 (final_running_scores)",
+        "records": {r: {"seed": initial_scores[r],
+                        "seed_source": "analysis/countries_iterative_pairwise.json:final_running_scores"}
+                    for r in regions},
+    }
     dossiers = {r: NHRI._dossier_from_cell(cell_by_region[r]) for r in regions}
     models = list(manifest["models"].keys())
     if len(models) != 7:
         raise RuntimeError(f"expected 7 models, got {models}")
-    return system, base_system, regions, dossiers, initial_scores, models, manifest
+    return system, base_system, regions, dossiers, initial_scores, models, manifest, seed_provenance
 
 
 def combined_user(dossiers, a_region, b_region):
@@ -241,18 +257,22 @@ def _do_one(run_dir, iteration, model_key, a_region, b_region, system, user_text
 
 def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         n_iterations: int = N_ITERATIONS) -> int:
-    system, base_system, regions, dossiers, initial_scores, models, manifest = build_context()
+    (system, base_system, regions, dossiers, initial_scores, models,
+     manifest, seed_provenance) = build_context()
     print(f"base_system_sha256={V4.sha(base_system)} system_sha256={V4.sha(system)} "
           f"countries={len(regions)} candidate_k={CANDIDATE_K} models={models} seed={seed}")
     if dry_run:
         rng = random.Random(seed)
+        slot_rng = random.Random(seed + 7)
         model_rng = random.Random(seed + 99)
         model_usage = {r: Counter() for r in regions}
         focal = rng.choice(regions)
         partner = pick_partner(rng, focal, initial_scores, None)
+        slots = [focal, partner]
+        slot_rng.shuffle(slots)
         model_key = pick_model_balanced(model_rng, focal, model_usage, models)
-        print(f"dry run: first focal={focal} partner={partner} model={model_key}; "
-              f"no provider calls made")
+        print(f"dry run: first focal={focal} A={slots[0]} B={slots[1]} "
+              f"partner={partner} model={model_key}; no provider calls made")
         return 0
 
     run_dir = HERE / "runs" / run_id
@@ -266,6 +286,7 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
     iterations = []
     total = Decimal("0")
     rng = random.Random(seed)
+    slot_rng = random.Random(seed + 7)
     model_rng = random.Random(seed + 99)
 
     if pair_history_path.exists():
@@ -277,6 +298,7 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         update_counts = dict(hist["update_counts"])
         per_country_history = hist["per_state_history"]
         rng = _rng_state_from_json(hist["rng_state"])
+        slot_rng = _rng_state_from_json(hist["slot_rng_state"]) if "slot_rng_state" in hist else random.Random(seed + 7)
         model_rng = _rng_state_from_json(hist["model_rng_state"])
         model_usage = {r: Counter(hist["model_usage"][r])
                        for r in regions}
@@ -298,7 +320,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
             prev_pair = frozenset((last["A_region"], last["B_region"]))
         focal = rng.choice(regions)
         partner = pick_partner(rng, focal, scores, prev_pair)
-        a_region, b_region = focal, partner  # A=focal, B=partner
+        slots = [focal, partner]
+        slot_rng.shuffle(slots)  # dedicated RNG, independent of model RNG
+        a_region, b_region = slots
         model_key = pick_model_balanced(model_rng, focal, model_usage, models)
         for r in (a_region, b_region):
             model_usage[r][model_key] += 1
@@ -343,6 +367,8 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
                        | ({"cost_usd": entry["cost_usd"]} if "cost_usd" in entry else {}))
         pair_history_path.write_text(json.dumps({
             "run_id": run_id, "seed": seed, "candidate_k": CANDIDATE_K,
+            "parent_anchor_fraction": PARENT_ANCHOR_FRACTION,
+            "seed_provenance": seed_provenance,
             "n_iterations_planned": n_iterations,
             "models": models,
             "model_balancing": "per-focal least-used (participations, either slot); ties by seeded shuffle",
@@ -352,6 +378,7 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
             "per_state_history": per_country_history,
             "model_usage": {r: dict(model_usage[r]) for r in regions},
             "rng_state": _rng_state_to_json(rng),
+            "slot_rng_state": _rng_state_to_json(slot_rng),
             "model_rng_state": _rng_state_to_json(model_rng),
             "total_usd": str(total),
             "iterations": iterations,
@@ -377,6 +404,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         "effort": "medium",
         "attempts_per_pairing": 1,
         "seed": seed,
+        "parent_anchor_fraction": PARENT_ANCHOR_FRACTION,
+        "seed_provenance": seed_provenance,
+        "slot_assignment": "dedicated seeded slot RNG, independent of model RNG",
         "candidate_k": CANDIDATE_K,
         "candidate_rule": "nearest max(int(0.10*233),5)=23 countries by current running score, tie-break country code",
         "models": models,
@@ -439,6 +469,9 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
         "instrument": "single-rating-anchored-v4-structured (combined A/B, iterative pairwise v2)",
         "effort": "medium",
         "seed": seed,
+        "parent_anchor_fraction": PARENT_ANCHOR_FRACTION,
+        "seed_provenance": seed_provenance,
+        "slot_assignment": "dedicated seeded slot RNG, independent of model RNG",
         "candidate_k": CANDIDATE_K,
         "candidate_rule": "nearest max(int(0.10*233),5)=23 countries by current running score, tie-break country code",
         "models": models,
@@ -475,6 +508,11 @@ def run(run_id: str, dry_run: bool = False, seed: int = SEED,
     lines.append(f"- Models (7): {', '.join(models)}.")
     lines.append(f"- Model balancing: per focal country, least-used model for that country "
                  f"so far (participations in either slot); ties by seeded shuffle.")
+    lines.append("- Slot (A/B) assignment: dedicated seeded RNG, independent of model "
+                 "assignment. Parent-anchor arm: not applicable (no parent scale above "
+                 "countries; PARENT_ANCHOR_FRACTION=0.0). Seed provenance: per-country "
+                 "seed values from `analysis/countries_iterative_pairwise.json` "
+                 "(`final_running_scores`) are in aggregate `seed_provenance.records`.")
     lines.append(f"- Base system sha256: `{V4.sha(base_system)}`; "
                  f"directive-augmented system sha256: `{V4.sha(system)}`.")
     lines.append(f"- Initial scores: v1 `final_running_scores` "

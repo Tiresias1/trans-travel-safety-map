@@ -100,6 +100,20 @@ instrument because:
 The v3 prompt therefore treats identity inference as non-evidence but does not
 pretend that factual de-anonymisation is impossible.
 
+## Cross-scale (parent-anchor) calibration
+
+ADM1 iterative pairwise runs carry a parent-anchor arm (see also
+`global_adm1_iterative.py` and PIPELINE_INVARIANTS §8): a fixed fraction
+`PARENT_ANCHOR_FRACTION` (default 0.0, preserving legacy runs; new
+from-scratch runs MUST set it > 0, e.g. 0.20) of pairings compare the
+focal ADM1 against the parent country dossier rendered in the identical
+ADM1 template (`harness.render_parent_anchor_dossier`: shared parent
+framework + neutralized parent-local evidence). The parent anchor's state
+is its current country score; it is partner-only and never updated. Slot
+(A/B) assignment uses a dedicated seeded RNG independent of model
+assignment. `check_drift.py` (report-only; `--strict` to fail) reports
+per-ISO3 median-vs-parent deviation and flags groups above 0.03.
+
 ## Deployment status
 
 The map values currently live are the earlier non-v3 ensembles. This method

@@ -98,3 +98,42 @@ the local differences from the national baseline (conservatism, rule of law,
 urban/rural, tourism, enforcement geography) which becomes the region's
 summary. This single-model exception is deliberate and documented; dossier
 regions keep the multi-model panel.
+
+## 8. Drift discipline (2026-11-24)
+
+Within-country pairwise runs once drifted as a closed loop: the UK nations
+ended ~0.055 above their parent (median ~0.492 vs GBR 0.438) from ~70%
+seed legacy plus ~30% closed-loop drift. Pairings were within-ISO3 only,
+so each group's fixed point was its own draw mean — structurally
+unclosable, with zero cross-scale pairings to pull it back toward the
+parent. The UK nations fix pilot repaired that instance (parent-anchored
+reseed + format-parity pairwise); the rules below prevent recurrence on a
+from-scratch rerun.
+
+- **(a) No closed loops.** Every ADM1 pairwise run MUST include
+  parent-anchor pairings: a fixed fraction (`PARENT_ANCHOR_FRACTION > 0`,
+  e.g. 0.20 — every 5th pairing) pairs the focal ADM1 against the parent
+  country dossier rendered in the identical ADM1 template (parent
+  framework + neutralized parent-local evidence;
+  `harness.render_parent_anchor_dossier`). The parent anchor is
+  partner-only: its state is its current country score and it is NEVER
+  updated by these pairings. Default `PARENT_ANCHOR_FRACTION = 0.0`
+  preserves legacy behavior for old runs; that default is NOT a licence
+  for new runs. The fraction and resulting anchor count are recorded in
+  run scope/report/ledger.
+- **(b) Seeds must be parent-current with provenance.** Any run that
+  starts from shipped scores documents per-record provenance (seed value
+  + source field/run + parent score at build time) in its scope
+  (`scope.seed_provenance`). ESTIMATED records (no local differentiator)
+  are seeded at the CURRENT parent score
+  (`--seed-estimated-at-parent`), never at a historical national scale.
+- **(c) Drift check before any sync.** Run
+  `five-way/check_drift.py` (report-only by default; `--strict` fails)
+  over `data/admin1.json` + `data/countries.json`: per ISO3 it reports
+  median ADM1 score vs parent score and max |region − parent|, flagging
+  groups whose median deviation exceeds 0.03 (configurable). A flagged
+  group is not synced until the drift is explained or re-anchored.
+- **Slot/model independence.** A/B slot assignment uses a dedicated
+  seeded RNG, independent of model assignment (the old A=focal rule
+  correlated model with slot).
+
