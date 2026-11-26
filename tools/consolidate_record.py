@@ -118,6 +118,17 @@ RULES FOR THIS PASS (consolidation, not compression):
    the inventory holds no region-specific facts, the summary is one sentence:
    that no region-specific signal was identified and the national assessment
    applies. The full national layer belongs to the parent's own record.
+   ADMINISTRATIVE LEVEL (scope/scale prevention, 2026-11-25) — this record
+   is ONE sub-national division (a province / region / state / governorate /
+   district, as the jurisdiction identity above states). Name its
+   administrative level in the summary's first paragraph, and frame it at
+   that scale throughout: the division IS the province/region-sized
+   territory — never its capital or any other city within it, never a
+   town/village/district, and never the parent country or any superordinate
+   unit (the whole region, island, or autonomous government) presented as
+   the division. A capital city may be mentioned only as a city WITHIN the
+   division ("the capital, <name>, lies in the south of the province"),
+   never equated with the division itself ("this city ...").
 4. BASE RATE — when a source ranks jurisdictions by RAW counts (incidents,
    killings, cases), say so with the denominator in the same breath: raw
    counts track population, so "the most incidents of any state" is a base
