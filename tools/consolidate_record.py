@@ -142,6 +142,29 @@ RULES FOR THIS PASS (consolidation, not compression):
    never the headline. Summarise the pattern first (how many states, which
    direction, what enforcement), then cite at most one or two named units as
    examples. A national summary must never read like the profile of one state.
+   PARENT-SCOPE (symmetric contamination rule, 2026-11-27) — a NATIONAL record
+   must contain ONLY claims true country-wide. A fact operative in only ONE
+   division (a named court case, agency review, ward or facility policy,
+   single-division guidance, municipal scheme) may appear in the national
+   text ONLY as an explicitly extent-tagged example ("in <division> alone ...
+   ; other divisions ..."), never narrated as if it applied everywhere. The
+   full-fact home of any single-division fact is that division's own record;
+   the parent carries the country-wide layer only. Restating a sibling's
+   restriction at national level double-charges every other sibling when
+   dossiers are paired.
+   SIBLING PARITY (thin-data rule, 2026-11-27) — a division record must cover
+   the standard class structure (custody/detention, single-sex services,
+   health practice, education, policing/hate-crime recourse) with OPERATIVE
+   facts where they exist, or an explicit "no division-specific documented
+   practice was found in the sources for <class>" where they do not. A thin
+   dossier must never read as absence-of-restriction: "no sourced evidence
+   of a restriction" is a statement about the record, not about the law.
+   STATUS ACCURACY (2026-11-27) — a concluded plan is not a standing
+   programme; a consultation-stage document is not an operative duty; an
+   unenacted bill is not a ban. State the status of every instrument you
+   cite (concluded / consultation / unenacted / in force) in the same
+   sentence. Never credit a division with protections still at proposal
+   stage, and never charge it with restrictions never enacted.
 
 4. Four-field split for the visible record: summary (visitor risk assessment),
    tangentialFactors (adjacent/turbulence, comparisons), localsOnly (resident-
