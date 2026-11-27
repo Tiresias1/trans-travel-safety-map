@@ -170,7 +170,7 @@ RULES FOR THIS PASS (consolidation, not compression):
    tangentialFactors (adjacent/turbulence, comparisons), localsOnly (resident-
    facing facts), outOfScopeNotes (unresolved/verifiable caveats, honestly
    worded as 'unresolved'/'not sourced' — never as pipeline outcomes). Number
-   of <p> per field is unbounded but each paragraph must a real finding.
+   of <p> per field is at most 12 (hard cap validated in tools/build_data.py — a 13th paragraph is REJECTED) but each paragraph must carry a real finding.
 
 5. VISIBLE fields use REAL NAMES — the actual country, territory, ministry,
    court. The anonymisation vocabulary (state/province, parent nation,
