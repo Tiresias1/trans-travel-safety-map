@@ -43,9 +43,10 @@ rewrite one jurisdiction's dossier from its LIVE source inventory.
 
 RULES FOR THIS PASS (consolidation, not compression):
 1. Include EVERY substantively distinct claim from the source inventory below.
-   One <p> per claim or tightly-linked claim cluster. There is NO paragraph
-   cap and NO length target beyond completeness: if the inventory has 10
-   distinct visitor-relevant findings, the summary carries 10.
+   One <p> per claim or tightly-linked claim cluster, within the 12-paragraph
+   builder cap: cluster tightly-linked claims until every source cluster is
+   represented. There is NO length target beyond completeness: if the
+   inventory has 10 distinct visitor-relevant findings, the summary carries 10.
 
 2. RELEVANCE GATE — the test is: would this fact change what a trans visitor
    expects to face (law, enforcement, documents, entry, screening, care access,
@@ -59,6 +60,14 @@ RULES FOR THIS PASS (consolidation, not compression):
    limits, prohibited items, airline procedure, general crime/city safety);
    general LGB history with no trans bearing unless it evidences the legal
    regime; a publication's own editorial framing.
+   POSTURE SIGNALS ARE IN (2026-11-27): drafts, consultations, stated
+   positions, enacted-but-unenforced provisions, and failed attempts evidence
+   the authorities' posture toward trans people. They are not operative law —
+   state their status in the same sentence (draft / consultation / proposed /
+   unenacted / in force) and present them as posture evidence, never as law.
+   A consultation move that would let learners choose toilets is posture
+   evidence about the state's stance; excluding it as "not traveler-facing"
+   is wrong.
    THE DRESSING TEST (applies to every IN class): a claim is OUT if the treatment it
    describes is identical for every traveller and merely NAMES a trans-associated item
    to sound relevant — "prosthetics including breast forms are allowed after screening"
@@ -70,7 +79,16 @@ RULES FOR THIS PASS (consolidation, not compression):
    anatomy inspection; outing risk in the process. "A guide for trans travellers
    advises packing strategies" is advice-column content — OUT.
    If a source's only usable content is OUT-material, drop it silently.
-   THE BACKGROUND RATE TEST (violence claims): a trans-specific killing or violence
+   THE BACKGROUND RATE TEST (violence claims):
+   STATISTICS INTERPRETATION (2026-11-27): a figure without its interpretation
+   context (definition, enforcement intensity, denominators, background rate)
+   carries no information. State what the figure shows and what it does not
+   show in the same paragraph, or drop the figure. Never let third-party
+   statistics (charges/cases by city, counts by category) occupy a large
+   share of the dossier without interpretation: enforcement visibility (more
+   charges) and victimisation risk are opposite readings of the same
+   numbers, so bare figures do not sign the effect. A dossier is a risk
+   picture, not a statistical annex. a trans-specific killing or violence
    rate carries NO information unless it is clearly ABOVE the jurisdiction's general
    homicide rate. A trans rate at or below the general rate is indistinguishable from
    background violence and is NOT trans-specific risk; a figure the source itself
